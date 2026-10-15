@@ -65,7 +65,7 @@ Los anexos se entregan también en formato CSV, para poder filtrarlos y reutiliz
 | URL del repositorio | <https://github.com/AyuntamientoMadrid/temario-tecnico-auxiliar> |
 | URL de publicación (GitHub Pages) | <https://ayuntamientomadrid.github.io/temario-tecnico-auxiliar/> |
 | Licencia aplicada | CC0 1.0 Universal, determinada por el IAM al crear el repositorio |
-| Fecha de la última publicación | `[PENDIENTE: fecha del despliegue verificado]` |
+| Fecha de la última publicación | 15/10/2026 |
 
 ### 2.2 Estructura del repositorio
 
@@ -223,7 +223,7 @@ El flujo completo, con su diagrama, se describe en el documento complementario *
 
 - **Estructuración del repositorio:** un único repositorio, `AyuntamientoMadrid/temario-tecnico-auxiliar`, con la web en la raíz y el temario, los tests, las herramientas y la documentación en carpetas propias (apartado 2.2).
 - **Licencia:** CC0 1.0 Universal para todo el contenido y el código, según lo determinado por el IAM en el repositorio de la organización. Quedan fuera el escudo y el logotipo municipales: CC0 no afecta a los derechos de marca.
-- **Verificación del despliegue:** `[PENDIENTE: fecha y resultado]`. Procedimiento:
+- **Verificación del despliegue:** realizada el 15 de octubre de 2026 sobre la URL pública, con resultado correcto: los 875 ficheros publicados responden con HTTP 200 y son idénticos byte a byte a los del repositorio; la prueba funcional (avance, examen por tema, simulacros teórico y práctico, impresión) y la de navegadores (Chromium, WebKit y Firefox, en móvil y escritorio) no presentan errores. Procedimiento:
   - publicación mediante GitHub Actions;
   - comprobación HTTP 200 de todas las páginas;
   - comparación byte a byte de los ficheros publicados con los del repositorio;
