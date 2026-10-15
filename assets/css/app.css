@@ -300,9 +300,10 @@ details.solucion > .sol-body{padding:4px 18px 14px;background:#fff;border-top:1p
 .pausa-aviso h2{margin:0 0 8px;color:var(--azul);}
 .pausa-aviso p{margin:0 0 20px;}
 .runner.en-pausa #runner-qs,.runner.en-pausa #runner-supuesto,.runner.en-pausa #runner-entregar-2{display:none!important;}
+/* La portada no tiene menú lateral: el botón de menú se oculta en todos los tamaños. */
+body.is-landing .menu-toggle{display:none;}
 /* Menú lateral plegable en escritorio; en móvil sigue siendo el panel deslizante. */
 @media (min-width:901px){
-  body.is-landing .menu-toggle{display:none;}
   body.sb-plegado .sidebar{display:none;}
 }
 .question{background:#fff;border:1px solid var(--g200);border-radius:var(--r);padding:18px 20px;margin-bottom:14px;}
