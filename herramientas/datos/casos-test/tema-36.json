@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En la oficina del supuesto, los puestos de tramitación comparten VLAN con un punto de acceso Wi-Fi abierto al público. ¿Por qué es este el riesgo más inmediato?",
+    "o": [
+     "Porque cualquier ciudadano de la sala de espera queda en la misma red que los puestos y puede envenenar ARP o hacerse intermediario.",
+     "Porque el Wi-Fi abierto consume el ancho de banda del enlace y deja sin capacidad a los puestos de tramitación de la oficina.",
+     "Porque el punto de acceso impide aplicar autenticación 802.1X en las rosetas cableadas de la zona de tramitación."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.4.1",
+    "e": "Compartir dominio de difusión con el público permite escanear la red, envenenar ARP y colocarse como intermediario del tráfico de los puestos, que tratan datos personales."
+   },
+   {
+    "q": "¿Qué exige el ENS respecto al Wi-Fi público de la oficina y con qué carácter?",
+    "o": [
+     "mp.com.4.r1.2 lo plantea como refuerzo opcional, que solo resulta exigible cuando el sistema es de categoría ALTA.",
+     "mp.com.4.2 obliga, como requisito base y no como refuerzo, a llevar la comunicación inalámbrica a un segmento separado.",
+     "mp.com.1.1 obliga a cifrar el Wi-Fi, pero permite mantenerlo en el mismo segmento que los puestos de tramitación."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §1.3.1 · mp.com.4.2 ENS",
+    "e": "«Si se emplean comunicaciones inalámbricas, será en un segmento separado» (mp.com.4.2): es una obligación literal de la medida, no un refuerzo. El Wi-Fi público sale a una VLAN propia sin ruta hacia la red municipal."
+   },
+   {
+    "q": "¿Qué propuesta de segmentación cumple la segregación mínima que exige mp.com.4.r1.2 en esta oficina?",
+    "o": [
+     "Una VLAN para los puestos y otra única para el resto, que agrupe Wi-Fi público, cámaras y administración de red.",
+     "Una VLAN por cada puesto de tramitador, manteniendo la administración de los equipos de red en la VLAN de cámaras.",
+     "VLAN de puestos, de dispositivos (impresoras, turnos y cámaras), de administración de los equipos de red y de invitados."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §2.4.1 · mp.com.4.r1.2 ENS",
+    "e": "El refuerzo mp.com.4.r1.2 exige segregar como mínimo en usuarios, servicios y administración; además, el Wi-Fi público debe ir en su propio segmento."
+   },
+   {
+    "q": "El sistema está categorizado MEDIA. ¿Qué exige la tabla de aplicación de mp.com.4 en esa categoría?",
+    "o": [
+     "+ [R2 o R3] + R4, de modo que la separación mediante VLAN deja de ser suficiente.",
+     "+ [R1 o R2 o R3], de modo que basta con separar los segmentos mediante VLAN (R1).",
+     "Nada, porque mp.com.4 solo empieza a aplicarse cuando el sistema es de categoría ALTA."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §1.4 · mp.com.4 ENS",
+    "e": "mp.com.4 no aplica en BÁSICA y en MEDIA exige + [R1 o R2 o R3]: la VLAN (R1) basta. En ALTA el R1 deja de ser suficiente."
+   },
+   {
+    "q": "La Junta conectó un encaminador 4G de respaldo a un puerto del conmutador «por si se cae la línea principal». ¿Qué medida del ENS vulnera directamente?",
+    "o": [
+     "mp.com.1.1, porque todo el tráfico debe atravesar el perímetro y el 4G abre una salida que no pasa por él.",
+     "mp.s.4, porque un enlace 4G no garantiza la disponibilidad de la oficina frente a ataques volumétricos.",
+     "op.exp.10, porque el encaminador 4G no custodia las claves criptográficas del túnel con el CPD central."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §2.1 · mp.com.1.1 ENS",
+    "e": "mp.com.1.1 exige que «todo el tráfico deberá atravesar» el sistema de protección perimetral: si existe un camino que no pasa por el perímetro, el perímetro no existe. Además vulnera los arts. 21 y 23 del ENS."
+   },
+   {
+    "q": "¿Qué debe proponer el informe sobre ese encaminador 4G?",
+    "o": [
+     "Retirarlo sin sustituirlo, porque el ENS no admite que una oficina disponga de un enlace de respaldo con el CPD.",
+     "Mantenerlo en el conmutador de la oficina, limitándose a inscribirlo en el inventario de activos de la Junta.",
+     "Integrarlo: que termine en el mismo equipo perimetral, con la misma política, conmutación automática y el túnel cifrado."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §2.1",
+    "e": "La redundancia es legítima y deseable por disponibilidad; lo que falla es que eluda el perímetro. Debe terminar en el mismo equipo perimetral, con la misma política y con el túnel cifrado levantándose también sobre él."
+   },
+   {
+    "q": "¿Cómo debe corregirse la regla del cortafuegos del CPD que permite todo desde 10.30.7.0/24 hacia la red de servidores?",
+    "o": [
+     "Con reglas explícitas desde la VLAN de puestos a servidores y puertos concretos, y una regla final que deniega y registra.",
+     "Manteniéndola, pero limitándola al horario de apertura al público de la Oficina de Atención a la Ciudadanía.",
+     "Sustituyéndola por otra que permita todo desde la oficina hacia los servidores, salvo el tráfico de las cámaras."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §2.1 · mp.com.1.2 ENS",
+    "e": "mp.com.1.2 exige que todos los flujos estén autorizados previamente; con la denegación por defecto y el mínimo privilegio (art. 20 ENS), solo se permite lo imprescindible: origen, destino y puertos concretos, y regla final de denegar y registrar."
+   },
+   {
+    "q": "El pliego del operador asegura que en la «VPN MPLS» «el tráfico viaja aislado del de otros clientes». ¿Cumple ese enlace la medida mp.com.2 del ENS?",
+    "o": [
+     "Sí: el aislamiento entre clientes que garantiza el pliego es lo que exige mp.com.2.1 para salir del dominio propio.",
+     "Sí, siempre que el operador figure en el catálogo CPSTIC del CCN como prestador de servicios de comunicaciones.",
+     "No: MPLS aísla el tráfico entre clientes pero no lo cifra, y la red del operador es un dominio de seguridad ajeno."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §4.2.3 · mp.com.2.1 ENS",
+    "e": "mp.com.2.1 exige «redes privadas virtuales cifradas cuando la comunicación discurra por redes fuera del propio dominio de seguridad». MPLS da privacidad administrativa, no criptográfica."
+   },
+   {
+    "q": "¿Qué solución conforme procede sobre el enlace MPLS de la oficina?",
+    "o": [
+     "Un túnel GRE entre las pasarelas de la oficina y del CPD, que encapsula el tráfico y basta para cumplir mp.com.2.1.",
+     "Un túnel IPsec en modo túnel con ESP entre pasarelas, autenticado por certificados y con algoritmos autorizados por el CCN.",
+     "Un túnel IPsec con AH en modo transporte entre pasarelas, autenticado mediante una clave precompartida."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 3 · §4.2.1 · mp.com.2 ENS",
+    "e": "Hay que cifrar por encima del MPLS. ESP cifra (AH no) y GRE solo encapsula. En categoría MEDIA aplica mp.com.2 + R1: algoritmos y parámetros autorizados por el CCN (CCN-STIC-807). Se autentica por certificados, no por clave precompartida."
+   },
+   {
+    "q": "¿Dónde y con qué reglas debe publicarse el nuevo servicio de cita previa?",
+    "o": [
+     "En una DMZ, con acceso desde internet solo por TCP 443 y sin que la DMZ pueda iniciar conexiones hacia la red interna.",
+     "En la red de servidores del CPD, abriendo el TCP 443 desde internet y restringiendo las conexiones salientes del servidor.",
+     "En una DMZ, desde la que el servidor consulte directamente el calendario de la red interna cuando lo necesite."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · §2.4.1",
+    "e": "Al ser alcanzable desde internet, el servicio debe estar en una DMZ: internet → DMZ solo por 443, y desde la DMZ no puede iniciarse ninguna conexión hacia la red interna. Si necesita el calendario, la conexión se origina en la red interna o en un servicio intermedio de la DMZ."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "La mesa técnica sostiene que una contraseña de 12 caracteres con caducidad de 90 días es suficiente para la VPN, siendo la confidencialidad de nivel MEDIO. ¿Qué debe responderse?",
+    "o": [
+     "Que sí: en nivel MEDIO op.acc.5 se cumple con una contraseña de al menos 12 caracteres y caducidad periódica.",
+     "Que no: en nivel MEDIO la contraseña sola (R1) deja de estar disponible, por robusta que sea; falta un segundo factor.",
+     "Que no: en nivel MEDIO la contraseña debe tener 16 caracteres y caducar cada 60 días para cumplir op.acc.5."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §3.2.1 · op.acc.5 ENS",
+    "e": "Con nivel MEDIO, op.acc.5 exige + [R2 o R3 o R4] + R5: la opción de contraseña sola desaparece. La longitud y la caducidad son irrelevantes para la conformidad."
+   },
+   {
+    "q": "¿Cuál es el mínimo que debe añadirse a la autenticación de la VPN para cumplir op.acc.5 en nivel MEDIO?",
+    "o": [
+     "Solo el refuerzo R5: registrar los accesos con éxito y fallidos e informar al usuario de cuándo fue su último acceso.",
+     "Solo el refuerzo R2, la contraseña de un solo uso por SMS, sin necesidad de registrar los accesos con éxito y fallidos.",
+     "Un factor R2 (contraseña de un solo uso) o R3/R4 (certificado cualificado con segundo factor), más R5 (registro de accesos)."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §3.2.1 · op.acc.5 ENS",
+    "e": "La fórmula es + [R2 o R3 o R4] + R5: un segundo factor de cualquiera de esas opciones y, en todo caso, el registro de accesos con éxito y fallidos e información al usuario de su último acceso."
+   },
+   {
+    "q": "Para los proveedores externos se propone una cuenta por empresa, compartida entre sus técnicos. ¿Cómo debe valorarse?",
+    "o": [
+     "Está prohibida: op.acc.1.3 exige un identificador singular por entidad, y la cuenta compartida destruye la trazabilidad.",
+     "Es admisible si la empresa proveedora designa por escrito a un responsable único que conteste por el uso de la cuenta.",
+     "Es admisible para personal externo, porque op.acc.1 solo exige identificadores singulares al personal municipal."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §3.2 · op.acc.1.3 ENS",
+    "e": "Con una cuenta compartida ninguna acción es atribuible a una persona. Lo correcto es una cuenta nominal por técnico, con certificado propio, ventana temporal acotada y acceso solo al servidor de salto."
+   },
+   {
+    "q": "La propuesta sitúa la pasarela VPN en la red interna, publicada mediante una redirección de puertos. ¿Dónde debe ubicarse y por qué?",
+    "o": [
+     "En la red interna, como se propone, siempre que la redirección de puertos se limite al puerto que utiliza el servicio VPN.",
+     "En la red de administración de sistemas, para que solo los administradores puedan modificar su configuración.",
+     "En la DMZ, con la superficie mínima, porque si la pasarela se compromete el atacante no debe quedar ya dentro de la red interna."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §4.1.2",
+    "e": "Con la pasarela en la red interna, comprometerla deja al atacante dentro sin cruzar ninguna otra frontera, lo que contradice el art. 23 del ENS y la lógica de mp.com.1."
+   },
+   {
+    "q": "Se propone túnel dividido «para no saturar el enlace de la sede central con el vídeo de las reuniones y la navegación personal». ¿Qué configuración procede?",
+    "o": [
+     "Túnel dividido como regla general, porque la navegación personal del empleado queda fuera del ámbito del ENS.",
+     "Túnel completo; el dividido solo como excepción justificada y acotada, por ejemplo para la videoconferencia corporativa.",
+     "Túnel dividido para todo el tráfico, porque el art. 9 del ENS exige separar el tráfico corporativo del personal."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §4.1.2 · mp.s.3 ENS",
+    "e": "Con el túnel dividido la navegación escapa al control corporativo y mp.s.3 deja de ser aplicable, y el equipo queda con un pie en cada red, como puente potencial, lo que compromete el art. 9 (líneas de defensa)."
+   },
+   {
+    "q": "Una vez conectado, ¿qué alcance de red debe tener el empleado en teletrabajo?",
+    "o": [
+     "Un segmento de teletrabajo propio, con acceso solo a lo imprescindible (expedientes, correo, intranet e impresión).",
+     "La misma VLAN de puestos que en la oficina, porque la VPN ya cifra el tráfico y todo le funcionará igual.",
+     "Acceso completo a la red interna, incluida la de administración, mientras se mantenga abierta la sesión VPN."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §3.1 · mp.eq.3.3 ENS",
+    "e": "mp.eq.3.3 obliga a limitar la información y los servicios accesibles a los mínimos imprescindibles cuando la conexión llega por redes no controladas: el teletrabajador no debe alcanzar la red de administración, la de videovigilancia ni otros puestos."
+   },
+   {
+    "q": "Los empleados usarían su equipo personal «porque no hay presupuesto para 900 portátiles». ¿Qué objeción jurídica plantea?",
+    "o": [
+     "Que el art. 47 bis del TREBEP solo permite el teletrabajo a los empleados que dispongan de equipo propio.",
+     "Que el art. 47 bis del TREBEP dispone que la Administración proporcionará los medios tecnológicos necesarios.",
+     "Que el art. 32 del RGPD prohíbe tratar datos personales desde cualquier dispositivo portátil del empleado."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §5 · art. 47 bis TREBEP",
+    "e": "Conforme al artículo 47 bis del TREBEP, la Administración proporcionará a la persona los medios tecnológicos necesarios para el teletrabajo: la propuesta traslada al empleado una obligación de la Administración."
+   },
+   {
+    "q": "Si de verdad no hubiera presupuesto para equipos corporativos, ¿qué alternativa es la más defendible?",
+    "o": [
+     "Un escritorio virtual (VDI): el dato no sale del CPD y el equipo personal actúa solo como terminal.",
+     "La VPN con cliente en el equipo personal, porque al cifrar el canal protege también los dos extremos.",
+     "Una VPN SSL/TLS sin cliente para los 900 empleados, con acceso completo a toda la red interna."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §5 · §3.1",
+    "e": "La VPN protege el canal, no los extremos: un equipo no controlado lleva el problema al centro de la red. Con VDI el dato no sale del CPD, con el portapapeles y la redirección de unidades deshabilitados."
+   },
+   {
+    "q": "¿Qué tecnología de VPN procede para el acceso de los 900 teletrabajadores?",
+    "o": [
+     "L2TP sin IPsec, por ser el protocolo de tunelización más compatible con los encaminadores domésticos.",
+     "IPsec solo con AH, por ser el protocolo de seguridad de IPsec que mejor atraviesa el NAT doméstico.",
+     "VPN con cliente que use IKEv2 (con MOBIKE) como camino principal y TLS sobre TCP 443 como respaldo."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §4.2",
+    "e": "IKEv2 rinde mejor y MOBIKE permite pasar del Wi-Fi doméstico a la red móvil sin cortar el túnel; TLS sobre 443 sirve de respaldo en redes que bloquean IPsec. L2TP no cifra por sí solo y AH no cifra y es incompatible con NAT."
+   },
+   {
+    "q": "Para el enlace permanente con el centro de proceso de respaldo se elige IPsec en modo túnel con ESP. ¿Qué debe permitir el cortafuegos para que el túnel curse tráfico?",
+    "o": [
+     "Solo UDP 500, que es el puerto que utiliza IKEv2.",
+     "UDP 500 y 4500 y el protocolo IP 50, que es el de ESP.",
+     "Solo TCP 443, el mismo puerto que las VPN SSL/TLS."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · §4.2.1",
+    "e": "IKEv2 usa UDP 500 y UDP 4500 con travesía de NAT, y ESP es el protocolo IP 50. Abrir solo el 500 es el error clásico: el túnel se negocia pero no cursa tráfico."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "Reconstruida la cadena del incidente, ¿en qué eslabón un control habría cortado el ataque aun con la credencial ya en poder del atacante?",
+    "o": [
+     "En el movimiento lateral: el antivirus por firmas actualizado en los servidores, conforme a op.exp.6.",
+     "En las copias de seguridad: el cifrado de los ficheros de copia en el servidor, conforme a mp.info.6.",
+     "En la entrada por la VPN: un segundo factor de autenticación, exigible por op.acc.5 en categoría ALTA."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §3.2 · op.acc.5 ENS",
+    "e": "La VPN solo pedía usuario y contraseña. En categoría ALTA op.acc.5 exige + [R2 o R3 o R4] + R5, y un segundo factor habría detenido el ataque aunque la contraseña ya estuviera robada."
+   },
+   {
+    "q": "La empleada detectó a los diez minutos que la página era falsa, pero no avisó «por apuro». ¿Cómo debe valorarse ese eslabón?",
+    "o": [
+     "Como un fallo de cultura organizativa: debe existir un procedimiento para informar de incidentes, sean reales o falsas alarmas.",
+     "Como una falta individual de la empleada, que el ENS obliga a sancionar conforme a op.acc.5 en categoría ALTA.",
+     "Como un hecho irrelevante, porque las credenciales robadas no se usaron hasta el sábado por la mañana."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §5 · mp.per.3.3 ENS",
+    "e": "mp.per.3.3 exige un procedimiento para informar de incidentes, «sean reales o falsas alarmas». Diez minutos de aviso el viernes habrían permitido bloquear la cuenta antes de que se usara."
+   },
+   {
+    "q": "El antivirus de los servidores estaba actualizado y no detectó el movimiento lateral, hecho con herramientas legítimas del sistema. ¿Qué lo explica y qué medida lo habría visto?",
+    "o": [
+     "Las firmas estaban desfasadas; bastaba con forzar una actualización diaria de las firmas del antivirus.",
+     "El antivirus por firmas es ciego ante el malware sin fichero; lo habría visto un EDR (op.exp.6.r4).",
+     "El cifrado de disco ocultaba los ficheros al antivirus; bastaba con desactivarlo durante el análisis."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §5.2.1 · op.exp.6.r4 ENS",
+    "e": "Con herramientas legítimas del sistema no hay fichero malicioso que reconocer por firma. El EDR, exigible en categoría ALTA (op.exp.6.r4), detecta el comportamiento y el movimiento lateral."
+   },
+   {
+    "q": "Las copias de seguridad estaban en un recurso montado permanentemente en el servidor de copias y fueron cifradas. ¿Qué requisito incumplía esa configuración?",
+    "o": [
+     "Guardar al menos una copia separada, de modo que un incidente no afecte a la vez al original y a la copia (mp.info.6.r2).",
+     "Cifrar las copias de seguridad, ya que estaban almacenadas en claro en el recurso compartido del servidor de copias.",
+     "Emplear productos del catálogo CPSTIC para el servidor de copias, como exige op.pl.5 en categoría ALTA."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §5 · mp.info.6.r2 ENS",
+    "e": "En nivel ALTO, mp.info.6.r2.1 exige que al menos una copia se almacene de forma separada, en lugar diferente, para que un incidente no pueda afectar a la vez al repositorio original y a la copia. Es literalmente lo que ocurrió."
+   },
+   {
+    "q": "Activado el procedimiento de gestión de incidentes y constituido el equipo (op.exp.7), ¿cuál debe ser la siguiente acción?",
+    "o": [
+     "Restaurar los servidores cifrados desde la copia más reciente, para recuperar cuanto antes el servicio.",
+     "Redactar el comunicado interno al personal y a los responsables sobre el alcance del incidente.",
+     "Cortar el acceso remoto: deshabilitar la cuenta comprometida y, si es necesario, suspender la VPN."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §2.3",
+    "e": "Primero se cierra el camino por el que el atacante sigue entrando; después se aísla y se segmenta. Restaurar antes de conocer el vector lleva a que los sistemas se vuelvan a cifrar."
+   },
+   {
+    "q": "Al aislar en red los servidores afectados, ¿por qué NO deben apagarse?",
+    "o": [
+     "Porque al apagarlos el ransomware cifra de inmediato el resto de la red interna.",
+     "Porque apagarlos destruye la memoria volátil, que es la evidencia más valiosa.",
+     "Porque el ENS prohíbe apagar sin autorización un sistema de categoría ALTA."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §5.2.1",
+    "e": "El aislamiento se hace con el EDR o desconectando el puerto del conmutador; apagar el equipo destruye la memoria volátil y, con ella, evidencia necesaria para el análisis."
+   },
+   {
+    "q": "Antes de plantear cualquier restauración, ¿qué debe hacerse?",
+    "o": [
+     "Pagar el rescate si su importe es inferior al coste estimado de reconstruir los siete servidores afectados.",
+     "Restaurar sobre los mismos servidores y analizar el vector de entrada después, con el servicio ya en marcha.",
+     "Localizar la copia más reciente no comprometida, incluidas las fuera de línea, y haber determinado el vector de entrada."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §2.3",
+    "e": "Hay que verificar el estado real de las copias antes de restaurar. No se paga el rescate, y restaurar sobre los mismos sistemas sin conocer el vector hace que se vuelvan a cifrar."
+   },
+   {
+    "q": "Los servidores cifrados contienen expedientes con datos personales. ¿Qué notificaciones concurren?",
+    "o": [
+     "Solo a la AEPD, porque la notificación al CCN-CERT es voluntaria para las entidades locales.",
+     "Al CCN-CERT por el ENS (art. 33 e ITS de Notificación de Incidentes) y a la AEPD por el RGPD.",
+     "Solo al CCN-CERT, que traslada de oficio la notificación a la AEPD y a los interesados afectados."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §1.1 · art. 33 ENS · art. 33 RGPD",
+    "e": "Concurren dos obligaciones por vías distintas: la del ENS ante el CCN-CERT, con la clasificación y plazos de la ITS de Notificación de Incidentes, y la del RGPD ante la AEPD al afectar a datos personales."
+   },
+   {
+    "q": "¿En qué plazo debe notificarse la violación de seguridad a la AEPD?",
+    "o": [
+     "En 72 horas como máximo desde que se tuvo conocimiento de ella.",
+     "En 72 horas desde el acceso inicial, el viernes a las 19:10.",
+     "En un mes desde que concluya el análisis forense del incidente."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · art. 33 RGPD",
+    "e": "Conforme al artículo 33 del RGPD, el plazo máximo es de 72 horas desde que se tuvo conocimiento de la violación; si el riesgo para los interesados es alto, se les comunica también (art. 34)."
+   },
+   {
+    "q": "En el plan de mejora, ¿qué indicadores reflejan mejor la cultura de notificación del programa de concienciación?",
+    "o": [
+     "Solo el porcentaje de clics en las simulaciones, que debe quedar por debajo del 5 % de la plantilla.",
+     "El número de expedientes disciplinarios abiertos al personal que pincha en las simulaciones de phishing.",
+     "El porcentaje de notificaciones, que debe subir, y el tiempo hasta la primera notificación, que debe bajar."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §5 · mp.per.4 ENS",
+    "e": "Un organismo donde muchos pinchan pero la mayoría avisa en minutos está mejor protegido que otro donde pincha poca gente y nadie avisa. Estos indicadores alimentan op.mon.2, y mp.per.4 exige evaluar la eficacia de la formación."
+   }
+  ]
+ }
+]

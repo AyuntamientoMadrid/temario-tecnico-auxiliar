@@ -1,0 +1,39 @@
+<svg aria-label="La etiqueta IEEE 802.1Q se inserta entre la dirección de origen y el campo de tipo o longitud, mide cuatro octetos y se compone de un identificador de protocolo de etiqueta de valor fijo 0x8100, tres bits de prioridad conocidos como 802.1p, un bit indicador de descarte elegible y doce bits de identificador de VLAN, de los que se reservan el cero y el 4095, quedando 4094 VLAN utilizables; la trama pasa de 1518 a 1522 octetos" role="img" viewbox="0 0 680 346" xmlns="http://www.w3.org/2000/svg">
+<style>.h17{font:700 13px system-ui,sans-serif;fill:#0055a0}.k17{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d17{font:8.5px system-ui,sans-serif;fill:#333}.n17{font:8px system-ui,sans-serif;fill:#666}.w17{font:700 8.5px system-ui,sans-serif;fill:#fff}.b17{font:700 10px system-ui,sans-serif;fill:#fff}.g17{font:700 9px system-ui,sans-serif;fill:#2d8659}.r17{font:700 9px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h17" text-anchor="middle" x="340" y="20">La etiqueta 802.1Q: cuatro octetos que convierten una trama en una trama de VLAN</text>
+<text class="k17" x="30" y="42">TRAMA SIN ETIQUETAR — puerto de ACCESO</text>
+<rect fill="#7fa8cc" height="24" width="90" x="30" y="50"></rect><text class="w17" text-anchor="middle" x="75" y="66">Destino 6</text>
+<rect fill="#7fa8cc" height="24" width="90" x="122" y="50"></rect><text class="w17" text-anchor="middle" x="167" y="66">Origen 6</text>
+<rect fill="#3d82c4" height="24" width="90" x="214" y="50"></rect><text class="w17" text-anchor="middle" x="259" y="66">Tipo/Long 2</text>
+<rect fill="#0055a0" height="24" width="266" x="306" y="50"></rect><text class="w17" text-anchor="middle" x="439" y="66">DATOS 46 a 1500</text>
+<rect fill="#3d82c4" height="24" width="84" x="574" y="50"></rect><text class="w17" text-anchor="middle" x="616" y="66">FCS 4</text>
+<text class="d17" text-anchor="middle" x="344" y="88">Máximo 1518 octetos</text>
+<text class="k17" x="30" y="112">TRAMA ETIQUETADA — puerto TRONCAL (trunk)</text>
+<rect fill="#7fa8cc" height="24" width="90" x="30" y="120"></rect><text class="w17" text-anchor="middle" x="75" y="136">Destino 6</text>
+<rect fill="#7fa8cc" height="24" width="90" x="122" y="120"></rect><text class="w17" text-anchor="middle" x="167" y="136">Origen 6</text>
+<rect fill="#e89822" height="24" width="106" x="214" y="120"></rect><text class="b17" text-anchor="middle" x="267" y="136">ETIQUETA 4</text>
+<rect fill="#3d82c4" height="24" width="80" x="322" y="120"></rect><text class="w17" text-anchor="middle" x="362" y="136">Tipo/Long 2</text>
+<rect fill="#0055a0" height="24" width="168" x="404" y="120"></rect><text class="w17" text-anchor="middle" x="488" y="136">DATOS 46 a 1500</text>
+<rect fill="#3d82c4" height="24" width="84" x="574" y="120"></rect><text class="w17" text-anchor="middle" x="616" y="136">FCS 4</text>
+<text class="r17" text-anchor="middle" x="344" y="158">Máximo 1522 octetos — un equipo antiguo la descarta por exceso de tamaño («baby giant»)</text>
+<text class="k17" text-anchor="middle" x="380" y="174">Los cuatro octetos de la ETIQUETA, ampliados</text>
+<rect fill="#e89822" height="30" width="240" x="120" y="180"></rect>
+<text class="b17" text-anchor="middle" x="240" y="200">TPID = 0x8100 · 16 bits</text>
+<rect fill="#0055a0" height="30" width="76" x="362" y="180"></rect>
+<text class="w17" text-anchor="middle" x="400" y="196">PCP</text>
+<text class="w17" text-anchor="middle" x="400" y="206">3 bits</text>
+<rect fill="#7fa8cc" height="30" width="52" x="440" y="180"></rect>
+<text class="w17" text-anchor="middle" x="466" y="196">DEI</text>
+<text class="w17" text-anchor="middle" x="466" y="206">1 bit</text>
+<rect fill="#2d8659" height="30" width="146" x="494" y="180"></rect>
+<text class="b17" text-anchor="middle" x="567" y="200">VID · 12 bits</text>
+<rect fill="#eef4fa" height="20" rx="3" width="628" x="30" y="222"></rect>
+<text class="d17" x="40" y="236"><tspan class="k17">TPID</tspan>  Valor fijo 0x8100. Indica al conmutador que lo que sigue no es el campo de tipo sino una etiqueta</text>
+<rect fill="#f7f9fb" height="20" rx="3" width="628" x="30" y="246"></rect>
+<text class="d17" x="40" y="260"><tspan class="k17">PCP</tspan>   Ocho niveles de prioridad, de 0 a 7. Es lo que se conoce como 802.1p, que NUNCA fue norma independiente: es parte de 802.1Q</text>
+<rect fill="#eef4fa" height="20" rx="3" width="628" x="30" y="270"></rect>
+<text class="d17" x="40" y="284"><tspan class="k17">VID</tspan>   2¹² = 4.096 valores, pero el 0 y el 4095 están RESERVADOS → <tspan class="g17">4.094 VLAN UTILIZABLES</tspan></text>
+<rect fill="#fdf3e3" height="20" rx="3" width="628" x="30" y="298"></rect>
+<text class="d17" x="40" y="312"><tspan class="k17">VLAN NATIVA</tspan>  Viaja SIN etiquetar por el troncal. Es la debilidad del salto de VLAN por doble etiquetado: asignarla a una VLAN sin uso</text>
+<text class="n17" text-anchor="end" x="670" y="334">[Fuente: IEEE 802.1Q · CCN-STIC-641]</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg aria-label="Pirámide DIKW con ejemplo Ayto Madrid" role="img" viewbox="0 0 600 340" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .dikw-label{font:600 14px system-ui,sans-serif;fill:#fff}
+    .dikw-label-dark{font:600 14px system-ui,sans-serif;fill:#0a2540}
+    .dikw-example{font:12px system-ui,sans-serif;fill:#1a1a1a}
+    .dikw-title{font:700 13px system-ui,sans-serif;fill:#0055a0;text-transform:uppercase;letter-spacing:1px}
+  </style>
+<polygon fill="#003d73" points="280,30 330,30 345,70 265,70"></polygon>
+<polygon fill="#0055a0" points="265,70 345,70 365,120 245,120"></polygon>
+<polygon fill="#3378b9" points="245,120 365,120 390,180 220,180"></polygon>
+<polygon fill="#6ea3d2" points="220,180 390,180 420,250 190,250"></polygon>
+<text class="dikw-label" text-anchor="middle" x="305" y="56">Sabiduría</text>
+<text class="dikw-label" text-anchor="middle" x="305" y="99">Conocimiento</text>
+<text class="dikw-label" text-anchor="middle" x="305" y="155">Información</text>
+<text class="dikw-label-dark" text-anchor="middle" x="305" y="220">Dato</text>
+<line stroke="#0055a0" stroke-width="1" x1="420" x2="458" y1="50" y2="50"></line>
+<line stroke="#0055a0" stroke-width="1" x1="420" x2="458" y1="99" y2="99"></line>
+<line stroke="#0055a0" stroke-width="1" x1="420" x2="458" y1="155" y2="155"></line>
+<line stroke="#0055a0" stroke-width="1" x1="420" x2="458" y1="220" y2="220"></line>
+<text class="dikw-title" x="466" y="40">Decisión</text>
+<text class="dikw-example" x="466" y="55">"subir el IBI?"</text>
+<text class="dikw-title" x="466" y="94">Tendencia</text>
+<text class="dikw-example" x="466" y="109">"crece la población"</text>
+<text class="dikw-title" x="466" y="150">Contexto</text>
+<text class="dikw-example" x="466" y="165">"3,45 M habitantes"</text>
+<text class="dikw-title" x="466" y="215">Bruto</text>
+<text class="dikw-example" x="466" y="230">"3.450.000"</text>
+<text fill="#666" font="italic 11px system-ui,sans-serif" text-anchor="middle" x="305" y="285">+ contexto, + análisis, + experiencia</text>
+</svg>

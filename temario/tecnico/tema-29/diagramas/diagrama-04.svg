@@ -1,0 +1,53 @@
+<svg aria-label="Cadena de controles de una sesión de asistencia remota agrupados en autenticación, autorización, control de la sesión y registro, con los mecanismos concretos de cada bloque y la advertencia de que hay que autenticar tanto al técnico como al equipo remoto" role="img" viewbox="0 0 680 330" xmlns="http://www.w3.org/2000/svg">
+<style>.t4{font:700 11px system-ui,sans-serif;fill:#fff}.s4{font:9px system-ui,sans-serif;fill:#fff}.d4{font:9px system-ui,sans-serif;fill:#333}.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}.k4{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n4{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<defs><marker id="a4" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="h4" text-anchor="middle" x="340" y="20">Antes, durante y después de la sesión</text>
+<rect fill="#0055a0" height="40" rx="5" width="150" x="20" y="36"></rect><text class="t4" text-anchor="middle" x="95" y="53">1 · AUTENTICACIÓN</text><text class="s4" text-anchor="middle" x="95" y="68">¿quién eres?</text>
+<rect fill="#0055a0" height="40" rx="5" width="150" x="185" y="36"></rect><text class="t4" text-anchor="middle" x="260" y="53">2 · AUTORIZACIÓN</text><text class="s4" text-anchor="middle" x="260" y="68">¿qué puedes hacer?</text>
+<rect fill="#2d8659" height="40" rx="5" width="150" x="350" y="36"></rect><text class="t4" text-anchor="middle" x="425" y="53">3 · SESIÓN</text><text class="s4" text-anchor="middle" x="425" y="68">¿cómo se controla?</text>
+<rect fill="#e89822" height="40" rx="5" width="145" x="515" y="36"></rect><text class="t4" text-anchor="middle" x="587" y="53">4 · REGISTRO</text><text class="s4" text-anchor="middle" x="587" y="68">¿qué has hecho?</text>
+<line marker-end="url(#a4)" stroke="#0055a0" stroke-width="2" x1="170" x2="182" y1="56" y2="56"></line>
+<line marker-end="url(#a4)" stroke="#0055a0" stroke-width="2" x1="335" x2="347" y1="56" y2="56"></line>
+<line marker-end="url(#a4)" stroke="#0055a0" stroke-width="2" x1="500" x2="512" y1="56" y2="56"></line>
+<rect fill="#eef3f8" height="150" rx="4" width="150" x="20" y="86"></rect>
+<text class="d4" x="30" y="104">· Identidad NOMINAL</text>
+<text class="d4" x="30" y="120">· Directorio corporativo</text>
+<text class="d4" x="30" y="136">· Kerberos o clave pública</text>
+<text class="d4" x="30" y="152">· Segundo factor (MFA)</text>
+<text class="d4" x="30" y="168">· Código de sesión</text>
+<text class="d4" x="30" y="184">  de un solo uso</text>
+<text class="k4" x="30" y="206">Y TAMBIÉN:</text>
+<text class="d4" x="30" y="222">autenticar al EQUIPO</text>
+<rect fill="#eef3f8" height="150" rx="4" width="150" x="185" y="86"></rect>
+<text class="d4" x="195" y="104">· Perfiles por rol (RBAC)</text>
+<text class="d4" x="195" y="120">· Alcance: qué equipos</text>
+<text class="d4" x="195" y="136">· Modo: ver / controlar /</text>
+<text class="d4" x="195" y="152">  ficheros / órdenes</text>
+<text class="d4" x="195" y="168">· Segregación de</text>
+<text class="d4" x="195" y="184">  funciones</text>
+<text class="d4" x="195" y="206">· Elevación temporal</text>
+<text class="d4" x="195" y="222">  ligada a un tique</text>
+<rect fill="#eaf3ee" height="150" rx="4" width="150" x="350" y="86"></rect>
+<text class="d4" x="360" y="104">· Consentimiento</text>
+<text class="d4" x="360" y="120">· Indicador visible</text>
+<text class="d4" x="360" y="136">· Corte por el usuario</text>
+<text class="d4" x="360" y="152">· Expiración y duración</text>
+<text class="d4" x="360" y="168">  máxima</text>
+<text class="d4" x="360" y="184">· Bloqueo al desconectar</text>
+<text class="d4" x="360" y="206">· Canal cifrado</text>
+<text class="d4" x="360" y="222">  extremo a extremo</text>
+<rect fill="#fdf3e6" height="150" rx="4" width="145" x="515" y="86"></rect>
+<text class="d4" x="525" y="104">· Quién, cuándo,</text>
+<text class="d4" x="525" y="120">  sobre qué equipo</text>
+<text class="d4" x="525" y="136">· Tique asociado</text>
+<text class="d4" x="525" y="152">· Modo de la sesión</text>
+<text class="d4" x="525" y="168">· Ficheros y portapapeles</text>
+<text class="d4" x="525" y="184">· Elevación de privilegios</text>
+<text class="d4" x="525" y="206">· Registro íntegro y</text>
+<text class="d4" x="525" y="222">  centralizado</text>
+<rect fill="#d13c3c" height="30" rx="5" width="640" x="20" y="250"></rect>
+<text class="t4" text-anchor="middle" x="340" y="269">Autenticar solo al técnico no basta: si no se verifica el equipo remoto, cabe un ataque de intermediario</text>
+<rect fill="none" height="26" rx="5" stroke="#0055a0" stroke-width="1.5" width="500" x="90" y="288"></rect>
+<text class="k4" text-anchor="middle" x="340" y="305">Sesión sin tique asociado = acceso sin justificación: hallazgo crítico de auditoría</text>
+<text class="n4" text-anchor="end" x="670" y="326">[Fuente: RFC2865; ENS; RFC4253]</text>
+</svg>

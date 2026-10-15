@@ -1,0 +1,31 @@
+<svg aria-label="Comparativa de las cuatro estrategias de desarrollo móvil: nativa, híbrida de contenedor web, multiplataforma compilada y aplicación web progresiva, indicando para cada una el lenguaje, cómo se dibuja la interfaz, la distribución y el rendimiento" role="img" viewbox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 10.5px system-ui,sans-serif;fill:#fff}.s2{font:9px system-ui,sans-serif;fill:#fff}.d2{font:9px system-ui,sans-serif;fill:#333}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}.k2{font:700 9px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h2" text-anchor="middle" x="340" y="20">Las cuatro estrategias de desarrollo móvil</text>
+<rect fill="#0055a0" height="36" rx="5" width="152" x="20" y="34"></rect><text class="t2" text-anchor="middle" x="96" y="49">NATIVA</text><text class="s2" text-anchor="middle" x="96" y="63">SDK de cada plataforma</text>
+<rect fill="#e89822" height="36" rx="5" width="152" x="187" y="34"></rect><text class="t2" text-anchor="middle" x="263" y="49">HÍBRIDA (web)</text><text class="s2" text-anchor="middle" x="263" y="63">Cordova · Ionic</text>
+<rect fill="#2d8659" height="36" rx="5" width="152" x="354" y="34"></rect><text class="t2" text-anchor="middle" x="430" y="49">MULTIPLATAFORMA</text><text class="s2" text-anchor="middle" x="430" y="63">React Native · Flutter</text>
+<rect fill="#888" height="36" rx="5" width="152" x="521" y="34"></rect><text class="t2" text-anchor="middle" x="597" y="49">PWA</text><text class="s2" text-anchor="middle" x="597" y="63">web instalable</text>
+<text class="k2" x="20" y="88">LENGUAJE</text>
+<rect fill="#eef3f8" height="38" rx="4" width="152" x="20" y="94"></rect><text class="d2" text-anchor="middle" x="96" y="110">Kotlin / Java (Android)</text><text class="d2" text-anchor="middle" x="96" y="124">Swift / Objective-C (iOS)</text>
+<rect fill="#eef3f8" height="38" rx="4" width="152" x="187" y="94"></rect><text class="d2" text-anchor="middle" x="263" y="117">HTML + CSS + JS</text>
+<rect fill="#eef3f8" height="38" rx="4" width="152" x="354" y="94"></rect><text class="d2" text-anchor="middle" x="430" y="110">JS/TS (React Native)</text><text class="d2" text-anchor="middle" x="430" y="124">Dart (Flutter)</text>
+<rect fill="#eef3f8" height="38" rx="4" width="152" x="521" y="94"></rect><text class="d2" text-anchor="middle" x="597" y="117">HTML + CSS + JS</text>
+<text class="k2" x="20" y="150">CÓMO SE DIBUJA LA INTERFAZ</text>
+<rect fill="#0055a0" height="52" rx="4" width="152" x="20" y="156"></rect><text class="s2" text-anchor="middle" x="96" y="176">Componentes nativos</text><text class="s2" text-anchor="middle" x="96" y="192">del sistema</text>
+<rect fill="#e89822" height="52" rx="4" width="152" x="187" y="156"></rect><text class="s2" text-anchor="middle" x="263" y="176">WebView embebido</text><text class="s2" text-anchor="middle" x="263" y="192">(motor web)</text>
+<rect fill="#2d8659" height="52" rx="4" width="152" x="354" y="156"></rect><text class="s2" text-anchor="middle" x="430" y="172">Nativos (React Native)</text><text class="s2" text-anchor="middle" x="430" y="188">o motor gráfico propio</text><text class="s2" text-anchor="middle" x="430" y="202">(Flutter)</text>
+<rect fill="#888" height="52" rx="4" width="152" x="521" y="156"></rect><text class="s2" text-anchor="middle" x="597" y="176">Navegador del</text><text class="s2" text-anchor="middle" x="597" y="192">sistema</text>
+<text class="k2" x="20" y="220">DISTRIBUCIÓN</text>
+<rect fill="#eef3f8" height="28" rx="4" width="152" x="20" y="226"></rect><text class="d2" text-anchor="middle" x="96" y="244">Tiendas</text>
+<rect fill="#eef3f8" height="28" rx="4" width="152" x="187" y="226"></rect><text class="d2" text-anchor="middle" x="263" y="244">Tiendas (empaquetada)</text>
+<rect fill="#eef3f8" height="28" rx="4" width="152" x="354" y="226"></rect><text class="d2" text-anchor="middle" x="430" y="244">Tiendas</text>
+<rect fill="#eef3f8" height="28" rx="4" width="152" x="521" y="226"></rect><text class="d2" text-anchor="middle" x="597" y="244">Web (sin tienda)</text>
+<text class="k2" x="20" y="272">RENDIMIENTO</text>
+<rect fill="#2d8659" height="24" rx="4" width="152" x="20" y="278"></rect><text class="s2" text-anchor="middle" x="96" y="294">Máximo</text>
+<rect fill="#d13c3c" height="24" rx="4" width="152" x="187" y="278"></rect><text class="s2" text-anchor="middle" x="263" y="294">Menor</text>
+<rect fill="#2d8659" height="24" rx="4" width="152" x="354" y="278"></rect><text class="s2" text-anchor="middle" x="430" y="294">Alto / muy alto</text>
+<rect fill="#d13c3c" height="24" rx="4" width="152" x="521" y="278"></rect><text class="s2" text-anchor="middle" x="597" y="294">Menor</text>
+<rect fill="none" height="30" rx="5" stroke="#0055a0" stroke-width="2" width="560" x="60" y="312"></rect>
+<text style="font:700 10.5px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="332">Lo decisivo no es «usa o no web», sino CÓMO se dibuja la interfaz</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="354">[Fuente: CORDOVA-DOC; RN-DOC; FLUTTER-DOC; MDN-PWA]</text>
+</svg>

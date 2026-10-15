@@ -1,0 +1,22 @@
+<svg aria-label="Comparación entre Android e iOS" class="svd12" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd12 .t{font:700 14px system-ui,sans-serif;fill:#fff}.svd12 .h{font:700 12px system-ui,sans-serif;fill:#0055a0}.svd12 .c{font:12px system-ui,sans-serif;fill:#1a1a1a}</style>
+<rect fill="#2d8659" height="240" rx="8" width="290" x="40" y="40"></rect>
+<rect fill="#003d73" height="240" rx="8" width="290" x="350" y="40"></rect>
+<text class="t" text-anchor="middle" x="185" y="70">ANDROID</text>
+<text class="t" text-anchor="middle" x="495" y="70">iOS</text>
+<g fill="#fff" font="12px system-ui,sans-serif">
+<text x="60" y="110">Base: kernel Linux</text>
+<text x="60" y="140">Abierto (AOSP), multifabricante</text>
+<text x="60" y="170">Apps: Play + alternativas</text>
+<text x="60" y="200">Sandbox por UID</text>
+<text x="60" y="230">SELinux</text>
+<text x="60" y="260">Permisos en tiempo de ejecución</text>
+<text x="370" y="110">Base: Darwin/XNU (Mach+BSD)</text>
+<text x="370" y="140">Cerrado, solo hardware Apple</text>
+<text x="370" y="170">Apps: solo App Store</text>
+<text x="370" y="200">Sandbox + arranque seguro</text>
+<text x="370" y="230">Secure Enclave (biometría)</text>
+<text x="370" y="260">Permisos en tiempo de ejecución</text>
+</g>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="670" y="308">[Fuente: AOSP · APPLE-PSEC]</text>
+</svg>

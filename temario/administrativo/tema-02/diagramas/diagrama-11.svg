@@ -1,0 +1,28 @@
+<svg aria-label="Financiación autonómica: autonomía financiera del artículo 156, recursos del artículo 157 y Fondo de Compensación del artículo 158" role="img" viewbox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .d11-c{fill:#0055a0;stroke:#003d73;stroke-width:2}
+    .d11-b{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .d11-ct{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .d11-s{font:11px system-ui,sans-serif;fill:#1a1a1a;text-anchor:start}
+    .d11-l{stroke:#0055a0;stroke-width:1.5;fill:none}
+  </style>
+<ellipse class="d11-c" cx="160" cy="160" rx="110" ry="52"></ellipse>
+<text class="d11-ct" x="160" y="152">AUTONOMÍA</text>
+<text class="d11-ct" x="160" y="170">FINANCIERA</text>
+<text class="d11-ct" style="font-weight:400;font-size:10px" x="160" y="188">art. 156 · coord. + solidaridad</text>
+<rect class="d11-b" height="160" rx="8" width="330" x="340" y="30"></rect>
+<rect fill="#0055a0" height="34" rx="8" width="330" x="340" y="30"></rect>
+<text class="d11-ct" x="505" y="53">Recursos · art. 157.1</text>
+<text class="d11-s" x="360" y="88">a) Impuestos cedidos y recargos</text>
+<text class="d11-s" x="360" y="110">b) Impuestos, tasas y contribuciones propias</text>
+<text class="d11-s" x="360" y="132">c) Transferencias del Fondo de Compensación</text>
+<text class="d11-s" x="360" y="154">d) Rendimientos de patrimonio</text>
+<text class="d11-s" x="360" y="176">e) Operaciones de crédito</text>
+<line class="d11-l" x1="270" x2="340" y1="160" y2="110"></line>
+<rect fill="#e8f5ee" height="84" rx="8" stroke="#2d8659" stroke-width="1.5" width="330" x="340" y="220"></rect>
+<text class="d11-ct" style="fill:#1f5e3f" x="505" y="248">Fondo de Compensación · art. 158.2</text>
+<text class="d11-s" style="text-anchor:middle" x="505" y="272">Corrige desequilibrios interterritoriales</text>
+<text class="d11-s" style="text-anchor:middle" x="505" y="290">Lo distribuyen las Cortes Generales</text>
+<line class="d11-l" x1="160" x2="160" y1="212" y2="262"></line>
+<line class="d11-l" x1="160" x2="340" y1="262" y2="262"></line>
+</svg>

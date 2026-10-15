@@ -1,0 +1,27 @@
+<svg aria-label="Comparación de las tres técnicas de virtualización: virtualización total con traducción binaria y el núcleo huésped desplazado del anillo cero, paravirtualización con núcleo modificado que hace llamadas al hipervisor, y virtualización asistida por hardware donde la CPU añade un modo raíz para el hipervisor y el huésped conserva su anillo cero" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.t2b{font:700 11px system-ui,sans-serif;fill:#fff}.s2b{font:9px system-ui,sans-serif;fill:#fff}.h2b{font:700 13px system-ui,sans-serif;fill:#0055a0}.k2b{font:700 10.5px system-ui,sans-serif;fill:#0055a0}.n2b{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h2b" text-anchor="middle" x="340" y="20">Cómo resuelve cada técnica el conflicto de privilegios</text>
+<text class="k2b" text-anchor="middle" x="123" y="42">1. VIRTUALIZACIÓN TOTAL</text>
+<text class="k2b" text-anchor="middle" x="340" y="42">2. PARAVIRTUALIZACIÓN</text>
+<text class="k2b" text-anchor="middle" x="557" y="42">3. ASISTIDA POR HARDWARE</text>
+<rect fill="#888" height="34" rx="4" width="214" x="16" y="52"></rect><text class="t2b" text-anchor="middle" x="123" y="67">Aplicaciones huésped</text><text class="s2b" text-anchor="middle" x="123" y="80">anillo 3 · ejecución directa</text>
+<rect fill="#888" height="34" rx="4" width="214" x="233" y="52"></rect><text class="t2b" text-anchor="middle" x="340" y="67">Aplicaciones huésped</text><text class="s2b" text-anchor="middle" x="340" y="80">anillo 3 · ejecución directa</text>
+<rect fill="#888" height="34" rx="4" width="214" x="450" y="52"></rect><text class="t2b" text-anchor="middle" x="557" y="67">Aplicaciones huésped</text><text class="s2b" text-anchor="middle" x="557" y="80">anillo 3 · ejecución directa</text>
+<rect fill="#0055a0" height="46" rx="4" width="214" x="16" y="92"></rect><text class="t2b" text-anchor="middle" x="123" y="109">Núcleo huésped SIN tocar</text><text class="s2b" text-anchor="middle" x="123" y="123">desplazado al anillo 1</text><text class="s2b" text-anchor="middle" x="123" y="134">no sabe que está virtualizado</text>
+<rect fill="#e89822" height="46" rx="4" width="214" x="233" y="92"></rect><text class="t2b" text-anchor="middle" x="340" y="109">Núcleo huésped MODIFICADO</text><text class="s2b" text-anchor="middle" x="340" y="123">sabe que está virtualizado</text><text class="s2b" text-anchor="middle" x="340" y="134">emite llamadas al hipervisor</text>
+<rect fill="#2d8659" height="46" rx="4" width="214" x="450" y="92"></rect><text class="t2b" text-anchor="middle" x="557" y="109">Núcleo huésped SIN tocar</text><text class="s2b" text-anchor="middle" x="557" y="123">en su anillo 0 (modo no raíz)</text><text class="s2b" text-anchor="middle" x="557" y="134">sin traducción binaria</text>
+<path d="M123 144 L123 158" marker-end="url(#a2b)" stroke="#d13c3c" stroke-width="2"></path>
+<path d="M340 144 L340 158" marker-end="url(#a2b)" stroke="#d13c3c" stroke-width="2"></path>
+<path d="M557 144 L557 158" marker-end="url(#a2b)" stroke="#d13c3c" stroke-width="2"></path>
+<defs><marker id="a2b" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#d13c3c"></path></marker></defs>
+<text class="n2b" text-anchor="middle" x="123" y="155"> </text>
+<rect fill="#d13c3c" height="50" rx="4" width="214" x="16" y="162"></rect><text class="t2b" text-anchor="middle" x="123" y="180">Traducción binaria</text><text class="s2b" text-anchor="middle" x="123" y="193">reescribe el código privilegiado</text><text class="s2b" text-anchor="middle" x="123" y="205">y lo guarda en caché</text>
+<rect fill="#d13c3c" height="50" rx="4" width="214" x="233" y="162"></rect><text class="t2b" text-anchor="middle" x="340" y="180">Llamadas al hipervisor</text><text class="s2b" text-anchor="middle" x="340" y="193">interfaz explícita, sin capturas</text><text class="s2b" text-anchor="middle" x="340" y="205">ni emulación costosa</text>
+<rect fill="#d13c3c" height="50" rx="4" width="214" x="450" y="162"></rect><text class="t2b" text-anchor="middle" x="557" y="180">VM exit / VM entry</text><text class="s2b" text-anchor="middle" x="557" y="193">solo en los eventos definidos</text><text class="s2b" text-anchor="middle" x="557" y="205">en la VMCS / VMCB</text>
+<rect fill="#0055a0" height="34" rx="4" width="648" x="16" y="218"></rect><text class="t2b" text-anchor="middle" x="340" y="234">HIPERVISOR (anillo 0; con asistencia por hardware, modo raíz VMX / SVM — el llamado «anillo −1»)</text><text class="s2b" text-anchor="middle" x="340" y="247">controla todos los recursos físicos y aísla las máquinas virtuales entre sí</text>
+<rect fill="#333" height="30" rx="4" width="648" x="16" y="258"></rect><text class="t2b" text-anchor="middle" x="340" y="278">HARDWARE — CPU con VT-x / AMD-V / EL2 · EPT o NPT para memoria · IOMMU (VT-d / AMD-Vi) para E/S</text>
+<rect fill="none" height="46" rx="4" stroke="#0055a0" stroke-width="2" width="648" x="16" y="296"></rect>
+<text class="k2b" text-anchor="middle" x="340" y="314">Huésped sin modificar: técnicas 1 y 3 · Huésped modificado: técnica 2</text>
+<text class="n2b" text-anchor="middle" x="340" y="332">La paravirtualización del NÚCLEO está desplazada; la paravirtualización de DISPOSITIVOS (virtio) sigue siendo la norma</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="362">[Fuente: POPEK74; ROBIN00; INTEL-SDM; AMD-APM; XEN-DOC]</text>
+</svg>

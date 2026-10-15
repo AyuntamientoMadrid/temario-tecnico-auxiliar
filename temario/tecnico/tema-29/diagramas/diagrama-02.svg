@@ -1,0 +1,30 @@
+<svg aria-label="Las capas del puesto de usuario, desde el hardware y el firmware hasta los servicios corporativos, con la familia de incidencias típica de cada capa y la indicación de qué capas admiten intervención remota" role="img" viewbox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 10.5px system-ui,sans-serif;fill:#fff}.d2{font:9px system-ui,sans-serif;fill:#333}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}.k2{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n2{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h2" text-anchor="middle" x="340" y="20">El puesto de usuario, capa a capa</text>
+<text class="k2" x="30" y="42">CAPA</text><text class="k2" x="250" y="42">INCIDENCIAS TÍPICAS</text><text class="k2" x="570" y="42">¿EN REMOTO?</text>
+<rect fill="#0055a0" height="32" rx="4" width="215" x="20" y="50"></rect><text class="t2" text-anchor="middle" x="128" y="70">Servicios corporativos</text>
+<rect fill="#eef3f8" height="32" rx="4" width="300" x="243" y="50"></rect><text class="d2" text-anchor="middle" x="393" y="70">Sede caída, aplicación lenta, servicio no disponible</text>
+<rect fill="#2d8659" height="32" rx="4" width="109" x="551" y="50"></rect><text class="t2" text-anchor="middle" x="605" y="70">Sí</text>
+<rect fill="#0055a0" height="32" rx="4" width="215" x="20" y="88"></rect><text class="t2" text-anchor="middle" x="128" y="108">Conectividad</text>
+<rect fill="#eef3f8" height="32" rx="4" width="300" x="243" y="88"></rect><text class="d2" text-anchor="middle" x="393" y="108">Sin VPN, proxy, resolución de nombres, permisos</text>
+<rect fill="#e89822" height="32" rx="4" width="109" x="551" y="88"></rect><text class="t2" text-anchor="middle" x="605" y="108">Parcialmente</text>
+<rect fill="#0055a0" height="32" rx="4" width="215" x="20" y="126"></rect><text class="t2" text-anchor="middle" x="128" y="146">Identidad y permisos</text>
+<rect fill="#eef3f8" height="32" rx="4" width="300" x="243" y="126"></rect><text class="d2" text-anchor="middle" x="393" y="146">Cuenta bloqueada, certificado caducado, sin permiso</text>
+<rect fill="#2d8659" height="32" rx="4" width="109" x="551" y="126"></rect><text class="t2" text-anchor="middle" x="605" y="146">Sí</text>
+<rect fill="#0055a0" height="32" rx="4" width="215" x="20" y="164"></rect><text class="t2" text-anchor="middle" x="128" y="184">Aplicaciones</text>
+<rect fill="#eef3f8" height="32" rx="4" width="300" x="243" y="164"></rect><text class="d2" text-anchor="middle" x="393" y="184">Versión, complemento deshabilitado, error al abrir</text>
+<rect fill="#2d8659" height="32" rx="4" width="109" x="551" y="164"></rect><text class="t2" text-anchor="middle" x="605" y="184">Sí</text>
+<rect fill="#0055a0" height="32" rx="4" width="215" x="20" y="202"></rect><text class="t2" text-anchor="middle" x="128" y="222">Configuración y seguridad</text>
+<rect fill="#eef3f8" height="32" rx="4" width="300" x="243" y="202"></rect><text class="d2" text-anchor="middle" x="393" y="222">Directiva nueva, antivirus bloquea, disco cifrado</text>
+<rect fill="#2d8659" height="32" rx="4" width="109" x="551" y="202"></rect><text class="t2" text-anchor="middle" x="605" y="222">Sí</text>
+<rect fill="#0055a0" height="32" rx="4" width="215" x="20" y="240"></rect><text class="t2" text-anchor="middle" x="128" y="260">Sistema operativo</text>
+<rect fill="#eef3f8" height="32" rx="4" width="300" x="243" y="240"></rect><text class="d2" text-anchor="middle" x="393" y="260">Servicio detenido, actualización fallida, error grave</text>
+<rect fill="#e89822" height="32" rx="4" width="109" x="551" y="240"></rect><text class="t2" text-anchor="middle" x="605" y="260">Si arranca</text>
+<rect fill="#666" height="32" rx="4" width="215" x="20" y="278"></rect><text class="t2" text-anchor="middle" x="128" y="298">Firmware (UEFI, TPM)</text>
+<rect fill="#fbeaea" height="32" rx="4" width="300" x="243" y="278"></rect><text class="d2" text-anchor="middle" x="393" y="298">No arranca, orden de arranque, clave de cifrado</text>
+<rect fill="#e89822" height="32" rx="4" width="109" x="551" y="278"></rect><text class="t2" text-anchor="middle" x="605" y="298">Fuera de banda</text>
+<rect fill="#666" height="32" rx="4" width="215" x="20" y="316"></rect><text class="t2" text-anchor="middle" x="128" y="336">Hardware y periféricos</text>
+<rect fill="#fbeaea" height="32" rx="4" width="300" x="243" y="316"></rect><text class="d2" text-anchor="middle" x="393" y="336">No enciende, disco, monitor, lector de tarjetas, cable</text>
+<rect fill="#d13c3c" height="32" rx="4" width="109" x="551" y="316"></rect><text class="t2" text-anchor="middle" x="605" y="336">No: presencial</text>
+<text class="n2" text-anchor="end" x="670" y="356">[Fuente: ITIL4; ENS]</text>
+</svg>

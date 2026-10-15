@@ -1,0 +1,16 @@
+<svg aria-label="B+árbol con nodo raíz, nodos internos y hojas enlazadas" class="svd7" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd7 .in{fill:#0055a0}.svd7 .leaf{fill:#3378b9}.svd7 .b{font:700 12px system-ui,sans-serif;fill:#fff}.svd7 .lab{font:11px system-ui,sans-serif;fill:#666}</style>
+<rect class="in" height="34" rx="4" width="100" x="290" y="40"></rect><text class="b" text-anchor="middle" x="340" y="62">| 30 | 60 |</text>
+<line stroke="#888" stroke-width="2" x1="300" x2="160" y1="74" y2="130"></line>
+<line stroke="#888" stroke-width="2" x1="340" x2="340" y1="74" y2="130"></line>
+<line stroke="#888" stroke-width="2" x1="380" x2="520" y1="74" y2="130"></line>
+<rect class="leaf" height="34" rx="4" width="120" x="100" y="130"></rect><text class="b" text-anchor="middle" x="160" y="152">10·20</text>
+<rect class="leaf" height="34" rx="4" width="120" x="280" y="130"></rect><text class="b" text-anchor="middle" x="340" y="152">30·40·50</text>
+<rect class="leaf" height="34" rx="4" width="120" x="460" y="130"></rect><text class="b" text-anchor="middle" x="520" y="152">60·70·90</text>
+<line marker-end="url(#a7)" stroke="#2d8659" stroke-width="2" x1="220" x2="280" y1="147" y2="147"></line>
+<line marker-end="url(#a7)" stroke="#2d8659" stroke-width="2" x1="400" x2="460" y1="147" y2="147"></line>
+<text class="lab" x="100" y="210">Nodos internos = solo claves-guía · Hojas = datos, enlazadas (verde) para recorridos por rango</text>
+<text class="lab" x="100" y="232">Equilibrado, muchas claves por nodo (1 nodo ≈ 1 bloque de disco) → pocos accesos</text>
+<defs><marker id="a7" markerheight="10" markerwidth="10" orient="auto" refx="8" refy="5"><polygon fill="#2d8659" points="0,0 10,5 0,10"></polygon></marker></defs>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="640" y="300">[Fuente: CLRS cap. 18 · FOLK-FILESTRUCT]</text>
+</svg>

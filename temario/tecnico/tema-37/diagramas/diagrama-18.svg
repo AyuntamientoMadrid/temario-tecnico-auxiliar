@@ -1,0 +1,64 @@
+<svg aria-label="Corte de un edificio de tres plantas con los subsistemas del cableado estructurado: el subsistema horizontal de par trenzado con noventa metros máximos de cable fijo desde el distribuidor de planta hasta la toma de usuario, el área de trabajo con diez metros de latiguillos, el subsistema vertical de fibra multimodo entre los distribuidores de planta y el armario principal, y el subsistema de campus de fibra monomodo hacia otros edificios" role="img" viewbox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
+<style>.h18{font:700 13px system-ui,sans-serif;fill:#0055a0}.k18{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d18{font:8.5px system-ui,sans-serif;fill:#333}.n18{font:8px system-ui,sans-serif;fill:#666}.w18{font:700 8.5px system-ui,sans-serif;fill:#fff}.g18{font:700 9px system-ui,sans-serif;fill:#2d8659}.r18{font:700 9px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h18" text-anchor="middle" x="340" y="20">Los cuatro subsistemas del cableado estructurado y sus distancias</text>
+<rect fill="#eef4fa" height="52" stroke="#c9d6e2" stroke-width="1" width="380" x="30" y="34"></rect>
+<rect fill="#0055a0" height="36" width="26" x="36" y="42"></rect>
+<text class="w18" text-anchor="middle" x="49" y="56">DP</text>
+<text class="w18" text-anchor="middle" x="49" y="70">P2</text>
+<path d="M76,60 L300,60" stroke="#0055a0" stroke-width="1.8"></path>
+<rect fill="#7fa8cc" height="16" width="14" x="300" y="52"></rect>
+<path d="M314,60 L360,60" stroke="#2d8659" stroke-dasharray="4,3" stroke-width="1.8"></path>
+<circle cx="372" cy="60" fill="#333" r="7"></circle>
+<text class="n18" text-anchor="middle" x="215" y="48">SUBSISTEMA HORIZONTAL — par trenzado — máx. 90 m de cable FIJO</text>
+<text class="n18" text-anchor="middle" x="338" y="80">toma</text>
+<text class="n18" text-anchor="middle" x="372" y="80">puesto</text>
+<rect fill="#f7f9fb" height="52" stroke="#c9d6e2" stroke-width="1" width="380" x="30" y="90"></rect>
+<rect fill="#0055a0" height="36" width="26" x="36" y="98"></rect>
+<text class="w18" text-anchor="middle" x="49" y="112">DP</text>
+<text class="w18" text-anchor="middle" x="49" y="126">P1</text>
+<path d="M76,116 L300,116" stroke="#0055a0" stroke-width="1.8"></path>
+<rect fill="#7fa8cc" height="16" width="14" x="300" y="108"></rect>
+<path d="M314,116 L360,116" stroke="#2d8659" stroke-dasharray="4,3" stroke-width="1.8"></path>
+<circle cx="372" cy="116" fill="#333" r="7"></circle>
+<text class="g18" text-anchor="middle" x="240" y="136">ÁREA DE TRABAJO — máx. 10 m de latiguillos entre ambos extremos</text>
+<rect fill="#eef4fa" height="52" stroke="#c9d6e2" stroke-width="1" width="380" x="30" y="146"></rect>
+<rect fill="#2d8659" height="36" width="26" x="36" y="154"></rect>
+<text class="w18" text-anchor="middle" x="49" y="168">DE</text>
+<text class="w18" text-anchor="middle" x="49" y="182">PB</text>
+<path d="M76,172 L300,172" stroke="#0055a0" stroke-width="1.8"></path>
+<rect fill="#7fa8cc" height="16" width="14" x="300" y="164"></rect>
+<path d="M314,172 L360,172" stroke="#2d8659" stroke-dasharray="4,3" stroke-width="1.8"></path>
+<circle cx="372" cy="172" fill="#333" r="7"></circle>
+<text class="n18" text-anchor="middle" x="230" y="192">DE = distribuidor de EDIFICIO (armario principal) · DP = de PLANTA</text>
+<path d="M68,172 L68,60" stroke="#e89822" stroke-width="3"></path>
+<path d="M32,207 L68,207" stroke="#e89822" stroke-width="3"></path>
+<text class="k18" x="78" y="210">SUBSISTEMA VERTICAL — fibra MULTIMODO entre plantas</text>
+<rect fill="#e6f2ec" height="176" rx="5" width="234" x="424" y="34"></rect>
+<text class="k18" text-anchor="middle" x="541" y="52">SUBSISTEMA DE CAMPUS</text>
+<rect fill="#2d8659" height="40" rx="3" width="60" x="440" y="64"></rect>
+<text class="w18" text-anchor="middle" x="470" y="88">EDIFICIO A</text>
+<rect fill="#2d8659" height="40" rx="3" width="60" x="580" y="64"></rect>
+<text class="w18" text-anchor="middle" x="610" y="88">EDIFICIO B</text>
+<path d="M500,84 L580,84" stroke="#0055a0" stroke-width="2.4"></path>
+<text class="n18" text-anchor="middle" x="540" y="78">fibra MONOMODO</text>
+<text class="d18" x="434" y="124">Une el distribuidor de campus con los</text>
+<text class="d18" x="434" y="136">distribuidores de cada edificio</text>
+<text class="g18" x="434" y="156">EL CABLEADO VIVE 20 O 30 AÑOS</text>
+<text class="d18" x="434" y="168">y un conmutador, 5 o 7: por eso se</text>
+<text class="d18" x="434" y="180">sobredimensiona deliberadamente</text>
+<text class="n18" x="434" y="192">Elementos: armario, panel de</text>
+<text class="n18" x="434" y="204">parcheo, toma, latiguillo y canalización</text>
+<rect fill="#0055a0" height="24" rx="4" width="628" x="30" y="222"></rect>
+<text class="w18" text-anchor="middle" x="344" y="238">CANAL MÁXIMO = 100 METROS = 90 m de cable horizontal FIJO + 10 m de LATIGUILLOS</text>
+<text class="r18" text-anchor="middle" x="344" y="260">Si la toma está a 95 m del armario, el enlace NO cumple la norma aunque el equipo funcione: la solución es un armario intermedio</text>
+<rect fill="none" height="52" rx="5" stroke="#0055a0" stroke-width="1.5" width="308" x="30" y="272"></rect>
+<text class="k18" text-anchor="middle" x="184" y="290">PLANO 1 — CABLEADO GENÉRICO</text>
+<text class="d18" text-anchor="middle" x="184" y="304">ISO/IEC 11801 · EN 50173 (UNE-EN) · TIA-568</text>
+<text class="n18" text-anchor="middle" x="184" y="317">Regula el cableado de la red local: categorías, clases, distancias</text>
+<rect fill="none" height="52" rx="5" stroke="#e89822" stroke-width="1.5" width="308" x="350" y="272"></rect>
+<text class="k18" text-anchor="middle" x="504" y="290">PLANO 2 — INFRAESTRUCTURA DEL EDIFICIO (ICT)</text>
+<text class="d18" text-anchor="middle" x="504" y="304">Art. 55 Ley 11/2022 · RDL 1/1998 · RD 346/2011</text>
+<text class="n18" text-anchor="middle" x="504" y="317">Regula la obra civil: recintos RITI/RITS/RITU, registros, proyecto</text>
+<text class="g18" text-anchor="middle" x="340" y="344">Son planos DISTINTOS y COMPATIBLES: en una obra municipal nueva hay que cumplir los DOS</text>
+<text class="n18" text-anchor="end" x="670" y="368">[Fuente: ISO/IEC 11801-1:2017 · Ley 11/2022 · RD 346/2011]</text>
+</svg>

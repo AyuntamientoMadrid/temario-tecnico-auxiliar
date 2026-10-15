@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "Para la consulta de un habitante por su DNI/NIE en el fichero del Padrón (unos 3,3 millones de registros), ¿qué organización de fichero es la más adecuada?",
+    "o": [
+     "Secuencial indexada, con un índice que permita el acceso directo por DNI/NIE.",
+     "Secuencial pura, con los registros grabados por orden de fecha de alta.",
+     "Enlazada, con cada registro apuntando al siguiente de su mismo distrito."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §3.2",
+    "e": "La organización secuencial indexada combina el fichero de datos con índices que permiten el acceso directo por clave además del secuencial."
+   },
+   {
+    "q": "¿Por qué no bastaría una organización secuencial pura para esa consulta?",
+    "o": [
+     "Porque no admite registros de longitud variable como el nombre y los apellidos del habitante.",
+     "Porque obligaría a recorrer hasta 3,3 millones de registros en cada consulta, con coste O(n).",
+     "Porque solo puede utilizarse sobre soportes de cinta y no sobre discos ni sobre SSD."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §3.2",
+    "e": "En un fichero secuencial, para leer un registro concreto hay que recorrer los anteriores: el acceso es O(n), lento para consultas individuales."
+   },
+   {
+    "q": "¿Qué índice crearía sobre el DNI/NIE y con qué complejidad de acceso?",
+    "o": [
+     "Un árbol binario de búsqueda sin equilibrar, con acceso O(1).",
+     "Un montículo (heap) sobre el DNI/NIE, con acceso O(n log n).",
+     "Un índice primario B+árbol, con acceso O(log n)."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §2.6.3, §3.4",
+    "e": "El B+árbol es el índice estándar de ficheros y bases de datos: equilibrado, con muchas claves por nodo y acceso O(log n)."
+   },
+   {
+    "q": "¿Cuántos accesos a disco necesita, aproximadamente, localizar a un habitante con ese índice?",
+    "o": [
+     "3-4 accesos, la altura del árbol.",
+     "Unos 20 accesos, como un árbol binario.",
+     "Hasta 3,3 millones, uno por registro."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §3.4",
+    "e": "Al almacenar muchas claves por nodo, el B+árbol tiene pocos niveles: con 3,3 millones de registros basta con 3-4 accesos a disco."
+   },
+   {
+    "q": "Para la operación 2 (listar a todos los habitantes de un distrito), conviene:",
+    "o": [
+     "Recorrer el fichero completo ordenado por DNI/NIE y filtrar por distrito.",
+     "Una tabla hash sobre el DNI/NIE, que localiza cada registro en O(1).",
+     "Un índice secundario sobre el distrito, para no recorrer todo el fichero."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §3.4",
+    "e": "Un índice secundario por distrito permite listar los habitantes de un distrito sin recorrer los 3,3 millones de registros; el índice por DNI no sirve para esa consulta."
+   },
+   {
+    "q": "¿Qué característica del B+árbol facilita los recorridos por rango?",
+    "o": [
+     "Que sus nodos internos guardan los registros completos y no solo claves-guía.",
+     "Que sus hojas, donde están todas las claves, están enlazadas en una lista ordenada.",
+     "Que calcula la posición de cada clave con una función hash que mantiene el orden."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §2.6.3",
+    "e": "En el B+árbol todas las claves de datos están en las hojas, enlazadas formando una lista ordenada; los nodos internos solo tienen claves-guía."
+   },
+   {
+    "q": "Para validar en tiempo real, durante un alta, si un DNI ya existe, ¿qué estructura elegiría?",
+    "o": [
+     "Una tabla hash (o el índice único sobre DNI), con coste medio O(1).",
+     "Una búsqueda secuencial sobre el fichero, con coste medio O(n/2).",
+     "Una lista enlazada ordenada por DNI, con coste medio O(log n)."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §2.5, §4.5.4",
+    "e": "Comprobar si una clave existe en una tabla hash cuesta O(1) de media, idóneo para una validación inmediata durante el alta."
+   },
+   {
+    "q": "Ese coste O(1) es el del caso medio. ¿Qué coste tendría la comprobación en el peor caso, si todas las claves colisionaran en la misma posición?",
+    "o": [
+     "O(log n).",
+     "O(n).",
+     "O(n²)."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 3 · §2.5",
+    "e": "En una tabla hash el acceso medio es O(1), pero si todas las claves colisionan en la misma posición la búsqueda degenera a O(n)."
+   },
+   {
+    "q": "¿En qué operaciones se nota el coste de mantener varios índices sobre el Padrón?",
+    "o": [
+     "En las consultas por DNI/NIE, porque deben consultarse todos los índices.",
+     "En los listados por distrito, porque el índice secundario se recalcula entero.",
+     "En las altas, bajas y modificaciones, porque cada índice debe actualizarse."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 4 · §3.4",
+    "e": "Cada índice acelera un tipo de consulta a costa de espacio y de un coste de mantenimiento en altas, bajas y modificaciones."
+   },
+   {
+    "q": "¿Cómo justificaría ese coste ante un responsable?",
+    "o": [
+     "Las consultas, mucho más frecuentes que las altas, pasan de O(n) a O(log n) u O(1).",
+     "Los índices reducen el espacio total que ocupa el fichero del Padrón en el disco.",
+     "Los índices evitan tener que actualizar el fichero de datos cuando se producen altas."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · §3.4",
+    "e": "El balance favorece los índices: penalizan algo las altas, pero aceleran las consultas, que son mucho más frecuentes; además ocupan espacio adicional, no lo reducen."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "El censo de 200.000 electores no cabe cómodamente en memoria y hay que conservar el orden previo por segundo apellido. ¿Qué algoritmo de ordenación elegiría?",
+    "o": [
+     "Quicksort.",
+     "Mergesort.",
+     "Heapsort."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §4.4.2",
+    "e": "Mergesort es O(n log n) garantizado, estable y apto para ordenación externa, porque se basa en mezclar bloques ya ordenados."
+   },
+   {
+    "q": "¿Qué propiedades justifican esa elección?",
+    "o": [
+     "Es in situ, no necesita memoria adicional y es el más rápido en la práctica.",
+     "Es O(n) en todos los casos porque usa el valor de la clave como índice.",
+     "Es O(n log n) garantizado, estable y apto para ordenación externa."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §4.4.2",
+    "e": "Mergesort garantiza O(n log n), es estable y se usa para ficheros que no caben en memoria; ser in situ y el más rápido en la práctica describe a quicksort, y el O(n) sin comparar claves, a los algoritmos no comparativos."
+   },
+   {
+    "q": "¿Por qué se descarta quicksort en este caso, aunque sea rápido?",
+    "o": [
+     "Porque no es estable y degrada a O(n²) en el peor caso.",
+     "Porque es estable pero necesita memoria auxiliar O(n).",
+     "Porque solo ordena claves numéricas de rango acotado."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §4.4.2",
+    "e": "Quicksort es O(n log n) de media pero O(n²) en el peor caso, y no es estable: no garantiza conservar el orden por segundo apellido."
+   },
+   {
+    "q": "Heapsort también garantiza O(n log n). ¿Por qué no sirve aquí?",
+    "o": [
+     "Porque necesita memoria auxiliar O(n).",
+     "Porque no es estable.",
+     "Porque degrada a O(n²) en el peor caso."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §4.4.2, §4.4.4",
+    "e": "Heapsort es O(n log n) garantizado e in situ, pero no es estable, así que no conservaría el orden previo por segundo apellido."
+   },
+   {
+    "q": "¿Qué inconveniente tiene mergesort que conviene tener en cuenta al dimensionar el sistema?",
+    "o": [
+     "Requiere memoria auxiliar O(n) para la fase de mezcla.",
+     "No es estable cuando hay apellidos repetidos en el censo.",
+     "Degrada a O(n²) si el censo ya viene casi ordenado."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · §4.4.2",
+    "e": "Mergesort es estable y garantiza O(n log n) en todos los casos, pero gasta memoria auxiliar O(n) para mezclar."
+   },
+   {
+    "q": "¿Qué significa que un algoritmo de ordenación sea estable?",
+    "o": [
+     "Que su tiempo de ejecución no varía con el orden inicial de los datos.",
+     "Que ordena sin necesitar memoria adicional a la del propio vector.",
+     "Que conserva el orden relativo de los elementos con clave igual."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §4.4",
+    "e": "Un algoritmo es estable si conserva el orden relativo de los elementos con clave igual; ordenar sin memoria adicional es ser in situ."
+   },
+   {
+    "q": "¿Por qué es relevante la estabilidad al ordenar el censo por primer apellido?",
+    "o": [
+     "Porque sin ella el algoritmo no podría ordenar a los electores que tienen dos apellidos compuestos.",
+     "Porque los electores con igual primer apellido deben mantener el orden por segundo apellido ya fijado.",
+     "Porque un algoritmo estable ordena el censo en O(n), más rápido que uno que no lo es."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §4.4",
+    "e": "Al ordenar por varios criterios sucesivos, solo un algoritmo estable garantiza que, a igual primer apellido, se conserve el orden por segundo apellido de la pasada anterior."
+   },
+   {
+    "q": "Durante la jornada electoral hay que localizar a un elector por su posición alfabética. ¿Qué algoritmo de búsqueda se aplica y qué requisito impone?",
+    "o": [
+     "Búsqueda secuencial, O(log n), que exige que el censo esté ordenado.",
+     "Búsqueda binaria, O(n), que no exige ningún orden previo del censo.",
+     "Búsqueda binaria, O(log n), que exige que el censo esté ordenado."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §4.5.2",
+    "e": "La búsqueda binaria divide a la mitad el espacio de búsqueda en cada paso (O(log n)), pero exige datos ordenados; la secuencial es O(n) y no requiere orden."
+   },
+   {
+    "q": "Para 200.000 electores, ¿cuántas comparaciones necesita como máximo la búsqueda binaria, frente a la secuencial?",
+    "o": [
+     "Unas 18, frente a hasta 200.000 de la secuencial.",
+     "Unas 100.000, frente a hasta 200.000 de la secuencial.",
+     "Unas 448, frente a hasta 200.000 de la secuencial."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §4.5.2",
+    "e": "La binaria necesita a lo sumo ⌈log₂(200.000)⌉ = 18 comparaciones (2¹⁸ = 262.144); la secuencial puede necesitar recorrer los 200.000."
+   },
+   {
+    "q": "Si un proceso auxiliar fuese O(n²), ¿de qué orden sería el número de operaciones con n = 200.000?",
+    "o": [
+     "Del orden de 4 × 10⁵ operaciones.",
+     "Del orden de 4 × 10¹⁰ operaciones.",
+     "Del orden de 3,5 × 10⁶ operaciones."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · §4.2",
+    "e": "n² = (2 × 10⁵)² = 4 × 10¹⁰; 4 × 10⁵ sería 2n, y unos 3,5 × 10⁶ corresponden a n log₂ n."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "¿Qué formato de fichero exigiría para los documentos de archivo de la sede electrónica?",
+    "o": [
+     "DOCX.",
+     "JPEG.",
+     "PDF/A."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §5.3",
+    "e": "PDF/A es el formato para documentos de archivo: autocontenido, sin dependencias externas y pensado para la conservación a largo plazo."
+   },
+   {
+    "q": "¿De qué normativa procede la obligación de usar formatos abiertos y estándar en la Administración?",
+    "o": [
+     "Del Esquema Nacional de Interoperabilidad (RD 4/2010) y la Norma Técnica de Catálogo de estándares.",
+     "Del Esquema Nacional de Seguridad y de la norma técnica de control de acceso a los ficheros.",
+     "Del Reglamento de los Servicios de Prevención y de la norma técnica de digitalización."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §5.3 [ENI-RD4-2010]",
+    "e": "El Esquema Nacional de Interoperabilidad y la Norma Técnica de Catálogo de estándares obligan a usar formatos abiertos y estándar para la conservación y el acceso a largo plazo."
+   },
+   {
+    "q": "Solo el funcionario instructor debe poder modificar el expediente, su unidad consultarlo y el resto no tener acceso. ¿Qué permiso POSIX lo implementa?",
+    "o": [
+     "chmod 750.",
+     "chmod 640.",
+     "chmod 664."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §5.5.1",
+    "e": "640 equivale a rw- para el propietario, r-- para el grupo y --- para otros; 750 da ejecución y 664 permite escribir al grupo y leer a otros."
+   },
+   {
+    "q": "Con ese esquema, ¿qué pueden hacer los miembros de la unidad del instructor?",
+    "o": [
+     "Leer y modificar el expediente.",
+     "Ni leer ni modificar el expediente.",
+     "Leer el expediente, pero no modificarlo."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §5.5.1",
+    "e": "El dígito 4 del grupo equivale a r--: solo lectura."
+   },
+   {
+    "q": "En un entorno Windows/NTFS, un usuario de otra unidad tiene permiso de lectura a través de un grupo, pero también una denegación explícita sobre el expediente. ¿Qué ocurre?",
+    "o": [
+     "Puede leerlo, porque el permiso del grupo prevalece sobre la denegación.",
+     "No puede acceder, porque la denegación explícita prevalece sobre el permiso.",
+     "Puede leerlo, porque en NTFS se aplica el permiso concedido en primer lugar."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §5.5.2",
+    "e": "En el modelo ACL de NTFS, las reglas de denegación explícita prevalecen sobre las de permiso."
+   },
+   {
+    "q": "¿Qué mecanismo emplearía para detectar si un documento se ha alterado tras su firma?",
+    "o": [
+     "Una función hash criptográfica, como SHA-256.",
+     "Una suma de verificación simple, como un CRC.",
+     "Un algoritmo de compresión sin pérdida, como GZIP."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §5.3",
+    "e": "Con una función hash criptográfica cualquier alteración del documento cambia radicalmente su huella, lo que permite detectar manipulaciones."
+   },
+   {
+    "q": "¿Por qué no basta con un checksum o CRC simple para esta finalidad?",
+    "o": [
+     "Porque no detecta los errores de transmisión ni de almacenamiento del documento.",
+     "Porque solo puede calcularse sobre ficheros de texto plano y no sobre PDF/A.",
+     "Porque detecta errores accidentales, pero no resiste una manipulación intencionada."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · §5.3",
+    "e": "Los checksums y CRC detectan errores de transmisión o almacenamiento, pero no resisten la manipulación intencionada."
+   },
+   {
+    "q": "Un proveedor propone calcular las huellas de los documentos con MD5. ¿Es adecuado?",
+    "o": [
+     "No, porque MD5 se considera obsoleta por colisiones demostradas.",
+     "Sí, porque MD5 es una función hash criptográfica como SHA-256.",
+     "Sí, siempre que se combine con un CRC sobre el mismo documento."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §5.3",
+    "e": "MD5 y SHA-1 se consideran obsoletas por colisiones demostradas; para integridad se usan SHA-256 o SHA-3."
+   },
+   {
+    "q": "¿Qué configuración de almacenamiento permite seguir operando ante el fallo de un disco?",
+    "o": [
+     "RAID 0, con reparto de datos, que tolera el fallo de un disco.",
+     "RAID 5, con paridad distribuida, que tolera el fallo de un disco.",
+     "Un único disco con journaling, que tolera el fallo de ese disco."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §3.6",
+    "e": "RAID 5 reparte los datos con paridad distribuida y tolera el fallo de un disco; RAID 0 no tiene redundancia y el journaling protege la consistencia, no frente a la pérdida del disco."
+   },
+   {
+    "q": "¿Sustituye ese RAID a la copia de seguridad de los expedientes?",
+    "o": [
+     "Sí, porque con la paridad se pueden reconstruir siempre todos los datos perdidos.",
+     "Sí, siempre que se use RAID 6, que tolera el fallo simultáneo de dos discos.",
+     "No, porque protege del fallo de disco, pero no de borrados, ransomware ni desastres."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §3.6",
+    "e": "El RAID protege de fallos de disco, pero no de borrados, ransomware ni desastres: hace falta, además, copia de seguridad."
+   }
+  ]
+ }
+]

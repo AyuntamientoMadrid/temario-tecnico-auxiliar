@@ -1,0 +1,34 @@
+<svg aria-label="Cabecera TCP de 20 octetos mínimo con puertos de origen y destino, número de secuencia, número de acuse de recibo, desplazamiento de datos, indicadores, ventana, suma de comprobación y puntero de urgencia. Secuencia de apertura en tres vías: SYN, SYN más ACK y ACK. Secuencia de cierre en cuatro segmentos: FIN, ACK, FIN y ACK" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.t16{font:700 9px system-ui,sans-serif;fill:#fff}.d16{font:8.5px system-ui,sans-serif;fill:#333}.h16{font:700 13px system-ui,sans-serif;fill:#0055a0}.k16{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n16{font:8.5px system-ui,sans-serif;fill:#666}.b16{font:700 9px system-ui,sans-serif;fill:#0055a0}.g16{font:700 9px system-ui,sans-serif;fill:#2d8659}</style>
+<defs><marker id="a16" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker><marker id="c16" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#d13c3c"></path></marker></defs>
+<text class="h16" text-anchor="middle" x="340" y="20">TCP · cabecera, apertura y cierre</text>
+<rect fill="#0055a0" height="26" rx="3" width="316" x="24" y="34"></rect><text class="t16" text-anchor="middle" x="182" y="51">Puerto de ORIGEN (16)</text>
+<rect fill="#0055a0" height="26" rx="3" width="314" x="342" y="34"></rect><text class="t16" text-anchor="middle" x="499" y="51">Puerto de DESTINO (16)</text>
+<rect fill="#3781c0" height="26" rx="3" width="632" x="24" y="64"></rect><text class="t16" text-anchor="middle" x="340" y="81">Número de SECUENCIA (32) — posición del primer octeto en el flujo</text>
+<rect fill="#3781c0" height="26" rx="3" width="632" x="24" y="94"></rect><text class="t16" text-anchor="middle" x="340" y="111">Número de ACUSE DE RECIBO (32) — siguiente octeto esperado</text>
+<rect fill="#5a6b7d" height="26" rx="3" width="120" x="24" y="124"></rect><text class="t16" text-anchor="middle" x="84" y="141">Despl. (4) + Res.</text>
+<rect fill="#d13c3c" height="26" rx="3" width="194" x="146" y="124"></rect><text class="t16" text-anchor="middle" x="243" y="141">Indicadores (8)</text>
+<rect fill="#e89822" height="26" rx="3" width="314" x="342" y="124"></rect><text class="t16" text-anchor="middle" x="499" y="141">VENTANA (16) — control de flujo</text>
+<rect fill="#2d8659" height="26" rx="3" width="316" x="24" y="154"></rect><text class="t16" text-anchor="middle" x="182" y="171">Suma de comprobación (16) — obligatoria</text>
+<rect fill="#5a6b7d" height="26" rx="3" width="314" x="342" y="154"></rect><text class="t16" text-anchor="middle" x="499" y="171">Puntero de urgencia (16)</text>
+<text class="k16" x="24" y="196">INDICADORES:</text>
+<text class="d16" x="118" y="196">SYN abre · ACK confirma · FIN cierra ordenadamente · RST aborta · PSH entrega ya · URG urgente · ECE y CWR congestión</text>
+<text class="b16" x="24" y="220">APERTURA · saludo de tres vías</text>
+<text class="g16" x="380" y="220">CIERRE · cuatro segmentos</text>
+<rect fill="#0055a0" height="20" rx="3" width="60" x="24" y="228"></rect><text class="t16" text-anchor="middle" x="54" y="242">Cliente</text>
+<rect fill="#0055a0" height="20" rx="3" width="60" x="286" y="228"></rect><text class="t16" text-anchor="middle" x="316" y="242">Servidor</text>
+<path d="M54,248 L54,320" stroke="#8aa8c4" stroke-width="1.2"></path><path d="M316,248 L316,320" stroke="#8aa8c4" stroke-width="1.2"></path>
+<path d="M56,262 L312,262" marker-end="url(#a16)" stroke="#0055a0" stroke-width="1.4"></path><text class="d16" text-anchor="middle" x="184" y="257">1. SYN (secuencia inicial aleatoria)</text>
+<path d="M314,286 L58,286" marker-end="url(#a16)" stroke="#0055a0" stroke-width="1.4"></path><text class="d16" text-anchor="middle" x="184" y="281">2. SYN + ACK</text>
+<path d="M56,310 L312,310" marker-end="url(#a16)" stroke="#0055a0" stroke-width="1.4"></path><text class="d16" text-anchor="middle" x="184" y="305">3. ACK — conexión ESTABLECIDA</text>
+<rect fill="#2d8659" height="20" rx="3" width="60" x="380" y="228"></rect><text class="t16" text-anchor="middle" x="410" y="242">Extremo A</text>
+<rect fill="#2d8659" height="20" rx="3" width="60" x="596" y="228"></rect><text class="t16" text-anchor="middle" x="626" y="242">Extremo B</text>
+<path d="M410,248 L410,320" stroke="#8aa8c4" stroke-width="1.2"></path><path d="M626,248 L626,320" stroke="#8aa8c4" stroke-width="1.2"></path>
+<path d="M412,262 L622,262" marker-end="url(#c16)" stroke="#d13c3c" stroke-width="1.4"></path><text class="d16" text-anchor="middle" x="518" y="257">1. FIN</text>
+<path d="M624,278 L414,278" marker-end="url(#c16)" stroke="#d13c3c" stroke-width="1.4"></path><text class="d16" text-anchor="middle" x="518" y="273">2. ACK</text>
+<path d="M624,296 L414,296" marker-end="url(#c16)" stroke="#d13c3c" stroke-width="1.4"></path><text class="d16" text-anchor="middle" x="518" y="291">3. FIN</text>
+<path d="M412,314 L622,314" marker-end="url(#c16)" stroke="#d13c3c" stroke-width="1.4"></path><text class="d16" text-anchor="middle" x="518" y="309">4. ACK — luego TIME-WAIT</text>
+<rect fill="#eef3f8" height="20" rx="3" width="632" x="24" y="330"></rect>
+<text class="k16" text-anchor="middle" x="340" y="344">Tres para abrir y cuatro para cerrar, porque cada sentido se cierra por separado</text>
+<text class="n16" text-anchor="end" x="670" y="364">[Fuente: RFC 9293]</text>
+</svg>

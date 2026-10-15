@@ -1,0 +1,14 @@
+<svg aria-label="Independencia lógica entre externo y conceptual; independencia física entre conceptual e interno" class="svd3" role="img" viewbox="0 0 660 266" xmlns="http://www.w3.org/2000/svg">
+<style>.svd3 .t{font:700 13px system-ui,sans-serif;fill:#fff}.svd3 .lab{font:11px system-ui,sans-serif;fill:#444}.svd3 .h{font:700 13px system-ui,sans-serif;fill:#0055a0}.svd3 .tag{font:700 12px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h" text-anchor="middle" x="330" y="24">¿Qué aísla cada independencia?</text>
+<rect fill="#2d8659" height="40" rx="6" width="240" x="210" y="40"></rect><text class="t" text-anchor="middle" x="330" y="65">VISTAS / APLICACIONES</text>
+<line stroke="#d13c3c" stroke-dasharray="6 4" stroke-width="2" x1="120" x2="540" y1="100" y2="100"></line>
+<text class="tag" x="120" y="95">⇅ Independencia LÓGICA</text>
+<text class="lab" text-anchor="end" x="540" y="95">cambiar el conceptual sin tocar vistas</text>
+<rect fill="#0055a0" height="40" rx="6" width="240" x="210" y="120"></rect><text class="t" text-anchor="middle" x="330" y="145">ESQUEMA CONCEPTUAL</text>
+<line stroke="#e89822" stroke-dasharray="6 4" stroke-width="2" x1="120" x2="540" y1="180" y2="180"></line>
+<text class="tag" style="fill:#e89822" x="120" y="175">⇅ Independencia FÍSICA</text>
+<text class="lab" text-anchor="end" x="540" y="175">cambiar el almacenamiento sin tocar el conceptual</text>
+<rect fill="#002a52" height="40" rx="6" width="240" x="210" y="200"></rect><text class="t" text-anchor="middle" x="330" y="225">ESQUEMA INTERNO (físico)</text>
+<text class="lab" style="fill:#888" text-anchor="end" x="650" y="260">La lógica es la más difícil de lograr · [DATE]</text>
+</svg>

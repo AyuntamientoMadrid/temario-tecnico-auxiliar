@@ -1,0 +1,25 @@
+<svg aria-label="Las siete Áreas de Gobierno actuales del Ayuntamiento de Madrid" role="img" viewbox="0 0 700 360" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .k-h{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .k-b{fill:#e8f0f8;stroke:#0055a0;stroke-width:1.2}
+    .k-t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:start}
+    .k-n{font:700 12px system-ui,sans-serif;fill:#0055a0;text-anchor:middle}
+  </style>
+<rect fill="#0055a0" height="40" rx="8" width="460" x="120" y="16"></rect>
+<text class="k-h" x="350" y="41">7 ÁREAS DE GOBIERNO (vigentes)</text>
+<rect class="k-b" height="32" rx="6" width="620" x="40" y="70"></rect>
+<text class="k-n" x="58" y="91">1</text><text class="k-t" x="80" y="91">Vicealcaldía, Portavoz, Seguridad y Emergencias</text>
+<rect class="k-b" height="32" rx="6" width="620" x="40" y="108"></rect>
+<text class="k-n" x="58" y="129">2</text><text class="k-t" x="80" y="129">Urbanismo, Medio Ambiente y Movilidad</text>
+<rect class="k-b" height="32" rx="6" width="620" x="40" y="146"></rect>
+<text class="k-n" x="58" y="167">3</text><text class="k-t" x="80" y="167">Cultura, Turismo y Deporte</text>
+<rect class="k-b" height="32" rx="6" width="620" x="40" y="184"></rect>
+<text class="k-n" x="58" y="205">4</text><text class="k-t" x="80" y="205">Economía, Innovación y Hacienda</text>
+<rect class="k-b" height="32" rx="6" width="620" x="40" y="222"></rect>
+<text class="k-n" x="58" y="243">5</text><text class="k-t" x="80" y="243">Obras y Equipamientos</text>
+<rect class="k-b" height="32" rx="6" width="620" x="40" y="260"></rect>
+<text class="k-n" x="58" y="281">6</text><text class="k-t" x="80" y="281">Políticas Sociales, Familia e Igualdad</text>
+<rect class="k-b" height="32" rx="6" width="620" x="40" y="298"></rect>
+<text class="k-n" x="58" y="319">7</text><text class="k-t" x="80" y="319">Políticas de Vivienda</text>
+<text class="k-t" style="font-style:italic;fill:#777;text-anchor:middle" text-anchor="middle" x="350" y="350">Dato actualizable: el alcalde fija el número (máx. 15) y la denominación cada mandato</text>
+</svg>

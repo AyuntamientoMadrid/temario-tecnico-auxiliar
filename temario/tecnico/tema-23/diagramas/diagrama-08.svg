@@ -1,0 +1,24 @@
+<svg aria-label="Un documento XML puede estar bien formado sin ser válido; la validación contra una gramática DTD o XML Schema comprueba si respeta una estructura de datos esperada" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t8{font:700 11px system-ui,sans-serif;fill:#fff}.s8{font:9.5px system-ui,sans-serif;fill:#fff}.l8{font:11px system-ui,sans-serif;fill:#444}.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h8" text-anchor="middle" x="340" y="20">XML: bien formado ≠ válido</text>
+<rect fill="#0055a0" height="70" rx="6" width="230" x="40" y="40"></rect>
+<text class="t8" text-anchor="middle" x="155" y="66">Documento XML</text>
+<text class="s8" text-anchor="middle" x="155" y="86">Etiquetas cerradas, anidamiento correcto</text>
+<text class="s8" text-anchor="middle" x="155" y="102">→ BIEN FORMADO</text>
+<path d="M270 75 L330 75" marker-end="url(#d8)" stroke="#888" stroke-width="3"></path>
+<defs><marker id="d8" markerheight="9" markerwidth="9" orient="auto" refx="4.5" refy="4.5"><path d="M0 0 L9 4.5 L0 9 z" fill="#888"></path></marker></defs>
+<rect fill="#e89822" height="70" rx="6" width="150" x="340" y="40"></rect>
+<text class="t8" text-anchor="middle" x="415" y="68">DTD</text>
+<text class="s8" text-anchor="middle" x="415" y="86">o XML Schema</text>
+<text class="s8" text-anchor="middle" x="415" y="102">(gramática)</text>
+<path d="M415 110 L415 140" marker-end="url(#d8)" stroke="#888" stroke-width="3"></path>
+<rect fill="#2d8659" height="70" rx="6" width="150" x="500" y="40"></rect>
+<text class="t8" text-anchor="middle" x="575" y="68">Validador</text>
+<text class="s8" text-anchor="middle" x="575" y="86">Compara estructura</text>
+<path d="M340 75 L340 140" stroke="#888" stroke-width="0"></path>
+<rect fill="#2d8659" height="70" rx="6" width="380" x="150" y="160"></rect>
+<text class="t8" text-anchor="middle" x="340" y="188">DOCUMENTO VÁLIDO</text>
+<text class="s8" text-anchor="middle" x="340" y="208">Cumple la gramática esperada (tipos, cardinalidad, orden)</text>
+<text style="font:700 11px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="256">XSD: escrito en el propio XML, tipos ricos y espacios de nombres</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="292">[Fuente: XML10; XMLSCHEMA]</text>
+</svg>

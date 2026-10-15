@@ -1,0 +1,15 @@
+<svg aria-label="Organizacion territorial" role="img" viewbox="0 0 720 360" xmlns="http://www.w3.org/2000/svg">
+<style>.d12-state{fill:#0055a0}.d12-ccaa{fill:#3378b9}.d12-prov{fill:#88b2d9}.d12-mun{fill:#d8e3f2}.d12-label{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.d12-mun-label{font:700 12px system-ui,sans-serif;fill:#0055a0;text-anchor:middle}.d12-art{font:10px system-ui,sans-serif;fill:#fff;text-anchor:middle}.d12-mun-art{font:10px system-ui,sans-serif;fill:#0055a0;text-anchor:middle}.d12-line{stroke:#0055a0;stroke-width:2;fill:none}.d12-head{font:700 14px system-ui,sans-serif;fill:#0055a0;text-anchor:middle}.d12-note{font:italic 11px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<text class="d12-head" x="360" y="24">ORGANIZACIÓN TERRITORIAL — CE Título VIII</text>
+<rect class="d12-state" height="44" rx="8" width="200" x="260" y="50"></rect><text class="d12-label" x="360" y="72">ESTADO</text><text class="d12-art" x="360" y="88">art. 137 · principio de autonomía</text>
+<line class="d12-line" x1="360" x2="360" y1="94" y2="130"></line><line class="d12-line" x1="160" x2="560" y1="130" y2="130"></line><line class="d12-line" x1="160" x2="160" y1="130" y2="150"></line><line class="d12-line" x1="360" x2="360" y1="130" y2="150"></line><line class="d12-line" x1="560" x2="560" y1="130" y2="150"></line>
+<rect class="d12-ccaa" height="44" rx="8" width="192" x="64" y="150"></rect><text class="d12-label" style="font-size:12px" x="160" y="172">COMUNIDADES AUTÓNOMAS</text><text class="d12-art" x="160" y="188">arts. 143-158 · Estatutos</text>
+<rect class="d12-prov" height="44" rx="8" width="192" x="264" y="150"></rect><text class="d12-label" style="fill:#0b2f57" x="360" y="172">PROVINCIAS</text><text class="d12-art" style="fill:#0b2f57" x="360" y="188">art. 141 · Diputaciones</text>
+<rect class="d12-mun" height="44" rx="8" stroke="#0055a0" stroke-width="1.5" width="192" x="464" y="150"></rect><text class="d12-mun-label" x="560" y="172">MUNICIPIOS</text><text class="d12-mun-art" x="560" y="188">art. 140 · Ayuntamientos</text>
+<line class="d12-line" x1="560" x2="560" y1="194" y2="220"></line>
+<rect fill="#fff7eb" height="58" rx="8" stroke="#e89822" stroke-width="1.5" width="240" x="440" y="220"></rect><text class="d12-mun-label" style="font-weight:700;fill:#a66410" x="560" y="240">AYUNTAMIENTO DE MADRID</text><text class="d12-note" x="560" y="258">Capital del Estado (art. 5 CE)</text><text class="d12-note" x="560" y="273">Pleno · Alcalde · Junta de Gobierno</text>
+<rect fill="#f5f5f5" height="56" rx="8" stroke="#0055a0" width="600" x="60" y="290"></rect>
+<text class="d12-mun-label" style="font-weight:700" x="360" y="310">PRINCIPIOS DEL TÍTULO VIII</text>
+<text class="d12-note" x="360" y="326">Autonomía (art. 137) · Solidaridad (art. 138) · Igualdad (art. 139)</text>
+<text class="d12-note" style="font-style:italic" x="360" y="342">Será objeto principal del Tema 2 del temario</text>
+</svg>

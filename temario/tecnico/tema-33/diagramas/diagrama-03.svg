@@ -1,0 +1,24 @@
+<svg aria-label="Digitalización de una señal analógica en tres pasos, muestreo cuantificación y codificación, con el teorema del muestreo, las fórmulas de capacidad de Nyquist y de Shannon y el cálculo del canal telefónico digital de 64 kilobits por segundo" role="img" viewbox="0 0 680 330" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 10.5px system-ui,sans-serif;fill:#fff}.s3{font:8.5px system-ui,sans-serif;fill:#fff}.d3{font:9px system-ui,sans-serif;fill:#333}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n3{font:8.5px system-ui,sans-serif;fill:#666}.f3{font:700 11px ui-monospace,monospace;fill:#0055a0}</style>
+<defs><marker id="a3" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#666"></path></marker></defs>
+<text class="h3" text-anchor="middle" x="340" y="20">Del sonido al bit, y cuánto cabe por el canal</text>
+<text class="k3" x="26" y="42">DIGITALIZAR: TRES PASOS EN ESTE ORDEN</text>
+<rect fill="#0055a0" height="40" rx="5" width="200" x="20" y="50"></rect><text class="t3" text-anchor="middle" x="120" y="68">1 · MUESTREO</text><text class="s3" text-anchor="middle" x="120" y="82">tomar valores periódicos</text>
+<rect fill="#0055a0" height="40" rx="5" width="200" x="240" y="50"></rect><text class="t3" text-anchor="middle" x="340" y="68">2 · CUANTIFICACIÓN</text><text class="s3" text-anchor="middle" x="340" y="82">aproximar a niveles</text>
+<rect fill="#0055a0" height="40" rx="5" width="200" x="460" y="50"></rect><text class="t3" text-anchor="middle" x="560" y="68">3 · CODIFICACIÓN</text><text class="s3" text-anchor="middle" x="560" y="82">asignar bits</text>
+<path d="M220 70 L236 70" marker-end="url(#a3)" stroke="#666" stroke-width="1.5"></path>
+<path d="M440 70 L456 70" marker-end="url(#a3)" stroke="#666" stroke-width="1.5"></path>
+<text class="k3" x="26" y="118">LAS TRES FÓRMULAS</text>
+<rect fill="#eef3f8" height="46" rx="5" width="206" x="20" y="126"></rect><text class="f3" text-anchor="middle" x="123" y="144">fm &gt;= 2 · fmax</text><text class="n3" text-anchor="middle" x="123" y="162">teorema del muestreo</text>
+<rect fill="#eef3f8" height="46" rx="5" width="206" x="237" y="126"></rect><text class="f3" text-anchor="middle" x="340" y="144">C = 2·B·log2(M)</text><text class="n3" text-anchor="middle" x="340" y="162">Nyquist: canal SIN ruido</text>
+<rect fill="#fdf3e3" height="46" rx="5" width="206" x="454" y="126"></rect><text class="f3" text-anchor="middle" x="557" y="144">C = B·log2(1+S/N)</text><text class="n3" text-anchor="middle" x="557" y="162">Shannon: canal CON ruido</text>
+<rect fill="#fbeaea" height="24" rx="4" width="640" x="20" y="182"></rect>
+<text class="d3" text-anchor="middle" x="340" y="198">En Shannon, S/N va EN VECES, no en decibelios: 30 dB = 1000 veces · 20 dB = 100 · 10 dB = 10 · 3 dB = 2</text>
+<text class="k3" x="26" y="230">EL CANAL TELEFÓNICO DIGITAL, PASO A PASO</text>
+<rect fill="#2d8659" height="40" rx="4" width="155" x="20" y="238"></rect><text class="t3" text-anchor="middle" x="97" y="256">Voz 300-3400 Hz</text><text class="s3" text-anchor="middle" x="97" y="270">fmax = 3400</text>
+<rect fill="#2d8659" height="40" rx="4" width="155" x="182" y="238"></rect><text class="t3" text-anchor="middle" x="259" y="256">8000 muestras/s</text><text class="s3" text-anchor="middle" x="259" y="270">normalizado</text>
+<rect fill="#2d8659" height="40" rx="4" width="155" x="344" y="238"></rect><text class="t3" text-anchor="middle" x="421" y="256">8 bits/muestra</text><text class="s3" text-anchor="middle" x="421" y="270">256 niveles</text>
+<rect fill="#e89822" height="40" rx="4" width="154" x="506" y="238"></rect><text class="t3" text-anchor="middle" x="583" y="256">64 kbit/s = E0</text><text class="s3" text-anchor="middle" x="583" y="270">32 E0 = E1 2,048 Mbit/s</text>
+<text class="n3" text-anchor="middle" x="340" y="306">Ancho de banda en HERCIOS · velocidad de transmisión en BITS/S · velocidad de modulación en BAUDIOS</text>
+<text class="n3" text-anchor="end" x="670" y="324">[Fuente: NYQUIST; SHANNON; UIT-T G.704]</text>
+</svg>

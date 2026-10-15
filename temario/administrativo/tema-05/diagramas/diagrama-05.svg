@@ -1,0 +1,26 @@
+<svg aria-label="Las cinco situaciones administrativas del funcionario: servicio activo, servicios especiales, servicio en otras administraciones públicas, excedencia y suspensión de funciones" class="svd5" role="img" viewbox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+<style>.svd5 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd5 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd5 .s{font:10.5px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="40" rx="8" width="240" x="230" y="16"></rect>
+<text class="h" x="350" y="41">SITUACIONES (art. 85)</text>
+<rect fill="#e8f5ee" height="80" rx="8" stroke="#2d8659" width="124" x="20" y="90"></rect>
+<text class="t" style="font-weight:700" x="82" y="120">Servicio</text>
+<text class="t" style="font-weight:700" x="82" y="138">activo</text>
+<text class="s" x="82" y="158">todos los derechos</text>
+<rect fill="#e8f0f8" height="80" rx="8" stroke="#0055a0" width="124" x="154" y="90"></rect>
+<text class="t" style="font-weight:700" x="216" y="116">Servicios</text>
+<text class="t" style="font-weight:700" x="216" y="134">especiales</text>
+<text class="s" x="216" y="156">conserva trienios</text>
+<rect fill="#e8f0f8" height="80" rx="8" stroke="#0055a0" width="124" x="288" y="90"></rect>
+<text class="t" style="font-weight:700" x="350" y="116">Servicio en</text>
+<text class="t" style="font-weight:700" x="350" y="134">otras AAPP</text>
+<text class="s" x="350" y="156">en otra Admón.</text>
+<rect fill="#fff5e6" height="80" rx="8" stroke="#e89822" width="124" x="422" y="90"></rect>
+<text class="t" style="font-weight:700" x="484" y="124">Excedencia</text>
+<text class="s" x="484" y="150">5 modalidades</text>
+<rect fill="#fdeaea" height="80" rx="8" stroke="#d13c3c" width="124" x="556" y="90"></rect>
+<text class="t" style="font-weight:700" x="618" y="116">Suspensión</text>
+<text class="t" style="font-weight:700" x="618" y="134">de funciones</text>
+<text class="s" style="font-size:9.5px" x="618" y="156">pierde puesto si &gt;6 m.</text>
+<rect fill="#f4f6f9" height="44" rx="6" stroke="#0055a0" width="460" x="120" y="210"></rect>
+<text class="s" style="font-weight:700;fill:#0055a0" x="350" y="237">El reingreso al servicio activo se regula en el art. 91</text>
+</svg>

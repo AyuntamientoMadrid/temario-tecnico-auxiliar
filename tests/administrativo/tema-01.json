@@ -1,0 +1,2711 @@
+{
+  "tema": 1,
+  "bloque": "administrativo",
+  "titulo": "La Constitución Española (I)",
+  "enunciado_oficial": "La Constitución Española (I): Estructura y contenido. Derechos y deberes fundamentales. Su garantía y suspensión.",
+  "calificacion": "+1 acierto, -1/3 error, 0 en blanco (BOAM 10.032, base 5.2)",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "De acuerdo con la Constitución Española, España se constituye en:",
+      "opciones": {
+        "a": "Un Estado social y democrático de derecho.",
+        "b": "Un Estado democrático de carácter federal.",
+        "c": "Un Estado liberal con separación de poderes."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 1.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 2,
+      "pregunta": "De conformidad con la Constitución Española, la soberanía nacional:",
+      "opciones": {
+        "a": "Reside en las Cortes Generales.",
+        "b": "Reside en el pueblo español.",
+        "c": "Reside en el Rey."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 1.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 3,
+      "pregunta": "Según la Constitución Española, la forma política del Estado español es:",
+      "opciones": {
+        "a": "República parlamentaria.",
+        "b": "Monarquía constitucional.",
+        "c": "Monarquía parlamentaria."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 1.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 4,
+      "pregunta": "De acuerdo con el artículo 1 de la Constitución Española, son valores superiores del ordenamiento jurídico:",
+      "opciones": {
+        "a": "Libertad, igualdad y legalidad.",
+        "b": "Justicia, igualdad y seguridad jurídica.",
+        "c": "Libertad, justicia, igualdad y pluralismo político."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 1.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 5,
+      "pregunta": "De conformidad con el artículo 9.2 de la Constitución Española, corresponde a los poderes públicos promover las condiciones para que:",
+      "opciones": {
+        "a": "La libertad y la seguridad del individuo y de los grupos en que se integra sean plenas y permanentes.",
+        "b": "La libertad y la igualdad del individuo y de los grupos en que se integra sean reales y efectivas.",
+        "c": "La igualdad y la solidaridad entre las Comunidades Autónomas sean reales y efectivas."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 9.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 6,
+      "pregunta": "De acuerdo con la Constitución Española, la igualdad ante la ley implica que:",
+      "opciones": {
+        "a": "No podrá prevalecer discriminación alguna por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social.",
+        "b": "Solo se garantiza en el ámbito judicial.",
+        "c": "Puede limitarse por reglamento."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 14",
+      "explicacion": ""
+    },
+    {
+      "numero": 7,
+      "pregunta": "De conformidad con el artículo 15 de la Constitución Española:",
+      "opciones": {
+        "a": "Se reconoce únicamente la integridad física.",
+        "b": "Puede establecerse la pena de muerte mediante ley en tiempo de paz.",
+        "c": "Se reconoce el derecho a la vida y a la integridad física y moral."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 15",
+      "explicacion": ""
+    },
+    {
+      "numero": 8,
+      "pregunta": "Según la Constitución Española, la libertad ideológica, religiosa y de culto:",
+      "opciones": {
+        "a": "Está sujeta a autorización administrativa.",
+        "b": "Se garantiza sin más limitación que la necesaria para el mantenimiento del orden público protegido por la ley.",
+        "c": "Solo se reconoce a los ciudadanos españoles."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 16.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 9,
+      "pregunta": "De acuerdo con el artículo 17.1 de la Constitución Española, nadie puede ser privado de su libertad:",
+      "opciones": {
+        "a": "Sino en virtud de sentencia judicial firme.",
+        "b": "Sino con la observancia de lo establecido en este artículo y en los casos y en la forma previstos en la ley.",
+        "c": "Sino en los casos y en la forma que determine el Gobierno mediante reglamento."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 17.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 10,
+      "pregunta": "De conformidad con el artículo 18.2 de la Constitución Española, ninguna entrada o registro podrá hacerse en el domicilio:",
+      "opciones": {
+        "a": "Sin autorización del Delegado del Gobierno, salvo en caso de flagrante delito.",
+        "b": "Sin consentimiento del titular o resolución judicial, salvo en caso de flagrante delito.",
+        "c": "Sin consentimiento del titular o resolución judicial, sin excepción alguna."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 18.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 11,
+      "pregunta": "De acuerdo con lo establecido en el artículo 20 de la Constitución Española, la libertad de expresión comprende:",
+      "opciones": {
+        "a": "Exclusivamente el derecho a expresar opiniones por escrito.",
+        "b": "El derecho a expresar y difundir libremente los pensamientos, ideas y opiniones mediante la palabra, el escrito o cualquier otro medio de reproducción.",
+        "c": "El derecho a difundir libremente información sin límite alguno."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 20.1.a",
+      "explicacion": ""
+    },
+    {
+      "numero": 12,
+      "pregunta": "Según la Constitución Española, el derecho de reunión pacífica y sin armas:",
+      "opciones": {
+        "a": "Requerirá autorización previa en toda concentración en lugar de tránsito público.",
+        "b": "No necesitará autorización previa, si bien en los casos de reuniones en lugares de tránsito público y manifestaciones se dará comunicación previa a la autoridad.",
+        "c": "Podrá prohibirse sin motivación cuando la autoridad lo considere conveniente."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 21",
+      "explicacion": ""
+    },
+    {
+      "numero": 13,
+      "pregunta": "De conformidad con el artículo 22.3 de la Constitución Española, las asociaciones constituidas al amparo de este artículo deberán inscribirse en un registro:",
+      "opciones": {
+        "a": "A los solos efectos de publicidad.",
+        "b": "Como requisito para su constitución.",
+        "c": "Previa autorización administrativa."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 22.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 14,
+      "pregunta": "Según la Constitución Española, el derecho a la educación:",
+      "opciones": {
+        "a": "Se configura como principio rector de la política social y económica.",
+        "b": "Se reconoce en el artículo 27, garantizándose la libertad de enseñanza.",
+        "c": "Solo comprende la enseñanza obligatoria impartida por los poderes públicos."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 27.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 15,
+      "pregunta": "De conformidad con la Constitución Española, el derecho de huelga:",
+      "opciones": {
+        "a": "Se reconoce exclusivamente a los trabajadores del sector privado.",
+        "b": "Se reconoce a los trabajadores para la defensa de sus intereses, regulándose por ley el ejercicio de este derecho.",
+        "c": "Solo podrá ejercerse previa autorización administrativa."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 28.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 16,
+      "pregunta": "De acuerdo con la Constitución Española, la protección social, económica y jurídica de la familia:",
+      "opciones": {
+        "a": "Constituye un derecho fundamental por lo que cualquier ciudadano podrá recabar su tutela ante los Tribunales ordinarios por un procedimiento basado en los principios de preferencia y sumariedad.",
+        "b": "Constituye uno de los principios rectores de la política social y económica, cuya protección corresponde asegurar a los poderes públicos.",
+        "c": "Podrá ser objeto de recurso de amparo ante el Tribunal Constitucional en los mismos términos que los derechos reconocidos en los artículos 14 a 29."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 39.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 17,
+      "pregunta": "De conformidad con lo establecido en la Constitución Española, los poderes públicos asegurarán la protección integral de los hijos:",
+      "opciones": {
+        "a": "Siempre que tengan nacionalidad española y residan legalmente en territorio nacional.",
+        "b": "Exclusivamente cuando se trate de hijos matrimoniales, en los términos que establezca la ley.",
+        "c": "Iguales estos ante la ley con independencia de su filiación, y de las madres, cualquiera que sea su estado civil."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 39.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 18,
+      "pregunta": "Según dispone la Constitución Española, el derecho a la protección de la salud:",
+      "opciones": {
+        "a": "Forma parte de los derechos fundamentales y libertades públicas de la Sección 1.ª del Capítulo II del Título I.",
+        "b": "Se reconoce en el marco de los principios rectores de la política social y económica, correspondiendo a los poderes públicos organizar y tutelar la salud pública.",
+        "c": "Solo podrá hacerse efectivo a través del recurso de amparo ante el Tribunal Constitucional."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 43",
+      "explicacion": ""
+    },
+    {
+      "numero": 19,
+      "pregunta": "De acuerdo con lo establecido en la Constitución Española, el derecho a disfrutar de una vivienda digna y adecuada:",
+      "opciones": {
+        "a": "Tiene la consideración de derecho fundamental de aplicación directa e inmediata ante la jurisdicción ordinaria.",
+        "b": "Se reconoce como principio rector de la política social y económica, debiendo los poderes públicos promover las condiciones necesarias y establecer las normas pertinentes para hacerlo efectivo.",
+        "c": "Solo podrá ser desarrollado mediante ley orgánica por afectar al contenido esencial de los derechos fundamentales."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 47",
+      "explicacion": ""
+    },
+    {
+      "numero": 20,
+      "pregunta": "De conformidad con el artículo 53 de la Constitución Española, el reconocimiento, el respeto y la protección de los principios reconocidos en el Capítulo III:",
+      "opciones": {
+        "a": "Informarán la legislación positiva, la práctica judicial y la actuación de los poderes públicos.",
+        "b": "Serán directamente exigibles ante los tribunales ordinarios mediante procedimiento preferente y sumario.",
+        "c": "Podrán ser tutelados mediante recurso de amparo ante el Tribunal Constitucional."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 53.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 21,
+      "pregunta": "Según la Constitución Española, el derecho a disfrutar de un medio ambiente adecuado para el desarrollo de la persona:",
+      "opciones": {
+        "a": "Se configura como derecho fundamental susceptible de recurso de amparo.",
+        "b": "Se reconoce junto con el deber de conservarlo, en el marco de los principios rectores de la política social y económica.",
+        "c": "Tiene carácter exclusivamente programático y no vincula a los poderes públicos."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 45.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 22,
+      "pregunta": "De acuerdo con la Constitución Española, los poderes públicos promoverán las condiciones favorables para:",
+      "opciones": {
+        "a": "La igualdad exclusivamente formal entre los ciudadanos, con independencia de las circunstancias sociales y económicas.",
+        "b": "La planificación centralizada de todos los sectores productivos de la economía.",
+        "c": "El progreso social y económico y para una distribución de la renta regional y personal más equitativa, en el marco de una política de estabilidad económica."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 40.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 23,
+      "pregunta": "De conformidad con lo establecido en la Constitución Española, los principios rectores de la política social y económica:",
+      "opciones": {
+        "a": "Carecen de toda eficacia jurídica hasta su desarrollo reglamentario.",
+        "b": "Solo podrán ser alegados ante la jurisdicción ordinaria de acuerdo con lo que dispongan las leyes que los desarrollen.",
+        "c": "Tienen la misma protección que los derechos fundamentales reconocidos en la Sección 1.ª del Capítulo II del Título I."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 53.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 24,
+      "pregunta": "Según la Constitución Española, los poderes públicos mantendrán un régimen público de Seguridad Social para:",
+      "opciones": {
+        "a": "Los trabajadores por cuenta ajena exclusivamente, en los términos fijados reglamentariamente.",
+        "b": "Todos los ciudadanos, que garantice la asistencia y prestaciones sociales suficientes ante situaciones de necesidad, especialmente en caso de desempleo.",
+        "c": "Los ciudadanos españoles, con exclusión de los extranjeros cualquiera que sea su situación administrativa."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 41",
+      "explicacion": ""
+    },
+    {
+      "numero": 25,
+      "pregunta": "De conformidad con la Constitución Española, los poderes públicos garantizarán, mediante pensiones adecuadas y periódicamente actualizadas:",
+      "opciones": {
+        "a": "La igualdad retributiva entre todos los pensionistas, con independencia de su situación.",
+        "b": "La percepción de una pensión idéntica para todos los ciudadanos al alcanzar la jubilación.",
+        "c": "La suficiencia económica a los ciudadanos durante la tercera edad."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 50",
+      "explicacion": ""
+    },
+    {
+      "numero": 26,
+      "pregunta": "De conformidad con lo establecido en el artículo 55 de la Constitución Española, podrá ser suspendido cuando se acuerde la declaración del estado de excepción o de sitio en los términos previstos en la Constitución:",
+      "opciones": {
+        "a": "El derecho a la educación.",
+        "b": "El derecho a elegir libremente su residencia y a circular por el territorio nacional.",
+        "c": "El derecho a contraer matrimonio con plena igualdad jurídica."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 55.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 27,
+      "pregunta": "Según la Constitución Española, la suspensión de determinados derechos y libertades en los estados de excepción o sitio podrá afectar, entre otros, al derecho:",
+      "opciones": {
+        "a": "A la libertad y seguridad.",
+        "b": "A la igualdad ante la ley.",
+        "c": "A la objeción de conciencia."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 55.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 28,
+      "pregunta": "De acuerdo con la Constitución Española, podrá ser suspendido en los estados excepcionales previstos en la misma:",
+      "opciones": {
+        "a": "El derecho a la producción y creación literaria, artística, científica y técnica en todo caso.",
+        "b": "El derecho a la tutela judicial efectiva.",
+        "c": "El derecho a la inviolabilidad del domicilio."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 55.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 29,
+      "pregunta": "De conformidad con el artículo 55 de la Constitución Española, la suspensión individual de derechos podrá acordarse:",
+      "opciones": {
+        "a": "Respecto de cualquier persona sometida a investigación penal, en los casos y con la extensión que determine el juez.",
+        "b": "En relación con las investigaciones correspondientes a la actuación de bandas armadas o elementos terroristas, en los términos previstos en la ley.",
+        "c": "Exclusivamente mediante acuerdo del Gobierno, sin necesidad de control judicial posterior."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 55.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 30,
+      "pregunta": "Según la Constitución Española, en caso de suspensión individual de derechos:",
+      "opciones": {
+        "a": "Quedan excluidos en todo caso el control parlamentario y judicial.",
+        "b": "La utilización injustificada o abusiva de las facultades reconocidas en la ley producirá responsabilidad penal, como violación de los derechos y libertades reconocidos por las leyes.",
+        "c": "No será necesaria cobertura legal expresa al tratarse de una medida excepcional."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 55.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 31,
+      "pregunta": "De acuerdo con la Constitución Española, el texto constitucional se estructura en:",
+      "opciones": {
+        "a": "Un preámbulo, un título preliminar y diez títulos, además de disposiciones adicionales, transitorias, derogatoria y final.",
+        "b": "Un preámbulo y nueve títulos, además de disposiciones transitorias y finales.",
+        "c": "Un preámbulo, un título preliminar y once títulos, sin disposiciones adicionales."
+      },
+      "correcta": "a",
+      "referencia": "CE, estructura del texto",
+      "explicacion": ""
+    },
+    {
+      "numero": 32,
+      "pregunta": "De conformidad con la Constitución Española, el Título I comprende:",
+      "opciones": {
+        "a": "Los artículos 10 a 55.",
+        "b": "Los artículos 11 a 55.",
+        "c": "Los artículos 10 a 54."
+      },
+      "correcta": "a",
+      "referencia": "CE, Título I",
+      "explicacion": ""
+    },
+    {
+      "numero": 33,
+      "pregunta": "Según la estructura de la Constitución Española, el Capítulo II del Título I se divide en:",
+      "opciones": {
+        "a": "Tres secciones: de los españoles y extranjeros, de los principios rectores y de las garantías constitucionales.",
+        "b": "Dos secciones: de los derechos fundamentales y de los principios rectores de la política social y económica.",
+        "c": "Dos secciones: de los derechos fundamentales y de las libertades públicas, y de los derechos y deberes de los ciudadanos."
+      },
+      "correcta": "c",
+      "referencia": "CE, Título I, Capítulo II",
+      "explicacion": ""
+    },
+    {
+      "numero": 34,
+      "pregunta": "De acuerdo con la Constitución Española, el Capítulo IV del Título I regula:",
+      "opciones": {
+        "a": "La suspensión de los derechos y libertades.",
+        "b": "Las garantías de las libertades y derechos fundamentales.",
+        "c": "Los principios rectores de la política social y económica."
+      },
+      "correcta": "b",
+      "referencia": "CE, Título I, Capítulo IV",
+      "explicacion": ""
+    },
+    {
+      "numero": 35,
+      "pregunta": "De conformidad con la Constitución Española, el Capítulo V del Título I regula:",
+      "opciones": {
+        "a": "La suspensión de los derechos y libertades.",
+        "b": "Las garantías de las libertades y derechos fundamentales.",
+        "c": "La organización territorial del Estado."
+      },
+      "correcta": "a",
+      "referencia": "CE, Título I, Capítulo V",
+      "explicacion": ""
+    },
+    {
+      "numero": 36,
+      "pregunta": "Según la Constitución Española, el Título II se refiere a:",
+      "opciones": {
+        "a": "Las Cortes Generales.",
+        "b": "La Corona.",
+        "c": "El Gobierno y la Administración."
+      },
+      "correcta": "b",
+      "referencia": "CE, Título II",
+      "explicacion": ""
+    },
+    {
+      "numero": 37,
+      "pregunta": "De acuerdo con la Constitución Española, el Título III regula:",
+      "opciones": {
+        "a": "El Poder Judicial.",
+        "b": "Las relaciones entre el Gobierno y las Cortes Generales.",
+        "c": "Las Cortes Generales."
+      },
+      "correcta": "c",
+      "referencia": "CE, Título III",
+      "explicacion": ""
+    },
+    {
+      "numero": 38,
+      "pregunta": "De conformidad con la Constitución Española, el Título VIII regula:",
+      "opciones": {
+        "a": "La Economía y Hacienda.",
+        "b": "La Organización Territorial del Estado.",
+        "c": "El Tribunal Constitucional."
+      },
+      "correcta": "b",
+      "referencia": "CE, Título VIII",
+      "explicacion": ""
+    },
+    {
+      "numero": 39,
+      "pregunta": "Según la Constitución Española, el Título IX regula:",
+      "opciones": {
+        "a": "La reforma constitucional.",
+        "b": "El Tribunal Constitucional.",
+        "c": "Las Comunidades Autónomas."
+      },
+      "correcta": "b",
+      "referencia": "CE, Título IX",
+      "explicacion": ""
+    },
+    {
+      "numero": 40,
+      "pregunta": "De acuerdo con la Constitución Española, el Título X regula:",
+      "opciones": {
+        "a": "La reforma constitucional.",
+        "b": "El Poder Judicial.",
+        "c": "Las relaciones entre el Gobierno y las Cortes Generales."
+      },
+      "correcta": "a",
+      "referencia": "CE, Título X",
+      "explicacion": ""
+    },
+    {
+      "numero": 41,
+      "pregunta": "En el capítulo primero del Título VIII de la Constitución Española, se establece como uno de los principios generales de la Organización Territorial del Estado:",
+      "opciones": {
+        "a": "No podrán existir en ningún caso diferencias entre los Estatutos de las distintas Comunidades Autónomas.",
+        "b": "Los derechos y obligaciones de los españoles en cualquier parte del territorio del Estado vendrán establecidos en su caso en los Estatutos de las distintas Comunidades Autónomas.",
+        "c": "El Estado se organiza territorialmente en municipios, en provincias y en las Comunidades Autónomas que se constituyan. Todas estas entidades gozan de autonomía para la gestión de sus respectivos intereses."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 137",
+      "explicacion": ""
+    },
+    {
+      "numero": 42,
+      "pregunta": "De conformidad con la Constitución Española, las diferencias entre los Estatutos de las distintas Comunidades Autónomas:",
+      "opciones": {
+        "a": "No podrán implicar, en ningún caso, privilegios económicos o sociales.",
+        "b": "Determinarán necesariamente diferencias en los derechos y obligaciones de los españoles según su territorio de residencia.",
+        "c": "Solo podrán afectar a materias tributarias y de organización administrativa."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 138.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 43,
+      "pregunta": "Según el artículo 139.1 de la Constitución Española, todos los españoles tienen:",
+      "opciones": {
+        "a": "Los derechos y obligaciones que establezca el Estatuto de su Comunidad Autónoma de residencia.",
+        "b": "Los mismos derechos en cualquier parte del territorio del Estado y las obligaciones que establezca cada Comunidad Autónoma.",
+        "c": "Los mismos derechos y obligaciones en cualquier parte del territorio del Estado."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 139.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 44,
+      "pregunta": "De acuerdo con la Constitución Española, las Cortes Generales representan:",
+      "opciones": {
+        "a": "Al Gobierno de la Nación.",
+        "b": "Al pueblo español.",
+        "c": "A las Comunidades Autónomas en igualdad de representación."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 66.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 45,
+      "pregunta": "Según la Constitución Española, las Cortes Generales están formadas por:",
+      "opciones": {
+        "a": "El Congreso de los Diputados, el Senado y el Gobierno.",
+        "b": "El Congreso de los Diputados y el Senado.",
+        "c": "El Congreso, el Senado y la Corona."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 66.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 46,
+      "pregunta": "De conformidad con la Constitución Española, los proyectos de reforma constitucional deberán ser aprobados:",
+      "opciones": {
+        "a": "Por mayoría simple del Congreso de los Diputados y mayoría absoluta del Senado.",
+        "b": "Por mayoría absoluta de ambas Cámaras en todo caso.",
+        "c": "Por mayoría de tres quintos de cada una de las Cámaras, en el procedimiento ordinario."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 167.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 47,
+      "pregunta": "Según la Constitución Española, si no hubiera acuerdo entre ambas Cámaras en el procedimiento ordinario de reforma:",
+      "opciones": {
+        "a": "Quedará definitivamente rechazada la reforma constitucional.",
+        "b": "Se intentará obtenerlo mediante la creación de una Comisión de composición paritaria de Diputados y Senadores.",
+        "c": "Corresponderá al Gobierno decidir el texto definitivo de la reforma."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 167.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 48,
+      "pregunta": "De conformidad con la Constitución Española, aprobada la reforma por las Cortes Generales, será sometida a referéndum para su ratificación cuando así lo soliciten:",
+      "opciones": {
+        "a": "Una décima parte de los miembros de cualquiera de las Cámaras.",
+        "b": "Una quinta parte de los miembros del Congreso de los Diputados.",
+        "c": "El Presidente del Gobierno, en todo caso."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 167.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 49,
+      "pregunta": "Según la Constitución Española, se utilizará el procedimiento agravado de reforma cuando se proponga:",
+      "opciones": {
+        "a": "Cualquier modificación de los principios rectores de la política social y económica.",
+        "b": "Cualquier reforma del Título VIII relativa a la organización territorial.",
+        "c": "La revisión total de la Constitución o una parcial que afecte al Título Preliminar, al Capítulo segundo, Sección primera, del Título I, o al Título II."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 168.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 50,
+      "pregunta": "De acuerdo con la Constitución Española, el procedimiento agravado exige:",
+      "opciones": {
+        "a": "Aprobación del principio por mayoría de dos tercios de cada Cámara y disolución inmediata de las Cortes.",
+        "b": "Aprobación por mayoría absoluta de ambas Cámaras y referéndum facultativo.",
+        "c": "Aprobación por mayoría simple del Congreso, mayoría absoluta del Senado y ratificación por ley orgánica."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 168.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 51,
+      "pregunta": "De conformidad con la Constitución Española, las Cámaras elegidas tras la disolución en el procedimiento agravado deberán:",
+      "opciones": {
+        "a": "Ratificar el texto por mayoría absoluta de cada Cámara.",
+        "b": "Limitarse a convocar referéndum sin necesidad de nueva votación.",
+        "c": "Ratificar la decisión y proceder al estudio del nuevo texto constitucional, que deberá ser aprobado por mayoría de dos tercios de ambas Cámaras."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 168.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 52,
+      "pregunta": "Según la Constitución Española, aprobada la reforma por las Cortes Generales en el procedimiento agravado:",
+      "opciones": {
+        "a": "El referéndum será potestativo.",
+        "b": "Será sometida a referéndum para su ratificación.",
+        "c": "La reforma entrará automáticamente en vigor tras su publicación."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 168.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 53,
+      "pregunta": "La reforma constitucional de 1992 tuvo por objeto:",
+      "opciones": {
+        "a": "Introducir el principio de estabilidad presupuestaria en el artículo 135.",
+        "b": "Modificar el artículo 13.2 para hacer posible la ratificación del Tratado de la Unión Europea, en lo relativo al derecho de sufragio pasivo en las elecciones municipales.",
+        "c": "Sustituir en el artículo 49 la terminología relativa a las personas con discapacidad."
+      },
+      "correcta": "b",
+      "referencia": "Reforma del art. 13.2 CE de 27-8-1992, exposición de motivos",
+      "explicacion": ""
+    },
+    {
+      "numero": 54,
+      "pregunta": "La reforma constitucional de 2011 modificó:",
+      "opciones": {
+        "a": "El artículo 13.2, en relación con el derecho de sufragio de ciudadanos de la Unión Europea en elecciones municipales.",
+        "b": "El artículo 135, introduciendo el principio de estabilidad presupuestaria.",
+        "c": "El artículo 49, en materia de derechos de las personas con discapacidad."
+      },
+      "correcta": "b",
+      "referencia": "Reforma del art. 135 CE de 27-9-2011",
+      "explicacion": ""
+    },
+    {
+      "numero": 55,
+      "pregunta": "La reforma constitucional de 2024 afectó al artículo:",
+      "opciones": {
+        "a": "49.",
+        "b": "135.",
+        "c": "13.2."
+      },
+      "correcta": "a",
+      "referencia": "Reforma del art. 49 CE de 15-2-2024",
+      "explicacion": ""
+    },
+    {
+      "numero": 56,
+      "pregunta": "De acuerdo con el contenido de la reforma constitucional de 2024:",
+      "opciones": {
+        "a": "Se estableció la prioridad absoluta del pago de la deuda pública.",
+        "b": "Se sustituyó la terminología anterior por la expresión \"personas con discapacidad\".",
+        "c": "Se reconoció el derecho de sufragio pasivo a los ciudadanos de la Unión Europea en elecciones municipales."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 49",
+      "explicacion": ""
+    },
+    {
+      "numero": 57,
+      "pregunta": "La reforma constitucional de 19 de mayo de 2026 modificó el apartado 3 del artículo 69 de la Constitución Española, a los efectos de que:",
+      "opciones": {
+        "a": "La isla de Formentera elija dos senadores propios.",
+        "b": "La isla de Formentera elija un senador propio.",
+        "c": "La isla de Ibiza deje de elegir un senador propio."
+      },
+      "correcta": "b",
+      "referencia": "Reforma del art. 69.3 CE de 19-5-2026",
+      "explicacion": ""
+    },
+    {
+      "numero": 58,
+      "pregunta": "De acuerdo con el artículo 10.1 de la Constitución Española, la dignidad de la persona, los derechos inviolables que le son inherentes, el libre desarrollo de la personalidad, el respeto a la ley y a los derechos de los demás son:",
+      "opciones": {
+        "a": "Valores superiores del ordenamiento jurídico.",
+        "b": "Fundamento del orden político y de la paz social.",
+        "c": "Principios rectores de la política social y económica."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 10.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 59,
+      "pregunta": "De conformidad con el artículo 10.2 de la Constitución Española, las normas relativas a los derechos fundamentales y a las libertades que la Constitución reconoce se interpretarán de conformidad con:",
+      "opciones": {
+        "a": "Las leyes orgánicas que los desarrollen y la jurisprudencia del Tribunal Supremo.",
+        "b": "Exclusivamente los tratados internacionales ratificados por España con posterioridad a 1978.",
+        "c": "La Declaración Universal de Derechos Humanos y los tratados y acuerdos internacionales sobre las mismas materias ratificados por España."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 10.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 60,
+      "pregunta": "Según el artículo 7 de la Constitución Española, los sindicatos de trabajadores y las asociaciones empresariales:",
+      "opciones": {
+        "a": "Expresan el pluralismo político y concurren a la formación y manifestación de la voluntad popular.",
+        "b": "Contribuyen a la defensa y promoción de los intereses económicos y sociales que les son propios.",
+        "c": "Requieren autorización administrativa para su creación y el ejercicio de su actividad."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 7",
+      "explicacion": ""
+    },
+    {
+      "numero": 61,
+      "pregunta": "De acuerdo con el artículo 8.1 de la Constitución Española, las Fuerzas Armadas están constituidas por:",
+      "opciones": {
+        "a": "El Ejército de Tierra, la Armada y el Ejército del Aire.",
+        "b": "El Ejército de Tierra, la Armada, el Ejército del Aire y la Guardia Civil.",
+        "c": "El Ejército de Tierra, la Armada, el Ejército del Aire y las Fuerzas y Cuerpos de Seguridad del Estado."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 8.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 62,
+      "pregunta": "Según su disposición final, la Constitución Española entró en vigor:",
+      "opciones": {
+        "a": "A los veinte días de la publicación de su texto oficial en el Boletín Oficial del Estado.",
+        "b": "El mismo día de la publicación de su texto oficial en el Boletín Oficial del Estado.",
+        "c": "El mismo día de su ratificación por el pueblo español en referéndum."
+      },
+      "correcta": "b",
+      "referencia": "CE, disposición final",
+      "explicacion": ""
+    },
+    {
+      "numero": 63,
+      "pregunta": "De acuerdo con el apartado 1 de la disposición derogatoria de la Constitución Española, queda derogada:",
+      "opciones": {
+        "a": "Únicamente el Fuero de los Españoles, de 17 de julio de 1945.",
+        "b": "Ninguna ley anterior, al limitarse a derogar cuantas disposiciones se opongan a la Constitución.",
+        "c": "La Ley 1/1977, de 4 de enero, para la Reforma Política."
+      },
+      "correcta": "c",
+      "referencia": "CE, disposición derogatoria, apartado 1",
+      "explicacion": ""
+    },
+    {
+      "numero": 64,
+      "pregunta": "De conformidad con el apartado 3 de la disposición derogatoria de la Constitución Española, quedan derogadas:",
+      "opciones": {
+        "a": "Cuantas disposiciones se opongan a lo establecido en esta Constitución.",
+        "b": "Las disposiciones de rango reglamentario anteriores a 1977.",
+        "c": "Las leyes que no sean convalidadas por las Cortes Generales en el plazo de un año."
+      },
+      "correcta": "a",
+      "referencia": "CE, disposición derogatoria, apartado 3",
+      "explicacion": ""
+    },
+    {
+      "numero": 65,
+      "pregunta": "Según el artículo 3.2 de la Constitución Española, las demás lenguas españolas serán también oficiales:",
+      "opciones": {
+        "a": "En todo el territorio del Estado, junto con el castellano.",
+        "b": "En las respectivas Comunidades Autónomas de acuerdo con sus Estatutos.",
+        "c": "En las Comunidades Autónomas en que así lo acuerde una ley orgánica."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 3.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 66,
+      "pregunta": "De conformidad con la Constitución Española, los derechos y libertades reconocidos en los artículos 14 a 29 podrán ser tutelados, en su caso:",
+      "opciones": {
+        "a": "Exclusivamente mediante recurso de amparo ante el Tribunal Constitucional.",
+        "b": "Solo mediante recurso contencioso-administrativo ante la jurisdicción ordinaria.",
+        "c": "Ante los tribunales ordinarios por un procedimiento basado en los principios de preferencia y sumariedad y, en su caso, mediante recurso de amparo ante el Tribunal Constitucional."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 53.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 67,
+      "pregunta": "De acuerdo con la Constitución Española, el ejercicio de los derechos y libertades del Capítulo II del Título I:",
+      "opciones": {
+        "a": "Solo podrá regularse por ley, que en todo caso deberá respetar su contenido esencial.",
+        "b": "Podrá regularse por reglamento siempre que exista habilitación legal previa.",
+        "c": "Corresponde exclusivamente a la jurisprudencia constitucional."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 53.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 68,
+      "pregunta": "Según el artículo 20.5 de la Constitución Española, el secuestro de publicaciones, grabaciones y otros medios de información:",
+      "opciones": {
+        "a": "Podrá acordarlo la autoridad gubernativa por razones de orden público.",
+        "b": "Solo podrá acordarse en virtud de resolución judicial.",
+        "c": "Está prohibido en todo caso."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 20.5",
+      "explicacion": ""
+    },
+    {
+      "numero": 69,
+      "pregunta": "De conformidad con el artículo 22.4 de la Constitución Española, las asociaciones solo podrán ser disueltas o suspendidas en sus actividades:",
+      "opciones": {
+        "a": "En virtud de resolución motivada de la Delegación del Gobierno.",
+        "b": "En virtud de resolución judicial o, en caso de urgencia, de resolución administrativa motivada.",
+        "c": "En virtud de resolución judicial motivada."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 22.4",
+      "explicacion": ""
+    },
+    {
+      "numero": 70,
+      "pregunta": "De acuerdo con el artículo 17.2 de la Constitución Española, en todo caso el detenido deberá ser puesto en libertad o a disposición de la autoridad judicial en el plazo máximo de:",
+      "opciones": {
+        "a": "Veinticuatro horas.",
+        "b": "Setenta y dos horas.",
+        "c": "Cinco días."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 17.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 71,
+      "pregunta": "Según el artículo 25.3 de la Constitución Española, la Administración civil:",
+      "opciones": {
+        "a": "Podrá imponer sanciones privativas de libertad en caso de reincidencia.",
+        "b": "No podrá imponer sanciones que, directa o subsidiariamente, impliquen privación de libertad.",
+        "c": "Podrá imponer arresto domiciliario por infracciones muy graves."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 25.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 72,
+      "pregunta": "Según la Constitución Española, el derecho y deber de defender a España:",
+      "opciones": {
+        "a": "Se regula en el artículo 30.",
+        "b": "Se regula en el artículo 31.",
+        "c": "Se integra en los principios rectores del Capítulo III del Título I."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 30.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 73,
+      "pregunta": "De acuerdo con la Constitución Española, todos contribuirán al sostenimiento de los gastos públicos:",
+      "opciones": {
+        "a": "Según establezca libremente el Gobierno en la Ley de Presupuestos de cada ejercicio.",
+        "b": "En proporción idéntica para todos los ciudadanos, con independencia de su capacidad económica.",
+        "c": "De acuerdo con un sistema tributario inspirado en los principios de igualdad y progresividad que, en ningún caso, tendrá alcance confiscatorio."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 31.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 74,
+      "pregunta": "De conformidad con la Constitución Española, el derecho al trabajo y a la libre elección de profesión u oficio se reconoce en:",
+      "opciones": {
+        "a": "El artículo 35.",
+        "b": "El artículo 30.",
+        "c": "El artículo 43."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 35.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 75,
+      "pregunta": "Según el artículo 30.2 de la Constitución Española, la ley fijará las obligaciones militares de los españoles y regulará, con las debidas garantías:",
+      "opciones": {
+        "a": "La objeción de conciencia únicamente en tiempo de guerra.",
+        "b": "El servicio civil obligatorio para el cumplimiento de fines de interés general.",
+        "c": "La objeción de conciencia, así como las demás causas de exención del servicio militar obligatorio."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 30.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 76,
+      "pregunta": "De acuerdo con el artículo 1.2 de la Constitución Española, la soberanía nacional reside en el pueblo español:",
+      "opciones": {
+        "a": "Que la ejerce únicamente a través de las Cortes Generales.",
+        "b": "Del que emanan los poderes del Estado.",
+        "c": "Que la comparte con la Corona y el Gobierno."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 1.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 77,
+      "pregunta": "De conformidad con la Constitución Española, la forma política del Estado español es:",
+      "opciones": {
+        "a": "La monarquía constitucional.",
+        "b": "La monarquía parlamentaria.",
+        "c": "La república social y democrática."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 1.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 78,
+      "pregunta": "Según la Constitución Española, la justicia:",
+      "opciones": {
+        "a": "Emana del pueblo y se administra en nombre del Rey por Jueces y Magistrados integrantes del poder judicial.",
+        "b": "Emana de la soberanía popular y se administra por el Tribunal Constitucional.",
+        "c": "Emana del Rey y se administra por los jueces bajo la dirección del Gobierno."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 117.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 79,
+      "pregunta": "De acuerdo con la Constitución Española, el Tribunal Constitucional:",
+      "opciones": {
+        "a": "Forma parte del Poder Judicial.",
+        "b": "Se regula en el Título IX de la Constitución.",
+        "c": "Depende orgánicamente del Consejo General del Poder Judicial."
+      },
+      "correcta": "b",
+      "referencia": "CE, Título IX",
+      "explicacion": ""
+    },
+    {
+      "numero": 80,
+      "pregunta": "De conformidad con la Constitución Española, el Poder Judicial se regula en el Título:",
+      "opciones": {
+        "a": "V.",
+        "b": "VI.",
+        "c": "IX."
+      },
+      "correcta": "b",
+      "referencia": "CE, Título VI",
+      "explicacion": ""
+    },
+    {
+      "numero": 81,
+      "pregunta": "Según la Constitución Española, la economía y hacienda se regulan en el Título:",
+      "opciones": {
+        "a": "VII.",
+        "b": "VIII.",
+        "c": "VI."
+      },
+      "correcta": "a",
+      "referencia": "CE, Título VII",
+      "explicacion": ""
+    },
+    {
+      "numero": 82,
+      "pregunta": "De acuerdo con la Constitución Española, la organización territorial del Estado se regula en el Título:",
+      "opciones": {
+        "a": "VII.",
+        "b": "VIII.",
+        "c": "IX."
+      },
+      "correcta": "b",
+      "referencia": "CE, Título VIII",
+      "explicacion": ""
+    },
+    {
+      "numero": 83,
+      "pregunta": "De conformidad con la Constitución Española, el Título VIII se divide en:",
+      "opciones": {
+        "a": "Municipios, provincias y regiones.",
+        "b": "Organización básica, entidades locales y régimen autonómico.",
+        "c": "Principios generales, Administración local y Comunidades Autónomas."
+      },
+      "correcta": "c",
+      "referencia": "CE, Título VIII",
+      "explicacion": ""
+    },
+    {
+      "numero": 84,
+      "pregunta": "Según el artículo 148.2 de la Constitución Española, transcurridos cinco años, y mediante la reforma de sus Estatutos, las Comunidades Autónomas podrán ampliar sucesivamente sus competencias:",
+      "opciones": {
+        "a": "Dentro del marco establecido en el artículo 149.",
+        "b": "En las materias que les delegue el Gobierno mediante real decreto.",
+        "c": "Dentro del marco establecido en el artículo 147."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 148.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 85,
+      "pregunta": "De acuerdo con la Constitución Española, el Estado podrá transferir o delegar en las Comunidades Autónomas facultades correspondientes a materia de titularidad estatal:",
+      "opciones": {
+        "a": "Mediante reglamento aprobado por el Gobierno.",
+        "b": "Mediante acuerdo bilateral sin necesidad de norma con rango de ley.",
+        "c": "Mediante ley orgánica."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 150.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 86,
+      "pregunta": "De conformidad con la Constitución Española, las Cortes Generales, mediante ley orgánica, podrán, por motivos de interés nacional:",
+      "opciones": {
+        "a": "Autorizar la federación de Comunidades Autónomas.",
+        "b": "Autorizar la constitución de una comunidad autónoma cuando su ámbito territorial no supere el de una provincia y no reúna las condiciones del apartado 1 del artículo 143.",
+        "c": "Autorizar la constitución de una comunidad autónoma por agrupación de municipios de distintas provincias."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 144.a",
+      "explicacion": ""
+    },
+    {
+      "numero": 87,
+      "pregunta": "Según la Constitución Española, las Comunidades Autónomas:",
+      "opciones": {
+        "a": "Podrán federarse entre sí mediante acuerdo aprobado por sus respectivos Parlamentos.",
+        "b": "No podrán federarse en ningún caso.",
+        "c": "Solo podrán federarse previa autorización del Senado."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 145.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 88,
+      "pregunta": "De acuerdo con la Constitución Española, el Estado social y democrático de derecho propugna como valores superiores del ordenamiento jurídico:",
+      "opciones": {
+        "a": "La libertad, la seguridad y la unidad territorial.",
+        "b": "La justicia, la legalidad y la eficacia administrativa.",
+        "c": "La libertad, la justicia, la igualdad y el pluralismo político."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 1.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 89,
+      "pregunta": "De conformidad con la Constitución Española, los ciudadanos y los poderes públicos:",
+      "opciones": {
+        "a": "Están sujetos a la Constitución y al resto del ordenamiento jurídico.",
+        "b": "Están sujetos exclusivamente a la Constitución, pero no al resto del ordenamiento jurídico.",
+        "c": "Solo quedan vinculados por la ley cuando esta desarrolle expresamente un precepto constitucional."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 9.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 90,
+      "pregunta": "De acuerdo con la fórmula de promulgación de la Constitución Española, se manda a todos los españoles, particulares y autoridades, que guarden y hagan guardar esta Constitución como:",
+      "opciones": {
+        "a": "Ley orgánica de especial relevancia institucional.",
+        "b": "Norma programática cuya eficacia depende del desarrollo legislativo posterior.",
+        "c": "Norma fundamental del Estado."
+      },
+      "correcta": "c",
+      "referencia": "CE, fórmula de promulgación",
+      "explicacion": ""
+    },
+    {
+      "numero": 91,
+      "pregunta": "De conformidad con los datos de aprobación de la Constitución Española de 1978, fue ratificada por el pueblo español en referéndum el:",
+      "opciones": {
+        "a": "31 de octubre de 1978.",
+        "b": "6 de diciembre de 1978.",
+        "c": "29 de diciembre de 1978."
+      },
+      "correcta": "b",
+      "referencia": "Real Decreto 2560/1978, art. 2",
+      "explicacion": ""
+    },
+    {
+      "numero": 92,
+      "pregunta": "Según la Constitución Española, la sanción y promulgación del texto constitucional por S.M. el Rey tuvo lugar:",
+      "opciones": {
+        "a": "El 31 de octubre de 1978.",
+        "b": "El 27 de diciembre de 1978.",
+        "c": "El 6 de diciembre de 1978."
+      },
+      "correcta": "b",
+      "referencia": "CE, fórmula de promulgación",
+      "explicacion": ""
+    },
+    {
+      "numero": 93,
+      "pregunta": "De acuerdo con los datos oficiales, la Constitución Española fue publicada en el Boletín Oficial del Estado:",
+      "opciones": {
+        "a": "El 29 de diciembre de 1978, entrando en vigor el mismo día de su publicación.",
+        "b": "El 1 de enero de 1979, tras un periodo de vacatio legis.",
+        "c": "El 27 de diciembre de 1978, fecha de su sanción por el Rey."
+      },
+      "correcta": "a",
+      "referencia": "BOE núm. 311, de 29-12-1978; CE, disposición final",
+      "explicacion": ""
+    },
+    {
+      "numero": 94,
+      "pregunta": "La Constitución Española fue aprobada por las Cortes en sesiones plenarias del Congreso de los Diputados y del Senado celebradas:",
+      "opciones": {
+        "a": "El 27 de diciembre de 1978.",
+        "b": "El 6 de diciembre de 1978.",
+        "c": "El 31 de octubre de 1978."
+      },
+      "correcta": "c",
+      "referencia": "Real Decreto 2560/1978, art. 1",
+      "explicacion": ""
+    },
+    {
+      "numero": 95,
+      "pregunta": "Según la Constitución Española, el número total de artículos del texto constitucional es:",
+      "opciones": {
+        "a": "169.",
+        "b": "170.",
+        "c": "168."
+      },
+      "correcta": "a",
+      "referencia": "CE, estructura del texto",
+      "explicacion": ""
+    },
+    {
+      "numero": 96,
+      "pregunta": "De acuerdo con el artículo 2 de la Constitución Española, esta se fundamenta en:",
+      "opciones": {
+        "a": "El derecho a la autodeterminación de las nacionalidades históricas.",
+        "b": "La soberanía compartida entre el Estado y las Comunidades Autónomas.",
+        "c": "La indisoluble unidad de la Nación española, patria común e indivisible de todos los españoles, y reconoce y garantiza el derecho a la autonomía de las nacionalidades y regiones que la integran y la solidaridad entre todas ellas."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 2",
+      "explicacion": ""
+    },
+    {
+      "numero": 97,
+      "pregunta": "De conformidad con el artículo 3 de la Constitución Española, el castellano:",
+      "opciones": {
+        "a": "Es la lengua española oficial del Estado, y todos los españoles tienen el deber de conocerla y el derecho a usarla.",
+        "b": "Es una lengua cooficial junto a las demás lenguas españolas.",
+        "c": "Solo es oficial en los territorios donde no exista otra lengua propia."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 98,
+      "pregunta": "Según la Constitución Española, los partidos políticos:",
+      "opciones": {
+        "a": "Tienen personalidad jurídica pública y dependen orgánicamente del Estado.",
+        "b": "Expresan el pluralismo político, concurren a la formación y manifestación de la voluntad popular y son instrumento fundamental para la participación política.",
+        "c": "Solo podrán operar con autorización expresa del Ministerio del Interior."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 6",
+      "explicacion": ""
+    },
+    {
+      "numero": 99,
+      "pregunta": "De acuerdo con la Constitución Española, la bandera de España:",
+      "opciones": {
+        "a": "Está formada por tres franjas horizontales, roja, amarilla y roja, siendo la amarilla de doble anchura que cada una de las rojas.",
+        "b": "Está formada por tres franjas verticales de igual anchura.",
+        "c": "Puede ser modificada mediante ley ordinaria."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 4.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 100,
+      "pregunta": "De conformidad con la Constitución Española, la capital del Estado:",
+      "opciones": {
+        "a": "Se determinará mediante ley orgánica.",
+        "b": "Se establece por acuerdo de las Cortes Generales cada cuatro años.",
+        "c": "Es la villa de Madrid."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 5",
+      "explicacion": ""
+    },
+    {
+      "numero": 101,
+      "pregunta": "De acuerdo con el artículo 15 de la Constitución Española, queda abolida la pena de muerte:",
+      "opciones": {
+        "a": "Salvo lo que puedan disponer las leyes penales militares para tiempos de guerra.",
+        "b": "En todo caso, sin excepción alguna, incluido el tiempo de guerra.",
+        "c": "Únicamente respecto a los delitos comunes cometidos en tiempos de paz."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 15",
+      "explicacion": "Esta es la redacción literal del artículo 15 CE. No obstante, la Ley Orgánica 11/1995 abolió la pena de muerte también en tiempo de guerra."
+    },
+    {
+      "numero": 102,
+      "pregunta": "Según el artículo 16 de la Constitución Española, ninguna confesión:",
+      "opciones": {
+        "a": "Podrá disfrutar de personalidad jurídica.",
+        "b": "Podrá impartir enseñanza religiosa en centros públicos.",
+        "c": "Tendrá carácter estatal."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 16.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 103,
+      "pregunta": "De conformidad con el artículo 18.3 de la Constitución Española, se garantiza el secreto de las comunicaciones y, en especial, de las postales, telegráficas y telefónicas:",
+      "opciones": {
+        "a": "Salvo resolución judicial.",
+        "b": "Salvo autorización administrativa del superior jerárquico.",
+        "c": "Salvo en las comunicaciones realizadas fuera del territorio nacional."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 18.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 104,
+      "pregunta": "De acuerdo con el artículo 23 de la Constitución Española, los ciudadanos tienen derecho:",
+      "opciones": {
+        "a": "Exclusivamente a votar en elecciones generales.",
+        "b": "A participar en referendos cuando así lo decida el Gobierno.",
+        "c": "A participar en los asuntos públicos directamente o por medio de representantes, libremente elegidos en elecciones periódicas por sufragio universal."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 23.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 105,
+      "pregunta": "De conformidad con el artículo 24 de la Constitución Española, toda persona tiene derecho:",
+      "opciones": {
+        "a": "A obtener la tutela efectiva de jueces y tribunales en el ejercicio de sus derechos e intereses legítimos, sin que en ningún caso pueda producirse indefensión.",
+        "b": "A la defensa gratuita en todo procedimiento, con independencia de su capacidad económica.",
+        "c": "A resolver sus controversias exclusivamente por medios alternativos al judicial."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 24.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 106,
+      "pregunta": "Según el artículo 25 de la Constitución Española, nadie puede ser condenado o sancionado:",
+      "opciones": {
+        "a": "Sin sentencia firme, aunque se haya aplicado la legislación vigente en el momento del hecho.",
+        "b": "Por infracciones administrativas en ningún caso.",
+        "c": "Por acciones u omisiones que en el momento de producirse no constituyan delito, falta o infracción administrativa, según la legislación vigente en aquel momento."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 25.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 107,
+      "pregunta": "De acuerdo con el artículo 28.1 de la Constitución Española, la libertad de sindicación:",
+      "opciones": {
+        "a": "Es absoluta y no admite limitaciones.",
+        "b": "Se reconoce, pudiendo la ley limitar o exceptuar su ejercicio a las Fuerzas o Institutos armados o a los demás Cuerpos sometidos a disciplina militar.",
+        "c": "No se reconoce a los funcionarios públicos."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 28.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 108,
+      "pregunta": "De conformidad con el artículo 29 de la Constitución Española, el derecho de petición:",
+      "opciones": {
+        "a": "Solo podrá ejercerse ante el Gobierno.",
+        "b": "Requiere autorización previa de la autoridad competente.",
+        "c": "Se reconoce a todos los españoles, individual y colectivamente, por escrito, en la forma y con los efectos que determine la ley."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 29.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 109,
+      "pregunta": "Según el artículo 19 de la Constitución Española, los españoles tienen derecho:",
+      "opciones": {
+        "a": "A elegir libremente su residencia y a circular por el territorio nacional, así como a entrar y salir libremente de España en los términos que la ley establezca.",
+        "b": "A entrar y salir de España solo con autorización administrativa.",
+        "c": "A circular únicamente en el interior de su Comunidad Autónoma."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 19",
+      "explicacion": ""
+    },
+    {
+      "numero": 110,
+      "pregunta": "De acuerdo con el artículo 26 de la Constitución Española:",
+      "opciones": {
+        "a": "Se prohíben los Tribunales de Honor en el ámbito de la Administración civil, salvo en las organizaciones profesionales.",
+        "b": "Los Tribunales de Honor se reconocen con carácter general.",
+        "c": "Se prohíben los Tribunales de Honor en el ámbito de la Administración civil y de las organizaciones profesionales."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 26",
+      "explicacion": ""
+    },
+    {
+      "numero": 111,
+      "pregunta": "De conformidad con el artículo 53.1 de la Constitución Española, los derechos y libertades del Capítulo II:",
+      "opciones": {
+        "a": "Vinculan a todos los poderes públicos.",
+        "b": "Vinculan exclusivamente a la Administración General del Estado.",
+        "c": "Vinculan solo a la jurisdicción ordinaria."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 53.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 112,
+      "pregunta": "Según el artículo 54 de la Constitución Española, el Defensor del Pueblo:",
+      "opciones": {
+        "a": "Es el alto comisionado de las Cortes Generales, designado por estas para la defensa de los derechos comprendidos en el Título I.",
+        "b": "Es un órgano dependiente del Gobierno.",
+        "c": "Es el intérprete supremo de la Constitución."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 54",
+      "explicacion": ""
+    },
+    {
+      "numero": 113,
+      "pregunta": "De acuerdo con el artículo 81.2 de la Constitución Española, la aprobación, modificación o derogación de las leyes orgánicas exigirá:",
+      "opciones": {
+        "a": "Mayoría de tres quintos del Congreso, en una votación final sobre el conjunto del proyecto.",
+        "b": "Mayoría absoluta de cada una de las Cámaras, en una votación final sobre el conjunto del proyecto.",
+        "c": "Mayoría absoluta del Congreso, en una votación final sobre el conjunto del proyecto."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 81.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 114,
+      "pregunta": "De conformidad con la Constitución Española, cualquier ciudadano podrá recabar la tutela de las libertades y derechos reconocidos en el artículo 14 y en la Sección 1.ª del Capítulo II ante los tribunales ordinarios:",
+      "opciones": {
+        "a": "Por un procedimiento basado en los principios de preferencia y sumariedad.",
+        "b": "Por el procedimiento ordinario contencioso-administrativo.",
+        "c": "Exclusivamente mediante recurso de amparo constitucional."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 53.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 115,
+      "pregunta": "Según la Constitución Española, el recurso de amparo ante el Tribunal Constitucional podrá interponerse:",
+      "opciones": {
+        "a": "En defensa de cualquier precepto constitucional.",
+        "b": "Exclusivamente en defensa de los principios rectores del Capítulo III.",
+        "c": "En defensa de los derechos del artículo 14, los de la Sección 1.ª del Capítulo II y la objeción de conciencia del artículo 30."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 53.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 116,
+      "pregunta": "De acuerdo con el artículo 166 de la Constitución Española, la iniciativa de reforma constitucional se ejercerá:",
+      "opciones": {
+        "a": "En los términos previstos en los apartados 1 y 2 del artículo 87.",
+        "b": "En los términos previstos en los apartados 1, 2 y 3 del artículo 87.",
+        "c": "En exclusiva por el Gobierno, previo acuerdo del Consejo de Ministros."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 166",
+      "explicacion": ""
+    },
+    {
+      "numero": 117,
+      "pregunta": "De conformidad con el artículo 169 de la Constitución Española, no podrá iniciarse la reforma constitucional:",
+      "opciones": {
+        "a": "Durante los tres primeros años de cada legislatura.",
+        "b": "Cuando las Cortes Generales estén disueltas por cualquier motivo.",
+        "c": "En tiempo de guerra ni durante la vigencia de los estados de alarma, excepción o sitio."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 169",
+      "explicacion": ""
+    },
+    {
+      "numero": 118,
+      "pregunta": "Según la Constitución Española, en el procedimiento ordinario de reforma, de no lograrse la aprobación mediante el procedimiento del apartado 1 del artículo 167, y siempre que el texto hubiere obtenido el voto favorable de la mayoría absoluta del Senado:",
+      "opciones": {
+        "a": "El Congreso, por mayoría de dos tercios, podrá aprobar la reforma.",
+        "b": "La reforma quedará definitivamente rechazada.",
+        "c": "El Rey decidirá por decreto la aprobación o rechazo del texto."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 167.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 119,
+      "pregunta": "De acuerdo con la Constitución Española, el referéndum en el procedimiento ordinario de reforma será convocado:",
+      "opciones": {
+        "a": "De forma obligatoria en todo caso.",
+        "b": "Solo si lo solicita el Presidente del Gobierno.",
+        "c": "Cuando lo soliciten, dentro de los quince días siguientes a su aprobación, una décima parte de los miembros de cualquiera de las Cámaras."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 167.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 120,
+      "pregunta": "De conformidad con la Constitución Española, el procedimiento agravado de reforma se aplica cuando la reforma afecte:",
+      "opciones": {
+        "a": "Al Título Preliminar, al Capítulo II Sección 1.ª del Título I o al Título II.",
+        "b": "Al Título VIII relativo a la organización territorial.",
+        "c": "A cualquier precepto del Título I."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 168.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 121,
+      "pregunta": "De acuerdo con el artículo 116.2 de la Constitución Española, el estado de alarma será declarado:",
+      "opciones": {
+        "a": "Por la mayoría absoluta del Congreso de los Diputados, a propuesta exclusiva del Gobierno.",
+        "b": "Por el Gobierno mediante decreto acordado en Consejo de Ministros, previa autorización del Congreso, por un plazo máximo de treinta días.",
+        "c": "Por el Gobierno mediante decreto acordado en Consejo de Ministros por un plazo máximo de quince días, dando cuenta al Congreso de los Diputados."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 116.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 122,
+      "pregunta": "De acuerdo con la Constitución Española, la declaración del estado de excepción y de sitio se regulan en el artículo:",
+      "opciones": {
+        "a": "116 de la Constitución Española.",
+        "b": "55 de la Constitución Española.",
+        "c": "86 de la Constitución Española."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 116",
+      "explicacion": ""
+    },
+    {
+      "numero": 123,
+      "pregunta": "De conformidad con el artículo 55.2 de la Constitución Española, la suspensión individual de derechos:",
+      "opciones": {
+        "a": "Corresponde en exclusiva al Gobierno sin control parlamentario.",
+        "b": "No requiere cobertura legal expresa.",
+        "c": "Requiere la necesaria intervención judicial y el adecuado control parlamentario."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 55.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 124,
+      "pregunta": "Según la Constitución Española, la utilización injustificada o abusiva de las facultades reconocidas en la ley orgánica prevista en el artículo 55.2:",
+      "opciones": {
+        "a": "Producirá responsabilidad penal, como violación de los derechos y libertades reconocidos por las leyes.",
+        "b": "Solo dará lugar a responsabilidad disciplinaria.",
+        "c": "Carece de consecuencias jurídicas al tratarse de medidas excepcionales."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 55.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 125,
+      "pregunta": "De acuerdo con la Constitución Española, podrá suspenderse en los estados de excepción y sitio el derecho reconocido en el artículo:",
+      "opciones": {
+        "a": "14 CE, relativo a la igualdad ante la ley.",
+        "b": "19 CE, relativo a la libertad de residencia y circulación.",
+        "c": "24 CE, relativo a la tutela judicial efectiva."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 55.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 126,
+      "pregunta": "De conformidad con el artículo 9.1 de la Constitución Española:",
+      "opciones": {
+        "a": "Solo los poderes públicos quedan vinculados por la Constitución.",
+        "b": "Los ciudadanos quedan vinculados únicamente por las leyes que conozcan expresamente.",
+        "c": "Los ciudadanos y los poderes públicos están sujetos a la Constitución y al resto del ordenamiento jurídico."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 9.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 127,
+      "pregunta": "Según el artículo 9.3 de la Constitución Española, se garantiza:",
+      "opciones": {
+        "a": "El principio de legalidad, la jerarquía normativa, la publicidad de las normas, la irretroactividad de las disposiciones sancionadoras no favorables o restrictivas de derechos individuales, la seguridad jurídica, la responsabilidad y la interdicción de la arbitrariedad de los poderes públicos.",
+        "b": "Únicamente la jerarquía normativa y la publicidad de las normas.",
+        "c": "La retroactividad de todas las normas sancionadoras."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 9.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 128,
+      "pregunta": "De acuerdo con el artículo 96.1 de la Constitución Española, los tratados internacionales válidamente celebrados:",
+      "opciones": {
+        "a": "Requieren siempre ley orgánica para incorporarse al ordenamiento.",
+        "b": "No tienen efecto interno hasta su transposición por reglamento.",
+        "c": "Una vez publicados oficialmente en España, formarán parte del ordenamiento interno."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 96.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 129,
+      "pregunta": "De conformidad con la Constitución Española, las materias relativas al desarrollo de los derechos fundamentales y de las libertades públicas se regulan mediante:",
+      "opciones": {
+        "a": "Ley orgánica.",
+        "b": "Ley ordinaria.",
+        "c": "Real decreto-ley."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 81.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 130,
+      "pregunta": "Según la Constitución Española, las disposiciones legislativas provisionales adoptadas por el Gobierno en caso de extraordinaria y urgente necesidad:",
+      "opciones": {
+        "a": "Podrán regular cualquier materia, incluidos los derechos fundamentales.",
+        "b": "Solo podrán aprobarse previa autorización del Senado.",
+        "c": "Tomarán la forma de Decretos-leyes y no podrán afectar al ordenamiento de las instituciones básicas del Estado, a los derechos, deberes y libertades de los ciudadanos regulados en el Título I, al régimen de las Comunidades Autónomas ni al Derecho electoral general."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 86.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 131,
+      "pregunta": "De acuerdo con la Constitución Española, la forma política del Estado se define en el artículo:",
+      "opciones": {
+        "a": "1.3 de la Constitución Española.",
+        "b": "56 de la Constitución Española.",
+        "c": "97 de la Constitución Española."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 1.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 132,
+      "pregunta": "De conformidad con el artículo 56 de la Constitución Española, el Rey es:",
+      "opciones": {
+        "a": "El Jefe del Gobierno de la Nación.",
+        "b": "El Presidente del Consejo General del Poder Judicial.",
+        "c": "El Jefe del Estado, símbolo de su unidad y permanencia."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 56.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 133,
+      "pregunta": "Según la Constitución Española, las Cortes Generales ejercen:",
+      "opciones": {
+        "a": "La potestad legislativa del Estado, aprueban sus Presupuestos, controlan la acción del Gobierno y tienen las demás competencias que les atribuya la Constitución.",
+        "b": "La potestad reglamentaria en toda su extensión.",
+        "c": "La potestad judicial en materia constitucional."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 66.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 134,
+      "pregunta": "De acuerdo con la Constitución Española, el Gobierno dirige la política interior y exterior, la Administración civil y militar y la defensa del Estado, ejerciendo:",
+      "opciones": {
+        "a": "La potestad legislativa en su totalidad.",
+        "b": "La potestad jurisdiccional en las materias que le reserva la ley.",
+        "c": "La función ejecutiva y la potestad reglamentaria de acuerdo con la Constitución y las leyes."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 97",
+      "explicacion": ""
+    },
+    {
+      "numero": 135,
+      "pregunta": "De conformidad con la Constitución Española, la justicia emana del pueblo y se administra en nombre del Rey por:",
+      "opciones": {
+        "a": "Jueces y Magistrados integrantes del poder judicial, independientes, inamovibles, responsables y sometidos únicamente al imperio de la ley.",
+        "b": "El Tribunal Constitucional y el Defensor del Pueblo.",
+        "c": "Los funcionarios del cuerpo de letrados del Consejo General del Poder Judicial."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 117.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 136,
+      "pregunta": "Según la Constitución Española, los municipios gozan:",
+      "opciones": {
+        "a": "De soberanía propia en sus materias.",
+        "b": "De potestad legislativa en materias locales.",
+        "c": "De autonomía para la gestión de sus respectivos intereses."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 137",
+      "explicacion": ""
+    },
+    {
+      "numero": 137,
+      "pregunta": "De acuerdo con el artículo 141 de la Constitución Española, la provincia:",
+      "opciones": {
+        "a": "Es una entidad local con personalidad jurídica propia, determinada por la agrupación de municipios y división territorial para el cumplimiento de las actividades del Estado.",
+        "b": "Es una mera división territorial sin personalidad jurídica.",
+        "c": "No forma parte de la organización territorial del Estado."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 141.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 138,
+      "pregunta": "De conformidad con la Constitución Española, el gobierno y la administración autónoma de las provincias estarán encomendados a:",
+      "opciones": {
+        "a": "Diputaciones u otras Corporaciones de carácter representativo.",
+        "b": "Las Delegaciones del Gobierno.",
+        "c": "Los ayuntamientos de la capital de provincia."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 141.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 139,
+      "pregunta": "Según el artículo 143.1 de la Constitución Española, podrán acceder a su autogobierno y constituirse en Comunidades Autónomas:",
+      "opciones": {
+        "a": "Cualquier provincia por decisión unilateral de su Diputación.",
+        "b": "Los municipios con más de 500.000 habitantes.",
+        "c": "Las provincias limítrofes con características históricas, culturales y económicas comunes, los territorios insulares y las provincias con entidad regional histórica."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 143.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 140,
+      "pregunta": "De acuerdo con la Constitución Española, los Estatutos de Autonomía son:",
+      "opciones": {
+        "a": "La norma institucional básica de cada Comunidad Autónoma, que el Estado reconoce y ampara como parte integrante de su ordenamiento jurídico.",
+        "b": "Reglamentos de desarrollo de la legislación estatal.",
+        "c": "Normas de rango inferior a la ley ordinaria estatal."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 147.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 141,
+      "pregunta": "De conformidad con el artículo 49.2 de la Constitución Española, en la redacción dada por la reforma de 2024, se atenderán particularmente las necesidades específicas de:",
+      "opciones": {
+        "a": "Las personas mayores con discapacidad.",
+        "b": "Las personas con discapacidad que residan en el medio rural.",
+        "c": "Las mujeres y los menores con discapacidad."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 49.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 142,
+      "pregunta": "Según la Constitución Española, la mención literal introducida por la reforma de 2024 en el artículo 49 se refiere a:",
+      "opciones": {
+        "a": "La estabilidad presupuestaria.",
+        "b": "Las personas con discapacidad.",
+        "c": "El sufragio de ciudadanos UE."
+      },
+      "correcta": "b",
+      "referencia": "CE, art. 49",
+      "explicacion": ""
+    },
+    {
+      "numero": 143,
+      "pregunta": "De acuerdo con la Constitución Española, el artículo 135 establece:",
+      "opciones": {
+        "a": "La prohibición absoluta de endeudamiento público.",
+        "b": "La prioridad del gasto social frente al pago de la deuda.",
+        "c": "Que el Estado y las Comunidades Autónomas no podrán incurrir en un déficit estructural que supere los márgenes establecidos, en su caso, por la Unión Europea para sus Estados Miembros."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 135.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 144,
+      "pregunta": "De conformidad con la Constitución Española, la reforma de 1992 permitió que ciudadanos de otros Estados miembros de la Unión Europea pudieran ser:",
+      "opciones": {
+        "a": "Electores y elegibles en las elecciones municipales.",
+        "b": "Electores y elegibles en cualquier elección general.",
+        "c": "Solo electores, pero no elegibles."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 13.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 145,
+      "pregunta": "Según el Preámbulo de la Constitución Española, la Nación española proclama su voluntad de consolidar un Estado de Derecho que asegure:",
+      "opciones": {
+        "a": "La primacía de las Cortes Generales sobre los demás poderes del Estado.",
+        "b": "El imperio de la ley como expresión de la voluntad de las Cortes Generales.",
+        "c": "El imperio de la ley como expresión de la voluntad popular."
+      },
+      "correcta": "c",
+      "referencia": "CE, Preámbulo",
+      "explicacion": ""
+    },
+    {
+      "numero": 146,
+      "pregunta": "De acuerdo con el artículo 23.2 de la Constitución Española, los ciudadanos tienen derecho a acceder a las funciones y cargos públicos:",
+      "opciones": {
+        "a": "En condiciones de igualdad, con los requisitos que señalen las leyes.",
+        "b": "En condiciones de igualdad, sin más requisitos que la nacionalidad española.",
+        "c": "Con los requisitos que determine cada Administración mediante reglamento."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 23.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 147,
+      "pregunta": "De conformidad con la Constitución Española, la mayoría exigida para la aprobación de una reforma constitucional por el procedimiento ordinario es:",
+      "opciones": {
+        "a": "Mayoría absoluta de cada Cámara.",
+        "b": "Mayoría simple de las Cortes Generales reunidas en sesión conjunta.",
+        "c": "Tres quintos de cada una de las Cámaras o, de no lograrse y siempre que el texto hubiere obtenido el voto favorable de la mayoría absoluta del Senado, dos tercios del Congreso."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 167.1 y 2",
+      "explicacion": ""
+    },
+    {
+      "numero": 148,
+      "pregunta": "Según el artículo 116.3 de la Constitución Española, la duración del estado de excepción:",
+      "opciones": {
+        "a": "No podrá exceder de treinta días, prorrogables por otro plazo igual, con los mismos requisitos.",
+        "b": "No podrá exceder de quince días, prorrogables con autorización del Congreso.",
+        "c": "No podrá exceder de sesenta días, sin posibilidad de prórroga."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 116.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 149,
+      "pregunta": "De acuerdo con la Constitución Española, corresponde al Tribunal Constitucional conocer:",
+      "opciones": {
+        "a": "De los recursos de casación en materia civil y penal.",
+        "b": "De los conflictos laborales que afecten a la Administración.",
+        "c": "Del recurso de inconstitucionalidad contra leyes y disposiciones normativas con fuerza de ley, del recurso de amparo por violación de los derechos y libertades referidos en el artículo 53.2 y de los conflictos de competencia entre el Estado y las Comunidades Autónomas."
+      },
+      "correcta": "c",
+      "referencia": "CE, art. 161.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 150,
+      "pregunta": "De conformidad con la Constitución Española, el conjunto de los principios rectores del Capítulo III del Título I:",
+      "opciones": {
+        "a": "Informan la legislación positiva, la práctica judicial y la actuación de los poderes públicos, pudiendo ser alegados ante la jurisdicción ordinaria solo de acuerdo con lo que dispongan las leyes que los desarrollen.",
+        "b": "Tienen la misma protección que los derechos fundamentales de la Sección 1.ª del Capítulo II.",
+        "c": "Carecen de valor normativo al tratarse de meras declaraciones políticas."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 53.3",
+      "explicacion": ""
+    }
+  ],
+  "casos": [
+    {
+      "caso": 1,
+      "titulo": "Plataforma digital de participación ciudadana",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "De acuerdo con la Constitución Española, el derecho a expresar y difundir libremente pensamientos, ideas y opiniones mediante cualquier medio de reproducción:",
+          "opciones": {
+            "a": "Requerirá autorización administrativa previa cuando se ejerza a través de plataformas digitales de titularidad pública.",
+            "b": "Se reconoce en el artículo 20 y no puede restringirse mediante ningún tipo de censura previa.",
+            "c": "Solo podrá ejercerse libremente en medios de comunicación privados."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 2,
+          "pregunta": "De conformidad con la Constitución Española, el derecho de reunión en el entorno descrito:",
+          "opciones": {
+            "a": "Requerirá autorización previa en todo caso cuando tenga lugar en espacios virtuales gestionados por la Administración.",
+            "b": "Se reconoce como derecho fundamental, sin necesidad de autorización previa, sin perjuicio de la comunicación previa en los casos previstos legalmente.",
+            "c": "Solo se reconoce para reuniones físicas en lugares de tránsito público."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 3,
+          "pregunta": "De acuerdo con el artículo 53 de la Constitución Española, el ejercicio de los derechos fundamentales:",
+          "opciones": {
+            "a": "Podrá regularse mediante reglamento siempre que exista habilitación legal suficiente.",
+            "b": "Solo podrá regularse por ley que, en todo caso, deberá respetar su contenido esencial.",
+            "c": "No podrá ser objeto de regulación normativa en ningún caso."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 4,
+          "pregunta": "De conformidad con la Constitución Española, la tutela de los derechos fundamentales ante los tribunales ordinarios:",
+          "opciones": {
+            "a": "Se realizara mediante procedimiento ordinario en todos los casos.",
+            "b": "Se realizara mediante un procedimiento basado en los principios de preferencia y sumariedad.",
+            "c": "Solo podrá ejercerse mediante recurso de amparo."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 5,
+          "pregunta": "Según la Constitución Española, el recurso de amparo ante el Tribunal Constitucional:",
+          "opciones": {
+            "a": "Podrá interponerse en defensa de cualquier derecho reconocido en la Constitución.",
+            "b": "Protege el principio de igualdad del artículo 14, los derechos de la Sección 1.ª del Capítulo II (artículos 15 a 29) y la objeción de conciencia del artículo 30.",
+            "c": "Se limita exclusivamente a la protección de los principios rectores."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 6,
+          "pregunta": "De conformidad con la Constitución Española, el derecho a la protección de la salud:",
+          "opciones": {
+            "a": "Se configura como derecho fundamental de aplicación directa.",
+            "b": "Forma parte de los principios rectores de la política social y económica, correspondiendo a los poderes públicos su organización y tutela.",
+            "c": "Carece de reconocimiento constitucional expreso."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 7,
+          "pregunta": "De acuerdo con la Constitución Española, el derecho a disfrutar de una vivienda digna y adecuada:",
+          "opciones": {
+            "a": "Tiene la consideración de derecho fundamental susceptible de recurso de amparo.",
+            "b": "Se reconoce como principio rector, debiendo los poderes públicos promover las condiciones necesarias.",
+            "c": "Solo podrá ser ejercido en los términos que establezcan los reglamentos municipales."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 8,
+          "pregunta": "De conformidad con el artículo 53 CE, el reconocimiento, el respeto y la protección de los principios rectores:",
+          "opciones": {
+            "a": "Informaran la legislación positiva, la práctica judicial y la actuación de los poderes públicos.",
+            "b": "Tendrán la misma protección que los derechos fundamentales.",
+            "c": "Podrán ser invocados directamente mediante recurso de amparo."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 9,
+          "pregunta": "De acuerdo con el artículo 55 CE, podrá ser suspendido cuando se acuerde la declaración del estado de excepción o de sitio:",
+          "opciones": {
+            "a": "El derecho a la igualdad ante la ley.",
+            "b": "El derecho a elegir libremente su residencia y a circular por el territorio nacional.",
+            "c": "El derecho a la educación."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 10,
+          "pregunta": "De conformidad con la Constitución Española, la suspensión individual de determinados derechos:",
+          "opciones": {
+            "a": "Podrá acordarse en cualquier procedimiento penal sin limitación material.",
+            "b": "Podrá acordarse en relación con las investigaciones correspondientes a la actuación de bandas armadas o elementos terroristas, en los términos previstos en la ley.",
+            "c": "No está permitida en ningún caso en el ordenamiento constitucional."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        }
+      ]
+    },
+    {
+      "caso": 2,
+      "titulo": "Ordenanza sobre plataforma digital municipal",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "De acuerdo con la Constitución Española, la exigencia de autorización previa para publicar contenidos en una plataforma pública municipal:",
+          "opciones": {
+            "a": "Es compatible con el derecho a la libertad de expresión cuando se trate de medios digitales.",
+            "b": "Supone una forma de censura previa prohibida con carácter general por la Constitución.",
+            "c": "Es obligatoria en todos los servicios públicos digitales."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 2,
+          "pregunta": "De conformidad con el artículo 20 de la Constitución Española, el ejercicio de la libertad de expresión:",
+          "opciones": {
+            "a": "Es ilimitado en cualquier circunstancia.",
+            "b": "No puede restringirse mediante censura previa, sin perjuicio de los límites establecidos en la propia Constitución.",
+            "c": "Solo puede ejercerse en medios de comunicación autorizados."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 3,
+          "pregunta": "De acuerdo con la Constitución Española, una limitación general del uso de la plataforma por motivos de orden público:",
+          "opciones": {
+            "a": "Solo será posible en los casos y en la forma previstos por la ley.",
+            "b": "Podrá establecerse libremente mediante reglamento municipal.",
+            "c": "No requiere cobertura normativa expresa."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 4,
+          "pregunta": "De conformidad con el artículo 53 de la Constitución Española, los derechos fundamentales:",
+          "opciones": {
+            "a": "Podrán ser regulados por normas reglamentarias siempre que no afecten a su contenido esencial.",
+            "b": "Solo podrán ser regulados por ley, que en todo caso deberá respetar su contenido esencial.",
+            "c": "No pueden ser objeto de regulación en ningún caso."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 5,
+          "pregunta": "Según la Constitución Española, la tutela de los derechos fundamentales ante los tribunales ordinarios:",
+          "opciones": {
+            "a": "Se realizara mediante procedimiento ordinario en todo caso.",
+            "b": "Se realizara mediante un procedimiento basado en los principios de preferencia y sumariedad.",
+            "c": "Solo podrá ejercerse mediante recurso de amparo."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 6,
+          "pregunta": "De acuerdo con la Constitución Española, la inclusión en la plataforma de programas municipales de acceso a la vivienda:",
+          "opciones": {
+            "a": "Afecta a un derecho fundamental directamente exigible ante los tribunales.",
+            "b": "Se refiere a un principio rector de la política social y económica.",
+            "c": "Implica un derecho susceptible de recurso de amparo."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 7,
+          "pregunta": "De conformidad con la Constitución Española, el derecho a la protección de la salud:",
+          "opciones": {
+            "a": "Tiene la misma protección que los derechos fundamentales.",
+            "b": "Es un principio rector cuya efectividad corresponde a los poderes públicos.",
+            "c": "Es un derecho no reconocido constitucionalmente."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 8,
+          "pregunta": "De acuerdo con el artículo 53 CE, los principios rectores:",
+          "opciones": {
+            "a": "Podrán ser invocados directamente mediante recurso de amparo.",
+            "b": "Informaran la legislación positiva, la práctica judicial y la actuación de los poderes públicos.",
+            "c": "Tendrán protección reforzada equivalente a los derechos fundamentales."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 9,
+          "pregunta": "De conformidad con la Constitución Española, los principios rectores:",
+          "opciones": {
+            "a": "No podrán ser alegados ante la jurisdicción ordinaria en ningún caso.",
+            "b": "Solo podrán ser alegados ante la jurisdicción ordinaria de acuerdo con lo que dispongan las leyes que los desarrollen.",
+            "c": "Podrán alegarse directamente sin necesidad de desarrollo legal."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 10,
+          "pregunta": "En relación con una posible situación excepcional, de acuerdo con el artículo 55 CE:",
+          "opciones": {
+            "a": "Podrán suspenderse todos los derechos fundamentales sin excepción.",
+            "b": "Podrán suspenderse determinados derechos en los casos de estado de excepción o de sitio, en los términos previstos en la Constitución.",
+            "c": "No podrá suspenderse ningún derecho en ningún caso."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        }
+      ]
+    },
+    {
+      "caso": 3,
+      "titulo": "Infraestructura digital con IA y videovigilancia",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "De conformidad con la Constitución Española, la monitorización sistemática de las comunicaciones de los usuarios de la plataforma:",
+          "opciones": {
+            "a": "Podrá realizarse libremente por tratarse de un servicio público digital.",
+            "b": "Afecta al derecho al secreto de las comunicaciones, cuya vulneración requiere resolución judicial, salvo en los casos previstos por la ley.",
+            "c": "Solo afecta a la protección de datos, no a derechos fundamentales."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 2,
+          "pregunta": "De acuerdo con la Constitución Española, el almacenamiento y análisis de metadatos de comunicaciones electrónicas:",
+          "opciones": {
+            "a": "No tiene relevancia constitucional si no se accede al contenido.",
+            "b": "Puede incidir en el derecho al secreto de las comunicaciones, que goza de protección reforzada.",
+            "c": "Es una materia exclusivamente administrativa."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 3,
+          "pregunta": "En relación con la moderación automática de contenidos, de acuerdo con el artículo 20 CE:",
+          "opciones": {
+            "a": "Cualquier filtrado previo constituye censura previa prohibida con carácter general.",
+            "b": "La Administración podrá establecer libremente sistemas de control previo por tratarse de un servicio público.",
+            "c": "La censura previa solo está prohibida en medios tradicionales."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 4,
+          "pregunta": "De conformidad con la Constitución Española, la eliminación posterior de contenidos que vulneren derechos de terceros:",
+          "opciones": {
+            "a": "Está prohibida en todo caso.",
+            "b": "Es compatible con el derecho a la libertad de expresión dentro de sus límites constitucionales.",
+            "c": "Solo puede realizarse mediante autorización administrativa previa."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 5,
+          "pregunta": "De acuerdo con el artículo 18 CE, la recogida masiva de datos de usuarios en la plataforma:",
+          "opciones": {
+            "a": "No tiene límite constitucional al tratarse de un servicio público.",
+            "b": "Puede afectar al derecho a la intimidad y al honor, que son derechos fundamentales.",
+            "c": "Solo afecta a principios rectores."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 6,
+          "pregunta": "En relación con la trazabilidad de la actividad (logs), de acuerdo con la Constitución Española:",
+          "opciones": {
+            "a": "No tiene relevancia constitucional si se realiza con fines técnicos.",
+            "b": "Puede incidir en derechos fundamentales como la intimidad, dependiendo de su alcance.",
+            "c": "Es una obligación constitucional de la Administración."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 7,
+          "pregunta": "De conformidad con el artículo 53 CE, las limitaciones técnicas implementadas sobre derechos fundamentales:",
+          "opciones": {
+            "a": "Podrán establecerse mediante decisiones técnicas sin necesidad de cobertura legal.",
+            "b": "Deberán estar previstas en la ley y respetar en todo caso el contenido esencial del derecho.",
+            "c": "Podrán establecerse mediante instrucciones internas."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 8,
+          "pregunta": "De acuerdo con la Constitución Española, una restricción del acceso a la plataforma por motivos de orden público:",
+          "opciones": {
+            "a": "Podrá establecerse libremente por la Administración.",
+            "b": "Deberá estar prevista en la ley y ser proporcional.",
+            "c": "No es posible en ningún caso."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 9,
+          "pregunta": "En relación con los servicios digitales de vivienda y salud integrados:",
+          "opciones": {
+            "a": "Afectan a derechos fundamentales protegidos por recurso de amparo.",
+            "b": "Se refieren a principios rectores de la política social y económica.",
+            "c": "Carecen de reconocimiento constitucional."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 10,
+          "pregunta": "De conformidad con el artículo 53 CE, los derechos del Capítulo III:",
+          "opciones": {
+            "a": "Son directamente exigibles ante los tribunales mediante procedimiento preferente y sumario.",
+            "b": "Solo podrán ser alegados ante la jurisdicción ordinaria de acuerdo con lo que dispongan las leyes que los desarrollen.",
+            "c": "Tienen la misma protección que los derechos fundamentales."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 11,
+          "pregunta": "En relación con una posible limitación del acceso a la plataforma en crisis, de acuerdo con la Constitución:",
+          "opciones": {
+            "a": "Podrá acordarse libremente por la Administración.",
+            "b": "Podrá implicar la suspensión de determinados derechos únicamente en los casos previstos en el artículo 55.",
+            "c": "No podrá afectar en ningún caso a derechos fundamentales."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 12,
+          "pregunta": "De conformidad con el artículo 55 CE, en un estado de excepción o de sitio:",
+          "opciones": {
+            "a": "Podrán suspenderse todos los derechos fundamentales.",
+            "b": "Podrán suspenderse determinados derechos en los términos previstos en la Constitución.",
+            "c": "No podrá suspenderse ningún derecho."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 13,
+          "pregunta": "En relación con la suspensión individual de derechos en un entorno digital:",
+          "opciones": {
+            "a": "Podrá acordarse en cualquier procedimiento administrativo.",
+            "b": "Solo podrá acordarse en relación con investigaciones sobre bandas armadas o terrorismo.",
+            "c": "No está permitida en ningún caso."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 14,
+          "pregunta": "De acuerdo con la Constitución Española, el derecho a la protección de datos personales:",
+          "opciones": {
+            "a": "Constituye un derecho fundamental autónomo, reconocido a partir del artículo 18.4 CE, que garantiza a la persona un poder de control sobre sus datos personales.",
+            "b": "Es un principio rector de la política social y económica.",
+            "c": "No tiene reconocimiento constitucional."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 15,
+          "pregunta": "De conformidad con la Constitución Española, la supervisión de la actuación administrativa en estos sistemas digitales corresponde, entre otros, a:",
+          "opciones": {
+            "a": "El Defensor del Pueblo.",
+            "b": "El Gobierno exclusivamente.",
+            "c": "El Tribunal Constitucional únicamente."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        }
+      ]
+    },
+    {
+      "caso": 4,
+      "titulo": "Identidad digital municipal y videovigilancia",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "De acuerdo con el artículo 18 CE, la captación sistemática de la imagen de los ciudadanos en espacios públicos:",
+          "opciones": {
+            "a": "Puede afectar al derecho a la propia imagen, que se reconoce como derecho fundamental.",
+            "b": "No tiene relevancia constitucional por tratarse de espacio público.",
+            "c": "Solo afecta a principios rectores."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 2,
+          "pregunta": "De conformidad con la Constitución Española, el acceso a los datos personales almacenados en el portal único municipal requiere:",
+          "opciones": {
+            "a": "Únicamente la autorización del responsable del fichero.",
+            "b": "Cobertura legal y respeto al contenido esencial de los derechos a la intimidad y a la protección de datos personales, conforme al artículo 53.1.",
+            "c": "Instrucción interna del servicio correspondiente."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 3,
+          "pregunta": "Según la Constitución Española, la protección de los datos personales vinculados a la identidad digital municipal:",
+          "opciones": {
+            "a": "Constituye un derecho fundamental autónomo, derivado del artículo 18.4, distinto de los derechos a la intimidad y al honor.",
+            "b": "Es un principio rector sin tutela judicial específica.",
+            "c": "Carece de reconocimiento constitucional."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 4,
+          "pregunta": "De acuerdo con el artículo 24 CE, los ciudadanos afectados por un tratamiento indebido de sus datos podrán:",
+          "opciones": {
+            "a": "Obtener la tutela efectiva de jueces y tribunales, sin que en ningún caso se produzca indefensión.",
+            "b": "Únicamente presentar una queja administrativa interna.",
+            "c": "Esperar a la resolución del expediente por silencio positivo."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 5,
+          "pregunta": "De conformidad con la Constitución Española, el acceso sin consentimiento al contenido de comunicaciones electrónicas:",
+          "opciones": {
+            "a": "Requiere en todo caso resolución judicial, salvo en los supuestos previstos por la ley.",
+            "b": "Podrá realizarse libremente por razones de servicio.",
+            "c": "No está protegido por el artículo 18."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 6,
+          "pregunta": "Según la Constitución Española, la regulación del sistema de identidad digital debe garantizar:",
+          "opciones": {
+            "a": "El contenido esencial del derecho a la intimidad y al secreto de las comunicaciones.",
+            "b": "Únicamente la eficiencia técnica del sistema.",
+            "c": "Exclusivamente la simplificación administrativa."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 7,
+          "pregunta": "De acuerdo con la Constitución Española, las grabaciones con cámaras corporales de la Policía Municipal:",
+          "opciones": {
+            "a": "Están prohibidas en todo caso por afectar a derechos fundamentales.",
+            "b": "Son lícitas cuando estén amparadas en ley y respeten el principio de proporcionalidad.",
+            "c": "Requieren consentimiento expreso del ciudadano grabado en toda circunstancia."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 8,
+          "pregunta": "De conformidad con la Constitución Española, la posibilidad de recurrir en amparo por vulneración de la intimidad:",
+          "opciones": {
+            "a": "Está prevista al tratarse de un derecho de la Sección 1.ª del Capítulo II del Título I.",
+            "b": "No está prevista, al ser la intimidad un principio rector.",
+            "c": "Solo procede si existe sentencia penal firme."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 9,
+          "pregunta": "De acuerdo con el artículo 54 CE, la figura institucional de supervisión de posibles vulneraciones de derechos fundamentales es:",
+          "opciones": {
+            "a": "El Defensor del Pueblo, como alto comisionado de las Cortes Generales.",
+            "b": "El Consejo de Ministros.",
+            "c": "El Tribunal de Cuentas."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 10,
+          "pregunta": "Según la Constitución Española, el principio de legalidad aplicado al sistema de identidad digital exige:",
+          "opciones": {
+            "a": "Que todas las limitaciones de derechos fundamentales tengan cobertura legal expresa.",
+            "b": "Que las limitaciones se decidan por consenso técnico sin necesidad de ley.",
+            "c": "Que las decisiones técnicas prevalezcan sobre las leyes."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 11,
+          "pregunta": "De conformidad con la Constitución Española, la lectura automática de matrículas en viarios municipales:",
+          "opciones": {
+            "a": "Debe contar con cobertura normativa adecuada y respetar el principio de proporcionalidad.",
+            "b": "Es libre por tratarse de espacio público sin protección constitucional.",
+            "c": "Solo es lícita en poblaciones menores de 50.000 habitantes."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 12,
+          "pregunta": "De acuerdo con el artículo 53 CE, la regulación del tratamiento automatizado de datos con fines de seguridad ciudadana:",
+          "opciones": {
+            "a": "Podrá hacerse mediante reglamento sin ley previa.",
+            "b": "Requiere ley que respete el contenido esencial de los derechos fundamentales afectados.",
+            "c": "Podrá decidirse por instrucción técnica interna."
+          },
+          "correcta": "b",
+          "referencia": "",
+          "explicacion": ""
+        }
+      ]
+    },
+    {
+      "caso": 5,
+      "titulo": "Elecciones municipales y derechos de participación",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "De conformidad con la Constitución Española, los ciudadanos UE residentes en Madrid:",
+          "opciones": {
+            "a": "Pueden ser electores y elegibles en las elecciones municipales en los términos que establezcan los tratados o la ley, conforme a la reforma del artículo 13.2 operada en 1992.",
+            "b": "No pueden participar en elecciones municipales en ningún caso.",
+            "c": "Solo son electores, pero nunca elegibles."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 2,
+          "pregunta": "Según la Constitución Española, el derecho de participación política se reconoce en el artículo:",
+          "opciones": {
+            "a": "23 de la Constitución Española.",
+            "b": "13.2 de la Constitución Española.",
+            "c": "27 de la Constitución Española."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 3,
+          "pregunta": "De acuerdo con la Constitución Española, el ejercicio del derecho de sufragio activo requiere:",
+          "opciones": {
+            "a": "Ser mayor de edad y cumplir los requisitos establecidos por la ley, siendo la mayoría a los 18 años según el artículo 12.",
+            "b": "Tener al menos 21 años según establece la Constitución.",
+            "c": "Haber residido en el municipio los últimos 10 años."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 4,
+          "pregunta": "De conformidad con la Constitución Española, la propaganda electoral en viarios municipales:",
+          "opciones": {
+            "a": "Es manifestación del derecho de participación política, limitado por la legislación electoral aplicable.",
+            "b": "Requiere autorización individualizada para cada formación política.",
+            "c": "Está prohibida en todo caso."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 5,
+          "pregunta": "Según la Constitución Española, la protección del derecho de reunión en actos electorales:",
+          "opciones": {
+            "a": "Exige comunicación previa a la autoridad cuando se celebren en lugares de tránsito público.",
+            "b": "Requiere autorización administrativa expresa.",
+            "c": "Puede prohibirse sin motivación."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 6,
+          "pregunta": "De acuerdo con la Constitución Española, el sistema de voto accesible para personas con discapacidad:",
+          "opciones": {
+            "a": "Es coherente con la reforma del artículo 49 operada en 2024, que sustituyó la terminología anterior por la expresión personas con discapacidad.",
+            "b": "No tiene anclaje constitucional.",
+            "c": "Se trata de una mera práctica administrativa."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 7,
+          "pregunta": "De conformidad con la Constitución Española, los partidos políticos:",
+          "opciones": {
+            "a": "Expresan el pluralismo político, concurren a la formación y manifestación de la voluntad popular y son instrumento fundamental para la participación política.",
+            "b": "Son órganos administrativos dependientes del Ministerio del Interior.",
+            "c": "Tienen carácter exclusivamente consultivo."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 8,
+          "pregunta": "En el marco constitucional y legal, una iniciativa ciudadana para la reforma de una ordenanza municipal:",
+          "opciones": {
+            "a": "Conecta con el derecho de participación en los asuntos públicos del artículo 23, pero su régimen concreto lo fijan la legislación de régimen local (art. 70 bis LBRL) y la normativa municipal.",
+            "b": "No tiene cabida en el marco constitucional.",
+            "c": "Requiere autorización del Consejo de Ministros."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 9,
+          "pregunta": "De acuerdo con la Constitución Española, la iniciativa popular para la reforma constitucional:",
+          "opciones": {
+            "a": "Está excluida, conforme al artículo 166 en relación con el artículo 87.3.",
+            "b": "Se admite con un mínimo de 500.000 firmas.",
+            "c": "Se admite con carácter general."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 10,
+          "pregunta": "De conformidad con la Constitución Española, la campaña institucional de fomento de la participación ciudadana:",
+          "opciones": {
+            "a": "Debe respetar la neutralidad política e institucional, asegurando el pluralismo político reconocido como valor superior.",
+            "b": "Puede orientarse a favor de una formación política concreta.",
+            "c": "No tiene limitaciones constitucionales."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 11,
+          "pregunta": "Según la Constitución Española, la tutela del derecho de sufragio activo y pasivo se garantiza:",
+          "opciones": {
+            "a": "Mediante el procedimiento preferente y sumario y, en su caso, mediante recurso de amparo.",
+            "b": "Únicamente mediante recurso contencioso-administrativo ordinario.",
+            "c": "Exclusivamente ante el Tribunal Supremo."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 12,
+          "pregunta": "De acuerdo con la Constitución Española, ningún español podrá ser privado de sus derechos en cualquier parte del territorio del Estado:",
+          "opciones": {
+            "a": "Por razón de su origen o vecindad.",
+            "b": "Salvo decisión de la Comunidad Autónoma de residencia.",
+            "c": "Salvo acuerdo del Pleno del Ayuntamiento correspondiente."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        }
+      ]
+    },
+    {
+      "caso": 6,
+      "titulo": "Emergencia climática y estados de crisis",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "De acuerdo con la Constitución Española, los estados de alarma, excepción y sitio se regulan en el artículo:",
+          "opciones": {
+            "a": "116 de la Constitución Española.",
+            "b": "55 de la Constitución Española.",
+            "c": "137 de la Constitución Española."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 2,
+          "pregunta": "Según la Constitución Española, durante el estado de alarma:",
+          "opciones": {
+            "a": "Los derechos fundamentales podrán limitarse en la medida estrictamente necesaria, pero no suspenderse.",
+            "b": "Se suspenden automáticamente todos los derechos fundamentales.",
+            "c": "Quedan suspendidos los derechos del artículo 55.1 en los mismos términos que en el estado de excepción."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 3,
+          "pregunta": "De conformidad con el artículo 55.1 CE, en el estado de excepción pueden suspenderse:",
+          "opciones": {
+            "a": "Los derechos de los artículos 17, 18.2, 18.3, 19, 20, 21, 28.2 y 37.2 de la Constitución.",
+            "b": "Todos los derechos y libertades reconocidos en la Constitución sin excepción.",
+            "c": "Únicamente el derecho a la libertad de expresión."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 4,
+          "pregunta": "Según la Constitución Española, durante el estado de sitio:",
+          "opciones": {
+            "a": "Pueden suspenderse los derechos del artículo 55.1, incluido el de residencia y circulación del artículo 19.",
+            "b": "Se suspende en todo caso el derecho a la educación.",
+            "c": "Se suspenden automáticamente los principios rectores."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 5,
+          "pregunta": "De acuerdo con la Constitución Española, las limitaciones acordadas por el Ayuntamiento en protección civil:",
+          "opciones": {
+            "a": "Deberán respetar el principio de legalidad y el contenido esencial de los derechos afectados.",
+            "b": "Podrán decidirse libremente sin cobertura normativa.",
+            "c": "Suponen la suspensión automática de derechos fundamentales."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 6,
+          "pregunta": "De conformidad con la Constitución Española, la limitación del derecho de circulación por motivos de emergencia requiere:",
+          "opciones": {
+            "a": "Cobertura legal adecuada y respeto del principio de proporcionalidad.",
+            "b": "Únicamente acuerdo del Alcalde.",
+            "c": "Declaración formal del estado de sitio."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 7,
+          "pregunta": "Según la Constitución Española, el control parlamentario sobre la declaración de los estados excepcionales:",
+          "opciones": {
+            "a": "Corresponde al Congreso de los Diputados, conforme al artículo 116.",
+            "b": "Corresponde exclusivamente al Senado.",
+            "c": "No existe control parlamentario en estas situaciones."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 8,
+          "pregunta": "De acuerdo con la Constitución Española, durante los estados de alarma, excepción o sitio:",
+          "opciones": {
+            "a": "No podrá iniciarse la reforma constitucional, conforme al artículo 169.",
+            "b": "Podrán iniciarse reformas constitucionales siempre que exista urgencia.",
+            "c": "La reforma constitucional se acelera automáticamente."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 9,
+          "pregunta": "De conformidad con la Constitución Española, las decisiones administrativas adoptadas durante una emergencia:",
+          "opciones": {
+            "a": "Siguen sujetas al control de la jurisdicción contencioso-administrativa.",
+            "b": "Quedan exentas de control judicial durante su vigencia.",
+            "c": "Solo pueden ser revisadas por el Gobierno."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 10,
+          "pregunta": "Según la Constitución Española, las medidas de protección del medio ambiente adoptadas en emergencia climática:",
+          "opciones": {
+            "a": "Encuentran anclaje constitucional en el artículo 45, como principio rector.",
+            "b": "Son contrarias al texto constitucional.",
+            "c": "Son un derecho fundamental susceptible de amparo."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 11,
+          "pregunta": "De acuerdo con la Constitución Española, la articulación entre competencias estatales y municipales en emergencia:",
+          "opciones": {
+            "a": "Se apoya en los principios de autonomía y solidaridad del Título VIII.",
+            "b": "No tiene reflejo constitucional.",
+            "c": "Implica siempre la suspensión de la autonomía municipal."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 12,
+          "pregunta": "De conformidad con la Constitución Española, la responsabilidad patrimonial por daños de medidas extraordinarias:",
+          "opciones": {
+            "a": "Se reconoce en el marco del artículo 106.2, que garantiza la indemnización por lesiones en sus bienes y derechos.",
+            "b": "No existe en situaciones excepcionales.",
+            "c": "Corresponde únicamente a las compañías de seguros."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        },
+        {
+          "numero": 13,
+          "pregunta": "Según la Constitución Española, la suspensión individual de derechos del artículo 55.2:",
+          "opciones": {
+            "a": "Requiere intervención judicial necesaria y adecuado control parlamentario.",
+            "b": "Puede acordarse por el Alcalde en situación de emergencia.",
+            "c": "No requiere cobertura legal expresa."
+          },
+          "correcta": "a",
+          "referencia": "",
+          "explicacion": ""
+        }
+      ]
+    }
+  ]
+}

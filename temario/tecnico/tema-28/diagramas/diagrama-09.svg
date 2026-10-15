@@ -1,0 +1,24 @@
+<svg aria-label="Comparación de migración en caliente, alta disponibilidad y tolerancia a fallos según sean eventos planificados o no planificados y según provoquen o no corte de servicio, con su coste relativo y su caso de uso" role="img" viewbox="0 0 680 326" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 10.5px system-ui,sans-serif;fill:#fff}.s9{font:9px system-ui,sans-serif;fill:#fff}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.k9{font:700 10.5px system-ui,sans-serif;fill:#0055a0}.n9{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">Migración en caliente · Alta disponibilidad · Tolerancia a fallos</text>
+<rect fill="#0055a0" height="28" rx="4" width="206" x="20" y="34"></rect><text class="t9" text-anchor="middle" x="123" y="53">MIGRACIÓN EN CALIENTE</text>
+<rect fill="#e89822" height="28" rx="4" width="206" x="237" y="34"></rect><text class="t9" text-anchor="middle" x="340" y="53">ALTA DISPONIBILIDAD (HA)</text>
+<rect fill="#2d8659" height="28" rx="4" width="206" x="454" y="34"></rect><text class="t9" text-anchor="middle" x="557" y="53">TOLERANCIA A FALLOS (FT)</text>
+<rect fill="#f2f6fa" height="30" rx="3" stroke="#0055a0" width="206" x="20" y="70"></rect><text class="n9" text-anchor="middle" x="123" y="82">Evento</text><text style="font:700 9.5px system-ui;fill:#0055a0" text-anchor="middle" x="123" y="95">PLANIFICADO</text>
+<rect fill="#fdf3e3" height="30" rx="3" stroke="#e89822" width="206" x="237" y="70"></rect><text class="n9" text-anchor="middle" x="340" y="82">Evento</text><text style="font:700 9.5px system-ui;fill:#a06000" text-anchor="middle" x="340" y="95">NO PLANIFICADO (fallo)</text>
+<rect fill="#eaf5ec" height="30" rx="3" stroke="#2d8659" width="206" x="454" y="70"></rect><text class="n9" text-anchor="middle" x="557" y="82">Evento</text><text style="font:700 9.5px system-ui;fill:#2d8659" text-anchor="middle" x="557" y="95">NO PLANIFICADO (fallo)</text>
+<rect fill="#2d8659" height="40" rx="3" width="206" x="20" y="106"></rect><text class="t9" text-anchor="middle" x="123" y="124">SIN CORTE</text><text class="s9" text-anchor="middle" x="123" y="139">parada de milisegundos</text>
+<rect fill="#d13c3c" height="40" rx="3" width="206" x="237" y="106"></rect><text class="t9" text-anchor="middle" x="340" y="124">CON CORTE</text><text class="s9" text-anchor="middle" x="340" y="139">la VM SE REINICIA en otro nodo</text>
+<rect fill="#2d8659" height="40" rx="3" width="206" x="454" y="106"></rect><text class="t9" text-anchor="middle" x="557" y="124">SIN CORTE</text><text class="s9" text-anchor="middle" x="557" y="139">la copia en espejo asume el servicio</text>
+<rect fill="#888" height="42" rx="3" width="206" x="20" y="152"></rect><text class="s9" text-anchor="middle" x="123" y="169">Estado en memoria: SE CONSERVA</text><text class="s9" text-anchor="middle" x="123" y="186">Se copia página a página</text>
+<rect fill="#888" height="42" rx="3" width="206" x="237" y="152"></rect><text class="s9" text-anchor="middle" x="340" y="169">Estado en memoria: SE PIERDE</text><text class="s9" text-anchor="middle" x="340" y="186">Corte = arranque de SO + aplicación</text>
+<rect fill="#888" height="42" rx="3" width="206" x="454" y="152"></rect><text class="s9" text-anchor="middle" x="557" y="169">Estado en memoria: SE CONSERVA</text><text class="s9" text-anchor="middle" x="557" y="186">Copia sincronizada instrucción a instrucción</text>
+<rect fill="#eaf0f6" height="36" rx="3" width="206" x="20" y="200"></rect><text class="n9" text-anchor="middle" x="123" y="216">Coste: BAJO</text><text class="n9" text-anchor="middle" x="123" y="230">Mantenimiento y balanceo</text>
+<rect fill="#fdf3e3" height="36" rx="3" width="206" x="237" y="200"></rect><text class="n9" text-anchor="middle" x="340" y="216">Coste: MEDIO (capacidad N+1)</text><text class="n9" text-anchor="middle" x="340" y="230">Política estándar del clúster</text>
+<rect fill="#eaf5ec" height="36" rx="3" width="206" x="454" y="200"></rect><text class="n9" text-anchor="middle" x="557" y="216">Coste: ALTO (recursos duplicados)</text><text class="n9" text-anchor="middle" x="557" y="230">Solo servicios críticos concretos</text>
+<rect fill="#0055a0" height="26" rx="4" width="640" x="20" y="246"></rect>
+<text class="t9" text-anchor="middle" x="340" y="264">Con migración en caliente + modo mantenimiento, parchear el hardware DEJA DE REQUERIR VENTANA DE PARADA</text>
+<rect fill="none" height="24" rx="4" stroke="#d13c3c" stroke-width="2" width="640" x="20" y="278"></rect>
+<text style="font:700 10px system-ui;fill:#a02020" text-anchor="middle" x="340" y="294">Error más frecuente: confundir HA (reinicia, hay corte) con FT (espejo, no hay corte)</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="316">[Fuente: VMWARE-DOC; HYPERV-DOC]</text>
+</svg>

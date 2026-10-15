@@ -1,0 +1,18 @@
+<svg aria-label="Diagrama de Gantt de planificación Round-Robin con quantum 4" class="svd4" role="img" viewbox="0 0 680 260" xmlns="http://www.w3.org/2000/svg">
+<style>.svd4 .b{font:700 12px system-ui,sans-serif;fill:#fff}.svd4 .t{font:700 13px system-ui,sans-serif;fill:#0055a0}.svd4 .x{font:11px system-ui,sans-serif;fill:#444}</style>
+<text class="t" x="40" y="40">Quantum = 4 · P1=8, P2=4, P3=9</text>
+<g>
+<rect fill="#0055a0" height="46" width="80" x="40" y="70"></rect><text class="b" text-anchor="middle" x="80" y="98">P1</text>
+<rect fill="#6ea3d2" height="46" width="80" x="120" y="70"></rect><text class="b" text-anchor="middle" x="160" y="98">P2</text>
+<rect fill="#e89822" height="46" width="80" x="200" y="70"></rect><text class="b" text-anchor="middle" x="240" y="98">P3</text>
+<rect fill="#0055a0" height="46" width="80" x="280" y="70"></rect><text class="b" text-anchor="middle" x="320" y="98">P1</text>
+<rect fill="#e89822" height="46" width="80" x="360" y="70"></rect><text class="b" text-anchor="middle" x="400" y="98">P3</text>
+<rect fill="#e89822" height="46" width="20" x="440" y="70"></rect><text class="b" text-anchor="middle" x="450" y="98">P3</text>
+</g>
+<g class="x">
+<text x="40" y="135">0</text><text x="116" y="135">4</text><text x="196" y="135">8</text><text x="276" y="135">12</text><text x="356" y="135">16</text><text x="436" y="135">20</text><text x="456" y="135">21</text>
+</g>
+<text class="x" x="40" y="175">P2 termina en t=8 · P1 en t=16 · P3 en t=21</text>
+<text class="x" x="40" y="198">Ningún proceso monopoliza la CPU (frente a FCFS)</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="660" y="248">[Fuente: SILBERSCHATZ-OS, cap. 5]</text>
+</svg>

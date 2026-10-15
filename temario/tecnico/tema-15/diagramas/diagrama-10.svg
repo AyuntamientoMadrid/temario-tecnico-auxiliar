@@ -1,0 +1,14 @@
+<svg aria-label="Comparación OLTP y OLAP con el data warehouse en medio" class="svd10" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd10 .t{font:700 13px system-ui,sans-serif;fill:#fff}.svd10 .l{font:11px system-ui,sans-serif;fill:#444}.svd10 .b{font:600 11px system-ui,sans-serif;fill:#fff}</style>
+<rect fill="#0055a0" height="160" rx="8" width="180" x="30" y="50"></rect>
+<text class="t" text-anchor="middle" x="120" y="78">OLTP</text>
+<text class="b" x="45" y="108">Transaccional</text><text class="b" x="45" y="130">Operaciones cortas</text><text class="b" x="45" y="152">del día a día</text><text class="b" x="45" y="186">Padrón, tributos…</text>
+<rect fill="#e89822" height="80" rx="8" width="180" x="250" y="90"></rect><text class="t" text-anchor="middle" x="340" y="125">Data Warehouse</text><text class="b" text-anchor="middle" x="340" y="148">consolida e historiza</text>
+<rect fill="#2d8659" height="160" rx="8" width="180" x="470" y="50"></rect>
+<text class="t" text-anchor="middle" x="560" y="78">OLAP</text>
+<text class="b" x="485" y="108">Analítico</text><text class="b" x="485" y="130">Consultas masivas</text><text class="b" x="485" y="152">Cubos, estrella</text><text class="b" x="485" y="186">Cuadros de mando</text>
+<path d="M 210 130 L 248 130" marker-end="url(#a10)" stroke="#444" stroke-width="2"></path>
+<path d="M 430 130 L 468 130" marker-end="url(#a10)" stroke="#444" stroke-width="2"></path>
+<defs><marker id="a10" markerheight="10" markerwidth="10" orient="auto" refx="8" refy="5"><polygon fill="#444" points="0,0 10,5 0,10"></polygon></marker></defs>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="670" y="308">[Fuente: KIMBALL-DW · INMON-DW]</text>
+</svg>

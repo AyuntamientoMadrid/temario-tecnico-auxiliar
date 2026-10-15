@@ -1,0 +1,45 @@
+<svg aria-label="Árbol de clasificación de los métodos de acceso al medio: asignación estática por división de frecuencia o de tiempo, y asignación dinámica dividida en tres familias, la de contienda con ALOHA, CSMA, CSMA barra CD y CSMA barra CA, la de paso de testigo con Token Ring, Token Bus y FDDI, y la de reserva y sondeo con polling, DQDB, DOCSIS, redes ópticas pasivas y el OFDMA coordinado de Wi-Fi 6" role="img" viewbox="0 0 680 358" xmlns="http://www.w3.org/2000/svg">
+<style>.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}.k12{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d12{font:8.5px system-ui,sans-serif;fill:#333}.n12{font:8px system-ui,sans-serif;fill:#666}.t12{font:700 10px system-ui,sans-serif;fill:#fff}.w12{font:700 8.5px system-ui,sans-serif;fill:#fff}.g12{font:700 9px system-ui,sans-serif;fill:#2d8659}.r12{font:700 9px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h12" text-anchor="middle" x="340" y="20">Mapa completo de los métodos de acceso al medio</text>
+<rect fill="#0055a0" height="24" rx="4" width="180" x="250" y="32"></rect>
+<text class="t12" text-anchor="middle" x="340" y="49">ACCESO AL MEDIO COMPARTIDO</text>
+<path d="M340,56 L340,66 M150,66 L530,66 M150,66 L150,76 M530,66 L530,76" stroke="#666" stroke-width="1.2"></path>
+<rect fill="#c9d6e2" height="22" rx="4" width="180" x="60" y="76"></rect>
+<text class="k12" text-anchor="middle" x="150" y="91">ASIGNACIÓN ESTÁTICA</text>
+<rect fill="#f7f9fb" height="46" rx="4" width="180" x="60" y="102"></rect>
+<text class="d12" x="70" y="117">FDM · TDM síncrona</text>
+<text class="n12" x="70" y="130">Retardo garantizado, pero desperdicia</text>
+<text class="n12" x="70" y="141">el canal y no escala: cada uno 1/n</text>
+<text class="r12" text-anchor="middle" x="150" y="162">NO se usa en redes locales de datos</text>
+<rect fill="#0055a0" height="22" rx="4" width="180" x="440" y="76"></rect>
+<text class="w12" text-anchor="middle" x="530" y="91">ASIGNACIÓN DINÁMICA</text>
+<rect fill="#e89822" height="20" rx="4" width="200" x="60" y="180"></rect>
+<text class="w12" text-anchor="middle" x="160" y="194">POR CONTIENDA (aleatorios)</text>
+<rect fill="#fdf3e3" height="70" rx="4" width="200" x="60" y="204"></rect>
+<text class="d12" x="70" y="219">ALOHA puro — rendimiento 18,4 %</text>
+<text class="d12" x="70" y="232">ALOHA ranurado — 36,8 %</text>
+<text class="d12" x="70" y="245">CSMA (1-persistente, no persist., p-persist.)</text>
+<text class="k12" x="70" y="258">CSMA/CD — Ethernet 802.3</text>
+<text class="k12" x="70" y="270">CSMA/CA — Wi-Fi 802.11</text>
+<rect fill="#2d8659" height="20" rx="4" width="180" x="270" y="180"></rect>
+<text class="w12" text-anchor="middle" x="360" y="194">PASO DE TESTIGO</text>
+<rect fill="#e6f2ec" height="70" rx="4" width="180" x="270" y="204"></rect>
+<text class="d12" x="280" y="219">802.5 Token Ring — 4 y 16 Mbit/s</text>
+<text class="d12" x="280" y="232">802.4 Token Bus — industrial (MAP)</text>
+<text class="d12" x="280" y="245">FDDI — 100 Mbit/s, doble anillo</text>
+<text class="g12" x="280" y="260">Sin colisiones · retardo ACOTADO</text>
+<text class="n12" x="280" y="270">Determinista: garantiza plazo máximo</text>
+<rect fill="#3d82c4" height="20" rx="4" width="160" x="460" y="180"></rect>
+<text class="w12" text-anchor="middle" x="540" y="194">RESERVA Y SONDEO</text>
+<rect fill="#eef4fa" height="70" rx="4" width="160" x="460" y="204"></rect>
+<text class="d12" x="470" y="219">Sondeo (polling) y selección</text>
+<text class="d12" x="470" y="232">DQDB (802.6) · DOCSIS · PON</text>
+<text class="d12" x="470" y="245">PCF y HCCA de 802.11</text>
+<text class="k12" x="470" y="260">OFDMA coordinado de Wi-Fi 6</text>
+<text class="n12" x="470" y="270">Trama de activación + unidades</text>
+<path d="M530,98 L530,172 M160,172 L540,172 M160,172 L160,180 M360,172 L360,180 M540,172 L540,180" fill="none" stroke="#0055a0" stroke-width="1.4"></path>
+<rect fill="none" height="46" rx="5" stroke="#0055a0" stroke-width="1.5" width="636" x="22" y="286"></rect>
+<text class="d12" text-anchor="middle" x="340" y="304">CONTIENDA: eficiente con poca carga, pero el retardo NO está acotado y se degrada al saturarse</text>
+<text class="d12" text-anchor="middle" x="340" y="320">DETERMINISTA: garantiza un retardo máximo y no se degrada, a costa de una sobrecarga constante que penaliza con poca carga</text>
+<text class="n12" text-anchor="end" x="670" y="348">[Fuente: Tanenbaum · Abramson · IEEE 802]</text>
+</svg>

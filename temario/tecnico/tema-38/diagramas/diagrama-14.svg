@@ -1,0 +1,55 @@
+<svg aria-label="Los cuatro tipos de llamada de TETRA y los tres escalones de prioridad. Los tipos son: llamada de grupo, de uno a muchos y bidireccional; llamada individual, de uno a uno, semidúplex o dúplex completo; llamada de difusión, de uno a muchos pero unidireccional, en la que los receptores no pueden contestar; y llamada telefónica hacia la red pública. Los escalones de prioridad son: prioridad de acceso, que ordena la cola; prioridad con desalojo, que corta una llamada en curso de menor prioridad; y llamada de emergencia, con la máxima prioridad, alarma en el despacho, identidad y posición del usuario" role="img" viewbox="0 0 680 358" xmlns="http://www.w3.org/2000/svg">
+<style>.t14{font:700 10px system-ui,sans-serif;fill:#fff}.s14{font:8.5px system-ui,sans-serif;fill:#fff}.d14{font:8.5px system-ui,sans-serif;fill:#333}.h14{font:700 13px system-ui,sans-serif;fill:#0055a0}.k14{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n14{font:8.5px system-ui,sans-serif;fill:#666}.b14{font:700 9px system-ui,sans-serif;fill:#0055a0}.m14{font:700 11px system-ui,sans-serif;fill:#fff}</style>
+<text class="h14" text-anchor="middle" x="340" y="22">Grupo y difusión NO son lo mismo: en la difusión nadie contesta</text>
+<text class="k14" x="20" y="46">LOS CUATRO TIPOS DE LLAMADA</text>
+<rect fill="#2d8659" height="86" rx="5" width="158" x="20" y="54"></rect>
+<text class="t14" text-anchor="middle" x="99" y="74">DE GRUPO</text>
+<text class="s14" text-anchor="middle" x="99" y="92">Uno a MUCHOS</text>
+<text class="s14" text-anchor="middle" x="99" y="106">BIDIRECCIONAL</text>
+<text class="s14" text-anchor="middle" x="99" y="122">Semidúplex, con PTT.</text>
+<text class="s14" text-anchor="middle" x="99" y="134">Es el modo natural</text>
+<rect fill="#0055a0" height="86" rx="5" width="158" x="186" y="54"></rect>
+<text class="t14" text-anchor="middle" x="265" y="74">INDIVIDUAL</text>
+<text class="s14" text-anchor="middle" x="265" y="92">Uno a UNO</text>
+<text class="s14" text-anchor="middle" x="265" y="106">Semidúplex o</text>
+<text class="s14" text-anchor="middle" x="265" y="122">DÚPLEX COMPLETO,</text>
+<text class="s14" text-anchor="middle" x="265" y="134">que ocupa 2 intervalos</text>
+<rect fill="#d13c3c" height="86" rx="5" width="158" x="352" y="54"></rect>
+<text class="t14" text-anchor="middle" x="431" y="74">DE DIFUSIÓN</text>
+<text class="s14" text-anchor="middle" x="431" y="92">Uno a MUCHOS</text>
+<text class="s14" text-anchor="middle" x="431" y="106">UNIDIRECCIONAL</text>
+<text class="s14" text-anchor="middle" x="431" y="122">Los receptores solo</text>
+<text class="s14" text-anchor="middle" x="431" y="134">escuchan: no responden</text>
+<rect fill="#6b7c8c" height="86" rx="5" width="150" x="518" y="54"></rect>
+<text class="t14" text-anchor="middle" x="593" y="74">TELEFÓNICA</text>
+<text class="s14" text-anchor="middle" x="593" y="92">Hacia PSTN o PABX</text>
+<text class="s14" text-anchor="middle" x="593" y="106">EN 300 392-4</text>
+<text class="s14" text-anchor="middle" x="593" y="122">Sujeta a autorización</text>
+<text class="s14" text-anchor="middle" x="593" y="134">y tarificación</text>
+<text class="k14" x="20" y="164">LOS TRES ESCALONES DE PRIORIDAD, DE MENOS A MÁS</text>
+<rect fill="#e89822" height="70" rx="5" width="200" x="20" y="172"></rect>
+<text class="m14" text-anchor="middle" x="120" y="192">1 · PRIORIDAD DE ACCESO</text>
+<text class="s14" text-anchor="middle" x="120" y="210">Ordena la COLA cuando</text>
+<text class="s14" text-anchor="middle" x="120" y="223">varios piden el mismo canal.</text>
+<text class="s14" text-anchor="middle" x="120" y="236">Nadie es interrumpido</text>
+<path d="M222,207 L240,207" stroke="#0055a0" stroke-width="2"></path>
+<path d="M234,203 L242,207 L234,211 Z" fill="#0055a0"></path>
+<rect fill="#e89822" height="70" rx="5" width="200" x="244" y="172"></rect>
+<text class="m14" text-anchor="middle" x="344" y="192">2 · CON DESALOJO</text>
+<text class="s14" text-anchor="middle" x="344" y="210">Si NO hay canal libre,</text>
+<text class="s14" text-anchor="middle" x="344" y="223">CORTA una llamada en curso</text>
+<text class="s14" text-anchor="middle" x="344" y="236">de prioridad inferior</text>
+<path d="M446,207 L464,207" stroke="#0055a0" stroke-width="2"></path>
+<path d="M458,203 L466,207 L458,211 Z" fill="#0055a0"></path>
+<rect fill="#d13c3c" height="70" rx="5" width="200" x="468" y="172"></rect>
+<text class="m14" text-anchor="middle" x="568" y="192">3 · DE EMERGENCIA</text>
+<text class="s14" text-anchor="middle" x="568" y="210">Botón de emergencia.</text>
+<text class="s14" text-anchor="middle" x="568" y="223">Máxima prioridad, alarma</text>
+<text class="s14" text-anchor="middle" x="568" y="236">en despacho, identidad y posición</text>
+<text class="k14" x="20" y="266">SERVICIOS SUPLEMENTARIOS QUE HAY QUE SABER NOMBRAR</text>
+<rect fill="#0055a0" height="56" rx="5" width="648" x="20" y="274"></rect>
+<text class="s14" x="36" y="292">DGNA · asignación dinámica de grupos por el aire, desde la consola · Entrada tardía · Escucha ambiente (micrófono remoto)</text>
+<text class="s14" x="36" y="307">Escucha discreta · Inclusión de un supervisor en una llamada · Identificación del llamante por alias</text>
+<text class="s14" x="36" y="322">Inhabilitación remota del terminal: temporal (stun) o permanente (kill)</text>
+<text class="n14" text-anchor="end" x="670" y="350">[Fuente: elaboración propia sobre ETSI EN 300 392, partes 2 y 9 a 12]</text>
+</svg>

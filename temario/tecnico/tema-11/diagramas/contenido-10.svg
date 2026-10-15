@@ -1,0 +1,36 @@
+<svg aria-label="Evolucion de la memoria RAM" role="img" viewbox="0 0 720 340" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .ram-year{font:600 11px system-ui,sans-serif;fill:#0055a0;text-anchor:middle}
+    .ram-name{font:700 12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}
+    .ram-spec{font:10px system-ui,sans-serif;fill:#555;text-anchor:middle}
+  </style>
+<text fill="#0055a0" font="700 16px system-ui,sans-serif" text-anchor="middle" x="360" y="28">Evolución de la memoria RAM</text>
+<line stroke="#0055a0" stroke-width="2" x1="40" x2="690" y1="240" y2="240"></line>
+<rect fill="#d6e4f0" height="30" stroke="#0055a0" width="35" x="55" y="210"></rect>
+<text class="ram-year" x="72" y="200">60s</text>
+<text class="ram-name" x="72" y="260">DIP</text>
+<rect fill="#d6e4f0" height="45" stroke="#0055a0" width="40" x="115" y="195"></rect>
+<text class="ram-year" x="135" y="185">1983</text>
+<text class="ram-name" x="135" y="260">SIPP</text>
+<rect fill="#d6e4f0" height="60" stroke="#0055a0" width="45" x="180" y="180"></rect>
+<text class="ram-year" x="202" y="170">1987</text>
+<text class="ram-name" x="202" y="260">SIMM</text>
+<rect fill="#3378b9" height="80" stroke="#0055a0" width="50" x="250" y="160"></rect>
+<text class="ram-year" x="275" y="150">1993</text>
+<text class="ram-name" x="275" y="260">DIMM</text>
+<rect fill="#3378b9" height="100" stroke="#0055a0" width="52" x="325" y="140"></rect>
+<text class="ram-year" x="351" y="130">2000</text>
+<text class="ram-name" x="351" y="260">DDR</text>
+<rect fill="#0055a0" height="120" width="52" x="400" y="120"></rect>
+<text class="ram-year" x="426" y="110">2003</text>
+<text class="ram-name" x="426" y="260">DDR2</text>
+<rect fill="#0055a0" height="145" width="54" x="475" y="95"></rect>
+<text class="ram-year" x="502" y="85">2007</text>
+<text class="ram-name" x="502" y="260">DDR3</text>
+<rect fill="#0055a0" height="175" width="56" x="552" y="65"></rect>
+<text class="ram-year" x="580" y="55">2014</text>
+<text class="ram-name" x="580" y="260">DDR4</text>
+<rect fill="#2d8659" height="210" width="58" x="632" y="30"></rect>
+<text class="ram-year" fill="#2d8659" x="661" y="20">2021</text>
+<text class="ram-name" fill="#2d8659" x="661" y="260">DDR5</text>
+</svg>

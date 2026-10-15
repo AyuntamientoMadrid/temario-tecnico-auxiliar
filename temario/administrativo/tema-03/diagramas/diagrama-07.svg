@@ -1,0 +1,33 @@
+<svg aria-label="Comparación entre concejales de Gobierno y concejales de Coordinación: estos últimos ejercen las funciones del artículo 44 salvo las letras b, c, d, e y j" role="img" viewbox="0 0 700 330" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .g-hb{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .g-s{font:11px system-ui,sans-serif;fill:#1a1a1a;text-anchor:start}
+    .g-x{font:700 11px system-ui,sans-serif;fill:#a3271c;text-anchor:start}
+  </style>
+<rect fill="#fff" height="292" rx="10" stroke="#0055a0" stroke-width="1.5" width="310" x="30" y="20"></rect>
+<rect fill="#0055a0" height="58" rx="10" width="310" x="30" y="20"></rect>
+<text class="g-hb" x="185" y="44">Concejales de GOBIERNO</text>
+<text class="g-hb" style="font-weight:400;font-size:11px" x="185" y="64">y consejeros-delegados de Gobierno</text>
+<text class="g-s" style="font-weight:700;fill:#003d75" x="50" y="104">Jefes SUPERIORES del Área (art. 44)</text>
+<text class="g-s" x="50" y="130">a) Representación, dirección, gestión</text>
+<text class="g-s" x="50" y="152">b) Fijar objetivos y planes</text>
+<text class="g-s" x="50" y="174">c) Elevar propuestas al Pleno</text>
+<text class="g-s" x="50" y="196">d) Proponer disposiciones a la Junta</text>
+<text class="g-s" x="50" y="218">e) Proponer organización al alcalde</text>
+<text class="g-s" x="50" y="240">f-i) Control, personal, conflictos…</text>
+<text class="g-s" x="50" y="262">j) Proponer nombramiento directivos</text>
+<text class="g-s" style="font-style:italic;fill:#777" x="50" y="298">ejercen TODAS las funciones</text>
+<rect fill="#fff" height="292" rx="10" stroke="#e89822" stroke-width="1.5" width="310" x="360" y="20"></rect>
+<rect fill="#e89822" height="58" rx="10" width="310" x="360" y="20"></rect>
+<text class="g-hb" x="515" y="44">Concejales de COORDINACIÓN</text>
+<text class="g-hb" style="font-weight:400;font-size:11px" x="515" y="64">y concejales-delegados</text>
+<text class="g-s" style="font-weight:700;fill:#a8650f" x="380" y="104">Jefes DIRECTOS del Área (art. 45)</text>
+<text class="g-s" x="380" y="132">Mismas funciones del art. 44…</text>
+<text class="g-x" x="380" y="160">EXCEPTO las letras:</text>
+<text class="g-x" x="380" y="184">b) objetivos y planes</text>
+<text class="g-x" x="380" y="206">c) elevar al Pleno</text>
+<text class="g-x" x="380" y="228">d) proponer disposiciones a la Junta</text>
+<text class="g-x" x="380" y="250">e) proponer organización al alcalde</text>
+<text class="g-x" x="380" y="272">j) proponer nombramiento directivos</text>
+<text class="g-s" style="font-style:italic;fill:#777" x="380" y="298">dependen del concejal de Gobierno</text>
+</svg>

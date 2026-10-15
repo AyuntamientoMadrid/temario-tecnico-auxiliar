@@ -1,0 +1,27 @@
+<svg aria-label="Funcionarios: Delegados de Personal con menos de 50 y Junta de Personal con 50 o más, según el TREBEP. Laborales: Delegados de Personal con menos de 50 y Comité de Empresa con 50 o más, según el Estatuto de los Trabajadores. El umbral 50 coincide con el del Comité de Seguridad y Salud" class="svd10" role="img" viewbox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd10 .h{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd10 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd10 .s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#f5f8fc" height="210" rx="10" stroke="#0055a0" width="310" x="30" y="22"></rect>
+<rect fill="#0055a0" height="32" rx="10" width="310" x="30" y="22"></rect>
+<text class="h" x="185" y="44">FUNCIONARIOS (TREBEP)</text>
+<rect fill="#e8f0f8" height="64" rx="8" stroke="#0055a0" width="270" x="50" y="70"></rect>
+<text class="t" style="font-weight:700" x="185" y="92">&lt; 50: Delegados de Personal</text>
+<text class="s" x="185" y="112">1 (hasta 30) · 3 (de 31 a 49)</text>
+<text class="s" x="185" y="128">art. 39.2</text>
+<rect fill="#e8f5ee" height="64" rx="8" stroke="#2d8659" width="270" x="50" y="146"></rect>
+<text class="t" style="font-weight:700" x="185" y="168">≥ 50: Junta de Personal</text>
+<text class="s" x="185" y="188">composición por tramos (máx. 75)</text>
+<text class="s" x="185" y="204">art. 39.3 y 39.5</text>
+<rect fill="#f5f8fc" height="210" rx="10" stroke="#0055a0" width="310" x="360" y="22"></rect>
+<rect fill="#0055a0" height="32" rx="10" width="310" x="360" y="22"></rect>
+<text class="h" x="515" y="44">LABORALES (ET)</text>
+<rect fill="#e8f0f8" height="64" rx="8" stroke="#0055a0" width="270" x="380" y="70"></rect>
+<text class="t" style="font-weight:700" x="515" y="92">&lt; 50: Delegados de Personal</text>
+<text class="s" x="515" y="112">1 (de 6 a 30) · 3 (de 31 a 49)</text>
+<text class="s" x="515" y="128">art. 62 ET</text>
+<rect fill="#e8f5ee" height="64" rx="8" stroke="#2d8659" width="270" x="380" y="146"></rect>
+<text class="t" style="font-weight:700" x="515" y="168">≥ 50: Comité de Empresa</text>
+<text class="s" x="515" y="188">composición proporcional</text>
+<text class="s" x="515" y="204">arts. 63 y 66 ET</text>
+<rect fill="#fff5e6" height="40" rx="8" stroke="#e89822" width="460" x="120" y="246"></rect>
+<text class="t" style="font-weight:700;fill:#b5740f" x="350" y="271">El umbral 50 coincide con el del Comité de Seguridad y Salud (PRL)</text>
+</svg>

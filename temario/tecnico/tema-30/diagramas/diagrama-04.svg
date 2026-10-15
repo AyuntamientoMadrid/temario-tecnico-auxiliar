@@ -1,0 +1,34 @@
+<svg aria-label="Esquema de red que compara el puerto de acceso, que pertenece a una sola red local virtual y entrega tramas sin etiqueta al equipo final, con el puerto troncal, que transporta varias redes virtuales etiquetadas más una VLAN nativa sin etiquetar entre conmutadores; se muestra también el caso del teléfono con ordenador conectado detrás y la necesidad de encaminar para comunicar dos VLAN" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t4{font:700 10px system-ui,sans-serif;fill:#fff}.s4{font:8.5px system-ui,sans-serif;fill:#fff}.d4{font:9px system-ui,sans-serif;fill:#333}.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}.k4{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n4{font:8.5px system-ui,sans-serif;fill:#666}.l4{font:8.5px system-ui,sans-serif;fill:#0055a0}</style>
+<defs><marker id="a4" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="h4" text-anchor="middle" x="340" y="20">Puerto de acceso y puerto troncal</text>
+<rect fill="#2d8659" height="34" rx="4" width="96" x="20" y="36"></rect><text class="t4" text-anchor="middle" x="68" y="52">PC oficina</text><text class="s4" text-anchor="middle" x="68" y="64">VLAN 10</text>
+<rect fill="#e89822" height="34" rx="4" width="96" x="20" y="82"></rect><text class="t4" text-anchor="middle" x="68" y="98">Impresora</text><text class="s4" text-anchor="middle" x="68" y="110">VLAN 30</text>
+<rect fill="#0055a0" height="48" rx="4" width="96" x="20" y="128"></rect><text class="t4" text-anchor="middle" x="68" y="144">Teléfono IP</text><text class="s4" text-anchor="middle" x="68" y="156">voz: VLAN 20</text><text class="s4" text-anchor="middle" x="68" y="168">+ PC: VLAN 10</text>
+<line marker-end="url(#a4)" stroke="#0055a0" stroke-width="1.5" x1="118" x2="182" y1="53" y2="70"></line>
+<line marker-end="url(#a4)" stroke="#0055a0" stroke-width="1.5" x1="118" x2="182" y1="99" y2="90"></line>
+<line marker-end="url(#a4)" stroke="#0055a0" stroke-width="1.5" x1="118" x2="182" y1="150" y2="112"></line>
+<text class="l4" x="122" y="46">sin etiqueta</text>
+<rect fill="#0055a0" height="76" rx="5" width="130" x="186" y="60"></rect><text class="t4" text-anchor="middle" x="251" y="82">CONMUTADOR</text><text class="s4" text-anchor="middle" x="251" y="96">de acceso</text><text class="s4" text-anchor="middle" x="251" y="114">puertos de ACCESO</text><text class="s4" text-anchor="middle" x="251" y="128">1 VLAN cada uno</text>
+<line marker-end="url(#a4)" stroke="#d13c3c" stroke-width="3" x1="318" x2="392" y1="98" y2="98"></line>
+<text style="font:700 9px system-ui;fill:#d13c3c" text-anchor="middle" x="355" y="88">TRONCAL</text>
+<text class="l4" text-anchor="middle" x="355" y="114">VLAN 10, 20, 30</text><text class="l4" text-anchor="middle" x="355" y="126">etiquetadas</text>
+<rect fill="#2d8659" height="76" rx="5" width="130" x="396" y="60"></rect><text class="t4" text-anchor="middle" x="461" y="82">CONMUTADOR</text><text class="s4" text-anchor="middle" x="461" y="96">de distribución</text><text class="s4" text-anchor="middle" x="461" y="114">SVI por VLAN</text><text class="s4" text-anchor="middle" x="461" y="128">= nivel 3</text>
+<line marker-end="url(#a4)" stroke="#0055a0" stroke-width="1.5" x1="528" x2="586" y1="98" y2="98"></line>
+<rect fill="#888" height="48" rx="4" width="70" x="590" y="74"></rect><text class="t4" text-anchor="middle" x="625" y="94">Núcleo</text><text class="s4" text-anchor="middle" x="625" y="110">y CPD</text>
+<rect fill="#eef3f8" height="66" rx="4" width="316" x="20" y="192"></rect>
+<text class="k4" text-anchor="middle" x="178" y="209">PUERTO DE ACCESO</text>
+<text class="d4" text-anchor="middle" x="178" y="225">Una sola VLAN · tramas SIN etiqueta</text>
+<text class="d4" text-anchor="middle" x="178" y="239">El equipo final ignora que existen VLAN</text>
+<text class="d4" text-anchor="middle" x="178" y="253">Excepción: teléfono IP + PC (voz etiquetada)</text>
+<rect fill="#e8f4ee" height="66" rx="4" width="316" x="344" y="192"></rect>
+<text class="k4" text-anchor="middle" x="502" y="209">PUERTO TRONCAL</text>
+<text class="d4" text-anchor="middle" x="502" y="225">Varias VLAN · tramas ETIQUETADAS</text>
+<text class="d4" text-anchor="middle" x="502" y="239">Salvo la VLAN NATIVA, que va sin etiqueta</text>
+<text class="d4" text-anchor="middle" x="502" y="253">Entre conmutadores, a hipervisores y a puntos de acceso</text>
+<rect fill="#fbeaea" height="26" rx="4" stroke="#d13c3c" stroke-width="1.2" width="640" x="20" y="266"></rect>
+<text class="d4" text-anchor="middle" x="340" y="283">Riesgo: VLAN nativas distintas en cada extremo, y salto de VLAN por doble etiquetado</text>
+<rect fill="none" height="22" rx="4" stroke="#0055a0" stroke-width="1.5" width="500" x="90" y="300"></rect>
+<text class="k4" text-anchor="middle" x="340" y="315">Buena práctica: VLAN nativa sin uso y sin salida; nunca la VLAN 1</text>
+<text class="n4" text-anchor="end" x="670" y="336">[Fuente: IEEE8021Q; IEEE8021AB]</text>
+</svg>

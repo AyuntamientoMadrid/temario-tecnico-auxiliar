@@ -1,0 +1,28 @@
+<svg aria-label="Ciclo Fetch-Execute de instrucciones" role="img" viewbox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .fe-step{font:600 11px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .fe-desc{font:10px system-ui,sans-serif;fill:#cde4f0;text-anchor:middle}
+    .fe-phase{font:700 11px system-ui,sans-serif;letter-spacing:1px}
+  </style>
+<text fill="#0055a0" font="700 16px system-ui,sans-serif" text-anchor="middle" x="320" y="28">Ciclo Fetch-Execute</text>
+<rect fill="#eef4fa" height="150" rx="6" stroke="#0055a0" stroke-dasharray="4 3" stroke-width="1.5" width="330" x="30" y="50"></rect>
+<text class="fe-phase" fill="#0055a0" x="45" y="68">FASE 1 · FETCH (búsqueda)</text>
+<rect fill="#0055a0" height="45" rx="3" width="90" x="50" y="90"></rect>
+<text class="fe-step" x="95" y="110">1. CP → MAR</text>
+<rect fill="#0055a0" height="45" rx="3" width="90" x="160" y="90"></rect>
+<text class="fe-step" x="205" y="110">2. MAR → Mem</text>
+<rect fill="#0055a0" height="45" rx="3" width="90" x="265" y="90"></rect>
+<text class="fe-step" x="310" y="110">3. Mem → MBR</text>
+<rect fill="#0055a0" height="40" rx="3" width="90" x="110" y="150"></rect>
+<text class="fe-step" x="155" y="170">4. MBR → RI</text>
+<rect fill="#0055a0" height="40" rx="3" width="120" x="220" y="150"></rect>
+<text class="fe-step" x="280" y="170">5. CP + 1</text>
+<rect fill="#d8f0dc" height="150" rx="6" stroke="#2d8659" stroke-dasharray="4 3" stroke-width="1.5" width="230" x="380" y="50"></rect>
+<text class="fe-phase" fill="#2d8659" x="395" y="68">FASE 2 · EXECUTE (ejecución)</text>
+<rect fill="#2d8659" height="45" rx="3" width="90" x="400" y="90"></rect>
+<text class="fe-step" x="445" y="110">6. Decode</text>
+<rect fill="#2d8659" height="45" rx="3" width="90" x="510" y="90"></rect>
+<text class="fe-step" x="555" y="110">7. Execute</text>
+<rect fill="#e89822" height="40" rx="3" width="200" x="400" y="150"></rect>
+<text class="fe-step" x="500" y="170">Actualiza flags / regs</text>
+</svg>

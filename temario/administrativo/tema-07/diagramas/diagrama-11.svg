@@ -1,0 +1,47 @@
+<svg aria-label="Cuadro comparativo. Alzada: objeto actos que no agotan la vía, resuelve el superior jerárquico, obligatorio, interposición un mes, resolución tres meses. Reposición: objeto actos que agotan la vía, resuelve el mismo órgano, potestativo, interposición un mes, resolución un mes. Extraordinario de revisión: objeto actos firmes, resuelve el mismo órgano, causas tasadas, interposición cuatro años o tres meses, resolución tres meses" class="svd11" role="img" viewbox="0 0 720 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd11 .h{font:700 12px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd11 .rk{font:700 11px system-ui,sans-serif;fill:#0055a0;text-anchor:start}.svd11 .c{font:11px system-ui,sans-serif;fill:#333;text-anchor:middle}</style>
+<rect fill="#eef2f7" height="40" rx="6" width="160" x="20" y="20"></rect>
+<rect fill="#d13c3c" height="40" rx="6" width="172" x="184" y="20"></rect>
+<text class="h" x="270" y="44">ALZADA (121-122)</text>
+<rect fill="#2d8659" height="40" rx="6" width="172" x="360" y="20"></rect>
+<text class="h" x="446" y="44">REPOSICIÓN (123-124)</text>
+<rect fill="#0055a0" height="40" rx="6" width="164" x="536" y="20"></rect>
+<text class="h" x="618" y="38">REVISIÓN</text>
+<text class="h" style="font-weight:400;font-size:10px" x="618" y="54">extraord. (125-126)</text>
+<g>
+<text class="rk" x="28" y="86">Objeto</text>
+<text class="c" x="270" y="86">No agota la vía</text>
+<text class="c" x="446" y="86">Sí agota la vía</text>
+<text class="c" x="618" y="86">Acto firme</text>
+<line stroke="#ddd" x1="20" x2="700" y1="96" y2="96"></line>
+<text class="rk" x="28" y="120">Carácter</text>
+<text class="c" style="font-weight:700;fill:#a82a2a" x="270" y="120">Obligatorio</text>
+<text class="c" style="font-weight:700;fill:#1f6b45" x="446" y="120">Potestativo</text>
+<text class="c" x="618" y="120">Causas tasadas</text>
+<line stroke="#ddd" x1="20" x2="700" y1="130" y2="130"></line>
+<text class="rk" x="28" y="154">Resuelve</text>
+<text class="c" x="270" y="154">Superior jerárquico</text>
+<text class="c" x="446" y="154">Mismo órgano</text>
+<text class="c" x="618" y="154">Mismo órgano</text>
+<line stroke="#ddd" x1="20" x2="700" y1="164" y2="164"></line>
+<text class="rk" x="28" y="184">Interpo-</text>
+<text class="rk" x="28" y="198">sición</text>
+<text class="c" x="270" y="191">1 mes / cualquier</text>
+<text class="c" x="446" y="191">1 mes / cualquier</text>
+<text class="c" x="618" y="184">4 años (error)</text>
+<text class="c" x="618" y="200">3 meses (resto)</text>
+<line stroke="#ddd" x1="20" x2="700" y1="210" y2="210"></line>
+<text class="rk" x="28" y="234">Resolución</text>
+<text class="c" style="font-weight:700" x="270" y="234">3 meses</text>
+<text class="c" style="font-weight:700" x="446" y="234">1 mes</text>
+<text class="c" style="font-weight:700" x="618" y="234">3 meses</text>
+<line stroke="#ddd" x1="20" x2="700" y1="244" y2="244"></line>
+<text class="rk" x="28" y="268">Silencio</text>
+<text class="c" x="270" y="262">Negativo (salvo</text>
+<text class="c" x="270" y="276">doble silencio)</text>
+<text class="c" x="446" y="268">Negativo</text>
+<text class="c" x="618" y="268">Negativo</text>
+</g>
+<rect fill="#fff5e6" height="26" rx="6" stroke="#e89822" width="680" x="20" y="288"></rect>
+<text class="c" style="font-weight:700;fill:#b5740f" x="360" y="305">Regla de oro: alzada = NO agota · reposición = SÍ agota · revisión = firme + causa tasada</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg aria-label="Mapa de las bandas de frecuencia que el Cuadro Nacional de Atribución de Frecuencias español dedica a estos sistemas. La banda 380-385 y 390-395 megahercios, según la nota UN-28, se reserva a redes de seguridad de las Fuerzas y Cuerpos de Seguridad del Estado y a redes de servicios de emergencia. Las subbandas 410-415,3 y 420-425,3 megahercios, según la nota UN-31, se destinan a sistemas digitales de acceso aleatorio de canales, TETRA y otros, con canalización de 25 kilohercios y separación dúplex de 10 megahercios. Los bloques 452-457,5 y 462-467,5 megahercios se reservan a banda ancha para protección pública y socorro. Y en la banda de 700 megahercios, 733-736 y 788-791 para el ámbito nacional y 698-703 y 753-758 para el ámbito autonómico y local" role="img" viewbox="0 0 680 350" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 10px system-ui,sans-serif;fill:#fff}.s9{font:8.5px system-ui,sans-serif;fill:#fff}.d9{font:8.5px system-ui,sans-serif;fill:#333}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.k9{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n9{font:8.5px system-ui,sans-serif;fill:#666}.m9{font:700 11px system-ui,sans-serif;fill:#fff}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">CNAF vigente: Orden TDF/732/2026, de 10 de julio (BOE 17-7-2026)</text>
+<text class="n9" text-anchor="middle" x="340" y="36">Deroga la Orden ETD/1449/2021 con efectos de 18 de julio de 2026 e incorpora la CMR-23</text>
+<rect fill="#d13c3c" height="62" rx="5" width="648" x="20" y="48"></rect>
+<text class="m9" x="36" y="68">380-385 / 390-395 MHz — nota UN-28</text>
+<text class="s9" x="36" y="85">«Redes de servicios de seguridad de las Fuerzas y Cuerpos de Seguridad del Estado y redes de servicios</text>
+<text class="s9" x="36" y="99">de emergencia en todo el territorio nacional» · Decisión CEPT ECC/DEC(08)05 · par dúplex separado 10 MHz</text>
+<rect fill="#0055a0" height="62" rx="5" width="648" x="20" y="118"></rect>
+<text class="m9" x="36" y="138">410-415,3 / 420-425,3 MHz — nota UN-31</text>
+<text class="s9" x="36" y="155">«Sistemas digitales de acceso aleatorio de canales (TETRA y otros)» · canalización de 25 kHz</text>
+<text class="s9" x="36" y="169">Separación Tx/Rx de 10 MHz · es la ÚNICA mención expresa de TETRA en el CNAF</text>
+<rect fill="#e89822" height="48" rx="5" width="648" x="20" y="188"></rect>
+<text class="m9" x="36" y="208">452-457,5 / 462-467,5 MHz — banda ancha PPDR</text>
+<text class="s9" x="36" y="225">Decisión CEPT ECC/DEC(16)02 · «preferentemente para el sistema de ámbito nacional» (nota UN-31)</text>
+<rect fill="#2d8659" height="60" rx="5" width="318" x="20" y="244"></rect>
+<text class="m9" text-anchor="middle" x="179" y="264">733-736 / 788-791 MHz</text>
+<text class="s9" text-anchor="middle" x="179" y="281">PPDR de banda ancha</text>
+<text class="s9" text-anchor="middle" x="179" y="295">ÁMBITO NACIONAL</text>
+<rect fill="#2d8659" height="60" rx="5" width="318" x="350" y="244"></rect>
+<text class="m9" text-anchor="middle" x="509" y="264">698-703 / 753-758 MHz</text>
+<text class="s9" text-anchor="middle" x="509" y="281">PPDR de banda ancha</text>
+<text class="s9" text-anchor="middle" x="509" y="295">ÁMBITO AUTONÓMICO Y LOCAL</text>
+<text class="k9" text-anchor="middle" x="340" y="320">El bloque autonómico y local es el espectro que la norma reserva a una futura red de banda ancha crítica municipal</text>
+<text class="n9" text-anchor="end" x="670" y="342">[Fuente: Orden TDF/732/2026, notas UN-28 y UN-31, BOE núm. 173 de 17-7-2026]</text>
+</svg>

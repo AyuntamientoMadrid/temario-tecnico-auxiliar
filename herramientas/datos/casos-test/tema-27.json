@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "¿Cómo debe organizarse el segundo disco para que un componente en bucle no vuelva a llenar el volumen del sistema?",
+    "o": [
+     "Con LVM y volúmenes lógicos separados para los datos y para los registros.",
+     "Con una única partición grande montada en / para dar más margen al sistema.",
+     "Llevando los registros a /tmp, cuyo contenido el sistema vacía periódicamente."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.2.1",
+    "e": "Si el volumen de registros es independiente, un componente en bucle llena su propio volumen y no el del sistema ni el de los datos."
+   },
+   {
+    "q": "¿Cuál es el orden correcto de las capas de almacenamiento que se montan sobre el disco nuevo?",
+    "o": [
+     "Sistema de archivos → partición → LVM → dispositivo de bloques → punto de montaje.",
+     "Dispositivo de bloques → partición → LVM (PV → VG → LV) → sistema de archivos → punto de montaje.",
+     "Dispositivo de bloques → sistema de archivos → LVM (LV → VG → PV) → partición → punto de montaje."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §2.2.1",
+    "e": "Sobre el dispositivo de bloques se construye la pila: partición, volumen lógico (PV, VG y LV), sistema de archivos y punto de montaje."
+   },
+   {
+    "q": "Más adelante hay que ampliar el volumen de datos sin parar el servicio. ¿Qué hay que hacer?",
+    "o": [
+     "Ejecutar solo lvextend: el sistema de archivos ocupa el nuevo espacio de forma automática.",
+     "Desmontar el volumen, pasar fsck y ampliar después el grupo de volúmenes con vgextend.",
+     "Ejecutar lvextend sobre el volumen lógico y, después, resize2fs o xfs_growfs sobre el sistema de archivos."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §2.2.1",
+    "e": "Son dos pasos: si solo se amplía el volumen lógico, df sigue mostrando el tamaño antiguo."
+   },
+   {
+    "q": "¿Qué esquema de cuentas procede para los tres técnicos de explotación?",
+    "o": [
+     "Una cuenta compartida «explotacion», con la contraseña custodiada en sobre cerrado por el jefe de equipo.",
+     "Una cuenta nominal por técnico y, para administrar, una cuenta de administración diferenciada con segundo factor.",
+     "La cuenta root para los tres, con contraseña larga y cambio obligatorio cada sesenta días."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §3.1",
+    "e": "Las cuentas compartidas destruyen la trazabilidad; mínimo privilegio y separación de funciones exigen separar la cuenta de uso diario de la de administración."
+   },
+   {
+    "q": "¿Con qué cuenta debe ejecutarse la aplicación de terceros?",
+    "o": [
+     "Con una cuenta de servicio propia, sin sesión interactiva y con permisos solo sobre sus directorios.",
+     "Con la cuenta nominal del técnico que la instala, para que quede trazado quién la puso en marcha.",
+     "Con la cuenta root, para evitar fallos de permisos al escribir sus registros y sus datos."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §3.2",
+    "e": "El servicio se ejecuta con privilegios mínimos y sin depender de la cuenta de una persona."
+   },
+   {
+    "q": "¿Qué mecanismo permite a los técnicos reiniciar el servicio sin ser administradores plenos?",
+    "o": [
+     "Darles la contraseña de root solo para las ventanas de mantenimiento.",
+     "Activar el bit SUID en systemctl para que cualquier usuario lo ejecute como root.",
+     "Sudo acotado a las órdenes concretas (reinicio y consulta del registro) para su grupo."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §3.1.1",
+    "e": "Sudo permite acotar exactamente qué puede hacer cada operador y registra cada orden ejecutada."
+   },
+   {
+    "q": "¿Qué garantiza que el servicio de la aplicación vuelva a arrancar tras un reinicio del servidor?",
+    "o": [
+     "Ejecutar systemctl start, que deja el servicio activo también en los arranques siguientes.",
+     "Programar en cron un systemctl restart cada minuto para relanzarlo si se ha detenido.",
+     "Habilitarlo con systemctl enable (o enable --now): start solo lo arranca en ese momento."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §3.2",
+    "e": "start y enable son operaciones independientes: un servicio arrancado pero no habilitado desaparece tras reiniciar."
+   },
+   {
+    "q": "¿Cuál de estas es una buena práctica exigible al proceso nocturno de consolidación?",
+    "o": [
+     "Que sea idempotente y use un bloqueo para no solaparse consigo mismo si un día tarda de más.",
+     "Que se ejecute con la cuenta nominal del técnico que lo programó, para saber quién responde.",
+     "Que solo envíe aviso cuando termine bien, para no saturar el buzón del equipo de explotación."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §3.2",
+    "e": "La tarea debe ser idempotente, usar un bloqueo, registrar su resultado, avisar también si falla y correr con una cuenta de servicio."
+   },
+   {
+    "q": "¿Qué documentación debe existir antes de considerar el servidor «en servicio»?",
+    "o": [
+     "Solo el manual de la aplicación de terceros, el contrato de soporte y la factura de compra del servidor.",
+     "Inventario, arquitectura, configuración base, procedimientos operativos, registro de cambios, plan de continuidad y ANS.",
+     "Las contraseñas de todas las cuentas, el código fuente de la aplicación y sus licencias de uso."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §4.1",
+    "e": "La documentación debe ser suficiente para reconstruir el servicio desde cero y no depender de una persona concreta."
+   },
+   {
+    "q": "¿Por qué el inventario es la pieza fundacional de esa documentación?",
+    "o": [
+     "Porque no se puede proteger, parchear ni recuperar lo que no se sabe que existe (op.exp.1 del ENS).",
+     "Porque es la única medida del ENS que se exige solo a los sistemas de categoría ALTA.",
+     "Porque sustituye al registro de cambios y al plan de continuidad del servidor."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · §4.1",
+    "e": "De él dependen el análisis de riesgos, la gestión de parches y la recuperación; op.exp.1 se aplica en las tres categorías."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "¿Cómo se determina la prioridad real de aplicación del parche de la vulnerabilidad con CVSS 9,4?",
+    "o": [
+     "Solo con la puntuación CVSS: al ser superior a 9,0, el parche tiene la máxima prioridad.",
+     "Combinando gravedad, exposición del activo, criticidad del servicio y explotación activa.",
+     "Con la fecha de publicación: los parches se aplican en el orden en que salen."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §6.1",
+    "e": "Aquí los cuatro factores apuntan en la misma dirección: banda crítica, componente publicado en Internet, servicio con efectos jurídicos y explotación activa."
+   },
+   {
+    "q": "¿Por qué la puntuación CVSS, por sí sola, no determina la prioridad?",
+    "o": [
+     "Porque CVSS solo puntúa de 0 a 5 y no distingue las vulnerabilidades críticas.",
+     "Porque un 9,4 pertenece a la banda alta, no a la crítica, de la escala CVSS.",
+     "Porque puntúa la vulnerabilidad, no el riesgo del activo concreto en que está."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §6.1",
+    "e": "Una vulnerabilidad de 9,8 en un servicio deshabilitado puede ser menos urgente que una de 7,0 explotada en un servidor publicado."
+   },
+   {
+    "q": "Un responsable propone aplicarlo «esta misma tarde en todo el parque». ¿Cómo debe valorarse?",
+    "o": [
+     "Debe rechazarse: la urgencia comprime los plazos, pero no suprime las etapas de prueba y despliegue.",
+     "Debe aceptarse: la explotación activa obliga a saltarse las pruebas y desplegar en todo el parque.",
+     "Debe rechazarse y dejar el parche para el ciclo mensual ordinario, como cualquier otra actualización."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §6.2",
+    "e": "Un parche defectuoso aplicado a la vez a 4.200 puestos convertiría un incidente de seguridad en una caída generalizada."
+   },
+   {
+    "q": "¿En qué orden deben recorrerse los anillos de despliegue en este supuesto?",
+    "o": [
+     "Primero los 6 servidores de la Sede, por estar expuestos; después piloto, puestos y laboratorio.",
+     "Los 4.200 puestos a la vez y, si no hay fallos, los servidores de la Sede al día siguiente.",
+     "Laboratorio, piloto, producción no crítica y, por último, los servidores de la Sede en ventana."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §6.2",
+    "e": "La producción crítica va la última, en ventana de mantenimiento y con la marcha atrás preparada, tras verificar cada anillo."
+   },
+   {
+    "q": "Mientras el parche recorre los anillos, ¿qué se hace con el componente expuesto de la Sede?",
+    "o": [
+     "Aplicar mitigaciones temporales en el perímetro sobre el componente expuesto.",
+     "Desactivar el registro de actividad para aligerar la carga de los servidores.",
+     "Nada: hasta que llegue su anillo, el componente se deja tal como está."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §6.1",
+    "e": "Con explotación activa no se espera sin más: se aplican mitigaciones temporales (filtrar, restringir accesos, reforzar la vigilancia) mientras llega la corrección."
+   },
+   {
+    "q": "¿Cómo se tramita este despliegue en la gestión de cambios?",
+    "o": [
+     "Como cambio estándar preaprobado, que no necesita documentarse.",
+     "Como cambio de emergencia: se ejecuta primero y se documenta y aprueba formalmente después.",
+     "Como cambio normal, que debe esperar a la reunión ordinaria del comité de cambios."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §4.1",
+    "e": "El cambio de emergencia se ejecuta para atajar el riesgo, pero se documenta y aprueba después, nunca «en lugar de»."
+   },
+   {
+    "q": "¿Qué medida del anexo II del ENS regula esta actividad?",
+    "o": [
+     "op.exp.1 — Inventario de activos.",
+     "op.exp.4 — Mantenimiento y actualizaciones de seguridad.",
+     "mp.info.6 — Copias de seguridad."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §4.2.1",
+    "e": "op.exp.4 exige seguir los anuncios del fabricante y un procedimiento para analizar, priorizar y decidir cuándo aplicar las actualizaciones."
+   },
+   {
+    "q": "¿Qué obliga a hacer el refuerzo R1 de esa medida?",
+    "o": [
+     "Prever un mecanismo para revertir los parches si aparecen efectos adversos.",
+     "Someter el sistema a una auditoría extraordinaria tras cada actualización.",
+     "Probar en preproducción, en un entorno consistente con producción, antes de aplicar."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §6.2.1",
+    "e": "R1 son las pruebas en preproducción; la reversión es el refuerzo R2 (prevención de fallos)."
+   },
+   {
+    "q": "Solo la disponibilidad de la Sede está en nivel ALTO. ¿Qué refuerzos de op.exp.4 le son exigibles?",
+    "o": [
+     "Los dos, R1 y R2, porque el sistema es de categoría ALTA.",
+     "Solo R1, porque con una única dimensión en ALTO el sistema es de categoría MEDIA.",
+     "Ninguno, porque los refuerzos son recomendaciones y no medidas exigibles."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §4.2.1",
+    "e": "Manda la dimensión más alta: basta una dimensión en nivel ALTO para que todo el sistema sea de categoría ALTA, y R2 se exige en ALTA."
+   },
+   {
+    "q": "¿Qué mecanismo de marcha atrás procede para los 6 servidores de la Sede y qué límite tiene?",
+    "o": [
+     "La restauración desde copia de seguridad, porque es el mecanismo más rápido disponible.",
+     "El punto de restauración del sistema, que además recupera los datos de los usuarios.",
+     "La instantánea previa de cada máquina virtual, que no sustituye a la copia de seguridad."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §6.2.1",
+    "e": "La instantánea es inmediata y completa, pero depende del mismo almacenamiento: si se pierde la cabina o se cifra el volumen, se pierden ambas."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "El servidor del Padrón no arranca y no encuentra el volumen raíz. ¿Cuál es la primera hipótesis razonable?",
+    "o": [
+     "Un fallo de la red del centro de proceso de datos, que impide las conexiones remotas.",
+     "Un certificado caducado en el servidor de aplicaciones del Padrón.",
+     "La actualización del núcleo aplicada la noche anterior."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §7.2",
+    "e": "La primera pregunta útil es qué ha cambiado: la inmensa mayoría de las incidencias siguen a un cambio."
+   },
+   {
+    "q": "¿De qué es firma clásica el mensaje «no encuentra el volumen raíz» tras actualizar el núcleo?",
+    "o": [
+     "De un initramfs regenerado sin el controlador necesario para montar la raíz.",
+     "De una partición ESP dañada, que impide al firmware cargar el gestor de arranque.",
+     "De un disco lleno en /var/log, que impide al sistema escribir sus registros."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §1.2.1",
+    "e": "Si el initramfs no incluye el controlador del RAID, del cifrado o de la cabina, el sistema arranca y muere por no encontrar la raíz."
+   },
+   {
+    "q": "Además de diagnosticar el servidor caído, ¿qué medida de contención procede?",
+    "o": [
+     "Aplicar la misma actualización al resto de servidores para homogeneizar el parque.",
+     "Detener el despliegue de esa actualización en el resto de servidores hasta aclarar lo ocurrido.",
+     "Reinstalar desde cero todos los servidores que recibieron la actualización la misma noche."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §7.2",
+    "e": "Aislar y contener evita que el fallo se propague a otros servidores mientras se investiga."
+   },
+   {
+    "q": "¿En qué eslabón de la cadena de arranque se ha detenido el sistema?",
+    "o": [
+     "En el del núcleo y el initramfs, después del gestor de arranque y antes del proceso inicial.",
+     "En el del firmware, antes de llegar a cargar el gestor de arranque desde el disco.",
+     "En el del proceso inicial (systemd), al activar los servicios del objetivo multiusuario."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 2 · §8.1",
+    "e": "El síntoma «no se encuentra el volumen raíz» corresponde al punto de fallo núcleo/initramfs."
+   },
+   {
+    "q": "¿Cuál es la técnica de reparación de menor coste que debe intentarse primero?",
+    "o": [
+     "Restaurar el servidor desde la copia de seguridad del sábado.",
+     "Arrancar desde un medio vivo y reinstalar el gestor de arranque con chroot.",
+     "Arrancar la entrada anterior del núcleo desde el menú de GRUB."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §6.2.1",
+    "e": "Es la actuación con mejor relación entre probabilidad de éxito y coste, y devuelve el servicio en minutos."
+   },
+   {
+    "q": "Si no arranca ninguna entrada del núcleo, ¿cuál es el siguiente paso razonable antes de restaurar?",
+    "o": [
+     "Ejecutar fsck sobre la raíz montada en lectura y escritura para reparar el volumen.",
+     "Arrancar desde un medio vivo, montar los volúmenes, hacer chroot y regenerar el initramfs.",
+     "Ejecutar bootrec /rebuildbcd desde el entorno de recuperación del sistema."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §8.1",
+    "e": "Con chroot se «entra» en la instalación dañada para repararla desde dentro; fsck nunca se ejecuta con el sistema montado en lectura y escritura."
+   },
+   {
+    "q": "Restablecido el servicio, ¿dónde se acredita qué se instaló la noche del domingo y cuándo?",
+    "o": [
+     "En el registro de autenticación (auth.log o secure) del servidor afectado.",
+     "En los registros del gestor de paquetes, junto a los del arranque anterior (journalctl -b -1).",
+     "En los registros de la aplicación de Padrón, que anotan las versiones del núcleo."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §7.1",
+    "e": "El gestor de paquetes deja constancia de lo instalado; journalctl -b -1 muestra los errores del arranque anterior."
+   },
+   {
+    "q": "¿Qué dos requisitos deben cumplir esos registros para no perder su valor como evidencia?",
+    "o": [
+     "Sincronización horaria por NTP y centralización protegida en un servidor distinto.",
+     "Rotación diaria y compresión, para que no agoten el disco del servidor auditado.",
+     "Nivel de depuración (debug) activado y conservación en el disco local del servidor."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §7.1",
+    "e": "Sin hora común no se correlacionan eventos de varias máquinas, y sin centralización los registros desaparecen con la máquina o pueden alterarse."
+   },
+   {
+    "q": "Si hubiera que restaurar el lunes, ¿qué copias se necesitarían?",
+    "o": [
+     "Solo la última incremental, la del domingo, que ya contiene todos los datos del servidor.",
+     "La total del sábado, todas las incrementales posteriores en orden y los registros horarios.",
+     "La total del sábado y la última diferencial, que acumula lo cambiado desde entonces."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §8.2",
+    "e": "La incremental restaura en tantos pasos como copias tenga la cadena; si falta una, la cadena se rompe."
+   },
+   {
+    "q": "¿Cumple la estrategia descrita el RPO de una hora y el RTO de cuatro horas?",
+    "o": [
+     "Cumple ambos, porque existe una copia horaria de los registros de transacción.",
+     "Incumple el RPO, porque las copias incrementales solo se hacen una vez al día.",
+     "Cumple el RPO; el RTO depende del tiempo real medido en una prueba de restauración."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §8.2",
+    "e": "La pérdida máxima es de una hora; el RTO solo se conoce restaurando de verdad, como exige el refuerzo R1 de mp.info.6 del ENS."
+   }
+  ]
+ }
+]

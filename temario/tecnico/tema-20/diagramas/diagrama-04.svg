@@ -1,0 +1,25 @@
+<svg aria-label="Anatomía de una clase Expediente con tres compartimentos (nombre, atributos, métodos) y dos objetos instanciados a partir de ella con estado propio" role="img" viewbox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t4{font:700 12px system-ui,sans-serif;fill:#fff}.s4{font:10.5px system-ui,sans-serif;fill:#123}.m4{font:10.5px monospace;fill:#123}.l4{font:11px system-ui,sans-serif;fill:#444}.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h4" text-anchor="middle" x="320" y="20">CLASE (plantilla) → OBJETOS (instancias)</text>
+<rect fill="#fff" height="110" stroke="#0055a0" stroke-width="1.5" width="180" x="230" y="34"></rect>
+<rect fill="#0055a0" height="24" width="180" x="230" y="34"></rect><text class="t4" text-anchor="middle" x="320" y="50">Expediente</text>
+<line stroke="#0055a0" x1="230" x2="410" y1="58" y2="58"></line>
+<text class="m4" x="236" y="72">- idExpediente</text>
+<text class="m4" x="236" y="86">- estado</text>
+<line stroke="#0055a0" x1="230" x2="410" y1="94" y2="94"></line>
+<text class="m4" x="236" y="108">+ getEstado()</text>
+<text class="m4" x="236" y="122">+ calcularPlazo()</text>
+<text class="l4" text-anchor="middle" x="320" y="164">new ExpedienteLicencia(...) ↓</text>
+<rect fill="#eef4fa" height="100" stroke="#0055a0" width="220" x="60" y="180"></rect>
+<rect fill="#2d8659" height="24" width="220" x="60" y="180"></rect><text class="t4" text-anchor="middle" x="170" y="196">exp001 : ExpedienteLicencia</text>
+<text class="m4" x="70" y="216">idExpediente = "EXP-001"</text>
+<text class="m4" x="70" y="232">estado = "ABIERTO"</text>
+<text class="m4" x="70" y="248">tipoLicencia = "OBRA_MAYOR"</text>
+<rect fill="#eef4fa" height="100" stroke="#0055a0" width="220" x="360" y="180"></rect>
+<rect fill="#2d8659" height="24" width="220" x="360" y="180"></rect><text class="t4" text-anchor="middle" x="470" y="196">exp002 : ExpedienteTributario</text>
+<text class="m4" x="370" y="216">idExpediente = "EXP-002"</text>
+<text class="m4" x="370" y="232">estado = "ABIERTO"</text>
+<text class="m4" x="370" y="248">importe = 312.40</text>
+<text class="l4" text-anchor="middle" x="320" y="300">Cada objeto tiene su propio estado; comparten la misma estructura y comportamiento definidos en la clase</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="630" y="314">[Fuente: BOOCH07, cap. 2]</text>
+</svg>

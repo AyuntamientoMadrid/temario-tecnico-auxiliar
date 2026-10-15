@@ -1,0 +1,1109 @@
+{
+  "tema": 15,
+  "bloque": "tecnico",
+  "titulo": "Bases de datos y SGBD",
+  "enunciado_oficial": "Sistemas de gestión de bases de datos relacionales, orientados a objetos y NoSQL: características y componentes. Administración de bases de datos.",
+  "calificacion": "+1 acierto, -1/3 error, 0 en blanco (BOAM 10.032, base 5.2)",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Cuál es la diferencia entre una base de datos y un SGBD?",
+      "opciones": {
+        "a": "La base de datos es el conjunto de datos; el SGBD es el software que la gestiona",
+        "b": "Son lo mismo",
+        "c": "El SGBD es el conjunto de datos; la base de datos es el hardware"
+      },
+      "correcta": "a",
+      "referencia": "§1.2 [ELMASRI]",
+      "explicacion": "La **base de datos** es el conjunto de datos; el **SGBD** (Oracle, PostgreSQL…) es el software que la gestiona."
+    },
+    {
+      "numero": 2,
+      "pregunta": "El principal problema del almacenamiento en ficheros propios por aplicación es:",
+      "opciones": {
+        "a": "La redundancia e inconsistencia de los datos",
+        "b": "Que ocupan poco espacio",
+        "c": "Que son demasiado rápidos"
+      },
+      "correcta": "a",
+      "referencia": "§1.1",
+      "explicacion": "Los ficheros aislados duplican datos (redundancia) que pueden quedar inconsistentes entre aplicaciones; la BD los integra."
+    },
+    {
+      "numero": 3,
+      "pregunta": "El diccionario de datos (catálogo) de un SGBD contiene:",
+      "opciones": {
+        "a": "Las copias de seguridad",
+        "b": "Solo los datos de los usuarios",
+        "c": "Los metadatos: la descripción de la estructura de la base de datos"
+      },
+      "correcta": "c",
+      "referencia": "§1.3",
+      "explicacion": "El **diccionario de datos** almacena los **metadatos** (tablas, columnas, tipos, restricciones, usuarios): la descripción de la propia BD."
+    },
+    {
+      "numero": 4,
+      "pregunta": "La sentencia `CREATE TABLE` pertenece al sublenguaje:",
+      "opciones": {
+        "a": "DML",
+        "b": "DCL",
+        "c": "DDL"
+      },
+      "correcta": "c",
+      "referencia": "§1.5 [ISO-9075]",
+      "explicacion": "`CREATE`, `ALTER` y `DROP` son **DDL** (definición). El DML manipula datos; el DCL controla el acceso."
+    },
+    {
+      "numero": 5,
+      "pregunta": "Las sentencias `SELECT`, `INSERT`, `UPDATE` y `DELETE` forman parte del:",
+      "opciones": {
+        "a": "DDL",
+        "b": "TCL",
+        "c": "DML (lenguaje de manipulación de datos)"
+      },
+      "correcta": "c",
+      "referencia": "§1.5",
+      "explicacion": "Son **DML** (manipulación de datos). El DDL define la estructura; el TCL gestiona transacciones."
+    },
+    {
+      "numero": 6,
+      "pregunta": "Las sentencias `GRANT` y `REVOKE` pertenecen al:",
+      "opciones": {
+        "a": "DCL (control de acceso)",
+        "b": "DDL",
+        "c": "DML"
+      },
+      "correcta": "a",
+      "referencia": "§1.5, §5.1",
+      "explicacion": "`GRANT` y `REVOKE` son **DCL**: conceden y retiran privilegios a usuarios y roles."
+    },
+    {
+      "numero": 7,
+      "pregunta": "`COMMIT` y `ROLLBACK` pertenecen al:",
+      "opciones": {
+        "a": "DDL",
+        "b": "DCL",
+        "c": "TCL (control de transacciones)"
+      },
+      "correcta": "c",
+      "referencia": "§1.5, §2.1",
+      "explicacion": "`COMMIT` (confirma) y `ROLLBACK` (deshace) son **TCL**, el control de transacciones."
+    },
+    {
+      "numero": 8,
+      "pregunta": "El componente del SGBD que genera el plan de ejecución eficiente de una consulta es:",
+      "opciones": {
+        "a": "El gestor de almacenamiento",
+        "b": "El procesador de consultas (optimizador)",
+        "c": "El diccionario de datos"
+      },
+      "correcta": "b",
+      "referencia": "§1.4",
+      "explicacion": "El **procesador de consultas** interpreta y **optimiza** las sentencias generando un plan de ejecución eficiente."
+    },
+    {
+      "numero": 9,
+      "pregunta": "El rol responsable de la estructura física, los permisos, las copias y el rendimiento de la BD es:",
+      "opciones": {
+        "a": "El usuario final",
+        "b": "El administrador de la base de datos (DBA)",
+        "c": "El programador de aplicaciones"
+      },
+      "correcta": "b",
+      "referencia": "§1.6",
+      "explicacion": "El **DBA** administra la estructura física, los usuarios, las copias de seguridad, la disponibilidad y el rendimiento."
+    },
+    {
+      "numero": 10,
+      "pregunta": "Una función de control esencial del SGBD es:",
+      "opciones": {
+        "a": "Garantizar integridad, seguridad, concurrencia y recuperación",
+        "b": "Compilar el sistema operativo",
+        "c": "Fabricar el hardware de almacenamiento"
+      },
+      "correcta": "a",
+      "referencia": "§1.3",
+      "explicacion": "El SGBD controla **integridad, seguridad, concurrencia y recuperación** ante fallos."
+    },
+    {
+      "numero": 11,
+      "pregunta": "Una transacción se define como:",
+      "opciones": {
+        "a": "Una copia de seguridad",
+        "b": "Un índice de la base de datos",
+        "c": "Una unidad lógica de trabajo indivisible (todo o nada)"
+      },
+      "correcta": "c",
+      "referencia": "§2.1 [SILBERSCHATZ-DB]",
+      "explicacion": "La **transacción** es una unidad lógica de trabajo que se ejecuta como un todo indivisible: o todo, o nada."
+    },
+    {
+      "numero": 12,
+      "pregunta": "¿Qué significa la \"A\" de ACID?",
+      "opciones": {
+        "a": "Acceso",
+        "b": "Análisis",
+        "c": "Atomicidad (todo o nada)"
+      },
+      "correcta": "c",
+      "referencia": "§2.1 [ACID-HAERDER]",
+      "explicacion": "**A** = **Atomicidad**: si falla cualquier paso, se deshacen todos (rollback). ACID = Atomicidad, Consistencia, Aislamiento, Durabilidad."
+    },
+    {
+      "numero": 13,
+      "pregunta": "La propiedad ACID que garantiza que un cambio confirmado persiste aunque caiga el sistema es:",
+      "opciones": {
+        "a": "Atomicidad",
+        "b": "Aislamiento",
+        "c": "Durabilidad"
+      },
+      "correcta": "c",
+      "referencia": "§2.1",
+      "explicacion": "La **durabilidad** garantiza que, tras el `COMMIT`, el cambio persiste pese a fallos, gracias al log de transacciones."
+    },
+    {
+      "numero": 14,
+      "pregunta": "La propiedad ACID que evita que una transacción vea los estados intermedios de otra concurrente es:",
+      "opciones": {
+        "a": "Consistencia",
+        "b": "Aislamiento",
+        "c": "Durabilidad"
+      },
+      "correcta": "b",
+      "referencia": "§2.1",
+      "explicacion": "El **aislamiento** hace que el resultado de transacciones concurrentes sea como si se ejecutaran en serie."
+    },
+    {
+      "numero": 15,
+      "pregunta": "Leer datos que otra transacción ha modificado pero aún no ha confirmado es una anomalía llamada:",
+      "opciones": {
+        "a": "Lectura no repetible",
+        "b": "Lectura sucia (dirty read)",
+        "c": "Actualización perdida"
+      },
+      "correcta": "b",
+      "referencia": "§2.2",
+      "explicacion": "La **lectura sucia** lee datos no confirmados que podrían deshacerse después."
+    },
+    {
+      "numero": 16,
+      "pregunta": "El control de concurrencia en el que el SGBD mantiene varias versiones de cada dato, de modo que los lectores no bloquean a los escritores, es:",
+      "opciones": {
+        "a": "Bloqueo en dos fases (2PL)",
+        "b": "MVCC (control multiversión)",
+        "c": "WAL"
+      },
+      "correcta": "b",
+      "referencia": "§2.2 [POSTGRES-DOC]",
+      "explicacion": "El **MVCC** mantiene varias versiones; los lectores no bloquean a los escritores (lo usan PostgreSQL y Oracle)."
+    },
+    {
+      "numero": 17,
+      "pregunta": "El nivel de aislamiento SQL que evita todas las anomalías (sucia, no repetible y fantasma) es:",
+      "opciones": {
+        "a": "Serializable",
+        "b": "Read Committed",
+        "c": "Repeatable Read"
+      },
+      "correcta": "a",
+      "referencia": "§2.3 [ISO-9075]",
+      "explicacion": "**Serializable** es el nivel más alto: evita lectura sucia, no repetible y fantasma, a costa de menos concurrencia."
+    },
+    {
+      "numero": 18,
+      "pregunta": "La técnica por la que el SGBD anota en un log lo que va a hacer antes de aplicarlo se denomina:",
+      "opciones": {
+        "a": "Sharding",
+        "b": "Write-Ahead Logging (WAL)",
+        "c": "Normalización"
+      },
+      "correcta": "b",
+      "referencia": "§2.4 [SILBERSCHATZ-DB]",
+      "explicacion": "El **WAL** (registro anticipado) anota los cambios en el log antes de aplicarlos, permitiendo redo/undo tras un fallo."
+    },
+    {
+      "numero": 19,
+      "pregunta": "Tras un fallo, el SGBD usa el log para:",
+      "opciones": {
+        "a": "Borrar la base de datos",
+        "b": "Crear nuevos usuarios",
+        "c": "Rehacer (redo) las transacciones confirmadas y deshacer (undo) las no confirmadas"
+      },
+      "correcta": "c",
+      "referencia": "§2.4",
+      "explicacion": "La recuperación **rehace** las confirmadas y **deshace** las no confirmadas, garantizando atomicidad y durabilidad."
+    },
+    {
+      "numero": 20,
+      "pregunta": "El protocolo de bloqueo que garantiza la seriabilidad de las transacciones es:",
+      "opciones": {
+        "a": "El sharding",
+        "b": "El bloqueo en dos fases (2PL)",
+        "c": "El modelo en estrella"
+      },
+      "correcta": "b",
+      "referencia": "§2.2",
+      "explicacion": "El **2PL (bloqueo en dos fases)** garantiza la seriabilidad; su riesgo es el interbloqueo entre transacciones."
+    },
+    {
+      "numero": 21,
+      "pregunta": "La propiedad ACID de consistencia significa que:",
+      "opciones": {
+        "a": "Los datos se replican en varios nodos",
+        "b": "Las consultas son rápidas",
+        "c": "La transacción lleva la BD de un estado válido a otro válido, respetando la integridad"
+      },
+      "correcta": "c",
+      "referencia": "§2.1",
+      "explicacion": "La **consistencia** garantiza que la transacción respeta todas las reglas de integridad, pasando de un estado válido a otro."
+    },
+    {
+      "numero": 22,
+      "pregunta": "Una lectura fantasma (phantom read) se produce cuando:",
+      "opciones": {
+        "a": "Una consulta repetida devuelve filas nuevas insertadas por otra transacción",
+        "b": "Se borra la base de datos",
+        "c": "Se pierde la conexión"
+      },
+      "correcta": "a",
+      "referencia": "§2.2, §2.3",
+      "explicacion": "La **lectura fantasma** aparece cuando una consulta repetida ve filas nuevas insertadas por otra transacción. La evita el nivel Serializable."
+    },
+    {
+      "numero": 23,
+      "pregunta": "La arquitectura ANSI/SPARC define tres esquemas:",
+      "opciones": {
+        "a": "Primario, secundario y terciario",
+        "b": "DDL, DML y DCL",
+        "c": "Interno, conceptual y externo"
+      },
+      "correcta": "c",
+      "referencia": "§3 [ANSI-SPARC]",
+      "explicacion": "**ANSI/SPARC**: nivel **interno** (físico), **conceptual** (lógico global) y **externo** (vistas)."
+    },
+    {
+      "numero": 24,
+      "pregunta": "Poder añadir un índice (cambio de almacenamiento) sin afectar a las aplicaciones es un ejemplo de:",
+      "opciones": {
+        "a": "Independencia lógica de datos",
+        "b": "Independencia física de datos",
+        "c": "Replicación"
+      },
+      "correcta": "b",
+      "referencia": "§3",
+      "explicacion": "La **independencia física** permite cambiar el nivel interno (índices, ficheros) sin afectar al conceptual ni a las aplicaciones."
+    },
+    {
+      "numero": 25,
+      "pregunta": "El nivel externo de ANSI/SPARC corresponde a:",
+      "opciones": {
+        "a": "El almacenamiento físico",
+        "b": "El log de transacciones",
+        "c": "Las vistas parciales adaptadas a cada grupo de usuarios"
+      },
+      "correcta": "c",
+      "referencia": "§3",
+      "explicacion": "El **nivel externo** son las **vistas**: lo que cada grupo de usuarios ve de la BD, según sus necesidades y permisos."
+    },
+    {
+      "numero": 26,
+      "pregunta": "El nivel conceptual de ANSI/SPARC describe:",
+      "opciones": {
+        "a": "Cómo se almacenan físicamente los datos",
+        "b": "Solo los índices",
+        "c": "La estructura lógica global de toda la base de datos"
+      },
+      "correcta": "c",
+      "referencia": "§3",
+      "explicacion": "El **nivel conceptual** describe la estructura lógica global (entidades, relaciones, restricciones), independiente del almacenamiento."
+    },
+    {
+      "numero": 27,
+      "pregunta": "El modelo de datos dominante, propuesto por Codd en 1970, es:",
+      "opciones": {
+        "a": "El jerárquico",
+        "b": "El relacional (tablas)",
+        "c": "El de grafos"
+      },
+      "correcta": "b",
+      "referencia": "§4.3 [CODD-1970]",
+      "explicacion": "El **modelo relacional** (Codd, 1970) organiza los datos en tablas y es el dominante; es la base de SQL."
+    },
+    {
+      "numero": 28,
+      "pregunta": "En el modelo relacional, el atributo que referencia la clave primaria de otra tabla es:",
+      "opciones": {
+        "a": "El índice",
+        "b": "La clave ajena (foránea)",
+        "c": "La vista"
+      },
+      "correcta": "b",
+      "referencia": "§4.3",
+      "explicacion": "La **clave ajena (foránea)** referencia la clave primaria de otra tabla, estableciendo la integridad referencial."
+    },
+    {
+      "numero": 29,
+      "pregunta": "La integridad de entidad exige que la clave primaria:",
+      "opciones": {
+        "a": "Pueda ser nula",
+        "b": "Cambie en cada consulta",
+        "c": "No sea nula ni se repita"
+      },
+      "correcta": "c",
+      "referencia": "§4.3 [DATE]",
+      "explicacion": "La **integridad de entidad**: la clave primaria no puede ser nula ni repetirse (identifica unívocamente cada fila)."
+    },
+    {
+      "numero": 30,
+      "pregunta": "La operación del álgebra relacional que combina filas de dos tablas según una condición es:",
+      "opciones": {
+        "a": "La reunión (join)",
+        "b": "La proyección",
+        "c": "La selección"
+      },
+      "correcta": "a",
+      "referencia": "§4.3",
+      "explicacion": "El **join (reunión)** combina filas de dos tablas según una condición (normalmente la igualdad de claves)."
+    },
+    {
+      "numero": 31,
+      "pregunta": "Un SGBD que extiende el modelo relacional con tipos complejos, herencia y objetos, manteniendo SQL, es:",
+      "opciones": {
+        "a": "Jerárquico",
+        "b": "Clave-valor",
+        "c": "Objeto-relacional"
+      },
+      "correcta": "c",
+      "referencia": "§4.4 [ISO-9075-OR]",
+      "explicacion": "El **objeto-relacional (ORDBMS)** extiende el relacional con objetos manteniendo SQL (Oracle, PostgreSQL, SQL:1999+)."
+    },
+    {
+      "numero": 32,
+      "pregunta": "Las bases de datos NoSQL se caracterizan por:",
+      "opciones": {
+        "a": "Ser siempre relacionales",
+        "b": "Renunciar al modelo relacional estricto para ganar escalabilidad horizontal y flexibilidad de esquema",
+        "c": "No poder almacenar grandes volúmenes"
+      },
+      "correcta": "b",
+      "referencia": "§4.5 [SADALAGE-FOWLER]",
+      "explicacion": "**NoSQL** (\"Not only SQL\") gana escalabilidad horizontal y esquema flexible, en respuesta al big data."
+    },
+    {
+      "numero": 33,
+      "pregunta": "MongoDB es un ejemplo de base de datos NoSQL de tipo:",
+      "opciones": {
+        "a": "Documental",
+        "b": "Clave-valor",
+        "c": "Grafos"
+      },
+      "correcta": "a",
+      "referencia": "§4.5 [MONGODB-DOC]",
+      "explicacion": "**MongoDB** es **documental** (documentos JSON/BSON). Redis es clave-valor; Neo4j, de grafos."
+    },
+    {
+      "numero": 34,
+      "pregunta": "Neo4j es una base de datos NoSQL de tipo:",
+      "opciones": {
+        "a": "Columnar",
+        "b": "De grafos",
+        "c": "Documental"
+      },
+      "correcta": "b",
+      "referencia": "§4.5",
+      "explicacion": "**Neo4j** es de **grafos** (nodos y relaciones), ideal para redes y recomendaciones."
+    },
+    {
+      "numero": 35,
+      "pregunta": "El teorema CAP afirma que un sistema distribuido solo puede garantizar a la vez:",
+      "opciones": {
+        "a": "Las tres propiedades C, A y P",
+        "b": "Dos de las tres: Consistencia, Disponibilidad y tolerancia a Particiones",
+        "c": "Ninguna de ellas"
+      },
+      "correcta": "b",
+      "referencia": "§4.5 [CAP-BREWER]",
+      "explicacion": "El **teorema CAP** (Brewer): solo **dos de tres** (Consistencia, Disponibilidad, Particiones). Ante una partición se elige entre C y A."
+    },
+    {
+      "numero": 36,
+      "pregunta": "El modelo BASE, alternativa a ACID en muchos NoSQL, prioriza:",
+      "opciones": {
+        "a": "La consistencia inmediata por encima de todo",
+        "b": "La disponibilidad y la consistencia eventual",
+        "c": "El cifrado de los datos"
+      },
+      "correcta": "b",
+      "referencia": "§4.5",
+      "explicacion": "**BASE** (Basically Available, Soft state, Eventual consistency) prioriza disponibilidad y consistencia eventual frente a la consistencia inmediata de ACID."
+    },
+    {
+      "numero": 37,
+      "pregunta": "Redis es un ejemplo de base de datos NoSQL de tipo:",
+      "opciones": {
+        "a": "De grafos",
+        "b": "Relacional",
+        "c": "Clave-valor"
+      },
+      "correcta": "c",
+      "referencia": "§4.5",
+      "explicacion": "**Redis** es **clave-valor**, de acceso ultrarrápido (caché, sesiones)."
+    },
+    {
+      "numero": 38,
+      "pregunta": "El procesamiento OLTP se caracteriza por:",
+      "opciones": {
+        "a": "Operaciones transaccionales cortas del día a día",
+        "b": "Consultas analíticas masivas sobre datos históricos",
+        "c": "No usar bases de datos"
+      },
+      "correcta": "a",
+      "referencia": "§4.6",
+      "explicacion": "**OLTP** = transaccional, operaciones cortas del día a día (el Padrón en funcionamiento). OLAP es el analítico."
+    },
+    {
+      "numero": 39,
+      "pregunta": "Un data warehouse (almacén de datos) sirve para:",
+      "opciones": {
+        "a": "Sustituir al sistema operativo",
+        "b": "Cifrar los discos",
+        "c": "Consolidar datos históricos de varias fuentes para el análisis (OLAP)"
+      },
+      "correcta": "c",
+      "referencia": "§4.6 [KIMBALL-DW]",
+      "explicacion": "El **data warehouse** consolida datos históricos para el análisis (OLAP), separándolo de los sistemas operacionales (OLTP)."
+    },
+    {
+      "numero": 40,
+      "pregunta": "El modelo de diseño típico de un data warehouse, con una tabla de hechos rodeada de dimensiones, es:",
+      "opciones": {
+        "a": "El modelo en estrella",
+        "b": "El modelo jerárquico",
+        "c": "El modelo en red"
+      },
+      "correcta": "a",
+      "referencia": "§4.6",
+      "explicacion": "El **modelo en estrella** (tabla de hechos + dimensiones) es el diseño típico de un data warehouse para OLAP."
+    },
+    {
+      "numero": 41,
+      "pregunta": "Cassandra es un ejemplo de base de datos NoSQL de tipo:",
+      "opciones": {
+        "a": "Documental",
+        "b": "Columnar (familias de columnas)",
+        "c": "Clave-valor"
+      },
+      "correcta": "b",
+      "referencia": "§4.5",
+      "explicacion": "**Cassandra** es **columnar** (familias de columnas), optimizada para grandes volúmenes y mucha escritura."
+    },
+    {
+      "numero": 42,
+      "pregunta": "Los SGBD jerárquicos organizan los datos en:",
+      "opciones": {
+        "a": "Una estructura de árbol (relaciones padre-hijo 1:N)",
+        "b": "Tablas relacionadas por claves",
+        "c": "Documentos JSON"
+      },
+      "correcta": "a",
+      "referencia": "§4.1",
+      "explicacion": "Los **jerárquicos** usan una estructura de **árbol** (padre-hijo 1:N); son históricos (IBM IMS) y rígidos para N:M."
+    },
+    {
+      "numero": 43,
+      "pregunta": "Conceder solo lectura de una tabla a un rol se hace con:",
+      "opciones": {
+        "a": "`DROP TABLE tabla;`",
+        "b": "`GRANT SELECT ON tabla TO rol;`",
+        "c": "`COMMIT;`"
+      },
+      "correcta": "b",
+      "referencia": "§5.1 [ISO-9075]",
+      "explicacion": "`GRANT SELECT ON tabla TO rol;` concede el privilegio de **lectura**. Gestionar por roles simplifica la administración."
+    },
+    {
+      "numero": 44,
+      "pregunta": "Agrupar los privilegios en conjuntos que se asignan a los usuarios se hace mediante:",
+      "opciones": {
+        "a": "Índices",
+        "b": "Roles",
+        "c": "Vistas materializadas"
+      },
+      "correcta": "b",
+      "referencia": "§5.1",
+      "explicacion": "Los **roles** agrupan privilegios; asignar roles (no privilegios sueltos) simplifica la gestión de muchos usuarios."
+    },
+    {
+      "numero": 45,
+      "pregunta": "Repartir (particionar) los datos entre varios nodos según una clave para escalar horizontalmente se denomina:",
+      "opciones": {
+        "a": "Replicación",
+        "b": "Sharding",
+        "c": "Normalización"
+      },
+      "correcta": "b",
+      "referencia": "§5.3",
+      "explicacion": "El **sharding** reparte los datos entre nodos según una clave, para escalar horizontalmente (típico en NoSQL)."
+    },
+    {
+      "numero": 46,
+      "pregunta": "Mantener copias idénticas de los datos en varios nodos se denomina:",
+      "opciones": {
+        "a": "Replicación",
+        "b": "Fragmentación",
+        "c": "Indexación"
+      },
+      "correcta": "a",
+      "referencia": "§5.3",
+      "explicacion": "La **replicación** mantiene copias en varios nodos: mejora la disponibilidad y la lectura, pero complica la consistencia."
+    },
+    {
+      "numero": 47,
+      "pregunta": "La conmutación automática a un nodo de respaldo cuando falla el principal se llama:",
+      "opciones": {
+        "a": "Commit",
+        "b": "Sharding",
+        "c": "Failover"
+      },
+      "correcta": "c",
+      "referencia": "§5.4",
+      "explicacion": "El **failover** es la conmutación por error a un nodo de respaldo, base de la alta disponibilidad."
+    },
+    {
+      "numero": 48,
+      "pregunta": "La recuperación a un punto en el tiempo (PITR) se consigue:",
+      "opciones": {
+        "a": "Solo con una copia completa",
+        "b": "Combinando una copia de seguridad con el log de transacciones",
+        "c": "Borrando el log"
+      },
+      "correcta": "b",
+      "referencia": "§5.5 [POSTGRES-DOC]",
+      "explicacion": "El **PITR** restaura una copia y aplica el **log** hasta el instante exacto anterior al incidente."
+    },
+    {
+      "numero": 49,
+      "pregunta": "Una copia de seguridad incremental:",
+      "opciones": {
+        "a": "Copia toda la base de datos cada vez",
+        "b": "No es posible",
+        "c": "Copia solo lo que ha cambiado desde la última copia"
+      },
+      "correcta": "c",
+      "referencia": "§5.5",
+      "explicacion": "La copia **incremental** copia solo lo cambiado desde la última, ahorrando espacio y tiempo frente a la completa."
+    },
+    {
+      "numero": 50,
+      "pregunta": "Analizar cómo el optimizador resuelve una consulta lenta se hace con:",
+      "opciones": {
+        "a": "El plan de ejecución (EXPLAIN)",
+        "b": "Un GRANT",
+        "c": "Un ROLLBACK"
+      },
+      "correcta": "a",
+      "referencia": "§5.7",
+      "explicacion": "El **plan de ejecución** (`EXPLAIN`) muestra cómo el optimizador resuelve la consulta, base del *tuning*."
+    },
+    {
+      "numero": 51,
+      "pregunta": "La principal palanca para acelerar una consulta que hace un recorrido completo de una tabla grande es:",
+      "opciones": {
+        "a": "Borrar la tabla",
+        "b": "Desactivar la integridad referencial",
+        "c": "Crear un índice adecuado"
+      },
+      "correcta": "c",
+      "referencia": "§5.7",
+      "explicacion": "Crear un **índice** adecuado convierte un recorrido completo (full table scan) en una búsqueda O(log n)."
+    },
+    {
+      "numero": 52,
+      "pregunta": "El espacio lógico sobre ficheros donde el DBA organiza el almacenamiento físico de la BD se denomina:",
+      "opciones": {
+        "a": "Tablespace",
+        "b": "Vista",
+        "c": "Trigger"
+      },
+      "correcta": "a",
+      "referencia": "§5.2",
+      "explicacion": "Los **tablespaces** son los espacios lógicos sobre ficheros donde se organiza el almacenamiento (tablas, índices)."
+    },
+    {
+      "numero": 53,
+      "pregunta": "La base de datos como servicio gestionada en la nube se denomina:",
+      "opciones": {
+        "a": "DBaaS",
+        "b": "DDL",
+        "c": "OLAP"
+      },
+      "correcta": "a",
+      "referencia": "§5.8",
+      "explicacion": "**DBaaS** (Database as a Service): SGBD gestionados en la nube (Amazon RDS, Azure SQL, Cloud SQL)."
+    },
+    {
+      "numero": 54,
+      "pregunta": "Un inconveniente típico del DBaaS para una Administración pública es:",
+      "opciones": {
+        "a": "La ubicación de los datos y el cumplimiento del RGPD (soberanía del dato)",
+        "b": "Que nunca tiene copias de seguridad",
+        "c": "Que es siempre gratuito"
+      },
+      "correcta": "a",
+      "referencia": "§5.8",
+      "explicacion": "El **DBaaS** plantea dudas de **ubicación de los datos** y cumplimiento del **RGPD/ENS** (soberanía), además del *vendor lock-in*."
+    },
+    {
+      "numero": 55,
+      "pregunta": "La gobernanza del dato incluye:",
+      "opciones": {
+        "a": "Calidad, metadatos, ciclo de vida y protección de datos personales",
+        "b": "Solo el cifrado del disco",
+        "c": "Únicamente la compra de hardware"
+      },
+      "correcta": "a",
+      "referencia": "§5.6 [RGPD]",
+      "explicacion": "La **gobernanza** abarca calidad, metadatos, ciclo de vida, clasificación y protección de datos (RGPD/LOPDGDD)."
+    },
+    {
+      "numero": 56,
+      "pregunta": "El tratamiento de datos personales en una base de datos del Ayuntamiento debe cumplir:",
+      "opciones": {
+        "a": "El RGPD y la LOPDGDD",
+        "b": "Solo el manual del fabricante",
+        "c": "Ninguna normativa"
+      },
+      "correcta": "a",
+      "referencia": "§5.1, §5.6 [RGPD][LOPDGDD]",
+      "explicacion": "Los datos personales obligan a cumplir el **RGPD** y la **LOPDGDD** (minimización, control de acceso, cifrado, registro de accesos)."
+    },
+    {
+      "numero": 57,
+      "pregunta": "La alta disponibilidad de una base de datos se logra principalmente con:",
+      "opciones": {
+        "a": "Borrando índices",
+        "b": "Reduciendo la seguridad",
+        "c": "Clústeres, replicación y failover"
+      },
+      "correcta": "c",
+      "referencia": "§5.4",
+      "explicacion": "La **alta disponibilidad** se apoya en clústeres, replicación primario-secundario y conmutación por error (failover)."
+    },
+    {
+      "numero": 58,
+      "pregunta": "Dividir una tabla por filas entre varios nodos es una forma de:",
+      "opciones": {
+        "a": "Normalización",
+        "b": "Fragmentación horizontal",
+        "c": "Indexación"
+      },
+      "correcta": "b",
+      "referencia": "§5.3",
+      "explicacion": "Dividir una tabla por **filas** es **fragmentación horizontal**; por columnas, vertical. Es base de la distribución."
+    },
+    {
+      "numero": 59,
+      "pregunta": "Una ventaja del DBaaS es:",
+      "opciones": {
+        "a": "Que el proveedor gestiona infraestructura, copias, parches y escalado",
+        "b": "Que elimina la necesidad de seguridad",
+        "c": "Que los datos nunca salen del equipo local"
+      },
+      "correcta": "a",
+      "referencia": "§5.8",
+      "explicacion": "El **DBaaS** descarga en el proveedor la infraestructura, las copias, los parches y el escalado, con pago por uso."
+    },
+    {
+      "numero": 60,
+      "pregunta": "El particionado de una tabla muy grande por rango de fechas sirve para:",
+      "opciones": {
+        "a": "Mejorar el rendimiento y el mantenimiento",
+        "b": "Eliminar la clave primaria",
+        "c": "Impedir las consultas"
+      },
+      "correcta": "a",
+      "referencia": "§5.2",
+      "explicacion": "El **particionado** (por fecha, territorio…) mejora el rendimiento de las consultas y facilita el mantenimiento de tablas grandes."
+    }
+  ],
+  "casos": [
+    {
+      "caso": 1,
+      "titulo": "Integridad y concurrencia en la base de datos del Padrón",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el supuesto planteado, ¿qué mecanismo del modelo relacional impide que un habitante quede asignado a un distrito que no existe en la tabla DISTRITO?",
+          "opciones": {
+            "a": "La integridad de entidad.",
+            "b": "La integridad referencial.",
+            "c": "La restricción de dominio CHECK."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 1 · §4.3",
+          "explicacion": "La integridad referencial exige que toda clave ajena corresponda a una clave primaria existente en la tabla referenciada (o sea nula), lo que impide referencias huérfanas."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Qué papel desempeñan las columnas implicadas en esa relación entre HABITANTE y DISTRITO?",
+          "opciones": {
+            "a": "distrito_id es la clave primaria de HABITANTE y referencia la clave ajena id de DISTRITO.",
+            "b": "id es una clave ajena de DISTRITO que referencia la clave primaria distrito_id de HABITANTE.",
+            "c": "distrito_id es una clave ajena de HABITANTE que referencia la clave primaria id de DISTRITO."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 1 · §4.3",
+          "explicacion": "La clave ajena es el atributo que referencia la clave primaria de otra tabla: aquí, distrito_id (en HABITANTE) apunta a id (en DISTRITO)."
+        },
+        {
+          "numero": 3,
+          "pregunta": "Un empleado intenta dar de alta a un habitante con un distrito_id que no figura en la tabla DISTRITO. Con la integridad referencial definida, ¿qué hace el SGBD?",
+          "opciones": {
+            "a": "Rechaza la operación, porque la clave ajena no corresponde a ninguna clave primaria existente.",
+            "b": "Acepta el alta y crea automáticamente el distrito con ese identificador en la tabla DISTRITO.",
+            "c": "Acepta el alta y deja la referencia pendiente hasta que alguien cree después el distrito."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 1 · §4.3",
+          "explicacion": "La integridad referencial impide las referencias huérfanas: el SGBD no admite una clave ajena que no corresponda a una clave primaria existente."
+        },
+        {
+          "numero": 4,
+          "pregunta": "Un cambio de domicilio actualiza varias tablas y el sistema cae a mitad. ¿Qué propiedad garantiza que el cambio no quede «a medias»?",
+          "opciones": {
+            "a": "El aislamiento, que impide que otros vean los estados intermedios.",
+            "b": "La durabilidad, que conserva lo ya escrito pese al corte.",
+            "c": "La atomicidad («todo o nada»)."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 2 · §2.1",
+          "explicacion": "La atomicidad obliga a que las operaciones de una transacción se completen todas o no se aplique ninguna: si falla un paso, se deshacen todos."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Con qué sentencias, y de qué sublenguaje de SQL, se confirma o se deshace la transacción del cambio de domicilio?",
+          "opciones": {
+            "a": "COMMIT y ROLLBACK, del TCL.",
+            "b": "GRANT y REVOKE, del DCL.",
+            "c": "INSERT y DELETE, del DML."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 2 · §1.5, §2.1",
+          "explicacion": "El TCL gestiona las transacciones: COMMIT confirma los cambios y ROLLBACK los deshace. GRANT y REVOKE controlan el acceso (DCL)."
+        },
+        {
+          "numero": 6,
+          "pregunta": "Al reiniciar tras la caída, el SGBD encuentra en el log el cambio de domicilio, que no llegó a confirmarse. ¿Qué hace con él?",
+          "opciones": {
+            "a": "Lo rehace (redo) para completar las tablas que faltaban.",
+            "b": "Lo deshace (undo), porque la transacción no se confirmó.",
+            "c": "Lo conserva tal cual hasta que el empleado lo termine."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 2 · §2.4",
+          "explicacion": "Tras un fallo, el SGBD usa el log para rehacer las transacciones confirmadas y deshacer las no confirmadas; así se preserva la atomicidad."
+        },
+        {
+          "numero": 7,
+          "pregunta": "Dos empleados modifican a la vez el mismo registro de un habitante y uno sobrescribe el cambio del otro. ¿Cómo se llama esta anomalía?",
+          "opciones": {
+            "a": "Lectura sucia (dirty read).",
+            "b": "Lectura fantasma (phantom read).",
+            "c": "Actualización perdida (lost update)."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 3 · §2.2",
+          "explicacion": "Hay actualización perdida cuando dos transacciones actualizan el mismo dato y una sobrescribe a la otra; la lectura sucia consiste en leer datos aún no confirmados."
+        },
+        {
+          "numero": 8,
+          "pregunta": "¿Qué dos técnicas emplea el SGBD para controlar este tipo de concurrencia?",
+          "opciones": {
+            "a": "Los bloqueos (protocolo 2PL) y el control multiversión (MVCC).",
+            "b": "El Write-Ahead Logging (WAL) y los puntos de control (checkpoints).",
+            "c": "Los índices B+árbol y el particionado de tablas por rango."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 3 · §2.2",
+          "explicacion": "El control de concurrencia se hace con bloqueos (el 2PL garantiza la seriabilidad) o con MVCC, que mantiene varias versiones de cada dato. WAL y checkpoints sirven a la recuperación."
+        },
+        {
+          "numero": 9,
+          "pregunta": "Una vez confirmada un alta en el Padrón, el servidor se apaga justo después. ¿Qué propiedad garantiza que el alta no se pierda y gracias a qué elemento?",
+          "opciones": {
+            "a": "La consistencia, gracias al diccionario de datos.",
+            "b": "La durabilidad, gracias al log de transacciones (WAL).",
+            "c": "El aislamiento, gracias al control multiversión."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 4 · §2.1, §2.4",
+          "explicacion": "La durabilidad asegura que, tras el COMMIT, el cambio persiste aunque falle el sistema; se apoya en el log, donde el SGBD anota lo que va a hacer antes de aplicarlo."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Al arrancar de nuevo el servidor, ¿qué hace el SGBD con esa alta que ya estaba confirmada?",
+          "opciones": {
+            "a": "La rehace (redo) a partir del log, si sus cambios no habían llegado a los datos.",
+            "b": "La deshace (undo), porque el apagón la interrumpió antes de escribirse.",
+            "c": "La descarta y obliga al empleado a repetir el alta del habitante."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 4 · §2.4",
+          "explicacion": "Con el log, el SGBD rehace las transacciones confirmadas y deshace solo las no confirmadas; un alta confirmada no se pierde."
+        }
+      ]
+    },
+    {
+      "caso": 2,
+      "titulo": "Administración y rendimiento de la base de datos de tributos",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el supuesto planteado, la consulta de un recibo por NIF tarda demasiado. ¿Qué herramienta usa el DBA para ver cómo resuelve el SGBD esa consulta?",
+          "opciones": {
+            "a": "El plan de ejecución (EXPLAIN).",
+            "b": "El diccionario de datos del sistema.",
+            "c": "El log de transacciones (WAL)."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 1 · §5.7",
+          "explicacion": "El plan de ejecución (EXPLAIN) muestra cómo el optimizador resuelve la consulta y es el punto de partida del ajuste de rendimiento."
+        },
+        {
+          "numero": 2,
+          "pregunta": "El plan revela un recorrido completo de la tabla de recibos (full table scan). ¿Qué medida aplica el DBA?",
+          "opciones": {
+            "a": "Elevar el nivel de aislamiento de la sesión a Serializable.",
+            "b": "Crear un índice sobre la columna NIF.",
+            "c": "Hacer una copia completa (full) de la tabla."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 1 · §5.2, §5.7",
+          "explicacion": "La palanca habitual ante un recorrido completo es crear un índice adecuado sobre la columna de búsqueda; el aislamiento y las copias no aceleran la consulta."
+        },
+        {
+          "numero": 3,
+          "pregunta": "Con el índice sobre el NIF, ¿cómo cambia el coste de localizar un recibo?",
+          "opciones": {
+            "a": "Pasa a crecer con el cuadrado del número de filas, O(n²).",
+            "b": "Sigue siendo proporcional al número de filas, O(n).",
+            "c": "Se reduce a un orden logarítmico, O(log n)."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 1 · §5.7",
+          "explicacion": "El índice (normalmente un B+árbol) evita recorrer millones de filas y reduce la búsqueda a O(log n); el recorrido completo es el que crece con n."
+        },
+        {
+          "numero": 4,
+          "pregunta": "El personal de atención solo debe poder consultar los recibos. ¿Con qué sublenguaje y sentencia lo configura el DBA?",
+          "opciones": {
+            "a": "Con el DML: SELECT * FROM recibos WHERE rol = 'atencion';",
+            "b": "Con el DCL: GRANT SELECT ON recibos TO rol_atencion;",
+            "c": "Con el DDL: ALTER TABLE recibos READ ONLY FOR rol_atencion;"
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 2 · §1.5, §5.1",
+          "explicacion": "Los privilegios se gestionan con el DCL: GRANT SELECT concede solo lectura sobre la tabla al rol indicado."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Si el rol de atención tuviera concedido por error el permiso de modificación, ¿qué sentencia se lo retira?",
+          "opciones": {
+            "a": "REVOKE UPDATE ON recibos FROM rol_atencion;",
+            "b": "ROLLBACK UPDATE ON recibos FROM rol_atencion;",
+            "c": "DELETE UPDATE ON recibos FROM rol_atencion;"
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 2 · §5.1",
+          "explicacion": "En el DCL, GRANT concede privilegios y REVOKE los retira; ROLLBACK deshace transacciones y DELETE borra filas."
+        },
+        {
+          "numero": 6,
+          "pregunta": "¿Por qué conviene conceder estos privilegios a un rol y no a cada empleado de atención por separado?",
+          "opciones": {
+            "a": "Porque el rol cifra los recibos y evita registrar los accesos de cada empleado.",
+            "b": "Porque el rol permite modificar recibos sin necesidad de ninguna sentencia GRANT.",
+            "c": "Porque el rol simplifica la gestión de miles de usuarios y aplica el mínimo privilegio."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 2 · §5.1",
+          "explicacion": "Los roles agrupan privilegios: se conceden una vez al rol y el rol se asigna a los empleados, lo que simplifica la gestión y ajusta cada perfil al mínimo privilegio."
+        },
+        {
+          "numero": 7,
+          "pregunta": "Se quiere poder restaurar la base de datos de tributos al instante exacto anterior a un borrado accidental. ¿Cómo se llama esa capacidad?",
+          "opciones": {
+            "a": "Recuperación a un punto en el tiempo (PITR).",
+            "b": "Conmutación por error (failover).",
+            "c": "Copia incremental desde la última copia."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 3 · §5.5",
+          "explicacion": "La recuperación a un punto en el tiempo (PITR) restaura la base de datos al instante exacto anterior a un incidente; el failover conmuta a otro nodo ante un fallo."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Además de una copia de seguridad, ¿qué necesita el DBA para aplicar esa recuperación al instante previo al borrado?",
+          "opciones": {
+            "a": "El diccionario de datos con los metadatos.",
+            "b": "Una réplica en otro nodo con failover.",
+            "c": "El log de transacciones."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 3 · §5.5",
+          "explicacion": "El PITR combina una copia de seguridad con el log de transacciones, que permite reaplicar los cambios hasta el instante elegido."
+        },
+        {
+          "numero": 9,
+          "pregunta": "Los recibos contienen datos personales. ¿Qué normativa obliga a controlar y registrar los accesos y a proteger esa información?",
+          "opciones": {
+            "a": "Únicamente el ENI, por tratarse de interoperabilidad.",
+            "b": "El RGPD y la LOPDGDD, además del ENS.",
+            "c": "El estándar SQL (ISO/IEC 9075) y ANSI/SPARC."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 4 · §5.1, §5.6",
+          "explicacion": "Los datos personales obligan a cumplir el RGPD y la LOPDGDD (y, en el sector público, el ENS): minimización, control de acceso, cifrado y registro de accesos."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Qué medida forma parte de las obligaciones sobre los datos personales de los recibos?",
+          "opciones": {
+            "a": "Dar acceso de lectura a toda la plantilla para favorecer la transparencia.",
+            "b": "Conservar todos los datos de forma indefinida por si se necesitan.",
+            "c": "Registrar los accesos y minimizar los datos personales tratados."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 4 · §5.1, §5.6",
+          "explicacion": "El RGPD/LOPDGDD exige minimización, control de acceso, cifrado y registro de accesos; además, la gobernanza fija un ciclo de vida con retención y borrado."
+        }
+      ]
+    },
+    {
+      "caso": 3,
+      "titulo": "Elección de tecnología para los datos abiertos y la analítica",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el supuesto planteado, para la gestión diaria del Padrón y los tributos con máxima integridad, ¿qué tipo de SGBD y de procesamiento son los adecuados?",
+          "opciones": {
+            "a": "Un SGBD documental NoSQL con procesamiento OLAP.",
+            "b": "Un SGBD relacional con procesamiento OLTP.",
+            "c": "Un SGBD multidimensional con cubos OLAP."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 1 · §4.3, §4.6",
+          "explicacion": "La gestión del día a día son operaciones transaccionales cortas (OLTP) y requiere la integridad y las garantías ACID de un SGBD relacional."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Qué aporta el SGBD relacional a la gestión de los tributos frente a un NoSQL?",
+          "opciones": {
+            "a": "Esquema flexible y escalado horizontal.",
+            "b": "Disponibilidad con consistencia eventual.",
+            "c": "Esquema rígido, ACID e integridad fuerte."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 1 · §4.5",
+          "explicacion": "El relacional aporta esquema rígido, ACID e integridad fuerte, ideal para transacciones como tributos o nóminas; el esquema flexible y la consistencia eventual son propios de NoSQL."
+        },
+        {
+          "numero": 3,
+          "pregunta": "Para analizar la evolución demográfica y la recaudación por distrito y año cruzando varias fuentes, ¿qué infraestructura propone el técnico?",
+          "opciones": {
+            "a": "Un data warehouse alimentado desde las fuentes operacionales.",
+            "b": "Lanzar las consultas masivas sobre la base de datos OLTP del Padrón.",
+            "c": "Una base de datos NoSQL de grafos con los recibos y los habitantes."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 2 · §4.6",
+          "explicacion": "El data warehouse consolida datos históricos de varias fuentes para el análisis y lo separa de los sistemas operacionales."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Con qué tipo de procesamiento se explota ese almacén para los cuadros de mando?",
+          "opciones": {
+            "a": "OLTP, con muchas operaciones transaccionales cortas.",
+            "b": "OLAP, con cubos y agregaciones (drill-down, roll-up).",
+            "c": "TCL, con transacciones confirmadas mediante COMMIT."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 2 · §4.6",
+          "explicacion": "El procesamiento OLAP está orientado a consultas masivas para el análisis y organiza los datos en cubos que permiten agregaciones rápidas."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Cómo se llama el modelo de diseño típico de ese almacén de datos?",
+          "opciones": {
+            "a": "Modelo jerárquico, en árbol padre-hijo.",
+            "b": "Modelo en red, según CODASYL.",
+            "c": "Modelo en estrella."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 2 · §4.6",
+          "explicacion": "El diseño típico de un data warehouse es el modelo en estrella: una tabla de hechos rodeada de dimensiones. Los modelos jerárquico y en red son tipologías históricas de SGBD."
+        },
+        {
+          "numero": 6,
+          "pregunta": "En ese modelo en estrella, ¿qué papel tienen «distrito» y «año»?",
+          "opciones": {
+            "a": "Son dimensiones que rodean la tabla de hechos.",
+            "b": "Son tablas de hechos situadas en el centro.",
+            "c": "Son vistas del nivel externo ANSI/SPARC."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 2 · §4.6",
+          "explicacion": "En el modelo en estrella, la tabla de hechos se rodea de dimensiones como el tiempo, el distrito o el concepto, por las que se agregan los datos."
+        },
+        {
+          "numero": 7,
+          "pregunta": "Si se optara por una base de datos NoSQL distribuida para un servicio web masivo, ¿qué compromiso impone el teorema CAP?",
+          "opciones": {
+            "a": "Que hay que renunciar a la tolerancia a particiones para tener consistencia y disponibilidad.",
+            "b": "Que ante una partición de red hay que elegir entre consistencia y disponibilidad.",
+            "c": "Que un sistema distribuido puede garantizar a la vez las tres propiedades."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 3 · §4.5",
+          "explicacion": "El teorema CAP permite garantizar solo dos de las tres propiedades; como las particiones son inevitables en un sistema distribuido, se elige entre consistencia y disponibilidad."
+        },
+        {
+          "numero": 8,
+          "pregunta": "¿Qué modelo suelen seguir esos sistemas NoSQL en lugar de ACID?",
+          "opciones": {
+            "a": "El modelo ANSI/SPARC de tres esquemas.",
+            "b": "El protocolo de bloqueo en dos fases (2PL).",
+            "c": "El modelo BASE, con consistencia eventual."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 3 · §4.5",
+          "explicacion": "Muchos NoSQL siguen el modelo BASE (Basically Available, Soft state, Eventual consistency), que prioriza la disponibilidad y la consistencia eventual."
+        },
+        {
+          "numero": 9,
+          "pregunta": "Antes de contratar una base de datos en la nube (DBaaS) con datos de ciudadanos, ¿qué cautela debe valorar la Administración?",
+          "opciones": {
+            "a": "La ubicación de los datos y el cumplimiento del RGPD y del ENS.",
+            "b": "Que el proveedor no realiza copias de seguridad ni aplica parches.",
+            "c": "Que el DBaaS no permite escalar ni ofrecer alta disponibilidad."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 4 · §5.8",
+          "explicacion": "En el DBaaS el proveedor gestiona copias, parches y escalado; el riesgo de gobierno está en dónde residen los datos (RGPD, datos en la UE, soberanía) y en el ENS."
+        },
+        {
+          "numero": 10,
+          "pregunta": "La otra cautela es el riesgo de que el Ayuntamiento quede atado a un único proveedor de nube. ¿Cómo se denomina?",
+          "opciones": {
+            "a": "Conmutación por error (failover).",
+            "b": "Dependencia del proveedor (vendor lock-in).",
+            "c": "Reparto por clave entre nodos (sharding)."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 4 · §5.8",
+          "explicacion": "La dependencia del proveedor (vendor lock-in) es uno de los inconvenientes de gobierno del DBaaS; failover y sharding son técnicas de disponibilidad y escalado."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+<svg aria-label="Los tres niveles de impacto del anexo I del ENS comparados supuesto a supuesto: nivel bajo con perjuicio limitado, nivel medio con perjuicio grave y nivel alto con perjuicio muy grave, cada uno con sus cinco supuestos sobre capacidad de la organización, daño en los activos, incumplimiento jurídico, perjuicio a individuos y supuestos análogos" role="img" viewbox="0 0 680 366" xmlns="http://www.w3.org/2000/svg">
+<style>.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}.k11{font:700 10px system-ui,sans-serif;fill:#0055a0}.d11{font:8.5px system-ui,sans-serif;fill:#333}.n11{font:8.5px system-ui,sans-serif;fill:#666}.w11{font:700 11px system-ui,sans-serif;fill:#fff}.wd11{font:8.5px system-ui,sans-serif;fill:#fff}.lbl11{font:700 9px system-ui,sans-serif;fill:#0055a0}.r11{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h11" text-anchor="middle" x="340" y="19">Los tres niveles de impacto — anexo I, apartado 3</text>
+<text class="n11" text-anchor="middle" x="340" y="35">Cada nivel se define por cinco supuestos con la misma estructura. Las diferencias están en los adjetivos</text>
+<rect fill="#5a6b7c" height="30" rx="4" width="150" x="24" y="46"></rect>
+<text class="w11" text-anchor="middle" x="99" y="66">SUPUESTO</text>
+<rect fill="#2d8659" height="30" rx="4" width="158" x="178" y="46"></rect>
+<text class="w11" text-anchor="middle" x="257" y="60">NIVEL BAJO</text>
+<text class="wd11" text-anchor="middle" x="257" y="72">perjuicio LIMITADO</text>
+<rect fill="#e89822" height="30" rx="4" width="158" x="340" y="46"></rect>
+<text class="w11" text-anchor="middle" x="419" y="60">NIVEL MEDIO</text>
+<text class="wd11" text-anchor="middle" x="419" y="72">perjuicio GRAVE</text>
+<rect fill="#d13c3c" height="30" rx="4" width="154" x="502" y="46"></rect>
+<text class="w11" text-anchor="middle" x="579" y="60">NIVEL ALTO</text>
+<text class="wd11" text-anchor="middle" x="579" y="72">perjuicio MUY GRAVE</text>
+<rect fill="#eef4fa" height="44" rx="3" width="150" x="24" y="80"></rect>
+<text class="lbl11" x="34" y="97">1.º CAPACIDAD DE LA</text>
+<text class="lbl11" x="34" y="109">ORGANIZACIÓN</text>
+<rect fill="#e6f2ec" height="44" rx="3" width="158" x="178" y="80"></rect>
+<text class="d11" x="188" y="97">Reducción APRECIABLE,</text>
+<text class="d11" x="188" y="109">pero las funciones siguen</text>
+<text class="d11" x="188" y="120">desempeñándose</text>
+<rect fill="#fdf3e3" height="44" rx="3" width="158" x="340" y="80"></rect>
+<text class="d11" x="350" y="97">Reducción SIGNIFICATIVA,</text>
+<text class="d11" x="350" y="109">pero las funciones siguen</text>
+<text class="d11" x="350" y="120">desempeñándose</text>
+<rect fill="#fbeaea" height="44" rx="3" width="154" x="502" y="80"></rect>
+<text class="d11" x="512" y="97">ANULACIÓN EFECTIVA de</text>
+<text class="d11" x="512" y="109">la capacidad de desarrollar</text>
+<text class="d11" x="512" y="120">sus funciones</text>
+<rect fill="#eef4fa" height="32" rx="3" width="150" x="24" y="128"></rect>
+<text class="lbl11" x="34" y="148">2.º DAÑO EN LOS ACTIVOS</text>
+<rect fill="#e6f2ec" height="32" rx="3" width="158" x="178" y="128"></rect>
+<text class="d11" x="188" y="148">Daño MENOR</text>
+<rect fill="#fdf3e3" height="32" rx="3" width="158" x="340" y="128"></rect>
+<text class="d11" x="350" y="148">Daño SIGNIFICATIVO</text>
+<rect fill="#fbeaea" height="32" rx="3" width="154" x="502" y="128"></rect>
+<text class="d11" x="512" y="143">Daño MUY GRAVE,</text>
+<text class="d11" x="512" y="155">e incluso IRREPARABLE</text>
+<rect fill="#eef4fa" height="44" rx="3" width="150" x="24" y="164"></rect>
+<text class="lbl11" x="34" y="181">3.º INCUMPLIMIENTO</text>
+<text class="lbl11" x="34" y="193">JURÍDICO</text>
+<rect fill="#e6f2ec" height="44" rx="3" width="158" x="178" y="164"></rect>
+<text class="d11" x="188" y="181">Incumplimiento FORMAL,</text>
+<text class="d11" x="188" y="193">de carácter SUBSANABLE</text>
+<rect fill="#fdf3e3" height="44" rx="3" width="158" x="340" y="164"></rect>
+<text class="d11" x="350" y="181">Incumplimiento MATERIAL,</text>
+<text class="d11" x="350" y="193">o formal NO SUBSANABLE</text>
+<rect fill="#fbeaea" height="44" rx="3" width="154" x="502" y="164"></rect>
+<text class="d11" x="512" y="181">Incumplimiento GRAVE de</text>
+<text class="d11" x="512" y="193">alguna ley o regulación</text>
+<rect fill="#eef4fa" height="44" rx="3" width="150" x="24" y="212"></rect>
+<text class="lbl11" x="34" y="229">4.º PERJUICIO A ALGÚN</text>
+<text class="lbl11" x="34" y="241">INDIVIDUO</text>
+<rect fill="#e6f2ec" height="44" rx="3" width="158" x="178" y="212"></rect>
+<text class="d11" x="188" y="229">MENOR: molesto, pero</text>
+<text class="d11" x="188" y="241">FÁCILMENTE REPARABLE</text>
+<rect fill="#fdf3e3" height="44" rx="3" width="158" x="340" y="212"></rect>
+<text class="d11" x="350" y="229">SIGNIFICATIVO, de</text>
+<text class="d11" x="350" y="241">DIFÍCIL REPARACIÓN</text>
+<rect fill="#fbeaea" height="44" rx="3" width="154" x="502" y="212"></rect>
+<text class="d11" x="512" y="229">GRAVE, de DIFÍCIL O</text>
+<text class="d11" x="512" y="241">IMPOSIBLE reparación</text>
+<rect fill="#eef4fa" height="24" rx="3" width="632" x="24" y="260"></rect>
+<text class="lbl11" x="34" y="276">5.º OTROS DE NATURALEZA ANÁLOGA — cláusula de cierre idéntica en los tres</text>
+<rect fill="#fdf3e3" height="46" rx="4" stroke="#e89822" stroke-width="1.2" width="632" x="24" y="288"></rect>
+<text class="r11" x="36" y="304">DOS REGLAS QUE ACOMPAÑAN A LA TABLA:</text>
+<text class="d11" x="36" y="319">si una dimensión NO SE VE AFECTADA no se adscribe a ningún nivel: no existe el «nivel cero» · y si hay varias informaciones y servicios,</text>
+<text class="d11" x="36" y="329.5">el nivel en cada dimensión es EL MAYOR de los de cada información y cada servicio. La categoría se reevalúa ANUALMENTE.</text>
+<text class="n11" x="24" y="355">[Fuente: ENS, anexo I, apartados 1 y 3 — texto consolidado del BOE]</text>
+</svg>

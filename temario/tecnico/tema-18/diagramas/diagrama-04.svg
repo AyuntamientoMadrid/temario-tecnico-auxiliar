@@ -1,0 +1,20 @@
+<svg aria-label="Árbol de clasificación de tipos de datos: simples o primitivos (entero, real, carácter, booleano) y estructurados (array, registro, cadena, conjunto)" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t4{font:700 12px system-ui,sans-serif;fill:#fff}.s4{font:11px system-ui,sans-serif;fill:#123}.l4{font:11px system-ui,sans-serif;fill:#444}.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h4" text-anchor="middle" x="340" y="24">Tipos de datos</text>
+<rect fill="#0055a0" height="34" rx="6" width="120" x="280" y="38"></rect><text class="t4" text-anchor="middle" x="340" y="60">TIPO DE DATO</text>
+<path d="M340 72 L200 100" stroke="#888" stroke-width="1.5"></path><path d="M340 72 L480 100" stroke="#888" stroke-width="1.5"></path>
+<rect fill="#2d8659" height="34" rx="6" width="160" x="120" y="100"></rect><text class="t4" text-anchor="middle" x="200" y="122">SIMPLES / PRIMITIVOS</text>
+<rect fill="#e89822" height="34" rx="6" width="160" x="400" y="100"></rect><text class="t4" text-anchor="middle" x="480" y="122">ESTRUCTURADOS</text>
+<rect fill="#d7e6f4" height="30" rx="4" width="100" x="70" y="152"></rect><text class="s4" text-anchor="middle" x="120" y="172">Entero</text>
+<rect fill="#d7e6f4" height="30" rx="4" width="100" x="70" y="188"></rect><text class="s4" text-anchor="middle" x="120" y="208">Real (IEEE 754)</text>
+<rect fill="#d7e6f4" height="30" rx="4" width="100" x="70" y="224"></rect><text class="s4" text-anchor="middle" x="120" y="244">Carácter</text>
+<rect fill="#d7e6f4" height="30" rx="4" width="100" x="70" y="260"></rect><text class="s4" text-anchor="middle" x="120" y="280">Booleano</text>
+<text class="l4" font-style="italic" x="186" y="172">atómicos,</text>
+<text class="l4" font-style="italic" x="186" y="188">indivisibles</text>
+<rect fill="#fbe9cf" height="30" rx="4" width="110" x="420" y="152"></rect><text class="s4" text-anchor="middle" x="475" y="172">Array / vector</text>
+<rect fill="#fbe9cf" height="30" rx="4" width="110" x="420" y="188"></rect><text class="s4" text-anchor="middle" x="475" y="208">Registro / struct</text>
+<rect fill="#fbe9cf" height="30" rx="4" width="110" x="420" y="224"></rect><text class="s4" text-anchor="middle" x="475" y="244">Cadena (string)</text>
+<rect fill="#fbe9cf" height="30" rx="4" width="110" x="420" y="260"></rect><text class="s4" text-anchor="middle" x="475" y="280">Conjunto, fichero</text>
+<text class="l4" font-style="italic" x="546" y="208">agrupan varios</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="312">[Fuente: SEBESTA, cap. 6]</text>
+</svg>

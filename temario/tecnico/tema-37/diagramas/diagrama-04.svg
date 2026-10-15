@@ -1,0 +1,57 @@
+<svg aria-label="Las cuatro topologías básicas dibujadas y comparadas: bus, con mínimo cable pero cuya rotura parte la red; estrella, con equipo central que es punto único de fallo pero fácil de diagnosticar; anillo, determinista pero que se rompe si cae un nodo salvo doble anillo; y malla, máxima tolerancia a fallos pero con un número de enlaces que crece con el cuadrado del número de nodos" role="img" viewbox="0 0 680 366" xmlns="http://www.w3.org/2000/svg">
+<style>.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}.k4{font:700 10px system-ui,sans-serif;fill:#0055a0}.d4{font:8.5px system-ui,sans-serif;fill:#333}.n4{font:8.5px system-ui,sans-serif;fill:#666}.g4{font:700 8.5px system-ui,sans-serif;fill:#2d8659}.r4{font:700 8.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h4" text-anchor="middle" x="340" y="20">Las cuatro topologías básicas y qué pasa cuando algo se rompe</text>
+<rect fill="#eef4fa" height="128" rx="5" width="152" x="22" y="32"></rect>
+<text class="k4" text-anchor="middle" x="98" y="48">BUS</text>
+<path d="M38,80 L158,80" stroke="#0055a0" stroke-width="2.5"></path>
+<path d="M38,74 L38,86 M158,74 L158,86" stroke="#333" stroke-width="2"></path>
+<circle cx="60" cy="64" fill="#0055a0" r="5"></circle><path d="M60,69 L60,80" stroke="#666" stroke-width="1"></path>
+<circle cx="90" cy="64" fill="#0055a0" r="5"></circle><path d="M90,69 L90,80" stroke="#666" stroke-width="1"></path>
+<circle cx="120" cy="96" fill="#0055a0" r="5"></circle><path d="M120,91 L120,80" stroke="#666" stroke-width="1"></path>
+<circle cx="145" cy="96" fill="#0055a0" r="5"></circle><path d="M145,91 L145,80" stroke="#666" stroke-width="1"></path>
+<text class="g4" text-anchor="middle" x="98" y="118">Mínimo cable · sin nodo central</text>
+<text class="r4" text-anchor="middle" x="98" y="132">Una rotura PARTE la red en dos</text>
+<text class="d4" text-anchor="middle" x="98" y="146">10BASE5 500 m · 10BASE2 185 m</text>
+<rect fill="#eef4fa" height="128" rx="5" width="152" x="182" y="32"></rect>
+<text class="k4" text-anchor="middle" x="258" y="48">ESTRELLA</text>
+<rect fill="#0055a0" height="16" rx="3" width="24" x="246" y="76"></rect>
+<circle cx="212" cy="62" fill="#0055a0" r="5"></circle><path d="M216,66 L246,78" stroke="#666" stroke-width="1"></path>
+<circle cx="304" cy="62" fill="#0055a0" r="5"></circle><path d="M300,66 L270,78" stroke="#666" stroke-width="1"></path>
+<circle cx="212" cy="104" fill="#0055a0" r="5"></circle><path d="M216,101 L246,90" stroke="#666" stroke-width="1"></path>
+<circle cx="304" cy="104" fill="#0055a0" r="5"></circle><path d="M300,101 L270,90" stroke="#666" stroke-width="1"></path>
+<text class="g4" text-anchor="middle" x="258" y="118">Rotura: afecta solo a ese nodo</text>
+<text class="r4" text-anchor="middle" x="258" y="132">El centro: punto único de fallo</text>
+<text class="d4" text-anchor="middle" x="258" y="146">Topología física universal hoy</text>
+<rect fill="#eef4fa" height="128" rx="5" width="152" x="342" y="32"></rect>
+<text class="k4" text-anchor="middle" x="418" y="48">ANILLO</text>
+<circle cx="418" cy="80" fill="none" r="24" stroke="#0055a0" stroke-width="2.5"></circle>
+<circle cx="418" cy="56" fill="#0055a0" r="5"></circle>
+<circle cx="442" cy="80" fill="#0055a0" r="5"></circle>
+<circle cx="418" cy="104" fill="#0055a0" r="5"></circle>
+<circle cx="394" cy="80" fill="#0055a0" r="5"></circle>
+<text class="g4" text-anchor="middle" x="418" y="118">Determinista · retardo acotado</text>
+<text class="r4" text-anchor="middle" x="418" y="132">Un corte rompe el anillo</text>
+<text class="d4" text-anchor="middle" x="418" y="146">Token Ring · FDDI (doble anillo)</text>
+<rect fill="#eef4fa" height="128" rx="5" width="156" x="502" y="32"></rect>
+<text class="k4" text-anchor="middle" x="580" y="48">MALLA</text>
+<circle cx="546" cy="62" fill="#0055a0" r="5"></circle>
+<circle cx="614" cy="62" fill="#0055a0" r="5"></circle>
+<circle cx="546" cy="104" fill="#0055a0" r="5"></circle>
+<circle cx="614" cy="104" fill="#0055a0" r="5"></circle>
+<path d="M546,62 L614,62 M546,104 L614,104 M546,62 L546,104 M614,62 L614,104 M546,62 L614,104 M614,62 L546,104" stroke="#666" stroke-width="1"></path>
+<text class="g4" text-anchor="middle" x="580" y="118">Máxima tolerancia a fallos</text>
+<text class="r4" style="font-size:8px" text-anchor="middle" x="580" y="132">Coste prohibitivo: n(n-1)/2 enlaces</text>
+<text class="d4" text-anchor="middle" x="580" y="146">Solo entre conmutadores de núcleo</text>
+<rect fill="#f7f9fb" height="22" rx="3" width="636" x="22" y="172"></rect>
+<text class="d4" x="32" y="187"><tspan class="k4">Cantidad de cable</tspan>      Bus: la menor   ·   Anillo: media   ·   Estrella: alta (un enlace por nodo)   ·   Malla completa: n(n-1)/2 enlaces</text>
+<rect fill="#eef4fa" height="22" rx="3" width="636" x="22" y="196"></rect>
+<text class="d4" x="32" y="211"><tspan class="k4">Añadir un nodo</tspan>       Bus: fácil pero interrumpe   ·   Estrella: conectar un cable   ·   Anillo: hay que abrir el anillo   ·   Malla: n-1 enlaces nuevos</text>
+<rect fill="#f7f9fb" height="22" rx="3" width="636" x="22" y="220"></rect>
+<text class="d4" x="32" y="235"><tspan class="k4">Diagnóstico</tspan>          Bus: difícil, no hay punto central   ·   Estrella: sencillo, todo pasa por el centro   ·   Anillo: por sectores</text>
+<rect fill="#eef4fa" height="22" rx="3" width="636" x="22" y="244"></rect>
+<text class="d4" x="32" y="259"><tspan class="k4">Método de acceso</tspan>     Bus: contienda (CSMA/CD)   ·   Anillo: paso de testigo   ·   Estrella conmutada: NINGUNO, no hay medio compartido</text>
+<rect fill="none" height="48" rx="5" stroke="#0055a0" stroke-width="1.5" width="636" x="22" y="272"></rect>
+<text class="k4" text-anchor="middle" x="340" y="290">El árbol o topología jerárquica es la que adopta un edificio real: estrellas colgando de estrellas</text>
+<text class="d4" text-anchor="middle" x="340" y="306">Un armario por planta (acceso) colgando de un armario principal (distribución). Coincide punto por punto con el cableado estructurado</text>
+<text class="n4" text-anchor="end" x="670" y="354">[Fuente: Tanenbaum · Stallings]</text>
+</svg>

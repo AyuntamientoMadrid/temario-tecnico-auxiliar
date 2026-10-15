@@ -1,0 +1,28 @@
+<svg aria-label="Mapa resumen: la LPRL regula Delegados de Prevención y Comité de Seguridad y Salud; el TREBEP y el Estatuto de los Trabajadores regulan la representación general; el Acuerdo-Convenio del Ayuntamiento de Madrid mejora ambos con 83 delegados, Comité único 15 más 15 y crédito de 40 horas; los convenios colectivos pueden mejorar y desarrollar la LPRL (artículo 2.2)" class="svd12" role="img" viewbox="0 0 700 360" xmlns="http://www.w3.org/2000/svg">
+<style>.svd12 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd12 .t{font:11px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd12 .s{font:10px system-ui,sans-serif;fill:#555;text-anchor:middle}.svd12 .ti{font:700 15px system-ui,sans-serif;fill:#0055a0;text-anchor:middle}</style>
+<text class="ti" x="350" y="24">Tema 9 — mapa de integración</text>
+<rect fill="#e8f0f8" height="120" rx="10" stroke="#0055a0" width="300" x="30" y="42"></rect>
+<rect fill="#0055a0" height="28" rx="10" width="300" x="30" y="42"></rect>
+<text class="h" x="180" y="61">LPRL (Ley 31/1995) — preventiva</text>
+<text class="t" x="180" y="92">Delegados de Prevención (arts. 35-37)</text>
+<text class="s" x="180" y="112">escala 35.2 · competencias/facultades 36 · garantías 37</text>
+<text class="t" x="180" y="138">Comité de Seguridad y Salud (arts. 38-39)</text>
+<text class="s" x="180" y="154">paritario · 50+ · trimestral</text>
+<rect fill="#e8f0f8" height="120" rx="10" stroke="#0055a0" width="300" x="370" y="42"></rect>
+<rect fill="#0055a0" height="28" rx="10" width="300" x="370" y="42"></rect>
+<text class="h" x="520" y="61">TREBEP / ET — general</text>
+<text class="t" x="520" y="92">Delegados y Juntas de Personal (art. 39)</text>
+<text class="s" x="520" y="112">umbral 50 · Comité de Empresa (laborales)</text>
+<text class="t" x="520" y="138">Garantías (41) · Reunión (46): 40 %</text>
+<text class="s" x="520" y="154">negociación: Mesas y Acuerdos (36, 38)</text>
+<line stroke="#2d8659" stroke-width="1.5" x1="180" x2="350" y1="162" y2="196"></line>
+<line stroke="#2d8659" stroke-width="1.5" x1="520" x2="350" y1="162" y2="196"></line>
+<rect fill="#e8f5ee" height="84" rx="10" stroke="#2d8659" width="460" x="120" y="198"></rect>
+<rect fill="#2d8659" height="28" rx="10" width="460" x="120" y="198"></rect>
+<text class="h" x="350" y="217">Acuerdo-Convenio Ayto de Madrid (Cap. IX, arts. 45-52)</text>
+<text class="t" x="350" y="244">mejora los mínimos: 83 Delegados de Prevención (IAM 6)</text>
+<text class="t" x="350" y="263">Comité único 15 + 15 · crédito 40 h/mes · Plan de PRL (2020)</text>
+<rect fill="#fff5e6" height="46" rx="8" stroke="#e89822" width="380" x="160" y="298"></rect>
+<text class="t" style="font-weight:700;fill:#b5740f" x="350" y="320">Art. 2.2 LPRL</text>
+<text class="s" x="350" y="337">sus disposiciones pueden mejorarse y desarrollarse en convenio colectivo</text>
+</svg>

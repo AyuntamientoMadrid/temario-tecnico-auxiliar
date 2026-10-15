@@ -1,0 +1,46 @@
+<svg aria-label="Doble traducción de memoria en un entorno virtualizado: de dirección virtual del huésped a física del huésped mediante las tablas del huésped, y de física del huésped a física real mediante las tablas extendidas EPT o NPT del hardware; y escala de las cuatro técnicas de recuperación de memoria, de la compartición de páginas al intercambio a disco" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 10.5px system-ui,sans-serif;fill:#fff}.s5{font:9px system-ui,sans-serif;fill:#fff}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.k5{font:700 10.5px system-ui,sans-serif;fill:#0055a0}.n5{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h5" text-anchor="middle" x="340" y="20">Memoria virtualizada: doble traducción y presión de memoria</text>
+<text class="k5" text-anchor="middle" x="340" y="40">1 · LAS DOS TRADUCCIONES</text>
+<rect fill="#888" height="46" rx="5" width="150" x="26" y="50"></rect><text class="t5" text-anchor="middle" x="101" y="70">Dirección VIRTUAL</text><text class="s5" text-anchor="middle" x="101" y="85">del proceso del huésped</text>
+<path d="M180 73 L216 73" marker-end="url(#a5)" stroke="#0055a0" stroke-width="2.5"></path>
+<defs><marker id="a5" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3.5"><path d="M0,0 L7,3.5 L0,7 z" fill="#0055a0"></path></marker></defs>
+<text style="font:8px system-ui;fill:#0055a0" text-anchor="middle" x="198" y="59">tablas</text>
+<text style="font:8px system-ui;fill:#0055a0" text-anchor="middle" x="198" y="94">huésped</text>
+<rect fill="#e89822" height="46" rx="5" width="170" x="220" y="50"></rect><text class="t5" text-anchor="middle" x="305" y="70">Dirección FÍSICA del huésped</text><text class="s5" text-anchor="middle" x="305" y="85">el huésped cree que es real</text>
+<path d="M394 73 L430 73" marker-end="url(#a5b)" stroke="#d13c3c" stroke-width="2.5"></path>
+<defs><marker id="a5b" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3.5"><path d="M0,0 L7,3.5 L0,7 z" fill="#d13c3c"></path></marker></defs>
+<text style="font:8px system-ui;fill:#d13c3c" text-anchor="middle" x="412" y="59">EPT</text>
+<text style="font:8px system-ui;fill:#d13c3c" text-anchor="middle" x="412" y="94">NPT</text>
+<rect fill="#0055a0" height="46" rx="5" width="226" x="434" y="50"></rect><text class="t5" text-anchor="middle" x="547" y="70">Dirección FÍSICA REAL del anfitrión</text><text class="s5" text-anchor="middle" x="547" y="85">resuelta por la MMU, sin el hipervisor</text>
+<rect fill="#f2f6fa" height="38" rx="4" stroke="#0055a0" width="634" x="26" y="104"></rect>
+<text class="n5" text-anchor="middle" x="340" y="120">Sin asistencia por hardware había que mantener por software TABLAS DE PÁGINAS SOMBRA: correcto, pero muy costoso.</text>
+<text class="n5" text-anchor="middle" x="340" y="134">EPT (Intel), NPT o RVI (AMD) y la traducción en dos etapas de Arm lo resuelven en la propia MMU.</text>
+<text class="k5" text-anchor="middle" x="340" y="158">2 · RECUPERACIÓN DE MEMORIA — de menos a más dañina</text>
+<rect fill="#2d8659" height="76" rx="5" width="152" x="26" y="168"></rect>
+<text class="t5" text-anchor="middle" x="102" y="187">1. COMPARTICIÓN</text>
+<text class="s5" text-anchor="middle" x="102" y="203">páginas idénticas entre VM:</text>
+<text class="s5" text-anchor="middle" x="102" y="217">una sola copia física</text>
+<text class="s5" text-anchor="middle" x="102" y="235">muy eficaz en VDI</text>
+<rect fill="#7aa63b" height="76" rx="5" width="152" x="186" y="168"></rect>
+<text class="t5" text-anchor="middle" x="262" y="187">2. GLOBO (ballooning)</text>
+<text class="s5" text-anchor="middle" x="262" y="203">un controlador reclama</text>
+<text class="s5" text-anchor="middle" x="262" y="217">memoria DENTRO del huésped</text>
+<text class="s5" text-anchor="middle" x="262" y="235">decide el huésped: acierta más</text>
+<rect fill="#e89822" height="76" rx="5" width="152" x="346" y="168"></rect>
+<text class="t5" text-anchor="middle" x="422" y="187">3. COMPRESIÓN</text>
+<text class="s5" text-anchor="middle" x="422" y="203">páginas poco usadas a una</text>
+<text class="s5" text-anchor="middle" x="422" y="217">caché comprimida en RAM</text>
+<text class="s5" text-anchor="middle" x="422" y="235">más lenta, pero no es disco</text>
+<rect fill="#d13c3c" height="76" rx="5" width="154" x="506" y="168"></rect>
+<text class="t5" text-anchor="middle" x="583" y="187">4. INTERCAMBIO A DISCO</text>
+<text class="s5" text-anchor="middle" x="583" y="203">el hipervisor elige a ciegas</text>
+<text class="s5" text-anchor="middle" x="583" y="217">qué página saca</text>
+<text class="s5" style="font-size:8px" text-anchor="middle" x="583" y="235">SÍNTOMA DE MAL DIMENSIONADO</text>
+<path d="M26 254 L660 254" marker-end="url(#a5c)" stroke="#999" stroke-width="1.5"></path>
+<defs><marker id="a5c" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3.5"><path d="M0,0 L7,3.5 L0,7 z" fill="#999"></path></marker></defs>
+<text class="n5" text-anchor="middle" x="340" y="270">presión de memoria creciente en el anfitrión →</text>
+<rect fill="none" height="34" rx="5" stroke="#0055a0" stroke-width="2" width="500" x="90" y="282"></rect>
+<text class="k5" text-anchor="middle" x="340" y="303">Sobreasignar CPU degrada · sobreasignar memoria rompe</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="332">[Fuente: INTEL-SDM; AMD-APM; VMWARE-DOC; KVM-DOC]</text>
+</svg>

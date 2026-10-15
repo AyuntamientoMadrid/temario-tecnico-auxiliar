@@ -1,0 +1,34 @@
+<svg aria-label="Las líneas de defensa del artículo 9 del ENS representadas como capas concéntricas alrededor de la información: la capa organizativa más externa, la capa física intermedia y la capa lógica más interna; cada una se corresponde con un grupo de medidas del anexo II y la norma da por supuesto que alguna capa será comprometida" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}.k7{font:700 10px system-ui,sans-serif;fill:#0055a0}.d7{font:8.5px system-ui,sans-serif;fill:#333}.n7{font:8.5px system-ui,sans-serif;fill:#666}.w7{font:700 10px system-ui,sans-serif;fill:#fff}.c7{font:700 9px system-ui,sans-serif;fill:#0a2f52}.r7{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h7" text-anchor="middle" x="340" y="19">Líneas de defensa: múltiples capas de naturaleza organizativa, física y lógica</text>
+<text class="n7" text-anchor="middle" x="340" y="35">El artículo 9.1 dice «CUANDO una de las capas sea comprometida», no «si». Se diseña asumiendo que alguna fallará</text>
+<ellipse cx="190" cy="176" fill="#dce7f2" rx="158" ry="118"></ellipse>
+<ellipse cx="190" cy="176" fill="#b9d0e6" rx="112" ry="84"></ellipse>
+<ellipse cx="190" cy="176" fill="#7fabd2" rx="66" ry="50"></ellipse>
+<ellipse cx="190" cy="176" fill="#0055a0" rx="30" ry="24"></ellipse>
+<text class="w7" text-anchor="middle" x="190" y="174">INFO</text>
+<text class="w7" text-anchor="middle" x="190" y="186">SERVICIO</text>
+<text class="c7" text-anchor="middle" x="190" y="136">CAPA LÓGICA</text>
+<text class="c7" text-anchor="middle" x="190" y="106">CAPA FÍSICA</text>
+<text class="c7" text-anchor="middle" x="190" y="74">CAPA ORGANIZATIVA</text>
+<rect fill="#eef4fa" height="70" rx="4" stroke="#0055a0" stroke-width="1.2" width="290" x="366" y="52"></rect>
+<text class="k7" x="378" y="69">1 · ORGANIZATIVA — la más externa</text>
+<text class="d7" x="378" y="84">Política de seguridad, normativa, procedimientos,</text>
+<text class="d7" x="378" y="96">autorización, formación y concienciación del personal</text>
+<text class="d7" x="378" y="112">Grupos del anexo II: org.1 a org.4 · mp.per.1 a mp.per.4</text>
+<rect fill="#eef4fa" height="70" rx="4" stroke="#0055a0" stroke-width="1.2" width="290" x="366" y="130"></rect>
+<text class="k7" x="378" y="147">2 · FÍSICA — la intermedia</text>
+<text class="d7" x="378" y="162">Áreas separadas con control de acceso, identificación,</text>
+<text class="d7" x="378" y="174">acondicionamiento, energía, incendios</text>
+<text class="d7" x="378" y="190">Grupo del anexo II: mp.if.1 a mp.if.7 (siete medidas)</text>
+<rect fill="#eef4fa" height="70" rx="4" stroke="#0055a0" stroke-width="1.2" width="290" x="366" y="208"></rect>
+<text class="k7" x="378" y="225">3 · LÓGICA — la más interna</text>
+<text class="d7" x="378" y="240">Control de acceso, cifrado, firma, perímetro seguro,</text>
+<text class="d7" x="378" y="252">flujos, protección de aplicaciones y de servicios</text>
+<text class="d7" x="378" y="268">Grupos: op.acc · op.exp · mp.com · mp.si · mp.sw · mp.s</text>
+<rect fill="#fdf3e3" height="26" rx="4" stroke="#e89822" stroke-width="1.2" width="632" x="24" y="300"></rect>
+<text class="r7" x="36" y="311">LO QUE PIDE EL ARTÍCULO 9.1 A LAS CAPAS:</text>
+<text class="d7" x="264" y="311">a) desarrollar una reacción adecuada frente a los incidentes que no han podido evitarse,</text>
+<text class="d7" x="36" y="322">reduciendo la probabilidad de que el sistema sea comprometido EN SU CONJUNTO · b) MINIMIZAR EL IMPACTO FINAL.</text>
+<text class="n7" x="24" y="344">[Fuente: ENS, art. 9 y anexo II — texto consolidado del BOE]</text>
+</svg>

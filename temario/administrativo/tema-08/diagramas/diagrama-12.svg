@@ -1,0 +1,48 @@
+<svg aria-label="Mapa resumen: el TRLHL clasifica los recursos en ingresos de derecho público y privado; los tributos propios son tasas, contribuciones especiales e impuestos; los precios públicos no son tributo; los impuestos se dividen en obligatorios y potestativos" class="svd12" role="img" viewbox="0 0 760 380" xmlns="http://www.w3.org/2000/svg">
+<style>.svd12 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd12 .t{font:11.5px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd12 .s{font:10px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="44" rx="8" width="220" x="270" y="14"></rect>
+<text class="h" x="380" y="34">TRLHL (RDLeg 2/2004)</text>
+<text class="h" style="font-weight:400;font-size:10px" x="380" y="50">recursos de las Haciendas Locales</text>
+<line stroke="#0055a0" x1="380" x2="380" y1="58" y2="74"></line>
+<line stroke="#0055a0" x1="200" x2="560" y1="74" y2="74"></line>
+<line stroke="#0055a0" x1="200" x2="200" y1="74" y2="88"></line>
+<line stroke="#0055a0" x1="560" x2="560" y1="74" y2="88"></line>
+<rect fill="#0055a0" height="34" rx="7" width="260" x="70" y="88"></rect>
+<text class="h" x="200" y="110">INGRESOS DE DERECHO PÚBLICO</text>
+<rect fill="#7a5230" height="34" rx="7" width="260" x="430" y="88"></rect>
+<text class="h" x="560" y="110">DERECHO PRIVADO</text>
+<rect fill="#f3ece4" height="50" rx="7" stroke="#7a5230" width="260" x="430" y="132"></rect>
+<text class="t" style="font-weight:700" x="560" y="153">Patrimonio · herencias</text>
+<text class="s" x="560" y="171">régimen de derecho privado (art. 4)</text>
+<rect fill="#e8f5ee" height="50" rx="7" stroke="#2d8659" width="150" x="40" y="132"></rect>
+<text class="t" style="font-weight:700" x="115" y="153">Tasas</text>
+<text class="s" x="115" y="171">coste = máx (24.2)</text>
+<rect fill="#e8f5ee" height="50" rx="7" stroke="#2d8659" width="160" x="200" y="132"></rect>
+<text class="t" style="font-weight:700" x="280" y="150">Contrib. especiales</text>
+<text class="s" x="280" y="170">máx 90 % (art. 31)</text>
+<rect fill="#eef3f8" height="50" rx="7" stroke="#0055a0" width="40" x="370" y="132"></rect>
+<text class="s" style="font-weight:700" x="390" y="150">+</text>
+<text class="s" x="390" y="168">PP</text>
+<rect fill="#003d75" height="34" rx="7" width="370" x="40" y="194"></rect>
+<text class="h" x="225" y="216">IMPUESTOS (tributos propios)</text>
+<rect fill="#e8f5ee" height="120" rx="7" stroke="#2d8659" width="180" x="40" y="238"></rect>
+<text class="t" style="font-weight:700;fill:#2d8659" x="130" y="260">Obligatorios</text>
+<text class="s" x="130" y="284">IBI (0,4–1,10 / 0,3–0,90)</text>
+<text class="s" x="130" y="306">IAE (exención &lt; 1 M €)</text>
+<text class="s" x="130" y="328">IVTM (coef. máx. 2)</text>
+<text class="s" style="fill:#2d8659" x="130" y="350">art. 59.1</text>
+<rect fill="#fff5e6" height="120" rx="7" stroke="#e89822" width="180" x="230" y="238"></rect>
+<text class="t" style="font-weight:700;fill:#b5740f" x="320" y="260">Potestativos</text>
+<text class="s" x="320" y="284">ICIO (máx. 4 %)</text>
+<text class="s" x="320" y="306">IIVTNU (dual, post-STC)</text>
+<text class="s" x="320" y="328">G. suntuarios (cotos)</text>
+<text class="s" style="fill:#b5740f" x="320" y="350">art. 59.2</text>
+<rect fill="#fff5e6" height="164" rx="7" stroke="#e89822" width="260" x="430" y="194"></rect>
+<text class="t" style="font-weight:700;fill:#b5740f" x="560" y="218">Datos clave</text>
+<text class="s" x="560" y="240">tasa = techo · precio púb. = suelo</text>
+<text class="s" x="560" y="261">precio público NO es tributo (2.1)</text>
+<text class="s" x="560" y="282">90 % = art. 31 · módulos = art. 32</text>
+<text class="s" x="560" y="303">CE: 137 · 140 · 142 (no 156)</text>
+<text class="s" x="560" y="324">Madrid: Ley 22/2006 (TEAM + ATM)</text>
+<text class="s" style="fill:#b5740f" x="560" y="345">prerrogativas para lo público (2.2)</text>
+</svg>

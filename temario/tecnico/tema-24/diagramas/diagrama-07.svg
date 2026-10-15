@@ -1,0 +1,34 @@
+<svg aria-label="Arquitectura de notificaciones push: la aplicación obtiene un token de FCM o APNs y lo envía al servidor del Ayuntamiento; cuando cambia el estado de un aviso, el servidor envía el mensaje con ese token a FCM o APNs, que lo entrega al dispositivo aunque la aplicación esté cerrada" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t7{font:700 10.5px system-ui,sans-serif;fill:#fff}.s7{font:9.5px system-ui,sans-serif;fill:#fff}.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}.l7{font:700 10px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h7" text-anchor="middle" x="340" y="20">Notificaciones push: el servidor no habla con la app</text>
+<rect fill="#e89822" height="42" rx="5" width="640" x="20" y="34"></rect>
+<text class="t7" text-anchor="middle" x="340" y="52">Paso previo — REGISTRO</text>
+<text class="s7" text-anchor="middle" x="340" y="68">La app obtiene de FCM/APNs un TOKEN único del dispositivo y lo envía al servidor municipal</text>
+<rect fill="#0055a0" height="80" rx="6" width="145" x="20" y="106"></rect>
+<text class="t7" text-anchor="middle" x="92" y="136">SERVIDOR</text>
+<text class="s7" text-anchor="middle" x="92" y="154">Ayto. de Madrid</text>
+<text class="s7" text-anchor="middle" x="92" y="170">(el aviso se resuelve)</text>
+<rect fill="#2d8659" height="80" rx="6" width="145" x="195" y="106"></rect>
+<text class="t7" text-anchor="middle" x="267" y="136">FCM / APNs</text>
+<text class="s7" text-anchor="middle" x="267" y="154">servicio de la</text>
+<text class="s7" text-anchor="middle" x="267" y="170">plataforma</text>
+<rect fill="#0055a0" height="80" rx="6" width="145" x="370" y="106"></rect>
+<text class="t7" text-anchor="middle" x="442" y="136">DISPOSITIVO</text>
+<text class="s7" text-anchor="middle" x="442" y="154">conexión única</text>
+<text class="s7" text-anchor="middle" x="442" y="170">persistente</text>
+<rect fill="#888" height="80" rx="6" width="115" x="545" y="106"></rect>
+<text class="t7" text-anchor="middle" x="602" y="140">Notificación</text>
+<text class="s7" text-anchor="middle" x="602" y="158">al ciudadano</text>
+<path d="M167 146 L191 146" marker-end="url(#a7)" stroke="#0055a0" stroke-width="3"></path>
+<path d="M342 146 L366 146" marker-end="url(#a7)" stroke="#0055a0" stroke-width="3"></path>
+<path d="M517 146 L541 146" marker-end="url(#a7)" stroke="#0055a0" stroke-width="3"></path>
+<defs><marker id="a7" markerheight="9" markerwidth="9" orient="auto" refx="4.5" refy="4.5"><path d="M0 0 L9 4.5 L0 9 z" fill="#0055a0"></path></marker></defs>
+<text class="l7" text-anchor="middle" x="180" y="200">mensaje + token</text>
+<text class="l7" text-anchor="middle" x="355" y="200">entrega push</text>
+<text class="l7" text-anchor="middle" x="530" y="200">se muestra</text>
+<rect fill="#d13c3c" height="60" rx="6" width="600" x="40" y="220"></rect>
+<text class="t7" text-anchor="middle" x="340" y="242">El servidor NUNCA entrega la notificación directamente al dispositivo</text>
+<text class="s7" text-anchor="middle" x="340" y="260">Siempre pasa por FCM (Android) o APNs (iOS), que la entregan usando el token</text>
+<text class="s7" text-anchor="middle" x="340" y="274">El usuario debe autorizar las notificaciones y puede revocarlas en cualquier momento</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="304">[Fuente: FCM; APNS]</text>
+</svg>

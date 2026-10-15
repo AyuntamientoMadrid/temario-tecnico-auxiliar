@@ -1,0 +1,35 @@
+<svg aria-label="Los cinco rasgos que definen una red local: ámbito geográfico reducido, titularidad privada del medio, velocidad elevada, retardo y tasa de error bajos y medio inicialmente compartido; el criterio que de verdad discrimina no es la distancia sino que el cable sea propiedad de la organización y no de un operador" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}.k1{font:700 10px system-ui,sans-serif;fill:#0055a0}.d1{font:9px system-ui,sans-serif;fill:#333}.n1{font:8.5px system-ui,sans-serif;fill:#666}.t1{font:700 11px system-ui,sans-serif;fill:#fff}.g1{font:700 9.5px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h1" text-anchor="middle" x="340" y="20">Los cinco rasgos que definen una red local (LAN)</text>
+<text class="n1" text-anchor="middle" x="340" y="37">Si una pregunta describe una red y hay que decidir si es local, el rasgo 2 es el que decide</text>
+<rect fill="#eef4fa" height="32" rx="4" width="636" x="22" y="46"></rect>
+<rect fill="#0055a0" height="32" rx="4" width="30" x="22" y="46"></rect>
+<text class="t1" text-anchor="middle" x="37" y="67">1</text>
+<text class="k1" x="62" y="60">ÁMBITO GEOGRÁFICO REDUCIDO</text>
+<text class="d1" x="62" y="73">Un edificio, un grupo de edificios próximos o un recinto. De metros a pocos kilómetros. Es cualitativo: no hay cifra normativa</text>
+<rect fill="#e6f2ec" height="32" rx="4" width="636" x="22" y="82"></rect>
+<rect fill="#2d8659" height="32" rx="4" width="30" x="22" y="82"></rect>
+<text class="t1" text-anchor="middle" x="37" y="103">2</text>
+<text class="g1" x="62" y="96">TITULARIDAD PRIVADA DEL MEDIO — EL CRITERIO QUE DECIDE</text>
+<text class="d1" x="62" y="109">El cable es de la organización: se instala y se mantiene sin operador ni contrato de servicio. En una WAN el medio es del operador</text>
+<rect fill="#eef4fa" height="32" rx="4" width="636" x="22" y="118"></rect>
+<rect fill="#0055a0" height="32" rx="4" width="30" x="22" y="118"></rect>
+<text class="t1" text-anchor="middle" x="37" y="139">3</text>
+<text class="k1" x="62" y="132">VELOCIDAD DE TRANSMISIÓN ELEVADA</text>
+<text class="d1" x="62" y="145">Hoy: 1 Gbit/s en el puesto, 10 Gbit/s en la agregación, 25 a 100 Gbit/s y más en el centro de proceso de datos</text>
+<rect fill="#eef4fa" height="32" rx="4" width="636" x="22" y="154"></rect>
+<rect fill="#0055a0" height="32" rx="4" width="30" x="22" y="154"></rect>
+<text class="t1" text-anchor="middle" x="37" y="175">4</text>
+<text class="k1" x="62" y="168">RETARDO BAJO Y TASA DE ERROR MUY BAJA</text>
+<text class="d1" x="62" y="181">Consecuencia de diseño: en la capa 2 basta con DETECTAR el error y descartar la trama; recuperar es tarea del transporte</text>
+<rect fill="#fdf3e3" height="32" rx="4" width="636" x="22" y="190"></rect>
+<rect fill="#e89822" height="32" rx="4" width="30" x="22" y="190"></rect>
+<text class="t1" text-anchor="middle" x="37" y="211">5</text>
+<text class="k1" x="62" y="204">MEDIO COMPARTIDO, AL MENOS EN SU ORIGEN</text>
+<text class="d1" x="62" y="217">De aquí nace el problema del acceso al medio. La LAN conmutada lo elimina en el cable; la inalámbrica lo conserva íntegro</text>
+<rect fill="none" height="56" rx="5" stroke="#0055a0" stroke-width="1.5" width="636" x="22" y="238"></rect>
+<text class="k1" text-anchor="middle" x="340" y="256">Dos edificios municipales a 800 m unidos por FIBRA PROPIA = red local (o de campus)</text>
+<text class="k1" text-anchor="middle" x="340" y="272">Los mismos 800 m con un ENLACE CONTRATADO a un operador = ya no lo es</text>
+<text class="d1" text-anchor="middle" x="340" y="287">Misma distancia, misma velocidad, distinta respuesta: lo que cambia es de quién es el medio</text>
+<text class="n1" text-anchor="end" x="670" y="328">[Fuente: IEEE 802-2014 · Tanenbaum]</text>
+</svg>

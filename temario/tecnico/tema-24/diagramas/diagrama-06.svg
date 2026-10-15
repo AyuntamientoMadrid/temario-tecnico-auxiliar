@@ -1,0 +1,21 @@
+<svg aria-label="Esquema temporal: el hilo principal lanza la petición de red a un hilo secundario y sigue respondiendo al usuario; cuando llega el resultado, vuelve al hilo principal para actualizar la interfaz. Bloquear el hilo principal provoca un ANR en Android o la congelación de la interfaz en iOS" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 10.5px system-ui,sans-serif;fill:#fff}.s6{font:9.5px system-ui,sans-serif;fill:#fff}.d6{font:10px system-ui,sans-serif;fill:#333}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h6" text-anchor="middle" x="340" y="20">La red nunca en el hilo principal</text>
+<text class="d6" x="24" y="62">Hilo principal (UI)</text>
+<rect fill="#0055a0" height="34" rx="5" width="510" x="140" y="46"></rect>
+<text class="t6" text-anchor="middle" x="395" y="68">Dibuja la interfaz y responde al usuario — nunca se bloquea</text>
+<text class="d6" x="24" y="152">Hilo secundario</text>
+<rect fill="#2d8659" height="34" rx="5" width="510" x="140" y="136"></rect>
+<text class="t6" text-anchor="middle" x="395" y="158">Petición HTTPS · lectura de base de datos · procesado de imagen</text>
+<path d="M230 84 L230 132" marker-end="url(#a6)" stroke="#e89822" stroke-width="3"></path>
+<text style="font:700 10px system-ui;fill:#e89822" x="242" y="112">lanza (async)</text>
+<path d="M560 132 L560 84" marker-end="url(#a6)" stroke="#e89822" stroke-width="3"></path>
+<text style="font:700 10px system-ui;fill:#e89822" text-anchor="end" x="548" y="112">devuelve el resultado a la UI</text>
+<defs><marker id="a6" markerheight="14" markerunits="userSpaceOnUse" markerwidth="14" orient="auto" refx="12" refy="7"><path d="M0 0 L12 7 L0 14 z" fill="#e89822"></path></marker></defs>
+<rect fill="#d13c3c" height="60" rx="6" width="560" x="60" y="192"></rect>
+<text class="t6" text-anchor="middle" x="340" y="214">Si el hilo principal se bloquea</text>
+<text class="s6" text-anchor="middle" x="340" y="232">Android: diálogo ANR (Application Not Responding)</text>
+<text class="s6" text-anchor="middle" x="340" y="246">iOS: interfaz congelada y posible cierre por el watchdog del sistema</text>
+<text class="d6" text-anchor="middle" x="340" y="276">Kotlin: corrutinas (suspend, Dispatchers.IO) · Swift: async/await</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="294">[Fuente: ANDROID-DEV; APPLE-DEV; KOTLIN-DOC; SWIFT-DOC]</text>
+</svg>

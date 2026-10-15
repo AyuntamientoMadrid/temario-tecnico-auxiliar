@@ -1,0 +1,28 @@
+<svg aria-label="Escalera de mecanismos de recuperación ordenados por tiempo de recuperación, desde la instantánea y la réplica hasta la restauración desde cinta y el plan de recuperación ante desastres, con el anclaje normativo del Esquema Nacional de Seguridad y del Reglamento General de Protección de Datos" role="img" viewbox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
+<style>.t14{font:700 10.5px system-ui,sans-serif;fill:#fff}.s14{font:9px system-ui,sans-serif;fill:#fff}.d14{font:9px system-ui,sans-serif;fill:#333}.h14{font:700 13px system-ui,sans-serif;fill:#0055a0}.k14{font:700 9.5px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h14" text-anchor="middle" x="340" y="20">Escalera de recuperación: de segundos a días</text>
+<rect fill="#2d8659" height="28" rx="4" width="500" x="20" y="32"></rect><text class="s14" x="30" y="51">Instantánea de cabina o de VM — deshacer un cambio reciente</text>
+<text class="d14" x="530" y="51">Segundos · depende del original</text>
+<rect fill="#2d8659" height="28" rx="4" width="500" x="20" y="66"></rect><text class="s14" x="30" y="85">Réplica en el segundo CPD — se enciende (failover)</text>
+<text class="d14" x="530" y="85">Minutos · RPO de minutos</text>
+<rect fill="#0055a0" height="28" rx="4" width="500" x="20" y="100"></rect><text class="s14" x="30" y="119">Restauración instantánea desde el repositorio de disco</text>
+<text class="d14" x="530" y="119">Minutos · arranca y migra</text>
+<rect fill="#0055a0" height="28" rx="4" width="500" x="20" y="134"></rect><text class="s14" x="30" y="153">Recuperación granular: un fichero, un correo, una tabla</text>
+<text class="d14" x="530" y="153">Minutos · sin restaurar la VM</text>
+<rect fill="#e89822" height="28" rx="4" width="500" x="20" y="168"></rect><text class="s14" x="30" y="187">Restauración completa desde el repositorio de disco</text>
+<text class="d14" x="530" y="187">Horas · según volumen</text>
+<rect fill="#e89822" height="28" rx="4" width="500" x="20" y="202"></rect><text class="s14" x="30" y="221">Recuperación bare-metal de un sistema físico</text>
+<text class="d14" x="530" y="221">Horas · medio de arranque</text>
+<rect fill="#d13c3c" height="28" rx="4" width="500" x="20" y="236"></rect><text class="s14" x="30" y="255">Restauración desde cinta o archivo profundo en nube</text>
+<text class="d14" x="530" y="255">Horas o días · secuencial</text>
+<rect fill="#d13c3c" height="28" rx="4" width="500" x="20" y="270"></rect><text class="s14" x="30" y="289">Activación del DRP en el emplazamiento alternativo</text>
+<text class="d14" x="530" y="289">Frío, templado o caliente</text>
+<line stroke="#ccc" stroke-width="1" x1="20" x2="660" y1="308" y2="308"></line>
+<rect fill="#0055a0" height="46" rx="5" width="310" x="20" y="316"></rect>
+<text class="t14" text-anchor="middle" x="175" y="334">ENS · RD 311/2022</text>
+<text class="s14" text-anchor="middle" x="175" y="351">Art. 26 · [mp.info.6] copias · [op.cont] continuidad</text>
+<rect fill="#2d8659" height="46" rx="5" width="310" x="350" y="316"></rect>
+<text class="t14" text-anchor="middle" x="505" y="334">RGPD · art. 32</text>
+<text class="s14" text-anchor="middle" x="505" y="351">Disponibilidad, resiliencia, restaurar y verificar</text>
+<text style="font:9px system-ui;fill:#666" text-anchor="end" x="670" y="374">[Fuente: NIST-SP800-34; ENS; RGPD]</text>
+</svg>

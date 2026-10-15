@@ -1,0 +1,31 @@
+<svg aria-label="Nombramiento de los órganos directivos por la Junta de Gobierno, con carácter general entre funcionarios de carrera del subgrupo A1, con excepción motivada para coordinadores generales y determinados directores generales y no aplicable al secretario general técnico, según el artículo 49" role="img" viewbox="0 0 700 290" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .i-c{fill:#0055a0;stroke:#003d75;stroke-width:2}
+    .i-b{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .i-t{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .i-h{font:700 12px system-ui,sans-serif;fill:#003d75;text-anchor:middle}
+    .i-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+    .i-l{stroke:#0055a0;stroke-width:1.5;fill:none}
+  </style>
+<rect class="i-c" height="48" rx="8" width="180" x="260" y="20"></rect>
+<text class="i-t" x="350" y="42">JUNTA DE GOBIERNO</text>
+<text class="i-t" style="font-weight:400;font-size:11px" x="350" y="60">nombra y cesa (art. 49.1)</text>
+<line class="i-l" x1="350" x2="350" y1="68" y2="92"></line>
+<rect class="i-b" height="50" rx="8" width="300" x="200" y="92"></rect>
+<text class="i-h" x="350" y="113">Coordinadores grales. · Secretarios grales.</text>
+<text class="i-h" x="350" y="131">técnicos · Directores generales</text>
+<line class="i-l" x1="350" x2="350" y1="142" y2="156"></line>
+<rect fill="#e8f5ee" height="96" rx="8" stroke="#2d8659" stroke-width="1.5" width="240" x="90" y="176"></rect>
+<text class="i-h" style="fill:#1f5e3f" x="210" y="200">REGLA GENERAL</text>
+<text class="i-s" x="210" y="224">entre funcionarios de carrera</text>
+<text class="i-s" x="210" y="242">(art. 130.3 LBRL) de cuerpos</text>
+<text class="i-s" x="210" y="260">o escalas del subgrupo A1</text>
+<rect fill="#fdf4e4" height="96" rx="8" stroke="#e89822" stroke-width="1.5" width="240" x="370" y="176"></rect>
+<text class="i-h" style="fill:#a8650f" x="490" y="200">EXCEPCIÓN MOTIVADA</text>
+<text class="i-s" x="490" y="224">coordinadores generales y</text>
+<text class="i-s" x="490" y="242">determinados directores grales.</text>
+<text class="i-s" x="490" y="260">excluido: secretario gral. técnico</text>
+<line class="i-l" x1="210" x2="490" y1="156" y2="156"></line>
+<line class="i-l" x1="210" x2="210" y1="156" y2="176"></line>
+<line class="i-l" x1="490" x2="490" y1="156" y2="176"></line>
+</svg>

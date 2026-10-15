@@ -1,0 +1,12 @@
+<svg aria-label="Cadena de conexión de un periférico: puerto, interfaz o bus, controlador de hardware y controlador de software o driver, hasta el sistema operativo" class="svd2" role="img" viewbox="0 0 680 240" xmlns="http://www.w3.org/2000/svg">
+<style>.svd2 .t{font:700 12px system-ui,sans-serif;fill:#fff}.svd2 .s{font:10px system-ui,sans-serif;fill:#fff}.svd2 .h{font:700 14px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="340" y="28">Cómo dialoga el periférico con el equipo</text>
+<rect fill="#003d73" height="80" rx="8" width="108" x="22" y="70"></rect><text class="t" text-anchor="middle" x="76" y="98">PUERTO</text><text class="s" text-anchor="middle" x="76" y="118">Conector físico</text><text class="s" text-anchor="middle" x="76" y="134">(el «enchufe»)</text>
+<rect fill="#0055a0" height="80" rx="8" width="112" x="150" y="70"></rect><text class="t" text-anchor="middle" x="206" y="98">INTERFAZ/BUS</text><text class="s" text-anchor="middle" x="206" y="118">Líneas y reglas</text><text class="s" text-anchor="middle" x="206" y="134">USB, PCIe, SATA</text>
+<rect fill="#2d8659" height="80" rx="8" width="128" x="282" y="70"></rect><text class="t" text-anchor="middle" x="346" y="98">HOST CONTROLLER</text><text class="s" text-anchor="middle" x="346" y="118">Circuito de placa</text><text class="s" text-anchor="middle" x="346" y="134">(hardware)</text>
+<rect fill="#e89822" height="80" rx="8" width="112" x="430" y="70"></rect><text class="t" text-anchor="middle" x="486" y="98">DRIVER</text><text class="s" text-anchor="middle" x="486" y="118">Traductor SO↔HW</text><text class="s" text-anchor="middle" x="486" y="134">(software)</text>
+<rect fill="#6ea3d2" height="80" rx="8" width="96" x="562" y="70"></rect><text class="t" text-anchor="middle" x="610" y="104">SISTEMA</text><text class="t" text-anchor="middle" x="610" y="122">OPERATIVO</text>
+<g marker-end="url(#a2)" stroke="#888" stroke-width="2"><path d="M130 110 L148 110"></path><path d="M262 110 L280 110"></path><path d="M410 110 L428 110"></path><path d="M542 110 L560 110"></path></g>
+<defs><marker id="a2" markerheight="8" markerwidth="8" orient="auto" refx="6" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#888"></path></marker></defs>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="672" y="228">[Fuente: USB-IF; MS-DEVMGR]</text>
+</svg>

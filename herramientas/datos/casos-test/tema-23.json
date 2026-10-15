@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, el campo de DNI/NIE debe exigir 8 dígitos seguidos de una letra mediante validación nativa de HTML5, sin JavaScript. ¿Qué atributo se usa?",
+    "o": [
+     "type=\"email\", que obliga al navegador a comprobar el formato del dato.",
+     "maxlength=\"9\", que limita el campo a nueve caracteres en total.",
+     "pattern=\"[0-9]{8}[A-Za-z]\", con la expresión regular del formato."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §4.3.2",
+    "e": "El atributo pattern aplica una expresión regular como validación nativa del navegador; maxlength solo limita la longitud y type=\"email\" valida direcciones de correo."
+   },
+   {
+    "q": "¿Qué atributo marca el campo de DNI/NIE como obligatorio, también sin JavaScript?",
+    "o": [
+     "El atributo placeholder=\"Obligatorio\".",
+     "El atributo required.",
+     "El atributo min=\"1\"."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §4.3.2",
+    "e": "HTML5 incorporó atributos de validación nativa como required (obligatoriedad), pattern o min/max; el placeholder es solo un texto de ayuda."
+   },
+   {
+    "q": "Con pattern y required ya puestos, ¿basta esa validación del formulario como medida de seguridad?",
+    "o": [
+     "No: mejora la experiencia de uso, pero un atacante puede enviar la petición directamente al servidor.",
+     "Sí: el navegador rechaza cualquier petición que no haya pasado la validación del formulario.",
+     "Sí, siempre que el formulario envíe los datos con el método POST en lugar de con GET."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §10.3.1",
+    "e": "La validación del front-end puede eludirse enviando peticiones HTTP sin pasar por el formulario; toda entrada debe validarse siempre también en el servidor."
+   },
+   {
+    "q": "¿Qué etiqueta es imprescindible en el <head> para que el formulario se muestre adaptado en un móvil?",
+    "o": [
+     "<meta charset=\"UTF-8\">",
+     "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+     "<meta name=\"description\" content=\"Cita previa en la sede electrónica\">"
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §3.3.1",
+    "e": "La metaetiqueta viewport hace que el navegador móvil use el ancho real del dispositivo; charset fija la codificación y description la usan los buscadores."
+   },
+   {
+    "q": "¿Qué ocurre en el móvil del ciudadano si se omite esa metaetiqueta?",
+    "o": [
+     "El navegador no muestra la página y avisa de que no está adaptada al dispositivo.",
+     "Las media queries se aplican igual, pero el texto aparece con un tamaño mayor.",
+     "Se renderiza a un ancho de escritorio simulado (unos 980 px) y luego se reduce."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §3.3.1",
+    "e": "Sin viewport, el navegador móvil simula un ancho de escritorio y reduce la página, lo que deja sin efecto las media queries basadas en el ancho real de la pantalla."
+   },
+   {
+    "q": "El formulario se maqueta con Flexbox en fila. ¿Qué media query lo pasa a columna por debajo de 600 px de ancho?",
+    "o": [
+     "@media (max-width: 600px) { .formulario-cita { flex-direction: column; } }",
+     "@media (min-width: 600px) { .formulario-cita { flex-direction: column; } }",
+     "@media (max-width: 600px) { .formulario-cita { flex-direction: row; } }"
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §3.3.1",
+    "e": "La condición max-width: 600px se cumple en anchos de hasta 600 px y, dentro de ella, flex-direction: column apila los elementos; min-width haría lo contrario."
+   },
+   {
+    "q": "¿A qué responde la condición de esa media query?",
+    "o": [
+     "Al sistema operativo del dispositivo, móvil o de escritorio, que el servidor detecta.",
+     "A la resolución de las imágenes del formulario, indicada mediante el atributo srcset.",
+     "Al ancho de la ventana gráfica (viewport) del navegador en el que se muestra la página."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §3.3.1",
+    "e": "Las media queries son reglas CSS condicionadas al ancho de la ventana gráfica, que reorganizan la disposición en puntos de ruptura."
+   },
+   {
+    "q": "Un campo de búsqueda no tiene <label> visible, solo un icono. ¿Cómo se etiqueta para que el lector de pantalla anuncie su propósito?",
+    "o": [
+     "Con el atributo aria-label, por ejemplo aria-label=\"Buscar trámite\".",
+     "No hace falta: el lector de pantalla describe el icono de forma automática.",
+     "Con un comentario HTML junto al campo que explique para qué sirve."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · §3.3.2 (principio Perceptible) y técnica ARIA14 del W3C",
+    "e": "aria-label da al campo un nombre accesible que el lector de pantalla anuncia aunque no haya texto visible; un comentario HTML no llega al usuario."
+   },
+   {
+    "q": "Otra opción es mantener un <label> pero ocultarlo visualmente. ¿Por qué NO debe ocultarse con display:none?",
+    "o": [
+     "Porque display:none está prohibido dentro de los formularios de HTML5.",
+     "Porque display:none también lo oculta a las tecnologías de apoyo.",
+     "Porque display:none borra el valor que el ciudadano haya escrito."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 (solución orientativa)",
+    "e": "Un elemento con display:none desaparece también para los lectores de pantalla; la etiqueta debe sacarse del flujo visual con una clase que la mantenga accesible."
+   },
+   {
+    "q": "Para las personas que navegan solo con teclado, ¿qué principio POUR de las WCAG exige que todo el formulario pueda manejarse sin ratón?",
+    "o": [
+     "Perceptible.",
+     "Comprensible.",
+     "Operable."
+    ],
+    "c": 2,
+    "r": "Caso 1, enunciado · §3.3.2",
+    "e": "Operable significa que los componentes de la interfaz deben poder manejarse; por ejemplo, que toda la funcionalidad sea accesible por teclado y no solo con ratón."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿qué método HTTP y qué ruta corresponden, en estilo REST, a «obtener el expediente número 1234»?",
+    "o": [
+     "POST /api/expedientes/1234",
+     "GET /api/expedientes/1234",
+     "PUT /api/expedientes/1234"
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §8.5",
+    "e": "En REST cada expediente es un recurso identificado en la ruta y se obtiene con GET; PUT lo reemplazaría y POST se usa para crear."
+   },
+   {
+    "q": "¿Por qué el método adecuado para esa consulta es GET?",
+    "o": [
+     "Porque es una operación de lectura, idempotente y sin efectos secundarios.",
+     "Porque GET cifra los parámetros de la URL antes de enviarlos al servidor.",
+     "Porque GET crea el recurso en el servidor si todavía no existía."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §2.3.1",
+    "e": "GET obtiene una representación del recurso; según la tabla de métodos, es idempotente y seguro (sin efectos secundarios)."
+   },
+   {
+    "q": "¿Cómo debe escribir el back-end la consulta que recupera el expediente por su identificador?",
+    "o": [
+     "Concatenando el identificador en la cadena SQL, tras validarlo antes con JavaScript.",
+     "\"SELECT * FROM expediente WHERE id = '\" + id_expediente + \"'\"",
+     "cursor.execute(\"SELECT * FROM expediente WHERE id = %s\", (id_expediente,))"
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §8.3 y §10.2.1",
+    "e": "La consulta parametrizada evita la inyección SQL; concatenar el dato en la cadena es lo vulnerable, y la validación en JavaScript puede eludirse."
+   },
+   {
+    "q": "¿Por qué la consulta parametrizada protege frente a la inyección SQL?",
+    "o": [
+     "Porque el motor recibe el dato siempre como un valor, nunca como parte de la sintaxis.",
+     "Porque cifra el identificador del expediente antes de enviarlo a la base de datos.",
+     "Porque solo admite identificadores numéricos y rechaza cualquier otro carácter."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §10.2.1",
+    "e": "En la consulta parametrizada el dato del usuario se trata como un valor, sea cual sea su contenido, y no puede alterar la estructura del comando."
+   },
+   {
+    "q": "Un ciudadano autenticado cambia en la URL el número de su expediente por otro y obtiene un expediente ajeno. ¿Qué vulnerabilidad es?",
+    "o": [
+     "Un XSS reflejado, porque el dato viaja en la propia URL de la petición.",
+     "Un IDOR, una variante del control de acceso roto.",
+     "Un CSRF, porque la petición lleva la cookie de sesión válida."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §10.2.1",
+    "e": "Cambiar el identificador en la URL para acceder al recurso de otro ciudadano es un IDOR (Insecure Direct Object Reference), variante del control de acceso roto."
+   },
+   {
+    "q": "Para no ser vulnerable a ese IDOR, ¿qué comprobación debe hacer el servidor antes de devolver el expediente?",
+    "o": [
+     "Que el usuario está autenticado, lo que basta para servir cualquier expediente.",
+     "Que el identificador recibido tiene un formato numérico válido y existe.",
+     "Que el expediente pertenece al ciudadano autenticado o que su rol tiene permiso."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §8.4 y §10.2.1",
+    "e": "La autenticación dice quién es el usuario; la autorización decide si puede acceder a ese recurso concreto, y debe verificarse en el servidor."
+   },
+   {
+    "q": "Si el expediente pertenece a otro ciudadano, ¿qué código de estado debe devolver la API?",
+    "o": [
+     "401 Unauthorized.",
+     "403 Forbidden.",
+     "400 Bad Request."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §2.3.1 y §8.4",
+    "e": "403 Forbidden indica un fallo de autorización: el servidor sabe quién es el usuario, pero no tiene permiso. 401 indica un fallo de autenticación."
+   },
+   {
+    "q": "¿Qué atributo de la cookie de sesión mitiga su robo mediante XSS?",
+    "o": [
+     "SameSite, que impide enviarla desde otro dominio.",
+     "Secure, que impide enviarla por HTTP sin cifrar.",
+     "HttpOnly, que impide que JavaScript la lea."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §8.4",
+    "e": "Con HttpOnly, JavaScript no puede leer la cookie desde el DOM, de modo que un script inyectado no puede robarla directamente."
+   },
+   {
+    "q": "¿Qué atributo de la cookie de sesión mitiga el uso indebido por CSRF?",
+    "o": [
+     "El atributo SameSite=Strict o Lax.",
+     "El atributo HttpOnly.",
+     "El atributo Max-Age=3600."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · §8.4 y §10.2.2",
+    "e": "SameSite restringe el envío de la cookie en peticiones originadas desde otro dominio, que es justo lo que aprovecha un ataque CSRF."
+   },
+   {
+    "q": "¿Qué aporta el atributo Secure en la cookie de sesión?",
+    "o": [
+     "Impide que JavaScript pueda leer la cookie desde el DOM.",
+     "Hace que la cookie solo se envíe por HTTPS, nunca por HTTP.",
+     "Impide que la cookie se adjunte a peticiones de otro dominio."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · §8.4",
+    "e": "Secure garantiza que la cookie solo viaja sobre HTTPS, nunca en texto plano por HTTP."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿qué código, ejecutado desde la página principal, registra el Service Worker ubicado en /sw.js?",
+    "o": [
+     "if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/sw.js'); }",
+     "window.open('/sw.js'); al terminar de cargar la página principal",
+     "<script src=\"/sw.js\"></script> incluido en el <head> de la página"
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §9.3",
+    "e": "El Service Worker se registra con navigator.serviceWorker.register(); cargar el fichero como un script normal lo ejecutaría en la página, no como Service Worker."
+   },
+   {
+    "q": "¿Para qué sirve la comprobación 'serviceWorker' in navigator antes del registro?",
+    "o": [
+     "Para verificar que la página se está sirviendo por HTTPS.",
+     "Para confirmar que el ciudadano ya ha iniciado sesión.",
+     "Para comprobar que el navegador admite esa API (mejora progresiva)."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §6.4 y §9.3",
+    "e": "El registro se condiciona a que el navegador soporte la API: si no la tiene, la página sigue funcionando sin capacidad offline, como pide la mejora progresiva."
+   },
+   {
+    "q": "¿Bajo qué condición de protocolo puede registrarse el Service Worker en producción?",
+    "o": [
+     "Con cualquier protocolo, siempre que sw.js esté en la raíz.",
+     "Solo si la sede electrónica se sirve por HTTPS.",
+     "Solo si el servidor web utiliza la versión HTTP/3."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §9.3",
+    "e": "Servir la aplicación por HTTPS es requisito obligatorio para registrar un Service Worker; es uno de los tres pilares de una PWA."
+   },
+   {
+    "q": "¿Por qué HTTPS es un requisito de seguridad y no una simple recomendación para el Service Worker?",
+    "o": [
+     "Porque HTTPS acelera la carga del Service Worker y de la caché sin conexión.",
+     "Porque el Service Worker guarda las contraseñas del ciudadano en la caché.",
+     "Porque el Service Worker controla el tráfico de red y, sin cifrar, quedaría expuesto."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §9.3",
+    "e": "El Service Worker puede interceptar y modificar peticiones y respuestas; permitirlo sobre HTTP expondría ese control a quien intercepte la red."
+   },
+   {
+    "q": "¿Qué propiedades del fichero manifest.json son necesarias para que el navegador ofrezca «instalar» la sede electrónica?",
+    "o": [
+     "name (o short_name) y start_url, junto con al menos un icono en icons.",
+     "HttpOnly y SameSite, que protegen la sesión de la aplicación instalada.",
+     "Cache-Control y ETag, que controlan la caché de la aplicación instalada."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §9.3",
+    "e": "El Web App Manifest es un JSON con los metadatos de la aplicación (nombre, iconos, URL de inicio…); HttpOnly, SameSite, Cache-Control y ETag son atributos de cookie y cabeceras HTTP."
+   },
+   {
+    "q": "Un ciudadano consultó ayer el estado de su trámite y hoy quiere verlo en el metro, sin conexión. ¿Qué pieza de la PWA lo hace posible?",
+    "o": [
+     "El fichero manifest.json, que guarda una copia del último estado consultado.",
+     "El Service Worker, que sirve desde la caché el contenido ya consultado.",
+     "La cookie de sesión, que almacena el estado del trámite en el navegador."
+    ],
+    "c": 1,
+    "r": "Caso 3, enunciado · §9.3",
+    "e": "El Service Worker intercepta las peticiones y sirve contenido desde la caché cuando no hay conexión; obtener un estado más reciente exigirá conectividad."
+   },
+   {
+    "q": "El formulario de contacto muestra el último mensaje con elemento.innerHTML = ultimoMensaje. ¿Por qué es vulnerable a XSS?",
+    "o": [
+     "Porque innerHTML interpreta la cadena como HTML y ejecutaría el código de un atributo de evento inyectado (p. ej. onerror) en el dominio de la sede.",
+     "Porque innerHTML envía el mensaje al servidor sin cifrar, y un atacante puede leerlo por el camino.",
+     "Porque innerHTML no admite caracteres con tilde y deja el mensaje del ciudadano sin escapar."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · §10.2.2",
+    "e": "Insertar contenido no confiable como HTML sin escapar permite ejecutar JavaScript arbitrario (p. ej. con <img src=x onerror=…>) en el contexto del propio dominio de confianza; es un XSS basado en DOM porque la inserción la hace el JavaScript del cliente."
+   },
+   {
+    "q": "Si el mensaje es texto plano, ¿cuál es la corrección adecuada?",
+    "o": [
+     "Mantener innerHTML y marcar la cookie de sesión como HttpOnly.",
+     "Usar elemento.textContent = ultimoMensaje en lugar de innerHTML.",
+     "Limitar con JavaScript la longitud máxima del mensaje del ciudadano."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §10.2.2",
+    "e": "textContent inserta el contenido como texto, sin interpretarlo como HTML. HttpOnly no evita el XSS: solo limita su impacto sobre la cookie."
+   },
+   {
+    "q": "Si hubiera que insertar marcado en lugar de texto plano, ¿cómo se protege la página?",
+    "o": [
+     "Insertando el mensaje con innerHTML tal como lo escribió el ciudadano.",
+     "Desactivando el Service Worker mientras se muestra el mensaje en pantalla.",
+     "Escapando los caracteres especiales (<, >, &) antes de insertarlo, con una CSP de refuerzo."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §10.2.2",
+    "e": "La mitigación principal del XSS es escapar toda salida con datos no controlados por el desarrollador, reforzada con la cabecera Content-Security-Policy."
+   },
+   {
+    "q": "¿Qué añade la cabecera Content-Security-Policy como refuerzo frente al XSS?",
+    "o": [
+     "Restringe desde qué orígenes puede cargarse y ejecutarse script en la página.",
+     "Cifra la cookie de sesión para que un script no pueda descifrarla.",
+     "Obliga al navegador a usar HTTPS en todas las visitas futuras."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · §10.2.2 y §10.3.1",
+    "e": "CSP limita qué script puede ejecutarse en la página; forzar HTTPS en visitas futuras es la función de otra cabecera, Strict-Transport-Security."
+   }
+  ]
+ }
+]

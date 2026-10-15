@@ -1,0 +1,32 @@
+<svg aria-label="El concejal-presidente: nombrado por el alcalde, representa y dirige el distrito, preside la Junta Municipal, tiene voto de calidad y ejecuta los acuerdos" role="img" viewbox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .e-c{fill:#0055a0;stroke:#003d75;stroke-width:2}
+    .e-n{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .e-ct{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .e-s{font:11px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}
+    .e-l{stroke:#0055a0;stroke-width:1;fill:none}
+  </style>
+<rect class="e-c" height="60" rx="10" width="200" x="250" y="130"></rect>
+<text class="e-ct" x="350" y="156">CONCEJAL-</text>
+<text class="e-ct" x="350" y="176">PRESIDENTE</text>
+<rect fill="#fdf4e4" height="44" rx="8" stroke="#e89822" stroke-width="1.5" width="200" x="250" y="20"></rect>
+<text class="e-s" style="font-weight:700;fill:#a8650f" x="350" y="40">Nombrado y separado</text>
+<text class="e-s" style="fill:#a8650f" x="350" y="56">por EL ALCALDE</text>
+<line class="e-l" x1="350" x2="350" y1="64" y2="130"></line>
+<rect class="e-n" height="44" rx="8" width="200" x="20" y="120"></rect>
+<text class="e-s" x="120" y="140">Representa el distrito</text>
+<text class="e-s" x="120" y="156">y dirige su administración</text>
+<rect class="e-n" height="44" rx="8" width="200" x="480" y="120"></rect>
+<text class="e-s" x="580" y="140">Convoca y preside</text>
+<text class="e-s" x="580" y="156">la Junta Municipal</text>
+<rect class="e-n" height="44" rx="8" width="200" x="20" y="230"></rect>
+<text class="e-s" x="120" y="250">Voto de calidad</text>
+<text class="e-s" x="120" y="266">(dirime empates)</text>
+<rect class="e-n" height="44" rx="8" width="200" x="480" y="230"></rect>
+<text class="e-s" x="580" y="250">Ejecuta los acuerdos</text>
+<text class="e-s" x="580" y="266">de la Junta</text>
+<line class="e-l" x1="250" x2="220" y1="150" y2="142"></line>
+<line class="e-l" x1="450" x2="480" y1="150" y2="142"></line>
+<line class="e-l" x1="280" x2="160" y1="190" y2="230"></line>
+<line class="e-l" x1="420" x2="560" y1="190" y2="230"></line>
+</svg>

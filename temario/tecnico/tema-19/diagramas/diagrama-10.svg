@@ -1,0 +1,20 @@
+<svg aria-label="Ciclo de vida de un procedimiento almacenado: creación y análisis, almacenamiento en el catálogo, primera ejecución con generación de plan, ejecuciones posteriores reutilizando el plan cacheado, invalidación y recompilación" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t10{font:700 11px system-ui,sans-serif;fill:#fff}.s10{font:10px system-ui,sans-serif;fill:#fff}.l10{font:11px system-ui,sans-serif;fill:#444}.h10{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h10" text-anchor="middle" x="340" y="22">CREATE PROCEDURE → catálogo → caché de planes</text>
+<rect fill="#0055a0" height="60" rx="6" width="140" x="20" y="42"></rect><text class="t10" text-anchor="middle" x="90" y="66">1. CREACIÓN</text><text class="s10" text-anchor="middle" x="90" y="82">análisis y</text><text class="s10" text-anchor="middle" x="90" y="94">almacenamiento</text>
+<path d="M160 72 L188 72" marker-end="url(#a10)" stroke="#888" stroke-width="2"></path>
+<rect fill="#3778b5" height="60" rx="6" width="140" x="190" y="42"></rect><text class="t10" text-anchor="middle" x="260" y="66">2. CATÁLOGO</text><text class="s10" text-anchor="middle" x="260" y="82">diccionario de</text><text class="s10" text-anchor="middle" x="260" y="94">datos del SGBD</text>
+<path d="M330 72 L358 72" marker-end="url(#a10)" stroke="#888" stroke-width="2"></path>
+<rect fill="#2d8659" height="60" rx="6" width="150" x="360" y="42"></rect><text class="t10" text-anchor="middle" x="435" y="62">3. 1ª EJECUCIÓN</text><text class="s10" text-anchor="middle" x="435" y="78">genera plan y</text><text class="s10" text-anchor="middle" x="435" y="92">lo cachea</text>
+<path d="M510 72 L547 72" marker-end="url(#a10)" stroke="#888" stroke-width="2"></path>
+<rect fill="#e89822" height="60" rx="6" width="105" x="555" y="42"></rect><text class="t10" text-anchor="middle" x="607" y="66">4. SIGUIENTES</text><text class="s10" text-anchor="middle" x="607" y="82">reutiliza</text><text class="s10" text-anchor="middle" x="607" y="94">plan cacheado</text>
+<path d="M607 102 C 607 170 435 170 435 112" fill="none" marker-end="url(#a10)" stroke="#2d8659" stroke-width="2"></path>
+<text style="font:700 11px system-ui;fill:#2d8659" text-anchor="middle" x="340" y="178">Rendimiento: se evita repetir análisis y optimización</text>
+<text style="font:700 11px system-ui;fill:#2d8659" text-anchor="middle" x="340" y="194">en cada llamada</text>
+<rect fill="#fdecec" height="70" rx="6" stroke="#d13c3c" width="440" x="120" y="216"></rect>
+<text style="font:700 12px system-ui;fill:#8a1f1f" text-anchor="middle" x="340" y="238">5. Invalidación y recompilación</text>
+<text class="l10" text-anchor="middle" x="340" y="258">Cambian estadísticas, se altera un objeto referenciado, o ALTER PROCEDURE</text>
+<text class="l10" text-anchor="middle" x="340" y="274">→ el plan se recalcula en la siguiente llamada</text>
+<defs><marker id="a10" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#888"></path></marker></defs>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="312">[Fuente: GMUW, cap. 8]</text>
+</svg>

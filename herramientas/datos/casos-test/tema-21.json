@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿qué anotación expone la clase TributoResource como recurso REST en la ruta /tributos?",
+    "o": [
+     "@Path(\"/tributos\") sobre la clase.",
+     "@Produces(\"/tributos\") sobre la clase.",
+     "@WebServlet(\"/tributos\") sobre la clase."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.3.2",
+    "e": "En JAX-RS, @Path identifica la URI del recurso; @Produces fija el formato de respuesta y @WebServlet declara un servlet, no un recurso REST."
+   },
+   {
+    "q": "El método consultar debe atender GET /tributos/{id}. ¿Cómo recibe el identificador que viene en la URI?",
+    "o": [
+     "Con @Consumes(MediaType.APPLICATION_JSON) aplicada al parámetro Long id.",
+     "Con @Path(\"/{id}\") en el método y el parámetro anotado con @PathParam(\"id\").",
+     "Leyéndolo de la sesión HTTP del usuario, donde lo deja el navegador."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §2.3.2",
+    "e": "La plantilla {id} se declara con @Path en el método y su valor se inyecta en el parámetro anotado con @PathParam(\"id\")."
+   },
+   {
+    "q": "¿Qué anotación indica que consultar devuelve la respuesta en formato JSON?",
+    "o": [
+     "@Consumes(MediaType.APPLICATION_JSON).",
+     "@WebMethod, propia de los servicios web.",
+     "@Produces(MediaType.APPLICATION_JSON)."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §2.3.2",
+    "e": "@Produces declara el formato de lo que el método devuelve; @Consumes, el del cuerpo que recibe; @WebMethod pertenece a JAX-WS (SOAP)."
+   },
+   {
+    "q": "Si el tributo solicitado no existe, ¿qué respuesta debe devolver el recurso REST?",
+    "o": [
+     "Un 200 OK con el cuerpo vacío, para no generar errores en el cliente.",
+     "Un 404 NOT_FOUND, construido con Response.status(Response.Status.NOT_FOUND).",
+     "Un 201 CREATED, porque la consulta deja el tributo registrado en el sistema."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §2.3.2",
+    "e": "REST aprovecha los códigos de estado de HTTP: si el recurso buscado no existe, la respuesta es NOT_FOUND (404); 201 corresponde a la creación de un recurso."
+   },
+   {
+    "q": "Solo el rol GESTOR_TRIBUTARIO puede invocar el método liquidar. ¿Cómo se expresa esa restricción?",
+    "o": [
+     "Con la anotación @RolesAllowed(\"GESTOR_TRIBUTARIO\") sobre el método liquidar.",
+     "Con un if al comienzo de liquidar que compruebe a mano el rol del usuario.",
+     "Con @Path(\"/gestor\") en el método, para que solo los gestores lo encuentren."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §2.1.1",
+    "e": "En Java EE la autorización se expresa de forma declarativa con @RolesAllowed, no comprobando roles a mano dentro del método."
+   },
+   {
+    "q": "Con @RolesAllowed, ¿quién comprueba el rol del usuario y en qué momento?",
+    "o": [
+     "La base de datos, mediante los permisos GRANT concedidos sobre la tabla TRIBUTO.",
+     "El propio método liquidar, una vez ejecutado, antes de devolver la respuesta.",
+     "El contenedor, que intercepta la llamada y verifica el rol antes de ejecutar el método."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §2.1.1",
+    "e": "Es el contenedor quien intercepta la llamada y verifica el rol antes de ejecutar el código del método."
+   },
+   {
+    "q": "Un ciudadano identificado en la sede electrónica, sin el rol de gestor, intenta liquidar un tributo y se le deniega. ¿Qué control de seguridad lo ha impedido?",
+    "o": [
+     "La autorización: se sabe quién es, pero no tiene permiso para esa acción.",
+     "La autenticación: el sistema no ha podido verificar quién es el usuario.",
+     "La transacción: el atributo REQUIRED rechaza a los usuarios sin rol."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §2.1.1",
+    "e": "Autenticación responde a «¿quién eres?» y autorización a «¿qué puedes hacer?»; el ciudadano está autenticado, pero carece del rol que exige la operación."
+   },
+   {
+    "q": "¿Cómo debe obtener el recurso REST el EJB LiquidacionTributoService para delegar en él la liquidación?",
+    "o": [
+     "Creándolo con new LiquidacionTributoService() dentro del método liquidar.",
+     "Copiando en el recurso el código de cálculo que ya contiene el EJB.",
+     "Inyectándolo con @Inject en un atributo y llamando a sus métodos."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §2.4.2",
+    "e": "El contenedor crea los componentes y les inyecta lo que necesitan; con @Inject el recurso recibe el EJB de negocio y solo delega en él."
+   },
+   {
+    "q": "¿Por qué el cálculo de la liquidación no debe programarse dentro del propio recurso REST?",
+    "o": [
+     "Porque JAX-RS no admite métodos que hagan cálculos con importes decimales.",
+     "Porque el recurso pertenece a la capa de presentación, que solo llama a la capa de negocio.",
+     "Porque un recurso REST no puede acceder a datos si no es a través de JMS."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 3 · §2.2",
+    "e": "En la arquitectura de capas la presentación llama a la lógica de negocio, que a su vez usa la persistencia; así se puede sustituir una capa sin tocar las demás."
+   },
+   {
+    "q": "El método liquidar() del EJB debe ejecutarse siempre dentro de una transacción, uniéndose a la existente si la hay. ¿Qué atributo @TransactionAttribute corresponde?",
+    "o": [
+     "REQUIRED.",
+     "REQUIRES_NEW.",
+     "SUPPORTS."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · §2.5.3",
+    "e": "REQUIRED se une a la transacción del llamador y, si no hay ninguna, crea una nueva. REQUIRES_NEW nunca se une y SUPPORTS puede ejecutarse sin transacción."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿qué tipo de Session Bean debe gestionar el estado del asistente entre los tres pasos?",
+    "o": [
+     "Stateless.",
+     "Singleton.",
+     "Stateful."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §2.4.1",
+    "e": "Stateful mantiene un estado conversacional propio de cada cliente durante varias invocaciones, como los pasos de un asistente."
+   },
+   {
+    "q": "¿Por qué un Session Bean Singleton no sirve para este asistente?",
+    "o": [
+     "Porque es una única instancia para toda la aplicación y mezclaría los datos de usuarios distintos.",
+     "Porque un Singleton no puede declarar atributos donde guardar los datos de cada paso.",
+     "Porque un Singleton solo se activa cuando llega un mensaje a una cola JMS."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §2.4.1",
+    "e": "El Singleton es una única instancia compartida por toda la aplicación: los datos del asistente de un ciudadano quedarían mezclados con los de otros."
+   },
+   {
+    "q": "¿Y por qué tampoco sirve un Session Bean Stateless?",
+    "o": [
+     "Porque un bean Stateless no puede acceder a la base de datos para persistir el expediente.",
+     "Porque no guarda estado entre invocaciones y cualquier instancia del pool atiende cada llamada.",
+     "Porque un bean Stateless es más lento que el Stateful al tramitar los formularios web."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §2.4.1",
+    "e": "Stateless no mantiene estado conversacional; sus instancias son intercambiables, así que no recordaría los datos de los pasos anteriores."
+   },
+   {
+    "q": "Si el asistente se implementa en JSF con un bean CDI, ¿qué ámbito es el más adecuado para el flujo de tres pasos?",
+    "o": [
+     "@ConversationScoped.",
+     "@RequestScoped.",
+     "@SessionScoped."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §2.4.2",
+    "e": "@ConversationScoped vive durante una conversación definida explícitamente por el desarrollador, pensada para flujos multipaso en JSF."
+   },
+   {
+    "q": "¿Qué ocurriría si el bean del asistente fuera @RequestScoped?",
+    "o": [
+     "Que los datos del asistente se compartirían con todos los usuarios de la aplicación.",
+     "Que los datos se conservarían hasta que el usuario cerrara su sesión en la sede.",
+     "Que los datos se perderían entre pasos, porque cada paso es una petición distinta."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §2.4.2",
+    "e": "Un bean @RequestScoped vive una única petición HTTP y se crea de nuevo en cada una; al pasar al paso siguiente, lo introducido se habría perdido."
+   },
+   {
+    "q": "¿Qué inconveniente tendría usar @SessionScoped para el asistente?",
+    "o": [
+     "Que perdería los datos al pasar de un paso al siguiente del asistente.",
+     "Que viviría toda la sesión del usuario, aunque abandone el asistente sin terminar.",
+     "Que una única instancia sería compartida por todos los usuarios conectados."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §2.4.2",
+    "e": "@SessionScoped dura toda la sesión HTTP del usuario: el estado del asistente sobreviviría más allá del flujo, aunque este se abandone."
+   },
+   {
+    "q": "El bean del asistente declara @Inject private ExpedienteService service. ¿Cómo decide CDI qué objeto inyectar?",
+    "o": [
+     "Por un nombre JNDI escrito como cadena de texto en la propia anotación.",
+     "Por el nombre del atributo, que debe coincidir con el nombre del servicio.",
+     "Por el tipo declarado del atributo, ExpedienteService, sin usar nombres."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §2.4.2",
+    "e": "CDI resuelve la inyección por el tipo Java declarado; JNDI, en cambio, localiza los recursos por nombre."
+   },
+   {
+    "q": "Si existieran dos implementaciones de ExpedienteService, ¿cómo se indicaría a CDI cuál inyectar?",
+    "o": [
+     "No hace falta: CDI elige la primera implementación que encuentra por orden alfabético.",
+     "Con un qualifier que desambigüe entre las implementaciones de ese mismo tipo.",
+     "Solo es posible sustituyendo @Inject por una búsqueda JNDI con InitialContext."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §2.4.2",
+    "e": "CDI resuelve por tipo y, si hay varias implementaciones del mismo tipo, se desambigua mediante qualifiers."
+   },
+   {
+    "q": "Al confirmar el alta hay que avisar a dos sistemas municipales independientes sin acoplar el asistente a ninguno. ¿Qué mecanismo de JMS se usa?",
+    "o": [
+     "Un Topic (publicación/suscripción), que entrega cada mensaje a todos los suscriptores.",
+     "Una Queue (punto a punto), que entrega cada mensaje a un único consumidor.",
+     "Una llamada REST síncrona a cada sistema desde el método confirmar."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · §2.5.1",
+    "e": "En un Topic cada mensaje lo reciben todos los suscriptores activos: es el modelo natural para notificar un suceso a varios interesados independientes."
+   },
+   {
+    "q": "¿Qué componente de negocio consume el mensaje en cada sistema suscrito?",
+    "o": [
+     "Un Stateful Session Bean que consulta el tema JMS en un bucle de sondeo.",
+     "Un servlet cuyo método doGet() recibe el mensaje publicado en el tema.",
+     "Un Message-Driven Bean, cuyo onMessage() invoca el contenedor al llegar el mensaje."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §2.4.1 y §2.5.1",
+    "e": "El Message-Driven Bean se invoca de forma asíncrona cuando llega un mensaje a la cola o tema al que está suscrito, sin programar un bucle de sondeo."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿qué anotaciones convierten la clase Tributo en una entidad JPA asociada a la tabla TRIBUTO?",
+    "o": [
+     "@Stateless y @Table(name = \"TRIBUTO\").",
+     "@Entity y @Table(name = \"TRIBUTO\").",
+     "@Path(\"/tributo\") y @Entity."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §2.5.4",
+    "e": "@Entity marca la clase como entidad JPA y @Table fija la tabla a la que se mapea; @Stateless es un EJB y @Path, un recurso REST."
+   },
+   {
+    "q": "¿Cómo se declara que idTributo es la clave primaria y que su valor lo genera la base de datos?",
+    "o": [
+     "Con @Id y @JoinColumn(name = \"idTributo\") sobre el atributo.",
+     "Con @ManyToOne sobre el atributo idTributo de la entidad.",
+     "Con @Id y @GeneratedValue(strategy = GenerationType.IDENTITY)."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §2.5.4",
+    "e": "@Id marca la clave primaria y @GeneratedValue con la estrategia IDENTITY la deja autogenerada (autonumérica)."
+   },
+   {
+    "q": "Cada tributo pertenece a un contribuyente y un contribuyente puede tener muchos tributos. ¿Cómo se mapea en la entidad Tributo?",
+    "o": [
+     "Con @ManyToOne y @JoinColumn(name = \"dni_contribuyente\") sobre el atributo contribuyente.",
+     "Con @Inject sobre el atributo contribuyente, para que el contenedor lo resuelva por tipo.",
+     "Con @Table(name = \"CONTRIBUYENTE\") sobre el atributo contribuyente de la entidad."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §2.5.4",
+    "e": "@ManyToOne expresa que muchos tributos apuntan a un contribuyente, y @JoinColumn indica la columna de la clave foránea (dni_contribuyente)."
+   },
+   {
+    "q": "¿Cuál es la consulta JPQL correcta para obtener los tributos de importe superior a un parámetro?",
+    "o": [
+     "SELECT * FROM TRIBUTO WHERE importe > :minimo",
+     "SELECT t FROM Tributo t WHERE t.importe > :minimo",
+     "SELECT importe FROM TRIBUTO WHERE importe > ? con PreparedStatement"
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §2.5.4",
+    "e": "JPQL se escribe sobre la entidad (Tributo) y sus atributos (t.importe), con parámetros con nombre (:minimo); las otras dos opciones son SQL sobre la tabla física."
+   },
+   {
+    "q": "¿Qué diferencia a JPQL del SQL que se escribe directamente contra la base de datos?",
+    "o": [
+     "Que JPQL se ejecuta en memoria, sin llegar a consultar la base de datos.",
+     "Que JPQL solo funciona con un motor de base de datos concreto.",
+     "Que JPQL opera sobre entidades y atributos, y el proveedor lo traduce a SQL."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §2.5.4",
+    "e": "JPQL opera sobre el modelo de entidades, no sobre tablas y columnas físicas; el proveedor JPA lo traduce internamente a SQL."
+   },
+   {
+    "q": "La entrada de auditoría debe confirmarse aunque la liquidación acabe haciendo rollback. ¿Qué atributo debe llevar el método registrar de AuditoriaService?",
+    "o": [
+     "REQUIRES_NEW.",
+     "REQUIRED.",
+     "MANDATORY."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §2.5.3",
+    "e": "REQUIRES_NEW suspende la transacción del llamador y crea siempre una nueva e independiente, que se confirma por su cuenta."
+   },
+   {
+    "q": "Si registrar se dejara con el atributo por defecto REQUIRED y la liquidación hiciera rollback, ¿qué pasaría con la entrada de auditoría?",
+    "o": [
+     "Se confirmaría igualmente, porque cada método de un EJB tiene su propio COMMIT.",
+     "Se desharía también, porque se habría unido a la transacción de la liquidación.",
+     "No llegaría a grabarse, porque REQUIRED exige que no exista transacción activa."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §2.5.3",
+    "e": "REQUIRED se une a la transacción del llamador: si esa transacción se deshace, se deshace con ella todo lo hecho dentro, auditoría incluida."
+   },
+   {
+    "q": "Durante la liquidación, el servicio recupera un Tributo con em.find() y le cambia el importe. ¿Hace falta lanzar un UPDATE?",
+    "o": [
+     "No: el contexto de persistencia detecta el cambio y genera el UPDATE al confirmar la transacción.",
+     "Sí: hay que invocar siempre em.merge() para que JPA guarde la entidad modificada.",
+     "Sí: JPA solo lee entidades y las modificaciones requieren un PreparedStatement."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §2.5.4",
+    "e": "Las entidades gestionadas por el EntityManager se vigilan (dirty checking): sus cambios se sincronizan con la base de datos al confirmar la transacción."
+   },
+   {
+    "q": "¿Por qué el catálogo DISTRITO es un buen candidato para JCache?",
+    "o": [
+     "Porque cambia en cada petición y conviene tenerlo siempre recalculado en memoria.",
+     "Porque JCache sustituye a la base de datos como almacén definitivo del catálogo.",
+     "Porque es de solo lectura y cambia muy poco: se evita repetir la misma consulta."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §2.5.5",
+    "e": "Una caché evita accesos repetidos a un recurso costoso; un catálogo de solo lectura y poco cambiante es el caso ideal."
+   },
+   {
+    "q": "¿Qué riesgo introduce cachear DISTRITO y cómo se mitiga?",
+    "o": [
+     "Que se pierden las propiedades ACID; se mitiga con commit en dos fases.",
+     "Servir datos obsoletos; se mitiga con expiración o invalidación explícita.",
+     "Que se abre la puerta a la inyección SQL; se mitiga con PreparedStatement."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §2.5.5",
+    "e": "Toda caché arriesga servir datos obsoletos (stale) si la fuente cambia; por eso las políticas de expiración y de invalidación explícita son tan importantes como la propia caché."
+   }
+  ]
+ }
+]

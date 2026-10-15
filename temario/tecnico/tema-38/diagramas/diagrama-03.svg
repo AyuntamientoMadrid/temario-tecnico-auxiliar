@@ -1,0 +1,65 @@
+<svg aria-label="Mapa de la familia de normas TETRA del ETSI. La serie EN 300 392 regula el modo troncalizado voz más datos, con la parte 1 de diseño general, la parte 2 del interfaz aire, la parte 3 de la interfaz entre sistemas, la parte 4 de pasarelas, la parte 5 del interfaz de equipo periférico, la parte 7 de seguridad y las partes 9 a 12 de servicios suplementarios. La serie EN 300 396 regula el modo directo. Además, EN 300 394 de pruebas de conformidad, EN 300 395 del códec de voz, EN 300 812 del módulo de identidad, TR 102 580 de TEDS y TS 104 053 de los algoritmos de cifrado" role="img" viewbox="0 0 680 324" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 10px system-ui,sans-serif;fill:#fff}.s3{font:8.5px system-ui,sans-serif;fill:#fff}.d3{font:8.5px system-ui,sans-serif;fill:#333}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n3{font:8.5px system-ui,sans-serif;fill:#666}.b3{font:700 9px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h3" text-anchor="middle" x="340" y="22">Las dos series que no se pueden confundir: 392 y 396</text>
+<rect fill="none" height="150" rx="5" stroke="#0055a0" stroke-width="2" width="420" x="20" y="36"></rect>
+<rect fill="#0055a0" height="24" rx="3" width="396" x="32" y="46"></rect>
+<text class="t3" text-anchor="middle" x="230" y="62">EN 300 392 · TETRA V+D — MODO TRONCALIZADO (TMO)</text>
+<rect fill="#f1f5f9" height="46" rx="3" stroke="#c9d6e2" width="126" x="32" y="78"></rect>
+<text class="b3" text-anchor="middle" x="95" y="94">Parte 1</text>
+<text class="d3" text-anchor="middle" x="95" y="108">Diseño general de red</text>
+<text class="d3" text-anchor="middle" x="95" y="120">Interfaces I1 a I6</text>
+<rect fill="#d13c3c" height="46" rx="3" width="126" x="167" y="78"></rect>
+<text class="t3" text-anchor="middle" x="230" y="94">Parte 2</text>
+<text class="s3" text-anchor="middle" x="230" y="108">INTERFAZ AIRE</text>
+<text class="s3" text-anchor="middle" x="230" y="120">Capas 1, 2 y 3</text>
+<rect fill="#f1f5f9" height="46" rx="3" stroke="#c9d6e2" width="126" x="302" y="78"></rect>
+<text class="b3" text-anchor="middle" x="365" y="94">Parte 3</text>
+<text class="d3" text-anchor="middle" x="365" y="108">ISI: interconexión</text>
+<text class="d3" text-anchor="middle" x="365" y="120">entre redes TETRA</text>
+<rect fill="#f1f5f9" height="46" rx="3" stroke="#c9d6e2" width="126" x="32" y="132"></rect>
+<text class="b3" text-anchor="middle" x="95" y="148">Partes 4 y 5</text>
+<text class="d3" text-anchor="middle" x="95" y="162">Pasarelas PSTN/RDSI</text>
+<text class="d3" text-anchor="middle" x="95" y="174">y PEI (datos)</text>
+<rect fill="#d13c3c" height="46" rx="3" width="126" x="167" y="132"></rect>
+<text class="t3" text-anchor="middle" x="230" y="148">Parte 7</text>
+<text class="s3" text-anchor="middle" x="230" y="162">SEGURIDAD</text>
+<text class="s3" text-anchor="middle" x="230" y="174">Claves y clases</text>
+<rect fill="#f1f5f9" height="46" rx="3" stroke="#c9d6e2" width="126" x="302" y="132"></rect>
+<text class="b3" text-anchor="middle" x="365" y="148">Partes 9 a 12</text>
+<text class="d3" text-anchor="middle" x="365" y="162">Servicios</text>
+<text class="d3" text-anchor="middle" x="365" y="174">suplementarios</text>
+<rect fill="none" height="150" rx="5" stroke="#2d8659" stroke-width="2" width="216" x="452" y="36"></rect>
+<rect fill="#2d8659" height="24" rx="3" width="192" x="464" y="46"></rect>
+<text class="t3" text-anchor="middle" x="560" y="62">EN 300 396 · DMO</text>
+<text class="d3" text-anchor="middle" x="560" y="86">MODO DIRECTO: terminal a</text>
+<text class="d3" text-anchor="middle" x="560" y="99">terminal, SIN infraestructura</text>
+<rect fill="#f1f5f9" height="30" rx="3" stroke="#c9d6e2" width="192" x="464" y="110"></rect>
+<text class="d3" text-anchor="middle" x="560" y="123">DM-REP · repetidor</text>
+<text class="d3" text-anchor="middle" x="560" y="135">tipos 1A, 1B y 2</text>
+<rect fill="#f1f5f9" height="32" rx="3" stroke="#c9d6e2" width="192" x="464" y="146"></rect>
+<text class="d3" text-anchor="middle" x="560" y="159">DM-GATE · pasarela hacia</text>
+<text class="d3" text-anchor="middle" x="560" y="171">la red troncalizada</text>
+<text class="k3" x="20" y="208">Y EL RESTO DE LA FAMILIA</text>
+<rect fill="#e89822" height="58" rx="4" width="120" x="20" y="216"></rect>
+<text class="t3" text-anchor="middle" x="80" y="234">EN 300 394</text>
+<text class="s3" text-anchor="middle" x="80" y="249">Pruebas de</text>
+<text class="s3" text-anchor="middle" x="80" y="262">conformidad</text>
+<rect fill="#e89822" height="58" rx="4" width="120" x="152" y="216"></rect>
+<text class="t3" text-anchor="middle" x="212" y="234">EN 300 395</text>
+<text class="s3" text-anchor="middle" x="212" y="249">Códec de voz</text>
+<text class="s3" text-anchor="middle" x="212" y="262">ACELP</text>
+<rect fill="#e89822" height="58" rx="4" width="120" x="284" y="216"></rect>
+<text class="t3" text-anchor="middle" x="344" y="234">EN 300 812</text>
+<text class="s3" text-anchor="middle" x="344" y="249">Módulo de</text>
+<text class="s3" text-anchor="middle" x="344" y="262">identidad (SIM)</text>
+<rect fill="#e89822" height="58" rx="4" width="120" x="416" y="216"></rect>
+<text class="t3" text-anchor="middle" x="476" y="234">TR 102 580</text>
+<text class="s3" text-anchor="middle" x="476" y="249">TEDS · datos de</text>
+<text class="s3" text-anchor="middle" x="476" y="262">la Release 2</text>
+<rect fill="#e89822" height="58" rx="4" width="120" x="548" y="216"></rect>
+<text class="t3" text-anchor="middle" x="608" y="234">TS 104 053</text>
+<text class="s3" text-anchor="middle" x="608" y="249">Algoritmos TEA</text>
+<text class="s3" text-anchor="middle" x="608" y="262">(parte 1, 2025)</text>
+<text class="k3" text-anchor="middle" x="340" y="296">La EN 300 394 es la pieza que hace VERIFICABLE la interoperabilidad entre fabricantes</text>
+<text class="n3" text-anchor="end" x="670" y="316">[Fuente: elaboración propia sobre el catálogo de normas TETRA del ETSI]</text>
+</svg>

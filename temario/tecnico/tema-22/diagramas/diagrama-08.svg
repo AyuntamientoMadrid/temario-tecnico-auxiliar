@@ -1,0 +1,11 @@
+<svg aria-label="Pila de protocolos de servicios web: transporte con HTTP y HTTPS sobre TLS, formato de datos con XML y JSON, contrato y descubrimiento con SOAP, WSDL y UDDI o el estilo REST, y seguridad con OAuth 2.0 y JWT" role="img" viewbox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t8{font:700 11.5px system-ui,sans-serif;fill:#fff}.s8{font:9.5px system-ui,sans-serif;fill:#fff}.l8{font:10.5px system-ui,sans-serif;fill:#444}.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h8" text-anchor="middle" x="330" y="20">Pila de protocolos de servicios web</text>
+<rect fill="#0055a0" height="54" rx="5" width="540" x="60" y="40"></rect><text class="t8" text-anchor="middle" x="330" y="62">TRANSPORTE — §6.1</text><text class="s8" text-anchor="middle" x="330" y="80">HTTP/1.1 · HTTP/2 · HTTP/3 · HTTPS (HTTP sobre TLS)</text>
+<rect fill="#3778b5" height="54" rx="5" width="540" x="60" y="102"></rect><text class="t8" text-anchor="middle" x="330" y="124">FORMATO DE DATOS — §6.3</text><text class="s8" text-anchor="middle" x="330" y="142">XML (SOAP, estándares AAPP) · JSON (REST)</text>
+<rect fill="#2d8659" height="54" rx="5" width="540" x="60" y="164"></rect><text class="t8" text-anchor="middle" x="330" y="186">CONTRATO Y DESCUBRIMIENTO — §6.4, §6.6</text><text class="s8" text-anchor="middle" x="330" y="204">SOAP: WSDL + UDDI (en desuso) · REST: OpenAPI/Swagger (convención)</text>
+<rect fill="#e89822" height="54" rx="5" width="540" x="60" y="226"></rect><text class="t8" text-anchor="middle" x="330" y="248">SEGURIDAD — §6.2</text><text class="s8" text-anchor="middle" x="330" y="266">OAuth 2.0 (autorización delegada) · JWT (formato de token) · TLS</text>
+<text style="font:700 11px system-ui;fill:#d13c3c" text-anchor="middle" x="330" y="306">Cada capa es independiente: un servicio REST puede usar XML, y uno SOAP puede viajar sobre HTTPS</text>
+<text class="l8" text-anchor="middle" x="330" y="326">RPC/RMI (§6.5) es el paradigma de invocación remota subyacente a SOAP</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="650" y="352">[Fuente: RFC9110; W3C-SOAP; RFC6749]</text>
+</svg>

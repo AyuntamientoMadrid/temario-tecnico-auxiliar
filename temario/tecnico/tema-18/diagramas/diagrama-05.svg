@@ -1,0 +1,18 @@
+<svg aria-label="Matriz de dos ejes del sistema de tipos: eje horizontal fuerte a débil, eje vertical estático a dinámico, con Java, C, Python y JavaScript ubicados" role="img" viewbox="0 0 640 374" xmlns="http://www.w3.org/2000/svg">
+<style>.l5{font:11px system-ui,sans-serif;fill:#444}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.a5{font:700 12px system-ui,sans-serif;fill:#0055a0}.c5{font:600 12px system-ui,sans-serif;fill:#123}</style>
+<text class="h5" text-anchor="middle" x="320" y="24">Los dos ejes del sistema de tipos (independientes)</text>
+<line marker-end="url(#a5)" stroke="#0055a0" stroke-width="2" x1="120" x2="120" y1="70" y2="320"></line>
+<line marker-end="url(#a5)" stroke="#0055a0" stroke-width="2" x1="120" x2="560" y1="320" y2="320"></line>
+<text class="a5" text-anchor="end" x="112" y="66">estático</text>
+<text class="a5" text-anchor="end" x="106" y="302">dinámico</text>
+<text class="l5" x="128" y="66">(tipo en compilación)</text>
+<text class="l5" text-anchor="end" x="106" y="316">(tipo en ejecución)</text>
+<text class="a5" x="150" y="340">fuerte</text>
+<text class="a5" text-anchor="end" x="560" y="340">débil</text>
+<rect fill="#d7e6f4" height="60" rx="8" stroke="#0055a0" width="150" x="150" y="90"></rect><text class="c5" text-anchor="middle" x="225" y="116">JAVA</text><text class="l5" text-anchor="middle" x="225" y="136">estático + fuerte</text>
+<rect fill="#fbe9cf" height="60" rx="8" stroke="#e89822" width="150" x="380" y="90"></rect><text class="c5" text-anchor="middle" x="455" y="116">C</text><text class="l5" text-anchor="middle" x="455" y="136">estático + más débil</text>
+<rect fill="#d7ecd9" height="60" rx="8" stroke="#2d8659" width="150" x="150" y="240"></rect><text class="c5" text-anchor="middle" x="225" y="266">PYTHON</text><text class="l5" text-anchor="middle" x="225" y="286">dinámico + fuerte</text>
+<rect fill="#f6d9d9" height="60" rx="8" stroke="#d13c3c" width="150" x="380" y="240"></rect><text class="c5" text-anchor="middle" x="455" y="266">JAVASCRIPT</text><text class="l5" text-anchor="middle" x="455" y="286">dinámico + débil</text>
+<defs><marker id="a5" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#0055a0"></path></marker></defs>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="630" y="366">[Fuente: PIERCE; SEBESTA cap. 6]</text>
+</svg>

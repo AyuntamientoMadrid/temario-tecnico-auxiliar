@@ -1,0 +1,32 @@
+<svg aria-label="Componentes del sistema de información" role="img" viewbox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .si-tech{fill:#d6e4f0;stroke:#0055a0;stroke-width:1.5}
+    .si-human{fill:#f0e4d6;stroke:#e89822;stroke-width:1.5}
+    .si-flow{fill:#d8f0dc;stroke:#2d8659;stroke-width:1.5}
+    .si-label{font:600 13px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}
+    .si-sub{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+  </style>
+<text class="si-label" fill="#0055a0" font-size="16" x="320" y="28">Sistema de Información</text>
+<text class="si-sub" x="320" y="45">7 componentes estructurales [ISO-2382]</text>
+<rect class="si-tech" height="60" rx="6" width="150" x="40" y="70"></rect>
+<text class="si-label" x="115" y="94">Hardware</text>
+<text class="si-sub" x="115" y="112">CPU, memoria, E/S</text>
+<rect class="si-tech" height="60" rx="6" width="150" x="245" y="70"></rect>
+<text class="si-label" x="320" y="94">Software</text>
+<text class="si-sub" x="320" y="112">SO, aplicaciones</text>
+<rect class="si-tech" height="60" rx="6" width="150" x="450" y="70"></rect>
+<text class="si-label" x="525" y="94">Datos</text>
+<text class="si-sub" x="525" y="112">BBDD, ficheros</text>
+<rect class="si-flow" height="60" rx="6" width="200" x="90" y="160"></rect>
+<text class="si-label" x="190" y="184">Red</text>
+<text class="si-sub" x="190" y="202">LAN, WAN, Internet</text>
+<rect class="si-flow" height="60" rx="6" width="200" x="350" y="160"></rect>
+<text class="si-label" x="450" y="184">Retroalimentación</text>
+<text class="si-sub" x="450" y="202">mejora continua</text>
+<rect class="si-human" height="60" rx="6" width="160" x="140" y="250"></rect>
+<text class="si-label" x="220" y="274">Procedimientos</text>
+<text class="si-sub" x="220" y="292">reglas, políticas</text>
+<rect class="si-human" height="60" rx="6" width="160" x="340" y="250"></rect>
+<text class="si-label" x="420" y="274">Usuarios</text>
+<text class="si-sub" x="420" y="292">operadores, decisores</text>
+</svg>

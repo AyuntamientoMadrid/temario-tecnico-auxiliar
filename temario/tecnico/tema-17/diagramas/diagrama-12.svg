@@ -1,0 +1,17 @@
+<svg aria-label="Estructura de un índice B+tree: un nodo raíz, nodos intermedios de guía y hojas enlazadas que contienen los punteros a las filas y permiten recorridos por rango" class="d17-12" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.d17-12 .b{font:600 11px system-ui,sans-serif;fill:#fff}.d17-12 .l{font:11px system-ui,sans-serif;fill:#444}.d17-12 .h{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="340" y="26">Índice B+tree (equilibrado, hojas enlazadas)</text>
+<rect fill="#003d73" height="34" rx="4" width="90" x="295" y="44"></rect><text class="b" text-anchor="middle" x="340" y="66">Raíz [50]</text>
+<rect fill="#0055a0" height="34" rx="4" width="120" x="140" y="120"></rect><text class="b" text-anchor="middle" x="200" y="142">[20 | 35]</text>
+<rect fill="#0055a0" height="34" rx="4" width="120" x="420" y="120"></rect><text class="b" text-anchor="middle" x="480" y="142">[70 | 90]</text>
+<path d="M320 78 L210 118" stroke="#888" stroke-width="1.5"></path><path d="M360 78 L470 118" stroke="#888" stroke-width="1.5"></path>
+<rect fill="#6ea3d2" height="32" rx="4" width="100" x="40" y="200"></rect><text class="b" text-anchor="middle" x="90" y="221">10·15·18</text>
+<rect fill="#6ea3d2" height="32" rx="4" width="100" x="150" y="200"></rect><text class="b" text-anchor="middle" x="200" y="221">22·30·33</text>
+<rect fill="#6ea3d2" height="32" rx="4" width="100" x="290" y="200"></rect><text class="b" text-anchor="middle" x="340" y="221">40·45·48</text>
+<rect fill="#6ea3d2" height="32" rx="4" width="100" x="430" y="200"></rect><text class="b" text-anchor="middle" x="480" y="221">55·65·68</text>
+<rect fill="#6ea3d2" height="32" rx="4" width="100" x="555" y="200"></rect><text class="b" text-anchor="middle" x="605" y="221">75·85·95</text>
+<path d="M170 154 L90 198" stroke="#888"></path><path d="M210 154 L200 198" stroke="#888"></path><path d="M230 154 L340 198" stroke="#888"></path><path d="M460 154 L480 198" stroke="#888"></path><path d="M500 154 L605 198" stroke="#888"></path>
+<path d="M140 216 L150 216" stroke="#2d8659" stroke-width="2"></path><path d="M250 216 L290 216" stroke="#2d8659" stroke-width="2"></path><path d="M390 216 L430 216" stroke="#2d8659" stroke-width="2"></path><path d="M530 216 L555 216" stroke="#2d8659" stroke-width="2"></path>
+<text class="l" text-anchor="middle" x="340" y="266">Hojas al mismo nivel + enlazadas (verde): igualdad (=) y rango (BETWEEN, &lt;, &gt;) eficientes</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="670" y="308">[Fuente: RAMAKRISHNAN, cap. 10]</text>
+</svg>

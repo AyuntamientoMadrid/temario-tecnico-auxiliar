@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿qué medio conviene para el cableado horizontal de la planta baja, con teléfonos IP, cámaras y pantallas de turnos?",
+    "o": [
+     "Par trenzado de categoría 6A, porque los 78 m están dentro del límite y permite alimentar los terminales por PoE.",
+     "Fibra óptica multimodo hasta cada puesto, porque ofrece más capacidad y elimina cualquier problema de distancia.",
+     "Cable coaxial de 75 Ω, porque transporta a la vez la señal de datos, la de vídeo y la alimentación eléctrica."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.1.1",
+    "e": "El coste por punto es bajo y, sobre todo, el par trenzado permite PoE; la fibra al puesto sería técnicamente válida, pero dejaría sin alimentación a los terminales y multiplicaría el coste."
+   },
+   {
+    "q": "El tramo vertical entre armarios mide 60 m y atraviesa dos cuadros eléctricos distintos. ¿Qué medio es el adecuado y por qué?",
+    "o": [
+     "Par trenzado Cat 6A, porque 60 m caben en el límite de 100 m y el cobre iguala el potencial entre plantas.",
+     "Fibra monomodo OS2, porque la multimodo no puede superar los 50 m de recorrido dentro de un edificio.",
+     "Fibra multimodo OM4, porque cubre la distancia y, al ser dieléctrica, da aislamiento galvánico entre cuadros."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §2.1.1",
+    "e": "60 m están dentro del alcance de la multimodo, y un medio dieléctrico evita transportar diferencias de potencial y sobretensiones entre plantas alimentadas por cuadros distintos."
+   },
+   {
+    "q": "¿Qué solución corresponde a la acometida con el CPD del IAM, situado a 6 km?",
+    "o": [
+     "Par trenzado blindado de categoría 8, tendido por la vía pública hasta el CPD del IAM.",
+     "Fibra monomodo OS2, normalmente como circuito contratado a un operador por la vía pública.",
+     "Fibra multimodo OM4, porque ofrece mayor ancho de banda que la monomodo en esa distancia."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §2.1.1",
+    "e": "El cobre queda descartado por atenuación y la multimodo por dispersión modal; además, el trazado atraviesa dominio público, por lo que lo realista es contratar el circuito."
+   },
+   {
+    "q": "La caseta del patio está a 300 m, sin canalización, con presupuesto y plazo ajustados y con visión directa desde la azotea. ¿Qué solución procede?",
+    "o": [
+     "Un radioenlace punto a punto o Wi-Fi exterior direccional, con el enlace cifrado por ser medio compartido.",
+     "Abrir zanja y tender fibra monomodo, porque cualquier enlace radio es inaceptable en una red municipal.",
+     "Par trenzado Cat 6A con un repetidor a mitad de camino, porque así se superan los 100 m sin obra civil."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.2.1",
+    "e": "Sin canalización, la zanja tiene un coste y un plazo incomparablemente mayores; el radioenlace exige visión directa, que el enunciado confirma, y cifrado."
+   },
+   {
+    "q": "Si con 1 Gbit/s basta hoy, ¿por qué se exige categoría 6A en el cableado horizontal?",
+    "o": [
+     "Porque la categoría 6 no admite PoE y la 6A es la primera categoría que puede alimentar teléfonos y cámaras.",
+     "Porque garantiza 10GBASE-T a los 100 m completos y el cableado horizontal dura 15-20 años y es caro de sustituir.",
+     "Porque la categoría 8 está prohibida en edificios de oficinas y la 6A es la de mayor capacidad que se permite."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §2.1.1",
+    "e": "La Cat 6 solo da 10 Gbit/s hasta unos 55 m y la Cat 8 se limita a 30 m y es de centro de datos; la 6A protege la inversión durante toda la vida del cableado."
+   },
+   {
+    "q": "El puesto más alejado está a 78 m de cable desde su armario. ¿Respeta el límite normalizado del enlace?",
+    "o": [
+     "No: el límite del cable horizontal fijo es de 75 m, de modo que habría que añadir otro armario.",
+     "Sí, y sobra: el límite de 100 m se aplica solo al cable fijo, sin contar los latiguillos de los extremos.",
+     "Sí: el enlace admite 100 m, 90 de cable horizontal fijo más 10 repartidos entre los latiguillos."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §2.1.1",
+    "e": "Los 78 m dejan margen dentro de los 90 m de horizontal; superar el límite no produce un fallo limpio, sino errores intermitentes difíciles de diagnosticar."
+   },
+   {
+    "q": "Las cámaras de videovigilancia tienen motorización, calefactor e iluminación infrarroja. ¿Qué norma de alimentación por Ethernet necesitan?",
+    "o": [
+     "802.3af (PoE), con 15,4 W por puerto, igual que los teléfonos.",
+     "802.3at (PoE+), con 30 W por puerto, por su mayor consumo.",
+     "Ninguna: deben llevar una fuente de alimentación propia."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §2.1.1",
+    "e": "Teléfonos y pantallas se cubren con 802.3af; las cámaras con más consumo requieren 802.3at. El conmutador se convierte en equipo eléctrico crítico y debe dimensionarse su presupuesto PoE."
+   },
+   {
+    "q": "¿Cómo se clasifica, por su direccionalidad, la megafonía de avisos de la sala de espera?",
+    "o": [
+     "Semidúplex, porque los avisos se emiten por turnos.",
+     "Dúplex, porque varios altavoces suenan a la vez.",
+     "Símplex: un solo sentido y sin canal de retorno."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §3.1",
+    "e": "La información va solo del emisor a los oyentes, que no pueden responder por el mismo canal."
+   },
+   {
+    "q": "¿Qué parámetro del acuerdo de nivel de servicio, medido en milisegundos, hace que la videoconferencia con las juntas de distrito deje de ser natural por encima de unos 150 ms de extremo a extremo?",
+    "o": [
+     "La latencia máxima.",
+     "La pérdida de paquetes.",
+     "El caudal garantizado."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · §2.3",
+    "e": "La latencia es el retardo de extremo a extremo; la pérdida se mide en porcentaje y el caudal en Mbit/s."
+   },
+   {
+    "q": "Los usuarios reclaman que el Wi-Fi de la oficina da mucho menos caudal del anunciado. ¿Qué hay que responderles?",
+    "o": [
+     "Que es una avería de los puntos de acceso, porque el caudal real debe igualar siempre la velocidad nominal.",
+     "Que se debe a que la red Wi-Fi funciona en modo dúplex y reparte la velocidad entre emisión y recepción.",
+     "Que es normal: el medio es compartido y semidúplex, cada trama se confirma y CSMA/CA consume tiempo."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 4 · §2.3",
+    "e": "Un caudal real en torno a la mitad o menos de la velocidad nominal es el funcionamiento normal del Wi-Fi, no una avería."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿cuántos dominios de colisión hay en la red de la oficina?",
+    "o": [
+     "37: 24 en el conmutador de 24 puertos, 1 en el concentrador y 12 en el de 12 puertos.",
+     "39: 25 en el conmutador de 24 puertos, 1 en el concentrador y 13 en el de 12 puertos.",
+     "47: 25 en el conmutador de 24 puertos, 9 en el concentrador y 13 en el de 12 puertos."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §4.2.1",
+    "e": "Cada puerto activo de un conmutador es un dominio, incluido el de subida al encaminador; el concentrador no segmenta y es uno solo."
+   },
+   {
+    "q": "¿Cuántos dominios de difusión hay en esa misma red?",
+    "o": [
+     "5: uno por cada interfaz del encaminador, salvo la tercera, cuyas 3 VLAN cuentan como 3.",
+     "3: uno por cada interfaz del encaminador, porque las VLAN no separan la difusión.",
+     "39: uno por cada dominio de colisión, porque cada puerto aísla también la difusión."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §4.2.1",
+    "e": "El conmutador divide la colisión pero no la difusión; solo el encaminador y las VLAN actúan sobre ella: 1 + 1 + 3 = 5."
+   },
+   {
+    "q": "¿Qué ocurrió cuando el técnico conectó un latiguillo entre dos puertos libres del conmutador de 24 puertos?",
+    "o": [
+     "Provocó un bucle de encaminamiento en el encaminador de frontera.",
+     "Duplicó una dirección IP, que bloqueó la tabla ARP del encaminador.",
+     "Creó un bucle de nivel 2 y, con él, una tormenta de difusión."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §4.2.1, §6.2.1",
+    "e": "Una sola trama de difusión entra en el bucle y se multiplica en cada vuelta, porque el conmutador la inunda por todos los puertos menos el de entrada."
+   },
+   {
+    "q": "¿Por qué la tormenta no se detiene por sí sola, mientras que un bucle de encaminamiento en capa 3 no se perpetúa?",
+    "o": [
+     "Porque el conmutador prioriza la difusión, mientras que el encaminador la descarta siempre.",
+     "Porque la trama Ethernet no tiene campo TTL, y el paquete IP sí lo tiene y se descarta al llegar a cero.",
+     "Porque las tramas Ethernet se reenvían más rápido que los paquetes IP en cualquier tipo de red."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §6.2.1",
+    "e": "El encaminador decrementa el TTL en cada salto y descarta el paquete al llegar a cero; la trama Ethernet carece de ese campo y da vueltas indefinidamente."
+   },
+   {
+    "q": "¿Por qué dejaron de funcionar también los equipos que no estaban comunicándose con nadie?",
+    "o": [
+     "Porque el conmutador apagó sus puertos para protegerlos de la tormenta.",
+     "Porque el encaminador les retiró la dirección IP al saturarse su interfaz.",
+     "Porque su procesador quedó ocupado procesando y descartando la difusión."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §4.2.1",
+    "e": "Toda la interfaz 1 es un único dominio de difusión: la avalancha llega a los 24 equipos, que procesan cada trama en su CPU."
+   },
+   {
+    "q": "¿Cuál es el remedio directo para que un bucle accidental como este no vuelva a tumbar la red, y dónde se aplica?",
+    "o": [
+     "Activar STP o, mejor, RSTP en todos los conmutadores, que bloquean lógicamente el camino redundante.",
+     "Sustituir el encaminador de frontera por otro con más capacidad en la interfaz que da a la oficina.",
+     "Reducir el tiempo de concesión DHCP de los equipos, para que las direcciones se renueven más a menudo."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §6.2.1",
+    "e": "El árbol de expansión detecta el camino redundante, bloquea uno de los enlaces y lo reactiva automáticamente si falla el principal."
+   },
+   {
+    "q": "¿Qué efecto tendría segmentar en VLAN toda la red frente a un incidente como este?",
+    "o": [
+     "Evitaría por completo el bucle, porque las VLAN impiden conectar dos puertos del mismo conmutador.",
+     "Ninguno, porque las VLAN solo separan el tráfico de voz y no afectan al tráfico de difusión.",
+     "No evitaría el bucle, pero confinaría la tormenta a una VLAN en lugar de tumbar toda la oficina."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §4.2.1",
+    "e": "Cada VLAN es un dominio de difusión distinto: acotar el dominio acota el alcance del desastre. Exige encaminamiento entre VLAN."
+   },
+   {
+    "q": "¿Qué debe hacerse con el concentrador de 8 puertos que sobrevive en el archivo?",
+    "o": [
+     "Mantenerlo, porque no afecta a la difusión y solo genera colisiones entre esos ocho equipos.",
+     "Retirarlo y sustituirlo por un conmutador gestionable, porque además deja ver el tráfico ajeno.",
+     "Conectarlo al conmutador de 24 puertos, para que comparta el mismo dominio de colisión."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · §4.2.1",
+    "e": "Es un equipo de capa 1: un único dominio de colisión, semidúplex y, lo más grave, cualquier equipo en modo promiscuo ve el tráfico de los demás, incompatible con la confidencialidad."
+   },
+   {
+    "q": "¿Qué equipo permite integrar el sistema de control de accesos, que habla un protocolo propietario no IP?",
+    "o": [
+     "Una pasarela, que traduce entre protocolos o arquitecturas distintos.",
+     "Un conmutador gestionable, configurando una VLAN propia para ese sistema.",
+     "Un encaminador, que decide la ruta por la dirección IP de cada paquete."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · §4.2.2",
+    "e": "Ni el conmutador ni el encaminador entienden un protocolo que no es IP; la pasarela opera en capas superiores y traduce entre arquitecturas."
+   },
+   {
+    "q": "¿Qué topología objetivo conviene para el rediseño de la red de la oficina?",
+    "o": [
+     "Un bus único que recorra las tres plantas, porque reduce el cableado y simplifica la gestión.",
+     "Un árbol o estrella jerárquica, con acceso por planta, conmutador de capa 3 de edificio y encaminador.",
+     "Una malla completa entre todos los equipos de la oficina, para que ningún fallo aísle a un puesto."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · §5.2",
+    "e": "En árbol, el fallo de un enlace o de un puesto solo afecta a ese puesto, el diagnóstico es sencillo y la red escala añadiendo ramas; su punto débil, el nodo superior, se mitiga con redundancia."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿qué autenticación y cifrado corresponden al SSID corporativo de puestos móviles, tabletas y teléfonos del personal?",
+    "o": [
+     "WPA3-Personal con una clave compartida por toda la plantilla municipal.",
+     "Red abierta con portal cautivo, como la de la sala de espera de la oficina.",
+     "WPA3-Enterprise con 802.1X/EAP-TLS contra el directorio municipal."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §7.1, §9.1",
+    "e": "Cada actuación queda imputada a un empleado concreto mediante su credencial individual contra el directorio."
+   },
+   {
+    "q": "¿Por qué no basta en la red corporativa con una clave precompartida, aunque sea larga?",
+    "o": [
+     "Porque WPA3 prohíbe las claves precompartidas en cualquier red que dé acceso a servicios públicos.",
+     "Porque impide saber quién hizo qué, y revocar a una persona obliga a cambiar la clave a todos.",
+     "Porque una clave precompartida reduce el caudal de la red a la mitad de la velocidad nominal."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §9.1",
+    "e": "802.1X con credencial individual no es una preferencia técnica, sino un requisito de imputabilidad (trazabilidad)."
+   },
+   {
+    "q": "¿Cómo debe configurarse el SSID de cortesía de la sala de espera?",
+    "o": [
+     "Red abierta con OWE, portal cautivo y aislamiento entre clientes, en una VLAN sin ruta hacia la red municipal.",
+     "Red WPA3-Enterprise en la misma VLAN que los puestos, para que el público acceda a los servicios municipales.",
+     "Red abierta sin cifrado ni portal, en la VLAN de dispositivos junto a impresoras y pantallas de turnos."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §9.1",
+    "e": "OWE cifra aunque la red sea abierta; la VLAN totalmente aislada solo tiene salida directa a internet."
+   },
+   {
+    "q": "¿Qué medida del ENS respalda que todo lo inalámbrico vaya en un segmento propio, y qué añade su refuerzo R1 en un sistema de categoría MEDIA?",
+    "o": [
+     "mp.com.4: las comunicaciones inalámbricas van en un segmento separado, y el R1 lo implanta con VLAN, con un mínimo de tres subredes.",
+     "mp.if.6: las redes inalámbricas se protegen frente a inundaciones, y el R1 exige ubicar los puntos de acceso en planta alta.",
+     "op.exp.1: los puntos de acceso deben estar inventariados, y el R1 exige que el SSID corporativo no se anuncie en la baliza."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §9.1 (mp.com.4.2 y R1)",
+    "e": "mp.com.4.2 dice que, si se emplean comunicaciones inalámbricas, será en un segmento separado; el R1 implementa los segmentos con VLAN: usuarios, servicios y administración."
+   },
+   {
+    "q": "El responsable del edificio propone ocultar el SSID y permitir solo las direcciones MAC municipales. ¿Cómo debe valorarse?",
+    "o": [
+     "Debe aceptarse, porque juntas sustituyen con ventaja al cifrado WPA3 y a la autenticación 802.1X.",
+     "Debe aceptarse solo en la red de cortesía, porque en ella el público no puede averiguar el nombre.",
+     "Debe rechazarse como protección: el SSID viaja en claro al asociarse y las MAC se copian con facilidad."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §9.1",
+    "e": "Son medidas cosméticas que dan una falsa sensación de protección y desplazan la atención de lo que sí protege: WPA3 y 802.1X."
+   },
+   {
+    "q": "¿Qué enmienda de 802.11 evita que las llamadas de voz sobre wifi del personal se corten al cambiar de punto de acceso?",
+    "o": [
+     "802.11w, que protege las tramas de gestión.",
+     "802.11r, que agiliza la itinerancia entre celdas.",
+     "802.11e, que define la calidad de servicio WMM."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §7.1",
+    "e": "La itinerancia rápida de 802.11r es esencial para la voz sobre wifi; 802.11w neutraliza los ataques de desautenticación."
+   },
+   {
+    "q": "¿Qué tecnología conviene para los sensores situados en sótanos y arquetas?",
+    "o": [
+     "Wi-Fi, desplegando puntos de acceso cerca de cada sensor.",
+     "Una red celular convencional, con una línea de datos por sensor.",
+     "NB-IoT, por su penetración en interiores profundos."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · §7.2",
+    "e": "Son el caso canónico de LPWAN: pocos datos, mucho alcance y años de batería. Entre las LPWAN, NB-IoT aporta la penetración en interiores profundos y la cobertura del operador ya desplegada."
+   },
+   {
+    "q": "¿Cuál es la disyuntiva de fondo entre LoRaWAN y NB-IoT para los sensores del distrito?",
+    "o": [
+     "Espectro sin licencia y red propia sin garantías, frente a espectro licenciado con calidad contratada al operador.",
+     "Cobertura en interiores frente a cobertura en exteriores, porque LoRaWAN solo funciona dentro de los edificios.",
+     "Bajo consumo frente a alto consumo, porque NB-IoT exige alimentación de red eléctrica en cada sensor."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §7.2",
+    "e": "LoRaWAN permite red propia sin pagar por dispositivo, pero sin garantía y asumiendo la operación; NB-IoT garantiza calidad por contrato, con dependencia del operador. Es una decisión de modelo de servicio."
+   },
+   {
+    "q": "¿Qué régimen jurídico tiene el radioenlace propio en banda licenciada entre la oficina y el polideportivo?",
+    "o": [
+     "Uso común, como el Wi-Fi: basta con respetar los límites de potencia, sin título ni tasa.",
+     "Uso privativo: título habilitante del Ministerio y tasa por reserva del dominio radioeléctrico.",
+     "Ninguno, porque el Ayuntamiento es Administración y no necesita títulos para usar el espectro."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §9.2 (art. 85.1 y títulos V y VII Ley 11/2022)",
+    "e": "El espectro es bien de dominio público cuya titularidad y administración corresponden al Estado (art. 85.1); su uso privativo exige autorización individual o concesión y devenga tasa."
+   },
+   {
+    "q": "¿Por qué el Wi-Fi de cortesía queda sujeto al artículo 13 de la Ley 11/2022 y el corporativo no?",
+    "o": [
+     "Porque el de cortesía presta un servicio disponible al público, y el corporativo es una red privada de usuario final.",
+     "Porque el de cortesía usa banda licenciada, y el corporativo, una banda ISM de uso común sin título habilitante.",
+     "Porque el de cortesía carece de cifrado, y el artículo 13 regula la seguridad de las redes inalámbricas abiertas."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · §9.2 (art. 13 Ley 11/2022)",
+    "e": "Al ofrecer el servicio al público hay que valorar el principio de inversor privado, la no distorsión de la competencia y las ayudas de Estado; en las plazas públicas el análisis es más exigente que en la sala de espera."
+   }
+  ]
+ }
+]

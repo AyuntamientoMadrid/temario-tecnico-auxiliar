@@ -1,0 +1,21 @@
+<svg aria-label="Comparación entre compilador que traduce todo el código a ejecutable antes de ejecutar e intérprete que traduce y ejecuta instrucción a instrucción" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 12px system-ui,sans-serif;fill:#fff}.b2{font:600 11px system-ui,sans-serif;fill:#123}.l2{font:11px system-ui,sans-serif;fill:#444}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h2" text-anchor="middle" x="170" y="24">COMPILADOR</text>
+<rect fill="#9cc3e0" height="40" rx="5" width="90" x="60" y="40"></rect><text class="b2" text-anchor="middle" x="105" y="64">Código fuente</text>
+<rect fill="#0055a0" height="40" rx="5" width="120" x="164" y="40"></rect><text class="t2" text-anchor="middle" x="224" y="60">Compilador</text><text class="t2" text-anchor="middle" x="224" y="74">(traduce todo)</text>
+<rect fill="#2d8659" height="40" rx="5" width="90" x="300" y="40"></rect><text class="t2" text-anchor="middle" x="345" y="64">Ejecutable</text>
+<path d="M150 60 L162 60" marker-end="url(#a2)" stroke="#888" stroke-width="2"></path>
+<path d="M286 60 L298 60" marker-end="url(#a2)" stroke="#888" stroke-width="2"></path>
+<text class="l2" text-anchor="middle" x="225" y="102">Se traduce UNA vez; luego se ejecuta muchas · rápido</text>
+<line stroke="#ccc" stroke-dasharray="4 4" x1="40" x2="640" y1="130" y2="130"></line>
+<text class="h2" text-anchor="middle" x="170" y="162">INTÉRPRETE</text>
+<rect fill="#9cc3e0" height="40" rx="5" width="90" x="60" y="178"></rect><text class="b2" text-anchor="middle" x="105" y="202">Código fuente</text>
+<rect fill="#e89822" height="40" rx="5" width="110" x="200" y="178"></rect><text class="t2" text-anchor="middle" x="255" y="198">Intérprete</text><text class="t2" text-anchor="middle" x="255" y="212">línea a línea</text>
+<rect fill="#2d8659" height="40" rx="5" width="90" x="360" y="178"></rect><text class="t2" text-anchor="middle" x="405" y="202">Resultado</text>
+<path d="M150 198 L198 198" marker-end="url(#a2)" stroke="#888" stroke-width="2"></path>
+<path d="M310 198 L358 198" marker-end="url(#a2)" stroke="#888" stroke-width="2"></path>
+<text class="l2" text-anchor="middle" x="255" y="240">Traduce y ejecuta a la vez · portable · más lento</text>
+<text class="l2" text-anchor="middle" x="255" y="262">Híbrido (Java): fuente → bytecode → máquina virtual (JVM)</text>
+<defs><marker id="a2" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#888"></path></marker></defs>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="292">[Fuente: SEBESTA, cap. 1]</text>
+</svg>

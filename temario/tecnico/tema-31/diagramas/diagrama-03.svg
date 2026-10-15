@@ -1,0 +1,35 @@
+<svg aria-label="Reparto de las tres funciones lógicas de una aplicación (presentación, lógica de negocio y gestión de datos) entre arquitecturas de una capa, dos capas con cliente grueso, tres capas y N capas, señalando la regla de que cada capa solo se comunica con la contigua" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 10px system-ui,sans-serif;fill:#fff}.s3{font:8.5px system-ui,sans-serif;fill:#fff}.d3{font:9px system-ui,sans-serif;fill:#333}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.f3{font:8px system-ui,sans-serif;fill:#777}</style>
+<text class="h3" text-anchor="middle" x="340" y="20">De una a N capas</text>
+<text class="k3" x="30" y="42">1 CAPA</text>
+<rect fill="#888" height="66" rx="5" width="130" x="30" y="48"></rect><text class="t3" text-anchor="middle" x="95" y="70">TODO JUNTO</text><text class="s3" text-anchor="middle" x="95" y="85">presentación</text><text class="s3" text-anchor="middle" x="95" y="98">negocio + datos</text>
+<text class="k3" x="190" y="42">2 CAPAS · cliente grueso</text>
+<rect fill="#0055a0" height="30" rx="5" width="130" x="190" y="48"></rect><text class="t3" text-anchor="middle" x="255" y="61">CLIENTE</text><text class="s3" text-anchor="middle" x="255" y="73">presentación + negocio</text>
+<rect fill="#2d8659" height="30" rx="5" width="130" x="190" y="84"></rect><text class="t3" text-anchor="middle" x="255" y="97">SERVIDOR</text><text class="s3" text-anchor="middle" x="255" y="109">datos</text>
+<text class="k3" x="350" y="42">3 CAPAS</text>
+<rect fill="#0055a0" height="20" rx="4" width="130" x="350" y="48"></rect><text class="s3" text-anchor="middle" x="415" y="62">presentación</text>
+<rect fill="#e89822" height="20" rx="4" width="130" x="350" y="72"></rect><text class="s3" text-anchor="middle" x="415" y="86">lógica de negocio</text>
+<rect fill="#2d8659" height="20" rx="4" width="130" x="350" y="96"></rect><text class="s3" text-anchor="middle" x="415" y="110">datos</text>
+<text class="k3" x="510" y="42">N CAPAS</text>
+<rect fill="#0055a0" height="16" rx="4" width="150" x="510" y="48"></rect><text class="s3" text-anchor="middle" x="585" y="60">presentación web</text>
+<rect fill="#5b8fc0" height="16" rx="4" width="150" x="510" y="66"></rect><text class="s3" text-anchor="middle" x="585" y="78">servicios / API</text>
+<rect fill="#e89822" height="16" rx="4" width="150" x="510" y="84"></rect><text class="s3" text-anchor="middle" x="585" y="96">lógica de negocio</text>
+<rect fill="#7fae8f" height="16" rx="4" width="150" x="510" y="102"></rect><text class="s3" text-anchor="middle" x="585" y="114">integración</text>
+<rect fill="#2d8659" height="16" rx="4" width="150" x="510" y="120"></rect><text class="s3" text-anchor="middle" x="585" y="132">datos</text>
+<rect fill="#eef3f8" height="24" rx="4" width="630" x="30" y="152"></rect><text class="d3" text-anchor="middle" x="340" y="168">Regla de la arquitectura multicapa estricta: cada capa solo se comunica con la contigua</text>
+<rect fill="#2d8659" height="22" rx="4" width="310" x="30" y="184"></rect><text class="t3" text-anchor="middle" x="185" y="199">CORRECTO</text>
+<rect fill="#d13c3c" height="22" rx="4" width="300" x="360" y="184"></rect><text class="t3" text-anchor="middle" x="510" y="199">INCORRECTO</text>
+<rect fill="#eef3f8" height="22" rx="4" width="80" x="40" y="214"></rect><text class="d3" text-anchor="middle" x="80" y="229">presentación</text>
+<path d="M124 225 h30" marker-end="url(#a3)" stroke="#2d8659" stroke-width="2"></path>
+<rect fill="#eef3f8" height="22" rx="4" width="70" x="158" y="214"></rect><text class="d3" text-anchor="middle" x="193" y="229">negocio</text>
+<path d="M232 225 h30" marker-end="url(#a3)" stroke="#2d8659" stroke-width="2"></path>
+<rect fill="#eef3f8" height="22" rx="4" width="64" x="266" y="214"></rect><text class="d3" text-anchor="middle" x="298" y="229">datos</text>
+<rect fill="#fdecec" height="22" rx="4" width="80" x="370" y="214"></rect><text class="d3" text-anchor="middle" x="410" y="229">presentación</text>
+<rect fill="#fdecec" height="22" rx="4" width="70" x="488" y="214"></rect><text class="d3" text-anchor="middle" x="523" y="229">negocio</text>
+<rect fill="#fdecec" height="22" rx="4" width="64" x="590" y="214"></rect><text class="d3" text-anchor="middle" x="622" y="229">datos</text>
+<path d="M410 240 q106 34 212 -4" fill="none" marker-end="url(#b3)" stroke="#d13c3c" stroke-dasharray="4 3" stroke-width="2"></path>
+<text class="d3" text-anchor="middle" x="516" y="272">salto directo a los datos</text>
+<defs><marker id="a3" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0 0 L6 3 L0 6 z" fill="#2d8659"></path></marker><marker id="b3" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0 0 L6 3 L0 6 z" fill="#d13c3c"></path></marker></defs>
+<rect fill="#0055a0" height="22" rx="4" width="630" x="30" y="286"></rect><text class="s3" text-anchor="middle" x="340" y="301">Si la presentación ataca directamente a la base de datos, hay tres capas dibujadas y dos de verdad</text>
+<text class="f3" text-anchor="middle" x="340" y="326">[Fuente: TANENBAUM]</text>
+</svg>

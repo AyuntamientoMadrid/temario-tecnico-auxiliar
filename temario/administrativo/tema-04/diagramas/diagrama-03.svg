@@ -1,0 +1,25 @@
+<svg aria-label="Órganos de gobierno del distrito: la Junta Municipal y el concejal-presidente, según el artículo 62" role="img" viewbox="0 0 700 260" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .c-root{fill:#0055a0;stroke:#003d75;stroke-width:2}
+    .c-box{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .c-t{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .c-h{font:700 13px system-ui,sans-serif;fill:#003d75;text-anchor:middle}
+    .c-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+    .c-l{stroke:#0055a0;stroke-width:1.5;fill:none}
+  </style>
+<rect class="c-root" height="50" rx="8" width="240" x="230" y="20"></rect>
+<text class="c-t" x="350" y="42">GOBIERNO Y ADMINISTRACIÓN</text>
+<text class="c-t" style="font-weight:400;font-size:11px" x="350" y="60">del distrito · art. 62</text>
+<line class="c-l" x1="350" x2="350" y1="70" y2="96"></line>
+<line class="c-l" x1="180" x2="180" y1="114" y2="96"></line>
+<line class="c-l" x1="520" x2="520" y1="114" y2="96"></line>
+<line class="c-l" x1="180" x2="520" y1="96" y2="96"></line>
+<rect class="c-box" height="90" rx="8" width="220" x="70" y="114"></rect>
+<text class="c-h" x="180" y="142">JUNTA MUNICIPAL</text>
+<text class="c-h" x="180" y="160">DEL DISTRITO</text>
+<text class="c-s" x="180" y="184">órgano colegiado</text>
+<rect class="c-box" height="90" rx="8" width="220" x="410" y="114"></rect>
+<text class="c-h" x="520" y="142">CONCEJAL-</text>
+<text class="c-h" x="520" y="160">PRESIDENTE</text>
+<text class="c-s" x="520" y="184">órgano unipersonal · la preside</text>
+</svg>

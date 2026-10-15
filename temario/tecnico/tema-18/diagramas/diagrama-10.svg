@@ -1,0 +1,20 @@
+<svg aria-label="Paso por valor copia el argumento y no cambia el original, paso por referencia pasa la dirección y sí modifica la variable original del llamador" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t10{font:700 12px system-ui,sans-serif;fill:#fff}.l10{font:11px system-ui,sans-serif;fill:#444}.h10{font:700 13px system-ui,sans-serif;fill:#0055a0}.v10{font:700 12px system-ui,sans-serif;fill:#123}</style>
+<text class="h10" text-anchor="middle" x="340" y="22">duplica(x): { x = x · 2 }  con a = 10</text>
+<text class="h10" text-anchor="middle" x="170" y="50">POR VALOR</text>
+<rect fill="#0055a0" height="46" rx="6" width="90" x="70" y="62"></rect><text class="t10" text-anchor="middle" x="115" y="82">a = 10</text><text class="t10" text-anchor="middle" x="115" y="100">(llamador)</text>
+<rect fill="#6ea3d2" height="46" rx="6" width="90" x="230" y="62"></rect><text class="t10" text-anchor="middle" x="275" y="82">x = 10 → 20</text><text class="t10" text-anchor="middle" x="275" y="100">(copia)</text>
+<path d="M160 85 L228 85" marker-end="url(#a10)" stroke="#888" stroke-width="2"></path><text class="l10" text-anchor="middle" x="194" y="78">copia</text>
+<text class="v10" fill="#2d8659" text-anchor="middle" x="170" y="138">a sigue valiendo 10 ✓</text>
+<text class="l10" text-anchor="middle" x="170" y="158">El original NO cambia</text>
+<line stroke="#ccc" stroke-dasharray="4 4" x1="360" x2="360" y1="46" y2="180"></line>
+<text class="h10" text-anchor="middle" x="530" y="50">POR REFERENCIA</text>
+<rect fill="#0055a0" height="46" rx="6" width="90" x="430" y="62"></rect><text class="t10" text-anchor="middle" x="475" y="82">a = 10 → 20</text><text class="t10" text-anchor="middle" x="475" y="100">(llamador)</text>
+<rect fill="#e89822" height="46" rx="6" width="80" x="590" y="62"></rect><text class="t10" text-anchor="middle" x="630" y="82">x → dir(a)</text><text class="t10" text-anchor="middle" x="630" y="100">(referencia)</text>
+<path d="M590 85 L522 85" marker-end="url(#r10)" stroke="#d13c3c" stroke-width="2"></path><text class="l10" text-anchor="middle" x="556" y="78">dirección</text>
+<text class="v10" fill="#d13c3c" text-anchor="middle" x="530" y="138">a pasa a valer 20 ⚠</text>
+<text class="l10" text-anchor="middle" x="530" y="158">El original SÍ cambia</text>
+<rect fill="#f2f2f2" height="56" rx="8" width="560" x="60" y="200"></rect><text class="l10" text-anchor="middle" x="340" y="222">Por valor = copia (seguro, el original intacto) · Por referencia = dirección (puede modificar el original</text><text class="l10" text-anchor="middle" x="340" y="242">y devolver varios resultados). En Java los primitivos van SIEMPRE por valor.</text>
+<defs><marker id="a10" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#888"></path></marker><marker id="r10" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#d13c3c"></path></marker></defs>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="292">[Fuente: SCOTT, cap. 8]</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg aria-label="Una PWA se compone de Service Worker que intercepta peticiones de red y sirve contenido desde caché sin conexión, Web App Manifest que permite instalar la aplicación, y servicio obligatorio por HTTPS" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t13{font:700 11px system-ui,sans-serif;fill:#fff}.s13{font:9.5px system-ui,sans-serif;fill:#fff}.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h13" text-anchor="middle" x="340" y="20">PWA: tres pilares técnicos</text>
+<rect fill="#0055a0" height="80" rx="6" width="190" x="30" y="44"></rect>
+<text class="t13" text-anchor="middle" x="125" y="70">Service Worker</text>
+<text class="s13" text-anchor="middle" x="125" y="88">Intercepta peticiones</text>
+<text class="s13" text-anchor="middle" x="125" y="104">Sin acceso al DOM</text>
+<rect fill="#2d8659" height="80" rx="6" width="190" x="245" y="44"></rect>
+<text class="t13" text-anchor="middle" x="340" y="70">Web App Manifest</text>
+<text class="s13" text-anchor="middle" x="340" y="88">JSON: nombre, iconos</text>
+<text class="s13" text-anchor="middle" x="340" y="104">Permite «instalar»</text>
+<rect fill="#e89822" height="80" rx="6" width="190" x="460" y="44"></rect>
+<text class="t13" text-anchor="middle" x="555" y="70">HTTPS obligatorio</text>
+<text class="s13" text-anchor="middle" x="555" y="88">Requisito para registrar</text>
+<text class="s13" text-anchor="middle" x="555" y="104">el Service Worker</text>
+<path d="M125 124 L125 160" marker-end="url(#h13a)" stroke="#888" stroke-width="2"></path>
+<defs><marker id="h13a" markerheight="9" markerwidth="9" orient="auto" refx="4.5" refy="4.5"><path d="M0 0 L9 4.5 L0 9 z" fill="#888"></path></marker></defs>
+<rect fill="#d13c3c" height="70" rx="6" width="300" x="30" y="164"></rect>
+<text class="t13" text-anchor="middle" x="180" y="188">Con conexión → red</text>
+<text class="s13" text-anchor="middle" x="180" y="206">Sin conexión → Cache API (§3.4)</text>
+<text class="s13" text-anchor="middle" x="180" y="222">sirve contenido cacheado</text>
+<rect fill="#2d8659" height="70" rx="6" width="300" x="350" y="164"></rect>
+<text class="t13" text-anchor="middle" x="500" y="188">Notificaciones push</text>
+<text class="s13" text-anchor="middle" x="500" y="206">Reactiva incluso con</text>
+<text class="s13" text-anchor="middle" x="500" y="222">la pestaña cerrada</text>
+<rect fill="#f0f0f0" height="60" rx="6" stroke="#0055a0" stroke-width="2" width="520" x="80" y="252"></rect>
+<text style="font:700 11px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="278">El Service Worker vive en un hilo separado de la página</text>
+<text style="font:10px system-ui;fill:#444" text-anchor="middle" x="340" y="298">se comunica con ella por paso de mensajes, nunca accede al DOM directamente</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="332">[Fuente: SERVICE-WORKERS; MDN-PWA]</text>
+</svg>

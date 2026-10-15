@@ -1,0 +1,35 @@
+<svg aria-label="El sistema de nombres de dominio es una base de datos distribuida y jerárquica: bajo la raíz están los dominios de primer nivel, bajo ellos los de segundo nivel y los subdominios. El cliente hace una consulta recursiva a su resolutor, que a su vez hace consultas iterativas a la raíz, al dominio de primer nivel y al servidor autoritativo hasta obtener la respuesta, que guarda en caché" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.t18{font:700 9.5px system-ui,sans-serif;fill:#fff}.d18{font:8.5px system-ui,sans-serif;fill:#333}.h18{font:700 13px system-ui,sans-serif;fill:#0055a0}.k18{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n18{font:8.5px system-ui,sans-serif;fill:#666}.w18{font:8.5px system-ui,sans-serif;fill:#e3ebf3}</style>
+<defs><marker id="a18" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#d13c3c"></path></marker></defs>
+<text class="h18" text-anchor="middle" x="340" y="20">DNS: jerarquía de nombres y resolución de sede.madrid.es</text>
+<rect fill="#5a6b7d" height="24" rx="4" width="140" x="270" y="34"></rect><text class="t18" text-anchor="middle" x="340" y="51">RAÍZ — «.»</text>
+<path d="M340,58 L160,74" stroke="#8aa8c4" stroke-width="1.2"></path><path d="M340,58 L340,74" stroke="#8aa8c4" stroke-width="1.2"></path><path d="M340,58 L520,74" stroke="#8aa8c4" stroke-width="1.2"></path>
+<rect fill="#0055a0" height="24" rx="4" width="140" x="90" y="76"></rect><text class="t18" text-anchor="middle" x="160" y="93">.com</text>
+<rect fill="#0055a0" height="24" rx="4" width="140" x="270" y="76"></rect><text class="t18" text-anchor="middle" x="340" y="93">.es</text>
+<rect fill="#0055a0" height="24" rx="4" width="140" x="450" y="76"></rect><text class="t18" text-anchor="middle" x="520" y="93">.org</text>
+<path d="M340,100 L340,116" stroke="#8aa8c4" stroke-width="1.2"></path>
+<rect fill="#2d8659" height="24" rx="4" width="140" x="270" y="118"></rect><text class="t18" text-anchor="middle" x="340" y="135">madrid.es</text>
+<path d="M340,142 L340,158" stroke="#8aa8c4" stroke-width="1.2"></path>
+<rect fill="#e89822" height="24" rx="4" width="140" x="270" y="160"></rect><text class="t18" text-anchor="middle" x="340" y="177">sede.madrid.es</text>
+<text class="n18" x="596" y="93">primer nivel (TLD)</text>
+<text class="n18" x="424" y="135">zona delegada</text>
+<text class="n18" x="424" y="177">nombre plenamente cualificado</text>
+<text class="k18" x="24" y="206">LA RESOLUCIÓN, PASO A PASO</text>
+<rect fill="#0055a0" height="34" rx="4" width="120" x="24" y="214"></rect><text class="t18" text-anchor="middle" x="84" y="235">Puesto</text>
+<rect fill="#2d8659" height="34" rx="4" width="140" x="180" y="214"></rect><text class="t18" text-anchor="middle" x="250" y="230">Resolutor recursivo</text><text class="w18" text-anchor="middle" x="250" y="243">con caché</text>
+<rect fill="#5a6b7d" height="34" rx="4" width="300" x="356" y="214"></rect><text class="t18" text-anchor="middle" x="506" y="230">Raíz → .es → madrid.es</text><text class="w18" text-anchor="middle" x="506" y="243">servidores autoritativos</text>
+<path d="M146,224 L176,224" marker-end="url(#a18)" stroke="#d13c3c" stroke-width="1.4"></path>
+<path d="M322,224 L352,224" marker-end="url(#a18)" stroke="#d13c3c" stroke-width="1.4"></path>
+<text class="d18" text-anchor="middle" x="84" y="262">1 consulta recursiva</text>
+<text class="d18" text-anchor="middle" x="250" y="262">2, 3 y 4: consultas iterativas</text>
+<text class="d18" text-anchor="middle" x="506" y="262">cada uno remite al siguiente</text>
+<rect fill="#eef3f8" height="34" rx="4" width="313" x="24" y="272"></rect>
+<text class="k18" text-anchor="middle" x="180" y="288">Registros principales</text>
+<text class="d18" text-anchor="middle" x="180" y="301">A (IPv4) · AAAA (IPv6) · CNAME · MX · NS · SOA · PTR · TXT</text>
+<rect fill="#fdf3e3" height="34" rx="4" width="311" x="345" y="272"></rect>
+<text class="k18" text-anchor="middle" x="500" y="288">Transporte</text>
+<text class="d18" text-anchor="middle" x="500" y="301">UDP/53 en las consultas · TCP/53 si no cabe o hay transferencia de zona</text>
+<rect fill="none" height="20" rx="3" stroke="#0055a0" stroke-width="1.4" width="632" x="24" y="312"></rect>
+<text class="k18" text-anchor="middle" x="340" y="326">DNSSEC firma las respuestas pero no las cifra; DoH y DoT sí cifran la consulta</text>
+<text class="n18" text-anchor="end" x="670" y="346">[Fuente: RFC 1034, RFC 1035]</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg aria-label="Reforma ordinaria" role="img" viewbox="0 0 720 420" xmlns="http://www.w3.org/2000/svg">
+<style>.d4-box{fill:#0055a0}.d4-alt{fill:#e89822}.d4-ok{fill:#2d8659}.d4-ref{fill:#d13c3c}.d4-title{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.d4-sub{font:11px system-ui,sans-serif;fill:#fff;text-anchor:middle}.d4-arrow{stroke:#333;stroke-width:2;fill:none;marker-end:url(#d4-arrow)}.d4-label{font:11px system-ui,sans-serif;fill:#333;text-anchor:middle}</style>
+<defs><marker id="d4-arrow" markerheight="6" markerwidth="6" orient="auto" refx="8" refy="5" viewbox="0 0 10 10"><path d="M 0 0 L 10 5 L 0 10 z" fill="#333"></path></marker></defs>
+<rect class="d4-box" height="50" rx="8" width="200" x="260" y="20"></rect><text class="d4-title" x="360" y="42">1. INICIATIVA</text><text class="d4-sub" x="360" y="58">Gob · Cong · Sen · CCAA</text>
+<line class="d4-arrow" x1="360" x2="360" y1="70" y2="100"></line>
+<rect class="d4-box" height="50" rx="8" width="260" x="230" y="100"></rect><text class="d4-title" x="360" y="122">2. APROBACIÓN: 3/5 de CADA Cámara</text><text class="d4-sub" x="360" y="138">Congreso + Senado</text>
+<line class="d4-arrow" x1="360" x2="360" y1="150" y2="180"></line><line class="d4-arrow" x1="230" x2="115" y1="125" y2="180"></line>
+<rect class="d4-ok" height="50" rx="8" width="260" x="230" y="180"></rect><text class="d4-title" x="360" y="202">3a. ACUERDO -&gt; APROBADO</text><text class="d4-sub" x="360" y="218">texto final</text>
+<rect class="d4-alt" height="60" rx="8" width="200" x="15" y="180"></rect><text class="d4-title" x="115" y="200">3b. SIN ACUERDO</text><text class="d4-sub" x="115" y="216">Comisión Mixta paritaria</text><text class="d4-sub" x="115" y="232">nueva votación en ambas Cámaras</text>
+<line class="d4-arrow" x1="115" x2="115" y1="240" y2="270"></line>
+<rect class="d4-alt" height="60" rx="8" width="200" x="15" y="270"></rect><text class="d4-title" x="115" y="290">4. FALLBACK</text><text class="d4-sub" x="115" y="308">Senado: mayoría absoluta</text><text class="d4-sub" x="115" y="323">Congreso: 2/3 del pleno</text>
+<line class="d4-arrow" x1="360" x2="360" y1="230" y2="270"></line>
+<rect class="d4-ref" height="50" rx="8" width="200" x="260" y="270"></rect><text class="d4-title" x="360" y="292">5. REFERÉNDUM</text><text class="d4-sub" x="360" y="308">FACULTATIVO (1/10 parte)</text>
+<line class="d4-arrow" x1="360" x2="360" y1="320" y2="360"></line>
+<rect class="d4-ok" height="50" rx="8" width="200" x="260" y="360"></rect><text class="d4-title" x="360" y="382">ENTRADA EN VIGOR</text><text class="d4-sub" x="360" y="398">publicación en BOE</text>
+</svg>

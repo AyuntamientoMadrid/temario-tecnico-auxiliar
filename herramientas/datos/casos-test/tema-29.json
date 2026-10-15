@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, antes de tocar el equipo de la tramitadora, ¿qué datos mínimos debe recoger el técnico del CAU?",
+    "o": [
+     "El número de tique, la contraseña de dominio de la usuaria para entrar en su sesión y el modelo del lector de tarjetas que tiene conectado.",
+     "Identificación de la usuaria y su ubicación, fecha, hora y canal, el síntoma en sus palabras, el equipo según el inventario y el servicio afectado.",
+     "La causa probable del fallo, la prioridad que la propia usuaria considera adecuada y el plazo en que necesita tener firmado el expediente."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §2.2.2",
+    "e": "El registro identifica a quién, cuándo, por qué canal, qué síntoma describe, sobre qué equipo y qué servicio está afectado; la prioridad no la fija el usuario y nunca se piden sus credenciales."
+   },
+   {
+    "q": "¿Qué pregunta de acotación resulta más rentable para reorientar el diagnóstico y revisar el impacto de la incidencia?",
+    "o": [
+     "¿Le ocurre solo a usted o también a sus compañeros de la oficina?",
+     "¿Qué número de serie figura en la etiqueta del lector de tarjetas?",
+     "¿Prefiere que la atienda un técnico presencial o uno en remoto?"
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.2.2",
+    "e": "Si el fallo afecta a toda la oficina, la hipótesis se desplaza a una capa compartida y el impacto sube; si solo le pasa a ella, el problema está en su puesto."
+   },
+   {
+    "q": "De las hipótesis de causa por capas, ¿cuál es la única que puede exigir presencia o la colaboración física de la usuaria y conviene descartar pronto?",
+    "o": [
+     "Que el certificado de la tarjeta haya caducado o haya sido revocado.",
+     "Que el componente criptográfico esté desactualizado o desinstalado.",
+     "Que el lector de tarjetas esté desconectado o el sistema no lo reconozca."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §1.1.2",
+    "e": "Es la hipótesis de la capa de hardware o periférico: las de aplicaciones, identidad, configuración y conectividad se comprueban en remoto en pocos minutos."
+   },
+   {
+    "q": "Si la causa fuera que el certificado de la tramitadora ha caducado o ha sido revocado, ¿en qué capa del puesto se situaría el fallo?",
+    "o": [
+     "En la capa de hardware, y exigiría desplazarse al puesto.",
+     "En la capa de identidad, y podría comprobarse en remoto.",
+     "En la capa de conectividad, porque depende de la red municipal."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §1.1.2",
+    "e": "La validez del certificado es una cuestión de identidad del usuario, no del dispositivo ni de la red, y se verifica sin necesidad de presencia."
+   },
+   {
+    "q": "¿Qué tipo de sesión de control remoto debe abrir el técnico para atender a la tramitadora?",
+    "o": [
+     "Una asistencia desatendida en modo control exclusivo, oscureciendo la pantalla de la usuaria.",
+     "Una sesión independiente por escritorio remoto, sin interferir con la sesión de la usuaria.",
+     "Una asistencia atendida en modo control compartido sobre la sesión que la usuaria ya tiene abierta."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §1.2",
+    "e": "La usuaria está presente y debe consentir; el control compartido le permite ver lo que hace el técnico e interrumpir, y es el modo estándar de la asistencia atendida."
+   },
+   {
+    "q": "¿Por qué NO sirve en este supuesto una conexión de escritorio remoto estándar por RDP?",
+    "o": [
+     "Porque abre una sesión nueva, en la que el técnico no ve el escritorio de la usuaria ni dispone de su tarjeta criptográfica.",
+     "Porque RDP trabaja en el puerto TCP 5900, que el cortafuegos de la red corporativa municipal mantiene bloqueado.",
+     "Porque RDP solo transmite órdenes de consola sin interfaz gráfica, y la firma se hace desde el navegador web."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §1.3.3",
+    "e": "RDP estándar crea una sesión independiente: no reproduce el fallo que la usuaria tiene delante y la tarjeta y su lector están asociados a la sesión de ella. RDP usa el puerto 3389."
+   },
+   {
+    "q": "¿Cómo se materializa en esta asistencia el consentimiento de la tramitadora a la sesión?",
+    "o": [
+     "Mediante su contraseña de dominio, que facilita al técnico para que acceda a la sesión.",
+     "Mediante un código de sesión de un solo uso que ella genera y facilita al técnico.",
+     "Mediante la cuenta genérica del CAU, que tiene autorizado el acceso a todos los puestos."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 3 · §1.2.2",
+    "e": "El código de un solo uso no autentica al técnico, pero prueba que la usuaria solicitó la sesión y la limita a esa ocasión; las credenciales nunca se comparten y las cuentas genéricas están proscritas."
+   },
+   {
+    "q": "La tramitadora tiene abiertos varios documentos con datos de otros vecinos que nada tienen que ver con el fallo de firma. ¿Qué debe hacer el técnico?",
+    "o": [
+     "Pedirle que cierre los documentos con datos de terceros que no sean necesarios, en aplicación del principio de minimización.",
+     "Grabar la sesión completa con esos documentos visibles, para dejar constancia de lo que había en la pantalla de la usuaria.",
+     "Pasar a control exclusivo y oscurecer la pantalla, para que la usuaria no vea los datos que el técnico consulta en su equipo."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §1.2.2, §3.2.2",
+    "e": "El acceso a datos personales durante la asistencia solo es lícito para resolver la incidencia registrada; lo que no sea necesario debe cerrarse antes de trabajar."
+   },
+   {
+    "q": "Tras actualizar el componente criptográfico, el técnico comprueba que la firma funciona. ¿Cuándo puede darse por cerrada la incidencia?",
+    "o": [
+     "En cuanto el técnico verifica que la versión instalada es la correcta, porque la comprobación técnica ya acredita la solución.",
+     "Al terminar la sesión de control remoto, que cierra el tique de forma automática con la misma categoría con la que se abrió.",
+     "Cuando la usuaria firma el expediente pendiente y confirma que puede trabajar, documentando lo hecho y la categoría de cierre."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 4 · §2.3.3",
+    "e": "La verificación técnica y la del usuario no son lo mismo: hay que confirmar que la usuaria puede trabajar y documentar la resolución con su categorización de cierre, que puede diferir de la de apertura."
+   },
+   {
+    "q": "Cerrado el tique, ¿qué actuación permite saber si se trataba de un caso aislado o de un problema que conviene abrir?",
+    "o": [
+     "Esperar a que otros usuarios llamen con el mismo síntoma y, entonces, reabrir el tique de la tramitadora.",
+     "Consultar en el inventario cuántos puestos más tienen la versión afectada del componente criptográfico.",
+     "Preguntar a la tramitadora si recuerda a algún compañero que haya tenido alguna vez un fallo parecido."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §2.3.3, §3.3.2",
+    "e": "El inventario permite medir el alcance de forma proactiva; si hay más puestos con la misma versión, se abre el problema correspondiente."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿cómo deben tratarse las catorce llamadas recibidas en el CAU?",
+    "o": [
+     "Abriendo catorce incidencias independientes, cada una con la prioridad que corresponda a su oficina.",
+     "Registrando solo la primera llamada y descartando las otras trece como duplicados sin dejar constancia.",
+     "Registrando cada contacto y vinculándolos todos a una única incidencia que representa el fallo del servicio."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §2.3.1",
+    "e": "Hay catorce usuarios que esperan respuesta, por lo que cada contacto se registra, pero el fallo es uno solo y se gestiona como una incidencia común con todos ellos como afectados."
+   },
+   {
+    "q": "¿Qué efecto tiene sobre la incidencia la agrupación de las catorce llamadas?",
+    "o": [
+     "Rebaja la prioridad, porque el CAU pasa a gestionar un único tique en lugar de catorce tiques distintos.",
+     "Eleva el impacto, que pasa de un usuario a varias unidades de seis distritos, y permite avisar a todos a la vez.",
+     "No altera la prioridad, que depende únicamente de la urgencia que declara la primera oficina que llama."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §2.3.1",
+    "e": "La agrupación eleva el impacto, porque la incidencia común refleja a todos los afectados, y permite comunicar de una sola vez el restablecimiento."
+   },
+   {
+    "q": "¿Cómo debe valorarse el impacto de la caída del servicio de firma?",
+    "o": [
+     "Alto, porque está afectado un servicio esencial en varias unidades y distritos y se interrumpe la atención al ciudadano.",
+     "Medio, porque las aplicaciones internas de gestión siguen funcionando y el servicio solo está degradado con rodeo.",
+     "Bajo, porque el fallo no se reproduce en los puestos del CAU y cada oficina solo tiene unos pocos afectados."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §2.3.1",
+    "e": "Servicio esencial caído en varias unidades con la atención al ciudadano interrumpida es el criterio de impacto alto; no consta rodeo disponible."
+   },
+   {
+    "q": "Valorado el impacto como alto, ¿qué urgencia y qué prioridad corresponden con la matriz de impacto y urgencia?",
+    "o": [
+     "Urgencia media, porque el SLA concede cuatro horas, y prioridad 2, alta.",
+     "Urgencia baja, porque la firma puede posponerse a mañana, y prioridad 3, media.",
+     "Urgencia alta, porque el daño se produce ahora y no hay rodeo, y prioridad 1, crítica."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §2.3.1",
+    "e": "La urgencia mide cuánto puede esperar: hay vecinos esperando y no consta rodeo. Impacto alto por urgencia alta da prioridad 1 en la matriz 3×3."
+   },
+   {
+    "q": "Además de asignar la prioridad 1, ¿qué procede hacer con esta incidencia?",
+    "o": [
+     "Activar el procedimiento de incidencia grave, que es un flujo propio con responsable designado y revisión posterior.",
+     "Nada más, porque toda incidencia de prioridad 1 es por definición grave y sigue el mismo flujo que las demás.",
+     "Cerrarla y abrir en su lugar un problema, porque hay más de diez usuarios afectados por la misma causa."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §2.3.1",
+    "e": "La incidencia grave no es simplemente la de prioridad 1: es una categoría con procedimiento propio que se activa por criterios definidos, como el número de afectados y la criticidad del servicio."
+   },
+   {
+    "q": "¿A quién debe dirigirse el escalado funcional de esta incidencia y por qué?",
+    "o": [
+     "Al responsable del CAU y a la dirección, porque son quienes conocen la plataforma de firma y pueden diagnosticar la causa técnica del fallo.",
+     "Al equipo de administración electrónica o de la plataforma de firma, porque el fallo está en un componente central y el primer nivel no puede resolverlo.",
+     "Al técnico de segundo nivel de cada distrito, porque el fallo está en los puestos de las oficinas y hay que revisarlos uno por uno."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §2.3.2",
+    "e": "El escalado funcional busca más conocimiento o permisos. El fallo no se reproduce en el CAU, afecta a seis distritos a la vez y a un solo servicio: no está en los puestos sino en un componente central."
+   },
+   {
+    "q": "¿Qué aporta en este supuesto el escalado jerárquico al responsable del CAU y, a través de él, a la dirección?",
+    "o": [
+     "El diagnóstico técnico de la plataforma de firma, que el primer nivel no conoce y que la dirección analiza con sus propios medios.",
+     "La propiedad del tique, que pasa del CAU a la dirección, de modo que el CAU deja de informar a los usuarios afectados.",
+     "Capacidad de decisión y recursos: activar la incidencia grave, designar responsable y autorizar, si hace falta, una reversión de emergencia."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §2.3.2",
+    "e": "El escalado jerárquico no aporta conocimiento técnico, sino quien decida y quien aporte recursos; la propiedad del tique sigue siendo del CAU."
+   },
+   {
+    "q": "¿Qué información debe acompañar a los escalados?",
+    "o": [
+     "Síntoma exacto, alcance confirmado, hora de inicio, comprobaciones ya descartadas, cambios recientes y qué se pide a cada destinatario.",
+     "Únicamente el número de tique, porque el destinatario debe repetir el diagnóstico desde el principio para no arrastrar sesgos.",
+     "La lista de los catorce usuarios con sus datos de contacto, para que el equipo receptor los llame uno a uno y repita las pruebas."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §2.3.2",
+    "e": "El escalado debe permitir al receptor actuar sin repetir lo ya hecho: qué pasa, a cuántos afecta, desde cuándo, qué se ha descartado, qué ha cambiado y qué se le pide."
+   },
+   {
+    "q": "Mientras dura la incidencia, ¿cómo debe comunicarse el CAU con las oficinas afectadas?",
+    "o": [
+     "Solo cuando el servicio esté restablecido, para no generar expectativas que luego no puedan cumplirse en plazo.",
+     "De forma proactiva y periódica, con una previsión realista y actualizaciones a intervalos fijos aunque no haya novedades.",
+     "Solo a las oficinas que vuelvan a llamar, para no saturar a las demás con avisos que todavía no aportan nada."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · §2.1.2",
+    "e": "Las oficinas necesitan poder decir algo al ciudadano que espera: la comunicación estructurada y periódica forma parte del procedimiento de incidencia grave."
+   },
+   {
+    "q": "El servicio se restablece con un rodeo y la causa raíz aún no está determinada. ¿Qué debe hacerse a continuación?",
+    "o": [
+     "Cerrar la incidencia y archivar el caso, porque una vez restablecido el servicio la causa raíz deja de ser relevante.",
+     "Aplicar en producción la solución definitiva en cuanto se conozca, sin ventana ni plan de reversión, para ganar tiempo.",
+     "Abrir el problema, registrar el error conocido y su rodeo en la KEDB y tramitar la solución definitiva por gestión de cambios."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §2.3.3, §2.4.2",
+    "e": "Restablecer no es resolver la causa: la gestión de problemas analiza la causa raíz, la KEDB documenta el rodeo y la solución definitiva entra como cambio con evaluación de riesgo, ventana y plan de reversión."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el piloto, varios técnicos comparten una misma cuenta para conectarse a los puestos. ¿Qué exigencia incumple esa práctica?",
+    "o": [
+     "La identificación nominal y, con ella, la trazabilidad: las actuaciones dejan de ser atribuibles a una persona.",
+     "La disponibilidad, porque una cuenta compartida se bloquea antes por los intentos fallidos de acceso.",
+     "La exactitud de los datos, porque varios técnicos pueden modificar a la vez los expedientes del usuario."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §3.1.1",
+    "e": "Con cuentas compartidas no puede saberse quién hizo cada actuación, de modo que ni se puede auditar ni exigir responsabilidad: se pierde la trazabilidad del ENS."
+   },
+   {
+    "q": "¿Cómo se corrige el hallazgo de las cuentas compartidas?",
+    "o": [
+     "Manteniendo la cuenta común pero cambiando su contraseña cada mes y comunicándola solo a los técnicos que estén de guardia ese mes.",
+     "Manteniendo la cuenta común y anotando en una hoja aparte qué técnico la ha utilizado en cada turno de trabajo del servicio de soporte.",
+     "Con cuentas nominales del directorio corporativo, autenticación multifactor para quien controla en remoto y perfiles por rol con alcance limitado."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §3.1.1",
+    "e": "La corrección es estructural: identidad nominal, segundo factor para el perfil con capacidad de control remoto, separación de cuentas y RBAC con alcance limitado a los equipos que corresponden a cada técnico."
+   },
+   {
+    "q": "El 18 % de las sesiones registradas no tiene tique asociado. ¿Qué revela este hallazgo?",
+    "o": [
+     "Un simple defecto de los indicadores del servicio, sin consecuencias en materia de seguridad ni de protección de datos.",
+     "Accesos sin justificación registrada, que afectan a la trazabilidad del ENS y a la limitación de la finalidad del RGPD.",
+     "Un problema de disponibilidad del servicio, porque esas sesiones consumen licencias de la herramienta sin estar previstas."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §3.1.2",
+    "e": "Una sesión sin tique es un acceso a un puesto, y a los datos que contiene, sin causa documentada que lo legitime: es el hallazgo de auditoría más significativo en este ámbito."
+   },
+   {
+    "q": "¿Qué medida corrige de forma efectiva las sesiones sin tique?",
+    "o": [
+     "Configurar la herramienta para exigir un tique válido antes de iniciar la sesión y revisar periódicamente las excepciones.",
+     "Recordar por correo a los técnicos que deben abrir el tique y comprobar su cumplimiento al terminar el contrato.",
+     "Borrar del registro las sesiones sin tique para que el porcentaje no distorsione los informes de seguimiento."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §3.1.2",
+    "e": "La herramienta debe impedir la sesión sin tique válido, y la revisión periódica de sesiones sin tique, accesos desatendidos y fuera de horario, con alertas, completa el control."
+   },
+   {
+    "q": "¿Qué categoría ENS cabe prever para el sistema al que dan soporte los puestos, que trata expedientes con datos personales de ciudadanos?",
+    "o": [
+     "BÁSICA, porque la disponibilidad del soporte al puesto es baja y la categoría la fija la dimensión con el nivel más bajo.",
+     "MEDIA o superior, porque alcanzará al menos nivel medio en confidencialidad, integridad y trazabilidad, y manda el nivel más alto.",
+     "MEDIA en todo caso, porque la categoría es la media aritmética de los niveles asignados a las cinco dimensiones."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §3.2.1",
+    "e": "Cada dimensión se valora como baja, media o alta y la categoría la determina el nivel más alto alcanzado por cualquiera de ellas; los datos personales llevan al menos al nivel medio."
+   },
+   {
+    "q": "¿Qué debe exigir el pliego respecto del registro de la actividad de las sesiones de asistencia?",
+    "o": [
+     "Guardarlo en el propio puesto asistido, para que el empleado pueda consultarlo cuando quiera y lo conserve mientras utilice ese mismo equipo.",
+     "Que lo custodie y lo audite el mismo administrador de la herramienta de asistencia, para que las revisiones de los registros sean más ágiles.",
+     "Protegerlo frente a manipulación, también del administrador, centralizarlo en un sistema independiente, con hora común y plazo de conservación definido."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §3.1.2, §3.2.1",
+    "e": "El registro solo garantiza la trazabilidad si no puede alterarse ni siquiera por quien administra la herramienta; además, quien administra no debe ser quien audita (segregación de funciones)."
+   },
+   {
+    "q": "La herramienta del licitador usa un servidor de mediación en la nube del propio fabricante. ¿Qué es lo preferible exigir en el pliego?",
+    "o": [
+     "El despliegue del servidor de mediación en las instalaciones del Ayuntamiento o su alojamiento en la Unión Europea.",
+     "Nada adicional, porque el tráfico va cifrado y el fabricante, al no ver los datos, no es encargado del tratamiento.",
+     "La prohibición de toda asistencia remota durante el contrato y la vuelta al soporte presencial en todas las sedes."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §3.2.2",
+    "e": "Por el servidor de mediación pasan las pantallas de los puestos municipales: el proveedor es encargado del tratamiento (art. 28 RGPD) y, si los datos salen del EEE, hay que analizar la transferencia internacional."
+   },
+   {
+    "q": "La propuesta prevé grabar en vídeo todas las sesiones. ¿Cuál es la configuración proporcionada?",
+    "o": [
+     "Grabar todas las sesiones por defecto, porque cuanto más se registre mayor será el nivel de seguridad del sistema.",
+     "No grabar nunca ninguna sesión, porque la LOPDGDD prohíbe todo control sobre los dispositivos de los empleados.",
+     "Grabar solo los accesos de mayor privilegio y los desatendidos, informando antes al personal y a su representación."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · §3.2.2",
+    "e": "Grabarlo todo captura el correo, los documentos y datos de terceros del empleado; la organización puede establecer controles, pero informando antes al personal y a sus representantes (arts. 87-91 LOPDGDD)."
+   },
+   {
+    "q": "Si el contrato se siguiera solo con el número de tiques cerrados por técnico, ¿qué riesgo habría?",
+    "o": [
+     "Ninguno, porque el volumen resuelto por técnico es el indicador más completo de la calidad del servicio.",
+     "Que se premie cerrar rápido y mal, por lo que debe contrastarse con la tasa de reapertura y la satisfacción.",
+     "Que la tasa de reapertura baje de forma artificial, porque los tiques cerrados ya no pueden volver a abrirse."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §3.3.1",
+    "e": "Un indicador aislado siempre se puede maximizar a costa del servicio: la productividad debe equilibrarse con la reapertura, que detecta cierres prematuros, y con la satisfacción."
+   },
+   {
+    "q": "¿Cómo debe informarse el cumplimiento del SLA en el seguimiento del contrato?",
+    "o": [
+     "Por separado para respuesta y para resolución y segmentado por prioridad, porque la media global oculta lo crítico.",
+     "Como una única media global de todos los tiques del mes, que es la cifra que mejor resume el servicio prestado.",
+     "Solo mediante el tiempo de respuesta, porque el de resolución depende del usuario y no es imputable al proveedor."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · §3.3.1",
+    "e": "Una media global puede esconder un mal comportamiento en las incidencias críticas; además, vigilar solo el SLA incentiva abusar del estado «en espera del usuario» para detener el reloj."
+   }
+  ]
+ }
+]

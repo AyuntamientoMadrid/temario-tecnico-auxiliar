@@ -1,0 +1,63 @@
+<svg aria-label="Línea temporal de un incidente con las cuatro fases del artículo 8 del ENS: prevención antes del incidente, detección en el momento en que ocurre, respuesta para contener y restaurar, y conservación que se prolonga durante todo el ciclo vital de la información digital y enlaza con el Esquema Nacional de Interoperabilidad" role="img" viewbox="0 0 680 362" xmlns="http://www.w3.org/2000/svg">
+<style>.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}.k6{font:700 10px system-ui,sans-serif;fill:#0055a0}.d6{font:8.5px system-ui,sans-serif;fill:#333}.n6{font:8.5px system-ui,sans-serif;fill:#666}.w6{font:700 10.5px system-ui,sans-serif;fill:#fff}.wd6{font:8px system-ui,sans-serif;fill:#fff}.r6{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}.g6{font:700 9px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h6" text-anchor="middle" x="340" y="19">Las cuatro fases del artículo 8 sobre la línea de tiempo de un incidente</text>
+<text class="n6" text-anchor="middle" x="340" y="35">Rúbrica de 2022. En el RD 3/2010 era «prevención, reacción y recuperación»: se añadieron DETECCIÓN y CONSERVACIÓN</text>
+<line stroke="#5a6b7c" stroke-width="1.4" x1="24" x2="656" y1="60" y2="60"></line>
+<circle cx="248" cy="60" fill="#d13c3c" r="5"></circle>
+<text class="r6" text-anchor="middle" x="248" y="52">EL INCIDENTE OCURRE</text>
+<text class="n6" x="30" y="52">antes</text>
+<text class="n6" text-anchor="end" x="650" y="52">después, durante años</text>
+<rect fill="#0055a0" height="74" rx="4" width="212" x="24" y="70"></rect>
+<text class="w6" text-anchor="middle" x="130" y="88">1 · PREVENCIÓN</text>
+<text class="wd6" text-anchor="middle" x="130" y="102">Que el incidente no ocurra. Puede incorporar</text>
+<text class="wd6" text-anchor="middle" x="130" y="113">DISUASIÓN y REDUCCIÓN DE LA EXPOSICIÓN</text>
+<text class="wd6" text-anchor="middle" x="130" y="127.5">op.exp.2 configuración · op.exp.4 parcheo</text>
+<text class="wd6" text-anchor="middle" x="130" y="139">op.acc.* accesos · mp.com.1 perímetro</text>
+<rect fill="#e89822" height="74" rx="4" width="128" x="240" y="70"></rect>
+<text class="w6" text-anchor="middle" x="304" y="88">2 · DETECCIÓN</text>
+<text class="wd6" text-anchor="middle" x="304" y="102">Descubrir la presencia</text>
+<text class="wd6" text-anchor="middle" x="304" y="113">de un CIBERINCIDENTE</text>
+<text class="wd6" text-anchor="middle" x="304" y="127.5">op.mon.1 intrusión</text>
+<text class="wd6" text-anchor="middle" x="304" y="139">op.exp.8 registro de actividad</text>
+<rect fill="#d13c3c" height="74" rx="4" width="128" x="372" y="70"></rect>
+<text class="w6" text-anchor="middle" x="436" y="88">3 · RESPUESTA</text>
+<text class="wd6" text-anchor="middle" x="436" y="102">Se gestiona EN TIEMPO</text>
+<text class="wd6" text-anchor="middle" x="436" y="113">OPORTUNO. Restauración</text>
+<text class="wd6" text-anchor="middle" x="436" y="127.5">op.exp.7 gestión de incidentes</text>
+<text class="wd6" text-anchor="middle" x="436" y="139">mp.info.6 copias de seguridad</text>
+<rect fill="#2d8659" height="74" rx="4" width="152" x="504" y="70"></rect>
+<text class="w6" text-anchor="middle" x="580" y="88">4 · CONSERVACIÓN</text>
+<text class="wd6" text-anchor="middle" x="580" y="102">Durante TODO EL CICLO VITAL</text>
+<text class="wd6" text-anchor="middle" x="580" y="113">de la información digital</text>
+<text class="wd6" text-anchor="middle" x="580" y="125.5">base de la PRESERVACIÓN DEL</text>
+<text class="wd6" text-anchor="middle" x="580" y="137">PATRIMONIO DIGITAL</text>
+<rect fill="#e6f2ec" height="46" rx="4" stroke="#2d8659" stroke-width="1.2" width="632" x="24" y="152"></rect>
+<text class="g6" x="36" y="169">AQUÍ EMPIEZA EL PUENTE CON EL ENI:</text>
+<text class="d6" x="226" y="169">la conservación que el ENS enuncia como principio la desarrolla el capítulo X del ENI</text>
+<text class="d6" x="36" y="182">(arts. 21 a 24, trece medidas y repositorios electrónicos), y el art. 22 del ENI devuelve la pelota: para conservar «se aplicará lo previsto</text>
+<text class="d6" x="36" y="192.5">en el Esquema Nacional de Seguridad», con sus principios básicos, sus requisitos mínimos y la categorización de los sistemas.</text>
+<text class="k6" x="24" y="214">EL CIRCUITO DE UN INCIDENTE REAL EN UNA ADMINISTRACIÓN</text>
+<rect fill="#eef4fa" height="48" rx="4" width="150" x="24" y="222"></rect>
+<text class="k6" text-anchor="middle" x="99" y="238">SE DETECTA</text>
+<text class="d6" text-anchor="middle" x="99" y="252">Sonda de vigilancia o</text>
+<text class="d6" text-anchor="middle" x="99" y="263">aviso de un usuario</text>
+<path d="M174 246 L194 246" fill="none" marker-end="url(#a6)" stroke="#5a6b7c" stroke-width="1.6"></path>
+<defs><marker id="a6" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3.5"><path d="M0 0 L7 3.5 L0 7 z" fill="#5a6b7c"></path></marker></defs>
+<rect fill="#eef4fa" height="48" rx="4" width="150" x="196" y="222"></rect>
+<text class="k6" text-anchor="middle" x="271" y="238">SE NOTIFICA</text>
+<text class="d6" text-anchor="middle" x="271" y="252">Al CCN-CERT si el impacto</text>
+<text class="d6" text-anchor="middle" x="271" y="263">es significativo (art. 33.2)</text>
+<path d="M346 246 L366 246" fill="none" marker-end="url(#a6)" stroke="#5a6b7c" stroke-width="1.6"></path>
+<rect fill="#eef4fa" height="48" rx="4" width="140" x="368" y="222"></rect>
+<text class="k6" text-anchor="middle" x="438" y="238">SE CONTIENE</text>
+<text class="d6" text-anchor="middle" x="438" y="252">Aislar, erradicar</text>
+<text class="d6" text-anchor="middle" x="438" y="263">y restaurar desde copia</text>
+<path d="M508 246 L528 246" fill="none" marker-end="url(#a6)" stroke="#5a6b7c" stroke-width="1.6"></path>
+<rect fill="#fdf3e3" height="48" rx="4" stroke="#e89822" stroke-width="1.2" width="126" x="530" y="222"></rect>
+<text class="k6" text-anchor="middle" x="593" y="238">SE RECONECTA</text>
+<text class="d6" text-anchor="middle" x="593" y="252">El CCN-CERT determina</text>
+<text class="d6" text-anchor="middle" x="593" y="263">el riesgo (art. 33.6)</text>
+<rect fill="#eef4fa" height="24" rx="3" width="632" x="24" y="278"></rect>
+<text class="n6" text-anchor="middle" x="340" y="294">El incidente no acaba al restaurar: hay que comprobar que lo recuperado CONSERVA SUS FIRMAS Y METADATOS, es decir, que sigue valiendo</text>
+<text class="n6" x="24" y="336">[Fuente: ENS, arts. 8, 33.2 y 33.6, y anexo II · ENI, arts. 21 y 22]</text>
+</svg>

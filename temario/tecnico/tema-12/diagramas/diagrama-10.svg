@@ -1,0 +1,9 @@
+<svg aria-label="Regla 3-2-1 de copias de seguridad: tres copias de los datos, en dos tipos de soporte distintos, con una copia fuera de las instalaciones" class="svd10" role="img" viewbox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd10 .t{font:700 34px system-ui,sans-serif;fill:#fff}.svd10 .tt{font:700 15px system-ui,sans-serif;fill:#fff}.svd10 .s{font:12px system-ui,sans-serif;fill:#fff}.svd10 .h{font:700 14px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="330" y="30">Estrategia mínima de copias de seguridad</text>
+<rect fill="#0055a0" height="180" rx="12" width="180" x="40" y="60"></rect><text class="t" text-anchor="middle" x="130" y="128">3</text><text class="tt" text-anchor="middle" x="130" y="168">COPIAS</text><text class="s" text-anchor="middle" x="130" y="196">de los datos</text><text class="s" text-anchor="middle" x="130" y="216">(el original + 2)</text>
+<rect fill="#2d8659" height="180" rx="12" width="180" x="240" y="60"></rect><text class="t" text-anchor="middle" x="330" y="128">2</text><text class="tt" text-anchor="middle" x="330" y="168">SOPORTES</text><text class="s" text-anchor="middle" x="330" y="196">de tipo distinto</text><text class="s" text-anchor="middle" x="330" y="216">(disco + cinta/nube)</text>
+<rect fill="#e89822" height="180" rx="12" width="180" x="440" y="60"></rect><text class="t" text-anchor="middle" x="530" y="128">1</text><text class="tt" text-anchor="middle" x="530" y="168">FUERA</text><text class="s" text-anchor="middle" x="530" y="196">copia externa</text><text class="s" text-anchor="middle" x="530" y="216">(offsite)</text>
+<text class="h" text-anchor="middle" x="330" y="270">Y verificar periódicamente que la restauración funciona</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="652" y="294">[Fuente: buenas prácticas de backup]</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg aria-label="Comparativa entre criptografía simétrica, criptografía asimétrica y funciones hash, indicando número y tipo de claves, velocidad, propiedades de seguridad que garantiza cada una, algoritmos vigentes y algoritmos proscritos, y la fórmula del número de claves necesarias en una red de n participantes" role="img" viewbox="0 0 680 364" xmlns="http://www.w3.org/2000/svg">
+<style>.t13{font:700 11px system-ui,sans-serif;fill:#fff}.s13{font:8.5px system-ui,sans-serif;fill:#fff}.d13{font:9px system-ui,sans-serif;fill:#333}.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.k13{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n13{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h13" text-anchor="middle" x="340" y="20">Tres primitivas, tres funciones distintas</text>
+<rect fill="#0055a0" height="38" rx="5" width="208" x="20" y="34"></rect><text class="t13" text-anchor="middle" x="124" y="52">SIMÉTRICA</text><text class="s13" text-anchor="middle" x="124" y="66">una sola clave secreta</text>
+<rect fill="#2d8659" height="38" rx="5" width="208" x="236" y="34"></rect><text class="t13" text-anchor="middle" x="340" y="52">ASIMÉTRICA</text><text class="s13" text-anchor="middle" x="340" y="66">par pública / privada</text>
+<rect fill="#e89822" height="38" rx="5" width="208" x="452" y="34"></rect><text class="t13" text-anchor="middle" x="556" y="52">FUNCIÓN HASH</text><text class="s13" text-anchor="middle" x="556" y="66">SIN clave</text>
+<text class="k13" x="20" y="90">VELOCIDAD</text>
+<rect fill="#eef3f8" height="24" rx="4" width="208" x="20" y="96"></rect><text class="d13" text-anchor="middle" x="124" y="112">Muy rápida — grandes volúmenes</text>
+<rect fill="#fbeaea" height="24" rx="4" width="208" x="236" y="96"></rect><text class="d13" text-anchor="middle" x="340" y="112">Lenta — solo para poco dato</text>
+<rect fill="#eef3f8" height="24" rx="4" width="208" x="452" y="96"></rect><text class="d13" text-anchor="middle" x="556" y="112">Muy rápida</text>
+<text class="k13" x="20" y="138">QUÉ GARANTIZA</text>
+<rect fill="#f5f5f5" height="38" rx="4" width="208" x="20" y="144"></rect><text class="d13" text-anchor="middle" x="124" y="160">Confidencialidad</text><text class="n13" text-anchor="middle" x="124" y="175">NO da no repudio: la clave la saben dos</text>
+<rect fill="#f5f5f5" height="38" rx="4" width="208" x="236" y="144"></rect><text class="d13" text-anchor="middle" x="340" y="160">Confidencialidad, autenticidad</text><text class="n13" text-anchor="middle" x="340" y="175">ÚNICA que da NO REPUDIO</text>
+<rect fill="#f5f5f5" height="38" rx="4" width="208" x="452" y="144"></rect><text class="d13" text-anchor="middle" x="556" y="160">Integridad</text><text class="n13" text-anchor="middle" x="556" y="175">NO cifra y NO es reversible</text>
+<text class="k13" x="20" y="200">ALGORITMOS</text>
+<rect fill="#eef3f8" height="38" rx="4" width="208" x="20" y="206"></rect><text class="d13" text-anchor="middle" x="124" y="222">AES 128/192/256, ChaCha20</text><text class="n13" text-anchor="middle" x="124" y="237">Proscritos: DES (56 bits), RC4</text>
+<rect fill="#eef3f8" height="38" rx="4" width="208" x="236" y="206"></rect><text class="d13" text-anchor="middle" x="340" y="222">RSA, DH/ECDH, ECDSA, EdDSA</text><text class="n13" text-anchor="middle" x="340" y="237">ECC 256 bits ≈ RSA 3.072 bits</text>
+<rect fill="#eef3f8" height="38" rx="4" width="208" x="452" y="206"></rect><text class="d13" text-anchor="middle" x="556" y="222">SHA-256/384/512, SHA-3</text><text class="n13" text-anchor="middle" x="556" y="237">Rotos: MD5 y SHA-1</text>
+<rect fill="#0055a0" height="56" rx="4" width="316" x="20" y="256"></rect>
+<text class="t13" text-anchor="middle" x="178" y="274">NÚMERO DE CLAVES PARA n USUARIOS</text>
+<text class="s13" text-anchor="middle" x="178" y="291">Simétrica: n(n−1)/2 · Asimétrica: 2n</text>
+<text class="s13" text-anchor="middle" x="178" y="306">Con n = 100 → 4.950 frente a 200</text>
+<rect fill="#2d8659" height="56" rx="4" width="316" x="344" y="256"></rect>
+<text class="t13" text-anchor="middle" x="502" y="274">QUÉ CLAVE SE USA</text>
+<text class="s13" text-anchor="middle" x="502" y="291">Confidencialidad → PÚBLICA del receptor</text>
+<text class="s13" text-anchor="middle" x="502" y="306">Firma → PRIVADA del emisor</text>
+<rect fill="#fdf3e3" height="22" rx="4" width="640" x="20" y="322"></rect>
+<text class="d13" text-anchor="middle" x="340" y="337">Un HMAC da integridad y autenticidad, pero NO da no repudio: la clave es compartida y cualquiera de los dos pudo generarlo</text>
+<text class="n13" text-anchor="end" x="670" y="356">[Fuente: FIPS197; FIPS180; FIPS186; RFC2104]</text>
+</svg>

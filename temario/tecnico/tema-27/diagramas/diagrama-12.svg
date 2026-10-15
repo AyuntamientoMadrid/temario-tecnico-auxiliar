@@ -1,0 +1,64 @@
+<svg aria-label="Tabla visual de diagnóstico por recurso: para CPU, memoria, almacenamiento y red se indican las métricas clave, la herramienta de Linux y de Windows y el síntoma de saturación. Debajo, la advertencia de que sin línea base no hay diagnóstico posible" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t12{font:700 10.5px system-ui,sans-serif;fill:#fff}.s12{font:9px system-ui,sans-serif;fill:#fff}.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}.k12{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d12{font:9px system-ui,sans-serif;fill:#444}</style>
+<text class="h12" text-anchor="middle" x="340" y="20">Los cuatro recursos: qué mirar y qué significa</text>
+<rect fill="#0055a0" height="26" rx="4" width="104" x="16" y="32"></rect>
+<text class="t12" text-anchor="middle" x="68" y="50">RECURSO</text>
+<rect fill="#0055a0" height="26" rx="4" width="216" x="124" y="32"></rect>
+<text class="t12" text-anchor="middle" x="232" y="50">MÉTRICAS CLAVE</text>
+<rect fill="#0055a0" height="26" rx="4" width="164" x="344" y="32"></rect>
+<text class="t12" text-anchor="middle" x="426" y="50">HERRAMIENTA</text>
+<rect fill="#0055a0" height="26" rx="4" width="152" x="512" y="32"></rect>
+<text class="t12" text-anchor="middle" x="588" y="50">SÍNTOMA DE SATURACIÓN</text>
+<rect fill="#2d8659" height="58" rx="4" width="104" x="16" y="62"></rect>
+<text class="t12" text-anchor="middle" x="68" y="88">CPU</text>
+<text class="s12" text-anchor="middle" x="68" y="106">cálculo</text>
+<rect fill="#f0f4f8" height="58" rx="4" stroke="#ccc" width="216" x="124" y="62"></rect>
+<text class="d12" text-anchor="middle" x="232" y="80">% usuario / % sistema / % espera E/S</text>
+<text class="d12" text-anchor="middle" x="232" y="96">carga media frente a nº de núcleos</text>
+<text class="d12" text-anchor="middle" x="232" y="112">cambios de contexto e interrupciones</text>
+<rect fill="#f0f4f8" height="58" rx="4" stroke="#ccc" width="164" x="344" y="62"></rect>
+<text class="d12" text-anchor="middle" x="426" y="86">top · uptime · mpstat</text>
+<text class="d12" text-anchor="middle" x="426" y="104">Monitor de rendimiento</text>
+<rect fill="#fdeaea" height="58" rx="4" stroke="#d13c3c" width="152" x="512" y="62"></rect>
+<text class="d12" text-anchor="middle" x="588" y="86">Carga media &gt;&gt; núcleos</text>
+<text class="d12" text-anchor="middle" x="588" y="104">y cola de ejecución larga</text>
+<rect fill="#e89822" height="58" rx="4" width="104" x="16" y="124"></rect>
+<text class="t12" text-anchor="middle" x="68" y="150">MEMORIA</text>
+<text class="s12" text-anchor="middle" x="68" y="168">espacio de trabajo</text>
+<rect fill="#f0f4f8" height="58" rx="4" stroke="#ccc" width="216" x="124" y="124"></rect>
+<text class="d12" text-anchor="middle" x="232" y="142">memoria DISPONIBLE (no «libre»)</text>
+<text class="d12" text-anchor="middle" x="232" y="158">tasa de intercambio si/so</text>
+<text class="d12" text-anchor="middle" x="232" y="174">fallos de página mayores</text>
+<rect fill="#f0f4f8" height="58" rx="4" stroke="#ccc" width="164" x="344" y="124"></rect>
+<text class="d12" text-anchor="middle" x="426" y="148">free · vmstat</text>
+<text class="d12" text-anchor="middle" x="426" y="166">Available MBytes</text>
+<rect fill="#fdeaea" height="58" rx="4" stroke="#d13c3c" width="152" x="512" y="124"></rect>
+<text class="d12" text-anchor="middle" x="588" y="148">Hiperpaginación:</text>
+<text class="d12" text-anchor="middle" x="588" y="166">si/so altos y CPU ociosa</text>
+<rect fill="#0055a0" height="58" rx="4" width="104" x="16" y="186"></rect>
+<text class="t12" text-anchor="middle" x="68" y="212">DISCO / E/S</text>
+<text class="s12" text-anchor="middle" x="68" y="230">persistencia</text>
+<rect fill="#f0f4f8" height="58" rx="4" stroke="#ccc" width="216" x="124" y="186"></rect>
+<text class="d12" text-anchor="middle" x="232" y="204">espacio libre Y inodos libres</text>
+<text class="d12" text-anchor="middle" x="232" y="220">IOPS, MB/s, latencia y cola</text>
+<text class="d12" text-anchor="middle" x="232" y="236">% de utilización del dispositivo</text>
+<rect fill="#f0f4f8" height="58" rx="4" stroke="#ccc" width="164" x="344" y="186"></rect>
+<text class="d12" text-anchor="middle" x="426" y="210">df -h · df -i · iostat -xz</text>
+<text class="d12" text-anchor="middle" x="426" y="228">Avg. Disk sec/Transfer</text>
+<rect fill="#fdeaea" height="58" rx="4" stroke="#d13c3c" width="152" x="512" y="186"></rect>
+<text class="d12" text-anchor="middle" x="588" y="210">Latencia creciente y</text>
+<text class="d12" text-anchor="middle" x="588" y="228">utilización cerca del 100 %</text>
+<rect fill="#7a3b8f" height="44" rx="4" width="104" x="16" y="248"></rect>
+<text class="t12" text-anchor="middle" x="68" y="268">RED</text>
+<text class="s12" text-anchor="middle" x="68" y="284">ver Tema 30</text>
+<rect fill="#f0f4f8" height="44" rx="4" stroke="#ccc" width="216" x="124" y="248"></rect>
+<text class="d12" text-anchor="middle" x="232" y="266">ancho de banda, errores,</text>
+<text class="d12" text-anchor="middle" x="232" y="282">descartes y retransmisiones</text>
+<rect fill="#f0f4f8" height="44" rx="4" stroke="#ccc" width="164" x="344" y="248"></rect>
+<text class="d12" text-anchor="middle" x="426" y="274">ip -s link · ss · netstat</text>
+<rect fill="#fdeaea" height="44" rx="4" stroke="#d13c3c" width="152" x="512" y="248"></rect>
+<text class="d12" text-anchor="middle" x="588" y="274">Descartes y reintentos</text>
+<rect fill="#0055a0" height="26" rx="5" width="648" x="16" y="300"></rect>
+<text class="t12" text-anchor="middle" x="340" y="318">Sin LÍNEA BASE no hay diagnóstico: «va lento» solo significa algo comparado con algo</text>
+<text style="font:9.5px system-ui;fill:#666" text-anchor="end" x="670" y="336">[Fuente: MAN-PAGES; MS-PERF]</text>
+</svg>

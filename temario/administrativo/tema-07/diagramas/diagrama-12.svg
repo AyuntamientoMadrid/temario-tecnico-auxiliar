@@ -1,0 +1,32 @@
+<svg aria-label="Mapa resumen. El procedimiento (iniciación, ordenación, instrucción, terminación) produce el acto administrativo, que se presume válido y es ejecutivo. Frente al acto caben recursos administrativos (alzada si no agota la vía, reposición si la agota, revisión extraordinaria si es firme). La propia Administración puede revisar de oficio actos nulos (artículo 106) o declarar lesivos los anulables (artículo 107). Agotada la vía administrativa, el control corresponde a la jurisdicción contencioso-administrativa" class="svd12" role="img" viewbox="0 0 720 360" xmlns="http://www.w3.org/2000/svg">
+<style>.svd12 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd12 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd12 .s{font:10px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="46" rx="8" width="360" x="180" y="16"></rect>
+<text class="h" x="360" y="36">1 · PROCEDIMIENTO (Tít. IV, arts. 53-105)</text>
+<text class="h" style="font-weight:400;font-size:11px" x="360" y="54">Iniciación → Ordenación → Instrucción → Terminación</text>
+<path d="M360 62 L360 80" marker-end="url(#a12)" stroke="#0055a0" stroke-width="2"></path>
+<rect fill="#0055a0" height="46" rx="8" width="300" x="210" y="82"></rect>
+<text class="h" x="360" y="102">2 · ACTO ADMINISTRATIVO (Tít. III)</text>
+<text class="h" style="font-weight:400;font-size:11px" x="360" y="120">se presume válido (art. 39) y es ejecutivo (art. 38)</text>
+<path d="M360 128 L360 146" marker-end="url(#a12)" stroke="#0055a0" stroke-width="2"></path>
+<rect fill="#d13c3c" height="30" rx="8" width="600" x="60" y="148"></rect>
+<text class="h" x="360" y="168">3 · RECURSOS ADMINISTRATIVOS (Tít. V, cap. II)</text>
+<rect fill="#fbe9e7" height="58" rx="6" stroke="#d13c3c" width="190" x="60" y="184"></rect>
+<text class="t" style="font-weight:700" x="155" y="206">Alzada</text>
+<text class="s" x="155" y="226">no agota · superior · 1 mes</text>
+<rect fill="#e8f5ee" height="58" rx="6" stroke="#2d8659" width="190" x="265" y="184"></rect>
+<text class="t" style="font-weight:700" x="360" y="206">Reposición</text>
+<text class="s" x="360" y="226">agota · mismo órgano · potestativo</text>
+<rect fill="#e8f0f8" height="58" rx="6" stroke="#0055a0" width="190" x="470" y="184"></rect>
+<text class="t" style="font-weight:700" x="565" y="206">Revisión extraord.</text>
+<text class="s" x="565" y="226">firme · causas tasadas</text>
+<rect fill="#fff5e6" height="56" rx="8" stroke="#e89822" width="290" x="60" y="258"></rect>
+<text class="t" style="font-weight:700;fill:#b5740f" x="205" y="280">4 · REVISIÓN DE OFICIO (cap. I)</text>
+<text class="s" x="205" y="300">Nulos: art. 106 · Lesividad anulables: art. 107</text>
+<rect fill="#003d75" height="56" rx="8" width="290" x="370" y="258"></rect>
+<text class="h" x="515" y="280">5 · VÍA JUDICIAL</text>
+<text class="h" style="font-weight:400;font-size:11px" x="515" y="300">contencioso-administrativa (art. 106 CE)</text>
+<path d="M410 242 L410 258" marker-end="url(#a12)" stroke="#0055a0" stroke-width="2"></path>
+<text class="s" style="font-weight:700;fill:#0055a0" x="360" y="334">Agotada la vía administrativa → control de los tribunales</text>
+<text class="s" x="360" y="350">El procedimiento es garantía del ciudadano y cauce de la Administración (art. 105 CE)</text>
+<defs><marker id="a12" markerheight="8" markerwidth="8" orient="auto" refx="6" refy="3"><path d="M0 0 L6 3 L0 6 Z" fill="#0055a0"></path></marker></defs>
+</svg>

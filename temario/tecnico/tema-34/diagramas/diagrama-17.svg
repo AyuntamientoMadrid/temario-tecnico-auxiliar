@@ -1,0 +1,37 @@
+<svg aria-label="Comparación entre TCP y UDP: TCP es el protocolo 6, orientado a conexión, fiable, con cabecera de 20 a 60 octetos, con control de flujo y de congestión y sin multidifusión; UDP es el protocolo 17, sin conexión, no fiable, con cabecera fija de 8 octetos, sin control de flujo ni de congestión y con multidifusión. Se acompaña de una tabla con los puertos de los servicios más frecuentes" role="img" viewbox="0 0 680 366" xmlns="http://www.w3.org/2000/svg">
+<style>.t17{font:700 9.5px system-ui,sans-serif;fill:#fff}.d17{font:8.5px system-ui,sans-serif;fill:#333}.h17{font:700 13px system-ui,sans-serif;fill:#0055a0}.k17{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n17{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h17" text-anchor="middle" x="340" y="20">TCP frente a UDP, y los puertos que hay que saber</text>
+<rect fill="#5a6b7d" height="20" rx="3" width="212" x="24" y="34"></rect><text class="t17" text-anchor="middle" x="130" y="48">CRITERIO</text>
+<rect fill="#0055a0" height="20" rx="3" width="208" x="238" y="34"></rect><text class="t17" text-anchor="middle" x="342" y="48">TCP — protocolo 6</text>
+<rect fill="#e89822" height="20" rx="3" width="208" x="448" y="34"></rect><text class="t17" text-anchor="middle" x="552" y="48">UDP — protocolo 17</text>
+<rect fill="#eef3f8" height="18" width="632" x="24" y="56"></rect>
+<text class="d17" x="34" y="69">Modo</text><text class="d17" x="248" y="69">Orientado a conexión</text><text class="d17" x="458" y="69">No orientado a conexión</text>
+<rect fill="#fff" height="18" width="632" x="24" y="75"></rect>
+<text class="d17" x="34" y="88">Fiabilidad</text><text class="d17" x="248" y="88">Sí: acuse, retransmisión y orden</text><text class="d17" x="458" y="88">No: entrega de mejor esfuerzo</text>
+<rect fill="#eef3f8" height="18" width="632" x="24" y="94"></rect>
+<text class="d17" x="34" y="107">Cabecera</text><text class="d17" x="248" y="107">20 octetos mínimo, 60 máximo</text><text class="d17" x="458" y="107">8 octetos fijos, cuatro campos</text>
+<rect fill="#fff" height="18" width="632" x="24" y="113"></rect>
+<text class="d17" x="34" y="126">Unidad de datos</text><text class="d17" x="248" y="126">Segmento; flujo de octetos</text><text class="d17" x="458" y="126">Datagrama; conserva los mensajes</text>
+<rect fill="#eef3f8" height="18" width="632" x="24" y="132"></rect>
+<text class="d17" x="34" y="145">Control de flujo y congestión</text><text class="d17" x="248" y="145">Sí, los dos</text><text class="d17" x="458" y="145">Ninguno de los dos</text>
+<rect fill="#fff" height="18" width="632" x="24" y="151"></rect>
+<text class="d17" x="34" y="164">Difusión y multidifusión</text><text class="d17" x="248" y="164">No: es punto a punto</text><text class="d17" x="458" y="164">Sí</text>
+<rect fill="#eef3f8" height="18" width="632" x="24" y="170"></rect>
+<text class="d17" x="34" y="183">Uso típico</text><text class="d17" x="248" y="183">Web, correo, ficheros, terminal</text><text class="d17" x="458" y="183">Voz, vídeo, DNS, DHCP, SNMP</text>
+<text class="k17" x="24" y="206">PUERTOS DE MEMORIZACIÓN OBLIGATORIA</text>
+<rect fill="#0055a0" height="20" rx="3" width="632" x="24" y="214"></rect>
+<text class="t17" x="34" y="228">PUERTO</text><text class="t17" x="120" y="228">SERVICIO</text><text class="t17" x="250" y="228">PUERTO</text><text class="t17" x="336" y="228">SERVICIO</text><text class="t17" x="466" y="228">PUERTO</text><text class="t17" x="552" y="228">SERVICIO</text>
+<rect fill="#eef3f8" height="17" width="632" x="24" y="236"></rect>
+<text class="d17" x="34" y="248">20 / 21</text><text class="d17" x="120" y="248">FTP datos / control</text><text class="d17" x="250" y="248">110</text><text class="d17" x="336" y="248">POP3</text><text class="d17" x="466" y="248">443</text><text class="d17" x="552" y="248">HTTPS</text>
+<rect fill="#fff" height="17" width="632" x="24" y="254"></rect>
+<text class="d17" x="34" y="266">22</text><text class="d17" x="120" y="266">SSH, SCP y SFTP</text><text class="d17" x="250" y="266">123</text><text class="d17" x="336" y="266">NTP (UDP)</text><text class="d17" x="466" y="266">445</text><text class="d17" x="552" y="266">SMB</text>
+<rect fill="#eef3f8" height="17" width="632" x="24" y="272"></rect>
+<text class="d17" x="34" y="284">23</text><text class="d17" x="120" y="284">Telnet (en claro)</text><text class="d17" x="250" y="284">143</text><text class="d17" x="336" y="284">IMAP</text><text class="d17" x="466" y="284">465 / 587</text><text class="d17" x="552" y="284">SMTP seguro / envío</text>
+<rect fill="#fff" height="17" width="632" x="24" y="290"></rect>
+<text class="d17" x="34" y="302">25</text><text class="d17" x="120" y="302">SMTP</text><text class="d17" x="250" y="302">161 / 162</text><text class="d17" x="336" y="302">SNMP (UDP)</text><text class="d17" x="466" y="302">636</text><text class="d17" x="552" y="302">LDAPS</text>
+<rect fill="#eef3f8" height="17" width="632" x="24" y="308"></rect>
+<text class="d17" x="34" y="320">53</text><text class="d17" x="120" y="320">DNS (UDP y TCP)</text><text class="d17" x="250" y="320">389</text><text class="d17" x="336" y="320">LDAP</text><text class="d17" x="466" y="320">993 / 995</text><text class="d17" x="552" y="320">IMAPS / POP3S</text>
+<rect fill="#fff" height="17" width="632" x="24" y="326"></rect>
+<text class="d17" x="34" y="338">67 / 68</text><text class="d17" x="120" y="338">DHCP servidor / cliente</text><text class="d17" x="250" y="338">80</text><text class="d17" x="336" y="338">HTTP</text><text class="d17" x="466" y="338">3389</text><text class="d17" x="552" y="338">RDP</text>
+<text class="n17" text-anchor="end" x="670" y="360">[Fuente: RFC 9293, RFC 768, registros de IANA]</text>
+</svg>

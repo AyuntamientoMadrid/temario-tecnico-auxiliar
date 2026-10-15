@@ -1,0 +1,35 @@
+<svg aria-label="Intercambio DHCP en cuatro mensajes: el cliente emite un descubrimiento por difusión, el servidor responde con una oferta, el cliente solicita formalmente una de las ofertas y el servidor confirma con un acuse. La concesión es temporal: se renueva al cincuenta por ciento del tiempo y se reenlaza al ochenta y siete coma cinco por ciento. En redes con varias subredes hace falta un agente de retransmisión" role="img" viewbox="0 0 680 346" xmlns="http://www.w3.org/2000/svg">
+<style>.t19{font:700 9.5px system-ui,sans-serif;fill:#fff}.d19{font:8.5px system-ui,sans-serif;fill:#333}.h19{font:700 13px system-ui,sans-serif;fill:#0055a0}.k19{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n19{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<defs><marker id="a19" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="h19" text-anchor="middle" x="340" y="20">DHCP · el intercambio DORA y la concesión</text>
+<rect fill="#0055a0" height="22" rx="3" width="120" x="40" y="34"></rect><text class="t19" text-anchor="middle" x="100" y="49">Cliente (puerto 68)</text>
+<rect fill="#2d8659" height="22" rx="3" width="140" x="500" y="34"></rect><text class="t19" text-anchor="middle" x="570" y="49">Servidor (puerto 67)</text>
+<path d="M100,56 L100,182" stroke="#8aa8c4" stroke-width="1.2"></path><path d="M570,56 L570,182" stroke="#8aa8c4" stroke-width="1.2"></path>
+<path d="M102,80 L566,80" marker-end="url(#a19)" stroke="#0055a0" stroke-width="1.4"></path>
+<text class="d19" text-anchor="middle" x="334" y="74">1 · DISCOVER — por DIFUSIÓN, el cliente aún no tiene dirección</text>
+<path d="M568,110 L104,110" marker-end="url(#a19)" stroke="#0055a0" stroke-width="1.4"></path>
+<text class="d19" text-anchor="middle" x="334" y="104">2 · OFFER — el servidor ofrece una dirección disponible</text>
+<path d="M102,140 L566,140" marker-end="url(#a19)" stroke="#0055a0" stroke-width="1.4"></path>
+<text class="d19" text-anchor="middle" x="334" y="134">3 · REQUEST — también por difusión, para que los demás retiren su oferta</text>
+<path d="M568,170 L104,170" marker-end="url(#a19)" stroke="#0055a0" stroke-width="1.4"></path>
+<text class="d19" text-anchor="middle" x="334" y="164">4 · ACK — confirmación y entrega de la concesión con su tiempo de vida</text>
+<text class="k19" x="24" y="204">EL CICLO DE LA CONCESIÓN</text>
+<rect fill="#e7f2ec" height="24" rx="3" width="632" x="24" y="212"></rect>
+<rect fill="#2d8659" height="24" rx="3" width="316" x="24" y="212"></rect>
+<rect fill="#e89822" height="24" width="237" x="340" y="212"></rect>
+<rect fill="#d13c3c" height="24" width="79" x="577" y="212"></rect>
+<text class="t19" text-anchor="middle" x="182" y="228">50 % — T1: renovación con su servidor</text>
+<text class="t19" text-anchor="middle" x="458" y="228">87,5 % — T2: reenlace</text>
+<text class="t19" text-anchor="middle" x="616" y="228">expira</text>
+<rect fill="#fdf3e3" height="46" rx="4" width="313" x="24" y="248"></rect>
+<text class="k19" text-anchor="middle" x="180" y="265">AGENTE DE RETRANSMISIÓN</text>
+<text class="d19" text-anchor="middle" x="180" y="280">La difusión no atraviesa encaminadores: hace falta</text>
+<text class="d19" text-anchor="middle" x="180" y="290">un relay en el encaminador de cada subred</text>
+<rect fill="#fbeaea" height="46" rx="4" width="311" x="345" y="248"></rect>
+<text class="k19" text-anchor="middle" x="500" y="265">SI NO HAY SERVIDOR: APIPA</text>
+<text class="d19" text-anchor="middle" x="500" y="280">El cliente se autoasigna una dirección 169.254.x.x</text>
+<text class="d19" text-anchor="middle" x="500" y="290">de enlace local y solo habla con su propio segmento</text>
+<rect fill="none" height="20" rx="3" stroke="#0055a0" stroke-width="1.4" width="632" x="24" y="302"></rect>
+<text class="k19" text-anchor="middle" x="340" y="316">DHCP entrega dirección, máscara, puerta de enlace, DNS y dominio: la configuración completa</text>
+<text class="n19" text-anchor="end" x="670" y="338">[Fuente: RFC 2131, RFC 2132]</text>
+</svg>

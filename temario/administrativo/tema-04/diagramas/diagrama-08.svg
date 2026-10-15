@@ -1,0 +1,22 @@
+<svg aria-label="Estructura administrativa del distrito: el concejal-presidente como jefe superior, el coordinador del distrito y las unidades administrativas, según el artículo 69" role="img" viewbox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .h-box{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .h-root{fill:#0055a0;stroke:#003d75;stroke-width:2}
+    .h-t{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .h-h{font:700 12px system-ui,sans-serif;fill:#003d75;text-anchor:middle}
+    .h-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+    .h-l{stroke:#0055a0;stroke-width:1.5;fill:none}
+  </style>
+<rect class="h-root" height="50" rx="8" width="240" x="230" y="20"></rect>
+<text class="h-t" x="350" y="42">CONCEJAL-PRESIDENTE</text>
+<text class="h-t" style="font-weight:400;font-size:11px" x="350" y="60">jefe superior (art. 69.1)</text>
+<line class="h-l" x1="350" x2="350" y1="70" y2="100"></line>
+<rect class="h-box" height="56" rx="8" width="240" x="230" y="100"></rect>
+<text class="h-h" x="350" y="124">COORDINADOR DEL DISTRITO</text>
+<text class="h-s" x="350" y="142">dirige y coordina los servicios (art. 69.2)</text>
+<line class="h-l" x1="350" x2="350" y1="156" y2="186"></line>
+<rect fill="#e8f0f8" height="80" rx="8" stroke="#0055a0" stroke-width="1.2" width="320" x="190" y="186"></rect>
+<text class="h-h" x="350" y="212">UNIDADES ADMINISTRATIVAS</text>
+<text class="h-s" x="350" y="234">funcionalmente homogéneas</text>
+<text class="h-s" x="350" y="252">se crean/modifican/suprimen vía RPT (art. 69.3)</text>
+</svg>

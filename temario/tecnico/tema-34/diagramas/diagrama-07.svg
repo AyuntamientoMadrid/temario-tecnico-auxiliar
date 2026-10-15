@@ -1,0 +1,44 @@
+<svg aria-label="La demultiplexación usa un campo por nivel: el campo EtherType de la trama indica el protocolo de red, con los valores 0x0800 para IPv4, 0x0806 para ARP y 0x86DD para IPv6; el campo Protocolo de IPv4 o Siguiente cabecera de IPv6 indica el protocolo de transporte, con los valores 1 para ICMP, 6 para TCP y 17 para UDP; y el puerto de destino indica el proceso de aplicación" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t7{font:700 10px system-ui,sans-serif;fill:#fff}.s7{font:8.5px system-ui,sans-serif;fill:#fff}.d7{font:9px system-ui,sans-serif;fill:#333}.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}.k7{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n7{font:8.5px system-ui,sans-serif;fill:#666}.m7{font:700 9px system-ui,sans-serif;fill:#d13c3c}</style>
+<defs><marker id="a7" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#d13c3c"></path></marker></defs>
+<text class="h7" text-anchor="middle" x="340" y="20">Un campo por nivel decide a quién se entrega</text>
+<rect fill="#5a6b7d" height="42" rx="5" width="180" x="30" y="40"></rect>
+<text class="t7" text-anchor="middle" x="120" y="58">Llega una TRAMA</text>
+<text class="s7" text-anchor="middle" x="120" y="73">se comprueba el FCS</text>
+<path d="M210,61 L262,61" marker-end="url(#a7)" stroke="#d13c3c" stroke-width="1.6"></path>
+<rect fill="#e89822" height="42" rx="5" width="140" x="268" y="40"></rect>
+<text class="t7" text-anchor="middle" x="338" y="58">EtherType</text>
+<text class="s7" text-anchor="middle" x="338" y="73">2 octetos</text>
+<path d="M408,61 L460,61" marker-end="url(#a7)" stroke="#d13c3c" stroke-width="1.6"></path>
+<rect fill="#2d8659" height="42" rx="5" width="188" x="466" y="40"></rect>
+<text class="t7" text-anchor="middle" x="560" y="58">0x0800 → IPv4</text>
+<text class="s7" text-anchor="middle" x="560" y="73">0x0806 → ARP · 0x86DD → IPv6</text>
+<rect fill="#2d8659" height="42" rx="5" width="180" x="30" y="106"></rect>
+<text class="t7" text-anchor="middle" x="120" y="124">Llega un PAQUETE</text>
+<text class="s7" text-anchor="middle" x="120" y="139">¿la IP de destino es mía?</text>
+<path d="M210,127 L262,127" marker-end="url(#a7)" stroke="#d13c3c" stroke-width="1.6"></path>
+<rect fill="#e89822" height="42" rx="5" width="140" x="268" y="106"></rect>
+<text class="t7" text-anchor="middle" x="338" y="124">Protocolo</text>
+<text class="s7" text-anchor="middle" x="338" y="139">Next Header en IPv6</text>
+<path d="M408,127 L460,127" marker-end="url(#a7)" stroke="#d13c3c" stroke-width="1.6"></path>
+<rect fill="#0055a0" height="42" rx="5" width="188" x="466" y="106"></rect>
+<text class="t7" text-anchor="middle" x="560" y="124">1 ICMP · 6 TCP · 17 UDP</text>
+<text class="s7" text-anchor="middle" x="560" y="139">41 IPv6 · 50 ESP · 51 AH · 58 ICMPv6</text>
+<rect fill="#0055a0" height="42" rx="5" width="180" x="30" y="172"></rect>
+<text class="t7" text-anchor="middle" x="120" y="190">Llega un SEGMENTO</text>
+<text class="s7" text-anchor="middle" x="120" y="205">o un datagrama UDP</text>
+<path d="M210,193 L262,193" marker-end="url(#a7)" stroke="#d13c3c" stroke-width="1.6"></path>
+<rect fill="#e89822" height="42" rx="5" width="140" x="268" y="172"></rect>
+<text class="t7" text-anchor="middle" x="338" y="190">Puerto destino</text>
+<text class="s7" text-anchor="middle" x="338" y="205">16 bits</text>
+<path d="M408,193 L460,193" marker-end="url(#a7)" stroke="#d13c3c" stroke-width="1.6"></path>
+<rect fill="#8aa8c4" height="42" rx="5" width="188" x="466" y="172"></rect>
+<text class="t7" text-anchor="middle" x="560" y="190">Proceso de aplicación</text>
+<text class="s7" text-anchor="middle" x="560" y="205">443 → servidor web</text>
+<rect fill="#fdf3e3" height="42" rx="4" width="624" x="30" y="234"></rect>
+<text class="m7" text-anchor="middle" x="342" y="251">CUIDADO: el 6 es el número de protocolo de TCP en la cabecera IP</text>
+<text class="d7" text-anchor="middle" x="342" y="266">No tiene ninguna relación con IPv6, cuyo EtherType es 0x86DD y cuyo campo de versión vale 6</text>
+<rect fill="none" height="24" rx="4" stroke="#0055a0" stroke-width="1.4" width="624" x="30" y="286"></rect>
+<text class="k7" text-anchor="middle" x="342" y="302">Una conexión se identifica por la quíntupla: protocolo, IP y puerto de origen, IP y puerto de destino</text>
+<text class="n7" text-anchor="end" x="670" y="330">[Fuente: RFC 1122, registros de IANA]</text>
+</svg>

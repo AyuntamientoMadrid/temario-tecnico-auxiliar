@@ -1,0 +1,15 @@
+<svg aria-label="Componentes de la arquitectura cliente servidor: un cliente ligero o pesado que inicia la petición, una infraestructura de comunicaciones que la transporta, un middleware que la traduce y abstrae, y un servidor que gestiona recursos compartidos y concurrencia" role="img" viewbox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 12px system-ui,sans-serif;fill:#fff}.s2{font:9.5px system-ui,sans-serif;fill:#fff}.l2{font:11px system-ui,sans-serif;fill:#444}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h2" text-anchor="middle" x="340" y="20">Arquitectura cliente/servidor: cuatro componentes</text>
+<rect fill="#0055a0" height="80" rx="6" width="150" x="20" y="50"></rect><text class="t2" text-anchor="middle" x="95" y="76">CLIENTE</text><text class="s2" text-anchor="middle" x="95" y="94">Ligero (navegador) o</text><text class="s2" text-anchor="middle" x="95" y="108">pesado (§2.2.1)</text>
+<path d="M172 90 L198 90" marker-end="url(#a2)" stroke="#888" stroke-width="3"></path>
+<rect fill="#3778b5" height="80" rx="6" width="260" x="200" y="50"></rect><text style="font:700 10.5px system-ui;fill:#fff" text-anchor="middle" x="330" y="74">INFRAESTRUCTURA DE COMUNICACIONES</text><text class="s2" text-anchor="middle" x="330" y="94">Red física/lógica + pila TCP/IP</text><text class="s2" text-anchor="middle" x="330" y="110">(desarrollado en el Tema 34)</text>
+<path d="M462 90 L488 90" marker-end="url(#a2)" stroke="#888" stroke-width="3"></path>
+<rect fill="#0055a0" height="80" rx="6" width="170" x="490" y="50"></rect><text class="t2" text-anchor="middle" x="575" y="76">SERVIDOR</text><text class="s2" text-anchor="middle" x="575" y="94">Gestión de recursos</text><text class="s2" text-anchor="middle" x="575" y="108">y concurrencia (§2.2.2)</text>
+<rect fill="#2d8659" height="86" rx="6" width="420" x="130" y="160"></rect><text class="t2" text-anchor="middle" x="340" y="180">MIDDLEWARE (§2.2.3)</text><text class="s2" text-anchor="middle" x="340" y="198">Acceso a datos · orientado a objetos · MOM</text><text class="s2" text-anchor="middle" x="340" y="214">Servicios web · transaccional</text><text class="s2" text-anchor="middle" x="340" y="232">Oculta la complejidad de la comunicación distribuida</text>
+<path d="M340 132 L340 145" marker-end="url(#a2)" stroke="#888" stroke-width="3"></path>
+<defs><marker id="a2" markerheight="9" markerwidth="9" orient="auto" refx="4.5" refy="4.5"><path d="M0 0 L9 4.5 L0 9 z" fill="#888"></path></marker></defs>
+<text style="font:700 11px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="280">Relación asimétrica y de petición-respuesta: el cliente inicia, el servidor responde</text>
+<text class="l2" text-anchor="middle" x="340" y="300">Un mismo proceso puede ser servidor frente a un interlocutor y cliente frente a otro</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="352">[Fuente: FOWLER-PEAA, cap. 1]</text>
+</svg>

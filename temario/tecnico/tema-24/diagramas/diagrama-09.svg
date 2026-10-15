@@ -1,0 +1,21 @@
+<svg aria-label="Pila de la plataforma Android de abajo arriba: núcleo Linux, capa de abstracción de hardware HAL, bibliotecas nativas junto al entorno de ejecución ART, marco de trabajo de la API Java y, en la cima, las aplicaciones" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 11.5px system-ui,sans-serif;fill:#fff}.s9{font:9.5px system-ui,sans-serif;fill:#fff}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">Arquitectura de la plataforma Android</text>
+<rect fill="#0055a0" height="48" rx="5" width="620" x="30" y="34"></rect>
+<text class="t9" text-anchor="middle" x="340" y="54">APLICACIONES</text>
+<text class="s9" text-anchor="middle" x="340" y="72">Apps del sistema y de terceros — todas sobre la misma API pública</text>
+<rect fill="#2d8659" height="48" rx="5" width="620" x="30" y="88"></rect>
+<text class="t9" text-anchor="middle" x="340" y="108">JAVA API FRAMEWORK</text>
+<text class="s9" text-anchor="middle" x="340" y="126">ActivityManager · PackageManager · gestor de vistas · notificaciones · proveedores</text>
+<rect fill="#e89822" height="60" rx="5" width="620" x="30" y="142"></rect>
+<text class="t9" text-anchor="middle" x="340" y="162">BIBLIOTECAS NATIVAS (C/C++) + ANDROID RUNTIME (ART)</text>
+<text class="s9" text-anchor="middle" x="340" y="180">OpenGL/Vulkan · Media · SQLite · SSL — ART ejecuta bytecode DEX</text>
+<text class="s9" text-anchor="middle" x="340" y="194">AOT en la instalación + JIT con perfiles (sustituyó a Dalvik desde Android 5.0)</text>
+<rect fill="#888" height="44" rx="5" width="620" x="30" y="208"></rect>
+<text class="t9" text-anchor="middle" x="340" y="228">HAL — CAPA DE ABSTRACCIÓN DE HARDWARE</text>
+<text class="s9" text-anchor="middle" x="340" y="244">Interfaces estándar de cámara, Bluetooth, sensores y audio del fabricante</text>
+<rect fill="#d13c3c" height="48" rx="5" width="620" x="30" y="258"></rect>
+<text class="t9" text-anchor="middle" x="340" y="278">NÚCLEO LINUX</text>
+<text class="s9" text-anchor="middle" x="340" y="296">Procesos, memoria, controladores, energía — cada app es un USUARIO distinto (sandbox)</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="330">[Fuente: ANDROID-ARCH]</text>
+</svg>

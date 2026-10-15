@@ -1,0 +1,55 @@
+<svg aria-label="Modelo STRIDE: suplantación niega la autenticidad, manipulación niega la integridad, repudio niega el no repudio, revelación de información niega la confidencialidad, denegación de servicio niega la disponibilidad y elevación de privilegios niega la autorización, con la contramedida típica de cada una; y las cuatro preguntas del modelado de amenazas" role="img" viewbox="0 0 680 350" xmlns="http://www.w3.org/2000/svg">
+<style>.t13{font:700 10px system-ui,sans-serif;fill:#fff}.s13{font:9px system-ui,sans-serif;fill:#fff}.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.k13{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d13{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h13" text-anchor="middle" x="340" y="20">STRIDE — cada amenaza niega una propiedad de seguridad</text>
+<text class="k13" x="30" y="42">AMENAZA</text>
+<text class="k13" x="270" y="42">PROPIEDAD QUE NIEGA</text>
+<text class="k13" x="450" y="42">CONTRAMEDIDA TÍPICA</text>
+<rect fill="#0055a0" height="30" rx="4" width="240" x="20" y="48"></rect>
+<text class="t13" x="30" y="68">S · Spoofing — suplantación</text>
+<rect fill="#e6eff7" height="30" rx="4" width="160" x="266" y="48"></rect>
+<text class="d13" text-anchor="middle" x="346" y="68">AUTENTICIDAD</text>
+<rect fill="#eef3f8" height="30" rx="4" width="228" x="432" y="48"></rect>
+<text class="d13" x="442" y="68">MFA, certificados, firma electrónica</text>
+<rect fill="#0055a0" height="30" rx="4" width="240" x="20" y="82"></rect>
+<text class="t13" x="30" y="102">T · Tampering — manipulación</text>
+<rect fill="#e6eff7" height="30" rx="4" width="160" x="266" y="82"></rect>
+<text class="d13" text-anchor="middle" x="346" y="102">INTEGRIDAD</text>
+<rect fill="#eef3f8" height="30" rx="4" width="228" x="432" y="82"></rect>
+<text class="d13" x="442" y="102">Resumen y firma, TLS, validación</text>
+<rect fill="#2d8659" height="30" rx="4" width="240" x="20" y="116"></rect>
+<text class="t13" x="30" y="136">R · Repudiation — repudio</text>
+<rect fill="#e6f2ec" height="30" rx="4" width="160" x="266" y="116"></rect>
+<text class="d13" text-anchor="middle" x="346" y="136">NO REPUDIO</text>
+<rect fill="#eef3f8" height="30" rx="4" width="228" x="432" y="116"></rect>
+<text class="d13" x="442" y="136">Registro íntegro y sellado de tiempo</text>
+<rect fill="#2d8659" height="30" rx="4" width="240" x="20" y="150"></rect>
+<text class="t13" x="30" y="170">I · Information disclosure</text>
+<rect fill="#e6f2ec" height="30" rx="4" width="160" x="266" y="150"></rect>
+<text class="d13" text-anchor="middle" x="346" y="170">CONFIDENCIALIDAD</text>
+<rect fill="#eef3f8" height="30" rx="4" width="228" x="432" y="150"></rect>
+<text class="d13" x="442" y="170">Cifrado, control de acceso, error genérico</text>
+<rect fill="#e89822" height="30" rx="4" width="240" x="20" y="184"></rect>
+<text class="t13" x="30" y="204">D · Denial of service</text>
+<rect fill="#fdf1de" height="30" rx="4" width="160" x="266" y="184"></rect>
+<text class="d13" text-anchor="middle" x="346" y="204">DISPONIBILIDAD</text>
+<rect fill="#eef3f8" height="30" rx="4" width="228" x="432" y="184"></rect>
+<text class="d13" x="442" y="204">Limitación de peticiones, cuotas</text>
+<rect fill="#d13c3c" height="30" rx="4" width="240" x="20" y="218"></rect>
+<text class="t13" x="30" y="238">E · Elevation of privilege</text>
+<rect fill="#fbe9e9" height="30" rx="4" width="160" x="266" y="218"></rect>
+<text class="d13" text-anchor="middle" x="346" y="238">AUTORIZACIÓN</text>
+<rect fill="#eef3f8" height="30" rx="4" width="228" x="432" y="218"></rect>
+<text class="d13" x="442" y="238">Mínimo privilegio, comprobar en servidor</text>
+<line stroke="#ccc" stroke-width="1" x1="20" x2="660" y1="260" y2="260"></line>
+<text class="k13" text-anchor="middle" x="340" y="278">Las cuatro preguntas del modelado de amenazas</text>
+<rect fill="#0055a0" height="34" rx="5" width="155" x="20" y="288"></rect>
+<text class="t13" text-anchor="middle" x="97" y="309">1 · ¿En qué trabajamos?</text>
+<rect fill="#0055a0" height="34" rx="5" width="155" x="185" y="288"></rect>
+<text class="t13" text-anchor="middle" x="262" y="309">2 · ¿Qué puede salir mal?</text>
+<rect fill="#2d8659" height="34" rx="5" width="155" x="350" y="288"></rect>
+<text class="t13" text-anchor="middle" x="427" y="309">3 · ¿Qué hacemos?</text>
+<rect fill="#2d8659" height="34" rx="5" width="145" x="515" y="288"></rect>
+<text class="t13" text-anchor="middle" x="587" y="309">4 · ¿Ha bastado?</text>
+<text class="d13" text-anchor="middle" x="340" y="336">El paso 1 exige dibujar los LÍMITES DE CONFIANZA: es donde se concentran las amenazas</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="348">[Fuente: SHOSTACK; MS-SDL]</text>
+</svg>

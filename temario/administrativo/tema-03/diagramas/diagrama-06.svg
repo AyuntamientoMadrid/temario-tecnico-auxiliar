@@ -1,0 +1,17 @@
+<svg aria-label="Orden jerárquico de los órganos directivos: coordinador general, secretario general técnico y director general, según el artículo 42" role="img" viewbox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .f-t{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .f-n{font:700 12px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .f-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+  </style>
+<polygon fill="#003d75" points="350,30 250,110 450,110"></polygon>
+<text class="f-n" x="350" y="86">1.º</text>
+<text class="f-t" style="font-size:11px" x="350" y="102">Coordinador general</text>
+<rect fill="#0055a0" height="58" width="280" x="210" y="118"></rect>
+<text class="f-n" x="350" y="142">2.º</text>
+<text class="f-t" x="350" y="160">Secretario general técnico</text>
+<rect fill="#5a8fc0" height="62" width="400" x="150" y="184"></rect>
+<text class="f-n" x="350" y="208">3.º</text>
+<text class="f-t" x="350" y="226">Director general u órgano asimilado</text>
+<text class="f-s" style="font-style:italic" x="350" y="276">ROGA art. 42.2 · de mayor a menor rango</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg aria-label="Niveles apilados de despliegue moderno: en la base los contenedores que virtualizan a nivel de sistema operativo, encima la orquestación con Kubernetes que automatiza despliegue escalado y recuperación, y arriba la computación en la nube que aporta el entorno elastico bajo demanda" role="img" viewbox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t12{font:700 11.5px system-ui,sans-serif;fill:#fff}.s12{font:9.5px system-ui,sans-serif;fill:#fff}.l12{font:10.5px system-ui,sans-serif;fill:#444}.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h12" text-anchor="middle" x="330" y="20">Contenedores → orquestación → nube</text>
+<rect fill="#0055a0" height="60" rx="6" width="540" x="60" y="248"></rect><text class="t12" text-anchor="middle" x="330" y="272">CONTENEDORES — §7.3</text><text class="s12" text-anchor="middle" x="330" y="292">Virtualizan a nivel de SO (namespaces/cgroups), arranque en segundos</text>
+<path d="M330 248 L330 229" marker-end="url(#a12)" stroke="#888" stroke-width="3"></path>
+<rect fill="#2d8659" height="60" rx="6" width="540" x="60" y="164"></rect><text class="t12" text-anchor="middle" x="330" y="188">ORQUESTACIÓN — §7.3</text><text class="s12" text-anchor="middle" x="330" y="208">Kubernetes: despliegue, autoescalado y recuperación automática</text>
+<path d="M330 165 L330 146" marker-end="url(#a12)" stroke="#888" stroke-width="3"></path>
+<rect fill="#e89822" height="60" rx="6" width="540" x="60" y="80"></rect><text class="t12" text-anchor="middle" x="330" y="104">COMPUTACIÓN EN LA NUBE — §7.4</text><text class="s12" text-anchor="middle" x="330" y="124">IaaS/PaaS/SaaS bajo demanda — desarrollado en el Tema 31</text>
+<defs><marker id="a12" markerheight="14" markerunits="userSpaceOnUse" markerwidth="14" orient="auto" refx="12" refy="7"><path d="M0 0 L12 7 L0 14 z" fill="#888"></path></marker></defs>
+<text style="font:700 11px system-ui;fill:#d13c3c" text-anchor="middle" x="330" y="336">Contenedor virtualiza el SO; máquina virtual (Tema 28) virtualiza el hardware — no confundir</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="650" y="356">[Fuente: K8S-DOCS; NIST800145]</text>
+</svg>

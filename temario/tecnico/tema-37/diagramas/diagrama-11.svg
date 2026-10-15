@@ -1,0 +1,58 @@
+<svg aria-label="Las tres bandas de las redes locales inalámbricas: 2,4 gigahercios, estrecha y muy interferida, con solo tres canales que no se solapan, el 1, el 6 y el 11; 5 gigahercios, ancha y con obligación de selección dinámica de frecuencia en algunas subbandas; y 6 gigahercios, la más limpia, abierta para Wi-Fi 6E y Wi-Fi 7; abajo, el régimen jurídico de uso común del dominio público radioeléctrico" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}.k11{font:700 10px system-ui,sans-serif;fill:#0055a0}.d11{font:8.5px system-ui,sans-serif;fill:#333}.n11{font:8px system-ui,sans-serif;fill:#666}.w11{font:700 9px system-ui,sans-serif;fill:#fff}.r11{font:700 9px system-ui,sans-serif;fill:#d13c3c}.g11{font:700 9px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h11" text-anchor="middle" x="340" y="20">Las tres bandas de la red local inalámbrica y sus compromisos</text>
+<rect fill="#fbeaea" height="86" rx="5" width="636" x="22" y="32"></rect>
+<text class="k11" x="34" y="48">2,4 GHz — 2400 a 2483,5 MHz · banda ICM</text>
+<path d="M120,88 L640,88" stroke="#999" stroke-width="1"></path>
+<path d="M120,88 q40,-30 80,0" fill="none" stroke="#d13c3c" stroke-width="2"></path>
+<text class="r11" text-anchor="middle" x="160" y="98">1</text>
+<path d="M180,88 q40,-22 80,0" fill="none" stroke="#ccc" stroke-width="1.4"></path>
+<path d="M240,88 q40,-22 80,0" fill="none" stroke="#ccc" stroke-width="1.4"></path>
+<path d="M300,88 q40,-30 80,0" fill="none" stroke="#d13c3c" stroke-width="2"></path>
+<text class="r11" text-anchor="middle" x="340" y="98">6</text>
+<path d="M360,88 q40,-22 80,0" fill="none" stroke="#ccc" stroke-width="1.4"></path>
+<path d="M420,88 q40,-22 80,0" fill="none" stroke="#ccc" stroke-width="1.4"></path>
+<path d="M480,88 q40,-30 80,0" fill="none" stroke="#d13c3c" stroke-width="2"></path>
+<text class="r11" text-anchor="middle" x="520" y="98">11</text>
+<text class="d11" x="34" y="66">Mejor alcance y</text>
+<text class="d11" x="34" y="78">mejor penetración</text>
+<text class="d11" x="34" y="90">en muros, pero</text>
+<text class="d11" x="34" y="102">MUY interferida</text>
+<text class="r11" x="120" y="112">SOLO 3 CANALES SIN SOLAPE: 1, 6 y 11 — cada canal ocupa 20-22 MHz y están separados solo 5 MHz</text>
+<rect fill="#eef4fa" height="72" rx="5" width="312" x="22" y="126"></rect>
+<text class="k11" x="34" y="142">5 GHz — varias subbandas desde 5150 MHz</text>
+<rect fill="#0055a0" height="14" width="20" x="34" y="150"></rect>
+<rect fill="#0055a0" height="14" width="20" x="57" y="150"></rect>
+<rect fill="#0055a0" height="14" width="20" x="80" y="150"></rect>
+<rect fill="#0055a0" height="14" width="20" x="103" y="150"></rect>
+<rect fill="#0055a0" height="14" width="20" x="126" y="150"></rect>
+<rect fill="#0055a0" height="14" width="20" x="149" y="150"></rect>
+<rect fill="#0055a0" height="14" width="20" x="172" y="150"></rect>
+<rect fill="#0055a0" height="14" width="20" x="195" y="150"></rect>
+<rect fill="#0055a0" height="14" width="20" x="218" y="150"></rect>
+<rect fill="#0055a0" height="14" width="20" x="241" y="150"></rect>
+<rect fill="#0055a0" height="14" width="20" x="264" y="150"></rect>
+<rect fill="#0055a0" height="14" width="20" x="287" y="150"></rect>
+<text class="d11" x="34" y="178">Más de 20 canales sin solape con 20 MHz</text>
+<text class="d11" x="34" y="191">Obligatorios DFS y TPC en varias subbandas</text>
+<rect fill="#e6f2ec" height="72" rx="5" width="312" x="346" y="126"></rect>
+<text class="k11" x="358" y="142">6 GHz — 5945 a 6425 MHz (Wi-Fi 6E y 7)</text>
+<rect fill="#2d8659" height="14" width="38" x="358" y="150"></rect>
+<rect fill="#2d8659" height="14" width="38" x="399" y="150"></rect>
+<rect fill="#2d8659" height="14" width="38" x="440" y="150"></rect>
+<rect fill="#2d8659" height="14" width="38" x="481" y="150"></rect>
+<rect fill="#2d8659" height="14" width="38" x="522" y="150"></rect>
+<rect fill="#2d8659" height="14" width="38" x="563" y="150"></rect>
+<rect fill="#2d8659" height="14" width="38" x="604" y="150"></rect>
+<text class="d11" x="358" y="178">Hasta 7 canales de 160 MHz. La más limpia</text>
+<text class="d11" x="358" y="191">Menor alcance · uso restringido a interiores</text>
+<rect fill="#f7f9fb" height="20" rx="3" width="636" x="22" y="208"></rect>
+<text class="d11" x="32" y="222"><tspan class="k11">Fenómenos de propagación</tspan>   Atenuación con la distancia · absorción (agua, personas, hormigón armado) · reflexión, refracción y difracción</text>
+<rect fill="#eef4fa" height="20" rx="3" width="636" x="22" y="230"></rect>
+<text class="d11" x="32" y="244"><tspan class="k11">Multitrayecto</tspan>                    La misma señal llega por varios caminos y se cancela parcialmente. OFDM lo resuelve y MIMO llega a aprovecharlo</text>
+<rect fill="none" height="58" rx="5" stroke="#0055a0" stroke-width="1.5" width="636" x="22" y="260"></rect>
+<text class="k11" text-anchor="middle" x="340" y="278">Régimen jurídico — artículo 88 de la Ley 11/2022: uso COMÚN, ESPECIAL o PRIVATIVO</text>
+<text class="g11" text-anchor="middle" x="340" y="294">Wi-Fi opera en USO COMÚN: NO precisa de ningún título habilitante</text>
+<text class="d11" text-anchor="middle" x="340" y="309">Pero queda sujeta a las condiciones técnicas del CNAF y CARECE DE PROTECCIÓN FRENTE A INTERFERENCIAS: no hay a quién reclamar</text>
+<text class="n11" text-anchor="end" x="670" y="340">[Fuente: Ley 11/2022 art. 88 · CNAF · IEEE 802.11]</text>
+</svg>

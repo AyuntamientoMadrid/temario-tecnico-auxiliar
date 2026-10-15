@@ -1,0 +1,28 @@
+<svg aria-label="La misma relación uno a muchos dibujada en notación Chen, pata de gallo y UML" class="svd8" role="img" viewbox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd8 .w{font:700 10px system-ui,sans-serif;fill:#fff}.svd8 .lab{font:11px system-ui,sans-serif;fill:#555}.svd8 .h{font:700 13px system-ui,sans-serif;fill:#0055a0}.svd8 .tt{font:700 12px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="330" y="22">«Un distrito contiene muchos barrios» (1:N) en tres notaciones</text>
+<!-- Chen -->
+<text class="tt" text-anchor="middle" x="110" y="55">CHEN</text>
+<rect fill="#0055a0" height="30" rx="2" width="58" x="45" y="70"></rect><text class="w" text-anchor="middle" x="74" y="90">DISTRITO</text>
+<polygon fill="#e89822" points="130,85 152,72 174,85 152,98"></polygon><text class="w" style="font-size:8px" text-anchor="middle" x="152" y="89">contiene</text>
+<rect fill="#0055a0" height="30" rx="2" width="58" x="118" y="120"></rect><text class="w" text-anchor="middle" x="147" y="140">BARRIO</text>
+<line stroke="#333" x1="103" x2="130" y1="85" y2="85"></line><text class="lab" style="font-size:9px" x="116" y="79">1</text>
+<line stroke="#333" x1="152" x2="152" y1="98" y2="120"></line><text class="lab" style="font-size:9px" x="158" y="113">N</text>
+<!-- Crow's foot -->
+<text class="tt" text-anchor="middle" x="330" y="55">PATA DE GALLO</text>
+<rect fill="#0055a0" height="30" rx="2" width="64" x="260" y="75"></rect><text class="w" text-anchor="middle" x="292" y="95">DISTRITO</text>
+<rect fill="#0055a0" height="30" rx="2" width="64" x="340" y="135"></rect><text class="w" text-anchor="middle" x="372" y="155">BARRIO</text>
+<line stroke="#333" stroke-width="1.5" x1="292" x2="372" y1="105" y2="135"></line>
+<line stroke="#333" x1="300" x2="312" y1="112" y2="116"></line>
+<path d="M 360 130 L 372 135 L 360 140 M 372 135 L 360 135" fill="none" stroke="#333"></path>
+<text class="lab" style="font-size:9px" x="300" y="128">uno</text><text class="lab" style="font-size:9px" x="298" y="142">muchos</text>
+<!-- UML -->
+<text class="tt" text-anchor="middle" x="560" y="55">UML (clases)</text>
+<rect fill="#2d8659" height="34" rx="2" width="120" x="500" y="72"></rect><text class="w" text-anchor="middle" x="560" y="93">Distrito</text>
+<rect fill="#2d8659" height="34" rx="2" width="120" x="500" y="140"></rect><text class="w" text-anchor="middle" x="560" y="161">Barrio</text>
+<line stroke="#333" x1="560" x2="560" y1="106" y2="140"></line>
+<text class="lab" style="font-size:10px" x="566" y="120">1</text><text class="lab" style="font-size:10px" x="566" y="138">1..*</text>
+<rect fill="#f5f7fa" height="60" rx="8" stroke="#d1d7df" width="575" x="45" y="210"></rect>
+<text class="lab" x="60" y="234">Las tres dicen lo mismo. <tspan font-weight="700">Chen</tspan>: rótulos 1/N. <tspan font-weight="700">Pata de gallo</tspan>: símbolos en los extremos (la «pata» = muchos).</text>
+<text class="lab" x="60" y="256"><tspan font-weight="700">UML</tspan>: multiplicidad numérica (1, 1..*, 0..1, *). — [Fuente: SILBERSCHATZ · MARTIN · UML]</text>
+</svg>

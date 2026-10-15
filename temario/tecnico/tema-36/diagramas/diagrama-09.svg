@@ -1,0 +1,29 @@
+<svg aria-label="Comparación entre proxy directo y proxy inverso: el proxy directo se sitúa entre los clientes internos e internet y aplica la medida mp punto ese punto tres de protección de la navegación web; el proxy inverso se sitúa entre internet y los servidores publicados, termina el TLS, equilibra carga e integra el cortafuegos de aplicaciones web, y se corresponde con la medida mp punto ese punto dos" role="img" viewbox="0 0 680 348" xmlns="http://www.w3.org/2000/svg">
+<style>.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.k9{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.t9{font:700 9.5px system-ui,sans-serif;fill:#fff}.s9{font:8px system-ui,sans-serif;fill:#fff}.d9{font:8.5px system-ui,sans-serif;fill:#333}.b9{font:700 9px system-ui,sans-serif;fill:#0055a0}.n9{font:8px system-ui,sans-serif;fill:#666}.a9{font:8px system-ui,sans-serif;fill:#666}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">La diferencia está en a quién tapa: al que sale o al que se publica</text>
+<text class="k9" x="20" y="42">PROXY DIRECTO (FORWARD) · PROTEGE Y CONTROLA A LOS CLIENTES QUE SALEN</text>
+<rect fill="#f7f9fc" height="66" rx="5" stroke="#ccc" width="640" x="20" y="50"></rect>
+<rect fill="#0055a0" height="34" rx="4" width="96" x="34" y="66"></rect><text class="t9" text-anchor="middle" x="82" y="80">PUESTOS</text><text class="s9" text-anchor="middle" x="82" y="93">Red interna municipal</text>
+<text class="a9" x="140" y="86">→</text>
+<rect fill="#e89822" height="34" rx="4" width="126" x="158" y="66"></rect><text class="t9" text-anchor="middle" x="221" y="80">PROXY DIRECTO</text><text class="s9" text-anchor="middle" x="221" y="93">Autentica al usuario</text>
+<text class="a9" x="294" y="86">→</text>
+<rect fill="#999" height="34" rx="4" width="96" x="312" y="66"></rect><text class="t9" text-anchor="middle" x="360" y="80">INTERNET</text><text class="s9" text-anchor="middle" x="360" y="93">Destino real</text>
+<rect fill="#eef4fa" height="46" rx="4" stroke="#0055a0" width="222" x="424" y="60"></rect><text class="b9" text-anchor="middle" x="535" y="74">Qué permite hacer · mp.s.3</text><text class="d9" text-anchor="middle" x="535" y="87">Filtrar por URL y categoría · registrar QUIÉN</text><text class="d9" text-anchor="middle" x="535" y="99">navegó · analizar descargas · caché · listas</text>
+<text class="k9" x="20" y="136">PROXY INVERSO (REVERSE) · PROTEGE Y OCULTA A LOS SERVIDORES PUBLICADOS</text>
+<rect fill="#f7f9fc" height="66" rx="5" stroke="#ccc" width="640" x="20" y="144"></rect>
+<rect fill="#999" height="34" rx="4" width="96" x="34" y="160"></rect><text class="t9" text-anchor="middle" x="82" y="174">CIUDADANO</text><text class="s9" text-anchor="middle" x="82" y="187">Desde internet</text>
+<text class="a9" x="140" y="180">→</text>
+<rect fill="#2d8659" height="34" rx="4" width="126" x="158" y="160"></rect><text class="t9" text-anchor="middle" x="221" y="174">PROXY INVERSO</text><text class="s9" text-anchor="middle" x="221" y="187">Termina TLS · WAF</text>
+<text class="a9" x="294" y="180">→</text>
+<rect fill="#0055a0" height="34" rx="4" width="96" x="312" y="160"></rect><text class="t9" text-anchor="middle" x="360" y="174">SEDE</text><text class="s9" text-anchor="middle" x="360" y="187">Granja de servidores</text>
+<rect fill="#eef7f1" height="46" rx="4" stroke="#2d8659" width="222" x="424" y="154"></rect><text class="b9" text-anchor="middle" x="535" y="168">Qué permite hacer · mp.s.2</text><text class="d9" text-anchor="middle" x="535" y="181">Terminar TLS · equilibrar carga · cachear</text><text class="d9" text-anchor="middle" x="535" y="193">ocultar la topología interna · integrar el WAF</text>
+<text class="k9" x="20" y="230">LA RUPTURA DEL CANAL CIFRADO: LO QUE EL ENS EXIGE ANTES DE INSPECCIONAR</text>
+<rect fill="#fff5e6" height="56" rx="5" stroke="#e89822" width="640" x="20" y="238"></rect>
+<text class="b9" x="32" y="256">mp.s.3.r1.2 — refuerzo R1, exigible en categoría ALTA</text>
+<text class="d9" x="32" y="270">«Se establecerá una función para la ruptura de canales cifrados a fin de inspeccionar su contenido, indicando QUÉ SE ANALIZA, QUÉ SE REGISTRA,</text>
+<text class="d9" x="32" y="282">DURANTE CUÁNTO TIEMPO se retienen y QUÉ USO prevé hacer el organismo de estas inspecciones», con excepción para destinos de confianza</text>
+<rect fill="#0055a0" height="24" rx="4" width="206" x="20" y="302"></rect><text class="s9" text-anchor="middle" x="123" y="318">mp.s.3.r1.1 · registrar la navegación</text>
+<rect fill="#0055a0" height="24" rx="4" width="206" x="236" y="302"></rect><text class="s9" text-anchor="middle" x="339" y="318">mp.s.3.r1.3 · lista negra de destinos</text>
+<rect fill="#d13c3c" height="24" rx="4" width="208" x="452" y="302"></rect><text class="s9" text-anchor="middle" x="556" y="318">mp.s.3.r2.1 · lista blanca: todo lo demás vetado</text>
+<text class="n9" x="20" y="342">[Fuente: ENS, RD 311/2022, mp.s.2 y mp.s.3 — texto literal del anexo II · RFC 1928 (SOCKS)]</text>
+</svg>

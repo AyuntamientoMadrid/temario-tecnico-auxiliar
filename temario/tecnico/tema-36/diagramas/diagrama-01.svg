@@ -1,0 +1,36 @@
+<svg aria-label="Mapa del tema en cinco capas de defensa: sección uno fundamentos y amenazas con las cinco dimensiones del Esquema Nacional de Seguridad; sección dos seguridad perimetral con cortafuegos, proxy, sistemas de detección y zona desmilitarizada, respaldada por la medida mp punto com punto uno; sección tres acceso remoto seguro con autenticación multifactor y servidores AAA, respaldada por op punto acc punto cuatro punto cinco; sección cuatro redes privadas virtuales con IPsec y TLS, respaldada por mp punto com punto dos; y sección cinco seguridad del puesto de usuario con cifrado, EDR y concienciación, respaldada por mp punto eq y op punto exp punto seis" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}.k1{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.t1{font:700 8.5px system-ui,sans-serif;fill:#fff}.s1{font:8.5px system-ui,sans-serif;fill:#fff}.d1{font:8.5px system-ui,sans-serif;fill:#333}.b1{font:700 9px system-ui,sans-serif;fill:#0055a0}.n1{font:8px system-ui,sans-serif;fill:#666}.w1{font:700 9px system-ui,sans-serif;fill:#fff}</style>
+<text class="h1" text-anchor="middle" x="340" y="20">Cinco secciones, cinco capas sobre el mismo escenario municipal</text>
+<text class="k1" x="20" y="40">QUÉ PROTEGE CADA SECCIÓN</text>
+<rect fill="#0055a0" height="52" rx="5" width="98" x="20" y="48"></rect><text class="t1" text-anchor="middle" x="69" y="68">§1 FUNDAMENTOS</text><text class="s1" text-anchor="middle" x="69" y="82">Principios, amenazas</text><text class="s1" text-anchor="middle" x="69" y="94">y mecanismos</text>
+<rect fill="#0055a0" height="52" rx="5" width="98" x="126" y="48"></rect><text class="t1" text-anchor="middle" x="175" y="68">§2 PERÍMETRO</text><text class="s1" text-anchor="middle" x="175" y="82">Cortafuegos, proxy,</text><text class="s1" text-anchor="middle" x="175" y="94">IDS/IPS, DMZ</text>
+<rect fill="#0055a0" height="52" rx="5" width="98" x="232" y="48"></rect><text class="t1" text-anchor="middle" x="281" y="68">§3 ACCESO REMOTO</text><text class="s1" text-anchor="middle" x="281" y="82">Identidad, MFA,</text><text class="s1" text-anchor="middle" x="281" y="94">AAA y 802.1X</text>
+<rect fill="#0055a0" height="52" rx="5" width="98" x="338" y="48"></rect><text class="t1" text-anchor="middle" x="387" y="68">§4 VPN</text><text class="s1" text-anchor="middle" x="387" y="82">IPsec, SSL/TLS y</text><text class="s1" text-anchor="middle" x="387" y="94">túneles de nivel 2</text>
+<rect fill="#0055a0" height="52" rx="5" width="98" x="444" y="48"></rect><text class="t1" text-anchor="middle" x="493" y="68">§5 PUESTO</text><text class="s1" text-anchor="middle" x="493" y="82">Bastionado, EDR,</text><text class="s1" text-anchor="middle" x="493" y="94">cifrado y personas</text>
+<rect fill="#e89822" height="52" rx="5" width="110" x="550" y="48"></rect><text class="t1" text-anchor="middle" x="605" y="68">EL ESCENARIO</text><text class="s1" text-anchor="middle" x="605" y="82">CPD + oficina de</text><text class="s1" text-anchor="middle" x="605" y="94">distrito + teletrabajo</text>
+<text class="k1" x="20" y="124">LA MEDIDA DEL ENS QUE RESPALDA CADA UNA</text>
+<rect fill="#eef4fa" height="50" rx="5" stroke="#0055a0" width="204" x="20" y="132"></rect><text class="b1" text-anchor="middle" x="122" y="149">§1 y §2 · mp.com.1 · art. 23</text><text class="d1" text-anchor="middle" x="122" y="163">Perímetro seguro: aplica en BÁSICA,</text><text class="d1" text-anchor="middle" x="122" y="175.5">MEDIA y ALTA. Todo el tráfico pasa por él</text>
+<rect fill="#eef4fa" height="50" rx="5" stroke="#0055a0" width="204" x="232" y="132"></rect><text class="b1" text-anchor="middle" x="334" y="149">§3 · op.acc.4.5 y op.acc.5</text><text class="d1" text-anchor="middle" x="334" y="163">Política específica de acceso remoto</text><text class="d1" text-anchor="middle" x="334" y="175.5">con autorización expresa. MFA desde MEDIO</text>
+<rect fill="#eef4fa" height="50" rx="5" stroke="#0055a0" width="216" x="444" y="132"></rect><text class="b1" text-anchor="middle" x="552" y="149">§4 · mp.com.2 · §5 · mp.eq y op.exp.6</text><text class="d1" text-anchor="middle" x="552" y="163">VPN cifrada fuera del dominio propio.</text><text class="d1" text-anchor="middle" x="552" y="175.5">Portátiles, bloqueo, antimalware y EDR</text>
+<text class="k1" x="20" y="202">EL RECORRIDO DE UN ATAQUE, Y DÓNDE LO PARA CADA CAPA</text>
+<rect fill="#fbfbfd" height="86" rx="5" stroke="#ccc" width="640" x="20" y="210"></rect>
+<rect fill="#d13c3c" height="28" rx="4" width="118" x="32" y="222"></rect><text class="w1" text-anchor="middle" x="91" y="240">1 · PHISHING</text>
+<text class="d1" x="158" y="240">→</text>
+<rect fill="#d13c3c" height="28" rx="4" width="118" x="172" y="222"></rect><text class="w1" text-anchor="middle" x="231" y="240">2 · PUESTO INFECTADO</text>
+<text class="d1" x="298" y="240">→</text>
+<rect fill="#d13c3c" height="28" rx="4" width="118" x="312" y="222"></rect><text class="w1" text-anchor="middle" x="371" y="240">3 · MOV. LATERAL</text>
+<text class="d1" x="438" y="240">→</text>
+<rect fill="#d13c3c" height="28" rx="4" width="118" x="452" y="222"></rect><text class="w1" text-anchor="middle" x="511" y="240">4 · SALIDA DE DATOS</text>
+<rect fill="#2d8659" height="26" rx="4" width="118" x="32" y="258"></rect><text class="s1" text-anchor="middle" x="91" y="275">§5.4 concienciación</text>
+<rect fill="#2d8659" height="26" rx="4" width="118" x="172" y="258"></rect><text class="s1" text-anchor="middle" x="231" y="275">§5.2 EDR y §5.3 parches</text>
+<rect fill="#2d8659" height="26" rx="4" width="118" x="312" y="258"></rect><text class="s1" text-anchor="middle" x="371" y="275">§2.4 segmentación · IDS</text>
+<rect fill="#2d8659" height="26" rx="4" width="118" x="452" y="258"></rect><text class="s1" text-anchor="middle" x="511" y="275">§2.2 proxy de salida</text>
+<text class="d1" x="580" y="240">Cada casilla roja</text>
+<text class="d1" x="580" y="252">tiene debajo su</text>
+<text class="d1" x="580" y="264">casilla verde: es</text>
+<text class="d1" x="580" y="276">el art. 9 del ENS</text>
+<rect fill="#fff5e6" height="34" rx="5" stroke="#e89822" width="640" x="20" y="306"></rect>
+<text class="b1" text-anchor="middle" x="340" y="322">La idea que ordena el tema: NINGUNA capa sustituye a otra</text>
+<text class="d1" text-anchor="middle" x="340" y="334">Art. 9 del ENS — líneas de defensa: el diseño debe suponer que alguna capa fallará, y que el fallo de una no comprometa el conjunto</text>
+<text class="n1" x="20" y="360">[Fuente: ENS, RD 311/2022, arts. 9 y 23 y anexo II · ENISA ETL 2025]</text>
+</svg>

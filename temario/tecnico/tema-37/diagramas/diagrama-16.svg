@@ -1,0 +1,75 @@
+<svg aria-label="Clasificación de los dispositivos de interconexión por la capa cuya información utilizan para decidir: repetidor y concentrador en la capa física, con un único dominio de colisión y uno de difusión; puente, conmutador y punto de acceso en la capa de enlace, con un dominio de colisión por puerto y uno de difusión por VLAN; encaminador en la capa de red, que separa dominios de difusión; y pasarela por encima de la capa 3, que traduce protocolos" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.h16{font:700 13px system-ui,sans-serif;fill:#0055a0}.k16{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d16{font:8.5px system-ui,sans-serif;fill:#333}.n16{font:8px system-ui,sans-serif;fill:#666}.w16{font:700 9.5px system-ui,sans-serif;fill:#fff}.g16{font:700 8.5px system-ui,sans-serif;fill:#2d8659}.r16{font:700 8.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h16" text-anchor="middle" x="340" y="20">Cada dispositivo se clasifica por la capa MÁS ALTA cuya información usa para decidir</text>
+<rect fill="#0055a0" height="17" width="636" x="22" y="34"></rect>
+<text class="w16" x="32" y="47">CAPA</text>
+<text class="w16" x="96" y="47">DISPOSITIVO</text>
+<text class="w16" x="232" y="47">DECIDE POR</text>
+<text class="w16" x="360" y="47">DOMINIOS DE COLISIÓN</text>
+<text class="w16" x="512" y="47">DOMINIOS DE DIFUSIÓN</text>
+<rect fill="#fbeaea" height="52" width="636" x="22" y="52"></rect>
+<rect fill="#d13c3c" height="52" width="66" x="22" y="52"></rect>
+<text class="w16" text-anchor="middle" x="55" y="74">CAPA 1</text>
+<text class="w16" text-anchor="middle" x="55" y="88">FÍSICA</text>
+<text class="k16" x="96" y="70">Repetidor</text>
+<text class="k16" x="96" y="84">Concentrador (hub)</text>
+<text class="n16" x="96" y="98">Conversor de medio · módem</text>
+<text class="d16" x="232" y="70">Nada: regenera</text>
+<text class="d16" x="232" y="84">la señal sin</text>
+<text class="d16" x="232" y="98">interpretarla</text>
+<text class="r16" x="360" y="78">UNO SOLO — lo propaga</text>
+<text class="n16" x="360" y="92">Regenera incluso las colisiones</text>
+<text class="r16" x="512" y="78">UNO SOLO — lo propaga</text>
+<text class="n16" x="512" y="92">Obliga a semidúplex y a CSMA/CD</text>
+<rect fill="#eef4fa" height="60" width="636" x="22" y="106"></rect>
+<rect fill="#0055a0" height="60" width="66" x="22" y="106"></rect>
+<text class="w16" text-anchor="middle" x="55" y="130">CAPA 2</text>
+<text class="w16" text-anchor="middle" x="55" y="144">ENLACE</text>
+<text class="k16" x="96" y="124">Puente (bridge)</text>
+<text class="k16" x="96" y="138">Conmutador (switch)</text>
+<text class="k16" x="96" y="152">Punto de acceso Wi-Fi</text>
+<text class="d16" x="232" y="124">DIRECCIÓN MAC</text>
+<text class="n16" x="232" y="138">Aprende del campo</text>
+<text class="n16" x="232" y="152">de origen; reenvía</text>
+<text class="n16" x="232" y="162">por el de destino</text>
+<text class="g16" x="360" y="130">UNO POR PUERTO — lo divide</text>
+<text class="n16" x="360" y="144">Puerto de conmutador = enlace</text>
+<text class="n16" x="360" y="156">dedicado, dúplex, sin colisiones</text>
+<text class="r16" x="512" y="130">UNO POR VLAN — no lo divide</text>
+<text class="n16" x="512" y="144">La difusión se INUNDA siempre;</text>
+<text class="n16" x="512" y="156">solo la VLAN la acota</text>
+<rect fill="#e6f2ec" height="52" width="636" x="22" y="168"></rect>
+<rect fill="#2d8659" height="52" width="66" x="22" y="168"></rect>
+<text class="w16" text-anchor="middle" x="55" y="190">CAPA 3</text>
+<text class="w16" text-anchor="middle" x="55" y="204">RED</text>
+<text class="k16" x="96" y="186">Encaminador (router)</text>
+<text class="k16" x="96" y="200">Conmutador de capa 3</text>
+<text class="n16" x="96" y="214">Cortafuegos (3-4, y 7)</text>
+<text class="d16" x="232" y="186">DIRECCIÓN IP</text>
+<text class="n16" x="232" y="200">Jerárquica: permite</text>
+<text class="n16" x="232" y="214">agregar rutas</text>
+<text class="g16" x="360" y="194">UNO POR INTERFAZ</text>
+<text class="n16" x="360" y="208">Reconstruye la trama en cada salto</text>
+<text class="g16" x="512" y="194">UNO POR INTERFAZ — lo divide</text>
+<text class="n16" x="512" y="208">No reenvía la difusión de capa 2</text>
+<rect fill="#fdf3e3" height="40" width="636" x="22" y="222"></rect>
+<rect fill="#e89822" height="40" width="66" x="22" y="222"></rect>
+<text class="w16" text-anchor="middle" x="55" y="240">CAPAS</text>
+<text class="w16" text-anchor="middle" x="55" y="254">4 A 7</text>
+<text class="k16" x="96" y="240">Pasarela (gateway)</text>
+<text class="n16" x="96" y="254">Equilibrador de carga</text>
+<text class="d16" x="232" y="240">El CONTENIDO</text>
+<text class="n16" x="232" y="254">Traduce y reescribe</text>
+<text class="n16" x="360" y="240">Interconecta arquitecturas heterogéneas:</text>
+<text class="n16" x="360" y="253">correo, voz a red telefónica, protocolo industrial</text>
+<rect fill="none" height="48" rx="5" stroke="#d13c3c" stroke-width="1.5" width="312" x="22" y="272"></rect>
+<text class="r16" text-anchor="middle" x="178" y="290">AMBIGÜEDAD QUE INDUCE A ERROR</text>
+<text class="d16" text-anchor="middle" x="178" y="304">La «pasarela» de la configuración de un equipo es la puerta</text>
+<text class="d16" text-anchor="middle" x="178" y="315.5">de enlace predeterminada: un ENCAMINADOR, no traduce nada</text>
+<rect fill="none" height="48" rx="5" stroke="#d13c3c" stroke-width="1.5" width="312" x="346" y="272"></rect>
+<text class="r16" text-anchor="middle" x="502" y="290">TRAMPA CLÁSICA</text>
+<text class="d16" text-anchor="middle" x="502" y="304">El PANEL DE PARCHEO no es un dispositivo de interconexión:</text>
+<text class="d16" text-anchor="middle" x="502" y="315.5">es un elemento PASIVO del cableado estructurado</text>
+<text class="k16" text-anchor="middle" x="340" y="342">Las direcciones MAC cambian en cada salto · las direcciones IP no cambian en todo el trayecto</text>
+<text class="n16" text-anchor="end" x="670" y="360">[Fuente: ISO/IEC 7498-1 · IEEE 802.1D · Kurose]</text>
+</svg>

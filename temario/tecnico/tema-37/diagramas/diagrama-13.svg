@@ -1,0 +1,62 @@
+<svg aria-label="Algoritmo de CSMA barra CD paso a paso: escuchar el medio, esperar el espacio entre tramas de 96 tiempos de bit, transmitir escuchando a la vez, y ante colisión emitir una señal de atasco de 32 bits y esperar un tiempo aleatorio calculado por retroceso exponencial binario truncado en 10 con un límite de 16 intentos; a la derecha, el razonamiento del que sale la ranura de colisión de 512 tiempos de bit y la trama mínima de 64 octetos" role="img" viewbox="0 0 680 390" xmlns="http://www.w3.org/2000/svg">
+<style>.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.k13{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d13{font:8.5px system-ui,sans-serif;fill:#333}.n13{font:8px system-ui,sans-serif;fill:#666}.w13{font:700 9px system-ui,sans-serif;fill:#fff}.r13{font:700 9px system-ui,sans-serif;fill:#d13c3c}.g13{font:700 9px system-ui,sans-serif;fill:#2d8659}</style>
+<defs><marker id="m13" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#666"></path></marker><marker id="c13" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#d13c3c"></path></marker></defs>
+<text class="h13" text-anchor="middle" x="340" y="20">CSMA/CD: el algoritmo y de dónde sale la trama mínima de 64 octetos</text>
+<text class="k13" text-anchor="middle" x="160" y="40">EL ALGORITMO</text>
+<rect fill="#0055a0" height="20" rx="4" width="260" x="30" y="48"></rect>
+<text class="w13" text-anchor="middle" x="160" y="62">1 · ESCUCHAR EL MEDIO</text>
+<path d="M160,68 L160,76" marker-end="url(#m13)" stroke="#666" stroke-width="1.2"></path>
+<rect fill="#3d82c4" height="20" rx="4" width="260" x="30" y="78"></rect>
+<text class="w13" text-anchor="middle" x="160" y="92">2 · SI OCUPADO, SEGUIR ESCUCHANDO (1-persistente)</text>
+<path d="M160,98 L160,106" marker-end="url(#m13)" stroke="#666" stroke-width="1.2"></path>
+<rect fill="#0055a0" height="20" rx="4" width="260" x="30" y="108"></rect>
+<text class="w13" text-anchor="middle" x="160" y="122">3 · ESPERAR 96 TIEMPOS DE BIT Y TRANSMITIR</text>
+<path d="M160,128 L160,136" marker-end="url(#m13)" stroke="#666" stroke-width="1.2"></path>
+<rect fill="#2d8659" height="20" rx="4" width="260" x="30" y="138"></rect>
+<text class="w13" text-anchor="middle" x="160" y="152">4 · SEGUIR ESCUCHANDO MIENTRAS SE TRANSMITE</text>
+<path d="M160,158 L160,166" marker-end="url(#c13)" stroke="#d13c3c" stroke-width="1.2"></path>
+<rect fill="#d13c3c" height="20" rx="4" width="260" x="30" y="168"></rect>
+<text class="w13" text-anchor="middle" x="160" y="182">5 · ¿COLISIÓN? ATASCO DE 32 BITS</text>
+<path d="M160,188 L160,196" marker-end="url(#c13)" stroke="#d13c3c" stroke-width="1.2"></path>
+<rect fill="#fdf3e3" height="32" rx="4" width="260" x="30" y="198"></rect>
+<text class="d13" text-anchor="middle" x="160" y="212">6 · RETROCESO EXPONENCIAL BINARIO</text>
+<text class="d13" text-anchor="middle" x="160" y="225">esperar r ranuras, r aleatorio en [0, 2^k − 1], k = mín(n,10)</text>
+<path d="M30,214 L18,214 L18,58 L30,58" fill="none" marker-end="url(#m13)" stroke="#666" stroke-width="1.2"></path>
+<rect fill="#fbeaea" height="20" rx="4" width="260" x="30" y="240"></rect>
+<text class="r13" text-anchor="middle" x="160" y="254">7 · A LOS 16 INTENTOS, DESCARTAR LA TRAMA</text>
+<text class="k13" text-anchor="middle" x="490" y="40">DE DÓNDE SALEN LOS 64 OCTETOS</text>
+<rect fill="#eef4fa" height="86" rx="4" width="336" x="322" y="48"></rect>
+<circle cx="346" cy="76" fill="#0055a0" r="9"></circle>
+<text class="w13" text-anchor="middle" x="346" y="79">A</text>
+<circle cx="634" cy="76" fill="#0055a0" r="9"></circle>
+<text class="w13" text-anchor="middle" x="634" y="79">C</text>
+<path d="M356,72 L620,72" marker-end="url(#m13)" stroke="#2d8659" stroke-width="1.8"></path>
+<text class="n13" text-anchor="middle" x="490" y="66">ida: la señal de A tarda un tiempo T</text>
+<path d="M624,86 L360,86" marker-end="url(#c13)" stroke="#d13c3c" stroke-width="1.8"></path>
+<text class="n13" text-anchor="middle" x="490" y="100">vuelta: C transmite justo antes de oír a A; la colisión tarda otro T</text>
+<text class="k13" text-anchor="middle" x="490" y="116">A debe SEGUIR TRANSMITIENDO durante al menos 2T</text>
+<text class="d13" text-anchor="middle" x="490" y="128">Si terminase antes, no se enteraría de la colisión</text>
+<rect fill="#0055a0" height="20" rx="3" width="336" x="322" y="140"></rect>
+<text class="w13" text-anchor="middle" x="490" y="154">2T = RANURA DE COLISIÓN = 512 TIEMPOS DE BIT = 64 OCTETOS</text>
+<rect fill="#f7f9fb" height="94" rx="4" width="336" x="322" y="166"></rect>
+<text class="d13" x="332" y="182">A 10 Mbit/s: 512 bits ÷ 10 Mbit/s = 51,2 µs de ranura</text>
+<text class="d13" x="332" y="195">Ida T = 25,6 µs × 2·10⁸ m/s = 5.120 m teóricos</text>
+<text class="d13" x="332" y="208">La norma lo reduce a ~2.500 m por los repetidores</text>
+<text class="r13" x="332" y="224">A 100 Mbit/s el bit dura 10 veces menos: ~250 m</text>
+<text class="g13" x="332" y="240">En Gigabit habrían quedado 25 m: por eso la ranura</text>
+<text class="g13" x="332" y="252">subió a 4.096 tiempos de bit con extensión de portadora</text>
+<rect fill="#0055a0" height="20" rx="3" width="628" x="30" y="272"></rect>
+<text class="w13" x="40" y="286">TRAMA</text>
+<text class="w13" x="120" y="286">Preámbulo 7</text>
+<text class="w13" x="205" y="286">SFD 1</text>
+<text class="w13" x="258" y="286">Destino 6</text>
+<text class="w13" x="330" y="286">Origen 6</text>
+<text class="w13" x="400" y="286">Tipo/Long 2</text>
+<text class="w13" x="484" y="286">Datos 46-1500</text>
+<text class="w13" x="592" y="286">FCS 4</text>
+<text class="d13" text-anchor="middle" x="344" y="306">Mínima 64 octetos · máxima 1518 (1522 con etiqueta 802.1Q) · MTU 1500 · el preámbulo y el SFD NO se cuentan en el tamaño</text>
+<rect fill="none" height="42" rx="5" stroke="#d13c3c" stroke-width="1.5" width="628" x="30" y="318"></rect>
+<text class="r13" text-anchor="middle" x="344" y="336">CSMA/CD solo tiene sentido en SEMIDÚPLEX sobre medio compartido</text>
+<text class="d13" text-anchor="middle" x="344" y="352">Con conmutador y enlace dúplex SE DESACTIVA, y en 10 Gbit/s y superiores el semidúplex ni siquiera está definido</text>
+<text class="n13" text-anchor="end" x="670" y="378">[Fuente: IEEE 802.3 · Spurgeon]</text>
+</svg>

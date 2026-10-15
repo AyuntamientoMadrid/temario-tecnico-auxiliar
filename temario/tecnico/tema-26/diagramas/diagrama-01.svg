@@ -1,0 +1,26 @@
+<svg aria-label="Comparación de DAS, SAN y NAS indicando en cada caso qué se sirve (bloque o fichero), por qué medio viaja y si el sistema de ficheros lo gestiona el servidor o la cabina" role="img" viewbox="0 0 680 336" xmlns="http://www.w3.org/2000/svg">
+<style>.t1{font:700 11px system-ui,sans-serif;fill:#fff}.s1{font:9px system-ui,sans-serif;fill:#fff}.d1{font:9px system-ui,sans-serif;fill:#333}.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}.k1{font:700 9px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h1" text-anchor="middle" x="340" y="20">DAS, SAN y NAS: dónde está la frontera de la red</text>
+<rect fill="#0055a0" height="30" rx="5" width="200" x="20" y="34"></rect><text class="t1" text-anchor="middle" x="120" y="54">DAS</text>
+<rect fill="#2d8659" height="30" rx="5" width="200" x="240" y="34"></rect><text class="t1" text-anchor="middle" x="340" y="54">SAN</text>
+<rect fill="#e89822" height="30" rx="5" width="200" x="460" y="34"></rect><text class="t1" text-anchor="middle" x="560" y="54">NAS</text>
+<text class="k1" x="20" y="82">SERVIDOR / CLIENTE</text>
+<rect fill="#eef3f8" height="34" rx="4" width="200" x="20" y="88"></rect><text class="d1" text-anchor="middle" x="120" y="103">Aplicación</text><text class="d1" text-anchor="middle" x="120" y="116">+ sistema de ficheros</text>
+<rect fill="#eef3f8" height="34" rx="4" width="200" x="240" y="88"></rect><text class="d1" text-anchor="middle" x="340" y="103">Aplicación</text><text class="d1" text-anchor="middle" x="340" y="116">+ sistema de ficheros</text>
+<rect fill="#eef3f8" height="34" rx="4" width="200" x="460" y="88"></rect><text class="d1" text-anchor="middle" x="560" y="105">Aplicación</text><text class="d1" text-anchor="middle" x="560" y="118">(pide ficheros)</text>
+<text class="k1" x="20" y="142">POR DÓNDE VIAJA</text>
+<rect fill="#666" height="30" rx="4" width="200" x="20" y="148"></rect><text class="s1" text-anchor="middle" x="120" y="167">Bus local SAS / SATA / NVMe</text>
+<rect fill="#666" height="30" rx="4" width="200" x="240" y="148"></rect><text class="s1" text-anchor="middle" x="340" y="167">Red dedicada: FC o iSCSI</text>
+<rect fill="#666" height="30" rx="4" width="200" x="460" y="148"></rect><text class="s1" text-anchor="middle" x="560" y="167">Red IP: NFS o SMB</text>
+<text class="k1" x="20" y="198">QUÉ SE SIRVE</text>
+<rect fill="#0055a0" height="26" rx="4" width="200" x="20" y="204"></rect><text class="s1" text-anchor="middle" x="120" y="221">BLOQUE (disco en bruto)</text>
+<rect fill="#2d8659" height="26" rx="4" width="200" x="240" y="204"></rect><text class="s1" text-anchor="middle" x="340" y="221">BLOQUE (LUN)</text>
+<rect fill="#e89822" height="26" rx="4" width="200" x="460" y="204"></rect><text class="s1" text-anchor="middle" x="560" y="221">FICHERO (carpeta compartida)</text>
+<text class="k1" x="20" y="250">CABINA / ALMACENAMIENTO</text>
+<rect fill="#eef3f8" height="30" rx="4" width="200" x="20" y="256"></rect><text class="d1" text-anchor="middle" x="120" y="275">Discos de un solo servidor</text>
+<rect fill="#eef3f8" height="30" rx="4" width="200" x="240" y="256"></rect><text class="d1" text-anchor="middle" x="340" y="275">Cabina: pools y LUN</text>
+<rect fill="#eef3f8" height="30" rx="4" width="200" x="460" y="256"></rect><text class="d1" text-anchor="middle" x="560" y="269">Cabina: aquí vive el</text><text class="d1" text-anchor="middle" x="560" y="281">sistema de ficheros</text>
+<rect fill="none" height="26" rx="5" stroke="#0055a0" stroke-width="2" width="560" x="60" y="294"></rect>
+<text class="k1" text-anchor="middle" x="340" y="311">Sirve bloques → el sistema de ficheros lo pone el SERVIDOR · Sirve ficheros → lo pone la CABINA</text>
+<text style="font:9px system-ui;fill:#666" text-anchor="end" x="670" y="332">[Fuente: SNIA-DICT; SNIA-SSM]</text>
+</svg>

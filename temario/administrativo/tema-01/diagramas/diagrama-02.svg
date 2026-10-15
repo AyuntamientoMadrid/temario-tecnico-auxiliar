@@ -1,0 +1,25 @@
+<svg aria-label="Estructura de la CE" role="img" viewbox="0 0 720 420" xmlns="http://www.w3.org/2000/svg">
+<style>.d2-root{fill:#0055a0;stroke:#003d73;stroke-width:2}.d2-dogm{fill:#e89822;stroke:#a66410;stroke-width:1}.d2-org{fill:#2d8659;stroke:#1d5d3e;stroke-width:1}.d2-disp{fill:#6b6b6b;stroke:#3b3b3b;stroke-width:1}.d2-title{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.d2-label{font:600 11px system-ui,sans-serif;fill:#fff;text-anchor:middle}.d2-range{font:10px system-ui,sans-serif;fill:#fff;text-anchor:middle}.d2-link{stroke:#999;stroke-width:1;fill:none}.d2-legend{font:11px system-ui,sans-serif;fill:#333}</style>
+<rect class="d2-root" height="40" rx="6" width="160" x="280" y="15"></rect><text class="d2-title" x="360" y="32">CE 1978</text><text class="d2-range" x="360" y="48">169 art. + Preámbulo</text>
+<line class="d2-link" x1="360" x2="80" y1="55" y2="95"></line><line class="d2-link" x1="360" x2="210" y1="55" y2="95"></line><line class="d2-link" x1="360" x2="510" y1="55" y2="95"></line><line class="d2-link" x1="360" x2="640" y1="55" y2="95"></line>
+<rect class="d2-dogm" height="40" rx="4" width="120" x="20" y="90"></rect><text class="d2-label" x="80" y="106">Preámbulo</text><text class="d2-range" x="80" y="122">interpretativo</text>
+<rect class="d2-dogm" height="40" rx="4" width="120" x="150" y="90"></rect><text class="d2-label" x="210" y="106">Tít. Preliminar</text><text class="d2-range" x="210" y="122">arts. 1-9</text>
+<rect class="d2-dogm" height="40" rx="4" width="120" x="450" y="90"></rect><text class="d2-label" x="510" y="106">Título I</text><text class="d2-range" x="510" y="122">arts. 10-55</text>
+<rect class="d2-disp" height="40" rx="4" width="120" x="580" y="90"></rect><text class="d2-label" x="640" y="106">DDAA/DDTT</text><text class="d2-range" x="640" y="122">4+9+1+1</text>
+<text class="d2-legend" style="font-weight:700" x="40" y="155">Parte orgánica — Títulos II a X</text>
+<rect class="d2-org" height="34" rx="4" width="80" x="20" y="165"></rect><text class="d2-label" x="60" y="180">Tít. II</text><text class="d2-range" x="60" y="193">56-65 Corona</text>
+<rect class="d2-org" height="34" rx="4" width="80" x="110" y="165"></rect><text class="d2-label" x="150" y="180">Tít. III</text><text class="d2-range" x="150" y="193">66-96 Cortes</text>
+<rect class="d2-org" height="34" rx="4" width="80" x="200" y="165"></rect><text class="d2-label" x="240" y="180">Tít. IV</text><text class="d2-range" x="240" y="193">97-107 Gob.</text>
+<rect class="d2-org" height="34" rx="4" width="80" x="290" y="165"></rect><text class="d2-label" x="330" y="180">Tít. V</text><text class="d2-range" x="330" y="193">108-116 Rel.</text>
+<rect class="d2-org" height="34" rx="4" width="80" x="380" y="165"></rect><text class="d2-label" x="420" y="180">Tít. VI</text><text class="d2-range" x="420" y="193">117-127 Judic.</text>
+<rect class="d2-org" height="34" rx="4" width="80" x="470" y="165"></rect><text class="d2-label" x="510" y="180">Tít. VII</text><text class="d2-range" x="510" y="193">128-136 Econ.</text>
+<rect class="d2-org" height="34" rx="4" width="80" x="560" y="165"></rect><text class="d2-label" x="600" y="180">Tít. VIII</text><text class="d2-range" x="600" y="193">137-158 Terr.</text>
+<rect class="d2-org" height="34" rx="4" width="80" x="110" y="210"></rect><text class="d2-label" x="150" y="225">Tít. IX</text><text class="d2-range" x="150" y="238">159-165 TC</text>
+<rect class="d2-org" height="34" rx="4" width="80" x="200" y="210"></rect><text class="d2-label" x="240" y="225">Tít. X</text><text class="d2-range" x="240" y="238">166-169 Ref.</text>
+<text class="d2-legend" style="font-weight:700" x="40" y="280">Título I — Capítulos</text>
+<rect class="d2-dogm" height="40" rx="4" width="130" x="20" y="290"></rect><text class="d2-label" x="85" y="306">Cap. I</text><text class="d2-range" x="85" y="322">arts. 11-13</text>
+<rect class="d2-dogm" height="40" rx="4" width="130" x="160" y="290"></rect><text class="d2-label" x="225" y="306">Cap. II</text><text class="d2-range" x="225" y="322">arts. 14-38</text>
+<rect class="d2-dogm" height="40" rx="4" width="130" x="300" y="290"></rect><text class="d2-label" x="365" y="306">Cap. III</text><text class="d2-range" x="365" y="322">arts. 39-52</text>
+<rect class="d2-dogm" height="40" rx="4" width="130" x="440" y="290"></rect><text class="d2-label" x="505" y="306">Cap. IV</text><text class="d2-range" x="505" y="322">arts. 53-54</text>
+<rect class="d2-dogm" height="40" rx="4" width="120" x="580" y="290"></rect><text class="d2-label" x="640" y="306">Cap. V</text><text class="d2-range" x="640" y="322">art. 55</text>
+</svg>

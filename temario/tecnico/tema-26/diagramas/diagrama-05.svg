@@ -1,0 +1,26 @@
+<svg aria-label="Esquema del aprovisionamiento fino y la deduplicación: los volúmenes que ven los servidores suman más capacidad de la que existe físicamente en el pool, que solo consume el espacio realmente escrito" role="img" viewbox="0 0 680 310" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 10.5px system-ui,sans-serif;fill:#fff}.s5{font:9px system-ui,sans-serif;fill:#fff}.d5{font:9px system-ui,sans-serif;fill:#333}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.k5{font:700 10px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h5" text-anchor="middle" x="340" y="20">Thin provisioning y deduplicación</text>
+<text class="k5" x="20" y="44">LO QUE VEN LOS SERVIDORES (capacidad declarada: 6 TB)</text>
+<rect fill="#0055a0" height="40" rx="4" width="150" x="20" y="52"></rect><text class="t5" text-anchor="middle" x="95" y="70">VM Padrón</text><text class="s5" text-anchor="middle" x="95" y="85">declara 2 TB</text>
+<rect fill="#0055a0" height="40" rx="4" width="150" x="178" y="52"></rect><text class="t5" text-anchor="middle" x="253" y="70">VM Sede</text><text class="s5" text-anchor="middle" x="253" y="85">declara 2 TB</text>
+<rect fill="#0055a0" height="40" rx="4" width="150" x="336" y="52"></rect><text class="t5" text-anchor="middle" x="411" y="70">VM Expedientes</text><text class="s5" text-anchor="middle" x="411" y="85">declara 1 TB</text>
+<rect fill="#0055a0" height="40" rx="4" width="150" x="494" y="52"></rect><text class="t5" text-anchor="middle" x="569" y="70">VM Pruebas</text><text class="s5" text-anchor="middle" x="569" y="85">declara 1 TB</text>
+<path d="M340 96 L340 118" marker-end="url(#a5)" stroke="#0055a0" stroke-width="2"></path>
+<defs><marker id="a5" markerheight="8" markerwidth="8" orient="auto" refx="6" refy="3"><path d="M0,0 L0,6 L7,3 z" fill="#0055a0"></path></marker></defs>
+<rect fill="#e89822" height="26" rx="4" width="624" x="20" y="122"></rect>
+<text class="s5" text-anchor="middle" x="332" y="139">CAPA DE VIRTUALIZACIÓN: thin provisioning (solo se consume lo escrito) + deduplicación + compresión</text>
+<text class="k5" x="20" y="172">LO QUE SE CONSUME DE VERDAD (pool físico: 4 TB)</text>
+<rect fill="#eef3f8" height="42" rx="4" stroke="#888" width="624" x="20" y="180"></rect>
+<rect fill="#2d8659" height="38" rx="3" width="230" x="22" y="182"></rect><text class="s5" text-anchor="middle" x="137" y="199">Datos únicos escritos</text><text class="s5" text-anchor="middle" x="137" y="213">1,5 TB</text>
+<rect fill="#888" height="38" rx="3" width="120" x="254" y="182"></rect><text class="s5" text-anchor="middle" x="314" y="199">Bloques repetidos</text><text class="s5" text-anchor="middle" x="314" y="213">deduplicados</text>
+<rect fill="#fff" height="38" rx="3" stroke="#2d8659" stroke-dasharray="4,3" width="266" x="376" y="182"></rect><text style="font:9px system-ui;fill:#2d8659" text-anchor="middle" x="509" y="205">Espacio libre real del pool: hay que vigilarlo</text>
+<rect fill="#2d8659" height="42" rx="5" width="310" x="20" y="234"></rect>
+<text class="t5" text-anchor="middle" x="175" y="252">VENTAJA</text>
+<text class="s5" text-anchor="middle" x="175" y="268">Se aplaza la compra de discos; 6 TB declarados sobre 4 TB reales</text>
+<rect fill="#d13c3c" height="42" rx="5" width="302" x="342" y="234"></rect>
+<text class="t5" text-anchor="middle" x="493" y="252">RIESGO</text>
+<text class="s5" text-anchor="middle" x="493" y="268">Si el pool se llena de verdad, TODOS los volúmenes fallan a la vez</text>
+<text class="k5" text-anchor="middle" x="340" y="294">Deduplicación: en origen o en destino · en línea (inline) o posproceso</text>
+<text style="font:9px system-ui;fill:#666" text-anchor="end" x="670" y="306">[Fuente: SNIA-DICT; T10-SCSI]</text>
+</svg>

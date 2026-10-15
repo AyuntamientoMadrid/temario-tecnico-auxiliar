@@ -1,0 +1,39 @@
+<svg aria-label="Niveles de conformidad de WCAG: el nivel A es la base, el nivel AA incluye A y es el exigido por ley en el sector público, y el nivel AAA no se recomienda exigir para sitios completos; debajo, la línea temporal de las versiones WCAG 1.0 de 1999, 2.0 de 2008, 2.1 de 2018 y 2.2 de octubre de 2023" role="img" viewbox="0 0 680 346" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 11px system-ui,sans-serif;fill:#fff}.s5{font:9px system-ui,sans-serif;fill:#fff}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.k5{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d5{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h5" text-anchor="middle" x="340" y="20">Niveles de conformidad: acumulativos, no alternativos</text>
+<rect fill="#888" height="40" rx="5" width="150" x="60" y="120"></rect>
+<text class="t5" text-anchor="middle" x="135" y="136">NIVEL A</text>
+<text class="s5" text-anchor="middle" x="135" y="152">31 criterios · mínimo</text>
+<rect fill="#2d8659" height="70" rx="5" width="190" x="230" y="90"></rect>
+<text class="t5" text-anchor="middle" x="325" y="110">NIVEL AA</text>
+<text class="s5" text-anchor="middle" x="325" y="128">= todos los A + 24 criterios AA</text>
+<text class="s5" text-anchor="middle" x="325" y="146">EXIGIDO POR LEY (sector público)</text>
+<rect fill="#0055a0" height="100" rx="5" width="190" x="440" y="60"></rect>
+<text class="t5" text-anchor="middle" x="535" y="82">NIVEL AAA</text>
+<text class="s5" text-anchor="middle" x="535" y="100">= A + AA + 31 criterios AAA</text>
+<text class="s5" text-anchor="middle" x="535" y="118">El W3C NO recomienda</text>
+<text class="s5" text-anchor="middle" x="535" y="136">exigirlo para sitios completos</text>
+<text class="k5" text-anchor="middle" x="340" y="180">Total WCAG 2.2: 86 criterios de conformidad (31 A + 24 AA + 31 AAA)</text>
+<line stroke="#ccc" stroke-width="1" x1="20" x2="660" y1="194" y2="194"></line>
+<text class="k5" text-anchor="middle" x="340" y="214">Evolución de las versiones</text>
+<line stroke="#0055a0" stroke-width="2" x1="60" x2="620" y1="250" y2="250"></line>
+<circle cx="90" cy="250" fill="#888" r="6"></circle>
+<text class="d5" text-anchor="middle" x="90" y="238">1999</text>
+<text class="d5" text-anchor="middle" x="90" y="270">WCAG 1.0</text>
+<text class="d5" text-anchor="middle" x="90" y="284">14 pautas</text>
+<circle cx="230" cy="250" fill="#0055a0" r="6"></circle>
+<text class="d5" text-anchor="middle" x="230" y="238">dic 2008</text>
+<text class="d5" text-anchor="middle" x="230" y="270">WCAG 2.0 · 61 criterios</text>
+<text class="d5" text-anchor="middle" x="230" y="284">= ISO/IEC 40500:2012</text>
+<circle cx="400" cy="250" fill="#2d8659" r="6"></circle>
+<text class="d5" text-anchor="middle" x="400" y="238">jun 2018</text>
+<text class="d5" text-anchor="middle" x="400" y="270">WCAG 2.1 · 78 criterios</text>
+<text class="d5" text-anchor="middle" x="400" y="284">móvil, baja visión, cognitiva</text>
+<circle cx="580" cy="250" fill="#e89822" r="7"></circle>
+<text class="d5" text-anchor="middle" x="580" y="238">5 oct 2023</text>
+<text class="d5" text-anchor="middle" x="580" y="270">WCAG 2.2 · 86 criterios</text>
+<text class="d5" text-anchor="middle" x="580" y="284">+9 nuevos · retira 4.1.1</text>
+<rect fill="none" height="24" rx="5" stroke="#0055a0" stroke-width="2" width="460" x="110" y="298"></rect>
+<text style="font:700 10px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="314">Conformidad de PÁGINAS COMPLETAS y de PROCESOS COMPLETOS</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="340">[Fuente: WCAG20; WCAG21; WCAG22]</text>
+</svg>

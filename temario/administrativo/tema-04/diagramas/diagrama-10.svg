@@ -1,0 +1,20 @@
+<svg aria-label="Comparación entre el concejal-presidente (órgano superior) y el coordinador del distrito (órgano directivo)" role="img" viewbox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .j-hb{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .j-r{font:600 11px system-ui,sans-serif;fill:#777;text-anchor:middle}
+    .j-v{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}
+  </style>
+<rect fill="#0055a0" height="40" rx="8" width="300" x="40" y="20"></rect>
+<text class="j-hb" x="190" y="45">CONCEJAL-PRESIDENTE</text>
+<rect fill="#2d8659" height="40" rx="8" width="300" x="360" y="20"></rect>
+<text class="j-hb" x="510" y="45">COORDINADOR DEL DISTRITO</text>
+<text class="j-r" x="350" y="86">NATURALEZA</text>
+<rect fill="#e8f0f8" height="34" rx="5" width="300" x="40" y="94"></rect><text class="j-v" x="190" y="116">Órgano superior (política)</text>
+<rect fill="#e8f5ee" height="34" rx="5" width="300" x="360" y="94"></rect><text class="j-v" x="510" y="116">Órgano directivo (ejecución)</text>
+<text class="j-r" x="350" y="152">NOMBRAMIENTO</text>
+<rect fill="#e8f0f8" height="34" rx="5" width="300" x="40" y="160"></rect><text class="j-v" x="190" y="182">El alcalde</text>
+<rect fill="#e8f5ee" height="34" rx="5" width="300" x="360" y="160"></rect><text class="j-v" x="510" y="182">La Junta de Gobierno</text>
+<text class="j-r" x="350" y="218">FORMA DE SUS ACTOS</text>
+<rect fill="#e8f0f8" height="34" rx="5" width="300" x="40" y="226"></rect><text class="j-v" x="190" y="248">Decreto</text>
+<rect fill="#e8f5ee" height="34" rx="5" width="300" x="360" y="226"></rect><text class="j-v" x="510" y="248">Resolución</text>
+</svg>

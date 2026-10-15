@@ -1,0 +1,39 @@
+<svg aria-label="Comparación entre la arquitectura convergente clásica, con servidores de cómputo conectados por una red de almacenamiento a una cabina externa, y la arquitectura hiperconvergente, donde los discos residen en los propios nodos de cómputo y un software distribuido los agrega y replica presentando un almacén único" role="img" viewbox="0 0 680 326" xmlns="http://www.w3.org/2000/svg">
+<style>.t13{font:700 10.5px system-ui,sans-serif;fill:#fff}.s13{font:9px system-ui,sans-serif;fill:#fff}.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.k13{font:700 10.5px system-ui,sans-serif;fill:#0055a0}.n13{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h13" text-anchor="middle" x="340" y="20">Dónde viven los discos: cabina externa o dentro de los nodos</text>
+<text class="k13" text-anchor="middle" x="175" y="40">CONVERGENTE CLÁSICO</text>
+<text class="k13" text-anchor="middle" x="505" y="40">HIPERCONVERGENTE (HCI)</text>
+<rect fill="#0055a0" height="42" rx="4" width="96" x="24" y="50"></rect><text class="s13" text-anchor="middle" x="72" y="68">Nodo 1</text><text class="s13" text-anchor="middle" x="72" y="83">solo cómputo</text>
+<rect fill="#0055a0" height="42" rx="4" width="96" x="127" y="50"></rect><text class="s13" text-anchor="middle" x="175" y="68">Nodo 2</text><text class="s13" text-anchor="middle" x="175" y="83">solo cómputo</text>
+<rect fill="#0055a0" height="42" rx="4" width="96" x="230" y="50"></rect><text class="s13" text-anchor="middle" x="278" y="68">Nodo 3</text><text class="s13" text-anchor="middle" x="278" y="83">solo cómputo</text>
+<rect fill="#d13c3c" height="24" rx="3" width="302" x="24" y="100"></rect>
+<text class="t13" text-anchor="middle" x="175" y="117">RED DE ALMACENAMIENTO DEDICADA (FC / iSCSI)</text>
+<rect fill="#333" height="56" rx="4" width="302" x="24" y="132"></rect>
+<text class="t13" text-anchor="middle" x="175" y="152">CABINA EXTERNA</text>
+<text class="s13" text-anchor="middle" x="175" y="168">RAID, instantáneas, replicación y jerarquización</text>
+<text class="s13" text-anchor="middle" x="175" y="182">gestionada aparte, a menudo por otro equipo</text>
+<rect fill="#0055a0" height="74" rx="4" width="96" x="354" y="50"></rect><text class="s13" text-anchor="middle" x="402" y="68">Nodo 1</text><text class="s13" text-anchor="middle" x="402" y="83">cómputo</text>
+<rect fill="#2d8659" height="24" rx="3" width="80" x="362" y="92"></rect><text class="s13" text-anchor="middle" x="402" y="108">discos locales</text>
+<rect fill="#0055a0" height="74" rx="4" width="96" x="457" y="50"></rect><text class="s13" text-anchor="middle" x="505" y="68">Nodo 2</text><text class="s13" text-anchor="middle" x="505" y="83">cómputo</text>
+<rect fill="#2d8659" height="24" rx="3" width="80" x="465" y="92"></rect><text class="s13" text-anchor="middle" x="505" y="108">discos locales</text>
+<rect fill="#0055a0" height="74" rx="4" width="96" x="560" y="50"></rect><text class="s13" text-anchor="middle" x="608" y="68">Nodo 3</text><text class="s13" text-anchor="middle" x="608" y="83">cómputo</text>
+<rect fill="#2d8659" height="24" rx="3" width="80" x="568" y="92"></rect><text class="s13" text-anchor="middle" x="608" y="108">discos locales</text>
+<rect fill="#2d8659" height="26" rx="3" width="302" x="354" y="132"></rect>
+<text class="t13" style="font-size:9.2px" text-anchor="middle" x="505" y="150">SOFTWARE DISTRIBUIDO: agrega y REPLICA entre nodos</text>
+<rect fill="#e89822" height="24" rx="3" width="302" x="354" y="164"></rect>
+<text class="t13" text-anchor="middle" x="505" y="181">ALMACÉN ÚNICO presentado al clúster</text>
+<rect fill="#f2f6fa" height="66" rx="4" stroke="#0055a0" width="302" x="24" y="198"></rect>
+<text class="n13" text-anchor="middle" x="175" y="216">Crece cómputo y disco POR SEPARADO</text>
+<text class="n13" text-anchor="middle" x="175" y="232">Funciones muy maduras y alto rendimiento</text>
+<text class="n13" text-anchor="middle" x="175" y="248">Coste y complejidad de la red de almacenamiento</text>
+<text style="font:700 9px system-ui;fill:#a02020" text-anchor="middle" x="175" y="260">Riesgo de concentración en la cabina</text>
+<rect fill="#eaf5ec" height="66" rx="4" stroke="#2d8659" width="302" x="354" y="198"></rect>
+<text class="n13" text-anchor="middle" x="505" y="216">Crece AÑADIENDO NODOS (escalado horizontal)</text>
+<text class="n13" text-anchor="middle" x="505" y="232">Gestión unificada desde la consola de virtualización</text>
+<text class="n13" text-anchor="middle" x="505" y="248">Cómputo y almacenamiento quedan ACOPLADOS</text>
+<text style="font:700 9px system-ui;fill:#a02020" text-anchor="middle" x="505" y="260">Dependencia fuerte de la red entre nodos</text>
+<rect fill="#0055a0" height="30" rx="4" width="560" x="60" y="274"></rect>
+<text class="s13" text-anchor="middle" x="340" y="285">HCI encaja especialmente bien con VDI: E/S local rápida sin rodeo por la red de almacenamiento,</text>
+<text class="s13" text-anchor="middle" x="340" y="298">deduplicación de escritorios casi idénticos y crecimiento por bloques de usuarios</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="316">[Fuente: SNIA-SSM; VMWARE-DOC; HYPERV-DOC]</text>
+</svg>

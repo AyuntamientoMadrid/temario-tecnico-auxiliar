@@ -1,0 +1,32 @@
+<svg aria-label="Gestión de servicios y demonios en systemd frente a servicios de Windows, con la distinción entre arrancar ahora y habilitar en el arranque. Debajo, la sintaxis de los cinco campos de cron y las buenas prácticas de las tareas programadas" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 11px system-ui,sans-serif;fill:#fff}.s9{font:9px system-ui,sans-serif;fill:#fff}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.k9{font:700 10px system-ui,sans-serif;fill:#0055a0}.d9{font:9px system-ui,sans-serif;fill:#444}.m9{font:700 10px ui-monospace,monospace;fill:#0055a0}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">Servicios y tareas programadas: el trabajo que corre solo</text>
+<rect fill="#0055a0" height="112" rx="5" width="316" x="16" y="34"></rect>
+<text class="t9" text-anchor="middle" x="174" y="54">LINUX · systemd</text>
+<text class="s9" text-anchor="middle" x="174" y="74">Unidades: .service · .timer · .target · .mount</text>
+<text class="s9" text-anchor="middle" x="174" y="92">systemctl status | restart | enable --now</text>
+<text class="s9" text-anchor="middle" x="174" y="110">systemctl list-units --failed</text>
+<text class="s9" text-anchor="middle" x="174" y="132">Registro integrado: journalctl -u servicio</text>
+<rect fill="#004077" height="112" rx="5" width="316" x="348" y="34"></rect>
+<text class="t9" text-anchor="middle" x="506" y="54">WINDOWS · Administrador de servicios</text>
+<text class="s9" text-anchor="middle" x="506" y="74">services.msc · sc · Get-Service · Restart-Service</text>
+<text class="s9" text-anchor="middle" x="506" y="92">Tipo de inicio: automático · manual · deshabilitado</text>
+<text class="s9" text-anchor="middle" x="506" y="110">Cuenta de ejecución con privilegios mínimos</text>
+<text class="s9" text-anchor="middle" x="506" y="132">Dependencias y acción ante fallo</text>
+<rect fill="#d13c3c" height="30" rx="5" width="648" x="16" y="154"></rect>
+<text class="t9" text-anchor="middle" x="340" y="174">start = arrancar AHORA · enable = arrancar en el PRÓXIMO INICIO · son cosas distintas</text>
+<rect fill="#f0f4f8" height="82" rx="5" stroke="#0055a0" width="380" x="16" y="194"></rect>
+<text class="k9" text-anchor="middle" x="206" y="212">Los cinco campos de cron</text>
+<text class="m9" text-anchor="middle" x="206" y="234">min(0-59) hora(0-23) día-mes(1-31) mes(1-12) día-sem(0-7)</text>
+<text class="d9" text-anchor="middle" x="206" y="254">30 2 * * *  → todos los días a las 02:30</text>
+<text class="d9" text-anchor="middle" x="206" y="269">*/15 * * * *  → cada quince minutos · 0 y 7 = domingo</text>
+<rect fill="#f0f4f8" height="82" rx="5" stroke="#2d8659" width="256" x="408" y="194"></rect>
+<text class="k9" text-anchor="middle" x="536" y="212">Windows: Programador de tareas</text>
+<text class="d9" text-anchor="middle" x="536" y="232">Desencadenadores: hora, inicio de sesión,</text>
+<text class="d9" text-anchor="middle" x="536" y="247">evento del registro, conexión de red</text>
+<text class="d9" text-anchor="middle" x="536" y="266">Equivalente moderno en Linux: .timer</text>
+<rect fill="#2d8659" height="38" rx="5" width="648" x="16" y="286"></rect>
+<text class="t9" text-anchor="middle" x="340" y="304">Una tarea programada bien hecha</text>
+<text class="s9" text-anchor="middle" x="340" y="319">idempotente · registra su resultado · avisa TAMBIÉN si falla · usa bloqueo · corre con cuenta de servicio</text>
+<text style="font:9.5px system-ui;fill:#666" text-anchor="end" x="670" y="336">[Fuente: SYSTEMD; MAN-PAGES; MS-WINSERVER]</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg aria-label="Cabecera IPv6 fija de 40 octetos con ocho campos: versión, clase de tráfico, etiqueta de flujo, longitud de la carga útil, siguiente cabecera, límite de saltos y las direcciones de origen y destino de 128 bits cada una. Se acompaña de los prefijos de los tipos de dirección: 2000 barra 3 unidifusión global, fe80 barra 10 enlace local, fc00 barra 7 local única y ff00 barra 8 multidifusión" role="img" viewbox="0 0 680 366" xmlns="http://www.w3.org/2000/svg">
+<style>.t12{font:700 9px system-ui,sans-serif;fill:#fff}.d12{font:8.5px system-ui,sans-serif;fill:#333}.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}.k12{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n12{font:8.5px system-ui,sans-serif;fill:#666}.r12{font:700 8.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h12" text-anchor="middle" x="340" y="20">Cabecera IPv6 · 40 octetos fijos y solo 8 campos</text>
+<rect fill="#0055a0" height="28" rx="3" width="78" x="24" y="38"></rect><text class="t12" text-anchor="middle" x="63" y="56">Versión (4)</text>
+<rect fill="#0055a0" height="28" rx="3" width="152" x="104" y="38"></rect><text class="t12" text-anchor="middle" x="180" y="56">Clase de tráfico (8)</text>
+<rect fill="#0055a0" height="28" rx="3" width="398" x="258" y="38"></rect><text class="t12" text-anchor="middle" x="457" y="56">Etiqueta de flujo (20)</text>
+<rect fill="#3781c0" height="28" rx="3" width="312" x="24" y="70"></rect><text class="t12" text-anchor="middle" x="180" y="88">Longitud de la CARGA ÚTIL (16)</text>
+<rect fill="#e89822" height="28" rx="3" width="158" x="338" y="70"></rect><text class="t12" text-anchor="middle" x="417" y="88">Siguiente cabecera (8)</text>
+<rect fill="#d13c3c" height="28" rx="3" width="158" x="498" y="70"></rect><text class="t12" text-anchor="middle" x="577" y="88">Límite de saltos (8)</text>
+<rect fill="#0055a0" height="28" rx="3" width="632" x="24" y="102"></rect><text class="t12" text-anchor="middle" x="340" y="120">Dirección de ORIGEN (128 bits)</text>
+<rect fill="#0055a0" height="28" rx="3" width="632" x="24" y="134"></rect><text class="t12" text-anchor="middle" x="340" y="152">Dirección de DESTINO (128 bits)</text>
+<rect fill="#fbeaea" height="34" rx="4" width="632" x="24" y="172"></rect>
+<text class="r12" text-anchor="middle" x="340" y="188">DESAPARECEN respecto de IPv4: la suma de comprobación, el IHL, las opciones y los tres campos de fragmentación</text>
+<text class="d12" text-anchor="middle" x="340" y="201">Lo opcional pasa a cabeceras de extensión encadenadas por el campo «siguiente cabecera»</text>
+<text class="k12" x="24" y="226">TIPOS DE DIRECCIÓN Y SUS PREFIJOS</text>
+<rect fill="#0055a0" height="40" rx="4" width="206" x="24" y="234"></rect><text class="t12" text-anchor="middle" x="127" y="251">2000::/3 — unidifusión global</text><text class="t12" text-anchor="middle" x="127" y="266">encaminable en internet</text>
+<rect fill="#2d8659" height="40" rx="4" width="206" x="236" y="234"></rect><text class="t12" text-anchor="middle" x="339" y="251">fe80::/10 — enlace local</text><text class="t12" text-anchor="middle" x="339" y="266">siempre presente, obligatoria</text>
+<rect fill="#e89822" height="40" rx="4" width="208" x="448" y="234"></rect><text class="t12" text-anchor="middle" x="552" y="251">fc00::/7 — local única</text><text class="t12" text-anchor="middle" x="552" y="266">uso interno de la organización</text>
+<rect fill="#8e44ad" height="40" rx="4" width="206" x="24" y="280"></rect><text class="t12" text-anchor="middle" x="127" y="297">ff00::/8 — multidifusión</text><text class="t12" text-anchor="middle" x="127" y="312">ff02::1 nodos · ff02::2 routers</text>
+<rect fill="#5a6b7d" height="40" rx="4" width="206" x="236" y="280"></rect><text class="t12" text-anchor="middle" x="339" y="297">::1 bucle · :: no especificada</text><text class="t12" text-anchor="middle" x="339" y="312">2001:db8::/32 documentación</text>
+<rect fill="#d13c3c" height="40" rx="4" width="208" x="448" y="280"></rect><text class="t12" text-anchor="middle" x="552" y="297">NO EXISTE LA DIFUSIÓN</text><text class="t12" text-anchor="middle" x="552" y="312">se sustituye por multidifusión</text>
+<rect fill="#eef3f8" height="20" rx="3" width="632" x="24" y="326"></rect>
+<text class="k12" text-anchor="middle" x="340" y="340">Una subred de usuarios en IPv6 es siempre un /64: los últimos 64 bits son el identificador de interfaz</text>
+<text class="n12" text-anchor="end" x="670" y="358">[Fuente: RFC 8200, RFC 4291]</text>
+</svg>

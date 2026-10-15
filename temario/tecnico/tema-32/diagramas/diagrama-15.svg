@@ -1,0 +1,40 @@
+<svg aria-label="Estructura de los paquetes IPsec comparando la cabecera de autenticación AH que es el protocolo IP 51 y no cifra, con la carga de seguridad encapsulada ESP que es el protocolo IP 50 y sí cifra, y comparación del modo transporte que conserva la cabecera IP original con el modo túnel que encapsula el paquete completo con una nueva cabecera" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.t15{font:700 10px system-ui,sans-serif;fill:#fff}.s15{font:8px system-ui,sans-serif;fill:#fff}.d15{font:9px system-ui,sans-serif;fill:#333}.h15{font:700 13px system-ui,sans-serif;fill:#0055a0}.k15{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n15{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h15" text-anchor="middle" x="340" y="20">IPsec: dos protocolos y dos modos</text>
+<rect fill="#0055a0" height="52" rx="5" width="316" x="20" y="34"></rect>
+<text class="t15" text-anchor="middle" x="178" y="52">AH — Authentication Header</text>
+<text class="s15" text-anchor="middle" x="178" y="68">PROTOCOLO IP 51 · integridad y autenticidad</text>
+<text class="s15" text-anchor="middle" x="178" y="81">NO CIFRA · incompatible con NAT</text>
+<rect fill="#2d8659" height="52" rx="5" width="316" x="344" y="34"></rect>
+<text class="t15" text-anchor="middle" x="502" y="52">ESP — Encapsulating Security Payload</text>
+<text class="s15" text-anchor="middle" x="502" y="68">PROTOCOLO IP 50 · integridad, autenticidad</text>
+<text class="s15" text-anchor="middle" x="502" y="81">Y CONFIDENCIALIDAD (cifra la carga útil)</text>
+<text class="k15" x="20" y="106">PAQUETE ORIGINAL</text>
+<rect fill="#888" height="26" rx="3" width="120" x="20" y="112"></rect><text class="s15" text-anchor="middle" x="80" y="129">CABECERA IP</text>
+<rect fill="#aaa" height="26" rx="3" width="120" x="144" y="112"></rect><text class="s15" text-anchor="middle" x="204" y="129">CABECERA TCP</text>
+<rect fill="#ccc" height="26" rx="3" width="200" x="268" y="112"></rect><text style="font:8px system-ui;fill:#333" text-anchor="middle" x="368" y="129">DATOS</text>
+<text class="k15" x="20" y="160">MODO TRANSPORTE — extremo a extremo, conserva la cabecera IP original</text>
+<rect fill="#888" height="26" rx="3" width="120" x="20" y="166"></rect><text class="s15" text-anchor="middle" x="80" y="183">CABECERA IP</text>
+<rect fill="#2d8659" height="26" rx="3" width="76" x="144" y="166"></rect><text class="s15" text-anchor="middle" x="182" y="183">ESP</text>
+<rect fill="#aaa" height="26" rx="3" width="120" x="224" y="166"></rect><text class="s15" text-anchor="middle" x="284" y="183">CABECERA TCP</text>
+<rect fill="#ccc" height="26" rx="3" width="200" x="348" y="166"></rect><text style="font:8px system-ui;fill:#333" text-anchor="middle" x="448" y="183">DATOS</text>
+<rect fill="#2d8659" height="26" rx="3" width="88" x="552" y="166"></rect><text class="s15" text-anchor="middle" x="596" y="183">ESP cola</text>
+<line stroke="#d13c3c" stroke-width="2" x1="224" x2="548" y1="198" y2="198"></line>
+<text class="n15" text-anchor="middle" x="386" y="212">cifrado con ESP</text>
+<text class="k15" x="20" y="236">MODO TÚNEL — pasarela a pasarela, encapsula el paquete ENTERO</text>
+<rect fill="#d13c3c" height="26" rx="3" width="110" x="20" y="242"></rect><text class="s15" text-anchor="middle" x="75" y="259">NUEVA CAB. IP</text>
+<rect fill="#2d8659" height="26" rx="3" width="66" x="134" y="242"></rect><text class="s15" text-anchor="middle" x="167" y="259">ESP</text>
+<rect fill="#888" height="26" rx="3" width="110" x="204" y="242"></rect><text class="s15" text-anchor="middle" x="259" y="259">CAB. IP ORIGINAL</text>
+<rect fill="#aaa" height="26" rx="3" width="106" x="318" y="242"></rect><text class="s15" text-anchor="middle" x="371" y="259">CABECERA TCP</text>
+<rect fill="#ccc" height="26" rx="3" width="140" x="428" y="242"></rect><text style="font:8px system-ui;fill:#333" text-anchor="middle" x="498" y="259">DATOS</text>
+<rect fill="#2d8659" height="26" rx="3" width="68" x="572" y="242"></rect><text class="s15" text-anchor="middle" x="606" y="259">ESP cola</text>
+<line stroke="#d13c3c" stroke-width="2" x1="204" x2="568" y1="274" y2="274"></line>
+<text class="n15" text-anchor="middle" x="386" y="288">cifrado con ESP — el direccionamiento interno queda oculto</text>
+<rect fill="#eef3f8" height="34" rx="4" width="316" x="20" y="298"></rect>
+<text class="d15" text-anchor="middle" x="178" y="313">IKEv2 negocia las asociaciones de seguridad</text>
+<text class="d15" text-anchor="middle" x="178" y="326">UDP 500 · UDP 4500 con travesía de NAT</text>
+<rect fill="#fdf3e3" height="34" rx="4" width="316" x="344" y="298"></rect>
+<text class="d15" text-anchor="middle" x="502" y="313">Cada SA es UNIDIRECCIONAL: una comunicación</text>
+<text class="d15" text-anchor="middle" x="502" y="326">bidireccional necesita DOS · combinación típica: ESP en túnel</text>
+<text class="n15" text-anchor="end" x="670" y="344">[Fuente: RFC4301; RFC4302; RFC4303; RFC7296]</text>
+</svg>

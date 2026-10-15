@@ -1,0 +1,692 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "El nuevo técnico quiere saber cómo clasifica el artículo 7 del ROGA los órganos del Ayuntamiento atendiendo a sus funciones. La clasificación es:",
+    "o": [
+     "Órganos superiores y órganos directivos.",
+     "Órganos centrales, órganos territoriales y organismos públicos.",
+     "Órganos de gobierno, órganos consultivos y órganos de participación."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · art. 7.1 ROGA",
+    "e": "Atendiendo a sus funciones, el artículo 7.1 ROGA distingue órganos superiores y directivos; la división en centrales, territoriales y organismos públicos es la del artículo 6, que atiende al ámbito y no a la función."
+   },
+   {
+    "q": "El director general del que depende el nuevo técnico es, conforme al artículo 7 del ROGA:",
+    "o": [
+     "Un órgano superior, al que corresponde la dirección y planificación política del Área.",
+     "Un órgano directivo, al que corresponde ejecutar las decisiones de los órganos superiores.",
+     "Un órgano territorial, porque ejerce sus competencias sobre una parte del municipio."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestiones 1 y 2 · art. 7.3 y 7.4 ROGA",
+    "e": "Los directores generales figuran entre los órganos directivos (art. 7.3 ROGA), a los que corresponde la ejecución de las decisiones de los órganos superiores (art. 7.4 ROGA)."
+   },
+   {
+    "q": "¿Cuál de las siguientes parejas está formada solo por órganos superiores del Ayuntamiento?",
+    "o": [
+     "El alcalde y el coordinador general de la Alcaldía.",
+     "Un concejal de Gobierno y el interventor general municipal.",
+     "El alcalde y un miembro de la Junta de Gobierno Local."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · art. 7.2 ROGA",
+    "e": "Son órganos superiores el alcalde y los miembros de la Junta de Gobierno Local (art. 7.2 ROGA); los coordinadores generales y el interventor general municipal son órganos directivos (art. 7.3 ROGA)."
+   },
+   {
+    "q": "En el reparto de funciones del artículo 7.4 del ROGA, a los órganos superiores les corresponde:",
+    "o": [
+     "La ejecución de las decisiones adoptadas por los órganos directivos.",
+     "La dirección, planificación y coordinación política.",
+     "La gestión de los servicios comunes de cada Área de Gobierno."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · art. 7.4 ROGA",
+    "e": "El artículo 7.4 ROGA atribuye a los órganos superiores la dirección, planificación y coordinación política, y a los directivos la ejecución de lo que aquellos deciden; la gestión de los servicios comunes es función del secretario general técnico."
+   },
+   {
+    "q": "¿Cuál de las siguientes relaciones contiene únicamente órganos directivos?",
+    "o": [
+     "Coordinador general, titular de la Asesoría Jurídica e interventor general municipal.",
+     "Concejal-presidente, coordinador de Distrito y director general.",
+     "Junta de Gobierno Local, secretario general técnico y gerente de un organismo autónomo."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · art. 7.3 ROGA",
+    "e": "El artículo 7.3 ROGA incluye entre los órganos directivos a los coordinadores generales, al titular de la Asesoría Jurídica y al interventor general municipal; el concejal-presidente y la Junta de Gobierno Local son órganos superiores."
+   },
+   {
+    "q": "El técnico va a dar soporte a un distrito. Allí, el concejal-presidente y el coordinador de Distrito tienen, respectivamente, la consideración de:",
+    "o": [
+     "Órgano directivo y órgano superior.",
+     "Órganos directivos ambos, por actuar solo en un distrito.",
+     "Órgano superior y órgano directivo."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · art. 7.2 y 7.3 ROGA",
+    "e": "En el ámbito de los distritos, los concejales-presidentes son órganos superiores (art. 7.2 ROGA) y los coordinadores de Distrito son órganos directivos (art. 7.3 ROGA)."
+   },
+   {
+    "q": "El Área tiene adscrito un organismo autónomo con el que el técnico colabora a diario. Su gerente es, a efectos del artículo 7 del ROGA:",
+    "o": [
+     "Un órgano directivo.",
+     "Un órgano superior.",
+     "Un órgano territorial."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · art. 7.3 ROGA",
+    "e": "El artículo 7.3 ROGA incluye entre los órganos directivos a los gerentes de los organismos autónomos y entidades públicas empresariales."
+   },
+   {
+    "q": "Los titulares de los órganos superiores y directivos quedan sometidos al régimen de incompatibilidades establecido en:",
+    "o": [
+     "La Ley 7/1985, Reguladora de las Bases del Régimen Local, en su título X.",
+     "La Ley 57/2003, de medidas para la modernización del gobierno local.",
+     "La Ley 53/1984, de Incompatibilidades del Personal al Servicio de las Administraciones Públicas."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 4 · art. 7.7 ROGA",
+    "e": "El artículo 7.7 ROGA somete a los titulares de órganos superiores y directivos al régimen de incompatibilidades de la Ley 53/1984 y de las demás normas estatales o autonómicas que resulten de aplicación."
+   },
+   {
+    "q": "En cuanto al régimen de incompatibilidades, el compañero del técnico afirma que solo afecta a los cargos políticos. Debe corregírsele, porque el artículo 7.7 del ROGA lo aplica:",
+    "o": [
+     "Solo a los titulares de los órganos directivos, por ser en general funcionarios.",
+     "A los titulares de los órganos superiores y también a los de los órganos directivos.",
+     "Solo al alcalde y a los concejales que integran la Junta de Gobierno Local."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · art. 7.7 ROGA",
+    "e": "El régimen de incompatibilidades de la Ley 53/1984 alcanza a los titulares de ambos tipos de órganos, superiores y directivos (art. 7.7 ROGA)."
+   },
+   {
+    "q": "En la sesión de acogida se menciona al secretario general del Pleno. Según el ROGA, este puesto:",
+    "o": [
+     "Es órgano directivo y se nombra entre funcionarios de Administración Local con habilitación de carácter nacional.",
+     "Es órgano superior y se elige por el Pleno entre sus propios concejales.",
+     "Es órgano directivo y lo nombra libremente el alcalde, sin requisito de ser funcionario."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · art. 7.6 ROGA",
+    "e": "El secretario general del Pleno tiene carácter de órgano directivo y se nombra entre funcionarios de Administración Local con habilitación de carácter nacional (art. 7.6 ROGA)."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "¿Qué órgano puede crear la nueva Área de Gobierno de transformación digital y fijar su denominación y atribuciones?",
+    "o": [
+     "El Pleno.",
+     "El alcalde.",
+     "La Junta de Gobierno Local."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · art. 40.2 ROGA",
+    "e": "Corresponde al alcalde determinar el número, la denominación y las atribuciones de las Áreas de Gobierno (art. 40.2 ROGA)."
+   },
+   {
+    "q": "La decisión de crear la nueva Área de Gobierno adoptará la forma de:",
+    "o": [
+     "Un acuerdo del Pleno.",
+     "Una ordenanza municipal.",
+     "Un decreto."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · art. 40.2 ROGA",
+    "e": "El alcalde determina el número, la denominación y las atribuciones de las Áreas de Gobierno mediante decreto (art. 40.2 ROGA)."
+   },
+   {
+    "q": "El alcalde dicta esa decisión al amparo de los siguientes preceptos de la LBRL:",
+    "o": [
+     "Los artículos 123.1.c) y 124.4.k).",
+     "Los artículos 130.3 y 85 bis.",
+     "Los artículos 44.e) y 49.1."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · art. 40.2 ROGA",
+    "e": "El alcalde actúa al amparo del artículo 123.1.c) en relación con el artículo 124.4.k) de la LBRL; el 130.3 regula el nombramiento de directivos y el 85 bis los organismos públicos."
+   },
+   {
+    "q": "En cuanto al número de Áreas de Gobierno, la reorganización que plantea el alcalde está sujeta a este límite:",
+    "o": [
+     "No podrá haber más de 7 Áreas de Gobierno.",
+     "No existe límite: el alcalde crea las que considere necesarias.",
+     "No podrá haber más de 15 Áreas de Gobierno."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · art. 40.2 ROGA",
+    "e": "El artículo 40.2 ROGA establece que el número de Áreas de Gobierno no podrá exceder de 15; siete es el número vigente, no el máximo."
+   },
+   {
+    "q": "Partiendo de las siete Áreas de Gobierno vigentes, ¿cuántas Áreas de Gobierno nuevas podría crear como máximo el alcalde, sin suprimir ninguna?",
+    "o": [
+     "Siete.",
+     "Ocho.",
+     "Nueve."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · art. 40.2 ROGA · §12",
+    "e": "El máximo es de 15 Áreas de Gobierno (art. 40.2 ROGA) y hoy hay siete, por lo que caben 15 − 7 = 8 nuevas."
+   },
+   {
+    "q": "Dentro de la clasificación del artículo 6 del ROGA, la nueva Área de Gobierno será:",
+    "o": [
+     "Un órgano central, porque ejercerá sus competencias sobre todo el municipio.",
+     "Un órgano territorial, porque se implantará en los distritos.",
+     "Un organismo público, adscrito a la Alcaldía por razón de la materia."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · art. 6 ROGA",
+    "e": "Las Áreas de Gobierno son órganos centrales, que ejercen sus competencias sobre todo el territorio del municipio; los territoriales actúan solo en un distrito (art. 6 ROGA)."
+   },
+   {
+    "q": "¿Qué comprenderá la nueva Área de Gobierno, conforme al artículo 40.1 del ROGA?",
+    "o": [
+     "Los servicios comunes de todas las Áreas de Gobierno del Ayuntamiento.",
+     "Uno o varios sectores funcionalmente homogéneos de la actividad administrativa municipal.",
+     "El conjunto de los organismos autónomos y entidades públicas empresariales."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · art. 40.1 ROGA",
+    "e": "Cada Área de Gobierno comprende uno o varios sectores funcionalmente homogéneos de la actividad administrativa municipal (art. 40.1 ROGA)."
+   },
+   {
+    "q": "Dentro de la organización municipal, la nueva Área de Gobierno constituirá:",
+    "o": [
+     "Uno de los niveles esenciales de la organización municipal.",
+     "Una unidad inferior dependiente de una Dirección General.",
+     "Un órgano de participación de los vecinos y sus asociaciones."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · art. 40.1 ROGA",
+    "e": "Las Áreas de Gobierno constituyen los niveles esenciales de la organización municipal (art. 40.1 ROGA)."
+   },
+   {
+    "q": "El alcalde quiere que, dentro de la nueva Área, un nivel de tipo «Área» se ocupe de la ciberseguridad. De un Área de Gobierno puede depender:",
+    "o": [
+     "Otra Área de Gobierno, subordinada a la primera.",
+     "Una Junta Municipal de Distrito especializada.",
+     "Un Área de Coordinación o un Área Delegada."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · art. 40.1 ROGA",
+    "e": "De las Áreas de Gobierno pueden depender Áreas de Coordinación o Áreas Delegadas (art. 40.1 ROGA)."
+   },
+   {
+    "q": "Si se crea esa Área Delegada de ciberseguridad, su función será:",
+    "o": [
+     "Dirigir la actividad de varias Áreas de Gobierno en materia digital.",
+     "Dirigir un sector de la actividad administrativa del Área de Gobierno de la que dependa.",
+     "Ejercer sus competencias exclusivamente en el ámbito de un distrito."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · art. 40.1 ROGA",
+    "e": "A las Áreas de Coordinación y Delegadas les corresponde la dirección de un sector de la actividad administrativa del Área de la que dependen (art. 40.1 ROGA)."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "¿Qué órgano debe existir necesariamente en el Área de Gobierno de Economía, Innovación y Hacienda?",
+    "o": [
+     "Un coordinador general.",
+     "Un Área Delegada.",
+     "Una Secretaría General Técnica."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · art. 41.1 ROGA",
+    "e": "Las Áreas de Gobierno «contarán» con una Secretaría General Técnica, mientras que «podrán» contar con coordinadores generales; las Áreas Delegadas también son potestativas (arts. 40.1 y 41.1 ROGA)."
+   },
+   {
+    "q": "El borrador del organigrama prevé dos coordinadores generales en el Área. Esta previsión:",
+    "o": [
+     "Es posible, porque el Área puede contar con uno o más coordinadores generales.",
+     "No es posible, porque cada Área solo puede tener un coordinador general.",
+     "Solo es posible si el Pleno lo autoriza de forma expresa."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · art. 41.1 ROGA",
+    "e": "El artículo 41.1 ROGA permite que las Áreas de Gobierno cuenten con uno o más coordinadores generales."
+   },
+   {
+    "q": "Los bloques de competencias homogéneas del Área (por ejemplo, Hacienda, por un lado, e Innovación, por otro) se estructuran a través de:",
+    "o": [
+     "Áreas de Gobierno independientes entre sí.",
+     "Direcciones Generales u órganos similares.",
+     "Juntas Municipales de Distrito."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · art. 41.1 ROGA",
+    "e": "Las Áreas de Gobierno se estructuran por bloques de competencias homogéneas a través de Direcciones Generales u órganos similares (art. 41.1 ROGA)."
+   },
+   {
+    "q": "Al ordenar jerárquicamente los órganos directivos del Área conforme al artículo 42.2 del ROGA, el orden correcto es:",
+    "o": [
+     "Coordinador general, secretario general técnico y director general.",
+     "Secretario general técnico, coordinador general y director general.",
+     "Coordinador general, director general y secretario general técnico."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 2 · art. 42.2 ROGA",
+    "e": "El artículo 42.2 ROGA ordena a los órganos directivos así: coordinador general, secretario general técnico y director general u órgano asimilado."
+   },
+   {
+    "q": "La Dirección General de Innovación quiere organizarse internamente. Podrá hacerlo en:",
+    "o": [
+     "Áreas Delegadas, Direcciones Generales adjuntas y Secretarías Generales Técnicas.",
+     "Distritos, Juntas Municipales y órganos de participación vecinal.",
+     "Subdirecciones Generales, Servicios, Departamentos, Secciones y otras unidades inferiores."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · art. 41.2 ROGA",
+    "e": "Las Secretarías Generales Técnicas y las Direcciones Generales pueden organizarse en Subdirecciones Generales, Servicios, Departamentos, Secciones y otras unidades inferiores (art. 41.2 ROGA)."
+   },
+   {
+    "q": "Se plantea que un Servicio dependa directamente de un coordinador general, sin Dirección General intermedia. Esta opción:",
+    "o": [
+     "No es posible, porque los Servicios solo pueden depender de una Dirección General.",
+     "Es posible, porque las unidades inferiores también pueden depender directamente de los coordinadores generales.",
+     "Solo es posible si el Servicio se integra antes en la Secretaría General Técnica."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · art. 41.2 ROGA",
+    "e": "El artículo 41.2 ROGA prevé que las unidades inferiores puedan depender también directamente de los coordinadores generales."
+   },
+   {
+    "q": "Para crear una nueva Subdirección General en el Área, el instrumento adecuado es:",
+    "o": [
+     "La relación de puestos de trabajo del Área.",
+     "Una resolución del secretario general técnico del Área.",
+     "Un acuerdo de organización administrativa de la Junta de Gobierno."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · art. 8.1 ROGA",
+    "e": "Los órganos directivos y las Subdirecciones Generales se crean, modifican o suprimen por la Junta de Gobierno mediante acuerdos de organización administrativa (art. 8.1 ROGA)."
+   },
+   {
+    "q": "En cambio, para crear una nueva Sección dentro de un Departamento del Área se utiliza:",
+    "o": [
+     "Un acuerdo de organización de la Junta de Gobierno.",
+     "La relación de puestos de trabajo (RPT).",
+     "El decreto del alcalde que fija las Áreas."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · art. 8.1 ROGA",
+    "e": "Los servicios, departamentos y las unidades de nivel inferior, así como los demás puestos de trabajo, se crean, modifican y suprimen a través de la relación de puestos de trabajo (art. 8.1 ROGA)."
+   },
+   {
+    "q": "¿Quién es el jefe superior del Área de Gobierno de Economía, Innovación y Hacienda?",
+    "o": [
+     "El concejal de Gobierno o consejero-delegado de Gobierno titular del Área.",
+     "El coordinador general, por ser el primero en el orden jerárquico.",
+     "El concejal-delegado que dirige el Área Delegada dependiente."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · art. 42.1 ROGA",
+    "e": "Los concejales de Gobierno y consejeros-delegados de Gobierno son los jefes superiores del Área (art. 42.1 ROGA); el coordinador general encabeza solo a los órganos directivos."
+   },
+   {
+    "q": "Del Área depende el Área Delegada de Innovación y Emprendimiento, dirigida por un concejal-delegado. Este concejal es, respecto de su Área:",
+    "o": [
+     "Jefe superior, en pie de igualdad con el concejal de Gobierno.",
+     "Órgano directivo, situado por debajo del coordinador general.",
+     "Jefe directo, sin perjuicio de la superior dirección del titular del Área de Gobierno."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · art. 42.1 ROGA · §12",
+    "e": "Los concejales de Coordinación y los concejales-delegados son los jefes directos de su Área, sin perjuicio de la superior dirección del titular del Área de Gobierno (art. 42.1 ROGA)."
+   }
+  ]
+ },
+ {
+  "k": 3,
+  "preguntas": [
+   {
+    "q": "¿Cuál de las siguientes es una función propia del concejal de Gobierno titular del Área, conforme al artículo 44 del ROGA?",
+    "o": [
+     "Fijar los objetivos del Área, aprobar los planes de actuación y asignar los recursos.",
+     "Nombrar y cesar a los directores generales de su Área.",
+     "Determinar el número y la denominación de las Áreas de Gobierno."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 1 · art. 44.b) ROGA",
+    "e": "Fijar objetivos, aprobar planes de actuación y asignar recursos es la función de la letra b) del artículo 44 ROGA; el nombramiento de directivos corresponde a la Junta de Gobierno y la fijación de las Áreas, al alcalde."
+   },
+   {
+    "q": "El concejal-delegado pretende elevar directamente al Pleno una propuesta del ámbito del Área. ¿Puede hacerlo?",
+    "o": [
+     "Sí, porque los concejales-delegados ejercen todas las funciones del artículo 44.",
+     "Sí, siempre que la propuesta se limite al sector que dirige su Área Delegada.",
+     "No, porque elevar propuestas al Pleno es una de las funciones que el artículo 45 le excluye."
+    ],
+    "c": 2,
+    "r": "Caso 4, cuestión 2 · arts. 44.c) y 45.1 ROGA",
+    "e": "Elevar al Pleno las propuestas es la letra c) del artículo 44 ROGA, y el artículo 45.1 excluye a los concejales de Coordinación y concejales-delegados las letras b), c), d), e) y j)."
+   },
+   {
+    "q": "Para resolver la controversia, conviene recordar qué letras del artículo 44 quedan excluidas para los concejales de Coordinación y los concejales-delegados:",
+    "o": [
+     "Las letras a), b), c), d) y e).",
+     "Las letras b), c), d), e) y j).",
+     "Las letras b), c), d), h) y j)."
+    ],
+    "c": 1,
+    "r": "Caso 4, cuestión 2 · art. 45.1 ROGA",
+    "e": "Los concejales de Coordinación y concejales-delegados tienen las competencias del artículo 44 ROGA salvo las de las letras b), c), d), e) y j) (art. 45.1 ROGA)."
+   },
+   {
+    "q": "¿Cuál de estas funciones del artículo 44 puede ejercer el concejal-delegado?",
+    "o": [
+     "Proponer al alcalde los proyectos de organización y estructura del Área.",
+     "Proponer a la Junta de Gobierno proyectos de disposiciones de carácter general.",
+     "Evaluar la ejecución de los planes de actuación por los órganos directivos (control de eficacia)."
+    ],
+    "c": 2,
+    "r": "Caso 4, cuestión 2 · arts. 44.f) y 45.1 ROGA",
+    "e": "El control de eficacia es la letra f) del artículo 44, no excluida por el artículo 45.1 ROGA; proponer la organización al alcalde (e) y disposiciones a la Junta de Gobierno (d) sí están excluidas."
+   },
+   {
+    "q": "¿Cuál de las siguientes funciones NO puede ejercer el concejal-delegado?",
+    "o": [
+     "Proponer a la Junta de Gobierno el nombramiento de los titulares de los órganos directivos.",
+     "Ejercer la representación, dirección, gestión e inspección de su Área.",
+     "Resolver los conflictos entre los órganos directivos dependientes de su Área."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 2 · arts. 44.j) y 45.1 ROGA",
+    "e": "Proponer el nombramiento de directivos es la letra j) del artículo 44 ROGA, excluida para los concejales-delegados; las letras a) e i) no están excluidas (art. 45.1 ROGA)."
+   },
+   {
+    "q": "En el ejercicio de sus funciones, el concejal-delegado responde:",
+    "o": [
+     "Ante el Pleno, directamente.",
+     "Ante el órgano superior inmediato del que dependa.",
+     "Ante el coordinador general del Área."
+    ],
+    "c": 1,
+    "r": "Caso 4, cuestión 3 · art. 45.2 ROGA",
+    "e": "Los concejales de Coordinación y concejales-delegados responden ante el órgano superior inmediato del que dependan (art. 45.2 ROGA)."
+   },
+   {
+    "q": "Las funciones que conserva el concejal-delegado las ejerce:",
+    "o": [
+     "Sin perjuicio de la superior dirección del concejal de Gobierno del que depende.",
+     "Con plena independencia del concejal de Gobierno del Área.",
+     "Bajo la dirección del secretario general técnico del Área."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 3 · art. 45.1 ROGA",
+    "e": "El artículo 45.1 ROGA precisa que los concejales de Coordinación y concejales-delegados actúan sin perjuicio de la superior dirección del concejal de Gobierno o consejero-delegado de Gobierno del que dependan."
+   },
+   {
+    "q": "Hay que nombrar un nuevo director general en el Área. ¿Quién formula la propuesta de nombramiento?",
+    "o": [
+     "El concejal-delegado, ante el alcalde.",
+     "El concejal de Gobierno titular del Área, ante la Junta de Gobierno.",
+     "El coordinador general, ante el Pleno."
+    ],
+    "c": 1,
+    "r": "Caso 4, cuestión 4 · art. 44.j) ROGA",
+    "e": "Proponer a la Junta de Gobierno el nombramiento de los titulares de los órganos directivos del Área corresponde al concejal de Gobierno o consejero-delegado de Gobierno (art. 44.j ROGA)."
+   },
+   {
+    "q": "Formulada la propuesta, ¿qué órgano acuerda el nombramiento del director general?",
+    "o": [
+     "El alcalde, mediante decreto.",
+     "El concejal de Gobierno del Área.",
+     "La Junta de Gobierno."
+    ],
+    "c": 2,
+    "r": "Caso 4, cuestión 4 · arts. 44.j) y 49.1 ROGA",
+    "e": "Los coordinadores generales, secretarios generales técnicos y directores generales son nombrados y cesados por la Junta de Gobierno (art. 49.1 ROGA)."
+   },
+   {
+    "q": "El concejal de Gobierno quiere modificar la estructura de su Área. Su intervención consiste en:",
+    "o": [
+     "Proponer al alcalde la aprobación de los proyectos de organización y estructura del Área.",
+     "Aprobar por sí mismo la nueva estructura del Área mediante resolución.",
+     "Proponer al Pleno la modificación del reglamento orgánico para reorganizar el Área."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 1 · art. 44.e) ROGA",
+    "e": "La letra e) del artículo 44 ROGA atribuye al concejal de Gobierno la función de proponer al alcalde los proyectos de organización y estructura de su Área."
+   }
+  ]
+ },
+ {
+  "k": 4,
+  "preguntas": [
+   {
+    "q": "Para cubrir la Dirección General y la Secretaría General Técnica del Área, ¿qué órgano nombra a sus titulares?",
+    "o": [
+     "El alcalde.",
+     "La Junta de Gobierno.",
+     "El concejal de Gobierno del Área."
+    ],
+    "c": 1,
+    "r": "Caso 5, cuestión 1 · art. 49.1 ROGA",
+    "e": "Los coordinadores generales, secretarios generales técnicos y directores generales son nombrados y cesados por la Junta de Gobierno (art. 49.1 ROGA)."
+   },
+   {
+    "q": "Con carácter general, ¿entre quiénes debe nombrarse al titular de la Dirección General?",
+    "o": [
+     "Entre funcionarios de carrera del Estado, de las comunidades autónomas, de las entidades locales o con habilitación nacional, de cuerpos o escalas del subgrupo A1.",
+     "Entre funcionarios de carrera del propio Ayuntamiento de Madrid, exclusivamente.",
+     "Entre cualquier persona con experiencia en gestión pública o privada, sea o no funcionaria."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 2 · art. 49.2 ROGA · art. 130.3 LBRL",
+    "e": "Conforme al artículo 130.3 LBRL, al que remite el artículo 49.2 ROGA, el nombramiento se hace con carácter general entre funcionarios de carrera del Estado, de las Comunidades Autónomas, de las Entidades Locales o con habilitación de carácter nacional que pertenezcan a cuerpos o escalas clasificados en el subgrupo A1."
+   },
+   {
+    "q": "Una candidata a la Dirección General es funcionaria de carrera de una comunidad autónoma y pertenece a un cuerpo clasificado en el subgrupo A1. ¿Cumple los requisitos generales del nombramiento?",
+    "o": [
+     "No, porque debe ser funcionaria de carrera del Ayuntamiento de Madrid.",
+     "No, porque se exige en todo caso la habilitación de carácter nacional.",
+     "Sí, porque es funcionaria de carrera de una comunidad autónoma y su cuerpo está clasificado en el subgrupo A1."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 2 · art. 49.2 ROGA · art. 130.3 LBRL",
+    "e": "Los funcionarios de carrera de las comunidades autónomas figuran entre los colectivos de los que puede proceder el nombramiento, siempre que pertenezcan a cuerpos o escalas clasificados en el subgrupo A1 (art. 130.3 LBRL; art. 49.2 ROGA)."
+   },
+   {
+    "q": "Con carácter general, ¿a qué subgrupo deben estar clasificados los cuerpos o escalas de los funcionarios entre los que se nombra a los titulares de estos órganos directivos?",
+    "o": [
+     "Al subgrupo A1.",
+     "Al subgrupo A2.",
+     "A cualquier subgrupo, siempre que tengan titulación universitaria."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 2 · art. 49.2 ROGA · art. 130.3 LBRL",
+    "e": "El artículo 130.3 LBRL, al que remite el artículo 49.2 ROGA, exige con carácter general funcionarios de carrera que pertenezcan a cuerpos o escalas clasificados en el subgrupo A1."
+   },
+   {
+    "q": "Se propone para la Secretaría General Técnica a un directivo del sector privado que no es funcionario. ¿Es posible?",
+    "o": [
+     "Sí, siempre que el decreto de estructura del Área lo prevea de forma motivada.",
+     "No, porque la excepción que permite nombrar a quien no es funcionario no se aplica a los secretarios generales técnicos.",
+     "Sí, siempre que acredite experiencia en puestos de responsabilidad en la gestión privada."
+    ],
+    "c": 1,
+    "r": "Caso 5, cuestión 3 · art. 49.3 ROGA",
+    "e": "La excepción de no ser funcionario no es aplicable a los secretarios generales técnicos (art. 49.3 ROGA), aunque el decreto de estructura la prevea para otros puestos."
+   },
+   {
+    "q": "¿A cuál de estos puestos puede aplicarse la excepción de que su titular no sea funcionario?",
+    "o": [
+     "Al de secretario general técnico.",
+     "Al de secretario general del Pleno.",
+     "Al de coordinador general."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 3 · arts. 7.6 y 49.3 ROGA",
+    "e": "La excepción puede aplicarse a los coordinadores generales y a determinados directores generales, pero no a los secretarios generales técnicos (art. 49.3 ROGA); el secretario general del Pleno se nombra entre funcionarios con habilitación de carácter nacional (art. 7.6 ROGA)."
+   },
+   {
+    "q": "Si se quisiera nombrar coordinador general a una persona que no es funcionaria, esa posibilidad tendría que preverla:",
+    "o": [
+     "La relación de puestos de trabajo del Área.",
+     "El decreto de estructura del Área, de forma motivada.",
+     "Un acuerdo del Pleno adoptado para ese nombramiento."
+    ],
+    "c": 1,
+    "r": "Caso 5, cuestión 3 · art. 49.2 ROGA",
+    "e": "El artículo 49.2 ROGA admite que el titular no sea funcionario solo cuando el decreto de estructura del Área lo prevea motivadamente."
+   },
+   {
+    "q": "¿Qué rango tiene el secretario general técnico que se va a nombrar?",
+    "o": [
+     "Rango de coordinador general.",
+     "Rango de subdirector general.",
+     "Rango de director general."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 4 · art. 47 ROGA",
+    "e": "El secretario general técnico tiene rango de director general (art. 47.1 ROGA)."
+   },
+   {
+    "q": "¿De quién dependerá directamente el nuevo secretario general técnico?",
+    "o": [
+     "Del titular del Área de Gobierno de Urbanismo, Medio Ambiente y Movilidad.",
+     "Del coordinador general del Área, primer órgano directivo en jerarquía.",
+     "Del director general de mayor antigüedad del Área."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 4 · art. 47.3 ROGA",
+    "e": "Los secretarios generales técnicos dependen directamente del titular del Área de Gobierno (art. 47.3 ROGA)."
+   },
+   {
+    "q": "Una vez nombrado, ¿qué funciones corresponderán al nuevo secretario general técnico?",
+    "o": [
+     "La coordinación y dirección de todas las Direcciones Generales dependientes del Área.",
+     "La gestión de los servicios comunes y la asistencia jurídica y técnica al titular del Área.",
+     "La dirección y gestión de un único ámbito de competencias sectoriales homogéneas."
+    ],
+    "c": 1,
+    "r": "Caso 5, cuestión 4 · art. 47.1 ROGA",
+    "e": "Al secretario general técnico le corresponden, entre otras, la gestión de los servicios comunes y la asistencia jurídica y técnica al titular del Área (art. 47.1 ROGA); coordinar las Direcciones Generales es propio del coordinador general y gestionar un ámbito homogéneo, del director general."
+   }
+  ]
+ },
+ {
+  "k": 5,
+  "preguntas": [
+   {
+    "q": "En la jornada de acogida se explica el organigrama vigente. ¿En cuántas Áreas de Gobierno se organiza actualmente el Ayuntamiento de Madrid?",
+    "o": [
+     "En nueve.",
+     "En quince.",
+     "En siete."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestión 1 · §12 (organigrama vigente)",
+    "e": "El Ayuntamiento se organiza actualmente en siete Áreas de Gobierno; quince es el máximo legal, no el número vigente (art. 40.2 ROGA)."
+   },
+   {
+    "q": "¿Cuál de las siguientes es una de las Áreas de Gobierno vigentes?",
+    "o": [
+     "Transformación Digital y Administración Electrónica.",
+     "Urbanismo, Medio Ambiente y Movilidad.",
+     "Hacienda, Personal y Administración Pública."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestión 1 · §12",
+    "e": "Urbanismo, Medio Ambiente y Movilidad es una de las siete Áreas de Gobierno vigentes; las otras dos denominaciones no figuran en el organigrama actual."
+   },
+   {
+    "q": "Un nuevo empleado cita «Turismo y Deporte» como una de las Áreas de Gobierno. Hay que precisarle que:",
+    "o": [
+     "Es un Área Delegada que depende del Área de Gobierno de Cultura, Turismo y Deporte.",
+     "Es una de las siete Áreas de Gobierno vigentes, con plena autonomía.",
+     "Es un organismo autónomo adscrito a la Alcaldía por razón de la materia."
+    ],
+    "c": 0,
+    "r": "Caso 6, cuestiones 1 y 4 · §12",
+    "e": "Entre las Áreas Delegadas vigentes figura Turismo y Deporte, que depende del Área de Gobierno de Cultura, Turismo y Deporte."
+   },
+   {
+    "q": "¿De qué Área de Gobierno depende el Área Delegada de Limpieza y Zonas Verdes?",
+    "o": [
+     "De Obras y Equipamientos.",
+     "De Urbanismo, Medio Ambiente y Movilidad.",
+     "De Vicealcaldía, Portavoz, Seguridad y Emergencias."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestión 4 · §12",
+    "e": "El organigrama vigente sitúa el Área Delegada de Limpieza y Zonas Verdes bajo el Área de Gobierno de Urbanismo, Medio Ambiente y Movilidad."
+   },
+   {
+    "q": "¿Es un dato fijo que haya siete Áreas de Gobierno?",
+    "o": [
+     "Sí: el número lo fija el reglamento orgánico y solo el Pleno puede cambiarlo.",
+     "No: la Junta de Gobierno lo revisa cada año al aprobar el presupuesto.",
+     "No: el alcalde fija por decreto su número en cada mandato, con un máximo de 15."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestión 2 · art. 40.2 ROGA",
+    "e": "El número, la denominación y las atribuciones de las Áreas los determina el alcalde por decreto, sin superar las 15 (art. 40.2 ROGA); por eso es un dato cambiante."
+   },
+   {
+    "q": "En la cadena de decisión municipal, al alcalde le corresponde:",
+    "o": [
+     "Dirigir el gobierno y la Administración municipal, delegar competencias y determinar las Áreas.",
+     "Nombrar a los directores generales a propuesta del Pleno.",
+     "Ejercer las funciones normativas y de control sobre los concejales de Gobierno."
+    ],
+    "c": 0,
+    "r": "Caso 6, cuestión 3 · arts. 9, 11 y 40.2 ROGA",
+    "e": "El alcalde dirige la política, el gobierno y la Administración municipal, puede delegar sus competencias y determina las Áreas de Gobierno; los directivos los nombra la Junta de Gobierno y las funciones normativas y de control son del Pleno."
+   },
+   {
+    "q": "Un concejal de Gobierno ha preparado un proyecto de disposición de carácter general sobre administración electrónica. ¿A qué órgano lo propone para su aprobación como proyecto?",
+    "o": [
+     "Al alcalde, mediante decreto.",
+     "Al coordinador general del Área.",
+     "A la Junta de Gobierno Local."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestión 3 · art. 44.d) ROGA",
+    "e": "Los concejales de Gobierno proponen a la Junta de Gobierno la aprobación de los proyectos de disposiciones de carácter general (art. 44.d ROGA)."
+   },
+   {
+    "q": "¿Qué papel desempeña el Pleno en relación con las Áreas de Gobierno?",
+    "o": [
+     "Ejerce las funciones normativas y de control y recibe las propuestas que elevan los concejales de Gobierno.",
+     "Nombra y cesa a los titulares de los órganos directivos de cada Área.",
+     "Determina por decreto el número y la denominación de las Áreas."
+    ],
+    "c": 0,
+    "r": "Caso 6, cuestión 3 · arts. 44.c) y 49.1 ROGA",
+    "e": "El Pleno ejerce las funciones normativas y de control y recibe las propuestas de los concejales de Gobierno; el nombramiento de directivos es de la Junta de Gobierno y la fijación de las Áreas, del alcalde."
+   },
+   {
+    "q": "¿Qué órgano nombra a los directores generales de las Áreas de Gobierno dentro de esa cadena de decisión?",
+    "o": [
+     "El Pleno.",
+     "La Junta de Gobierno.",
+     "El alcalde."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestión 3 · art. 49.1 ROGA",
+    "e": "Los coordinadores generales, secretarios generales técnicos y directores generales son nombrados y cesados por la Junta de Gobierno (art. 49.1 ROGA)."
+   },
+   {
+    "q": "¿Qué son las Áreas Delegadas que aparecen en el organigrama?",
+    "o": [
+     "Áreas que dependen del Pleno y dirigen la actividad de varios distritos.",
+     "Áreas que dependen de la Alcaldía y agrupan los servicios comunes del Ayuntamiento.",
+     "Áreas que dependen de un Área de Gobierno y dirigen un sector de su actividad administrativa."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestión 4 · art. 40.1 ROGA",
+    "e": "Las Áreas Delegadas dependen de un Área de Gobierno y les corresponde la dirección de un sector de la actividad administrativa de esta (art. 40.1 ROGA)."
+   }
+  ]
+ }
+]

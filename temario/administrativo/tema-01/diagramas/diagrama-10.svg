@@ -1,0 +1,16 @@
+<svg aria-label="Niveles de protección" role="img" viewbox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
+<style>.d10-top{fill:#0055a0}.d10-mid{fill:#3378b9}.d10-bot{fill:#88b2d9}.d10-label{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.d10-range{font:600 11px system-ui,sans-serif;fill:#fff;text-anchor:middle}.d10-detail{font:11px system-ui,sans-serif;fill:#1a1a1a}.d10-head{font:700 14px system-ui,sans-serif;fill:#0055a0;text-anchor:middle}.d10-badge-ok{fill:#2d8659}.d10-badge-no{fill:#d13c3c}.d10-bdg-text{font:700 11px system-ui,sans-serif;fill:#fff;text-anchor:middle}</style>
+<text class="d10-head" x="340" y="24">PROTECCIÓN DE LOS DERECHOS — art. 53 CE</text>
+<polygon class="d10-top" points="290,40 390,40 410,90 270,90"></polygon><text class="d10-label" style="font-size:10.5px" x="340" y="60">Máxima protección</text><text class="d10-range" x="340" y="78">arts. 14-29</text>
+<polygon class="d10-mid" points="270,90 410,90 430,150 250,150"></polygon><text class="d10-label" x="340" y="110">Protección media</text><text class="d10-range" x="340" y="128">arts. 30-38</text>
+<polygon class="d10-bot" points="250,150 430,150 450,220 230,220"></polygon><text class="d10-label" style="fill:#1a1a1a" x="340" y="170">Protección mínima</text><text class="d10-range" style="fill:#1a1a1a" x="340" y="188">arts. 39-52</text>
+<rect fill="#fff" height="60" rx="6" stroke="#0055a0" width="230" x="20" y="50"></rect><text class="d10-detail" style="font-weight:700" x="30" y="68">Derechos fundamentales</text><text class="d10-detail" x="30" y="84">· Ley orgánica (art. 81)</text><text class="d10-detail" x="30" y="100">· Amparo + preferencia/sumariedad</text>
+<rect fill="#fff" height="58" rx="6" stroke="#3378b9" width="220" x="440" y="110"></rect><text class="d10-detail" style="font-weight:700" x="450" y="128">Derechos y deberes</text><text class="d10-detail" x="450" y="144">· Ley ordinaria</text><text class="d10-detail" x="450" y="158">· Jurisdicción ordinaria</text>
+<rect fill="#fff" height="58" rx="6" stroke="#88b2d9" width="200" x="20" y="170"></rect><text class="d10-detail" style="font-weight:700" x="30" y="188">Principios rectores</text><text class="d10-detail" x="30" y="204">· Informan legislación/práctica</text><text class="d10-detail" x="30" y="218">· Solo alegables conforme a ley</text>
+<rect fill="#f5f5f5" height="110" rx="8" stroke="#0055a0" width="360" x="160" y="250"></rect>
+<text class="d10-head" style="font-size:12px" x="340" y="272">COMPARATIVA</text>
+<rect class="d10-badge-ok" height="22" rx="4" width="100" x="170" y="285"></rect><text class="d10-bdg-text" style="font-size:10.5px" x="220" y="301">14-29: Amparo</text>
+<rect class="d10-badge-no" height="22" rx="4" width="117" x="276" y="285"></rect><text class="d10-bdg-text" style="font-size:10.5px" x="334.5" y="301">30-38: NO amparo</text>
+<rect class="d10-badge-no" height="22" rx="4" width="117" x="399" y="285"></rect><text class="d10-bdg-text" style="font-size:10.5px" x="457.5" y="301">39-52: NO amparo</text>
+<text class="d10-detail" style="text-anchor:middle" x="340" y="328">La objeción de conciencia (art. 30) TAMBIÉN tiene amparo</text>
+</svg>

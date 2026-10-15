@@ -1,0 +1,25 @@
+<svg aria-label="Redes inalámbricas ordenadas por cobertura, de la red de área personal con Bluetooth NFC y Zigbee a la red de área extensa con redes celulares satélite y LPWAN, con la arquitectura Wi-Fi de celda BSS y conjunto extendido ESS, y la tabla de generaciones de Wi-Fi 4 a Wi-Fi 8 con sus años" role="img" viewbox="0 0 680 356" xmlns="http://www.w3.org/2000/svg">
+<style>.t15{font:700 10px system-ui,sans-serif;fill:#fff}.s15{font:8.5px system-ui,sans-serif;fill:#fff}.d15{font:9px system-ui,sans-serif;fill:#333}.h15{font:700 13px system-ui,sans-serif;fill:#0055a0}.k15{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n15{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h15" text-anchor="middle" x="340" y="20">La misma escala, ahora sin cable</text>
+<rect fill="#7a2f8a" height="24" rx="3" width="120" x="20" y="34"></rect><text class="t15" text-anchor="middle" x="80" y="50">WPAN</text>
+<rect fill="#f3ecf6" height="24" rx="3" width="512" x="148" y="34"></rect><text class="d15" text-anchor="middle" x="404" y="50">Metros · Bluetooth · NFC 13,56 MHz y 10 cm · Zigbee · Thread · UWB</text>
+<rect fill="#0055a0" height="24" rx="3" width="120" x="20" y="62"></rect><text class="t15" text-anchor="middle" x="80" y="78">WLAN</text>
+<rect fill="#eef3f8" height="24" rx="3" width="512" x="148" y="62"></rect><text class="d15" text-anchor="middle" x="404" y="78">Decenas o cientos de metros · Wi-Fi (IEEE 802.11) en 2,4, 5 y 6 GHz</text>
+<rect fill="#e89822" height="24" rx="3" width="120" x="20" y="90"></rect><text class="t15" text-anchor="middle" x="80" y="106">WMAN</text>
+<rect fill="#fdf3e3" height="24" rx="3" width="512" x="148" y="90"></rect><text class="d15" text-anchor="middle" x="404" y="106">Kilómetros · WiMAX (IEEE 802.16), hoy residual · radioenlaces de microondas</text>
+<rect fill="#d13c3c" height="24" rx="3" width="120" x="20" y="118"></rect><text class="t15" text-anchor="middle" x="80" y="134">WWAN</text>
+<rect fill="#fbeaea" height="24" rx="3" width="512" x="148" y="118"></rect><text class="d15" text-anchor="middle" x="404" y="134">Regional o global · celular 2G-5G · satélite GEO/MEO/LEO · LPWAN</text>
+<text class="k15" x="26" y="164">ARQUITECTURA WI-FI</text>
+<rect fill="#eef3f8" height="44" rx="5" width="206" x="20" y="172"></rect><text class="d15" text-anchor="middle" x="123" y="189">BSS = una celda</text><text class="n15" text-anchor="middle" x="123" y="205">un punto de acceso + sus clientes (BSSID)</text>
+<rect fill="#eef3f8" height="44" rx="5" width="206" x="237" y="172"></rect><text class="d15" text-anchor="middle" x="340" y="189">ESS = varias celdas</text><text class="n15" text-anchor="middle" x="340" y="205">mismo SSID · itinerancia entre ellas</text>
+<rect fill="#fdf3e3" height="44" rx="5" width="206" x="454" y="172"></rect><text class="d15" text-anchor="middle" x="557" y="189">Acceso al medio: CSMA/CA</text><text class="n15" text-anchor="middle" x="557" y="205">con ACK y, si hace falta, RTS/CTS</text>
+<text class="k15" x="26" y="238">GENERACIONES</text>
+<rect fill="#8fa9c4" height="44" rx="4" width="124" x="20" y="246"></rect><text class="t15" text-anchor="middle" x="82" y="263">Wi-Fi 4 — 802.11n</text><text class="s15" text-anchor="middle" x="82" y="278">2009 · MIMO</text>
+<rect fill="#5384ac" height="44" rx="4" width="124" x="152" y="246"></rect><text class="t15" text-anchor="middle" x="214" y="263">Wi-Fi 5 — 802.11ac</text><text class="s15" text-anchor="middle" x="214" y="278">2013 · 160 MHz</text>
+<rect fill="#0055a0" height="44" rx="4" width="124" x="284" y="246"></rect><text class="t15" text-anchor="middle" x="346" y="263">Wi-Fi 6 / 6E — ax</text><text class="s15" text-anchor="middle" x="346" y="278">2021 · OFDMA · 6 GHz</text>
+<rect fill="#2d8659" height="44" rx="4" width="124" x="416" y="246"></rect><text class="t15" text-anchor="middle" x="478" y="263">Wi-Fi 7 — 802.11be</text><text class="s15" text-anchor="middle" x="478" y="278">2025 · MLO · 4096-QAM</text>
+<rect fill="#8a8a8a" height="44" rx="4" width="112" x="548" y="246"></rect><text class="t15" text-anchor="middle" x="604" y="263">Wi-Fi 8 — 802.11bn</text><text class="s15" text-anchor="middle" x="604" y="278">previsto 2028</text>
+<rect fill="#fdf3e3" height="24" rx="4" width="640" x="20" y="300"></rect>
+<text class="d15" text-anchor="middle" x="340" y="316">En 2,4 GHz solo hay TRES canales sin solape: 1, 6 y 11 · celdas adyacentes nunca en el mismo canal</text>
+<text class="n15" text-anchor="end" x="670" y="350">[Fuente: IEEE 802.11; Wi-Fi Alliance]</text>
+</svg>

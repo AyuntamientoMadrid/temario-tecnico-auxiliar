@@ -1,0 +1,31 @@
+<svg aria-label="Control de las Comunidades Autónomas según el artículo 153 por cuatro órganos y mecanismo de coerción del artículo 155" role="img" viewbox="0 0 700 360" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .d10-box{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .d10-h{font:700 12px system-ui,sans-serif;fill:#003d73;text-anchor:middle}
+    .d10-s{font:10.5px system-ui,sans-serif;fill:#555;text-anchor:middle}
+    .d10-c{fill:#0055a0}
+  </style>
+<rect class="d10-c" height="40" rx="8" width="200" x="250" y="18"></rect>
+<text class="d10-h" style="fill:#fff" x="350" y="43">CONTROL · art. 153</text>
+<rect class="d10-box" height="74" rx="8" width="150" x="30" y="90"></rect>
+<text class="d10-h" x="105" y="116">Tribunal</text>
+<text class="d10-h" x="105" y="132">Constitucional</text>
+<text class="d10-s" x="105" y="150">normas con fuerza de ley</text>
+<rect class="d10-box" height="74" rx="8" width="150" x="200" y="90"></rect>
+<text class="d10-h" x="275" y="116">Gobierno</text>
+<text class="d10-s" x="275" y="134">funciones delegadas</text>
+<text class="d10-s" x="275" y="150">(dictamen C. de Estado)</text>
+<rect class="d10-box" height="74" rx="8" width="150" x="370" y="90"></rect>
+<text class="d10-h" x="445" y="116">Contencioso-</text>
+<text class="d10-h" x="445" y="132">administrativo</text>
+<text class="d10-s" x="445" y="150">admin. y reglamentos</text>
+<rect class="d10-box" height="74" rx="8" width="150" x="540" y="90"></rect>
+<text class="d10-h" x="615" y="116">Tribunal de</text>
+<text class="d10-h" x="615" y="132">Cuentas</text>
+<text class="d10-s" x="615" y="150">económico-presupuest.</text>
+<rect fill="#fbeeed" height="110" rx="10" stroke="#d13c3c" stroke-width="2" width="460" x="120" y="220"></rect>
+<text class="d10-h" style="fill:#a3271c;font-size:14px" x="350" y="250">COERCIÓN ESTATAL · art. 155</text>
+<text class="d10-s" style="font-size:12px" x="350" y="276">Incumplimiento grave o atentado al interés general →</text>
+<text class="d10-s" style="font-size:12px" x="350" y="296">1) requerimiento previo al Presidente de la CA</text>
+<text class="d10-s" style="font-size:12px" x="350" y="316">2) aprobación por MAYORÍA ABSOLUTA del Senado</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg aria-label="Gráfico que compara la capacidad fija de una infraestructura propia, representada como una línea horizontal, con la demanda real variable a lo largo del año, que presenta un pico en el mes de la campaña; se marcan la zona de capacidad ociosa, en la que se paga capacidad que no se usa, y la zona de demanda no atendida durante el pico; incluye las definiciones de escalabilidad, elasticidad y escalado vertical frente a horizontal" role="img" viewbox="0 0 680 341" xmlns="http://www.w3.org/2000/svg">
+<style>.t11{font:700 10px system-ui,sans-serif;fill:#fff}.s11{font:8.5px system-ui,sans-serif;fill:#fff}.d11{font:9px system-ui,sans-serif;fill:#333}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}.k11{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.f11{font:8px system-ui,sans-serif;fill:#777}</style>
+<text class="h11" text-anchor="middle" x="340" y="20">Escalabilidad y elasticidad</text>
+<path d="M62 192 h598" stroke="#999" stroke-width="1.5"></path><path d="M62 40 v152" stroke="#999" stroke-width="1.5"></path>
+<text class="d11" x="34" y="46">alta</text><text class="d11" x="32" y="190">baja</text>
+<rect fill="#c9d9e8" height="40" opacity="0.6" width="258" x="72" y="112"></rect>
+<text class="d11" text-anchor="middle" x="201" y="137">capacidad ociosa: se paga y no se usa</text>
+<rect fill="#f3c6c6" height="54" width="36" x="372" y="58"></rect>
+<path d="M62 152 h280 l30 -94 h40 l30 94 h218" fill="none" stroke="#0055a0" stroke-width="2.5"></path>
+<path d="M62 112 h598" stroke="#888" stroke-dasharray="7 4" stroke-width="2"></path>
+<text class="d11" text-anchor="end" x="656" y="106">capacidad fija comprada</text>
+<text class="d11" text-anchor="middle" x="390" y="52">demanda no atendida</text>
+<text class="d11" text-anchor="middle" x="350" y="208">tiempo (un año, con una campaña en el mes 7)</text>
+<path d="M72 224 h22" stroke="#0055a0" stroke-width="2.5"></path><text class="d11" x="100" y="228">demanda real</text>
+<path d="M212 224 h22" stroke="#888" stroke-dasharray="7 4" stroke-width="2"></path><text class="d11" x="240" y="228">capacidad fija</text>
+<text class="d11" x="332" y="228">Una capacidad elástica se pegaría a la línea azul: sin zona azul ni zona rosa</text>
+<rect fill="#888" height="50" rx="5" width="205" x="20" y="238"></rect><text class="t11" text-anchor="middle" x="122" y="256">ESCALABILIDAD</text><text class="s11" text-anchor="middle" x="122" y="270">capacidad de crecer;</text><text class="s11" text-anchor="middle" x="122" y="282">puede ser manual y lenta</text>
+<rect fill="#2d8659" height="50" rx="5" width="205" x="238" y="238"></rect><text class="t11" text-anchor="middle" x="340" y="256">ELASTICIDAD</text><text class="s11" text-anchor="middle" x="340" y="270">crecer Y DECRECER,</text><text class="s11" text-anchor="middle" x="340" y="282">automático y rápido</text>
+<rect fill="#0055a0" height="50" rx="5" width="204" x="456" y="238"></rect><text class="t11" text-anchor="middle" x="558" y="256">VERTICAL / HORIZONTAL</text><text class="s11" text-anchor="middle" x="558" y="270">más potencia a una máquina</text><text class="s11" text-anchor="middle" x="558" y="282">frente a más máquinas</text>
+<rect fill="#e89822" height="22" rx="4" width="640" x="20" y="296"></rect><text class="s11" text-anchor="middle" x="340" y="311">El escalado horizontal exige aplicaciones sin estado: la sesión no puede vivir en la memoria de una instancia</text>
+<text class="f11" text-anchor="middle" x="340" y="332">[Fuente: NIST145, 12FACTOR]</text>
+</svg>

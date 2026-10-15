@@ -1,0 +1,18 @@
+<svg aria-label="Organización de la memoria de un programa: pila para variables locales automáticas y marcos de llamada, y montículo o heap para memoria dinámica reservada explícitamente" role="img" viewbox="0 0 660 334" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 12px system-ui,sans-serif;fill:#fff}.l9{font:11px system-ui,sans-serif;fill:#444}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.s9{font:11px system-ui,sans-serif;fill:#fff}</style>
+<text class="h9" text-anchor="middle" x="330" y="24">Memoria de un programa en ejecución</text>
+<rect fill="#f2f6fb" height="240" rx="8" stroke="#0055a0" width="230" x="70" y="44"></rect>
+<text class="h9" text-anchor="middle" x="185" y="66">PILA (stack)</text>
+<rect fill="#0055a0" height="40" rx="4" width="190" x="90" y="78"></rect><text class="t9" text-anchor="middle" x="185" y="94">marco de main()</text><text class="s9" text-anchor="middle" x="185" y="110">variables locales</text>
+<rect fill="#3778b5" height="40" rx="4" width="190" x="90" y="124"></rect><text class="t9" text-anchor="middle" x="185" y="140">marco de calcular()</text><text class="s9" text-anchor="middle" x="185" y="156">parámetros + locales</text>
+<rect fill="#6ea3d2" height="34" rx="4" width="190" x="90" y="170"></rect><text class="t9" text-anchor="middle" x="185" y="191">marco de sumar()</text>
+<text class="l9" text-anchor="middle" x="185" y="228">Automática · nace y muere</text><text class="l9" text-anchor="middle" x="185" y="246">con la llamada · rápida</text><text class="l9" text-anchor="middle" x="185" y="264">Crece y decrece con LIFO</text>
+<rect fill="#f2faf5" height="240" rx="8" stroke="#2d8659" width="230" x="360" y="44"></rect>
+<text class="h9" text-anchor="middle" x="475" y="66">MONTÍCULO (heap)</text>
+<rect fill="#2d8659" height="46" rx="4" width="80" x="385" y="82"></rect><text class="t9" text-anchor="middle" x="425" y="102">objeto</text><text class="s9" text-anchor="middle" x="425" y="118">new/malloc</text>
+<rect fill="#2d8659" height="46" rx="4" width="80" x="485" y="100"></rect><text class="t9" text-anchor="middle" x="525" y="120">array</text><text class="s9" text-anchor="middle" x="525" y="136">dinámico</text>
+<rect fill="#2d8659" height="42" rx="4" width="90" x="410" y="158"></rect><text class="t9" text-anchor="middle" x="455" y="183">registro</text>
+<text class="l9" text-anchor="middle" x="475" y="228">Dinámica · se reserva y libera</text><text class="l9" text-anchor="middle" x="475" y="246">explícitamente (o recolector</text><text class="l9" text-anchor="middle" x="475" y="264">de basura) · tamaño variable</text>
+<text class="l9" text-anchor="middle" x="330" y="306">Ámbito = DÓNDE se ve la variable · Tiempo de vida = CUÁNTO existe en memoria</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="650" y="328">[Fuente: SCOTT, cap. 3]</text>
+</svg>

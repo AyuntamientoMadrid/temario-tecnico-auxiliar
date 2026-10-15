@@ -1,0 +1,15 @@
+<svg aria-label="Jerarquía de generalización: supertipo PERSONAL con subtipos FUNCIONARIO y LABORAL" class="svd7" role="img" viewbox="0 0 660 280" xmlns="http://www.w3.org/2000/svg">
+<style>.svd7 .w{font:700 12px system-ui,sans-serif;fill:#fff}.svd7 .lab{font:11px system-ui,sans-serif;fill:#555}.svd7 .h{font:700 13px system-ui,sans-serif;fill:#0055a0}.svd7 .at{font:10px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="330" y="24">Generalización / especialización (es-un)</text>
+<rect fill="#0055a0" height="50" rx="3" width="160" x="250" y="45"></rect><text class="w" text-anchor="middle" x="330" y="68">PERSONAL</text><text class="at" style="fill:#cfe0f0" text-anchor="middle" x="330" y="86">dni · nombre · fecha_alta</text>
+<text class="lab" x="425" y="80">supertipo (atributos comunes)</text>
+<!-- triangulo ISA -->
+<line stroke="#333" x1="330" x2="330" y1="95" y2="120"></line>
+<polygon fill="#fff" points="330,120 312,145 348,145" stroke="#333"></polygon><text class="lab" style="font-size:9px" text-anchor="middle" x="330" y="139">ISA</text>
+<line stroke="#333" x1="200" x2="312" y1="160" y2="140"></line><line stroke="#333" x1="460" x2="348" y1="160" y2="140"></line>
+<rect fill="#3378b9" height="55" rx="3" width="160" x="120" y="160"></rect><text class="w" text-anchor="middle" x="200" y="183">FUNCIONARIO</text><text class="at" style="fill:#e3edf7" text-anchor="middle" x="200" y="201">cuerpo · nº_registro</text>
+<rect fill="#3378b9" height="55" rx="3" width="160" x="380" y="160"></rect><text class="w" text-anchor="middle" x="460" y="183">LABORAL</text><text class="at" style="fill:#e3edf7" text-anchor="middle" x="460" y="201">convenio · categoría</text>
+<rect fill="#fdf4e4" height="38" rx="6" stroke="#e89822" width="580" x="60" y="235"></rect>
+<text class="lab" x="75" y="251"><tspan fill="#e89822" font-weight="700">Restricciones:</tspan> disjunta / solapada (¿un ejemplar en uno o varios subtipos?)</text>
+<text class="lab" x="75" y="267">total / parcial (¿todo ejemplar del supertipo está en algún subtipo?) — [ELMASRI cap. 4]</text>
+</svg>

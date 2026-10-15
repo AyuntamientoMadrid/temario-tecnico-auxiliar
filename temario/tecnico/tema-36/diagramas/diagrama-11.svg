@@ -1,0 +1,41 @@
+<svg aria-label="Arquitecturas de zona desmilitarizada: cortafuegos de tres patas con una sola caja de tres interfaces exterior, DMZ e interior; y doble cortafuegos con dos equipos en serie y la DMZ en medio, preferiblemente de fabricantes distintos. Se destaca la regla de que desde la DMZ no se puede iniciar ninguna conexión hacia la red interna, y los cuatro refuerzos de la medida mp punto com punto cuatro: VLAN, VPN, separación física y control de los puntos de interconexión" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}.k11{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.t11{font:700 9.5px system-ui,sans-serif;fill:#fff}.ts11{font:700 8px system-ui,sans-serif;fill:#fff}.s11{font:8px system-ui,sans-serif;fill:#fff}.d11{font:8.5px system-ui,sans-serif;fill:#333}.b11{font:700 9px system-ui,sans-serif;fill:#0055a0}.n11{font:8px system-ui,sans-serif;fill:#666}.a11{font:8px system-ui,sans-serif;fill:#666}.r11{font:700 8.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h11" text-anchor="middle" x="340" y="20">Desde la DMZ NO se inicia hacia dentro. Desde dentro SÍ se inicia hacia la DMZ</text>
+<text class="k11" x="20" y="42">ARQUITECTURA A · CORTAFUEGOS DE TRES PATAS</text>
+<rect fill="#f7f9fc" height="94" rx="5" stroke="#ccc" width="316" x="20" y="50"></rect>
+<rect fill="#999" height="26" rx="3" width="60" x="32" y="86"></rect><text class="s11" text-anchor="middle" x="62" y="103">INTERNET</text>
+<text class="a11" x="97" y="103">→</text>
+<rect fill="#0055a0" height="54" rx="4" width="72" x="112" y="72"></rect><text class="ts11" text-anchor="middle" x="148" y="94">CORTAFUEGOS</text><text class="s11" text-anchor="middle" x="148" y="108">3 interfaces</text><text class="s11" text-anchor="middle" x="148" y="119">1 sola política</text>
+<rect fill="#e89822" height="28" rx="3" width="122" x="200" y="62"></rect><text class="s11" text-anchor="middle" x="261" y="80">DMZ · sede, correo, DNS</text>
+<rect fill="#2d8659" height="28" rx="3" width="122" x="200" y="100"></rect><text class="s11" text-anchor="middle" x="261" y="118">RED INTERNA</text>
+<text class="a11" x="188" y="78">→</text>
+<text class="a11" x="188" y="116">→</text>
+<text class="d11" x="28" y="66">Ventaja: sencillo y barato</text>
+<text class="d11" x="28" y="139">Riesgo: un solo dispositivo separa internet de la red interna</text>
+<text class="k11" style="font-size:8.9px" x="344" y="42">ARQUITECTURA B · DOBLE CORTAFUEGOS (SUBRED APANTALLADA)</text>
+<rect fill="#f7f9fc" height="94" rx="5" stroke="#ccc" width="316" x="344" y="50"></rect>
+<rect fill="#999" height="26" rx="3" width="52" x="354" y="86"></rect><text class="s11" text-anchor="middle" x="380" y="103">INTERNET</text>
+<text class="a11" x="410" y="103">→</text>
+<rect fill="#0055a0" height="26" rx="3" width="46" x="424" y="86"></rect><text class="s11" text-anchor="middle" x="447" y="103">CF-1</text>
+<text class="a11" x="474" y="103">→</text>
+<rect fill="#e89822" height="26" rx="3" width="62" x="488" y="86"></rect><text class="s11" text-anchor="middle" x="519" y="103">DMZ</text>
+<text class="a11" x="554" y="103">→</text>
+<rect fill="#0055a0" height="26" rx="3" width="46" x="568" y="86"></rect><text class="s11" text-anchor="middle" x="591" y="103">CF-2</text>
+<rect fill="#2d8659" height="26" rx="3" width="30" x="620" y="86"></rect><text class="s11" text-anchor="middle" x="635" y="103">LAN</text>
+<text class="d11" x="352" y="66">Ventaja: defensa en profundidad real,</text>
+<text class="d11" x="352" y="78">sobre todo si CF-1 y CF-2 son de FABRICANTES DISTINTOS</text>
+<text class="d11" x="352" y="132">Inconveniente: mayor coste y complejidad de gestión de dos políticas</text>
+<text class="k11" x="20" y="164">LA REGLA DIRECCIONAL QUE DEFINE UNA DMZ</text>
+<rect fill="#fdeeee" height="42" rx="5" stroke="#d13c3c" width="640" x="20" y="172"></rect>
+<text class="r11" x="32" y="190">Si el servidor web de la DMZ puede abrir sesiones contra la base de datos interna, eso NO es una DMZ: es red interna con otro nombre</text>
+<text class="d11" x="32" y="205">Si la DMZ necesita un dato de dentro, la conexión debe ORIGINARSE en la red interna, o pasar por un elemento intermedio en la propia DMZ</text>
+<text class="k11" x="20" y="234">LOS CUATRO REFUERZOS DE mp.com.4 · MEDIA = + [R1 o R2 o R3] · ALTA = + [R2 o R3] + R4</text>
+<rect fill="#eef4fa" height="58" rx="5" stroke="#0055a0" width="156" x="20" y="242"></rect><text class="b11" text-anchor="middle" x="98" y="256.5">R1 · LÓGICA BÁSICA</text><text class="d11" text-anchor="middle" x="98" y="269.5">VLAN (IEEE 802.1Q)</text><text class="d11" text-anchor="middle" x="98" y="281.5">Mínimo tres subredes:</text><text class="d11" text-anchor="middle" x="98" y="293.5">usuarios, servicios, administración</text>
+<rect fill="#eef4fa" height="58" rx="5" stroke="#0055a0" width="156" x="184" y="242"></rect><text class="b11" text-anchor="middle" x="262" y="256.5">R2 · LÓGICA AVANZADA</text><text class="d11" text-anchor="middle" x="262" y="269.5">Los segmentos se</text><text class="d11" text-anchor="middle" x="262" y="281.5">implementan mediante</text><text class="d11" text-anchor="middle" x="262" y="293.5">redes privadas virtuales (VPN)</text>
+<rect fill="#eef4fa" height="58" rx="5" stroke="#0055a0" width="156" x="348" y="242"></rect><text class="b11" text-anchor="middle" x="426" y="256.5">R3 · FÍSICA</text><text class="d11" text-anchor="middle" x="426" y="269.5">Medios físicos</text><text class="d11" text-anchor="middle" x="426" y="281.5">separados: no existe</text><text class="d11" text-anchor="middle" x="426" y="293.5">camino posible entre ellos</text>
+<rect fill="#eef4fa" height="58" rx="5" stroke="#0055a0" width="148" x="512" y="242"></rect><text class="b11" text-anchor="middle" x="586" y="256.5">R4 · INTERCONEXIÓN</text><text class="d11" text-anchor="middle" x="586" y="269.5">Control de entrada de</text><text class="d11" text-anchor="middle" x="586" y="281.5">usuarios e información.</text><text class="d11" text-anchor="middle" x="586" y="293.5">Punto de unión monitorizado</text>
+<rect fill="#fff5e6" height="32" rx="5" stroke="#e89822" width="640" x="20" y="308"></rect>
+<text class="b11" text-anchor="middle" x="340" y="323">Y las dos obligaciones que no son refuerzo, sino requisito base</text>
+<text class="d11" text-anchor="middle" x="340" y="335">mp.com.4.1 — cada equipo solo accede a lo que necesita · mp.com.4.2 — si hay comunicaciones inalámbricas, será en SEGMENTO SEPARADO</text>
+<text class="n11" x="20" y="360">[Fuente: ENS, RD 311/2022, mp.com.4 — texto literal del anexo II · art. 23 (interconexión) · IEEE 802.1Q]</text>
+</svg>

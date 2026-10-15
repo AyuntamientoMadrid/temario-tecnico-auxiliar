@@ -1,0 +1,39 @@
+<svg aria-label="Comparación del modelo de identidad y permisos de Linux, basado en UID, GID y permisos rwx con sudo y PAM, frente al de Windows, basado en SID, listas de control de acceso, Active Directory y directivas de grupo. Debajo, los cinco principios comunes de gestión de cuentas exigidos por el Esquema Nacional de Seguridad" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t7{font:700 11px system-ui,sans-serif;fill:#fff}.s7{font:9px system-ui,sans-serif;fill:#fff}.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}.k7{font:700 10px system-ui,sans-serif;fill:#0055a0}.d7{font:9px system-ui,sans-serif;fill:#444}</style>
+<text class="h7" text-anchor="middle" x="340" y="20">Dos modelos de identidad, los mismos principios</text>
+<rect fill="#0055a0" height="30" rx="5" width="316" x="16" y="34"></rect>
+<text class="t7" text-anchor="middle" x="174" y="54">LINUX / UNIX</text>
+<rect fill="#004077" height="30" rx="5" width="316" x="348" y="34"></rect>
+<text class="t7" text-anchor="middle" x="506" y="54">WINDOWS</text>
+<rect fill="#f0f4f8" height="46" rx="5" stroke="#0055a0" width="316" x="16" y="70"></rect>
+<text class="k7" text-anchor="middle" x="174" y="88">Identidad: UID y GID</text>
+<text class="d7" text-anchor="middle" x="174" y="106">/etc/passwd · /etc/group · /etc/shadow (con sal)</text>
+<rect fill="#f0f4f8" height="46" rx="5" stroke="#0055a0" width="316" x="348" y="70"></rect>
+<text class="k7" text-anchor="middle" x="506" y="88">Identidad: SID</text>
+<text class="d7" text-anchor="middle" x="506" y="106">único e irrepetible · cuentas locales o de dominio</text>
+<rect fill="#f0f4f8" height="60" rx="5" stroke="#0055a0" width="316" x="16" y="122"></rect>
+<text class="k7" text-anchor="middle" x="174" y="140">Permisos: tres ternas rwx</text>
+<text class="d7" text-anchor="middle" x="174" y="158">propietario · grupo · otros — chmod y chown</text>
+<text class="d7" text-anchor="middle" x="174" y="174">especiales: SUID · SGID · sticky · ACL POSIX</text>
+<rect fill="#f0f4f8" height="60" rx="5" stroke="#0055a0" width="316" x="348" y="122"></rect>
+<text class="k7" text-anchor="middle" x="506" y="140">Permisos: ACL con entradas ACE</text>
+<text class="d7" text-anchor="middle" x="506" y="158">de permiso o de denegación · herencia del padre</text>
+<text class="d7" text-anchor="middle" x="506" y="174">la DENEGACIÓN explícita prevalece</text>
+<rect fill="#f0f4f8" height="58" rx="5" stroke="#0055a0" width="316" x="16" y="188"></rect>
+<text class="k7" text-anchor="middle" x="174" y="206">Elevación y política</text>
+<text class="d7" text-anchor="middle" x="174" y="224">sudo (registra cada orden) · PAM (módulos)</text>
+<text class="d7" text-anchor="middle" x="174" y="240">política en ficheros de /etc</text>
+<rect fill="#f0f4f8" height="58" rx="5" stroke="#0055a0" width="316" x="348" y="188"></rect>
+<text class="k7" text-anchor="middle" x="506" y="206">Elevación y política</text>
+<text class="d7" text-anchor="middle" x="506" y="224">UAC · Active Directory (dominio, bosque, UO)</text>
+<text class="d7" text-anchor="middle" x="506" y="240">GPO con precedencia L-S-D-UO (gana la última)</text>
+<rect fill="#2d8659" height="60" rx="5" width="648" x="16" y="256"></rect>
+<text class="t7" text-anchor="middle" x="340" y="275">PRINCIPIOS COMUNES EXIGIDOS POR EL ENS</text>
+<text class="s7" text-anchor="middle" x="105" y="295">Cuentas nominales</text>
+<text class="s7" text-anchor="middle" x="240" y="295">Mínimo privilegio</text>
+<text class="s7" text-anchor="middle" x="375" y="295">Separación de funciones</text>
+<text class="s7" text-anchor="middle" x="510" y="295">Baja inmediata al cesar</text>
+<text class="s7" text-anchor="middle" x="622" y="295">Doble factor</text>
+<text class="s7" text-anchor="middle" x="340" y="311">La cuenta de administración nunca es la cuenta de trabajo diario</text>
+<text style="font:9.5px system-ui;fill:#666" text-anchor="end" x="670" y="334">[Fuente: POSIX; MS-AD; MS-GPO; ENS]</text>
+</svg>

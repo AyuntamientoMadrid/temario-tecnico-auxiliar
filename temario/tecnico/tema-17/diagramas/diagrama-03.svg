@@ -1,0 +1,16 @@
+<svg aria-label="Reglas de transformación: una relación 1 a N propaga la clave ajena; una relación N a M crea una tabla intermedia con dos claves ajenas" class="d17-3" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.d17-3 .b{font:600 11px system-ui,sans-serif;fill:#fff}.d17-3 .c{font:600 11px system-ui,sans-serif;fill:#0055a0}.d17-3 .l{font:11px system-ui,sans-serif;fill:#444}.d17-3 .h{font:700 12px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="170" y="26">Relación 1:N → propaga clave</text>
+<rect fill="#0055a0" height="44" rx="4" width="110" x="40" y="48"></rect><text class="b" text-anchor="middle" x="95" y="66">DISTRITO</text><text class="b" text-anchor="middle" x="95" y="82">codigo (PK)</text>
+<rect fill="#2d8659" height="58" rx="4" width="130" x="190" y="48"></rect><text class="b" text-anchor="middle" x="255" y="66">HABITANTE</text><text class="b" text-anchor="middle" x="255" y="82">dni (PK)</text><text class="b" text-anchor="middle" x="255" y="97">cod_distrito (FK)</text>
+<path d="M150 70 L190 70" marker-end="url(#b)" stroke="#888" stroke-width="2"></path>
+<text class="l" text-anchor="middle" x="95" y="120">No se crea tabla;</text><text class="l" text-anchor="middle" x="95" y="136">la clave va al lado «N»</text>
+<text class="h" text-anchor="middle" x="510" y="26">Relación N:M → tabla intermedia</text>
+<rect fill="#0055a0" height="44" rx="4" width="110" x="370" y="48"></rect><text class="b" text-anchor="middle" x="425" y="66">HABITANTE</text><text class="b" text-anchor="middle" x="425" y="82">dni (PK)</text>
+<rect fill="#0055a0" height="44" rx="4" width="100" x="560" y="48"></rect><text class="b" text-anchor="middle" x="610" y="66">TRIBUTO</text><text class="b" text-anchor="middle" x="610" y="82">id (PK)</text>
+<rect fill="#d13c3c" height="58" rx="4" width="170" x="440" y="150"></rect><text class="b" text-anchor="middle" x="525" y="172">TITULARIDAD</text><text class="b" text-anchor="middle" x="525" y="188">dni (FK), id (FK)</text><text class="b" text-anchor="middle" x="525" y="202">PK(dni, id) + porcentaje</text>
+<path d="M425 92 L500 148" stroke="#888" stroke-width="2"></path><path d="M610 92 L555 148" stroke="#888" stroke-width="2"></path>
+<text class="l" text-anchor="middle" x="525" y="232">Clave compuesta + 2 claves ajenas + atributos propios</text>
+<defs><marker id="b" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#888"></path></marker></defs>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="670" y="308">[Fuente: ELMASRI, cap. 9]</text>
+</svg>

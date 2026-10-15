@@ -1,0 +1,35 @@
+<svg aria-label="Línea temporal de un incidente que muestra el RPO como la ventana de datos perdidos entre el último punto de recuperación y el momento del fallo, y el RTO como el tiempo desde el fallo hasta el restablecimiento del servicio, junto con la regla 3-2-1 ampliada con una copia inmutable" role="img" viewbox="0 0 680 328" xmlns="http://www.w3.org/2000/svg">
+<style>.t15{font:700 10.5px system-ui,sans-serif;fill:#fff}.s15{font:9px system-ui,sans-serif;fill:#fff}.h15{font:700 13px system-ui,sans-serif;fill:#0055a0}.k15{font:700 10.5px system-ui,sans-serif;fill:#0055a0}.n15{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h15" text-anchor="middle" x="340" y="20">RPO mira hacia atrás (cuánto pierdo) · RTO mira hacia delante (cuánto tardo)</text>
+<line stroke="#333" stroke-width="2" x1="40" x2="650" y1="106" y2="106"></line>
+<path d="M644 101 L654 106 L644 111 z" fill="#333"></path>
+<text class="n15" text-anchor="end" x="655" y="122">tiempo →</text>
+<line stroke="#0055a0" stroke-width="3" x1="210" x2="210" y1="90" y2="122"></line>
+<text class="k15" text-anchor="middle" x="210" y="84">Último punto</text>
+<text class="n15" text-anchor="middle" x="210" y="138">de recuperación válido</text>
+<line stroke="#d13c3c" stroke-width="3" x1="360" x2="360" y1="86" y2="126"></line>
+<text style="font:700 11px system-ui;fill:#a02020" text-anchor="middle" x="360" y="78">FALLO</text>
+<text class="n15" text-anchor="middle" x="360" y="142">caída del servicio</text>
+<line stroke="#2d8659" stroke-width="3" x1="560" x2="560" y1="90" y2="122"></line>
+<text style="font:700 10.5px system-ui;fill:#2d8659" text-anchor="middle" x="560" y="84">Servicio</text>
+<text class="n15" text-anchor="middle" x="560" y="138">restablecido</text>
+<rect fill="#e89822" height="34" rx="4" width="150" x="210" y="152"></rect>
+<text class="t15" text-anchor="middle" x="285" y="167">RPO</text>
+<text class="s15" text-anchor="middle" x="285" y="181">datos que se pierden</text>
+<rect fill="#0055a0" height="34" rx="4" width="200" x="360" y="152"></rect>
+<text class="t15" text-anchor="middle" x="460" y="167">RTO</text>
+<text class="s15" text-anchor="middle" x="460" y="181">tiempo hasta volver a dar servicio</text>
+<rect fill="#f2f6fa" height="42" rx="4" stroke="#e89822" stroke-width="2" width="290" x="40" y="196"></rect>
+<text class="n15" text-anchor="middle" x="185" y="213">RPO de 24 h → copia diaria basta</text>
+<text class="n15" text-anchor="middle" x="185" y="230">RPO ≈ 0 → replicación SÍNCRONA</text>
+<rect fill="#f2f6fa" height="42" rx="4" stroke="#0055a0" stroke-width="2" width="290" x="350" y="196"></rect>
+<text class="n15" text-anchor="middle" x="495" y="213">RTO de horas → restauración clásica</text>
+<text class="n15" text-anchor="middle" x="495" y="230">RTO de minutos → recuperación instantánea o réplica</text>
+<rect fill="#d13c3c" height="22" rx="3" width="600" x="40" y="248"></rect>
+<text class="t15" text-anchor="middle" x="340" y="264">Los fija el ANÁLISIS DE IMPACTO (BIA), no el técnico: de ellos se derivan tecnología y coste, nunca al revés</text>
+<rect fill="#2d8659" height="30" rx="4" width="145" x="40" y="278"></rect><text class="s15" text-anchor="middle" x="112" y="297">3 copias de los datos</text>
+<rect fill="#2d8659" height="30" rx="4" width="145" x="192" y="278"></rect><text class="s15" text-anchor="middle" x="264" y="297">2 tipos de soporte</text>
+<rect fill="#2d8659" height="30" rx="4" width="145" x="344" y="278"></rect><text class="s15" text-anchor="middle" x="416" y="297">1 fuera del emplazamiento</text>
+<rect fill="#d13c3c" height="30" rx="4" width="144" x="496" y="278"></rect><text class="s15" text-anchor="middle" x="568" y="292">+1 INMUTABLE o aislada</text><text class="s15" text-anchor="middle" x="568" y="304">frente a ransomware</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="318">[Fuente: NIST-SP800-34; ISO22301; ENS]</text>
+</svg>

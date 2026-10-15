@@ -1,0 +1,20 @@
+<svg aria-label="Organización de ficheros secuencial, indexada y directa" class="svd10" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.svd10 .t{font:700 13px system-ui,sans-serif;fill:#0055a0}.svd10 .b{font:700 12px system-ui,sans-serif;fill:#fff}.svd10 .lab{font:11px system-ui,sans-serif;fill:#666}</style>
+<text class="t" text-anchor="middle" x="110" y="30">Secuencial</text>
+<rect fill="#6ea3d2" height="30" width="40" x="40" y="50"></rect><rect fill="#6ea3d2" height="30" width="40" x="80" y="50"></rect><rect fill="#6ea3d2" height="30" width="40" x="120" y="50"></rect><rect fill="#6ea3d2" height="30" width="40" x="160" y="50"></rect>
+<text class="b" text-anchor="middle" x="60" y="71">R1</text><text class="b" text-anchor="middle" x="100" y="71">R2</text><text class="b" text-anchor="middle" x="140" y="71">R3</text><text class="b" text-anchor="middle" x="180" y="71">R4</text>
+<text class="lab" x="40" y="100">Recorrido O(n) · ideal proceso masivo</text>
+<text class="t" text-anchor="middle" x="370" y="30">Indexada (índice → datos)</text>
+<rect fill="#0055a0" height="28" width="80" x="270" y="50"></rect><text class="b" text-anchor="middle" x="310" y="69">Índice</text>
+<rect fill="#6ea3d2" height="30" width="40" x="430" y="50"></rect><rect fill="#6ea3d2" height="30" width="40" x="470" y="50"></rect><rect fill="#6ea3d2" height="30" width="40" x="510" y="50"></rect>
+<text class="b" text-anchor="middle" x="450" y="71">R1</text><text class="b" text-anchor="middle" x="490" y="71">R2</text><text class="b" text-anchor="middle" x="530" y="71">R3</text>
+<line marker-end="url(#a10)" stroke="#444" stroke-width="2" x1="350" x2="428" y1="64" y2="64"></line>
+<text class="lab" x="270" y="100">Acceso directo y secuencial · índice = B+árbol</text>
+<text class="t" text-anchor="middle" x="200" y="170">Directa (hash)</text>
+<rect fill="#e89822" height="30" width="120" x="60" y="190"></rect><text class="b" text-anchor="middle" x="120" y="211">h(clave)</text>
+<line marker-end="url(#a10)" stroke="#444" stroke-width="2" x1="180" x2="240" y1="205" y2="205"></line>
+<rect fill="#6ea3d2" height="30" width="40" x="240" y="190"></rect><text class="b" text-anchor="middle" x="260" y="211">R</text>
+<text class="lab" x="60" y="245">Dirección calculada · acceso O(1) · no mantiene orden</text>
+<defs><marker id="a10" markerheight="10" markerwidth="10" orient="auto" refx="8" refy="5"><polygon fill="#444" points="0,0 10,5 0,10"></polygon></marker></defs>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="640" y="325">[Fuente: FOLK-FILESTRUCT]</text>
+</svg>

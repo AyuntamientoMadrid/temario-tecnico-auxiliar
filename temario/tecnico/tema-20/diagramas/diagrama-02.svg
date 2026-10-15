@@ -1,0 +1,29 @@
+<svg aria-label="Los cuatro pilares de la programación orientada a objetos: abstracción, encapsulamiento, herencia y polimorfismo" role="img" viewbox="0 0 680 280" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 13px system-ui,sans-serif;fill:#fff}.s2{font:10.5px system-ui,sans-serif;fill:#fff}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h2" text-anchor="middle" x="340" y="24">4 PILARES DE LA POO</text>
+<rect fill="#0055a0" height="140" rx="8" width="150" x="30" y="44"></rect>
+<text class="t2" text-anchor="middle" x="105" y="72">ABSTRACCIÓN</text>
+<text class="s2" text-anchor="middle" x="105" y="98">Qué hace el objeto</text>
+<text class="s2" text-anchor="middle" x="105" y="114">(interfaz pública)</text>
+<text class="s2" text-anchor="middle" x="105" y="140">§1.2</text>
+<rect fill="#0055a0" height="140" rx="8" width="150" x="195" y="44"></rect>
+<text class="t2" text-anchor="middle" x="270" y="72">ENCAPSULA-</text>
+<text class="t2" text-anchor="middle" x="270" y="88">MIENTO</text>
+<text class="s2" text-anchor="middle" x="270" y="112">Cómo oculta su</text>
+<text class="s2" text-anchor="middle" x="270" y="128">estado interno</text>
+<text class="s2" text-anchor="middle" x="270" y="150">§1.2</text>
+<rect fill="#2d8659" height="140" rx="8" width="150" x="360" y="44"></rect>
+<text class="t2" text-anchor="middle" x="435" y="72">HERENCIA</text>
+<text class="s2" text-anchor="middle" x="435" y="98">Reutiliza por</text>
+<text class="s2" text-anchor="middle" x="435" y="114">especialización</text>
+<text class="s2" text-anchor="middle" x="435" y="140">§2.4</text>
+<rect fill="#2d8659" height="140" rx="8" width="130" x="525" y="44"></rect>
+<text class="t2" text-anchor="middle" x="590" y="72">POLIMOR-</text>
+<text class="t2" text-anchor="middle" x="590" y="88">FISMO</text>
+<text class="s2" text-anchor="middle" x="590" y="112">Una interfaz,</text>
+<text class="s2" text-anchor="middle" x="590" y="128">muchas formas</text>
+<text class="s2" text-anchor="middle" x="590" y="150">§2.6</text>
+<text style="font:11px system-ui;fill:#444" text-anchor="middle" x="340" y="212">Abstracción + Encapsulamiento fijan el DISEÑO de una clase aislada;</text>
+<text style="font:11px system-ui;fill:#444" text-anchor="middle" x="340" y="230">Herencia + Polimorfismo fijan las RELACIONES entre clases de una jerarquía</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="270">[Fuente: BOOCH07; MEYER97]</text>
+</svg>

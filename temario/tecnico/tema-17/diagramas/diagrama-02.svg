@@ -1,0 +1,17 @@
+<svg aria-label="Elementos del modelo entidad-relación: entidad rectángulo, atributo elipse, relación rombo, con ejemplo Habitante reside en Distrito" class="d17-2" role="img" viewbox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
+<style>.d17-2 .b{font:600 12px system-ui,sans-serif;fill:#fff}.d17-2 .l{font:11px system-ui,sans-serif;fill:#444}.d17-2 .h{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="330" y="26">Notación E-R (ejemplo: Padrón Municipal)</text>
+<rect fill="#0055a0" height="50" rx="4" width="130" x="60" y="120"></rect><text class="b" text-anchor="middle" x="125" y="150">HABITANTE</text>
+<rect fill="#0055a0" height="50" rx="4" width="130" x="470" y="120"></rect><text class="b" text-anchor="middle" x="535" y="150">DISTRITO</text>
+<polygon fill="#e89822" points="330,120 390,145 330,170 270,145"></polygon><text class="b" text-anchor="middle" x="330" y="149">reside</text>
+<line stroke="#444" stroke-width="1.5" x1="190" x2="270" y1="145" y2="145"></line><text class="l" text-anchor="middle" x="225" y="138">N</text>
+<line stroke="#444" stroke-width="1.5" x1="390" x2="470" y1="145" y2="145"></line><text class="l" text-anchor="middle" x="435" y="138">1</text>
+<ellipse cx="90" cy="70" fill="#6ea3d2" rx="44" ry="22"></ellipse><text class="b" text-anchor="middle" x="90" y="74">dni (PK)</text>
+<ellipse cx="170" cy="55" fill="#6ea3d2" rx="40" ry="22"></ellipse><text class="b" text-anchor="middle" x="170" y="59">nombre</text>
+<line stroke="#888" x1="100" x2="118" y1="90" y2="120"></line><line stroke="#888" x1="165" x2="135" y1="76" y2="120"></line>
+<ellipse cx="535" cy="70" fill="#6ea3d2" rx="46" ry="22"></ellipse><text class="b" text-anchor="middle" x="535" y="74">codigo (PK)</text>
+<line stroke="#888" x1="535" x2="535" y1="92" y2="120"></line>
+<text class="l" x="60" y="230">▭ Entidad   ◇ Relación   ◯ Atributo   — Cardinalidad (1:1, 1:N, N:M)</text>
+<text class="l" x="60" y="252">«Un distrito tiene N habitantes; un habitante reside en 1 distrito» → relación 1:N</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="650" y="308">[Fuente: CHEN76]</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg aria-label="Arquitectura normativa de la conexión de un ayuntamiento a la red SARA: la red interna municipal se conecta a un área de conexión con arquitectura de zona desmilitarizada delimitada por un subsistema de seguridad interno y otro externo, y desde ahí a la red SARA mediante túneles cifrados. Se acompaña de la tabla de las cuatro medidas de protección de las comunicaciones del anexo dos del Esquema Nacional de Seguridad" role="img" viewbox="0 0 680 366" xmlns="http://www.w3.org/2000/svg">
+<style>.t20{font:700 9.5px system-ui,sans-serif;fill:#fff}.s20{font:8.5px system-ui,sans-serif;fill:#fff}.d20{font:8.5px system-ui,sans-serif;fill:#333}.h20{font:700 13px system-ui,sans-serif;fill:#0055a0}.k20{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n20{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<defs><marker id="a20" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="h20" text-anchor="middle" x="340" y="20">De la norma a la arquitectura de red municipal</text>
+<rect fill="#0055a0" height="66" rx="5" width="150" x="20" y="36"></rect>
+<text class="t20" text-anchor="middle" x="95" y="58">RED INTERNA</text>
+<text class="s20" text-anchor="middle" x="95" y="74">Puestos · servidores</text>
+<text class="s20" text-anchor="middle" x="95" y="88">segmentada en VLAN</text>
+<rect fill="#d13c3c" height="66" rx="3" width="26" x="186" y="36"></rect><text class="s20" text-anchor="middle" x="199" y="74">SI</text>
+<rect fill="#e89822" height="66" rx="5" width="188" x="228" y="36"></rect>
+<text class="t20" text-anchor="middle" x="322" y="58">ÁREA DE CONEXIÓN (DMZ)</text>
+<text class="s20" text-anchor="middle" x="322" y="74">Servicios básicos obligatorios:</text>
+<text class="s20" text-anchor="middle" x="322" y="88">DNS · correo · hora · navegación</text>
+<rect fill="#d13c3c" height="66" rx="3" width="26" x="432" y="36"></rect><text class="s20" text-anchor="middle" x="445" y="74">SE</text>
+<rect fill="#2d8659" height="66" rx="5" width="186" x="474" y="36"></rect>
+<text class="t20" text-anchor="middle" x="567" y="58">RED SARA</text>
+<text class="s20" text-anchor="middle" x="567" y="74">Punto único de interconexión</text>
+<text class="s20" text-anchor="middle" x="567" y="88">entre Administraciones</text>
+<path d="M170,69 L182,69" marker-end="url(#a20)" stroke="#0055a0" stroke-width="1.6"></path>
+<path d="M212,69 L224,69" marker-end="url(#a20)" stroke="#0055a0" stroke-width="1.6"></path>
+<path d="M416,69 L428,69" marker-end="url(#a20)" stroke="#0055a0" stroke-width="1.6"></path>
+<path d="M458,69 L470,69" marker-end="url(#a20)" stroke="#0055a0" stroke-width="1.6"></path>
+<text class="n20" text-anchor="middle" x="199" y="118">subsistema interno</text>
+<text class="n20" text-anchor="middle" x="445" y="118">subsistema externo</text>
+<rect fill="#eef3f8" height="34" rx="4" width="640" x="20" y="128"></rect>
+<text class="k20" text-anchor="middle" x="340" y="144">NTI de requisitos de conexión (Resolución de 19 de julio de 2011, al amparo del ENI)</text>
+<text class="d20" text-anchor="middle" x="340" y="157">Tres agentes: órgano gestor · proveedores de acceso · órganos usuarios finales — Cifrado obligatorio por túnel</text>
+<text class="k20" x="20" y="184">MEDIDAS DE PROTECCIÓN DE LAS COMUNICACIONES · anexo II del ENS</text>
+<rect fill="#0055a0" height="20" rx="3" width="640" x="20" y="192"></rect>
+<text class="t20" x="30" y="206">CÓDIGO</text><text class="t20" x="110" y="206">DENOMINACIÓN OFICIAL</text><text class="t20" x="372" y="206">DIMENSIONES</text><text class="t20" x="470" y="206">APLICACIÓN</text>
+<rect fill="#eef3f8" height="18" width="640" x="20" y="214"></rect>
+<text class="d20" x="30" y="227">mp.com.1</text><text class="d20" x="110" y="227">Perímetro seguro</text><text class="d20" x="372" y="227">Todas</text><text class="d20" x="470" y="227">Las tres categorías</text>
+<rect fill="#fff" height="18" width="640" x="20" y="233"></rect>
+<text class="d20" x="30" y="246">mp.com.2</text><text class="d20" x="110" y="246">Protección de la confidencialidad</text><text class="d20" x="372" y="246">C</text><text class="d20" x="470" y="246">BAJO · MEDIO +R1 · ALTO +R1+R2+R3</text>
+<rect fill="#eef3f8" height="18" width="640" x="20" y="252"></rect>
+<text class="d20" x="30" y="265">mp.com.3</text><text class="d20" x="110" y="265">Protección de la integridad y de la autenticidad</text><text class="d20" x="372" y="265">I, A</text><text class="d20" x="470" y="265">BAJO · MEDIO +R1+R2 · ALTO hasta R4</text>
+<rect fill="#fdf3e3" height="18" width="640" x="20" y="271"></rect>
+<text class="d20" x="30" y="284">mp.com.4</text><text class="d20" x="110" y="284">Separación de flujos de información en la red</text><text class="d20" x="372" y="284">Todas</text><text class="d20" x="470" y="284">BÁSICA: NO APLICA</text>
+<rect fill="#fdf3e3" height="34" rx="4" width="640" x="20" y="298"></rect>
+<text class="k20" text-anchor="middle" x="340" y="314">mp.com.4 es la única del grupo que no se exige en categoría BÁSICA</text>
+<text class="d20" text-anchor="middle" x="340" y="327">Su refuerzo R1 nombra expresamente las VLAN y exige segregar como mínimo usuarios, servicios y administración</text>
+<text class="n20" text-anchor="end" x="670" y="352">[Fuente: RD 311/2022, anexo II · BOE-A-2011-13173]</text>
+</svg>

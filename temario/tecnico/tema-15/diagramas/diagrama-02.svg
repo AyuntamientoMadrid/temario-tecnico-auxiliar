@@ -1,0 +1,10 @@
+<svg aria-label="Componentes internos de un SGBD" class="svd2" role="img" viewbox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd2 .b{font:600 12px system-ui,sans-serif;fill:#fff}.svd2 .l{font:11px system-ui,sans-serif;fill:#444}</style>
+<rect fill="#6ea3d2" height="36" rx="4" width="300" x="180" y="30"></rect><text class="b" text-anchor="middle" x="330" y="53">Usuarios / Aplicaciones (consultas SQL)</text>
+<rect fill="#0055a0" height="36" rx="4" width="300" x="180" y="84"></rect><text class="b" text-anchor="middle" x="330" y="107">Procesador de consultas (optimizador)</text>
+<rect fill="#0055a0" height="36" rx="4" width="220" x="100" y="138"></rect><text class="b" text-anchor="middle" x="210" y="161">Gestor de transacciones (ACID)</text>
+<rect fill="#0055a0" height="36" rx="4" width="220" x="340" y="138"></rect><text class="b" text-anchor="middle" x="450" y="161">Gestor del diccionario</text>
+<rect fill="#003d73" height="36" rx="4" width="300" x="180" y="192"></rect><text class="b" text-anchor="middle" x="330" y="215">Gestor de almacenamiento (índices, buffer)</text>
+<rect fill="#2d3748" height="36" rx="4" width="300" x="180" y="246"></rect><text class="b" text-anchor="middle" x="330" y="269">Datos + índices + log en disco</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="650" y="308">[Fuente: SILBERSCHATZ-DB, cap. 1]</text>
+</svg>

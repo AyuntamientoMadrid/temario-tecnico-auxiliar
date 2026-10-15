@@ -1,0 +1,22 @@
+<svg aria-label="Las tres capas de la infraestructura fija de una red TETRA. La capa de radio, con las estaciones base, el canal de control principal, el traspaso entre células y el repliegue local. La capa de conmutación y control, con el encaminamiento de llamadas de grupo, la gestión de movilidad, las bases de datos de abonados, el centro de autenticación y la gestión de prioridades. Y la capa de gestión y despacho, con el sistema de gestión de red, la gestión de abonados y grupos, las consolas de despacho, la grabación y la gestión de claves criptográficas" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 10px system-ui,sans-serif;fill:#fff}.s5{font:8.5px system-ui,sans-serif;fill:#fff}.d5{font:8.5px system-ui,sans-serif;fill:#333}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.k5{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n5{font:8.5px system-ui,sans-serif;fill:#666}.b5{font:700 9px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h5" text-anchor="middle" x="340" y="22">La capa que se olvida al estudiar es la tercera: la de gestión</text>
+<rect fill="#2d8659" height="76" rx="5" width="648" x="20" y="36"></rect>
+<text class="t5" x="36" y="56">CAPA 1 · RADIO — las estaciones base</text>
+<text class="s5" x="36" y="74">Radiar y recibir en las portadoras asignadas · mantener el canal de control principal (MCCH) · difundir la información</text>
+<text class="s5" x="36" y="88">de sistema · asignar canales de tráfico · cifrar y descifrar el interfaz aire · gestionar el traspaso entre células</text>
+<text class="s5" x="36" y="104">Modo degradado propio: REPLIEGUE LOCAL — sigue troncalizando en su célula aunque pierda el núcleo</text>
+<rect fill="#0055a0" height="76" rx="5" width="648" x="20" y="122"></rect>
+<text class="t5" x="36" y="142">CAPA 2 · CONMUTACIÓN Y CONTROL — el núcleo</text>
+<text class="s5" x="36" y="160">Encaminar cada llamada de grupo SOLO a las células con afiliados · gestión de movilidad y traspaso entre nodos</text>
+<text class="s5" x="36" y="174">Bases de datos de abonados y grupos · centro de autenticación y distribución de claves (OTAR)</text>
+<text class="s5" x="36" y="190">Gestión de prioridades y desalojo · pasarelas hacia la red telefónica · interconexión ISI con otras redes TETRA</text>
+<rect fill="#e89822" height="76" rx="5" width="648" x="20" y="208"></rect>
+<text class="t5" x="36" y="228">CAPA 3 · GESTIÓN Y DESPACHO — donde trabajan las personas</text>
+<text class="s5" x="36" y="246">Sistema de gestión de red (NMS): alarmas, ocupación, estado de baterías y grupos electrógenos de cada emplazamiento</text>
+<text class="s5" x="36" y="260">Gestión de abonados y grupos, incluida la DGNA y la inhabilitación remota · consolas de despacho · grabación</text>
+<text class="s5" x="36" y="276">Gestión de claves criptográficas — respaldo normativo: medida op.exp.10 del ENS</text>
+<rect fill="none" height="22" rx="4" stroke="#0055a0" stroke-width="1.5" width="648" x="20" y="292"></rect>
+<text class="k5" text-anchor="middle" x="344" y="307">Cuando se moderniza una red madura, lo que se moderniza casi siempre es la CAPA 3</text>
+<text class="n5" text-anchor="end" x="670" y="332">[Fuente: elaboración propia sobre ETSI EN 300 392-1 y RD 311/2022 (ENS)]</text>
+</svg>

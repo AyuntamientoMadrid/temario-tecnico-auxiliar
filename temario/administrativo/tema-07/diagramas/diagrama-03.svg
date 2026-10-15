@@ -1,0 +1,28 @@
+<svg aria-label="Los principios del procedimiento se agrupan en tres bloques: principios de ordenación (impulso de oficio, celeridad, simplificación administrativa), principios de instrucción (contradicción, audiencia, imparcialidad e igualdad) y principios de eficacia y proporcionalidad. Se completan con la conservación de actos y trámites del artículo 51" class="svd3" role="img" viewbox="0 0 720 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd3 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd3 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd3 .s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="44" rx="8" width="180" x="270" y="18"></rect>
+<text class="h" x="360" y="40">PRINCIPIOS DEL</text>
+<text class="h" x="360" y="56">PROCEDIMIENTO</text>
+<path d="M360 62 V78 M125 78 H595 M125 78 V92 M360 78 V92 M595 78 V92" fill="none" stroke="#0055a0" stroke-width="1.5"></path>
+<rect fill="#e8f0f8" height="120" rx="8" stroke="#0055a0" width="210" x="20" y="92"></rect>
+<text class="t" style="font-weight:700" x="125" y="114">Ordenación</text>
+<text class="s" x="125" y="138">Impulso de oficio</text>
+<text class="s" x="125" y="158">Celeridad</text>
+<text class="s" x="125" y="178">Simplificación administrativa</text>
+<text class="s" x="125" y="198">arts. 71-72 y 96</text>
+<rect fill="#e8f5ee" height="120" rx="8" stroke="#2d8659" width="210" x="255" y="92"></rect>
+<text class="t" style="font-weight:700" x="360" y="114">Instrucción</text>
+<text class="s" x="360" y="138">Contradicción</text>
+<text class="s" x="360" y="158">Audiencia</text>
+<text class="s" x="360" y="178">Imparcialidad · igualdad</text>
+<text class="s" x="360" y="198">arts. 75-76 y 82</text>
+<rect fill="#e8f0f8" height="120" rx="8" stroke="#0055a0" width="210" x="490" y="92"></rect>
+<text class="t" style="font-weight:700" x="595" y="114">Eficacia y</text>
+<text class="t" style="font-weight:700" x="595" y="132">proporcionalidad</text>
+<text class="s" x="595" y="156">Orientada al resultado</text>
+<text class="s" x="595" y="176">Medida menos restrictiva</text>
+<text class="s" x="595" y="196">art. 103 CE · art. 100.2</text>
+<rect fill="#eef2f7" height="46" rx="8" stroke="#0055a0" width="400" x="160" y="248"></rect>
+<text class="s" style="font-weight:700" x="360" y="270">Conservación de actos y trámites (art. 51)</text>
+<text class="s" x="360" y="288">los que no habrían variado sin la infracción</text>
+</svg>

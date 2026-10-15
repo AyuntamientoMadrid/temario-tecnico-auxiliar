@@ -1,0 +1,43 @@
+<svg aria-label="Comparación entre el cifrado de interfaz aire y el cifrado extremo a extremo. El cifrado de interfaz aire protege el tramo entre terminal y estación base y se descifra en la estación base, de modo que no protege frente al operador de la red. El cifrado extremo a extremo protege de terminal a terminal y la infraestructura no puede leerlo. Debajo, la cronología de las divulgaciones: en octubre de 2022 el ETSI libera el conjunto de algoritmos TEA set B con TEA5, TEA6 y TEA7; en agosto de 2023 se publica TETRA:BURST con cinco vulnerabilidades incluida la reducción de clave de TEA1; en febrero de 2025 el ETSI publica la especificación del TEA set A; y en agosto de 2025 se presenta 2TETRA:2BURST, que alcanza al cifrado extremo a extremo" role="img" viewbox="0 0 680 390" xmlns="http://www.w3.org/2000/svg">
+<style>.t17{font:700 10px system-ui,sans-serif;fill:#fff}.s17{font:8.5px system-ui,sans-serif;fill:#fff}.d17{font:8.5px system-ui,sans-serif;fill:#333}.h17{font:700 13px system-ui,sans-serif;fill:#0055a0}.k17{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n17{font:8.5px system-ui,sans-serif;fill:#666}.b17{font:700 9px system-ui,sans-serif;fill:#0055a0}.m17{font:700 11px system-ui,sans-serif;fill:#fff}</style>
+<text class="h17" text-anchor="middle" x="340" y="22">Uno se descifra en la estación base; el otro, no</text>
+<rect fill="#0055a0" height="60" rx="5" width="648" x="20" y="36"></rect>
+<text class="m17" x="36" y="56">CIFRADO DE INTERFAZ AIRE (AIE) — capa 2 del interfaz aire</text>
+<text class="s17" x="36" y="74">Terminal ↔ ESTACIÓN BASE. Cifra voz, datos, señalización y, con ESI, también las identidades.</text>
+<text class="s17" x="36" y="88">Se DESCIFRA en la estación base: NO protege frente al operador de la red ni frente a un compromiso de la infraestructura</text>
+<rect fill="#2d8659" height="60" rx="5" width="648" x="20" y="104"></rect>
+<text class="m17" x="36" y="124">CIFRADO EXTREMO A EXTREMO (E2EE) — por encima, sobre la carga útil</text>
+<text class="s17" x="36" y="142">Terminal ↔ TERMINAL. Atraviesa toda la infraestructura sin que ésta pueda leerlo.</text>
+<text class="s17" x="36" y="156">El ETSI NO impone el algoritmo: define el marco de transporte y sincronización. Hoy predomina AES</text>
+<rect fill="#e89822" height="40" rx="4" width="648" x="20" y="172"></rect>
+<text class="s17" text-anchor="middle" x="344" y="189">Son COMPLEMENTARIOS, no alternativos: se usan juntos.</text>
+<text class="s17" text-anchor="middle" x="344" y="203">El E2EE inutiliza pasarelas, grabación en claro e interconexión, salvo puntos de descifrado autorizados</text>
+<text class="k17" x="20" y="234">CRONOLOGÍA DE LAS DIVULGACIONES Y DE LAS RESPUESTAS</text>
+<rect fill="#2d8659" height="86" rx="5" width="158" x="20" y="242"></rect>
+<text class="t17" text-anchor="middle" x="99" y="262">OCT · 2022</text>
+<text class="s17" text-anchor="middle" x="99" y="280">El ETSI libera el</text>
+<text class="s17" text-anchor="middle" x="99" y="293">TEA set B: TEA5, TEA6</text>
+<text class="s17" text-anchor="middle" x="99" y="306">y TEA7, con claves</text>
+<text class="s17" text-anchor="middle" x="99" y="319">extendidas y TAA2</text>
+<rect fill="#d13c3c" height="86" rx="5" width="158" x="186" y="242"></rect>
+<text class="t17" text-anchor="middle" x="265" y="262">AGO · 2023</text>
+<text class="s17" text-anchor="middle" x="265" y="280">TETRA:BURST · 5 CVE.</text>
+<text class="s17" text-anchor="middle" x="265" y="293">TEA1 con clave reducida</text>
+<text class="s17" text-anchor="middle" x="265" y="306">a ~32 bits efectivos</text>
+<text class="s17" text-anchor="middle" x="265" y="319">(CVE-2022-24402)</text>
+<rect fill="#0055a0" height="86" rx="5" width="158" x="352" y="242"></rect>
+<text class="t17" text-anchor="middle" x="431" y="262">FEB · 2025</text>
+<text class="s17" text-anchor="middle" x="431" y="280">El ETSI PUBLICA la</text>
+<text class="s17" text-anchor="middle" x="431" y="293">especificación del</text>
+<text class="s17" text-anchor="middle" x="431" y="306">TEA set A en la</text>
+<text class="s17" text-anchor="middle" x="431" y="319">TS 104 053-1</text>
+<rect fill="#d13c3c" height="86" rx="5" width="150" x="518" y="242"></rect>
+<text class="t17" text-anchor="middle" x="593" y="262">AGO · 2025</text>
+<text class="s17" text-anchor="middle" x="593" y="280">2TETRA:2BURST.</text>
+<text class="s17" text-anchor="middle" x="593" y="293">Alcanza al E2EE y</text>
+<text class="s17" text-anchor="middle" x="593" y="306">al propio protocolo:</text>
+<text class="s17" text-anchor="middle" x="593" y="319">no autentica mensajes</text>
+<rect fill="none" height="22" rx="4" stroke="#d13c3c" stroke-width="1.5" width="648" x="20" y="340"></rect>
+<text class="k17" text-anchor="middle" x="344" y="355">Consecuencia práctica: no basta con dejar de USAR TEA1; hay que dejar de SOPORTARLO (CVE-2025-52943)</text>
+<text class="n17" text-anchor="middle" x="340" y="382">[Fuente: Midnight Blue (2023 y 2025), TCCA Research Disclosures y ETSI TS 104 053-1]</text>
+</svg>

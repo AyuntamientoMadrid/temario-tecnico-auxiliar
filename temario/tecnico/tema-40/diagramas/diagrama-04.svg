@@ -1,0 +1,45 @@
+<svg aria-label="Los canales de comunicación de una plataforma de trabajo en grupo ordenados por el coste de interrupción que imponen al receptor, desde el repositorio documental y el correo, que son asíncronos, hasta la videoconferencia y la llamada, que son síncronos, con el protocolo normalizado de cada uno" role="img" viewbox="0 0 680 332" xmlns="http://www.w3.org/2000/svg">
+<style>.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}.k4{font:700 10px system-ui,sans-serif;fill:#0055a0}.d4{font:9px system-ui,sans-serif;fill:#333}.n4{font:8.5px system-ui,sans-serif;fill:#666}.w4{font:700 10px system-ui,sans-serif;fill:#fff}.r4{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h4" text-anchor="middle" x="340" y="19">Los canales, ordenados por el turno que imponen al receptor</text>
+<text class="n4" text-anchor="middle" x="340" y="35">La gobernanza de una plataforma consiste en decidir qué se comunica por cada uno. Convertirlo todo en síncrono es el error clásico</text>
+<rect fill="#eef4fa" height="16" rx="8" width="636" x="22" y="48"></rect>
+<rect fill="#2d8659" height="16" rx="8" width="212" x="22" y="48"></rect>
+<rect fill="#d13c3c" height="16" rx="8" width="212" x="446" y="48"></rect>
+<text class="w4" text-anchor="middle" x="128" y="60">ASÍNCRONO</text>
+<text class="k4" text-anchor="middle" x="340" y="60">INTERMEDIO</text>
+<text class="w4" text-anchor="middle" x="552" y="60">SÍNCRONO</text>
+<text class="n4" x="22" y="78">Coste de interrupción BAJO: el receptor decide cuándo atiende</text>
+<text class="n4" text-anchor="end" x="658" y="78">Coste de interrupción ALTO: turno inmediato</text>
+<rect fill="#e6f2ec" height="80" rx="4" width="152" x="22" y="88"></rect>
+<text class="k4" text-anchor="middle" x="98" y="105">REPOSITORIO Y WIKI</text>
+<text class="d4" x="30" y="121">Conocimiento duradero</text>
+<text class="d4" x="30" y="134">Historial de versiones</text>
+<text class="d4" x="30" y="147">WebDAV, RFC 4918</text>
+<text class="n4" x="30" y="159">Distinto tiempo, distinto lugar</text>
+<rect fill="#e6f2ec" height="80" rx="4" width="152" x="184" y="88"></rect>
+<text class="k4" text-anchor="middle" x="260" y="105">CORREO ELECTRÓNICO</text>
+<text class="d4" x="192" y="121">El único canal interoperable</text>
+<text class="d4" x="192" y="134">entre organizaciones distintas</text>
+<text class="d4" x="192" y="147">SMTP 5321 · IMAP4rev2 9051</text>
+<text class="n4" x="192" y="159">Y la mayor superficie de ataque</text>
+<rect fill="#fdf3e3" height="80" rx="4" width="152" x="346" y="88"></rect>
+<text class="k4" text-anchor="middle" x="422" y="105">MENSAJERÍA Y PRESENCIA</text>
+<text class="d4" x="354" y="121">Cuasi síncrono: se espera</text>
+<text class="d4" x="354" y="134">respuesta pronto, no ya</text>
+<text class="d4" x="354" y="147">XMPP 6120 y 6121 · PIDF 3863</text>
+<text class="n4" x="354" y="159">La presencia es dato laboral</text>
+<rect fill="#fbe9e9" height="80" rx="4" width="150" x="508" y="88"></rect>
+<text class="k4" text-anchor="middle" x="583" y="105">VIDEOCONFERENCIA</text>
+<text class="d4" x="516" y="121">Exige presencia simultánea</text>
+<text class="d4" x="516" y="134">de todas las partes</text>
+<text class="d4" x="516" y="147">SIP 3261 · RTP 3550 · WebRTC</text>
+<text class="n4" x="516" y="159">Es toda la sección 2 del tema</text>
+<rect fill="#eef4fa" height="42" rx="4" width="636" x="22" y="184"></rect>
+<text class="k4" x="32" y="200">LA SEÑALIZACIÓN MODERNA VIAJA POR WEBSOCKET (RFC 6455), NO POR HTTP CONVENCIONAL</text>
+<text class="d4" x="32" y="215">Canal bidireccional y persistente, abierto promoviendo una conexión HTTP. Sostiene el «alguien está escribiendo» y la señalización</text>
+<rect fill="none" height="58" rx="5" stroke="#d13c3c" stroke-width="1.5" width="636" x="22" y="236"></rect>
+<text class="r4" text-anchor="middle" x="340" y="253">DOS TRAMPAS COMUNES</text>
+<text class="d4" text-anchor="middle" x="340" y="270">XMPP NO es un protocolo de videoconferencia: su señalización multimedia es la extensión Jingle (XEP-0166)</text>
+<text class="d4" text-anchor="middle" x="340" y="285">Y la presencia publicada es un dato sobre la actividad del empleado: arts. 87 y 88 de la LOPDGDD</text>
+<text class="n4" text-anchor="end" x="658" y="320">[Fuente: RFC 6120, 6121, 6455, 9051 · LO 3/2018]</text>
+</svg>

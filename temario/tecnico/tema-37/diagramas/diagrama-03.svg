@@ -1,0 +1,38 @@
+<svg aria-label="Escala comparativa de redes por alcance: red de área personal hasta diez metros, red de área local hasta uno o dos kilómetros, red de campus de uno a diez kilómetros, red metropolitana de diez a cien kilómetros y red de área extensa por encima de cien kilómetros; la frontera relevante no es la distancia sino que el medio sea propio o de un operador" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 10px system-ui,sans-serif;fill:#0055a0}.d3{font:9px system-ui,sans-serif;fill:#333}.n3{font:8.5px system-ui,sans-serif;fill:#666}.t3{font:700 11px system-ui,sans-serif;fill:#fff}.g3{font:700 9.5px system-ui,sans-serif;fill:#2d8659}.r3{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h3" text-anchor="middle" x="340" y="20">Clasificación por alcance, y la frontera que de verdad importa</text>
+<rect fill="#7fa8cc" height="44" rx="4" width="104" x="24" y="42"></rect>
+<text class="t3" text-anchor="middle" x="76" y="60">PAN</text>
+<text class="t3" text-anchor="middle" x="76" y="76">hasta 10 m</text>
+<rect fill="#0055a0" height="44" rx="4" width="128" x="132" y="42"></rect>
+<text class="t3" text-anchor="middle" x="196" y="60">LAN</text>
+<text class="t3" text-anchor="middle" x="196" y="76">1-2 km · edificio</text>
+<rect fill="#0055a0" height="44" rx="4" width="120" x="264" y="42"></rect>
+<text class="t3" text-anchor="middle" x="324" y="60">CAN</text>
+<text class="t3" text-anchor="middle" x="324" y="76">1-10 km · campus</text>
+<rect fill="#e89822" height="44" rx="4" width="128" x="388" y="42"></rect>
+<text class="t3" text-anchor="middle" x="452" y="60">MAN</text>
+<text class="t3" text-anchor="middle" x="452" y="76">10-100 km · ciudad</text>
+<rect fill="#d13c3c" height="44" rx="4" width="136" x="520" y="42"></rect>
+<text class="t3" text-anchor="middle" x="588" y="60">WAN</text>
+<text class="t3" text-anchor="middle" x="588" y="76">&gt; 100 km · país</text>
+<path d="M24,98 L656,98" stroke="#666" stroke-width="1"></path>
+<text class="n3" x="30" y="112">centímetros</text>
+<text class="n3" text-anchor="end" x="650" y="112">continentes</text>
+<rect fill="#e6f2ec" height="26" rx="4" width="360" x="24" y="122"></rect>
+<text class="g3" text-anchor="middle" x="204" y="139">MEDIO PROPIO — sin operador, sin contrato de servicio</text>
+<rect fill="#fbeaea" height="26" rx="4" width="268" x="388" y="122"></rect>
+<text class="r3" text-anchor="middle" x="522" y="139">MEDIO DE OPERADOR — contratado</text>
+<rect fill="#eef4fa" height="22" rx="3" width="632" x="24" y="158"></rect>
+<text class="d3" x="34" y="173"><tspan class="k3">Velocidad</tspan>   PAN: kbit/s a Mbit/s   ·   LAN y CAN: 1 a 100 Gbit/s   ·   MAN y WAN: la contratada, típicamente menor que la LAN</text>
+<rect fill="#f7f9fb" height="22" rx="3" width="632" x="24" y="182"></rect>
+<text class="d3" x="34" y="197"><tspan class="k3">Retardo</tspan>     LAN: microsegundos   ·   MAN: décimas de milisegundo   ·   WAN: milisegundos o decenas de milisegundos</text>
+<rect fill="#eef4fa" height="22" rx="3" width="632" x="24" y="206"></rect>
+<text class="d3" x="34" y="221"><tspan class="k3">Problema</tspan>    LAN: el ACCESO al medio compartido   ·   WAN: el ENCAMINAMIENTO entre nodos con enlaces punto a punto</text>
+<rect fill="#f7f9fb" height="22" rx="3" width="632" x="24" y="230"></rect>
+<text class="d3" x="34" y="245"><tspan class="k3">Derecho</tspan>     La red interior de un edificio no exige título habilitante; explotar una red pública que cruce el dominio público, sí</text>
+<rect fill="none" height="42" rx="5" stroke="#0055a0" stroke-width="1.5" width="632" x="24" y="262"></rect>
+<text class="k3" text-anchor="middle" x="340" y="280">La SAN no es una categoría de alcance sino de FUNCIÓN</text>
+<text class="d3" text-anchor="middle" x="340" y="296">Red especializada en el tráfico entre servidores y almacenamiento (Fibre Channel, iSCSI, NVMe-oF). Ver Tema 26</text>
+<text class="n3" text-anchor="end" x="670" y="328">[Fuente: Tanenbaum · Ley 11/2022]</text>
+</svg>

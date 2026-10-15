@@ -1,0 +1,27 @@
+<svg aria-label="Proceso de generación de una firma electrónica calculando el resumen hash del documento y cifrándolo con la clave privada del firmante, y proceso de verificación descifrando la firma con la clave pública, recalculando el resumen y comparando, con los cinco puntos que hay que comprobar al validar una firma" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.t17{font:700 10.5px system-ui,sans-serif;fill:#fff}.s17{font:8.5px system-ui,sans-serif;fill:#fff}.d17{font:9px system-ui,sans-serif;fill:#333}.h17{font:700 13px system-ui,sans-serif;fill:#0055a0}.k17{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n17{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h17" text-anchor="middle" x="340" y="20">Firmar y verificar: dos procesos simétricos</text>
+<text class="k17" x="20" y="42">GENERACIÓN · LO HACE EL FIRMANTE</text>
+<rect fill="#888" height="42" rx="4" width="118" x="20" y="50"></rect><text class="t17" text-anchor="middle" x="79" y="68">DOCUMENTO</text><text class="s17" text-anchor="middle" x="79" y="83">en claro</text>
+<rect fill="#e89822" height="42" rx="4" width="118" x="152" y="50"></rect><text class="t17" text-anchor="middle" x="211" y="68">RESUMEN</text><text class="s17" text-anchor="middle" x="211" y="83">SHA-256, tamaño fijo</text>
+<rect fill="#2d8659" height="42" rx="4" width="150" x="284" y="50"></rect><text class="t17" text-anchor="middle" x="359" y="68">CIFRAR EL RESUMEN</text><text class="s17" text-anchor="middle" x="359" y="83">con la clave PRIVADA</text>
+<rect fill="#0055a0" height="42" rx="4" width="212" x="448" y="50"></rect><text class="t17" style="font-size:9.5px" text-anchor="middle" x="554" y="68">DOCUMENTO + FIRMA + CERTIFICADO</text><text class="s17" text-anchor="middle" x="554" y="83">se envía o se archiva</text>
+<path d="M138 71 L148 71" stroke="#666" stroke-width="1.5"></path><path d="M270 71 L280 71" stroke="#666" stroke-width="1.5"></path><path d="M434 71 L444 71" stroke="#666" stroke-width="1.5"></path>
+<text class="k17" x="20" y="116">VERIFICACIÓN · LO HACE QUIEN RECIBE</text>
+<rect fill="#2d8659" height="42" rx="4" width="150" x="20" y="124"></rect><text class="t17" text-anchor="middle" x="95" y="142">DESCIFRAR LA FIRMA</text><text class="s17" text-anchor="middle" x="95" y="157">con la clave PÚBLICA</text>
+<rect fill="#e89822" height="42" rx="4" width="150" x="184" y="124"></rect><text class="t17" text-anchor="middle" x="259" y="142">RECALCULAR RESUMEN</text><text class="s17" text-anchor="middle" x="259" y="157">del documento recibido</text>
+<rect fill="#0055a0" height="42" rx="4" width="150" x="348" y="124"></rect><text class="t17" text-anchor="middle" x="423" y="142">COMPARAR</text><text class="s17" text-anchor="middle" x="423" y="157">los dos resúmenes</text>
+<rect fill="#7a2f8a" height="42" rx="4" width="148" x="512" y="124"></rect><text class="t17" text-anchor="middle" x="586" y="142">VALIDAR EL CERT.</text><text class="s17" text-anchor="middle" x="586" y="157">cadena y revocación</text>
+<rect fill="#fbeaea" height="26" rx="4" width="640" x="20" y="176"></rect>
+<text class="d17" text-anchor="middle" x="340" y="193">FIRMAR NO CIFRA: el documento firmado sigue siendo legible · la firma da integridad, autenticidad y no repudio, NO confidencialidad</text>
+<text class="k17" x="20" y="224">LOS CINCO PUNTOS QUE HAY QUE COMPROBAR AL VALIDAR</text>
+<rect fill="#eef3f8" height="52" rx="4" width="126" x="20" y="232"></rect><text class="d17" text-anchor="middle" x="83" y="250">1 · INTEGRIDAD</text><text class="n17" text-anchor="middle" x="83" y="265">los resúmenes</text><text class="n17" text-anchor="middle" x="83" y="277">coinciden</text>
+<rect fill="#eef3f8" height="52" rx="4" width="126" x="153" y="232"></rect><text class="d17" text-anchor="middle" x="216" y="250">2 · CADENA</text><text class="n17" text-anchor="middle" x="216" y="265">hasta una AC raíz</text><text class="n17" text-anchor="middle" x="216" y="277">de confianza</text>
+<rect fill="#fdf3e3" height="52" rx="4" width="126" x="286" y="232"></rect><text class="d17" text-anchor="middle" x="349" y="250">3 · VIGENCIA</text><text class="n17" text-anchor="middle" x="349" y="265">EN EL MOMENTO</text><text class="n17" text-anchor="middle" x="349" y="277">DE LA FIRMA</text>
+<rect fill="#fdf3e3" height="52" rx="4" width="126" x="419" y="232"></rect><text class="d17" text-anchor="middle" x="482" y="250">4 · REVOCACIÓN</text><text class="n17" text-anchor="middle" x="482" y="265">no revocado</text><text class="n17" text-anchor="middle" x="482" y="277">en ese instante</text>
+<rect fill="#eef3f8" height="52" rx="4" width="108" x="552" y="232"></rect><text class="d17" text-anchor="middle" x="606" y="250">5 · POLÍTICA</text><text class="n17" text-anchor="middle" x="606" y="265">uso de clave y</text><text class="n17" text-anchor="middle" x="606" y="277">política de firma</text>
+<rect fill="none" height="34" rx="4" stroke="#d13c3c" stroke-width="1.5" width="640" x="20" y="296"></rect>
+<text class="k17" text-anchor="middle" x="340" y="311">Sin SELLO DE TIEMPO, el punto 3 no se puede probar años después</text>
+<text class="n17" text-anchor="middle" x="340" y="325">Una firma hecha ANTES de la revocación es válida; una hecha DESPUÉS, no. Validar es demostrarlo dentro de treinta años</text>
+<text class="n17" text-anchor="end" x="670" y="344">[Fuente: EIDAS, arts. 26 y 32; RFC5280; RFC3161]</text>
+</svg>

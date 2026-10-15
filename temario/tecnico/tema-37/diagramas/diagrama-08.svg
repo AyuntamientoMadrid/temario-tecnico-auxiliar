@@ -1,0 +1,64 @@
+<svg aria-label="La secuencia de bits uno cero uno uno cero cero uno cero representada en tres códigos de línea: NRZ, que mantiene un nivel por bit y no autosincroniza; Manchester, con transición obligatoria en la mitad de cada bit, que siempre autosincroniza pero duplica las transiciones; y MLT-3, con tres niveles recorridos cíclicamente, que reduce mucho la frecuencia de la señal; abajo, tabla de los códigos usados en cada variante de Ethernet" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}.k8{font:700 10px system-ui,sans-serif;fill:#0055a0}.d8{font:8.5px system-ui,sans-serif;fill:#333}.n8{font:8.5px system-ui,sans-serif;fill:#666}.b8{font:700 9px system-ui,sans-serif;fill:#0055a0}.g8{font:700 9px system-ui,sans-serif;fill:#2d8659}.r8{font:700 9px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h8" text-anchor="middle" x="340" y="20">La misma secuencia de bits en tres códigos de línea</text>
+<text class="n8" text-anchor="middle" x="340" y="37">Lo que se pide a un buen código: sin componente continua, autosincronizante y con pocas transiciones por bit</text>
+<text class="b8" text-anchor="middle" x="200" y="54">1</text>
+<text class="b8" text-anchor="middle" x="240" y="54">0</text>
+<text class="b8" text-anchor="middle" x="280" y="54">1</text>
+<text class="b8" text-anchor="middle" x="320" y="54">1</text>
+<text class="b8" text-anchor="middle" x="360" y="54">0</text>
+<text class="b8" text-anchor="middle" x="400" y="54">0</text>
+<text class="b8" text-anchor="middle" x="440" y="54">1</text>
+<text class="b8" text-anchor="middle" x="480" y="54">0</text>
+<path d="M180,58 L180,176 M220,58 L220,176 M260,58 L260,176 M300,58 L300,176 M340,58 L340,176 M380,58 L380,176 M420,58 L420,176 M460,58 L460,176 M500,58 L500,176" stroke="#ccc" stroke-dasharray="3,3" stroke-width="0.8"></path>
+<text class="k8" x="24" y="76">NRZ</text>
+<text class="n8" x="24" y="88">un nivel por bit</text>
+<path d="M180,66 H220 V82 H260 V66 H340 V82 H420 V66 H460 V82 H500" fill="none" stroke="#0055a0" stroke-width="2"></path>
+<text class="r8" x="516" y="72">NO autosincroniza</text>
+<text class="n8" x="516" y="84">Una cadena larga de bits</text>
+<text class="n8" x="516" y="95">iguales despista al receptor</text>
+<text class="k8" x="24" y="116">MANCHESTER</text>
+<text class="n8" x="24" y="128">transición central</text>
+<path d="M180,122 H200 V106 H240 V122 H280 V106 H300 V122 H320 V106 H360 V122 H380 V106 H400 V122 H440 V106 H480 V122 H500" fill="none" stroke="#2d8659" stroke-width="2"></path>
+<text class="g8" x="516" y="112">SIEMPRE autosincroniza</text>
+<text class="n8" x="516" y="124">Precio: dos transiciones por</text>
+<text class="n8" x="516" y="135">bit, doble ancho de banda</text>
+<text class="k8" x="24" y="156">MLT-3</text>
+<text class="n8" x="24" y="168">tres niveles</text>
+<path d="M180,146 H260 V158 H300 V170 H420 V158 H500" fill="none" stroke="#e89822" stroke-width="2"></path>
+<path d="M170,146 L510,146 M170,158 L510,158 M170,170 L510,170" stroke="#ddd" stroke-width="0.6"></path>
+<text class="d8" x="512" y="152">Transición al nivel siguiente</text>
+<text class="d8" x="512" y="164">si el bit es 1; ninguna si 0</text>
+<text class="n8" x="512" y="176">Ciclo 0,+1,0,-1 · 100BASE-TX</text>
+<rect fill="#0055a0" height="18" rx="3" width="636" x="22" y="190"></rect>
+<text class="d8" style="fill:#fff" x="32" y="203">CÓDIGO</text>
+<text class="d8" style="fill:#fff" x="150" y="203">CÓMO FUNCIONA</text>
+<text class="d8" style="fill:#fff" x="470" y="203">DÓNDE SE USA</text>
+<rect fill="#f7f9fb" height="17" rx="0" width="636" x="22" y="209"></rect>
+<text class="d8" x="32" y="221">NRZI</text>
+<text class="d8" x="150" y="221">Hay transición para el 1 y no la hay para el 0 (diferencial)</text>
+<text class="d8" x="470" y="221">100BASE-FX (con 4B/5B) · USB</text>
+<rect fill="#eef4fa" height="17" width="636" x="22" y="227"></rect>
+<text class="d8" x="32" y="239">Manchester dif.</text>
+<text class="d8" x="150" y="239">Transición central siempre; el bit se codifica al inicio</text>
+<text class="d8" x="470" y="239">Token Ring (802.5)</text>
+<rect fill="#f7f9fb" height="17" width="636" x="22" y="245"></rect>
+<text class="d8" x="32" y="257">4B/5B</text>
+<text class="d8" x="150" y="257">Cada 4 bits se sustituyen por 5, sin más de 3 ceros seguidos</text>
+<text class="d8" x="470" y="257">100BASE-TX y FX · FDDI</text>
+<rect fill="#eef4fa" height="17" width="636" x="22" y="263"></rect>
+<text class="d8" x="32" y="275">8B/10B</text>
+<text class="d8" x="150" y="275">Cada 8 bits en 10, equilibrando unos y ceros. Coste 25 %</text>
+<text class="d8" x="470" y="275">1000BASE-X (fibra) · Fibre Channel</text>
+<rect fill="#f7f9fb" height="17" width="636" x="22" y="281"></rect>
+<text class="d8" x="32" y="293">4D-PAM5</text>
+<text class="d8" x="150" y="293">Cinco niveles de amplitud por los CUATRO PARES a la vez</text>
+<text class="d8" x="470" y="293">1000BASE-T</text>
+<rect fill="#eef4fa" height="17" width="636" x="22" y="299"></rect>
+<text class="d8" x="32" y="311">64B/66B</text>
+<text class="d8" x="150" y="311">Cada 64 bits en 66: solo un 3,125 % de sobrecarga</text>
+<text class="d8" x="470" y="311">10GBASE-R y superiores</text>
+<text class="k8" text-anchor="middle" x="340" y="336">Fórmula que hay que llevar memorizada:  Vt (bit/s) = Vm (baudios) × log2(n)   ·   n = número de niveles del símbolo</text>
+<text class="n8" text-anchor="middle" x="340" y="350">Es la razón por la que 1000BASE-T alcanza 1 Gbit/s sobre un cable certificado solo hasta 100 MHz</text>
+<text class="n8" text-anchor="end" x="670" y="366">[Fuente: Stallings · IEEE 802.3]</text>
+</svg>

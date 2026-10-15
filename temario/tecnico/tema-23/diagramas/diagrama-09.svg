@@ -1,0 +1,19 @@
+<svg aria-label="Pipeline de renderizado del navegador: parsing construye DOM y CSSOM, estilo los combina, layout calcula posiciones, paint pinta píxeles, composición ensambla capas con la GPU" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 10.5px system-ui,sans-serif;fill:#fff}.s9{font:9px system-ui,sans-serif;fill:#fff}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">Pipeline de renderizado (Blink/Gecko/WebKit)</text>
+<rect fill="#0055a0" height="70" rx="5" width="120" x="20" y="60"></rect><text class="t9" text-anchor="middle" x="80" y="88">Parsing</text><text class="s9" text-anchor="middle" x="80" y="106">DOM + CSSOM</text>
+<rect fill="#3778b5" height="70" rx="5" width="120" x="150" y="60"></rect><text class="t9" text-anchor="middle" x="210" y="88">Estilo</text><text class="s9" text-anchor="middle" x="210" y="106">Combina árboles</text>
+<rect fill="#2d8659" height="70" rx="5" width="120" x="280" y="60"></rect><text class="t9" text-anchor="middle" x="340" y="88">Layout</text><text class="s9" text-anchor="middle" x="340" y="106">Posición/tamaño</text>
+<rect fill="#e89822" height="70" rx="5" width="120" x="410" y="60"></rect><text class="t9" text-anchor="middle" x="470" y="88">Paint</text><text class="s9" text-anchor="middle" x="470" y="106">Pinta píxeles</text>
+<rect fill="#d13c3c" height="70" rx="5" width="120" x="540" y="60"></rect><text class="t9" text-anchor="middle" x="600" y="88">Composición</text><text class="s9" text-anchor="middle" x="600" y="106">Capas + GPU</text>
+<path d="M140 95 L148 95" marker-end="url(#e9)" stroke="#888" stroke-width="2"></path>
+<path d="M270 95 L278 95" marker-end="url(#e9)" stroke="#888" stroke-width="2"></path>
+<path d="M400 95 L408 95" marker-end="url(#e9)" stroke="#888" stroke-width="2"></path>
+<path d="M530 95 L538 95" marker-end="url(#e9)" stroke="#888" stroke-width="2"></path>
+<defs><marker id="e9" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#888"></path></marker></defs>
+<rect fill="#f0f0f0" height="90" rx="6" stroke="#0055a0" stroke-width="2" width="560" x="60" y="160"></rect>
+<text style="font:700 12px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="184">Motor JS — independiente, un solo hilo</text>
+<text style="font:10.5px system-ui;fill:#444" text-anchor="middle" x="340" y="206">V8 (Chrome/Edge) · SpiderMonkey (Firefox) · JavaScriptCore (Safari)</text>
+<text style="font:10.5px system-ui;fill:#444" text-anchor="middle" x="340" y="226">Ejecuta con bucle de eventos (event loop), no con hilos paralelos reales</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="292">[Fuente: CHROMIUM-BLINK; V8-DOC]</text>
+</svg>

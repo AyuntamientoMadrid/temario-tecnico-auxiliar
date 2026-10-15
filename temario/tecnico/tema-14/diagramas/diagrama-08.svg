@@ -1,0 +1,20 @@
+<svg aria-label="Comparación de arquitecturas monolítica, microkernel e híbrida" class="svd8" role="img" viewbox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<style>.svd8 .t{font:700 13px system-ui,sans-serif;fill:#0055a0}.svd8 .b{font:600 11px system-ui,sans-serif;fill:#fff}.svd8 .l{font:10px system-ui,sans-serif;fill:#444}.svd8 .u{fill:#6ea3d2}.svd8 .k{fill:#0055a0}</style>
+<text class="t" text-anchor="middle" x="110" y="30">Monolítico</text>
+<rect class="u" height="30" width="160" x="30" y="45"></rect><text class="b" text-anchor="middle" x="110" y="65">Aplicaciones</text>
+<rect class="k" height="120" width="160" x="30" y="80"></rect><text class="b" text-anchor="middle" x="110" y="110">Núcleo:</text>
+<text class="b" text-anchor="middle" x="110" y="130">procesos+memoria</text><text class="b" text-anchor="middle" x="110" y="148">+ficheros+drivers</text><text class="b" text-anchor="middle" x="110" y="166">+red</text>
+<text class="l" text-anchor="middle" x="110" y="220">Linux · rápido</text>
+<text class="t" text-anchor="middle" x="350" y="30">Microkernel</text>
+<rect class="u" height="30" width="160" x="270" y="45"></rect><text class="b" text-anchor="middle" x="350" y="65">Apps</text>
+<rect class="u" height="30" width="46" x="270" y="80"></rect><rect class="u" height="30" width="46" x="320" y="80"></rect><rect class="u" height="30" width="60" x="370" y="80"></rect>
+<text class="b" style="font-size:9px" text-anchor="middle" x="293" y="99">ficheros</text><text class="b" style="font-size:9px" text-anchor="middle" x="343" y="99">drivers</text><text class="b" style="font-size:9px" text-anchor="middle" x="400" y="99">red</text>
+<rect class="k" height="50" width="160" x="270" y="150"></rect><text class="b" text-anchor="middle" x="350" y="180">Micronúcleo (mínimo)</text>
+<text class="l" text-anchor="middle" x="350" y="220">MINIX/QNX · robusto</text>
+<text class="t" text-anchor="middle" x="590" y="30">Híbrido</text>
+<rect class="u" height="30" width="160" x="510" y="45"></rect><text class="b" text-anchor="middle" x="590" y="65">Apps + subsistemas</text>
+<rect class="k" height="120" width="160" x="510" y="80"></rect><text class="b" text-anchor="middle" x="590" y="120">Núcleo amplio</text><text class="b" text-anchor="middle" x="590" y="140">+ HAL</text>
+<text class="l" text-anchor="middle" x="590" y="220">Windows NT / macOS</text>
+<text class="l" x="30" y="270">Azul oscuro = modo núcleo · Azul claro = modo usuario</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="690" y="328">[Fuente: TANENBAUM-MOS, cap. 1]</text>
+</svg>

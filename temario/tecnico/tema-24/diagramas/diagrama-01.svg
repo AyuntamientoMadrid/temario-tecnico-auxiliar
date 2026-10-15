@@ -1,0 +1,32 @@
+<svg aria-label="Familias de dispositivos móviles (teléfono, tableta, plegable, reloj y terminal de campo) y las tres restricciones de recursos: batería, memoria y procesamiento, con su consecuencia práctica en el diseño de la aplicación" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t1{font:700 11px system-ui,sans-serif;fill:#fff}.s1{font:9.5px system-ui,sans-serif;fill:#fff}.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}.k1{font:700 11px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h1" text-anchor="middle" x="340" y="20">Dispositivos y restricciones de recursos</text>
+<rect fill="#0055a0" height="52" rx="5" width="120" x="20" y="36"></rect><text class="t1" text-anchor="middle" x="80" y="58">Teléfono</text><text class="s1" text-anchor="middle" x="80" y="76">objetivo principal</text>
+<rect fill="#0055a0" height="52" rx="5" width="120" x="150" y="36"></rect><text class="t1" text-anchor="middle" x="210" y="58">Tableta</text><text class="s1" text-anchor="middle" x="210" y="76">maestro-detalle</text>
+<rect fill="#0055a0" height="52" rx="5" width="120" x="280" y="36"></rect><text class="t1" text-anchor="middle" x="340" y="58">Plegable</text><text class="s1" text-anchor="middle" x="340" y="76">cambia en caliente</text>
+<rect fill="#888" height="52" rx="5" width="120" x="410" y="36"></rect><text class="t1" text-anchor="middle" x="470" y="58">Reloj</text><text class="s1" text-anchor="middle" x="470" y="76">app complementaria</text>
+<rect fill="#888" height="52" rx="5" width="120" x="540" y="36"></rect><text class="t1" text-anchor="middle" x="600" y="58">Terminal campo</text><text class="s1" text-anchor="middle" x="600" y="76">uso profesional</text>
+<line stroke="#ccc" stroke-width="1" x1="20" x2="660" y1="102" y2="102"></line>
+<text class="k1" text-anchor="middle" x="340" y="122">Restricciones de recursos y su consecuencia de diseño</text>
+<rect fill="#d13c3c" height="118" rx="5" width="205" x="20" y="134"></rect>
+<text class="t1" text-anchor="middle" x="122" y="156">BATERÍA</text>
+<text class="s1" text-anchor="middle" x="122" y="178">Pantalla, radio y GPS: lo que</text>
+<text class="s1" text-anchor="middle" x="122" y="194">más consume</text>
+<text class="s1" text-anchor="middle" x="122" y="216">→ agrupar envíos (batching)</text>
+<text class="s1" text-anchor="middle" x="122" y="234">→ diferir lo no urgente</text>
+<rect fill="#e89822" height="118" rx="5" width="206" x="237" y="134"></rect>
+<text class="t1" text-anchor="middle" x="340" y="156">MEMORIA</text>
+<text class="s1" text-anchor="middle" x="340" y="178">El sistema puede terminar el</text>
+<text class="s1" text-anchor="middle" x="340" y="194">proceso en segundo plano</text>
+<text class="s1" text-anchor="middle" x="340" y="216">→ guardar estado al perder</text>
+<text class="s1" text-anchor="middle" x="340" y="234">el primer plano</text>
+<rect fill="#2d8659" height="118" rx="5" width="205" x="455" y="134"></rect>
+<text class="t1" text-anchor="middle" x="557" y="156">PROCESAMIENTO</text>
+<text class="s1" text-anchor="middle" x="557" y="178">SoC que equilibra potencia</text>
+<text class="s1" text-anchor="middle" x="557" y="194">y consumo</text>
+<text class="s1" text-anchor="middle" x="557" y="216">→ trabajo pesado fuera del</text>
+<text class="s1" text-anchor="middle" x="557" y="234">hilo principal (si no: ANR)</text>
+<rect fill="none" height="34" rx="5" stroke="#0055a0" stroke-width="2" width="500" x="90" y="264"></rect>
+<text class="k1" text-anchor="middle" x="340" y="286">El árbitro de los tres recursos es el sistema operativo, no la aplicación</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="312">[Fuente: ANDROID-DEV; APPLE-DEV]</text>
+</svg>

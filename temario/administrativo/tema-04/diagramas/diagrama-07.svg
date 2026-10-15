@@ -1,0 +1,21 @@
+<svg aria-label="Forma de los actos: los del concejal-presidente son decretos y los del coordinador del distrito son resoluciones" role="img" viewbox="0 0 700 244" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .g-h{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .g-t{font:700 18px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .g-s{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}
+  </style>
+<rect fill="#fff" height="164" rx="10" stroke="#0055a0" stroke-width="1.5" width="290" x="40" y="30"></rect>
+<rect fill="#0055a0" height="44" rx="10" width="290" x="40" y="30"></rect>
+<text class="g-h" x="185" y="58">CONCEJAL-PRESIDENTE</text>
+<rect fill="#003d75" height="44" rx="8" width="190" x="90" y="92"></rect>
+<text class="g-t" x="185" y="120">DECRETO</text>
+<text class="g-s" x="185" y="160">"Decretos del concejal-presidente</text>
+<text class="g-s" x="185" y="176">de la Junta Municipal de Distrito"</text>
+<rect fill="#fff" height="164" rx="10" stroke="#2d8659" stroke-width="1.5" width="290" x="370" y="30"></rect>
+<rect fill="#2d8659" height="44" rx="10" width="290" x="370" y="30"></rect>
+<text class="g-h" x="515" y="58">COORDINADOR DEL DISTRITO</text>
+<rect fill="#1f5e3f" height="44" rx="8" width="190" x="420" y="92"></rect>
+<text class="g-t" x="515" y="120">RESOLUCIÓN</text>
+<text class="g-s" x="515" y="162">decisiones administrativas (art. 71.2)</text>
+<text class="g-s" style="font-style:italic;fill:#a3271c" x="350" y="226">Concejal-presidente: decreto (art. 67) · Coordinador del distrito: resolución (art. 71.2)</text>
+</svg>

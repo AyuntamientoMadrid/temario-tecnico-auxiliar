@@ -1,0 +1,27 @@
+<svg aria-label="Las seis interfaces normalizadas de TETRA. I1 es el interfaz aire en modo troncalizado, entre terminal y estación base, norma EN 300 392-2. I2 es la interfaz de línea entre la infraestructura y los equipos conectados por cable. I3 es la interfaz entre sistemas o ISI, hacia otra red TETRA, norma EN 300 392-3. I4 es la interfaz de equipo periférico o PEI, entre terminal y equipo de datos, norma EN 300 392-5. I5 es la interfaz de gestión de red. I6 es el interfaz aire en modo directo, entre terminales, norma EN 300 396" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t8{font:700 10px system-ui,sans-serif;fill:#fff}.s8{font:8.5px system-ui,sans-serif;fill:#fff}.d8{font:8.5px system-ui,sans-serif;fill:#333}.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}.k8{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n8{font:8.5px system-ui,sans-serif;fill:#666}.i8{font:700 14px system-ui,sans-serif;fill:#fff}</style>
+<text class="h8" text-anchor="middle" x="340" y="22">Hay DOS interfaces aire: la I1 (con red) y la I6 (sin red)</text>
+<rect fill="#d13c3c" height="44" rx="5" width="648" x="20" y="36"></rect>
+<text class="i8" text-anchor="middle" x="52" y="63">I1</text>
+<text class="t8" x="96" y="55">INTERFAZ AIRE · modo troncalizado</text>
+<text class="s8" x="96" y="70">Terminal ↔ estación base · EN 300 392-2 · es la norma central del estándar: capas física, de enlace y de red</text>
+<rect fill="#0055a0" height="44" rx="5" width="648" x="20" y="88"></rect>
+<text class="i8" text-anchor="middle" x="52" y="115">I2</text>
+<text class="t8" x="96" y="107">INTERFAZ DE LÍNEA · LSI / LNI</text>
+<text class="s8" x="96" y="122">Equipos conectados por cable ↔ SwMI · consolas de despacho, estaciones fijas, grabadores y pasarelas</text>
+<rect fill="#0055a0" height="44" rx="5" width="648" x="20" y="140"></rect>
+<text class="i8" text-anchor="middle" x="52" y="167">I3</text>
+<text class="t8" x="96" y="159">ISI · INTERFAZ ENTRE SISTEMAS</text>
+<text class="s8" x="96" y="174">Red TETRA ↔ otra red TETRA · EN 300 392-3 · llamadas entre redes, itinerancia y mensajes cortos</text>
+<rect fill="#0055a0" height="44" rx="5" width="648" x="20" y="192"></rect>
+<text class="i8" text-anchor="middle" x="52" y="219">I4</text>
+<text class="t8" x="96" y="211">PEI · INTERFAZ DE EQUIPO PERIFÉRICO</text>
+<text class="s8" x="96" y="226">Terminal ↔ equipo de datos del usuario · EN 300 392-5 · comandos AT; convierte la radio en módem</text>
+<rect fill="#0055a0" height="30" rx="5" width="648" x="20" y="244"></rect>
+<text class="i8" text-anchor="middle" x="52" y="264">I5</text>
+<text class="s8" x="96" y="263">GESTIÓN DE RED · SwMI ↔ sistema de gestión (NMS): alarmas, configuración y supervisión</text>
+<rect fill="#d13c3c" height="30" rx="5" width="648" x="20" y="282"></rect>
+<text class="i8" text-anchor="middle" x="52" y="302">I6</text>
+<text class="s8" x="96" y="301">INTERFAZ AIRE EN MODO DIRECTO · terminal ↔ terminal, SIN red · EN 300 396</text>
+<text class="n8" text-anchor="end" x="670" y="332">[Fuente: ETSI ETR 300-1 y ETSI EN 300 392-1]</text>
+</svg>

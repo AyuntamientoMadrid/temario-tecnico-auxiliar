@@ -1,0 +1,16 @@
+<svg aria-label="Ámbitos CDI: RequestScoped dura una petición, SessionScoped dura la sesión del usuario, ApplicationScoped es una única instancia compartida por toda la aplicación, ConversationScoped dura un flujo definido, y Dependent hereda el ciclo de vida de quien lo inyecta" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t10{font:700 11px system-ui,sans-serif;fill:#fff}.s10{font:9.5px system-ui,sans-serif;fill:#fff}.l10{font:11px system-ui,sans-serif;fill:#444}.h10{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h10" text-anchor="middle" x="340" y="20">@Inject resuelve por TIPO — cada bean vive en un ámbito (scope)</text>
+<rect fill="#0055a0" height="60" rx="6" width="200" x="20" y="40"></rect><text class="t10" text-anchor="middle" x="120" y="62">@RequestScoped</text><text class="s10" text-anchor="middle" x="120" y="80">dura UNA petición HTTP</text>
+<rect fill="#3778b5" height="60" rx="6" width="200" x="230" y="40"></rect><text class="t10" text-anchor="middle" x="330" y="62">@SessionScoped</text><text class="s10" text-anchor="middle" x="330" y="80">dura la sesión del usuario</text>
+<rect fill="#2d8659" height="60" rx="6" width="220" x="440" y="40"></rect><text class="t10" text-anchor="middle" x="550" y="62">@ApplicationScoped</text><text class="s10" text-anchor="middle" x="550" y="80">1 instancia · toda la app</text>
+<rect fill="#e89822" height="60" rx="6" width="300" x="20" y="112"></rect><text class="t10" text-anchor="middle" x="170" y="134">@ConversationScoped</text><text class="s10" text-anchor="middle" x="170" y="152">dura un flujo multipaso definido</text>
+<rect fill="#888" height="60" rx="6" width="320" x="340" y="112"></rect><text class="t10" text-anchor="middle" x="500" y="134">@Dependent (por defecto)</text><text class="s10" text-anchor="middle" x="500" y="152">hereda el ciclo de vida del bean que lo inyecta</text>
+<rect fill="#eef4fa" height="70" rx="6" stroke="#0055a0" width="560" x="60" y="192"></rect>
+<text style="font:700 12px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="214">@Inject resuelve por TIPO (con qualifiers si hay ambigüedad)</text>
+<text class="l10" text-anchor="middle" x="340" y="234">JNDI (§2.1.2), en cambio, resuelve por NOMBRE — distinción clave</text>
+<rect fill="#fdf3e3" height="52" rx="6" stroke="#e89822" width="560" x="60" y="272"></rect>
+<text style="font:700 11.5px system-ui;fill:#8a5a00" text-anchor="middle" x="340" y="294">@ApplicationScoped ≈ patrón Singleton (Tema 20) gestionado por el contenedor</text>
+<text class="l10" text-anchor="middle" x="340" y="312">@Observes (eventos) aplica el patrón Observer de forma declarativa</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="336">[Fuente: JAKARTA-CDI]</text>
+</svg>

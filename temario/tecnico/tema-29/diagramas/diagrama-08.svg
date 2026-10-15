@@ -1,0 +1,40 @@
+<svg aria-label="Herramientas de asistencia remota nativas de Windows, Unix y Linux y macOS, separadas según compartan la sesión existente del usuario, lo que sirve para asistir, o abran una sesión nueva independiente, que sirve para administrar pero no para reproducir el problema del usuario" role="img" viewbox="0 0 680 330" xmlns="http://www.w3.org/2000/svg">
+<style>.t8{font:700 10.5px system-ui,sans-serif;fill:#fff}.s8{font:9px system-ui,sans-serif;fill:#fff}.d8{font:9px system-ui,sans-serif;fill:#333}.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}.k8{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n8{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h8" text-anchor="middle" x="340" y="20">Herramientas nativas y modo de sesión</text>
+<rect fill="#0055a0" height="28" rx="5" width="210" x="20" y="34"></rect><text class="t8" text-anchor="middle" x="125" y="53">WINDOWS</text>
+<rect fill="#0055a0" height="28" rx="5" width="210" x="240" y="34"></rect><text class="t8" text-anchor="middle" x="345" y="53">UNIX / LINUX</text>
+<rect fill="#0055a0" height="28" rx="5" width="200" x="460" y="34"></rect><text class="t8" text-anchor="middle" x="560" y="53">macOS</text>
+<rect fill="#2d8659" height="26" rx="4" width="640" x="20" y="70"></rect>
+<text class="t8" text-anchor="middle" x="340" y="88">COMPARTEN LA SESIÓN DEL USUARIO → sirven para ASISTIR</text>
+<rect fill="#eaf3ee" height="76" rx="4" width="210" x="20" y="102"></rect>
+<text class="d8" x="32" y="120">· Asistencia rápida</text>
+<text class="d8" x="32" y="136">· Asistencia remota (msra)</text>
+<text class="d8" x="32" y="152">· Shadowing de RDS/VDI</text>
+<text class="k8" x="32" y="170">con código y consentimiento</text>
+<rect fill="#eaf3ee" height="76" rx="4" width="210" x="240" y="102"></rect>
+<text class="d8" x="252" y="120">· x11vnc sobre la consola</text>
+<text class="d8" x="252" y="136">· Reenvío X11 (ssh -X)</text>
+<text class="d8" x="252" y="152">· screen / tmux compartido</text>
+<text class="k8" x="252" y="170">la sesión sobrevive al corte</text>
+<rect fill="#eaf3ee" height="76" rx="4" width="200" x="460" y="102"></rect>
+<text class="d8" x="472" y="120">· Compartir pantalla (VNC)</text>
+<text class="d8" x="472" y="136">· Apple Remote Desktop</text>
+<text class="d8" x="472" y="152">  (asistencia + inventario</text>
+<text class="d8" x="472" y="168">  y despliegue)</text>
+<rect fill="#e89822" height="26" rx="4" width="640" x="20" y="188"></rect>
+<text class="t8" text-anchor="middle" x="340" y="206">ABREN UNA SESIÓN NUEVA → sirven para ADMINISTRAR, no para asistir</text>
+<rect fill="#fdf3e6" height="62" rx="4" width="210" x="20" y="220"></rect>
+<text class="d8" x="32" y="238">· Escritorio remoto (mstsc)</text>
+<text class="d8" x="32" y="254">· PowerShell Remoting</text>
+<text class="d8" x="32" y="270">· Consolas remotas (RSAT)</text>
+<rect fill="#fdf3e6" height="62" rx="4" width="210" x="240" y="220"></rect>
+<text class="d8" x="252" y="238">· SSH interactivo</text>
+<text class="d8" x="252" y="254">· Servidor VNC virtual</text>
+<text class="d8" x="252" y="270">· xrdp · X2Go · SPICE</text>
+<rect fill="#fdf3e6" height="62" rx="4" width="200" x="460" y="220"></rect>
+<text class="d8" x="472" y="238">· SSH (sesión de consola)</text>
+<text class="d8" x="472" y="254">· Órdenes remotas de ARD</text>
+<rect fill="#d13c3c" height="26" rx="5" width="560" x="60" y="292"></rect>
+<text class="t8" text-anchor="middle" x="340" y="310">Error frecuente: entrar por RDP para «asistir» y ver un escritorio distinto del que ve el usuario</text>
+<text class="n8" text-anchor="end" x="670" y="326">[Fuente: MS-QUICKASSIST; MS-RDS; OPENSSH; APPLE-ARD]</text>
+</svg>

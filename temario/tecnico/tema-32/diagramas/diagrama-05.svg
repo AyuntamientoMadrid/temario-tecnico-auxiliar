@@ -1,0 +1,31 @@
+<svg aria-label="Cinco anillos concéntricos de seguridad física desde el perímetro exterior hasta el bastidor, con los controles típicos de cada anillo y la tabla de las siete medidas mp punto if del Esquema Nacional de Seguridad y su aplicación por categoría o nivel de disponibilidad" role="img" viewbox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 10px system-ui,sans-serif;fill:#fff}.s5{font:8.5px system-ui,sans-serif;fill:#fff}.d5{font:9px system-ui,sans-serif;fill:#333}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.k5{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n5{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h5" text-anchor="middle" x="340" y="20">Anillos de protección física y medidas mp.if</text>
+<rect fill="#0055a0" height="30" rx="4" width="320" x="20" y="34"></rect><text class="t5" text-anchor="middle" x="180" y="53">1 · PERÍMETRO — vallado, iluminación, CCTV</text>
+<rect fill="#1a6bb0" height="30" rx="4" width="276" x="42" y="68"></rect><text class="t5" text-anchor="middle" x="180" y="87">2 · EDIFICIO — recepción, tarjeta, registro</text>
+<rect fill="#3781c0" height="30" rx="4" width="232" x="64" y="102"></rect><text class="t5" text-anchor="middle" x="180" y="121">3 · ZONAS — segmentación por planta</text>
+<rect fill="#e89822" height="30" rx="4" width="188" x="86" y="136"></rect><text class="t5" text-anchor="middle" x="180" y="155">4 · SALA TÉCNICA — doble factor</text>
+<rect fill="#d13c3c" height="30" rx="4" width="160" x="100" y="170"></rect><text class="t5" text-anchor="middle" x="180" y="189">5 · BASTIDOR — cerradura</text>
+<text class="n5" text-anchor="middle" x="180" y="216">Cada anillo exige un control más estricto que el anterior</text>
+<rect fill="#eef3f8" height="166" rx="5" width="292" x="368" y="34"></rect>
+<text class="k5" x="380" y="52">ZONA CONTROLADA (definición del ENS)</text>
+<text class="d5" x="380" y="70">Zona NO de acceso público en la que el usuario</text>
+<text class="d5" x="380" y="84">ya se ha autenticado físicamente antes de llegar</text>
+<text class="d5" x="380" y="98">al equipo, de forma distinta al acceso lógico.</text>
+<text class="k5" x="380" y="120">EJEMPLO DE ZONA NO CONTROLADA: INTERNET</text>
+<rect fill="#fbeaea" height="58" rx="4" width="268" x="380" y="130"></rect>
+<text class="d5" text-anchor="middle" x="514" y="148">Consecuencia [op.acc.6.r8]: acceso desde o a</text>
+<text class="d5" text-anchor="middle" x="514" y="162">través de zona NO controlada exige DOBLE</text>
+<text class="d5" text-anchor="middle" x="514" y="176">FACTOR, y en TODOS los niveles</text>
+<text class="k5" x="20" y="240">LAS SIETE MEDIDAS mp.if · PROTECCIÓN DE LAS INSTALACIONES E INFRAESTRUCTURAS</text>
+<rect fill="#0055a0" height="46" rx="4" width="106" x="20" y="248"></rect><text class="t5" text-anchor="middle" x="73" y="265">mp.if.1</text><text class="s5" text-anchor="middle" x="73" y="279">áreas separadas</text><text class="s5" text-anchor="middle" x="73" y="290">todas las categorías</text>
+<rect fill="#0055a0" height="46" rx="4" width="106" x="132" y="248"></rect><text class="t5" text-anchor="middle" x="185" y="265">mp.if.2</text><text class="s5" text-anchor="middle" x="185" y="279">identificar personas</text><text class="s5" text-anchor="middle" x="185" y="290">todas las categorías</text>
+<rect fill="#0055a0" height="46" rx="4" width="106" x="244" y="248"></rect><text class="t5" text-anchor="middle" x="297" y="265">mp.if.3</text><text class="s5" text-anchor="middle" x="297" y="279">acondicionamiento</text><text class="s5" text-anchor="middle" x="297" y="290">todas las categorías</text>
+<rect fill="#e89822" height="46" rx="4" width="106" x="356" y="248"></rect><text class="t5" text-anchor="middle" x="409" y="265">mp.if.4</text><text class="s5" text-anchor="middle" x="409" y="279">energía eléctrica</text><text class="s5" text-anchor="middle" x="409" y="290">D · MEDIO+ = +R1</text>
+<rect fill="#e89822" height="46" rx="4" width="106" x="468" y="248"></rect><text class="t5" text-anchor="middle" x="521" y="265">mp.if.5</text><text class="s5" text-anchor="middle" x="521" y="279">incendios</text><text class="s5" text-anchor="middle" x="521" y="290">D · los tres niveles</text>
+<rect fill="#d13c3c" height="46" rx="4" width="80" x="580" y="248"></rect><text class="t5" text-anchor="middle" x="620" y="265">mp.if.6</text><text class="s5" text-anchor="middle" x="620" y="279">inundaciones</text><text class="s5" text-anchor="middle" x="620" y="290">n.a. en BAJO</text>
+<rect fill="#f5f5f5" height="30" rx="4" width="640" x="20" y="300"></rect>
+<text class="d5" text-anchor="middle" x="340" y="313">mp.if.7 · Registro pormenorizado de entrada y salida de equipamiento esencial, con identificación de QUIÉN AUTORIZA</text>
+<text class="n5" text-anchor="middle" x="340" y="326">Aplica en las tres categorías · única medida de la familia que no aplica en algún caso: mp.if.6 en nivel BAJO</text>
+<text class="n5" text-anchor="end" x="670" y="352">[Fuente: ENS, art. 18 y anexo II, 5.1]</text>
+</svg>

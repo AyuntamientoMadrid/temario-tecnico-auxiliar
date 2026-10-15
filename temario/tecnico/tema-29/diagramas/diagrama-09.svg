@@ -1,0 +1,29 @@
+<svg aria-label="Los seis bloques funcionales de una plataforma de gestión centralizada del puesto de trabajo: inventario y descubrimiento, despliegue de sistemas y software, configuración y cumplimiento, parcheo y actualizaciones, seguridad del punto final y soporte integrado, dispuestos como un ciclo que convierte el soporte reactivo en proactivo" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 10.5px system-ui,sans-serif;fill:#fff}.s9{font:9px system-ui,sans-serif;fill:#fff}.d9{font:9px system-ui,sans-serif;fill:#333}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.k9{font:700 10px system-ui,sans-serif;fill:#0055a0}.n9{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<defs><marker id="a9" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="h9" text-anchor="middle" x="340" y="20">Gestión centralizada del parque de puestos</text>
+<rect fill="#0055a0" height="52" rx="5" width="205" x="20" y="36"></rect><text class="t9" text-anchor="middle" x="122" y="55">1 · INVENTARIO</text><text class="s9" text-anchor="middle" x="122" y="70">hardware, software, parches</text><text class="s9" text-anchor="middle" x="122" y="83">alimenta la CMDB</text>
+<rect fill="#0055a0" height="52" rx="5" width="205" x="237" y="36"></rect><text class="t9" text-anchor="middle" x="339" y="55">2 · DESPLIEGUE</text><text class="s9" text-anchor="middle" x="339" y="70">imagen base, PXE, catálogo</text><text class="s9" text-anchor="middle" x="339" y="83">de aplicaciones</text>
+<rect fill="#0055a0" height="52" rx="5" width="206" x="454" y="36"></rect><text class="t9" text-anchor="middle" x="557" y="55">3 · CONFIGURACIÓN</text><text class="s9" text-anchor="middle" x="557" y="70">directivas, líneas base</text><text class="s9" text-anchor="middle" x="557" y="83">y control de cumplimiento</text>
+<line marker-end="url(#a9)" stroke="#0055a0" stroke-width="2" x1="225" x2="234" y1="62" y2="62"></line>
+<line marker-end="url(#a9)" stroke="#0055a0" stroke-width="2" x1="442" x2="451" y1="62" y2="62"></line>
+<path d="M660,88 L668,88 L668,110 L12,110 L12,132 L17,132" fill="none" marker-end="url(#a9)" stroke="#0055a0" stroke-width="2"></path>
+<rect fill="#2d8659" height="52" rx="5" width="205" x="20" y="126"></rect><text class="t9" text-anchor="middle" x="122" y="145">4 · PARCHEO</text><text class="s9" text-anchor="middle" x="122" y="160">despliegue por anillos</text><text class="s9" text-anchor="middle" x="122" y="173">y ventanas de mantenimiento</text>
+<rect fill="#2d8659" height="52" rx="5" width="205" x="237" y="126"></rect><text class="t9" text-anchor="middle" x="339" y="145">5 · SEGURIDAD</text><text class="s9" text-anchor="middle" x="339" y="160">antivirus, cifrado de disco</text><text class="s9" text-anchor="middle" x="339" y="173">y borrado remoto</text>
+<rect fill="#2d8659" height="52" rx="5" width="206" x="454" y="126"></rect><text class="t9" text-anchor="middle" x="557" y="145">6 · SOPORTE</text><text class="s9" text-anchor="middle" x="557" y="160">acciones remotas y sesión</text><text class="s9" text-anchor="middle" x="557" y="173">de control desde el tique</text>
+<line marker-end="url(#a9)" stroke="#0055a0" stroke-width="2" x1="225" x2="234" y1="152" y2="152"></line>
+<line marker-end="url(#a9)" stroke="#0055a0" stroke-width="2" x1="442" x2="451" y1="152" y2="152"></line>
+<path d="M557,178 L557,196 L5,196 L5,62 L17,62" fill="none" marker-end="url(#a9)" stroke="#888" stroke-dasharray="5,3" stroke-width="1.5"></path>
+<text class="n9" text-anchor="middle" x="340" y="192">lo aprendido en el soporte actualiza el inventario y las líneas base</text>
+<rect fill="#fbeaea" height="60" rx="5" width="315" x="20" y="210"></rect>
+<text class="k9" text-anchor="middle" x="177" y="228">SIN GESTIÓN CENTRALIZADA</text>
+<text class="d9" text-anchor="middle" x="177" y="246">Soporte REACTIVO: se espera la llamada</text>
+<text class="d9" text-anchor="middle" x="177" y="262">del usuario cuando ya ha fallado algo</text>
+<rect fill="#eaf3ee" height="60" rx="5" width="315" x="345" y="210"></rect>
+<text class="k9" text-anchor="middle" x="502" y="228">CON GESTIÓN CENTRALIZADA</text>
+<text class="d9" text-anchor="middle" x="502" y="246">Soporte PROACTIVO: se detecta el disco lleno</text>
+<text class="d9" text-anchor="middle" x="502" y="262">o el parche que falta antes de la incidencia</text>
+<rect fill="none" height="24" rx="5" stroke="#0055a0" stroke-width="1.5" width="500" x="90" y="278"></rect>
+<text class="k9" text-anchor="middle" x="340" y="294">Reduce el NÚMERO de incidencias, no solo el tiempo de resolución</text>
+<text class="n9" text-anchor="end" x="670" y="316">[Fuente: MS-INTUNE; UEM; ITIL4]</text>
+</svg>

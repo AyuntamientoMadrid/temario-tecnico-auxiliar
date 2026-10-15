@@ -1,0 +1,2747 @@
+{
+  "tema": 9,
+  "bloque": "administrativo",
+  "titulo": "Prevención de Riesgos Laborales y representación de los empleados públicos",
+  "enunciado_oficial": "Ley 31/1995, de 8 de noviembre de Prevención de Riesgos Laborales: Delegados/as de prevención. Comités de seguridad y salud. Especial referencia a la prevención de riesgos laborales del Acuerdo Convenio en vigor sobre condiciones de trabajo comunes al personal funcionario y laboral del Ayuntamiento de Madrid y de sus Organismos Autónomos. Representación de los empleados públicos.",
+  "calificacion": "+1 acierto, -1/3 error, 0 en blanco (BOAM 10.032, base 5.2)",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "Según el art. 1 LPRL, la normativa sobre prevención de riesgos laborales está constituida por:",
+      "opciones": {
+        "a": "La LPRL, sus disposiciones de desarrollo o complementarias y cuantas otras normas, legales o convencionales, contengan prescripciones relativas a la adopción de medidas preventivas en el ámbito laboral o susceptibles de producirlas en dicho ámbito.",
+        "b": "La LPRL y sus reglamentos de desarrollo, con exclusión de las normas convencionales.",
+        "c": "Exclusivamente las normas con rango de ley."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 1",
+      "explicacion": ""
+    },
+    {
+      "numero": 2,
+      "pregunta": "¿Qué precepto constitucional sirve de fundamento a la prevención de riesgos laborales?",
+      "opciones": {
+        "a": "El artículo 40.2 de la Constitución, que encomienda a los poderes públicos velar por la seguridad e higiene en el trabajo.",
+        "b": "El artículo 35.2 de la Constitución.",
+        "c": "El artículo 43 de la Constitución."
+      },
+      "correcta": "a",
+      "referencia": "CE, art. 40.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 3,
+      "pregunta": "Según su exposición de motivos, la LPRL transpone al Derecho español:",
+      "opciones": {
+        "a": "El Reglamento General de Protección de Datos.",
+        "b": "La Directiva 89/391/CEE, relativa a la aplicación de las medidas para promover la mejora de la seguridad y de la salud de los trabajadores en el trabajo.",
+        "c": "La Directiva de servicios."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, exposición de motivos",
+      "explicacion": ""
+    },
+    {
+      "numero": 4,
+      "pregunta": "El objeto de la LPRL es:",
+      "opciones": {
+        "a": "Promover la seguridad y la salud de los trabajadores mediante la prevención de los riesgos derivados del trabajo.",
+        "b": "Sancionar a las empresas incumplidoras.",
+        "c": "Regular el régimen disciplinario de los empleados públicos."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 2.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 5,
+      "pregunta": "La LPRL, respecto del personal al servicio de las Administraciones Públicas:",
+      "opciones": {
+        "a": "No se aplica en ningún caso.",
+        "b": "Se aplica también a las relaciones de carácter administrativo o estatutario, con las peculiaridades que se contemplan en la propia Ley o en sus normas de desarrollo.",
+        "c": "Se aplica solo al personal laboral."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 6,
+      "pregunta": "Señale la afirmación correcta sobre el ámbito de la LPRL:",
+      "opciones": {
+        "a": "Excluye totalmente a los funcionarios públicos.",
+        "b": "Solo se aplica a empresas de más de 50 trabajadores.",
+        "c": "Se aplica tanto a relaciones laborales como a las administrativas y estatutarias."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 7,
+      "pregunta": "La fecha de la Ley de Prevención de Riesgos Laborales es:",
+      "opciones": {
+        "a": "17 de diciembre de 2003.",
+        "b": "8 de noviembre de 1995.",
+        "c": "2 de abril de 1985."
+      },
+      "correcta": "b",
+      "referencia": "LPRL",
+      "explicacion": ""
+    },
+    {
+      "numero": 8,
+      "pregunta": "La LPRL no será de aplicación en aquellas actividades cuyas particularidades lo impidan en el ámbito de las funciones públicas de:",
+      "opciones": {
+        "a": "La gestión administrativa de personal.",
+        "b": "La actividad informática de un organismo autónomo.",
+        "c": "Policía, seguridad y resguardo aduanero."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 3.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 9,
+      "pregunta": "El derecho de los trabajadores a una protección eficaz en materia de seguridad y salud se corresponde con:",
+      "opciones": {
+        "a": "Una mera recomendación sin obligación correlativa.",
+        "b": "Un deber de protección del empresario.",
+        "c": "Una obligación exclusiva de la Administración laboral."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 14.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 10,
+      "pregunta": "Según la exposición de motivos de la LPRL, los compromisos contraídos con la Organización Internacional del Trabajo que enriquecen el contenido de la Ley parten de la ratificación del:",
+      "opciones": {
+        "a": "Convenio 155, sobre seguridad y salud de los trabajadores y medio ambiente de trabajo.",
+        "b": "Convenio 87, sobre la libertad sindical.",
+        "c": "Convenio 98, sobre el derecho de sindicación y de negociación colectiva."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, exposición de motivos",
+      "explicacion": ""
+    },
+    {
+      "numero": 11,
+      "pregunta": "La información, la consulta y la participación de los trabajadores en materia preventiva:",
+      "opciones": {
+        "a": "Forman parte del derecho a una protección eficaz.",
+        "b": "Son facultativas para el empresario.",
+        "c": "Solo proceden en el sector privado."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 14.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 12,
+      "pregunta": "El empresario garantizará a los trabajadores a su servicio la vigilancia periódica de su estado de salud:",
+      "opciones": {
+        "a": "Solo a partir de los cincuenta años de edad.",
+        "b": "Solo cuando lo solicite la mutua.",
+        "c": "En función de los riesgos inherentes al trabajo."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 22.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 13,
+      "pregunta": "El primero de los principios de la acción preventiva del art. 15 LPRL es:",
+      "opciones": {
+        "a": "Evaluar todos los riesgos.",
+        "b": "Entregar equipos de protección individual.",
+        "c": "Evitar los riesgos."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 15.1.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 14,
+      "pregunta": "Según el art. 15.1.b) LPRL, se evalúan:",
+      "opciones": {
+        "a": "Todos los riesgos sin excepción.",
+        "b": "Únicamente los riesgos graves.",
+        "c": "Los riesgos que no se puedan evitar."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 15.1.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 15,
+      "pregunta": "En relación con la protección, el art. 15.1.h) LPRL ordena:",
+      "opciones": {
+        "a": "Adoptar medidas que antepongan la protección individual a la colectiva.",
+        "b": "Adoptar medidas que antepongan la protección colectiva a la individual.",
+        "c": "Prescindir de la protección colectiva cuando se entreguen equipos de protección individual."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 15.1.h)",
+      "explicacion": ""
+    },
+    {
+      "numero": 16,
+      "pregunta": "\"Combatir los riesgos en su origen\" es:",
+      "opciones": {
+        "a": "Un principio de la acción preventiva.",
+        "b": "Una competencia del Comité de Seguridad y Salud.",
+        "c": "Una garantía del Delegado de Prevención."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 15.1.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 17,
+      "pregunta": "\"Adaptar el trabajo a la persona\" implica, entre otras cosas:",
+      "opciones": {
+        "a": "Sustituir a la persona por la máquina en todo caso.",
+        "b": "Externalizar la actividad preventiva.",
+        "c": "Concebir los puestos y elegir los equipos y métodos de trabajo atenuando el trabajo monótono y repetitivo."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 15.1.d)",
+      "explicacion": ""
+    },
+    {
+      "numero": 18,
+      "pregunta": "Sustituir lo peligroso por lo que entrañe poco o ningún peligro es:",
+      "opciones": {
+        "a": "Una facultad de la Inspección de Trabajo.",
+        "b": "Una obligación exclusiva del trabajador.",
+        "c": "Un principio de la acción preventiva."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 15.1.f)",
+      "explicacion": ""
+    },
+    {
+      "numero": 19,
+      "pregunta": "Corresponde a cada trabajador velar, según sus posibilidades y mediante el cumplimiento de las medidas de prevención:",
+      "opciones": {
+        "a": "Únicamente por su propia seguridad y salud en el trabajo.",
+        "b": "Por su propia seguridad y salud en el trabajo y por la de aquellas otras personas a las que pueda afectar su actividad profesional.",
+        "c": "Por la seguridad de las instalaciones, en sustitución del servicio de prevención."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 29.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 20,
+      "pregunta": "Utilizar correctamente los medios y equipos de protección facilitados por el empresario, de acuerdo con las instrucciones recibidas de éste:",
+      "opciones": {
+        "a": "Es una recomendación sin carácter obligatorio.",
+        "b": "Corresponde únicamente al Delegado de Prevención.",
+        "c": "Es una obligación del trabajador."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 29.2.2.º",
+      "explicacion": ""
+    },
+    {
+      "numero": 21,
+      "pregunta": "Cuando considere que su actividad entraña un riesgo grave e inminente para su vida o su salud, el trabajador:",
+      "opciones": {
+        "a": "Debe continuar trabajando hasta recibir instrucciones del empresario.",
+        "b": "Necesita autorización previa de la autoridad laboral.",
+        "c": "Tiene derecho a interrumpir su actividad y abandonar el lugar de trabajo, en caso necesario."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 21.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 22,
+      "pregunta": "En las empresas que cuenten con representantes de los trabajadores, la información sobre los riesgos y las medidas de protección se facilitará por el empresario:",
+      "opciones": {
+        "a": "A los trabajadores a través de dichos representantes, sin perjuicio de informar directamente a cada trabajador de los riesgos específicos que afecten a su puesto de trabajo o función.",
+        "b": "Exclusivamente al Comité de Seguridad y Salud, que decidirá si la traslada.",
+        "c": "Solo por escrito al servicio de prevención."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 18.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 23,
+      "pregunta": "La formación de los trabajadores en materia preventiva deberá impartirse:",
+      "opciones": {
+        "a": "Siempre que sea posible, dentro de la jornada de trabajo o, en su defecto, en otras horas pero con el descuento en aquélla del tiempo invertido.",
+        "b": "Siempre fuera de la jornada y a cargo del trabajador.",
+        "c": "Exclusivamente fuera de la jornada y sin retribución."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 19.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 24,
+      "pregunta": "Según el art. 16.2 LPRL, los instrumentos esenciales para la gestión y aplicación del plan de prevención de riesgos son:",
+      "opciones": {
+        "a": "La evaluación de riesgos laborales y la planificación de la actividad preventiva.",
+        "b": "La memoria anual y el presupuesto de prevención.",
+        "c": "La auditoría externa y el concierto con un servicio de prevención ajeno."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 16.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 25,
+      "pregunta": "Los Delegados de Prevención son:",
+      "opciones": {
+        "a": "Técnicos del servicio de prevención designados por la empresa.",
+        "b": "Los representantes de los trabajadores con funciones específicas en materia de prevención de riesgos.",
+        "c": "Inspectores de Trabajo destinados a la empresa."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 35.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 26,
+      "pregunta": "Los Delegados de Prevención serán designados:",
+      "opciones": {
+        "a": "Por y entre los representantes del personal.",
+        "b": "Directamente por todos los trabajadores en votación.",
+        "c": "Por la autoridad laboral."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 35.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 27,
+      "pregunta": "En las empresas de hasta treinta trabajadores, el Delegado de Prevención será:",
+      "opciones": {
+        "a": "Un técnico externo.",
+        "b": "El Delegado de Personal.",
+        "c": "El gerente del centro."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 35.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 28,
+      "pregunta": "En un centro de 31 a 49 trabajadores, el número de Delegados de Prevención es:",
+      "opciones": {
+        "a": "1.",
+        "b": "2.",
+        "c": "3."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 35.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 29,
+      "pregunta": "En un centro de 50 a 100 trabajadores, el número de Delegados de Prevención es:",
+      "opciones": {
+        "a": "2.",
+        "b": "1.",
+        "c": "4."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 35.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 30,
+      "pregunta": "En un centro de 101 a 500 trabajadores corresponden:",
+      "opciones": {
+        "a": "3 Delegados de Prevención.",
+        "b": "8 Delegados de Prevención.",
+        "c": "5 Delegados de Prevención."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 35.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 31,
+      "pregunta": "El número máximo de Delegados de Prevención previsto en la escala del art. 35.2 LPRL es:",
+      "opciones": {
+        "a": "8.",
+        "b": "6.",
+        "c": "12."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 35.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 32,
+      "pregunta": "El máximo de 8 Delegados de Prevención corresponde a centros de:",
+      "opciones": {
+        "a": "2.001 a 3.000 trabajadores.",
+        "b": "3.001 a 4.000 trabajadores.",
+        "c": "4.001 trabajadores en adelante."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 35.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 33,
+      "pregunta": "En las empresas de treinta y uno a cuarenta y nueve trabajadores habrá un Delegado de Prevención que será elegido:",
+      "opciones": {
+        "a": "Directamente por todos los trabajadores.",
+        "b": "Por el empresario.",
+        "c": "Por y entre los Delegados de Personal."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 35.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 34,
+      "pregunta": "A efectos del cómputo de trabajadores para fijar el número de Delegados de Prevención, los contratos de duración determinada superior a un año:",
+      "opciones": {
+        "a": "Se computan como trabajadores fijos de plantilla.",
+        "b": "No se computan.",
+        "c": "Computan como medio trabajador."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 35.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 35,
+      "pregunta": "Los contratos de hasta un año, a efectos del cómputo:",
+      "opciones": {
+        "a": "No se computan nunca.",
+        "b": "Se computan como dos trabajadores.",
+        "c": "Se computan según el número de días trabajados (cada 200 días o fracción, un trabajador más)."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 35.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 36,
+      "pregunta": "En las empresas o centros de trabajo que cuenten con seis o más trabajadores, la participación de éstos en materia preventiva se canalizará a través de:",
+      "opciones": {
+        "a": "Sus representantes y de la representación especializada que se regula en el capítulo V de la LPRL.",
+        "b": "Exclusivamente del servicio de prevención.",
+        "c": "La Inspección de Trabajo y Seguridad Social."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 34.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 37,
+      "pregunta": "En los convenios colectivos podrán establecerse otros sistemas de designación de los Delegados de Prevención, siempre que se garantice que la facultad de designación corresponde a:",
+      "opciones": {
+        "a": "El empresario.",
+        "b": "La autoridad laboral.",
+        "c": "Los representantes del personal o a los propios trabajadores."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 35.4",
+      "explicacion": ""
+    },
+    {
+      "numero": 38,
+      "pregunta": "En el ámbito de las Administraciones públicas, el art. 35.4 LPRL permite:",
+      "opciones": {
+        "a": "Suprimir la figura del Delegado de Prevención.",
+        "b": "Establecer otros sistemas de designación de los Delegados de Prevención y acordar que sus competencias puedan ser ejercidas por órganos específicos.",
+        "c": "Atribuir la designación de los Delegados de Prevención al titular del órgano de personal."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 35.4",
+      "explicacion": ""
+    },
+    {
+      "numero": 39,
+      "pregunta": "Es una competencia de los Delegados de Prevención:",
+      "opciones": {
+        "a": "Imponer sanciones a la empresa.",
+        "b": "Aprobar el presupuesto del servicio de prevención.",
+        "c": "Colaborar con la dirección en la mejora de la acción preventiva."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 36.1.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 40,
+      "pregunta": "Otra competencia de los Delegados de Prevención es:",
+      "opciones": {
+        "a": "Sustituir al servicio de prevención.",
+        "b": "Promover y fomentar la cooperación de los trabajadores en la normativa de PRL.",
+        "c": "Dirigir la actividad de la empresa."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 36.1.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 41,
+      "pregunta": "Los Delegados de Prevención deben ser consultados por el empresario:",
+      "opciones": {
+        "a": "Después de ejecutar las decisiones sobre PRL.",
+        "b": "Con carácter previo a su ejecución, acerca de las decisiones a que se refiere el art. 33 LPRL.",
+        "c": "Solo una vez al año."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 36.1.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 42,
+      "pregunta": "Ejercer una labor de vigilancia y control sobre el cumplimiento de la normativa de PRL es:",
+      "opciones": {
+        "a": "Una competencia de los Delegados de Prevención.",
+        "b": "Una potestad sancionadora.",
+        "c": "Una función reservada a la Inspección."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 36.1.d)",
+      "explicacion": ""
+    },
+    {
+      "numero": 43,
+      "pregunta": "Es una facultad de los Delegados de Prevención:",
+      "opciones": {
+        "a": "Modificar la evaluación de riesgos por sí mismos.",
+        "b": "Acompañar a los técnicos en las evaluaciones y a los inspectores de Trabajo en sus visitas.",
+        "c": "Despedir a los responsables."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 36.2.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 44,
+      "pregunta": "Respecto a la documentación relativa a las condiciones de trabajo, los Delegados de Prevención:",
+      "opciones": {
+        "a": "No pueden acceder a ella.",
+        "b": "Solo acceden con autorización judicial.",
+        "c": "Tienen acceso, con las limitaciones del art. 22.4 LPRL, a la información y documentación que sea necesaria para el ejercicio de sus funciones."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 36.2.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 45,
+      "pregunta": "En caso de daños en la salud de los trabajadores, los Delegados de Prevención:",
+      "opciones": {
+        "a": "Deben ser informados por el empresario.",
+        "b": "Deben mantenerse al margen.",
+        "c": "Asumen la responsabilidad civil."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 36.2.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 46,
+      "pregunta": "Realizar visitas a los lugares de trabajo para ejercer la labor de vigilancia es:",
+      "opciones": {
+        "a": "Una facultad de los Delegados de Prevención.",
+        "b": "Una competencia exclusiva del empresario.",
+        "c": "Una actuación prohibida."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 36.2.e)",
+      "explicacion": ""
+    },
+    {
+      "numero": 47,
+      "pregunta": "Cuando un Delegado de Prevención es consultado, debe emitir su informe, con carácter general, en el plazo de:",
+      "opciones": {
+        "a": "15 días.",
+        "b": "1 mes.",
+        "c": "48 horas."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 36.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 48,
+      "pregunta": "Si transcurre el plazo del informe sin que el Delegado de Prevención se pronuncie:",
+      "opciones": {
+        "a": "La decisión queda anulada.",
+        "b": "El empresario podrá poner en práctica su decisión.",
+        "c": "Debe acudirse a la autoridad judicial."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 36.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 49,
+      "pregunta": "La decisión negativa del empresario a la adopción de las medidas propuestas por el Delegado de Prevención en ejercicio de la facultad del art. 36.2.f) LPRL:",
+      "opciones": {
+        "a": "Deberá ser motivada.",
+        "b": "No requiere motivación.",
+        "c": "Debe ser autorizada por la Inspección de Trabajo."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 36.4",
+      "explicacion": ""
+    },
+    {
+      "numero": 50,
+      "pregunta": "En las empresas que no cuenten con Comité de Seguridad y Salud por no alcanzar el número mínimo de trabajadores, las competencias atribuidas a aquél:",
+      "opciones": {
+        "a": "No se ejercen por nadie.",
+        "b": "Serán ejercidas por los Delegados de Prevención.",
+        "c": "Las asume la Inspección de Trabajo."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 36.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 51,
+      "pregunta": "A los Delegados de Prevención les son de aplicación las garantías previstas en:",
+      "opciones": {
+        "a": "La Ley General Tributaria.",
+        "b": "El artículo 68 del Estatuto de los Trabajadores.",
+        "c": "El Código Penal."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 37.1; ET, art. 68",
+      "explicacion": ""
+    },
+    {
+      "numero": 52,
+      "pregunta": "Conforme al art. 68.c) ET, aplicable a los Delegados de Prevención, los representantes no podrán ser despedidos ni sancionados durante el ejercicio de sus funciones ni dentro de:",
+      "opciones": {
+        "a": "El año siguiente a la expiración de su mandato, salvo que ésta se produzca por revocación o dimisión.",
+        "b": "Los seis meses siguientes a la expiración de su mandato.",
+        "c": "Los dos años siguientes a la expiración de su mandato."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 37.1; ET, art. 68.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 53,
+      "pregunta": "El tiempo dedicado por los Delegados de Prevención a las reuniones del Comité de Seguridad y Salud:",
+      "opciones": {
+        "a": "Se descuenta del crédito horario.",
+        "b": "Se considera tiempo de trabajo efectivo, sin imputación al crédito horario.",
+        "c": "No se considera tiempo de trabajo."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 37.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 54,
+      "pregunta": "El tiempo destinado a las visitas previstas en las letras a) y c) del art. 36.2 LPRL:",
+      "opciones": {
+        "a": "Se imputa al crédito horario.",
+        "b": "Se descuenta del salario.",
+        "c": "Se considera tiempo de trabajo efectivo, sin imputación al crédito horario."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 37.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 55,
+      "pregunta": "Respecto de la formación de los Delegados de Prevención en materia preventiva:",
+      "opciones": {
+        "a": "Corre a cargo del propio delegado.",
+        "b": "Es voluntaria y no retribuida.",
+        "c": "El tiempo dedicado a ella se considera tiempo de trabajo a todos los efectos y su coste no puede recaer sobre los Delegados."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 37.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 56,
+      "pregunta": "El deber de sigilo profesional de los Delegados de Prevención:",
+      "opciones": {
+        "a": "No existe.",
+        "b": "Solo afecta a los técnicos del servicio de prevención.",
+        "c": "Se aplica, conforme al art. 65.2 ET, respecto de las informaciones a que tuviesen acceso como consecuencia de su actuación en la empresa."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 37.3; ET, art. 65.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 57,
+      "pregunta": "La formación de los Delegados de Prevención se deberá facilitar por el empresario:",
+      "opciones": {
+        "a": "Exclusivamente a través de la mutua.",
+        "b": "Por sus propios medios o mediante concierto con organismos o entidades especializadas en la materia.",
+        "c": "Exclusivamente a través de la Inspección de Trabajo."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 37.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 58,
+      "pregunta": "La apertura de expediente contradictorio en el supuesto de sanciones por faltas graves o muy graves:",
+      "opciones": {
+        "a": "Es una garantía del art. 68 ET aplicable a los Delegados de Prevención.",
+        "b": "No procede para los representantes.",
+        "c": "Solo se aplica al personal directivo."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 37.1; ET, art. 68.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 59,
+      "pregunta": "La prioridad de permanencia en la empresa o centro de trabajo, en los supuestos de suspensión o extinción por causas tecnológicas o económicas:",
+      "opciones": {
+        "a": "Es una prohibición.",
+        "b": "Es una garantía de los representantes aplicable a los Delegados de Prevención.",
+        "c": "Solo rige para el personal eventual."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 37.1; ET, art. 68.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 60,
+      "pregunta": "Según el art. 65.3 ET, el deber de sigilo de los miembros del comité de empresa:",
+      "opciones": {
+        "a": "Se extingue con el mandato.",
+        "b": "No existe respecto de la información comunicada con carácter reservado.",
+        "c": "Subsistirá incluso tras la expiración de su mandato e independientemente del lugar en que se encuentren."
+      },
+      "correcta": "c",
+      "referencia": "ET, art. 65.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 61,
+      "pregunta": "El Comité de Seguridad y Salud es:",
+      "opciones": {
+        "a": "Un órgano unipersonal de la empresa.",
+        "b": "El órgano paritario y colegiado de participación destinado a la consulta regular y periódica en materia de PRL.",
+        "c": "Un órgano de la Inspección de Trabajo."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 38.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 62,
+      "pregunta": "El Comité de Seguridad y Salud se constituye en empresas o centros que cuenten con:",
+      "opciones": {
+        "a": "50 o más trabajadores.",
+        "b": "100 o más trabajadores.",
+        "c": "25 o más trabajadores."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 38.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 63,
+      "pregunta": "El carácter \"paritario\" del Comité de Seguridad y Salud significa que:",
+      "opciones": {
+        "a": "Lo integran solo los trabajadores.",
+        "b": "Hay igual número de Delegados de Prevención y de representantes del empresario.",
+        "c": "Lo preside siempre la Administración."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 38.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 64,
+      "pregunta": "El Comité de Seguridad y Salud se reúne, como mínimo:",
+      "opciones": {
+        "a": "Trimestralmente.",
+        "b": "Mensualmente.",
+        "c": "Anualmente."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 38.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 65,
+      "pregunta": "Además de las reuniones periódicas, el Comité de Seguridad y Salud se reúne:",
+      "opciones": {
+        "a": "Solo cuando lo decida el empresario.",
+        "b": "Nunca de forma extraordinaria.",
+        "c": "Siempre que lo solicite alguna de las representaciones."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 38.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 66,
+      "pregunta": "En las reuniones del Comité de Seguridad y Salud participarán, con voz pero sin voto:",
+      "opciones": {
+        "a": "Cualquier ciudadano.",
+        "b": "Solo el empresario.",
+        "c": "Los Delegados Sindicales y los responsables técnicos de la prevención en la empresa que no estén incluidos en su composición."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 38.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 67,
+      "pregunta": "Es una competencia del Comité de Seguridad y Salud:",
+      "opciones": {
+        "a": "Sancionar a los trabajadores.",
+        "b": "Participar en la elaboración, puesta en práctica y evaluación de los planes y programas de prevención de riesgos de la empresa.",
+        "c": "Aprobar los presupuestos generales."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 39.1.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 68,
+      "pregunta": "También es competencia del Comité de Seguridad y Salud:",
+      "opciones": {
+        "a": "Nombrar al gerente.",
+        "b": "Fijar los salarios.",
+        "c": "Promover iniciativas sobre métodos y procedimientos para la efectiva prevención de los riesgos."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 39.1.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 69,
+      "pregunta": "En el ejercicio de sus facultades, el Comité de Seguridad y Salud puede:",
+      "opciones": {
+        "a": "Conocer directamente la situación relativa a la prevención de riesgos en el centro.",
+        "b": "Modificar la legislación aplicable.",
+        "c": "Despedir trabajadores."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 39.2.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 70,
+      "pregunta": "El Comité de Seguridad y Salud está facultado para conocer e informar:",
+      "opciones": {
+        "a": "Las nóminas individuales.",
+        "b": "La memoria y programación anual de servicios de prevención.",
+        "c": "El plan de tesorería."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 39.2.d)",
+      "explicacion": ""
+    },
+    {
+      "numero": 71,
+      "pregunta": "En el ejercicio de sus competencias, el Comité de Seguridad y Salud está facultado para conocer y analizar los daños producidos en la salud o en la integridad física de los trabajadores, al objeto de:",
+      "opciones": {
+        "a": "Imponer sanciones a los responsables.",
+        "b": "Fijar las indemnizaciones correspondientes.",
+        "c": "Valorar sus causas y proponer las medidas preventivas oportunas."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 39.2.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 72,
+      "pregunta": "Las empresas que cuenten con varios centros de trabajo dotados de Comité de Seguridad y Salud:",
+      "opciones": {
+        "a": "Podrán acordar con sus trabajadores la creación de un Comité Intercentros.",
+        "b": "Tienen prohibida cualquier coordinación.",
+        "c": "Deben suprimir uno de ellos."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 38.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 73,
+      "pregunta": "El Comité de Seguridad y Salud adopta:",
+      "opciones": {
+        "a": "Las normas que le dicte la Inspección.",
+        "b": "Sus propias normas de funcionamiento.",
+        "c": "El reglamento del Parlamento."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 38.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 74,
+      "pregunta": "El Comité de Seguridad y Salud es el órgano paritario y colegiado de participación destinado a:",
+      "opciones": {
+        "a": "La selección de personal.",
+        "b": "La consulta regular y periódica de las actuaciones de la empresa en materia de prevención de riesgos.",
+        "c": "La gestión económica de la empresa."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 38.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 75,
+      "pregunta": "El Comité de Seguridad y Salud estará formado, de una parte, por:",
+      "opciones": {
+        "a": "Los directivos de la empresa.",
+        "b": "Los Delegados de Prevención.",
+        "c": "Los técnicos del servicio de prevención ajeno."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 38.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 76,
+      "pregunta": "En los supuestos de desarrollo simultáneo de actividades en un mismo centro de trabajo, se podrá acordar:",
+      "opciones": {
+        "a": "La fusión de las empresas afectadas.",
+        "b": "La realización de reuniones conjuntas de los Comités de Seguridad y Salud.",
+        "c": "La suspensión de los Comités de Seguridad y Salud."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 39.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 77,
+      "pregunta": "Se entiende por servicio de prevención:",
+      "opciones": {
+        "a": "El conjunto de medios humanos y materiales necesarios para realizar las actividades preventivas.",
+        "b": "Un órgano de representación de los trabajadores.",
+        "c": "Un sindicato."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 31.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 78,
+      "pregunta": "En cumplimiento del deber de prevención de riesgos profesionales, el empresario podrá:",
+      "opciones": {
+        "a": "Delegar esa actividad en el comité de empresa.",
+        "b": "Encomendar esa actividad a la Junta de Personal.",
+        "c": "Designar uno o varios trabajadores para ocuparse de dicha actividad."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 30.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 79,
+      "pregunta": "El servicio de prevención propio:",
+      "opciones": {
+        "a": "Es un órgano judicial.",
+        "b": "Constituirá una unidad organizativa específica y sus integrantes dedicarán de forma exclusiva su actividad en la empresa a la finalidad del mismo.",
+        "c": "Es una entidad externa concertada."
+      },
+      "correcta": "b",
+      "referencia": "RSP, art. 15.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 80,
+      "pregunta": "Se entiende por servicio de prevención ajeno:",
+      "opciones": {
+        "a": "El propio empresario.",
+        "b": "El Delegado de Prevención.",
+        "c": "El prestado por una entidad especializada que concierte con la empresa la realización de actividades de prevención."
+      },
+      "correcta": "c",
+      "referencia": "RSP, art. 10.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 81,
+      "pregunta": "Podrán constituirse servicios de prevención mancomunados entre aquellas empresas que:",
+      "opciones": {
+        "a": "Desarrollen simultáneamente actividades en un mismo centro de trabajo, edificio o centro comercial.",
+        "b": "Tengan más de 5.000 trabajadores cada una.",
+        "c": "Sean Administraciones públicas exclusivamente."
+      },
+      "correcta": "a",
+      "referencia": "RSP, art. 21.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 82,
+      "pregunta": "En las empresas de hasta diez trabajadores, el empresario podrá asumir personalmente las funciones preventivas siempre que:",
+      "opciones": {
+        "a": "Lo autorice el comité de empresa.",
+        "b": "Concierte además un servicio de prevención ajeno.",
+        "c": "Desarrolle de forma habitual su actividad en el centro de trabajo y tenga la capacidad necesaria."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 30.5",
+      "explicacion": ""
+    },
+    {
+      "numero": 83,
+      "pregunta": "Para el establecimiento de los servicios de prevención en las Administraciones públicas se tendrá en cuenta:",
+      "opciones": {
+        "a": "Únicamente el número de funcionarios.",
+        "b": "Su estructura organizativa y la existencia, en su caso, de ámbitos sectoriales y descentralizados.",
+        "c": "El criterio de la mutua colaboradora."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 31.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 84,
+      "pregunta": "La organización de los recursos necesarios para el desarrollo de las actividades preventivas en la Administración municipal de Madrid se realizará en la modalidad de:",
+      "opciones": {
+        "a": "Servicio de prevención propio.",
+        "b": "Asunción personal por el titular del órgano.",
+        "c": "Servicio de prevención ajeno."
+      },
+      "correcta": "a",
+      "referencia": "AC1922, art. 46.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 85,
+      "pregunta": "Los servicios de prevención deberán estar en condiciones de proporcionar a la empresa el asesoramiento y apoyo que precise en lo referente a, entre otras materias:",
+      "opciones": {
+        "a": "La vigilancia de la salud de los trabajadores en relación con los riesgos derivados del trabajo.",
+        "b": "La negociación del convenio colectivo.",
+        "c": "La elección de los representantes del personal."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 31.3.f)",
+      "explicacion": ""
+    },
+    {
+      "numero": 86,
+      "pregunta": "Los trabajadores designados para ocuparse de la actividad preventiva deberán:",
+      "opciones": {
+        "a": "Ser siempre técnicos de nivel superior ajenos a la empresa.",
+        "b": "Tener la capacidad necesaria, disponer del tiempo y de los medios precisos y ser suficientes en número.",
+        "c": "Ser miembros del comité de empresa."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 30.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 87,
+      "pregunta": "Agotada la vigencia del Acuerdo-Convenio 2019-2022 sin que se hubiera producido denuncia expresa en plazo:",
+      "opciones": {
+        "a": "Quedará sin efecto de forma automática.",
+        "b": "Se prorrogará por un único período de cuatro años.",
+        "c": "Se considerará tácitamente prorrogado por períodos anuales sucesivos."
+      },
+      "correcta": "c",
+      "referencia": "AC1922, art. 4.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 88,
+      "pregunta": "La PRL en el Acuerdo-Convenio del Ayuntamiento de Madrid se regula en:",
+      "opciones": {
+        "a": "El Capítulo IX, «Salud laboral y Prevención de Riesgos Laborales» (arts. 45-52).",
+        "b": "El Capítulo I.",
+        "c": "Una disposición adicional única."
+      },
+      "correcta": "a",
+      "referencia": "AC1922, Cap. IX",
+      "explicacion": ""
+    },
+    {
+      "numero": 89,
+      "pregunta": "¿Cuántos Delegados de Prevención fija el Acuerdo-Convenio para el conjunto del Ayuntamiento de Madrid y sus Organismos Autónomos?",
+      "opciones": {
+        "a": "50.",
+        "b": "15.",
+        "c": "83."
+      },
+      "correcta": "c",
+      "referencia": "AC1922, art. 48",
+      "explicacion": ""
+    },
+    {
+      "numero": 90,
+      "pregunta": "El número de Delegados de Prevención asignado a Informática del Ayuntamiento de Madrid (IAM) es:",
+      "opciones": {
+        "a": "3.",
+        "b": "6.",
+        "c": "15."
+      },
+      "correcta": "b",
+      "referencia": "AC1922, art. 48",
+      "explicacion": ""
+    },
+    {
+      "numero": 91,
+      "pregunta": "El Comité de Seguridad y Salud del Ayuntamiento de Madrid está integrado por:",
+      "opciones": {
+        "a": "25 y 25.",
+        "b": "10 y 10.",
+        "c": "15 Delegados de Prevención y 15 representantes de la Administración."
+      },
+      "correcta": "c",
+      "referencia": "AC1922, art. 48",
+      "explicacion": ""
+    },
+    {
+      "numero": 92,
+      "pregunta": "El Comité de Seguridad y Salud del Ayuntamiento de Madrid es:",
+      "opciones": {
+        "a": "Uno por cada distrito.",
+        "b": "Uno por cada puesto de trabajo.",
+        "c": "El órgano único, paritario y colegiado de participación de la Administración municipal (Ayuntamiento y organismos autónomos)."
+      },
+      "correcta": "c",
+      "referencia": "AC1922, art. 48.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 93,
+      "pregunta": "El crédito horario retribuido de cada Delegado de Prevención en el Ayuntamiento de Madrid es de:",
+      "opciones": {
+        "a": "15 horas mensuales.",
+        "b": "40 horas mensuales.",
+        "c": "8 horas mensuales."
+      },
+      "correcta": "b",
+      "referencia": "AC1922, art. 48.6",
+      "explicacion": ""
+    },
+    {
+      "numero": 94,
+      "pregunta": "El crédito de 40 horas mensuales del Delegado de Prevención municipal es:",
+      "opciones": {
+        "a": "Sustitutivo de cualquier otro crédito.",
+        "b": "Inexistente.",
+        "c": "Complementario y adicional al que pudiera corresponderle, si la tuviere, en su condición de representante unitario o sindical."
+      },
+      "correcta": "c",
+      "referencia": "AC1922, art. 48.6",
+      "explicacion": ""
+    },
+    {
+      "numero": 95,
+      "pregunta": "El tiempo correspondiente a las reuniones de los Comités de Seguridad y Salud de los que forme parte el delegado de prevención municipal:",
+      "opciones": {
+        "a": "Es tiempo no retribuido.",
+        "b": "Se descuenta íntegramente del crédito.",
+        "c": "Se considera tiempo de trabajo efectivo, sin imputación al crédito de horas mensuales."
+      },
+      "correcta": "c",
+      "referencia": "AC1922, art. 48.6",
+      "explicacion": ""
+    },
+    {
+      "numero": 96,
+      "pregunta": "El Plan de Prevención de Riesgos Laborales del Ayuntamiento de Madrid se aprobó por:",
+      "opciones": {
+        "a": "Real Decreto del Gobierno de la Nación.",
+        "b": "Acuerdo de 26 de noviembre de 2020 de la Junta de Gobierno de la Ciudad de Madrid.",
+        "c": "Orden ministerial."
+      },
+      "correcta": "b",
+      "referencia": "PLAN-PRL",
+      "explicacion": ""
+    },
+    {
+      "numero": 97,
+      "pregunta": "El Capítulo IX del Acuerdo-Convenio, además de la representación, regula materias como:",
+      "opciones": {
+        "a": "Las adaptaciones de puesto y movilidad por motivos de salud y los planes de autoprotección.",
+        "b": "El impuesto sobre bienes inmuebles.",
+        "c": "El procedimiento administrativo común."
+      },
+      "correcta": "a",
+      "referencia": "AC1922, arts. 49 y 51",
+      "explicacion": ""
+    },
+    {
+      "numero": 98,
+      "pregunta": "La rúbrica del art. 48 del Acuerdo-Convenio es:",
+      "opciones": {
+        "a": "\"Medio ambiente\".",
+        "b": "\"Recursos económicos\".",
+        "c": "\"Representación del personal municipal\"."
+      },
+      "correcta": "c",
+      "referencia": "AC1922, art. 48",
+      "explicacion": ""
+    },
+    {
+      "numero": 99,
+      "pregunta": "La periodicidad de los reconocimientos médicos de los empleados municipales será:",
+      "opciones": {
+        "a": "La que marquen los Protocolos de Vigilancia Sanitaria específica de los trabajadores.",
+        "b": "Anual en todo caso.",
+        "c": "Cada cinco años."
+      },
+      "correcta": "a",
+      "referencia": "AC1922, art. 45.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 100,
+      "pregunta": "Las disposiciones de carácter laboral contenidas en la LPRL y en sus normas reglamentarias tendrán en todo caso el carácter de:",
+      "opciones": {
+        "a": "Derecho necesario mínimo indisponible, pudiendo ser mejoradas y desarrolladas en los convenios colectivos.",
+        "b": "Normas dispositivas que los convenios colectivos pueden rebajar.",
+        "c": "Derecho supletorio de los convenios colectivos."
+      },
+      "correcta": "a",
+      "referencia": "LPRL, art. 2.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 101,
+      "pregunta": "El personal municipal que deba acudir a los reconocimientos médicos fuera de su jornada laboral por practicarse en turno distinto al suyo:",
+      "opciones": {
+        "a": "No tendrá compensación alguna.",
+        "b": "Será compensado con cargo a su jornada laboral del tiempo invertido en los mismos.",
+        "c": "Percibirá una gratificación extraordinaria."
+      },
+      "correcta": "b",
+      "referencia": "AC1922, art. 45.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 102,
+      "pregunta": "Para la negociación de las materias y condiciones de trabajo comunes al personal funcionario, estatutario y laboral de cada Administración Pública, se constituirá en cada entidad local:",
+      "opciones": {
+        "a": "Un Comité de Seguridad y Salud.",
+        "b": "Una Junta de Personal.",
+        "c": "Una Mesa General de Negociación."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 36.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 103,
+      "pregunta": "El Acuerdo-Convenio será de aplicación, en los términos establecidos, al personal:",
+      "opciones": {
+        "a": "Exclusivamente funcionario de carrera del Ayuntamiento.",
+        "b": "Funcionario y laboral que presta o preste servicios en los centros, dependencias o servicios del Ayuntamiento de Madrid y sus organismos autónomos.",
+        "c": "Exclusivamente laboral de los organismos autónomos."
+      },
+      "correcta": "b",
+      "referencia": "AC1922, art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 104,
+      "pregunta": "El organismo \"Madrid Salud\", según el reparto del art. 48, cuenta con:",
+      "opciones": {
+        "a": "0 Delegados de Prevención.",
+        "b": "7 Delegados de Prevención.",
+        "c": "56 Delegados de Prevención."
+      },
+      "correcta": "b",
+      "referencia": "AC1922, art. 48",
+      "explicacion": ""
+    },
+    {
+      "numero": 105,
+      "pregunta": "Las Juntas de Personal elegirán de entre sus miembros:",
+      "opciones": {
+        "a": "Un Presidente y dos Vicepresidentes.",
+        "b": "Un Presidente y un Secretario.",
+        "c": "Un Delegado Sindical."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 39.6",
+      "explicacion": ""
+    },
+    {
+      "numero": 106,
+      "pregunta": "Los órganos específicos de representación del personal funcionario son:",
+      "opciones": {
+        "a": "Los Delegados de Personal y las Juntas de Personal.",
+        "b": "Los Delegados de Prevención y el Comité de Seguridad y Salud.",
+        "c": "El Pleno y la Junta de Gobierno."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 39.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 107,
+      "pregunta": "En las unidades electorales donde el número de funcionarios sea igual o superior a 6 e inferior a 50, la representación corresponde a:",
+      "opciones": {
+        "a": "Los Delegados de Personal.",
+        "b": "Una Junta de Personal.",
+        "c": "Un Comité de Empresa."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 39.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 108,
+      "pregunta": "Hasta 30 funcionarios, el número de Delegados de Personal es:",
+      "opciones": {
+        "a": "1.",
+        "b": "3.",
+        "c": "5."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 39.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 109,
+      "pregunta": "De 31 a 49 funcionarios, el número de Delegados de Personal es:",
+      "opciones": {
+        "a": "3.",
+        "b": "9.",
+        "c": "1."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 39.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 110,
+      "pregunta": "Las Juntas de Personal se constituirán en unidades electorales que cuenten con un censo mínimo de:",
+      "opciones": {
+        "a": "30 funcionarios.",
+        "b": "6 funcionarios.",
+        "c": "50 funcionarios."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 39.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 111,
+      "pregunta": "En las unidades electorales de 50 a 100 funcionarios, la Junta de Personal se compone de:",
+      "opciones": {
+        "a": "9 representantes.",
+        "b": "5 representantes.",
+        "c": "3 representantes."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 39.5",
+      "explicacion": ""
+    },
+    {
+      "numero": 112,
+      "pregunta": "Entre las funciones de las Juntas de Personal y Delegados de Personal figura vigilar el cumplimiento de las normas vigentes en materia de:",
+      "opciones": {
+        "a": "Contratación pública.",
+        "b": "Condiciones de trabajo, prevención de riesgos laborales, Seguridad Social y empleo.",
+        "c": "Tributos locales."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 40.1.e)",
+      "explicacion": ""
+    },
+    {
+      "numero": 113,
+      "pregunta": "La elección de las Juntas de Personal y de los Delegados de Personal se realizará mediante sufragio:",
+      "opciones": {
+        "a": "Indirecto, a través de las organizaciones sindicales.",
+        "b": "Personal, directo, libre y secreto, que podrá emitirse por correo o por otros medios telemáticos.",
+        "c": "Público y a mano alzada."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 44.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 114,
+      "pregunta": "En las unidades electorales de 31 a 49 funcionarios se elegirán tres Delegados de Personal, que ejercerán su representación:",
+      "opciones": {
+        "a": "Conjunta y mancomunadamente.",
+        "b": "Individualmente, cada uno en una dependencia.",
+        "c": "Por turnos anuales."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 39.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 115,
+      "pregunta": "A efectos de la negociación colectiva de condiciones de trabajo de los funcionarios públicos se constituirán:",
+      "opciones": {
+        "a": "Mesas de Negociación.",
+        "b": "Comités de Seguridad y Salud.",
+        "c": "Servicios de prevención mancomunados."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 33.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 116,
+      "pregunta": "La Mesa General de Negociación de las Administraciones Públicas estará presidida por:",
+      "opciones": {
+        "a": "La Federación Española de Municipios y Provincias.",
+        "b": "Las comunidades autónomas, por turno rotatorio.",
+        "c": "La Administración General del Estado."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 36.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 117,
+      "pregunta": "En el seno de las Mesas de Negociación, los representantes de las Administraciones Públicas podrán concertar con las organizaciones sindicales legitimadas:",
+      "opciones": {
+        "a": "Pactos y Acuerdos.",
+        "b": "Sentencias.",
+        "c": "Ordenanzas fiscales."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 38.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 118,
+      "pregunta": "En las unidades electorales de 1.001 funcionarios en adelante, la Junta de Personal tendrá dos miembros por cada 1.000 o fracción, con el máximo de:",
+      "opciones": {
+        "a": "30.",
+        "b": "75.",
+        "c": "8."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 39.5",
+      "explicacion": ""
+    },
+    {
+      "numero": 119,
+      "pregunta": "El mandato de los miembros de las Juntas de Personal y de los Delegados de Personal será de:",
+      "opciones": {
+        "a": "Cuatro años, pudiendo ser reelegidos.",
+        "b": "Un año.",
+        "c": "Diez años, sin reelección."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 42",
+      "explicacion": ""
+    },
+    {
+      "numero": 120,
+      "pregunta": "Si, a su término, no se hubiesen promovido nuevas elecciones, el mandato de los miembros de las Juntas de Personal y de los Delegados de Personal:",
+      "opciones": {
+        "a": "Se extinguirá sin más.",
+        "b": "Pasará a ejercerlo la Administración.",
+        "c": "Se entenderá prorrogado."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 42",
+      "explicacion": ""
+    },
+    {
+      "numero": 121,
+      "pregunta": "La representación del personal laboral se rige por:",
+      "opciones": {
+        "a": "La LPRL exclusivamente.",
+        "b": "El TREBEP exclusivamente.",
+        "c": "El Estatuto de los Trabajadores."
+      },
+      "correcta": "c",
+      "referencia": "ET, arts. 62.1 y 63.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 122,
+      "pregunta": "Los órganos de representación del personal laboral son:",
+      "opciones": {
+        "a": "Delegados de Personal y Junta de Personal.",
+        "b": "Comité de Seguridad y Salud y servicio de prevención.",
+        "c": "Delegados de Personal y Comité de Empresa."
+      },
+      "correcta": "c",
+      "referencia": "ET, arts. 62-63",
+      "explicacion": ""
+    },
+    {
+      "numero": 123,
+      "pregunta": "El comité de empresa se constituye en cada centro de trabajo cuyo censo sea de:",
+      "opciones": {
+        "a": "Cincuenta o más trabajadores.",
+        "b": "Menos de cincuenta trabajadores.",
+        "c": "Seis o más trabajadores."
+      },
+      "correcta": "a",
+      "referencia": "ET, art. 63.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 124,
+      "pregunta": "La representación de los trabajadores en la empresa o centro de trabajo que tengan menos de cincuenta y más de diez trabajadores corresponde a:",
+      "opciones": {
+        "a": "El comité de empresa.",
+        "b": "La Junta de Personal.",
+        "c": "Los delegados de personal."
+      },
+      "correcta": "c",
+      "referencia": "ET, art. 62.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 125,
+      "pregunta": "En las empresas o centros de hasta treinta trabajadores, los trabajadores elegirán:",
+      "opciones": {
+        "a": "3 delegados de personal.",
+        "b": "1 delegado de personal.",
+        "c": "Un comité de empresa."
+      },
+      "correcta": "b",
+      "referencia": "ET, art. 62.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 126,
+      "pregunta": "De treinta y uno a cuarenta y nueve trabajadores, los trabajadores elegirán:",
+      "opciones": {
+        "a": "5 delegados de personal.",
+        "b": "1 delegado de personal.",
+        "c": "3 delegados de personal."
+      },
+      "correcta": "c",
+      "referencia": "ET, art. 62.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 127,
+      "pregunta": "De cincuenta a cien trabajadores, el número de miembros del comité de empresa será de:",
+      "opciones": {
+        "a": "Nueve.",
+        "b": "Tres.",
+        "c": "Cinco."
+      },
+      "correcta": "c",
+      "referencia": "ET, art. 66.1.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 128,
+      "pregunta": "Las garantías de los representantes laborales se contienen en:",
+      "opciones": {
+        "a": "El artículo 40.2 de la Constitución.",
+        "b": "El Código Civil.",
+        "c": "El artículo 68 del Estatuto de los Trabajadores."
+      },
+      "correcta": "c",
+      "referencia": "ET, art. 68",
+      "explicacion": ""
+    },
+    {
+      "numero": 129,
+      "pregunta": "Los comités de empresa deberán reunirse:",
+      "opciones": {
+        "a": "Cada dos meses o siempre que lo solicite un tercio de sus miembros o un tercio de los trabajadores representados.",
+        "b": "Trimestralmente y siempre que lo solicite alguna de las representaciones.",
+        "c": "Una vez al año."
+      },
+      "correcta": "a",
+      "referencia": "ET, art. 66.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 130,
+      "pregunta": "El comité de empresa es:",
+      "opciones": {
+        "a": "Un órgano paritario de trabajadores y empresario.",
+        "b": "Un órgano unipersonal de representación.",
+        "c": "El órgano representativo y colegiado del conjunto de los trabajadores en la empresa o centro de trabajo para la defensa de sus intereses."
+      },
+      "correcta": "c",
+      "referencia": "ET, art. 63.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 131,
+      "pregunta": "Es una función de las Juntas y Delegados de Personal:",
+      "opciones": {
+        "a": "Aprobar los presupuestos del Estado.",
+        "b": "Nombrar a los funcionarios.",
+        "c": "Recibir información sobre la política de personal."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 40.1.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 132,
+      "pregunta": "Las Juntas y Delegados de Personal emiten informe, a solicitud de la Administración Pública correspondiente, sobre:",
+      "opciones": {
+        "a": "El traslado total o parcial de las instalaciones e implantación o revisión de sus sistemas de organización y métodos de trabajo.",
+        "b": "La política monetaria.",
+        "c": "El planeamiento urbanístico."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 40.1.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 133,
+      "pregunta": "Entre las garantías de los miembros de las Juntas de Personal y de los Delegados de Personal figura:",
+      "opciones": {
+        "a": "No ser trasladados ni sancionados por causas relacionadas con el ejercicio de su mandato representativo.",
+        "b": "La inmunidad penal absoluta.",
+        "c": "La exención de cotizar."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 41.1.e)",
+      "explicacion": ""
+    },
+    {
+      "numero": 134,
+      "pregunta": "En las unidades electorales de hasta 100 funcionarios, el crédito de horas mensuales retribuidas de los representantes es de:",
+      "opciones": {
+        "a": "20 horas.",
+        "b": "15 horas.",
+        "c": "40 horas."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 41.1.d)",
+      "explicacion": ""
+    },
+    {
+      "numero": 135,
+      "pregunta": "Los miembros de la Junta de Personal y Delegados de Personal de la misma candidatura que así lo manifiesten:",
+      "opciones": {
+        "a": "No pueden acumular nunca los créditos horarios.",
+        "b": "Pierden el crédito horario no utilizado en el día.",
+        "c": "Podrán proceder a la acumulación de los créditos horarios, previa comunicación al órgano que ostente la Jefatura de Personal."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 41.1.d)",
+      "explicacion": ""
+    },
+    {
+      "numero": 136,
+      "pregunta": "Además de otros sujetos, están legitimados para convocar una reunión:",
+      "opciones": {
+        "a": "Los empleados públicos de las Administraciones respectivas en número no inferior al 40 por 100 del colectivo convocado.",
+        "b": "Cualquier empleado individualmente.",
+        "c": "Solo el alcalde."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 46.1.d)",
+      "explicacion": ""
+    },
+    {
+      "numero": 137,
+      "pregunta": "Las reuniones en el centro de trabajo se autorizarán:",
+      "opciones": {
+        "a": "Siempre dentro de las horas de trabajo.",
+        "b": "Solo en días no laborables.",
+        "c": "Fuera de las horas de trabajo, salvo acuerdo entre el órgano competente en materia de personal y quienes estén legitimados para convocarlas."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 46.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 138,
+      "pregunta": "Entre los legitimados para convocar reuniones también están:",
+      "opciones": {
+        "a": "Las organizaciones sindicales, directamente o a través de los Delegados Sindicales, y los Delegados y Juntas de Personal.",
+        "b": "Las empresas privadas del sector.",
+        "c": "Los partidos políticos."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 46.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 139,
+      "pregunta": "Los miembros de la Junta de Personal y los Delegados de Personal observarán sigilo profesional en los asuntos en que la Administración señale expresamente el carácter reservado:",
+      "opciones": {
+        "a": "Aun después de expirar su mandato.",
+        "b": "Solo durante su mandato.",
+        "c": "Solo durante el año siguiente a su elección."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 41.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 140,
+      "pregunta": "Respecto de la celebración de una reunión en el centro de trabajo, el art. 46.2 TREBEP establece que:",
+      "opciones": {
+        "a": "La Administración será responsable de su normal desarrollo.",
+        "b": "No perjudicará la prestación de los servicios y los convocantes serán responsables de su normal desarrollo.",
+        "c": "Podrá interrumpir la prestación de los servicios."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 46.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 141,
+      "pregunta": "Los miembros de las Juntas de Personal tienen derecho a la audiencia en los expedientes disciplinarios a que pudieran ser sometidos durante el tiempo de su mandato y durante:",
+      "opciones": {
+        "a": "El año inmediatamente posterior.",
+        "b": "Los dos años posteriores.",
+        "c": "Los seis meses posteriores."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 41.1.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 142,
+      "pregunta": "Los miembros de las Juntas de Personal y los Delegados de Personal no podrán ser discriminados, por razón del desempeño de su representación:",
+      "opciones": {
+        "a": "En su formación ni en su promoción económica o profesional.",
+        "b": "Solo en su retribución básica.",
+        "c": "Solo en su jornada de trabajo."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 41.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 143,
+      "pregunta": "Según el art. 48.4 del Acuerdo-Convenio, sin perjuicio del reparto fijado, el número de delegados de prevención se establecerá en:",
+      "opciones": {
+        "a": "El número que permita la legislación vigente en cada momento.",
+        "b": "El número que decida el Comité de Seguridad y Salud cada año.",
+        "c": "Un delegado por cada centro de trabajo."
+      },
+      "correcta": "a",
+      "referencia": "AC1922, art. 48.4",
+      "explicacion": ""
+    },
+    {
+      "numero": 144,
+      "pregunta": "En el seno del Comité de Seguridad y Salud municipal se elaborará:",
+      "opciones": {
+        "a": "El censo electoral de las Juntas de Personal.",
+        "b": "Un registro de los delegados de prevención designados.",
+        "c": "El presupuesto del Servicio de Prevención."
+      },
+      "correcta": "b",
+      "referencia": "AC1922, art. 48.5",
+      "explicacion": ""
+    },
+    {
+      "numero": 145,
+      "pregunta": "Cualquier protocolo, procedimiento, instrucción operativa, método de trabajo o documento cuyo contenido afecte a la seguridad y salud de los trabajadores municipales deberá ser presentado y consultado en:",
+      "opciones": {
+        "a": "El Pleno del Ayuntamiento.",
+        "b": "El Comité de Seguridad y Salud o en su Comisión Permanente.",
+        "c": "La Junta de Gobierno."
+      },
+      "correcta": "b",
+      "referencia": "AC1922, art. 48.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 146,
+      "pregunta": "Según el art. 48 del Acuerdo-Convenio, la defensa de los intereses del personal municipal en materia de prevención de riesgos se llevará a efecto a través de:",
+      "opciones": {
+        "a": "Exclusivamente las Juntas de Personal.",
+        "b": "La Comisión de Seguimiento del Acuerdo-Convenio.",
+        "c": "Los delegados de prevención y del Comité de Seguridad y Salud."
+      },
+      "correcta": "c",
+      "referencia": "AC1922, art. 48",
+      "explicacion": ""
+    },
+    {
+      "numero": 147,
+      "pregunta": "En las reuniones del Comité de Seguridad y Salud municipal podrán participar con voz pero sin voto, por cada organización sindical representada en el mismo, hasta un máximo de:",
+      "opciones": {
+        "a": "Cinco asesores.",
+        "b": "Dos asesores.",
+        "c": "Un asesor."
+      },
+      "correcta": "b",
+      "referencia": "AC1922, art. 48.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 148,
+      "pregunta": "La presidencia del Comité de Seguridad y Salud municipal recaerá en:",
+      "opciones": {
+        "a": "El Alcalde, sin posibilidad de delegación.",
+        "b": "El delegado de prevención de mayor antigüedad.",
+        "c": "La figura encargada de establecer la política general de prevención o persona en quien delegue."
+      },
+      "correcta": "c",
+      "referencia": "AC1922, art. 48.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 149,
+      "pregunta": "Se facilitará a los delegados de prevención municipales la planificación anticipada de las obras y traslados del personal con, al menos:",
+      "opciones": {
+        "a": "48 horas de antelación.",
+        "b": "15 días de antelación.",
+        "c": "3 meses de antelación."
+      },
+      "correcta": "b",
+      "referencia": "AC1922, art. 50.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 150,
+      "pregunta": "Si en los informes médicos emitidos por el Departamento de Salud Laboral se recomienda al empleado municipal la realización de ejercicio físico:",
+      "opciones": {
+        "a": "Se le concederá una reducción de jornada.",
+        "b": "Se le abonará una ayuda económica mensual.",
+        "c": "Se facilitará desde la Corporación la entrada gratuita a las instalaciones deportivas municipales."
+      },
+      "correcta": "c",
+      "referencia": "AC1922, art. 45.6",
+      "explicacion": ""
+    },
+    {
+      "numero": 151,
+      "pregunta": "¿Cuántos principios de la acción preventiva enumera el art. 15.1 LPRL?",
+      "opciones": {
+        "a": "Siete.",
+        "b": "Doce.",
+        "c": "Nueve."
+      },
+      "correcta": "c",
+      "referencia": "LPRL, art. 15.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 152,
+      "pregunta": "Según el orden del art. 15.1 LPRL, ¿qué principio precede inmediatamente a «adoptar medidas que antepongan la protección colectiva a la individual»?",
+      "opciones": {
+        "a": "Evitar los riesgos.",
+        "b": "Planificar la prevención.",
+        "c": "Combatir los riesgos en su origen."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 15.1.g) y h)",
+      "explicacion": ""
+    },
+    {
+      "numero": 153,
+      "pregunta": "La vigilancia de la salud del trabajador (art. 22.1 LPRL):",
+      "opciones": {
+        "a": "Es obligatoria en todo caso.",
+        "b": "Sólo podrá llevarse a cabo cuando el trabajador preste su consentimiento, salvo los supuestos exceptuados.",
+        "c": "La decide libremente el empresario."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 22.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 154,
+      "pregunta": "Respecto de los reconocimientos efectuados en la vigilancia de la salud, el empresario será informado de:",
+      "opciones": {
+        "a": "El diagnóstico médico completo.",
+        "b": "Las conclusiones que se deriven de los reconocimientos en relación con la aptitud del trabajador para el desempeño del puesto o con la necesidad de introducir o mejorar las medidas de protección y prevención.",
+        "c": "El historial clínico del trabajador."
+      },
+      "correcta": "b",
+      "referencia": "LPRL, art. 22.4",
+      "explicacion": ""
+    },
+    {
+      "numero": 155,
+      "pregunta": "El empresario deberá constituir un servicio de prevención propio, entre otros supuestos, en empresas que cuenten con:",
+      "opciones": {
+        "a": "Más de 50 trabajadores.",
+        "b": "Más de 500 trabajadores.",
+        "c": "Más de 250 trabajadores en todo caso."
+      },
+      "correcta": "b",
+      "referencia": "RSP, art. 14.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 156,
+      "pregunta": "El empresario podrá desarrollar personalmente la actividad de prevención, con excepción de la vigilancia de la salud, cuando, entre otras circunstancias:",
+      "opciones": {
+        "a": "Se trate de empresa de hasta diez trabajadores, o de hasta veinticinco con un único centro de trabajo, y las actividades no estén incluidas en el anexo I.",
+        "b": "Se trate de cualquier empresa, sin límite de plantilla.",
+        "c": "Se trate de empresas de más de 500 trabajadores."
+      },
+      "correcta": "a",
+      "referencia": "RSP, art. 11.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 157,
+      "pregunta": "La vigilancia de la salud de los trabajadores, así como las actividades preventivas no asumidas personalmente por el empresario, deberán cubrirse:",
+      "opciones": {
+        "a": "Exclusivamente por los Delegados de Prevención.",
+        "b": "Exclusivamente por la Inspección de Trabajo.",
+        "c": "Mediante el recurso a alguna de las restantes modalidades de organización preventiva."
+      },
+      "correcta": "c",
+      "referencia": "RSP, art. 11.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 158,
+      "pregunta": "Los servicios de prevención mancomunados, tengan o no personalidad jurídica diferenciada, tendrán la consideración de:",
+      "opciones": {
+        "a": "Servicios propios de las empresas que los constituyan.",
+        "b": "Servicios de prevención ajenos.",
+        "c": "Entidades públicas de prevención."
+      },
+      "correcta": "a",
+      "referencia": "RSP, art. 21.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 159,
+      "pregunta": "El sistema de prevención del Ayuntamiento de Madrid será sometido a control mediante auditorías o evaluaciones:",
+      "opciones": {
+        "a": "Cada diez años.",
+        "b": "Solo cuando lo pida un Delegado de Prevención.",
+        "c": "Cada cuatro años, sin perjuicio de su realización cada dos años en actividades especialmente peligrosas."
+      },
+      "correcta": "c",
+      "referencia": "AC1922, art. 46.6.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 160,
+      "pregunta": "Según el art. 47 del Acuerdo-Convenio, la financiación de la prevención se articula mediante:",
+      "opciones": {
+        "a": "Una partida única gestionada por el Comité de Seguridad y Salud.",
+        "b": "Un Fondo económico dotado en cada ejercicio presupuestario, planificando cada área de gobierno, distrito y organismo autónomo a cargo de sus presupuestos.",
+        "c": "Aportaciones voluntarias de los empleados."
+      },
+      "correcta": "b",
+      "referencia": "AC1922, art. 47",
+      "explicacion": ""
+    },
+    {
+      "numero": 161,
+      "pregunta": "Para garantizar la protección de la madre y el feto durante el embarazo, si no resulta posible adaptar las condiciones, el tiempo o el turno de trabajo, procede:",
+      "opciones": {
+        "a": "La extinción del contrato.",
+        "b": "El cambio temporal de funciones, previo informe o recomendación del Servicio de Prevención.",
+        "c": "No adoptar ninguna medida hasta el parto."
+      },
+      "correcta": "b",
+      "referencia": "AC1922, art. 49.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 162,
+      "pregunta": "Cuando la adscripción a un nuevo puesto por motivos de salud tiene carácter definitivo, el empleado municipal debe permanecer en él:",
+      "opciones": {
+        "a": "Dos años.",
+        "b": "Seis meses.",
+        "c": "Cinco años."
+      },
+      "correcta": "a",
+      "referencia": "AC1922, art. 49.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 163,
+      "pregunta": "Los Planes de Autoprotección del Ayuntamiento (art. 51 AC), en cumplimiento del art. 20 LPRL, deben comprobarse:",
+      "opciones": {
+        "a": "Cada cinco años.",
+        "b": "Al menos una vez al año.",
+        "c": "Solo cuando se produzca un siniestro."
+      },
+      "correcta": "b",
+      "referencia": "AC1922, art. 51; LPRL, art. 20",
+      "explicacion": ""
+    },
+    {
+      "numero": 164,
+      "pregunta": "En el Ayuntamiento de Madrid, los delegados de prevención:",
+      "opciones": {
+        "a": "Se designan necesariamente solo entre los miembros de Juntas de Personal y Comités de Empresa.",
+        "b": "No serán necesariamente designados entre los representantes del personal con presencia en los órganos de representación: también pueden designarlos las organizaciones sindicales con presencia en ellos.",
+        "c": "Los elige directamente toda la plantilla."
+      },
+      "correcta": "b",
+      "referencia": "AC1922, art. 48.4",
+      "explicacion": ""
+    },
+    {
+      "numero": 165,
+      "pregunta": "Durante la vigencia del Acuerdo-Convenio, se tenderá a que la oferta formativa amplíe el número de horas de las acciones de formación básica de los delegados de prevención hasta:",
+      "opciones": {
+        "a": "20 horas.",
+        "b": "60 horas.",
+        "c": "200 horas."
+      },
+      "correcta": "b",
+      "referencia": "AC1922, art. 48.6",
+      "explicacion": ""
+    }
+  ],
+  "casos": [
+    {
+      "caso": 1,
+      "titulo": "CASO PRÁCTICO 1 — ¿Cuántos Delegados de Prevención?",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el supuesto planteado, ¿cuántos Delegados de Prevención corresponden al centro municipal de 85 trabajadores?",
+          "opciones": {
+            "a": "Dos, por encontrarse en el tramo de 50 a 100 trabajadores de la escala del artículo 35.2 LPRL.",
+            "b": "Uno, por encontrarse en el tramo de 31 a 100 trabajadores de la escala del artículo 35.2 LPRL.",
+            "c": "Tres, por superar los 50 trabajadores que exige el artículo 38.2 LPRL para el Comité."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 1 · art. 35.2 LPRL",
+          "explicacion": "La escala del artículo 35.2 LPRL asigna 2 Delegados de Prevención a los centros de 50 a 100 trabajadores; 3 corresponden al tramo de 101 a 500."
+        },
+        {
+          "numero": 2,
+          "pregunta": "Si la plantilla del centro aumentara hasta 101 trabajadores, el número de Delegados de Prevención pasaría a ser:",
+          "opciones": {
+            "a": "Dos, porque el tramo de 50 a 100 se mantiene hasta los 500 trabajadores.",
+            "b": "Tres, que es lo que la escala asigna al tramo de 101 a 500 trabajadores.",
+            "c": "Cuatro, que es lo que la escala asigna a partir de 101 trabajadores."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 1 · art. 35.2 LPRL",
+          "explicacion": "En la escala del artículo 35.2 LPRL el tramo de 101 a 500 trabajadores tiene 3 Delegados de Prevención; 4 corresponden al tramo de 501 a 1.000."
+        },
+        {
+          "numero": 3,
+          "pregunta": "Con carácter general, ¿cómo se designan los Delegados de Prevención del centro?",
+          "opciones": {
+            "a": "Por elección directa de toda la plantilla, mediante sufragio en el propio centro de trabajo.",
+            "b": "Por el empresario, de entre los técnicos del servicio de prevención del organismo.",
+            "c": "Por y entre los representantes del personal, en el ámbito de los órganos de representación."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 2 · art. 35.2 LPRL",
+          "explicacion": "Los Delegados de Prevención no los eligen directamente los trabajadores: los designan por y entre sí los representantes del personal (Delegados de Personal, Comité de Empresa o Junta de Personal) (art. 35.2 LPRL)."
+        },
+        {
+          "numero": 4,
+          "pregunta": "La representación del personal pregunta si un convenio colectivo podría prever otro sistema de designación de los Delegados de Prevención. La respuesta correcta es:",
+          "opciones": {
+            "a": "Sí, siempre que la facultad de designación corresponda a los representantes del personal o a los propios trabajadores.",
+            "b": "No, porque el sistema del artículo 35.2 LPRL es de Derecho necesario y no admite variación convencional.",
+            "c": "Sí, e incluso puede atribuir la designación al empresario si así se pacta con la representación del personal."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 2 · art. 35.4 LPRL",
+          "explicacion": "El artículo 35.4 LPRL permite que los convenios colectivos establezcan otros sistemas de designación, siempre que la facultad de designar corresponda a los representantes del personal o a los propios trabajadores."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Debe constituirse en el centro de 85 trabajadores un Comité de Seguridad y Salud?",
+          "opciones": {
+            "a": "No, porque solo es obligatorio a partir de 100 trabajadores, umbral que el centro no alcanza.",
+            "b": "No, porque en el ámbito público sus funciones las asume siempre el servicio de prevención.",
+            "c": "Sí, porque se constituye en todos los centros de trabajo que cuenten con 50 o más trabajadores."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 3 · art. 38.2 LPRL",
+          "explicacion": "El artículo 38.2 LPRL obliga a constituir el Comité de Seguridad y Salud en las empresas o centros con 50 o más trabajadores; con 85 se supera ese umbral."
+        },
+        {
+          "numero": 6,
+          "pregunta": "¿Cuál sería la composición del Comité de Seguridad y Salud de este centro?",
+          "opciones": {
+            "a": "Los 2 Delegados de Prevención y 1 representante del empresario, que lo preside.",
+            "b": "Los 2 Delegados de Prevención y 2 representantes del empresario.",
+            "c": "Los 2 Delegados de Prevención, 2 Delegados de Personal y 2 representantes del empresario."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 3 · art. 38.2 LPRL",
+          "explicacion": "El Comité es paritario: de una parte, los Delegados de Prevención; de otra, el empresario o sus representantes en número igual al de aquellos (art. 38.2 LPRL)."
+        },
+        {
+          "numero": 7,
+          "pregunta": "Si el centro tuviera solo 28 trabajadores, ¿quién sería el Delegado de Prevención?",
+          "opciones": {
+            "a": "El Delegado de Personal, que sería a su vez el Delegado de Prevención.",
+            "b": "Un trabajador elegido directamente por la plantilla para esa única función.",
+            "c": "El trabajador designado por el empresario para la actividad preventiva."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 4 · art. 35.2 LPRL",
+          "explicacion": "En los centros de hasta 30 trabajadores, el Delegado de Personal es el Delegado de Prevención (art. 35.2 LPRL)."
+        },
+        {
+          "numero": 8,
+          "pregunta": "En ese mismo centro de 28 trabajadores, ¿quién ejercería las competencias que la LPRL atribuye al Comité de Seguridad y Salud?",
+          "opciones": {
+            "a": "El servicio de prevención, al no alcanzarse el mínimo de 50 trabajadores.",
+            "b": "Los Delegados de Prevención, al no alcanzarse el mínimo de 50 trabajadores.",
+            "c": "La Inspección de Trabajo y Seguridad Social, a petición de la plantilla."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 4 · art. 36.1 LPRL",
+          "explicacion": "Por debajo de 50 trabajadores no hay Comité de Seguridad y Salud y sus competencias las ejercen los Delegados de Prevención."
+        },
+        {
+          "numero": 9,
+          "pregunta": "Si el centro tuviera 40 trabajadores, le correspondería:",
+          "opciones": {
+            "a": "Dos Delegados de Prevención, elegidos por y entre los Delegados de Personal.",
+            "b": "Ningún Delegado de Prevención específico: lo sería el propio Delegado de Personal.",
+            "c": "Un Delegado de Prevención, elegido por y entre los Delegados de Personal."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 1 · art. 35.2 LPRL",
+          "explicacion": "La escala del artículo 35.2 LPRL asigna 1 Delegado de Prevención al tramo de 31 a 49 trabajadores; la regla del Delegado de Personal opera solo hasta 30."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Para calcular la plantilla del centro, los trabajadores con contrato de duración determinada superior a un año:",
+          "opciones": {
+            "a": "Se computan como trabajadores fijos de plantilla.",
+            "b": "Se computan según los días trabajados en el año anterior.",
+            "c": "No se computan a efectos de la escala de designación."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 1 · art. 35.3 LPRL",
+          "explicacion": "Conforme al artículo 35.3 LPRL, los contratados por más de un año cuentan como fijos; el cómputo por días trabajados (cada 200 días, un trabajador) se aplica a los contratados por término de hasta un año."
+        }
+      ]
+    },
+    {
+      "caso": 2,
+      "titulo": "CASO PRÁCTICO 2 — Constitución y funcionamiento del Comité de Seguridad y Salud",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el organismo de 120 trabajadores, ¿qué naturaleza tiene el Comité de Seguridad y Salud que se constituye?",
+          "opciones": {
+            "a": "Es un órgano unipersonal de vigilancia, que actúa por delegación de los Delegados de Prevención del organismo.",
+            "b": "Es un órgano paritario y colegiado de participación, destinado a la consulta regular y periódica en materia preventiva.",
+            "c": "Es un órgano técnico de dirección del servicio de prevención, integrado solo por personal de la Administración."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 1 · art. 38.1 LPRL",
+          "explicacion": "El artículo 38.1 LPRL define el Comité como «el órgano paritario y colegiado de participación destinado a la consulta regular y periódica» de las actuaciones de la empresa en prevención."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Cuántos Delegados de Prevención integran la parte social del Comité en este organismo?",
+          "opciones": {
+            "a": "Dos, por estar en el tramo de 50 a 120 trabajadores.",
+            "b": "Cuatro, por superar los 100 trabajadores de plantilla.",
+            "c": "Tres, por estar en el tramo de 101 a 500 trabajadores."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 1 · art. 35.2 LPRL",
+          "explicacion": "Con 120 trabajadores se aplica el tramo de 101 a 500 de la escala del artículo 35.2 LPRL, que asigna 3 Delegados de Prevención."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Cuántos representantes corresponden a la Administración en ese Comité?",
+          "opciones": {
+            "a": "Tres, en número igual al de los Delegados de Prevención.",
+            "b": "Dos, uno menos que la parte social para evitar empates.",
+            "c": "Uno, el titular del organismo, que preside el Comité."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 1 · art. 38.2 LPRL",
+          "explicacion": "La paridad del artículo 38.2 LPRL exige que el empresario o sus representantes estén en número igual al de los Delegados de Prevención: 3 y 3."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Con qué periodicidad mínima debe reunirse el Comité de Seguridad y Salud del organismo?",
+          "opciones": {
+            "a": "Mensualmente.",
+            "b": "Trimestralmente.",
+            "c": "Semestralmente."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 2 · art. 38.3 LPRL",
+          "explicacion": "El artículo 38.3 LPRL fija la reunión ordinaria del Comité con carácter trimestral."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Además de las reuniones ordinarias, el Comité debe reunirse:",
+          "opciones": {
+            "a": "Siempre que lo solicite alguna de las representaciones en el Comité.",
+            "b": "Solo cuando lo solicite la Inspección de Trabajo y Seguridad Social.",
+            "c": "Solo cuando se produzca un accidente de trabajo grave en el organismo."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 2 · art. 38.3 LPRL",
+          "explicacion": "El artículo 38.3 LPRL añade a las reuniones trimestrales las que solicite cualquiera de las dos representaciones."
+        },
+        {
+          "numero": 6,
+          "pregunta": "Los Delegados Sindicales del organismo que no forman parte del Comité quieren asistir a sus reuniones. Pueden hacerlo:",
+          "opciones": {
+            "a": "Con voz y con voto.",
+            "b": "Solo como oyentes, sin voz ni voto.",
+            "c": "Con voz pero sin voto."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 3 · art. 38.2 LPRL",
+          "explicacion": "El artículo 38.2 LPRL prevé que los Delegados Sindicales y los responsables técnicos de la prevención no incluidos en el Comité participen en sus reuniones con voz pero sin voto."
+        },
+        {
+          "numero": 7,
+          "pregunta": "La parte social quiere que asista a una reunión un técnico en prevención ajeno al organismo. ¿Es posible?",
+          "opciones": {
+            "a": "No, porque solo pueden asistir los Delegados Sindicales y los responsables técnicos del organismo.",
+            "b": "Sí, con voz pero sin voto, siempre que lo solicite alguna de las representaciones en el Comité.",
+            "c": "Sí, con voz y voto, siempre que el Comité lo acuerde por unanimidad de sus miembros."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 3 · art. 38.2 LPRL",
+          "explicacion": "El artículo 38.2 LPRL permite que participen, con voz pero sin voto, trabajadores especialmente cualificados y técnicos en prevención ajenos a la empresa si lo solicita alguna de las representaciones."
+        },
+        {
+          "numero": 8,
+          "pregunta": "¿Cuál de las siguientes es una competencia del Comité de Seguridad y Salud del organismo?",
+          "opciones": {
+            "a": "Imponer sanciones disciplinarias al personal que incumpla las medidas de prevención del organismo.",
+            "b": "Designar a los Delegados de Prevención de entre los trabajadores con mayor cualificación técnica.",
+            "c": "Participar en la elaboración, puesta en práctica y evaluación de los planes y programas de prevención."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 4 · art. 39.1 LPRL",
+          "explicacion": "El artículo 39.1 LPRL atribuye al Comité participar en la elaboración, puesta en práctica y evaluación de los planes y programas de prevención y promover iniciativas preventivas."
+        },
+        {
+          "numero": 9,
+          "pregunta": "Respecto de la memoria y programación anual de los servicios de prevención, el Comité está facultado para:",
+          "opciones": {
+            "a": "Conocerla e informarla.",
+            "b": "Elaborarla y aprobarla.",
+            "c": "Aprobarla y publicarla."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 4 · art. 39.2 LPRL",
+          "explicacion": "Entre las facultades del artículo 39.2 LPRL está «conocer e informar la memoria y programación anual de servicios de prevención»; no le corresponde elaborarla ni aprobarla."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Quién establece las normas de funcionamiento del Comité de Seguridad y Salud del organismo?",
+          "opciones": {
+            "a": "La Inspección de Trabajo, mediante resolución dirigida al organismo.",
+            "b": "El propio Comité, que adopta sus propias normas de funcionamiento.",
+            "c": "El servicio de prevención, en la programación anual de actividades."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 2 · art. 38.3 LPRL",
+          "explicacion": "Conforme al artículo 38.3 LPRL, el Comité se reúne trimestralmente y adopta sus propias normas de funcionamiento."
+        }
+      ]
+    },
+    {
+      "caso": 3,
+      "titulo": "CASO PRÁCTICO 3 — Garantías y sigilo del Delegado de Prevención",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "El organismo pretende descontar del crédito horario del Delegado de Prevención el tiempo de la reunión trimestral del Comité. ¿Procede?",
+          "opciones": {
+            "a": "Sí, porque toda actividad de representación se imputa al crédito horario.",
+            "b": "Sí, aunque el delegado puede recuperar después ese tiempo dentro del mes.",
+            "c": "No, porque ese tiempo es de trabajo efectivo sin imputación al crédito horario."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 1 · art. 37.1 LPRL",
+          "explicacion": "El artículo 37.1 LPRL considera en todo caso tiempo de trabajo efectivo, sin imputación al crédito, el de las reuniones del Comité de Seguridad y Salud."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Y el tiempo empleado en acompañar a la Inspección de Trabajo en su visita?",
+          "opciones": {
+            "a": "Tampoco se imputa, porque es una visita de las previstas en el artículo 36.2.a) LPRL.",
+            "b": "Se imputa al crédito, porque la visita no es una reunión convocada por el empresario.",
+            "c": "Se imputa al crédito, salvo que la visita la haya solicitado el propio organismo."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 1 · arts. 36.2.a) y 37.1 LPRL",
+          "explicacion": "Acompañar a los Inspectores de Trabajo es la facultad del artículo 36.2.a) LPRL, y el tiempo de esas visitas es de trabajo efectivo sin imputación al crédito (art. 37.1 LPRL)."
+        },
+        {
+          "numero": 3,
+          "pregunta": "Fuera de esos supuestos, el tiempo que el Delegado de Prevención dedica al desempeño de sus funciones se considera:",
+          "opciones": {
+            "a": "Tiempo de trabajo efectivo sin imputación al crédito, igual que las reuniones del Comité.",
+            "b": "Ejercicio de funciones de representación a efectos del crédito de horas retribuidas.",
+            "c": "Tiempo no retribuido, que debe dedicar fuera de su jornada ordinaria de trabajo."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 1 · art. 37.1 LPRL",
+          "explicacion": "Como regla general, el artículo 37.1 LPRL computa ese tiempo en el crédito horario; solo las reuniones del Comité, las convocadas por el empresario en prevención y las visitas del artículo 36.2.a) y c) quedan fuera."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Qué garantías protegen al Delegado de Prevención frente a posibles represalias?",
+          "opciones": {
+            "a": "Las del artículo 65.2 del Estatuto de los Trabajadores, por remisión del artículo 37.3 LPRL.",
+            "b": "Las que fije el Comité de Seguridad y Salud en sus normas de funcionamiento.",
+            "c": "Las del artículo 68 del Estatuto de los Trabajadores, por remisión del artículo 37.1 LPRL."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 2 · art. 37.1 LPRL; art. 68 ET",
+          "explicacion": "El artículo 37.1 LPRL extiende a los Delegados de Prevención las garantías del artículo 68 ET; el artículo 65.2 ET, al que remite el 37.3, regula el sigilo profesional."
+        },
+        {
+          "numero": 5,
+          "pregunta": "El Delegado de Prevención no puede ser despedido ni sancionado durante el ejercicio de sus funciones ni:",
+          "opciones": {
+            "a": "Dentro de los dos años siguientes a la expiración de su mandato.",
+            "b": "Dentro del año siguiente a la expiración de su mandato.",
+            "c": "Dentro de los seis meses siguientes a la expiración de su mandato."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 2 · art. 68 ET",
+          "explicacion": "La garantía del artículo 68 ET, aplicable por el artículo 37.1 LPRL, se extiende durante el mandato y el año siguiente a su expiración."
+        },
+        {
+          "numero": 6,
+          "pregunta": "Si el organismo quisiera sancionar al delegado por una falta grave, debería:",
+          "opciones": {
+            "a": "Abrir un expediente contradictorio antes de imponer la sanción.",
+            "b": "Obtener la autorización previa del Comité de Seguridad y Salud.",
+            "c": "Recabar el informe vinculante de la Inspección de Trabajo."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 2 · art. 68 ET",
+          "explicacion": "Entre las garantías del artículo 68 ET está la apertura de expediente contradictorio ante sanciones por faltas graves o muy graves."
+        },
+        {
+          "numero": 7,
+          "pregunta": "¿Cuál de las siguientes NO es una garantía del artículo 68 ET aplicable al Delegado de Prevención?",
+          "opciones": {
+            "a": "La prioridad de permanencia en la empresa o centro de trabajo.",
+            "b": "La libertad de expresión en las materias propias de su representación.",
+            "c": "Acordar por sí solo la paralización de la actividad por riesgo grave."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 2 · art. 68 ET; arts. 21.3 y 36.2.g) LPRL",
+          "explicacion": "La prioridad de permanencia y la libertad de expresión son garantías del artículo 68 ET; la paralización la acuerdan los representantes por mayoría (art. 21.3 LPRL), y el delegado solo puede proponerla (art. 36.2.g) LPRL)."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Respecto de la información reservada sobre el proceso productivo a la que ha tenido acceso, el delegado:",
+          "opciones": {
+            "a": "Debe guardar sigilo profesional sobre ella.",
+            "b": "Puede difundirla libremente a la plantilla.",
+            "c": "Solo debe comunicarla al Comité de Empresa."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 3 · art. 37.3 LPRL; art. 65.2 ET",
+          "explicacion": "El artículo 37.3 LPRL aplica a los Delegados de Prevención el deber de sigilo del artículo 65.2 ET respecto de la información a que accedan por su actuación."
+        },
+        {
+          "numero": 9,
+          "pregunta": "El delegado asiste a un curso de formación en materia preventiva. Ese tiempo:",
+          "opciones": {
+            "a": "Se descuenta de su crédito de horas mensuales.",
+            "b": "Se considera tiempo de trabajo a todos los efectos.",
+            "c": "Debe dedicarlo fuera de su jornada de trabajo."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 4 · art. 37.2 LPRL",
+          "explicacion": "El artículo 37.2 LPRL dispone que el tiempo de formación preventiva de los delegados es tiempo de trabajo a todos los efectos."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Quién soporta el coste de esa formación?",
+          "opciones": {
+            "a": "El delegado y el organismo, a partes iguales.",
+            "b": "La organización sindical a la que pertenezca el delegado.",
+            "c": "El organismo, sin que pueda recaer sobre el delegado."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 4 · art. 37.2 LPRL",
+          "explicacion": "Conforme al artículo 37.2 LPRL, el empresario proporciona la formación y su coste no puede recaer sobre los Delegados de Prevención."
+        }
+      ]
+    },
+    {
+      "caso": 4,
+      "titulo": "CASO PRÁCTICO 4 — La PRL en el IAM (Acuerdo-Convenio)",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "¿Cuántos Delegados de Prevención tiene el IAM según el Acuerdo-Convenio?",
+          "opciones": {
+            "a": "Seis.",
+            "b": "Tres.",
+            "c": "Siete."
+          },
+          "correcta": "a",
+          "referencia": "Caso 4, cuestión 1 · art. 48 Acuerdo-Convenio",
+          "explicacion": "El artículo 48 del Acuerdo-Convenio asigna 6 Delegados de Prevención al IAM; 7 corresponden a la Agencia Tributaria Madrid y a Madrid Salud."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Cuántos Delegados de Prevención hay en el conjunto del Ayuntamiento y sus Organismos Autónomos?",
+          "opciones": {
+            "a": "56.",
+            "b": "83.",
+            "c": "30."
+          },
+          "correcta": "b",
+          "referencia": "Caso 4, cuestión 1 · art. 48 Acuerdo-Convenio",
+          "explicacion": "El artículo 48 del Acuerdo-Convenio fija 83 Delegados de Prevención en total; 56 son los del Ayuntamiento sin sus Organismos Autónomos."
+        },
+        {
+          "numero": 3,
+          "pregunta": "Además del Ayuntamiento, ¿qué dos organismos cuentan con 7 Delegados de Prevención cada uno?",
+          "opciones": {
+            "a": "La Agencia para el Empleo y el IAM.",
+            "b": "La Agencia de Actividades y Madrid Salud.",
+            "c": "La Agencia Tributaria Madrid y Madrid Salud."
+          },
+          "correcta": "c",
+          "referencia": "Caso 4, cuestión 1 · art. 48 Acuerdo-Convenio",
+          "explicacion": "Reparto del artículo 48: Ayuntamiento 56, Agencia para el Empleo 4, Agencia Tributaria 7, IAM 6, Madrid Salud 7 y Agencia de Actividades 3."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Cómo es el Comité de Seguridad y Salud del Ayuntamiento de Madrid?",
+          "opciones": {
+            "a": "Único y paritario: 15 Delegados de Prevención y 15 representantes de la Administración.",
+            "b": "Uno por organismo autónomo, con tantos representantes de la Administración como delegados.",
+            "c": "Único y paritario: los 83 Delegados de Prevención y 83 representantes de la Administración."
+          },
+          "correcta": "a",
+          "referencia": "Caso 4, cuestión 2 · art. 48 Acuerdo-Convenio",
+          "explicacion": "El artículo 48 del Acuerdo-Convenio crea un Comité único y paritario de 15 + 15 para todo el Ayuntamiento y sus Organismos Autónomos."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Cómo se determinan los 15 Delegados de Prevención que forman parte de ese Comité?",
+          "opciones": {
+            "a": "Los elige por sufragio directo todo el personal municipal en un proceso específico.",
+            "b": "Son fijos por organismo: los 6 del IAM y 9 del resto, a elección del Ayuntamiento.",
+            "c": "Se designan proporcionalmente entre quienes ostentan la condición de Delegado de Prevención."
+          },
+          "correcta": "c",
+          "referencia": "Caso 4, cuestión 2 · art. 48 Acuerdo-Convenio",
+          "explicacion": "Los 15 miembros de la parte social se designan proporcionalmente entre los Delegados de Prevención municipales (art. 48 Acuerdo-Convenio)."
+        },
+        {
+          "numero": 6,
+          "pregunta": "¿Cuál es el crédito horario de cada Delegado de Prevención del Ayuntamiento?",
+          "opciones": {
+            "a": "15 horas mensuales retribuidas.",
+            "b": "40 horas mensuales retribuidas.",
+            "c": "60 horas mensuales retribuidas."
+          },
+          "correcta": "b",
+          "referencia": "Caso 4, cuestión 3 · art. 48.6 Acuerdo-Convenio",
+          "explicacion": "El artículo 48.6 del Acuerdo-Convenio reconoce a cada Delegado de Prevención 40 horas mensuales retribuidas."
+        },
+        {
+          "numero": 7,
+          "pregunta": "La Técnica Auxiliar TIC pregunta si ese crédito se suma al que el delegado ya tenga como representante sindical. La respuesta es:",
+          "opciones": {
+            "a": "Sí, es complementario y adicional al que le corresponda como representante unitario o sindical.",
+            "b": "No, absorbe el crédito que le corresponda como representante unitario o sindical.",
+            "c": "Solo si el delegado no forma parte de una Junta de Personal ni de un Comité de Empresa."
+          },
+          "correcta": "a",
+          "referencia": "Caso 4, cuestión 3 · art. 48.6 Acuerdo-Convenio",
+          "explicacion": "El crédito de 40 h/mes del artículo 48.6 del Acuerdo-Convenio es complementario y adicional al de representante unitario o sindical."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Durante la vigencia del Acuerdo-Convenio, la oferta de formación básica de los Delegados de Prevención:",
+          "opciones": {
+            "a": "Se limita a un máximo de 40 horas.",
+            "b": "Tenderá a ampliarse hasta las 60 horas.",
+            "c": "Se sustituye por el crédito horario."
+          },
+          "correcta": "b",
+          "referencia": "Caso 4, cuestión 3 · art. 48 Acuerdo-Convenio",
+          "explicacion": "El artículo 48 del Acuerdo-Convenio prevé que la oferta de formación básica de los delegados tienda a ampliarse hasta las 60 horas."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿Qué instrumento integra la prevención en la estructura de gestión del Ayuntamiento y sus Organismos Autónomos?",
+          "opciones": {
+            "a": "El Reglamento de los Servicios de Prevención (RD 39/1997, de 17 de enero).",
+            "b": "El Comité de Seguridad y Salud único del Ayuntamiento de Madrid.",
+            "c": "El Plan de Prevención de Riesgos Laborales del Ayuntamiento de Madrid."
+          },
+          "correcta": "c",
+          "referencia": "Caso 4, cuestión 4 · Plan de PRL; art. 46.5 Acuerdo-Convenio",
+          "explicacion": "El Plan de Prevención de Riesgos Laborales tiene por objeto integrar la prevención en la estructura de gestión del Ayuntamiento y de sus organismos autónomos."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Cuándo y por qué órgano se aprobó ese Plan?",
+          "opciones": {
+            "a": "Por Acuerdo de la Junta de Gobierno de la Ciudad de Madrid de 26 de noviembre de 2020.",
+            "b": "Por Acuerdo de la Junta de Gobierno de la Ciudad de Madrid de 27 de diciembre de 2018.",
+            "c": "Por Acuerdo del Pleno del Ayuntamiento de Madrid de 26 de noviembre de 2020."
+          },
+          "correcta": "a",
+          "referencia": "Caso 4, cuestión 4 · Plan de PRL (BOAM 8783)",
+          "explicacion": "El Plan de PRL se aprobó por Acuerdo de 26 de noviembre de 2020 de la Junta de Gobierno (BOAM núm. 8783); la fecha de 27 de diciembre de 2018 corresponde al Acuerdo-Convenio."
+        }
+      ]
+    },
+    {
+      "caso": 5,
+      "titulo": "CASO PRÁCTICO 5 — Representación del personal funcionario",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "¿Qué órgano de representación corresponde a la unidad electoral de 44 funcionarios?",
+          "opciones": {
+            "a": "Junta de Personal, por superar los 30 funcionarios de censo.",
+            "b": "Delegados de Personal, por tener entre 6 y 49 funcionarios.",
+            "c": "Comité de Empresa, por superar los 30 empleados de censo."
+          },
+          "correcta": "b",
+          "referencia": "Caso 5, cuestión 1 · art. 39.2 TREBEP",
+          "explicacion": "Conforme al artículo 39.2 TREBEP, en las unidades con 6 o más e inferior a 50 funcionarios la representación corresponde a los Delegados de Personal."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Y a la unidad electoral de 220 funcionarios?",
+          "opciones": {
+            "a": "Delegados de Personal, en número de uno por cada 50 funcionarios.",
+            "b": "Un Comité de Empresa, por alcanzar el censo mínimo de 50 empleados.",
+            "c": "Una Junta de Personal, por alcanzar el censo mínimo de 50 funcionarios."
+          },
+          "correcta": "c",
+          "referencia": "Caso 5, cuestión 1 · art. 39.3 TREBEP",
+          "explicacion": "El artículo 39.3 TREBEP constituye Juntas de Personal en unidades con un censo mínimo de 50 funcionarios; el Comité de Empresa es el órgano del personal laboral."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Cuántos Delegados de Personal corresponden a la unidad de 44 funcionarios?",
+          "opciones": {
+            "a": "Tres.",
+            "b": "Uno.",
+            "c": "Dos."
+          },
+          "correcta": "a",
+          "referencia": "Caso 5, cuestión 2 · art. 39.2 TREBEP",
+          "explicacion": "El artículo 39.2 TREBEP asigna 1 Delegado de Personal hasta 30 funcionarios y 3 de 31 a 49."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Cómo ejercen su representación esos Delegados de Personal?",
+          "opciones": {
+            "a": "Individualmente, por turnos rotatorios.",
+            "b": "Conjunta y mancomunadamente.",
+            "c": "A través de un portavoz con voto de calidad."
+          },
+          "correcta": "b",
+          "referencia": "Caso 5, cuestión 2 · art. 39.2 TREBEP",
+          "explicacion": "El artículo 39.2 TREBEP dispone que los Delegados de Personal ejercen su representación de forma conjunta y mancomunada."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Si la unidad de 44 funcionarios creciera hasta 50, pasaría a tener:",
+          "opciones": {
+            "a": "Una Junta de Personal de 5 miembros.",
+            "b": "Cuatro Delegados de Personal.",
+            "c": "Una Junta de Personal de 3 miembros."
+          },
+          "correcta": "a",
+          "referencia": "Caso 5, cuestión 1 · art. 39.3 y 39.5 TREBEP",
+          "explicacion": "Con 50 funcionarios se alcanza el censo mínimo de la Junta de Personal (art. 39.3 TREBEP), que en el tramo de 50 a 100 tiene 5 miembros (art. 39.5 TREBEP)."
+        },
+        {
+          "numero": 6,
+          "pregunta": "La Administración proyecta trasladar parte de las instalaciones de la unidad de 220 funcionarios. ¿Qué papel tiene la Junta de Personal?",
+          "opciones": {
+            "a": "Autorizar el traslado mediante un informe previo y vinculante.",
+            "b": "Ninguno, porque el traslado es una potestad de organización.",
+            "c": "Emitir informe, a solicitud de la Administración, sobre el traslado."
+          },
+          "correcta": "c",
+          "referencia": "Caso 5, cuestión 3 · art. 40.1 TREBEP",
+          "explicacion": "El artículo 40.1 TREBEP atribuye a Juntas y Delegados de Personal emitir informe, a solicitud de la Administración, sobre el traslado total o parcial de las instalaciones."
+        },
+        {
+          "numero": 7,
+          "pregunta": "En materia disciplinaria, las Juntas y los Delegados de Personal tienen la función de:",
+          "opciones": {
+            "a": "Resolver los recursos contra las sanciones por faltas leves.",
+            "b": "Ser informados de las sanciones impuestas por faltas muy graves.",
+            "c": "Proponer la sanción en los expedientes por faltas graves."
+          },
+          "correcta": "b",
+          "referencia": "Caso 5, cuestión 3 · art. 40.1 TREBEP",
+          "explicacion": "Entre las funciones del artículo 40.1 TREBEP está ser informados de todas las sanciones impuestas por faltas muy graves."
+        },
+        {
+          "numero": 8,
+          "pregunta": "¿Qué garantía protege a los representantes frente a represalias por su actividad representativa?",
+          "opciones": {
+            "a": "No poder ser objeto de ningún expediente disciplinario mientras dure su mandato.",
+            "b": "Elegir libremente su puesto de trabajo dentro de la unidad electoral representada.",
+            "c": "No ser trasladados ni sancionados por causas relacionadas con el ejercicio de su mandato."
+          },
+          "correcta": "c",
+          "referencia": "Caso 5, cuestión 4 · art. 41.1 TREBEP",
+          "explicacion": "El artículo 41.1 TREBEP garantiza no ser trasladados ni sancionados por causas relacionadas con el mandato, durante su vigencia ni en el año siguiente."
+        },
+        {
+          "numero": 9,
+          "pregunta": "Los Delegados de Personal de una misma candidatura quieren acumular sus créditos horarios. ¿Pueden hacerlo?",
+          "opciones": {
+            "a": "Sí, previa comunicación al órgano que ostente la Jefatura de Personal.",
+            "b": "No, porque el crédito horario de cada representante es personal e intransferible.",
+            "c": "Sí, pero solo con autorización expresa de la Mesa General de Negociación."
+          },
+          "correcta": "a",
+          "referencia": "Caso 5, cuestión 4 · art. 41 TREBEP",
+          "explicacion": "El artículo 41 TREBEP permite acumular los créditos horarios entre miembros de la misma candidatura, previa comunicación a la Jefatura de Personal."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Si los 220 empleados de la segunda unidad fueran personal laboral, su órgano de representación sería:",
+          "opciones": {
+            "a": "Una Junta de Personal.",
+            "b": "Un Comité de Empresa.",
+            "c": "Delegados de Personal."
+          },
+          "correcta": "b",
+          "referencia": "Caso 5, cuestión 1 · arts. 63.1 ET y 39.3 TREBEP",
+          "explicacion": "El umbral es el mismo (50), pero para el personal laboral el órgano colegiado es el Comité de Empresa (art. 63.1 ET); la Junta de Personal es el de los funcionarios."
+        }
+      ]
+    },
+    {
+      "caso": 6,
+      "titulo": "CASO PRÁCTICO 6 — Derecho de reunión e interacción de representaciones",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "Los empleados que representan el 45 % del colectivo convocado, ¿están legitimados para convocar la reunión?",
+          "opciones": {
+            "a": "No, porque se exige al menos el 50 por 100 del colectivo.",
+            "b": "No, porque solo pueden convocar los órganos de representación.",
+            "c": "Sí, porque superan el 40 por 100 del colectivo convocado."
+          },
+          "correcta": "c",
+          "referencia": "Caso 6, cuestión 1 · art. 46.1 TREBEP",
+          "explicacion": "El artículo 46.1 TREBEP legitima a los empleados públicos en número no inferior al 40 por 100 del colectivo convocado; el 45 % cumple el requisito."
+        },
+        {
+          "numero": 2,
+          "pregunta": "Además de los propios empleados, ¿cuál de estos sujetos está legitimado para convocar una reunión?",
+          "opciones": {
+            "a": "La Junta de Personal.",
+            "b": "El Comité de Seguridad y Salud.",
+            "c": "El Servicio de Prevención."
+          },
+          "correcta": "a",
+          "referencia": "Caso 6, cuestión 1 · art. 46.1 TREBEP",
+          "explicacion": "El artículo 46.1 TREBEP legitima a las organizaciones sindicales (directamente o a través de los Delegados Sindicales), a los Delegados de Personal, a las Juntas de Personal y a los Comités de Empresa."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿En qué horario se autorizan las reuniones en el centro de trabajo?",
+          "opciones": {
+            "a": "Dentro de la jornada, con un máximo de horas al mes fijado por el órgano competente en materia de personal.",
+            "b": "Fuera de las horas de trabajo, salvo acuerdo entre el órgano competente en materia de personal y los convocantes.",
+            "c": "En cualquier horario, siempre que los convocantes lo comuniquen con antelación a la Jefatura de Personal."
+          },
+          "correcta": "b",
+          "referencia": "Caso 6, cuestión 2 · art. 46.2 TREBEP",
+          "explicacion": "El artículo 46.2 TREBEP autoriza las reuniones en el centro fuera de las horas de trabajo, salvo acuerdo entre el órgano competente en personal y quienes estén legitimados para convocarlas."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Quién responde del normal desarrollo de la reunión?",
+          "opciones": {
+            "a": "La Jefatura de Personal.",
+            "b": "La Junta de Personal.",
+            "c": "Los convocantes."
+          },
+          "correcta": "c",
+          "referencia": "Caso 6, cuestión 2 · art. 46.2 TREBEP",
+          "explicacion": "Conforme al artículo 46.2 TREBEP, la reunión no perjudicará la prestación de los servicios y los convocantes son responsables de su normal desarrollo."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Con carácter general, según la LPRL, los Delegados de Prevención se designan:",
+          "opciones": {
+            "a": "Por la Administración, a propuesta sindical.",
+            "b": "Por y entre los representantes del personal.",
+            "c": "Por sufragio directo de toda la plantilla."
+          },
+          "correcta": "b",
+          "referencia": "Caso 6, cuestión 3 · art. 35.2 LPRL",
+          "explicacion": "La regla general del artículo 35.2 LPRL es la designación por y entre los representantes del personal."
+        },
+        {
+          "numero": 6,
+          "pregunta": "¿Qué precepto de la LPRL permite que el Ayuntamiento se aparte de esa regla general?",
+          "opciones": {
+            "a": "El artículo 35.4, que admite otros sistemas de designación en las Administraciones públicas.",
+            "b": "El artículo 38.2, que permite al empresario designar a los miembros del Comité de Seguridad y Salud.",
+            "c": "El artículo 3.2, que excluye a las Administraciones públicas del régimen general de representación."
+          },
+          "correcta": "a",
+          "referencia": "Caso 6, cuestión 3 · art. 35.4 LPRL",
+          "explicacion": "El artículo 35.4 LPRL permite establecer otros sistemas de designación en el ámbito de las Administraciones públicas; el artículo 3.2 solo excluye ciertas funciones públicas (policía, protección civil, Fuerzas Armadas…)."
+        },
+        {
+          "numero": 7,
+          "pregunta": "¿Cómo se designan los Delegados de Prevención en el Ayuntamiento de Madrid?",
+          "opciones": {
+            "a": "Los elige directamente el personal de cada organismo, sin necesidad de que sean representantes unitarios o sindicales.",
+            "b": "Los nombra la Subdirección General de Prevención y Riesgos Laborales, a propuesta de las Juntas de Personal de cada organismo.",
+            "c": "Los designan los órganos de representación unitaria, de entre sus miembros, o las organizaciones sindicales con presencia en ellos."
+          },
+          "correcta": "c",
+          "referencia": "Caso 6, cuestión 3 · art. 48.4 Acuerdo-Convenio",
+          "explicacion": "El artículo 48.4 del Acuerdo-Convenio atribuye la designación a los órganos de representación unitaria, de entre sus miembros, o a las organizaciones sindicales con presencia en ellos."
+        },
+        {
+          "numero": 8,
+          "pregunta": "En el conjunto del Ayuntamiento y sus Organismos Autónomos, la representación preventiva se articula en:",
+          "opciones": {
+            "a": "83 Delegados de Prevención y un Comité de Seguridad y Salud único.",
+            "b": "83 Delegados de Prevención y un Comité de Seguridad y Salud por organismo.",
+            "c": "56 Delegados de Prevención y un Comité de Seguridad y Salud único."
+          },
+          "correcta": "a",
+          "referencia": "Caso 6, cuestión 3 · art. 48 Acuerdo-Convenio",
+          "explicacion": "El artículo 48 del Acuerdo-Convenio fija 83 Delegados de Prevención (56 son solo los del Ayuntamiento) y un único Comité de Seguridad y Salud."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿Pueden los convenios colectivos mejorar las disposiciones de carácter laboral de la LPRL?",
+          "opciones": {
+            "a": "No, porque son Derecho necesario absoluto, que no admite ninguna variación convencional.",
+            "b": "Sí, porque son Derecho necesario mínimo indisponible, que puede mejorarse y desarrollarse.",
+            "c": "Solo en las empresas privadas, porque en las Administraciones públicas rige el TREBEP."
+          },
+          "correcta": "b",
+          "referencia": "Caso 6, cuestión 4 · art. 2.2 LPRL",
+          "explicacion": "El artículo 2.2 LPRL califica esas disposiciones como Derecho necesario mínimo indisponible, que puede ser mejorado y desarrollado en los convenios colectivos."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Qué previsión del Acuerdo-Convenio es un ejemplo de esa mejora convencional?",
+          "opciones": {
+            "a": "La reunión trimestral del Comité de Seguridad y Salud, ampliable a petición de cualquiera de las representaciones.",
+            "b": "La designación de los Delegados de Prevención por y entre los representantes del personal de cada centro.",
+            "c": "El crédito de 40 horas mensuales de cada Delegado de Prevención, adicional al de representante unitario o sindical."
+          },
+          "correcta": "c",
+          "referencia": "Caso 6, cuestión 4 · art. 48.6 Acuerdo-Convenio",
+          "explicacion": "El crédito específico de 40 h/mes, complementario del de representante, es una mejora del Acuerdo-Convenio; la reunión trimestral y la designación por y entre representantes son reglas de la propia LPRL (arts. 38.3 y 35.2)."
+        }
+      ]
+    }
+  ]
+}

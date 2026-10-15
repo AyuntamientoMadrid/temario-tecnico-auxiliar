@@ -1,0 +1,27 @@
+<svg aria-label="Las cinco familias de perturbaciones del canal: atenuación, distorsión, ruido con sus cuatro tipos, interferencia y eco, con la definición y el remedio de cada una y el aviso de que el ruido impulsivo es el más dañino en transmisión digital" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 10.5px system-ui,sans-serif;fill:#fff}.s2{font:8.5px system-ui,sans-serif;fill:#fff}.d2{font:9px system-ui,sans-serif;fill:#333}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}.k2{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n2{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h2" text-anchor="middle" x="340" y="20">Qué le pasa a la señal por el camino</text>
+<text class="k2" x="26" y="42">PERTURBACIÓN</text><text class="k2" x="220" y="42">QUÉ HACE</text><text class="k2" x="470" y="42">REMEDIO</text>
+<rect fill="#0055a0" height="34" rx="4" width="180" x="20" y="50"></rect><text class="t2" text-anchor="middle" x="110" y="71">ATENUACIÓN</text>
+<rect fill="#eef3f8" height="34" rx="4" width="250" x="208" y="50"></rect><text class="d2" text-anchor="middle" x="333" y="71">Pierde potencia con la distancia</text>
+<rect fill="#f5f5f5" height="34" rx="4" width="194" x="466" y="50"></rect><text class="d2" text-anchor="middle" x="563" y="71">Repetidor regenerador</text>
+<rect fill="#0055a0" height="34" rx="4" width="180" x="20" y="90"></rect><text class="t2" text-anchor="middle" x="110" y="111">DISTORSIÓN</text>
+<rect fill="#eef3f8" height="34" rx="4" width="250" x="208" y="90"></rect><text class="d2" text-anchor="middle" x="333" y="111">Se deforma: retardo diferencial e ISI</text>
+<rect fill="#f5f5f5" height="34" rx="4" width="194" x="466" y="90"></rect><text class="d2" text-anchor="middle" x="563" y="111">Ecualizador</text>
+<rect fill="#d13c3c" height="34" rx="4" width="180" x="20" y="130"></rect><text class="t2" text-anchor="middle" x="110" y="151">RUIDO</text>
+<rect fill="#fbeaea" height="34" rx="4" width="250" x="208" y="130"></rect><text class="d2" text-anchor="middle" x="333" y="151">Se le suma energía ajena</text>
+<rect fill="#f5f5f5" height="34" rx="4" width="194" x="466" y="130"></rect><text class="d2" text-anchor="middle" x="563" y="151">Códigos correctores, blindaje</text>
+<rect fill="#e89822" height="34" rx="4" width="180" x="20" y="170"></rect><text class="t2" text-anchor="middle" x="110" y="191">INTERFERENCIA</text>
+<rect fill="#fdf3e3" height="34" rx="4" width="250" x="208" y="170"></rect><text class="d2" text-anchor="middle" x="333" y="191">Otro emisor se superpone</text>
+<rect fill="#f5f5f5" height="34" rx="4" width="194" x="466" y="170"></rect><text class="d2" text-anchor="middle" x="563" y="191">Plan de frecuencias, fibra óptica</text>
+<rect fill="#7a2f8a" height="34" rx="4" width="180" x="20" y="210"></rect><text class="t2" text-anchor="middle" x="110" y="231">ECO Y FLUCTUACIÓN</text>
+<rect fill="#eef3f8" height="34" rx="4" width="250" x="208" y="210"></rect><text class="d2" text-anchor="middle" x="333" y="231">Vuelve reflejada o llega irregular</text>
+<rect fill="#f5f5f5" height="34" rx="4" width="194" x="466" y="210"></rect><text class="d2" text-anchor="middle" x="563" y="231">Cancelador de eco, memoria intermedia</text>
+<text class="k2" x="26" y="264">LOS CUATRO TIPOS DE RUIDO</text>
+<rect fill="#eef3f8" height="30" rx="4" width="155" x="20" y="272"></rect><text class="d2" text-anchor="middle" x="97" y="291">Térmico: inevitable</text>
+<rect fill="#eef3f8" height="30" rx="4" width="155" x="182" y="272"></rect><text class="d2" text-anchor="middle" x="259" y="291">Intermodulación</text>
+<rect fill="#eef3f8" height="30" rx="4" width="155" x="344" y="272"></rect><text class="d2" text-anchor="middle" x="421" y="291">Diafonía entre pares</text>
+<rect fill="#fbeaea" height="30" rx="4" width="154" x="506" y="272"></rect><text class="d2" text-anchor="middle" x="583" y="291">Impulsivo: el peor</text>
+<text class="n2" text-anchor="middle" x="340" y="320">El ruido impulsivo es el más dañino en transmisión DIGITAL: destruye bloques enteros de bits</text>
+<text class="n2" text-anchor="end" x="670" y="334">[Fuente: STALLINGS]</text>
+</svg>

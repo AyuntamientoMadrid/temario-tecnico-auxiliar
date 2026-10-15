@@ -1,0 +1,60 @@
+<svg aria-label="Arriba, los tres papeles del control de acceso IEEE 802.1X: el suplicante en el equipo, el autenticador que es el conmutador o el punto de acceso y mantiene el puerto sin servicio hasta que la autenticación tenga éxito, y el servidor de autenticación RADIUS que además devuelve la VLAN que corresponde al usuario; abajo, las cuatro medidas de protección de las comunicaciones del anexo II del Esquema Nacional de Seguridad con su aplicación por categoría, destacando que la separación de flujos no aplica en categoría básica" role="img" viewbox="0 0 680 406" xmlns="http://www.w3.org/2000/svg">
+<style>.h19{font:700 13px system-ui,sans-serif;fill:#0055a0}.k19{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d19{font:8.5px system-ui,sans-serif;fill:#333}.n19{font:8px system-ui,sans-serif;fill:#666}.w19{font:700 9px system-ui,sans-serif;fill:#fff}.g19{font:700 9px system-ui,sans-serif;fill:#2d8659}.r19{font:700 9px system-ui,sans-serif;fill:#d13c3c}</style>
+<defs><marker id="m19" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="h19" text-anchor="middle" x="340" y="20">IEEE 802.1X y las medidas del ENS que se predican de la red local</text>
+<text class="k19" x="30" y="42">CONTROL DE ADMISIÓN 802.1X — LOS TRES PAPELES</text>
+<rect fill="#0055a0" height="48" rx="4" width="150" x="30" y="50"></rect>
+<text class="w19" text-anchor="middle" x="105" y="70">SUPLICANTE</text>
+<text class="w19" text-anchor="middle" x="105" y="86">el equipo que se conecta</text>
+<path d="M182,74 L226,74" marker-end="url(#m19)" stroke="#0055a0" stroke-width="1.6"></path>
+<text class="n19" text-anchor="middle" x="204" y="68">EAPOL</text>
+<rect fill="#e89822" height="48" rx="4" width="180" x="230" y="50"></rect>
+<text class="w19" text-anchor="middle" x="320" y="70">AUTENTICADOR</text>
+<text class="w19" text-anchor="middle" x="320" y="86">el conmutador o el punto de acceso</text>
+<path d="M412,74 L456,74" marker-end="url(#m19)" stroke="#0055a0" stroke-width="1.6"></path>
+<text class="n19" text-anchor="middle" x="434" y="68">RADIUS</text>
+<rect fill="#2d8659" height="48" rx="4" width="198" x="460" y="50"></rect>
+<text class="w19" text-anchor="middle" x="559" y="70">SERVIDOR DE AUTENTICACIÓN</text>
+<text class="w19" text-anchor="middle" x="559" y="86">verifica contra el directorio corporativo</text>
+<rect fill="#fbeaea" height="36" rx="4" width="308" x="30" y="106"></rect>
+<text class="r19" text-anchor="middle" x="184" y="122">PUERTO NO CONTROLADO — sin autenticar</text>
+<text class="d19" text-anchor="middle" x="184" y="135">Solo deja pasar tramas EAPOL. Ni IP, ni DHCP, ni nada más</text>
+<rect fill="#e6f2ec" height="36" rx="4" width="308" x="350" y="106"></rect>
+<text class="g19" text-anchor="middle" x="504" y="122">PUERTO CONTROLADO — tras autenticar</text>
+<text class="d19" text-anchor="middle" x="504" y="135">El servidor devuelve la VLAN: la segmentación sigue a la persona</text>
+<text class="k19" x="30" y="164">ANEXO II DEL ENS — mp.com, PROTECCIÓN DE LAS COMUNICACIONES (verificado contra el BOE)</text>
+<rect fill="#0055a0" height="17" width="628" x="30" y="172"></rect>
+<text class="w19" x="36" y="185">MEDIDA</text>
+<text class="w19" x="104" y="185">DENOMINACIÓN LITERAL</text>
+<text class="w19" x="340" y="185">DIM.</text>
+<text class="w19" x="386" y="185">APLICACIÓN POR CATEGORÍA O NIVEL</text>
+<rect fill="#f7f9fb" height="17" width="628" x="30" y="190"></rect>
+<text class="d19" x="36" y="202">mp.com.1</text>
+<text class="d19" x="104" y="202">Perímetro seguro</text>
+<text class="d19" x="340" y="202">Todas</text>
+<text class="d19" x="386" y="202">Aplica en LAS TRES categorías</text>
+<rect fill="#eef4fa" height="17" width="628" x="30" y="208"></rect>
+<text class="d19" x="36" y="220">mp.com.2</text>
+<text class="d19" x="104" y="220">Protección de la confidencialidad</text>
+<text class="d19" x="340" y="220">C</text>
+<text class="d19" x="386" y="220">BAJO aplica · MEDIO +R1 · ALTO +R1+R2+R3</text>
+<rect fill="#f7f9fb" height="17" width="628" x="30" y="226"></rect>
+<text class="d19" x="36" y="238">mp.com.3</text>
+<text class="d19" x="104" y="238">Protección de la integridad y la autenticidad</text>
+<text class="d19" x="340" y="238">I, A</text>
+<text class="d19" x="386" y="238">BAJO aplica · MEDIO +R1+R2 · ALTO +R1 a R4</text>
+<rect fill="#fdf3e3" height="17" width="628" x="30" y="244"></rect>
+<text class="d19" x="36" y="256">mp.com.4</text>
+<text class="d19" x="104" y="256">Separación de flujos de información en la red</text>
+<text class="d19" x="340" y="256">Todas</text>
+<text class="d19" x="386" y="256">BÁSICA: NO APLICA · MEDIA +[R1/R2/R3] · ALTA +[R2/R3]+R4</text>
+<rect fill="#eef4fa" height="32" rx="3" width="628" x="30" y="268"></rect>
+<text class="d19" x="40" y="281"><tspan class="k19">Refuerzos de mp.com.4</tspan>   R1 segmentación lógica básica MEDIANTE VLAN, segregando en USUARIOS, SERVICIOS y ADMINISTRACIÓN</text>
+<text class="d19" x="40" y="294">R2 segmentación lógica avanzada mediante VPN · R3 segmentación física con medios separados · R4 puntos de interconexión controlados</text>
+<rect fill="#f7f9fb" height="32" rx="3" width="628" x="30" y="304"></rect>
+<text class="d19" x="40" y="317"><tspan class="k19">Otras medidas de red</tspan>   mp.eq.4 otros dispositivos conectados a la red (multifunción, multimedia, IoT y BYOD) · mp.if.1 áreas separadas</text>
+<text class="d19" x="40" y="330">op.acc.5 mecanismo de autenticación · op.exp.8 registro de la actividad con base de tiempo común · op.mon.1 detección de intrusión</text>
+<rect fill="none" height="30" rx="5" stroke="#d13c3c" stroke-width="1.5" width="628" x="30" y="346"></rect>
+<text class="r19" text-anchor="middle" x="344" y="365">mp.com.4.2 — «Si se emplean comunicaciones inalámbricas, será en un SEGMENTO SEPARADO»: requisito normativo</text>
+<text class="n19" text-anchor="end" x="670" y="394">[Fuente: RD 311/2022 anexo II · IEEE 802.1X · CCN-STIC-816]</text>
+</svg>

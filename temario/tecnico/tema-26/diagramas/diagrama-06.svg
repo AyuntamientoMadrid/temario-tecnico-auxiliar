@@ -1,0 +1,26 @@
+<svg aria-label="Los tres modelos de virtualización del almacenamiento: basada en host con LVM, basada en red con un appliance en el fabric y basada en cabina con las controladoras, indicando la ventaja y el inconveniente de cada uno" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 10.5px system-ui,sans-serif;fill:#fff}.s6{font:9px system-ui,sans-serif;fill:#fff}.d6{font:9px system-ui,sans-serif;fill:#333}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}.k6{font:700 9px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h6" text-anchor="middle" x="340" y="20">¿Dónde se ejecuta la capa de virtualización?</text>
+<rect fill="#0055a0" height="26" rx="5" width="200" x="20" y="34"></rect><text class="t6" text-anchor="middle" x="120" y="52">1 · EN EL HOST</text>
+<rect fill="#e89822" height="26" rx="5" width="200" x="240" y="34"></rect><text class="t6" text-anchor="middle" x="340" y="52">2 · EN LA RED</text>
+<rect fill="#2d8659" height="26" rx="5" width="200" x="460" y="34"></rect><text class="t6" text-anchor="middle" x="560" y="52">3 · EN LA CABINA</text>
+<rect fill="#eef3f8" height="30" rx="4" stroke="#0055a0" stroke-width="2" width="200" x="20" y="70"></rect><text class="d6" text-anchor="middle" x="120" y="89">Servidor + LVM / hipervisor</text>
+<rect fill="#eef3f8" height="30" rx="4" width="200" x="240" y="70"></rect><text class="d6" text-anchor="middle" x="340" y="89">Servidores</text>
+<rect fill="#eef3f8" height="30" rx="4" width="200" x="460" y="70"></rect><text class="d6" text-anchor="middle" x="560" y="89">Servidores</text>
+<rect fill="#eef3f8" height="30" rx="4" width="200" x="20" y="106"></rect><text class="d6" text-anchor="middle" x="120" y="125">Red o bus</text>
+<rect fill="#eef3f8" height="30" rx="4" stroke="#e89822" stroke-width="2" width="200" x="240" y="106"></rect><text class="d6" text-anchor="middle" x="340" y="125">Appliance o switch virtualizador</text>
+<rect fill="#eef3f8" height="30" rx="4" width="200" x="460" y="106"></rect><text class="d6" text-anchor="middle" x="560" y="125">Red SAN</text>
+<rect fill="#eef3f8" height="30" rx="4" width="200" x="20" y="142"></rect><text class="d6" text-anchor="middle" x="120" y="161">Discos o cabina</text>
+<rect fill="#eef3f8" height="30" rx="4" width="200" x="240" y="142"></rect><text class="d6" text-anchor="middle" x="340" y="155">Cabina A + cabina B</text><text class="d6" text-anchor="middle" x="340" y="167">(fabricantes distintos)</text>
+<rect fill="#eef3f8" height="30" rx="4" stroke="#2d8659" stroke-width="2" width="200" x="460" y="142"></rect><text class="d6" text-anchor="middle" x="560" y="161">Controladoras: pools y LUN</text>
+<text class="k6" x="20" y="192">VENTAJA</text>
+<rect fill="#2d8659" height="34" rx="4" width="200" x="20" y="198"></rect><text class="s6" text-anchor="middle" x="120" y="213">Coste nulo e independiente</text><text class="s6" text-anchor="middle" x="120" y="226">del fabricante</text>
+<rect fill="#2d8659" height="34" rx="4" width="200" x="240" y="198"></rect><text class="s6" text-anchor="middle" x="340" y="213">Unifica cabinas distintas</text><text class="s6" text-anchor="middle" x="340" y="226">y migra sin parar</text>
+<rect fill="#2d8659" height="34" rx="4" width="200" x="460" y="198"></rect><text class="s6" text-anchor="middle" x="560" y="213">Máximo rendimiento</text><text class="s6" text-anchor="middle" x="560" y="226">y funciones integradas</text>
+<text class="k6" x="20" y="252">INCONVENIENTE</text>
+<rect fill="#d13c3c" height="34" rx="4" width="200" x="20" y="258"></rect><text class="s6" text-anchor="middle" x="120" y="273">No se comparte entre</text><text class="s6" text-anchor="middle" x="120" y="286">servidores; usa su CPU</text>
+<rect fill="#d13c3c" height="34" rx="4" width="200" x="240" y="258"></rect><text class="s6" text-anchor="middle" x="340" y="273">Latencia añadida (in-band)</text><text class="s6" text-anchor="middle" x="340" y="286">y punto crítico a duplicar</text>
+<rect fill="#d13c3c" height="34" rx="4" width="200" x="460" y="258"></rect><text class="s6" text-anchor="middle" x="560" y="273">Atado al fabricante y</text><text class="s6" text-anchor="middle" x="560" y="286">limitado a esa cabina</text>
+<text class="k6" text-anchor="middle" x="340" y="312">In-band: los datos atraviesan la capa · Out-of-band: solo la atraviesan los metadatos</text>
+<text style="font:9px system-ui;fill:#666" text-anchor="end" x="670" y="332">[Fuente: SNIA-DICT; SNIA-SSM; LVM-LINUX]</text>
+</svg>

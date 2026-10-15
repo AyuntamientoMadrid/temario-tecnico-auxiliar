@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, el portátil debe conectarse al docking con un solo cable que lleve datos, vídeo para los monitores y energía de carga. ¿Qué interfaz es la idónea?",
+    "o": [
+     "HDMI 2.1, que transporta por el mismo cable el vídeo, el audio digital y el canal de retorno eARC.",
+     "Thunderbolt sobre conector USB-C (o USB4 con USB Power Delivery), que combina datos PCIe, vídeo DisplayPort y energía.",
+     "eSATA, la versión externa de SATA, que conecta el portátil a los periféricos de la estación de acoplamiento."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §2.4",
+    "e": "Desde Thunderbolt 3 se usa el conector USB-C y un único cable combina datos (PCIe), vídeo (DisplayPort) y energía; es la interfaz típica de las docking stations."
+   },
+   {
+    "q": "El técnico comprueba que el portátil tiene un puerto USB-C y da por hecho que servirá para el docking. ¿Qué debe tener en cuenta?",
+    "o": [
+     "Que USB-C es solo la forma del conector: por dentro el puerto puede ser USB 2.0 o USB4, y hay que comprobar el protocolo.",
+     "Que todo puerto USB-C es internamente USB4, por lo que garantiza 40 Gbps y la salida de vídeo a los monitores.",
+     "Que USB-C solo transporta datos y energía, de modo que el vídeo de los monitores exige un cable HDMI aparte."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.2",
+    "e": "El contenido advierte que USB-C es un conector, no una velocidad: un puerto USB-C puede ser USB 2.0 o USB4 y por fuera son idénticos."
+   },
+   {
+    "q": "Para conectar los dos monitores del puesto desde una sola salida del docking, encadenándolos en serie, ¿qué interfaz y tecnología deben usarse?",
+    "o": [
+     "HDMI con eARC, que permite encadenar varios monitores desde una única salida del equipo.",
+     "DVI con conexión en cadena, interfaz de transición que sustituyó a VGA en el entorno profesional.",
+     "DisplayPort con MST (Multi-Stream Transport), que permite la conexión en cadena (daisy-chain)."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §2.3",
+    "e": "La gran ventaja de DisplayPort es MST, que permite encadenar varios monitores en serie desde una sola salida."
+   },
+   {
+    "q": "Si en lugar de DisplayPort se usara la alternativa propia del ámbito de consumo, HDMI, ¿qué implicaría para los dos monitores del puesto?",
+    "o": [
+     "Que normalmente haría falta una salida HDMI por cada monitor, porque HDMI no los encadena en serie.",
+     "Que los monitores podrían encadenarse igual, ya que HDMI 2.1 incorpora la tecnología MST de VESA.",
+     "Que la señal pasaría a ser analógica y necesitaría un convertidor para cada uno de los monitores."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §2.3",
+    "e": "El contenido resume: HDMI = consumo/audiovisual, un monitor por puerto; DisplayPort admite varios monitores en cadena (MST). HDMI es digital."
+   },
+   {
+    "q": "Windows detecta el lector de DNI electrónico, pero aparece con un aviso en el Administrador de dispositivos y no funciona. ¿Cómo debe interpretarse ese aviso?",
+    "o": [
+     "Como una avería física del chip del DNI que se ha insertado.",
+     "Como un problema de controlador (driver) del lector.",
+     "Como una interferencia con el teclado y el ratón inalámbricos."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 3 · §3.4",
+    "e": "Un dispositivo detectado pero marcado con aviso en el Administrador de dispositivos indica un problema de controlador (driver)."
+   },
+   {
+    "q": "Ante el lector de DNI que no funciona, ¿por dónde debe empezar el diagnóstico del técnico?",
+    "o": [
+     "Por reinstalar el sistema operativo del portátil para descartar daños en el sistema.",
+     "Por revertir el controlador del lector a la versión anterior que tuviera instalada.",
+     "Por comprobar lo físico: el cable y el puerto en que está conectado el lector."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §3.4",
+    "e": "El diagnóstico va de lo físico y sencillo a lo lógico y complejo: primero cable y puerto; reinstalar el sistema ante un cable suelto es el error clásico."
+   },
+   {
+    "q": "Windows ha cargado para el lector un controlador genérico, que no basta para que funcione. ¿Qué debe hacer el técnico?",
+    "o": [
+     "Instalar o actualizar el controlador del fabricante, preferiblemente firmado digitalmente.",
+     "Mantener el controlador genérico, que es el que desbloquea todas las funciones del lector.",
+     "Desactivar la exigencia de firma para poder instalar cualquier controlador que funcione."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §2.7",
+    "e": "El driver genérico da funcionalidad básica y el del fabricante desbloquea todas las funciones; la firma garantiza origen e integridad y evita código malicioso."
+   },
+   {
+    "q": "Para aislar si el fallo está en el lector de DNI o en el propio portátil, ¿qué prueba corresponde al final del diagnóstico?",
+    "o": [
+     "Reinstalar el sistema operativo del portátil antes de probar el lector en otro sitio.",
+     "Sustituir el docking por otro modelo, puesto que el lector depende de su firmware.",
+     "Probar el lector en otro equipo y, si procede, otro dispositivo en el mismo puerto."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §3.4",
+    "e": "El paso «Aislar» consiste en probar el periférico en otro equipo (¿falla el dispositivo o el equipo?) y otro dispositivo en el mismo puerto."
+   },
+   {
+    "q": "¿Cómo se aplica en el puesto la prohibición municipal de usar memorias USB no autorizadas?",
+    "o": [
+     "Cifrando con BitLocker todas las memorias USB, de modo que cualquiera de ellas pueda usarse libremente en el puesto.",
+     "Con políticas de control de dispositivos (GPO) que bloquean el almacenamiento extraíble no autorizado, junto a listas blancas.",
+     "Desactivando Plug & Play en el portátil, para que ningún dispositivo USB se detecte al conectarlo al equipo."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §3.5",
+    "e": "Se aplica con políticas de control de dispositivos y puertos por directiva de grupo (GPO) que bloquean el almacenamiento extraíble no autorizado, junto a listas blancas."
+   },
+   {
+    "q": "Además del bloqueo de memorias USB, ¿qué dos medidas de protección de la información exigibles por el Esquema Nacional de Seguridad propone la solución para el portátil?",
+    "o": [
+     "Cifrar su disco con BitLocker y someterlo a borrado seguro cuando el equipo se dé de baja.",
+     "Montar un RAID 0 en el disco y aplicarle un formateo rápido cuando el equipo se dé de baja.",
+     "Imprimir con liberación segura y conectar los dos monitores en cadena mediante DisplayPort."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · §3.6",
+    "e": "Medidas del ENS: cifrado con BitLocker (soporte perdido = ilegible) y borrado seguro del disco al dar de baja el equipo."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿por qué la impresión láser es la adecuada para el grueso del trabajo del distrito?",
+    "o": [
+     "Por su excelente reproducción del color y de las fotografías, idónea para los carteles del distrito.",
+     "Porque es la única tecnología capaz de hacer copia por presión sobre los formularios multicopia.",
+     "Por su alta velocidad y su bajo coste por página, idóneos para grandes volúmenes de texto en blanco y negro."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §4.1",
+    "e": "La láser ofrece alta velocidad y bajo coste por página, ideal para grandes volúmenes de texto en blanco y negro (informes, notificaciones)."
+   },
+   {
+    "q": "¿Qué tecnología conviene mantener para los formularios multicopia por presión de la unidad de recaudación?",
+    "o": [
+     "La impresora térmica, que transfiere la tinta de una cinta por calor sobre el papel autocopiativo.",
+     "La impresora matricial (de impacto), única que genera copia por presión sobre papel autocopiativo.",
+     "La impresora láser en red, cuyo fusor ejerce la presión suficiente para obtener las copias."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §4.1",
+    "e": "Para los formularios multicopia conviene mantener una matricial (de impacto), «la única que genera copia por presión sobre papel autocopiativo»."
+   },
+   {
+    "q": "Tras la renovación del parque, ¿a qué se reservaría, si acaso, la impresión de inyección de tinta?",
+    "o": [
+     "Al color fotográfico puntual.",
+     "A los formularios multicopia.",
+     "A las notificaciones en blanco y negro."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §4.1",
+    "e": "Con láser para el volumen y matricial para el multicopia, la inyección de tinta queda, si acaso, para el color fotográfico puntual."
+   },
+   {
+    "q": "Un empleado manda imprimir una notificación a la multifunción en red. ¿Qué hace el spooler?",
+    "o": [
+     "Traduce la página a un formato independiente del papel concreto, como hacen PostScript o PCL con cada trabajo.",
+     "Recibe el trabajo, lo pone en cola y lo envía en orden a la impresora, liberando enseguida la aplicación del usuario.",
+     "Asigna a la impresora una dirección IP propia para que cualquier equipo autorizado la use sin un PC intermediario."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §4.3",
+    "e": "El spooler recibe los trabajos, los pone en cola y los envía en orden a la impresora, liberando la aplicación y gestionando prioridades, pausas y reintentos."
+   },
+   {
+    "q": "¿Qué protocolo de impresión moderno debe citarse para las nuevas multifunción en red?",
+    "o": [
+     "LPD/LPR, el protocolo clásico de colas.",
+     "El puerto RAW 9100 de la impresora.",
+     "IPP (Internet Printing Protocol)."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §4.3",
+    "e": "IPP es el estándar moderno (base de AirPrint y de la impresión sin driver); LPD/LPR y el puerto RAW 9100 son los antiguos."
+   },
+   {
+    "q": "Para describir las páginas que enviarán los equipos a las multifunción, ¿qué ejemplos de lenguaje de descripción de página (PDL) son correctos?",
+    "o": [
+     "PostScript o PCL, además del PDF directo.",
+     "IPP o LPD/LPR, además del RAW 9100.",
+     "RGB o CMYK, además del modelo CIELAB."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §4.3",
+    "e": "Los principales PDL son PostScript, PCL y, cada vez más, PDF directo; IPP y LPD/LPR son protocolos y RGB/CMYK, modelos de color."
+   },
+   {
+    "q": "¿Qué mecanismo evita que las notificaciones con datos personales queden olvidadas en la bandeja de la multifunción?",
+    "o": [
+     "La impresión dúplex por defecto, fijada por GPO, que reduce a la mitad las hojas que salen a la bandeja de la impresora.",
+     "El spooler, que envía cada trabajo a la impresora en el orden de llegada y lo borra en cuanto termina de imprimirlo.",
+     "La impresión con liberación segura (pull printing): el documento solo se imprime cuando el usuario se identifica con tarjeta o PIN."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §4.3, §3.5",
+    "e": "Con la liberación segura el trabajo se retiene en la cola y solo se imprime cuando el usuario se identifica con su tarjeta o PIN en el equipo."
+   },
+   {
+    "q": "Al comparar los consumibles de las nuevas láser con los de las impresoras de inyección de tinta actuales, ¿qué es correcto?",
+    "o": [
+     "La tinta líquida rinde miles de páginas por cartucho, mientras que el tóner debe sustituirse con más frecuencia.",
+     "El tóner es un cartucho de polvo de alto rendimiento (miles de páginas); la tinta rinde menos y cuesta más por página.",
+     "El tóner y la tinta tienen el mismo coste por página; solo cambia la forma en que se fijan sobre el papel."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · §4.2",
+    "e": "La láser usa tóner (polvo, alto rendimiento, miles de páginas) frente a los cartuchos de tinta, de menor rendimiento y mayor coste por página."
+   },
+   {
+    "q": "¿Con qué criterio económico se decide la elección de impresoras en un parque grande como el del distrito?",
+    "o": [
+     "Con el coste por página (CPP) y el rendimiento del consumible.",
+     "Con el precio de compra de cada equipo, sin tener en cuenta el consumible.",
+     "Con la resolución en ppp que alcanza cada impresora del distrito."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · §4.2",
+    "e": "El coste por página (CPP) y el rendimiento del consumible son los criterios económicos que guían la elección en un parque grande."
+   },
+   {
+    "q": "¿Qué dos medidas de configuración centralizada por GPO propone la solución para ahorrar consumibles en el distrito?",
+    "o": [
+     "Fijar por defecto la impresión en color y a la máxima resolución en ppp.",
+     "Instalar a mano en cada puesto los drivers y la impresora por defecto.",
+     "Fijar por defecto la impresión a doble cara (dúplex) y en blanco y negro."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §3.2",
+    "e": "Con directivas de grupo (GPO) se fija la configuración: doble cara y blanco y negro por defecto para ahorrar consumibles; la instalación no se hace máquina por máquina."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿qué nivel RAID NO cumpliría el requisito de que la avería de un disco no detenga el servicio ni pierda datos?",
+    "o": [
+     "RAID 5, porque usa paridad distribuida.",
+     "RAID 0, porque reparte los datos sin redundancia.",
+     "RAID 6, porque usa doble paridad."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §5.6",
+    "e": "RAID 0 no tiene tolerancia a fallos (si falla un disco se pierde todo); RAID 5 tolera 1 fallo y RAID 6, 2 fallos."
+   },
+   {
+    "q": "Un empleado del archivo borra por error una carpeta de expedientes del servidor, que tiene RAID 6. ¿Qué es correcto?",
+    "o": [
+     "El RAID 6 recupera la carpeta de forma automática, porque tolera la avería de dos discos.",
+     "La carpeta sigue en los bloques de doble paridad y se recupera reconstruyendo el conjunto.",
+     "El RAID no protege frente al borrado: la carpeta debe restaurarse desde la copia de seguridad."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §5.6",
+    "e": "El RAID protege frente a la avería de un disco, pero NO es una copia de seguridad: no protege frente a un borrado accidental, un ransomware ni un desastre."
+   },
+   {
+    "q": "¿Cuál de estos diseños de copias cumple la regla 3-2-1 para el archivo?",
+    "o": [
+     "Datos de producción en el servidor, una copia en un NAS y otra en cinta o en la nube fuera de las instalaciones.",
+     "Datos de producción en el servidor y dos copias en cinta guardadas en el propio servicio de archivo municipal.",
+     "Datos de producción en el servidor y dos copias en otros dos volúmenes del mismo conjunto RAID del servidor."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 2 · §5.5",
+    "e": "Regla 3-2-1: 3 copias (producción + 2), en 2 tipos de soporte distintos (p. ej. NAS + cinta o nube), con 1 copia fuera de las instalaciones."
+   },
+   {
+    "q": "El archivo hace una copia completa el domingo e incrementales el resto de días. Si un ransomware cifra el servidor el viernes, ¿qué se necesita para restaurar?",
+    "o": [
+     "Solo la última copia incremental, que ya contiene todos los cambios de la semana.",
+     "La copia completa del domingo y únicamente la última incremental realizada.",
+     "La copia completa del domingo y toda la cadena de incrementales posteriores."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §5.5",
+    "e": "La incremental copia solo lo cambiado desde la última copia; para restaurar hace falta la completa y toda la cadena de incrementales."
+   },
+   {
+    "q": "Si en lugar de incrementales el archivo hiciera copias diferenciales diarias, ¿qué se necesitaría para restaurar?",
+    "o": [
+     "Solo la última diferencial realizada.",
+     "La copia completa y la última diferencial.",
+     "La completa y la primera diferencial."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §5.5",
+    "e": "La diferencial copia lo cambiado desde la última completa; la restauración se hace con solo dos piezas: completa + última diferencial."
+   },
+   {
+    "q": "¿Por qué FAT32 no serviría para el recurso de red que guarda los expedientes escaneados de más de 5 GB?",
+    "o": [
+     "Porque no admite archivos mayores de 4 GB.",
+     "Porque no puede leerse desde equipos Linux.",
+     "Porque no admite más de 4 particiones."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §5.3",
+    "e": "FAT32 es muy compatible pero tiene un límite de 4 GB por archivo, y los expedientes superan los 5 GB; el límite de 4 particiones primarias es de MBR."
+   },
+   {
+    "q": "¿Qué sistema de archivos es el habitual para el recurso de red compartido del servidor de archivo?",
+    "o": [
+     "exFAT, el sucesor de FAT32 pensado para los servidores de ficheros.",
+     "NTFS o ext4, que aportan permisos y journaling, con acceso por SMB/NFS.",
+     "ISO 9660 o UDF, por ser los formatos de archivo a largo plazo."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §5.3, §5.4",
+    "e": "Para un recurso de red compartido lo habitual es NTFS/ext4 con acceso por SMB/NFS; exFAT es para extraíbles e ISO 9660/UDF, para ópticos."
+   },
+   {
+    "q": "Al configurar el escáner del archivo para la digitalización certificada, ¿qué ajuste cumple la NTI?",
+    "o": [
+     "Capturar a 100 ppp en escala de grises, suficiente para que funcione el OCR.",
+     "Capturar a 150 ppp en color, para reducir el tamaño de los expedientes.",
+     "Capturar a 200 ppp o más y guardar en PDF/A, formato preferible para el archivo."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §6.5",
+    "e": "La NTI exige una resolución mínima de 200 ppp para el papel y formatos del catálogo de estándares, priorizando PDF/A para el archivo a largo plazo."
+   },
+   {
+    "q": "¿Cuál es el orden correcto del proceso de digitalización certificada según la NTI?",
+    "o": [
+     "Captura, optimización/OCR, metadatos, firma o CSV e incorporación al expediente.",
+     "Captura, firma o CSV, optimización/OCR, metadatos e incorporación al expediente.",
+     "Metadatos, captura, firma o CSV, optimización/OCR e incorporación al expediente."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · §6.6",
+    "e": "Pasos NTI: (1) captura; (2) optimización/OCR sin alterar el contenido; (3) metadatos mínimos; (4) firma electrónica o CSV; (5) incorporación al expediente y al archivo."
+   },
+   {
+    "q": "¿Qué permite, en el supuesto, devolver el expediente en papel al ciudadano?",
+    "o": [
+     "Que la imagen pase por OCR y se guarde como PDF buscable en el servidor del archivo.",
+     "Que la imagen, con metadatos y firma o CSV, sea una copia auténtica (art. 27 Ley 39/2015).",
+     "Que la imagen se almacene en un RAID 6 con una copia de seguridad fuera del edificio."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §6.5, §6.6",
+    "e": "Con metadatos y firma/CSV que garantizan integridad y autenticidad se obtiene una copia auténtica (art. 27 Ley 39/2015), que permite devolver el papel."
+   }
+  ]
+ }
+]

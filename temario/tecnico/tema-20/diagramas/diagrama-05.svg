@@ -1,0 +1,23 @@
+<svg aria-label="Matriz de los cuatro modificadores de acceso de Java: private, package-private, protected y public, y su visibilidad desde la misma clase, el mismo paquete, una subclase o cualquier clase" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 11px system-ui,sans-serif;fill:#fff}.s5{font:10px system-ui,sans-serif;fill:#123}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h5" text-anchor="middle" x="340" y="20">Modificadores de acceso: de más restrictivo a más abierto</text>
+<rect fill="#0055a0" height="26" width="115" x="170" y="40"></rect><text class="t5" text-anchor="middle" x="227" y="58">private</text>
+<rect fill="#0055a0" height="26" width="115" x="295" y="40"></rect><text class="t5" text-anchor="middle" x="352" y="58">(package)</text>
+<rect fill="#2d8659" height="26" width="115" x="420" y="40"></rect><text class="t5" text-anchor="middle" x="477" y="58">protected</text>
+<rect fill="#2d8659" height="26" width="115" x="545" y="40"></rect><text class="t5" text-anchor="middle" x="602" y="58">public</text>
+<line stroke="#ccc" x1="30" x2="660" y1="80" y2="80"></line>
+<text class="s5" style="font-weight:700" x="30" y="100">Misma clase</text>
+<text class="s5" text-anchor="middle" x="227" y="100">✓</text><text class="s5" text-anchor="middle" x="352" y="100">✓</text><text class="s5" text-anchor="middle" x="477" y="100">✓</text><text class="s5" text-anchor="middle" x="602" y="100">✓</text>
+<line stroke="#eee" x1="30" x2="660" y1="116" y2="116"></line>
+<text class="s5" style="font-weight:700" x="30" y="136">Mismo paquete</text>
+<text class="s5" text-anchor="middle" x="227" y="136">✗</text><text class="s5" text-anchor="middle" x="352" y="136">✓</text><text class="s5" text-anchor="middle" x="477" y="136">✓</text><text class="s5" text-anchor="middle" x="602" y="136">✓</text>
+<line stroke="#eee" x1="30" x2="660" y1="152" y2="152"></line>
+<text class="s5" style="font-weight:700" x="30" y="172">Subclase (otro paquete)</text>
+<text class="s5" text-anchor="middle" x="227" y="172">✗</text><text class="s5" text-anchor="middle" x="352" y="172">✗</text><text class="s5" text-anchor="middle" x="477" y="172">✓</text><text class="s5" text-anchor="middle" x="602" y="172">✓</text>
+<line stroke="#eee" x1="30" x2="660" y1="188" y2="188"></line>
+<text class="s5" style="font-weight:700" x="30" y="208">Cualquier clase</text>
+<text class="s5" text-anchor="middle" x="227" y="208">✗</text><text class="s5" text-anchor="middle" x="352" y="208">✗</text><text class="s5" text-anchor="middle" x="477" y="208">✗</text><text class="s5" text-anchor="middle" x="602" y="208">✓</text>
+<text style="font:700 12px system-ui;fill:#e89822" text-anchor="middle" x="325" y="250">Regla de diseño: exponer el mínimo nivel de visibilidad necesario</text>
+<text style="font:11px system-ui;fill:#444" text-anchor="middle" x="325" y="270">En UML: - private · # protected · ~ package · + public (§5.3)</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="308">[Fuente: GOSLING-JLS §6.6]</text>
+</svg>

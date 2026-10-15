@@ -1,0 +1,16 @@
+<svg aria-label="Jerarquía de empaquetado Java EE: el EAR contiene varios módulos WAR, EJB-JAR y RAR, cada uno con su propio classloader hijo, mientras que un WAR o EJB-JAR no puede contener un EAR" role="img" viewbox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 12px system-ui,sans-serif;fill:#fff}.s5{font:10px system-ui,sans-serif;fill:#fff}.l5{font:11px system-ui,sans-serif;fill:#444}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h5" text-anchor="middle" x="320" y="20">EAR contiene WAR + EJB-JAR (+ RAR) — nunca al revés</text>
+<rect fill="none" height="180" rx="8" stroke="#0055a0" stroke-dasharray="6,4" stroke-width="2" width="560" x="40" y="40"></rect>
+<text class="h5" text-anchor="middle" x="320" y="60">EAR — Enterprise Archive (application.xml)</text>
+<rect fill="#0055a0" height="60" rx="6" width="150" x="70" y="76"></rect><text class="t5" text-anchor="middle" x="145" y="100">WAR</text><text class="s5" text-anchor="middle" x="145" y="118">presentación</text>
+<rect fill="#2d8659" height="60" rx="6" width="150" x="245" y="76"></rect><text class="t5" text-anchor="middle" x="320" y="100">EJB-JAR</text><text class="s5" text-anchor="middle" x="320" y="118">negocio</text>
+<rect fill="#888" height="60" rx="6" width="150" x="420" y="76"></rect><text class="t5" text-anchor="middle" x="495" y="100">RAR</text><text class="s5" text-anchor="middle" x="495" y="118">conector JCA</text>
+<text class="l5" text-anchor="middle" x="320" y="164">Cada módulo obtiene su propio classloader hijo</text>
+<text class="l5" text-anchor="middle" x="320" y="182">dentro del classloader de la aplicación (aislamiento de dependencias)</text>
+<text style="font:700 11px system-ui;fill:#d13c3c" text-anchor="middle" x="320" y="200">WAR/EJB-JAR NO pueden contener un EAR dentro</text>
+<rect fill="#eef4fa" height="56" rx="6" stroke="#0055a0" width="520" x="60" y="236"></rect>
+<text style="font:700 12px system-ui;fill:#0055a0" text-anchor="middle" x="320" y="258">Despliegue: copiar → deploy (classloader + inicialización) → ejecutando → undeploy</text>
+<text class="l5" text-anchor="middle" x="320" y="278">El servidor de aplicaciones gestiona todo el ciclo automáticamente</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="630" y="312">[Fuente: JAKARTA-PLAT; JAKARTA-SERVLET]</text>
+</svg>

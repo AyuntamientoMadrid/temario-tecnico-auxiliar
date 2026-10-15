@@ -1,0 +1,24 @@
+<svg aria-label="Las ocho falacias de la computación distribuida enunciadas por Deutsch y Gosling, cada una enfrentada a la realidad correspondiente: la red es fiable, la latencia es cero, el ancho de banda es infinito, la red es segura, la topología no cambia, hay un único administrador, el coste de transporte es cero y la red es homogénea" role="img" viewbox="0 0 680 337" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 10px system-ui,sans-serif;fill:#fff}.s2{font:9px system-ui,sans-serif;fill:#fff}.d2{font:9px system-ui,sans-serif;fill:#333}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}.k2{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n2{font:700 10px system-ui,sans-serif;fill:#d13c3c}.f2{font:8px system-ui,sans-serif;fill:#777}</style>
+<text class="h2" text-anchor="middle" x="340" y="20">Las ocho falacias de la computación distribuida</text>
+<rect fill="#d13c3c" height="22" rx="4" width="300" x="20" y="32"></rect><text class="t2" text-anchor="middle" x="170" y="47">LO QUE SE SUPONE (FALSO)</text>
+<rect fill="#2d8659" height="22" rx="4" width="300" x="360" y="32"></rect><text class="t2" text-anchor="middle" x="510" y="47">LO QUE OCURRE DE VERDAD</text>
+<text class="n2" x="24" y="76">1</text><rect fill="#fdecec" height="24" rx="4" width="284" x="36" y="62"></rect><text class="d2" x="46" y="78">La red es fiable</text>
+<rect fill="#e8f4ec" height="24" rx="4" width="300" x="360" y="62"></rect><text class="d2" x="370" y="78">Se pierden paquetes y caen enlaces</text>
+<text class="n2" x="24" y="105">2</text><rect fill="#fdecec" height="24" rx="4" width="284" x="36" y="91"></rect><text class="d2" x="46" y="107">La latencia es cero</text>
+<rect fill="#e8f4ec" height="24" rx="4" width="300" x="360" y="91"></rect><text class="d2" x="370" y="107">La luz tiene velocidad finita</text>
+<text class="n2" x="24" y="134">3</text><rect fill="#fdecec" height="24" rx="4" width="284" x="36" y="120"></rect><text class="d2" x="46" y="136">El ancho de banda es infinito</text>
+<rect fill="#e8f4ec" height="24" rx="4" width="300" x="360" y="120"></rect><text class="d2" x="370" y="136">El caudal es finito y compartido</text>
+<text class="n2" x="24" y="163">4</text><rect fill="#fdecec" height="24" rx="4" width="284" x="36" y="149"></rect><text class="d2" x="46" y="165">La red es segura</text>
+<rect fill="#e8f4ec" height="24" rx="4" width="300" x="360" y="149"></rect><text class="d2" x="370" y="165">Hay escucha y suplantación</text>
+<text class="n2" x="24" y="192">5</text><rect fill="#fdecec" height="24" rx="4" width="284" x="36" y="178"></rect><text class="d2" x="46" y="194">La topología no cambia</text>
+<rect fill="#e8f4ec" height="24" rx="4" width="300" x="360" y="178"></rect><text class="d2" x="370" y="194">Las direcciones cambian sin avisar</text>
+<text class="n2" x="24" y="221">6</text><rect fill="#fdecec" height="24" rx="4" width="284" x="36" y="207"></rect><text class="d2" x="46" y="223">Hay un único administrador</text>
+<rect fill="#e8f4ec" height="24" rx="4" width="300" x="360" y="207"></rect><text class="d2" x="370" y="223">Intervienen terceros y proveedores</text>
+<text class="n2" x="24" y="250">7</text><rect fill="#fdecec" height="24" rx="4" width="284" x="36" y="236"></rect><text class="d2" x="46" y="252">El coste de transporte es cero</text>
+<rect fill="#e8f4ec" height="24" rx="4" width="300" x="360" y="236"></rect><text class="d2" x="370" y="252">Mover datos cuesta CPU y dinero</text>
+<text class="n2" x="24" y="279">8</text><rect fill="#fdecec" height="24" rx="4" width="284" x="36" y="265"></rect><text class="d2" x="46" y="281">La red es homogénea</text>
+<rect fill="#e8f4ec" height="24" rx="4" width="300" x="360" y="265"></rect><text class="d2" x="370" y="281">Conviven versiones y fabricantes</text>
+<rect fill="#e89822" height="20" rx="4" width="640" x="20" y="294"></rect><text class="s2" text-anchor="middle" x="340" y="308">La séptima es hoy la tarifa de salida de datos de la nube pública</text>
+<text class="f2" text-anchor="middle" x="340" y="328">[Fuente: DEUTSCH]</text>
+</svg>

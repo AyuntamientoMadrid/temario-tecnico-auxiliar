@@ -1,0 +1,19 @@
+<svg aria-label="Diagrama de polimorfismo: una lista de referencias de tipo Expediente contiene objetos de distintas subclases, y al invocar calcularPlazoResolucion se ejecuta la versión de la clase real de cada objeto en tiempo de ejecución" role="img" viewbox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t8{font:700 11px system-ui,sans-serif;fill:#fff}.m8{font:10.5px monospace;fill:#123}.l8{font:11px system-ui,sans-serif;fill:#444}.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h8" text-anchor="middle" x="330" y="20">Polimorfismo: mismo mensaje, distinta ejecución según el objeto real</text>
+<rect fill="#0055a0" height="30" width="220" x="40" y="40"></rect><text class="t8" text-anchor="middle" x="150" y="60">List&lt;Expediente&gt; expedientes</text>
+<line stroke="#0055a0" stroke-width="2" x1="90" x2="90" y1="70" y2="106"></line>
+<line stroke="#0055a0" stroke-width="2" x1="210" x2="210" y1="70" y2="106"></line>
+<rect fill="#2d8659" height="30" rx="4" width="150" x="30" y="106"></rect><text class="t8" text-anchor="middle" x="105" y="126">e : ExpLicencia</text>
+<rect fill="#2d8659" height="30" rx="4" width="160" x="200" y="106"></rect><text class="t8" text-anchor="middle" x="280" y="126">e : ExpTributario</text>
+<text class="l8" x="372" y="160">e.calcularPlazoResolucion()  →</text><text class="l8" x="372" y="176">la JVM consulta la tabla de métodos de la clase REAL</text>
+<line stroke="#2d8659" stroke-width="2" x1="105" x2="105" y1="136" y2="200"></line>
+<line stroke="#2d8659" stroke-width="2" x1="280" x2="280" y1="136" y2="200"></line>
+<rect fill="#eef4fa" height="34" rx="4" stroke="#2d8659" width="150" x="30" y="200"></rect><text class="m8" text-anchor="middle" x="105" y="222">return 90</text>
+<rect fill="#eef4fa" height="34" rx="4" stroke="#2d8659" width="160" x="200" y="200"></rect><text class="m8" text-anchor="middle" x="280" y="222">return 20</text>
+<text class="l8" text-anchor="middle" x="105" y="256">tipo declarado:</text>
+<text class="l8" text-anchor="middle" x="105" y="270">Expediente</text>
+<text class="l8" text-anchor="middle" x="280" y="256">tipo real: distinto</text>
+<text class="l8" text-anchor="middle" x="280" y="270">en cada iteración</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="650" y="308">[Fuente: BOOCH07; GOSLING-JLS]</text>
+</svg>

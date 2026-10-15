@@ -1,0 +1,47 @@
+<svg aria-label="Los cuatro tipos de mantenimiento de la norma ISO 14764: correctivo tras un fallo, preventivo antes del fallo, perfectivo para mejorar y adaptativo para acomodar cambios del entorno. Se muestra su correspondencia con la terminología preventivo, correctivo y evolutivo del enunciado oficial y una lista de tareas preventivas típicas" role="img" viewbox="0 0 680 330" xmlns="http://www.w3.org/2000/svg">
+<style>.t11{font:700 11px system-ui,sans-serif;fill:#fff}.s11{font:9px system-ui,sans-serif;fill:#fff}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}.k11{font:700 10px system-ui,sans-serif;fill:#0055a0}.d11{font:9px system-ui,sans-serif;fill:#444}</style>
+<text class="h11" text-anchor="middle" x="340" y="20">¿Ha fallado ya? La pregunta que clasifica el mantenimiento</text>
+<rect fill="#0055a0" height="26" rx="4" width="322" x="16" y="34"></rect>
+<text class="t11" text-anchor="middle" x="177" y="53">RESPONDE A UN FALLO</text>
+<rect fill="#2d8659" height="26" rx="4" width="318" x="346" y="34"></rect>
+<text class="t11" text-anchor="middle" x="505" y="53">NO RESPONDE A NINGÚN FALLO</text>
+<rect fill="#d13c3c" height="94" rx="5" width="156" x="16" y="68"></rect>
+<text class="t11" text-anchor="middle" x="94" y="88">CORRECTIVO</text>
+<text class="s11" text-anchor="middle" x="94" y="108">Reactivo: ya ha fallado</text>
+<text class="s11" text-anchor="middle" x="94" y="126">Reinstalar un servicio</text>
+<text class="s11" text-anchor="middle" x="94" y="141">corrupto, corregir una</text>
+<text class="s11" text-anchor="middle" x="94" y="156">configuración errónea</text>
+<rect fill="#e89822" height="94" rx="5" width="158" x="180" y="68"></rect>
+<text class="t11" text-anchor="middle" x="259" y="88">PREVENTIVO</text>
+<text class="s11" text-anchor="middle" x="259" y="108">Proactivo: aún no falla</text>
+<text class="s11" text-anchor="middle" x="259" y="126">Sustituir un disco con</text>
+<text class="s11" text-anchor="middle" x="259" y="141">sectores reasignados,</text>
+<text class="s11" text-anchor="middle" x="259" y="156">ampliar un volumen al 80 %</text>
+<rect fill="#0055a0" height="94" rx="5" width="156" x="346" y="68"></rect>
+<text class="t11" text-anchor="middle" x="424" y="88">PERFECTIVO</text>
+<text class="s11" text-anchor="middle" x="424" y="108">Mejorar lo que ya va bien</text>
+<text class="s11" text-anchor="middle" x="424" y="126">Ajustar parámetros,</text>
+<text class="s11" text-anchor="middle" x="424" y="141">automatizar una tarea</text>
+<text class="s11" text-anchor="middle" x="424" y="156">manual, reorganizar</text>
+<rect fill="#7a3b8f" height="94" rx="5" width="154" x="510" y="68"></rect>
+<text class="t11" text-anchor="middle" x="587" y="88">ADAPTATIVO</text>
+<text class="s11" text-anchor="middle" x="587" y="108">Cambia el entorno</text>
+<text class="s11" text-anchor="middle" x="587" y="126">Migrar a una versión</text>
+<text class="s11" text-anchor="middle" x="587" y="141">soportada, adaptarse a</text>
+<text class="s11" text-anchor="middle" x="587" y="156">nuevo hardware o norma</text>
+<rect fill="none" height="28" rx="4" stroke="#2d8659" stroke-width="2" width="318" x="346" y="170"></rect>
+<text class="k11" text-anchor="middle" x="505" y="189">El enunciado oficial los llama, juntos, EVOLUTIVO</text>
+<rect fill="none" height="28" rx="4" stroke="#0055a0" stroke-width="2" width="322" x="16" y="170"></rect>
+<text class="k11" text-anchor="middle" x="177" y="189">Predictivo = preventivo guiado por telemetría (S.M.A.R.T.)</text>
+<rect fill="#f0f4f8" height="96" rx="5" stroke="#0055a0" width="648" x="16" y="208"></rect>
+<text class="k11" text-anchor="middle" x="340" y="226">Tareas preventivas típicas de un sistema operativo</text>
+<text class="d11" text-anchor="middle" x="176" y="246">Rotación y purga de registros</text>
+<text class="d11" text-anchor="middle" x="176" y="262">Limpieza de temporales y núcleos viejos</text>
+<text class="d11" text-anchor="middle" x="176" y="278">Vigilancia del espacio libre (80 % / 90 %)</text>
+<text class="d11" text-anchor="middle" x="176" y="294">Salud del hardware: S.M.A.R.T., memoria</text>
+<text class="d11" text-anchor="middle" x="500" y="246">Verificar copias Y probar restauración</text>
+<text class="d11" text-anchor="middle" x="500" y="262">Retirar servicios y puertos innecesarios</text>
+<text class="d11" text-anchor="middle" x="500" y="278">Comprobar la sincronización horaria (NTP)</text>
+<text class="d11" text-anchor="middle" x="500" y="294">SSD: TRIM, nunca desfragmentar</text>
+<text style="font:9.5px system-ui;fill:#666" text-anchor="end" x="670" y="324">[Fuente: ISO14764; SMART-DOC; RFC5905]</text>
+</svg>

@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, el nombre ayudas.sede.madrid.es se resolverá desde un único servidor DNS autoritativo alojado en el CPD del IAM. ¿Qué riesgo introduce y qué debe proponerse?",
+    "o": [
+     "Es un punto único de fallo; procede añadir un segundo autoritativo en el mismo CPD y en la misma red.",
+     "Es un riesgo menor, porque los resolutores guardan la zona en caché de forma indefinida y siempre la sirven.",
+     "Es un punto único de fallo; procede contar con al menos dos autoritativos en redes y emplazamientos distintos."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §2.2.3",
+    "e": "Si el DNS autoritativo cae, ningún servidor deja de funcionar, pero nadie los encuentra: el efecto es el de una caída total. La redundancia exige servidores en redes y emplazamientos distintos (primario y secundarios por transferencia de zona)."
+   },
+   {
+    "q": "Para proteger la zona madrid.es frente a la suplantación de respuestas y el envenenamiento de caché, ¿qué medida debe incluir el informe?",
+    "o": [
+     "Activar DNS sobre TLS (DoT) en el autoritativo, que firma las respuestas y acredita su origen.",
+     "Firmar la zona con DNSSEC, que aporta autenticidad e integridad a las respuestas del DNS.",
+     "Publicar un registro CAA, que cifra las respuestas que el autoritativo envía a los resolutores."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §2.2.3",
+    "e": "DNSSEC firma digitalmente las respuestas: aporta autenticidad e integridad, no confidencialidad. DoT cifra el canal pero no firma el dato, y CAA solo declara qué autoridades de certificación pueden emitir certificados."
+   },
+   {
+    "q": "Sobre la decisión de publicar el trámite solo en IPv4, ¿qué debe proponer el informe técnico?",
+    "o": [
+     "Publicarlo en doble pila IPv4/IPv6 y duplicar las reglas del cortafuegos en ambos protocolos.",
+     "Mantener solo IPv4, porque con una adopción de IPv6 en torno al 10 % la doble pila no aporta nada.",
+     "Publicarlo en doble pila, con las reglas del cortafuegos de IPv4, que se aplican también a IPv6."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.2.2",
+    "e": "La doble pila no perjudica a los usuarios IPv4 y evita penalizar a los que acceden desde redes móviles con CGNAT; pero una regla de cortafuegos que solo cubre IPv4 deja abierta la puerta IPv6, por lo que hay que duplicarlas."
+   },
+   {
+    "q": "El puerto 80 se mantiene abierto únicamente para redirigir con un 301 a HTTPS. ¿Qué falta para impedir que un intermediario degrade la conexión del ciudadano (SSL stripping)?",
+    "o": [
+     "Sustituir el 301 por una redirección 302, que el navegador no almacena y repite en cada visita.",
+     "Añadir HSTS con includeSubDomains y, si el dominio lo permite, solicitar la precarga.",
+     "Activar el grapado OCSP, que comprueba el certificado antes de la primera petición por HTTP."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §5.2.1",
+    "e": "La redirección es necesaria pero insuficiente: la primera petición viaja en claro y puede interceptarse. HSTS obliga al navegador a usar siempre HTTPS con el dominio, y la precarga aplica la protección desde la primera visita."
+   },
+   {
+    "q": "¿Qué versiones del protocolo debe admitir en 2026 el servidor que publica el nuevo trámite?",
+    "o": [
+     "Solo TLS 1.3, porque TLS 1.2 se declaró obsoleto por el RFC 8996 junto con TLS 1.0 y TLS 1.1.",
+     "De TLS 1.0 a TLS 1.3, porque TLS 1.0 y 1.1 siguen vigentes para no dejar fuera a equipos antiguos.",
+     "TLS 1.2 y TLS 1.3, con preferencia por 1.3, deshabilitando SSL 2.0 y 3.0 y TLS 1.0 y 1.1."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §5.1.1",
+    "e": "SSL 2.0 y 3.0 están prohibidos (RFC 6176 y 7568) y TLS 1.0 y 1.1 son obsoletos (RFC 8996); siguen vigentes TLS 1.2 y TLS 1.3."
+   },
+   {
+    "q": "El equipo de proyecto quiere contratar un certificado de un año con renovación manual anotada en la agenda del responsable. ¿Cómo debe valorarse?",
+    "o": [
+     "No es viable: desde el 15 de marzo de 2026 el máximo es de 200 días, y hay que automatizar la renovación (ACME).",
+     "Es viable, porque el límite de 200 días del CA/Browser Forum no se aplicará a los certificados hasta 2027.",
+     "No es viable: desde marzo de 2026 el máximo es de 47 días, por lo que habría que renovarlo cada mes y medio."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §5.1.2",
+    "e": "El CA/Browser Forum fija un máximo de 200 días desde el 15 de marzo de 2026, que bajará a 100 días en 2027 y a 47 en 2029. Con plazos tan cortos la renovación manual deja de ser sostenible: renovación automatizada, inventario con responsable y alertas."
+   },
+   {
+    "q": "La aplicación guarda la sesión en una cookie sin atributos. ¿Qué atributos mitigan, respectivamente, la interceptación en tránsito, el robo por XSS y la falsificación de petición en sitios cruzados (CSRF)?",
+    "o": [
+     "HttpOnly, Secure y SameSite=None.",
+     "Secure, SameSite=Strict y HttpOnly.",
+     "Secure, HttpOnly y SameSite=Lax o Strict."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §4.2.2",
+    "e": "Secure impide que la cookie viaje por HTTP; HttpOnly la hace inaccesible desde JavaScript, lo que mitiga el robo por XSS; y SameSite controla su envío en peticiones de origen cruzado, lo que mitiga el CSRF."
+   },
+   {
+    "q": "Un desarrollador propone devolver las páginas con datos del solicitante con Cache-Control: no-cache, para que no queden en el navegador de un puesto compartido. ¿Es adecuado?",
+    "o": [
+     "No: no-cache permite almacenar la respuesta y solo obliga a revalidarla; procede no-store, private.",
+     "Sí: no-cache prohíbe almacenar la respuesta en cualquier caché, incluida la del navegador del puesto.",
+     "No: no-cache solo afecta a las cachés intermedias; procede public, que limita la copia al navegador."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §4.2.2",
+    "e": "no-cache sí permite almacenar la respuesta, aunque obliga a revalidarla antes de reutilizarla; no-store prohíbe almacenarla en cualquier caché, y private excluye las cachés compartidas."
+   },
+   {
+    "q": "El sistema está categorizado MEDIA conforme al ENS. ¿Qué exige el ENS para el cifrado del canal de este servicio?",
+    "o": [
+     "La medida mp.com.2 solo en categoría ALTA; en MEDIA basta con cualquier algoritmo de TLS.",
+     "La medida mp.com.2 con su refuerzo R1: algoritmos y parámetros autorizados por el CCN.",
+     "La medida mp.info.3, que en nivel MEDIO exige firmar electrónicamente cada respuesta."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §6.1.1 · mp.com.2 ENS",
+    "e": "mp.com.2 (protección de la confidencialidad) se aplica desde nivel BAJO y, desde nivel MEDIO, añade el refuerzo R1: algoritmos y parámetros autorizados por el CCN."
+   },
+   {
+    "q": "¿Qué precepto legal ampara la exigencia de que el nuevo trámite se sirva con certificado de sede y comunicación segura?",
+    "o": [
+     "El artículo 32 del RGPD, que regula los certificados de sede electrónica.",
+     "El Real Decreto 1112/2018, que regula la sede electrónica y sus certificados.",
+     "El artículo 38 de la Ley 40/2015, desarrollado por el Real Decreto 203/2021."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 4 · art. 38 Ley 40/2015",
+    "e": "Conforme al artículo 38 de la Ley 40/2015, las comunicaciones de la sede se realizan mediante certificados de sede electrónica; el RD 203/2021 lo desarrolla. El art. 32 del RGPD trata la seguridad del tratamiento y el RD 1112/2018, la accesibilidad."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "En el aviso 1, ping 8.8.8.8 responde y ping sede.madrid.es devuelve «host desconocido». ¿Dónde está el problema?",
+    "o": [
+     "En la capa de enlace, porque el puesto no obtiene la dirección MAC de la pasarela.",
+     "En la resolución de nombres (DNS), servicio de la capa de aplicación; la red funciona.",
+     "En la capa de transporte, porque el cortafuegos bloquea el puerto 443 de la sede."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §2.1.2",
+    "e": "Si el ping a una dirección IP externa funciona, las capas física, de enlace y de internet están operativas. Lo que falla es traducir el nombre, que es un servicio de la capa de aplicación."
+   },
+   {
+    "q": "Para confirmar si el fallo del aviso 1 está en el resolutor de la organización, ¿qué comprobación procede?",
+    "o": [
+     "nslookup sede.madrid.es contra el DNS corporativo y después contra uno externo, comparando los resultados.",
+     "Repetir ping 8.8.8.8 con paquetes de mayor tamaño, para descartar un problema de fragmentación.",
+     "Borrar las cookies del navegador, para descartar que la sesión de la sede haya caducado en el puesto."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §2.2.3",
+    "e": "Si la resolución solo falla contra el DNS corporativo y funciona contra uno externo, el problema está en el resolutor que usa el puesto, no en la sede. Que la sede abra desde el móvil con el DNS del operador apunta en la misma dirección."
+   },
+   {
+    "q": "Teniendo en cuenta que esa mañana un proveedor conectó un portátil a una toma de la zona de público, ¿cuál es la causa más probable del aviso 1?",
+    "o": [
+     "Un conflicto de direcciones MAC entre el portátil y el puesto, que impide resolver nombres en la red.",
+     "Un bucle de conmutación causado por el portátil, que ha saturado la red de tramas de difusión.",
+     "Un servidor DHCP no autorizado en el portátil, que ha entregado a los puestos un DNS y una pasarela falsos."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §3.2.2",
+    "e": "DHCP no autentica: un servidor no autorizado conectado a una toma de red puede repartir configuraciones falsas, rompiendo la resolución y convirtiéndose en intermediario de todo el tráfico. Un bucle saturaría la red y fallaría también el ping a la IP."
+   },
+   {
+    "q": "En el aviso 2, al enviar el formulario el navegador muestra «502 Bad Gateway». ¿Quién emite ese código y qué significa?",
+    "o": [
+     "Un intermediario (proxy inverso o balanceador), porque el servidor de origen le devolvió una respuesta inválida.",
+     "La aplicación de origen, ante un error genérico no controlado que se ha producido dentro del propio servidor.",
+     "El navegador del puesto, porque no ha podido validar la respuesta cifrada recibida del servidor de la sede."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §4.2.1",
+    "e": "El 502 lo emite un intermediario cuando el origen le devuelve una respuesta inválida. El error genérico de la propia aplicación es el 500."
+   },
+   {
+    "q": "Si en lugar de «503 Service Unavailable» los usuarios hubieran recibido «504 Gateway Timeout», ¿qué indicaría?",
+    "o": [
+     "Que el servicio está en mantenimiento y puede indicarse cuándo reintentar con Retry-After.",
+     "Que el intermediario no recibió a tiempo la respuesta del servidor de origen.",
+     "Que el usuario está autenticado pero no tiene permiso para enviar ese formulario."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §4.2.1",
+    "e": "El 504 lo emite un intermediario cuando el origen no responde a tiempo. La indisponibilidad temporal con Retry-After corresponde al 503, y la falta de permiso de un usuario autenticado, al 403."
+   },
+   {
+    "q": "Ante la secuencia de 502 y, poco después, 503 generalizado, ¿cómo debe actuar el Centro de Atención a Usuarios?",
+    "o": [
+     "Reinstalar el navegador de los puestos afectados, porque los códigos 5xx señalan un error del cliente.",
+     "Revisar el DNS de cada puesto de la oficina, porque el 503 indica que el nombre no se ha resuelto.",
+     "Escalarlo al equipo de la aplicación, porque los códigos 5xx señalan un problema del lado del servidor."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §4.2.1",
+    "e": "La familia 5xx es responsabilidad del servidor, y la 4xx del cliente. La secuencia apunta a que la aplicación de origen ha dejado de responder bien, así que no procede intervenir en la oficina."
+   },
+   {
+    "q": "En el aviso 3, el empleado ha entrado en el servicio interno escribiendo su dirección IP en lugar del nombre. ¿Por qué puede aparecer el aviso de certificado no válido?",
+    "o": [
+     "Porque TLS no puede negociarse cuando se accede a un servidor por su dirección IP en lugar del nombre.",
+     "Porque la IP no figura en la extensión subjectAltName, que es donde el navegador comprueba el nombre.",
+     "Porque al usar la IP el navegador deja de consultar las AC raíz de su almacén de confianza."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §5.1.2",
+    "e": "El navegador comprueba que el nombre solicitado figure en la extensión subjectAltName (SAN). Si se accede por la IP o por un alias que no está en el SAN, la validación falla."
+   },
+   {
+    "q": "El empleado pregunta si puede «darle a continuar» para entrar en el servicio interno. ¿Qué debe responderse?",
+    "o": [
+     "Que sí: al ser un servicio interno, el tráfico no sale de la red municipal y el aviso no supone riesgo.",
+     "Que sí, siempre que al terminar borre el historial y las cookies del navegador del puesto de trabajo.",
+     "Que no: aceptar el aviso anula la garantía de TLS de saber con quién se habla, y hay que corregir la causa."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §5.1.2",
+    "e": "Aceptar el aviso anula precisamente lo que aporta TLS: la certeza de hablar con quien se cree. Acostumbrar al usuario a aceptar avisos es la puerta de entrada de los ataques de intermediario."
+   },
+   {
+    "q": "Para que un equipo conectado a una toma de público no vuelva a repartir configuraciones de red, ¿qué medida debe activarse en el conmutador de planta?",
+    "o": [
+     "DHCP snooping, que solo admite respuestas DHCP por los puertos de confianza, junto con RA Guard para IPv6.",
+     "DHCPv6 sin estado en los puestos, que impide que cualquier equipo ajeno reparta direcciones en la red.",
+     "Concesiones DHCP de pocos minutos, para que la configuración falsa caduque antes de causar daños."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · §3.2.2",
+    "e": "DHCP snooping admite respuestas DHCP solo por los puertos declarados de confianza, y RA Guard cubre el equivalente IPv6 (anuncios de encaminador falsos). Se completa con 802.1X, tomas no usadas deshabilitadas y VLAN separada."
+   },
+   {
+    "q": "¿Qué medida del ENS respalda llevar los equipos ajenos al Ayuntamiento y la zona de público a una VLAN separada?",
+    "o": [
+     "mp.com.3, protección de la integridad y de la autenticidad.",
+     "mp.com.4, separación de flujos de información en la red.",
+     "mp.s.4, protección frente a la denegación de servicio."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · §6.1.1 · mp.com.4 ENS",
+    "e": "mp.com.4 exige segregar el tráfico, con refuerzos por VLAN o redes separadas y un segmento propio para las comunicaciones inalámbricas."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el asunto A, el correo fraudulento muestra como remitente tesoreria@madrid.es sin haber salido de los servidores municipales. ¿Cuál es la raíz del problema?",
+    "o": [
+     "Que SMTP no autentica la cabecera From, que es la que ve el destinatario.",
+     "Que el atacante ha obtenido la clave privada DKIM del dominio municipal.",
+     "Que SPF publica el From visible y permite que cualquier servidor lo use."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §3.1.1",
+    "e": "SMTP no autentica la cabecera From, de modo que cualquiera puede escribir en ella lo que quiera. SPF, DKIM y DMARC existen para tapar ese agujero; aquí, además, no hay DKIM configurado."
+   },
+   {
+    "q": "El dominio tiene un registro SPF terminado en ~all. ¿Qué comprueba SPF y por qué no ha bastado?",
+    "o": [
+     "Comprueba el From visible; con ~all el receptor debía rechazar el mensaje, pero ignoró la política.",
+     "Comprueba la firma del cuerpo del mensaje; con ~all se acepta el correo aunque la firma no cuadre.",
+     "Comprueba la envuelta (MAIL FROM); con ~all el fallo es blando y, además, no protege el From visible."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §3.1.1",
+    "e": "SPF publica qué servidores pueden enviar con el dominio y se comprueba contra la envuelta, no contra el From visible. Con ~all el receptor puede aceptar el mensaje marcándolo."
+   },
+   {
+    "q": "El registro DMARC del dominio tiene la política p=none. ¿Qué efecto tiene?",
+    "o": [
+     "Pide al receptor que rechace los mensajes no alineados, salvo los que lleguen firmados.",
+     "Solo observa e informa: no pide al receptor ninguna acción ante el fallo de alineamiento.",
+     "Pide al receptor que envíe a cuarentena los mensajes con SPF terminado en ~all."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §3.1.1",
+    "e": "DMARC exige el alineamiento entre el From visible y lo validado por SPF o DKIM, y fija la política ante el fallo (none, quarantine, reject). Con p=none no dice al receptor qué hacer."
+   },
+   {
+    "q": "El dominio no tiene DKIM configurado. ¿Qué aportaría ese mecanismo?",
+    "o": [
+     "El cifrado del mensaje de extremo a extremo entre el servidor municipal y el destinatario.",
+     "La lista de direcciones IP autorizadas para enviar correo en nombre de madrid.es.",
+     "Una firma criptográfica de cabeceras y cuerpo, con la clave pública publicada en el DNS."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §3.1.1",
+    "e": "DKIM firma criptográficamente cabeceras y cuerpo con una clave cuya pública se publica en el DNS, bajo un selector. La lista de servidores autorizados es SPF, y DKIM no cifra el mensaje."
+   },
+   {
+    "q": "Para corregir la configuración del correo sin bloquear mensajes legítimos, ¿qué debe hacerse en primer lugar?",
+    "o": [
+     "Inventariar todos los emisores legítimos del dominio, incluidas plataformas de notificación y de boletines.",
+     "Pasar DMARC directamente a p=reject, para cortar cuanto antes la campaña de suplantación en curso.",
+     "Endurecer SPF a -all, porque es el cambio con menos riesgo de bloquear el correo legítimo del dominio."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 2 · §3.1.1",
+    "e": "Endurecer la política antes de tener DKIM y el inventario de emisores es la causa más frecuente de que se pierda correo legítimo. El orden es: inventario, DKIM, SPF -all y DMARC progresivo."
+   },
+   {
+    "q": "Una vez desplegado DKIM y endurecido SPF, ¿cómo debe evolucionar la política DMARC?",
+    "o": [
+     "De p=reject a p=quarantine, relajándola en cuanto lleguen quejas por correo legítimo bloqueado.",
+     "De p=none con informes agregados a p=quarantine con porcentaje creciente y, al final, a p=reject.",
+     "De p=none directamente a p=reject en cuanto se publique el SPF con -all, sin fases intermedias."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §3.1.1",
+    "e": "El escalado es progresivo: unas semanas en p=none recibiendo informes agregados, después p=quarantine con porcentaje creciente y, como objetivo, p=reject."
+   },
+   {
+    "q": "En el asunto B, el proveedor propone publicar el fichero en un FTP anónimo accesible desde internet. ¿Por qué debe rechazarse?",
+    "o": [
+     "Porque no autentica a quien accede, y FTP transmite las credenciales y los datos en claro.",
+     "Porque FTP solo admite ficheros de texto y el de los solicitantes contiene datos binarios.",
+     "Porque el FTP anónimo cifra el fichero con una clave pública que cualquiera puede obtener."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §3.1.2",
+    "e": "Un FTP anónimo no autentica a quien accede y FTP transmite credenciales y datos en claro: un fichero con datos personales expuesto así es una violación de seguridad en potencia."
+   },
+   {
+    "q": "Como alternativa, el proveedor ofrece «FTP seguro» y duda entre SFTP y FTPS. ¿Qué opción es preferible y por qué?",
+    "o": [
+     "FTPS, que es la variante de SFTP que añade TLS a SSH y evita así tener que abrir el puerto 22.",
+     "SFTP, subsistema de SSH que usa un solo canal en el puerto 22 y admite autenticación por par de claves.",
+     "FTPS, porque usa un único canal cifrado y evita los problemas de cortafuegos del modo activo."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §3.1.2",
+    "e": "FTPS es FTP envuelto en TLS y conserva sus dos canales, con los problemas de cortafuegos del modo activo. SFTP no tiene relación con FTP: es SSH, con un solo canal en el puerto 22 y autenticación por clave."
+   },
+   {
+    "q": "¿Qué medida del ENS respalda la protección del correo electrónico municipal y la actuación frente al correo no solicitado, y en qué categorías es exigible?",
+    "o": [
+     "mp.s.1, protección del correo electrónico, exigible solo desde categoría MEDIA.",
+     "mp.com.4, separación de flujos de información, exigible solo en categoría ALTA.",
+     "mp.s.1, protección del correo electrónico, exigible en las tres categorías."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §6.1.1 · mp.s.1 ENS",
+    "e": "mp.s.1 protege la información y los datos de encaminamiento del correo y actúa frente a correo no solicitado, código dañino y código móvil, con normativa de uso y concienciación; se exige en las tres categorías."
+   },
+   {
+    "q": "Si el fichero de los solicitantes llegara a exfiltrarse, ¿qué preceptos regulan la notificación de esa violación de seguridad?",
+    "o": [
+     "Los artículos 33 y 34 del RGPD, con notificación en el plazo de 72 horas.",
+     "El artículo 38 de la Ley 40/2015, con notificación en el plazo de 24 horas.",
+     "El artículo 32 del RGPD, con notificación en el plazo de diez días hábiles."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · arts. 33 y 34 RGPD",
+    "e": "Conforme a los artículos 33 y 34 del RGPD, la violación de seguridad de datos personales se notifica en 72 horas. El artículo 32 regula la seguridad del tratamiento y el 38 de la Ley 40/2015, la sede electrónica."
+   }
+  ]
+ }
+]

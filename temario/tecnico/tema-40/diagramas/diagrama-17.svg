@@ -1,0 +1,43 @@
+<svg aria-label="La norma DISCAS de AVIXA para calcular el tamaño mínimo de imagen: dos categorías de necesidad visual, decisión básica con factor de agudeza 200 y decisión analítica con factor de agudeza 3438, sus fórmulas, y la zona de visión válida en planta delimitada por el espectador más cercano y el más lejano" role="img" viewbox="0 0 680 392" xmlns="http://www.w3.org/2000/svg">
+<style>.h17{font:700 13px system-ui,sans-serif;fill:#0055a0}.k17{font:700 10px system-ui,sans-serif;fill:#0055a0}.d17{font:9px system-ui,sans-serif;fill:#333}.n17{font:8.5px system-ui,sans-serif;fill:#666}.w17{font:700 9.5px system-ui,sans-serif;fill:#fff}.f17{font:700 11px ui-monospace,monospace;fill:#0055a0}.g17{font:700 9.5px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h17" text-anchor="middle" x="340" y="19">DISCAS: el tamaño de la pantalla no es una opinión, es una norma</text>
+<text class="n17" text-anchor="middle" x="340" y="35">ANSI/AVIXA V202.01 — edición vigente :2026 · formulación de la edición :2016</text>
+<rect fill="#eef4fa" height="104" rx="4" width="312" x="22" y="48"></rect>
+<rect fill="#0055a0" height="20" rx="4" width="312" x="22" y="48"></rect>
+<text class="w17" text-anchor="middle" x="178" y="62">DECISIÓN BÁSICA (BDM) — factor de agudeza 200</text>
+<text class="d17" x="32" y="83">El espectador decide SIN resolver cada detalle:</text>
+<text class="d17" x="32" y="96">presentaciones, aulas, salas de juntas, señalización</text>
+<text class="f17" text-anchor="middle" x="178" y="118">IH = FV / (200 × %EH)</text>
+<text class="f17" text-anchor="middle" x="178" y="134">FV = IH × %EH × 200</text>
+<text class="n17" x="32" y="147">%EH = altura del elemento más pequeño, en % de la altura de imagen</text>
+<rect fill="#fdf3e3" height="104" rx="4" width="312" x="346" y="48"></rect>
+<rect fill="#e89822" height="20" rx="4" width="312" x="346" y="48"></rect>
+<text class="w17" text-anchor="middle" x="502" y="62">DECISIÓN ANALÍTICA (ADM) — factor de agudeza 3438</text>
+<text class="d17" x="356" y="83">El espectador debe RESOLVER CADA ELEMENTO: imagen</text>
+<text class="d17" x="356" y="96">médica, planos, esquemas, inspección, análisis forense</text>
+<text class="f17" text-anchor="middle" x="502" y="118">IH = (IR × FV) / 3438</text>
+<text class="f17" text-anchor="middle" x="502" y="134">FV = (IH / IR) × 3438</text>
+<text class="n17" x="356" y="147">IR = resolución vertical · 3438 = minutos de arco de un radián</text>
+<text class="k17" x="24" y="172">LA ZONA DE VISIÓN VÁLIDA, EN PLANTA</text>
+<rect fill="#0055a0" height="9" width="180" x="250" y="182"></rect>
+<text class="k17" text-anchor="end" x="242" y="190">PANTALLA</text>
+<path d="M250 191 L140 292 L540 292 L430 191 Z" fill="#e6f2ec" stroke="#2d8659" stroke-width="1.2"></path>
+<line stroke="#d13c3c" stroke-dasharray="5,3" stroke-width="1.4" x1="222" x2="458" y1="217" y2="217"></line>
+<line stroke="#d13c3c" stroke-dasharray="5,3" stroke-width="1.4" x1="141" x2="539" y1="291" y2="291"></line>
+<text class="g17" text-anchor="middle" x="340" y="250">ZONA DE VISIÓN CONFORME</text>
+<text class="d17" text-anchor="middle" x="340" y="266">La delimitan las dos líneas rojas</text>
+<text class="n17" x="30" y="212">IO = desplazamiento</text>
+<text class="n17" x="30" y="224">vertical de la imagen</text>
+<text class="n17" x="30" y="284">1,732 = tan 60°</text>
+<text class="n17" x="30" y="296">(30° sobre el ojo)</text>
+<text class="n17" x="556" y="212">CV: espectador</text>
+<text class="n17" x="556" y="224">MÁS CERCANO</text>
+<text class="n17" x="556" y="284">FV: espectador</text>
+<text class="n17" x="556" y="296">MÁS LEJANO</text>
+<text class="d17" text-anchor="middle" x="340" y="312">CV = (IH + IO) × 1,732 · Y en el plano horizontal: ningún espectador a más de 60° de cualquier punto de la imagen</text>
+<rect fill="#fdf3e3" height="46" rx="4" width="636" x="22" y="324"></rect>
+<text class="k17" x="32" y="339">LA CONSECUENCIA PRESUPUESTARIA QUE NADIE ESPERA</text>
+<text class="d17" x="32" y="352">La pantalla que la norma exige suele ser bastante mayor que la que se instala por costumbre. Si no cabe, la salida no es resignarse:</text>
+<text class="d17" x="32" y="364">es ACERCAR al espectador más lejano o AUMENTAR el tamaño de letra, que es lo que hace crecer el %EH y relaja la exigencia</text>
+<text class="n17" text-anchor="end" x="658" y="384">[Fuente: ANSI/AVIXA V202.01 (DISCAS)]</text>
+</svg>

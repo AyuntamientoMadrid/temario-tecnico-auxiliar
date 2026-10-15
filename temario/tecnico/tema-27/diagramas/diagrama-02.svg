@@ -1,0 +1,48 @@
+<svg aria-label="Comparación de tres arquitecturas de núcleo: monolítico con todos los servicios en modo núcleo, micronúcleo con servicios en modo usuario comunicados por paso de mensajes, e híbrido o modular como compromiso. Se indican ejemplos, ventajas e inconvenientes de cada uno" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 11px system-ui,sans-serif;fill:#fff}.s2{font:9.5px system-ui,sans-serif;fill:#fff}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}.k2{font:700 10.5px system-ui,sans-serif;fill:#0055a0}.d2{font:9.5px system-ui,sans-serif;fill:#444}.g2{font:700 9.5px system-ui,sans-serif;fill:#2d8659}.r2{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h2" text-anchor="middle" x="340" y="20">¿Cuánto código se ejecuta en modo núcleo?</text>
+<text class="k2" text-anchor="middle" x="118" y="42">MONOLÍTICO</text>
+<text class="k2" text-anchor="middle" x="340" y="42">MICRONÚCLEO</text>
+<text class="k2" text-anchor="middle" x="562" y="42">HÍBRIDO / MODULAR</text>
+<rect fill="#ddd" height="24" rx="4" width="196" x="20" y="52"></rect>
+<text class="d2" text-anchor="middle" x="118" y="69">Aplicaciones</text>
+<rect fill="#ddd" height="24" rx="4" width="196" x="242" y="52"></rect>
+<text class="d2" text-anchor="middle" x="340" y="69">Aplicaciones</text>
+<rect fill="#ddd" height="24" rx="4" width="196" x="464" y="52"></rect>
+<text class="d2" text-anchor="middle" x="562" y="69">Aplicaciones</text>
+<rect fill="#2d8659" height="46" rx="4" width="196" x="242" y="82"></rect>
+<text class="t2" text-anchor="middle" x="340" y="100">Servidores en modo usuario</text>
+<text class="s2" text-anchor="middle" x="340" y="118">archivos · red · controladores</text>
+<rect fill="#0055a0" height="122" rx="4" width="196" x="20" y="82"></rect>
+<text class="t2" text-anchor="middle" x="118" y="104">NÚCLEO</text>
+<text class="s2" text-anchor="middle" x="118" y="126">planificador · memoria</text>
+<text class="s2" text-anchor="middle" x="118" y="144">sistemas de archivos</text>
+<text class="s2" text-anchor="middle" x="118" y="162">pila de red</text>
+<text class="s2" text-anchor="middle" x="118" y="180">controladores</text>
+<text class="s2" text-anchor="middle" x="118" y="198">TODO va aquí dentro</text>
+<rect fill="#0055a0" height="70" rx="4" width="196" x="242" y="134"></rect>
+<text class="t2" text-anchor="middle" x="340" y="156">MICRONÚCLEO</text>
+<text class="s2" text-anchor="middle" x="340" y="176">planificación · memoria</text>
+<text class="s2" text-anchor="middle" x="340" y="194">comunicación (IPC)</text>
+<rect fill="#0055a0" height="122" rx="4" width="196" x="464" y="82"></rect>
+<text class="t2" text-anchor="middle" x="562" y="104">NÚCLEO + MÓDULOS</text>
+<text class="s2" text-anchor="middle" x="562" y="126">base siempre cargada</text>
+<text class="s2" text-anchor="middle" x="562" y="146">+ módulos que entran y</text>
+<text class="s2" text-anchor="middle" x="562" y="164">salen en caliente</text>
+<text class="s2" text-anchor="middle" x="562" y="188">lsmod · modprobe</text>
+<text class="g2" text-anchor="middle" x="118" y="224">+ Rápido: llamadas a función</text>
+<text class="r2" text-anchor="middle" x="118" y="240">− Un fallo tumba el sistema</text>
+<text class="g2" text-anchor="middle" x="340" y="224">+ Robusto y aislado</text>
+<text class="r2" text-anchor="middle" x="340" y="240">− Sobrecarga de mensajes</text>
+<text class="g2" text-anchor="middle" x="562" y="224">+ Rápido y extensible</text>
+<text class="r2" text-anchor="middle" x="562" y="240">− Aislamiento limitado</text>
+<rect fill="#f0f4f8" height="26" rx="4" stroke="#0055a0" width="196" x="20" y="252"></rect>
+<text class="d2" text-anchor="middle" x="118" y="269">Unix, BSD</text>
+<rect fill="#f0f4f8" height="26" rx="4" stroke="#0055a0" width="196" x="242" y="252"></rect>
+<text class="d2" text-anchor="middle" x="340" y="269">MINIX 3, QNX, L4, Mach</text>
+<rect fill="#f0f4f8" height="26" rx="4" stroke="#0055a0" width="196" x="464" y="252"></rect>
+<text class="d2" text-anchor="middle" x="562" y="269">Linux, Windows NT, XNU</text>
+<rect fill="none" height="30" rx="5" stroke="#d13c3c" stroke-width="2" width="500" x="90" y="290"></rect>
+<text class="k2" text-anchor="middle" x="340" y="310">Atención: Linux es MONOLÍTICO MODULAR, no un micronúcleo</text>
+<text style="font:9.5px system-ui;fill:#666" text-anchor="end" x="670" y="336">[Fuente: TANENBAUM; SILBERSCHATZ]</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg aria-label="Niveles RAID: RAID 0 striping sin tolerancia, RAID 1 espejo, RAID 5 paridad tolera un fallo, RAID 6 doble paridad tolera dos, RAID 10 espejo más banda" class="svd9" role="img" viewbox="0 0 680 350" xmlns="http://www.w3.org/2000/svg">
+<style>.svd9 .t{font:700 13px system-ui,sans-serif;fill:#fff}.svd9 .s{font:11px system-ui,sans-serif;fill:#fff}.svd9 .h{font:700 14px system-ui,sans-serif;fill:#0055a0}.svd9 .warn{font:700 12px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h" text-anchor="middle" x="340" y="26">Niveles RAID: rendimiento y tolerancia a fallos</text>
+<rect fill="#d13c3c" height="52" rx="8" width="632" x="24" y="46"></rect><text class="t" text-anchor="middle" x="340" y="70">RAID 0 · Striping (reparto)</text><text class="s" text-anchor="middle" x="340" y="88">Máximo rendimiento · SIN redundancia: si falla 1 disco, se pierde todo</text>
+<rect fill="#0055a0" height="52" rx="8" width="632" x="24" y="106"></rect><text class="t" text-anchor="middle" x="340" y="130">RAID 1 · Mirroring (espejo)</text><text class="s" text-anchor="middle" x="340" y="148">Copia idéntica · Tolera 1 fallo · Solo el 50 % de capacidad útil</text>
+<rect fill="#2d8659" height="52" rx="8" width="632" x="24" y="166"></rect><text class="t" text-anchor="middle" x="340" y="190">RAID 5 · Striping + paridad (mín. 3 discos)</text><text class="s" text-anchor="middle" x="340" y="208">Buen equilibrio capacidad/seguridad · Tolera 1 fallo</text>
+<rect fill="#003d73" height="52" rx="8" width="632" x="24" y="226"></rect><text class="t" text-anchor="middle" x="340" y="250">RAID 6 · Doble paridad (mín. 4 discos)</text><text class="s" text-anchor="middle" x="340" y="268">Como RAID 5 pero tolera 2 fallos simultáneos</text>
+<rect fill="#e89822" height="42" rx="8" width="632" x="24" y="286"></rect><text class="t" text-anchor="middle" x="340" y="313">RAID 10 (1+0) · Espejo + banda (mín. 4) · Alto rendimiento y fiabilidad</text>
+<text class="warn" text-anchor="end" x="672" y="344">RAID ≠ copia de seguridad</text>
+</svg>

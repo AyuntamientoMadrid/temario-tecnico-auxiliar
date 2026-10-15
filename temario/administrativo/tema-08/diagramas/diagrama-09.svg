@@ -1,0 +1,34 @@
+<svg aria-label="IBI grava la titularidad de inmuebles con tipos 0,4 a 1,10 por ciento urbana y 0,3 a 0,90 rústica; IAE grava la actividad económica con exención por debajo de un millón de euros; IVTM grava los vehículos con coeficiente máximo 2" class="svd9" role="img" viewbox="0 0 720 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd9 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd9 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd9 .s{font:10px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#2d8659" height="40" rx="8" width="320" x="200" y="14"></rect>
+<text class="h" x="360" y="39">IMPUESTOS OBLIGATORIOS</text>
+<rect fill="#e8f5ee" height="226" rx="8" stroke="#2d8659" width="220" x="20" y="70"></rect>
+<text class="t" style="font-weight:700;fill:#2d8659" x="130" y="96">IBI (60-77)</text>
+<text class="s" x="130" y="120">titularidad de derechos</text>
+<text class="s" x="130" y="136">reales sobre inmuebles</text>
+<text class="s" style="font-weight:700" x="130" y="162">urbana 0,4 % – 1,10 %</text>
+<text class="s" style="font-weight:700" x="130" y="182">rústica 0,3 % – 0,90 %</text>
+<text class="s" x="130" y="206">gestión COMPARTIDA:</text>
+<text class="s" x="130" y="222">catastral (Estado) +</text>
+<text class="s" x="130" y="238">tributaria (ayuntamiento)</text>
+<text class="s" style="fill:#2d8659" x="130" y="266">art. 72 y 77</text>
+<rect fill="#e8f5ee" height="226" rx="8" stroke="#2d8659" width="220" x="250" y="70"></rect>
+<text class="t" style="font-weight:700;fill:#2d8659" x="360" y="96">IAE (78-91)</text>
+<text class="s" x="360" y="120">ejercicio de actividad</text>
+<text class="s" x="360" y="136">empresarial/profesional/</text>
+<text class="s" x="360" y="152">artística</text>
+<text class="s" style="font-weight:700" x="360" y="180">EXENTOS:</text>
+<text class="s" x="360" y="200">• personas físicas</text>
+<text class="s" x="360" y="218">• 2 primeros períodos</text>
+<text class="s" style="font-weight:700" x="360" y="236">• cifra neg. &lt; 1.000.000 €</text>
+<text class="s" style="fill:#2d8659" x="360" y="266">art. 82</text>
+<rect fill="#e8f5ee" height="226" rx="8" stroke="#2d8659" width="220" x="480" y="70"></rect>
+<text class="t" style="font-weight:700;fill:#2d8659" x="590" y="96">IVTM (92-99)</text>
+<text class="s" x="590" y="120">titularidad de vehículos</text>
+<text class="s" x="590" y="136">aptos para circular</text>
+<text class="s" x="590" y="164">cuota por TARIFA</text>
+<text class="s" x="590" y="182">según clase y potencia</text>
+<text class="s" style="font-weight:700" x="590" y="210">coeficiente municipal</text>
+<text class="s" style="font-weight:700" x="590" y="228">máximo = 2</text>
+<text class="s" style="fill:#2d8659" x="590" y="266">art. 95</text>
+</svg>

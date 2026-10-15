@@ -1,0 +1,9 @@
+<svg aria-label="Las cuatro propiedades ACID de una transacción" class="svd3" role="img" viewbox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd3 .b{font:700 18px system-ui,sans-serif;fill:#fff}.svd3 .t{font:700 13px system-ui,sans-serif;fill:#0055a0}.svd3 .l{font:12px system-ui,sans-serif;fill:#1a1a1a}</style>
+<rect fill="#0055a0" height="160" rx="8" width="140" x="40" y="60"></rect><text class="b" text-anchor="middle" x="110" y="100">A</text><text class="l" style="fill:#fff" text-anchor="middle" x="110" y="130">Atomicidad</text><text class="l" style="fill:#cfe2f3" text-anchor="middle" x="110" y="160">todo o nada</text>
+<rect fill="#3378b9" height="160" rx="8" width="140" x="195" y="60"></rect><text class="b" text-anchor="middle" x="265" y="100">C</text><text class="l" style="fill:#fff" text-anchor="middle" x="265" y="130">Consistencia</text><text class="l" style="fill:#dbe7f3" text-anchor="middle" x="265" y="160">estados válidos</text>
+<rect fill="#0055a0" height="160" rx="8" width="140" x="350" y="60"></rect><text class="b" text-anchor="middle" x="420" y="100">I</text><text class="l" style="fill:#fff" text-anchor="middle" x="420" y="130">Aislamiento</text><text class="l" style="fill:#cfe2f3" text-anchor="middle" x="420" y="160">como en serie</text>
+<rect fill="#2d8659" height="160" rx="8" width="140" x="505" y="60"></rect><text class="b" text-anchor="middle" x="575" y="100">D</text><text class="l" style="fill:#fff" text-anchor="middle" x="575" y="130">Durabilidad</text><text class="l" style="fill:#d9efe2" text-anchor="middle" x="575" y="160">persiste</text>
+<text class="t" x="40" y="40">Toda transacción cumple:</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="650" y="290">[Fuente: ACID-HAERDER]</text>
+</svg>

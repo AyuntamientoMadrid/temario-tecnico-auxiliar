@@ -1,0 +1,64 @@
+<svg aria-label="Cadena normativa de la accesibilidad digital: Convención de la ONU de 2006, Real Decreto Legislativo 1/2013, Directiva europea 2016/2102, Real Decreto 1112/2018 que la transpone en España, y Directiva 2019/882 traspuesta por la Ley 11/2023 que extiende la accesibilidad al sector privado; se detallan las obligaciones del RD 1112/2018" role="img" viewbox="0 0 680 370" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 10.5px system-ui,sans-serif;fill:#fff}.s6{font:9px system-ui,sans-serif;fill:#fff}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}.k6{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d6{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h6" text-anchor="middle" x="340" y="20">De la Convención de la ONU al deber de un ayuntamiento</text>
+<rect fill="#888" height="66" rx="5" width="126" x="20" y="34"></rect>
+<text class="t6" text-anchor="middle" x="83" y="52">2006 · ONU</text>
+<text class="s6" text-anchor="middle" x="83" y="70">Convención CDPD</text>
+<text class="s6" text-anchor="middle" x="83" y="85">art. 2 diseño universal</text>
+<text class="s6" text-anchor="middle" x="83" y="97">art. 9 acceso a las TIC</text>
+<rect fill="#888" height="66" rx="5" width="126" x="154" y="34"></rect>
+<text class="t6" text-anchor="middle" x="217" y="52">2013 · ESPAÑA</text>
+<text class="s6" text-anchor="middle" x="217" y="70">RDL 1/2013</text>
+<text class="s6" text-anchor="middle" x="217" y="85">accesibilidad universal,</text>
+<text class="s6" text-anchor="middle" x="217" y="97">diseño para todos</text>
+<rect fill="#0055a0" height="66" rx="5" width="126" x="288" y="34"></rect>
+<text class="t6" text-anchor="middle" x="351" y="52">2016 · UE</text>
+<text class="s6" text-anchor="middle" x="351" y="70">Directiva 2016/2102</text>
+<text class="s6" text-anchor="middle" x="351" y="85">webs y apps del</text>
+<text class="s6" text-anchor="middle" x="351" y="97">SECTOR PÚBLICO</text>
+<rect fill="#2d8659" height="66" rx="5" width="126" x="422" y="34"></rect>
+<text class="t6" text-anchor="middle" x="485" y="52">2018 · ESPAÑA</text>
+<text class="s6" text-anchor="middle" x="485" y="70">RD 1112/2018</text>
+<text class="s6" text-anchor="middle" x="485" y="85">transposición</text>
+<text class="s6" text-anchor="middle" x="485" y="97">→ nivel AA</text>
+<rect fill="#e89822" height="66" rx="5" width="104" x="556" y="34"></rect>
+<text class="t6" text-anchor="middle" x="608" y="52">2019/2023</text>
+<text class="s6" text-anchor="middle" x="608" y="70">Dir. 2019/882 (EAA)</text>
+<text class="s6" text-anchor="middle" x="608" y="85">Ley 11/2023</text>
+<text class="s6" text-anchor="middle" x="608" y="97">→ sector PRIVADO</text>
+<defs><marker id="a6" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<path d="M146 67 L154 67" marker-end="url(#a6)" stroke="#0055a0" stroke-width="2"></path>
+<path d="M280 67 L288 67" marker-end="url(#a6)" stroke="#0055a0" stroke-width="2"></path>
+<path d="M414 67 L422 67" marker-end="url(#a6)" stroke="#0055a0" stroke-width="2"></path>
+<path d="M548 67 L556 67" marker-end="url(#a6)" stroke="#0055a0" stroke-width="2"></path>
+<line stroke="#ccc" stroke-width="1" x1="20" x2="660" y1="116" y2="116"></line>
+<text class="k6" text-anchor="middle" x="340" y="136">Qué obliga exactamente el RD 1112/2018 a una entidad local</text>
+<rect fill="#0055a0" height="50" rx="5" width="208" x="20" y="148"></rect>
+<text class="t6" text-anchor="middle" x="124" y="166">REQUISITO TÉCNICO</text>
+<text class="s6" text-anchor="middle" x="124" y="183">UNE-EN 301 549 → WCAG nivel AA</text>
+<rect fill="#0055a0" height="50" rx="5" width="208" x="238" y="148"></rect>
+<text class="t6" text-anchor="middle" x="342" y="166">ÁMBITO</text>
+<text class="s6" text-anchor="middle" x="342" y="183">webs, intranets, extranets y apps</text>
+<rect fill="#0055a0" height="50" rx="5" width="204" x="456" y="148"></rect>
+<text class="t6" text-anchor="middle" x="558" y="166">UNIDAD RESPONSABLE</text>
+<text class="s6" text-anchor="middle" x="558" y="183">obligatoria en cada organismo</text>
+<rect fill="#2d8659" height="50" rx="5" width="208" x="20" y="206"></rect>
+<text class="t6" text-anchor="middle" x="124" y="224">DECLARACIÓN</text>
+<text class="s6" text-anchor="middle" x="124" y="241">modelo Decisión (UE) 2018/1523</text>
+<rect fill="#2d8659" height="50" rx="5" width="208" x="238" y="206"></rect>
+<text class="t6" text-anchor="middle" x="342" y="224">QUEJA Y RECLAMACIÓN</text>
+<text class="s6" text-anchor="middle" x="342" y="241">mecanismo accesible y con plazo</text>
+<rect fill="#2d8659" height="50" rx="5" width="204" x="456" y="206"></rect>
+<text class="t6" text-anchor="middle" x="558" y="224">SEGUIMIENTO E INFORME</text>
+<text class="s6" text-anchor="middle" x="558" y="241">Decisión (UE) 2018/1524</text>
+<rect fill="#fbe9e9" height="58" rx="5" stroke="#d13c3c" width="320" x="20" y="266"></rect>
+<text style="font:700 10px system-ui;fill:#d13c3c" text-anchor="middle" x="180" y="284">CARGA DESPROPORCIONADA (art. 7)</text>
+<text class="d6" text-anchor="middle" x="180" y="300">Motivada, declarada y con alternativa accesible</text>
+<text class="d6" text-anchor="middle" x="180" y="315">NUNCA por falta de prioridad, tiempo o conocimiento</text>
+<rect fill="#eef3f8" height="58" rx="5" stroke="#0055a0" width="310" x="350" y="266"></rect>
+<text class="k6" text-anchor="middle" x="505" y="284">PLAZOS (ya vencidos: exigencia plena)</text>
+<text class="d6" text-anchor="middle" x="505" y="300">Webs nuevas 23-sep-2019 · anteriores 23-sep-2020</text>
+<text class="d6" text-anchor="middle" x="505" y="315">Aplicaciones móviles: 23-jun-2021</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="346">[Fuente: CDPD; TRLGDPD; DIR2016-2102; RD1112-2018; LEY11-2023]</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="362">Norma técnica de referencia: EN301549</text>
+</svg>

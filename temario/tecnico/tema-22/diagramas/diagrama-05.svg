@@ -1,0 +1,21 @@
+<svg aria-label="Flujo de una petición de consulta de expediente: el navegador envia una petición HTTP a la capa de presentación, que la traduce a una llamada a la capa de negocio, que aplica reglas y solicita datos a la capa de acceso a datos, y la respuesta recorre el camino inverso hasta el navegador" role="img" viewbox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 11.5px system-ui,sans-serif;fill:#fff}.s5{font:9.5px system-ui,sans-serif;fill:#fff}.l5{font:10.5px system-ui,sans-serif;fill:#444}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h5" text-anchor="middle" x="340" y="20">Flujo de una petición: consultar un expediente</text>
+<rect fill="#888" height="50" rx="5" width="140" x="30" y="40"></rect><text class="t5" text-anchor="middle" x="100" y="62">Navegador</text><text class="s5" text-anchor="middle" x="100" y="78">(cliente ligero)</text>
+<rect fill="#0055a0" height="50" rx="5" width="140" x="270" y="40"></rect><text class="t5" text-anchor="middle" x="340" y="62">Presentación</text><text class="s5" text-anchor="middle" x="340" y="78">Controlador</text>
+<rect fill="#2d8659" height="50" rx="5" width="140" x="510" y="40"></rect><text class="t5" text-anchor="middle" x="580" y="62">Negocio</text><text class="s5" text-anchor="middle" x="580" y="78">Reglas · permisos</text>
+<path d="M170 65 L268 65" marker-end="url(#a5)" stroke="#0055a0" stroke-width="2.5"></path><text style="font:9px system-ui;fill:#0055a0" text-anchor="middle" x="220" y="58">1. GET HTTP</text>
+<path d="M410 65 L508 65" marker-end="url(#a5)" stroke="#0055a0" stroke-width="2.5"></path><text style="font:9px system-ui;fill:#0055a0" text-anchor="middle" x="460" y="58">2-3. llamada</text>
+<rect fill="#e89822" height="50" rx="5" width="140" x="510" y="130"></rect><text class="t5" text-anchor="middle" x="580" y="152">Acceso a datos</text><text class="s5" text-anchor="middle" x="580" y="168">Consulta SGBD</text>
+<path d="M580 92 L580 128" marker-end="url(#a5)" stroke="#0055a0" stroke-width="2.5"></path><text style="font:9px system-ui;fill:#0055a0" text-anchor="middle" x="605" y="112">4</text>
+<path d="M508 158 L412 158" marker-end="url(#a5)" stroke="#2d8659" stroke-width="2.5"></path>
+<rect fill="#0055a0" height="50" rx="5" width="140" x="270" y="130"></rect><text class="t5" text-anchor="middle" x="340" y="152">Presentación</text><text class="s5" text-anchor="middle" x="340" y="168">Formatea respuesta</text>
+<path d="M268 158 L172 158" marker-end="url(#a5)" stroke="#2d8659" stroke-width="2.5"></path>
+<rect fill="#888" height="50" rx="5" width="140" x="30" y="130"></rect><text class="t5" text-anchor="middle" x="100" y="152">Navegador</text><text class="s5" text-anchor="middle" x="100" y="168">Muestra resultado</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="middle" x="340" y="212">Ida (1→4): arriba → abajo · Vuelta (5→6): abajo → arriba, mismo camino, sentido inverso</text>
+<defs><marker id="a5" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="context-stroke"></path></marker></defs>
+<rect fill="#f4f4f4" height="60" rx="6" stroke="#ccc" width="620" x="30" y="234"></rect>
+<text style="font:700 11px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="258">En ningún punto la capa de datos invoca directamente a la de presentación</text>
+<text class="l5" text-anchor="middle" x="340" y="278">La dependencia unidireccional (§4.1) se respeta en todo el recorrido de ida y vuelta</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="352">[Fuente: FOWLER-PEAA, cap. 1]</text>
+</svg>

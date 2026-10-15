@@ -1,0 +1,43 @@
+<svg aria-label="El comité IEEE 802 normaliza únicamente las capas física y de enlace de datos, y divide la capa de enlace en dos subcapas: LLC, definida en 802.2 y común a toda la familia, y MAC, específica de cada tecnología; a la derecha, el reparto de los grupos de trabajo 802.1, 802.3, 802.5, 802.11 y 802.15 y su estado de vigencia" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}.k2{font:700 10px system-ui,sans-serif;fill:#0055a0}.d2{font:9px system-ui,sans-serif;fill:#333}.n2{font:8.5px system-ui,sans-serif;fill:#666}.t2{font:700 10.5px system-ui,sans-serif;fill:#fff}.w2{font:9px system-ui,sans-serif;fill:#fff}.g2{font:700 9px system-ui,sans-serif;fill:#2d8659}.r2{font:700 9px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h2" text-anchor="middle" x="340" y="20">El ámbito del IEEE 802: capas 1 y 2, con la capa 2 partida en dos</text>
+<text class="k2" text-anchor="middle" x="160" y="40">MODELO OSI</text>
+<rect fill="#c9d6e2" height="26" rx="4" width="260" x="30" y="48"></rect>
+<text class="d2" text-anchor="middle" x="160" y="65">Capas 3 a 7 — FUERA del ámbito del IEEE 802 (IETF)</text>
+<rect fill="#0055a0" height="76" rx="4" width="260" x="30" y="80"></rect>
+<text class="t2" text-anchor="middle" x="160" y="97">CAPA 2 · ENLACE DE DATOS</text>
+<rect fill="#3d82c4" height="22" rx="3" width="240" x="40" y="103"></rect>
+<text class="w2" text-anchor="middle" x="160" y="118">LLC (802.2) — común a toda la familia</text>
+<rect fill="#e89822" height="22" rx="3" width="240" x="40" y="128"></rect>
+<text class="w2" text-anchor="middle" x="160" y="143">MAC — específica de cada tecnología</text>
+<rect fill="#0055a0" height="26" rx="4" width="260" x="30" y="162"></rect>
+<text class="t2" text-anchor="middle" x="160" y="179">CAPA 1 · FÍSICA</text>
+<text class="d2" text-anchor="middle" x="160" y="206">LLC: multiplexa protocolos superiores (DSAP/SSAP)</text>
+<text class="d2" text-anchor="middle" x="160" y="219">MAC: delimita la trama, direcciona y decide quién transmite</text>
+<text class="g2" text-anchor="middle" x="160" y="234">SOLO LA SUBCAPA MAC TOCA EL MEDIO</text>
+<text class="r2" text-anchor="middle" x="160" y="248">La subcapa MAC no existe en el OSI puro: la añade el IEEE</text>
+<text class="k2" text-anchor="middle" x="490" y="40">LOS GRUPOS DE TRABAJO</text>
+<rect fill="#eef4fa" height="20" rx="3" width="338" x="320" y="48"></rect>
+<text class="d2" x="330" y="62"><tspan class="k2">802.1</tspan>  Arquitectura: 1Q VLAN · 1D/w/s árbol · 1X acceso</text>
+<rect fill="#f7f9fb" height="20" rx="3" width="338" x="320" y="70"></rect>
+<text class="d2" x="330" y="84"><tspan class="k2">802.2</tspan>  LLC — control del enlace lógico</text>
+<rect fill="#eef4fa" height="20" rx="3" width="338" x="320" y="92"></rect>
+<text class="d2" x="330" y="106"><tspan class="k2">802.3</tspan>  Ethernet (CSMA/CD) — af/at/bt: PoE</text>
+<rect fill="#f7f9fb" height="20" rx="3" width="338" x="320" y="114"></rect>
+<text class="d2" x="330" y="128"><tspan class="k2">802.4</tspan>  Token Bus — anillo lógico sobre bus físico (MAP)</text>
+<rect fill="#eef4fa" height="20" rx="3" width="338" x="320" y="136"></rect>
+<text class="d2" x="330" y="150"><tspan class="k2">802.5</tspan>  Token Ring — 4 y 16 Mbit/s (IBM)</text>
+<rect fill="#f7f9fb" height="20" rx="3" width="338" x="320" y="158"></rect>
+<text class="d2" x="330" y="172"><tspan class="k2">802.11</tspan>  WLAN — Wi-Fi (CSMA/CA)</text>
+<rect fill="#eef4fa" height="20" rx="3" width="338" x="320" y="180"></rect>
+<text class="d2" x="330" y="194"><tspan class="k2">802.15</tspan>  WPAN — .1 Bluetooth · .4 base de Zigbee</text>
+<rect fill="#f7f9fb" height="20" rx="3" width="338" x="320" y="202"></rect>
+<text class="d2" x="330" y="216"><tspan class="k2">802.16</tspan>  WMAN — WiMAX (metropolitana, NO local)</text>
+<rect fill="#fdf3e3" height="24" rx="3" width="338" x="320" y="228"></rect>
+<text class="d2" x="330" y="244">FDDI <tspan class="r2">NO es IEEE</tspan>: es ANSI X3T9.5 / ISO 9314</text>
+<rect fill="none" height="60" rx="5" stroke="#0055a0" stroke-width="1.5" width="628" x="30" y="266"></rect>
+<text class="k2" text-anchor="middle" x="344" y="284">Por qué LLC cayó en desuso: Ethernet II resolvió lo mismo con el campo EtherType</text>
+<text class="d2" text-anchor="middle" x="344" y="300">Regla de desambiguación del campo de 2 octetos: si vale 1500 o menos es LONGITUD (trama 802.3);</text>
+<text class="d2" text-anchor="middle" x="344" y="315">si vale 1536 (0x0600) o más es TIPO (trama Ethernet II). Ganó Ethernet II: 0x0800 IPv4 · 0x0806 ARP · 0x86DD IPv6</text>
+<text class="n2" text-anchor="end" x="670" y="360">[Fuente: IEEE 802-2014 · IEEE 802.2 · ISO/IEC 7498-1]</text>
+</svg>

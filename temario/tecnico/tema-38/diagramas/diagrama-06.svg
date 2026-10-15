@@ -1,0 +1,44 @@
+<svg aria-label="Los tres factores de forma del terminal TETRA con sus potencias típicas: portátil de uno o tres vatios para el agente a pie, móvil embarcado de tres o diez vatios para patrullas y ambulancias, y fijo de diez vatios o más para dependencias. Debajo, las clases de potencia normalizadas: clase uno treinta vatios, clase dos diez vatios, clase tres tres vatios y clase cuatro un vatio. Y a la derecha, el esquema de identidades: ITSI igual a MNI más ISSI, donde MNI es MCC más MNC, la identidad de grupo GSSI y la identidad corta cifrada ESI" role="img" viewbox="0 0 680 308" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 10px system-ui,sans-serif;fill:#fff}.s6{font:8.5px system-ui,sans-serif;fill:#fff}.d6{font:8.5px system-ui,sans-serif;fill:#333}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}.k6{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n6{font:8.5px system-ui,sans-serif;fill:#666}.b6{font:700 9px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h6" text-anchor="middle" x="340" y="22">El portátil llega menos lejos que el vehículo: de ahí las pasarelas</text>
+<text class="k6" x="20" y="46">FACTORES DE FORMA</text>
+<rect fill="#0055a0" height="62" rx="5" width="200" x="20" y="54"></rect>
+<text class="t6" text-anchor="middle" x="120" y="72">PORTÁTIL · 1 W o 3 W</text>
+<text class="s6" text-anchor="middle" x="120" y="88">Batería, antena corta.</text>
+<text class="s6" text-anchor="middle" x="120" y="102">El agente a pie, el bombero</text>
+<rect fill="#0055a0" height="62" rx="5" width="200" x="244" y="54"></rect>
+<text class="t6" text-anchor="middle" x="344" y="72">MÓVIL · 3 W o 10 W</text>
+<text class="s6" text-anchor="middle" x="344" y="88">Embarcado, antena exterior.</text>
+<text class="s6" text-anchor="middle" x="344" y="102">Patrullas, ambulancias, autobombas</text>
+<rect fill="#0055a0" height="62" rx="5" width="200" x="468" y="54"></rect>
+<text class="t6" text-anchor="middle" x="568" y="72">FIJO · 10 W o más</text>
+<text class="s6" text-anchor="middle" x="568" y="88">Sobremesa, alimentación de red.</text>
+<text class="s6" text-anchor="middle" x="568" y="102">Dependencias y retenes</text>
+<text class="k6" x="20" y="140">CLASES DE POTENCIA NORMALIZADAS</text>
+<rect fill="#e89822" height="46" rx="4" width="98" x="20" y="148"></rect>
+<text class="t6" text-anchor="middle" x="69" y="167">CLASE 1</text>
+<text class="s6" text-anchor="middle" x="69" y="183">30 W</text>
+<rect fill="#e89822" height="46" rx="4" width="98" x="130" y="148"></rect>
+<text class="t6" text-anchor="middle" x="179" y="167">CLASE 2</text>
+<text class="s6" text-anchor="middle" x="179" y="183">10 W</text>
+<rect fill="#e89822" height="46" rx="4" width="98" x="240" y="148"></rect>
+<text class="t6" text-anchor="middle" x="289" y="167">CLASE 3</text>
+<text class="s6" text-anchor="middle" x="289" y="183">3 W</text>
+<rect fill="#e89822" height="46" rx="4" width="98" x="350" y="148"></rect>
+<text class="t6" text-anchor="middle" x="399" y="167">CLASE 4</text>
+<text class="s6" text-anchor="middle" x="399" y="183">1 W</text>
+<rect fill="#f1f5f9" height="46" rx="4" stroke="#c9d6e2" width="200" x="468" y="148"></rect>
+<text class="d6" text-anchor="middle" x="568" y="165">Existen clases adicionales de</text>
+<text class="d6" text-anchor="middle" x="568" y="178">menor potencia. La estación base</text>
+<text class="d6" text-anchor="middle" x="568" y="190">tiene su propia escala.</text>
+<text class="k6" x="20" y="216">IDENTIDADES DEL TERMINAL</text>
+<rect fill="#2d8659" height="52" rx="4" width="314" x="20" y="224"></rect>
+<text class="t6" text-anchor="middle" x="177" y="242">ITSI = MNI + ISSI · y MNI = MCC + MNC</text>
+<text class="s6" text-anchor="middle" x="177" y="258">ITSI: identidad individual completa del abonado</text>
+<text class="s6" text-anchor="middle" x="177" y="270">ISSI: su parte corta, dentro de la red</text>
+<rect fill="#2d8659" height="52" rx="4" width="322" x="346" y="224"></rect>
+<text class="t6" text-anchor="middle" x="507" y="242">GTSI / GSSI · identidad de GRUPO</text>
+<text class="s6" text-anchor="middle" x="507" y="258">ESI: la identidad corta CIFRADA en el aire, para</text>
+<text class="s6" text-anchor="middle" x="507" y="270">impedir el seguimiento de los usuarios</text>
+<text class="n6" text-anchor="end" x="670" y="300">[Fuente: elaboración propia sobre ETSI EN 300 392-1, -2 y -7]</text>
+</svg>

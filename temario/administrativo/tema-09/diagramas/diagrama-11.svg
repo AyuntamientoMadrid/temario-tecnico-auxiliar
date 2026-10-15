@@ -1,0 +1,19 @@
+<svg aria-label="Derecho de reunión del artículo 46: están legitimados las organizaciones sindicales, los Delegados y Juntas de Personal, los Comités de Empresa y los empleados en número no inferior al 40 por ciento del colectivo convocado; las reuniones en el centro de trabajo se autorizan fuera de las horas de trabajo, salvo acuerdo" class="svd11" role="img" viewbox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+<style>.svd11 .h{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd11 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd11 .big{font:700 26px system-ui,sans-serif;fill:#0055a0;text-anchor:middle}.svd11 .s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#0055a0" height="44" rx="8" width="340" x="180" y="18"></rect>
+<text class="h" x="350" y="46">Derecho de reunión (art. 46 TREBEP)</text>
+<rect fill="#e8f0f8" height="120" rx="10" stroke="#0055a0" width="300" x="40" y="80"></rect>
+<text class="t" style="font-weight:700" x="190" y="104">Legitimados para convocar</text>
+<text class="s" x="190" y="128">Organizaciones sindicales</text>
+<text class="s" x="190" y="148">Delegados / Juntas de Personal y Comités</text>
+<text class="big" x="190" y="176">≥ 40 %</text>
+<text class="s" x="190" y="194">empleados del colectivo convocado (46.1)</text>
+<rect fill="#e8f5ee" height="120" rx="10" stroke="#2d8659" width="300" x="360" y="80"></rect>
+<text class="t" style="font-weight:700" x="510" y="104">Reuniones en el centro de trabajo</text>
+<text class="t" style="font-weight:700;fill:#2d8659" x="510" y="140">Fuera de las horas de trabajo</text>
+<text class="s" x="510" y="166">salvo acuerdo entre el órgano de personal</text>
+<text class="s" x="510" y="184">y los legitimados para convocar (46.2)</text>
+<rect fill="#fff5e6" height="48" rx="8" stroke="#e89822" width="460" x="120" y="216"></rect>
+<text class="t" style="font-weight:700;fill:#b5740f" x="350" y="236">No perjudicará la prestación de los servicios</text>
+<text class="s" x="350" y="254">los convocantes son responsables de su normal desarrollo (46.2)</text>
+</svg>

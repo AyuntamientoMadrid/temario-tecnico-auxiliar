@@ -1,0 +1,12 @@
+<svg aria-label="Escala de generaciones de lenguajes desde lenguaje máquina de bajo nivel hasta lenguajes de quinta generación de alto nivel" role="img" viewbox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t1{font:700 13px system-ui,sans-serif;fill:#fff}.s1{font:11px system-ui,sans-serif;fill:#fff}.l1{font:11px system-ui,sans-serif;fill:#444}.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h1" text-anchor="middle" x="330" y="26">De la máquina al humano: generaciones de lenguajes</text>
+<rect fill="#003d73" height="42" rx="5" width="400" x="150" y="44"></rect><text class="t1" text-anchor="middle" x="350" y="62">1GL · Lenguaje máquina (binario)</text><text class="s1" text-anchor="middle" x="350" y="78">Ceros y unos · dependiente de la CPU</text>
+<rect fill="#0055a0" height="42" rx="5" width="400" x="150" y="92"></rect><text class="t1" text-anchor="middle" x="350" y="110">2GL · Ensamblador (mnemónicos)</text><text class="s1" text-anchor="middle" x="350" y="126">MOV, ADD, JMP · aún ligado a la máquina</text>
+<rect fill="#3778b5" height="42" rx="5" width="400" x="150" y="140"></rect><text class="t1" text-anchor="middle" x="350" y="158">3GL · Alto nivel estructurado (C, Java)</text><text class="s1" text-anchor="middle" x="350" y="174">Se dice CÓMO · independiente de la máquina</text>
+<rect fill="#6ea3d2" height="42" rx="5" width="400" x="150" y="188"></rect><text class="t1" text-anchor="middle" x="350" y="206">4GL · Declarativo (SQL, informes)</text><text class="s1" text-anchor="middle" x="350" y="222">Se dice QUÉ, no cómo</text>
+<rect fill="#9cc3e0" height="42" rx="5" width="400" x="150" y="236"></rect><text style="font:700 13px system-ui;fill:#123" text-anchor="middle" x="350" y="254">5GL · Lógico / IA (Prolog)</text><text style="font:11px system-ui;fill:#123" text-anchor="middle" x="350" y="270">Restricciones y reglas · el motor deduce</text>
+<text class="l1" x="40" y="66">▼ bajo nivel</text>
+<text class="l1" x="40" y="258">▲ alto nivel</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="650" y="308">[Fuente: PRATT, cap. 1]</text>
+</svg>

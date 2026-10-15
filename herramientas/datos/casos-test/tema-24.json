@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "Al comparar las cuatro estrategias para la app de avisos, ¿en cuál de ellas la interfaz la dibuja un motor gráfico propio que pinta cada píxel?",
+    "o": [
+     "En la multiplataforma compilada con Flutter, que renderiza con su propio motor (Skia/Impeller).",
+     "En la híbrida de contenedor web, que renderiza la interfaz con el motor del WebView embebido.",
+     "En la nativa, que pinta cada píxel con Kotlin en Android y con Swift en iOS sin usar componentes."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §1.2",
+    "e": "Flutter no usa los componentes del sistema: trae su propio motor gráfico y dibuja cada píxel sobre un lienzo."
+   },
+   {
+    "q": "Si el proveedor desarrollara la app de avisos con React Native, ¿cómo se dibujaría su interfaz?",
+    "o": [
+     "Con HTML, CSS y JavaScript renderizados dentro de un WebView a pantalla completa.",
+     "Con componentes nativos reales del sistema, manejados desde el código JavaScript.",
+     "Con un motor gráfico propio que dibuja cada píxel sin usar los componentes del sistema."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §4.2.1",
+    "e": "React Native no usa WebView: un <View> se convierte en un ViewGroup de Android o en un UIView de iOS."
+   },
+   {
+    "q": "Si la app de avisos se construyera como híbrida de contenedor web (Cordova, Ionic o Capacitor), ¿qué dibujaría la interfaz?",
+    "o": [
+     "El navegador del sistema, sin aplicación nativa que la empaquete ni paso por las tiendas.",
+     "Los componentes nativos de Android y de iOS, a los que se traduce el HTML al compilar.",
+     "Un WebView embebido en una app nativa mínima, que renderiza el HTML, el CSS y el JavaScript."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §1.2.2",
+    "e": "En el híbrido de contenedor web la app es una web empaquetada dentro de una app nativa cuyo único contenido es un WebView."
+   },
+   {
+    "q": "El proveedor propone una PWA para ahorrar costes. ¿Qué requisito funcional del supuesto la hace arriesgada?",
+    "o": [
+     "El envío del aviso por HTTPS, que los Service Workers de una PWA no permiten utilizar.",
+     "Las notificaciones push al resolverse el aviso, con soporte web históricamente tardío y limitado en iOS.",
+     "La consulta del estado de los avisos, porque una PWA no puede hacer peticiones al servidor."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §1.2.3",
+    "e": "El vecino debe recibir una notificación cuando se resuelve su aviso, y en iOS las notificaciones push web han tenido un soporte más tardío y limitado."
+   },
+   {
+    "q": "Además de las notificaciones, ¿qué otro inconveniente tiene la PWA para una app de avisos dirigida a toda la ciudadanía?",
+    "o": [
+     "Que no se distribuye por las tiendas, lo que le resta visibilidad ante los vecinos.",
+     "Que solo puede instalarse en terminales corporativos gestionados mediante una plataforma MDM.",
+     "Que debe pasar la revisión humana de Apple antes de cada actualización publicada en el servidor."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §1.2.3",
+    "e": "La PWA se instala desde el navegador: se ahorra la revisión de las tiendas, pero pierde la visibilidad de su catálogo."
+   },
+   {
+    "q": "Con dos plataformas, presupuesto ajustado, seis meses de plazo y un equipo web sin Kotlin ni Swift, ¿qué enfoque procede?",
+    "o": [
+     "Nativo, con dos equipos especializados, porque es el único que da acceso a cámara y ubicación.",
+     "PWA, porque es la única estrategia que puede llegar a Android y a iOS con un solo código.",
+     "Multiplataforma compilado (React Native o Flutter): una sola base de código y un solo equipo."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §5.2",
+    "e": "Llegar a las dos plataformas con un solo equipo y presupuesto ajustado apunta al multiplataforma compilado; las capacidades que necesita están cubiertas por bibliotecas maduras."
+   },
+   {
+    "q": "Dentro del multiplataforma compilado, ¿qué framework aprovecha directamente la experiencia del equipo municipal?",
+    "o": [
+     "Flutter, porque Dart es el mismo lenguaje que el JavaScript que ya domina el equipo web.",
+     ".NET MAUI, porque se programa en TypeScript con el modelo de componentes de React.",
+     "React Native, que reutiliza su conocimiento de JavaScript y del modelo de componentes de React."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §4.2.1",
+    "e": "React Native se escribe en JavaScript/TypeScript con el modelo de componentes de React; Flutter usa Dart y .NET MAUI, C#."
+   },
+   {
+    "q": "El perfil web del equipo haría defendible un híbrido de contenedor web. ¿Por qué se descarta en este supuesto?",
+    "o": [
+     "Porque penalizaría el rendimiento con las listas de avisos y las fotografías.",
+     "Porque un híbrido de contenedor web no puede publicarse en Google Play ni en la App Store.",
+     "Porque un híbrido de contenedor web no tiene ninguna forma de acceder a la cámara del móvil."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §4.1.1",
+    "e": "Toda la interfaz se renderiza en un WebView y cada llamada al hardware atraviesa el puente, lo que se nota en listas largas y gráficos."
+   },
+   {
+    "q": "¿Cuál es el principal riesgo a medio plazo del enfoque multiplataforma elegido para la app de avisos?",
+    "o": [
+     "La duplicación del esfuerzo, al tener que mantener dos bases de código sincronizadas funcionalmente.",
+     "La dependencia de un tercero: que el framework tarde en soportar una versión nueva de Android o de iOS.",
+     "La falta de soporte de los componentes nativos, que React Native sustituye por un WebView propio."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §5.2",
+    "e": "Si el framework tarda en soportar una versión nueva del sistema o una biblioteca clave queda sin mantenimiento, el proyecto queda expuesto."
+   },
+   {
+    "q": "¿Qué medida mitiga ese riesgo en la contratación de la app de avisos?",
+    "o": [
+     "Elegir un framework con respaldo corporativo y comunidad amplia, y limitar las dependencias de terceros.",
+     "Congelar la versión objetivo de la API de Android para no tener que adaptar nunca la aplicación.",
+     "Prever la conversión de la app en PWA en cuanto aparezca una versión nueva de iOS."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · §5.2",
+    "e": "Un framework respaldado y con comunidad, pocas dependencias, mantenimiento evolutivo exigido en el contrato y la opción de escribir módulos nativos reducen la exposición."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "Un vecino gira el móvil mientras redacta el aviso y el texto desaparece. ¿Cuál es la causa técnica en Android?",
+    "o": [
+     "El giro pasa la app al estado Suspended y el sistema la termina para liberar memoria.",
+     "El giro es un cambio de configuración que, por defecto, destruye y recrea la Activity.",
+     "El giro dispara onPause(), cuya función es vaciar los campos de texto de la pantalla."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §2.1.1",
+    "e": "Girar el dispositivo es un cambio de configuración que destruye y recrea la Activity; el estado no guardado se pierde."
+   },
+   {
+    "q": "¿Qué mecanismos evitan que se borre el texto del aviso al girar el dispositivo?",
+    "o": [
+     "Guardarlo en onDestroy(), que se ejecuta siempre antes de recrear la Activity, y releerlo en onResume().",
+     "Declarar la orientación en el AndroidManifest.xml como permiso peligroso concedido en tiempo de ejecución.",
+     "Guardarlo en onSaveInstanceState() con un Bundle y restaurarlo en onCreate(), o conservarlo en un ViewModel."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §2.1.1",
+    "e": "El estado transitorio se guarda en un Bundle con onSaveInstanceState() y se restaura en onCreate(); el ViewModel sobrevive a la recreación. onDestroy() puede no llegar a ejecutarse."
+   },
+   {
+    "q": "Para que el vecino del aparcamiento subterráneo no pierda su aviso, ¿de dónde debe leer y escribir siempre la pantalla?",
+    "o": [
+     "Del repositorio local (SQLite vía Room o Core Data), que es la única fuente de verdad de la interfaz.",
+     "De la respuesta más reciente del servidor, guardada en memoria hasta que vuelva la cobertura.",
+     "De la caché HTTP del sistema operativo, que almacena los POST pendientes de enviar."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §2.3.2",
+    "e": "En el patrón offline-first la interfaz trabaja siempre contra la copia local y nunca espera a la red."
+   },
+   {
+    "q": "¿Cómo sabe la app qué avisos redactados sin cobertura quedan aún por enviar al servidor?",
+    "o": [
+     "Porque el servidor los reclama al dispositivo mediante una notificación push en cuanto hay red.",
+     "Porque permanecen en el hilo principal, bloqueados, hasta que el sistema detecta la conexión.",
+     "Porque forman una cola de operaciones pendientes, con los registros marcados como sincronizado = false."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §2.3.2",
+    "e": "La cola de operaciones pendientes registra con una marca de estado lo que aún no ha llegado al servidor."
+   },
+   {
+    "q": "¿Qué pieza envía los avisos pendientes cuando hay red, batería y el sistema lo permite?",
+    "o": [
+     "Un Broadcast Receiver en Android y un segue en iOS, que reenvían el aviso al recuperar cobertura.",
+     "Un planificador de trabajo diferido del sistema: WorkManager en Android y BGTaskScheduler en iOS.",
+     "Un Content Provider en Android y Core Data en iOS, que publican el aviso directamente en la sede."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §2.3.2",
+    "e": "WorkManager y BGTaskScheduler ejecutan la sincronización cuando se cumplen las condiciones de red, batería y oportunidad del sistema."
+   },
+   {
+    "q": "Un vecino con mala cobertura pulsa «Enviar» y su aviso aparece duplicado en la sede. ¿Qué ha ocurrido?",
+    "o": [
+     "El POST llegó al servidor, pero la respuesta se perdió y el cliente reintentó, creando un segundo aviso.",
+     "El POST nunca llegó al servidor, que generó por su cuenta dos avisos al recibir la reconexión.",
+     "El servidor repite cada POST por diseño para garantizar la entrega a través de redes inalámbricas."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §2.3.2",
+    "e": "El cliente interpretó como fallo la falta de respuesta a una petición que sí se había procesado, y al reintentarla creó otro aviso."
+   },
+   {
+    "q": "En la corrección de los duplicados, ¿qué debe hacer la app (el cliente)?",
+    "o": [
+     "Generar un UUID nuevo en cada reintento, para que el servidor distinga cada intento de envío.",
+     "Generar un UUID de operación al crear el aviso y enviarlo idéntico en todos los reintentos.",
+     "Dejar de reintentar y pedir al vecino que repita el aviso completo al recuperar la cobertura."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §2.3.2",
+    "e": "El identificador debe ser el mismo en todos los reintentos para que el servidor reconozca que se trata de la misma operación."
+   },
+   {
+    "q": "¿Y qué debe hacer el servidor municipal cuando recibe un aviso con un identificador de operación que ya tiene registrado?",
+    "o": [
+     "Crear el aviso de nuevo y borrar el duplicado más antiguo mediante un proceso nocturno.",
+     "Responder con un error para que la app muestre al vecino que el envío ha fallado.",
+     "Tratarlo como clave de idempotencia y devolver el aviso ya creado en lugar de crear otro."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §2.3.2",
+    "e": "Con la idempotencia en el servidor, reintentar deja de ser peligroso, que es la condición para que el modo offline sea viable."
+   },
+   {
+    "q": "El envío del aviso se programó llamando a la API desde el manejador del botón. ¿Qué efecto tiene?",
+    "o": [
+     "Bloquea el hilo principal: en Android aparece el diálogo ANR y en iOS la interfaz se congela.",
+     "Obliga a solicitar de nuevo el permiso de red cada vez que el vecino pulsa el botón de envío.",
+     "Provoca el rechazo de la app en la revisión de las tiendas por usar una API privada del sistema."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · §2.1.1",
+    "e": "La interfaz solo puede tocarse desde el hilo principal y este nunca debe bloquearse; si se bloquea, Android muestra el ANR y en iOS el watchdog puede matar la app."
+   },
+   {
+    "q": "¿Cómo se corrige ese envío en Kotlin y en Swift?",
+    "o": [
+     "Moviendo la llamada a onPause() en Kotlin y a viewDidLoad() en Swift, que no bloquean la interfaz.",
+     "Sustituyendo la llamada REST por un Intent implícito en Kotlin y por un segue en Swift.",
+     "Con una corrutina en Dispatchers.IO en Kotlin y con async/await en Swift, devolviendo solo el resultado a la interfaz."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §2.3.1",
+    "e": "La petición se ejecuta en un hilo secundario (withContext(Dispatchers.IO) o Task con await) y solo el resultado vuelve al hilo de interfaz."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "¿Qué norma obliga a la app municipal de avisos a ser accesible?",
+    "o": [
+     "El Reglamento General de Protección de Datos, por su principio de minimización de datos.",
+     "El Esquema Nacional de Seguridad, que exige el nivel AA a las aplicaciones del sector público.",
+     "El Real Decreto 1112/2018, con la norma EN 301 549 (WCAG en nivel AA) como referencia técnica."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §2.2.1",
+    "e": "El RD 1112/2018 extiende la accesibilidad del sector público a las aplicaciones para dispositivos móviles y toma como referencia la EN 301 549."
+   },
+   {
+    "q": "El botón para adjuntar la fotografía es un simple icono. ¿Qué hay que comprobar para que lo use un vecino ciego?",
+    "o": [
+     "Que tenga contentDescription en Android y accessibilityLabel en iOS, para TalkBack y VoiceOver.",
+     "Que el icono tenga un contraste de al menos 4,5:1, que es lo que leen TalkBack y VoiceOver.",
+     "Que el icono mida al menos 48×48 dp, tamaño a partir del cual el lector de pantalla lo anuncia."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §2.2.1",
+    "e": "Un icono sin etiqueta es invisible para un lector de pantalla: TalkBack lo leería solo como «botón»."
+   },
+   {
+    "q": "¿Cómo deben gestionarse en Android los permisos de cámara y de ubicación de la app?",
+    "o": [
+     "Son normales: se declaran en el AndroidManifest.xml y el sistema los concede al instalar la app.",
+     "Son peligrosos: se declaran en el AndroidManifest.xml y se solicitan en tiempo de ejecución.",
+     "Son especiales: el vecino debe activarlos a mano en los ajustes, sin diálogo dentro de la app."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §3.1.2",
+    "e": "Cámara y localización afectan a datos personales: se piden en ejecución, comprobando antes si ya están concedidos, y el usuario puede revocarlos."
+   },
+   {
+    "q": "¿Qué elemento adicional exige iOS para pedir la cámara y la ubicación?",
+    "o": [
+     "Una cadena de descripción de uso en Info.plist, como NSCameraUsageDescription.",
+     "Una capability de notificaciones push en el fichero de entitlements firmado con la app.",
+     "Una declaración de cada permiso en el AndroidManifest.xml compartido con la versión de Android."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 2 · §3.2.2",
+    "e": "La descripción de uso se muestra literalmente al usuario en el diálogo de consentimiento y, si falta, la app se rechaza en la revisión."
+   },
+   {
+    "q": "Un vecino deniega el permiso de ubicación. ¿Cómo debe comportarse la app de avisos?",
+    "o": [
+     "Bloquear el envío del aviso hasta que el vecino conceda el permiso desde los ajustes.",
+     "Cerrarse y mostrar un mensaje que invite a reinstalarla para volver a solicitar el permiso.",
+     "Degradarse: ofrecer la introducción manual de la dirección, sin bloquear el envío del aviso."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §1.1.1",
+    "e": "La app debe funcionar de forma degradada, sin fallar, cuando se deniega un permiso, y explicar para qué serviría."
+   },
+   {
+    "q": "El proveedor guarda el token de sesión en SharedPreferences. ¿Cómo se corrige?",
+    "o": [
+     "Trasladándolo a UserDefaults en iOS y a un fichero del almacenamiento externo en Android.",
+     "Trasladándolo al Keystore de Android (o al Keychain en iOS), que es almacenamiento seguro.",
+     "Manteniéndolo en SharedPreferences, pero cifrando el nombre de la clave con que se guarda."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §2.1.2",
+    "e": "Las preferencias no son almacenamiento seguro; credenciales y tokens van al Keystore o al Keychain («almacenamiento inseguro», OWASP Mobile)."
+   },
+   {
+    "q": "La clave de la API de mapas está incrustada en una constante del código. ¿Cuál es la corrección adecuada?",
+    "o": [
+     "Ofuscar el código antes de compilar, para que la clave no pueda leerse en el paquete.",
+     "Sacarla del cliente y enrutar las llamadas por el servidor municipal, que custodia la clave.",
+     "Moverla a un fichero de recursos de la app, separado del código fuente compilado."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §5.1",
+    "e": "Todo secreto embarcado en la app debe considerarse público, porque el paquete instalado es analizable por ingeniería inversa."
+   },
+   {
+    "q": "La comprobación de que el aviso pertenece al ciudadano se hace en la app. ¿Qué problema crea y cómo se resuelve?",
+    "o": [
+     "Una referencia directa insegura a objetos (IDOR); la autorización se comprueba en el servidor.",
+     "Un XSS dentro del WebView; la comprobación se mueve a un plugin nativo de la propia app.",
+     "Un almacenamiento inseguro; la comprobación se guarda cifrada en el Keychain del móvil."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §5.1",
+    "e": "El cliente es manipulable: las comprobaciones de autorización decisivas se hacen siempre en el servidor."
+   },
+   {
+    "q": "¿Qué paquete se envía a cada tienda para publicar la app de avisos?",
+    "o": [
+     "Un IPA a Google Play y un AAB a App Store Connect, ambos firmados con Play App Signing.",
+     "Un AAB firmado a Google Play y un IPA generado en Xcode a App Store Connect.",
+     "El mismo APK firmado a las dos tiendas, porque la app es multiplataforma compilada."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §5.3",
+    "e": "Google Play exige AAB para las apps nuevas desde agosto de 2021; la App Store recibe un IPA enviado desde Xcode a App Store Connect."
+   },
+   {
+    "q": "¿Qué estrategia de despliegue es la más prudente para la app de avisos?",
+    "o": [
+     "Publicación simultánea al 100 % en ambas tiendas, para que todos los vecinos actualicen a la vez.",
+     "Beta abierta en Google Play y, sin pasar por TestFlight, publicación directa al 100 % en la App Store.",
+     "Canal interno y TestFlight, beta cerrada con vecinos y publicación por fases al 5 %, 20 % y 100 %."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §5.3",
+    "e": "Desplegar por fases vigilando la tasa de fallos permite detener el despliegue sin afectar a toda la ciudadanía; además hay que reservar margen para la revisión humana de Apple."
+   }
+  ]
+ }
+]

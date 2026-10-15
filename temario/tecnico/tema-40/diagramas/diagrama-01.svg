@@ -1,0 +1,54 @@
+<svg aria-label="Las tres funciones del trabajo en grupo (comunicación, coordinación y colaboración) y la matriz de Johansen, que clasifica el groupware según dos ejes, el tiempo y el lugar, en cuatro celdas: cara a cara, síncrono distribuido, asíncrono en el mismo lugar y asíncrono distribuido" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}.k1{font:700 10px system-ui,sans-serif;fill:#0055a0}.d1{font:9px system-ui,sans-serif;fill:#333}.n1{font:8.5px system-ui,sans-serif;fill:#666}.w1{font:700 11px system-ui,sans-serif;fill:#fff}.g1{font:700 9.5px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h1" text-anchor="middle" x="340" y="19">Las 3C del trabajo en grupo y la matriz de Johansen</text>
+<text class="n1" text-anchor="middle" x="340" y="35">Los dos esquemas de clasificación clave de toda la sección</text>
+<text class="k1" x="24" y="53">LAS TRES FUNCIONES (3C)</text>
+<rect fill="#eef4fa" height="42" rx="4" width="272" x="22" y="60"></rect>
+<rect fill="#0055a0" height="42" rx="4" width="30" x="22" y="60"></rect>
+<text class="w1" text-anchor="middle" x="37" y="86">C</text>
+<text class="k1" x="60" y="76">COMUNICACIÓN</text>
+<text class="d1" x="60" y="90">Intercambiar información. Unidad: el mensaje</text>
+<rect fill="#fdf3e3" height="42" rx="4" width="272" x="22" y="108"></rect>
+<rect fill="#e89822" height="42" rx="4" width="30" x="22" y="108"></rect>
+<text class="w1" text-anchor="middle" x="37" y="134">C</text>
+<text class="k1" x="60" y="124">COORDINACIÓN</text>
+<text class="d1" x="60" y="138">Quién hace qué y cuándo. Unidad: la tarea</text>
+<rect fill="#e6f2ec" height="42" rx="4" width="272" x="22" y="156"></rect>
+<rect fill="#2d8659" height="42" rx="4" width="30" x="22" y="156"></rect>
+<text class="w1" text-anchor="middle" x="37" y="182">C</text>
+<text class="k1" x="60" y="172">COLABORACIÓN</text>
+<text class="d1" x="60" y="186">Producir juntos. Unidad: el artefacto</text>
+<text class="k1" x="318" y="53">MATRIZ DE JOHANSEN (1988): TIEMPO × LUGAR</text>
+<rect fill="#0055a0" height="20" rx="3" width="86" x="316" y="60"></rect>
+<rect fill="#0055a0" height="20" rx="3" width="126" x="404" y="60"></rect>
+<text class="w1" text-anchor="middle" x="467" y="74">MISMO LUGAR</text>
+<rect fill="#0055a0" height="20" rx="3" width="126" x="532" y="60"></rect>
+<text class="w1" text-anchor="middle" x="595" y="74">DISTINTO LUGAR</text>
+<rect fill="#0055a0" height="54" rx="3" width="86" x="316" y="84"></rect>
+<text class="w1" text-anchor="middle" x="359" y="107">MISMO</text>
+<text class="w1" text-anchor="middle" x="359" y="121">TIEMPO</text>
+<rect fill="#eef4fa" height="54" rx="3" width="126" x="404" y="84"></rect>
+<text class="k1" x="410" y="100">Cara a cara</text>
+<text class="d1" x="410" y="114">Sala de reuniones</text>
+<text class="d1" x="410" y="127">Pizarra, mesa interactiva</text>
+<rect fill="#e6f2ec" height="54" rx="3" width="126" x="532" y="84"></rect>
+<text class="g1" x="538" y="100">Síncrono distribuido</text>
+<text class="d1" x="538" y="114">Videoconferencia, chat</text>
+<text class="d1" x="538" y="127">Edición simultánea</text>
+<rect fill="#0055a0" height="54" rx="3" width="86" x="316" y="142"></rect>
+<text class="w1" text-anchor="middle" x="359" y="165">DISTINTO</text>
+<text class="w1" text-anchor="middle" x="359" y="179">TIEMPO</text>
+<rect fill="#eef4fa" height="54" rx="3" width="126" x="404" y="142"></rect>
+<text class="k1" x="410" y="158">Asíncrono, mismo sitio</text>
+<text class="d1" x="410" y="172">Tablón de anuncios</text>
+<text class="d1" x="410" y="185">Turnos sobre un puesto</text>
+<rect fill="#fdf3e3" height="54" rx="3" width="126" x="532" y="142"></rect>
+<text class="k1" x="538" y="158">Asíncrono distribuido</text>
+<text class="d1" x="538" y="172">Correo, foro, wiki</text>
+<text class="d1" x="538" y="185">Repositorio, flujo trabajo</text>
+<rect fill="none" height="52" rx="5" stroke="#0055a0" stroke-width="1.5" width="636" x="22" y="212"></rect>
+<text class="k1" text-anchor="middle" x="340" y="230">CSCW es la DISCIPLINA (Grief y Cashman, 1984) · GROUPWARE es el PRODUCTO</text>
+<text class="d1" text-anchor="middle" x="340" y="245">El caso típico da una herramienta y pide su celda. El correo va abajo a la derecha; la videoconferencia, arriba a la derecha</text>
+<text class="d1" text-anchor="middle" x="340" y="258">Cuando una organización dice que la herramienta no funciona, lo que falla casi siempre es la COORDINACIÓN, no la comunicación</text>
+<text class="n1" text-anchor="end" x="658" y="288">[Fuente: Ellis, Gibbs y Rein (CACM, 1991) · Johansen (1988)]</text>
+</svg>

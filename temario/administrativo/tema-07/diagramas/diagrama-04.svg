@@ -1,0 +1,29 @@
+<svg aria-label="El procedimiento se inicia de oficio o a solicitud del interesado. La iniciación de oficio tiene cuatro vías: propia iniciativa, orden superior, petición razonada de otros órganos y denuncia. La iniciación a solicitud exige una solicitud con requisitos y un plazo de subsanación de diez días" class="svd4" role="img" viewbox="0 0 720 330" xmlns="http://www.w3.org/2000/svg">
+<style>.svd4 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd4 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd4 .s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="40" rx="8" width="160" x="280" y="16"></rect>
+<text class="h" x="360" y="41">INICIACIÓN (art. 54)</text>
+<path d="M360 56 V68 M200 68 H525 M200 68 V80 M525 68 V80" fill="none" stroke="#0055a0" stroke-width="1.5"></path>
+<rect fill="#0055a0" height="34" rx="8" width="320" x="40" y="80"></rect>
+<text class="h" x="200" y="102">De OFICIO (art. 58)</text>
+<rect fill="#2d8659" height="34" rx="8" width="310" x="370" y="80"></rect>
+<text class="h" x="525" y="102">A SOLICITUD del interesado (art. 66)</text>
+<rect fill="#e8f0f8" height="44" rx="6" stroke="#0055a0" width="152" x="40" y="126"></rect>
+<text class="s" x="116" y="152">Propia iniciativa</text>
+<rect fill="#e8f0f8" height="44" rx="6" stroke="#0055a0" width="152" x="208" y="126"></rect>
+<text class="s" x="284" y="152">Orden superior</text>
+<rect fill="#e8f0f8" height="44" rx="6" stroke="#0055a0" width="152" x="40" y="180"></rect>
+<text class="s" x="116" y="200">Petición razonada</text>
+<text class="s" x="116" y="216">de otro órgano</text>
+<rect fill="#fff5e6" height="44" rx="6" stroke="#e89822" width="152" x="208" y="180"></rect>
+<text class="s" style="font-weight:700;fill:#b5740f" x="284" y="200">Denuncia</text>
+<text class="s" x="284" y="216">(no obliga a iniciar)</text>
+<rect fill="#e8f5ee" height="44" rx="6" stroke="#2d8659" width="310" x="370" y="126"></rect>
+<text class="s" x="525" y="146">Solicitud: identidad, hechos, petición,</text>
+<text class="s" x="525" y="162">lugar/fecha, firma y órgano (art. 66)</text>
+<rect fill="#e8f5ee" height="44" rx="6" stroke="#2d8659" width="310" x="370" y="180"></rect>
+<text class="s" style="font-weight:700;fill:#1f6b45" x="525" y="200">Subsanación: 10 días (+5)</text>
+<text class="s" x="525" y="216">si no subsana → desistido (art. 68)</text>
+<rect fill="#eef2f7" height="56" rx="8" stroke="#0055a0" width="480" x="120" y="252"></rect>
+<text class="s" style="font-weight:700" x="360" y="274">Antes/al inicio: información previa (art. 55) ·</text>
+<text class="s" x="360" y="294">medidas provisionales (art. 56) · acumulación (art. 57)</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg aria-label="La carrera profesional comprende carrera horizontal sin cambio de puesto, carrera vertical con ascenso de puesto, y la promoción interna vertical a un subgrupo superior u horizontal al mismo subgrupo" class="svd8" role="img" viewbox="0 0 700 290" xmlns="http://www.w3.org/2000/svg">
+<style>.svd8 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd8 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd8 .s{font:10.5px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="40" rx="8" width="260" x="220" y="16"></rect>
+<text class="h" x="350" y="41">CARRERA PROFESIONAL · art. 16</text>
+<rect fill="#e8f0f8" height="110" rx="8" stroke="#0055a0" width="150" x="30" y="80"></rect>
+<text class="t" style="font-weight:700" x="105" y="108">Horizontal</text>
+<text class="s" x="105" y="138">progresión de grado</text>
+<text class="s" x="105" y="156">o categoría</text>
+<text class="s" style="font-weight:700;fill:#0055a0" x="105" y="178">sin cambiar de puesto</text>
+<rect fill="#e8f0f8" height="110" rx="8" stroke="#0055a0" width="150" x="195" y="80"></rect>
+<text class="t" style="font-weight:700" x="270" y="108">Vertical</text>
+<text class="s" x="270" y="138">ascenso en la</text>
+<text class="s" x="270" y="156">estructura de puestos</text>
+<text class="s" style="font-weight:700;fill:#0055a0" x="270" y="178">por provisión</text>
+<rect fill="#e8f5ee" height="110" rx="8" stroke="#2d8659" width="150" x="360" y="80"></rect>
+<text class="t" style="font-weight:700" x="435" y="104">Promoción interna</text>
+<text class="t" style="font-weight:700" x="435" y="120">vertical</text>
+<text class="s" x="435" y="150">a un Subgrupo</text>
+<text class="s" style="font-weight:700;fill:#1f5e3f" x="435" y="168">superior (art. 18)</text>
+<rect fill="#e8f5ee" height="110" rx="8" stroke="#2d8659" width="150" x="525" y="80"></rect>
+<text class="t" style="font-weight:700" x="600" y="104">Promoción interna</text>
+<text class="t" style="font-weight:700" x="600" y="120">horizontal</text>
+<text class="s" x="600" y="150">al mismo Subgrupo</text>
+<text class="s" style="font-weight:700;fill:#1f5e3f" x="600" y="168">(art. 18)</text>
+<rect fill="#fff5e6" height="50" rx="8" stroke="#e89822" width="400" x="150" y="218"></rect>
+<text class="s" style="font-weight:700;fill:#b5740f" x="350" y="240">Promoción interna: titulación + 2 años de antigüedad</text>
+<text class="s" x="350" y="258">igualdad · mérito · capacidad</text>
+</svg>

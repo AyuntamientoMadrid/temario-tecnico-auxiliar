@@ -1,0 +1,692 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, la solicitud de subvención llega sin el certificado de estar al corriente con la Seguridad Social. Antes de inadmitirla o denegarla, la Administración debe:",
+    "o": [
+     "Inadmitirla directamente, porque la convocatoria exige el certificado desde la presentación.",
+     "Denegarla por resolución sobre el fondo, al no cumplir un requisito de la convocatoria.",
+     "Requerir a la empresa para que subsane en 10 días, advirtiéndole de que, si no lo hace, se le tendrá por desistida."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · art. 68.1 LPACAP",
+    "e": "Si la solicitud no reúne los requisitos, se requiere al interesado para que en 10 días subsane, con indicación de que, si no lo hace, se le tendrá por desistido de su petición (art. 68.1 LPACAP)."
+   },
+   {
+    "q": "¿Puede ampliarse el plazo de subsanación concedido a la empresa?",
+    "o": [
+     "Sí, hasta 5 días más, salvo en procedimientos selectivos o de concurrencia competitiva.",
+     "No: el plazo de subsanación es improrrogable en todo caso.",
+     "Sí, hasta 10 días más, también en procedimientos de concurrencia competitiva."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · art. 68.2 LPACAP",
+    "e": "El plazo de subsanación de 10 días puede ampliarse hasta 5 días más, salvo que se trate de un procedimiento selectivo o de concurrencia competitiva (art. 68.2 LPACAP)."
+   },
+   {
+    "q": "El requerimiento de subsanación se notifica el martes 3 de marzo. ¿Qué día empieza el cómputo del plazo?",
+    "o": [
+     "El martes 3 de marzo, día de la notificación.",
+     "El miércoles 4 de marzo, día siguiente a la notificación.",
+     "El lunes 2 de marzo, fecha de entrada de la solicitud."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · art. 30.3 LPACAP",
+    "e": "El cómputo de los plazos empieza el día siguiente a aquel en que tenga lugar la notificación (art. 30 LPACAP)."
+   },
+   {
+    "q": "¿Qué días se excluyen del cómputo del plazo de subsanación de la empresa?",
+    "o": [
+     "Los sábados, los domingos y los festivos.",
+     "Solo los domingos y los festivos.",
+     "Ninguno, porque el plazo se cuenta en días naturales."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · art. 30.2 LPACAP",
+    "e": "Los plazos señalados por días se entienden de días hábiles y se excluyen los sábados, los domingos y los festivos (art. 30.2 LPACAP)."
+   },
+   {
+    "q": "Si no hay ningún festivo en ese periodo, ¿qué día vence el plazo de 10 días para subsanar?",
+    "o": [
+     "El viernes 13 de marzo.",
+     "El lunes 16 de marzo.",
+     "El martes 17 de marzo."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · art. 30.2 LPACAP",
+    "e": "Contando diez días hábiles desde el miércoles 4 de marzo y excluyendo los sábados y domingos (7, 8, 14 y 15), el décimo día es el martes 17 de marzo."
+   },
+   {
+    "q": "Si el último día del plazo de subsanación fuera inhábil, ¿qué ocurriría?",
+    "o": [
+     "Vencería el último día hábil anterior.",
+     "Se entendería prorrogado al primer día hábil siguiente.",
+     "Vencería ese mismo día, porque los inhábiles ya se han excluido del cómputo."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · art. 30.5 LPACAP",
+    "e": "Cuando el último día del plazo es inhábil, se entiende prorrogado al primer día hábil siguiente (art. 30.5 LPACAP)."
+   },
+   {
+    "q": "Si la empresa no aporta el certificado dentro del plazo, ¿qué ocurre?",
+    "o": [
+     "Se archiva la solicitud automáticamente, sin necesidad de resolución.",
+     "Se le deniega la subvención mediante resolución desestimatoria sobre el fondo.",
+     "Se le tiene por desistida de su solicitud, previa resolución que así lo declare."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · arts. 68.1 y 21 LPACAP",
+    "e": "La falta de subsanación lleva a tener al interesado por desistido de su petición, previa resolución dictada en los términos del artículo 21 LPACAP."
+   },
+   {
+    "q": "¿Desde qué momento se cuenta el plazo máximo para resolver el procedimiento de subvención?",
+    "o": [
+     "Desde que la empresa aporta, tras el requerimiento, el certificado que faltaba.",
+     "Desde que la solicitud entra en el registro electrónico del órgano competente para tramitarla.",
+     "Desde que se notifica a la empresa el requerimiento de subsanación del defecto."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · art. 21.3.b LPACAP",
+    "e": "En los procedimientos iniciados a solicitud del interesado, el plazo se cuenta desde la fecha en que la solicitud haya tenido entrada en el registro electrónico de la Administración u Organismo competente para su tramitación (art. 21.3.b LPACAP)."
+   },
+   {
+    "q": "¿Cuál es el plazo máximo para resolver y notificar la subvención?",
+    "o": [
+     "El que fije la convocatoria y, en su defecto, tres meses.",
+     "Seis meses en todo caso, cualquiera que sea la convocatoria.",
+     "Un mes, salvo que la convocatoria fije otro mayor."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · art. 21.2-3 LPACAP",
+    "e": "El plazo máximo es el que fije la norma del procedimiento (aquí, la convocatoria); si no lo fija, el plazo supletorio es de tres meses (art. 21.3 LPACAP)."
+   },
+   {
+    "q": "La norma que regule el procedimiento de la subvención, ¿puede fijar un plazo máximo para resolver de ocho meses?",
+    "o": [
+     "Sí, cualquier convocatoria puede fijar el plazo que considere oportuno.",
+     "No, porque el plazo máximo nunca puede superar los tres meses.",
+     "Solo si es una norma con rango de ley o lo establece el Derecho de la Unión Europea."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 4 · art. 21.2 LPACAP",
+    "e": "El plazo máximo para notificar no puede exceder de seis meses salvo que una norma con rango de ley o el Derecho de la UE establezcan uno mayor (art. 21.2 LPACAP)."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, el instructor no tiene por ciertos los hechos de la caída alegados por el ciudadano. ¿Qué periodo de prueba puede abrir?",
+    "o": [
+     "Uno no inferior a 10 días ni superior a 30.",
+     "Uno no inferior a 10 días ni superior a 15.",
+     "Uno no inferior a 20 días."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · art. 77.2 LPACAP",
+    "e": "El instructor acuerda la apertura de un periodo de prueba por un plazo no superior a 30 días ni inferior a 10 (art. 77.2 LPACAP); 10-15 es la audiencia y 20 la información pública."
+   },
+   {
+    "q": "El ciudadano propone varias pruebas. ¿Cuándo puede el instructor rechazarlas?",
+    "o": [
+     "Cuando lo considere oportuno, sin necesidad de motivarlo.",
+     "Solo cuando sean manifiestamente improcedentes o innecesarias, mediante resolución motivada.",
+     "Solo cuando el ciudadano no haya adelantado el coste de su práctica."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · art. 77.3 LPACAP",
+    "e": "El instructor solo puede rechazar las pruebas propuestas mediante resolución motivada cuando sean manifiestamente improcedentes o innecesarias (art. 77.3 LPACAP)."
+   },
+   {
+    "q": "En este procedimiento de responsabilidad patrimonial, el informe del servicio de mantenimiento cuyo funcionamiento habría causado la caída es:",
+    "o": [
+     "Facultativo y vinculante para el órgano que resuelve.",
+     "Preceptivo y vinculante para el órgano que resuelve.",
+     "Preceptivo y, salvo disposición expresa en contrario, no vinculante."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · arts. 81.1 y 80.1 LPACAP",
+    "e": "En la responsabilidad patrimonial es preceptivo pedir informe al servicio cuyo funcionamiento haya ocasionado la presunta lesión (art. 81.1), y los informes, salvo disposición expresa, no son vinculantes (art. 80.1 LPACAP)."
+   },
+   {
+    "q": "¿En qué plazo debe emitir su informe el servicio de mantenimiento?",
+    "o": [
+     "En un plazo no inferior a 15 días.",
+     "En un plazo que no puede exceder de 10 días.",
+     "En el plazo de un mes desde que se le solicita."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · art. 81.1 LPACAP",
+    "e": "En los procedimientos de responsabilidad patrimonial, el plazo de emisión del informe del servicio no puede exceder de 10 días (art. 81.1 LPACAP)."
+   },
+   {
+    "q": "Si el servicio de mantenimiento no emite el informe en plazo, el instructor:",
+    "o": [
+     "Podrá suspender el plazo máximo para resolver, por ser un informe preceptivo.",
+     "Deberá entender que el informe es favorable a la reclamación del ciudadano.",
+     "Deberá archivar el expediente hasta que el informe se emita."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · art. 80.3 LPACAP",
+    "e": "Si un informe preceptivo no se emite en plazo, se podrá suspender el transcurso del plazo máximo legal para resolver (art. 80.3 LPACAP)."
+   },
+   {
+    "q": "Durante la instrucción, el ciudadano quiere aportar fotografías del lugar de la caída. Puede hacerlo:",
+    "o": [
+     "Solo junto con el escrito inicial de reclamación.",
+     "Solo si el instructor abre expresamente un plazo para ello.",
+     "En cualquier momento anterior al trámite de audiencia."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · art. 76 LPACAP",
+    "e": "Los interesados pueden, en cualquier momento anterior al trámite de audiencia, aducir alegaciones y aportar documentos, que se tienen en cuenta al redactar la propuesta de resolución (art. 76 LPACAP)."
+   },
+   {
+    "q": "¿En qué momento debe el instructor dar al ciudadano el trámite de audiencia?",
+    "o": [
+     "Al iniciar el procedimiento, antes de abrir el periodo de prueba.",
+     "Una vez dictada la resolución, para que el ciudadano decida si recurre.",
+     "Instruido el procedimiento e inmediatamente antes de redactar la propuesta de resolución."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · art. 82.1 LPACAP",
+    "e": "La audiencia se realiza instruido el procedimiento e inmediatamente antes de redactar la propuesta de resolución (art. 82.1 LPACAP)."
+   },
+   {
+    "q": "¿Qué plazo debe concederse al ciudadano en el trámite de audiencia?",
+    "o": [
+     "No inferior a 10 días ni superior a 15.",
+     "No inferior a 10 días ni superior a 30.",
+     "No inferior a 20 días."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · art. 82.2 LPACAP",
+    "e": "El plazo de audiencia es no inferior a 10 días ni superior a 15 (art. 82.2 LPACAP); 10-30 es el de prueba y el mínimo de 20 días es el de información pública."
+   },
+   {
+    "q": "¿En qué caso podría el instructor prescindir del trámite de audiencia?",
+    "o": [
+     "Cuando el informe del servicio de mantenimiento sea desfavorable a la reclamación.",
+     "Cuando no figuren ni se tengan en cuenta otros hechos, alegaciones o pruebas que los aducidos por el ciudadano.",
+     "Cuando el instructor considere que la reclamación es manifiestamente infundada."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · art. 82.4 LPACAP",
+    "e": "Se puede prescindir de la audiencia cuando no figuren en el procedimiento ni sean tenidos en cuenta en la resolución otros hechos ni otras alegaciones y pruebas que las aducidas por el interesado (art. 82.4 LPACAP)."
+   },
+   {
+    "q": "En el expediente, el informe del servicio aporta hechos nuevos que se tendrán en cuenta al resolver. Con ese informe en el expediente, la audiencia al ciudadano:",
+    "o": [
+     "No puede omitirse, porque figuran hechos distintos de los aducidos por él.",
+     "Puede omitirse, porque el informe es preceptivo.",
+     "Puede omitirse, porque el informe no es vinculante."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · art. 82.4 LPACAP",
+    "e": "La excepción del artículo 82.4 solo opera si no figuran ni se tienen en cuenta otros hechos, alegaciones o pruebas que los del interesado; si el informe aporta hechos nuevos, la audiencia es necesaria."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el caso (a) del supuesto, el vecino solicita una autorización. ¿Cuál es la regla general del silencio en los procedimientos iniciados a solicitud del interesado?",
+    "o": [
+     "El silencio estimatorio (positivo).",
+     "El silencio desestimatorio (negativo).",
+     "La caducidad del procedimiento."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · art. 24.1 LPACAP",
+    "e": "En los procedimientos iniciados a solicitud del interesado, el vencimiento del plazo sin resolución expresa legitima para entender estimada la solicitud: la regla general es el silencio positivo (art. 24.1 LPACAP)."
+   },
+   {
+    "q": "Pero la autorización de uso común especial de la vía pública transferiría al vecino facultades relativas al dominio público. Por eso, en el caso (a), el silencio:",
+    "o": [
+     "Es estimatorio, por aplicarse la regla general.",
+     "Produce la caducidad del procedimiento.",
+     "Tiene efecto desestimatorio."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · art. 24.1, párrafo segundo, LPACAP",
+    "e": "El silencio es desestimatorio en los procedimientos cuya estimación transfiriera al solicitante o a terceros facultades relativas al dominio público o al servicio público (art. 24.1 LPACAP)."
+   },
+   {
+    "q": "En el caso (b), la Inspección no resuelve en plazo el expediente sancionador que incoó de oficio. ¿Qué efecto se produce?",
+    "o": [
+     "El silencio estimatorio a favor del expedientado.",
+     "La caducidad, con archivo de las actuaciones.",
+     "La sanción se entiende impuesta por silencio."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · art. 25.1.b LPACAP",
+    "e": "En los procedimientos de oficio en que se ejercitan potestades sancionadoras, el vencimiento del plazo produce la caducidad, y la resolución que la declara ordena el archivo de las actuaciones (art. 25.1.b LPACAP)."
+   },
+   {
+    "q": "Declarada la caducidad del caso (b), ¿puede la Inspección volver a perseguir la misma infracción de la ordenanza de terrazas?",
+    "o": [
+     "No, porque la caducidad extingue en todo caso la infracción.",
+     "Sí, puede iniciar un nuevo procedimiento si la infracción no ha prescrito.",
+     "Sí, reanudando el procedimiento caducado en el punto en que quedó."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · art. 95.3 LPACAP",
+    "e": "La caducidad no produce por sí sola la prescripción; si esta no se ha producido, puede iniciarse un nuevo procedimiento (art. 95.3 LPACAP)."
+   },
+   {
+    "q": "La caducidad del caso (b) se distingue de la caducidad del artículo 95 LPACAP en que se produce porque:",
+    "o": [
+     "El interesado paraliza el procedimiento por una causa que le es imputable.",
+     "El denunciante no presenta alegaciones en el plazo concedido.",
+     "Es la Administración la que no resuelve en plazo un procedimiento de oficio de gravamen."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · arts. 25.1.b y 95 LPACAP",
+    "e": "La caducidad del artículo 25.1.b se debe a la falta de resolución en plazo por la Administración en procedimientos de oficio de gravamen; la del artículo 95, a la paralización imputable al interesado en procedimientos a solicitud."
+   },
+   {
+    "q": "Para recurrir en alzada la desestimación presunta de su solicitud, como hace en el caso (c), el vecino dispone de:",
+    "o": [
+     "Cualquier momento a partir del día siguiente a aquel en que se produzcan los efectos del silencio.",
+     "Un mes, contado desde el día en que venció el plazo máximo para resolver.",
+     "Tres meses, contados desde la presentación de la solicitud inicial."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · art. 122.1 LPACAP",
+    "e": "Si el acto no es expreso, la alzada puede interponerse en cualquier momento a partir del día siguiente a aquel en que se produzcan los efectos del silencio (art. 122.1 LPACAP)."
+   },
+   {
+    "q": "En un procedimiento a solicitud en que se produce silencio estimatorio, la resolución expresa que se dicte después:",
+    "o": [
+     "Solo puede dictarse si es confirmatoria del silencio.",
+     "Puede ser denegatoria si el órgano revisa el fondo del asunto.",
+     "Es nula en todo caso, por haberse dictado fuera de plazo."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · art. 24.2 y 24.3.a LPACAP",
+    "e": "La estimación por silencio tiene a todos los efectos la consideración de acto finalizador del procedimiento, y la resolución expresa posterior solo puede dictarse de ser confirmatoria (art. 24.3.a LPACAP)."
+   },
+   {
+    "q": "En el caso (a), ¿qué efecto produce para el vecino la desestimación por silencio de su solicitud?",
+    "o": [
+     "Pone fin al procedimiento y exime a la Administración de resolver.",
+     "Le permite interponer el recurso administrativo o contencioso-administrativo que proceda.",
+     "Le concede la autorización si no recurre en el plazo de un mes."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · art. 24.2 LPACAP",
+    "e": "La desestimación por silencio tiene los solos efectos de permitir a los interesados la interposición del recurso administrativo o contencioso-administrativo que resulte procedente (art. 24.2 LPACAP)."
+   },
+   {
+    "q": "Si, tras la desestimación por silencio del caso (a), la Administración dicta una resolución expresa fuera de plazo, esa resolución:",
+    "o": [
+     "Debe ser necesariamente desestimatoria, como el silencio.",
+     "No puede dictarse, porque el silencio ya resolvió el procedimiento.",
+     "Se adopta sin vinculación alguna al sentido del silencio."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · art. 24.3.b LPACAP",
+    "e": "En los casos de desestimación por silencio, la resolución expresa posterior se adopta sin vinculación alguna al sentido del silencio (art. 24.3.b LPACAP)."
+   },
+   {
+    "q": "El vecino quiere acreditar ante terceros que su solicitud se ha desestimado por silencio. El certificado acreditativo del silencio lo expide de oficio el órgano competente en el plazo de:",
+    "o": [
+     "15 días desde que expire el plazo máximo para resolver.",
+     "Un mes desde que el vecino lo solicite.",
+     "10 días naturales desde la presentación de la solicitud."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · art. 24.4 LPACAP",
+    "e": "Los actos producidos por silencio se acreditan por cualquier medio de prueba, incluido el certificado que el órgano competente expide de oficio en 15 días desde que expira el plazo máximo para resolver (art. 24.4 LPACAP)."
+   }
+  ]
+ },
+ {
+  "k": 3,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, el acto (1) lo dicta un órgano de distrito sobre una materia que corresponde exclusivamente a otra Área de Gobierno. ¿Cómo se califica?",
+    "o": [
+     "Anulabilidad por incompetencia, convalidable por el órgano competente.",
+     "Nulidad de pleno derecho por incompetencia manifiesta por razón de la materia.",
+     "Irregularidad no invalidante, rectificable en cualquier momento."
+    ],
+    "c": 1,
+    "r": "Caso 4, cuestión 1 · art. 47.1.b LPACAP",
+    "e": "Son nulos de pleno derecho los actos dictados por órgano manifiestamente incompetente por razón de la materia o del territorio (art. 47.1.b LPACAP)."
+   },
+   {
+    "q": "¿Qué consecuencia tiene la calificación del acto (1)?",
+    "o": [
+     "Produce efectos mientras no se anule y puede convalidarse.",
+     "Produce efectos hasta que se declare su nulidad, y desde entonces deja de producirlos.",
+     "No produce efectos desde el origen, es insubsanable e imprescriptible."
+    ],
+    "c": 2,
+    "r": "Caso 4, cuestión 1 · art. 47 LPACAP",
+    "e": "El acto nulo de pleno derecho no produce efectos desde el origen (ex tunc), es insubsanable e imprescriptible."
+   },
+   {
+    "q": "El acto (2) es una licencia concedida prescindiendo por completo del procedimiento. ¿Cómo se califica?",
+    "o": [
+     "Nulidad de pleno derecho por prescindir totalmente del procedimiento establecido.",
+     "Anulabilidad por un defecto de forma que genera indefensión al interesado.",
+     "Nulidad de pleno derecho por tener un contenido imposible."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 2 · art. 47.1.e LPACAP",
+    "e": "Son nulos de pleno derecho los actos dictados prescindiendo total y absolutamente del procedimiento legalmente establecido (art. 47.1.e LPACAP)."
+   },
+   {
+    "q": "Variante del acto (2): si la licencia solo hubiera omitido un requisito formal menor, sin impedir al acto alcanzar su fin ni causar indefensión, ese defecto de forma:",
+    "o": [
+     "Determinaría igualmente la nulidad de pleno derecho.",
+     "Determinaría la anulabilidad de la licencia en todo caso.",
+     "No determinaría por sí solo la anulabilidad de la licencia."
+    ],
+    "c": 2,
+    "r": "Caso 4, cuestión 2 · art. 48.2 LPACAP",
+    "e": "El defecto de forma solo determina la anulabilidad cuando el acto carezca de los requisitos formales indispensables para alcanzar su fin o dé lugar a indefensión (art. 48.2 LPACAP)."
+   },
+   {
+    "q": "El acto (3) contiene un error en la suma de una liquidación. ¿Cómo se califica?",
+    "o": [
+     "Es un vicio de anulabilidad por infracción del ordenamiento jurídico.",
+     "Es un error material o aritmético, que no es causa de invalidez.",
+     "Es un vicio de nulidad de pleno derecho por contenido imposible."
+    ],
+    "c": 1,
+    "r": "Caso 4, cuestión 3 · art. 109.2 LPACAP",
+    "e": "Un error en una suma es un error material o aritmético: no afecta a la validez del acto y se corrige por rectificación (art. 109.2 LPACAP)."
+   },
+   {
+    "q": "¿Cómo se corrige el error del acto (3)?",
+    "o": [
+     "La propia Administración lo rectifica en cualquier momento, sin alterar el fondo del acto.",
+     "Mediante declaración de lesividad, dentro de los cuatro años siguientes.",
+     "Solo si el interesado interpone recurso en el plazo de un mes."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 3 · art. 109.2 LPACAP",
+    "e": "Las Administraciones pueden rectificar en cualquier momento, de oficio o a instancia de los interesados, los errores materiales, de hecho o aritméticos (art. 109.2 LPACAP)."
+   },
+   {
+    "q": "El acto (4) lo dicta un órgano inferior cuando correspondía a su superior jerárquico dentro de la misma Área. ¿Cómo se califica?",
+    "o": [
+     "Nulidad de pleno derecho por incompetencia manifiesta.",
+     "Anulabilidad, por tratarse de una incompetencia no determinante de nulidad.",
+     "Error material rectificable de oficio en cualquier momento."
+    ],
+    "c": 1,
+    "r": "Caso 4, cuestión 4 · art. 48.1 LPACAP",
+    "e": "La incompetencia jerárquica no es manifiesta por razón de la materia o del territorio, por lo que solo produce anulabilidad (art. 48.1 LPACAP)."
+   },
+   {
+    "q": "¿Es subsanable el vicio del acto (4)?",
+    "o": [
+     "No, porque la incompetencia del órgano nunca es subsanable.",
+     "Sí, mediante la rectificación de errores del artículo 109.2 LPACAP.",
+     "Sí, mediante convalidación por el órgano competente, superior jerárquico del que dictó el acto."
+    ],
+    "c": 2,
+    "r": "Caso 4, cuestión 4 · art. 52.3 LPACAP",
+    "e": "La incompetencia no determinante de nulidad puede convalidarse por el órgano competente cuando sea superior jerárquico del que dictó el acto viciado (art. 52.3 LPACAP)."
+   },
+   {
+    "q": "Si el superior convalida el acto (4), la convalidación produce efectos, como regla general:",
+    "o": [
+     "Desde la fecha de la convalidación.",
+     "Desde la fecha en que se dictó el acto viciado, en todo caso.",
+     "Desde que la convalidación sea confirmada por el Pleno."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 4 · art. 52 LPACAP",
+    "e": "La convalidación surte efecto desde su fecha, salvo lo dispuesto sobre la retroactividad de los actos en el artículo 39.3 LPACAP."
+   },
+   {
+    "q": "Para calificar los actos (1) y (4), ¿qué incompetencia NO determina la nulidad de pleno derecho?",
+    "o": [
+     "La incompetencia manifiesta por razón de la materia.",
+     "La incompetencia jerárquica, de un órgano inferior respecto de su superior.",
+     "La incompetencia manifiesta por razón del territorio."
+    ],
+    "c": 1,
+    "r": "Caso 4, cuestiones 1 y 4 · arts. 47.1.b y 48.1 LPACAP",
+    "e": "Solo la incompetencia manifiesta por razón de la materia o del territorio causa nulidad (art. 47.1.b); la jerárquica produce anulabilidad convalidable (arts. 48.1 y 52.3)."
+   }
+  ]
+ },
+ {
+  "k": 4,
+  "preguntas": [
+   {
+    "q": "En el caso (a) del supuesto, la resolución de la concejalía no agota la vía administrativa. ¿Qué recurso procede?",
+    "o": [
+     "El recurso de reposición.",
+     "El recurso de revisión.",
+     "El recurso de alzada."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 1 · art. 121 LPACAP",
+    "e": "Contra las resoluciones y actos que no ponen fin a la vía administrativa procede el recurso de alzada (art. 121.1 LPACAP)."
+   },
+   {
+    "q": "¿Qué órgano resuelve el recurso del caso (a)?",
+    "o": [
+     "El mismo órgano que dictó el acto.",
+     "El superior jerárquico del órgano que dictó el acto.",
+     "El juzgado de lo contencioso-administrativo."
+    ],
+    "c": 1,
+    "r": "Caso 5, cuestión 1 · art. 121.1 LPACAP",
+    "e": "El recurso de alzada lo resuelve el órgano superior jerárquico del que dictó el acto (art. 121.1 LPACAP)."
+   },
+   {
+    "q": "Si la resolución de la concejalía es expresa, ¿de qué plazo dispone el ciudadano para interponer el recurso?",
+    "o": [
+     "Un mes.",
+     "Tres meses.",
+     "Quince días hábiles."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 1 · art. 122.1 LPACAP",
+    "e": "El plazo para interponer el recurso de alzada contra un acto expreso es de un mes (art. 122.1 LPACAP)."
+   },
+   {
+    "q": "Si el superior no resuelve la alzada del caso (a), ¿cuándo podrá el ciudadano entenderla desestimada?",
+    "o": [
+     "Transcurridos tres meses.",
+     "Transcurrido un mes.",
+     "Transcurridos seis meses."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 1 · art. 122.2 LPACAP",
+    "e": "El plazo para resolver la alzada es de tres meses; transcurrido sin resolución, se podrá entender desestimado el recurso, salvo el doble silencio (art. 122.2 LPACAP)."
+   },
+   {
+    "q": "En el caso (b), la resolución de la Junta de Gobierno agota la vía administrativa. ¿Qué opciones tiene el ciudadano?",
+    "o": [
+     "Interponer recurso de alzada ante el Alcalde, que es obligatorio antes del contencioso.",
+     "Interponer recurso potestativo de reposición ante la Junta de Gobierno o acudir directamente al contencioso-administrativo.",
+     "Solo acudir al contencioso, porque estos actos no admiten recurso administrativo."
+    ],
+    "c": 1,
+    "r": "Caso 5, cuestión 2 · art. 123.1 LPACAP",
+    "e": "Contra los actos que ponen fin a la vía administrativa cabe el recurso potestativo de reposición ante el mismo órgano o la impugnación directa ante la jurisdicción contencioso-administrativa (art. 123.1 LPACAP)."
+   },
+   {
+    "q": "Si el ciudadano del caso (b) interpone recurso de reposición, ¿en qué plazo debe resolverlo la Junta de Gobierno?",
+    "o": [
+     "En tres meses; si no resuelve, el silencio es estimatorio.",
+     "En quince días; si no resuelve, el recurso caduca.",
+     "En un mes; si no resuelve, el silencio es desestimatorio."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 2 · art. 124.2 LPACAP",
+    "e": "El plazo para dictar y notificar la resolución del recurso de reposición es de un mes, y el silencio es desestimatorio (art. 124.2 LPACAP)."
+   },
+   {
+    "q": "Si el ciudadano del caso (b) interpone la reposición, ¿puede acudir a la vez al contencioso-administrativo?",
+    "o": [
+     "Sí, puede tramitar ambas vías de forma simultánea.",
+     "Sí, siempre que comunique a la Junta de Gobierno que ha acudido al juzgado.",
+     "No, hasta que la reposición se resuelva expresamente o por silencio."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 3 · art. 123.2 LPACAP",
+    "e": "Si se opta por la reposición, no puede interponerse el recurso contencioso-administrativo hasta que aquella se resuelva expresamente o se produzca su desestimación presunta (art. 123.2 LPACAP)."
+   },
+   {
+    "q": "En el caso (c), la resolución firme se basó en un documento que una sentencia penal acaba de declarar falso. ¿Qué recurso procede?",
+    "o": [
+     "El recurso extraordinario de revisión.",
+     "El recurso de alzada ante el superior jerárquico.",
+     "El recurso potestativo de reposición."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 4 · art. 125.1.c LPACAP",
+    "e": "Contra actos firmes cabe el recurso extraordinario de revisión cuando en la resolución hayan influido esencialmente documentos o testimonios declarados falsos por sentencia judicial firme (art. 125.1.c LPACAP)."
+   },
+   {
+    "q": "¿En qué plazo debe interponer el recurso el ciudadano del caso (c)?",
+    "o": [
+     "En cuatro años desde la notificación de la resolución impugnada.",
+     "En tres meses desde que la sentencia judicial quedó firme.",
+     "En un mes desde que tuvo conocimiento de la sentencia."
+    ],
+    "c": 1,
+    "r": "Caso 5, cuestión 4 · art. 125.2 LPACAP",
+    "e": "Para la causa del documento declarado falso, el plazo es de tres meses desde que la sentencia judicial quedó firme (art. 125.2 LPACAP); los cuatro años son para el error de hecho."
+   },
+   {
+    "q": "¿Ante qué órgano se interpone el recurso del caso (c)?",
+    "o": [
+     "Ante el superior jerárquico del órgano que dictó el acto.",
+     "Ante el Consejo de Estado u órgano consultivo autonómico.",
+     "Ante el mismo órgano que dictó el acto."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 4 · art. 125.1 LPACAP",
+    "e": "El recurso extraordinario de revisión se interpone ante el mismo órgano administrativo que dictó el acto firme (art. 125.1 LPACAP)."
+   }
+  ]
+ },
+ {
+  "k": 5,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿cómo puede el Ayuntamiento dejar sin efecto la ayuda concedida mediante un acto nulo de pleno derecho?",
+    "o": [
+     "Mediante la declaración de lesividad y su posterior impugnación judicial.",
+     "Mediante la revisión de oficio de los actos nulos.",
+     "Mediante la revocación de los actos de gravamen."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestión 1 · art. 106 LPACAP",
+    "e": "Los actos nulos de pleno derecho que pusieron fin a la vía administrativa o no se recurrieron en plazo se revisan de oficio por la propia Administración (art. 106 LPACAP)."
+   },
+   {
+    "q": "Han pasado tres años desde que se concedió la ayuda. ¿Llega a tiempo el Ayuntamiento para revisar el acto nulo?",
+    "o": [
+     "Sí: la nulidad puede declararse en cualquier momento.",
+     "Solo si el beneficiario no se opone a la revisión.",
+     "No: el plazo para revisar de oficio es de un año desde que se dictó el acto."
+    ],
+    "c": 0,
+    "r": "Caso 6, cuestión 1 · art. 106.1 LPACAP",
+    "e": "La revisión de oficio de los actos nulos puede ejercerse en cualquier momento (art. 106.1 LPACAP); el plazo de cuatro años es el de la declaración de lesividad."
+   },
+   {
+    "q": "¿Qué requisito exige la declaración de nulidad de la ayuda?",
+    "o": [
+     "La autorización previa del juzgado de lo contencioso-administrativo.",
+     "La conformidad expresa del beneficiario de la ayuda.",
+     "El dictamen favorable del Consejo de Estado u órgano consultivo equivalente."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestión 1 · art. 106.1 LPACAP",
+    "e": "La revisión de oficio de actos nulos exige el dictamen favorable del Consejo de Estado u órgano consultivo equivalente de la comunidad autónoma, si lo hubiere (art. 106.1 LPACAP)."
+   },
+   {
+    "q": "¿Quién puede promover la revisión de oficio de la ayuda nula?",
+    "o": [
+     "Solo un interesado, mediante solicitud dirigida al órgano que dictó el acto.",
+     "Solo el Consejo de Estado, a propuesta del órgano consultivo autonómico.",
+     "La propia Administración por iniciativa propia, o un interesado mediante solicitud."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestión 1 · art. 106.1 LPACAP",
+    "e": "La revisión de oficio de los actos nulos puede iniciarse por iniciativa propia de la Administración o a solicitud de interesado (art. 106.1 LPACAP)."
+   },
+   {
+    "q": "Respecto de la resolución firme, favorable al particular y solo anulable, ¿puede la Administración anularla por sí misma?",
+    "o": [
+     "No: debe declararla lesiva para el interés público y después impugnarla en vía judicial.",
+     "Sí: puede anularla mediante la revisión de oficio de los actos nulos.",
+     "Sí: puede revocarla libremente en cualquier momento."
+    ],
+    "c": 0,
+    "r": "Caso 6, cuestión 2 · art. 107 LPACAP",
+    "e": "La Administración no puede anular por sí misma sus actos favorables anulables: debe declararlos lesivos y después impugnarlos ante la jurisdicción contencioso-administrativa (art. 107 LPACAP)."
+   },
+   {
+    "q": "¿Hasta cuándo puede adoptarse la declaración de lesividad de esa resolución?",
+    "o": [
+     "Hasta que transcurran cuatro años desde que la Administración advirtió la lesividad.",
+     "Hasta que transcurran cuatro años desde que se dictó el acto.",
+     "En cualquier momento, como en los actos nulos de pleno derecho."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestión 3 · art. 107.2 LPACAP",
+    "e": "La declaración de lesividad no puede adoptarse una vez transcurridos cuatro años desde que se dictó el acto administrativo (art. 107.2 LPACAP)."
+   },
+   {
+    "q": "Antes de declarar lesiva la resolución, el Ayuntamiento debe:",
+    "o": [
+     "Dar audiencia a cuantos aparezcan como interesados en el procedimiento.",
+     "Obtener el dictamen favorable del Consejo de Estado.",
+     "Obtener el consentimiento del particular beneficiado."
+    ],
+    "c": 0,
+    "r": "Caso 6, cuestión 3 · art. 107.2 LPACAP",
+    "e": "La declaración de lesividad exige la previa audiencia de cuantos aparezcan como interesados en el procedimiento (art. 107.2 LPACAP)."
+   },
+   {
+    "q": "Declarada la lesividad, ¿ante quién se impugna la resolución?",
+    "o": [
+     "Ante el Consejo de Estado, que la anula mediante dictamen.",
+     "Ante el propio órgano, mediante recurso de reposición.",
+     "Ante la jurisdicción contencioso-administrativa."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestión 3 · art. 107 LPACAP",
+    "e": "Tras la declaración de lesividad, el acto se impugna ante la jurisdicción contencioso-administrativa: no lo anula la propia Administración, sino el juez."
+   },
+   {
+    "q": "¿Qué prerrogativa permite al Ayuntamiento cobrar la multa firme impagada sin acudir previamente a un juez?",
+    "o": [
+     "La potestad reglamentaria del Pleno del Ayuntamiento.",
+     "La autotutela ejecutiva, porque los actos administrativos son ejecutivos.",
+     "La declaración de lesividad de la multa."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestión 4 · arts. 38 y 99 LPACAP",
+    "e": "Los actos administrativos son ejecutivos (art. 38 LPACAP) y la Administración puede ejecutarlos forzosamente, previo apercibimiento (autotutela ejecutiva)."
+   },
+   {
+    "q": "¿Qué medio de ejecución forzosa corresponde usar para cobrar la multa?",
+    "o": [
+     "La compulsión sobre las personas.",
+     "El apremio sobre el patrimonio.",
+     "La ejecución subsidiaria."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestión 4 · arts. 100.1.a y 101 LPACAP",
+    "e": "El apremio sobre el patrimonio es el medio típico para cobrar deudas de derecho público, como una multa (arts. 100.1.a y 101 LPACAP)."
+   }
+  ]
+ }
+]

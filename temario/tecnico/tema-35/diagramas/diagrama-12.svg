@@ -1,0 +1,17 @@
+<svg aria-label="Arquitectura de SSH en tres capas: la capa de transporte cifra, comprueba la integridad y autentica al servidor mediante su clave de host; la capa de autenticación de usuario admite contraseña, par de claves, certificado o Kerberos; y la capa de conexión multiplexa canales para sesión interactiva, SFTP y reenvío de puertos. Sustituye a Telnet, rlogin y rsh, que viajan en claro. La primera conexión muestra la huella del servidor bajo el modelo de confianza en el primer uso" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.t12{font:700 10px system-ui,sans-serif;fill:#fff}.s12{font:8.5px system-ui,sans-serif;fill:#fff}.d12{font:9px system-ui,sans-serif;fill:#333}.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}.k12{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n12{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h12" text-anchor="middle" x="340" y="20">SSH (puerto 22) sustituye a Telnet, rlogin y rsh, que van en claro</text>
+<text class="k12" x="20" y="42">ARQUITECTURA EN TRES CAPAS · RFC 4251 a 4254</text>
+<rect fill="#2d8659" height="44" rx="5" width="640" x="20" y="50"></rect><text class="t12" text-anchor="middle" x="340" y="68">3 · CAPA DE CONEXIÓN</text><text class="s12" text-anchor="middle" x="340" y="84">Multiplexa canales sobre una sola conexión: sesión interactiva, ejecución de órdenes, SFTP y reenvío de puertos</text>
+<rect fill="#0055a0" height="44" rx="5" width="640" x="20" y="100"></rect><text class="t12" text-anchor="middle" x="340" y="118">2 · CAPA DE AUTENTICACIÓN DE USUARIO</text><text class="s12" text-anchor="middle" x="340" y="134">Autentica al CLIENTE ante el servidor</text>
+<rect fill="#7a2f8a" height="44" rx="5" width="640" x="20" y="150"></rect><text class="t12" text-anchor="middle" x="340" y="168">1 · CAPA DE TRANSPORTE</text><text class="s12" text-anchor="middle" x="340" y="184">Cifrado, integridad y autenticación del SERVIDOR mediante su clave de host</text>
+<text class="k12" x="20" y="216">MÉTODOS DE AUTENTICACIÓN DEL USUARIO, de menor a mayor robustez</text>
+<rect fill="#fbeaea" height="42" rx="4" width="206" x="20" y="224"></rect><text class="d12" text-anchor="middle" x="123" y="240">Contraseña</text><text class="n12" text-anchor="middle" x="123" y="255">Vulnerable a fuerza bruta</text>
+<rect fill="#eaf5ef" height="42" rx="4" width="206" x="237" y="224"></rect><text class="d12" text-anchor="middle" x="340" y="240">Par de claves · recomendado</text><text class="n12" text-anchor="middle" x="340" y="255">Clave privada protegida en el cliente</text>
+<rect fill="#eef3f8" height="42" rx="4" width="206" x="454" y="224"></rect><text class="d12" text-anchor="middle" x="557" y="240">Certificado o Kerberos</text><text class="n12" text-anchor="middle" x="557" y="255">Gestión centralizada de identidades</text>
+<rect fill="#fdf3e3" height="26" rx="4" width="640" x="20" y="274"></rect>
+<text class="d12" text-anchor="middle" x="340" y="291">CONFIANZA EN EL PRIMER USO: la huella del servidor se guarda en known_hosts; si cambia, el cliente aborta la conexión</text>
+<rect fill="none" height="24" rx="4" stroke="#d13c3c" stroke-width="1.5" width="640" x="20" y="308"></rect>
+<text class="k12" text-anchor="middle" x="340" y="324">Bastionado: sin acceso directo del superusuario, sin contraseña si hay claves y sin reenvío de puertos</text>
+<text class="n12" text-anchor="end" x="670" y="344">[Fuente: RFC 4251-4254; CCN-STIC serie 500/600]</text>
+</svg>

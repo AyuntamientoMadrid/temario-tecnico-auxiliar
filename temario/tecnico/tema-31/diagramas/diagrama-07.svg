@@ -1,0 +1,22 @@
+<svg aria-label="Teorema CAP representado como un triángulo con consistencia, disponibilidad y tolerancia a particiones, indicando que la tolerancia a particiones no es opcional y que la elección entre consistencia y disponibilidad solo se plantea durante una partición de red; incluye la comparación entre los modelos ACID y BASE" role="img" viewbox="0 0 680 341" xmlns="http://www.w3.org/2000/svg">
+<style>.t7{font:700 10px system-ui,sans-serif;fill:#fff}.s7{font:8.5px system-ui,sans-serif;fill:#fff}.d7{font:9px system-ui,sans-serif;fill:#333}.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}.k7{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.f7{font:8px system-ui,sans-serif;fill:#777}</style>
+<text class="h7" text-anchor="middle" x="340" y="20">Teorema CAP: qué dice y qué no dice</text>
+<path d="M175 48 L272 200 L78 200 Z" fill="none" stroke="#0055a0" stroke-width="2"></path>
+<circle cx="175" cy="48" fill="#0055a0" r="24"></circle><text class="t7" text-anchor="middle" x="175" y="45">C</text><text class="s7" text-anchor="middle" x="175" y="57">consist.</text>
+<circle cx="78" cy="200" fill="#2d8659" r="24"></circle><text class="t7" text-anchor="middle" x="78" y="197">A</text><text class="s7" text-anchor="middle" x="78" y="209">disponib.</text>
+<circle cx="272" cy="200" fill="#d13c3c" r="24"></circle><text class="t7" text-anchor="middle" x="272" y="197">P</text><text class="s7" style="font-size:7.5px" text-anchor="middle" x="272" y="209">particiones</text>
+<rect fill="#fdecec" height="20" rx="4" width="270" x="40" y="236"></rect><text class="d7" text-anchor="middle" x="175" y="250">P no es opcional: las particiones ocurren</text>
+<rect fill="#d13c3c" height="22" rx="4" width="320" x="340" y="44"></rect><text class="t7" text-anchor="middle" x="500" y="59">LECTURA INCORRECTA</text>
+<rect fill="#fdecec" height="24" rx="4" width="320" x="340" y="70"></rect><text class="d7" text-anchor="middle" x="500" y="86">«Elige dos de las tres»</text>
+<rect fill="#2d8659" height="22" rx="4" width="320" x="340" y="102"></rect><text class="t7" text-anchor="middle" x="500" y="117">LECTURA CORRECTA</text>
+<rect fill="#e8f4ec" height="38" rx="4" width="320" x="340" y="128"></rect><text class="d7" text-anchor="middle" x="500" y="144">Cuando hay partición, elige entre C y A.</text><text class="d7" text-anchor="middle" x="500" y="158">Cuando no la hay, puedes tener ambas.</text>
+<rect fill="#0055a0" height="24" rx="4" width="155" x="340" y="176"></rect><text class="s7" text-anchor="middle" x="417" y="192">Sistemas CP: rechazan</text>
+<rect fill="#2d8659" height="24" rx="4" width="155" x="505" y="176"></rect><text class="s7" text-anchor="middle" x="582" y="192">Sistemas AP: responden</text>
+<rect fill="#f5f5f5" height="46" rx="4" width="320" x="340" y="210"></rect><text class="d7" text-anchor="middle" x="500" y="226">CP: bases relacionales replicadas, consenso</text><text class="d7" text-anchor="middle" x="500" y="242">AP: almacenes clave-valor, catálogos, contenidos</text>
+<text class="k7" x="40" y="278">ACID</text>
+<rect fill="#eef3f8" height="20" rx="4" width="230" x="80" y="266"></rect><text class="d7" text-anchor="middle" x="195" y="280">Consistencia inmediata y fuerte</text>
+<text class="k7" x="340" y="278">BASE</text>
+<rect fill="#eef3f8" height="20" rx="4" width="274" x="386" y="266"></rect><text class="d7" text-anchor="middle" x="523" y="280">Disponible siempre, consistencia eventual</text>
+<rect fill="#0055a0" height="20" rx="4" width="620" x="40" y="294"></rect><text class="s7" text-anchor="middle" x="350" y="308">La C de CAP no es la C de ACID: aquí significa que todas las réplicas se ven iguales</text>
+<text class="f7" text-anchor="middle" x="340" y="332">[Fuente: BREWER]</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg aria-label="Comparación de tres bucles: mientras precondicional que puede ejecutarse cero veces, repetir hasta postcondicional que se ejecuta al menos una vez, y para con contador conocido" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t7{font:700 12px system-ui,sans-serif;fill:#fff}.l7{font:11px system-ui,sans-serif;fill:#444}.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}.k7{font:700 11px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h7" text-anchor="middle" x="340" y="24">Tres tipos de bucle</text>
+<rect fill="#0055a0" height="34" rx="6" width="200" x="30" y="44"></rect><text class="t7" text-anchor="middle" x="130" y="66">MIENTRAS (while)</text>
+<text class="l7" text-anchor="middle" x="130" y="98">Comprueba ANTES</text>
+<text class="k7" text-anchor="middle" x="130" y="118">Puede ejecutarse 0 veces</text>
+<text class="l7" text-anchor="middle" x="130" y="140">precondicional</text>
+<rect fill="#f2f6fb" height="90" rx="6" stroke="#0055a0" width="180" x="40" y="158"></rect><text class="l7" text-anchor="middle" x="130" y="180">i = 1</text><text class="l7" text-anchor="middle" x="130" y="198">mientras (i &lt;= 10)</text><text class="l7" text-anchor="middle" x="130" y="216">   procesar(i)</text><text class="l7" text-anchor="middle" x="130" y="234">   i = i + 1</text>
+<rect fill="#2d8659" height="34" rx="6" width="200" x="240" y="44"></rect><text class="t7" text-anchor="middle" x="340" y="66">REPETIR…HASTA (do-while)</text>
+<text class="l7" text-anchor="middle" x="340" y="98">Comprueba DESPUÉS</text>
+<text class="k7" text-anchor="middle" x="340" y="118">Se ejecuta ≥ 1 vez</text>
+<text class="l7" text-anchor="middle" x="340" y="140">postcondicional</text>
+<rect fill="#f2faf5" height="90" rx="6" stroke="#2d8659" width="180" x="250" y="158"></rect><text class="l7" text-anchor="middle" x="340" y="188">repetir</text><text class="l7" text-anchor="middle" x="340" y="210">   opcion = leer()</text><text class="l7" text-anchor="middle" x="340" y="232">hasta (opcion = salir)</text>
+<rect fill="#e89822" height="34" rx="6" width="200" x="450" y="44"></rect><text class="t7" text-anchor="middle" x="550" y="66">PARA (for)</text>
+<text class="l7" text-anchor="middle" x="550" y="98">Con CONTADOR</text>
+<text class="k7" text-anchor="middle" x="550" y="118">Nº de vueltas conocido</text>
+<text class="l7" text-anchor="middle" x="550" y="140">init · condición · incremento</text>
+<rect fill="#fdf6ec" height="90" rx="6" stroke="#e89822" width="180" x="460" y="158"></rect><text class="l7" text-anchor="middle" x="550" y="192">para i desde 1</text><text class="l7" text-anchor="middle" x="550" y="214">      hasta 21</text><text class="l7" text-anchor="middle" x="550" y="236">   procesar(i)</text>
+<rect fill="#f2f2f2" height="30" rx="6" width="560" x="60" y="266"></rect><text class="l7" text-anchor="middle" x="340" y="286">Un bucle sin avanzar hacia la salida = bucle infinito (cuelga el programa)</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="314">[Fuente: SEBESTA, cap. 8]</text>
+</svg>

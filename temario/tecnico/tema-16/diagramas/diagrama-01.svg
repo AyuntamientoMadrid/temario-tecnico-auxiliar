@@ -1,0 +1,17 @@
+<svg aria-label="Tres niveles de modelo de datos: conceptual, lógico y físico, con dependencia creciente del SGBD" class="svd1" role="img" viewbox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd1 .t{font:700 14px system-ui,sans-serif;fill:#fff}.svd1 .s{font:12px system-ui,sans-serif;fill:#1a1a1a}.svd1 .lab{font:11px system-ui,sans-serif;fill:#666}.svd1 .h{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="330" y="26">Del concepto al almacenamiento</text>
+<rect fill="#0055a0" height="60" rx="8" width="420" x="120" y="45"></rect>
+<text class="t" text-anchor="middle" x="330" y="72">CONCEPTUAL — modelo Entidad-Relación</text>
+<text class="s" style="fill:#dce8f5" text-anchor="middle" x="330" y="92">Independiente del SGBD · cercano al usuario</text>
+<rect fill="#3378b9" height="60" rx="8" width="420" x="120" y="120"></rect>
+<text class="t" text-anchor="middle" x="330" y="147">LÓGICO — modelo relacional (tablas)</text>
+<text class="s" style="fill:#e7eff8" text-anchor="middle" x="330" y="167">Depende del TIPO de SGBD · cercano al diseñador</text>
+<rect fill="#002a52" height="60" rx="8" width="420" x="120" y="195"></rect>
+<text class="t" text-anchor="middle" x="330" y="222">FÍSICO — ficheros, índices, bloques</text>
+<text class="s" style="fill:#cdd9e6" text-anchor="middle" x="330" y="242">Depende del PRODUCTO y el soporte</text>
+<path d="M 70 55 L 70 245" marker-end="url(#a1)" stroke="#e89822" stroke-width="2.5"></path>
+<defs><marker id="a1" markerheight="9" markerwidth="9" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 Z" fill="#e89822"></path></marker></defs>
+<text class="lab" style="fill:#e89822" text-anchor="middle" transform="rotate(90 58 155)" x="58" y="155">+ dependencia tecnológica →</text>
+<text class="lab" text-anchor="end" x="572" y="280">[Fuente: ELMASRI, cap. 2]</text>
+</svg>

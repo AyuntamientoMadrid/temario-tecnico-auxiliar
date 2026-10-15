@@ -1,0 +1,26 @@
+<svg aria-label="Comparación entre una sesión de VNC o Telnet en claro, que un atacante situado en la red puede leer y modificar, y la misma sesión encapsulada dentro de un túnel SSH o TLS, con el servidor escuchando solo en la interfaz local, junto con las cuatro propiedades de seguridad que aporta el cifrado del canal" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t7{font:700 10.5px system-ui,sans-serif;fill:#fff}.s7{font:9px system-ui,sans-serif;fill:#fff}.d7{font:9.5px system-ui,sans-serif;fill:#333}.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}.k7{font:700 10px system-ui,sans-serif;fill:#0055a0}.n7{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<defs><marker id="a7" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="h7" text-anchor="middle" x="340" y="20">Proteger un protocolo que no cifra</text>
+<text class="k7" x="20" y="44">SIN PROTEGER</text>
+<rect fill="#0055a0" height="38" rx="5" width="120" x="20" y="52"></rect><text class="t7" text-anchor="middle" x="80" y="68">TÉCNICO</text><text class="s7" text-anchor="middle" x="80" y="82">visor VNC</text>
+<rect fill="#2d8659" height="38" rx="5" width="120" x="540" y="52"></rect><text class="t7" text-anchor="middle" x="600" y="68">PUESTO</text><text class="s7" text-anchor="middle" x="600" y="82">servidor VNC</text>
+<line marker-end="url(#a7)" stroke="#d13c3c" stroke-dasharray="6,3" stroke-width="2.5" x1="140" x2="535" y1="71" y2="71"></line>
+<rect fill="#d13c3c" height="30" rx="4" width="185" x="245" y="56"></rect><text class="t7" text-anchor="middle" x="337" y="76">PANTALLA Y TECLAS EN CLARO</text>
+<text class="d7" x="20" y="108">Un atacante en la red lee la pantalla, captura lo tecleado y puede alterar la sesión.</text>
+<line stroke="#ddd" stroke-width="1" x1="20" x2="660" y1="118" y2="118"></line>
+<text class="k7" x="20" y="140">PROTEGIDO POR TÚNEL</text>
+<rect fill="#0055a0" height="38" rx="5" width="120" x="20" y="148"></rect><text class="t7" text-anchor="middle" x="80" y="164">TÉCNICO</text><text class="s7" text-anchor="middle" x="80" y="178">visor a 127.0.0.1</text>
+<rect fill="#2d8659" height="38" rx="5" width="120" x="540" y="148"></rect><text class="t7" text-anchor="middle" x="600" y="164">PUESTO</text><text class="s7" text-anchor="middle" x="600" y="178">VNC solo en local</text>
+<rect fill="#2d8659" height="46" opacity="0.15" rx="6" stroke="#2d8659" stroke-width="2" width="380" x="150" y="144"></rect>
+<text class="k7" text-anchor="middle" x="340" y="162">TÚNEL SSH (22) o TLS 1.3 (443)</text>
+<line marker-end="url(#a7)" stroke="#2d8659" stroke-width="2.5" x1="165" x2="520" y1="176" y2="176"></line>
+<text class="n7" text-anchor="middle" x="340" y="186">tráfico VNC encapsulado y cifrado</text>
+<text class="d7" x="20" y="208">El servidor VNC escucha solo en la interfaz local: es inalcanzable directamente desde la red.</text>
+<text class="k7" x="20" y="234">CUATRO PROPIEDADES QUE APORTA EL CANAL SEGURO</text>
+<rect fill="#0055a0" height="40" rx="4" width="155" x="20" y="242"></rect><text class="t7" text-anchor="middle" x="97" y="258">CONFIDENCIALIDAD</text><text class="s7" text-anchor="middle" x="97" y="273">nadie lee la pantalla</text>
+<rect fill="#0055a0" height="40" rx="4" width="155" x="182" y="242"></rect><text class="t7" text-anchor="middle" x="259" y="258">INTEGRIDAD</text><text class="s7" text-anchor="middle" x="259" y="273">nadie altera lo enviado</text>
+<rect fill="#2d8659" height="40" rx="4" width="155" x="344" y="242"></rect><text class="t7" text-anchor="middle" x="421" y="258">AUTENTICIDAD</text><text class="s7" text-anchor="middle" x="421" y="273">nadie suplanta un extremo</text>
+<rect fill="#e89822" height="40" rx="4" width="154" x="506" y="242"></rect><text class="t7" text-anchor="middle" x="583" y="258">TRAZABILIDAD</text><text class="s7" text-anchor="middle" x="583" y="273">registro nominal</text>
+<text class="n7" text-anchor="end" x="670" y="296">[Fuente: RFC6143; RFC4254; RFC9846]</text>
+</svg>

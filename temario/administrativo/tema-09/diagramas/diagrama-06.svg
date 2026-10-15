@@ -1,0 +1,22 @@
+<svg aria-label="El Comité de Seguridad y Salud es paritario y colegiado, se constituye con 50 o más trabajadores, se reúne trimestralmente, lo integran los Delegados de Prevención y un número igual de representantes del empresario, y participa en los planes de prevención" class="svd6" role="img" viewbox="0 0 700 330" xmlns="http://www.w3.org/2000/svg">
+<style>.svd6 .h{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd6 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd6 .s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#0055a0" height="54" rx="8" width="300" x="200" y="18"></rect>
+<text class="h" x="350" y="40">Comité de Seguridad y Salud</text>
+<text class="h" style="font-weight:400;font-size:11px" x="350" y="60">órgano paritario y colegiado (art. 38.1)</text>
+<rect fill="#fdeaea" height="58" rx="8" stroke="#d13c3c" width="270" x="60" y="92"></rect>
+<text class="t" style="font-weight:700" x="195" y="116">Umbral: 50 o más trabajadores</text>
+<text class="s" x="195" y="136">(&lt; 50 → lo asumen los Delegados de Prevención)</text>
+<rect fill="#e8f5ee" height="58" rx="8" stroke="#2d8659" width="270" x="370" y="92"></rect>
+<text class="t" style="font-weight:700" x="505" y="116">Se reúne trimestralmente</text>
+<text class="s" x="505" y="136">y cuando lo pida una representación (art. 38.3)</text>
+<rect fill="#e8f0f8" height="60" rx="8" stroke="#0055a0" width="220" x="120" y="166"></rect>
+<text class="t" style="font-weight:700" x="230" y="190">Delegados de Prevención</text>
+<text class="s" x="230" y="210">(parte social)</text>
+<rect fill="#e8f0f8" height="60" rx="8" stroke="#0055a0" width="220" x="360" y="166"></rect>
+<text class="t" style="font-weight:700" x="470" y="190">Representantes del empresario</text>
+<text class="s" x="470" y="210">en igual número (paridad)</text>
+<rect fill="#fff5e6" height="68" rx="8" stroke="#e89822" width="460" x="120" y="242"></rect>
+<text class="t" style="font-weight:700;fill:#b5740f" x="350" y="266">Competencias (art. 39)</text>
+<text class="s" x="350" y="286">participar en planes y programas · promover iniciativas</text>
+<text class="s" x="350" y="302">conocer la situación de PRL e informar la memoria anual</text>
+</svg>

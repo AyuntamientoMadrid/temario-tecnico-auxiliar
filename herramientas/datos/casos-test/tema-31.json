@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, el equipo descompone el portal en tres servicios: validación de empadronamiento, gestión de solicitudes y notificación. ¿Qué criterio justifica esa descomposición?",
+    "o": [
+     "Separar las piezas que tienen ritmos de cambio y de carga distintos, dimensionando el número de servicios al equipo disponible.",
+     "Hacer los servicios lo más pequeños posible, porque cuantos más microservicios haya, más fácil resulta operar el sistema.",
+     "Crear un servicio por cada tabla de la base de datos, porque así cada uno queda aislado de los cambios de los demás."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §1.2.2",
+    "e": "La validación se dispara el día de la apertura, la notificación semanas después y la gestión de solicitudes soporta el estado; con tres personas y dos meses, más servicios trasladarían la complejidad a la operación."
+   },
+   {
+    "q": "¿Cómo debe comunicarse el portal con el registro electrónico, que admite 5 asientos por segundo, si se esperan 40.000 solicitudes en la primera hora?",
+    "o": [
+     "De forma síncrona, porque el registro absorbe 40.000 asientos por hora con 5 por segundo.",
+     "De forma asíncrona, con una cola, porque el registro solo absorbe 18.000 asientos por hora.",
+     "De forma síncrona con reintentos, porque los reintentos del usuario reparten la carga en el tiempo."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §1.3.2",
+    "e": "5 asientos por segundo son 18.000 por hora: una llamada síncrona daría errores de tiempo de espera y los reintentos multiplicarían la carga. La cola absorbe el pico."
+   },
+   {
+    "q": "¿Cuántas solicitudes quedarán acumuladas en la cola al acabar la primera hora y cuánto tardarán aproximadamente en drenarse una vez cese el pico?",
+    "o": [
+     "Unas 18.000, que se drenan en unos 60 minutos.",
+     "Unas 40.000, que se drenan en unos 133 minutos.",
+     "Unas 22.000, que se drenan en unos 73 minutos."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §1.3.2",
+    "e": "Entran 40.000 y salen 18.000, de modo que quedan 22.000; a 5 por segundo son 4.400 segundos, unos 73 minutos."
+   },
+   {
+    "q": "Con el registro asíncrono, una solicitud presentada a las 9:05 puede no asentarse hasta pasadas las 10:00. ¿Qué fecha y hora de presentación se le reconoce?",
+    "o": [
+     "La del asiento en el registro electrónico, que es la única con valor jurídico de presentación.",
+     "La de la solicitud, acreditada por el justificante con número de referencia y marca de tiempo.",
+     "La del envío de la notificación de acuse de recibo, cuando el solicitante la recibe en su correo."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §1.3.2",
+    "e": "La cola no compromete la garantía jurídica: el justificante con marca de tiempo acredita el momento de presentación, aunque el asiento se practique después."
+   },
+   {
+    "q": "La cola hacia el registro ofrece la garantía de entrega «al menos una vez». ¿Qué debe cumplir el consumidor que practica los asientos?",
+    "o": [
+     "Ser idempotente mediante una clave de desduplicación, para que un reintento no genere dos asientos.",
+     "Confirmar cada mensaje antes de procesarlo, para que la cola no vuelva a entregarlo en ningún caso.",
+     "Procesar los mensajes en paralelo sin control, porque la cola ya garantiza que no habrá duplicados."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §1.3.2",
+    "e": "«Al menos una vez» significa que un mensaje puede llegar repetido; procesarlo dos veces debe producir el mismo efecto que una, y la clave de desduplicación lo asegura."
+   },
+   {
+    "q": "¿Cómo debe resolverse la consulta del portal al padrón para validar el empadronamiento?",
+    "o": [
+     "De forma asíncrona por evento, enviando el resultado por correo al solicitante horas después de presentar la solicitud.",
+     "De forma síncrona sin límite, consultando el padrón cada vez que el solicitante rellena un campo del formulario.",
+     "De forma síncrona pero acotada y cacheada: tiempo de espera corto, reintento limitado y una consulta por solicitud."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §1.3.1",
+    "e": "La validación debe resolverse en la misma pantalla, pero sin trasladar el pico al padrón: espera corta, reintento limitado, caché y una sola consulta por solicitud, no una por campo."
+   },
+   {
+    "q": "¿Qué modelo de servicio es el adecuado para la validación de empadronamiento?",
+    "o": [
+     "PaaS con caché, y no FaaS, porque el arranque en frío arruinaría la experiencia justo en el pico.",
+     "FaaS, porque es una tarea corta, sin estado y disparada por evento, igual que la notificación.",
+     "SaaS, porque la validación del padrón es un producto comercial que no requiere desarrollo propio."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §3.2",
+    "e": "La función bajo demanda encaja con la notificación, que nadie espera; la validación se hace con el usuario delante y en el momento de mayor carga, por lo que no puede sufrir arranques en frío."
+   },
+   {
+    "q": "Si para la capa web del portal se eligiera IaaS en lugar de PaaS, ¿qué trabajo adicional asumiría el equipo?",
+    "o": [
+     "El mantenimiento del hardware físico y de la red del centro de datos del proveedor.",
+     "Ninguno, porque en IaaS el proveedor administra también el sistema operativo y el código.",
+     "El parcheado y el endurecimiento del sistema operativo de todas las instancias del pico."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §3.1, §3.2",
+    "e": "La frontera entre IaaS y PaaS es el sistema operativo: en PaaS lo administra el proveedor; en IaaS, el cliente. El hardware sigue siendo del proveedor en ambos casos."
+   },
+   {
+    "q": "¿Dónde deben guardarse los documentos escaneados que adjuntan los solicitantes?",
+    "o": [
+     "En discos de bloques de las instancias web, redimensionándolos a medida que crezca el volumen.",
+     "En almacenamiento de objetos, con clase de acceso esporádico o de archivo pasados unos meses.",
+     "En la memoria de las instancias del portal, para servirlos con la máxima rapidez posible."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §3.1.1",
+    "e": "Se escriben una vez, se leen pocas, deben conservarse años y crecen sin límite previsible: el almacenamiento de objetos es más barato y durable que redimensionar discos."
+   },
+   {
+    "q": "La capa web guarda la sesión del solicitante y los ficheros temporales en la memoria y el disco local de cada instancia. ¿Qué consecuencia tiene?",
+    "o": [
+     "Ninguna, porque el escalado vertical añade instancias de forma automática sin afectar a las sesiones en curso.",
+     "Que el portal será más rápido en el pico, porque cada instancia sirve a sus usuarios desde su propio disco local.",
+     "Que no se pueden añadir ni retirar instancias sin romper sesiones: deben ir a una caché o almacén compartido."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 4 · §3.1.2",
+    "e": "Para escalar horizontalmente la aplicación debe ser sin estado: la sesión no puede vivir en una instancia concreta que puede retirarse."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, la plataforma de virtualización municipal ofrece autoservicio por portal y medición del consumo por unidad. ¿Qué característica falta verificar para calificarla de nube privada según el NIST?",
+    "o": [
+     "La multitenencia, que el NIST exige como sexta característica esencial de la nube.",
+     "La elasticidad: que aprovisionar y liberar sea automático y rápido, sin tique ni técnico.",
+     "La ubicación en el centro de datos propio, porque una nube privada no puede estar fuera."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §2.1.1",
+    "e": "Acceso por red y agrupación de recursos se dan por definición; si crear una máquina exige abrir un tique y esperar a un técnico, es virtualización, no nube."
+   },
+   {
+    "q": "Aun calificada como nube privada, ¿qué límite tiene la elasticidad de la plataforma municipal?",
+    "o": [
+     "Está acotada por la capacidad instalada: las 40 máquinas virtuales adicionales son su techo físico.",
+     "Ninguno, porque una nube privada ofrece la misma capacidad percibida como ilimitada que la pública.",
+     "Solo puede crecer y nunca decrecer, porque las máquinas creadas ya no pueden liberarse después."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §4.2.1",
+    "e": "A diferencia de la capacidad percibida como ilimitada de la nube pública, la nube privada solo puede crecer hasta lo que tiene instalado."
+   },
+   {
+    "q": "¿Dónde debe desplegarse la base de datos de solicitudes y con qué patrón híbrido?",
+    "o": [
+     "En la nube pública, con desbordamiento, porque es la pieza que recibe la avalancha.",
+     "En la nube pública, con desarrollo y pruebas, porque así se abarata su mantenimiento.",
+     "En la nube privada, con reparto por sensibilidad, porque contiene datos de salud."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §4.3.1",
+    "e": "Los datos más sensibles se quedan donde la organización los controla; el desbordamiento a la pública se reserva para la capa que recibe el pico."
+   },
+   {
+    "q": "¿Qué componentes van a la nube pública con el patrón de desbordamiento?",
+    "o": [
+     "La capa web del portal con su CDN y la función de notificación.",
+     "El padrón municipal y el registro electrónico, por su volumen.",
+     "La base de datos de solicitudes y los documentos con datos de salud."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §4.3.1",
+    "e": "Son las piezas que reciben la avalancha y las que mejor aprovechan la elasticidad pública; el padrón y el registro no se mueven por ser sistemas críticos con muchas integraciones internas."
+   },
+   {
+    "q": "¿Qué condiciones técnicas deben cumplirse para que la unión entre la nube privada y la pública funcione?",
+    "o": [
+     "Mismo fabricante de hipervisor en ambos lados, rangos de direcciones idénticos y una consola de gestión en cada nube.",
+     "Conectividad suficiente y no única, identidad federada, direccionamiento sin solapamientos y observabilidad unificada.",
+     "Un único enlace de 1 Gbps, cuentas de usuario distintas en cada nube y registros de actividad separados por proveedor."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §4.3.1",
+    "e": "Las mismas cuentas y roles deben valer a ambos lados, los rangos no pueden solaparse y un incidente que atraviesa dos nubes es indiagnosticable con dos consolas separadas."
+   },
+   {
+    "q": "¿Qué elemento evita que el pico de solicitudes en la capa pública se propague al padrón y al registro de la nube privada?",
+    "o": [
+     "Una segunda conexión de 1 Gbps a internet, para que el tráfico del pico llegue antes a la nube privada.",
+     "La replicación del padrón en la nube pública, para que las consultas no tengan que cruzar el enlace.",
+     "Una cola de amortiguación en el sentido pública → privada, con limitación de tasa y caché de validaciones."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestiones 2 y 4 · §4.3.1",
+    "e": "La cola desacopla los dos lados: el portal puede recibir la avalancha mientras los sistemas internos procesan a su ritmo."
+   },
+   {
+    "q": "El sistema de solicitudes es de categoría ALTA en confidencialidad. ¿Qué consecuencia tiene sobre la elección del proveedor?",
+    "o": [
+     "Ninguna, porque la categoría ALTA solo obliga a cifrar los datos, sea cual sea la jurisdicción a la que esté sometido el proveedor.",
+     "Que sus datos solo pueden manejarlos empresas sometidas en exclusiva a la jurisdicción comunitaria, o quedarse en la nube privada.",
+     "Que basta con que los servidores estén en la Unión Europea, aunque la matriz del proveedor esté sometida a un tercer país."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §5.1.2",
+    "e": "Es el criterio del pilar de soberanía del dato de la Estrategia de servicios en la nube híbrida para las Administraciones Públicas."
+   },
+   {
+    "q": "Al haber datos de salud en la documentación adjunta, ¿qué procede antes del tratamiento?",
+    "o": [
+     "Una evaluación de impacto previa (art. 35 RGPD), con intervención del delegado de protección de datos.",
+     "Una autoevaluación de conformidad con el ENS, que sustituye a cualquier análisis de protección de datos.",
+     "La publicación de los datos anonimizados en el portal de transparencia, antes de abrir la convocatoria."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §5.1.2",
+    "e": "Los datos de salud son categoría especial (art. 9 RGPD); su tratamiento exige evaluación de impacto previa, y el proveedor será encargado del tratamiento (art. 28 RGPD)."
+   },
+   {
+    "q": "Servir los documentos desde la nube pública puede generar un tráfico de salida no previsto. ¿Qué tipo de riesgo es y qué medida lo mitiga?",
+    "o": [
+     "De disponibilidad: duplicar el enlace con otro operador y degradar el portal si cae.",
+     "De seguridad: aplicar mínimo privilegio y un gestor de secretos en la nube pública.",
+     "De coste: estimar antes el volumen, usar CDN y caché, y fijar alertas de consumo."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §2.4, §4.1.1",
+    "e": "En la nube pública se paga el tráfico de salida; si no se estima y vigila, la factura se dispara."
+   },
+   {
+    "q": "El enlace entre ambas nubes es punto único de fallo. ¿Qué medida corresponde a este riesgo de disponibilidad?",
+    "o": [
+     "Redundar el enlace por rutas y operadores distintos y prever una degradación controlada del portal si cae.",
+     "Contratar instancias reservadas en la nube pública para cubrir la base de carga durante los veinte días.",
+     "Empaquetar las aplicaciones en contenedores conformes con la OCI y mantener un plan de reversión probado."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · §4.3.1",
+    "e": "Si toda la comunicación depende de un único enlace, su caída corta la unión; las instancias reservadas son una medida de coste y la portabilidad OCI, de dependencia del proveedor."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, un licitador alega que «el ENS obliga a la Administración, no a las empresas». ¿Qué precepto la refuta?",
+    "o": [
+     "Ninguno: la alegación es correcta y el ENS solo puede exigirse a las Administraciones Públicas y a sus organismos dependientes.",
+     "El artículo 28 del RGPD, que obliga a todo encargado del tratamiento a certificarse en el Esquema Nacional de Seguridad.",
+     "El artículo 2.3 del Real Decreto 311/2022, que extiende el ENS a las entidades privadas que prestan servicios al sector público."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §5.1.1 (art. 2.3 RD 311/2022)",
+    "e": "El ENS se aplica a los sistemas de las entidades del sector privado que, en virtud de una relación contractual, prestan servicios o proveen soluciones a entidades del sector público, incluida la obligación de tener política de seguridad."
+   },
+   {
+    "q": "Si el sistema al que se presta el servicio es de categoría MEDIA o ALTA, ¿cómo debe acreditar el adjudicatario su conformidad con el ENS?",
+    "o": [
+     "Mediante una certificación emitida por una entidad de certificación acreditada.",
+     "Mediante una declaración responsable basada en una autoevaluación propia.",
+     "Mediante su inclusión en el CPSTIC, que sustituye a cualquier otra acreditación."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §5.1.1 (arts. 31 y 38 RD 311/2022)",
+    "e": "La declaración basada en autoevaluación solo vale para la categoría BÁSICA; las categorías MEDIA y ALTA exigen certificación. El CPSTIC es una comprobación aconsejable adicional."
+   },
+   {
+    "q": "El licitador del servicio SaaS aloja los datos en la Unión Europea, pero su matriz está sujeta a la legislación de un tercer país. ¿Qué debe comprobarse en primer lugar?",
+    "o": [
+     "Nada más, porque el alojamiento de los servidores en la Unión Europea resuelve por sí solo cualquier riesgo de transferencia.",
+     "Si hay acceso a los datos desde el tercer país (soporte, administración, copias), porque es una transferencia internacional.",
+     "Solo el precio ofertado, porque la legislación aplicable a la matriz del licitador no afecta al contrato del Ayuntamiento."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §5.1.2 (arts. 44-50 RGPD)",
+    "e": "Que los servidores estén en la Unión no basta: el acceso remoto desde un tercer país es una transferencia internacional sometida al capítulo V del RGPD."
+   },
+   {
+    "q": "Si ese tercer país es Estados Unidos y el proveedor carece de la certificación del Marco de Privacidad de Datos UE-EE. UU., ¿en qué puede apoyarse la transferencia?",
+    "o": [
+     "En la decisión de adecuación de 10 de julio de 2023, que ampara a cualquier empresa estadounidense.",
+     "En el simple consentimiento del Ayuntamiento como responsable, sin necesidad de ninguna otra garantía.",
+     "En cláusulas contractuales tipo, con la evaluación del marco jurídico del país de destino que exige Schrems II."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §5.1.2",
+    "e": "La decisión de adecuación solo ampara a las empresas certificadas en el Marco; sin certificación, caben cláusulas contractuales tipo acompañadas de la evaluación del país de destino."
+   },
+   {
+    "q": "¿Qué posición jurídica ocupan el proveedor y el Ayuntamiento respecto de los datos personales del servicio?",
+    "o": [
+     "El proveedor pasa a ser responsable del tratamiento y el Ayuntamiento queda liberado de responsabilidad.",
+     "El proveedor es encargado del tratamiento (art. 28 RGPD) y el Ayuntamiento sigue siendo responsable.",
+     "Ambos son corresponsables a partes iguales, y el Ayuntamiento responde solo de la mitad de los datos."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §5.1.2",
+    "e": "La responsabilidad se delega operativamente, pero no se externaliza: el Ayuntamiento sigue respondiendo como responsable del tratamiento."
+   },
+   {
+    "q": "¿Qué medida complementaria reduce de forma efectiva el riesgo de acceso desde el tercer país?",
+    "o": [
+     "Cifrar los datos con claves gestionadas exclusivamente por el Ayuntamiento.",
+     "Cifrar los datos con claves gestionadas por la matriz del proveedor.",
+     "Ampliar la lista de subencargados sin preaviso ni derecho de oposición."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 2 · §5.1.2",
+    "e": "Si las claves solo las tiene el Ayuntamiento, el proveedor no puede entregar datos legibles; se completa con seudonimización, minimización y restricción geográfica del soporte."
+   },
+   {
+    "q": "Al terminar el contrato, ¿qué debe ocurrir con los datos según el pliego?",
+    "o": [
+     "Conservarlos el proveedor durante cinco años, por si el Ayuntamiento necesitara consultarlos más tarde.",
+     "Devolverlos o suprimirlos, a elección del responsable, incluidas las copias y con certificado de borrado.",
+     "Suprimirlos el proveedor cuando estime oportuno, sin necesidad de acreditar el borrado al Ayuntamiento."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §5.1.2 (art. 28.3.g RGPD)",
+    "e": "Es una obligación del encargado del tratamiento: al finalizar la prestación, devolver o suprimir los datos según elija el responsable."
+   },
+   {
+    "q": "¿Por qué debe exigirse en el pliego una prueba de reversión durante la vigencia del contrato?",
+    "o": [
+     "Porque el Reglamento de Datos obliga a cambiar de proveedor al menos una vez durante el contrato.",
+     "Porque así el proveedor puede cobrar la tarifa de cambio antes de que dejen de estar permitidas.",
+     "Porque es la única forma de comprobar que la salida funciona: un plan no probado no es un plan."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · §2.4, §4.3.1",
+    "e": "La reversión debe ensayarse al menos una vez mientras el contrato está vigente, junto con formatos abiertos, derecho de extracción y periodo de solapamiento."
+   },
+   {
+    "q": "El contrato, de dos años prorrogable, seguirá vigente después del 12 de enero de 2027. ¿Qué podrá repercutir el proveedor a partir de esa fecha si el Ayuntamiento decide cambiar de proveedor?",
+    "o": [
+     "Ninguna tarifa de cambio, porque el Reglamento (UE) 2023/2854 las prohíbe por completo.",
+     "Costes reducidos directamente vinculados al proceso de cambio, como hasta entonces.",
+     "La tarifa de cambio que haya fijado libremente en su catálogo de precios vigente."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §5.1.2 (art. 29 Reglamento (UE) 2023/2854)",
+    "e": "El Reglamento de Datos retira progresivamente las tarifas de cambio: hasta el 12 de enero de 2027 solo caben costes reducidos vinculados al cambio, y desde esa fecha quedan prohibidas."
+   },
+   {
+    "q": "Para controlar el gasto del servicio de pago por uso, ¿qué mecanismo permite imputar el consumo a cada proyecto y unidad responsable?",
+    "o": [
+     "La contratación de instancias reservadas, que convierte todo el consumo en un precio fijo e indiviso.",
+     "El etiquetado obligatorio de todos los recursos por proyecto y unidad, posible porque el servicio es medido.",
+     "Un crédito fijo cerrado al inicio del contrato, que hace innecesario medir el consumo de cada unidad."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §2.4, §3.3.2",
+    "e": "El crédito corresponde a un consumo estimado; el etiquetado lo hace imputable, junto con presupuestos y alertas con umbrales y cuotas por servicio. Las reservas solo reducen la parte variable."
+   }
+  ]
+ }
+]

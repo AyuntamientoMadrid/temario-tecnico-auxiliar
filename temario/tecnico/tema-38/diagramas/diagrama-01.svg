@@ -1,0 +1,48 @@
+<svg aria-label="Línea del tiempo con las cuatro generaciones de la radio móvil privada: la analógica convencional con un canal fijo por colectivo, el trunking analógico con MPT mil trescientos veintisiete, el trunking digital al que pertenecen TETRA, TETRAPOL, P25 y DMR, y la banda ancha crítica con MCPTT del 3GPP. Debajo se indica qué deja sin resolver cada etapa y se concluye que TETRA pertenece a la tercera generación" role="img" viewbox="0 0 680 292" xmlns="http://www.w3.org/2000/svg">
+<style>.t1{font:700 10px system-ui,sans-serif;fill:#fff}.s1{font:8.5px system-ui,sans-serif;fill:#fff}.d1{font:8.5px system-ui,sans-serif;fill:#333}.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}.k1{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n1{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h1" text-anchor="middle" x="340" y="22">TETRA es la TERCERA generación: trunking digital</text>
+<rect fill="#6b7c8c" height="76" rx="5" width="154" x="20" y="40"></rect>
+<text class="t1" text-anchor="middle" x="97" y="58">1.ª · ANALÓGICA</text>
+<text class="s1" text-anchor="middle" x="97" y="72">Desde los años treinta</text>
+<text class="s1" text-anchor="middle" x="97" y="86">Un canal FIJO por cada</text>
+<text class="s1" text-anchor="middle" x="97" y="100">colectivo. Modulación FM</text>
+<path d="M175,71 L181,78 L175,85 Z" fill="#0055a0"></path>
+<rect fill="#0055a0" height="76" rx="5" width="154" x="182" y="40"></rect>
+<text class="t1" text-anchor="middle" x="259" y="58">2.ª · TRUNKING ANALÓGICO</text>
+<text class="s1" text-anchor="middle" x="259" y="72">Años setenta y ochenta</text>
+<text class="s1" text-anchor="middle" x="259" y="86">Bolsa común de canales.</text>
+<text class="s1" text-anchor="middle" x="259" y="100">Norma típica: MPT-1327</text>
+<path d="M337,71 L343,78 L337,85 Z" fill="#0055a0"></path>
+<rect fill="#2d8659" height="76" rx="5" width="154" x="344" y="40"></rect>
+<text class="t1" text-anchor="middle" x="421" y="58">3.ª · TRUNKING DIGITAL</text>
+<text class="s1" text-anchor="middle" x="421" y="72">Años noventa</text>
+<text class="s1" text-anchor="middle" x="421" y="86">TETRA · TETRAPOL</text>
+<text class="s1" text-anchor="middle" x="421" y="100">P25 · DMR</text>
+<path d="M499,71 L505,78 L499,85 Z" fill="#0055a0"></path>
+<rect fill="#e89822" height="76" rx="5" width="154" x="506" y="40"></rect>
+<text class="t1" text-anchor="middle" x="583" y="58">4.ª · BANDA ANCHA</text>
+<text class="s1" text-anchor="middle" x="583" y="72">Desde 2016</text>
+<text class="s1" text-anchor="middle" x="583" y="86">MCPTT, MCVideo y MCData</text>
+<text class="s1" text-anchor="middle" x="583" y="100">del 3GPP, sobre LTE y 5G</text>
+<text class="k1" x="20" y="138">LO QUE CADA ETAPA DEJA SIN RESOLVER</text>
+<rect fill="#f1f5f9" height="60" rx="4" stroke="#c9d6e2" width="154" x="20" y="146"></rect>
+<text class="d1" text-anchor="middle" x="97" y="164">Desperdicia espectro,</text>
+<text class="d1" text-anchor="middle" x="97" y="177">no hay privacidad</text>
+<text class="d1" text-anchor="middle" x="97" y="190">ni identificación</text>
+<rect fill="#f1f5f9" height="60" rx="4" stroke="#c9d6e2" width="154" x="182" y="146"></rect>
+<text class="d1" text-anchor="middle" x="259" y="164">Gana eficiencia, pero</text>
+<text class="d1" text-anchor="middle" x="259" y="177">la voz sigue siendo</text>
+<text class="d1" text-anchor="middle" x="259" y="190">analógica: sin cifrado</text>
+<rect fill="#f1f5f9" height="60" rx="4" stroke="#c9d6e2" width="154" x="344" y="146"></rect>
+<text class="d1" text-anchor="middle" x="421" y="164">Resuelve cifrado, voz</text>
+<text class="d1" text-anchor="middle" x="421" y="177">y datos juntos. Techo</text>
+<text class="d1" text-anchor="middle" x="421" y="190">de datos: 28,8 kbit/s</text>
+<rect fill="#f1f5f9" height="60" rx="4" stroke="#c9d6e2" width="154" x="506" y="146"></rect>
+<text class="d1" text-anchor="middle" x="583" y="164">Da caudal, pero aún no</text>
+<text class="d1" text-anchor="middle" x="583" y="177">iguala el modo directo</text>
+<text class="d1" text-anchor="middle" x="583" y="190">ni la autonomía</text>
+<rect fill="none" height="42" rx="5" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="222"></rect>
+<text class="k1" text-anchor="middle" x="340" y="240">Las cuatro NO se sustituyen limpiamente: la tercera y la cuarta CONVIVEN</text>
+<text class="n1" text-anchor="middle" x="340" y="255">TETRA aporta voz crítica, prioridad y modo directo; la banda ancha aporta caudal. Hoy se despliegan juntas</text>
+<text class="n1" text-anchor="end" x="670" y="284">[Fuente: elaboración propia sobre ETSI EN 300 392, ETSI EN 300 396 y 3GPP Release 13]</text>
+</svg>

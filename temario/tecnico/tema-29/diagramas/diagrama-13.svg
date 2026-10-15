@@ -1,0 +1,42 @@
+<svg aria-label="Matriz de prioridad de tres por tres que cruza impacto alto medio y bajo con urgencia alta media y baja, produciendo prioridades de la 1 crítica a la 5 muy baja, acompañada de una tabla con los tiempos de respuesta, de resolución y de escalado automático asociados a cada prioridad, y de la advertencia de que la prioridad no la decide el usuario" role="img" viewbox="0 0 680 370" xmlns="http://www.w3.org/2000/svg">
+<style>.t13{font:700 10.5px system-ui,sans-serif;fill:#fff}.d13{font:9px system-ui,sans-serif;fill:#333}.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.k13{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.p13{font:700 12px system-ui,sans-serif;fill:#fff}.n13{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h13" text-anchor="middle" x="340" y="20">Prioridad = Impacto × Urgencia</text>
+<text class="k13" x="20" y="42">MATRIZ 3 × 3</text>
+<text class="k13" text-anchor="middle" x="112" y="60">URGENCIA ALTA</text>
+<text class="k13" text-anchor="middle" x="232" y="60">URGENCIA MEDIA</text>
+<text class="k13" text-anchor="middle" x="352" y="60">URGENCIA BAJA</text>
+<text class="k13" x="20" y="88">IMPACTO</text><text class="k13" x="20" y="100">ALTO</text>
+<rect fill="#d13c3c" height="40" rx="4" width="112" x="70" y="68"></rect><text class="p13" text-anchor="middle" x="126" y="93">1 · CRÍTICA</text>
+<rect fill="#e89822" height="40" rx="4" width="112" x="188" y="68"></rect><text class="p13" text-anchor="middle" x="244" y="93">2 · ALTA</text>
+<rect fill="#0055a0" height="40" rx="4" width="112" x="306" y="68"></rect><text class="p13" text-anchor="middle" x="362" y="93">3 · MEDIA</text>
+<text class="k13" x="20" y="132">IMPACTO</text><text class="k13" x="20" y="144">MEDIO</text>
+<rect fill="#e89822" height="40" rx="4" width="112" x="70" y="112"></rect><text class="p13" text-anchor="middle" x="126" y="137">2 · ALTA</text>
+<rect fill="#0055a0" height="40" rx="4" width="112" x="188" y="112"></rect><text class="p13" text-anchor="middle" x="244" y="137">3 · MEDIA</text>
+<rect fill="#2d8659" height="40" rx="4" width="112" x="306" y="112"></rect><text class="p13" text-anchor="middle" x="362" y="137">4 · BAJA</text>
+<text class="k13" x="20" y="176">IMPACTO</text><text class="k13" x="20" y="188">BAJO</text>
+<rect fill="#0055a0" height="40" rx="4" width="112" x="70" y="156"></rect><text class="p13" text-anchor="middle" x="126" y="181">3 · MEDIA</text>
+<rect fill="#2d8659" height="40" rx="4" width="112" x="188" y="156"></rect><text class="p13" text-anchor="middle" x="244" y="181">4 · BAJA</text>
+<rect fill="#888" height="40" rx="4" width="112" x="306" y="156"></rect><text class="p13" text-anchor="middle" x="362" y="181">5 · MUY BAJA</text>
+<rect fill="#eef3f8" height="128" rx="5" width="224" x="436" y="68"></rect>
+<text class="k13" text-anchor="middle" x="548" y="88">LOS DOS EJES SON INDEPENDIENTES</text>
+<text class="d13" x="448" y="110">IMPACTO: ¿a cuánto afecta?</text>
+<text class="d13" x="448" y="126">usuarios, criticidad, riesgo legal</text>
+<text class="d13" x="448" y="150">URGENCIA: ¿cuánto puede esperar?</text>
+<text class="d13" x="448" y="166">rapidez del daño, rodeo, plazo</text>
+<text class="d13" x="448" y="188">Impacto alto ≠ prioridad crítica</text>
+<text class="k13" x="20" y="222">TIEMPOS COMPROMETIDOS (valores ilustrativos: se pactan en cada SLA)</text>
+<rect fill="#0055a0" height="20" rx="3" width="140" x="20" y="230"></rect><text class="t13" text-anchor="middle" x="90" y="244">PRIORIDAD</text>
+<rect fill="#0055a0" height="20" rx="3" width="140" x="164" y="230"></rect><text class="t13" text-anchor="middle" x="234" y="244">RESPUESTA</text>
+<rect fill="#0055a0" height="20" rx="3" width="160" x="308" y="230"></rect><text class="t13" text-anchor="middle" x="388" y="244">RESOLUCIÓN</text>
+<rect fill="#0055a0" height="20" rx="3" width="188" x="472" y="230"></rect><text class="t13" text-anchor="middle" x="566" y="244">ESCALADO AUTOMÁTICO</text>
+<rect fill="#fbeaea" height="20" rx="3" width="640" x="20" y="254"></rect>
+<text class="d13" x="30" y="268">1 · Crítica</text><text class="d13" x="174" y="268">15 minutos</text><text class="d13" x="318" y="268">4 horas</text><text class="d13" x="482" y="268">N2 a los 30 min; jerárquico a la hora</text>
+<rect fill="#fdf3e6" height="20" rx="3" width="640" x="20" y="278"></rect>
+<text class="d13" x="30" y="292">2 · Alta</text><text class="d13" x="174" y="292">1 hora</text><text class="d13" x="318" y="292">8 horas laborables</text><text class="d13" x="482" y="292">N2 a las 2 h; jerárquico a las 6 h</text>
+<rect fill="#eef3f8" height="20" rx="3" width="640" x="20" y="302"></rect>
+<text class="d13" x="30" y="316">3 · Media</text><text class="d13" x="174" y="316">4 horas</text><text class="d13" x="318" y="316">2 días laborables</text><text class="d13" x="482" y="316">N2 al día; jerárquico al segundo día</text>
+<rect fill="#eaf3ee" height="20" rx="3" width="640" x="20" y="326"></rect>
+<text class="d13" x="30" y="340">4 · Baja</text><text class="d13" x="174" y="340">1 día laborable</text><text class="d13" x="318" y="340">5 días laborables</text><text class="d13" x="482" y="340">N2 a los 3 días</text>
+<rect fill="#d13c3c" height="18" rx="4" width="440" x="120" y="350"></rect>
+<text class="t13" text-anchor="middle" x="340" y="363">La prioridad NO la decide el usuario: se aplican criterios objetivos escritos</text>
+</svg>

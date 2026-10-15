@@ -1,0 +1,32 @@
+<svg aria-label="Cálculo de subredes: una dirección de 32 bits se divide en parte de red y parte de equipo según la máscara. Las fórmulas son dos elevado a treinta y dos menos ene para el número de direcciones, menos dos para los equipos direccionables, y dos elevado a ka para el número de subredes al tomar prestados ka bits. Se ilustra con la división del bloque 10.20.8.0 barra 22 en cuatro subredes barra 24" role="img" viewbox="0 0 680 358" xmlns="http://www.w3.org/2000/svg">
+<style>.t11{font:700 9.5px system-ui,sans-serif;fill:#fff}.s11{font:8px system-ui,sans-serif;fill:#fff}.d11{font:8.5px system-ui,sans-serif;fill:#333}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}.k11{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n11{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h11" text-anchor="middle" x="340" y="20">Máscara, prefijo y cálculo de subredes</text>
+<text class="k11" x="20" y="42">LOS 32 BITS DE UNA DIRECCIÓN IPv4</text>
+<rect fill="#0055a0" height="34" rx="4" width="450" x="20" y="50"></rect><text class="t11" text-anchor="middle" x="245" y="71">PARTE DE RED — los n bits del prefijo /n</text>
+<rect fill="#2d8659" height="34" rx="4" width="188" x="472" y="50"></rect><text class="t11" text-anchor="middle" x="566" y="71">PARTE DE EQUIPO</text>
+<text class="d11" x="20" y="100">La máscara marca la frontera: 255.255.255.0 equivale a /24 y a 11111111.11111111.11111111.00000000</text>
+<text class="k11" x="20" y="124">LAS TRES FÓRMULAS</text>
+<rect fill="#eef3f8" height="46" rx="4" width="206" x="20" y="132"></rect>
+<text class="d11" text-anchor="middle" x="123" y="150">Direcciones de una /n</text>
+<text class="k11" text-anchor="middle" x="123" y="168">2 elevado a (32 − n)</text>
+<rect fill="#e7f2ec" height="46" rx="4" width="206" x="236" y="132"></rect>
+<text class="d11" text-anchor="middle" x="339" y="150">Equipos direccionables</text>
+<text class="k11" text-anchor="middle" x="339" y="168">2 elevado a (32 − n), menos 2</text>
+<rect fill="#fdf3e3" height="46" rx="4" width="208" x="452" y="132"></rect>
+<text class="d11" text-anchor="middle" x="556" y="150">Subredes con k bits prestados</text>
+<text class="k11" text-anchor="middle" x="556" y="168">2 elevado a k</text>
+<text class="k11" x="20" y="200">EJEMPLO · dividir 10.20.8.0/22 en cuatro subredes iguales</text>
+<rect fill="#0055a0" height="20" rx="3" width="640" x="20" y="208"></rect>
+<text class="t11" x="30" y="222">SUBRED</text><text class="t11" x="176" y="222">PREFIJO</text><text class="t11" x="312" y="222">RANGO ÚTIL</text><text class="t11" x="524" y="222">DIFUSIÓN</text>
+<rect fill="#eef3f8" height="18" width="640" x="20" y="230"></rect>
+<text class="d11" x="30" y="243">Puestos de usuario</text><text class="d11" x="176" y="243">10.20.8.0/24</text><text class="d11" x="312" y="243">10.20.8.1 — 10.20.8.254</text><text class="d11" x="524" y="243">10.20.8.255</text>
+<rect fill="#fff" height="18" width="640" x="20" y="249"></rect>
+<text class="d11" x="30" y="262">Telefonía IP</text><text class="d11" x="176" y="262">10.20.9.0/24</text><text class="d11" x="312" y="262">10.20.9.1 — 10.20.9.254</text><text class="d11" x="524" y="262">10.20.9.255</text>
+<rect fill="#eef3f8" height="18" width="640" x="20" y="268"></rect>
+<text class="d11" x="30" y="281">Impresión</text><text class="d11" x="176" y="281">10.20.10.0/24</text><text class="d11" x="312" y="281">10.20.10.1 — 10.20.10.254</text><text class="d11" x="524" y="281">10.20.10.255</text>
+<rect fill="#fff" height="18" width="640" x="20" y="287"></rect>
+<text class="d11" x="30" y="300">Cámaras</text><text class="d11" x="176" y="300">10.20.11.0/24</text><text class="d11" x="312" y="300">10.20.11.1 — 10.20.11.254</text><text class="d11" x="524" y="300">10.20.11.255</text>
+<rect fill="none" height="22" rx="3" stroke="#0055a0" stroke-width="1.4" width="640" x="20" y="312"></rect>
+<text class="k11" text-anchor="middle" x="340" y="327">En toda subred, la primera dirección es la de red y la última la de difusión: ninguna se asigna</text>
+<text class="n11" text-anchor="end" x="670" y="350">[Fuente: RFC 950, RFC 4632]</text>
+</svg>

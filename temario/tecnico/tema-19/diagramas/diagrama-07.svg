@@ -1,0 +1,26 @@
+<svg aria-label="Diagramas de Venn de los tipos de join: INNER JOIN solo la intersección, LEFT JOIN todo el círculo izquierdo, RIGHT JOIN todo el círculo derecho, FULL JOIN ambos círculos completos" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t7{font:700 11px system-ui,sans-serif;fill:#123}.l7{font:10.5px system-ui,sans-serif;fill:#444}.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h7" text-anchor="middle" x="340" y="22">Tipos de JOIN (A = tabla izquierda, B = tabla derecha)</text>
+<g transform="translate(25,50)">
+<circle cx="45" cy="60" fill="#0055a0" opacity="0.35" r="45"></circle><circle cx="85" cy="60" fill="#2d8659" opacity="0.35" r="45"></circle>
+<circle cx="65" cy="60" fill="#e89822" r="20"></circle>
+<text class="t7" text-anchor="middle" x="65" y="130">INNER JOIN</text><text class="l7" text-anchor="middle" x="65" y="146">solo coincidencias</text>
+</g>
+<g transform="translate(190,50)">
+<circle cx="45" cy="60" fill="#0055a0" r="45"></circle><circle cx="85" cy="60" fill="#2d8659" opacity="0.35" r="45"></circle>
+<text class="t7" text-anchor="middle" x="65" y="130">LEFT JOIN</text><text class="l7" text-anchor="middle" x="65" y="146">todo A + coincid. de B</text>
+</g>
+<g transform="translate(355,50)">
+<circle cx="45" cy="60" fill="#0055a0" opacity="0.35" r="45"></circle><circle cx="85" cy="60" fill="#2d8659" r="45"></circle>
+<text class="t7" text-anchor="middle" x="65" y="130">RIGHT JOIN</text><text class="l7" text-anchor="middle" x="65" y="146">todo B + coincid. de A</text>
+</g>
+<g transform="translate(520,50)">
+<circle cx="45" cy="60" fill="#0055a0" r="45"></circle><circle cx="85" cy="60" fill="#2d8659" r="45"></circle>
+<text class="t7" text-anchor="middle" x="65" y="130">FULL JOIN</text><text class="l7" text-anchor="middle" x="65" y="146">todo A + todo B</text>
+</g>
+<rect fill="#eef4fa" height="80" rx="6" stroke="#0055a0" width="560" x="60" y="220"></rect>
+<text style="font:700 12px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="242">CROSS JOIN · SELF JOIN · NATURAL JOIN</text>
+<text class="l7" text-anchor="middle" x="340" y="264">CROSS = producto cartesiano completo, sin condición · SELF = una tabla unida consigo misma</text>
+<text class="l7" text-anchor="middle" x="340" y="282">NATURAL = reunión implícita por columnas homónimas — desaconsejado, frágil ante cambios de esquema</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="330">[Fuente: ELMASRI, cap. 7]</text>
+</svg>

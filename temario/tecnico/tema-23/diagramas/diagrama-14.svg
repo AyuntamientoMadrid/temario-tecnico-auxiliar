@@ -1,0 +1,26 @@
+<svg aria-label="XSS explota la confianza del usuario en el sitio ejecutando script inyectado como si fuera propio del dominio; CSRF explota la confianza del sitio en el navegador ya autenticado del usuario enviando una petición no deseada" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t14{font:700 11px system-ui,sans-serif;fill:#fff}.s14{font:9.5px system-ui,sans-serif;fill:#fff}.h14{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h14" text-anchor="middle" x="340" y="20">XSS frente a CSRF: dos direcciones de confianza</text>
+<rect fill="#d13c3c" height="120" rx="6" width="300" x="30" y="44"></rect>
+<text class="t14" text-anchor="middle" x="180" y="68">XSS</text>
+<text class="s14" text-anchor="middle" x="180" y="88">Script inyectado se ejecuta</text>
+<text class="s14" text-anchor="middle" x="180" y="104">como si fuera del propio dominio</text>
+<text class="s14" text-anchor="middle" x="180" y="124">Explota: confianza del USUARIO</text>
+<text class="s14" text-anchor="middle" x="180" y="140">en el SITIO</text>
+<rect fill="#0055a0" height="120" rx="6" width="300" x="350" y="44"></rect>
+<text class="t14" text-anchor="middle" x="500" y="68">CSRF</text>
+<text class="s14" text-anchor="middle" x="500" y="88">Petición no deseada, enviada</text>
+<text class="s14" text-anchor="middle" x="500" y="104">con la cookie de sesión válida</text>
+<text class="s14" text-anchor="middle" x="500" y="124">Explota: confianza del SITIO</text>
+<text class="s14" text-anchor="middle" x="500" y="140">en el NAVEGADOR autenticado</text>
+<rect fill="#f0f0f0" height="80" rx="6" stroke="#d13c3c" stroke-width="2" width="300" x="30" y="184"></rect>
+<text style="font:700 10.5px system-ui;fill:#d13c3c" text-anchor="middle" x="180" y="206">Mitigación</text>
+<text style="font:9.5px system-ui;fill:#444" text-anchor="middle" x="180" y="226">Escapar toda salida no confiable</text>
+<text style="font:9.5px system-ui;fill:#444" text-anchor="middle" x="180" y="242">Cabecera Content-Security-Policy</text>
+<rect fill="#f0f0f0" height="80" rx="6" stroke="#0055a0" stroke-width="2" width="300" x="350" y="184"></rect>
+<text style="font:700 10.5px system-ui;fill:#0055a0" text-anchor="middle" x="500" y="206">Mitigación</text>
+<text style="font:9.5px system-ui;fill:#444" text-anchor="middle" x="500" y="226">Token CSRF único por sesión</text>
+<text style="font:9.5px system-ui;fill:#444" text-anchor="middle" x="500" y="242">Cookie con SameSite=Strict/Lax</text>
+<text style="font:700 11px system-ui;fill:#2d8659" text-anchor="middle" x="340" y="292">HttpOnly limita el impacto de XSS (no lo evita) al impedir leer la cookie por JS</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="332">[Fuente: OWASP-TOP10]</text>
+</svg>

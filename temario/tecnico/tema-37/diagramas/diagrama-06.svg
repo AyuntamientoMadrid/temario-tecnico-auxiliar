@@ -1,0 +1,51 @@
+<svg aria-label="Tres clasificaciones independientes de los modos de transmisión: por sentido en símplex, semidúplex y dúplex; por número de líneas en serie y paralelo; y por sincronismo en asíncrona, síncrona e isócrona; la consecuencia clave es que el método de acceso al medio solo hace falta cuando la transmisión es semidúplex sobre medio compartido" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}.k6{font:700 10px system-ui,sans-serif;fill:#0055a0}.d6{font:8.5px system-ui,sans-serif;fill:#333}.n6{font:8.5px system-ui,sans-serif;fill:#666}.g6{font:700 9px system-ui,sans-serif;fill:#2d8659}.r6{font:700 9px system-ui,sans-serif;fill:#d13c3c}</style>
+<defs><marker id="m6" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker><marker id="m6g" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#999"></path></marker><marker id="m6v" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#2d8659"></path></marker></defs>
+<text class="h6" text-anchor="middle" x="340" y="20">Tres clasificaciones independientes que no hay que mezclar</text>
+<text class="k6" text-anchor="middle" x="112" y="42">1 · SEGÚN EL SENTIDO</text>
+<rect fill="#eef4fa" height="46" rx="4" width="180" x="22" y="50"></rect>
+<text class="d6" x="32" y="66">SÍMPLEX — un solo sentido</text>
+<path d="M40,80 L150,80" marker-end="url(#m6)" stroke="#0055a0" stroke-width="1.8"></path>
+<text class="n6" x="32" y="92">Radiodifusión · sensor a central</text>
+<rect fill="#fdf3e3" height="46" rx="4" width="180" x="22" y="100"></rect>
+<text class="d6" x="32" y="116">SEMIDÚPLEX — alternando</text>
+<path d="M40,124 L150,124" marker-end="url(#m6)" stroke="#0055a0" stroke-width="1.8"></path>
+<path d="M150,131 L40,131" marker-end="url(#m6g)" stroke="#999" stroke-dasharray="4,3" stroke-width="1.8"></path>
+<text class="n6" x="32" y="143">Por turnos · walkie-talkie · hub · WI-FI</text>
+<rect fill="#e6f2ec" height="46" rx="4" width="180" x="22" y="150"></rect>
+<text class="d6" x="32" y="166">DÚPLEX — los dos a la vez</text>
+<path d="M40,174 L150,174" marker-end="url(#m6)" stroke="#0055a0" stroke-width="1.8"></path>
+<path d="M150,181 L40,181" marker-end="url(#m6v)" stroke="#2d8659" stroke-width="1.8"></path>
+<text class="n6" x="32" y="193">A la vez · ETHERNET CONMUTADA</text>
+<text class="k6" text-anchor="middle" x="340" y="42">2 · SEGÚN LAS LÍNEAS</text>
+<rect fill="#eef4fa" height="70" rx="4" width="180" x="216" y="50"></rect>
+<text class="d6" x="226" y="66">SERIE — bits uno tras otro</text>
+<path d="M234,80 L380,80" stroke="#0055a0" stroke-width="1.6"></path>
+<text class="n6" x="226" y="96">Menos conductores, sin desfase</text>
+<text class="g6" x="226" y="110">TODA RED LOCAL ES SERIE</text>
+<rect fill="#fbeaea" height="72" rx="4" width="180" x="216" y="124"></rect>
+<text class="d6" x="226" y="140">PARALELO — varios bits a la vez</text>
+<path d="M234,152 L380,152 M234,160 L380,160 M234,168 L380,168" stroke="#d13c3c" stroke-width="1.2"></path>
+<text class="n6" x="226" y="182">Desfase entre líneas y diafonía</text>
+<text class="n6" x="226" y="192">Descartado incluso en buses internos</text>
+<text class="k6" text-anchor="middle" x="556" y="42">3 · SEGÚN EL SINCRONISMO</text>
+<rect fill="#eef4fa" height="46" rx="4" width="248" x="410" y="50"></rect>
+<text class="d6" x="420" y="66">ASÍNCRONA — carácter a carácter</text>
+<text class="n6" x="420" y="80">Bit de arranque y de parada. De 10 bits, 8 útiles:</text>
+<text class="n6" x="420" y="91">un 20 % de sobrecarga. Puerto serie clásico</text>
+<rect fill="#e6f2ec" height="52" rx="4" width="248" x="410" y="100"></rect>
+<text class="d6" x="420" y="116">SÍNCRONA — por bloques o tramas</text>
+<text class="n6" x="420" y="130">Reloj común, o extraído de la propia señal por un</text>
+<text class="n6" x="420" y="141">código de línea autosincronizante (ver D8)</text>
+<rect fill="#fdf3e3" height="40" rx="4" width="248" x="410" y="156"></rect>
+<text class="d6" x="420" y="172">ISÓCRONA — retardo constante</text>
+<text class="n6" x="420" y="186">Garantía de plazo entre unidades: voz y vídeo</text>
+<rect fill="#f7f9fb" height="24" rx="3" width="636" x="22" y="212"></rect>
+<text class="d6" text-anchor="middle" x="340" y="228">1000BASE-T usa los CUATRO PARES a la vez y aun así NO es transmisión paralelo: multiplexa un flujo serie sobre cuatro canales serie</text>
+<rect fill="none" height="66" rx="5" stroke="#0055a0" stroke-width="1.5" width="636" x="22" y="248"></rect>
+<text class="k6" text-anchor="middle" x="340" y="266">La consecuencia que vertebra el tema entero</text>
+<text class="d6" text-anchor="middle" x="340" y="282">El MÉTODO DE ACCESO AL MEDIO solo hace falta cuando la transmisión es SEMIDÚPLEX sobre MEDIO COMPARTIDO</text>
+<text class="g6" text-anchor="middle" x="340" y="297">Enlace dúplex punto a punto = no hay con quién colisionar = CSMA/CD se desactiva</text>
+<text class="r6" text-anchor="middle" x="340" y="309">La radio no puede transmitir y recibir a la vez: Wi-Fi sigue siendo semidúplex y conserva íntegro el problema</text>
+<text class="n6" text-anchor="end" x="670" y="340">[Fuente: Stallings · IEEE 802.3 · IEEE 802.11]</text>
+</svg>

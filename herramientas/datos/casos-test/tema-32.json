@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, el sistema produce resoluciones firmadas que despliegan efectos jurídicos y son recurribles. ¿Qué nivel corresponde a su integridad?",
+    "o": [
+     "MEDIO, porque las resoluciones son recurribles y cualquier alteración puede corregirse después.",
+     "BAJO, porque la integridad solo se valora cuando el sistema trata categorías especiales de datos.",
+     "ALTO, porque una resolución alterada produce efectos jurídicos indebidos y un perjuicio muy grave."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §1.2.1",
+    "e": "El nivel ALTO corresponde al perjuicio muy grave; un acto alterado supone un incumplimiento grave del ordenamiento y un daño muy grave para el afectado."
+   },
+   {
+    "q": "El enunciado admite que una caída de un día es asumible ampliando plazos administrativos. ¿Qué nivel corresponde a la disponibilidad?",
+    "o": [
+     "ALTO, porque el sistema da servicio a 21 distritos.",
+     "MEDIO, porque el perjuicio es grave pero reparable.",
+     "BAJO, porque una caída no afecta a datos personales."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §1.2.1",
+    "e": "MEDIO es el perjuicio grave; ALTO, el muy grave. Si un día de caída se repara ampliando plazos, el perjuicio no llega a muy grave."
+   },
+   {
+    "q": "El sistema trata datos identificativos y de contacto de la ciudadanía, sin categorías especiales. ¿Qué nivel corresponde a su confidencialidad?",
+    "o": [
+     "MEDIO, porque su revelación causa un perjuicio grave, pero no muy grave, a los individuos.",
+     "ALTO, porque cualquier dato personal de la ciudadanía exige siempre el nivel más elevado.",
+     "Ninguno, porque los datos identificativos no se consideran datos personales a estos efectos."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §1.2.1",
+    "e": "La revelación de datos identificativos y de contacto causa un perjuicio grave y de difícil reparación; al no haber categorías especiales, no llega a muy grave."
+   },
+   {
+    "q": "Con integridad y autenticidad en ALTO y las demás dimensiones en MEDIO, ¿qué categoría tiene el sistema y por qué?",
+    "o": [
+     "MEDIA, porque la mayoría de las dimensiones están en nivel MEDIO.",
+     "ALTA, porque basta con que una dimensión alcance el nivel ALTO.",
+     "MEDIA, porque se calcula la media de los cinco niveles asignados."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §1.2.1 (anexo I.4 ENS)",
+    "e": "La regla de agregación del anexo I.4 es «el máximo manda»: una sola dimensión en ALTO hace al sistema de categoría ALTA; aquí son dos."
+   },
+   {
+    "q": "Una vez determinada la categoría ALTA, ¿qué medidas se aplican a la confidencialidad, la trazabilidad y la disponibilidad?",
+    "o": [
+     "Las del nivel ALTO, porque la categoría del sistema arrastra a todas sus dimensiones al máximo.",
+     "Ninguna, porque en categoría ALTA solo se aplican las medidas de las dimensiones en nivel ALTO.",
+     "Las de su propio nivel MEDIO, porque la categoría no eleva el nivel de las demás dimensiones."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §1.2.1 (anexo I.4.2 ENS)",
+    "e": "Determinar la categoría no altera el nivel de las dimensiones que no influyeron en ella: a cada dimensión se le aplican las medidas de su nivel."
+   },
+   {
+    "q": "En el análisis del riesgo de «inundación de la sala técnica», ¿qué es la vulnerabilidad y qué puede corregirse?",
+    "o": [
+     "La ubicación en planta baja junto a bajantes, sin detección de fugas: se corrige la vulnerabilidad, porque la amenaza no se elimina.",
+     "El agua de las bajantes: se corrige la amenaza eliminándola, porque la ubicación de la sala no influye en el riesgo de inundación.",
+     "Los servidores de la sala: se corrige el activo sustituyéndolo, porque la vulnerabilidad es la propia existencia del equipamiento."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §1.1.3",
+    "e": "La amenaza es externa y seguirá existiendo; lo que se corrige es la debilidad propia (la ubicación) y lo que se reduce es el impacto, con detección temprana y recuperación."
+   },
+   {
+    "q": "¿Cuál de estas salvaguardas frente a la inundación es de tipo detectivo?",
+    "o": [
+     "Reubicar la sala fuera de la vertical de las conducciones de agua.",
+     "Restaurar el servicio desde copia en un emplazamiento alternativo.",
+     "Instalar sensores de fuga bajo el falso suelo, conectados a una alarma."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §1.1.3, §2.2.2",
+    "e": "Los sensores avisan cuando el agua aparece; reubicar la sala es preventivo y restaurar desde copia es recuperativo."
+   },
+   {
+    "q": "¿Es exigible a este sistema la medida mp.if.6, protección frente a inundaciones?",
+    "o": [
+     "No, porque mp.if.6 solo se exige a los sistemas cuya disponibilidad está en nivel ALTO.",
+     "Sí, porque aplica desde el nivel MEDIO de disponibilidad, que es el de este sistema.",
+     "No, porque mp.if.6 solo se exige cuando el sistema trata categorías especiales de datos."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 3 · §2.2.2 (mp.if.6)",
+    "e": "La protección frente a inundaciones depende del nivel de disponibilidad y se exige desde MEDIO; con disponibilidad MEDIO, es obligatoria."
+   },
+   {
+    "q": "La sala tiene una única acometida eléctrica con SAI y no tiene grupo electrógeno. ¿Exige el ENS a este sistema un grupo electrógeno?",
+    "o": [
+     "No: con disponibilidad MEDIO, mp.if.4 + R1 solo exige tiempo para una terminación ordenada, que el SAI puede cubrir.",
+     "Sí: mp.if.4 exige grupo electrógeno en las tres categorías, sea cual sea el nivel de la disponibilidad del sistema.",
+     "Sí: al ser el sistema de categoría ALTA, la disponibilidad pasa a nivel ALTO y se exige la continuidad del suministro."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §2.2.1, §2.2.2 (mp.if.4)",
+    "e": "El refuerzo R1 garantiza el suministro el tiempo necesario para terminar de forma ordenada; el grupo electrógeno solo sería exigible por continuidad con disponibilidad ALTA, y la categoría no eleva el nivel de la disponibilidad."
+   },
+   {
+    "q": "¿Qué consecuencia tiene la categoría ALTA para la firma de las resoluciones, frente a lo que bastaría en categoría BÁSICA?",
+    "o": [
+     "Ninguna, porque la firma electrónica de las resoluciones se rige por la Ley 39/2015 y no por las medidas del ENS.",
+     "Se aplica mp.info.3 con R1 a R4: certificado cualificado, algoritmos autorizados por el CCN, validación duradera y segundo factor.",
+     "Basta con el código seguro de verificación, que en categoría ALTA sustituye a la firma basada en certificado."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §1.2.1, §6.2.1 (mp.info.3)",
+    "e": "En BÁSICA bastaría cualquier firma admitida en derecho, incluido el CSV; con integridad y autenticidad en ALTO, el bloque de mp.info.3 se aplica completo."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, los atacantes afirman haber descargado una copia de los ficheros con expedientes de vecinos. ¿Qué dimensión compromete esa exfiltración?",
+    "o": [
+     "La confidencialidad.",
+     "La disponibilidad.",
+     "La trazabilidad."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §1.1.2",
+    "e": "La descarga expone la información a quien no debe conocerla; el cifrado de los ficheros afecta a la disponibilidad y a la integridad, y la cuenta genérica, a la trazabilidad."
+   },
+   {
+    "q": "El correo con el adjunto que suplantaba a un proveedor municipal, ¿a qué fase de la cadena de ataque corresponde y qué control la habría cortado?",
+    "o": [
+     "A la instalación, que se corta con la lista blanca de aplicaciones y la detección EDR.",
+     "Al mando y control, que se corta controlando la salida y con la detección de intrusiones.",
+     "A la entrega, que se corta con el filtrado del correo, SPF/DKIM/DMARC y la concienciación."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §4.1.2",
+    "e": "La entrega es el momento en que el arma llega a la víctima; el filtrado de correo (mp.s.1), la autenticación del dominio remitente y la concienciación (mp.per.3) actúan justo ahí."
+   },
+   {
+    "q": "La tramitadora conservaba los permisos de su puesto anterior. ¿Qué medida del ENS incumple esa situación y por qué agrava el incidente?",
+    "o": [
+     "op.exp.4, porque los permisos acumulados impiden aplicar los parches del servidor de ficheros.",
+     "op.acc.4 y el mínimo privilegio, porque el código dañino actúa con los permisos del usuario y cifra más.",
+     "mp.if.7, porque el cambio de destino debía constar en el registro de entrada y salida de equipos."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §3.2.1 (op.acc.4, art. 20 ENS)",
+    "e": "El código dañino se ejecuta con los permisos de quien lo abre: cuantos más tenga, más ficheros cifra y exfiltra."
+   },
+   {
+    "q": "¿Qué consecuencia tiene para la investigación del incidente que cuatro personas usen la cuenta genérica mostrador02?",
+    "o": [
+     "Ninguna, porque el registro de actividad identifica igualmente a la persona por el puesto usado.",
+     "Facilita la investigación, porque basta revisar una sola cuenta en lugar de las de cuatro personas.",
+     "Impide saber quién hizo qué, porque incumple la identificación singular (op.acc.1, art. 24.3 ENS)."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §3.2.1 (op.acc.1, art. 24.3 ENS)",
+    "e": "Una cuenta compartida destruye la trazabilidad: compromete la investigación forense y la exigencia de responsabilidades."
+   },
+   {
+    "q": "¿Qué papel tuvieron en el incidente los tres fallos de control de acceso detectados?",
+    "o": [
+     "No lo causaron, pero multiplicaron su impacto, que es lo que deben evitar las líneas de defensa interiores.",
+     "Fueron la causa directa del incidente, por delante del correo fraudulento y de la vulnerabilidad sin parchear.",
+     "Ninguno, porque en un ataque de secuestro de datos el control de acceso del usuario no influye en el alcance."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §3.2.1",
+    "e": "El incidente lo causaron el correo y la vulnerabilidad; los permisos acumulados y la cuenta compartida ampliaron su alcance y dificultaron la investigación."
+   },
+   {
+    "q": "¿Por qué la vulnerabilidad del servidor de ficheros exigía un parche de emergencia y no esperar al ciclo ordinario?",
+    "o": [
+     "Porque su CVSS superaba 7,0, y toda vulnerabilidad por encima de ese valor se parchea siempre de urgencia.",
+     "Porque concurrían gravedad alta, explotación pública conocida y un activo crítico de una unidad tramitadora.",
+     "Porque el servidor era nuevo, y los equipos recién instalados deben parchearse antes que los ya existentes."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §4.2.1",
+    "e": "La puntuación no decide por sí sola: el riesgo es gravedad × exposición × criticidad, y la explotación pública lleva la probabilidad de teórica a real."
+   },
+   {
+    "q": "¿Qué medida del ENS regula el proceso de parcheo y qué función tienen sus refuerzos R1 y R2?",
+    "o": [
+     "op.exp.4: las pruebas en preproducción y el mecanismo de reversión permiten parchear rápido sin romper el servicio.",
+     "op.exp.6: las pruebas en preproducción y la reversión justifican esperar a la siguiente ventana trimestral.",
+     "mp.if.4: el suministro de emergencia y la reversión garantizan que el servidor no se apague al reiniciar."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §4.2.1 (op.exp.4)",
+    "e": "op.exp.4 obliga a seguir los avisos del fabricante y a priorizar las actualizaciones según el riesgo; sus refuerzos no son excusa para no parchear."
+   },
+   {
+    "q": "Además de notificar el ciberincidente al CCN-CERT, ¿qué notificación procede respecto de los datos personales de los vecinos?",
+    "o": [
+     "A la AEPD solo si algún vecino lo solicita, dentro del plazo de un mes desde la solicitud.",
+     "A la AEPD en el plazo de treinta días hábiles desde que concluya la investigación forense.",
+     "A la AEPD, sin dilación indebida y, de ser posible, en 72 horas desde que se tuvo constancia."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §1.2.2 (art. 33 RGPD)",
+    "e": "La violación de seguridad se notifica a la autoridad de control salvo que sea improbable que suponga un riesgo, lo que aquí no ocurre; los plazos corren en paralelo con la notificación al CCN-CERT."
+   },
+   {
+    "q": "¿Puede el Ayuntamiento eximirse de comunicar la brecha a los vecinos alegando que los ficheros estaban cifrados?",
+    "o": [
+     "Sí, porque los ficheros exfiltrados estaban cifrados y, por tanto, eran ininteligibles para el atacante.",
+     "No, porque el cifrado lo aplicó el atacante; los ficheros no estaban cifrados en reposo por el Ayuntamiento.",
+     "Sí, porque la comunicación a los interesados solo procede cuando los datos afectados son de salud."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · §1.2.2 (art. 34.3.a RGPD)",
+    "e": "La excepción ampara el cifrado que impide al atacante leer lo que se llevó, no el que el atacante impone; con exfiltración de expedientes hay alto riesgo y procede comunicar."
+   },
+   {
+    "q": "¿Qué documentación interna de la brecha debe quedar, se notifique o no a la autoridad de control?",
+    "o": [
+     "Ninguna, si finalmente se decide que la brecha no debe notificarse a la autoridad de control.",
+     "Solo un aviso verbal a la dirección, para no dejar rastro escrito que pueda usarse en contra.",
+     "El registro interno de la brecha por el responsable, siempre, conforme al art. 33.5 del RGPD."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §1.2.2 (art. 33.5 RGPD)",
+    "e": "Toda violación de seguridad se documenta internamente, se notifique o no; ese registro, junto con el de op.exp.9, permite acreditar después el cumplimiento de los plazos."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, la ciudadanía podrá identificarse con Cl@ve. ¿En qué sistema de identificación del artículo 9.2 de la Ley 39/2015 se encuadra?",
+    "o": [
+     "En los sistemas basados en certificados cualificados de sello electrónico.",
+     "En cualquier otro sistema que las Administraciones consideren válido, previa comunicación.",
+     "En los sistemas basados en certificados cualificados de firma, como el DNI electrónico."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §6.2.1 (art. 9.2 Ley 39/2015)",
+    "e": "El art. 9.2 admite certificados cualificados de firma (incluido el DNIe), certificados cualificados de sello y otros sistemas que las Administraciones consideren válidos, previa comunicación, categoría en la que está Cl@ve."
+   },
+   {
+    "q": "¿Con qué firma y en qué soporte debe firmar el titular del órgano la resolución de la licencia?",
+    "o": [
+     "Firma avanzada basada en certificado cualificado, en tarjeta criptográfica que garantiza el control exclusivo.",
+     "Firma simple con usuario y contraseña de la intranet, porque el titular ya está identificado en el sistema.",
+     "Sello electrónico de órgano, porque la resolución la dicta un órgano y no una persona física concreta."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §6.2.1 (art. 10.2 Ley 39/2015; art. 26.c eIDAS)",
+    "e": "La tarjeta garantiza el control exclusivo de los datos de creación de firma (art. 26.c eIDAS) y, con su PIN, el segundo factor de mp.info.3.r4; el sello queda para la actuación automatizada."
+   },
+   {
+    "q": "¿Por qué la resolución debe firmarse en PAdES-LTA y no basta el nivel PAdES-B?",
+    "o": [
+     "Porque PAdES-B solo puede usarse con documentos XML, y la resolución se genera como PDF.",
+     "Porque sin sello de tiempo ni datos de validación, la firma no se probaría al caducar el certificado.",
+     "Porque PAdES-B no permite incrustar la firma en el PDF, que debe ir en un fichero aparte."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §6.2.1",
+    "e": "La resolución es recurrible durante años: el formato debe permitir verificar la firma mucho después de que caduque el certificado del firmante."
+   },
+   {
+    "q": "¿Qué figura corresponde a los certificados de situación que emite cada mes el proceso automatizado sin intervención humana?",
+    "o": [
+     "La firma del técnico que programó el proceso, porque es la persona responsable del resultado.",
+     "La firma avanzada del titular del órgano, aplicada en lote por el proceso cada fin de mes.",
+     "El sello electrónico de órgano basado en certificado cualificado de sello (art. 42 Ley 40/2015)."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §6.2.1 (art. 42 Ley 40/2015)",
+    "e": "En la actuación automatizada no hay voluntad de persona física que expresar: el sello acredita el origen y la integridad del documento, no la voluntad."
+   },
+   {
+    "q": "Un vecino presenta una copia en papel de uno de esos certificados. ¿Cómo puede verificarse su autenticidad?",
+    "o": [
+     "Contrastando el código seguro de verificación impreso en el documento con la sede electrónica.",
+     "Comprobando a simple vista el sello de tiempo cualificado incorporado en la copia en papel.",
+     "Pidiendo al vecino el certificado electrónico con el que se identificó al hacer la solicitud."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 2 · §6.2.1",
+    "e": "El CSV es un identificador único que permite cotejar la copia con el original en la sede; sirve para verificar la copia, no sustituye al sello del documento electrónico."
+   },
+   {
+    "q": "La comunicación entre una oficina de distrito y el CPD discurre fuera del propio dominio de seguridad. ¿Qué mecanismo y qué medida corresponden?",
+    "o": [
+     "Una conexión HTTP sin cifrar, porque los datos viajan por la red municipal entre dos sedes propias.",
+     "Un túnel con AH en modo transporte, que cifra el contenido conforme a mp.si.2 para los soportes.",
+     "Una VPN cifrada, típicamente IPsec con ESP en modo túnel e IKEv2, conforme a mp.com.2 con su R1."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · §5.2.1 (mp.com.2)",
+    "e": "mp.com.2 exige redes privadas virtuales cifradas cuando la comunicación sale del dominio de seguridad; ESP es el protocolo de IPsec que cifra (AH no cifra) y el modo túnel es el propio de las pasarelas."
+   },
+   {
+    "q": "¿Cómo deben administrarse en remoto los servidores del nuevo procedimiento?",
+    "o": [
+     "Por Telnet desde cualquier origen, con la cuenta root compartida por el equipo de sistemas.",
+     "Por SSH con autenticación por par de claves, root deshabilitado, origen restringido y sesión registrada.",
+     "Por escritorio remoto publicado en internet, con usuario y contraseña de la intranet municipal."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §5.2.2 (op.acc.6.r9)",
+    "e": "El acceso remoto debe estar autorizado, cifrado, deshabilitado cuando no se use y con registros de auditoría (op.acc.6.r9), y con doble factor desde zona no controlada (op.acc.6.r8)."
+   },
+   {
+    "q": "La copia semanal sale en soporte extraíble hacia el centro de respaldo de otro edificio. ¿Qué protección exige el ENS?",
+    "o": [
+     "Cifrar el soporte con algoritmos autorizados por el CCN (mp.si.2), con custodia y transporte controlados.",
+     "Ninguna, porque el centro de respaldo es un edificio municipal y el soporte no sale del Ayuntamiento.",
+     "Calcular un hash del soporte antes del traslado, que garantiza la confidencialidad de la copia."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §5.1.1 (mp.si.2, mp.si.3, mp.si.4)",
+    "e": "mp.si.2 aplica el cifrado a los dispositivos removibles cuando salen de un área controlada; el hash solo garantiza integridad, no confidencialidad."
+   },
+   {
+    "q": "¿Qué problema plantea conservar los expedientes firmados durante décadas?",
+    "o": [
+     "Que el formato PDF dejará de poder abrirse, por lo que hay que imprimir los expedientes.",
+     "Que la firma caduca a los cinco años y la resolución pierde su validez jurídica con ella.",
+     "Que los certificados caducan en pocos años y, sin más, no podría probarse que eran válidos al firmar."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §6.2.1",
+    "e": "Una firma legítima dejaría de poder acreditarse si no se demuestra que el certificado estaba vigente y no revocado al firmar; además, los algoritmos envejecen."
+   },
+   {
+    "q": "¿Qué aporta incorporar a la firma la cadena de certificados y las respuestas CRL u OCSP del momento de firmar (nivel -LT)?",
+    "o": [
+     "Que la validación no dependa de que sigan existiendo los servicios de la autoridad de certificación.",
+     "Que la firma quede cifrada y solo pueda leerla el titular del órgano que firmó la resolución.",
+     "Que ya no sea necesario renovar nunca los sellos de tiempo de archivo durante la conservación."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · §6.2.1 (mp.info.3.r3)",
+    "e": "Los datos de validación embebidos permiten verificar la firma en el futuro; los sellos de archivo (-LTA) se siguen renovando antes de que el algoritmo quede obsoleto."
+   }
+  ]
+ }
+]

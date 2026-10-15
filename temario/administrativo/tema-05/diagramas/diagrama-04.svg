@@ -1,0 +1,29 @@
+<svg aria-label="La condición de funcionario se adquiere por superación del proceso, nombramiento, acatamiento de la Constitución y toma de posesión; se pierde por renuncia, pérdida de nacionalidad, jubilación, separación del servicio o inhabilitación" class="svd4" role="img" viewbox="0 0 720 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd4 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd4 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd4 .s{font:11px system-ui,sans-serif;fill:#555;text-anchor:start}</style>
+<rect fill="#2d8659" height="38" rx="8" width="300" x="40" y="16"></rect>
+<text class="h" x="190" y="40">ADQUISICIÓN (art. 62)</text>
+<rect fill="#d13c3c" height="38" rx="8" width="300" x="380" y="16"></rect>
+<text class="h" x="530" y="40">PÉRDIDA (art. 63)</text>
+<rect fill="#e8f5ee" height="34" rx="6" stroke="#2d8659" width="300" x="40" y="70"></rect>
+<text class="t" x="190" y="92">1. Superación del proceso selectivo</text>
+<rect fill="#e8f5ee" height="34" rx="6" stroke="#2d8659" width="300" x="40" y="110"></rect>
+<text class="t" x="190" y="132">2. Nombramiento (diario oficial)</text>
+<rect fill="#e8f5ee" height="34" rx="6" stroke="#2d8659" width="300" x="40" y="150"></rect>
+<text class="t" x="190" y="172">3. Acatamiento de la Constitución</text>
+<rect fill="#e8f5ee" height="34" rx="6" stroke="#2d8659" width="300" x="40" y="190"></rect>
+<text class="t" x="190" y="212">4. Toma de posesión</text>
+<text class="t" style="font-size:11px;fill:#1f5e3f" x="190" y="250">requisitos sucesivos y acumulativos</text>
+<rect fill="#fdeaea" height="26" rx="5" stroke="#d13c3c" width="300" x="380" y="70"></rect>
+<text class="s" x="396" y="88">a) Renuncia (no inhabilita · art. 64)</text>
+<rect fill="#fdeaea" height="26" rx="5" stroke="#d13c3c" width="300" x="380" y="100"></rect>
+<text class="s" x="396" y="118">b) Pérdida de la nacionalidad (art. 65)</text>
+<rect fill="#fdeaea" height="26" rx="5" stroke="#d13c3c" width="300" x="380" y="130"></rect>
+<text class="s" x="396" y="148">c) Jubilación (art. 67)</text>
+<rect fill="#fdeaea" height="26" rx="5" stroke="#d13c3c" width="300" x="380" y="160"></rect>
+<text class="s" x="396" y="178">d) Separación del servicio firme (art. 63.d)</text>
+<rect fill="#fdeaea" height="26" rx="5" stroke="#d13c3c" width="300" x="380" y="190"></rect>
+<text class="s" x="396" y="208">e) Inhabilitación absoluta o especial (art. 66)</text>
+<rect fill="#fff5e6" height="40" rx="6" stroke="#e89822" width="300" x="380" y="228"></rect>
+<text class="t" style="font-size:11px;fill:#b5740f" x="530" y="246">Jubilación forzosa: 65 años</text>
+<text class="t" style="font-size:11px;fill:#b5740f" x="530" y="262">(prorrogable hasta los 70)</text>
+</svg>

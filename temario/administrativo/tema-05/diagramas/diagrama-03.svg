@@ -1,0 +1,17 @@
+<svg aria-label="Los cuatro supuestos del funcionario interino: vacante máximo tres años, sustitución transitoria el tiempo necesario, programas temporales tres años más doce meses, y exceso o acumulación de tareas nueve meses en dieciocho" class="svd3" role="img" viewbox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd3 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd3 .t{font:12px system-ui,sans-serif;fill:#1a1a1a}.svd3 .p{font:700 13px system-ui,sans-serif;fill:#d13c3c;text-anchor:end}</style>
+<rect fill="#003d75" height="40" rx="8" width="320" x="190" y="16"></rect>
+<text class="h" x="350" y="41">FUNCIONARIO INTERINO · art. 10</text>
+<rect fill="#e8f0f8" height="44" rx="6" stroke="#0055a0" width="620" x="40" y="76"></rect>
+<text class="t" x="56" y="103">a) Plazas vacantes sin cobertura por funcionario de carrera</text>
+<text class="p" x="644" y="103">máx. 3 años</text>
+<rect fill="#e8f0f8" height="44" rx="6" stroke="#0055a0" width="620" x="40" y="128"></rect>
+<text class="t" x="56" y="155">b) Sustitución transitoria de los titulares</text>
+<text class="p" x="644" y="155">tiempo necesario</text>
+<rect fill="#e8f0f8" height="44" rx="6" stroke="#0055a0" width="620" x="40" y="180"></rect>
+<text class="t" x="56" y="207">c) Ejecución de programas de carácter temporal</text>
+<text class="p" x="644" y="207">3 años + 12 meses</text>
+<rect fill="#fdeaea" height="44" rx="6" stroke="#d13c3c" width="620" x="40" y="232"></rect>
+<text class="t" x="56" y="259">d) Exceso o acumulación de tareas</text>
+<text class="p" x="644" y="259">9 meses / 18 meses</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg aria-label="Contenido mínimo del Estatuto de Autonomía según el artículo 147.2: denominación, territorio, instituciones y sede, competencias" role="img" viewbox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .d7-c{fill:#0055a0;stroke:#003d73;stroke-width:2}
+    .d7-b{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .d7-ct{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .d7-let{font:700 16px system-ui,sans-serif;fill:#e89822;text-anchor:middle}
+    .d7-h{font:700 13px system-ui,sans-serif;fill:#003d73;text-anchor:middle}
+    .d7-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+  </style>
+<ellipse class="d7-c" cx="350" cy="160" rx="96" ry="48"></ellipse>
+<text class="d7-ct" x="350" y="155">ESTATUTO</text>
+<text class="d7-ct" style="font-weight:400;font-size:11px" x="350" y="174">art. 147.2 · ley orgánica</text>
+<rect class="d7-b" height="70" rx="8" width="220" x="40" y="40"></rect>
+<text class="d7-let" x="70" y="70">a)</text>
+<text class="d7-h" x="160" y="70">Denominación</text>
+<text class="d7-s" x="160" y="90">según identidad histórica</text>
+<rect class="d7-b" height="70" rx="8" width="220" x="440" y="40"></rect>
+<text class="d7-let" x="470" y="70">b)</text>
+<text class="d7-h" x="560" y="70">Territorio</text>
+<text class="d7-s" x="560" y="90">delimitación</text>
+<rect class="d7-b" height="70" rx="8" width="220" x="40" y="210"></rect>
+<text class="d7-let" x="70" y="240">c)</text>
+<text class="d7-h" x="160" y="240">Instituciones y sede</text>
+<text class="d7-s" x="160" y="260">denominación y organización</text>
+<rect class="d7-b" height="70" rx="8" width="220" x="440" y="210"></rect>
+<text class="d7-let" x="470" y="240">d)</text>
+<text class="d7-h" x="560" y="240">Competencias</text>
+<text class="d7-s" x="560" y="260">asumidas + bases de traspaso</text>
+</svg>

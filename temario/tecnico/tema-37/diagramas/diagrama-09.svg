@@ -1,0 +1,65 @@
+<svg aria-label="Las cinco técnicas de multiplexación representadas sobre un plano de tiempo y frecuencia: división de frecuencia, división de tiempo en sus variantes síncrona y estadística, división de longitud de onda sobre fibra, división de código y división de frecuencias ortogonales con su versión de acceso múltiple OFDMA, que es la novedad de Wi-Fi 6" role="img" viewbox="0 0 680 384" xmlns="http://www.w3.org/2000/svg">
+<style>.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.k9{font:700 10px system-ui,sans-serif;fill:#0055a0}.d9{font:8.5px system-ui,sans-serif;fill:#333}.n9{font:8px system-ui,sans-serif;fill:#666}.w9{font:700 8px system-ui,sans-serif;fill:#fff}.g9{font:700 9px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">Las cinco técnicas de multiplexación: cómo reparten el medio</text>
+<text class="k9" text-anchor="middle" x="120" y="42">FDM · por FRECUENCIA</text>
+<rect fill="#eef4fa" height="76" rx="4" width="188" x="26" y="50"></rect>
+<rect fill="#0055a0" height="14" width="168" x="36" y="58"></rect><text class="w9" text-anchor="middle" x="120" y="69">CANAL A</text>
+<rect fill="#ccc" height="6" width="168" x="36" y="76"></rect>
+<rect fill="#3d82c4" height="14" width="168" x="36" y="86"></rect><text class="w9" text-anchor="middle" x="120" y="97">CANAL B</text>
+<rect fill="#ccc" height="6" width="168" x="36" y="104"></rect>
+<rect fill="#7fa8cc" height="10" width="168" x="36" y="112"></rect>
+<text class="n9" x="222" y="66">Subbandas</text>
+<text class="n9" x="222" y="78">de frecuencia</text>
+<text class="n9" x="222" y="90">separadas por</text>
+<text class="n9" x="222" y="102">bandas de guarda.</text>
+<text class="n9" x="222" y="114">Simultáneas y</text>
+<text class="n9" x="222" y="126">continuas</text>
+<text class="k9" text-anchor="middle" x="420" y="42">TDM · por TIEMPO</text>
+<rect fill="#eef4fa" height="76" rx="4" width="188" x="316" y="50"></rect>
+<rect fill="#0055a0" height="26" width="40" x="326" y="58"></rect><text class="w9" text-anchor="middle" x="346" y="75">A</text>
+<rect fill="#3d82c4" height="26" width="40" x="368" y="58"></rect><text class="w9" text-anchor="middle" x="388" y="75">B</text>
+<rect fill="#7fa8cc" height="26" width="40" x="410" y="58"></rect><text class="w9" text-anchor="middle" x="430" y="75">C</text>
+<rect fill="#0055a0" height="26" width="40" x="452" y="58"></rect><text class="w9" text-anchor="middle" x="472" y="75">A</text>
+<text class="n9" x="326" y="98">SÍNCRONA: ranura fija reservada</text>
+<rect fill="#e89822" height="16" width="40" x="326" y="104"></rect><text class="w9" text-anchor="middle" x="346" y="116">A</text>
+<rect fill="#e89822" height="16" width="60" x="368" y="104"></rect><text class="w9" text-anchor="middle" x="398" y="116">C</text>
+<rect fill="#e89822" height="16" width="62" x="430" y="104"></rect><text class="w9" text-anchor="middle" x="461" y="116">A</text>
+<text class="n9" x="512" y="112">ESTADÍSTICA:</text>
+<text class="n9" x="512" y="123">solo a quien</text>
+<text class="n9" x="512" y="134">tiene datos</text>
+<text class="k9" text-anchor="middle" x="120" y="150">WDM · por LONGITUD DE ONDA</text>
+<rect fill="#eef4fa" height="52" rx="4" width="188" x="26" y="158"></rect>
+<path d="M40,172 L200,172" stroke="#d13c3c" stroke-width="2.4"></path>
+<path d="M40,182 L200,182" stroke="#2d8659" stroke-width="2.4"></path>
+<path d="M40,192 L200,192" stroke="#0055a0" stroke-width="2.4"></path>
+<text class="n9" x="40" y="205">Varios «colores» por la MISMA fibra</text>
+<text class="n9" x="222" y="172">Es FDM aplicada</text>
+<text class="n9" x="222" y="184">a la fibra óptica.</text>
+<text class="n9" x="222" y="196">CWDM pocos canales,</text>
+<text class="n9" x="222" y="208">DWDM decenas</text>
+<text class="k9" text-anchor="middle" x="420" y="150">CDM · por CÓDIGO</text>
+<rect fill="#eef4fa" height="52" rx="4" width="188" x="316" y="158"></rect>
+<rect fill="#7fa8cc" height="30" width="166" x="326" y="166"></rect>
+<text class="w9" text-anchor="middle" x="409" y="185">TODOS a la vez, en TODA la banda</text>
+<text class="n9" x="326" y="206">Cada uno con su código ortogonal</text>
+<text class="n9" x="512" y="172">El receptor</text>
+<text class="n9" x="512" y="184">correla con su</text>
+<text class="n9" x="512" y="196">código; el resto</text>
+<text class="n9" x="512" y="208">le suena a ruido</text>
+<text class="k9" text-anchor="middle" x="150" y="232">OFDM / OFDMA · FRECUENCIAS ORTOGONALES</text>
+<rect fill="#e6f2ec" height="42" rx="4" width="478" x="26" y="240"></rect>
+<rect fill="#0055a0" height="26" width="60" x="36" y="248"></rect><text class="w9" text-anchor="middle" x="66" y="265">EST. 1</text>
+<rect fill="#2d8659" height="26" width="30" x="100" y="248"></rect><text class="w9" text-anchor="middle" x="115" y="265">2</text>
+<rect fill="#3d82c4" height="26" width="90" x="134" y="248"></rect><text class="w9" text-anchor="middle" x="179" y="265">ESTACIÓN 3</text>
+<rect fill="#e89822" height="26" width="45" x="228" y="248"></rect><text class="w9" text-anchor="middle" x="250" y="265">EST. 4</text>
+<rect fill="#7fa8cc" height="26" width="70" x="277" y="248"></rect><text class="w9" text-anchor="middle" x="312" y="265">ESTACIÓN 5</text>
+<rect fill="#c9d6e2" height="26" width="143" x="351" y="248"></rect><text class="w9" style="fill:#33475b" text-anchor="middle" x="422" y="265">UNIDADES DE RECURSO LIBRES</text>
+<text class="g9" x="512" y="252">La novedad real</text>
+<text class="n9" x="512" y="264">de Wi-Fi 6: atiende</text>
+<text class="n9" x="512" y="276">a muchos clientes</text>
+<text class="n9" x="512" y="288">pequeños A LA VEZ</text>
+<rect fill="none" height="48" rx="5" stroke="#0055a0" stroke-width="1.5" width="632" x="26" y="300"></rect>
+<text class="k9" text-anchor="middle" x="342" y="320">Frontera con la sección 4: MULTIPLEXAR reparte de forma planificada</text>
+<text class="d9" text-anchor="middle" x="342" y="336">ACCEDER AL MEDIO arbitra una contienda imprevisible entre estaciones que compiten</text>
+<text class="n9" text-anchor="end" x="670" y="372">[Fuente: Stallings · IEEE 802.11ax]</text>
+</svg>

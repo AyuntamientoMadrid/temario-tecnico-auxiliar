@@ -1,0 +1,28 @@
+<svg aria-label="Línea de tiempo de la evolución de los paradigmas de programación: no estructurada, estructurada, modular y orientada a objetos, con los hitos Simula 67, Smalltalk, C++ y Java" role="img" viewbox="0 0 680 316" xmlns="http://www.w3.org/2000/svg">
+<style>.t1{font:700 12px system-ui,sans-serif;fill:#fff}.s1{font:10px system-ui,sans-serif;fill:#fff}.l1{font:11px system-ui,sans-serif;fill:#444}.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h1" text-anchor="middle" x="340" y="24">De la programación no estructurada al paradigma orientado a objetos</text>
+<line stroke="#0055a0" stroke-width="2" x1="50" x2="630" y1="70" y2="70"></line>
+<circle cx="90" cy="70" fill="#0055a0" r="6"></circle>
+<circle cx="270" cy="70" fill="#0055a0" r="6"></circle>
+<circle cx="450" cy="70" fill="#0055a0" r="6"></circle>
+<circle cx="610" cy="70" fill="#2d8659" r="6"></circle>
+<rect fill="#0055a0" height="46" rx="6" width="120" x="30" y="90"></rect><text class="t1" text-anchor="middle" x="90" y="110">NO</text><text class="s1" text-anchor="middle" x="90" y="126">ESTRUCTURADA</text>
+<rect fill="#0055a0" height="46" rx="6" width="120" x="210" y="90"></rect><text class="t1" text-anchor="middle" x="270" y="110">ESTRUCTURADA</text><text class="s1" text-anchor="middle" x="270" y="126">Böhm-Jacopini</text>
+<rect fill="#0055a0" height="46" rx="6" width="120" x="390" y="90"></rect><text class="t1" text-anchor="middle" x="450" y="110">MODULAR</text><text class="s1" text-anchor="middle" x="450" y="126">proc. y func.</text>
+<rect fill="#2d8659" height="46" rx="6" width="120" x="550" y="90"></rect><text class="t1" text-anchor="middle" x="610" y="110">ORIENTADA A</text><text class="s1" text-anchor="middle" x="610" y="126">OBJETOS</text>
+<text class="l1" text-anchor="middle" x="90" y="160">GOTO,</text>
+<text class="l1" text-anchor="middle" x="90" y="174">saltos incondicionales</text>
+<text class="l1" text-anchor="middle" x="270" y="160">Secuencia · Selección</text>
+<text class="l1" text-anchor="middle" x="270" y="174">Iteración</text>
+<text class="l1" text-anchor="middle" x="450" y="160">Datos separados</text>
+<text class="l1" text-anchor="middle" x="450" y="174">de las funciones</text>
+<text class="l1" text-anchor="middle" x="610" y="160">Objetos: datos +</text>
+<text class="l1" text-anchor="middle" x="610" y="174">comportamiento juntos</text>
+<rect fill="#eef4fa" height="90" rx="6" stroke="#0055a0" width="180" x="470" y="200"></rect>
+<text style="font:700 11px system-ui;fill:#0055a0" text-anchor="middle" x="560" y="220">Hitos del lenguaje OO</text>
+<text class="l1" x="480" y="238">1967 · Simula 67</text>
+<text class="l1" x="480" y="252">1970s · Smalltalk</text>
+<text class="l1" x="480" y="266">1983 · C++</text>
+<text class="l1" style="font-weight:700" x="480" y="280">1995 · Java</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="308">[Fuente: BOOCH07; GOSLING-JLS]</text>
+</svg>

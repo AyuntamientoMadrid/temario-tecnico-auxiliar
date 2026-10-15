@@ -1,0 +1,21 @@
+<svg aria-label="Flujo de persistencia: un EJB o CDI bean con transacción gestionada por el contenedor usa el EntityManager de JPA, que internamente genera SQL ejecutado vía JDBC sobre un DataSource localizado por JNDI, todo coordinado por JTA con commit en dos fases si hay varios recursos" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t11{font:700 11px system-ui,sans-serif;fill:#fff}.s11{font:9.5px system-ui,sans-serif;fill:#fff}.l11{font:11px system-ui,sans-serif;fill:#444}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h11" text-anchor="middle" x="340" y="20">EJB/CDI → JPA (EntityManager) → JDBC (DataSource) → BD</text>
+<rect fill="#0055a0" height="56" rx="6" width="140" x="20" y="42"></rect><text class="t11" text-anchor="middle" x="90" y="64">EJB / CDI</text><text class="s11" text-anchor="middle" x="90" y="82">lógica de negocio</text>
+<path d="M160 70 L188 70" marker-end="url(#a11)" stroke="#888" stroke-width="2"></path>
+<rect fill="#3778b5" height="56" rx="6" width="150" x="190" y="42"></rect><text class="t11" text-anchor="middle" x="265" y="64">JPA</text><text class="s11" text-anchor="middle" x="265" y="82">EntityManager · JPQL</text>
+<path d="M340 70 L368 70" marker-end="url(#a11)" stroke="#888" stroke-width="2"></path>
+<rect fill="#2d8659" height="56" rx="6" width="150" x="370" y="42"></rect><text class="t11" text-anchor="middle" x="445" y="64">JDBC</text><text class="s11" text-anchor="middle" x="445" y="82">DataSource (JNDI)</text>
+<path d="M520 70 L548 70" marker-end="url(#a11)" stroke="#888" stroke-width="2"></path>
+<rect fill="#888" height="56" rx="6" width="110" x="550" y="42"></rect><text class="t11" text-anchor="middle" x="605" y="64">BD</text><text class="s11" text-anchor="middle" x="605" y="82">relacional</text>
+<rect fill="#e89822" height="70" rx="6" width="460" x="120" y="132"></rect>
+<text style="font:700 12px system-ui;fill:#fff" text-anchor="middle" x="350" y="156">JTA — coordina la transacción</text>
+<text class="s11" text-anchor="middle" x="350" y="176">CMT (contenedor, por defecto) o BMT (programático)</text>
+<text class="s11" text-anchor="middle" x="350" y="192">Varios recursos → commit en dos fases (2PC)</text>
+<path d="M265 98 L280 132" fill="none" stroke="#888" stroke-width="1.5"></path>
+<path d="M445 98 L420 132" fill="none" stroke="#888" stroke-width="1.5"></path>
+<rect fill="#eef4fa" height="52" rx="6" stroke="#0055a0" width="560" x="60" y="224"></rect>
+<text style="font:700 11.5px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="246">JPA NO sustituye JDBC — el proveedor JPA genera y ejecuta SQL vía JDBC</text>
+<text class="l11" text-anchor="middle" x="340" y="264">JPQL opera sobre entidades; SQL opera sobre tablas y columnas físicas</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="332">[Fuente: JAKARTA-JPA; JAKARTA-JTA]</text>
+</svg>

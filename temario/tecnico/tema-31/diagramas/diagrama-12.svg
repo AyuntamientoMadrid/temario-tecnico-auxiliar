@@ -1,0 +1,34 @@
+<svg aria-label="Comparación de los tres modelos de multitenencia: silo con aplicación y base de datos propias por inquilino, puente con aplicación compartida y base de datos propia, y agrupado con todo compartido y un identificador de inquilino en cada registro; se indican aislamiento, coste por inquilino y capacidad de personalización" role="img" viewbox="0 0 680 331" xmlns="http://www.w3.org/2000/svg">
+<style>.t12{font:700 10px system-ui,sans-serif;fill:#fff}.s12{font:8.5px system-ui,sans-serif;fill:#fff}.d12{font:9px system-ui,sans-serif;fill:#333}.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}.k12{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.f12{font:8px system-ui,sans-serif;fill:#777}</style>
+<text class="h12" text-anchor="middle" x="340" y="20">Tres modelos de multitenencia</text>
+<rect fill="#2d8659" height="22" rx="4" width="205" x="20" y="32"></rect><text class="t12" text-anchor="middle" x="122" y="47">SILO</text>
+<rect fill="#e89822" height="22" rx="4" width="205" x="238" y="32"></rect><text class="t12" text-anchor="middle" x="340" y="47">PUENTE</text>
+<rect fill="#0055a0" height="22" rx="4" width="204" x="456" y="32"></rect><text class="t12" text-anchor="middle" x="558" y="47">AGRUPADO</text>
+<rect fill="#eef3f8" height="22" rx="3" width="60" x="28" y="62"></rect><text class="d12" text-anchor="middle" x="58" y="77">app A</text>
+<rect fill="#eef3f8" height="22" rx="3" width="60" x="92" y="62"></rect><text class="d12" text-anchor="middle" x="122" y="77">app B</text>
+<rect fill="#eef3f8" height="22" rx="3" width="60" x="156" y="62"></rect><text class="d12" text-anchor="middle" x="186" y="77">app C</text>
+<rect fill="#cfe3d6" height="22" rx="3" width="60" x="28" y="88"></rect><text class="d12" text-anchor="middle" x="58" y="103">BD A</text>
+<rect fill="#cfe3d6" height="22" rx="3" width="60" x="92" y="88"></rect><text class="d12" text-anchor="middle" x="122" y="103">BD B</text>
+<rect fill="#cfe3d6" height="22" rx="3" width="60" x="156" y="88"></rect><text class="d12" text-anchor="middle" x="186" y="103">BD C</text>
+<rect fill="#fdf3e2" height="22" rx="3" width="188" x="246" y="62"></rect><text class="d12" text-anchor="middle" x="340" y="77">aplicación compartida</text>
+<rect fill="#cfe3d6" height="22" rx="3" width="60" x="246" y="88"></rect><text class="d12" text-anchor="middle" x="276" y="103">BD A</text>
+<rect fill="#cfe3d6" height="22" rx="3" width="60" x="310" y="88"></rect><text class="d12" text-anchor="middle" x="340" y="103">BD B</text>
+<rect fill="#cfe3d6" height="22" rx="3" width="60" x="374" y="88"></rect><text class="d12" text-anchor="middle" x="404" y="103">BD C</text>
+<rect fill="#c9d9e8" height="22" rx="3" width="188" x="464" y="62"></rect><text class="d12" text-anchor="middle" x="558" y="77">aplicación compartida</text>
+<rect fill="#c9d9e8" height="22" rx="3" width="188" x="464" y="88"></rect><text class="d12" text-anchor="middle" x="558" y="103">una BD con id_inquilino en cada fila</text>
+<text class="k12" x="20" y="132">AISLAMIENTO</text>
+<rect fill="#e8f4ec" height="22" rx="4" width="205" x="20" y="138"></rect><text class="d12" text-anchor="middle" x="122" y="153">Máximo (físico y lógico)</text>
+<rect fill="#fdf3e2" height="22" rx="4" width="205" x="238" y="138"></rect><text class="d12" text-anchor="middle" x="340" y="153">Medio-alto</text>
+<rect fill="#fdecec" height="22" rx="4" width="204" x="456" y="138"></rect><text class="d12" text-anchor="middle" x="558" y="153">Solo lógico: depende del código</text>
+<text class="k12" x="20" y="178">COSTE POR INQUILINO</text>
+<rect fill="#fdecec" height="22" rx="4" width="205" x="20" y="184"></rect><text class="d12" text-anchor="middle" x="122" y="199">Alto</text>
+<rect fill="#fdf3e2" height="22" rx="4" width="205" x="238" y="184"></rect><text class="d12" text-anchor="middle" x="340" y="199">Medio</text>
+<rect fill="#e8f4ec" height="22" rx="4" width="204" x="456" y="184"></rect><text class="d12" text-anchor="middle" x="558" y="199">Mínimo</text>
+<text class="k12" x="20" y="224">PERSONALIZACIÓN</text>
+<rect fill="#e8f4ec" height="22" rx="4" width="205" x="20" y="230"></rect><text class="d12" text-anchor="middle" x="122" y="245">Alta</text>
+<rect fill="#fdf3e2" height="22" rx="4" width="205" x="238" y="230"></rect><text class="d12" text-anchor="middle" x="340" y="245">Media</text>
+<rect fill="#fdecec" height="22" rx="4" width="204" x="456" y="230"></rect><text class="d12" text-anchor="middle" x="558" y="245">Baja: solo configuración</text>
+<rect fill="#d13c3c" height="24" rx="4" width="640" x="20" y="262"></rect><text class="s12" text-anchor="middle" x="340" y="278">Riesgo del modelo agrupado: una consulta que olvide filtrar por inquilino expone datos de otra organización</text>
+<rect fill="#eef3f8" height="18" rx="4" width="640" x="20" y="290"></rect><text class="d12" text-anchor="middle" x="340" y="303">Y el ruido del vecino: quien consume de más degrada a los demás</text>
+<text class="f12" text-anchor="middle" x="340" y="322">[Fuente: ISO17788]</text>
+</svg>

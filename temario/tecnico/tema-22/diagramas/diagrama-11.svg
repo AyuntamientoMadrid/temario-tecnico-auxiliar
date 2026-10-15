@@ -1,0 +1,23 @@
+<svg aria-label="Comparativa entre monolito, con toda la aplicacion desplegada junta y una base de datos compartida, y microservicios, con servicios pequenos autonomos desplegados y escalados de forma independiente y con base de datos propia cada uno" role="img" viewbox="0 0 680 350" xmlns="http://www.w3.org/2000/svg">
+<style>.t11{font:700 11.5px system-ui,sans-serif;fill:#fff}.s11{font:9px system-ui,sans-serif;fill:#fff}.l11{font:10.5px system-ui,sans-serif;fill:#444}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h11" text-anchor="middle" x="340" y="20">Monolito vs. microservicios</text>
+<text style="font:700 12px system-ui;fill:#0055a0" text-anchor="middle" x="170" y="46">MONOLITO</text>
+<rect fill="#0055a0" height="120" rx="6" width="220" x="60" y="56"></rect>
+<text class="t11" text-anchor="middle" x="170" y="82">Presentación</text><text class="t11" text-anchor="middle" x="170" y="106">Negocio</text><text class="t11" text-anchor="middle" x="170" y="130">Datos</text><text class="s11" text-anchor="middle" x="170" y="158">Un único despliegue</text>
+<line stroke="#fff" stroke-width="1" x1="80" x2="260" y1="90" y2="90"></line><line stroke="#fff" stroke-width="1" x1="80" x2="260" y1="114" y2="114"></line>
+<rect fill="#3778b5" height="34" rx="4" width="140" x="100" y="196"></rect><text class="s11" text-anchor="middle" x="170" y="217">1 BD compartida</text>
+<line stroke="#888" stroke-width="2" x1="170" x2="170" y1="176" y2="196"></line>
+<text style="font:700 12px system-ui;fill:#2d8659" text-anchor="middle" x="520" y="46">MICROSERVICIOS</text>
+<rect fill="#2d8659" height="60" rx="5" width="90" x="400" y="56"></rect><text class="t11" text-anchor="middle" x="445" y="82">Servicio</text><text class="s11" text-anchor="middle" x="445" y="98">Expedientes</text>
+<rect fill="#2d8659" height="60" rx="5" width="90" x="500" y="56"></rect><text class="t11" text-anchor="middle" x="545" y="82">Servicio</text><text class="s11" text-anchor="middle" x="545" y="98">Tributos</text>
+<rect fill="#2d8659" height="60" rx="5" width="60" x="600" y="56"></rect><text class="s11" text-anchor="middle" x="630" y="82">Notif.</text>
+<rect fill="#e89822" height="34" rx="4" width="90" x="400" y="196"></rect><text class="s11" text-anchor="middle" x="445" y="217">BD propia</text>
+<rect fill="#e89822" height="34" rx="4" width="90" x="500" y="196"></rect><text class="s11" text-anchor="middle" x="545" y="217">BD propia</text>
+<rect fill="#e89822" height="34" rx="4" width="60" x="600" y="196"></rect><text class="s11" style="font-size:8px" text-anchor="middle" x="630" y="217">BD</text>
+<line stroke="#888" stroke-width="2" x1="445" x2="445" y1="116" y2="196"></line><line stroke="#888" stroke-width="2" x1="545" x2="545" y1="116" y2="196"></line><line stroke="#888" stroke-width="2" x1="630" x2="630" y1="116" y2="196"></line>
+<rect fill="#f4f4f4" height="66" rx="6" stroke="#ccc" width="620" x="30" y="256"></rect>
+<text style="font:700 11px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="280">Escalado independiente y despliegue autónomo, a cambio de mayor complejidad operacional</text>
+<text class="l11" text-anchor="middle" x="340" y="298">Consistencia fuerte (ACID) en el monolito vs. consistencia eventual habitual entre microservicios</text>
+<text class="l11" text-anchor="middle" x="340" y="314">Los microservicios son una evolución radical de los principios de SOA (§5.2)</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="342">[Fuente: NEWMAN, cap. 1]</text>
+</svg>

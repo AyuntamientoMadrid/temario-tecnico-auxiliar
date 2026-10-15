@@ -1,0 +1,51 @@
+<svg aria-label="Comparación entre radio convencional y sistema troncalizado. En la convencional cada colectivo tiene un canal fijo asignado, de modo que cuatro portadoras dan cuatro canales rígidos. En el sistema troncalizado TETRA las cuatro portadoras se dividen en cuatro intervalos cada una, dan dieciséis canales físicos, uno se dedica al canal de control y quedan quince canales de tráfico repartidos dinámicamente entre todos los grupos" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 10px system-ui,sans-serif;fill:#fff}.s2{font:8.5px system-ui,sans-serif;fill:#fff}.d2{font:8.5px system-ui,sans-serif;fill:#333}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}.k2{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n2{font:8.5px system-ui,sans-serif;fill:#666}.b2{font:700 9px system-ui,sans-serif;fill:#0055a0}.r2{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}.g2{font:700 9.5px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h2" text-anchor="middle" x="340" y="22">Mismo espectro, casi cuatro veces más conversaciones</text>
+<text class="r2" x="20" y="46">CONVENCIONAL · 4 portadoras de 25 kHz</text>
+<rect fill="none" height="120" rx="5" stroke="#d13c3c" stroke-width="1.5" width="314" x="20" y="54"></rect>
+<rect fill="#d13c3c" height="22" rx="3" width="140" x="32" y="66"></rect>
+<text class="s2" text-anchor="middle" x="102" y="81">Canal 1 · POLICÍA</text>
+<rect fill="#d13c3c" height="22" rx="3" width="140" x="182" y="66"></rect>
+<text class="s2" text-anchor="middle" x="252" y="81">Canal 2 · BOMBEROS</text>
+<rect fill="#d13c3c" height="22" rx="3" width="140" x="32" y="94"></rect>
+<text class="s2" text-anchor="middle" x="102" y="109">Canal 3 · SANITARIOS</text>
+<rect fill="#d13c3c" height="22" rx="3" width="140" x="182" y="94"></rect>
+<text class="s2" text-anchor="middle" x="252" y="109">Canal 4 · MOVILIDAD</text>
+<text class="d2" text-anchor="middle" x="177" y="136">Cada canal pertenece a UN colectivo, hable o no.</text>
+<text class="d2" text-anchor="middle" x="177" y="149">Si el de policía se satura, el agente espera</text>
+<text class="d2" text-anchor="middle" x="177" y="162">aunque los otros tres estén vacíos.</text>
+<text class="g2" x="346" y="46">TRONCALIZADO TETRA · las mismas 4 portadoras</text>
+<rect fill="none" height="120" rx="5" stroke="#2d8659" stroke-width="1.5" width="314" x="346" y="54"></rect>
+<rect fill="#0055a0" height="22" rx="3" width="68" x="358" y="66"></rect>
+<text class="s2" text-anchor="middle" x="392" y="81">CONTROL</text>
+<rect fill="#2d8659" height="22" rx="3" width="68" x="430" y="66"></rect>
+<text class="s2" text-anchor="middle" x="464" y="81">Tráfico</text>
+<rect fill="#2d8659" height="22" rx="3" width="68" x="502" y="66"></rect>
+<text class="s2" text-anchor="middle" x="536" y="81">Tráfico</text>
+<rect fill="#2d8659" height="22" rx="3" width="68" x="574" y="66"></rect>
+<text class="s2" text-anchor="middle" x="608" y="81">Tráfico</text>
+<rect fill="#2d8659" height="22" rx="3" width="284" x="358" y="94"></rect>
+<text class="s2" text-anchor="middle" x="500" y="109">12 canales de tráfico más, en las otras 3 portadoras</text>
+<text class="d2" text-anchor="middle" x="503" y="136">4 portadoras × 4 intervalos = 16 canales físicos.</text>
+<text class="d2" text-anchor="middle" x="503" y="149">Menos 1 de control = 15 canales de tráfico,</text>
+<text class="d2" text-anchor="middle" x="503" y="162">repartidos entre TODOS los grupos.</text>
+<text class="k2" x="20" y="198">Y LA CONSECUENCIA CLAVE</text>
+<rect fill="#f1f5f9" height="66" rx="4" stroke="#c9d6e2" width="200" x="20" y="206"></rect>
+<text class="b2" text-anchor="middle" x="120" y="224">El grupo es LÓGICO</text>
+<text class="d2" text-anchor="middle" x="120" y="240">No es una frecuencia: es una</text>
+<text class="d2" text-anchor="middle" x="120" y="253">identidad (GSSI) en la base</text>
+<text class="d2" text-anchor="middle" x="120" y="266">de datos del sistema</text>
+<rect fill="#f1f5f9" height="66" rx="4" stroke="#c9d6e2" width="200" x="244" y="206"></rect>
+<text class="b2" text-anchor="middle" x="344" y="224">Solo consume al hablar</text>
+<text class="d2" text-anchor="middle" x="344" y="240">Un grupo ocupa canal SOLO</text>
+<text class="d2" text-anchor="middle" x="344" y="253">mientras alguien transmite,</text>
+<text class="d2" text-anchor="middle" x="344" y="266">y solo en las células con afiliados</text>
+<rect fill="#f1f5f9" height="66" rx="4" stroke="#c9d6e2" width="200" x="468" y="206"></rect>
+<text class="b2" text-anchor="middle" x="568" y="224">Grupos casi ilimitados</text>
+<text class="d2" text-anchor="middle" x="568" y="240">Pueden existir decenas o</text>
+<text class="d2" text-anchor="middle" x="568" y="253">centenares de grupos con</text>
+<text class="d2" text-anchor="middle" x="568" y="266">muy pocas portadoras</text>
+<rect fill="none" height="26" rx="4" stroke="#0055a0" stroke-width="1.5" width="648" x="20" y="286"></rect>
+<text class="k2" text-anchor="middle" x="344" y="303">Trunking = asignación DINÁMICA de canales bajo demanda desde una bolsa común, dirigida por el canal de control</text>
+<text class="n2" text-anchor="end" x="670" y="332">[Fuente: elaboración propia sobre ETSI EN 300 392-2 y la nota UN-27 del CNAF]</text>
+</svg>

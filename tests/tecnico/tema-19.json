@@ -1,0 +1,1109 @@
+{
+  "tema": 19,
+  "bloque": "tecnico",
+  "titulo": "Lenguajes de interrogación de bases de datos",
+  "enunciado_oficial": "Lenguajes de interrogación de bases de datos. Estándar ANSI SQL. Procedimientos almacenados. Eventos y disparadores.",
+  "calificacion": "+1 acierto, -1/3 error, 0 en blanco (BOAM 10.032, base 5.2)",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Qué produce, en el modelo relacional, un lenguaje de interrogación al operar sobre una o más relaciones?",
+      "opciones": {
+        "a": "Otra relación (propiedad de cierre)",
+        "b": "Un fichero binario sin estructura",
+        "c": "Un objeto en memoria fuera del modelo relacional"
+      },
+      "correcta": "a",
+      "referencia": "§1.1 [CODD70]",
+      "explicacion": "El resultado de cualquier operación sobre relaciones es, a su vez, una relación, lo que permite componer consultas dentro de otras consultas."
+    },
+    {
+      "numero": 2,
+      "pregunta": "En el vocabulario del modelo relacional, ¿qué es una tupla?",
+      "opciones": {
+        "a": "El nombre de una columna",
+        "b": "Una fila de la relación",
+        "c": "El esquema completo de la tabla"
+      },
+      "correcta": "b",
+      "referencia": "§1.1 [CODD70]",
+      "explicacion": "La relación es la tabla completa; el atributo es la columna; la tupla es cada fila individual."
+    },
+    {
+      "numero": 3,
+      "pregunta": "¿Qué demostró Codd sobre el álgebra relacional y el cálculo relacional seguro (safe)?",
+      "opciones": {
+        "a": "Que el álgebra es más potente que el cálculo",
+        "b": "Que el cálculo relacional no es formalizable matemáticamente",
+        "c": "Que ambos son expresivamente equivalentes (completitud relacional)"
+      },
+      "correcta": "c",
+      "referencia": "§1.2 [CODD70; DATE-REL]",
+      "explicacion": "Todo lo expresable en álgebra relacional lo es en cálculo relacional seguro, y viceversa; esta equivalencia fundamenta el criterio de completitud relacional para evaluar otros lenguajes de consulta."
+    },
+    {
+      "numero": 4,
+      "pregunta": "El operador de selección (σ) del álgebra relacional actúa sobre:",
+      "opciones": {
+        "a": "Filas, extrayendo las que cumplen una condición",
+        "b": "Columnas, eliminando duplicados",
+        "c": "Dos relaciones, combinándolas por producto cartesiano"
+      },
+      "correcta": "a",
+      "referencia": "§1.2 [DATE-INTRO, cap. 6]",
+      "explicacion": "La proyección (π) es la que opera sobre columnas; el producto cartesiano (×) combina dos relaciones completas."
+    },
+    {
+      "numero": 5,
+      "pregunta": "¿Qué requisito deben cumplir dos relaciones para poder aplicarles unión, diferencia o intersección?",
+      "opciones": {
+        "a": "Tener el mismo número de filas",
+        "b": "Ser compatibles por unión (mismo esquema de atributos)",
+        "c": "Compartir una clave primaria"
+      },
+      "correcta": "b",
+      "referencia": "§1.2 [GMUW, cap. 2]",
+      "explicacion": "Los operadores binarios de conjuntos exigen que ambas relaciones tengan el mismo número y tipo de atributos; no importa el número de filas."
+    },
+    {
+      "numero": 6,
+      "pregunta": "La reunión (join, ⋈) del álgebra relacional se define formalmente como:",
+      "opciones": {
+        "a": "Un operador unario sobre una sola relación",
+        "b": "Sinónimo exacto de la unión (∪)",
+        "c": "Un producto cartesiano seguido de una selección por la condición de reunión"
+      },
+      "correcta": "c",
+      "referencia": "§1.2 [DATE-INTRO, cap. 6]",
+      "explicacion": "El join es un operador derivado: se puede expresar combinando el producto cartesiano (×) y la selección (σ)."
+    },
+    {
+      "numero": 7,
+      "pregunta": "¿Qué tipo de consulta resuelve típicamente el operador de división (÷) del álgebra relacional?",
+      "opciones": {
+        "a": "«Qué X están relacionados con TODOS los Y»",
+        "b": "«Cuántas filas tiene la tabla»",
+        "c": "«Ordenar las filas por un atributo»"
+      },
+      "correcta": "a",
+      "referencia": "§1.2 [DATE-INTRO, cap. 6]",
+      "explicacion": "Es el operador derivado propio de consultas de universalidad, como «contribuyentes que tienen liquidados todos los tipos de tributo»."
+    },
+    {
+      "numero": 8,
+      "pregunta": "En el cálculo relacional de dominios, las variables representan:",
+      "opciones": {
+        "a": "Tuplas completas de una relación",
+        "b": "Valores de un dominio (una columna concreta)",
+        "c": "Nombres de tablas del esquema"
+      },
+      "correcta": "b",
+      "referencia": "§1.2 [CODD70]",
+      "explicacion": "Frente al cálculo de tuplas (variables = tuplas completas), el cálculo de dominios usa variables que representan valores de una columna; es la base conceptual de QBE."
+    },
+    {
+      "numero": 9,
+      "pregunta": "¿Cuál de las siguientes afirmaciones sobre álgebra y cálculo relacional es correcta?",
+      "opciones": {
+        "a": "El álgebra es declarativa y el cálculo procedimental",
+        "b": "Solo el álgebra relacional tiene fundamento matemático formal",
+        "c": "El álgebra es procedimental (dice CÓMO) y el cálculo es declarativo (dice QUÉ)"
+      },
+      "correcta": "c",
+      "referencia": "§1.2 [DATE-REL, cap. 6]",
+      "explicacion": "Es la distinción fundamental entre ambos lenguajes equivalentes."
+    },
+    {
+      "numero": 10,
+      "pregunta": "SQL, respecto al álgebra y el cálculo relacional, se describe como:",
+      "opciones": {
+        "a": "Declarativo en su sintaxis, pero traducido internamente a operadores algebraicos por el optimizador",
+        "b": "Puramente procedimental, sin relación con el cálculo relacional",
+        "c": "Un lenguaje ajeno al modelo relacional de Codd"
+      },
+      "correcta": "a",
+      "referencia": "§1.4 [DATE-REL, cap. 6]",
+      "explicacion": "SQL se parece al cálculo relacional en superficie, pero el motor lo ejecuta como un árbol de operadores algebraicos."
+    },
+    {
+      "numero": 11,
+      "pregunta": "La propiedad de cierre (closure) del álgebra relacional permite:",
+      "opciones": {
+        "a": "Ejecutar consultas sin necesidad de optimizador",
+        "b": "Componer operadores anidando el resultado de uno como entrada de otro",
+        "c": "Prescindir del esquema de las relaciones"
+      },
+      "correcta": "b",
+      "referencia": "§1.2 [DATE-INTRO, cap. 6]",
+      "explicacion": "Como cada operación produce otra relación, su resultado puede alimentar directamente a la siguiente operación."
+    },
+    {
+      "numero": 12,
+      "pregunta": "¿Quién formuló por primera vez el modelo relacional en el que se apoyan el álgebra y el cálculo relacional?",
+      "opciones": {
+        "a": "Chamberlin y Boyce, en el artículo de SEQUEL",
+        "b": "Melton y Simon, en su guía del estándar SQL",
+        "c": "E. F. Codd, en su artículo de 1970 sobre bases de datos relacionales"
+      },
+      "correcta": "c",
+      "referencia": "§1.1 [CODD70]",
+      "explicacion": "<em>A Relational Model of Data for Large Shared Data Banks</em> (CACM, 1970) es el artículo fundacional del modelo relacional."
+    },
+    {
+      "numero": 13,
+      "pregunta": "¿Qué sublenguaje se encarga de crear, modificar y eliminar la estructura del esquema (tablas, índices, vistas)?",
+      "opciones": {
+        "a": "DDL",
+        "b": "DML",
+        "c": "DCL"
+      },
+      "correcta": "a",
+      "referencia": "§1.3 [SILBERSCHATZ, cap. 3]",
+      "explicacion": "El Lenguaje de Definición de Datos opera sobre el catálogo del SGBD con <code>CREATE</code>, <code>ALTER</code>, <code>DROP</code> y <code>TRUNCATE</code>."
+    },
+    {
+      "numero": 14,
+      "pregunta": "MERGE, INSERT, UPDATE y DELETE pertenecen al sublenguaje:",
+      "opciones": {
+        "a": "DDL",
+        "b": "DML",
+        "c": "TCL"
+      },
+      "correcta": "b",
+      "referencia": "§1.3 [ELMASRI, cap. 6]",
+      "explicacion": "Son las sentencias que modifican el contenido de las tablas sin alterar su estructura."
+    },
+    {
+      "numero": 15,
+      "pregunta": "Según el estándar ISO/IEC 9075, la sentencia SELECT se clasifica formalmente dentro de:",
+      "opciones": {
+        "a": "DCL",
+        "b": "DDL",
+        "c": "DML (la separación DQL es una convención didáctica)"
+      },
+      "correcta": "c",
+      "referencia": "§1.3 [ISO9075]",
+      "explicacion": "El estándar no separa formalmente DQL; es una distinción muy usada en manuales y oposiciones por la naturaleza claramente distinta del SELECT (no modifica datos) frente al resto del DML."
+    },
+    {
+      "numero": 16,
+      "pregunta": "GRANT y REVOKE son sentencias del sublenguaje:",
+      "opciones": {
+        "a": "DCL",
+        "b": "TCL",
+        "c": "DQL"
+      },
+      "correcta": "a",
+      "referencia": "§1.3 [SILBERSCHATZ, cap. 3]",
+      "explicacion": "El Lenguaje de Control de Datos gestiona permisos: <code>GRANT</code> concede privilegios y <code>REVOKE</code> los retira."
+    },
+    {
+      "numero": 17,
+      "pregunta": "COMMIT, ROLLBACK y SAVEPOINT pertenecen a:",
+      "opciones": {
+        "a": "DDL",
+        "b": "TCL",
+        "c": "DML"
+      },
+      "correcta": "b",
+      "referencia": "§1.3 [ACID83]",
+      "explicacion": "El Lenguaje de Control de Transacciones gestiona el ciclo de vida de la transacción y sustenta las propiedades ACID."
+    },
+    {
+      "numero": 18,
+      "pregunta": "¿Cuál de estas afirmaciones distingue correctamente lo procedimental de lo declarativo?",
+      "opciones": {
+        "a": "Lo declarativo especifica el procedimiento paso a paso",
+        "b": "Ambos enfoques son equivalentes y no se distinguen en la práctica",
+        "c": "Lo procedimental dice CÓMO obtener el resultado; lo declarativo dice QUÉ se quiere, y el sistema decide cómo"
+      },
+      "correcta": "c",
+      "referencia": "§1.4 [MELTON, cap. 1]",
+      "explicacion": "Es la distinción central de §1.4, aplicable tanto al álgebra/cálculo como a SQL frente a un lenguaje de programación clásico."
+    },
+    {
+      "numero": 19,
+      "pregunta": "El acceso a datos mediante ODBC/JDBC tiene como objetivo principal:",
+      "opciones": {
+        "a": "Ofrecer una interfaz común de acceso independiente del SGBD concreto, mediante un driver específico",
+        "b": "Sustituir completamente al SQL por un lenguaje de objetos",
+        "c": "Eliminar la necesidad de un servidor de bases de datos"
+      },
+      "correcta": "a",
+      "referencia": "§1.5 [SILBERSCHATZ, cap. 10]",
+      "explicacion": "ODBC (C) y JDBC (Java) siguen el mismo patrón: driver del motor + interfaz común para la aplicación cliente."
+    },
+    {
+      "numero": 20,
+      "pregunta": "En el contexto del acceso a datos desde aplicaciones, un ORM (Object-Relational Mapping):",
+      "opciones": {
+        "a": "Sustituye el modelo relacional por un modelo de grafos",
+        "b": "Traduce automáticamente entre objetos del lenguaje y filas de tablas relacionales, generando el SQL correspondiente",
+        "c": "Es un sinónimo de SQL embebido estático"
+      },
+      "correcta": "b",
+      "referencia": "§1.5 [SILBERSCHATZ, cap. 10]",
+      "explicacion": "Facilita la productividad, aunque puede generar SQL subóptimo si se usa sin entender la traducción resultante."
+    },
+    {
+      "numero": 21,
+      "pregunta": "SQL nace originalmente con el nombre de:",
+      "opciones": {
+        "a": "QUEL",
+        "b": "System R",
+        "c": "SEQUEL, diseñado por Chamberlin y Boyce sobre el prototipo System R"
+      },
+      "correcta": "c",
+      "referencia": "§2.1 [CHAMBERLIN74]",
+      "explicacion": "El nombre se abrevió después a SQL por un conflicto de marca registrada."
+    },
+    {
+      "numero": 22,
+      "pregunta": "El primer estándar ANSI de SQL se publicó en:",
+      "opciones": {
+        "a": "1986 (SQL-86), adoptado por ISO en 1987",
+        "b": "1974, con la publicación de SEQUEL",
+        "c": "1999, con SQL3"
+      },
+      "correcta": "a",
+      "referencia": "§2.1 [MELTON, cap. 1]",
+      "explicacion": "Es el primer estándar formal, tras años de dialectos comerciales dispares."
+    },
+    {
+      "numero": 23,
+      "pregunta": "La edición del estándar SQL que introdujo la sintaxis moderna de JOIN explícito y las subconsultas tal como se usan hoy fue:",
+      "opciones": {
+        "a": "SQL-86",
+        "b": "SQL-92 (SQL2)",
+        "c": "SQL:2003"
+      },
+      "correcta": "b",
+      "referencia": "§2.1 [MELTON, cap. 1]",
+      "explicacion": "Fue la revisión más citada del estándar por su gran expansión de la sintaxis de consulta."
+    },
+    {
+      "numero": 24,
+      "pregunta": "¿Qué aportó SQL:1999 (SQL3) al estándar?",
+      "opciones": {
+        "a": "Las funciones de ventana analíticas",
+        "b": "El soporte nativo de JSON",
+        "c": "La recursividad (CTE recursivas) y los disparadores"
+      },
+      "correcta": "c",
+      "referencia": "§2.1 [EISENBERG99]",
+      "explicacion": "Dos de los cuatro bloques de este mismo Tema 19 se incorporaron formalmente en esta edición."
+    },
+    {
+      "numero": 25,
+      "pregunta": "Desde SQL:1999, el esquema de niveles de conformidad de SQL-92 (Entry/Intermediate/Full) se sustituyó por:",
+      "opciones": {
+        "a": "Un núcleo («core») obligatorio más «features» opcionales identificadas por código",
+        "b": "Un único nivel obligatorio para todos los SGBD",
+        "c": "La certificación ISO 25010 de calidad del software"
+      },
+      "correcta": "a",
+      "referencia": "§2.2 [MELTON, cap. 2]",
+      "explicacion": "Sustituye el esquema «todo o nada» de tres niveles por una declaración más granular de conformidad."
+    },
+    {
+      "numero": 26,
+      "pregunta": "¿Qué son PL/SQL, T-SQL y PL/pgSQL?",
+      "opciones": {
+        "a": "Ediciones sucesivas del estándar ISO/IEC 9075",
+        "b": "Dialectos procedimentales propios de cada motor (Oracle, SQL Server, PostgreSQL), no estándar",
+        "c": "Sinónimos del lenguaje SQL/PSM, idénticos entre sí"
+      },
+      "correcta": "b",
+      "referencia": "§2.9 [MELTON-PSM]",
+      "explicacion": "Se inspiran en la referencia SQL/PSM del estándar, pero cada uno tiene su propia sintaxis."
+    },
+    {
+      "numero": 27,
+      "pregunta": "El orden LÓGICO en que un motor SQL evalúa las cláusulas de un SELECT es:",
+      "opciones": {
+        "a": "SELECT → FROM → WHERE → GROUP BY",
+        "b": "WHERE → SELECT → FROM → ORDER BY",
+        "c": "FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY"
+      },
+      "correcta": "c",
+      "referencia": "§2.3 [SILBERSCHATZ, cap. 3]",
+      "explicacion": "Este orden lógico no coincide con el orden en que se escribe la sentencia."
+    },
+    {
+      "numero": 28,
+      "pregunta": "¿Por qué, en la mayoría de motores, un alias definido en el SELECT no puede usarse en la cláusula WHERE de la misma consulta?",
+      "opciones": {
+        "a": "Porque WHERE se evalúa antes de que el motor calcule las expresiones del SELECT, según el orden lógico de evaluación",
+        "b": "Porque los alias no existen en el estándar SQL",
+        "c": "Porque WHERE solo admite nombres de tabla, nunca de columna"
+      },
+      "correcta": "a",
+      "referencia": "§2.3 [SILBERSCHATZ, cap. 3]",
+      "explicacion": "Por la misma razón, sí puede usarse en ORDER BY, que se evalúa después."
+    },
+    {
+      "numero": 29,
+      "pregunta": "¿Qué diferencia principal existe entre WHERE y HAVING?",
+      "opciones": {
+        "a": "Son sinónimos intercambiables en cualquier posición",
+        "b": "WHERE filtra filas antes de agrupar; HAVING filtra grupos después de la agregación",
+        "c": "HAVING se ejecuta siempre antes que WHERE"
+      },
+      "correcta": "b",
+      "referencia": "§2.4 [SILBERSCHATZ, cap. 3]",
+      "explicacion": "Es una de las distinciones básicas del bloque SQL."
+    },
+    {
+      "numero": 30,
+      "pregunta": "¿Cuál de estas funciones NO es una función de agregación estándar de GROUP BY?",
+      "opciones": {
+        "a": "SUM",
+        "b": "AVG",
+        "c": "ROW_NUMBER (es una función de ventana, no de agregación de GROUP BY)"
+      },
+      "correcta": "c",
+      "referencia": "§2.4-2.8 [ISO9075; ZEMKE03]",
+      "explicacion": "<code>ROW_NUMBER()</code> requiere la cláusula <code>OVER</code> y no colapsa filas, a diferencia de <code>SUM</code>/<code>AVG</code>/<code>COUNT</code>/<code>MIN</code>/<code>MAX</code>."
+    },
+    {
+      "numero": 31,
+      "pregunta": "Toda columna del SELECT que no forme parte de una función de agregación debe aparecer, por regla general, en:",
+      "opciones": {
+        "a": "La cláusula GROUP BY",
+        "b": "La cláusula ORDER BY únicamente",
+        "c": "La cláusula WHERE"
+      },
+      "correcta": "a",
+      "referencia": "§2.4 [SILBERSCHATZ, cap. 3]",
+      "explicacion": "Es la regla de dependencia funcional del agrupamiento: toda columna «suelta» del SELECT debe estar entre las columnas de agrupación."
+    },
+    {
+      "numero": 32,
+      "pregunta": "Un INNER JOIN devuelve:",
+      "opciones": {
+        "a": "Todas las filas de la tabla izquierda, coincidan o no",
+        "b": "Solo las filas que coinciden en ambas tablas según la condición de reunión",
+        "c": "El producto cartesiano completo sin condición"
+      },
+      "correcta": "b",
+      "referencia": "§2.5 [ELMASRI, cap. 7]",
+      "explicacion": "Es el join más restrictivo de los tres «outer» y no produce valores NULL por ausencia de coincidencia."
+    },
+    {
+      "numero": 33,
+      "pregunta": "¿Qué join es la forma estándar de responder a «todos los contribuyentes, tengan o no tributos liquidados»?",
+      "opciones": {
+        "a": "INNER JOIN",
+        "b": "CROSS JOIN",
+        "c": "LEFT [OUTER] JOIN"
+      },
+      "correcta": "c",
+      "referencia": "§2.5 [ELMASRI, cap. 7]",
+      "explicacion": "Devuelve todas las filas de la tabla izquierda y, si no hay coincidencia en la derecha, sus columnas aparecen como NULL."
+    },
+    {
+      "numero": 34,
+      "pregunta": "Un SELF JOIN es:",
+      "opciones": {
+        "a": "Una tabla unida consigo misma, usando alias distintos para cada «copia» lógica",
+        "b": "Un join que solo puede hacerse con la cláusula NATURAL JOIN",
+        "c": "Sinónimo de CROSS JOIN"
+      },
+      "correcta": "a",
+      "referencia": "§2.5 [ELMASRI, cap. 7]",
+      "explicacion": "Es imprescindible dar alias distintos a las dos referencias de la misma tabla para poder distinguirlas en la consulta."
+    },
+    {
+      "numero": 35,
+      "pregunta": "El NATURAL JOIN se desaconseja en la práctica profesional principalmente porque:",
+      "opciones": {
+        "a": "No existe en el estándar SQL",
+        "b": "Es una reunión implícita por columnas homónimas, frágil ante cambios de esquema",
+        "c": "Solo funciona con tablas vacías"
+      },
+      "correcta": "b",
+      "referencia": "§2.5 [ELMASRI, cap. 7]",
+      "explicacion": "Un cambio de nombre de columna, o añadir una columna homónima nueva, altera silenciosamente el resultado."
+    },
+    {
+      "numero": 36,
+      "pregunta": "En un FULL OUTER JOIN entre CONTRIBUYENTE y TRIBUTO, una fila de CONTRIBUYENTE sin tributos asociados aparecerá:",
+      "opciones": {
+        "a": "Excluida del resultado",
+        "b": "Duplicada",
+        "c": "Con las columnas de TRIBUTO a NULL"
+      },
+      "correcta": "c",
+      "referencia": "§2.5 [ELMASRI, cap. 7]",
+      "explicacion": "El FULL OUTER JOIN conserva todas las filas de ambas tablas, coincidan o no, rellenando con NULL el lado que falte."
+    },
+    {
+      "numero": 37,
+      "pregunta": "Una subconsulta no correlacionada se caracteriza porque:",
+      "opciones": {
+        "a": "Es independiente de la fila de la consulta externa y el motor puede ejecutarla una sola vez",
+        "b": "Debe reevaluarse obligatoriamente por cada fila de la consulta externa",
+        "c": "No puede usarse con el predicado IN"
+      },
+      "correcta": "a",
+      "referencia": "§2.6 [DATE-INTRO, cap. 8]",
+      "explicacion": "No referencia ninguna columna de la consulta que la contiene."
+    },
+    {
+      "numero": 38,
+      "pregunta": "Una subconsulta correlacionada:",
+      "opciones": {
+        "a": "Nunca referencia columnas de la consulta externa",
+        "b": "Referencia una columna de la consulta externa y su resultado depende de la fila actual",
+        "c": "Solo puede aparecer en la cláusula FROM"
+      },
+      "correcta": "b",
+      "referencia": "§2.6 [SILBERSCHATZ, cap. 3]",
+      "explicacion": "Es el rasgo que la distingue de la no correlacionada; el optimizador puede reescribirla como join en muchos casos."
+    },
+    {
+      "numero": 39,
+      "pregunta": "¿Qué predicado comprueba si la subconsulta devuelve al menos una fila, sin importar su valor?",
+      "opciones": {
+        "a": "IN",
+        "b": "ALL",
+        "c": "EXISTS"
+      },
+      "correcta": "c",
+      "referencia": "§2.6 [DATE-INTRO, cap. 8]",
+      "explicacion": "Comprueba solo la existencia de filas, no su contenido, y suele ser más eficiente que IN porque puede detenerse en la primera coincidencia."
+    },
+    {
+      "numero": 40,
+      "pregunta": "¿Qué riesgo clásico presenta NOT IN cuando la subconsulta puede devolver un valor NULL?",
+      "opciones": {
+        "a": "Puede no devolver ninguna fila, por la lógica trivaluada de SQL",
+        "b": "Provoca siempre un error de sintaxis",
+        "c": "Se comporta exactamente igual que NOT EXISTS en todos los casos"
+      },
+      "correcta": "a",
+      "referencia": "§2.6 [SILBERSCHATZ, cap. 3]",
+      "explicacion": "NOT EXISTS no tiene ese problema y suele ser la alternativa más segura."
+    },
+    {
+      "numero": 41,
+      "pregunta": "Una CTE (Common Table Expression), definida con WITH, es:",
+      "opciones": {
+        "a": "Una tabla física permanente creada en el catálogo",
+        "b": "Un conjunto de resultados nombrado y temporal, que existe solo durante la ejecución de la sentencia",
+        "c": "Un tipo de índice sobre columnas calculadas"
+      },
+      "correcta": "b",
+      "referencia": "§2.7 [EISENBERG99]",
+      "explicacion": "Mejora la legibilidad frente a subconsultas anidadas y permite referenciarse varias veces en la misma consulta."
+    },
+    {
+      "numero": 42,
+      "pregunta": "Toda CTE recursiva (WITH RECURSIVE) necesita obligatoriamente:",
+      "opciones": {
+        "a": "Un ORDER BY en el miembro ancla",
+        "b": "Usar UNION en lugar de UNION ALL para evitar bucles",
+        "c": "Un miembro ancla sin referencia a sí mismo y un miembro recursivo unido con UNION ALL"
+      },
+      "correcta": "c",
+      "referencia": "§2.7 [ISO9075; EISENBERG99]",
+      "explicacion": "Sin una condición de reunión que reduzca el conjunto en cada paso, la recursión no terminaría."
+    },
+    {
+      "numero": 43,
+      "pregunta": "Las funciones de ventana (OVER, PARTITION BY) se diferencian de GROUP BY en que:",
+      "opciones": {
+        "a": "Conservan todas las filas originales, añadiendo una columna calculada sobre la partición, sin colapsar el resultado",
+        "b": "Siempre reducen el número de filas del resultado a una por grupo",
+        "c": "No pueden usar funciones de agregación como SUM o AVG"
+      },
+      "correcta": "a",
+      "referencia": "§2.8 [ZEMKE03]",
+      "explicacion": "Es la diferencia clave frente a GROUP BY, que sí colapsa las filas en una por grupo."
+    },
+    {
+      "numero": 44,
+      "pregunta": "¿Qué función de ventana asigna un número secuencial único dentro de la partición, sin dejar huecos ni empates?",
+      "opciones": {
+        "a": "RANK()",
+        "b": "ROW_NUMBER()",
+        "c": "NTILE()"
+      },
+      "correcta": "b",
+      "referencia": "§2.8 [ZEMKE03]",
+      "explicacion": "RANK() sí puede dejar huecos tras un empate (1,2,2,4); DENSE_RANK() no deja huecos pero sí permite empates (1,2,2,3); ROW_NUMBER() nunca empata."
+    },
+    {
+      "numero": 45,
+      "pregunta": "SQL/PSM (ISO/IEC 9075-4) es:",
+      "opciones": {
+        "a": "Un motor de bases de datos comercial",
+        "b": "La sentencia estándar para crear vistas actualizables",
+        "c": "La referencia normativa para procedimientos almacenados, que cada motor implementa con su propio dialecto (PL/SQL, T-SQL, PL/pgSQL)"
+      },
+      "correcta": "c",
+      "referencia": "§2.9 [MELTON-PSM]",
+      "explicacion": "Fija los conceptos comunes (variables, cursores, control de flujo, excepciones), pero la sintaxis concreta difiere por motor."
+    },
+    {
+      "numero": 46,
+      "pregunta": "El soporte nativo de JSON en SQL (funciones como JSON_VALUE, JSON_TABLE) se incorporó formalmente en:",
+      "opciones": {
+        "a": "SQL:2016",
+        "b": "SQL-92",
+        "c": "SQL:1999"
+      },
+      "correcta": "a",
+      "referencia": "§2.9 [MELTON, cap. 12]",
+      "explicacion": "Es uno de los hitos que acercan SQL a los datos semiestructurados típicos de NoSQL."
+    },
+    {
+      "numero": 47,
+      "pregunta": "Un procedimiento almacenado se diferencia de una función almacenada en que:",
+      "opciones": {
+        "a": "La función nunca puede tener parámetros de entrada",
+        "b": "La función siempre devuelve un único valor mediante RETURN y suele poder usarse dentro de una expresión SQL; el procedimiento se invoca como sentencia independiente",
+        "c": "Un procedimiento no puede ejecutar sentencias DML"
+      },
+      "correcta": "b",
+      "referencia": "§3.1 [MELTON-PSM]",
+      "explicacion": "Un procedimiento puede devolver cero, uno o varios valores mediante parámetros OUT/INOUT."
+    },
+    {
+      "numero": 48,
+      "pregunta": "¿Cuál es la principal ventaja de rendimiento de un procedimiento almacenado frente a enviar SQL dinámico repetidamente?",
+      "opciones": {
+        "a": "Consume menos espacio en disco",
+        "b": "No necesita permisos de ejecución",
+        "c": "Reutiliza el plan de ejecución cacheado tras la primera invocación, evitando repetir el análisis y la optimización"
+      },
+      "correcta": "c",
+      "referencia": "§3.2 [GMUW, cap. 8]",
+      "explicacion": "El coste de analizar y optimizar se paga una vez, no en cada llamada."
+    },
+    {
+      "numero": 49,
+      "pregunta": "Un parámetro de modo OUT en un procedimiento almacenado:",
+      "opciones": {
+        "a": "Recibe el valor que el procedimiento le asigna y se devuelve al llamador al terminar; su valor de entrada se ignora",
+        "b": "Solo puede leerse dentro del procedimiento, nunca modificarse",
+        "c": "Es el modo por defecto de todo parámetro si no se indica lo contrario"
+      },
+      "correcta": "a",
+      "referencia": "§3.3 [MELTON-PSM; MSSQL-DOC]",
+      "explicacion": "El modo por defecto es IN, no OUT."
+    },
+    {
+      "numero": 50,
+      "pregunta": "El ciclo habitual de un cursor explícito sigue la secuencia:",
+      "opciones": {
+        "a": "OPEN → DECLARE → CLOSE → FETCH",
+        "b": "DECLARE → OPEN → FETCH (en bucle) → CLOSE",
+        "c": "FETCH → DECLARE → OPEN → CLOSE"
+      },
+      "correcta": "b",
+      "referencia": "§3.4 [SILBERSCHATZ, cap. 5]",
+      "explicacion": "Olvidar el CLOSE mantiene recursos y bloqueos ocupados durante la sesión."
+    },
+    {
+      "numero": 51,
+      "pregunta": "Un cursor scrollable, frente a uno forward-only, se caracteriza por:",
+      "opciones": {
+        "a": "No poder recorrer ninguna fila del resultado",
+        "b": "Ser siempre implícito, nunca declarado por el programador",
+        "c": "Poder moverse hacia adelante y hacia atrás, e incluso saltar a una fila concreta"
+      },
+      "correcta": "c",
+      "referencia": "§3.4 [ORACLE-DOC]",
+      "explicacion": "Consume más recursos que el forward-only, que solo avanza."
+    },
+    {
+      "numero": 52,
+      "pregunta": "En la gestión de excepciones de un procedimiento almacenado, el código SQLSTATE:",
+      "opciones": {
+        "a": "Es un código de cinco caracteres normalizado por el estándar SQL para identificar el tipo de error",
+        "b": "Es exclusivo de un único motor comercial y no está estandarizado",
+        "c": "Sustituye por completo a los bloques de manejo de errores del procedimiento"
+      },
+      "correcta": "a",
+      "referencia": "§3.6 [MELTON-PSM]",
+      "explicacion": "Muchos motores añaden además su propio código numérico (SQLCODE) específico del producto."
+    },
+    {
+      "numero": 53,
+      "pregunta": "Un disparador (trigger) se diferencia de un procedimiento almacenado normal en que:",
+      "opciones": {
+        "a": "Siempre requiere parámetros de entrada explícitos",
+        "b": "Se ejecuta automáticamente en respuesta a un evento, sin que nadie lo invoque directamente por su nombre",
+        "c": "No puede acceder a los valores de la fila afectada"
+      },
+      "correcta": "b",
+      "referencia": "§4.1 [SILBERSCHATZ, cap. 5]",
+      "explicacion": "Un disparador no admite parámetros al estilo de un procedimiento; recibe el contexto del evento (OLD/NEW)."
+    },
+    {
+      "numero": 54,
+      "pregunta": "Un disparador BEFORE, a diferencia de uno AFTER:",
+      "opciones": {
+        "a": "Solo puede usarse sobre vistas",
+        "b": "Se ejecuta siempre en una transacción distinta",
+        "c": "Se ejecuta antes de aplicar el cambio y puede validar, modificar o incluso cancelar la operación"
+      },
+      "correcta": "c",
+      "referencia": "§4.2 [ISO9075]",
+      "explicacion": "AFTER, en cambio, se ejecuta cuando el cambio ya está aplicado, útil para acciones derivadas como la auditoría."
+    },
+    {
+      "numero": 55,
+      "pregunta": "Un disparador definido FOR EACH ROW:",
+      "opciones": {
+        "a": "Se ejecuta una vez por cada fila afectada por la sentencia, con acceso a los valores OLD y NEW",
+        "b": "Se ejecuta una única vez por sentencia, sin importar el número de filas afectadas",
+        "c": "Solo puede combinarse con eventos programados por tiempo"
+      },
+      "correcta": "a",
+      "referencia": "§4.2 [ELMASRI, cap. 5]",
+      "explicacion": "FOR EACH STATEMENT es el que se ejecuta una única vez por sentencia, sin acceso directo a cada fila."
+    },
+    {
+      "numero": 56,
+      "pregunta": "Un disparador INSTEAD OF es imprescindible cuando:",
+      "opciones": {
+        "a": "La tabla base tiene una clave primaria compuesta",
+        "b": "Se necesita sustituir una operación DML sobre una vista no directamente actualizable (por ejemplo, con JOIN)",
+        "c": "Se quiere programar una tarea de mantenimiento periódico por tiempo"
+      },
+      "correcta": "b",
+      "referencia": "§4.2 [MYSQL-DOC]",
+      "explicacion": "El disparador INSTEAD OF traduce la operación sobre la vista a las operaciones equivalentes sobre las tablas base."
+    },
+    {
+      "numero": 57,
+      "pregunta": "Los eventos programados (scheduled events / jobs) se disparan:",
+      "opciones": {
+        "a": "Por una sentencia INSERT sobre la tabla asociada",
+        "b": "Por una sentencia DELETE exclusivamente",
+        "c": "Por tiempo, no por una operación DML, y se usan típicamente para mantenimiento periódico"
+      },
+      "correcta": "c",
+      "referencia": "§4.2 [MYSQL-DOC; MSSQL-DOC; ORACLE-DOC; PSQL-DOC]",
+      "explicacion": "Ejemplos: Event Scheduler de MySQL, SQL Server Agent, DBMS_SCHEDULER de Oracle, pg_cron de PostgreSQL."
+    },
+    {
+      "numero": 58,
+      "pregunta": "¿Cuál es un riesgo característico de encadenar varios disparadores entre sí (trigger chain)?",
+      "opciones": {
+        "a": "Efectos en cascada difíciles de depurar, incluyendo el riesgo de recursión no controlada",
+        "b": "Ninguno: los disparadores encadenados siempre mejoran el rendimiento",
+        "c": "El estándar SQL prohíbe expresamente más de un disparador por tabla"
+      },
+      "correcta": "a",
+      "referencia": "§4.4 [SILBERSCHATZ, cap. 5]",
+      "explicacion": "Es uno de los motivos por los que se recomienda usar disparadores con moderación y preferir restricciones declarativas cuando sea posible."
+    },
+    {
+      "numero": 59,
+      "pregunta": "SQL/PGQ, incorporado en SQL:2023, permite:",
+      "opciones": {
+        "a": "Sustituir por completo el modelo relacional por un modelo de grafos",
+        "b": "Expresar consultas de grafos de propiedades directamente sobre tablas relacionales",
+        "c": "Eliminar la necesidad de índices en el SGBD"
+      },
+      "correcta": "b",
+      "referencia": "§5 [MELTON, cap. 12]",
+      "explicacion": "No sustituye el modelo relacional: añade una sintaxis declarativa de grafos sobre las mismas tablas."
+    },
+    {
+      "numero": 60,
+      "pregunta": "Las tendencias actuales del lenguaje SQL (JSON nativo, SQL/PGQ, funciones analíticas avanzadas):",
+      "opciones": {
+        "a": "Sustituyen los fundamentos del modelo relacional y el núcleo declarativo del SELECT",
+        "b": "Solo son relevantes para sistemas NoSQL, no para SGBD relacionales",
+        "c": "Amplían el estándar SQL sin sustituir sus fundamentos: el modelo relacional y el núcleo declarativo siguen siendo la base"
+      },
+      "correcta": "c",
+      "referencia": "§5 [MELTON, cap. 12]",
+      "explicacion": "El Tema 19 completo —desde el modelo relacional hasta los disparadores— sigue vigente como fundamento de estas extensiones más recientes."
+    }
+  ],
+  "casos": [
+    {
+      "caso": 1,
+      "titulo": "Análisis de recaudación de tributos por distrito",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el supuesto planteado, Hacienda quiere ver solo los distritos cuyo total recaudado supere los 100.000 €. ¿Dónde debe expresarse esa condición?",
+          "opciones": {
+            "a": "En la cláusula WHERE, con la condición SUM(t.importe) > 100000, antes del GROUP BY.",
+            "b": "En la cláusula HAVING, con la condición SUM(t.importe) > 100000, después del GROUP BY.",
+            "c": "En la cláusula ORDER BY, que descarta los grupos que no alcanzan el valor indicado."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 1 · §2.4",
+          "explicacion": "La condición depende de un total agregado por distrito, así que filtra grupos ya formados: eso es HAVING, que se evalúa después de GROUP BY."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Por qué la condición sobre el total recaudado no puede ir en la cláusula WHERE de la consulta?",
+          "opciones": {
+            "a": "Porque WHERE filtra filas individuales antes de que existan los grupos y no puede contener funciones de agregación.",
+            "b": "Porque WHERE se evalúa después del ORDER BY, cuando el resultado ya está ordenado y no admite más filtros.",
+            "c": "Porque WHERE solo admite condiciones sobre columnas de clave primaria, como id_distrito o dni."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 1 · §2.3 y §2.4",
+          "explicacion": "En el orden lógico de evaluación (FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY), WHERE actúa fila a fila antes de agrupar, por lo que no puede usar SUM()."
+        },
+        {
+          "numero": 3,
+          "pregunta": "La consulta del distrito muestra id_distrito, nombre_distrito, COUNT(*) y SUM(t.importe). ¿Qué columnas deben figurar en el GROUP BY?",
+          "opciones": {
+            "a": "Solo las expresiones agregadas COUNT(*) y SUM(t.importe), que son las que se calculan por grupo.",
+            "b": "Ninguna, porque el motor agrupa automáticamente por todas las columnas que aparecen en el SELECT.",
+            "c": "id_distrito y nombre_distrito, porque toda columna del SELECT no agregada debe figurar en el GROUP BY."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 1 · §2.4",
+          "explicacion": "Regla de dependencia funcional del GROUP BY: toda columna del SELECT que no esté dentro de una función de agregación debe aparecer en la cláusula de agrupación."
+        },
+        {
+          "numero": 4,
+          "pregunta": "La consulta termina con ORDER BY total_recaudado DESC, usando el alias definido en el SELECT. ¿Es válido?",
+          "opciones": {
+            "a": "Sí, porque ORDER BY se evalúa después del SELECT, cuando el alias ya existe.",
+            "b": "No, porque un alias del SELECT solo puede utilizarse dentro de la cláusula WHERE.",
+            "c": "No, porque ORDER BY se evalúa antes del SELECT y hay que repetir SUM(t.importe)."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 1 · §2.3",
+          "explicacion": "El orden lógico de evaluación sitúa ORDER BY después de SELECT; por eso el alias sí puede usarse en ORDER BY, aunque no en WHERE."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Para obtener todos los contribuyentes de un distrito, tengan o no algún tributo liquidado, ¿qué reunión debe usarse?",
+          "opciones": {
+            "a": "Un INNER JOIN entre CONTRIBUYENTE y TRIBUTO por el DNI del contribuyente.",
+            "b": "Un LEFT JOIN desde CONTRIBUYENTE hacia TRIBUTO por el DNI del contribuyente.",
+            "c": "Un CROSS JOIN entre CONTRIBUYENTE y TRIBUTO, filtrado después por el distrito."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 2 · §2.5",
+          "explicacion": "El LEFT JOIN conserva todas las filas de la tabla izquierda (CONTRIBUYENTE) aunque no tengan coincidencia en la derecha; el INNER JOIN perdería a quienes no tienen tributos."
+        },
+        {
+          "numero": 6,
+          "pregunta": "En el resultado de esa reunión, ¿cómo aparece un contribuyente del distrito que no tiene ningún tributo liquidado?",
+          "opciones": {
+            "a": "No aparece, porque la reunión descarta las filas sin coincidencia en la tabla de la derecha.",
+            "b": "Aparece con el importe a cero, que el motor asigna por defecto a las filas sin pareja.",
+            "c": "Aparece con su nombre y con la columna importe a NULL, al no existir la fila de la derecha."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 2 · §2.5",
+          "explicacion": "En un LEFT JOIN, cuando la fila de la derecha no existe, sus columnas aparecen como NULL; el contribuyente se conserva."
+        },
+        {
+          "numero": 7,
+          "pregunta": "El técnico quiere ahora listar solo los contribuyentes del distrito que NO tienen ningún tributo. Partiendo del LEFT JOIN anterior, ¿qué debe añadir?",
+          "opciones": {
+            "a": "La condición WHERE t.importe IS NULL, que detecta la ausencia de fila en TRIBUTO.",
+            "b": "La condición WHERE t.importe = 0, que identifica a los contribuyentes sin liquidaciones.",
+            "c": "Un ORDER BY t.importe, que agrupa al principio a los contribuyentes sin tributos."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 2 · §2.5",
+          "explicacion": "El NULL que genera el LEFT JOIN en las columnas de la derecha es precisamente lo que permite detectar la ausencia de relación con WHERE t.importe IS NULL."
+        },
+        {
+          "numero": 8,
+          "pregunta": "En la cuestión 3, la subconsulta que calcula la media de importes filtra por el distrito de la fila que se está evaluando (c.id_distrito). ¿Qué tipo de subconsulta es?",
+          "opciones": {
+            "a": "No correlacionada: el motor la ejecuta una sola vez y reutiliza su resultado para todas las filas.",
+            "b": "Una expresión de tabla común recursiva, porque se referencia a sí misma en cada paso.",
+            "c": "Correlacionada: referencia una columna de la consulta externa y su resultado depende de la fila actual."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 3 · §2.6",
+          "explicacion": "Al referenciar c.id_distrito de la consulta externa, la media cambia según el contribuyente evaluado: es una subconsulta correlacionada."
+        },
+        {
+          "numero": 9,
+          "pregunta": "Para mostrar cada tributo con el puesto que ocupa entre los tributos del mismo contribuyente, de mayor a menor importe y sin perder filas, ¿qué expresión es la adecuada?",
+          "opciones": {
+            "a": "GROUP BY dni_contribuyente con COUNT(*), que numera los tributos de cada contribuyente.",
+            "b": "RANK() OVER (PARTITION BY dni_contribuyente ORDER BY importe DESC).",
+            "c": "ROW_NUMBER() OVER (ORDER BY dni_contribuyente), sin partición por contribuyente."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 4 · §2.8",
+          "explicacion": "Una función de ventana conserva todas las filas y calcula el puesto dentro de cada partición; PARTITION BY agrupa por contribuyente y el ORDER BY del OVER fija el orden por importe."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Un contribuyente tiene cuatro tributos y los dos segundos de mayor importe empatan. Con RANK(), ¿qué puesto recibe el cuarto tributo?",
+          "opciones": {
+            "a": "El 4, porque RANK() salta números tras un empate (1, 2, 2, 4).",
+            "b": "El 3, porque RANK() no deja huecos en la numeración tras un empate.",
+            "c": "El 2, porque RANK() repite el último puesto hasta el final de la partición."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 4 · §2.8",
+          "explicacion": "RANK() da el mismo puesto a los empatados y salta números después (1, 2, 2, 4); la numeración sin huecos (1, 2, 2, 3) es la de DENSE_RANK()."
+        }
+      ]
+    },
+    {
+      "caso": 2,
+      "titulo": "Procedimiento almacenado de recálculo de bonificaciones del Padrón",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En la cabecera de bonificar_tributos_distrito, ¿qué modo debe tener el parámetro que indica el distrito a procesar?",
+          "opciones": {
+            "a": "OUT, porque el procedimiento devuelve el distrito procesado al llamador al terminar.",
+            "b": "INOUT, porque el procedimiento necesita modificar el distrito durante el recorrido.",
+            "c": "IN, porque es un dato de entrada que el procedimiento solo lee y no modifica."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 1 · §3.3",
+          "explicacion": "IN es el modo de entrada: el llamador pasa el valor y el procedimiento solo lo lee. Es, además, el modo por defecto."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Qué modo debe tener el parámetro que devuelve el número de tributos bonificados?",
+          "opciones": {
+            "a": "IN, porque el llamador debe indicar de antemano cuántos tributos se van a bonificar.",
+            "b": "OUT, porque el procedimiento le asigna el valor y lo devuelve al llamador al terminar.",
+            "c": "Ninguno: un procedimiento devuelve siempre su resultado mediante la cláusula RETURN."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 1 · §3.3",
+          "explicacion": "Un parámetro OUT recibe el valor que le asigna el procedimiento y se devuelve al llamador; su valor de entrada se ignora. RETURN es propio de las funciones."
+        },
+        {
+          "numero": 3,
+          "pregunta": "Un compañero propone convertir el procedimiento en una función almacenada. ¿Qué rasgo distinguiría a la función?",
+          "opciones": {
+            "a": "Que devuelve siempre un único valor mediante RETURN y puede usarse dentro de una expresión SQL.",
+            "b": "Que admite varios parámetros de salida OUT y se invoca como sentencia independiente con CALL.",
+            "c": "Que se ejecuta automáticamente cada vez que se actualiza un importe de la tabla TRIBUTO."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 1 · §3.1 y §3.3",
+          "explicacion": "La función devuelve un único valor con RETURN y suele poder usarse en un SELECT; el procedimiento se invoca con CALL y puede devolver varios valores por parámetros OUT."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Por qué en este supuesto se recorre el resultado con un cursor en lugar de lanzar una única sentencia UPDATE de conjunto?",
+          "opciones": {
+            "a": "Porque una sentencia UPDATE no puede modificar más de una fila de la tabla en cada ejecución.",
+            "b": "Porque en una versión posterior cada tributo llevará una regla distinta según su tipo y hay que tratarlo fila a fila.",
+            "c": "Porque recorrer fila a fila con un cursor es siempre más rápido que una operación de conjunto."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, enunciado y cuestión 2 · §3.4",
+          "explicacion": "El cursor está justificado cuando la regla no se puede expresar como un UPDATE de conjunto; si se pudiera, la operación de conjunto sería preferible por rendimiento."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Cuál es la secuencia correcta del ciclo de vida del cursor que recorre los tributos del distrito?",
+          "opciones": {
+            "a": "OPEN → DECLARE → FETCH en bucle → CLOSE.",
+            "b": "DECLARE → FETCH en bucle → OPEN → CLOSE.",
+            "c": "DECLARE → OPEN → FETCH en bucle → CLOSE."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 2 · §3.4",
+          "explicacion": "El cursor explícito se declara sobre un SELECT, se abre, se leen sus filas con FETCH dentro de un bucle hasta que no quedan más y, por último, se cierra."
+        },
+        {
+          "numero": 6,
+          "pregunta": "El recorrido solo necesita avanzar, fila a fila, desde el primer tributo hasta el último. ¿Qué tipo de cursor es el adecuado?",
+          "opciones": {
+            "a": "Un cursor forward-only, que solo avanza hacia adelante y es el más ligero.",
+            "b": "Un cursor scrollable, que permite moverse hacia atrás y saltar a una fila concreta.",
+            "c": "Un cursor implícito, que el programador declara y controla paso a paso."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 2 · §3.4",
+          "explicacion": "El forward-only solo avanza, consume menos recursos y es el más usado; el scrollable consume más. El cursor implícito lo gestiona el propio SGBD, no el programador."
+        },
+        {
+          "numero": 7,
+          "pregunta": "Si el programador olvidara la instrucción CLOSE al terminar el bucle, ¿qué consecuencia tendría?",
+          "opciones": {
+            "a": "El cursor volvería automáticamente a la primera fila y repetiría el recorrido completo.",
+            "b": "El SGBD desharía todas las bonificaciones aplicadas durante el recorrido del cursor.",
+            "c": "El cursor seguiría consumiendo recursos del servidor (memoria, bloqueos) mientras dure la sesión."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 2 · §3.4",
+          "explicacion": "Un cursor abierto y no cerrado consume memoria y bloqueos del servidor mientras dura la sesión; olvidar el CLOSE es una mala práctica habitual."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Dentro del bucle se aplica la bonificación del 10 % a un tributo de 800 €. ¿Qué importe queda y cómo se calcula?",
+          "opciones": {
+            "a": "80 €, multiplicando el importe por 0,10.",
+            "b": "720 €, multiplicando el importe por 0,90.",
+            "c": "880 €, multiplicando el importe por 1,10."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 3",
+          "explicacion": "Bonificar un 10 % significa cobrar el 90 % del importe: 800 × 0,90 = 720 €."
+        },
+        {
+          "numero": 9,
+          "pregunta": "Tras actualizar cada tributo dentro del bucle, ¿qué debe hacerse con el parámetro de salida que cuenta los tributos bonificados?",
+          "opciones": {
+            "a": "Incrementarlo en una unidad: p_num_bonificados = p_num_bonificados + 1.",
+            "b": "Asignarle el nuevo importe del tributo que se acaba de actualizar.",
+            "c": "Leerlo para decidir si el tributo actual debe bonificarse o no."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 3 · §3.3",
+          "explicacion": "El parámetro OUT acumula cuántos tributos se han bonificado: se suma uno por cada fila actualizada y su valor final se devuelve al llamador."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Durante la ejecución falla la actualización de un tributo concreto. Si el negocio no exige que el lote sea todo o nada, ¿cuál es el tratamiento más razonable?",
+          "opciones": {
+            "a": "Hacer un ROLLBACK global que deshaga todas las bonificaciones aplicadas hasta ese momento.",
+            "b": "Capturar la excepción con un manejador vacío, sin registrarla, y seguir con el recorrido.",
+            "c": "Capturar la excepción dentro del bucle, registrar el error y continuar con el siguiente tributo."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 4 · §3.6",
+          "explicacion": "El fallo de un tributo no debe impedir bonificar el resto, pero el error no puede silenciarse: un manejador vacío que «traga» la excepción oculta fallos difíciles de depurar."
+        }
+      ]
+    },
+    {
+      "caso": 3,
+      "titulo": "Auditoría de cambios de estado en expedientes",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "Para impedir que un expediente pase a CERRADO sin haber pasado antes por RESUELTO, ¿qué tipo de disparador debe usarse?",
+          "opciones": {
+            "a": "AFTER UPDATE de sentencia, que se ejecuta una vez cuando el cambio ya se ha aplicado.",
+            "b": "BEFORE UPDATE de fila, que valida cada fila y puede cancelar la operación antes de aplicarla.",
+            "c": "INSTEAD OF UPDATE sobre la tabla EXPEDIENTE, que sustituye la actualización original."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 1 · §4.2",
+          "explicacion": "El disparador BEFORE se ejecuta antes de aplicar el cambio y puede cancelarlo; de fila, para disponer de los valores de cada expediente. INSTEAD OF es exclusivo de vistas."
+        },
+        {
+          "numero": 2,
+          "pregunta": "Para registrar en AUDITORIA_EXPEDIENTE cada cambio de estado, ¿qué tipo de disparador es el adecuado?",
+          "opciones": {
+            "a": "BEFORE UPDATE de sentencia, que se ejecuta una sola vez antes de la actualización.",
+            "b": "Un evento programado nocturno que revise los expedientes modificados durante el día.",
+            "c": "AFTER UPDATE de fila, que registra el cambio de cada expediente una vez aplicado."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 1 · §4.2 y §4.3",
+          "explicacion": "La auditoría es la elección natural de un disparador AFTER: se ejecuta cuando el dato ya ha quedado escrito y, siendo de fila, accede a los valores anterior y nuevo."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Por qué el disparador de auditoría debe ser de fila y no de sentencia?",
+          "opciones": {
+            "a": "Porque el de fila se ejecuta por cada fila afectada con acceso a OLD y NEW; el de sentencia no accede a los valores de cada fila.",
+            "b": "Porque el de sentencia no llega a ejecutarse cuando la actualización afecta a más de una fila de la tabla.",
+            "c": "Porque el de fila es el único que puede activarse con UPDATE; el de sentencia solo responde a INSERT."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 1 · §4.2",
+          "explicacion": "El disparador FOR EACH STATEMENT se ejecuta una sola vez por sentencia, afecte a cero o a diez mil filas, sin acceso directo a los valores individuales de cada fila."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Qué condición debe comprobar el disparador de validación para lanzar el error?",
+          "opciones": {
+            "a": "SI ANTIGUO.estado = 'CERRADO' Y NUEVO.estado <> 'RESUELTO'.",
+            "b": "SI NUEVO.estado = 'RESUELTO' Y ANTIGUO.estado <> 'CERRADO'.",
+            "c": "SI NUEVO.estado = 'CERRADO' Y ANTIGUO.estado <> 'RESUELTO'."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 2 · §4.2",
+          "explicacion": "Lo prohibido es llegar a CERRADO (valor nuevo) desde un estado que no sea RESUELTO (valor anterior)."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Cuando el disparador de validación detecta un cierre indebido, ¿qué debe hacer?",
+          "opciones": {
+            "a": "Insertar una fila en la tabla de auditoría y dejar que la actualización continúe.",
+            "b": "Lanzar un error de negocio con un mensaje descriptivo, que cancela la operación.",
+            "c": "Ejecutar un COMMIT que confirme el estado anterior del expediente afectado."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 2 · §3.6 y §4.3",
+          "explicacion": "Las reglas de negocio que no expresan las restricciones declarativas se implementan con un disparador BEFORE que, si no se cumple la condición, cancela la operación lanzando un error."
+        },
+        {
+          "numero": 6,
+          "pregunta": "El disparador de auditoría solo debe insertar una fila cuando el estado ha cambiado realmente. ¿Qué condición lo garantiza?",
+          "opciones": {
+            "a": "SI NUEVO.estado <> ANTIGUO.estado.",
+            "b": "SI NUEVO.estado = 'CERRADO'.",
+            "c": "SI ANTIGUO.estado = 'ABIERTO'."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 3 · §4.3",
+          "explicacion": "Un UPDATE puede tocar otras columnas sin modificar el estado; comparar el valor anterior con el nuevo evita registrar cambios que no son de estado."
+        },
+        {
+          "numero": 7,
+          "pregunta": "Para rellenar estado_anterior y estado_nuevo en AUDITORIA_EXPEDIENTE, ¿qué valores usa el disparador?",
+          "opciones": {
+            "a": "Los de la última fila registrada en AUDITORIA_EXPEDIENTE para ese mismo expediente.",
+            "b": "ANTIGUO.estado y NUEVO.estado, que el disparador de fila recibe del evento.",
+            "c": "NUEVO.estado en ambas columnas, porque el valor anterior ya no existe tras el UPDATE."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 3 · §4.2",
+          "explicacion": "Un disparador de fila sobre UPDATE accede a OLD (valor antes del cambio) y NEW (valor después); en un AFTER UPDATE ambos están disponibles."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Un desarrollador propone que la aplicación pase al disparador, como parámetro, el identificador del funcionario que hace el cambio. ¿Es viable?",
+          "opciones": {
+            "a": "Sí, declarándolo como parámetro IN en la cabecera del disparador.",
+            "b": "Sí, declarándolo como parámetro OUT para devolverlo a la aplicación.",
+            "c": "No: el disparador no admite parámetros; recibe implícitamente el contexto del evento."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 3 · §4.1",
+          "explicacion": "Un disparador no se invoca por su nombre ni admite parámetros de entrada al estilo de un procedimiento: trabaja con los valores OLD/NEW de la fila afectada. El usuario se obtiene con una función como USUARIO_ACTUAL()."
+        },
+        {
+          "numero": 9,
+          "pregunta": "En el futuro se añade un tercer disparador sobre EXPEDIENTE que también modifica la propia tabla EXPEDIENTE. ¿Qué riesgo hay que vigilar?",
+          "opciones": {
+            "a": "Una cadena de disparadores que reactive los otros dos y pueda llegar a una recursión no controlada.",
+            "b": "Que el nuevo disparador nunca llegue a ejecutarse, porque una tabla solo admite dos disparadores.",
+            "c": "Que los disparadores anteriores pierdan el acceso a los valores ANTIGUO y NUEVO de cada fila."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 4 · §4.4",
+          "explicacion": "Un disparador que vuelve a modificar la tabla que lo activó puede desencadenar efectos en cascada («trigger chain»), difíciles de depurar y, en el peor caso, recursivos."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Qué medida mitiga ese riesgo de forma adecuada?",
+          "opciones": {
+            "a": "Añadir nuevos disparadores de control que vigilen y registren la ejecución de los tres anteriores.",
+            "b": "Documentar cada disparador, evitar que un AFTER reescriba su propia tabla y probar con cargas masivas.",
+            "c": "Probar cada disparador solo con actualizaciones de una fila, para aislar bien el efecto de cada uno."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 4 · §4.4",
+          "explicacion": "Las buenas prácticas son documentar cada disparador, evitar cascadas profundas y probar el comportamiento ante operaciones masivas, no solo ante cambios de una fila."
+        }
+      ]
+    }
+  ]
+}

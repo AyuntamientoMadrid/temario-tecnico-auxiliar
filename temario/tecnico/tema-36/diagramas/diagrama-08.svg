@@ -1,0 +1,34 @@
+<svg aria-label="Las cinco generaciones de cortafuegos: filtro de paquetes sin estado en capas tres y cuatro; cortafuegos con estado que mantiene una tabla de conexiones; pasarela de aplicación o proxy en capa siete que rompe la conexión en dos; gestión unificada de amenazas UTM que integra varias funciones; y cortafuegos de nueva generación NGFW que identifica aplicación y usuario. Se añade que el cortafuegos de aplicaciones web WAF protege una aplicación y no la red" role="img" viewbox="0 0 680 364" xmlns="http://www.w3.org/2000/svg">
+<style>.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}.k8{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.t8{font:700 10px system-ui,sans-serif;fill:#fff}.s8{font:8.5px system-ui,sans-serif;fill:#fff}.d8{font:8.5px system-ui,sans-serif;fill:#333}.b8{font:700 9px system-ui,sans-serif;fill:#0055a0}.n8{font:8px system-ui,sans-serif;fill:#666}.hd8{font:700 8.5px system-ui,sans-serif;fill:#0055a0}.r8{font:700 8.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h8" text-anchor="middle" x="340" y="20">Cada generación mira una capa más arriba, y sabe algo más de lo que deja pasar</text>
+<text class="hd8" x="26" y="42">GENERACIÓN</text><text class="hd8" x="176" y="42">CAPA</text><text class="hd8" x="232" y="42">QUÉ EXAMINA</text><text class="hd8" x="450" y="42">SU LIMITACIÓN CARACTERÍSTICA</text>
+<rect fill="#8fa8bf" height="42" rx="4" width="150" x="20" y="48"></rect><text class="t8" text-anchor="middle" x="95" y="66">1 · FILTRO DE PAQUETES</text><text class="s8" text-anchor="middle" x="95" y="80">Sin estado (stateless)</text>
+<text class="d8" x="176" y="72">3 y 4</text>
+<text class="d8" x="232" y="66">Cada paquete AISLADO: IP origen y destino,</text><text class="d8" x="232" y="79">protocolo, puertos, banderas TCP</text>
+<text class="d8" x="450" y="66">No recuerda nada: hay que abrir</text><text class="d8" x="450" y="79">reglas en los DOS sentidos</text>
+<rect fill="#4d7ba6" height="42" rx="4" width="150" x="20" y="96"></rect><text class="t8" text-anchor="middle" x="95" y="114">2 · CON ESTADO</text><text class="s8" text-anchor="middle" x="95" y="128">Stateful inspection</text>
+<text class="d8" x="176" y="120">3 y 4</text>
+<text class="d8" x="232" y="114">El paquete Y LA CONEXIÓN a la que pertenece,</text><text class="d8" x="232" y="127">mediante una TABLA DE ESTADOS</text>
+<text class="d8" x="450" y="114">No entiende el contenido: para él,</text><text class="d8" x="450" y="127">todo lo que va por 443 es "web"</text>
+<rect fill="#0055a0" height="42" rx="4" width="150" x="20" y="144"></rect><text class="t8" text-anchor="middle" x="95" y="162">3 · PASARELA (PROXY)</text><text class="s8" text-anchor="middle" x="95" y="176">Rompe la conexión en dos</text>
+<text class="d8" x="176" y="168">7</text>
+<text class="d8" x="232" y="162">El CONTENIDO del protocolo. Rompe la</text><text class="d8" x="232" y="175">conexión en dos y actúa de intermediario</text>
+<text class="d8" x="450" y="162">Coste de proceso, y hay que</text><text class="d8" x="450" y="175">implementar un proxy POR protocolo</text>
+<rect fill="#e89822" height="42" rx="4" width="150" x="20" y="192"></rect><text class="t8" text-anchor="middle" x="95" y="210">UTM</text><text class="s8" text-anchor="middle" x="95" y="224">Gestión unificada</text>
+<text class="d8" x="176" y="216">3-7</text>
+<text class="d8" x="232" y="210">Varias funciones en una sola caja: cortafuegos,</text><text class="d8" x="232" y="223">IPS, antivirus, filtro web, antispam y VPN</text>
+<text class="d8" x="450" y="210">Punto único de fallo, y penaliza</text><text class="d8" x="450" y="223">el rendimiento al activarlo todo</text>
+<rect fill="#2d8659" height="42" rx="4" width="150" x="20" y="240"></rect><text class="t8" text-anchor="middle" x="95" y="258">NGFW</text><text class="s8" text-anchor="middle" x="95" y="272">Nueva generación</text>
+<text class="d8" x="176" y="264">3-7</text>
+<text class="d8" x="232" y="258">La APLICACIÓN y el USUARIO, no solo el puerto</text><text class="d8" x="232" y="271">y la IP. Integra IPS, antimalware y descifrado TLS</text>
+<text class="d8" x="450" y="258">Necesita descifrar TLS para ver el</text><text class="d8" x="450" y="271">contenido: mp.s.3.r1.2 lo regula</text>
+<rect fill="#eef4fa" height="48" rx="5" stroke="#0055a0" width="316" x="20" y="292"></rect>
+<text class="b8" text-anchor="middle" x="178" y="308">LA DIFERENCIA CLAVE</text>
+<text class="d8" text-anchor="middle" x="178" y="322">Filtro de paquetes frente a cortafuegos con estado:</text>
+<text class="d8" text-anchor="middle" x="178" y="335">la TABLA DE ESTADOS: las reglas se escriben en un solo sentido</text>
+<rect fill="#fdeeee" height="48" rx="5" stroke="#d13c3c" width="316" x="344" y="292"></rect>
+<text class="r8" text-anchor="middle" x="502" y="308">EL WAF NO ES UN CORTAFUEGOS DE RED</text>
+<text class="d8" text-anchor="middle" x="502" y="322">Protege UNA aplicación web frente a inyección SQL, XSS</text>
+<text class="d8" text-anchor="middle" x="502" y="335">y recorrido de directorios. mp.s.2 ya exige + [R1 o R2] en BÁSICA</text>
+<text class="n8" x="20" y="356">[Fuente: CCN-STIC-408 (Seguridad perimetral — cortafuegos) · CCN-STIC-140 (taxonomía) · ENS, mp.com.1 y mp.s.2]</text>
+</svg>

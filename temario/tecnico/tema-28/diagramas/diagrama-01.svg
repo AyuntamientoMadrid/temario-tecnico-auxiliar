@@ -1,0 +1,21 @@
+<svg aria-label="Pila de niveles de abstracción de un sistema informático, indicando en qué nivel inserta su capa cada tecnología de virtualización: emulador en el juego de instrucciones, hipervisor en el hardware, contenedor en el sistema operativo, máquina virtual de Java en el entorno de ejecución y App-V en la aplicación" role="img" viewbox="0 0 680 366" xmlns="http://www.w3.org/2000/svg">
+<style>.t2a{font:700 11.5px system-ui,sans-serif;fill:#fff}.s2a{font:9.5px system-ui,sans-serif;fill:#fff}.h2a{font:700 13px system-ui,sans-serif;fill:#0055a0}.k2a{font:700 10.5px system-ui,sans-serif;fill:#0055a0}.n2a{font:9.5px system-ui,sans-serif;fill:#444}</style>
+<text class="h2a" text-anchor="middle" x="340" y="20">Niveles de abstracción y tecnología que virtualiza cada uno</text>
+<text class="k2a" text-anchor="middle" x="150" y="42">PILA DEL SISTEMA</text>
+<text class="k2a" text-anchor="middle" x="490" y="42">QUÉ VIRTUALIZA AHÍ</text>
+<rect fill="#0055a0" height="38" rx="4" width="260" x="20" y="52"></rect><text class="t2a" text-anchor="middle" x="150" y="76">Aplicación</text>
+<rect fill="#e89822" height="38" rx="4" width="360" x="300" y="52"></rect><text class="t2a" text-anchor="middle" x="480" y="70">Virtualización de aplicaciones</text><text class="s2a" text-anchor="middle" x="480" y="84">App-V · MSIX app attach · ThinApp</text>
+<rect fill="#0055a0" height="38" rx="4" width="260" x="20" y="96"></rect><text class="t2a" text-anchor="middle" x="150" y="120">Biblioteca / entorno de ejecución</text>
+<rect fill="#888" height="38" rx="4" width="360" x="300" y="96"></rect><text class="t2a" text-anchor="middle" x="480" y="114">Máquina virtual de Java · entorno .NET</text><text class="s2a" text-anchor="middle" x="480" y="128">NO es una máquina virtual de sistema</text>
+<rect fill="#0055a0" height="38" rx="4" width="260" x="20" y="140"></rect><text class="t2a" text-anchor="middle" x="150" y="164">Sistema operativo</text>
+<rect fill="#2d8659" height="38" rx="4" width="360" x="300" y="140"></rect><text class="t2a" text-anchor="middle" x="480" y="158">Contenedores</text><text class="s2a" text-anchor="middle" x="480" y="172">núcleo compartido · namespaces y cgroups</text>
+<rect fill="#0055a0" height="38" rx="4" width="260" x="20" y="184"></rect><text class="t2a" text-anchor="middle" x="150" y="208">Hardware / plataforma</text>
+<rect fill="#d13c3c" height="38" rx="4" width="360" x="300" y="184"></rect><text class="t2a" text-anchor="middle" x="480" y="202">HIPERVISOR — objeto de este tema</text><text class="s2a" text-anchor="middle" x="480" y="216">un núcleo propio por máquina virtual</text>
+<rect fill="#0055a0" height="38" rx="4" width="260" x="20" y="228"></rect><text class="t2a" text-anchor="middle" x="150" y="252">Juego de instrucciones</text>
+<rect fill="#888" height="38" rx="4" width="360" x="300" y="228"></rect><text class="t2a" text-anchor="middle" x="480" y="246">Emulador</text><text class="s2a" text-anchor="middle" x="480" y="260">traduce cada instrucción: no es eficiente</text>
+<rect fill="none" height="30" rx="4" stroke="#0055a0" stroke-width="2" width="640" x="20" y="278"></rect>
+<text class="k2a" text-anchor="middle" x="340" y="298">Regla: cuanto más abajo se inserta la capa, más aísla y más cuesta; cuanto más arriba, más ligera y menos aísla</text>
+<rect fill="#f2f6fa" height="28" rx="4" width="640" x="20" y="316"></rect>
+<text class="n2a" text-anchor="middle" x="340" y="335">También se virtualizan el almacenamiento (§4.1), la red (§4.2) y el escritorio completo (§3), cada uno en su propio nivel</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="356">[Fuente: POPEK74; NIST-SP800-125]</text>
+</svg>

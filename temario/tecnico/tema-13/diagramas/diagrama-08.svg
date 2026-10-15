@@ -1,0 +1,26 @@
+<svg aria-label="Max-heap como árbol y su representación en array" class="svd8" role="img" viewbox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd8 .n{fill:#e89822}.svd8 .b{font:700 13px system-ui,sans-serif;fill:#fff}.svd8 .lab{font:11px system-ui,sans-serif;fill:#444}.svd8 .t{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="t" text-anchor="middle" x="160" y="34">Max-heap (árbol)</text>
+<line stroke="#888" stroke-width="2" x1="160" x2="100" y1="60" y2="120"></line>
+<line stroke="#888" stroke-width="2" x1="160" x2="220" y1="60" y2="120"></line>
+<line stroke="#888" stroke-width="2" x1="100" x2="60" y1="120" y2="180"></line>
+<line stroke="#888" stroke-width="2" x1="100" x2="140" y1="120" y2="180"></line>
+<circle class="n" cx="160" cy="60" r="20"></circle><text class="b" text-anchor="middle" x="160" y="65">16</text>
+<circle class="n" cx="100" cy="120" r="20"></circle><text class="b" text-anchor="middle" x="100" y="125">14</text>
+<circle class="n" cx="220" cy="120" r="20"></circle><text class="b" text-anchor="middle" x="220" y="125">10</text>
+<circle class="n" cx="60" cy="180" r="20"></circle><text class="b" text-anchor="middle" x="60" y="185">8</text>
+<circle class="n" cx="140" cy="180" r="20"></circle><text class="b" text-anchor="middle" x="140" y="185">7</text>
+<text class="t" text-anchor="middle" x="450" y="34">Array subyacente</text>
+<g>
+<rect fill="#e89822" height="34" width="44" x="350" y="60"></rect><text class="b" text-anchor="middle" x="372" y="82">16</text>
+<rect fill="#e89822" height="34" width="44" x="394" y="60"></rect><text class="b" text-anchor="middle" x="416" y="82">14</text>
+<rect fill="#e89822" height="34" width="44" x="438" y="60"></rect><text class="b" text-anchor="middle" x="460" y="82">10</text>
+<rect fill="#e89822" height="34" width="44" x="482" y="60"></rect><text class="b" text-anchor="middle" x="504" y="82">8</text>
+<rect fill="#e89822" height="34" width="44" x="526" y="60"></rect><text class="b" text-anchor="middle" x="548" y="82">7</text>
+</g>
+<text class="lab" text-anchor="middle" x="372" y="110">0</text><text class="lab" text-anchor="middle" x="416" y="110">1</text><text class="lab" text-anchor="middle" x="460" y="110">2</text><text class="lab" text-anchor="middle" x="504" y="110">3</text><text class="lab" text-anchor="middle" x="548" y="110">4</text>
+<text class="lab" x="350" y="160">hijos de i → 2i+1, 2i+2 · padre → ⌊(i−1)/2⌋</text>
+<text class="lab" x="350" y="182">cada padre ≥ sus hijos · inserción/extracción O(log n)</text>
+<text class="lab" x="40" y="250">Base de la cola de prioridad y del heapsort</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="640" y="305">[Fuente: CLRS, cap. 6]</text>
+</svg>

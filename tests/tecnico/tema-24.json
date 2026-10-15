@@ -1,0 +1,1109 @@
+{
+  "tema": 24,
+  "bloque": "tecnico",
+  "titulo": "Desarrollo para dispositivos móviles",
+  "enunciado_oficial": "Desarrollo para dispositivos móviles. Frameworks nativos e híbridos.",
+  "calificacion": "+1 acierto, -1/3 error, 0 en blanco (BOAM 10.032, base 5.2)",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Qué define a una aplicación móvil nativa?",
+      "opciones": {
+        "a": "Se desarrolla con el SDK oficial de cada plataforma y se compila a código ejecutable por ella",
+        "b": "Se escribe en HTML, CSS y JavaScript y se ejecuta dentro de un WebView empaquetado",
+        "c": "Se distribuye exclusivamente fuera de las tiendas de aplicaciones"
+      },
+      "correcta": "a",
+      "referencia": "§1.2.1 [ANDROID-DEV]",
+      "explicacion": "Nativo significa Kotlin o Java con Android Studio para Android, y Swift u Objective-C con Xcode para iOS, usando los componentes de interfaz del propio sistema."
+    },
+    {
+      "numero": 2,
+      "pregunta": "¿Cuál es el rasgo técnico distintivo de una aplicación híbrida de contenedor web?",
+      "opciones": {
+        "a": "Compila el código fuente a lenguaje máquina de cada plataforma",
+        "b": "La interfaz se renderiza dentro de un WebView embebido en una app nativa mínima",
+        "c": "Utiliza componentes nativos del sistema controlados desde JavaScript"
+      },
+      "correcta": "b",
+      "referencia": "§1.2.2 [CORDOVA-DOC]",
+      "explicacion": "Cordova, Ionic y Capacitor empaquetan la aplicación web dentro de un contenedor nativo cuya única pantalla es un WebView a pantalla completa."
+    },
+    {
+      "numero": 3,
+      "pregunta": "¿Qué dos piezas convierten una aplicación web en una PWA?",
+      "opciones": {
+        "a": "El fichero de manifiesto de Android y el fichero Info.plist",
+        "b": "Un plugin de Cordova y un puente asíncrono",
+        "c": "El Service Worker y el Web App Manifest"
+      },
+      "correcta": "c",
+      "referencia": "§1.2.3 [SERVICE-WORKERS] [WEB-APP-MANIFEST]",
+      "explicacion": "El Service Worker actúa como proxy de red y permite funcionar sin conexión; el manifiesto aporta los metadatos de instalación en la pantalla de inicio. Ambos exigen HTTPS."
+    },
+    {
+      "numero": 4,
+      "pregunta": "La fragmentación es una característica típicamente asociada a:",
+      "opciones": {
+        "a": "iOS, por la variedad de versiones de Swift",
+        "b": "Android, por la diversidad de fabricantes, tamaños de pantalla, densidades y versiones del sistema",
+        "c": "Las PWA, por la diversidad de servidores web"
+      },
+      "correcta": "b",
+      "referencia": "§1.1 [ANDROID-DEV]",
+      "explicacion": "Al ser un sistema abierto adaptado por múltiples fabricantes, Android obliga al desarrollador a absorber esa diversidad con recursos alternativos y bibliotecas de compatibilidad."
+    },
+    {
+      "numero": 5,
+      "pregunta": "Respecto a los permisos sensibles (cámara, localización, micrófono) en las versiones modernas de Android e iOS:",
+      "opciones": {
+        "a": "Se conceden en tiempo de ejecución y el usuario puede revocarlos en cualquier momento",
+        "b": "Se conceden de forma definitiva durante la instalación de la aplicación",
+        "c": "Los concede automáticamente la tienda tras revisar la aplicación"
+      },
+      "correcta": "a",
+      "referencia": "§1.1.1 [ANDROID-DEV] [APPLE-DEV]",
+      "explicacion": "Desde Android 6.0 (API 23) y en iOS moderno, la app debe pedirlos al usarlos y funcionar de forma degradada si se deniegan, sin fallar."
+    },
+    {
+      "numero": 6,
+      "pregunta": "¿Cuáles son los elementos que más batería consumen en un dispositivo móvil?",
+      "opciones": {
+        "a": "El sistema de ficheros y la caché de la aplicación",
+        "b": "El almacén seguro de credenciales y el cifrado en reposo",
+        "c": "La pantalla, la radio de comunicaciones y el GPS"
+      },
+      "correcta": "c",
+      "referencia": "§1.1.2 [ANDROID-DEV]",
+      "explicacion": "De ahí las técnicas de agrupación de transferencias y de diferimiento del trabajo no urgente: activar la radio tiene un coste fijo elevado que penaliza muchos envíos pequeños y dispersos."
+    },
+    {
+      "numero": 7,
+      "pregunta": "¿Qué consecuencia directa tiene para el programador la limitación de memoria de un dispositivo móvil?",
+      "opciones": {
+        "a": "Que no se pueden usar bases de datos relacionales en el dispositivo",
+        "b": "Que la aplicación debe cifrar toda la información que guarde en disco",
+        "c": "Que el sistema puede terminar la aplicación en segundo plano y esta debe poder restaurar su estado"
+      },
+      "correcta": "c",
+      "referencia": "§1.1.2 [ANDROID-DEV] [APPLE-DEV]",
+      "explicacion": "El sistema sacrifica procesos para liberar memoria, por lo que el estado debe guardarse al perder el primer plano y no confiarse a un evento de cierre."
+    },
+    {
+      "numero": 8,
+      "pregunta": "El diálogo ANR (<em>Application Not Responding</em>) de Android aparece cuando:",
+      "opciones": {
+        "a": "El hilo principal permanece bloqueado durante varios segundos",
+        "b": "La aplicación solicita un permiso que el usuario ha denegado",
+        "c": "La firma digital del paquete no coincide con la registrada"
+      },
+      "correcta": "a",
+      "referencia": "§2.1.1 [ANDROID-DEV]",
+      "explicacion": "Toda operación de red o de entrada/salida debe ejecutarse fuera del hilo principal. En iOS el equivalente es la congelación de la interfaz y el posible cierre por el watchdog del sistema."
+    },
+    {
+      "numero": 9,
+      "pregunta": "¿Qué requisito impone el uso de Service Workers en una PWA?",
+      "opciones": {
+        "a": "Estar publicada previamente en Google Play o en la App Store",
+        "b": "Servir la aplicación mediante HTTPS, es decir, en un contexto seguro",
+        "c": "Disponer de un certificado de firma emitido por Apple"
+      },
+      "correcta": "b",
+      "referencia": "§1.2.3 [SERVICE-WORKERS]",
+      "explicacion": "Los navegadores solo registran Service Workers en contextos seguros, precisamente porque interceptan todas las peticiones de red de la aplicación."
+    },
+    {
+      "numero": 10,
+      "pregunta": "Señale la afirmación correcta sobre las PWA frente a las aplicaciones de tienda:",
+      "opciones": {
+        "a": "No pasan por revisión ni por las tiendas, pero su acceso al hardware es limitado y desigual entre plataformas",
+        "b": "Ofrecen el mismo acceso al hardware que una aplicación nativa en cualquier plataforma",
+        "c": "Deben firmarse con la clave de desarrollador antes de instalarse desde el navegador"
+      },
+      "correcta": "a",
+      "referencia": "§1.2.3 [MDN-PWA]",
+      "explicacion": "Se instalan desde el navegador, lo que agiliza la distribución, pero pierden visibilidad en el catálogo de las tiendas y capacidades del dispositivo, con más restricciones históricas en iOS."
+    },
+    {
+      "numero": 11,
+      "pregunta": "En una aplicación móvil, ¿quién decide cuándo se detiene o se destruye la aplicación?",
+      "opciones": {
+        "a": "La propia aplicación, mediante su método principal de finalización",
+        "b": "La tienda de aplicaciones, según la política de la plataforma",
+        "c": "El sistema operativo; el programador solo reacciona implementando los métodos de ciclo de vida"
+      },
+      "correcta": "c",
+      "referencia": "§2.1 [ANDROID-LIFECYCLE] [APPLE-DEV]",
+      "explicacion": "Es la diferencia estructural más importante frente al desarrollo de escritorio: la aplicación no es dueña de su propia ejecución."
+    },
+    {
+      "numero": 12,
+      "pregunta": "¿Qué ocurre por defecto en Android al girar el dispositivo?",
+      "opciones": {
+        "a": "La Activity conserva íntegramente su estado sin intervención del programador",
+        "b": "La Activity se destruye y se recrea, por lo que el estado debe guardarse expresamente",
+        "c": "El sistema suspende la Activity hasta que el usuario devuelve el dispositivo a su orientación anterior"
+      },
+      "correcta": "b",
+      "referencia": "§2.1.1 [ANDROID-LIFECYCLE] [JETPACK]",
+      "explicacion": "Los cambios de configuración recrean la Activity. El estado transitorio se conserva con onSaveInstanceState() y el estado más amplio, en un ViewModel."
+    },
+    {
+      "numero": 13,
+      "pregunta": "¿En qué callback de una Activity de Android conviene liberar recursos exclusivos como la cámara o el GPS?",
+      "opciones": {
+        "a": "En onPause(), porque es el primer aviso de que se ha perdido el foco",
+        "b": "En onCreate(), antes de inflar el diseño",
+        "c": "En onDestroy(), porque es el único punto garantizado"
+      },
+      "correcta": "a",
+      "referencia": "§2.1.1 [ANDROID-LIFECYCLE]",
+      "explicacion": "Además, onPause() debe ser muy breve. onDestroy() no está garantizado: si el sistema mata el proceso, puede no llegar a ejecutarse."
+    },
+    {
+      "numero": 14,
+      "pregunta": "El estado <em>Suspended</em> de una aplicación iOS significa que:",
+      "opciones": {
+        "a": "La aplicación ha sido desinstalada y debe volver a descargarse de la App Store",
+        "b": "La aplicación está en primer plano pero no recibe eventos táctiles",
+        "c": "La aplicación permanece en memoria pero no ejecuta código, y el sistema puede terminarla sin aviso"
+      },
+      "correcta": "c",
+      "referencia": "§2.1.1 [APPLE-DEV]",
+      "explicacion": "Por eso el estado debe persistirse al pasar a segundo plano. El estado en primer plano sin recibir eventos es <em>Inactive</em>."
+    },
+    {
+      "numero": 15,
+      "pregunta": "¿Qué motor de base de datos embebido sustenta la persistencia estructurada local tanto en Android como en iOS?",
+      "opciones": {
+        "a": "PostgreSQL en modo cliente ligero",
+        "b": "SQLite, sin proceso servidor y con la base de datos en un único fichero",
+        "c": "MongoDB Mobile, sobre documentos JSON"
+      },
+      "correcta": "b",
+      "referencia": "§2.1.2 [SQLITE] [JETPACK] [COREDATA]",
+      "explicacion": "Room en Android y Core Data o SwiftData en iOS se apoyan en SQLite, añadiendo una capa de mapeo objeto-relacional."
+    },
+    {
+      "numero": 16,
+      "pregunta": "¿Dónde deben almacenarse las credenciales y los tokens de sesión de una aplicación móvil?",
+      "opciones": {
+        "a": "En el Keystore de Android o en el Keychain de iOS",
+        "b": "En SharedPreferences o UserDefaults, cifrando el nombre de la clave",
+        "c": "En un fichero de texto dentro del almacenamiento externo compartido"
+      },
+      "correcta": "a",
+      "referencia": "§2.1.2 [OWASP-MOBILE] [OWASP-MASVS]",
+      "explicacion": "El almacenamiento inseguro de datos es uno de los riesgos clásicos del OWASP Mobile Top 10. Las preferencias y los ficheros en claro nunca son sitio para secretos."
+    },
+    {
+      "numero": 17,
+      "pregunta": "El <em>sandbox</em> de una aplicación móvil es:",
+      "opciones": {
+        "a": "Un entorno de pruebas de la tienda donde se validan las aplicaciones antes de publicarse",
+        "b": "Un espacio de almacenamiento y ejecución privado y aislado, inaccesible para otras aplicaciones",
+        "c": "Un servicio en la nube donde se replican automáticamente los datos de la aplicación"
+      },
+      "correcta": "b",
+      "referencia": "§2.1.2 [ANDROID-ARCH] [APPLE-ARCH]",
+      "explicacion": "Se elimina al desinstalar la app. En Android se apoya en que cada aplicación es un usuario distinto del kernel Linux."
+    },
+    {
+      "numero": 18,
+      "pregunta": "¿Qué diferencia hay entre las unidades dp y sp en Android?",
+      "opciones": {
+        "a": "Ninguna: son sinónimos y se usan indistintamente",
+        "b": "dp se usa para el texto y sp para los márgenes y los iconos",
+        "c": "sp es como dp pero además se escala con el tamaño de fuente elegido por el usuario, por lo que se usa para el texto"
+      },
+      "correcta": "c",
+      "referencia": "§2.2.1 [ANDROID-UI]",
+      "explicacion": "Medir el texto en dp impediría que la persona que amplía la letra del sistema pueda leer la aplicación: es un defecto de accesibilidad."
+    },
+    {
+      "numero": 19,
+      "pregunta": "Una aplicación móvil del Ayuntamiento de Madrid está obligada a cumplir requisitos de accesibilidad en virtud de:",
+      "opciones": {
+        "a": "El Real Decreto 1112/2018, que extiende la accesibilidad del sector público a las aplicaciones para dispositivos móviles",
+        "b": "El Reglamento General de Protección de Datos, en su capítulo de accesibilidad universal",
+        "c": "El Esquema Nacional de Interoperabilidad, en su norma técnica de digitalización"
+      },
+      "correcta": "a",
+      "referencia": "§2.2.1 [RD1112-2018] [EN301549]",
+      "explicacion": "Transpone la Directiva (UE) 2016/2102 y toma como referencia técnica la norma EN 301 549, que incorpora las WCAG en nivel AA."
+    },
+    {
+      "numero": 20,
+      "pregunta": "¿Qué atributo permite que un lector de pantalla anuncie el propósito de un icono sin texto visible en Android?",
+      "opciones": {
+        "a": "El atributo placeholder del elemento",
+        "b": "El atributo contentDescription",
+        "c": "El atributo accessibilityLabel"
+      },
+      "correcta": "b",
+      "referencia": "§2.2.1 [ANDROID-A11Y] [APPLE-DEV]",
+      "explicacion": "Es el equivalente de Android para TalkBack. El atributo accessibilityLabel es el propio de iOS para VoiceOver: ambos cumplen la misma función en su plataforma."
+    },
+    {
+      "numero": 21,
+      "pregunta": "¿Qué componentes reutilizan las celdas que salen de pantalla para recorrer listas largas con memoria constante?",
+      "opciones": {
+        "a": "ConstraintLayout en Android y Auto Layout en iOS",
+        "b": "Intent en Android y segue en iOS",
+        "c": "RecyclerView en Android y UITableView o UICollectionView en iOS"
+      },
+      "correcta": "c",
+      "referencia": "§2.2.2 [ANDROID-UI] [APPLE-DEV]",
+      "explicacion": "El reciclado de vistas evita crear un objeto por elemento, que es lo que permite desplazarse por miles de registros sin agotar la memoria."
+    },
+    {
+      "numero": 22,
+      "pregunta": "Jetpack Compose y SwiftUI son:",
+      "opciones": {
+        "a": "Los frameworks declarativos de interfaz de Android y de iOS respectivamente, ambos de desarrollo nativo",
+        "b": "Dos frameworks multiplataforma que permiten compilar la misma interfaz para Android y para iOS",
+        "c": "Dos motores de renderizado gráfico basados en Skia"
+      },
+      "correcta": "a",
+      "referencia": "§2.2.2 [ANDROID-UI] [SWIFTUI-DOC]",
+      "explicacion": "Sustituyen a los diseños XML con View y a UIKit con storyboards, pero cada uno sigue siendo específico de su plataforma."
+    },
+    {
+      "numero": 23,
+      "pregunta": "Al consumir una API REST desde una aplicación móvil, ¿qué situación debe tratarse como habitual y no como excepcional?",
+      "opciones": {
+        "a": "Que el servidor devuelva un código de estado 200",
+        "b": "Que el usuario revoque el permiso de cámara durante la petición",
+        "c": "Que no haya red o se agote el tiempo de espera"
+      },
+      "correcta": "c",
+      "referencia": "§2.3.1 [RFC9110]",
+      "explicacion": "La conectividad móvil es intermitente por naturaleza: la ausencia de red es un caso normal de funcionamiento, no un error puntual, y la interfaz debe contemplarlo."
+    },
+    {
+      "numero": 24,
+      "pregunta": "Según la RFC 8252 (<em>OAuth 2.0 for Native Apps</em>), la forma correcta de autenticar al usuario en una aplicación móvil es:",
+      "opciones": {
+        "a": "Mostrar un formulario propio dentro de la app que envíe usuario y contraseña al servidor",
+        "b": "Usar el navegador del sistema con el flujo de código de autorización y PKCE",
+        "c": "Incrustar un WebView con la página de acceso del proveedor de identidad"
+      },
+      "correcta": "b",
+      "referencia": "§2.3.1 [RFC8252] [RFC7636]",
+      "explicacion": "Un WebView embebido permitiría a la aplicación leer las credenciales del usuario y rompe el aislamiento de sesión, por lo que está expresamente desaconsejado."
+    },
+    {
+      "numero": 25,
+      "pregunta": "En una notificación push, ¿quién entrega el mensaje al dispositivo?",
+      "opciones": {
+        "a": "El servicio de la plataforma (FCM en Android o APNs en iOS), usando el token de registro",
+        "b": "El servidor de la aplicación, abriendo una conexión directa con el dispositivo",
+        "c": "La tienda de aplicaciones, tras verificar la firma del mensaje"
+      },
+      "correcta": "a",
+      "referencia": "§2.3.2 [FCM] [APNS]",
+      "explicacion": "El servidor de la aplicación envía el mensaje al servicio de la plataforma indicando el token; es ese servicio, con su conexión persistente, quien lo entrega al dispositivo."
+    },
+    {
+      "numero": 26,
+      "pregunta": "¿Qué caracteriza a una notificación local frente a una notificación push?",
+      "opciones": {
+        "a": "Solo puede mostrarse cuando la aplicación está en primer plano",
+        "b": "La programa la propia aplicación en el dispositivo, sin servidor ni conexión de red",
+        "c": "Requiere un token de registro emitido por APNs o por FCM"
+      },
+      "correcta": "b",
+      "referencia": "§2.3.2 [FCM] [APNS]",
+      "explicacion": "Es la adecuada para recordatorios y alarmas. Al usuario le llega igual que una push, pero su origen y sus requisitos técnicos son distintos."
+    },
+    {
+      "numero": 27,
+      "pregunta": "En el patrón <em>offline-first</em>, ¿cuál es la única fuente de verdad para la interfaz?",
+      "opciones": {
+        "a": "La respuesta más reciente del servidor, almacenada en memoria",
+        "b": "La caché HTTP del sistema operativo",
+        "c": "El repositorio local del dispositivo, que la interfaz lee y escribe siempre"
+      },
+      "correcta": "c",
+      "referencia": "§2.3.2 [JETPACK]",
+      "explicacion": "La pantalla nunca espera a la red: pinta lo que hay en local y un planificador de trabajo diferido sincroniza con el servidor cuando se dan las condiciones."
+    },
+    {
+      "numero": 28,
+      "pregunta": "Para evitar que un reintento tras un corte de red duplique un registro en el servidor, la solución correcta es:",
+      "opciones": {
+        "a": "Enviar un identificador único de operación que el servidor trate como clave de idempotencia",
+        "b": "Impedir que el usuario pulse el botón de envío más de una vez",
+        "c": "Sustituir el método POST por GET en la petición de creación"
+      },
+      "correcta": "a",
+      "referencia": "§2.3.2 [RFC9110]",
+      "explicacion": "Si el identificador ya existe, el servidor devuelve el registro creado en lugar de crear otro. Solo entonces reintentar deja de ser peligroso, que es la condición del modo offline."
+    },
+    {
+      "numero": 29,
+      "pregunta": "¿Qué planificadores permiten ejecutar trabajo diferido respetando las restricciones de batería del sistema?",
+      "opciones": {
+        "a": "Broadcast Receiver en Android y segue en iOS",
+        "b": "WorkManager en Android y BGTaskScheduler en iOS",
+        "c": "Content Provider en Android y Core Data en iOS"
+      },
+      "correcta": "b",
+      "referencia": "§2.3.2 [JETPACK] [APPLE-DEV]",
+      "explicacion": "Ambos delegan en el sistema la decisión de cuándo ejecutar la tarea, atendiendo a la red disponible, la batería y las políticas de ahorro de energía."
+    },
+    {
+      "numero": 30,
+      "pregunta": "Ordene de abajo arriba las capas de la plataforma Android:",
+      "opciones": {
+        "a": "Núcleo Linux, Java API Framework, HAL, bibliotecas nativas y ART, aplicaciones",
+        "b": "HAL, núcleo Linux, aplicaciones, bibliotecas nativas y ART, Java API Framework",
+        "c": "Núcleo Linux, HAL, bibliotecas nativas y ART, Java API Framework, aplicaciones"
+      },
+      "correcta": "c",
+      "referencia": "§3.1.1 [ANDROID-ARCH]",
+      "explicacion": "El kernel Linux está en la base y las aplicaciones en la cima, con la capa de abstracción de hardware sobre el núcleo y el entorno de ejecución junto a las bibliotecas nativas."
+    },
+    {
+      "numero": 31,
+      "pregunta": "¿Qué relación existe entre Dalvik y ART?",
+      "opciones": {
+        "a": "ART es el formato de bytecode y Dalvik el entorno que lo ejecuta",
+        "b": "ART sustituyó a Dalvik desde Android 5.0, añadiendo compilación AOT en la instalación junto a JIT y perfiles",
+        "c": "Ambos coexisten: Dalvik ejecuta las aplicaciones del sistema y ART las de terceros"
+      },
+      "correcta": "b",
+      "referencia": "§3.1.1 [ANDROID-ARCH]",
+      "explicacion": "Dalvik, vigente hasta Android 4.4, compilaba únicamente JIT en cada ejecución. El formato de bytecode sigue siendo DEX en ambos casos."
+    },
+    {
+      "numero": 32,
+      "pregunta": "¿Cuáles son los cuatro componentes fundamentales de una aplicación Android?",
+      "opciones": {
+        "a": "Activity, Service, Broadcast Receiver y Content Provider",
+        "b": "Activity, Intent, Fragment y Manifest",
+        "c": "View, ViewModel, Repository y Database"
+      },
+      "correcta": "a",
+      "referencia": "§3.1.2 [ANDROID-DEV]",
+      "explicacion": "Todos se declaran en el AndroidManifest.xml y se activan mediante Intents. Una app Android no tiene un método principal único de entrada."
+    },
+    {
+      "numero": 33,
+      "pregunta": "Un Intent implícito se caracteriza por:",
+      "opciones": {
+        "a": "Nombrar la clase concreta del componente que debe atenderlo",
+        "b": "Ejecutarse siempre de forma síncrona y bloqueante",
+        "c": "Describir una acción y unos datos, siendo el sistema quien decide qué aplicación la atiende"
+      },
+      "correcta": "c",
+      "referencia": "§3.1.2 [ANDROID-DEV]",
+      "explicacion": "Los intent filters declarados en el manifiesto anuncian qué intents implícitos sabe atender cada aplicación; si hay varias candidatas, el sistema muestra un selector."
+    },
+    {
+      "numero": 34,
+      "pregunta": "¿Qué fichero declara en Android los componentes, los permisos y las versiones mínima y objetivo de la API?",
+      "opciones": {
+        "a": "El AndroidManifest.xml",
+        "b": "El fichero build.gradle del módulo de aplicación",
+        "c": "El fichero Info.plist del proyecto"
+      },
+      "correcta": "a",
+      "referencia": "§3.1.2 [ANDROID-DEV]",
+      "explicacion": "El fichero build.gradle define la construcción y las variantes, pero la declaración formal de la aplicación ante el sistema es el manifiesto. Info.plist es el equivalente de iOS."
+    },
+    {
+      "numero": 35,
+      "pregunta": "Los permisos clasificados como <em>peligrosos</em> en Android:",
+      "opciones": {
+        "a": "Se conceden automáticamente al instalar la aplicación desde Google Play",
+        "b": "Deben solicitarse en tiempo de ejecución y el usuario puede concederlos solo mientras usa la app o solo una vez",
+        "c": "Requieren que la aplicación esté firmada con el mismo certificado que la que los declara"
+      },
+      "correcta": "b",
+      "referencia": "§3.1.2 [ANDROID-DEV]",
+      "explicacion": "Los que se conceden automáticamente son los permisos normales; los que exigen firma coincidente son los permisos de firma."
+    },
+    {
+      "numero": 36,
+      "pregunta": "Sobre Kotlin en el desarrollo Android, es cierto que:",
+      "opciones": {
+        "a": "Sustituyó por completo a Java, que ya no está soportado por el SDK",
+        "b": "Se ejecuta sobre una máquina virtual propia, distinta de la que ejecuta el código Java",
+        "c": "Es el lenguaje preferente desde 2019, compila al mismo bytecode que Java y es plenamente interoperable con él"
+      },
+      "correcta": "c",
+      "referencia": "§3.1.3 [KOTLIN-DOC] [ANDROID-DEV]",
+      "explicacion": "Oficial desde 2017 y preferente desde 2019, permite migrar una aplicación existente clase a clase, sin reescribirla de golpe."
+    },
+    {
+      "numero": 37,
+      "pregunta": "¿Qué aporta la seguridad frente a nulos (<em>null safety</em>) de Kotlin?",
+      "opciones": {
+        "a": "El sistema de tipos distingue los tipos que admiten nulo de los que no, y el compilador impide desreferenciar un nulo",
+        "b": "El recolector de basura elimina automáticamente las referencias nulas en tiempo de ejecución",
+        "c": "Todas las variables se inicializan a un valor por defecto no nulo al declararse"
+      },
+      "correcta": "a",
+      "referencia": "§3.1.3 [KOTLIN-DOC]",
+      "explicacion": "Es la respuesta directa a la excepción de puntero nulo, el error más común en Java. Swift resuelve lo mismo con sus opcionales."
+    },
+    {
+      "numero": 38,
+      "pregunta": "Ordene de arriba abajo las cuatro capas de iOS:",
+      "opciones": {
+        "a": "Core OS, Core Services, Media, Cocoa Touch",
+        "b": "Cocoa Touch, Core Services, Media, Core OS",
+        "c": "Cocoa Touch, Media, Core Services, Core OS"
+      },
+      "correcta": "c",
+      "referencia": "§3.2.1 [APPLE-ARCH]",
+      "explicacion": "Cocoa Touch es la capa superior, donde viven UIKit y SwiftUI; Core OS es la más cercana al hardware, con el núcleo Darwin y la seguridad del sistema."
+    },
+    {
+      "numero": 39,
+      "pregunta": "El equivalente funcional de una Activity de Android en iOS es:",
+      "opciones": {
+        "a": "El objeto UIApplication",
+        "b": "El UIViewController",
+        "c": "El fichero Info.plist"
+      },
+      "correcta": "b",
+      "referencia": "§3.2.2 [APPLE-DEV]",
+      "explicacion": "Controla una pantalla, coordinando las vistas y los datos, con sus propios callbacks de ciclo de vida como viewDidLoad() y viewWillAppear()."
+    },
+    {
+      "numero": 40,
+      "pregunta": "Si una aplicación iOS solicita acceso a la cámara sin declarar la cadena de descripción de uso en Info.plist:",
+      "opciones": {
+        "a": "Falla en ejecución y, además, es motivo de rechazo en la revisión de la App Store",
+        "b": "Funciona con normalidad, porque la descripción solo afecta a la ficha de la tienda",
+        "c": "El sistema muestra una descripción genérica automática y concede el permiso"
+      },
+      "correcta": "a",
+      "referencia": "§3.2.2 [APPLE-DEV] [APPSTORE-REVIEW]",
+      "explicacion": "La cadena se muestra literalmente al usuario en el diálogo de consentimiento y debe justificar la finalidad del acceso."
+    },
+    {
+      "numero": 41,
+      "pregunta": "¿Qué mecanismo de gestión de memoria emplea Swift?",
+      "opciones": {
+        "a": "Un recolector de basura generacional equivalente al de ART",
+        "b": "Liberación manual de memoria mediante instrucciones explícitas del programador",
+        "c": "ARC, conteo automático de referencias resuelto en tiempo de compilación"
+      },
+      "correcta": "c",
+      "referencia": "§3.2.3 [SWIFT-DOC]",
+      "explicacion": "Evita las pausas de un recolector de basura, pero obliga al programador a romper los ciclos de retención con referencias weak o unowned."
+    },
+    {
+      "numero": 42,
+      "pregunta": "En una aplicación construida con Apache Cordova, ¿cómo accede el código JavaScript al GPS del dispositivo?",
+      "opciones": {
+        "a": "Directamente, porque el WebView expone la API nativa de localización sin intermediarios",
+        "b": "A través de un plugin con parte nativa, mediante un puente de comunicación asíncrono",
+        "c": "Solicitando al servidor la posición del dispositivo y recibiéndola en la respuesta"
+      },
+      "correcta": "b",
+      "referencia": "§4.1.1 [CORDOVA-DOC]",
+      "explicacion": "Sin plugin no hay acceso al hardware: es la principal dependencia y el principal riesgo de mantenimiento de este enfoque."
+    },
+    {
+      "numero": 43,
+      "pregunta": "Los ficheros HTML, CSS y JavaScript de una aplicación híbrida de contenedor web:",
+      "opciones": {
+        "a": "Van empaquetados dentro del binario instalado, no se descargan de un servidor en cada uso",
+        "b": "Se descargan del servidor en cada arranque, como en cualquier página web",
+        "c": "Se compilan a código máquina durante la instalación en el dispositivo"
+      },
+      "correcta": "a",
+      "referencia": "§4.1.1 [CORDOVA-DOC]",
+      "explicacion": "Es lo que permite que la aplicación arranque y funcione sin conexión, y lo que la distingue de abrir la misma web en el navegador."
+    },
+    {
+      "numero": 44,
+      "pregunta": "¿Qué aporta Ionic sobre el modelo de contenedor web?",
+      "opciones": {
+        "a": "Un motor de renderizado gráfico propio que sustituye al WebView",
+        "b": "Un catálogo de componentes de interfaz web que imitan el aspecto nativo de cada plataforma",
+        "c": "La compilación del código JavaScript a Kotlin y a Swift"
+      },
+      "correcta": "b",
+      "referencia": "§4.1.1 [IONIC-DOC] [CAPACITOR-DOC]",
+      "explicacion": "Se muestran al estilo Material en Android y al estilo iOS en Apple, e integra frameworks web como Angular, React o Vue. Para la capa nativa impulsa hoy Capacitor."
+    },
+    {
+      "numero": 45,
+      "pregunta": "¿Con qué se corresponde un componente <code>&lt;View&gt;</code> de React Native en el dispositivo?",
+      "opciones": {
+        "a": "Con un elemento HTML dentro de un WebView embebido",
+        "b": "Con una superficie dibujada por el motor gráfico Skia",
+        "c": "Con un componente nativo real del sistema: un ViewGroup en Android o un UIView en iOS"
+      },
+      "correcta": "c",
+      "referencia": "§4.2.1 [RN-DOC]",
+      "explicacion": "React Native no usa WebView: el código JavaScript maneja componentes nativos, y por eso la aplicación hereda el aspecto y el comportamiento del sistema anfitrión."
+    },
+    {
+      "numero": 46,
+      "pregunta": "En la nueva arquitectura de React Native, ¿qué sustituye al puente asíncrono con serialización JSON?",
+      "opciones": {
+        "a": "JSI, una capa en C++ que permite a JavaScript invocar directamente objetos nativos",
+        "b": "Un WebView optimizado con aceleración por hardware",
+        "c": "La compilación anticipada del código JavaScript a bytecode DEX"
+      },
+      "correcta": "a",
+      "referencia": "§4.2.1 [RN-DOC]",
+      "explicacion": "Sobre JSI se apoyan Fabric, el nuevo renderizador de interfaz, los TurboModules de carga perezosa y Codegen. Elimina el cuello de botella de la serialización."
+    },
+    {
+      "numero": 47,
+      "pregunta": "¿Cuál es la diferencia esencial entre React Native y Flutter?",
+      "opciones": {
+        "a": "React Native es de código abierto y Flutter es una tecnología propietaria de pago",
+        "b": "React Native renderiza con componentes nativos del sistema, mientras que Flutter dibuja cada píxel con su propio motor gráfico",
+        "c": "React Native solo funciona en Android y Flutter solo en iOS"
+      },
+      "correcta": "b",
+      "referencia": "§4.2 [RN-DOC] [FLUTTER-DOC]",
+      "explicacion": "De ahí que Flutter garantice una apariencia idéntica en todas las plataformas y React Native, una apariencia idéntica a la del sistema anfitrión."
+    },
+    {
+      "numero": 48,
+      "pregunta": "¿Cuáles son las tres capas de la arquitectura de Flutter?",
+      "opciones": {
+        "a": "WebView, puente de plugins y aplicación contenedora",
+        "b": "Presentación, lógica de negocio y acceso a datos",
+        "c": "Framework en Dart, Engine en C/C++ y Embedder específico de cada plataforma"
+      },
+      "correcta": "c",
+      "referencia": "§4.2.2 [FLUTTER-DOC]",
+      "explicacion": "El Framework contiene los widgets que usa el programador; el Engine incorpora el motor de renderizado Skia o Impeller; el Embedder es la única parte específica de Android o iOS."
+    },
+    {
+      "numero": 49,
+      "pregunta": "¿Qué característica del lenguaje Dart hace posible la recarga en caliente (<em>hot reload</em>) durante el desarrollo?",
+      "opciones": {
+        "a": "Que se interpreta línea a línea también en producción, sin fase de compilación",
+        "b": "Que compila JIT durante el desarrollo y AOT a código máquina en producción",
+        "c": "Que se ejecuta sobre la máquina virtual de Java, compartiendo su cargador de clases"
+      },
+      "correcta": "b",
+      "referencia": "§4.2.2 [DART-DOC]",
+      "explicacion": "La doble estrategia de compilación permite ver los cambios en menos de un segundo mientras se desarrolla, sin renunciar al rendimiento cercano al nativo en la versión publicada."
+    },
+    {
+      "numero": 50,
+      "pregunta": "Una desventaja característica de que Flutter dibuje su propia interfaz es:",
+      "opciones": {
+        "a": "Que no hereda automáticamente los cambios de aspecto y comportamiento que introduce cada versión nueva del sistema",
+        "b": "Que obliga a escribir una base de código distinta para Android y para iOS",
+        "c": "Que impide utilizar componentes de diseño con estilo Material"
+      },
+      "correcta": "a",
+      "referencia": "§4.2.2 [FLUTTER-DOC]",
+      "explicacion": "A ello se suma un paquete de mayor tamaño, porque incorpora el motor de renderizado, y una accesibilidad que depende del puente propio de Flutter."
+    },
+    {
+      "numero": 51,
+      "pregunta": "Kotlin Multiplatform se caracteriza por:",
+      "opciones": {
+        "a": "Ejecutar HTML y JavaScript dentro de un WebView en ambas plataformas",
+        "b": "Compilar el mismo código de interfaz para Android, iOS y web con un motor gráfico propio",
+        "c": "Compartir la lógica de negocio en Kotlin manteniendo una interfaz nativa en cada plataforma"
+      },
+      "correcta": "c",
+      "referencia": "§4.2.2 [KMP-DOC]",
+      "explicacion": "Es un compromiso intermedio entre el desarrollo nativo puro y la multiplataforma total, que preserva la experiencia de usuario propia de cada sistema."
+    },
+    {
+      "numero": 52,
+      "pregunta": ".NET MAUI, sucesor de Xamarin.Forms, utiliza como lenguaje:",
+      "opciones": {
+        "a": "Dart",
+        "b": "C#",
+        "c": "TypeScript"
+      },
+      "correcta": "b",
+      "referencia": "§4.2.2 [MAUI-DOC]",
+      "explicacion": "Renderiza con controles nativos de cada plataforma y resulta especialmente atractivo cuando la organización ya trabaja sobre el ecosistema .NET."
+    },
+    {
+      "numero": 53,
+      "pregunta": "Ordene de mayor a menor rendimiento los enfoques de desarrollo móvil:",
+      "opciones": {
+        "a": "Nativo, Flutter, React Native, híbrido de contenedor web",
+        "b": "Híbrido de contenedor web, React Native, Flutter, nativo",
+        "c": "React Native, nativo, híbrido de contenedor web, Flutter"
+      },
+      "correcta": "a",
+      "referencia": "§5.1 [ISO25010]",
+      "explicacion": "Cuantas más capas intermedias e interpretación existan, más ciclos de CPU y más memoria se consumen para el mismo resultado, y mayor es también el gasto de batería."
+    },
+    {
+      "numero": 54,
+      "pregunta": "Respecto a una clave de API incrustada en el código de una aplicación móvil publicada:",
+      "opciones": {
+        "a": "Es segura si el código se ofusca antes de compilar",
+        "b": "Es segura si se guarda en un fichero de recursos y no en una constante del código",
+        "c": "Debe considerarse comprometida, porque el paquete instalado es analizable por ingeniería inversa"
+      },
+      "correcta": "c",
+      "referencia": "§5.1 [OWASP-MASVS] [OWASP-MOBILE]",
+      "explicacion": "Las comprobaciones de seguridad decisivas se hacen siempre en el servidor: el cliente es manipulable por definición."
+    },
+    {
+      "numero": 55,
+      "pregunta": "El catálogo de referencia de los riesgos de seguridad más críticos específicos de aplicaciones móviles es:",
+      "opciones": {
+        "a": "El OWASP Mobile Top 10, complementado por el estándar de verificación MASVS",
+        "b": "La norma EN 301 549, en su capítulo 11",
+        "c": "El Esquema Nacional de Interoperabilidad, en su norma técnica de seguridad"
+      },
+      "correcta": "a",
+      "referencia": "§5.1 [OWASP-MOBILE] [OWASP-MASVS]",
+      "explicacion": "Recoge riesgos como el almacenamiento inseguro de datos, la comunicación insegura y la autenticación deficiente. La EN 301 549 es la norma de accesibilidad."
+    },
+    {
+      "numero": 56,
+      "pregunta": "Sobre la afirmación «una sola base de código supone la mitad de trabajo»:",
+      "opciones": {
+        "a": "Es exacta: el ahorro es del 50 % en desarrollo y en mantenimiento",
+        "b": "Es inexacta: sigue habiendo que probar en ambas plataformas, adaptar comportamientos específicos, gestionar dos publicaciones y, a veces, escribir código nativo",
+        "c": "Es inexacta porque los enfoques multiplataforma no permiten reutilizar código entre Android e iOS"
+      },
+      "correcta": "b",
+      "referencia": "§5.2 [ISO25010]",
+      "explicacion": "El ahorro real es significativo pero no llega al 50 %, y el coste dominante a medio plazo es el mantenimiento, no el desarrollo inicial."
+    },
+    {
+      "numero": 57,
+      "pregunta": "Respecto a las pruebas en el desarrollo móvil:",
+      "opciones": {
+        "a": "El emulador reproduce fielmente el rendimiento, los sensores y el consumo de batería del dispositivo real",
+        "b": "Basta con probar en un único dispositivo Android, porque el sistema garantiza el comportamiento uniforme",
+        "c": "El emulador no sustituye al dispositivo real y la fragmentación de Android obliga a probar sobre una matriz de tamaños, densidades y versiones"
+      },
+      "correcta": "c",
+      "referencia": "§5.2 [ANDROID-DEV]",
+      "explicacion": "Cuando no se dispone del parque físico se recurre a granjas de dispositivos en la nube."
+    },
+    {
+      "numero": 58,
+      "pregunta": "¿Qué formato de publicación es obligatorio en Google Play para las aplicaciones nuevas desde agosto de 2021?",
+      "opciones": {
+        "a": "El AAB (<em>Android App Bundle</em>), a partir del cual Google Play genera los APK optimizados por dispositivo",
+        "b": "El APK firmado con la clave de subida del desarrollador",
+        "c": "El IPA generado desde el entorno de desarrollo"
+      },
+      "correcta": "a",
+      "referencia": "§5.3 [PLAY-CONSOLE]",
+      "explicacion": "El AAB reduce el tamaño de descarga al servir a cada dispositivo solo los recursos que necesita: su densidad, su arquitectura y su idioma. El IPA es el formato de la App Store."
+    },
+    {
+      "numero": 59,
+      "pregunta": "Una diferencia relevante entre publicar en Google Play y en la App Store es que:",
+      "opciones": {
+        "a": "Google Play exige una cuota anual y la App Store un pago único de alta",
+        "b": "La App Store somete toda aplicación a revisión humana, mientras que en Google Play la revisión es mayoritariamente automatizada",
+        "c": "Solo la App Store permite la publicación por fases a un porcentaje creciente de usuarios"
+      },
+      "correcta": "b",
+      "referencia": "§5.3 [PLAY-CONSOLE] [APPSTORE-REVIEW]",
+      "explicacion": "Además, la cuota es al revés de lo que sugiere la primera opción: pago único en Google Play y cuota anual en el Apple Developer Program. Ambas admiten publicación por fases."
+    },
+    {
+      "numero": 60,
+      "pregunta": "A diferencia de una aplicación web, en una aplicación móvil publicada en una tienda:",
+      "opciones": {
+        "a": "La actualización es instantánea para todos los usuarios en cuanto se publica",
+        "b": "No es necesario versionar la API del servidor, porque todos los clientes están siempre al día",
+        "c": "El usuario puede tardar semanas en actualizar o no actualizar nunca, por lo que hay que versionar la API y mantener compatibilidad hacia atrás"
+      },
+      "correcta": "c",
+      "referencia": "§5.3 [PLAY-CONSOLE] [APPSTORE-REVIEW]",
+      "explicacion": "Por eso se recomienda además la publicación por fases y las banderas de característica, que permiten desactivar una funcionalidad sin depender de una actualización de la tienda."
+    }
+  ],
+  "casos": [
+    {
+      "caso": 1,
+      "titulo": "Elección de enfoque para la app de avisos ciudadanos",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "Al comparar las cuatro estrategias para la app de avisos, ¿en cuál de ellas la interfaz la dibuja un motor gráfico propio que pinta cada píxel?",
+          "opciones": {
+            "a": "En la multiplataforma compilada con Flutter, que renderiza con su propio motor (Skia/Impeller).",
+            "b": "En la híbrida de contenedor web, que renderiza la interfaz con el motor del WebView embebido.",
+            "c": "En la nativa, que pinta cada píxel con Kotlin en Android y con Swift en iOS sin usar componentes."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 1 · §1.2",
+          "explicacion": "Flutter no usa los componentes del sistema: trae su propio motor gráfico y dibuja cada píxel sobre un lienzo."
+        },
+        {
+          "numero": 2,
+          "pregunta": "Si el proveedor desarrollara la app de avisos con React Native, ¿cómo se dibujaría su interfaz?",
+          "opciones": {
+            "a": "Con HTML, CSS y JavaScript renderizados dentro de un WebView a pantalla completa.",
+            "b": "Con componentes nativos reales del sistema, manejados desde el código JavaScript.",
+            "c": "Con un motor gráfico propio que dibuja cada píxel sin usar los componentes del sistema."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 1 · §4.2.1",
+          "explicacion": "React Native no usa WebView: un <View> se convierte en un ViewGroup de Android o en un UIView de iOS."
+        },
+        {
+          "numero": 3,
+          "pregunta": "Si la app de avisos se construyera como híbrida de contenedor web (Cordova, Ionic o Capacitor), ¿qué dibujaría la interfaz?",
+          "opciones": {
+            "a": "El navegador del sistema, sin aplicación nativa que la empaquete ni paso por las tiendas.",
+            "b": "Los componentes nativos de Android y de iOS, a los que se traduce el HTML al compilar.",
+            "c": "Un WebView embebido en una app nativa mínima, que renderiza el HTML, el CSS y el JavaScript."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 1 · §1.2.2",
+          "explicacion": "En el híbrido de contenedor web la app es una web empaquetada dentro de una app nativa cuyo único contenido es un WebView."
+        },
+        {
+          "numero": 4,
+          "pregunta": "El proveedor propone una PWA para ahorrar costes. ¿Qué requisito funcional del supuesto la hace arriesgada?",
+          "opciones": {
+            "a": "El envío del aviso por HTTPS, que los Service Workers de una PWA no permiten utilizar.",
+            "b": "Las notificaciones push al resolverse el aviso, con soporte web históricamente tardío y limitado en iOS.",
+            "c": "La consulta del estado de los avisos, porque una PWA no puede hacer peticiones al servidor."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 2 · §1.2.3",
+          "explicacion": "El vecino debe recibir una notificación cuando se resuelve su aviso, y en iOS las notificaciones push web han tenido un soporte más tardío y limitado."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Además de las notificaciones, ¿qué otro inconveniente tiene la PWA para una app de avisos dirigida a toda la ciudadanía?",
+          "opciones": {
+            "a": "Que no se distribuye por las tiendas, lo que le resta visibilidad ante los vecinos.",
+            "b": "Que solo puede instalarse en terminales corporativos gestionados mediante una plataforma MDM.",
+            "c": "Que debe pasar la revisión humana de Apple antes de cada actualización publicada en el servidor."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 2 · §1.2.3",
+          "explicacion": "La PWA se instala desde el navegador: se ahorra la revisión de las tiendas, pero pierde la visibilidad de su catálogo."
+        },
+        {
+          "numero": 6,
+          "pregunta": "Con dos plataformas, presupuesto ajustado, seis meses de plazo y un equipo web sin Kotlin ni Swift, ¿qué enfoque procede?",
+          "opciones": {
+            "a": "Nativo, con dos equipos especializados, porque es el único que da acceso a cámara y ubicación.",
+            "b": "PWA, porque es la única estrategia que puede llegar a Android y a iOS con un solo código.",
+            "c": "Multiplataforma compilado (React Native o Flutter): una sola base de código y un solo equipo."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 3 · §5.2",
+          "explicacion": "Llegar a las dos plataformas con un solo equipo y presupuesto ajustado apunta al multiplataforma compilado; las capacidades que necesita están cubiertas por bibliotecas maduras."
+        },
+        {
+          "numero": 7,
+          "pregunta": "Dentro del multiplataforma compilado, ¿qué framework aprovecha directamente la experiencia del equipo municipal?",
+          "opciones": {
+            "a": "Flutter, porque Dart es el mismo lenguaje que el JavaScript que ya domina el equipo web.",
+            "b": ".NET MAUI, porque se programa en TypeScript con el modelo de componentes de React.",
+            "c": "React Native, que reutiliza su conocimiento de JavaScript y del modelo de componentes de React."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 3 · §4.2.1",
+          "explicacion": "React Native se escribe en JavaScript/TypeScript con el modelo de componentes de React; Flutter usa Dart y .NET MAUI, C#."
+        },
+        {
+          "numero": 8,
+          "pregunta": "El perfil web del equipo haría defendible un híbrido de contenedor web. ¿Por qué se descarta en este supuesto?",
+          "opciones": {
+            "a": "Porque penalizaría el rendimiento con las listas de avisos y las fotografías.",
+            "b": "Porque un híbrido de contenedor web no puede publicarse en Google Play ni en la App Store.",
+            "c": "Porque un híbrido de contenedor web no tiene ninguna forma de acceder a la cámara del móvil."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 3 · §4.1.1",
+          "explicacion": "Toda la interfaz se renderiza en un WebView y cada llamada al hardware atraviesa el puente, lo que se nota en listas largas y gráficos."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿Cuál es el principal riesgo a medio plazo del enfoque multiplataforma elegido para la app de avisos?",
+          "opciones": {
+            "a": "La duplicación del esfuerzo, al tener que mantener dos bases de código sincronizadas funcionalmente.",
+            "b": "La dependencia de un tercero: que el framework tarde en soportar una versión nueva de Android o de iOS.",
+            "c": "La falta de soporte de los componentes nativos, que React Native sustituye por un WebView propio."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 4 · §5.2",
+          "explicacion": "Si el framework tarda en soportar una versión nueva del sistema o una biblioteca clave queda sin mantenimiento, el proyecto queda expuesto."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Qué medida mitiga ese riesgo en la contratación de la app de avisos?",
+          "opciones": {
+            "a": "Elegir un framework con respaldo corporativo y comunidad amplia, y limitar las dependencias de terceros.",
+            "b": "Congelar la versión objetivo de la API de Android para no tener que adaptar nunca la aplicación.",
+            "c": "Prever la conversión de la app en PWA en cuanto aparezca una versión nueva de iOS."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 4 · §5.2",
+          "explicacion": "Un framework respaldado y con comunidad, pocas dependencias, mantenimiento evolutivo exigido en el contrato y la opción de escribir módulos nativos reducen la exposición."
+        }
+      ]
+    },
+    {
+      "caso": 2,
+      "titulo": "Ciclo de vida, trabajo sin conexión y sincronización",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "Un vecino gira el móvil mientras redacta el aviso y el texto desaparece. ¿Cuál es la causa técnica en Android?",
+          "opciones": {
+            "a": "El giro pasa la app al estado Suspended y el sistema la termina para liberar memoria.",
+            "b": "El giro es un cambio de configuración que, por defecto, destruye y recrea la Activity.",
+            "c": "El giro dispara onPause(), cuya función es vaciar los campos de texto de la pantalla."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 1 · §2.1.1",
+          "explicacion": "Girar el dispositivo es un cambio de configuración que destruye y recrea la Activity; el estado no guardado se pierde."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Qué mecanismos evitan que se borre el texto del aviso al girar el dispositivo?",
+          "opciones": {
+            "a": "Guardarlo en onDestroy(), que se ejecuta siempre antes de recrear la Activity, y releerlo en onResume().",
+            "b": "Declarar la orientación en el AndroidManifest.xml como permiso peligroso concedido en tiempo de ejecución.",
+            "c": "Guardarlo en onSaveInstanceState() con un Bundle y restaurarlo en onCreate(), o conservarlo en un ViewModel."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 1 · §2.1.1",
+          "explicacion": "El estado transitorio se guarda en un Bundle con onSaveInstanceState() y se restaura en onCreate(); el ViewModel sobrevive a la recreación. onDestroy() puede no llegar a ejecutarse."
+        },
+        {
+          "numero": 3,
+          "pregunta": "Para que el vecino del aparcamiento subterráneo no pierda su aviso, ¿de dónde debe leer y escribir siempre la pantalla?",
+          "opciones": {
+            "a": "Del repositorio local (SQLite vía Room o Core Data), que es la única fuente de verdad de la interfaz.",
+            "b": "De la respuesta más reciente del servidor, guardada en memoria hasta que vuelva la cobertura.",
+            "c": "De la caché HTTP del sistema operativo, que almacena los POST pendientes de enviar."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 2 · §2.3.2",
+          "explicacion": "En el patrón offline-first la interfaz trabaja siempre contra la copia local y nunca espera a la red."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Cómo sabe la app qué avisos redactados sin cobertura quedan aún por enviar al servidor?",
+          "opciones": {
+            "a": "Porque el servidor los reclama al dispositivo mediante una notificación push en cuanto hay red.",
+            "b": "Porque permanecen en el hilo principal, bloqueados, hasta que el sistema detecta la conexión.",
+            "c": "Porque forman una cola de operaciones pendientes, con los registros marcados como sincronizado = false."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 2 · §2.3.2",
+          "explicacion": "La cola de operaciones pendientes registra con una marca de estado lo que aún no ha llegado al servidor."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Qué pieza envía los avisos pendientes cuando hay red, batería y el sistema lo permite?",
+          "opciones": {
+            "a": "Un Broadcast Receiver en Android y un segue en iOS, que reenvían el aviso al recuperar cobertura.",
+            "b": "Un planificador de trabajo diferido del sistema: WorkManager en Android y BGTaskScheduler en iOS.",
+            "c": "Un Content Provider en Android y Core Data en iOS, que publican el aviso directamente en la sede."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 2 · §2.3.2",
+          "explicacion": "WorkManager y BGTaskScheduler ejecutan la sincronización cuando se cumplen las condiciones de red, batería y oportunidad del sistema."
+        },
+        {
+          "numero": 6,
+          "pregunta": "Un vecino con mala cobertura pulsa «Enviar» y su aviso aparece duplicado en la sede. ¿Qué ha ocurrido?",
+          "opciones": {
+            "a": "El POST llegó al servidor, pero la respuesta se perdió y el cliente reintentó, creando un segundo aviso.",
+            "b": "El POST nunca llegó al servidor, que generó por su cuenta dos avisos al recibir la reconexión.",
+            "c": "El servidor repite cada POST por diseño para garantizar la entrega a través de redes inalámbricas."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 3 · §2.3.2",
+          "explicacion": "El cliente interpretó como fallo la falta de respuesta a una petición que sí se había procesado, y al reintentarla creó otro aviso."
+        },
+        {
+          "numero": 7,
+          "pregunta": "En la corrección de los duplicados, ¿qué debe hacer la app (el cliente)?",
+          "opciones": {
+            "a": "Generar un UUID nuevo en cada reintento, para que el servidor distinga cada intento de envío.",
+            "b": "Generar un UUID de operación al crear el aviso y enviarlo idéntico en todos los reintentos.",
+            "c": "Dejar de reintentar y pedir al vecino que repita el aviso completo al recuperar la cobertura."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 3 · §2.3.2",
+          "explicacion": "El identificador debe ser el mismo en todos los reintentos para que el servidor reconozca que se trata de la misma operación."
+        },
+        {
+          "numero": 8,
+          "pregunta": "¿Y qué debe hacer el servidor municipal cuando recibe un aviso con un identificador de operación que ya tiene registrado?",
+          "opciones": {
+            "a": "Crear el aviso de nuevo y borrar el duplicado más antiguo mediante un proceso nocturno.",
+            "b": "Responder con un error para que la app muestre al vecino que el envío ha fallado.",
+            "c": "Tratarlo como clave de idempotencia y devolver el aviso ya creado en lugar de crear otro."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 3 · §2.3.2",
+          "explicacion": "Con la idempotencia en el servidor, reintentar deja de ser peligroso, que es la condición para que el modo offline sea viable."
+        },
+        {
+          "numero": 9,
+          "pregunta": "El envío del aviso se programó llamando a la API desde el manejador del botón. ¿Qué efecto tiene?",
+          "opciones": {
+            "a": "Bloquea el hilo principal: en Android aparece el diálogo ANR y en iOS la interfaz se congela.",
+            "b": "Obliga a solicitar de nuevo el permiso de red cada vez que el vecino pulsa el botón de envío.",
+            "c": "Provoca el rechazo de la app en la revisión de las tiendas por usar una API privada del sistema."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 4 · §2.1.1",
+          "explicacion": "La interfaz solo puede tocarse desde el hilo principal y este nunca debe bloquearse; si se bloquea, Android muestra el ANR y en iOS el watchdog puede matar la app."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Cómo se corrige ese envío en Kotlin y en Swift?",
+          "opciones": {
+            "a": "Moviendo la llamada a onPause() en Kotlin y a viewDidLoad() en Swift, que no bloquean la interfaz.",
+            "b": "Sustituyendo la llamada REST por un Intent implícito en Kotlin y por un segue en Swift.",
+            "c": "Con una corrutina en Dispatchers.IO en Kotlin y con async/await en Swift, devolviendo solo el resultado a la interfaz."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 4 · §2.3.1",
+          "explicacion": "La petición se ejecuta en un hilo secundario (withContext(Dispatchers.IO) o Task con await) y solo el resultado vuelve al hilo de interfaz."
+        }
+      ]
+    },
+    {
+      "caso": 3,
+      "titulo": "Accesibilidad, permisos, seguridad y publicación",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "¿Qué norma obliga a la app municipal de avisos a ser accesible?",
+          "opciones": {
+            "a": "El Reglamento General de Protección de Datos, por su principio de minimización de datos.",
+            "b": "El Esquema Nacional de Seguridad, que exige el nivel AA a las aplicaciones del sector público.",
+            "c": "El Real Decreto 1112/2018, con la norma EN 301 549 (WCAG en nivel AA) como referencia técnica."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 1 · §2.2.1",
+          "explicacion": "El RD 1112/2018 extiende la accesibilidad del sector público a las aplicaciones para dispositivos móviles y toma como referencia la EN 301 549."
+        },
+        {
+          "numero": 2,
+          "pregunta": "El botón para adjuntar la fotografía es un simple icono. ¿Qué hay que comprobar para que lo use un vecino ciego?",
+          "opciones": {
+            "a": "Que tenga contentDescription en Android y accessibilityLabel en iOS, para TalkBack y VoiceOver.",
+            "b": "Que el icono tenga un contraste de al menos 4,5:1, que es lo que leen TalkBack y VoiceOver.",
+            "c": "Que el icono mida al menos 48×48 dp, tamaño a partir del cual el lector de pantalla lo anuncia."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 1 · §2.2.1",
+          "explicacion": "Un icono sin etiqueta es invisible para un lector de pantalla: TalkBack lo leería solo como «botón»."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Cómo deben gestionarse en Android los permisos de cámara y de ubicación de la app?",
+          "opciones": {
+            "a": "Son normales: se declaran en el AndroidManifest.xml y el sistema los concede al instalar la app.",
+            "b": "Son peligrosos: se declaran en el AndroidManifest.xml y se solicitan en tiempo de ejecución.",
+            "c": "Son especiales: el vecino debe activarlos a mano en los ajustes, sin diálogo dentro de la app."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 2 · §3.1.2",
+          "explicacion": "Cámara y localización afectan a datos personales: se piden en ejecución, comprobando antes si ya están concedidos, y el usuario puede revocarlos."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Qué elemento adicional exige iOS para pedir la cámara y la ubicación?",
+          "opciones": {
+            "a": "Una cadena de descripción de uso en Info.plist, como NSCameraUsageDescription.",
+            "b": "Una capability de notificaciones push en el fichero de entitlements firmado con la app.",
+            "c": "Una declaración de cada permiso en el AndroidManifest.xml compartido con la versión de Android."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 2 · §3.2.2",
+          "explicacion": "La descripción de uso se muestra literalmente al usuario en el diálogo de consentimiento y, si falta, la app se rechaza en la revisión."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Un vecino deniega el permiso de ubicación. ¿Cómo debe comportarse la app de avisos?",
+          "opciones": {
+            "a": "Bloquear el envío del aviso hasta que el vecino conceda el permiso desde los ajustes.",
+            "b": "Cerrarse y mostrar un mensaje que invite a reinstalarla para volver a solicitar el permiso.",
+            "c": "Degradarse: ofrecer la introducción manual de la dirección, sin bloquear el envío del aviso."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 2 · §1.1.1",
+          "explicacion": "La app debe funcionar de forma degradada, sin fallar, cuando se deniega un permiso, y explicar para qué serviría."
+        },
+        {
+          "numero": 6,
+          "pregunta": "El proveedor guarda el token de sesión en SharedPreferences. ¿Cómo se corrige?",
+          "opciones": {
+            "a": "Trasladándolo a UserDefaults en iOS y a un fichero del almacenamiento externo en Android.",
+            "b": "Trasladándolo al Keystore de Android (o al Keychain en iOS), que es almacenamiento seguro.",
+            "c": "Manteniéndolo en SharedPreferences, pero cifrando el nombre de la clave con que se guarda."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 3 · §2.1.2",
+          "explicacion": "Las preferencias no son almacenamiento seguro; credenciales y tokens van al Keystore o al Keychain («almacenamiento inseguro», OWASP Mobile)."
+        },
+        {
+          "numero": 7,
+          "pregunta": "La clave de la API de mapas está incrustada en una constante del código. ¿Cuál es la corrección adecuada?",
+          "opciones": {
+            "a": "Ofuscar el código antes de compilar, para que la clave no pueda leerse en el paquete.",
+            "b": "Sacarla del cliente y enrutar las llamadas por el servidor municipal, que custodia la clave.",
+            "c": "Moverla a un fichero de recursos de la app, separado del código fuente compilado."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 3 · §5.1",
+          "explicacion": "Todo secreto embarcado en la app debe considerarse público, porque el paquete instalado es analizable por ingeniería inversa."
+        },
+        {
+          "numero": 8,
+          "pregunta": "La comprobación de que el aviso pertenece al ciudadano se hace en la app. ¿Qué problema crea y cómo se resuelve?",
+          "opciones": {
+            "a": "Una referencia directa insegura a objetos (IDOR); la autorización se comprueba en el servidor.",
+            "b": "Un XSS dentro del WebView; la comprobación se mueve a un plugin nativo de la propia app.",
+            "c": "Un almacenamiento inseguro; la comprobación se guarda cifrada en el Keychain del móvil."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 3 · §5.1",
+          "explicacion": "El cliente es manipulable: las comprobaciones de autorización decisivas se hacen siempre en el servidor."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿Qué paquete se envía a cada tienda para publicar la app de avisos?",
+          "opciones": {
+            "a": "Un IPA a Google Play y un AAB a App Store Connect, ambos firmados con Play App Signing.",
+            "b": "Un AAB firmado a Google Play y un IPA generado en Xcode a App Store Connect.",
+            "c": "El mismo APK firmado a las dos tiendas, porque la app es multiplataforma compilada."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 4 · §5.3",
+          "explicacion": "Google Play exige AAB para las apps nuevas desde agosto de 2021; la App Store recibe un IPA enviado desde Xcode a App Store Connect."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Qué estrategia de despliegue es la más prudente para la app de avisos?",
+          "opciones": {
+            "a": "Publicación simultánea al 100 % en ambas tiendas, para que todos los vecinos actualicen a la vez.",
+            "b": "Beta abierta en Google Play y, sin pasar por TestFlight, publicación directa al 100 % en la App Store.",
+            "c": "Canal interno y TestFlight, beta cerrada con vecinos y publicación por fases al 5 %, 20 % y 100 %."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 4 · §5.3",
+          "explicacion": "Desplegar por fases vigilando la tasa de fallos permite detener el despliegue sin afectar a toda la ciudadanía; además hay que reservar margen para la revisión humana de Apple."
+        }
+      ]
+    }
+  ]
+}

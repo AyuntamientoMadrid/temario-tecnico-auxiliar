@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, la cobertura de la red municipal en el nivel −3 del aparcamiento es nula. ¿En qué modo deben trabajar las dotaciones que descienden a ese nivel?",
+    "o": [
+     "En modo troncalizado (TMO), porque la cobertura marginal del nivel −1 basta para llegar al −3.",
+     "En modo directo (DMO), porque no hay cobertura de red; se oirán entre ellas, pero el CISEM no.",
+     "En modo troncalizado con prioridad con desalojo, que amplía la cobertura de la célula al subsuelo."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §2.2.2",
+    "e": "El modo directo funciona sin infraestructura: los terminales se comunican entre sí. La contrapartida es que la comunicación no llega a la red y, por tanto, el CISEM no la oye."
+   },
+   {
+    "q": "¿En qué modo deben trabajar el mando del incidente, la Policía Municipal en superficie y el CISEM?",
+    "o": [
+     "En modo troncalizado (TMO), que es donde hay despacho, grabación y visión de posiciones.",
+     "En modo directo (DMO), para no consumir canales en una red del centro que está saturada.",
+     "En modo directo a través de un DM-REP, que permite al CISEM grabar las comunicaciones."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.2.2",
+    "e": "Quien tiene cobertura debe trabajar en TMO: la red aporta el despacho desde el centro, la grabación y la localización. El DM-REP no conecta con la red."
+   },
+   {
+    "q": "¿Qué función debe configurarse en el vehículo de mando estacionado en la rampa para que el CISEM no pierda a las dotaciones del nivel −3?",
+    "o": [
+     "DM-REP (repetidor), que retransmite el modo directo con más potencia hasta la consola del CISEM.",
+     "Repliegue local de la estación base, que enlaza el modo directo con el núcleo de la red troncalizada.",
+     "DM-GATE (pasarela), que recibe en modo directo y reinyecta la comunicación en la red troncalizada."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §2.2.3",
+    "e": "La pasarela DM-GATE une el modo directo con la red troncalizada y devuelve al CISEM la audición, la posibilidad de hablar con el interior y la grabación."
+   },
+   {
+    "q": "Si en la rampa se desplegara únicamente un DM-REP, ¿qué ocurriría?",
+    "o": [
+     "Las dotaciones se oirían más lejos entre sí, pero el CISEM seguiría sin enterarse de nada.",
+     "El CISEM oiría a las dotaciones del nivel −3, pero no podría hablar con ellas ni grabarlas.",
+     "Las dotaciones volverían automáticamente a TMO al quedar dentro del alcance del repetidor."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.2.3",
+    "e": "El repetidor de modo directo amplía el alcance dentro del modo directo sin tocar la red: lo que entra en DMO sale en DMO. Solo la pasarela conecta con la red."
+   },
+   {
+    "q": "¿Por qué conviene que la pasarela sea el equipo embarcado del vehículo y no el portátil de un agente?",
+    "o": [
+     "Porque los portátiles de 1 W no admiten el modo directo, exclusivo de los embarcados.",
+     "Porque el equipo embarcado de 10 W tiene bastante más alcance que el portátil de 1 W.",
+     "Porque solo los equipos de 10 W pueden afiliarse a grupos creados desde la consola."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §2.2.3",
+    "e": "Los equipos embarcados de gama profesional pueden actuar como DM-REP o DM-GATE, y su mayor potencia les da más alcance, lo que convierte al vehículo en el nodo de la intervención."
+   },
+   {
+    "q": "¿Qué función ha usado el operador del CISEM para crear el grupo INC-0340-SALAMANCA y cargarlo en los terminales de las unidades?",
+    "o": [
+     "La DGNA, que asigna al grupo una frecuencia física exclusiva programada en cada terminal.",
+     "La ISI, que reprograma el grupo en cada terminal a través de su interfaz de datos PEI.",
+     "La DGNA, que crea el grupo como entidad lógica y lo carga por el aire en los terminales."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §4.1.1",
+    "e": "La asignación dinámica de grupos crea el grupo y lo carga desde la consola sin tocar los equipos. En TETRA el grupo es una entidad lógica (GSSI), no una frecuencia; en radio convencional habría que reprogramar equipo por equipo."
+   },
+   {
+    "q": "Un terminal se afilia a INC-0340-SALAMANCA cuando la conversación del grupo ya ha empezado. ¿Qué ocurre?",
+    "o": [
+     "Debe esperar a que termine la conversación, porque la red solo avisa a los terminales al iniciarse cada llamada.",
+     "Se incorpora a ella por la entrada tardía, posible porque la trama 18 de cada multitrama se reserva a señalización.",
+     "Se incorpora gracias a la hipertrama, que repite la llamada de grupo completa cada 61,2 segundos de duración."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §4.1.1",
+    "e": "La trama de control (la 18.ª de cada multitrama) permite a la red avisar a un terminal sin interrumpir el tráfico; por eso quien se afilia con la llamada iniciada se incorpora a ella."
+   },
+   {
+    "q": "Con la red del centro saturada por otro operativo y sin ningún canal libre, ¿qué escalón de prioridad permite que una llamada del incidente corte otra de prioridad inferior?",
+    "o": [
+     "La prioridad de acceso, que ordena la cola de espera.",
+     "La entrada tardía, que libera el canal más antiguo.",
+     "La prioridad con desalojo (pre-emptive priority)."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §4.1.2",
+    "e": "La prioridad de acceso solo ordena la cola sin cortar a nadie; la prioridad con desalojo corta una comunicación en curso de prioridad inferior cuando no hay canal libre. Por encima está la llamada de emergencia."
+   },
+   {
+    "q": "Un bombero del nivel −1 pulsa el botón de emergencia de su terminal. ¿Qué se produce?",
+    "o": [
+     "Establecimiento inmediato con máxima prioridad y desalojo, alarma con su identidad en el CISEM y canal de voz abierto sin pulsar el PTT.",
+     "Envío de un mensaje de estado al CISEM, que lo encola por prioridad de acceso sin cortar ninguna de las llamadas en curso.",
+     "Paso automático del terminal a modo directo, para que las dotaciones cercanas le oigan sin depender de la red."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §4.1.2",
+    "e": "La llamada de emergencia es el nivel máximo: entra con desalojo en el grupo de emergencia, alerta a la consola con la identidad y, si se envía, la posición, y abre un canal de voz para que el centro oiga lo que ocurre aunque el agente esté incapacitado."
+   },
+   {
+    "q": "La estación base que cubre la zona tiene 3 portadoras y dedica un intervalo al canal de control. ¿Cuántas conversaciones simultáneas admite esa célula?",
+    "o": [
+     "12: el intervalo de control también cursa voz cuando la célula se satura.",
+     "11: 3 portadoras × 4 intervalos son 12 canales físicos, menos 1 de control.",
+     "9: cada portadora reserva un intervalo a señalización, y quedan 3 × 3."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §1.2 · §3.4",
+    "e": "Cada portadora de 25 kHz se divide en 4 intervalos TDMA: 12 canales físicos. Solo uno se dedica al canal de control principal, de modo que quedan 11 para tráfico."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "La oferta propone configurar TEA1 «por ser el de exportación libre». ¿Por qué es inaceptable?",
+    "o": [
+     "Porque su clave de 80 bits se reduce deliberadamente a unos 32 bits efectivos y se rompe en minutos (CVE-2022-24402).",
+     "Porque su clave de 128 bits es incompatible con los terminales de exportación libre del parque municipal actual.",
+     "Porque es un algoritmo sin clave que solo cifra la señalización y deja la voz del interfaz aire en claro."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §4.3.2",
+    "e": "La clave de 80 bits de TEA1 se comprime a unos 32 bits efectivos, lo que permite romperla por fuerza bruta en minutos con un ordenador doméstico. La TCCA ha confirmado que la reducción fue intencionada (Acuerdo de Wassenaar)."
+   },
+   {
+    "q": "La oferta deja además TEA2 activo «por compatibilidad». ¿Mejora eso la seguridad de la red si TEA1 sigue soportado?",
+    "o": [
+     "Sí: los terminales negocian siempre el algoritmo más fuerte disponible, de modo que TEA1 nunca llegaría a usarse.",
+     "Sí: TEA2 no tiene ninguna relación con TEA1, y basta con reservarlo para los grupos de conversación sensibles.",
+     "No: en redes multicifrado, soportar TEA1 permite recuperar también la clave de los demás algoritmos (CVE-2025-52943)."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §4.3.2",
+    "e": "La divulgación de agosto de 2025 demostró que admitir TEA1 junto a otros algoritmos compromete también a estos. No basta con dejar de usar TEA1: hay que dejar de soportarlo."
+   },
+   {
+    "q": "¿Qué exigencia concreta sobre algoritmos debe incorporarse al pliego de los 1.200 terminales?",
+    "o": [
+     "Desaconsejar TEA1 y exigir que los terminales lo conserven solo como algoritmo de reserva ante fallos.",
+     "Prohibir expresamente TEA1 y exigir capacidad de migración a TEA set B (TEA5, TEA6 y TEA7) y a TAA2.",
+     "Exigir TEA7 en sustitución de TEA2, por ser el algoritmo civil de 192 bits del TEA set B de la TCCA."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §4.3.2",
+    "e": "TEA1 debe prohibirse, no desaconsejarse. En el TEA set B, TEA5 sustituye a TEA2, TEA6 a TEA3 y TEA7 a TEA1; TEA5 y TEA6 usan claves de 192 bits y TEA7 conserva una reducción efectiva a 56 bits."
+   },
+   {
+    "q": "La red operaría en clase SC2 «para evitar la carga del centro de autenticación». ¿Qué clase debe exigirse?",
+    "o": [
+     "SC1, que evita la carga del centro de autenticación sin renunciar al cifrado del interfaz aire.",
+     "SC2 con una clave estática más larga, que da la misma protección que SC3 sin autenticar.",
+     "SC3, con clave derivada (DCK) y clave común (CCK), que exige autenticación, preferiblemente mutua."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §4.3.1",
+    "e": "SC2 cifra con una clave estática precargada, la misma para todos y durante mucho tiempo; SC1 no cifra. SC3 usa una clave distinta por terminal que se renueva, y la autenticación mutua protege frente a una estación base falsa."
+   },
+   {
+    "q": "¿Por qué una red TETRA que no autentica queda condenada a la clave estática?",
+    "o": [
+     "Porque la DCK se deriva del propio proceso de autenticación: sin autenticación no hay clave derivada.",
+     "Porque la DCK se distribuye cifrada con la SCK, que solo existe en las redes que no autentican.",
+     "Porque la clave K viaja por el aire durante la autenticación y sin ella no se puede generar la CCK."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §4.3.1",
+    "e": "Autenticar y cifrar están encadenados: del proceso de autenticación se deriva la DCK, propia de cada terminal y sesión. La clave K nunca se transmite por el aire."
+   },
+   {
+    "q": "La oferta no incluye distribución de claves por el aire: se renovarían recogiendo los terminales en el almacén una vez al año. ¿Qué debe exigirse?",
+    "o": [
+     "Una renovación semestral en el almacén, que es la periodicidad mínima que fija el ENS para las claves.",
+     "OTAR y un procedimiento de inhabilitación remota (stun y kill) para terminales perdidos o robados.",
+     "Claves estáticas de mayor longitud, que no necesitan renovarse durante la vida útil de los terminales."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §4.3.1",
+    "e": "Recoger 1.200 terminales impide reaccionar ante un compromiso de clave o la baja de un usuario. OTAR permite renovar las claves de miles de terminales sin recogerlos."
+   },
+   {
+    "q": "El fabricante alega que «el cifrado de interfaz aire ya protege la comunicación de punta a punta». ¿Qué debe responderse?",
+    "o": [
+     "Que es falso: ese cifrado se descifra en la estación base y desde ahí la comunicación circula en claro por la infraestructura.",
+     "Que es cierto: el cifrado de interfaz aire acompaña a la comunicación hasta que la descifra el terminal receptor.",
+     "Que es cierto si la red trabaja en SC3, porque esa clase extiende el cifrado hasta la consola del centro de despacho."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §4.3.2 · §4.3.3",
+    "e": "El cifrado de interfaz aire protege el tramo terminal ↔ estación base. El cifrado extremo a extremo cifra en el terminal emisor y descifra en el receptor; son complementarios, no alternativos."
+   },
+   {
+    "q": "¿Frente a quién NO protege el cifrado de interfaz aire de la red municipal?",
+    "o": [
+     "Frente a quien escuche con un receptor el tramo radio entre el terminal y la estación base.",
+     "Frente al operador de la red y al personal con acceso a los equipos o a las grabaciones.",
+     "Frente a quien capte por radio la señalización que intercambian el terminal y la red."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §4.3.3",
+    "e": "Como se descifra en la estación base, no protege frente a quien accede a la infraestructura: el operador, el personal técnico, las grabaciones o un compromiso de los enlaces de transporte. Sí protege el tramo radio."
+   },
+   {
+    "q": "Si finalmente se implanta cifrado extremo a extremo, ¿qué debe exigir el pliego?",
+    "o": [
+     "Basta exigir «cifrado extremo a extremo», porque el ETSI impone un único algoritmo común a todos los fabricantes.",
+     "Basta exigir AES-128, que garantiza por sí solo 128 bits de entropía efectiva en cualquier implementación.",
+     "Algoritmo y longitud de clave nombrados, protección frente a repetición, autenticación del contenido y derecho de auditoría."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §4.3.3",
+    "e": "El ETSI no impone algoritmo de cifrado extremo a extremo. La CVE-2025-52941 halló una variante de AES-128 con entropía efectiva de 56 bits, y otras CVE de 2025 describen repetición e inyección de voz."
+   },
+   {
+    "q": "Se propone conectar las consolas de despacho al segmento de la ofimática municipal. ¿Qué medida del ENS lo impide y qué exige en categoría MEDIA?",
+    "o": [
+     "mp.com.4, separación de flujos de información en la red, que en MEDIA exige [R1 o R2 o R3].",
+     "mp.com.4, separación de flujos de información en la red, que en MEDIA todavía no se aplica.",
+     "op.exp.10, protección de claves criptográficas, que exige que las consolas estén en otro edificio."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · §5.2 · mp.com.4 ENS",
+    "e": "mp.com.4 obliga a segregar el tráfico; en MEDIA exige uno de los refuerzos (segmentación lógica con VLAN, VPN o medios físicos separados), y en BÁSICA no aplicaría."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "Un informe interno afirma que el Ayuntamiento tiene concedidas las frecuencias «a perpetuidad por su condición de Administración pública». ¿Cuál es el punto de partida para corregirlo?",
+    "o": [
+     "El espectro es dominio público municipal dentro del término del Ayuntamiento, aunque su uso esté sujeto a inscripción registral.",
+     "Las frecuencias solo se conceden a perpetuidad a la Administración General del Estado, y no a las entidades locales.",
+     "El espectro es dominio público cuya titularidad corresponde al Estado: el Ayuntamiento solo tiene un derecho de uso con título habilitante."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §5.2 · art. 85.1 Ley 11/2022",
+    "e": "Conforme al artículo 85.1 de la Ley 11/2022, el espectro radioeléctrico es un bien de dominio público cuya titularidad y administración corresponden al Estado."
+   },
+   {
+    "q": "¿Qué modalidad de uso del espectro corresponde a la red de radio municipal?",
+    "o": [
+     "Uso común, como el de las redes Wi-Fi abiertas.",
+     "Uso privativo en régimen de autoprestación.",
+     "Uso especial, por ser el titular una Administración."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §5.2 · art. 88.1 Ley 11/2022",
+    "e": "El uso privativo es la explotación en exclusiva o por un número limitado de usuarios de determinadas frecuencias en un mismo ámbito físico (art. 88.1); la red municipal la explota el propio Ayuntamiento para sus servicios, es decir, en autoprestación."
+   },
+   {
+    "q": "Para la renovación, alguien propone solicitar una concesión. ¿Es correcto?",
+    "o": [
+     "No: la concesión exige ser operador (art. 88.6); a una Administración en autoprestación le corresponde la afectación demanial.",
+     "Sí: la concesión demanial es el título propio de las Administraciones públicas para el uso privativo del espectro.",
+     "No: lo que procede es una autorización individual, como a cualquier otro usuario en régimen de autoprestación."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §5.2 · art. 88.5.b) Ley 11/2022",
+    "e": "Conforme al artículo 88.5.b) de la Ley 11/2022, el uso privativo para autoprestación se otorga por autorización individual «salvo en el caso de Administraciones públicas, que requerirán de afectación demanial»."
+   },
+   {
+    "q": "¿Qué duración tiene el derecho de uso privativo que se renueva?",
+    "o": [
+     "Indefinida, mientras el Ayuntamiento siga pagando la tasa por reserva del dominio público radioeléctrico.",
+     "Hasta el 31 de diciembre del año en que cumpla su quinto año de vigencia, renovable por periodos de cinco años.",
+     "Diez años improrrogables, tras los cuales hay que solicitar un título habilitante completamente nuevo."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §5.2 · art. 94.1 Ley 11/2022",
+    "e": "El artículo 94.1 de la Ley 11/2022 fija la duración de los derechos de uso privativo sin limitación de número: hasta el 31 de diciembre del año natural en que cumplan su quinto año de vigencia, renovables por periodos de cinco años."
+   },
+   {
+    "q": "Se propone dar servicio a limpieza viaria y a parques y jardines «en la banda de emergencias, que es la nuestra». ¿Es posible?",
+    "o": [
+     "Sí: la banda de emergencias corresponde al Ayuntamiento por su condición de Administración pública titular de la red.",
+     "Sí, siempre que limpieza y parques usen grupos de conversación distintos de los de Policía Municipal y Bomberos.",
+     "No: la nota UN-28 reserva 380-385 / 390-395 MHz a redes de seguridad del Estado y de emergencias, y esos servicios no lo son."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §3.1 · nota UN-28 CNAF",
+    "e": "La banda la determina el servicio que se presta, no la condición del solicitante. La nota UN-28 reserva esas subbandas a redes de seguridad de las Fuerzas y Cuerpos de Seguridad del Estado y a redes de servicios de emergencia."
+   },
+   {
+    "q": "¿Qué banda correspondería a la red de limpieza viaria y de parques y jardines?",
+    "o": [
+     "410-415,3 / 420-425,3 MHz (nota UN-31), con canalización de 25 kHz y separación dúplex de 10 MHz.",
+     "698-703 / 753-758 MHz, el bloque PPDR de banda ancha reservado al ámbito autonómico y local.",
+     "380-385 / 390-395 MHz, con canalización de 12,5 kHz para los servicios que no son de emergencia."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 2 · §3.1 · nota UN-31 CNAF",
+    "e": "La nota UN-31 destina esas subbandas a «sistemas digitales de acceso aleatorio de canales (TETRA y otros)». El bloque de 698-703 / 753-758 MHz es para banda ancha PPDR, no para servicios municipales generales."
+   },
+   {
+    "q": "Un proveedor propone sustituir la red TETRA por teléfonos comerciales con una aplicación de push-to-talk. ¿Cuál de estos argumentos rebate correctamente la propuesta?",
+    "o": [
+     "TETRA ofrece mucho más caudal de datos que las redes móviles comerciales de banda ancha para vídeo y cartografía.",
+     "La telefonía móvil comercial no admite ningún tipo de comunicación de grupo entre varios usuarios a la vez.",
+     "En una red comercial el Ayuntamiento no decide a quién se desaloja, y un móvil no se comunica con otro si cae la red."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · §5.1 · §5.3",
+    "e": "TETRA ofrece prioridad y desalojo gobernados por el titular de la red y modo directo sin infraestructura. Su punto débil es el caudal (28,8 kbit/s en Release 1), y la telefonía comercial sí tiene grupos, aunque de establecimiento lento."
+   },
+   {
+    "q": "¿Qué tiempo de establecimiento de llamada de grupo ofrece TETRA, frente a la telefonía comercial?",
+    "o": [
+     "Por debajo de 300 ms, frente a segundos.",
+     "Por debajo de 3 s, frente a varios minutos.",
+     "Por debajo de 30 ms, frente a unos 300 ms."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §5.1",
+    "e": "El establecimiento de la llamada de grupo por debajo de 300 ms es uno de los rasgos que distinguen la radiocomunicación móvil privada de la telefonía celular pública."
+   },
+   {
+    "q": "Durante el apagón del 28 de abril de 2025 la red municipal de radio siguió operativa. ¿Qué lección de fondo debe extraerse?",
+    "o": [
+     "Que la red TETRA no depende de la energía eléctrica, porque sus terminales portátiles funcionan con batería.",
+     "Que un servicio crítico solo es resiliente si lo son todas sus dependencias, empezando por la energía (mp.if.4 ENS).",
+     "Que la telefonía comercial es igual de resiliente si se contratan tarifas con prioridad para emergencias."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §5.3 · mp.if.4 ENS",
+    "e": "La red siguió operativa gracias al respaldo energético de los emplazamientos (baterías en los repetidores). Cada emplazamiento debe tener baterías para varias horas y, en los principales, grupo electrógeno, con respaldo en mp.if.4."
+   },
+   {
+    "q": "¿Qué vía de evolución es defendible y qué espectro tiene reservado el CNAF para las redes locales?",
+    "o": [
+     "Sustitución inmediata de TETRA por MCPTT, con el bloque de 733-736 / 788-791 MHz reservado al ámbito local.",
+     "Sustitución de TETRA por TEDS, que no necesita más espectro por canal y libera la banda TETRA del Ayuntamiento.",
+     "Coexistencia: TETRA para la voz crítica y banda ancha (MCPTT, Release 13) para el caudal, con 698-703 / 753-758 MHz."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §5.4",
+    "e": "El modelo es de coexistencia por fases. El CNAF reserva 733-736 / 788-791 MHz al sistema PPDR nacional y 698-703 / 753-758 MHz a las redes autonómicas y locales. TEDS amplía TETRA, pero exige más espectro por canal."
+   }
+  ]
+ }
+]

@@ -1,0 +1,27 @@
+<svg aria-label="Taxonomía del código malicioso separando la clasificación por forma de propagación (virus, gusano, troyano y bomba lógica) de la clasificación por carga útil (secuestro de datos, programa espía, puerta trasera, encubridor y red de equipos zombi), más los vectores de infección y su contramedida en el Esquema Nacional de Seguridad" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.t10{font:700 10.5px system-ui,sans-serif;fill:#fff}.s10{font:8.5px system-ui,sans-serif;fill:#fff}.d10{font:9px system-ui,sans-serif;fill:#333}.h10{font:700 13px system-ui,sans-serif;fill:#0055a0}.k10{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n10{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h10" text-anchor="middle" x="340" y="20">Dos clasificaciones distintas: cómo se propaga y qué hace</text>
+<text class="k10" x="20" y="42">A · POR SU FORMA DE PROPAGACIÓN</text>
+<rect fill="#0055a0" height="52" rx="5" width="155" x="20" y="50"></rect><text class="t10" text-anchor="middle" x="97" y="68">VIRUS</text><text class="s10" text-anchor="middle" x="97" y="83">necesita ANFITRIÓN</text><text class="s10" text-anchor="middle" x="97" y="96">y acción del usuario</text>
+<rect fill="#d13c3c" height="52" rx="5" width="155" x="182" y="50"></rect><text class="t10" text-anchor="middle" x="259" y="68">GUSANO</text><text class="s10" text-anchor="middle" x="259" y="83">se propaga SOLO</text><text class="s10" text-anchor="middle" x="259" y="96">por la red, sin anfitrión</text>
+<rect fill="#e89822" height="52" rx="5" width="155" x="344" y="50"></rect><text class="t10" text-anchor="middle" x="421" y="68">TROYANO</text><text class="s10" text-anchor="middle" x="421" y="83">se DISFRAZA</text><text class="s10" text-anchor="middle" x="421" y="96">y NO se replica</text>
+<rect fill="#7a2f8a" height="52" rx="5" width="154" x="506" y="50"></rect><text class="t10" text-anchor="middle" x="583" y="68">BOMBA LÓGICA</text><text class="s10" text-anchor="middle" x="583" y="83">latente hasta que</text><text class="s10" text-anchor="middle" x="583" y="96">se cumple una condición</text>
+<text class="k10" x="20" y="126">B · POR SU CARGA ÚTIL (independiente de lo anterior)</text>
+<rect fill="#eef3f8" height="40" rx="4" width="126" x="20" y="134"></rect><text class="d10" text-anchor="middle" x="83" y="150">SECUESTRO</text><text class="d10" text-anchor="middle" x="83" y="164">cifra y extorsiona</text>
+<rect fill="#eef3f8" height="40" rx="4" width="126" x="153" y="134"></rect><text class="d10" text-anchor="middle" x="216" y="150">ESPÍA</text><text class="d10" text-anchor="middle" x="216" y="164">captura teclado y datos</text>
+<rect fill="#eef3f8" height="40" rx="4" width="126" x="286" y="134"></rect><text class="d10" text-anchor="middle" x="349" y="150">PUERTA TRASERA</text><text class="d10" text-anchor="middle" x="349" y="164">acceso alternativo</text>
+<rect fill="#eef3f8" height="40" rx="4" width="126" x="419" y="134"></rect><text class="d10" text-anchor="middle" x="482" y="150">ENCUBRIDOR</text><text class="d10" text-anchor="middle" x="482" y="164">se oculta en el núcleo</text>
+<rect fill="#eef3f8" height="40" rx="4" width="108" x="552" y="134"></rect><text class="d10" text-anchor="middle" x="606" y="150">ZOMBI</text><text class="d10" text-anchor="middle" x="606" y="164">obedece a un C2</text>
+<text class="k10" x="20" y="198">VECTORES DE INFECCIÓN Y CONTRAMEDIDA DEL ENS</text>
+<rect fill="#f5f5f5" height="26" rx="4" width="300" x="20" y="206"></rect><text class="d10" x="30" y="223">Correo electrónico — adjunto o enlace</text>
+<rect fill="#eef3f8" height="26" rx="4" width="332" x="328" y="206"></rect><text class="d10" x="338" y="223">mp.s.1 protección del correo + concienciación mp.per.3</text>
+<rect fill="#f5f5f5" height="26" rx="4" width="300" x="20" y="236"></rect><text class="d10" x="30" y="253">Navegación web y descarga al paso</text>
+<rect fill="#eef3f8" height="26" rx="4" width="332" x="328" y="236"></rect><text class="d10" x="338" y="253">mp.s.3 protección de la navegación</text>
+<rect fill="#f5f5f5" height="26" rx="4" width="300" x="20" y="266"></rect><text class="d10" x="30" y="283">Soporte extraíble — memoria USB</text>
+<rect fill="#eef3f8" height="26" rx="4" width="332" x="328" y="266"></rect><text class="d10" x="338" y="283">op.exp.6.3 analizar todo fichero externo + R5 al conectar</text>
+<rect fill="#f5f5f5" height="26" rx="4" width="300" x="20" y="296"></rect><text class="d10" x="30" y="313">Servicio expuesto sin parchear</text>
+<rect fill="#eef3f8" height="26" rx="4" width="332" x="328" y="296"></rect><text class="d10" x="338" y="313">op.exp.4 actualizaciones + op.exp.2 bastionado</text>
+<rect fill="#fbeaea" height="26" rx="4" width="300" x="20" y="326"></rect><text class="d10" x="30" y="343">Cadena de suministro del software</text>
+<rect fill="#fbeaea" height="26" rx="4" width="332" x="328" y="326"></rect><text class="d10" x="338" y="343">op.ext.3 · OWASP A03:2025, nueva categoría propia</text>
+<text class="n10" text-anchor="end" x="670" y="366">[Fuente: ENS, op.exp.6; OWASP2025]</text>
+</svg>

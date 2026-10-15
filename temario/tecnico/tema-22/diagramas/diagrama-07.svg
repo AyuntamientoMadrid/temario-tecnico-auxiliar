@@ -1,0 +1,18 @@
+<svg aria-label="Comparativa entre SOAP, protocolo de mensajería con XML estricto, contrato WSDL formal y extensiones WS-star, y REST, estilo arquitectónico sobre HTTP orientado a recursos con JSON habitual y contrato opcional mediante OpenAPI" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t7{font:700 12px system-ui,sans-serif;fill:#fff}.s7{font:9.5px system-ui,sans-serif;fill:#fff}.l7{font:10.5px system-ui,sans-serif;fill:#444}.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h7" text-anchor="middle" x="340" y="20">SOAP vs. REST</text>
+<rect fill="#0055a0" height="34" rx="5" width="290" x="30" y="38"></rect><text class="t7" text-anchor="middle" x="175" y="60">SOAP</text>
+<rect fill="#2d8659" height="34" rx="5" width="290" x="360" y="38"></rect><text class="t7" text-anchor="middle" x="505" y="60">REST</text>
+<rect fill="#eef4fb" height="38" width="290" x="30" y="80"></rect><text class="l7" text-anchor="middle" x="175" y="103">Protocolo de mensajería (XML)</text>
+<rect fill="#eafaf1" height="38" width="290" x="360" y="80"></rect><text class="l7" text-anchor="middle" x="505" y="103">Estilo arquitectónico sobre HTTP</text>
+<rect fill="#f7fafd" height="38" width="290" x="30" y="120"></rect><text class="l7" text-anchor="middle" x="175" y="143">Modelo: operaciones (RPC-like)</text>
+<rect fill="#f2fbf6" height="38" width="290" x="360" y="120"></rect><text class="l7" text-anchor="middle" x="505" y="143">Modelo: recursos + verbos HTTP</text>
+<rect fill="#eef4fb" height="38" width="290" x="30" y="160"></rect><text class="l7" text-anchor="middle" x="175" y="183">Contrato: WSDL, formal y obligatorio</text>
+<rect fill="#eafaf1" height="38" width="290" x="360" y="160"></rect><text class="l7" text-anchor="middle" x="505" y="183">Contrato: opcional (OpenAPI/Swagger)</text>
+<rect fill="#f7fafd" height="38" width="290" x="30" y="200"></rect><text class="l7" text-anchor="middle" x="175" y="223">Seguridad: WS-Security (nivel mensaje)</text>
+<rect fill="#f2fbf6" height="38" width="290" x="360" y="200"></rect><text class="l7" text-anchor="middle" x="505" y="223">Seguridad: OAuth 2.0/JWT + TLS</text>
+<rect fill="#eef4fb" height="38" width="290" x="30" y="240"></rect><text class="l7" text-anchor="middle" x="175" y="263">Uso: integración crítica, sistemas heredados</text>
+<rect fill="#eafaf1" height="38" width="290" x="360" y="240"></rect><text class="l7" text-anchor="middle" x="505" y="263">Uso: APIs públicas, apps web/móviles</text>
+<text style="font:700 11px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="300">No hay ganador absoluto: cada estilo domina en escenarios distintos</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="330">[Fuente: W3C-SOAP; FIELDING]</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg aria-label="Las cinco dimensiones de seguridad del Esquema Nacional de Seguridad: confidencialidad, integridad, trazabilidad, autenticidad y disponibilidad, con el ataque que rompe cada una y el mecanismo de red que la protege; y la regla de derivación de la categoría del sistema a partir de la dimensión más exigente" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}.k2{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.t2{font:700 9.5px system-ui,sans-serif;fill:#fff}.s2{font:8.5px system-ui,sans-serif;fill:#fff}.d2{font:8.5px system-ui,sans-serif;fill:#333}.b2{font:700 9px system-ui,sans-serif;fill:#0055a0}.n2{font:8px system-ui,sans-serif;fill:#666}.hd2{font:700 8.5px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h2" text-anchor="middle" x="340" y="20">En España son CINCO dimensiones, no tres: C · I · T · A · D</text>
+<text class="hd2" x="26" y="42">DIMENSIÓN</text><text class="hd2" x="136" y="42">QUÉ GARANTIZA</text><text class="hd2" x="336" y="42">QUÉ LA ROMPE EN UNA RED</text><text class="hd2" x="506" y="42">CON QUÉ SE PROTEGE</text>
+<rect fill="#0055a0" height="34" rx="4" width="106" x="20" y="48"></rect><text class="t2" text-anchor="middle" x="73" y="62">CONFIDENCIALIDAD</text><text class="s2" text-anchor="middle" x="73" y="76">C</text>
+<text class="d2" x="136" y="62">Solo accede quien está</text><text class="d2" x="136" y="74">autorizado</text>
+<text class="d2" x="336" y="62">Escucha del tráfico, acceso</text><text class="d2" x="336" y="74">a un segmento ajeno</text>
+<text class="d2" x="506" y="62">Cifrado: IPsec, TLS,</text><text class="d2" x="506" y="74">MACsec. Segmentación</text>
+<rect fill="#0055a0" height="34" rx="4" width="106" x="20" y="88"></rect><text class="t2" text-anchor="middle" x="73" y="102">INTEGRIDAD</text><text class="s2" text-anchor="middle" x="73" y="116">I</text>
+<text class="d2" x="136" y="102">La información no se altera,</text><text class="d2" x="136" y="114">y si se altera se detecta</text>
+<text class="d2" x="336" y="102">Alteración en tránsito,</text><text class="d2" x="336" y="114">inyección de datos falsos</text>
+<text class="d2" x="506" y="102">HMAC dentro de IPsec,</text><text class="d2" x="506" y="114">TLS o SSH</text>
+<rect fill="#0055a0" height="34" rx="4" width="106" x="20" y="128"></rect><text class="t2" text-anchor="middle" x="73" y="142">TRAZABILIDAD</text><text class="s2" text-anchor="middle" x="73" y="156">T</text>
+<text class="d2" x="136" y="142">Se puede reconstruir quién</text><text class="d2" x="136" y="154">hizo qué y cuándo</text>
+<text class="d2" x="336" y="142">Falta de registros, cuentas</text><text class="d2" x="336" y="154">compartidas, reloj desfasado</text>
+<text class="d2" x="506" y="142">op.exp.8, sincronización</text><text class="d2" x="506" y="154">horaria, SIEM</text>
+<rect fill="#0055a0" height="34" rx="4" width="106" x="20" y="168"></rect><text class="t2" text-anchor="middle" x="73" y="182">AUTENTICIDAD</text><text class="s2" text-anchor="middle" x="73" y="196">A</text>
+<text class="d2" x="136" y="182">El origen es quien dice</text><text class="d2" x="136" y="194">ser</text>
+<text class="d2" x="336" y="182">Suplantación de IP o MAC,</text><text class="d2" x="336" y="194">punto de acceso impostor</text>
+<text class="d2" x="506" y="182">Certificados, 802.1X,</text><text class="d2" x="506" y="194">autenticación mutua</text>
+<rect fill="#0055a0" height="34" rx="4" width="106" x="20" y="208"></rect><text class="t2" text-anchor="middle" x="73" y="222">DISPONIBILIDAD</text><text class="s2" text-anchor="middle" x="73" y="236">D</text>
+<text class="d2" x="136" y="222">El servicio está accesible</text><text class="d2" x="136" y="234">cuando se necesita</text>
+<text class="d2" x="336" y="222">DDoS, corte de enlace,</text><text class="d2" x="336" y="234">saturación del cortafuegos</text>
+<text class="d2" x="506" y="222">Redundancia, mp.s.4,</text><text class="d2" x="506" y="234">mitigación aguas arriba</text>
+<text class="k2" x="20" y="264">DE NIVEL A CATEGORÍA: LA REGLA CLAVE</text>
+<rect fill="#eef4fa" height="50" rx="5" stroke="#0055a0" width="206" x="20" y="272"></rect><text class="b2" text-anchor="middle" x="123" y="290">El NIVEL se fija POR DIMENSIÓN</text><text class="d2" text-anchor="middle" x="123" y="305">Cada una de las cinco recibe</text><text class="d2" text-anchor="middle" x="123" y="317.5">su propio BAJO, MEDIO o ALTO</text>
+<rect fill="#eef4fa" height="50" rx="5" stroke="#0055a0" width="206" x="236" y="272"></rect><text class="b2" text-anchor="middle" x="339" y="290">La CATEGORÍA se DERIVA</text><text class="d2" text-anchor="middle" x="339" y="305">Alguna ALTO → categoría ALTA.</text><text class="d2" text-anchor="middle" x="339" y="317.5">Si no, alguna MEDIO → MEDIA. Resto: BÁSICA</text>
+<rect fill="#fdeeee" height="50" rx="5" stroke="#d13c3c" width="208" x="452" y="272"></rect><text class="b2" text-anchor="middle" x="556" y="290">EL ERROR MÁS PENALIZADO</text><text class="d2" text-anchor="middle" x="556" y="305">Confundir dimensión (C, I, T, A, D)</text><text class="d2" text-anchor="middle" x="556" y="317.5">con categoría (BÁSICA, MEDIA, ALTA)</text>
+<text class="n2" x="20" y="340">[Fuente: ENS, RD 311/2022, arts. 5 a 11 y anexos I y II — verificado contra el PDF del BOE]</text>
+</svg>

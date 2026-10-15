@@ -1,0 +1,19 @@
+<svg aria-label="Seis principios de diseño de la arquitectura orientada a servicios alrededor del concepto central de servicio: bajo acoplamiento, contrato explícito, abstracción, reutilización, autonomía y componibilidad" role="img" viewbox="0 0 660 380" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 11px system-ui,sans-serif;fill:#fff}.s6{font:9px system-ui,sans-serif;fill:#fff}.l6{font:10.5px system-ui,sans-serif;fill:#444}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h6" text-anchor="middle" x="330" y="20">SOA: seis principios alrededor del «servicio»</text>
+<circle cx="330" cy="200" fill="#0055a0" r="52"></circle><text class="t6" text-anchor="middle" x="330" y="196">SERVICIO</text><text class="s6" text-anchor="middle" x="330" y="212">§5.1</text>
+<rect fill="#2d8659" height="46" rx="5" width="160" x="250" y="60"></rect><text class="t6" text-anchor="middle" x="330" y="80">Bajo acoplamiento</text><text class="s6" text-anchor="middle" x="330" y="96">Mínimas dependencias</text>
+<line stroke="#888" stroke-width="2" x1="330" x2="330" y1="106" y2="150"></line>
+<rect fill="#2d8659" height="46" rx="5" width="170" x="470" y="120"></rect><text class="t6" text-anchor="middle" x="555" y="140">Contrato explícito</text><text class="s6" text-anchor="middle" x="555" y="156">Interfaz formal</text>
+<line stroke="#888" stroke-width="2" x1="468" x2="380" y1="143" y2="175"></line>
+<rect fill="#2d8659" height="46" rx="5" width="170" x="470" y="216"></rect><text class="t6" text-anchor="middle" x="555" y="236">Abstracción</text><text class="s6" text-anchor="middle" x="555" y="252">Oculta implementación</text>
+<line stroke="#888" stroke-width="2" x1="468" x2="380" y1="239" y2="222"></line>
+<rect fill="#2d8659" height="46" rx="5" width="160" x="250" y="278"></rect><text class="t6" text-anchor="middle" x="330" y="298">Reutilización</text><text class="s6" text-anchor="middle" x="330" y="314">Múltiples consumidores</text>
+<line stroke="#888" stroke-width="2" x1="330" x2="330" y1="278" y2="252"></line>
+<rect fill="#2d8659" height="46" rx="5" width="170" x="20" y="216"></rect><text class="t6" text-anchor="middle" x="105" y="236">Autonomía</text><text class="s6" text-anchor="middle" x="105" y="252">Controla su lógica/datos</text>
+<line stroke="#888" stroke-width="2" x1="192" x2="280" y1="239" y2="222"></line>
+<rect fill="#2d8659" height="46" rx="5" width="170" x="20" y="120"></rect><text class="t6" text-anchor="middle" x="105" y="140">Componibilidad</text><text class="s6" text-anchor="middle" x="105" y="156">Orquestación/coreografía</text>
+<line stroke="#888" stroke-width="2" x1="192" x2="280" y1="143" y2="175"></line>
+<text style="font:700 11px system-ui;fill:#d13c3c" text-anchor="middle" x="330" y="352">SOA es un estilo arquitectónico — los servicios web son su implementación más habitual, no la única</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="650" y="372">[Fuente: ERL-SOA, cap. 2-3]</text>
+</svg>

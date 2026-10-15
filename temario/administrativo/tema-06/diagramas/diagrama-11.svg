@@ -1,0 +1,25 @@
+<svg aria-label="El acceso puede limitarse de forma justificada y proporcionada por razones como la seguridad o la protección de datos; se inadmiten las solicitudes sobre información en elaboración, de carácter auxiliar, que exijan reelaboración, dirigidas a un órgano que no la posee o repetitivas; frente a la resolución cabe reclamación potestativa ante el Consejo de Transparencia en un mes" class="svd11" role="img" viewbox="0 0 720 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd11 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd11 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd11 .s{font:10.5px system-ui,sans-serif;fill:#555;text-anchor:start}</style>
+<rect fill="#d13c3c" height="44" rx="8" width="330" x="20" y="20"></rect>
+<text class="h" x="185" y="40">LÍMITES (art. 14)</text>
+<text class="h" style="font-weight:400;font-size:11px" x="185" y="57">Justificados y proporcionados</text>
+<rect fill="#fdecea" height="128" rx="8" stroke="#d13c3c" width="330" x="20" y="76"></rect>
+<text class="s" x="38" y="100">· Seguridad nacional y defensa</text>
+<text class="s" x="38" y="122">· Seguridad pública · prevención de ilícitos</text>
+<text class="s" x="38" y="144">· Intereses económicos y comerciales</text>
+<text class="s" x="38" y="166">· Funciones de vigilancia e inspección</text>
+<text class="s" x="38" y="188">· Protección de datos personales (art. 15)</text>
+<rect fill="#e89822" height="44" rx="8" width="330" x="370" y="20"></rect>
+<text class="h" x="535" y="40">INADMISIÓN (art. 18)</text>
+<text class="h" style="font-weight:400;font-size:11px" x="535" y="57">Causas tasadas</text>
+<rect fill="#fff5e6" height="128" rx="8" stroke="#e89822" width="330" x="370" y="76"></rect>
+<text class="s" x="388" y="100">· Información en curso de elaboración</text>
+<text class="s" x="388" y="122">· Carácter auxiliar o de apoyo (borradores)</text>
+<text class="s" x="388" y="144">· Requiere reelaboración</text>
+<text class="s" x="388" y="166">· Órgano que no posee la información</text>
+<text class="s" x="388" y="188">· Repetitivas o abusivas</text>
+<rect fill="#003d75" height="78" rx="8" width="480" x="120" y="226"></rect>
+<text class="h" x="360" y="252">RECLAMACIÓN ante el CTBG (art. 24)</text>
+<text class="h" style="font-weight:400;font-size:11px" x="360" y="274">Potestativa y previa a lo contencioso · plazo 1 MES</text>
+<text class="h" style="font-weight:400;font-size:11px" x="360" y="292">El CTBG resuelve en 3 meses (silencio negativo)</text>
+</svg>

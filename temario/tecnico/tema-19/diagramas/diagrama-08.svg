@@ -1,0 +1,22 @@
+<svg aria-label="Comparación entre subconsulta no correlacionada que se ejecuta una sola vez de forma independiente y subconsulta correlacionada que referencia la fila externa y se reevalúa por cada fila candidata" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t8{font:700 12px system-ui,sans-serif;fill:#fff}.s8{font:11px system-ui,sans-serif;fill:#fff}.l8{font:10.5px system-ui,sans-serif;fill:#444}.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h8" text-anchor="middle" x="340" y="22">Subconsultas: dependencia respecto a la consulta externa</text>
+<rect fill="#0055a0" height="120" rx="8" width="300" x="30" y="42"></rect>
+<text class="t8" text-anchor="middle" x="180" y="66">NO CORRELACIONADA</text>
+<text class="s8" text-anchor="middle" x="180" y="88">Independiente de la fila externa</text>
+<text class="s8" text-anchor="middle" x="180" y="108">Se ejecuta UNA vez</text>
+<text class="s8" text-anchor="middle" x="180" y="128">... WHERE dni IN</text>
+<text class="s8" text-anchor="middle" x="180" y="146">(SELECT dni FROM TRIBUTO ...)</text>
+<rect fill="#d13c3c" height="120" rx="8" width="300" x="350" y="42"></rect>
+<text class="t8" text-anchor="middle" x="500" y="66">CORRELACIONADA</text>
+<text class="s8" text-anchor="middle" x="500" y="88">Referencia una columna externa</text>
+<text class="s8" text-anchor="middle" x="500" y="108">Se reevalúa por cada fila candidata</text>
+<text class="s8" text-anchor="middle" x="500" y="128">... WHERE EXISTS</text>
+<text class="s8" text-anchor="middle" x="500" y="146">(SELECT 1 ... WHERE t.dni=c.dni)</text>
+<rect fill="#fdf3e3" height="100" rx="6" stroke="#e89822" width="560" x="60" y="186"></rect>
+<text style="font:700 12px system-ui;fill:#8a5a00" text-anchor="middle" x="340" y="208">Predicados cuantificados</text>
+<text class="l8" text-anchor="middle" x="340" y="230">IN/NOT IN · EXISTS/NOT EXISTS · ANY/SOME · ALL</text>
+<text class="l8" text-anchor="middle" x="340" y="250">EXISTS suele ser más eficiente que IN (se detiene en la 1ª coincidencia)</text>
+<text style="font:700 11px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="268">NOT IN + NULL en el conjunto → puede no devolver filas (trampa clásica)</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="312">[Fuente: DATE-INTRO, cap. 8]</text>
+</svg>

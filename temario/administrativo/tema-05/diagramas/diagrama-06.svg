@@ -1,0 +1,35 @@
+<svg aria-label="Comparativa de excedencias: voluntaria por interés particular exige cinco años y no retribuye; por cuidado de familiares dura tres años con reserva de puesto de al menos dos años; por violencia de género o sexual no exige tiempo previo y reserva el puesto seis meses" class="svd6" role="img" viewbox="0 0 720 330" xmlns="http://www.w3.org/2000/svg">
+<style>.svd6 .h{font:700 12px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd6 .t{font:11.5px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd6 .s{font:10px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="34" rx="8" width="360" x="180" y="14"></rect>
+<text class="h" x="360" y="36">EXCEDENCIA · art. 89</text>
+<rect fill="#fdeaea" height="240" rx="8" stroke="#d13c3c" width="220" x="20" y="62"></rect>
+<text class="t" style="font-weight:700" x="130" y="86">Interés particular</text>
+<text class="s" x="130" y="118">Requisito:</text>
+<text class="t" style="font-weight:700;fill:#d13c3c" x="130" y="134">5 años previos</text>
+<text class="s" x="130" y="166">Retribución:</text>
+<text class="t" x="130" y="182">NO devenga</text>
+<text class="s" x="130" y="214">Cómputo:</text>
+<text class="t" x="130" y="230">NO computa</text>
+<text class="s" x="130" y="262">Reserva puesto:</text>
+<text class="t" x="130" y="278">NO</text>
+<rect fill="#e8f5ee" height="240" rx="8" stroke="#2d8659" width="220" x="250" y="62"></rect>
+<text class="t" style="font-weight:700" x="360" y="86">Cuidado familiares/hijos</text>
+<text class="s" x="360" y="118">Duración:</text>
+<text class="t" style="font-weight:700;fill:#1f5e3f" x="360" y="134">máx. 3 años</text>
+<text class="s" x="360" y="166">Cómputo:</text>
+<text class="t" x="360" y="182">SÍ (trienios/carrera)</text>
+<text class="s" x="360" y="214">Reserva puesto:</text>
+<text class="t" style="font-weight:700" x="360" y="230">2 años</text>
+<text class="s" x="360" y="262">luego misma localidad</text>
+<text class="s" x="360" y="278">e igual retribución</text>
+<rect fill="#fff5e6" height="240" rx="8" stroke="#e89822" width="220" x="480" y="62"></rect>
+<text class="t" style="font-weight:700" x="590" y="86">Violencia género/sexual</text>
+<text class="s" x="590" y="118">Requisito:</text>
+<text class="t" style="font-weight:700;fill:#b5740f" x="590" y="134">sin tiempo previo</text>
+<text class="s" x="590" y="166">Retribución:</text>
+<text class="t" x="590" y="182">2 meses íntegras</text>
+<text class="s" x="590" y="214">Reserva puesto:</text>
+<text class="t" style="font-weight:700" x="590" y="230">6 meses</text>
+<text class="s" x="590" y="262">prorrogable hasta 18</text>
+<text class="s" x="590" y="278">computa antigüedad</text>
+</svg>

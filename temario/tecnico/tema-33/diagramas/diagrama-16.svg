@@ -1,0 +1,27 @@
+<svg aria-label="Principio celular con reutilización de frecuencias en celdas hexagonales no adyacentes, traspaso e itinerancia, evolución de las generaciones móviles de 1G analógica a 5G, y las tres familias de uso del 5G: banda ancha mejorada, comunicaciones ultrafiables de baja latencia y comunicaciones masivas entre máquinas" role="img" viewbox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t16{font:700 10px system-ui,sans-serif;fill:#fff}.s16{font:8.5px system-ui,sans-serif;fill:#fff}.d16{font:9px system-ui,sans-serif;fill:#333}.h16{font:700 13px system-ui,sans-serif;fill:#0055a0}.k16{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n16{font:8.5px system-ui,sans-serif;fill:#666}.c16{font:700 11px system-ui,sans-serif;fill:#fff}</style>
+<text class="h16" text-anchor="middle" x="340" y="20">Celdas que reutilizan las mismas frecuencias</text>
+<polygon fill="#0055a0" points="80,36 108,52 108,84 80,100 52,84 52,52"></polygon><text class="c16" text-anchor="middle" x="80" y="72">A</text>
+<polygon fill="#2d8659" points="136,36 164,52 164,84 136,100 108,84 108,52"></polygon><text class="c16" text-anchor="middle" x="136" y="72">B</text>
+<polygon fill="#e89822" points="192,36 220,52 220,84 192,100 164,84 164,52"></polygon><text class="c16" text-anchor="middle" x="192" y="72">C</text>
+<polygon fill="#0055a0" points="248,36 276,52 276,84 248,100 220,84 220,52"></polygon><text class="c16" text-anchor="middle" x="248" y="72">A</text>
+<polygon fill="#2d8659" points="304,36 332,52 332,84 304,100 276,84 276,52"></polygon><text class="c16" text-anchor="middle" x="304" y="72">B</text>
+<rect fill="#eef3f8" height="30" rx="4" width="312" x="348" y="36"></rect><text class="d16" text-anchor="middle" x="504" y="55">Celdas NO adyacentes repiten el mismo grupo de canales</text>
+<rect fill="#f5f5f5" height="30" rx="4" width="152" x="348" y="70"></rect><text class="d16" text-anchor="middle" x="424" y="83">TRASPASO</text><text class="n16" text-anchor="middle" x="424" y="95">dentro del operador, en curso</text>
+<rect fill="#f5f5f5" height="30" rx="4" width="152" x="508" y="70"></rect><text class="d16" text-anchor="middle" x="584" y="83">ITINERANCIA</text><text class="n16" text-anchor="middle" x="584" y="95">entre operadores distintos</text>
+<rect fill="#fdf3e3" height="24" rx="4" width="640" x="20" y="110"></rect>
+<text class="d16" text-anchor="middle" x="340" y="126">Para aumentar la capacidad se REDUCE el tamaño de la celda: micro, pico y femtoceldas</text>
+<text class="k16" x="26" y="156">CINCO GENERACIONES, CUATRO SALTOS</text>
+<rect fill="#8a8a8a" height="52" rx="4" width="124" x="20" y="164"></rect><text class="t16" text-anchor="middle" x="82" y="182">1G — TACS</text><text class="s16" text-anchor="middle" x="82" y="197">analógica</text><text class="s16" text-anchor="middle" x="82" y="210">solo voz</text>
+<rect fill="#5384ac" height="52" rx="4" width="124" x="152" y="164"></rect><text class="t16" text-anchor="middle" x="214" y="182">2G — GSM</text><text class="s16" text-anchor="middle" x="214" y="197">digital · SMS · SIM</text><text class="s16" text-anchor="middle" x="214" y="210">GPRS añade paquetes</text>
+<rect fill="#0055a0" height="52" rx="4" width="124" x="284" y="164"></rect><text class="t16" text-anchor="middle" x="346" y="182">3G — UMTS</text><text class="s16" text-anchor="middle" x="346" y="197">WCDMA · IMT-2000</text><text class="s16" text-anchor="middle" x="346" y="210">HSPA</text>
+<rect fill="#2d8659" height="52" rx="4" width="124" x="416" y="164"></rect><text class="t16" text-anchor="middle" x="478" y="182">4G — LTE</text><text class="s16" text-anchor="middle" x="478" y="197">TODO IP, solo paquetes</text><text class="s16" text-anchor="middle" x="478" y="210">la voz es VoLTE</text>
+<rect fill="#d13c3c" height="52" rx="4" width="112" x="548" y="164"></rect><text class="t16" text-anchor="middle" x="604" y="182">5G — NR</text><text class="s16" text-anchor="middle" x="604" y="197">IMT-2020</text><text class="s16" text-anchor="middle" x="604" y="210">NSA y SA</text>
+<text class="k16" x="26" y="240">LAS TRES FAMILIAS DE USO DEL 5G</text>
+<rect fill="#0055a0" height="52" rx="5" width="206" x="20" y="248"></rect><text class="t16" text-anchor="middle" x="123" y="266">eMBB</text><text class="s16" text-anchor="middle" x="123" y="281">banda ancha mejorada</text><text class="s16" text-anchor="middle" x="123" y="294">20 Gbit/s de pico</text>
+<rect fill="#d13c3c" height="52" rx="5" width="206" x="237" y="248"></rect><text class="t16" text-anchor="middle" x="340" y="266">URLLC</text><text class="s16" text-anchor="middle" x="340" y="281">ultrafiable, baja latencia</text><text class="s16" text-anchor="middle" x="340" y="294">1 ms en la interfaz radio</text>
+<rect fill="#2d8659" height="52" rx="5" width="206" x="454" y="248"></rect><text class="t16" text-anchor="middle" x="557" y="266">mMTC</text><text class="s16" text-anchor="middle" x="557" y="281">máquinas masivas</text><text class="s16" text-anchor="middle" x="557" y="294">10⁶ dispositivos/km²</text>
+<rect fill="none" height="26" rx="5" stroke="#d13c3c" stroke-width="1.5" width="640" x="20" y="310"></rect>
+<text class="k16" text-anchor="middle" x="340" y="327">SIN NÚCLEO 5G AUTÓNOMO (SA) NO HAY NI FRACCIONAMIENTO DE RED NI URLLC REALES</text>
+<text class="n16" text-anchor="end" x="670" y="354">[Fuente: 3GPP; UIT-R IMT-2020]</text>
+</svg>

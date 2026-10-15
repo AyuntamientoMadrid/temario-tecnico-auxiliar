@@ -1,0 +1,29 @@
+<svg aria-label="Escala del artículo 35.2: hasta 30 trabajadores el Delegado de Personal; de 31 a 49 uno; de 50 a 100 dos; de 101 a 500 tres; de 501 a 1000 cuatro; de 1001 a 2000 cinco; de 2001 a 3000 seis; de 3001 a 4000 siete; de 4001 en adelante ocho" class="svd3" role="img" viewbox="0 0 700 380" xmlns="http://www.w3.org/2000/svg">
+<style>.svd3 .ti{font:700 15px system-ui,sans-serif;fill:#0055a0;text-anchor:middle}.svd3 .t{font:12px system-ui,sans-serif;fill:#1a1a1a}.svd3 .h{font:700 12px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd3 .n{font:700 14px system-ui,sans-serif;fill:#0055a0;text-anchor:middle}</style>
+<text class="ti" x="350" y="26">Escala de Delegados de Prevención (art. 35.2 LPRL)</text>
+<rect fill="#0055a0" height="26" width="430" x="60" y="42"></rect>
+<text class="h" x="275" y="60">Número de trabajadores</text>
+<rect fill="#0055a0" height="26" width="150" x="490" y="42"></rect>
+<text class="h" x="565" y="60">Delegados</text>
+<g class="t">
+<rect fill="#e8f5ee" height="30" stroke="#cfe6da" width="430" x="60" y="68"></rect><text x="72" y="88">Hasta 30 (el Delegado de Personal)</text>
+<rect fill="#e8f5ee" height="30" stroke="#cfe6da" width="150" x="490" y="68"></rect><text class="n" style="fill:#2d8659" x="565" y="88">DP</text>
+<rect fill="#fff" height="30" stroke="#e3e8ef" width="430" x="60" y="98"></rect><text x="72" y="118">De 31 a 49</text>
+<rect fill="#fff" height="30" stroke="#e3e8ef" width="150" x="490" y="98"></rect><text class="n" x="565" y="118">1</text>
+<rect fill="#f5f8fc" height="30" stroke="#e3e8ef" width="430" x="60" y="128"></rect><text x="72" y="148">De 50 a 100</text>
+<rect fill="#f5f8fc" height="30" stroke="#e3e8ef" width="150" x="490" y="128"></rect><text class="n" x="565" y="148">2</text>
+<rect fill="#fff" height="30" stroke="#e3e8ef" width="430" x="60" y="158"></rect><text x="72" y="178">De 101 a 500</text>
+<rect fill="#fff" height="30" stroke="#e3e8ef" width="150" x="490" y="158"></rect><text class="n" x="565" y="178">3</text>
+<rect fill="#f5f8fc" height="30" stroke="#e3e8ef" width="430" x="60" y="188"></rect><text x="72" y="208">De 501 a 1.000</text>
+<rect fill="#f5f8fc" height="30" stroke="#e3e8ef" width="150" x="490" y="188"></rect><text class="n" x="565" y="208">4</text>
+<rect fill="#fff" height="30" stroke="#e3e8ef" width="430" x="60" y="218"></rect><text x="72" y="238">De 1.001 a 2.000</text>
+<rect fill="#fff" height="30" stroke="#e3e8ef" width="150" x="490" y="218"></rect><text class="n" x="565" y="238">5</text>
+<rect fill="#f5f8fc" height="30" stroke="#e3e8ef" width="430" x="60" y="248"></rect><text x="72" y="268">De 2.001 a 3.000</text>
+<rect fill="#f5f8fc" height="30" stroke="#e3e8ef" width="150" x="490" y="248"></rect><text class="n" x="565" y="268">6</text>
+<rect fill="#fff" height="30" stroke="#e3e8ef" width="430" x="60" y="278"></rect><text x="72" y="298">De 3.001 a 4.000</text>
+<rect fill="#fff" height="30" stroke="#e3e8ef" width="150" x="490" y="278"></rect><text class="n" x="565" y="298">7</text>
+<rect fill="#fdeaea" height="30" stroke="#f3cccc" width="430" x="60" y="308"></rect><text style="font-weight:700" x="72" y="328">De 4.001 en adelante (máximo)</text>
+<rect fill="#fdeaea" height="30" stroke="#f3cccc" width="150" x="490" y="308"></rect><text class="n" style="fill:#d13c3c" x="565" y="328">8</text>
+</g>
+<text class="t" style="text-anchor:middle;fill:#555" x="350" y="360">Designados por y entre los representantes del personal (art. 35.2)</text>
+</svg>

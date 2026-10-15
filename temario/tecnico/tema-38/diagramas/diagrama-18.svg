@@ -1,0 +1,47 @@
+<svg aria-label="Los dos caminos de evolución de TETRA. El primero es TEDS, dentro de TETRA, que es la aportación de datos de la Release 2 con anchos de canal de 25, 50, 100 y 150 kilohercios y modulaciones pi octavos D8PSK, 4-QAM, 16-QAM y 64-QAM con adaptación al enlace. El segundo es la banda ancha crítica del 3GPP, con MCPTT normalizado en la Release 13 de 2016 y MCVideo y MCData en la Release 14, apoyados en los habilitadores GCSE, eMBMS y ProSe. Abajo, las cuatro razones por las que la transición es lenta y el modelo de coexistencia que se impone" role="img" viewbox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t18{font:700 10px system-ui,sans-serif;fill:#fff}.s18{font:8.5px system-ui,sans-serif;fill:#fff}.d18{font:8.5px system-ui,sans-serif;fill:#333}.h18{font:700 13px system-ui,sans-serif;fill:#0055a0}.k18{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n18{font:8.5px system-ui,sans-serif;fill:#666}.b18{font:700 9px system-ui,sans-serif;fill:#0055a0}.m18{font:700 11px system-ui,sans-serif;fill:#fff}</style>
+<text class="h18" text-anchor="middle" x="340" y="22">Dos caminos, y la respuesta real es la coexistencia</text>
+<rect fill="none" height="132" rx="5" stroke="#2d8659" stroke-width="2" width="314" x="20" y="36"></rect>
+<rect fill="#2d8659" height="24" rx="3" width="290" x="32" y="46"></rect>
+<text class="t18" text-anchor="middle" x="177" y="62">CAMINO 1 · TEDS — dentro de TETRA</text>
+<text class="d18" x="44" y="86">TETRA Release 2. Mantiene todo lo que TETRA hace bien</text>
+<text class="d18" x="44" y="100">y amplía el canal de datos.</text>
+<text class="b18" x="44" y="118">Anchos de canal: 25, 50, 100 y 150 kHz</text>
+<text class="b18" x="44" y="132">Modulaciones: π/8-D8PSK · 4-QAM · 16-QAM · 64-QAM</text>
+<text class="d18" x="44" y="148">Con adaptación al enlace: modulación densa cerca de la</text>
+<text class="d18" x="44" y="161">estación base y robusta (4-QAM) en el borde de la célula</text>
+<rect fill="none" height="132" rx="5" stroke="#0055a0" stroke-width="2" width="322" x="346" y="36"></rect>
+<rect fill="#0055a0" height="24" rx="3" width="298" x="358" y="46"></rect>
+<text class="t18" text-anchor="middle" x="507" y="62">CAMINO 2 · BANDA ANCHA CRÍTICA — fuera de TETRA</text>
+<text class="b18" x="370" y="86">MCPTT · voz de grupo con PTT, prioridad y desalojo</text>
+<text class="d18" x="370" y="100">3GPP Release 13, culminada en 2016 · TS 22.179</text>
+<text class="b18" x="370" y="118">MCVideo y MCData · Release 14</text>
+<text class="d18" x="370" y="132">Habilitadores previos del propio 3GPP:</text>
+<text class="d18" x="370" y="148">GCSE (grupo) · eMBMS (difusión) · ProSe (proximidad,</text>
+<text class="d18" x="370" y="161">el equivalente conceptual del modo directo)</text>
+<text class="k18" x="20" y="192">POR QUÉ LA TRANSICIÓN ES LENTA</text>
+<rect fill="#e89822" height="66" rx="4" width="158" x="20" y="200"></rect>
+<text class="t18" text-anchor="middle" x="99" y="218">1 · COBERTURA</text>
+<text class="s18" text-anchor="middle" x="99" y="234">Replicar con LTE propio</text>
+<text class="s18" text-anchor="middle" x="99" y="247">es carísimo; con LTE</text>
+<text class="s18" text-anchor="middle" x="99" y="260">comercial se pierde control</text>
+<rect fill="#e89822" height="66" rx="4" width="158" x="186" y="200"></rect>
+<text class="t18" text-anchor="middle" x="265" y="218">2 · MODO DIRECTO</text>
+<text class="s18" text-anchor="middle" x="265" y="234">ProSe aún no iguala</text>
+<text class="s18" text-anchor="middle" x="265" y="247">al DMO, y el DMO es</text>
+<text class="s18" text-anchor="middle" x="265" y="260">innegociable en rescate</text>
+<rect fill="#e89822" height="66" rx="4" width="158" x="352" y="200"></rect>
+<text class="t18" text-anchor="middle" x="431" y="218">3 · AUTONOMÍA</text>
+<text class="s18" text-anchor="middle" x="431" y="234">Un terminal de banda</text>
+<text class="s18" text-anchor="middle" x="431" y="247">ancha consume mucho</text>
+<text class="s18" text-anchor="middle" x="431" y="260">más que uno estrecho</text>
+<rect fill="#e89822" height="66" rx="4" width="150" x="518" y="200"></rect>
+<text class="t18" text-anchor="middle" x="593" y="218">4 · PARQUE</text>
+<text class="s18" text-anchor="middle" x="593" y="234">Miles de terminales,</text>
+<text class="s18" text-anchor="middle" x="593" y="247">personal formado y</text>
+<text class="s18" text-anchor="middle" x="593" y="260">procedimientos escritos</text>
+<rect fill="#0055a0" height="52" rx="5" width="648" x="20" y="280"></rect>
+<text class="m18" x="36" y="300">EL MODELO QUE SE IMPONE: DOS REDES COMPLEMENTARIAS</text>
+<text class="s18" x="36" y="318">TETRA para la voz crítica y los datos cortos garantizados · banda ancha para lo que necesita caudal · terminales híbridos · migración por fases</text>
+<text class="n18" text-anchor="end" x="670" y="352">[Fuente: elaboración propia sobre ETSI TR 102 580, 3GPP Releases 13 y 14 y el CNAF 2026]</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg aria-label="Comparación del ciclo de vida: en Android la Activity recorre onCreate, onStart, onResume, primer plano, onPause, onStop y onDestroy; en iOS la aplicación pasa por los estados Not running, Inactive, Active, Background y Suspended, con los callbacks del UIViewController" role="img" viewbox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 11px system-ui,sans-serif;fill:#fff}.s3{font:9.5px system-ui,sans-serif;fill:#fff}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.c3{font:700 11px system-ui,sans-serif;fill:#0055a0}.m3{font:10px ui-monospace,monospace;fill:#fff}</style>
+<text class="h3" text-anchor="middle" x="340" y="20">Ciclo de vida comparado: Android e iOS</text>
+<text class="c3" text-anchor="middle" x="170" y="42">ANDROID — Activity</text>
+<text class="c3" text-anchor="middle" x="510" y="42">iOS — estados de la app</text>
+<rect fill="#0055a0" height="28" rx="4" width="280" x="30" y="52"></rect><text class="m3" text-anchor="middle" x="170" y="71">onCreate()</text>
+<rect fill="#0055a0" height="28" rx="4" width="280" x="30" y="88"></rect><text class="m3" text-anchor="middle" x="170" y="107">onStart()</text>
+<rect fill="#0055a0" height="28" rx="4" width="280" x="30" y="124"></rect><text class="m3" text-anchor="middle" x="170" y="143">onResume()</text>
+<rect fill="#2d8659" height="28" rx="4" width="280" x="30" y="160"></rect><text class="t3" text-anchor="middle" x="170" y="179">EN PRIMER PLANO</text>
+<rect fill="#e89822" height="28" rx="4" width="280" x="30" y="196"></rect><text class="m3" text-anchor="middle" x="170" y="215">onPause()</text>
+<rect fill="#e89822" height="28" rx="4" width="280" x="30" y="232"></rect><text class="m3" text-anchor="middle" x="170" y="251">onStop()</text>
+<rect fill="#d13c3c" height="28" rx="4" width="280" x="30" y="268"></rect><text class="m3" text-anchor="middle" x="170" y="287">onDestroy()</text>
+<rect fill="#888" height="28" rx="4" width="280" x="370" y="52"></rect><text class="t3" text-anchor="middle" x="510" y="71">Not running</text>
+<rect fill="#0055a0" height="28" rx="4" width="280" x="370" y="88"></rect><text class="t3" text-anchor="middle" x="510" y="107">Inactive (sin eventos)</text>
+<rect fill="#2d8659" height="28" rx="4" width="280" x="370" y="124"></rect><text class="t3" text-anchor="middle" x="510" y="143">Active — primer plano</text>
+<rect fill="#e89822" height="28" rx="4" width="280" x="370" y="160"></rect><text class="t3" text-anchor="middle" x="510" y="179">Background (tiempo limitado)</text>
+<rect fill="#d13c3c" height="30" rx="4" width="280" x="370" y="196"></rect><text class="t3" text-anchor="middle" x="510" y="208">Suspended</text><text class="s3" text-anchor="middle" x="510" y="221">en memoria, sin ejecutar código</text>
+<rect fill="#0055a0" height="64" rx="4" width="280" x="370" y="232"></rect>
+<text class="s3" text-anchor="middle" x="510" y="250">UIViewController:</text>
+<text class="m3" text-anchor="middle" x="510" y="266">viewDidLoad() · viewWillAppear()</text>
+<text class="m3" text-anchor="middle" x="510" y="284">viewDidDisappear()</text>
+<rect fill="#d13c3c" height="46" rx="5" width="620" x="30" y="308"></rect>
+<text class="t3" text-anchor="middle" x="340" y="327">Girar la pantalla en Android DESTRUYE y RECREA la Activity</text>
+<text class="s3" text-anchor="middle" x="340" y="345">Si el estado no se guarda en onSaveInstanceState() o en un ViewModel, se pierde lo escrito</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="372">[Fuente: ANDROID-LIFECYCLE; APPLE-DEV]</text>
+</svg>

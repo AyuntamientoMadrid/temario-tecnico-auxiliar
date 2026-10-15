@@ -1,0 +1,31 @@
+<svg aria-label="Modalidades de organización de la prevención: asunción por el empresario, trabajador designado, servicio de prevención propio, ajeno y mancomunado; el Ayuntamiento de Madrid tiene servicio propio" class="svd7" role="img" viewbox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd7 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd7 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd7 .s{font:10px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="46" rx="8" width="220" x="240" y="18"></rect>
+<text class="h" x="350" y="46">Organización de la prevención</text>
+<line stroke="#0055a0" x1="350" x2="350" y1="64" y2="78"></line>
+<line stroke="#0055a0" x1="95" x2="575" y1="78" y2="78"></line>
+<g>
+<line stroke="#0055a0" x1="95" x2="95" y1="78" y2="92"></line>
+<rect fill="#e8f0f8" height="62" rx="7" stroke="#0055a0" width="150" x="20" y="92"></rect>
+<text class="t" style="font-weight:700" x="95" y="116">Empresario</text>
+<text class="s" x="95" y="134">asunción personal</text>
+<text class="s" x="95" y="148">(empresa pequeña)</text>
+<line stroke="#0055a0" x1="255" x2="255" y1="78" y2="92"></line>
+<rect fill="#e8f0f8" height="62" rx="7" stroke="#0055a0" width="150" x="180" y="92"></rect>
+<text class="t" style="font-weight:700" x="255" y="116">Trabajador</text>
+<text class="s" x="255" y="134">designado</text>
+<line stroke="#0055a0" x1="415" x2="415" y1="78" y2="92"></line>
+<rect fill="#e8f5ee" height="62" rx="7" stroke="#2d8659" width="150" x="340" y="92"></rect>
+<text class="t" style="font-weight:700" x="415" y="116">Servicio propio</text>
+<text class="s" x="415" y="134">unidad interna</text>
+<line stroke="#0055a0" x1="575" x2="575" y1="78" y2="92"></line>
+<rect fill="#e8f0f8" height="62" rx="7" stroke="#0055a0" width="150" x="500" y="92"></rect>
+<text class="t" style="font-weight:700" x="575" y="116">Servicio ajeno</text>
+<text class="s" x="575" y="134">entidad externa</text>
+</g>
+<rect fill="#e8f0f8" height="44" rx="7" stroke="#0055a0" width="340" x="180" y="168"></rect>
+<text class="t" x="350" y="195">Servicio de prevención mancomunado (varias entidades)</text>
+<rect fill="#fff5e6" height="56" rx="8" stroke="#e89822" width="460" x="120" y="226"></rect>
+<text class="t" style="font-weight:700;fill:#b5740f" x="350" y="250">Ayuntamiento de Madrid: Servicio de Prevención PROPIO</text>
+<text class="s" x="350" y="270">da cobertura al Ayuntamiento y a sus Organismos Autónomos (art. 46 AC)</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg aria-label="Comparación entre React Native y Flutter: React Native ejecuta JavaScript en un motor propio y maneja componentes nativos reales del sistema a través de JSI; Flutter compila Dart a código máquina y dibuja cada píxel con su motor gráfico Skia o Impeller" role="img" viewbox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t13{font:700 10.5px system-ui,sans-serif;fill:#fff}.s13{font:9.5px system-ui,sans-serif;fill:#fff}.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.c13{font:700 11.5px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h13" text-anchor="middle" x="340" y="20">Dos formas de llevar una base de código a la pantalla</text>
+<text class="c13" text-anchor="middle" x="170" y="42">REACT NATIVE — componentes nativos</text>
+<text class="c13" text-anchor="middle" x="510" y="42">FLUTTER — motor gráfico propio</text>
+<rect fill="#0055a0" height="46" rx="5" width="290" x="25" y="54"></rect>
+<text class="t13" text-anchor="middle" x="170" y="74">JavaScript / TypeScript + React</text>
+<text class="s13" text-anchor="middle" x="170" y="90">componentes declarativos</text>
+<rect fill="#0055a0" height="46" rx="5" width="290" x="25" y="110"></rect>
+<text class="t13" text-anchor="middle" x="170" y="130">Motor JS (Hermes / JavaScriptCore)</text>
+<text class="s13" text-anchor="middle" x="170" y="146">se ejecuta en un hilo propio</text>
+<rect fill="#e89822" height="56" rx="5" width="290" x="25" y="166"></rect>
+<text class="t13" text-anchor="middle" x="170" y="186">Puente asíncrono → hoy JSI (C++)</text>
+<text class="s13" text-anchor="middle" x="170" y="202">Fabric (renderizador) · TurboModules</text>
+<text class="s13" text-anchor="middle" x="170" y="216">JSI llama al código nativo sin serializar</text>
+<rect fill="#2d8659" height="52" rx="5" width="290" x="25" y="228"></rect>
+<text class="t13" text-anchor="middle" x="170" y="250">COMPONENTES NATIVOS REALES</text>
+<text class="s13" text-anchor="middle" x="170" y="268">ViewGroup / UIView, TextView / UILabel</text>
+<rect fill="#0055a0" height="46" rx="5" width="290" x="365" y="54"></rect>
+<text class="t13" text-anchor="middle" x="510" y="74">Dart — «todo es un widget»</text>
+<text class="s13" text-anchor="middle" x="510" y="90">JIT en desarrollo (hot reload), AOT en producción</text>
+<rect fill="#0055a0" height="46" rx="5" width="290" x="365" y="110"></rect>
+<text class="t13" text-anchor="middle" x="510" y="130">Framework (Dart)</text>
+<text class="s13" text-anchor="middle" x="510" y="146">widgets Material y Cupertino · gestos · animación</text>
+<rect fill="#e89822" height="56" rx="5" width="290" x="365" y="166"></rect>
+<text class="t13" text-anchor="middle" x="510" y="186">Engine (C/C++) — Skia / Impeller</text>
+<text class="s13" text-anchor="middle" x="510" y="202">runtime de Dart · composición · texto</text>
+<text class="s13" text-anchor="middle" x="510" y="216">Embedder: única parte específica de Android/iOS</text>
+<rect fill="#2d8659" height="52" rx="5" width="290" x="365" y="228"></rect>
+<text class="t13" text-anchor="middle" x="510" y="250">DIBUJA CADA PÍXEL EN UN LIENZO</text>
+<text class="s13" text-anchor="middle" x="510" y="268">no usa componentes del sistema</text>
+<rect fill="none" height="46" rx="5" stroke="#0055a0" stroke-width="2" width="290" x="25" y="292"></rect>
+<text style="font:700 10px system-ui;fill:#0055a0" text-anchor="middle" x="170" y="312">Se ve como el sistema anfitrión</text>
+<text style="font:9.5px system-ui;fill:#444" text-anchor="middle" x="170" y="330">y hereda sus cambios automáticamente</text>
+<rect fill="none" height="46" rx="5" stroke="#0055a0" stroke-width="2" width="290" x="365" y="292"></rect>
+<text style="font:700 10px system-ui;fill:#0055a0" text-anchor="middle" x="510" y="312">Se ve idéntico en todas partes</text>
+<text style="font:9.5px system-ui;fill:#444" text-anchor="middle" x="510" y="330">pero no hereda los cambios del sistema</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="354">[Fuente: RN-DOC; FLUTTER-DOC; DART-DOC]</text>
+</svg>

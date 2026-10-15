@@ -1,0 +1,37 @@
+<svg aria-label="Los 21 distritos de Madrid, del distrito 1 Centro al 21 Barajas" role="img" viewbox="0 0 700 360" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .k-h{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .k-n{font:700 11px system-ui,sans-serif;fill:#0055a0;text-anchor:middle}
+    .k-t{font:11px system-ui,sans-serif;fill:#1a1a1a;text-anchor:start}
+  </style>
+<rect fill="#0055a0" height="36" rx="8" width="360" x="170" y="14"></rect>
+<text class="k-h" x="350" y="38">LOS 21 DISTRITOS DE MADRID</text>
+<g>
+<text class="k-n" x="40" y="80">01</text><text class="k-t" x="60" y="80">Centro</text>
+<text class="k-n" x="40" y="106">02</text><text class="k-t" x="60" y="106">Arganzuela</text>
+<text class="k-n" x="40" y="132">03</text><text class="k-t" x="60" y="132">Retiro</text>
+<text class="k-n" x="40" y="158">04</text><text class="k-t" x="60" y="158">Salamanca</text>
+<text class="k-n" x="40" y="184">05</text><text class="k-t" x="60" y="184">Chamartín</text>
+<text class="k-n" x="40" y="210">06</text><text class="k-t" x="60" y="210">Tetuán</text>
+<text class="k-n" x="40" y="236">07</text><text class="k-t" x="60" y="236">Chamberí</text>
+</g>
+<g>
+<text class="k-n" x="270" y="80">08</text><text class="k-t" x="290" y="80">Fuencarral-El Pardo</text>
+<text class="k-n" x="270" y="106">09</text><text class="k-t" x="290" y="106">Moncloa-Aravaca</text>
+<text class="k-n" x="270" y="132">10</text><text class="k-t" x="290" y="132">Latina</text>
+<text class="k-n" x="270" y="158">11</text><text class="k-t" x="290" y="158">Carabanchel</text>
+<text class="k-n" x="270" y="184">12</text><text class="k-t" x="290" y="184">Usera</text>
+<text class="k-n" x="270" y="210">13</text><text class="k-t" x="290" y="210">Puente de Vallecas</text>
+<text class="k-n" x="270" y="236">14</text><text class="k-t" x="290" y="236">Moratalaz</text>
+</g>
+<g>
+<text class="k-n" x="500" y="80">15</text><text class="k-t" x="520" y="80">Ciudad Lineal</text>
+<text class="k-n" x="500" y="106">16</text><text class="k-t" x="520" y="106">Hortaleza</text>
+<text class="k-n" x="500" y="132">17</text><text class="k-t" x="520" y="132">Villaverde</text>
+<text class="k-n" x="500" y="158">18</text><text class="k-t" x="520" y="158">Villa de Vallecas</text>
+<text class="k-n" x="500" y="184">19</text><text class="k-t" x="520" y="184">Vicálvaro</text>
+<text class="k-n" x="500" y="210">20</text><text class="k-t" x="520" y="210">San Blas-Canillejas</text>
+<text class="k-n" x="500" y="236">21</text><text class="k-t" x="520" y="236">Barajas</text>
+</g>
+<text class="k-t" style="text-anchor:middle;fill:#777;font-style:italic" x="350" y="300">La división la establece el Pleno por norma orgánica (art. 61.2). Cada distrito se subdivide en barrios.</text>
+</svg>

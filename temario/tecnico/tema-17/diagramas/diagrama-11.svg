@@ -1,0 +1,12 @@
+<svg aria-label="Las formas normales son cada vez más estrictas y están anidadas: 1FN contiene 2FN, que contiene 3FN, BCNF, 4FN y 5FN" class="d17-11" role="img" viewbox="0 0 640 385" xmlns="http://www.w3.org/2000/svg">
+<style>.d17-11 .t{font:700 12px system-ui,sans-serif;fill:#fff}.d17-11 .s{font:10px system-ui,sans-serif;fill:#fff}.d17-11 .l{font:11px system-ui,sans-serif;fill:#444}.d17-11 .h{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="320" y="24">Formas normales (cada una incluye la anterior)</text>
+<rect fill="#cfe0f1" height="300" rx="8" width="560" x="40" y="36"></rect><text class="t" style="fill:#003d73" text-anchor="middle" x="320" y="54">1FN — valores atómicos</text>
+<rect fill="#9cc0e3" height="256" rx="8" width="480" x="80" y="64"></rect><text class="t" style="fill:#003d73" text-anchor="middle" x="320" y="82">2FN — sin dependencias parciales</text>
+<rect fill="#5e97ce" height="212" rx="8" width="400" x="120" y="92"></rect><text class="t" text-anchor="middle" x="320" y="110">3FN — sin dependencias transitivas</text>
+<rect fill="#0055a0" height="166" rx="8" width="320" x="160" y="120"></rect><text class="t" text-anchor="middle" x="320" y="138">BCNF — todo determinante es clave</text>
+<rect fill="#024" height="118" rx="8" width="240" x="200" y="148"></rect><text class="t" text-anchor="middle" x="320" y="166">4FN — sin dep. multivaluadas</text>
+<rect fill="#2d8659" height="70" rx="8" width="160" x="240" y="176"></rect><text class="t" text-anchor="middle" x="320" y="208">5FN</text><text class="s" text-anchor="middle" x="320" y="226">sin dep. de reunión</text>
+<text class="l" text-anchor="middle" x="320" y="354">Objetivo práctico habitual: 3FN / BCNF</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="630" y="378">[Fuente: CODD72; FAGIN77]</text>
+</svg>

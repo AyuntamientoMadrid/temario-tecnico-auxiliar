@@ -1,0 +1,29 @@
+<svg aria-label="Características del Estado autonómico español: principio dispositivo, asimetría, unidad e indisolubilidad, prohibición de federación" role="img" viewbox="0 0 700 360" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .d3-c{fill:#0055a0;stroke:#003d73;stroke-width:2}
+    .d3-n{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .d3-ct{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .d3-h{font:700 12px system-ui,sans-serif;fill:#003d73;text-anchor:middle}
+    .d3-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+    .d3-l{stroke:#0055a0;stroke-width:1;fill:none}
+  </style>
+<line class="d3-l" x1="350" x2="170" y1="180" y2="80"></line>
+<line class="d3-l" x1="350" x2="530" y1="180" y2="80"></line>
+<line class="d3-l" x1="350" x2="170" y1="180" y2="285"></line>
+<line class="d3-l" x1="350" x2="530" y1="180" y2="285"></line>
+<ellipse class="d3-c" cx="350" cy="180" rx="92" ry="44"></ellipse>
+<text class="d3-ct" x="350" y="175">ESTADO</text>
+<text class="d3-ct" style="font-weight:400;font-size:11px" x="350" y="194">AUTONÓMICO</text>
+<rect class="d3-n" height="56" rx="8" width="220" x="60" y="52"></rect>
+<text class="d3-h" x="170" y="76">Principio dispositivo</text>
+<text class="d3-s" x="170" y="94">cada territorio decide acceso y techo</text>
+<rect class="d3-n" height="56" rx="8" width="220" x="420" y="52"></rect>
+<text class="d3-h" x="530" y="76">Asimetría inicial</text>
+<text class="d3-s" x="530" y="94">vía 143 vs vía 151</text>
+<rect class="d3-n" height="56" rx="8" width="220" x="60" y="258"></rect>
+<text class="d3-h" x="170" y="282">Unidad e indisolubilidad</text>
+<text class="d3-s" x="170" y="300">art. 2 CE</text>
+<rect class="d3-n" height="56" rx="8" width="220" x="420" y="258"></rect>
+<text class="d3-h" x="530" y="282">No federación</text>
+<text class="d3-s" x="530" y="300">prohibida (art. 145.1)</text>
+</svg>

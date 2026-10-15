@@ -1,0 +1,18 @@
+<svg aria-label="Reforma agravada" role="img" viewbox="0 0 720 470" xmlns="http://www.w3.org/2000/svg">
+<style>.d5-box{fill:#d13c3c}.d5-step{fill:#0055a0}.d5-ok{fill:#2d8659}.d5-title{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.d5-sub{font:11px system-ui,sans-serif;fill:#fff;text-anchor:middle}.d5-arrow{stroke:#333;stroke-width:2;fill:none;marker-end:url(#d5-arrow)}</style>
+<defs><marker id="d5-arrow" markerheight="6" markerwidth="6" orient="auto" refx="8" refy="5" viewbox="0 0 10 10"><path d="M 0 0 L 10 5 L 0 10 z" fill="#333"></path></marker></defs>
+<rect class="d5-box" height="56" rx="8" width="400" x="160" y="10"></rect>
+<text class="d5-title" x="360" y="32">SUPUESTO DE ART. 168</text>
+<text class="d5-sub" x="360" y="48">Revisión TOTAL o parcial que afecte a:</text>
+<text class="d5-sub" x="360" y="62">Título Preliminar · Cap. II Sec. 1.ª (arts. 15-29) · Título II</text>
+<line class="d5-arrow" x1="360" x2="360" y1="66" y2="90"></line>
+<rect class="d5-step" height="50" rx="8" width="240" x="240" y="90"></rect><text class="d5-title" x="360" y="112">1. APROBACIÓN DEL PRINCIPIO</text><text class="d5-sub" x="360" y="128">2/3 de CADA Cámara</text>
+<line class="d5-arrow" x1="360" x2="360" y1="140" y2="170"></line>
+<rect class="d5-step" height="50" rx="8" width="240" x="240" y="170"></rect><text class="d5-title" x="360" y="192">2. DISOLUCIÓN DE LAS CORTES</text><text class="d5-sub" x="360" y="208">Inmediata — nuevas elecciones</text>
+<line class="d5-arrow" x1="360" x2="360" y1="220" y2="250"></line>
+<rect class="d5-step" height="50" rx="8" width="240" x="240" y="250"></rect><text class="d5-title" x="360" y="272">3. RATIFICACIÓN NUEVAS CORTES</text><text class="d5-sub" x="360" y="288">estudio del nuevo texto</text>
+<line class="d5-arrow" x1="360" x2="360" y1="300" y2="330"></line>
+<rect class="d5-step" height="50" rx="8" width="240" x="240" y="330"></rect><text class="d5-title" x="360" y="352">4. APROBACIÓN DEL TEXTO</text><text class="d5-sub" x="360" y="368">2/3 de cada Cámara (nuevas)</text>
+<line class="d5-arrow" x1="360" x2="360" y1="380" y2="410"></line>
+<rect class="d5-ok" height="44" rx="8" width="240" x="240" y="410"></rect><text class="d5-title" x="360" y="437">5. REFERÉNDUM OBLIGATORIO</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg aria-label="El ciclo de vida de la información en un espacio de trabajo compartido, en cinco tramos: clasificación, protección, control de la compartición, conservación y destrucción, con la medida del Esquema Nacional de Seguridad aplicable a cada tramo" role="img" viewbox="0 0 680 330" xmlns="http://www.w3.org/2000/svg">
+<style>.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}.k6{font:700 10px system-ui,sans-serif;fill:#0055a0}.d6{font:9px system-ui,sans-serif;fill:#333}.n6{font:8.5px system-ui,sans-serif;fill:#666}.w6{font:700 9.5px system-ui,sans-serif;fill:#fff}.r6{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}.c6{font:700 9px system-ui,sans-serif;fill:#e89822}</style>
+<text class="h6" text-anchor="middle" x="340" y="19">El ciclo de vida del dato, y el control que toca en cada tramo</text>
+<rect fill="#0055a0" height="58" rx="4" width="120" x="22" y="34"></rect>
+<text class="w6" text-anchor="middle" x="82" y="52">1 · CLASIFICAR</text>
+<text style="fill:#dce8f4;font:8.5px system-ui,sans-serif" text-anchor="middle" x="82" y="68">Etiquetas: pública,</text>
+<text style="fill:#dce8f4;font:8.5px system-ui,sans-serif" text-anchor="middle" x="82" y="80">interna, confidencial</text>
+<rect fill="#0055a0" height="58" rx="4" width="120" x="152" y="34"></rect>
+<text class="w6" text-anchor="middle" x="212" y="52">2 · PROTEGER</text>
+<text style="fill:#dce8f4;font:8.5px system-ui,sans-serif" text-anchor="middle" x="212" y="68">Cifrado en tránsito</text>
+<text style="fill:#dce8f4;font:8.5px system-ui,sans-serif" text-anchor="middle" x="212" y="80">y en reposo</text>
+<rect fill="#e89822" height="58" rx="4" width="120" x="282" y="34"></rect>
+<text class="w6" text-anchor="middle" x="342" y="52">3 · COMPARTIR</text>
+<text style="fill:#fff3e0;font:8.5px system-ui,sans-serif" text-anchor="middle" x="342" y="68">DLP, invitados con</text>
+<text style="fill:#fff3e0;font:8.5px system-ui,sans-serif" text-anchor="middle" x="342" y="80">caducidad</text>
+<rect fill="#0055a0" height="58" rx="4" width="120" x="412" y="34"></rect>
+<text class="w6" text-anchor="middle" x="472" y="52">4 · CONSERVAR</text>
+<text style="fill:#dce8f4;font:8.5px system-ui,sans-serif" text-anchor="middle" x="472" y="68">Retención por tipo</text>
+<text style="fill:#dce8f4;font:8.5px system-ui,sans-serif" text-anchor="middle" x="472" y="80">de contenido</text>
+<rect fill="#2d8659" height="58" rx="4" width="116" x="542" y="34"></rect>
+<text class="w6" text-anchor="middle" x="600" y="52">5 · DESTRUIR</text>
+<text style="fill:#dff0e8;font:8.5px system-ui,sans-serif" text-anchor="middle" x="600" y="68">Borrado automático</text>
+<text style="fill:#dff0e8;font:8.5px system-ui,sans-serif" text-anchor="middle" x="600" y="80">con retención legal</text>
+<text class="c6" text-anchor="middle" x="82" y="108">mp.info.2</text>
+<text class="c6" text-anchor="middle" x="212" y="108">mp.com.2 y 3</text>
+<text class="c6" text-anchor="middle" x="342" y="108">op.acc.4 · mp.s.1</text>
+<text class="c6" text-anchor="middle" x="472" y="108">RGPD art. 5.1.e)</text>
+<text class="c6" text-anchor="middle" x="600" y="108">mp.si.5</text>
+<rect fill="#fbe9e9" height="52" rx="4" width="636" x="22" y="122"></rect>
+<text class="r6" x="32" y="139">LA MEDIDA MÁS OLVIDADA DEL ENS: mp.info.5, LIMPIEZA DE DOCUMENTOS</text>
+<text class="d6" x="32" y="153">«Se retirará toda la información adicional contenida en CAMPOS OCULTOS, METADATOS, COMENTARIOS O REVISIONES ANTERIORES,</text>
+<text class="d6" x="32" y="166">salvo cuando sea pertinente para el receptor». Confidencialidad. APLICA EN LOS TRES NIVELES, incluido el BAJO</text>
+<rect fill="#eef4fa" height="76" rx="4" width="312" x="22" y="186"></rect>
+<text class="k6" x="32" y="202">LAS DOS FUERZAS QUE TIRAN EN SENTIDO CONTRARIO</text>
+<text class="d6" x="32" y="217">El RGPD empuja a BORRAR: minimización (art. 5.1.c) y</text>
+<text class="d6" x="32" y="230">limitación del plazo (art. 5.1.e)</text>
+<text class="d6" x="32" y="243">El archivo y la prueba empujan a CONSERVAR</text>
+<text class="n6" x="32" y="254">Se concilian con retención diferenciada por tipo</text>
+<rect fill="#e6f2ec" height="76" rx="4" width="312" x="346" y="186"></rect>
+<text class="k6" x="356" y="202">EL REPARTO RAZONABLE EN UNA PLATAFORMA</text>
+<text class="d6" x="356" y="217">Mensajería: retención CORTA</text>
+<text class="d6" x="356" y="230">Correo: retención MEDIA</text>
+<text class="d6" x="356" y="243">Documento de expediente: la que fije el archivo</text>
+<text class="n6" x="356" y="254">Grabación de reunión: la MÁS CORTA de todas</text>
+<rect fill="none" height="34" rx="5" stroke="#0055a0" stroke-width="1.5" width="636" x="22" y="274"></rect>
+<text class="k6" text-anchor="middle" x="340" y="290">EL MAYOR VECTOR DE FUGA NO ES EL MALICIOSO: ES EL ACCIDENTAL</text>
+<text class="d6" text-anchor="middle" x="340" y="303">El enlace de compartición demasiado abierto y el adjunto al destinatario equivocado causan más incidentes que cualquier ataque</text>
+<text class="n6" text-anchor="end" x="658" y="322">[Fuente: RD 311/2022, anexo II · Reglamento (UE) 2016/679]</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg aria-label="Barras de velocidad máxima de las versiones USB: USB 2.0 480 Mbps, USB 3.2 Gen1 5 Gbps, Gen2 10 Gbps, Gen 2x2 20 Gbps y USB4 40 Gbps" class="svd4" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd4 .t{font:700 12px system-ui,sans-serif;fill:#fff}.svd4 .l{font:11px system-ui,sans-serif;fill:#333}.svd4 .h{font:700 14px system-ui,sans-serif;fill:#0055a0}.svd4 .v{font:700 12px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="340" y="26">Velocidad máxima por versión de USB</text>
+<line stroke="#ccc" stroke-width="1" x1="60" x2="650" y1="270" y2="270"></line>
+<rect fill="#6ea3d2" height="40" rx="4" width="80" x="80" y="230"></rect><text class="t" text-anchor="middle" x="120" y="255">480 Mb</text><text class="l" text-anchor="middle" x="120" y="290">USB 2.0</text>
+<rect fill="#0055a0" height="90" rx="4" width="80" x="200" y="180"></rect><text class="t" text-anchor="middle" x="240" y="215">5 Gb</text><text class="l" text-anchor="middle" x="240" y="290">3.2 Gen 1</text>
+<rect fill="#0055a0" height="130" rx="4" width="80" x="320" y="140"></rect><text class="t" text-anchor="middle" x="360" y="180">10 Gb</text><text class="l" text-anchor="middle" x="360" y="290">3.2 Gen 2</text>
+<rect fill="#003d73" height="170" rx="4" width="80" x="440" y="100"></rect><text class="t" text-anchor="middle" x="480" y="140">20 Gb</text><text class="l" text-anchor="middle" x="480" y="290">3.2 Gen 2×2</text>
+<rect fill="#2d8659" height="210" rx="4" width="80" x="560" y="60"></rect><text class="t" text-anchor="middle" x="600" y="100">40 Gb</text><text class="l" text-anchor="middle" x="600" y="290">USB4</text>
+<text class="v" text-anchor="middle" x="340" y="312">USB-C es el conector; la versión (protocolo) fija la velocidad</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="672" y="312">[Fuente: USB-IF]</text>
+</svg>

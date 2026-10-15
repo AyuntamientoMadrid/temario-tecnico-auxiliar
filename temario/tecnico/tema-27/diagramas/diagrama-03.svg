@@ -1,0 +1,65 @@
+<svg aria-label="Cadena de arranque en seis eslabones: firmware UEFI, gestor de arranque, cargador del núcleo, núcleo e initramfs, proceso inicial systemd o wininit, y servicios y sesión. Bajo cada eslabón se indica el síntoma característico cuando falla y la reparación correspondiente" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 10px system-ui,sans-serif;fill:#fff}.s3{font:9px system-ui,sans-serif;fill:#fff}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 10px system-ui,sans-serif;fill:#0055a0}.d3{font:9px system-ui,sans-serif;fill:#444}.a3{font:700 9px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h3" text-anchor="middle" x="340" y="20">La cadena de arranque: cada eslabón, su síntoma de fallo</text>
+<rect fill="#0055a0" height="46" rx="5" width="102" x="14" y="34"></rect>
+<text class="t3" text-anchor="middle" x="65" y="53">1 · FIRMWARE</text>
+<text class="s3" text-anchor="middle" x="65" y="70">UEFI / BIOS · POST</text>
+<rect fill="#0055a0" height="46" rx="5" width="102" x="126" y="34"></rect>
+<text class="t3" text-anchor="middle" x="177" y="53">2 · GESTOR</text>
+<text class="s3" text-anchor="middle" x="177" y="70">GRUB 2 · BCD</text>
+<rect fill="#0055a0" height="46" rx="5" width="102" x="238" y="34"></rect>
+<text class="t3" text-anchor="middle" x="289" y="53">3 · CARGADOR</text>
+<text class="s3" text-anchor="middle" x="289" y="70">lee el núcleo</text>
+<rect fill="#0055a0" height="46" rx="5" width="102" x="350" y="34"></rect>
+<text class="t3" text-anchor="middle" x="401" y="53">4 · NÚCLEO</text>
+<text class="s3" text-anchor="middle" x="401" y="70">+ initramfs</text>
+<rect fill="#0055a0" height="46" rx="5" width="102" x="462" y="34"></rect>
+<text class="t3" text-anchor="middle" x="513" y="53">5 · PROCESO 1</text>
+<text class="s3" text-anchor="middle" x="513" y="70">systemd · wininit</text>
+<rect fill="#2d8659" height="46" rx="5" width="92" x="574" y="34"></rect>
+<text class="t3" text-anchor="middle" x="620" y="53">6 · SERVICIOS</text>
+<text class="s3" text-anchor="middle" x="620" y="70">y sesión</text>
+<path d="M116 57 L126 57" stroke="#666" stroke-width="2"></path>
+<path d="M228 57 L238 57" stroke="#666" stroke-width="2"></path>
+<path d="M340 57 L350 57" stroke="#666" stroke-width="2"></path>
+<path d="M452 57 L462 57" stroke="#666" stroke-width="2"></path>
+<path d="M564 57 L574 57" stroke="#666" stroke-width="2"></path>
+<text class="k3" text-anchor="middle" x="340" y="104">Si se detiene aquí, el síntoma es…</text>
+<rect fill="#fdeaea" height="70" rx="5" stroke="#d13c3c" width="102" x="14" y="114"></rect>
+<text class="a3" text-anchor="middle" x="65" y="132">Sin imagen</text>
+<text class="d3" text-anchor="middle" x="65" y="148">no detecta el</text>
+<text class="d3" text-anchor="middle" x="65" y="162">disco, pitidos</text>
+<text class="d3" text-anchor="middle" x="65" y="178">→ hardware</text>
+<rect fill="#fdeaea" height="70" rx="5" stroke="#d13c3c" width="102" x="126" y="114"></rect>
+<text class="a3" text-anchor="middle" x="177" y="132">Sin dispositivo</text>
+<text class="d3" text-anchor="middle" x="177" y="148">de arranque</text>
+<text class="d3" text-anchor="middle" x="177" y="162">→ bootrec</text>
+<text class="d3" text-anchor="middle" x="177" y="178">→ grub-install</text>
+<rect fill="#fdeaea" height="70" rx="5" stroke="#d13c3c" width="102" x="238" y="114"></rect>
+<text class="a3" text-anchor="middle" x="289" y="132">Núcleo no</text>
+<text class="d3" text-anchor="middle" x="289" y="148">encontrado</text>
+<text class="d3" text-anchor="middle" x="289" y="162">→ entrada</text>
+<text class="d3" text-anchor="middle" x="289" y="178">anterior</text>
+<rect fill="#fdeaea" height="70" rx="5" stroke="#d13c3c" width="102" x="350" y="114"></rect>
+<text class="a3" text-anchor="middle" x="401" y="132">Kernel panic</text>
+<text class="d3" text-anchor="middle" x="401" y="148">no halla la raíz</text>
+<text class="d3" text-anchor="middle" x="401" y="162">→ regenerar</text>
+<text class="d3" text-anchor="middle" x="401" y="178">initramfs</text>
+<rect fill="#fdeaea" height="70" rx="5" stroke="#d13c3c" width="102" x="462" y="114"></rect>
+<text class="a3" text-anchor="middle" x="513" y="132">Pantalla negra</text>
+<text class="d3" text-anchor="middle" x="513" y="148">o bucle</text>
+<text class="d3" text-anchor="middle" x="513" y="162">→ rescue.target</text>
+<text class="d3" text-anchor="middle" x="513" y="178">→ modo seguro</text>
+<rect fill="#fdeaea" height="70" rx="5" stroke="#d13c3c" width="92" x="574" y="114"></rect>
+<text class="a3" text-anchor="middle" x="620" y="132">Arranca sin</text>
+<text class="d3" text-anchor="middle" x="620" y="148">red o servicio</text>
+<text class="d3" text-anchor="middle" x="620" y="162">→ systemctl</text>
+<text class="d3" text-anchor="middle" x="620" y="178">--failed</text>
+<rect fill="#f0f4f8" height="42" rx="5" stroke="#0055a0" width="652" x="14" y="200"></rect>
+<text class="k3" text-anchor="middle" x="340" y="219">Arranque Seguro (Secure Boot): el firmware verifica la FIRMA DIGITAL de cada eslabón</text>
+<text class="d3" text-anchor="middle" x="340" y="236">Un núcleo o controlador sin firmar detiene el arranque: es una avería «nueva» tras actualizar</text>
+<rect fill="#fff6e8" height="42" rx="5" stroke="#e89822" width="652" x="14" y="252"></rect>
+<text class="k3" text-anchor="middle" x="340" y="271">UEFI + GPT + partición ESP (FAT32) frente a BIOS heredada + MBR</text>
+<text class="d3" text-anchor="middle" x="340" y="288">MBR: máximo 2 TiB y 4 particiones primarias · GPT: hasta 128 particiones y sin ese límite</text>
+<text style="font:9.5px system-ui;fill:#666" text-anchor="end" x="670" y="314">[Fuente: UEFI-SPEC; GRUB-DOC; MS-WINRE]</text>
+</svg>

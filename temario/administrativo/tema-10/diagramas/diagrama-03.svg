@@ -1,0 +1,35 @@
+<svg aria-label="La discriminación por razón de sexo puede ser directa (trato menos favorable) o indirecta (criterio neutro con desventaja particular, salvo justificación objetiva); el acoso puede ser sexual (de naturaleza sexual) o por razón de sexo (realizado en función del sexo); ambos acosos son discriminatorios" class="svd3" role="img" viewbox="0 0 720 360" xmlns="http://www.w3.org/2000/svg">
+<style>.svd3 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd3 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd3 .s{font:10px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="46" rx="8" width="220" x="250" y="14"></rect>
+<text class="h" x="360" y="35">Discriminación por sexo</text>
+<text class="h" style="font-weight:400;font-size:10px" x="360" y="52">LOIEMH, arts. 6-8</text>
+<line stroke="#0055a0" stroke-width="1.5" x1="360" x2="360" y1="60" y2="74"></line>
+<line stroke="#0055a0" stroke-width="1.5" x1="180" x2="540" y1="74" y2="74"></line>
+<line stroke="#0055a0" stroke-width="1.5" x1="180" x2="180" y1="74" y2="88"></line>
+<line stroke="#0055a0" stroke-width="1.5" x1="540" x2="540" y1="74" y2="88"></line>
+<rect fill="#e8f0f8" height="86" rx="8" stroke="#0055a0" width="280" x="40" y="88"></rect>
+<text class="t" style="font-weight:700" x="180" y="110">DIRECTA (art. 6.1)</text>
+<text class="s" x="180" y="131">trato MENOS FAVORABLE</text>
+<text class="s" x="180" y="147">por razón de sexo</text>
+<text class="s" x="180" y="165">(embarazo/maternidad: art. 8)</text>
+<rect fill="#e8f0f8" height="86" rx="8" stroke="#0055a0" width="280" x="400" y="88"></rect>
+<text class="t" style="font-weight:700" x="540" y="110">INDIRECTA (art. 6.2)</text>
+<text class="s" x="540" y="131">criterio neutro → desventaja</text>
+<text class="s" x="540" y="147">particular de un sexo</text>
+<text class="s" x="540" y="165">salvo justificación objetiva</text>
+<rect fill="#fdeaea" height="40" rx="8" stroke="#d13c3c" width="220" x="250" y="200"></rect>
+<text class="t" style="font-weight:700" x="360" y="218">El ACOSO (art. 7)</text>
+<text class="s" x="360" y="233">es siempre discriminatorio (art. 7.3)</text>
+<line stroke="#d13c3c" stroke-width="1.5" x1="360" x2="360" y1="240" y2="252"></line>
+<line stroke="#d13c3c" stroke-width="1.5" x1="180" x2="540" y1="252" y2="252"></line>
+<line stroke="#d13c3c" stroke-width="1.5" x1="180" x2="180" y1="252" y2="266"></line>
+<line stroke="#d13c3c" stroke-width="1.5" x1="540" x2="540" y1="252" y2="266"></line>
+<rect fill="#fff5e6" height="76" rx="8" stroke="#e89822" width="260" x="50" y="266"></rect>
+<text class="t" style="font-weight:700" x="180" y="288">Acoso SEXUAL (art. 7.1)</text>
+<text class="s" x="180" y="309">comportamiento de</text>
+<text class="s" x="180" y="325">NATURALEZA sexual (verbal o físico)</text>
+<rect fill="#fff5e6" height="76" rx="8" stroke="#e89822" width="260" x="410" y="266"></rect>
+<text class="t" style="font-weight:700" x="540" y="288">Acoso POR RAZÓN de sexo (7.2)</text>
+<text class="s" x="540" y="309">comportamiento realizado</text>
+<text class="s" x="540" y="325">EN FUNCIÓN del sexo de una persona</text>
+</svg>

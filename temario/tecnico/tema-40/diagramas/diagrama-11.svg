@@ -1,0 +1,46 @@
+<svg aria-label="La pila de protocolos de WebRTC por capas: interfaz de JavaScript del W3C, medios y datos, SRTP y SCTP, DTLS, ICE con STUN y TURN, y UDP; con el mapa de las RFC publicadas en bloque en enero de 2021 y la advertencia de que WebRTC no define la señalización y de que el cifrado es obligatorio" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}.k11{font:700 10px system-ui,sans-serif;fill:#0055a0}.d11{font:9px system-ui,sans-serif;fill:#333}.n11{font:8.5px system-ui,sans-serif;fill:#666}.w11{font:700 10px system-ui,sans-serif;fill:#fff}.r11{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}.c11{font:700 8.5px system-ui,sans-serif;fill:#e89822}</style>
+<text class="h11" text-anchor="middle" x="340" y="19">WebRTC: la pila y el bloque de RFC de enero de 2021</text>
+<text class="n11" text-anchor="middle" x="340" y="35">W3C define la interfaz de JavaScript · IETF define los protocolos que van por debajo</text>
+<rect fill="#0055a0" height="24" rx="3" width="320" x="22" y="46"></rect>
+<text class="w11" text-anchor="middle" x="182" y="62">API del W3C: RTCPeerConnection · getUserMedia</text>
+<rect fill="#2d8659" height="24" rx="3" width="156" x="22" y="74"></rect>
+<text class="w11" text-anchor="middle" x="100" y="90">MEDIA (audio y vídeo)</text>
+<rect fill="#e89822" height="24" rx="3" width="156" x="186" y="74"></rect>
+<text class="w11" text-anchor="middle" x="264" y="90">CANALES DE DATOS</text>
+<rect fill="#2d8659" height="24" rx="3" width="156" x="22" y="102"></rect>
+<text class="w11" text-anchor="middle" x="100" y="118">SRTP (RFC 3711)</text>
+<rect fill="#e89822" height="24" rx="3" width="156" x="186" y="102"></rect>
+<text class="w11" text-anchor="middle" x="264" y="118">SCTP</text>
+<rect fill="#0055a0" height="24" rx="3" width="320" x="22" y="130"></rect>
+<text class="w11" text-anchor="middle" x="182" y="146">DTLS — negocia las claves (DTLS-SRTP, RFC 5764)</text>
+<rect fill="#0055a0" height="24" rx="3" width="320" x="22" y="158"></rect>
+<text class="w11" text-anchor="middle" x="182" y="174">ICE (8445) con STUN (8489) y TURN (8656)</text>
+<rect fill="#8a949e" height="24" rx="3" width="320" x="22" y="186"></rect>
+<text class="w11" text-anchor="middle" x="182" y="202">UDP (y TCP como último recurso)</text>
+<rect fill="#eef4fa" height="164" rx="4" width="304" x="354" y="46"></rect>
+<text class="k11" x="364" y="62">EL MAPA DE RFC — casi todo, enero de 2021</text>
+<text class="d11" x="364" y="78">8825  Visión general del conjunto</text>
+<text class="d11" x="364" y="91">8826 / 8827  Seguridad y su arquitectura</text>
+<text class="d11" x="364" y="104">8834 / 8835  Uso de RTP · Transportes</text>
+<text class="d11" x="364" y="117">8831 / 8832  Canales de datos y su establecimiento</text>
+<text class="d11" x="364" y="130">8830  Identificación de flujos (msid)</text>
+<text class="d11" x="364" y="143">8836  Requisitos de control de congestión</text>
+<text class="d11" x="364" y="156">8837  MARCADO DSCP para calidad de servicio</text>
+<text class="d11" x="364" y="169">8853 / 8858 / 8864  Simulcast · Multiplexación · Datos en SDP</text>
+<text class="d11" x="364" y="182">8865  TEXTO EN TIEMPO REAL (T.140): accesibilidad</text>
+<text class="c11" x="364" y="199">8829  JSEP → HOY SUSTITUIDA POR LA RFC 9429 (abril de 2024)</text>
+<rect fill="#fbe9e9" height="66" rx="4" width="312" x="22" y="222"></rect>
+<text class="r11" x="32" y="238">1 · NO DEFINE LA SEÑALIZACIÓN — es deliberado</text>
+<text class="d11" x="32" y="252">Cómo se avisa al otro extremo lo resuelve la aplicación,</text>
+<text class="d11" x="32" y="265">normalmente por WebSocket. Lo que sí normaliza es QUÉ se</text>
+<rect fill="#e6f2ec" height="66" rx="4" width="312" x="346" y="222"></rect>
+<text class="k11" x="356" y="238">2 · EL CIFRADO ES OBLIGATORIO, NO OPCIONAL</text>
+<text class="d11" x="356" y="252">No hay WebRTC sin cifrar: media por SRTP con claves</text>
+<text class="d11" x="356" y="265">negociadas por DTLS-SRTP; datos por SCTP sobre DTLS</text>
+<text class="d11" x="32" y="278">intercambia: descripciones SDP con oferta/respuesta (JSEP)</text>
+<text class="d11" x="356" y="278">Ningún flujo WebRTC viaja en claro</text>
+<rect fill="#fdf3e3" height="24" rx="4" width="636" x="22" y="300"></rect>
+<text class="k11" text-anchor="middle" x="340" y="316">CÓDECS OBLIGATORIOS: audio, OPUS y G.711 (RFC 7874) · vídeo, VP8 y H.264 Constrained Baseline (RFC 7742)</text>
+<text class="n11" text-anchor="end" x="658" y="344">[Fuente: RFC 8825 y bloque asociado · RFC 9429 · W3C WebRTC 1.0]</text>
+</svg>

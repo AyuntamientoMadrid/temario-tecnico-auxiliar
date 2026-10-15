@@ -1,0 +1,25 @@
+<svg aria-label="Mapa que sitúa las denominaciones comerciales XaaS (FaaS, CaaS de contenedores y de comunicaciones, DBaaS, DSaaS, NaaS, CompaaS, DaaS de escritorio y de datos, SECaaS, IDaaS, BPaaS y MLaaS) sobre los tres únicos modelos de servicio reconocidos por el NIST: IaaS, PaaS y SaaS" role="img" viewbox="0 0 680 339" xmlns="http://www.w3.org/2000/svg">
+<style>.t13{font:700 10.5px system-ui,sans-serif;fill:#fff}.s13{font:8.5px system-ui,sans-serif;fill:#fff}.d13{font:9px system-ui,sans-serif;fill:#333}.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.k13{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.f13{font:8px system-ui,sans-serif;fill:#777}</style>
+<text class="h13" text-anchor="middle" x="340" y="20">El zoo del XaaS sobre los tres modelos del NIST</text>
+<rect fill="#0055a0" height="26" rx="5" width="205" x="20" y="34"></rect><text class="t13" text-anchor="middle" x="122" y="52">IaaS</text>
+<rect fill="#e89822" height="26" rx="5" width="205" x="238" y="34"></rect><text class="t13" text-anchor="middle" x="340" y="52">PaaS</text>
+<rect fill="#2d8659" height="26" rx="5" width="204" x="456" y="34"></rect><text class="t13" text-anchor="middle" x="558" y="52">SaaS</text>
+<rect fill="#eef3f8" height="22" rx="3" width="205" x="20" y="66"></rect><text class="d13" text-anchor="middle" x="122" y="81">CompaaS — cómputo</text>
+<rect fill="#eef3f8" height="22" rx="3" width="205" x="20" y="92"></rect><text class="d13" text-anchor="middle" x="122" y="107">DSaaS — almacenamiento</text>
+<rect fill="#eef3f8" height="22" rx="3" width="205" x="20" y="118"></rect><text class="d13" text-anchor="middle" x="122" y="133">NaaS — red</text>
+<rect fill="#fdf3e2" height="22" rx="3" width="205" x="238" y="66"></rect><text class="d13" text-anchor="middle" x="340" y="81">FaaS — funciones, sin servidor</text>
+<rect fill="#fdf3e2" height="22" rx="3" width="205" x="238" y="92"></rect><text class="d13" text-anchor="middle" x="340" y="107">DBaaS — base de datos</text>
+<rect fill="#fdf3e2" height="22" rx="3" width="205" x="238" y="118"></rect><text class="d13" text-anchor="middle" x="340" y="133">iPaaS — integración</text>
+<rect fill="#e8f4ec" height="22" rx="3" width="204" x="456" y="66"></rect><text class="d13" text-anchor="middle" x="558" y="81">SECaaS — seguridad</text>
+<rect fill="#e8f4ec" height="22" rx="3" width="204" x="456" y="92"></rect><text class="d13" text-anchor="middle" x="558" y="107">BPaaS — proceso de negocio</text>
+<rect fill="#e8f4ec" height="22" rx="3" width="204" x="456" y="118"></rect><text class="d13" text-anchor="middle" x="558" y="133">DaaS — datos como servicio</text>
+<rect fill="#c9d9e8" height="24" rx="4" width="205" x="130" y="152"></rect><text class="d13" text-anchor="middle" x="232" y="168">CaaS — contenedores (entre IaaS y PaaS)</text>
+<rect fill="#cfe3d6" height="24" rx="4" width="205" x="345" y="152"></rect><text class="d13" text-anchor="middle" x="447" y="168">IDaaS — identidad (PaaS/SaaS)</text>
+<rect fill="#cfe3d6" height="24" rx="4" width="205" x="130" y="180"></rect><text class="d13" text-anchor="middle" x="232" y="196">DaaS — escritorio (véase Tema 28)</text>
+<rect fill="#cfe3d6" height="24" rx="4" width="205" x="345" y="180"></rect><text class="d13" text-anchor="middle" x="447" y="196">MLaaS — modelos e inferencia</text>
+<rect fill="#d13c3c" height="24" rx="4" width="640" x="20" y="216"></rect><text class="s13" text-anchor="middle" x="340" y="232">Ninguna de estas siglas es una categoría del NIST: el NIST reconoce TRES modelos de servicio</text>
+<rect fill="#fdecec" height="46" rx="5" width="310" x="20" y="246"></rect><text class="d13" text-anchor="middle" x="175" y="264">CaaS ambiguo: containers</text><text class="d13" text-anchor="middle" x="175" y="280">o communications</text>
+<rect fill="#fdecec" height="46" rx="5" width="310" x="350" y="246"></rect><text class="d13" text-anchor="middle" x="505" y="264">DaaS ambiguo: desktop</text><text class="d13" text-anchor="middle" x="505" y="280">o data</text>
+<rect fill="#0055a0" height="18" rx="4" width="640" x="20" y="298"></rect><text class="s13" text-anchor="middle" x="340" y="311">En una respuesta escrita, desarrolle siempre la sigla para no dar lugar a duda</text>
+<text class="f13" text-anchor="middle" x="340" y="330">[Fuente: NIST145, ISO17788]</text>
+</svg>

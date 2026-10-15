@@ -1,0 +1,29 @@
+<svg aria-label="Tres cardinalidades: uno a uno, uno a muchos y muchos a muchos" class="svd6" role="img" viewbox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd6 .w{font:700 11px system-ui,sans-serif;fill:#fff}.svd6 .c{font:700 13px system-ui,sans-serif;fill:#d13c3c}.svd6 .lab{font:11px system-ui,sans-serif;fill:#555}.svd6 .h{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="330" y="22">Razón de cardinalidad (máxima)</text>
+<!-- 1:1 -->
+<text class="c" text-anchor="middle" x="110" y="55">1 : 1</text>
+<rect fill="#0055a0" height="34" rx="4" width="60" x="40" y="70"></rect><text class="w" text-anchor="middle" x="70" y="92">PERSONA</text>
+<line stroke="#333" x1="100" x2="150" y1="87" y2="87"></line><text class="lab" text-anchor="middle" x="125" y="80">1   1</text>
+<rect fill="#0055a0" height="34" rx="4" width="60" x="150" y="70"></rect><text class="w" text-anchor="middle" x="180" y="92">DNI</text>
+<text class="lab" text-anchor="middle" x="125" y="125">cada persona, un DNI</text>
+<!-- 1:N -->
+<text class="c" text-anchor="middle" x="330" y="55">1 : N</text>
+<rect fill="#0055a0" height="34" rx="4" width="60" x="250" y="70"></rect><text class="w" text-anchor="middle" x="280" y="92">DISTRITO</text>
+<line stroke="#333" x1="310" x2="360" y1="87" y2="87"></line><text class="lab" text-anchor="middle" x="335" y="80">1   N</text>
+<rect fill="#0055a0" height="34" rx="4" width="60" x="360" y="70"></rect><text class="w" text-anchor="middle" x="390" y="92">BARRIO</text>
+<text class="lab" text-anchor="middle" x="335" y="125">un distrito, muchos barrios</text>
+<!-- N:M -->
+<text class="c" text-anchor="middle" x="560" y="55">N : M</text>
+<rect fill="#0055a0" height="34" rx="4" width="80" x="470" y="70"></rect><text class="w" style="font-size:9.5px" text-anchor="middle" x="510" y="92">FUNCIONARIO</text>
+<line stroke="#333" x1="550" x2="600" y1="87" y2="87"></line><text class="lab" text-anchor="middle" x="575" y="80">N   M</text>
+<rect fill="#0055a0" height="34" rx="4" width="50" x="600" y="70"></rect><text class="w" text-anchor="middle" x="625" y="92">CURSO</text>
+<text class="lab" text-anchor="middle" x="560" y="125">varios en varios</text>
+<!-- nota transformación -->
+<rect fill="#e8f5ee" height="100" rx="8" stroke="#2d8659" width="610" x="40" y="160"></rect>
+<text class="h" style="fill:#2d8659" x="55" y="184">Al pasar a tablas (modelo relacional):</text>
+<text class="lab" x="55" y="208">• <tspan font-weight="700">1:1</tspan> → clave ajena en una de las dos tablas</text>
+<text class="lab" x="55" y="230">• <tspan font-weight="700">1:N</tspan> → la clave del lado «1» se propaga como clave ajena al lado «N»</text>
+<text class="lab" x="55" y="252">• <tspan font-weight="700">N:M</tspan> → se crea una <tspan font-weight="700">tabla intermedia</tspan> con las claves de ambas entidades</text>
+<text class="lab" style="fill:#888" text-anchor="end" x="630" y="285">[Fuente: ELMASRI cap. 9]</text>
+</svg>

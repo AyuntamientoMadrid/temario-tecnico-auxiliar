@@ -1,0 +1,33 @@
+<svg aria-label="Cadena de suministro eléctrico de un centro de proceso de datos: red eléctrica, sistema de alimentación ininterrumpida por baterías y grupo electrógeno, con el reparto temporal entre ambos, y esquema de climatización con pasillo frío y pasillo caliente confinados" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 10.5px system-ui,sans-serif;fill:#fff}.s6{font:8.5px system-ui,sans-serif;fill:#fff}.d6{font:9px system-ui,sans-serif;fill:#333}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}.k6{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n6{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h6" text-anchor="middle" x="340" y="20">La cadena eléctrica: quién cubre qué, y durante cuánto</text>
+<rect fill="#888" height="46" rx="5" width="120" x="20" y="36"></rect><text class="t6" text-anchor="middle" x="80" y="55">RED ELÉCTRICA</text><text class="s6" text-anchor="middle" x="80" y="70">2 acometidas</text>
+<rect fill="#0055a0" height="46" rx="5" width="120" x="176" y="36"></rect><text class="t6" text-anchor="middle" x="236" y="55">SAI / UPS</text><text class="s6" text-anchor="middle" x="236" y="70">baterías, 10-30 min</text>
+<rect fill="#2d8659" height="46" rx="5" width="120" x="332" y="36"></rect><text class="t6" text-anchor="middle" x="392" y="55">GRUPO</text><text class="s6" text-anchor="middle" x="392" y="70">combustible, horas</text>
+<rect fill="#e89822" height="46" rx="5" width="172" x="488" y="36"></rect><text class="t6" text-anchor="middle" x="574" y="55">PDU Y BASTIDORES</text><text class="s6" text-anchor="middle" x="574" y="70">doble vía A y B</text>
+<path d="M140 59 L172 59" marker-end="url(#a6)" stroke="#666" stroke-width="1.5"></path>
+<path d="M296 59 L328 59" marker-end="url(#a6)" stroke="#666" stroke-width="1.5"></path>
+<path d="M452 59 L484 59" marker-end="url(#a6)" stroke="#666" stroke-width="1.5"></path>
+<defs><marker id="a6" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#666"></path></marker></defs>
+<text class="k6" x="20" y="106">LÍNEA TEMPORAL DE UN CORTE DE SUMINISTRO</text>
+<rect fill="#f5f5f5" height="26" rx="4" width="640" x="20" y="114"></rect>
+<rect fill="#0055a0" height="26" rx="4" width="130" x="20" y="114"></rect><text class="s6" text-anchor="middle" x="85" y="131">SAI (inmediato, sin corte)</text>
+<rect fill="#2d8659" height="26" width="510" x="150" y="114"></rect><text class="s6" text-anchor="middle" x="405" y="131">GRUPO ELECTRÓGENO (arranque en decenas de segundos, autonomía de horas o días)</text>
+<text class="n6" x="20" y="156">El SAI cubre el ARRANQUE del generador y filtra la calidad de la onda; el generador cubre la DURACIÓN. No se sustituyen.</text>
+<rect fill="#fdf3e3" height="26" rx="4" width="640" x="20" y="168"></rect>
+<text class="d6" text-anchor="middle" x="340" y="185">mp.if.4 R1: el abastecimiento debe garantizarse el tiempo suficiente para TERMINAR ORDENADAMENTE y salvaguardar la información</text>
+<text class="k6" x="20" y="216">REDUNDANCIA</text>
+<rect fill="#eef3f8" height="34" rx="4" width="100" x="20" y="224"></rect><text class="d6" text-anchor="middle" x="70" y="245">N — sin margen</text>
+<rect fill="#eef3f8" height="34" rx="4" width="100" x="128" y="224"></rect><text class="d6" text-anchor="middle" x="178" y="245">N+1 — 1 reserva</text>
+<rect fill="#eef3f8" height="34" rx="4" width="100" x="236" y="224"></rect><text class="d6" text-anchor="middle" x="286" y="245">2N — duplicado</text>
+<rect fill="#eef3f8" height="34" rx="4" width="100" x="344" y="224"></rect><text class="d6" text-anchor="middle" x="394" y="245">2(N+1) — máximo</text>
+<rect fill="#0055a0" height="34" rx="4" width="200" x="460" y="224"></rect><text class="s6" text-anchor="middle" x="560" y="239">Tier III = mantenible sin parar</text><text class="s6" text-anchor="middle" x="560" y="252">Tier IV = tolerante a fallos</text>
+<text class="k6" x="20" y="280">CLIMATIZACIÓN · PASILLO FRÍO Y PASILLO CALIENTE</text>
+<rect fill="#666" height="34" rx="3" width="70" x="20" y="288"></rect><text class="s6" text-anchor="middle" x="55" y="309">RACK</text>
+<rect fill="#cfe4f7" height="34" rx="3" width="90" x="96" y="288"></rect><text class="d6" text-anchor="middle" x="141" y="309">PASILLO FRÍO</text>
+<rect fill="#666" height="34" rx="3" width="70" x="192" y="288"></rect><text class="s6" text-anchor="middle" x="227" y="309">RACK</text>
+<rect fill="#f7cfcf" height="34" rx="3" width="90" x="268" y="288"></rect><text class="d6" style="font-size:8px" text-anchor="middle" x="313" y="309">PASILLO CALIENTE</text>
+<rect fill="#666" height="34" rx="3" width="70" x="364" y="288"></rect><text class="s6" text-anchor="middle" x="399" y="309">RACK</text>
+<rect fill="#f5f5f5" height="34" rx="4" width="216" x="444" y="288"></rect><text class="d6" text-anchor="middle" x="552" y="303">Frentes enfrentados y pasillo confinado</text><text class="d6" text-anchor="middle" x="552" y="316">ASHRAE clase A1: 18-27 °C de entrada</text>
+<text class="n6" text-anchor="end" x="670" y="344">[Fuente: ENS, mp.if.3-5; TIA942; ASHRAE]</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg aria-label="Capas del software de base, de abajo arriba: hardware, firmware UEFI, núcleo del sistema operativo con controladores, bibliotecas y servicios del sistema, middleware y aplicaciones. La frontera entre modo núcleo y modo usuario se cruza mediante llamadas al sistema" role="img" viewbox="0 0 680 336" xmlns="http://www.w3.org/2000/svg">
+<style>.t1{font:700 11.5px system-ui,sans-serif;fill:#fff}.s1{font:9.5px system-ui,sans-serif;fill:#fff}.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}.k1{font:700 10px system-ui,sans-serif;fill:#0055a0}.d1{font:9.5px system-ui,sans-serif;fill:#444}</style>
+<text class="h1" text-anchor="middle" x="340" y="20">Las capas del software de base</text>
+<rect fill="#2d8659" height="40" rx="5" width="470" x="60" y="32"></rect>
+<text class="t1" text-anchor="middle" x="295" y="49">APLICACIONES</text>
+<text class="s1" text-anchor="middle" x="295" y="65">Padrón · sede electrónica · ofimática · navegador</text>
+<rect fill="#5a9e7a" height="40" rx="5" width="470" x="60" y="78"></rect>
+<text class="t1" text-anchor="middle" x="295" y="95">MIDDLEWARE</text>
+<text class="s1" text-anchor="middle" x="295" y="111">servidor web · servidor de aplicaciones · SGBD</text>
+<rect fill="#e89822" height="42" rx="5" width="470" x="60" y="124"></rect>
+<text class="t1" text-anchor="middle" x="295" y="141">BIBLIOTECAS, UTILIDADES Y SERVICIOS DEL SISTEMA</text>
+<text class="s1" text-anchor="middle" x="295" y="158">glibc y DLL · systemd y servicios · gestor de paquetes · copias</text>
+<line stroke="#d13c3c" stroke-dasharray="6 4" stroke-width="2" x1="20" x2="660" y1="176" y2="176"></line>
+<text class="k1" x="24" y="190">Frontera de privilegio: se cruza mediante LLAMADAS AL SISTEMA</text>
+<rect fill="#0055a0" height="42" rx="5" width="470" x="60" y="198"></rect>
+<text class="t1" text-anchor="middle" x="295" y="215">NÚCLEO DEL SISTEMA OPERATIVO</text>
+<text class="s1" text-anchor="middle" x="295" y="232">procesos · memoria · archivos · E/S · protección · controladores</text>
+<rect fill="#004077" height="34" rx="5" width="470" x="60" y="246"></rect>
+<text class="t1" text-anchor="middle" x="295" y="268">FIRMWARE (UEFI / BIOS)</text>
+<rect fill="#555" height="32" rx="5" width="470" x="60" y="286"></rect>
+<text class="t1" text-anchor="middle" x="295" y="307">HARDWARE</text>
+<rect fill="none" height="82" rx="5" stroke="#0055a0" stroke-width="2" width="112" x="546" y="198"></rect>
+<text class="k1" text-anchor="middle" x="602" y="222">MODO</text>
+<text class="k1" text-anchor="middle" x="602" y="238">NÚCLEO</text>
+<text class="d1" text-anchor="middle" x="602" y="258">privilegiado</text>
+<text class="d1" text-anchor="middle" x="602" y="272">(anillo 0)</text>
+<rect fill="none" height="134" rx="5" stroke="#2d8659" stroke-width="2" width="112" x="546" y="32"></rect>
+<text class="k1" text-anchor="middle" x="602" y="86">MODO</text>
+<text class="k1" text-anchor="middle" x="602" y="102">USUARIO</text>
+<text class="d1" text-anchor="middle" x="602" y="122">restringido</text>
+<text style="font:9.5px system-ui;fill:#666" text-anchor="end" x="670" y="332">[Fuente: SILBERSCHATZ; STALLINGS]</text>
+</svg>

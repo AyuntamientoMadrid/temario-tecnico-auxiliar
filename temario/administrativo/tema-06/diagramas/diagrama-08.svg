@@ -1,0 +1,31 @@
+<svg aria-label="La Ley 19/2013 se asienta sobre tres pilares: la publicidad activa de los artículos 5 a 11, el derecho de acceso a la información pública de los artículos 12 a 24 y el buen gobierno de los artículos 25 a 32" class="svd8" role="img" viewbox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd8 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd8 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd8 .s{font:10.5px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="46" rx="8" width="300" x="200" y="16"></rect>
+<text class="h" x="350" y="38">LEY 19/2013 · TRANSPARENCIA</text>
+<text class="h" style="font-weight:400;font-size:11px" x="350" y="55">de 9 de diciembre (LTBG)</text>
+<line stroke="#0055a0" x1="350" x2="350" y1="62" y2="78"></line>
+<line stroke="#0055a0" x1="130" x2="570" y1="78" y2="78"></line>
+<line stroke="#0055a0" x1="130" x2="130" y1="78" y2="94"></line>
+<line stroke="#0055a0" x1="350" x2="350" y1="78" y2="94"></line>
+<line stroke="#0055a0" x1="570" x2="570" y1="78" y2="94"></line>
+<rect fill="#e8f0f8" height="130" rx="8" stroke="#0055a0" width="212" x="24" y="94"></rect>
+<text class="t" style="font-weight:700" x="130" y="120">1 · Publicidad activa</text>
+<text class="s" style="font-weight:700;fill:#0055a0" x="130" y="140">arts. 5-11</text>
+<text class="s" x="130" y="166">La Administración publica</text>
+<text class="s" x="130" y="184">información DE OFICIO,</text>
+<text class="s" x="130" y="202">sin que nadie la pida</text>
+<rect fill="#e8f5ee" height="130" rx="8" stroke="#2d8659" width="212" x="244" y="94"></rect>
+<text class="t" style="font-weight:700" x="350" y="120">2 · Derecho de acceso</text>
+<text class="s" style="font-weight:700;fill:#2d8659" x="350" y="140">arts. 12-24</text>
+<text class="s" x="350" y="166">El ciudadano SOLICITA</text>
+<text class="s" x="350" y="184">información pública;</text>
+<text class="s" x="350" y="202">resuelve la Administración</text>
+<rect fill="#e8f0f8" height="130" rx="8" stroke="#0055a0" width="212" x="464" y="94"></rect>
+<text class="t" style="font-weight:700" x="570" y="120">3 · Buen gobierno</text>
+<text class="s" style="font-weight:700;fill:#0055a0" x="570" y="140">arts. 25-32</text>
+<text class="s" x="570" y="166">Principios éticos y</text>
+<text class="s" x="570" y="184">régimen sancionador</text>
+<text class="s" x="570" y="202">de los altos cargos</text>
+<rect fill="#fff5e6" height="38" rx="8" stroke="#e89822" width="460" x="120" y="250"></rect>
+<text class="s" style="font-weight:700;fill:#b5740f" x="350" y="274">Control (AGE, art. 9): Consejo de Transparencia y Buen Gobierno</text>
+</svg>

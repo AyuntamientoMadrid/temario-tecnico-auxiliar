@@ -1,0 +1,22 @@
+<svg aria-label="Modelo de comunicación de Shannon con sus cinco elementos en cadena: fuente de información, transmisor, canal, receptor y destino, con la fuente de ruido actuando sobre el canal y no sobre el mensaje" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t1{font:700 10.5px system-ui,sans-serif;fill:#fff}.s1{font:8.5px system-ui,sans-serif;fill:#fff}.d1{font:9px system-ui,sans-serif;fill:#333}.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}.k1{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n1{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<defs><marker id="a1" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#666"></path></marker></defs>
+<text class="h1" text-anchor="middle" x="340" y="20">Los cinco elementos y dónde entra el ruido</text>
+<rect fill="#0055a0" height="52" rx="5" width="120" x="20" y="46"></rect><text class="t1" text-anchor="middle" x="80" y="66">FUENTE</text><text class="s1" text-anchor="middle" x="80" y="80">genera el</text><text class="s1" text-anchor="middle" x="80" y="92">mensaje</text>
+<rect fill="#0055a0" height="52" rx="5" width="120" x="150" y="46"></rect><text class="t1" text-anchor="middle" x="210" y="66">TRANSMISOR</text><text class="s1" text-anchor="middle" x="210" y="80">codifica y</text><text class="s1" text-anchor="middle" x="210" y="92">modula</text>
+<rect fill="#e89822" height="52" rx="5" width="120" x="280" y="46"></rect><text class="t1" text-anchor="middle" x="340" y="66">CANAL</text><text class="s1" text-anchor="middle" x="340" y="80">medio de</text><text class="s1" text-anchor="middle" x="340" y="92">transmisión</text>
+<rect fill="#0055a0" height="52" rx="5" width="120" x="410" y="46"></rect><text class="t1" text-anchor="middle" x="470" y="66">RECEPTOR</text><text class="s1" text-anchor="middle" x="470" y="80">demodula y</text><text class="s1" text-anchor="middle" x="470" y="92">decodifica</text>
+<rect fill="#0055a0" height="52" rx="5" width="120" x="540" y="46"></rect><text class="t1" text-anchor="middle" x="600" y="66">DESTINO</text><text class="s1" text-anchor="middle" x="600" y="80">recibe el</text><text class="s1" text-anchor="middle" x="600" y="92">mensaje</text>
+<path d="M140 72 L146 72" marker-end="url(#a1)" stroke="#666" stroke-width="1.5"></path>
+<path d="M270 72 L276 72" marker-end="url(#a1)" stroke="#666" stroke-width="1.5"></path>
+<path d="M400 72 L406 72" marker-end="url(#a1)" stroke="#666" stroke-width="1.5"></path>
+<path d="M530 72 L536 72" marker-end="url(#a1)" stroke="#666" stroke-width="1.5"></path>
+<path d="M340 146 L340 104" marker-end="url(#a1)" stroke="#d13c3c" stroke-width="2"></path>
+<rect fill="#d13c3c" height="34" rx="5" width="180" x="250" y="150"></rect><text class="t1" text-anchor="middle" x="340" y="171">FUENTE DE RUIDO</text>
+<rect fill="#fdf3e3" height="26" rx="4" width="640" x="20" y="200"></rect>
+<text class="d1" text-anchor="middle" x="340" y="217">El ruido se suma a la señal DURANTE su tránsito por el canal, no en el mensaje ni en los equipos</text>
+<rect fill="none" height="42" rx="5" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="238"></rect>
+<text class="k1" text-anchor="middle" x="340" y="255">Versión de 7 elementos (modelo de comunicación de datos)</text>
+<text class="n1" text-anchor="middle" x="340" y="270">emisor · receptor · mensaje · medio · protocolo, más la codificación y la decodificación</text>
+<text class="n1" text-anchor="end" x="670" y="294">[Fuente: SHANNON, 1948]</text>
+</svg>

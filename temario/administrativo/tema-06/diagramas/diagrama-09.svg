@@ -1,0 +1,31 @@
+<svg aria-label="La publicidad activa abarca tres categorías: información institucional, organizativa y de planificación del artículo 6; información de relevancia jurídica del artículo 7; e información económica, presupuestaria y estadística del artículo 8" class="svd9" role="img" viewbox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd9 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd9 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd9 .s{font:10.5px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="44" rx="8" width="320" x="190" y="16"></rect>
+<text class="h" x="350" y="43">PUBLICIDAD ACTIVA (de oficio)</text>
+<rect fill="#e8f0f8" height="150" rx="8" stroke="#0055a0" width="216" x="20" y="80"></rect>
+<text class="t" style="font-weight:700" x="128" y="104">Institucional y</text>
+<text class="t" style="font-weight:700" x="128" y="122">organizativa</text>
+<text class="s" style="font-weight:700;fill:#0055a0" x="128" y="140">art. 6</text>
+<text class="s" x="128" y="164">Funciones</text>
+<text class="s" x="128" y="182">Normativa aplicable</text>
+<text class="s" x="128" y="200">Organigrama</text>
+<text class="s" x="128" y="218">Planes y programas</text>
+<rect fill="#e8f0f8" height="150" rx="8" stroke="#0055a0" width="216" x="242" y="80"></rect>
+<text class="t" style="font-weight:700" x="350" y="104">De relevancia</text>
+<text class="t" style="font-weight:700" x="350" y="122">jurídica</text>
+<text class="s" style="font-weight:700;fill:#0055a0" x="350" y="140">art. 7</text>
+<text class="s" x="350" y="164">Directrices e instruc.</text>
+<text class="s" x="350" y="182">Anteproyectos de ley</text>
+<text class="s" x="350" y="200">Proyectos de reglamento</text>
+<text class="s" x="350" y="218">Memorias e informes</text>
+<rect fill="#e8f5ee" height="150" rx="8" stroke="#2d8659" width="216" x="464" y="80"></rect>
+<text class="t" style="font-weight:700" x="572" y="104">Económica y</text>
+<text class="t" style="font-weight:700" x="572" y="122">presupuestaria</text>
+<text class="s" style="font-weight:700;fill:#2d8659" x="572" y="140">art. 8</text>
+<text class="s" x="572" y="164">Contratos y convenios</text>
+<text class="s" x="572" y="182">Subvenciones</text>
+<text class="s" x="572" y="200">Presupuestos y cuentas</text>
+<text class="s" x="572" y="218">Retribuciones altos cargos</text>
+<rect fill="#fff5e6" height="34" rx="8" stroke="#e89822" width="380" x="160" y="256"></rect>
+<text class="s" style="font-weight:700;fill:#b5740f" x="350" y="278">Sedes electrónicas o webs · preferiblemente reutilizable</text>
+</svg>

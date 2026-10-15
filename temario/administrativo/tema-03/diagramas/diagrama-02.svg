@@ -1,0 +1,33 @@
+<svg aria-label="Organización del Ayuntamiento: órganos centrales, órganos territoriales y organismos públicos según el artículo 6" role="img" viewbox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .b-root{fill:#0055a0;stroke:#003d75;stroke-width:2}
+    .b-box{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .b-t{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .b-h{font:700 13px system-ui,sans-serif;fill:#003d75;text-anchor:middle}
+    .b-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+    .b-l{stroke:#0055a0;stroke-width:1.5;fill:none}
+  </style>
+<rect class="b-root" height="46" rx="8" width="200" x="250" y="20"></rect>
+<text class="b-t" x="350" y="40">AYUNTAMIENTO DE MADRID</text>
+<text class="b-t" style="font-weight:400;font-size:11px" x="350" y="57">ROGA art. 6</text>
+<line class="b-l" x1="350" x2="350" y1="66" y2="92"></line>
+<line class="b-l" x1="130" x2="130" y1="110" y2="92"></line>
+<line class="b-l" x1="350" x2="350" y1="110" y2="92"></line>
+<line class="b-l" x1="570" x2="570" y1="110" y2="92"></line>
+<line class="b-l" x1="130" x2="570" y1="92" y2="92"></line>
+<rect class="b-box" height="120" rx="8" width="200" x="30" y="110"></rect>
+<text class="b-h" x="130" y="138">Órganos CENTRALES</text>
+<text class="b-s" x="130" y="164">competencias sobre TODO</text>
+<text class="b-s" x="130" y="180">el municipio</text>
+<text class="b-s" style="font-style:italic" x="130" y="206">Áreas de Gobierno</text>
+<rect class="b-box" height="120" rx="8" width="200" x="250" y="110"></rect>
+<text class="b-h" x="350" y="138">Órganos TERRITORIALES</text>
+<text class="b-s" x="350" y="164">competencias en EL ÁMBITO</text>
+<text class="b-s" x="350" y="180">de un distrito</text>
+<text class="b-s" style="font-style:italic" x="350" y="206">distritos (Tema 4)</text>
+<rect class="b-box" height="120" rx="8" width="200" x="470" y="110"></rect>
+<text class="b-h" x="570" y="138">ORGANISMOS PÚBLICOS</text>
+<text class="b-s" x="570" y="164">ejecución / gestión</text>
+<text class="b-s" x="570" y="180">adscritos a un Área</text>
+<text class="b-s" style="font-style:italic" x="570" y="206">autónomos y EPE</text>
+</svg>

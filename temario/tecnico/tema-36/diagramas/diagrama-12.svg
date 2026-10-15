@@ -1,0 +1,32 @@
+<svg aria-label="Confianza cero según la publicación NIST SP 800-207: los siete principios, desde considerar recurso a toda fuente de datos hasta recopilar información y usarla para mejorar la política; y los componentes lógicos, con el motor de políticas y el administrador de políticas formando el punto de decisión, y el punto de aplicación de políticas en el camino del tráfico. Se advierte de que la confianza cero no elimina el perímetro ni la VPN, que siguen siendo obligatorios en España" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}.k12{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.t12{font:700 9.5px system-ui,sans-serif;fill:#fff}.s12{font:8px system-ui,sans-serif;fill:#fff}.d12{font:8.5px system-ui,sans-serif;fill:#333}.b12{font:700 9px system-ui,sans-serif;fill:#0055a0}.n12{font:8px system-ui,sans-serif;fill:#666}.a12{font:8px system-ui,sans-serif;fill:#666}.num12{font:700 10px system-ui,sans-serif;fill:#fff}.r12{font:700 8.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h12" text-anchor="middle" x="340" y="20">«Nunca confíes, verifica siempre»: estar dentro de la red ya no da ningún derecho</text>
+<text class="k12" x="20" y="42">LOS SIETE PRINCIPIOS · NIST SP 800-207 (AGOSTO DE 2020)</text>
+<circle cx="32" cy="58" fill="#0055a0" r="9"></circle><text class="num12" text-anchor="middle" x="32" y="62">1</text><text class="d12" x="48" y="62">Todas las fuentes de datos y servicios de computación se consideran RECURSOS</text>
+<circle cx="32" cy="82" fill="#0055a0" r="9"></circle><text class="num12" text-anchor="middle" x="32" y="86">2</text><text class="d12" x="48" y="86">TODA comunicación se protege, con independencia de la ubicación en la red — también la interna</text>
+<circle cx="32" cy="106" fill="#0055a0" r="9"></circle><text class="num12" text-anchor="middle" x="32" y="110">3</text><text class="d12" x="48" y="110">El acceso a cada recurso se concede POR SESIÓN, de una en una</text>
+<circle cx="32" cy="130" fill="#0055a0" r="9"></circle><text class="num12" text-anchor="middle" x="32" y="134">4</text><text class="d12" x="48" y="134">El acceso se determina por POLÍTICA DINÁMICA: identidad, aplicación, estado del dispositivo, comportamiento y entorno</text>
+<circle cx="32" cy="154" fill="#0055a0" r="9"></circle><text class="num12" text-anchor="middle" x="32" y="158">5</text><text class="d12" x="48" y="158">La organización MIDE Y VIGILA la integridad y el estado de seguridad de todos sus activos</text>
+<circle cx="32" cy="178" fill="#0055a0" r="9"></circle><text class="num12" text-anchor="middle" x="32" y="182">6</text><text class="d12" x="48" y="182">Autenticación y autorización son DINÁMICAS y estrictamente exigidas ANTES de permitir el acceso</text>
+<circle cx="32" cy="202" fill="#0055a0" r="9"></circle><text class="num12" text-anchor="middle" x="32" y="206">7</text><text class="d12" x="48" y="206">Se recopila toda la información posible sobre activos, infraestructura y comunicaciones, y SE USA PARA MEJORAR la política</text>
+<text class="k12" x="20" y="230">LOS COMPONENTES LÓGICOS: QUIÉN DECIDE Y QUIÉN EJECUTA</text>
+<rect fill="#eef4fa" height="70" rx="5" stroke="#0055a0" width="256" x="20" y="238"></rect>
+<text class="b12" text-anchor="middle" x="148" y="254">PDP · PUNTO DE DECISIÓN</text>
+<rect fill="#0055a0" height="36" rx="4" width="112" x="32" y="262"></rect><text class="t12" text-anchor="middle" x="88" y="278">MOTOR (PE)</text><text class="s12" text-anchor="middle" x="88" y="291">Decide SI se concede</text>
+<rect fill="#0055a0" height="36" rx="4" width="112" x="152" y="262"></rect><text class="t12" text-anchor="middle" x="208" y="278">ADMIN. (PA)</text><text class="s12" text-anchor="middle" x="208" y="291">Ejecuta la decisión</text>
+<text class="a12" x="286" y="278">consulta</text>
+<text class="a12" x="286" y="290">cada vez →</text>
+<rect fill="#eef7f1" height="70" rx="5" stroke="#2d8659" width="150" x="352" y="238"></rect>
+<text class="b12" text-anchor="middle" x="427" y="254">PEP · APLICACIÓN</text>
+<rect fill="#2d8659" height="36" rx="4" width="126" x="364" y="262"></rect><text class="t12" text-anchor="middle" x="427" y="278">DEJA PASAR O NO</text><text class="s12" text-anchor="middle" x="427" y="291">Pasarela, agente, proxy</text>
+<rect fill="#f7f9fc" height="70" rx="5" stroke="#ccc" width="148" x="512" y="238"></rect>
+<text class="b12" text-anchor="middle" x="586" y="254">SOBRE QUÉ DECIDE</text>
+<text class="d12" x="522" y="270">Identidad y MFA (§3.2)</text>
+<text class="d12" x="522" y="282">Estado del dispositivo (§5)</text>
+<text class="d12" x="522" y="294">Microsegmentación (§2.4.1)</text>
+<rect fill="#fdeeee" height="44" rx="5" stroke="#d13c3c" width="640" x="20" y="312"></rect>
+<text class="r12" text-anchor="middle" x="340" y="326">LO QUE LA CONFIANZA CERO NO ES</text>
+<text class="d12" text-anchor="middle" x="340" y="339">No es un producto · no elimina el cortafuegos · no deroga la VPN · no es incompatible con el ENS</text>
+<text class="d12" text-anchor="middle" x="340" y="350">En España, mp.com.1 (perímetro) y mp.com.2 (VPN cifrada) siguen siendo obligatorios</text>
+<text class="n12" x="20" y="368">[Fuente: NIST SP 800-207, Zero Trust Architecture (agosto de 2020) · ENS, RD 311/2022, mp.com.1, mp.com.2, mp.com.4 y op.acc.4]</text>
+</svg>

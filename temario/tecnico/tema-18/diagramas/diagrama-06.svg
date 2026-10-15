@@ -1,0 +1,25 @@
+<svg aria-label="Las tres estructuras de control de la programación estructurada: secuencia, selección con dos ramas e iteración con bucle de retorno" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 12px system-ui,sans-serif;fill:#0055a0}.b6{font:600 11px system-ui,sans-serif;fill:#fff}.l6{font:11px system-ui,sans-serif;fill:#444}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h6" text-anchor="middle" x="340" y="22">Böhm-Jacopini (1966): tres estructuras bastan</text>
+<text class="t6" text-anchor="middle" x="110" y="52">1 · SECUENCIA</text>
+<rect fill="#0055a0" height="26" rx="4" width="80" x="70" y="64"></rect><text class="b6" text-anchor="middle" x="110" y="81">paso A</text>
+<rect fill="#0055a0" height="26" rx="4" width="80" x="70" y="98"></rect><text class="b6" text-anchor="middle" x="110" y="115">paso B</text>
+<rect fill="#0055a0" height="26" rx="4" width="80" x="70" y="132"></rect><text class="b6" text-anchor="middle" x="110" y="149">paso C</text>
+<path d="M110 90 L110 98" marker-end="url(#a6)" stroke="#888"></path><path d="M110 124 L110 132" marker-end="url(#a6)" stroke="#888"></path>
+<text class="l6" text-anchor="middle" x="110" y="182">Una tras otra</text>
+<text class="t6" text-anchor="middle" x="340" y="52">2 · SELECCIÓN</text>
+<polygon fill="#e89822" points="340,64 380,86 340,108 300,86"></polygon><text class="b6" text-anchor="middle" x="340" y="90">¿cond?</text>
+<rect fill="#2d8659" height="26" rx="4" width="70" x="258" y="128"></rect><text class="b6" text-anchor="middle" x="293" y="145">verdadero</text>
+<rect fill="#d13c3c" height="26" rx="4" width="70" x="352" y="128"></rect><text class="b6" text-anchor="middle" x="387" y="145">falso</text>
+<path d="M320 100 L293 128" marker-end="url(#a6)" stroke="#888"></path><path d="M360 100 L387 128" marker-end="url(#a6)" stroke="#888"></path>
+<text class="l6" text-anchor="middle" x="340" y="182">Elige un camino (si / según)</text>
+<text class="t6" text-anchor="middle" x="575" y="52">3 · ITERACIÓN</text>
+<polygon fill="#e89822" points="575,64 615,86 575,108 535,86"></polygon><text class="b6" text-anchor="middle" x="575" y="90">¿cond?</text>
+<rect fill="#0055a0" height="26" rx="4" width="70" x="540" y="128"></rect><text class="b6" text-anchor="middle" x="575" y="145">cuerpo</text>
+<path d="M575 108 L575 128" marker-end="url(#a6)" stroke="#888"></path>
+<path d="M610 141 C660 141 660 86 617 86" fill="none" marker-end="url(#a6)" stroke="#2d8659" stroke-width="1.5"></path>
+<text class="l6" text-anchor="middle" x="575" y="182">Repite mientras se cumpla</text>
+<rect fill="#f2f2f2" height="30" rx="6" width="560" x="60" y="210"></rect><text class="l6" text-anchor="middle" x="340" y="230">La programación estructurada usa SOLO estas tres · evita el `goto` (Dijkstra, 1968)</text>
+<defs><marker id="a6" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#888"></path></marker></defs>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="288">[Fuente: BOHM66; DIJKSTRA68]</text>
+</svg>

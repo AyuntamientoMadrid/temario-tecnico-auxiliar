@@ -1,0 +1,49 @@
+<svg aria-label="Relación entre diseño universal, accesibilidad, usabilidad y experiencia de usuario: el diseño universal es la estrategia, la accesibilidad el resultado exigible por ley, la usabilidad el grado de calidad de uso y la experiencia de usuario la vivencia completa; abajo se sitúa el ajuste razonable como medida individual y subsidiaria" role="img" viewbox="0 0 680 330" xmlns="http://www.w3.org/2000/svg">
+<style>.t1{font:700 11.5px system-ui,sans-serif;fill:#fff}.s1{font:9.5px system-ui,sans-serif;fill:#fff}.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}.k1{font:700 10px system-ui,sans-serif;fill:#0055a0}.d1{font:9.5px system-ui,sans-serif;fill:#333}</style>
+<text class="h1" text-anchor="middle" x="340" y="20">Cuatro conceptos que no deben confundirse</text>
+<rect fill="#0055a0" height="86" rx="6" width="152" x="20" y="34"></rect>
+<text class="t1" text-anchor="middle" x="96" y="54">DISEÑO UNIVERSAL</text>
+<text class="s1" text-anchor="middle" x="96" y="72">La ESTRATEGIA</text>
+<text class="s1" text-anchor="middle" x="96" y="90">Diseñar desde el origen</text>
+<text class="s1" text-anchor="middle" x="96" y="106">para todas las personas</text>
+<rect fill="#2d8659" height="86" rx="6" width="152" x="187" y="34"></rect>
+<text class="t1" text-anchor="middle" x="263" y="54">ACCESIBILIDAD</text>
+<text class="s1" text-anchor="middle" x="263" y="72">El RESULTADO exigible</text>
+<text class="s1" text-anchor="middle" x="263" y="90">Condición binaria:</text>
+<text class="s1" text-anchor="middle" x="263" y="106">se puede usar o no</text>
+<rect fill="#e89822" height="86" rx="6" width="152" x="354" y="34"></rect>
+<text class="t1" text-anchor="middle" x="430" y="54">USABILIDAD</text>
+<text class="s1" text-anchor="middle" x="430" y="72">El GRADO de calidad</text>
+<text class="s1" text-anchor="middle" x="430" y="90">Eficacia + eficiencia</text>
+<text class="s1" text-anchor="middle" x="430" y="106">+ satisfacción</text>
+<rect fill="#888" height="86" rx="6" width="139" x="521" y="34"></rect>
+<text class="t1" text-anchor="middle" x="590" y="54">EXPERIENCIA (UX)</text>
+<text class="s1" text-anchor="middle" x="590" y="72">La VIVENCIA completa</text>
+<text class="s1" text-anchor="middle" x="590" y="90">Antes, durante</text>
+<text class="s1" text-anchor="middle" x="590" y="106">y después del uso</text>
+<path d="M172 77 L187 77" marker-end="url(#a1)" stroke="#0055a0" stroke-width="2"></path>
+<path d="M339 77 L354 77" marker-end="url(#a1)" stroke="#0055a0" stroke-width="2"></path>
+<path d="M506 77 L521 77" marker-end="url(#a1)" stroke="#0055a0" stroke-width="2"></path>
+<defs><marker id="a1" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="k1" x="20" y="140">¿EXIGIBLE POR LEY?</text>
+<rect fill="#eef3f8" height="26" rx="4" width="152" x="20" y="146"></rect><text class="d1" text-anchor="middle" x="96" y="163">Principio rector</text>
+<rect fill="#2d8659" height="26" rx="4" width="152" x="187" y="146"></rect><text class="s1" text-anchor="middle" x="263" y="163">SÍ — RD 1112/2018</text>
+<rect fill="#eef3f8" height="26" rx="4" width="152" x="354" y="146"></rect><text class="d1" text-anchor="middle" x="430" y="163">No (sí en pliegos)</text>
+<rect fill="#eef3f8" height="26" rx="4" width="139" x="521" y="146"></rect><text class="d1" text-anchor="middle" x="590" y="163">No</text>
+<line stroke="#ccc" stroke-width="1" x1="20" x2="660" y1="188" y2="188"></line>
+<text class="k1" text-anchor="middle" x="340" y="208">Orden correcto de actuación</text>
+<rect fill="#0055a0" height="42" rx="5" width="170" x="40" y="220"></rect>
+<text class="t1" text-anchor="middle" x="125" y="238">1. DISEÑO UNIVERSAL</text>
+<text class="s1" text-anchor="middle" x="125" y="254">para todos, desde el origen</text>
+<rect fill="#2d8659" height="42" rx="5" width="170" x="255" y="220"></rect>
+<text class="t1" text-anchor="middle" x="340" y="238">2. TECNOLOGÍA DE APOYO</text>
+<text class="s1" text-anchor="middle" x="340" y="254">compatible con el diseño</text>
+<rect fill="#e89822" height="42" rx="5" width="170" x="470" y="220"></rect>
+<text class="t1" text-anchor="middle" x="555" y="238">3. AJUSTE RAZONABLE</text>
+<text class="s1" text-anchor="middle" x="555" y="254">individual y subsidiario</text>
+<path d="M210 241 L255 241" marker-end="url(#a1)" stroke="#0055a0" stroke-width="2"></path>
+<path d="M425 241 L470 241" marker-end="url(#a1)" stroke="#0055a0" stroke-width="2"></path>
+<rect fill="none" height="32" rx="5" stroke="#d13c3c" stroke-width="2" width="540" x="70" y="274"></rect>
+<text style="font:700 10.5px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="294">Nunca al revés: una web inaccesible «compensada» con teléfono NO cumple la norma</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="322">[Fuente: CDPD; TRLGDPD; ISO9241-11; WAI]</text>
+</svg>

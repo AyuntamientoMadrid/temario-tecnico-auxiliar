@@ -1,0 +1,37 @@
+<svg aria-label="Evolución del perímetro en tres etapas: primero el perímetro muralla con una sola frontera y un interior de confianza; después la defensa en profundidad con perímetro segmentado y varias fronteras internas conforme al artículo 9 del Esquema Nacional de Seguridad; y por último la confianza cero, donde la frontera se acerca a cada recurso. Se advierte de que el perímetro sigue siendo obligatorio por la medida mp punto com punto uno" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}.k7{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.t7{font:700 10.5px system-ui,sans-serif;fill:#fff}.s7{font:8.5px system-ui,sans-serif;fill:#fff}.d7{font:8.5px system-ui,sans-serif;fill:#333}.b7{font:700 9px system-ui,sans-serif;fill:#0055a0}.n7{font:8px system-ui,sans-serif;fill:#666}.r7{font:700 8.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h7" text-anchor="middle" x="340" y="20">El perímetro no ha desaparecido: ha dejado de ser suficiente</text>
+<rect fill="#999" height="26" rx="4" width="206" x="20" y="34"></rect><text class="t7" text-anchor="middle" x="123" y="52">1 · PERÍMETRO-MURALLA</text>
+<rect fill="#0055a0" height="26" rx="4" width="206" x="236" y="34"></rect><text class="t7" text-anchor="middle" x="339" y="52">2 · DEFENSA EN PROFUNDIDAD</text>
+<rect fill="#2d8659" height="26" rx="4" width="208" x="452" y="34"></rect><text class="t7" text-anchor="middle" x="556" y="52">3 · CONFIANZA CERO</text>
+<rect fill="#f4f4f6" height="92" rx="5" stroke="#999" width="206" x="20" y="66"></rect>
+<rect fill="none" height="56" rx="4" stroke="#999" stroke-width="2" width="178" x="34" y="86"></rect>
+<rect fill="#bbb" height="18" rx="3" width="66" x="48" y="94"></rect><text class="s7" text-anchor="middle" x="81" y="107">Puestos</text>
+<rect fill="#bbb" height="18" rx="3" width="76" x="122" y="94"></rect><text class="s7" text-anchor="middle" x="160" y="107">Servidores</text>
+<rect fill="#bbb" height="18" rx="3" width="150" x="48" y="118"></rect><text class="s7" text-anchor="middle" x="123" y="131">Todo se ve con todo: red plana</text>
+<text class="b7" text-anchor="middle" x="123" y="80">Una sola frontera</text>
+<rect fill="#eef4fa" height="92" rx="5" stroke="#0055a0" width="206" x="236" y="66"></rect>
+<rect fill="none" height="56" rx="4" stroke="#0055a0" stroke-width="2" width="182" x="248" y="86"></rect>
+<rect fill="#0055a0" height="20" rx="3" width="80" x="258" y="94"></rect><text class="s7" text-anchor="middle" x="298" y="108">DMZ</text>
+<rect fill="#0055a0" height="20" rx="3" width="78" x="344" y="94"></rect><text class="s7" text-anchor="middle" x="383" y="108">Servicios</text>
+<rect fill="#0055a0" height="20" rx="3" width="80" x="258" y="118"></rect><text class="s7" text-anchor="middle" x="298" y="132">Usuarios</text>
+<rect fill="#0055a0" height="20" rx="3" width="78" x="344" y="118"></rect><text class="s7" text-anchor="middle" x="383" y="132">Administración</text>
+<text class="b7" text-anchor="middle" x="339" y="80">Varias fronteras internas · art. 9</text>
+<rect fill="#eef7f1" height="92" rx="5" stroke="#2d8659" width="208" x="452" y="66"></rect>
+<circle cx="500" cy="98" fill="#2d8659" r="15"></circle><text class="s7" text-anchor="middle" x="500" y="102">App</text>
+<circle cx="556" cy="98" fill="#2d8659" r="15"></circle><text class="s7" text-anchor="middle" x="556" y="102">Dato</text>
+<circle cx="612" cy="98" fill="#2d8659" r="15"></circle><text class="s7" text-anchor="middle" x="612" y="102">API</text>
+<circle cx="500" cy="134" fill="#2d8659" r="15"></circle><text class="s7" text-anchor="middle" x="500" y="138">SaaS</text>
+<circle cx="556" cy="134" fill="#2d8659" r="15"></circle><text class="s7" text-anchor="middle" x="556" y="138">VM</text>
+<circle cx="612" cy="134" fill="#2d8659" r="15"></circle><text class="s7" text-anchor="middle" x="612" y="138">Web</text>
+<text class="b7" text-anchor="middle" x="556" y="80">Una frontera POR RECURSO</text>
+<text class="k7" x="20" y="180">QUÉ ROMPIÓ EL MODELO CLÁSICO</text>
+<rect fill="#fdeeee" height="48" rx="5" stroke="#d13c3c" width="156" x="20" y="188"></rect><text class="r7" text-anchor="middle" x="98" y="204">TELETRABAJO</text><text class="d7" text-anchor="middle" x="98" y="218">El usuario ya no está</text><text class="d7" text-anchor="middle" x="98" y="231">dentro del edificio</text>
+<rect fill="#fdeeee" height="48" rx="5" stroke="#d13c3c" width="156" x="184" y="188"></rect><text class="r7" text-anchor="middle" x="262" y="204">NUBE</text><text class="d7" text-anchor="middle" x="262" y="218">El servicio ya no está</text><text class="d7" text-anchor="middle" x="262" y="231">dentro del CPD</text>
+<rect fill="#fdeeee" height="48" rx="5" stroke="#d13c3c" width="156" x="348" y="188"></rect><text class="r7" text-anchor="middle" x="426" y="204">MOVILIDAD Y BYOD</text><text class="d7" text-anchor="middle" x="426" y="218">Dentro hay equipos que</text><text class="d7" text-anchor="middle" x="426" y="231">no son de la organización</text>
+<rect fill="#fdeeee" height="48" rx="5" stroke="#d13c3c" width="148" x="512" y="188"></rect><text class="r7" text-anchor="middle" x="586" y="204">MOVIMIENTO LATERAL</text><text class="d7" text-anchor="middle" x="586" y="218">Un puesto comprometido</text><text class="d7" text-anchor="middle" x="586" y="231">recorre la red plana</text>
+<text class="k7" x="20" y="254">LAS DOS REGLAS QUE DEFINEN UN PERÍMETRO, Y QUE SIGUEN VIGENTES</text>
+<rect fill="#eef4fa" height="42" rx="5" stroke="#0055a0" width="316" x="20" y="262"></rect><text class="b7" text-anchor="middle" x="178" y="280">1 · Todo el tráfico atraviesa el sistema</text><text class="d7" text-anchor="middle" x="178" y="295">mp.com.1.1 — si existe una salida alternativa, el perímetro no existe</text>
+<rect fill="#eef4fa" height="42" rx="5" stroke="#0055a0" width="316" x="344" y="262"></rect><text class="b7" text-anchor="middle" x="502" y="280">2 · Denegación por defecto</text><text class="d7" text-anchor="middle" x="502" y="295">mp.com.1.2 — todos los flujos autorizados PREVIAMENTE</text>
+<text class="n7" x="20" y="328">[Fuente: ENS, RD 311/2022, art. 9, art. 23 y mp.com.1 · NIST SP 800-207 (Zero Trust Architecture, 2020)]</text>
+</svg>

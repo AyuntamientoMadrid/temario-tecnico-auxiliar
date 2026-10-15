@@ -1,0 +1,16 @@
+<svg aria-label="Estados de un proceso y sus transiciones" class="svd3" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.svd3 .n{fill:#0055a0}.svd3 .b{font:700 12px system-ui,sans-serif;fill:#fff}.svd3 .l{font:11px system-ui,sans-serif;fill:#444}</style>
+<ellipse cx="120" cy="70" fill="#6ea3d2" rx="55" ry="28"></ellipse><text class="b" text-anchor="middle" x="120" y="75">Nuevo</text>
+<ellipse class="n" cx="340" cy="70" rx="55" ry="28"></ellipse><text class="b" text-anchor="middle" x="340" y="75">Listo</text>
+<ellipse class="n" cx="340" cy="240" rx="55" ry="28"></ellipse><text class="b" text-anchor="middle" x="340" y="245">Ejecución</text>
+<ellipse cx="560" cy="240" fill="#e89822" rx="55" ry="28"></ellipse><text class="b" text-anchor="middle" x="560" y="245">Bloqueado</text>
+<ellipse cx="560" cy="70" fill="#2d8659" rx="55" ry="28"></ellipse><text class="b" text-anchor="middle" x="560" y="75">Terminado</text>
+<path d="M 175 70 L 283 70" marker-end="url(#a3)" stroke="#444" stroke-width="2"></path><text class="l" x="200" y="60">admitido</text>
+<path d="M 340 98 L 340 210" marker-end="url(#a3)" stroke="#444" stroke-width="2"></path><text class="l" text-anchor="end" x="334" y="160">despacho</text>
+<path d="M 360 212 Q 420 140 360 100" fill="none" marker-end="url(#a3)" stroke="#444" stroke-width="2"></path><text class="l" x="392" y="130">expulsión</text><text class="l" x="392" y="143">(quantum)</text>
+<path d="M 395 240 L 503 240" marker-end="url(#a3)" stroke="#444" stroke-width="2"></path><text class="l" x="410" y="230">espera E/S</text>
+<path d="M 560 212 L 410 90" marker-end="url(#a3)" stroke="#444" stroke-width="2"></path><text class="l" x="532" y="180">fin E/S</text>
+<path d="M 393 230 L 510 90" marker-end="url(#a3)" stroke="#2d8659" stroke-width="2"></path><text class="l" style="fill:#2d8659" x="455" y="200">termina</text>
+<defs><marker id="a3" markerheight="10" markerwidth="10" orient="auto" refx="8" refy="5"><polygon fill="#444" points="0,0 10,5 0,10"></polygon></marker></defs>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="660" y="328">[Fuente: SILBERSCHATZ-OS, cap. 3]</text>
+</svg>

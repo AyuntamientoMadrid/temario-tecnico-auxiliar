@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿qué modelo de despliegue procede para el repositorio de expedientes con datos personales de vecinos?",
+    "o": [
+     "SaaS público, igual que el correo, porque la escala del proveedor garantiza mejor la disponibilidad del servicio.",
+     "Nube pública sin más condiciones, porque el principio del sector público español es «nube primero».",
+     "Nube privada o instalación propia, porque pesan la jurisdicción de los datos, mp.info.1 y la evaluación de impacto."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §1.1.1",
+    "e": "No hay un modelo único: el correo y el calendario encajan en SaaS, pero en el repositorio de expedientes el riesgo justifica el coste de operar. El principio español no es «nube primero», sino «nube híbrida primero»."
+   },
+   {
+    "q": "¿Dónde debe residir el directorio de identidad de la plataforma?",
+    "o": [
+     "En el propio Ayuntamiento, federado hacia fuera, como fuente de la verdad para que una baja se ejecute en un solo sitio.",
+     "En el SaaS del proveedor, que pasa a ser la fuente de la verdad de las altas y las bajas de todo el personal municipal.",
+     "Duplicado en cada uno de los servicios, para que cada bloque gestione sus propias cuentas de forma independiente."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §1.1.1",
+    "e": "El directorio interno es la fuente de la verdad: una baja se ejecuta una sola vez y se propaga a los servicios federados."
+   },
+   {
+    "q": "Con el correo y el calendario en SaaS, ¿de quién son responsabilidad las 1.400 cuentas activas de personas que ya no prestan servicio y las 3.000 carpetas abiertas?",
+    "o": [
+     "Del proveedor, que en la modalidad SaaS responde de toda la seguridad de la plataforma contratada.",
+     "Íntegramente del Ayuntamiento: cuentas, permisos y compartición son seguridad en el servicio, no del servicio.",
+     "De ambos a partes iguales, porque la responsabilidad compartida reparte cada incidencia por mitades."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §1.1.1",
+    "e": "En la responsabilidad compartida, el proveedor responde de la seguridad del servicio (plataforma, centro de datos, redundancia) y el cliente, de la seguridad en el servicio: quién tiene cuenta, con qué permisos y con qué compartición."
+   },
+   {
+    "q": "El sistema es de categoría MEDIA. ¿Qué exige op.nub.1 a la plataforma contratada en la nube?",
+    "o": [
+     "La medida base y su refuerzo R1: que los servicios en la nube estén certificados.",
+     "Nada, porque op.nub.1 solo empieza a aplicarse en los sistemas de categoría ALTA.",
+     "Solo el refuerzo R2, la configuración conforme a una guía CCN-STIC específica."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §1.1.1 · op.nub.1 ENS",
+    "e": "op.nub.1 aplica en las tres categorías; desde MEDIA añade el R1 (servicios certificados) y en ALTA, el R2 (configuración conforme a una guía CCN-STIC específica)."
+   },
+   {
+    "q": "¿Qué mecanismo impide que vuelvan a aparecer cuentas huérfanas como las 1.400 detectadas?",
+    "o": [
+     "OpenID Connect, que al autenticar cada inicio de sesión elimina las cuentas de quien ya no presta servicio.",
+     "OAuth 2.0, que al revocar los permisos delegados elimina también la cuenta de la plataforma en la nube.",
+     "SCIM 2.0 enlazado al sistema de personal como fuente autoritativa, que propaga altas, cambios y bajas."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §1.1.2",
+    "e": "Federar la autenticación resuelve el inicio de sesión, pero no crea ni borra cuentas: eso lo hace SCIM. Sin SCIM, con 28.000 empleados y alta rotación, la baja depende de que alguien se acuerde."
+   },
+   {
+    "q": "Con una movilidad interna elevada entre áreas y distritos, ¿cómo deben asignarse los permisos en la plataforma?",
+    "o": [
+     "A cada persona individualmente, revisándolos cuando el propio empleado lo solicite al cambiar de destino.",
+     "A grupos cuya pertenencia determina el puesto, de modo que un cambio de destino los reajuste sin acumular privilegios.",
+     "A cada persona, conservando los permisos anteriores tras un cambio de destino para no interrumpir su trabajo."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §1.1.2 · §1.3.2",
+    "e": "Asignar permisos a grupos y no a personas evita la acumulación de privilegios: el cambio de destino reajusta los permisos automáticamente."
+   },
+   {
+    "q": "¿Cómo deben acceder a la plataforma las empresas adjudicatarias y los colegios profesionales externos?",
+    "o": [
+     "Con una cuenta municipal para cada persona externa, igual que el personal, para simplificar su gestión.",
+     "Con enlaces abiertos sin autenticación, que el organizador de cada reunión comparte antes de empezar.",
+     "Por federación con su propio proveedor de identidad o como invitados con segundo factor, con caducidad y revisión."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §1.1.2",
+    "e": "Los externos no reciben cuentas municipales. Entran por federación o como invitados autenticados con segundo factor, siempre con fecha de caducidad, revisión periódica y etiqueta visible de externo."
+   },
+   {
+    "q": "Frente a las 3.000 carpetas compartidas con enlaces abiertos sin caducidad, ¿qué control debe aplicarse en primer lugar?",
+    "o": [
+     "Implantar desde el primer día un DLP que bloquee toda compartición que contenga datos personales.",
+     "Cambiar el valor por omisión: que todo enlace nazca restringido y abrirlo fuera sea deliberado y registrado.",
+     "Revisar una a una las 3.000 carpetas antes de cambiar ninguna configuración de la plataforma."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 3 · §1.3",
+    "e": "Primero se cambia el valor por omisión; después vienen la caducidad obligatoria, el etiquetado, el DLP y la revisión de lo existente. Un DLP que empieza bloqueando en lugar de avisando acaba desactivado."
+   },
+   {
+    "q": "El RGPD empuja a borrar y la normativa de archivo, a conservar. ¿Cómo se concilian en la política de conservación de la plataforma?",
+    "o": [
+     "Con retención diferenciada por tipo de contenido y retención legal que congela el borrado durante un procedimiento.",
+     "Conservando todo de forma indefinida, que es la opción más prudente ante cualquier requerimiento futuro.",
+     "Borrando todo a los 30 días, porque la minimización del RGPD prevalece siempre sobre la normativa de archivo."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §1.3.1 · art. 5.1.c) y e) RGPD",
+    "e": "La minimización y la limitación del plazo de conservación (art. 5.1.c y e del RGPD) se concilian con la necesidad de archivo mediante plazos por tipo de contenido: mensajería corta, correo media, expediente la de archivo y grabaciones la más corta. Guardarlo todo para siempre es un incumplimiento."
+   },
+   {
+    "q": "Se publicarán en el portal de transparencia documentos elaborados en colaboración en la plataforma. ¿Qué medida del ENS aborda el riesgo específico de ese flujo?",
+    "o": [
+     "mp.info.2, clasificación del contenido, que impide publicar documentos de edición concurrente.",
+     "op.exp.8, registro de la actividad, que conserva el historial de quién escribió cada parte.",
+     "mp.info.5, limpieza de documentos, que retira metadatos, comentarios y revisiones anteriores."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 4 · §1.3.1 · mp.info.5 ENS",
+    "e": "El documento colaborativo arrastra el historial de autores, los comentarios internos y los cambios rechazados. mp.info.5 ordena retirarlos antes de difundirlo; aplica en los tres niveles y conviene automatizarla en el flujo de publicación."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "Si los 27 puntos finales de la sesión se conectaran en malla completa, ¿cuántos flujos sostendría el sistema?",
+    "o": [
+     "702 flujos (27 × 26), con unos 40 Mbit/s de subida para cada participante.",
+     "54 flujos (27 × 2), con 1,54 Mbit/s de subida para cada participante.",
+     "351 flujos (27 × 26 / 2), con unos 20 Mbit/s de subida por participante."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §2.1",
+    "e": "En malla, cada uno de los N participantes mantiene N − 1 subidas y N − 1 bajadas, y el sistema sostiene N × (N − 1) flujos: 27 × 26 = 702. La subida por participante sería 26 × 1,54 ≈ 40 Mbit/s, fuera del alcance de una conexión doméstica."
+   },
+   {
+    "q": "¿Qué arquitectura procede para los 18 miembros que se conectan desde su domicilio o despacho?",
+    "o": [
+     "Malla completa, porque cada miembro compone su propia vista sin servidor intermedio.",
+     "SFU con simulcast, que adapta la calidad a cada receptor con un coste de servidor bajo.",
+     "Difusión por segmentos, con varios segundos de retardo, como la de la ciudadanía."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §2.1",
+    "e": "Con conexiones muy dispares, la SFU permite que cada uno componga su vista, y el simulcast (RFC 8853) adapta la calidad a cada receptor. La difusión no sirve a quien debe intervenir y votar."
+   },
+   {
+    "q": "¿Cómo debe resolverse la retransmisión para las 900 personas de la ciudadanía?",
+    "o": [
+     "Como participantes de la SFU con el micrófono silenciado, para que sigan la sesión en tiempo real.",
+     "Como una segunda sala de la videoconferencia, conectada a la misma SFU mediante la pasarela H.323.",
+     "Como difusión y no como videoconferencia: no hay interacción y se admiten varios segundos de retardo."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §2.1",
+    "e": "Retransmitir un pleno no es una videoconferencia: sin interacción, la restricción de retardo se relaja y la escala se resuelve con distribución escalonada o por segmentos."
+   },
+   {
+    "q": "¿Qué hace falta para integrar en la sesión el equipo de videoconferencia heredado del Salón, basado en H.323?",
+    "o": [
+     "Nada: los navegadores admiten H.323 de forma nativa y la plataforma WebRTC lo integra sin intermediarios.",
+     "Una pasarela que traduzca la señalización H.323 a SIP o WebRTC y, si los códecs no coinciden, transcodificación.",
+     "Una segunda SFU, que reenvía los flujos H.323 a los participantes sin traducir la señalización ni el media."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §2.4.2",
+    "e": "La pasarela traduce la señalización; si los códecs difieren, hay que decodificar y recodificar, con coste de cómputo, retardo y pérdida de calidad. Conviene comprobar si el equipo heredado es realmente necesario."
+   },
+   {
+    "q": "¿Cuánto ancho de banda de bajada consume el terminal único del Salón, con un 30 % de margen?",
+    "o": [
+     "Unos 4,2 Mbit/s: 3,1 Mbit/s de vídeo más 0,12 de audio, multiplicado por 1,3.",
+     "Unos 3,2 Mbit/s: 3,1 Mbit/s de vídeo más 0,12 de audio, sin añadir margen alguno.",
+     "Unos 17,6 Mbit/s: nueve flujos de vídeo a 1,5 Mbit/s, multiplicado por 1,3."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §2.3.2",
+    "e": "Bajada: 1,5 + (8 × 0,2) = 3,1 Mbit/s de vídeo y 3 × 0,04 = 0,12 de audio; 3,22 × 1,3 ≈ 4,2 Mbit/s. Los ocho flujos pequeños van a 0,2 Mbit/s, no a 1,5."
+   },
+   {
+    "q": "¿Cuál es el error de dimensionamiento más frecuente en un supuesto como este?",
+    "o": [
+     "Olvidar multiplicar el flujo de salida de la retransmisión por las 900 personas que componen la audiencia estimada.",
+     "No contar el audio de los tres locutores más activos, que duplica la bajada necesaria del terminal de sala.",
+     "Suponer que los 8 miembros de la sala se conectan cada uno con su portátil: unos 16 Mbit/s de subida, más eco y acoplamiento."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §2.3.2",
+    "e": "La corrección no es más ancho de banda, sino un solo terminal de sala. La distribución a los 900 espectadores la hace la plataforma de difusión, no el edificio, y el audio de los locutores solo suma 0,12 Mbit/s."
+   },
+   {
+    "q": "¿Qué marcado de servicios diferenciados procede, conforme a la RFC 8837, para el audio y el vídeo de la sesión?",
+    "o": [
+     "Audio EF (46) y vídeo AF41 (34), con el audio priorizado por encima del vídeo.",
+     "Vídeo EF (46) y audio AF41 (34), porque el vídeo es el que más ancho de banda consume.",
+     "Audio y vídeo en la misma clase EF (46), para que lleguen siempre sincronizados."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §2.3.2",
+    "e": "La regla de fondo es que el audio se prioriza sobre el vídeo. El marcado solo surte efecto dentro del dominio propio: fuera de la red municipal la sesión se sostiene por la adaptación del códec al control de congestión."
+   },
+   {
+    "q": "¿Qué norma rige la celebración a distancia de esta sesión de la Junta Municipal de Distrito?",
+    "o": [
+     "El artículo 17 de la Ley 40/2015, régimen general en el que la sesión a distancia es la regla ordinaria.",
+     "Solo el reglamento orgánico de la Junta, sin sujeción a ninguna norma básica del Estado.",
+     "El artículo 46.3 de la Ley 7/1985 (LBRL), régimen excepcional de los órganos colegiados locales."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §4.1 · art. 46.3 LBRL",
+    "e": "A los órganos colegiados locales, incluidas las Juntas Municipales de Distrito, se les aplica el artículo 46.3 de la LBRL: la sesión a distancia es excepcional y exige fuerza mayor, grave riesgo colectivo o catástrofe pública apreciados por el alcalde o presidente."
+   },
+   {
+    "q": "Apreciado el grave riesgo colectivo por el Concejal Presidente, ¿qué exige el régimen aplicable respecto de los 18 miembros remotos?",
+    "o": [
+     "Que se conecten desde una dependencia municipal, con su identidad acreditada en persona por el secretario.",
+     "Que estén en territorio español, que se acredite su identidad y que se garantice el carácter público de la sesión.",
+     "Solo que mantengan el vídeo activo, porque el régimen local no admite la participación por audioconferencia."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §4.1 · art. 46.3 LBRL",
+    "e": "El artículo 46.3 de la LBRL exige que los miembros se encuentren en territorio español y que se acredite su identidad, y que se garantice el carácter público o secreto de la sesión; aquí, la publicidad se satisface con la retransmisión. Admite audioconferencias y videoconferencias."
+   },
+   {
+    "q": "Un miembro remoto pierde la conexión durante una votación. ¿Qué debe hacer el personal técnico?",
+    "o": [
+     "Comunicarlo de inmediato a la secretaría del órgano, que decide si suspende, repite la votación o lo hace constar en acta.",
+     "Intentar reconectarlo sin avisar y dejar que la votación se cierre, para no interrumpir el desarrollo de la sesión.",
+     "Computar su voto como abstención, que es la regla supletoria para este caso en el artículo 17 de la Ley 40/2015."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · §4.1 · art. 17.1 Ley 40/2015",
+    "e": "Deja de cumplirse la disponibilidad de los medios para ese miembro, lo que puede viciar el acuerdo: es un posible vicio de procedimiento, no una simple incidencia informática, y lo decide la secretaría."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "Primera queja: «Desde casa no se entendía lo que decían los que estaban en el salón; se oía como en una cueva». ¿Cuál es el diagnóstico y la corrección?",
+    "o": [
+     "Eco acústico del terminal de sala; activar la cancelación de eco en el equipo de videoconferencia del Salón.",
+     "Reverberación excesiva por superficies duras; acondicionamiento acústico con techo absorbente, pared tratada y moqueta.",
+     "Acoplamiento por exceso de ganancia; bajar el volumen de los altavoces del Salón durante las intervenciones."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §3.1",
+    "e": "El mármol, las paredes lisas enfrentadas y el techo continuo no absorben: el micrófono capta la sala entera. Es un problema de acondicionamiento, distinto del eco (cancelación) y del acoplamiento (ganancia)."
+   },
+   {
+    "q": "Segunda queja: «Cuando yo hablaba, me oía a mí mismo un instante después». ¿Cuál es el diagnóstico y la corrección?",
+    "o": [
+     "Reverberación del Salón; se corrige con techo absorbente y moqueta en todo el recinto.",
+     "Acoplamiento; se corrige acercando el micrófono al altavoz y subiendo la ganancia.",
+     "Eco acústico: lo que sale por el altavoz entra por el micrófono; se corrige con cancelación de eco (AEC)."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §3.2.1",
+    "e": "El sonido del altavoz vuelve a entrar por el micrófono y se reenvía al emisor con retardo. La RFC 7874 exige cancelación de eco acústico a todo punto final WebRTC."
+   },
+   {
+    "q": "Tercera queja: «Los concejales que estaban en la sala salían como sombras». ¿Cuál es la corrección más barata?",
+    "o": [
+     "Reorientar la mesa para que la luz venga de frente, con luz difusa y no directa.",
+     "Sustituir la cámara de la sala por otra de resolución 4K y mayor sensibilidad.",
+     "Bajar la iluminación general de la sala durante toda la sesión retransmitida."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §3.1.1",
+    "e": "Es un contraluz: la luz principal viene de detrás del sujeto y la cámara expone para el fondo. Se corrige con luz de frente y difusa, sin cambiar de equipo."
+   },
+   {
+    "q": "En las salas de reunión, el equipo es un portátil en el centro de una mesa de doce plazas. ¿Por qué es el peor montaje posible?",
+    "o": [
+     "Porque la cámara de un portátil no puede captar a la vez a más de seis personas sentadas alrededor de la mesa.",
+     "Porque un portátil no admite la cancelación de eco acústico que la RFC 7874 exige a los equipos de sala.",
+     "Porque la relación señal-ruido depende del cuadrado de la distancia: acercar el micrófono a la mitad mejora unos 6 dB."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §3.2.1",
+    "e": "Con el micrófono lejos de casi todos los que hablan, la voz llega débil frente al ruido y la reverberación. La solución es un micrófono cercano o de haz conformado y techo absorbente, no una cámara mejor."
+   },
+   {
+    "q": "Además de los 500 lx de la UNE-EN 12464-1:2022, ¿qué reglas de iluminación propias de una sala de vídeo deben aplicarse en el Salón?",
+    "o": [
+     "Luz cenital directa y puntual sobre la mesa, que realza el contraste de la cámara.",
+     "Luz de frente, difusa y no puntual, e iluminación zonificada y regulable.",
+     "Apagar todas las luces mientras se proyecta, para mejorar el contraste de la pantalla."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §3.1.1",
+    "e": "La luz ambiente sobre la pantalla reduce el contraste, pero si se apagan las luces para ver la proyección, los participantes remotos dejan de ver a nadie: por eso la iluminación se zonifica y se regula."
+   },
+   {
+    "q": "Conforme a DISCAS, decisión básica, ¿qué altura de imagen necesita el asistente más alejado, a 9,5 m, si el elemento más pequeño tiene un %EH del 2 %?",
+    "o": [
+     "2,375 m, porque IH = 9,5 / (200 × 0,02).",
+     "0,93 m, la altura de la pantalla de 75 pulgadas.",
+     "3,72 m, porque IH = 0,93 × 0,02 × 200."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §3.2.2",
+    "e": "En decisión básica, IH = FV / (200 × %EH) = 9,5 / 4 = 2,375 m. La pantalla actual mide 0,93 m de alto, muy por debajo de lo necesario; 3,72 m es la distancia máxima, no una altura."
+   },
+   {
+    "q": "Con la pantalla actual, de 0,93 m de altura de imagen, ¿hasta qué distancia cumple la norma para ese contenido?",
+    "o": [
+     "Hasta 9,3 m (0,93 × 10), de modo que cumple prácticamente en todo el Salón.",
+     "Hasta 3,72 m (0,93 × 0,02 × 200), frente a los 9,5 m reales: no cumple.",
+     "Hasta 1,61 m, que es la distancia a la que se sitúa el espectador más cercano."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §3.2.2",
+    "e": "FV = IH × %EH × 200 = 0,93 × 0,02 × 200 = 3,72 m: solo cumplen las primeras filas, y la cuarta queja está técnicamente fundada. 1,61 m es la distancia mínima del espectador más cercano."
+   },
+   {
+    "q": "Si una imagen de 2,375 m de altura no cabe en el Salón, ¿qué alternativa permite cumplir con la pantalla actual?",
+    "o": [
+     "Subir el %EH al 6 % con tipografía grande: la altura necesaria baja a 0,79 m.",
+     "Subir el %EH al 5 % con tipografía grande: la altura necesaria baja a 0,95 m.",
+     "Bajar el %EH al 1 % con más contenido: la altura necesaria baja a 1,19 m."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §3.2.2",
+    "e": "Con un 6 %, IH = 9,5 / 12 = 0,79 m y la pantalla de 0,93 m cumple con margen. Con un 5 % hacen falta 0,95 m y no cumple por dos centímetros; bajar el %EH aumenta la altura necesaria (9,5 / 2 = 4,75 m)."
+   },
+   {
+    "q": "Una vecina con discapacidad auditiva pide que las sesiones sean accesibles. ¿Qué medida corresponde a la sala física?",
+    "o": [
+     "Ninguna en la sala: basta con subtitular en la plataforma, porque el RD 193/2023 no alcanza a los espacios físicos.",
+     "Subir el volumen de los altavoces del Salón, lo que hace innecesario instalar el bucle de inducción magnética.",
+     "Bucle de inducción magnética señalizado e iluminación frontal de quien interviene, para la lectura labial y la lengua de signos."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §3.3.1",
+    "e": "En la sala física: bucle de inducción magnética señalizado, que el RD 193/2023 exige en salas de espacios escénicos públicos; posiciones reservadas con visión de la pantalla y del intérprete; e iluminación frontal, sin la cual no funcionan la lectura labial ni la lengua de signos."
+   },
+   {
+    "q": "En el plan de mantenimiento, tres de las seis salas fallan por la misma causa. ¿Cómo debe gestionarse conforme a ITIL 4?",
+    "o": [
+     "Como tres incidencias, cada una con su propio nivel de servicio.",
+     "Como un problema, no como tres incidencias independientes.",
+     "Como tres peticiones de servicio, sin investigar la causa común."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §3.3.2",
+    "e": "La incidencia busca restaurar el servicio, aunque sea con una solución provisional; cuando varias fallan por la misma causa, se trata como un problema para eliminarla."
+   }
+  ]
+ }
+]

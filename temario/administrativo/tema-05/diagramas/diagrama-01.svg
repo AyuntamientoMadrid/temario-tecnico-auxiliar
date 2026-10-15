@@ -1,0 +1,27 @@
+<svg aria-label="El TREBEP, aprobado por el Real Decreto Legislativo 5/2015, establece las bases del régimen estatutario y se aplica a la Administración del Estado, comunidades autónomas, entidades locales, organismos públicos y universidades públicas" class="svd1" role="img" viewbox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd1 .h{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd1 .t{font:13px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd1 .s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="56" rx="8" width="340" x="180" y="20"></rect>
+<text class="h" x="350" y="44">TREBEP · RDL 5/2015, de 30 de octubre</text>
+<text class="h" style="font-weight:400;font-size:11px" x="350" y="63">Bases del régimen estatutario de los funcionarios</text>
+<line stroke="#0055a0" stroke-width="1.5" x1="350" x2="350" y1="76" y2="100"></line>
+<text class="s" style="font-weight:700;fill:#0055a0" x="350" y="116">ÁMBITO DE APLICACIÓN (art. 2)</text>
+<rect fill="#e8f0f8" height="70" rx="8" stroke="#0055a0" width="125" x="20" y="135"></rect>
+<text class="t" x="82" y="165">Admón. Gral.</text>
+<text class="t" x="82" y="183">del Estado</text>
+<rect fill="#e8f0f8" height="70" rx="8" stroke="#0055a0" width="125" x="160" y="135"></rect>
+<text class="t" x="222" y="165">CCAA y</text>
+<text class="t" x="222" y="183">Ceuta/Melilla</text>
+<rect fill="#e8f5ee" height="70" rx="8" stroke="#2d8659" width="125" x="300" y="135"></rect>
+<text class="t" style="font-weight:700" x="362" y="165">Entidades</text>
+<text class="t" style="font-weight:700" x="362" y="183">Locales</text>
+<rect fill="#e8f0f8" height="70" rx="8" stroke="#0055a0" width="125" x="440" y="135"></rect>
+<text class="t" x="502" y="158">Organismos</text>
+<text class="t" x="502" y="176">públicos y</text>
+<text class="t" x="502" y="194">agencias</text>
+<rect fill="#e8f0f8" height="70" rx="8" stroke="#0055a0" width="100" x="580" y="135"></rect>
+<text class="t" x="630" y="165">Univ.</text>
+<text class="t" x="630" y="183">Públicas</text>
+<rect fill="#fff5e6" height="62" rx="8" stroke="#e89822" width="380" x="160" y="230"></rect>
+<text class="s" style="font-weight:700;fill:#b5740f" x="350" y="255">Ayuntamiento de Madrid = Entidad Local</text>
+<text class="s" x="350" y="276">su personal se rige por el TREBEP como norma básica</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg aria-label="Tres niveles de la red virtualizada: conmutador virtual en cada anfitrión con etiquetado VLAN y microsegmentación, superposición VXLAN que encapsula tramas de nivel dos sobre UDP con identificador VNI de veinticuatro bits, y arquitectura SDN con separación de plano de control y plano de datos, controlador centralizado e interfaces norte y sur" role="img" viewbox="0 0 680 368" xmlns="http://www.w3.org/2000/svg">
+<style>.t14{font:700 10.5px system-ui,sans-serif;fill:#fff}.s14{font:9px system-ui,sans-serif;fill:#fff}.h14{font:700 13px system-ui,sans-serif;fill:#0055a0}.k14{font:700 10px system-ui,sans-serif;fill:#0055a0}.n14{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h14" text-anchor="middle" x="340" y="20">Los tres niveles de la red virtualizada</text>
+<rect fill="#e89822" height="20" rx="3" width="640" x="20" y="32"></rect>
+<text class="t14" text-anchor="middle" x="340" y="46">NIVEL 3 · SDN — plano de CONTROL separado del plano de DATOS</text>
+<rect fill="#0055a0" height="46" rx="4" width="200" x="20" y="58"></rect>
+<text class="s14" text-anchor="middle" x="120" y="76">Aplicaciones y políticas</text>
+<text class="s14" text-anchor="middle" x="120" y="92">(seguridad, red, negocio)</text>
+<path d="M224 81 L252 81" marker-end="url(#a14)" stroke="#e89822" stroke-width="2.5"></path>
+<defs><marker id="a14" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3.5"><path d="M0,0 L7,3.5 L0,7 z" fill="#e89822"></path></marker></defs>
+<text style="font:700 8px system-ui;fill:#a06000" text-anchor="middle" x="238" y="68">NORTE</text>
+<rect fill="#d13c3c" height="46" rx="4" width="200" x="256" y="58"></rect>
+<text class="s14" text-anchor="middle" x="356" y="76">CONTROLADOR SDN</text>
+<text class="s14" text-anchor="middle" x="356" y="92">visión global de la topología</text>
+<path d="M460 81 L488 81" marker-end="url(#a14)" stroke="#e89822" stroke-width="2.5"></path>
+<text style="font:700 8px system-ui;fill:#a06000" text-anchor="middle" x="474" y="68">SUR</text>
+<rect fill="#888" height="46" rx="4" width="168" x="492" y="58"></rect>
+<text class="s14" text-anchor="middle" x="576" y="76">Conmutadores físicos y</text>
+<text class="s14" text-anchor="middle" x="576" y="92">virtuales: solo reenvían</text>
+<rect fill="#2d8659" height="20" rx="3" width="640" x="20" y="112"></rect>
+<text class="t14" text-anchor="middle" x="340" y="126">NIVEL 2 · SUPERPOSICIÓN (overlay) — la red lógica VIAJA CON LA MÁQUINA VIRTUAL</text>
+<rect fill="#f2f6fa" height="50" rx="4" stroke="#d13c3c" stroke-width="2" width="206" x="20" y="138"></rect>
+<text style="font:700 10px system-ui;fill:#a02020" text-anchor="middle" x="123" y="155">VLAN 802.1Q</text>
+<text class="n14" text-anchor="middle" x="123" y="170">12 bits de identificador</text>
+<text class="n14" text-anchor="middle" x="123" y="183">solo 4.094 segmentos útiles</text>
+<rect fill="#eaf5ec" height="50" rx="4" stroke="#2d8659" stroke-width="2" width="206" x="237" y="138"></rect>
+<text style="font:700 10px system-ui;fill:#2d8659" text-anchor="middle" x="340" y="155">VXLAN (RFC 7348)</text>
+<text class="n14" text-anchor="middle" x="340" y="170">VNI de 24 bits sobre UDP</text>
+<text class="n14" text-anchor="middle" x="340" y="183">~16 millones de segmentos</text>
+<rect fill="#f2f6fa" height="50" rx="4" stroke="#0055a0" stroke-width="2" width="206" x="454" y="138"></rect>
+<text style="font:700 10px system-ui;fill:#0055a0" text-anchor="middle" x="557" y="155">Geneve (RFC 8926)</text>
+<text class="n14" text-anchor="middle" x="557" y="170">encapsulado extensible</text>
+<text class="n14" text-anchor="middle" x="557" y="183">con opciones TLV</text>
+<rect fill="#0055a0" height="20" rx="3" width="640" x="20" y="196"></rect>
+<text class="t14" text-anchor="middle" x="340" y="210">NIVEL 1 · CONMUTADOR VIRTUAL EN CADA ANFITRIÓN</text>
+<rect fill="#0055a0" height="66" rx="4" width="316" x="20" y="222"></rect>
+<text class="s14" text-anchor="middle" x="178" y="240">Funciones de conmutador de nivel 2:</text>
+<text class="s14" text-anchor="middle" x="178" y="255">reenvío por MAC · etiquetado VLAN por grupo de puertos</text>
+<text class="s14" text-anchor="middle" x="178" y="270">agregación de enlaces (NIC teaming)</text>
+<text class="s14" text-anchor="middle" x="178" y="283">políticas de puerto (modo promiscuo, MAC falsificada)</text>
+<rect fill="#d13c3c" height="66" rx="4" width="316" x="344" y="222"></rect>
+<text class="s14" text-anchor="middle" x="502" y="240">MICROSEGMENTACIÓN</text>
+<text class="s14" text-anchor="middle" x="502" y="255">cortafuegos DISTRIBUIDO con reglas POR MÁQUINA VIRTUAL</text>
+<text class="s14" text-anchor="middle" x="502" y="270">controla el tráfico ESTE-OESTE dentro del centro de datos</text>
+<text class="s14" text-anchor="middle" x="502" y="283">que el cortafuegos perimetral NUNCA ve</text>
+<rect fill="#333" height="26" rx="4" width="640" x="20" y="296"></rect>
+<text class="t14" text-anchor="middle" x="340" y="313">RED FÍSICA — solo tiene que encaminar paquetes IP entre anfitriones</text>
+<rect fill="none" height="20" rx="3" stroke="#0055a0" stroke-width="2" width="640" x="20" y="330"></rect>
+<text class="k14" text-anchor="middle" x="340" y="344">Sin virtualizar la red, crear una máquina virtual en minutos no sirve de nada: conectarla seguiría tardando días</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="364">[Fuente: RFC7348; RFC8926; ONF-SDN; NIST-SP800-125]</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg aria-label="Fragmentación, replicación y sharding en bases de datos distribuidas" class="svd11" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd11 .t{font:700 12px system-ui,sans-serif;fill:#0055a0}.svd11 .b{font:600 11px system-ui,sans-serif;fill:#fff}.svd11 .l{font:10px system-ui,sans-serif;fill:#444}</style>
+<text class="t" text-anchor="middle" x="110" y="34">Fragmentación</text>
+<rect fill="#6ea3d2" height="30" width="60" x="50" y="50"></rect><rect fill="#3378b9" height="30" width="60" x="110" y="50"></rect>
+<text class="b" text-anchor="middle" x="80" y="70">Frag 1</text><text class="b" text-anchor="middle" x="140" y="70">Frag 2</text>
+<text class="l" text-anchor="middle" x="110" y="105">divide la tabla en trozos</text>
+<text class="t" text-anchor="middle" x="340" y="34">Replicación</text>
+<rect fill="#2d8659" height="30" width="60" x="290" y="50"></rect><rect fill="#2d8659" height="30" width="60" x="360" y="50"></rect>
+<text class="b" text-anchor="middle" x="320" y="70">Copia</text><text class="b" text-anchor="middle" x="390" y="70">Copia</text>
+<text class="l" text-anchor="middle" x="340" y="105">copias idénticas (disponibilidad)</text>
+<text class="t" text-anchor="middle" x="570" y="34">Sharding</text>
+<rect fill="#e89822" height="30" width="40" x="510" y="50"></rect><rect fill="#e89822" height="30" width="40" x="555" y="50"></rect><rect fill="#e89822" height="30" width="40" x="600" y="50"></rect>
+<text class="b" text-anchor="middle" x="530" y="70">A-H</text><text class="b" text-anchor="middle" x="575" y="70">I-P</text><text class="b" text-anchor="middle" x="620" y="70">Q-Z</text>
+<text class="l" text-anchor="middle" x="570" y="105">reparto por clave (escala horizontal)</text>
+<text class="l" x="40" y="170">Una BD distribuida combina estas técnicas para escalar y dar disponibilidad en varios nodos.</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="670" y="308">[Fuente: ELMASRI, cap. 23]</text>
+</svg>

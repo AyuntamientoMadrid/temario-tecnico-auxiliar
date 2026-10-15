@@ -1,0 +1,15 @@
+<svg aria-label="Cambio de modo usuario a modo núcleo mediante una llamada al sistema" class="svd2" role="img" viewbox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd2 .t{font:700 13px system-ui,sans-serif;fill:#0055a0}.svd2 .b{font:600 12px system-ui,sans-serif;fill:#fff}.svd2 .s{font:11px system-ui,sans-serif;fill:#444}</style>
+<rect fill="#e8f0f8" height="70" rx="6" stroke="#0055a0" width="580" x="40" y="50"></rect>
+<text class="t" x="50" y="40">Modo usuario (restringido)</text>
+<rect fill="#6ea3d2" height="36" rx="4" width="160" x="70" y="68"></rect><text class="b" text-anchor="middle" x="150" y="91">Aplicación</text>
+<rect fill="#003d73" height="70" rx="6" width="580" x="40" y="180"></rect>
+<text class="t" x="50" y="170">Modo núcleo (privilegiado)</text>
+<rect fill="#0055a0" height="36" rx="4" width="200" x="70" y="196"></rect><text class="b" text-anchor="middle" x="170" y="219">Núcleo del SO</text>
+<path d="M 230 78 L 430 78 L 430 196" fill="none" marker-end="url(#a2)" stroke="#d13c3c" stroke-width="2"></path>
+<text class="s" style="fill:#d13c3c" x="300" y="72">syscall (trap)</text>
+<path d="M 470 196 L 470 96 L 232 96" fill="none" marker-end="url(#a2)" stroke="#2d8659" stroke-width="2"></path>
+<text class="s" style="fill:#2d8659" x="480" y="150">retorno</text>
+<defs><marker id="a2" markerheight="10" markerwidth="10" orient="auto" refx="8" refy="5"><polygon fill="#444" points="0,0 10,5 0,10"></polygon></marker></defs>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="640" y="290">[Fuente: STALLINGS-OS]</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg aria-label="Comparación de las tres técnicas de conmutación: de circuitos con camino reservado y tres fases, de mensajes con almacenamiento y reenvío del mensaje completo, y de paquetes con multiplexación estadística y encauzamiento, más la distinción entre datagrama y circuito virtual" role="img" viewbox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t13{font:700 10.5px system-ui,sans-serif;fill:#fff}.s13{font:8.5px system-ui,sans-serif;fill:#fff}.d13{font:9px system-ui,sans-serif;fill:#333}.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.k13{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n13{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h13" text-anchor="middle" x="340" y="20">Qué se conmuta y cuándo se decide la ruta</text>
+<rect fill="#0055a0" height="28" rx="5" width="206" x="20" y="34"></rect><text class="t13" text-anchor="middle" x="123" y="53">CIRCUITOS</text>
+<rect fill="#8a8a8a" height="28" rx="5" width="206" x="237" y="34"></rect><text class="t13" text-anchor="middle" x="340" y="53">MENSAJES</text>
+<rect fill="#2d8659" height="28" rx="5" width="206" x="454" y="34"></rect><text class="t13" text-anchor="middle" x="557" y="53">PAQUETES</text>
+<rect fill="#eef3f8" height="108" rx="4" width="206" x="20" y="68"></rect>
+<text class="d13" text-anchor="middle" x="123" y="86">Camino físico RESERVADO</text>
+<text class="n13" text-anchor="middle" x="123" y="102">Tres fases: establecimiento,</text><text class="n13" text-anchor="middle" x="123" y="114">transferencia y liberación</text>
+<text class="n13" text-anchor="middle" x="123" y="132">Retardo CONSTANTE, sin fluctuación</text>
+<text class="n13" text-anchor="middle" x="123" y="148">Desaprovecha en los silencios</text>
+<text class="n13" text-anchor="middle" x="123" y="166">Si no hay recursos: BLOQUEO</text>
+<rect fill="#f2f2f2" height="108" rx="4" width="206" x="237" y="68"></rect>
+<text class="d13" text-anchor="middle" x="340" y="86">Mensaje COMPLETO, sin partir</text>
+<text class="n13" text-anchor="middle" x="340" y="102">Almacenamiento y reenvío</text><text class="n13" text-anchor="middle" x="340" y="114">íntegro en cada nodo</text>
+<text class="n13" text-anchor="middle" x="340" y="132">Retardos altos y variables</text>
+<text class="n13" text-anchor="middle" x="340" y="148">Exige mucha memoria en los nodos</text>
+<text class="n13" text-anchor="middle" x="340" y="166">EN DESUSO como técnica de red</text>
+<rect fill="#e8f4ee" height="108" rx="4" width="206" x="454" y="68"></rect>
+<text class="d13" text-anchor="middle" x="557" y="86">PAQUETES independientes</text>
+<text class="n13" text-anchor="middle" x="557" y="102">Multiplexación estadística</text><text class="n13" text-anchor="middle" x="557" y="114">y encauzamiento</text>
+<text class="n13" text-anchor="middle" x="557" y="132">Aprovechamiento máximo del enlace</text>
+<text class="n13" text-anchor="middle" x="557" y="148">Con fluctuación y posible pérdida</text>
+<text class="n13" text-anchor="middle" x="557" y="166">Si se satura: DEGRADACIÓN</text>
+<text class="k13" x="26" y="200">DENTRO DE LA CONMUTACIÓN DE PAQUETES</text>
+<rect fill="#0055a0" height="60" rx="5" width="316" x="20" y="208"></rect>
+<text class="t13" text-anchor="middle" x="178" y="226">DATAGRAMA — sin conexión</text>
+<text class="s13" text-anchor="middle" x="178" y="242">Cada paquete elige ruta en cada nodo</text>
+<text class="s13" text-anchor="middle" x="178" y="256">Pueden desordenarse · se reencaminan solos · IP</text>
+<rect fill="#7a2f8a" height="60" rx="5" width="316" x="344" y="208"></rect>
+<text class="t13" text-anchor="middle" x="502" y="226">CIRCUITO VIRTUAL — con conexión</text>
+<text class="s13" text-anchor="middle" x="502" y="242">Ruta fijada al inicio, identificador corto</text>
+<text class="s13" text-anchor="middle" x="502" y="256">Orden garantizado · X.25, Frame Relay, ATM, MPLS</text>
+<rect fill="#fbeaea" height="24" rx="4" width="640" x="20" y="278"></rect>
+<text class="d13" text-anchor="middle" x="340" y="294">EL CIRCUITO VIRTUAL NO ES UN CIRCUITO: no reserva recursos, solo preacuerda la ruta</text>
+<rect fill="none" height="26" rx="5" stroke="#2d8659" stroke-width="1.5" width="640" x="20" y="312"></rect>
+<text class="k13" text-anchor="middle" x="340" y="329">ENCAUZAMIENTO: T = (n.º de enlaces + n.º de paquetes − 1) × tiempo de un paquete</text>
+<text class="n13" text-anchor="end" x="670" y="354">[Fuente: TANENBAUM; STALLINGS]</text>
+</svg>

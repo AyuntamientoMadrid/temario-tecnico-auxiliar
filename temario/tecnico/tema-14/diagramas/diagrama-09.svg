@@ -1,0 +1,12 @@
+<svg aria-label="Arquitectura por capas del núcleo Windows NT" class="svd9" role="img" viewbox="0 0 660 340" xmlns="http://www.w3.org/2000/svg">
+<style>.svd9 .t{font:700 12px system-ui,sans-serif;fill:#0055a0}.svd9 .b{font:600 12px system-ui,sans-serif;fill:#fff}.svd9 .l{font:11px system-ui,sans-serif;fill:#444}</style>
+<text class="t" x="50" y="40">Modo usuario</text>
+<rect fill="#6ea3d2" height="40" rx="4" width="560" x="50" y="50"></rect><text class="b" text-anchor="middle" x="330" y="75">Aplicaciones · Subsistema Win32 · Servicios</text>
+<text class="t" x="50" y="125">Modo núcleo</text>
+<rect fill="#0055a0" height="36" rx="4" width="560" x="50" y="135"></rect><text class="b" text-anchor="middle" x="330" y="158">Executive (gestores de procesos, memoria, E/S, seguridad)</text>
+<rect fill="#003d73" height="36" rx="4" width="270" x="50" y="175"></rect><text class="b" text-anchor="middle" x="185" y="198">Kernel (planificación, sincronización)</text>
+<rect fill="#003d73" height="36" rx="4" width="270" x="340" y="175"></rect><text class="b" text-anchor="middle" x="475" y="198">Drivers de dispositivo</text>
+<rect fill="#e89822" height="36" rx="4" width="560" x="50" y="215"></rect><text class="b" text-anchor="middle" x="330" y="238">HAL (Hardware Abstraction Layer)</text>
+<rect fill="#2d3748" height="36" rx="4" width="560" x="50" y="255"></rect><text class="b" text-anchor="middle" x="330" y="278">Hardware</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="650" y="328">[Fuente: WININTERNALS]</text>
+</svg>

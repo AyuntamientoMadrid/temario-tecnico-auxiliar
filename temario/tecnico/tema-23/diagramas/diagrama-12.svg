@@ -1,0 +1,27 @@
+<svg aria-label="El front-end consume una API REST expuesta por el back-end; la API traduce peticiones HTTP en operaciones sobre la lógica de negocio y la base de datos, devolviendo JSON" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t12{font:700 11px system-ui,sans-serif;fill:#fff}.s12{font:9.5px system-ui,sans-serif;fill:#fff}.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h12" text-anchor="middle" x="340" y="20">Front-end · API REST · Back-end</text>
+<rect fill="#0055a0" height="80" rx="6" width="160" x="30" y="50"></rect>
+<text class="t12" text-anchor="middle" x="110" y="80">FRONT-END</text>
+<text class="s12" text-anchor="middle" x="110" y="98">HTML/CSS/JS</text>
+<text class="s12" text-anchor="middle" x="110" y="114">(§3, §7.2)</text>
+<path d="M190 90 L260 90" marker-end="url(#g12)" stroke="#888" stroke-width="3"></path>
+<text style="font:700 9.5px system-ui;fill:#0055a0" text-anchor="middle" x="225" y="80">fetch()</text>
+<rect fill="#e89822" height="80" rx="6" width="160" x="270" y="50"></rect>
+<text class="t12" text-anchor="middle" x="350" y="76">API REST</text>
+<text class="s12" text-anchor="middle" x="350" y="94">GET/POST/PUT/DELETE</text>
+<text class="s12" text-anchor="middle" x="350" y="110">/api/tramites/{id}</text>
+<path d="M430 90 L500 90" marker-end="url(#g12)" stroke="#888" stroke-width="3"></path>
+<defs><marker id="g12" markerheight="9" markerwidth="9" orient="auto" refx="4.5" refy="4.5"><path d="M0 0 L9 4.5 L0 9 z" fill="#888"></path></marker></defs>
+<rect fill="#2d8659" height="80" rx="6" width="150" x="510" y="50"></rect>
+<text class="t12" text-anchor="middle" x="585" y="76">BACK-END</text>
+<text class="s12" text-anchor="middle" x="585" y="94">Lógica + BD</text>
+<text class="s12" text-anchor="middle" x="585" y="110">(§8.1-8.4)</text>
+<rect fill="#f0f0f0" height="70" rx="6" stroke="#0055a0" stroke-width="2" width="520" x="80" y="160"></rect>
+<text style="font:700 11px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="184">REST trata cada entidad como un RECURSO identificado por URL</text>
+<text style="font:10px system-ui;fill:#444" text-anchor="middle" x="340" y="204">manipulado con los métodos HTTP estándar (§2.3.1) — sin envoltura de protocolo propia</text>
+<rect fill="#d13c3c" height="60" rx="6" width="380" x="150" y="248"></rect>
+<text class="t12" text-anchor="middle" x="340" y="272">SOAP: alternativa con sobre XML + WSDL</text>
+<text class="s12" text-anchor="middle" x="340" y="292">Contrato formal; vigente en integraciones heredadas (Tema 22)</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="332">[Fuente: FIELDING2000]</text>
+</svg>

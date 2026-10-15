@@ -1,0 +1,27 @@
+<svg aria-label="Camino de un estándar del IETF: un Internet-Draft que caduca a los seis meses es adoptado por un grupo de trabajo, pasa la última llamada y la aprobación del IESG y se publica como RFC con número inmutable; categorías de RFC: Standards Track con los escalones Proposed Standard e Internet Standard con número STD, Best Current Practice, Informational, Experimental e Historic" role="img" viewbox="0 0 680 356" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 10.5px system-ui,sans-serif;fill:#fff}.s3{font:8.5px system-ui,sans-serif;fill:#fff}.d3{font:9px system-ui,sans-serif;fill:#333}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n3{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h3" text-anchor="middle" x="340" y="20">Un RFC publicado no se corrige nunca: se obsoleta o se actualiza</text>
+<text class="k3" x="20" y="42">EL RECORRIDO</text>
+<rect fill="#888" height="52" rx="5" width="148" x="20" y="50"></rect><text class="t3" text-anchor="middle" x="94" y="70">INTERNET-DRAFT</text><text class="s3" text-anchor="middle" x="94" y="86">Caduca a los 6 MESES</text>
+<rect fill="#0055a0" height="52" rx="5" width="148" x="184" y="50"></rect><text class="t3" text-anchor="middle" x="258" y="70">GRUPO DE TRABAJO</text><text class="s3" text-anchor="middle" x="258" y="86">Debate público y consenso</text>
+<rect fill="#0055a0" height="52" rx="5" width="148" x="348" y="50"></rect><text class="t3" text-anchor="middle" x="422" y="70">LAST CALL + IESG</text><text class="s3" text-anchor="middle" x="422" y="86">Última llamada y aprobación</text>
+<rect fill="#2d8659" height="52" rx="5" width="148" x="512" y="50"></rect><text class="t3" text-anchor="middle" x="586" y="70">RFC PUBLICADO</text><text class="s3" text-anchor="middle" x="586" y="86">Número definitivo e inmutable</text>
+<path d="M168 76 L180 76" marker-end="url(#a3)" stroke="#666" stroke-width="1.5"></path>
+<path d="M332 76 L344 76" marker-end="url(#a3)" stroke="#666" stroke-width="1.5"></path>
+<path d="M496 76 L508 76" marker-end="url(#a3)" stroke="#666" stroke-width="1.5"></path>
+<defs><marker id="a3" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#666"></path></marker></defs>
+<rect fill="#fbeaea" height="24" rx="4" width="640" x="20" y="112"></rect>
+<text class="d3" text-anchor="middle" x="340" y="128">Un Internet-Draft NO es un estándar y NO puede citarse como referencia normativa</text>
+<text class="k3" x="20" y="158">CATEGORÍAS DE RFC · no todo RFC es un estándar</text>
+<rect fill="#0055a0" height="40" rx="4" width="312" x="20" y="166"></rect><text class="t3" text-anchor="middle" x="176" y="182">STANDARDS TRACK</text><text class="s3" text-anchor="middle" x="176" y="197">Proposed Standard → Internet Standard (serie STD)</text>
+<rect fill="#2d8659" height="40" rx="4" width="312" x="348" y="166"></rect><text class="t3" text-anchor="middle" x="504" y="182">BEST CURRENT PRACTICE</text><text class="s3" text-anchor="middle" x="504" y="197">Prácticas y procedimientos. Se numera como BCP n</text>
+<rect fill="#eef3f8" height="38" rx="4" width="204" x="20" y="212"></rect><text class="d3" text-anchor="middle" x="122" y="228">INFORMATIONAL</text><text class="n3" text-anchor="middle" x="122" y="242">Sin pretensión normativa</text>
+<rect fill="#fdf3e3" height="38" rx="4" width="204" x="238" y="212"></rect><text class="d3" text-anchor="middle" x="340" y="228">EXPERIMENTAL</text><text class="n3" text-anchor="middle" x="340" y="242">Especificación en pruebas</text>
+<rect fill="#fbeaea" height="38" rx="4" width="204" x="456" y="212"></rect><text class="d3" text-anchor="middle" x="558" y="228">HISTORIC</text><text class="n3" text-anchor="middle" x="558" y="242">Superado y desaconsejado</text>
+<rect fill="#fdf3e3" height="38" rx="4" width="640" x="20" y="260"></rect>
+<text class="d3" text-anchor="middle" x="340" y="276">EJEMPLOS VERIFICADOS: STD 97 = RFC 9110 (HTTP) · STD 99 = RFC 9112 (HTTP/1.1) · STD 86 = RFC 8200 (IPv6)</text>
+<text class="n3" text-anchor="middle" x="340" y="290">STD 102 = RFC 9915 (DHCPv6, enero de 2026) · BCP 5 = RFC 1918 (direccionamiento privado)</text>
+<rect fill="none" height="26" rx="4" stroke="#d13c3c" stroke-width="1.5" width="640" x="20" y="308"></rect>
+<text class="k3" text-anchor="middle" x="340" y="325">El número STD no cambia aunque se reedite el RFC que lo desarrolla</text>
+<text class="n3" text-anchor="end" x="670" y="348">[Fuente: RFC Editor; RFC 2026 y RFC 6410]</text>
+</svg>

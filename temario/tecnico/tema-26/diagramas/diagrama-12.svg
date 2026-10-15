@@ -1,0 +1,33 @@
+<svg aria-label="Arquitectura de una solución de copias de seguridad: servidor de control con catálogo, agentes en los sistemas de origen, proxies o servidores de medios, repositorios en disco, cinta y nube, y consola de administración" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t12{font:700 10.5px system-ui,sans-serif;fill:#fff}.s12{font:9px system-ui,sans-serif;fill:#fff}.d12{font:9px system-ui,sans-serif;fill:#333}.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}.k12{font:700 9.5px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h12" text-anchor="middle" x="340" y="20">Arquitectura de una solución de copias de seguridad</text>
+<text class="k12" x="20" y="44">ORIGEN</text>
+<rect fill="#eef3f8" height="34" rx="4" stroke="#888" width="140" x="20" y="52"></rect><text class="d12" text-anchor="middle" x="90" y="66">Servidores físicos</text><text class="d12" text-anchor="middle" x="90" y="79">(con AGENTE)</text>
+<rect fill="#eef3f8" height="34" rx="4" stroke="#888" width="140" x="20" y="92"></rect><text class="d12" text-anchor="middle" x="90" y="106">Hipervisor y VM</text><text class="d12" text-anchor="middle" x="90" y="119">(SIN agente, por API)</text>
+<rect fill="#eef3f8" height="34" rx="4" stroke="#888" width="140" x="20" y="132"></rect><text class="d12" text-anchor="middle" x="90" y="146">Cabina NAS</text><text class="d12" text-anchor="middle" x="90" y="159">(NDMP)</text>
+<path d="M164 109 L206 109" marker-end="url(#a12)" stroke="#0055a0" stroke-width="2"></path>
+<defs><marker id="a12" markerheight="8" markerwidth="8" orient="auto" refx="6" refy="3"><path d="M0,0 L0,6 L7,3 z" fill="#0055a0"></path></marker></defs>
+<rect fill="#0055a0" height="66" rx="5" width="150" x="210" y="76"></rect>
+<text class="t12" text-anchor="middle" x="285" y="96">PROXY / SERVIDOR</text>
+<text class="t12" text-anchor="middle" x="285" y="110">DE MEDIOS</text>
+<text class="s12" text-anchor="middle" x="285" y="126">Mueve los datos y</text>
+<text class="s12" text-anchor="middle" x="285" y="138">permite paralelizar</text>
+<path d="M364 109 L406 109" marker-end="url(#a12)" stroke="#0055a0" stroke-width="2"></path>
+<text class="k12" x="410" y="44">REPOSITORIOS</text>
+<rect fill="#2d8659" height="30" rx="4" width="250" x="410" y="52"></rect><text class="s12" text-anchor="middle" x="535" y="71">Disco con deduplicación — restauración rápida</text>
+<rect fill="#e89822" height="30" rx="4" width="250" x="410" y="88"></rect><text class="s12" text-anchor="middle" x="535" y="107">Objeto en nube con WORM — copia inmutable</text>
+<rect fill="#888" height="30" rx="4" width="250" x="410" y="124"></rect><text class="s12" text-anchor="middle" x="535" y="143">Cinta LTO extraída — copia fuera de línea</text>
+<rect fill="#d13c3c" height="46" rx="5" width="450" x="210" y="168"></rect>
+<text class="t12" text-anchor="middle" x="435" y="187">SERVIDOR DE CONTROL + CATÁLOGO</text>
+<text class="s12" text-anchor="middle" x="435" y="204">Configuración, planificación, retención e índice de qué hay en cada copia</text>
+<path d="M285 166 L285 146" marker-end="url(#b12)" stroke="#d13c3c" stroke-width="2"></path>
+<defs><marker id="b12" markerheight="8" markerwidth="8" orient="auto" refx="6" refy="3"><path d="M0,0 L0,6 L7,3 z" fill="#d13c3c"></path></marker></defs>
+<rect fill="#eef3f8" height="38" rx="4" stroke="#0055a0" width="180" x="20" y="176"></rect><text class="d12" text-anchor="middle" x="110" y="191">Consola e informes</text><text class="d12" text-anchor="middle" x="110" y="204">(evidencia para auditoría)</text>
+<rect fill="none" height="34" rx="5" stroke="#d13c3c" stroke-width="2" width="640" x="20" y="226"></rect>
+<text style="font:700 10.5px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="247">Sin catálogo no hay restauración granular: hay que copiarlo aparte y saber reconstruirlo el primero</text>
+<text class="k12" x="20" y="282">CAMINO DE LOS DATOS</text>
+<rect fill="#eef3f8" height="30" rx="4" width="205" x="20" y="288"></rect><text class="d12" text-anchor="middle" x="122" y="307">Por la LAN: sencillo, compite con usuarios</text>
+<rect fill="#eef3f8" height="30" rx="4" width="206" x="237" y="288"></rect><text class="d12" text-anchor="middle" x="340" y="307">LAN-free: el proxy lee el LUN por la SAN</text>
+<rect fill="#eef3f8" height="30" rx="4" width="205" x="455" y="288"></rect><text class="d12" text-anchor="middle" x="557" y="307">Sin servidor: copia desde la cabina</text>
+<text style="font:9px system-ui;fill:#666" text-anchor="end" x="670" y="334">[Fuente: NIST-SP800-34; NDMP; VEEAM-DOC]</text>
+</svg>

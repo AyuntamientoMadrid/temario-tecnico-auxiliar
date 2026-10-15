@@ -1,0 +1,30 @@
+<svg aria-label="Comparación de pila LIFO y cola FIFO" class="svd2" role="img" viewbox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd2 .ti{font:700 14px system-ui,sans-serif;fill:#0055a0}.svd2 .b{font:700 13px system-ui,sans-serif;fill:#fff}.svd2 .lab{font:12px system-ui,sans-serif;fill:#1a1a1a}
+  </style>
+<text class="ti" text-anchor="middle" x="160" y="30">PILA — LIFO</text>
+<rect fill="#0055a0" height="36" width="100" x="110" y="120"></rect>
+<rect fill="#3378b9" height="36" width="100" x="110" y="156"></rect>
+<rect fill="#6ea3d2" height="36" width="100" x="110" y="192"></rect>
+<text class="b" text-anchor="middle" x="160" y="144">C (cima)</text>
+<text class="b" text-anchor="middle" x="160" y="180">B</text>
+<text class="b" text-anchor="middle" x="160" y="216">A (fondo)</text>
+<text class="lab" style="fill:#2d8659" x="272" y="120">apilar / desapilar</text>
+<path d="M 240 138 q 40 -25 0 -45" fill="none" marker-end="url(#a2)" stroke="#2d8659" stroke-width="2"></path>
+<text class="lab" x="125" y="260">Entra y sale por el mismo extremo</text>
+<text class="lab" fill="#666" x="105" y="278">último en entrar = primero en salir</text>
+<text class="ti" text-anchor="middle" x="490" y="30">COLA — FIFO</text>
+<rect fill="#6ea3d2" height="40" width="60" x="390" y="150"></rect>
+<rect fill="#3378b9" height="40" width="60" x="450" y="150"></rect>
+<rect fill="#0055a0" height="40" width="60" x="510" y="150"></rect>
+<text class="b" text-anchor="middle" x="420" y="175">A</text>
+<text class="b" text-anchor="middle" x="480" y="175">B</text>
+<text class="b" text-anchor="middle" x="540" y="175">C</text>
+<path d="M 380 170 L 360 170" marker-end="url(#a2)" stroke="#d13c3c" stroke-width="2"></path>
+<text class="lab" style="fill:#d13c3c" text-anchor="end" x="385" y="140">desencolar (frente)</text>
+<path d="M 600 170 L 580 170" marker-end="url(#a2)" stroke="#2d8659" stroke-width="2"></path>
+<text class="lab" style="fill:#2d8659" text-anchor="end" x="650" y="140">encolar (final)</text>
+<text class="lab" x="380" y="240">Entra por un extremo, sale por el otro</text>
+<text class="lab" fill="#666" x="380" y="258">primero en entrar = primero en salir</text>
+<defs><marker id="a2" markerheight="10" markerunits="userSpaceOnUse" markerwidth="10" orient="auto" refx="8" refy="5"><polygon fill="#444" points="0,0 10,5 0,10"></polygon></marker></defs>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="middle" x="330" y="305">[Fuente: KNUTH-V1, §2.2]</text>
+</svg>

@@ -1,0 +1,48 @@
+<svg aria-label="Comparación de los tipos de copia a lo largo de una semana: completa el domingo y después incrementales, diferenciales o sintéticas, indicando cuántas piezas se necesitan para restaurar el jueves" role="img" viewbox="0 0 680 370" xmlns="http://www.w3.org/2000/svg">
+<style>.t11{font:700 10.5px system-ui,sans-serif;fill:#fff}.s11{font:9px system-ui,sans-serif;fill:#fff}.d11{font:9px system-ui,sans-serif;fill:#333}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}.k11{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.l11{font:700 8.5px system-ui,sans-serif;fill:#0055a0}.n11{font:700 9px system-ui,sans-serif;fill:#fff}</style>
+<text class="h11" text-anchor="middle" x="340" y="20">Tipos de copia: qué se copia y qué hace falta para restaurar</text>
+<text class="k11" text-anchor="middle" x="118" y="42">DOM</text><text class="k11" text-anchor="middle" x="196" y="42">LUN</text><text class="k11" text-anchor="middle" x="274" y="42">MAR</text><text class="k11" text-anchor="middle" x="352" y="42">MIÉ</text><text class="k11" text-anchor="middle" x="430" y="42">JUE</text>
+<text class="l11" x="20" y="66">INCREMENTAL</text>
+<rect fill="#0055a0" height="26" rx="3" width="64" x="86" y="50"></rect><text class="n11" text-anchor="middle" x="118" y="67">COMPLETA</text>
+<rect fill="#2d8659" height="26" rx="3" width="64" x="164" y="50"></rect><text class="n11" text-anchor="middle" x="196" y="67">inc</text>
+<rect fill="#2d8659" height="26" rx="3" width="64" x="242" y="50"></rect><text class="n11" text-anchor="middle" x="274" y="67">inc</text>
+<rect fill="#2d8659" height="26" rx="3" width="64" x="320" y="50"></rect><text class="n11" text-anchor="middle" x="352" y="67">inc</text>
+<rect fill="#2d8659" height="26" rx="3" width="64" x="398" y="50"></rect><text class="n11" text-anchor="middle" x="430" y="67">inc</text>
+<text class="d11" x="474" y="61">Cada uno guarda lo cambiado</text><text class="d11" x="474" y="72">desde la copia ANTERIOR</text>
+<rect fill="#d13c3c" height="18" rx="3" width="376" x="86" y="80"></rect><text class="n11" text-anchor="middle" x="274" y="93">Restaurar el jueves: 5 piezas encadenadas</text>
+<text class="l11" x="20" y="126">DIFERENCIAL</text>
+<rect fill="#0055a0" height="26" rx="3" width="64" x="86" y="110"></rect><text class="n11" text-anchor="middle" x="118" y="127">COMPLETA</text>
+<rect fill="#e89822" height="26" rx="3" width="64" x="164" y="110"></rect><text class="n11" text-anchor="middle" x="196" y="127">dif</text>
+<rect fill="#e89822" height="26" rx="3" width="64" x="242" y="110"></rect><text class="n11" text-anchor="middle" x="274" y="127">dif +</text>
+<rect fill="#e89822" height="26" rx="3" width="64" x="320" y="110"></rect><text class="n11" text-anchor="middle" x="352" y="127">dif ++</text>
+<rect fill="#e89822" height="26" rx="3" width="64" x="398" y="110"></rect><text class="n11" text-anchor="middle" x="430" y="127">dif +++</text>
+<text class="d11" x="474" y="121">Cada una guarda lo cambiado</text><text class="d11" x="474" y="132">desde la última COMPLETA</text>
+<rect fill="#2d8659" height="18" rx="3" width="376" x="86" y="140"></rect><text class="n11" text-anchor="middle" x="274" y="153">Restaurar el jueves: solo 2 piezas (completa + diferencial del jueves)</text>
+<text class="l11" x="20" y="186">SINTÉTICA</text>
+<rect fill="#0055a0" height="26" rx="3" width="64" x="86" y="170"></rect><text class="n11" text-anchor="middle" x="118" y="187">COMPLETA</text>
+<rect fill="#2d8659" height="26" rx="3" width="64" x="164" y="170"></rect><text class="n11" text-anchor="middle" x="196" y="187">inc</text>
+<rect fill="#2d8659" height="26" rx="3" width="64" x="242" y="170"></rect><text class="n11" text-anchor="middle" x="274" y="187">inc</text>
+<rect fill="#2d8659" height="26" rx="3" width="64" x="320" y="170"></rect><text class="n11" text-anchor="middle" x="352" y="187">inc</text>
+<rect fill="#0055a0" height="26" rx="3" width="64" x="398" y="170"></rect><text class="n11" text-anchor="middle" x="430" y="187">SINTÉTICA</text>
+<text class="d11" x="474" y="181">El repositorio fabrica la completa</text><text class="d11" x="474" y="192">sin leer el sistema de origen</text>
+<rect fill="#2d8659" height="18" rx="3" width="376" x="86" y="200"></rect><text class="n11" text-anchor="middle" x="274" y="213">Restaurar el jueves: 1 pieza, y sin consumir ventana en producción</text>
+<line stroke="#ccc" stroke-width="1" x1="20" x2="660" y1="230" y2="230"></line>
+<rect fill="#2d8659" height="66" rx="5" width="205" x="20" y="240"></rect>
+<text class="t11" text-anchor="middle" x="122" y="258">INCREMENTAL</text>
+<text class="s11" text-anchor="middle" x="122" y="275">Mínimo espacio y ventana</text>
+<text class="s11" text-anchor="middle" x="122" y="290">Restauración lenta; si se rompe</text>
+<text class="s11" text-anchor="middle" x="122" y="302">un eslabón, se pierde lo posterior</text>
+<rect fill="#e89822" height="66" rx="5" width="206" x="237" y="240"></rect>
+<text class="t11" text-anchor="middle" x="340" y="258">DIFERENCIAL</text>
+<text class="s11" text-anchor="middle" x="340" y="275">Crece cada día que pasa</text>
+<text class="s11" text-anchor="middle" x="340" y="290">Restauración rápida y robusta:</text>
+<text class="s11" text-anchor="middle" x="340" y="302">solo dos piezas</text>
+<rect fill="#0055a0" height="66" rx="5" width="205" x="455" y="240"></rect>
+<text class="t11" text-anchor="middle" x="557" y="258">SINTÉTICA</text>
+<text class="s11" text-anchor="middle" x="557" y="275">Consolida en el repositorio</text>
+<text class="s11" text-anchor="middle" x="557" y="290">Base del modelo incremental</text>
+<text class="s11" text-anchor="middle" x="557" y="302">para siempre</text>
+<text class="k11" text-anchor="middle" x="340" y="326">Incremental = desde la última copia · Diferencial = desde la última completa</text>
+<text class="d11" text-anchor="middle" x="340" y="344">Copia en frío: servicio parado · Copia en caliente: exige un mecanismo de consistencia (VSS, instantánea)</text>
+<text style="font:9px system-ui;fill:#666" text-anchor="end" x="670" y="362">[Fuente: NIST-SP800-34; ISO27002; VEEAM-DOC]</text>
+</svg>

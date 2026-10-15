@@ -1,0 +1,23 @@
+<svg aria-label="Capas normativas que se superponen sobre un sistema de información municipal: Esquema Nacional de Seguridad, Reglamento General de Protección de Datos y LOPDGDD, eIDAS y Ley 6 de 2020, leyes 39 y 40 de 2015, y normativa de ciberseguridad NIS2, con indicación de qué protege cada una" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 10.5px system-ui,sans-serif;fill:#fff}.s3{font:8.5px system-ui,sans-serif;fill:#fff}.d3{font:9px system-ui,sans-serif;fill:#333}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n3{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h3" text-anchor="middle" x="340" y="20">Cinco marcos sobre el mismo sistema</text>
+<text class="k3" x="30" y="42">NORMA</text><text class="k3" x="250" y="42">QUÉ PROTEGE</text><text class="k3" x="520" y="42">EN ESTE TEMA</text>
+<rect fill="#0055a0" height="40" rx="4" width="200" x="20" y="50"></rect><text class="t3" text-anchor="middle" x="120" y="67">ENS — RD 311/2022</text><text class="s3" text-anchor="middle" x="120" y="81">obligatorio para el sector público</text>
+<rect fill="#eef3f8" height="40" rx="4" width="270" x="228" y="50"></rect><text class="d3" text-anchor="middle" x="363" y="67">La información y los servicios de la</text><text class="d3" text-anchor="middle" x="363" y="81">organización</text>
+<rect fill="#f5f5f5" height="40" rx="4" width="154" x="506" y="50"></rect><text class="d3" text-anchor="middle" x="583" y="74">Secciones 1 a 6</text>
+<rect fill="#7a2f8a" height="40" rx="4" width="200" x="20" y="96"></rect><text class="t3" text-anchor="middle" x="120" y="113">RGPD + LOPDGDD</text><text class="s3" text-anchor="middle" x="120" y="127">UE 2016/679 y LO 3/2018</text>
+<rect fill="#eef3f8" height="40" rx="4" width="270" x="228" y="96"></rect><text class="d3" text-anchor="middle" x="363" y="113">Los derechos y libertades de las</text><text class="d3" text-anchor="middle" x="363" y="127">personas físicas</text>
+<rect fill="#f5f5f5" height="40" rx="4" width="154" x="506" y="96"></rect><text class="d3" text-anchor="middle" x="583" y="113">Art. 32 seguridad</text><text class="d3" text-anchor="middle" x="583" y="127">72 h brechas</text>
+<rect fill="#2d8659" height="40" rx="4" width="200" x="20" y="142"></rect><text class="t3" text-anchor="middle" x="120" y="159">eIDAS + Ley 6/2020</text><text class="s3" text-anchor="middle" x="120" y="173">UE 910/2014 y UE 2024/1183</text>
+<rect fill="#eef3f8" height="40" rx="4" width="270" x="228" y="142"></rect><text class="d3" text-anchor="middle" x="363" y="159">La confianza en la identidad y en la</text><text class="d3" text-anchor="middle" x="363" y="173">firma electrónicas</text>
+<rect fill="#f5f5f5" height="40" rx="4" width="154" x="506" y="142"></rect><text class="d3" text-anchor="middle" x="583" y="166">Sección 6</text>
+<rect fill="#e89822" height="40" rx="4" width="200" x="20" y="188"></rect><text class="t3" text-anchor="middle" x="120" y="205">Leyes 39 y 40 de 2015</text><text class="s3" text-anchor="middle" x="120" y="219">+ RD 203/2021 y ENI</text>
+<rect fill="#eef3f8" height="40" rx="4" width="270" x="228" y="188"></rect><text class="d3" text-anchor="middle" x="363" y="205">La validez jurídica del acto y del</text><text class="d3" text-anchor="middle" x="363" y="219">documento administrativo</text>
+<rect fill="#f5f5f5" height="40" rx="4" width="154" x="506" y="188"></rect><text class="d3" text-anchor="middle" x="583" y="205">Arts. 9 y 10 · CSV</text><text class="d3" text-anchor="middle" x="583" y="219">sello de órgano</text>
+<rect fill="#d13c3c" height="40" rx="4" width="200" x="20" y="234"></rect><text class="t3" text-anchor="middle" x="120" y="251">NIS2 y RD 43/2021</text><text class="s3" text-anchor="middle" x="120" y="265">servicios esenciales</text>
+<rect fill="#eef3f8" height="40" rx="4" width="270" x="228" y="234"></rect><text class="d3" text-anchor="middle" x="363" y="251">La resiliencia del servicio esencial</text><text class="d3" text-anchor="middle" x="363" y="265">y la notificación de incidentes</text>
+<rect fill="#f5f5f5" height="40" rx="4" width="154" x="506" y="234"></rect><text class="d3" text-anchor="middle" x="583" y="251">Alerta 24 h</text><text class="d3" text-anchor="middle" x="583" y="265">CSIRT de referencia</text>
+<rect fill="none" height="30" rx="4" stroke="#d13c3c" stroke-width="1.5" width="640" x="20" y="286"></rect>
+<text class="k3" text-anchor="middle" x="340" y="305">Un mismo incidente puede activar tres relojes a la vez, y corren EN PARALELO</text>
+<text class="n3" text-anchor="end" x="670" y="332">[Fuente: ENS; RGPD; LOPDGDD; EIDAS; L39-2015; NIS2]</text>
+</svg>

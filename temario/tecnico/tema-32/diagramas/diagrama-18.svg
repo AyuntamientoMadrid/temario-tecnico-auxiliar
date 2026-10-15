@@ -1,0 +1,36 @@
+<svg aria-label="Escalera de las tres modalidades de firma electrónica del Reglamento eIDAS: simple, avanzada y cualificada, con los requisitos de cada una y su efecto jurídico, la correspondencia con los refuerzos R1 a R4 de la medida mp punto info punto 3 del Esquema Nacional de Seguridad, y los formatos CAdES, XAdES y PAdES con sus niveles de longevidad B, T, LT y LTA" role="img" viewbox="0 0 680 374" xmlns="http://www.w3.org/2000/svg">
+<style>.t18{font:700 10.5px system-ui,sans-serif;fill:#fff}.s18{font:8.5px system-ui,sans-serif;fill:#fff}.d18{font:9px system-ui,sans-serif;fill:#333}.h18{font:700 13px system-ui,sans-serif;fill:#0055a0}.k18{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n18{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h18" text-anchor="middle" x="340" y="20">Tres modalidades, un solo efecto equivalente a la manuscrita</text>
+<rect fill="#888" height="76" rx="5" width="206" x="20" y="34"></rect>
+<text class="t18" text-anchor="middle" x="123" y="52">1 · SIMPLE</text>
+<text class="s18" text-anchor="middle" x="123" y="70">Datos electrónicos que el</text>
+<text class="s18" text-anchor="middle" x="123" y="83">firmante usa para firmar</text>
+<text class="s18" text-anchor="middle" x="123" y="101">No se le niegan efectos por ser electrónica</text>
+<rect fill="#0055a0" height="76" rx="5" width="206" x="237" y="34"></rect>
+<text class="t18" text-anchor="middle" x="340" y="50">2 · AVANZADA (art. 26)</text>
+<text class="s18" text-anchor="middle" x="340" y="65">Vinculada de forma única · identifica</text>
+<text class="s18" text-anchor="middle" x="340" y="78">al firmante · control exclusivo ·</text>
+<text class="s18" text-anchor="middle" x="340" y="91">detecta cualquier cambio posterior</text>
+<text class="s18" text-anchor="middle" x="340" y="103">Mayor valor probatorio</text>
+<rect fill="#2d8659" height="76" rx="5" width="206" x="454" y="34"></rect>
+<text class="t18" text-anchor="middle" x="557" y="52">3 · CUALIFICADA</text>
+<text class="s18" text-anchor="middle" x="557" y="70">Avanzada + certificado</text>
+<text class="s18" text-anchor="middle" x="557" y="83">CUALIFICADO + dispositivo QSCD</text>
+<text class="s18" text-anchor="middle" x="557" y="101">EQUIVALE A LA FIRMA MANUSCRITA (art. 25.2)</text>
+<rect fill="#fbeaea" height="24" rx="4" width="640" x="20" y="118"></rect>
+<text class="d18" text-anchor="middle" x="340" y="134">Certificado cualificado SIN dispositivo cualificado = firma AVANZADA, no cualificada. Es el error más repetido.</text>
+<text class="k18" x="20" y="164">CORRESPONDENCIA CON mp.info.3 DEL ENS (dimensiones I y A)</text>
+<rect fill="#eef3f8" height="54" rx="4" width="206" x="20" y="172"></rect><text class="d18" text-anchor="middle" x="123" y="189">NIVEL BAJO</text><text class="n18" text-anchor="middle" x="123" y="205">cualquier firma admitida en</text><text class="n18" text-anchor="middle" x="123" y="218">derecho, incluido el CSV</text>
+<rect fill="#fdf3e3" height="54" rx="4" width="206" x="237" y="172"></rect><text class="d18" text-anchor="middle" x="340" y="189">MEDIO · +R1 +R2 +R3</text><text class="n18" text-anchor="middle" x="340" y="205">certificados cualificados ·</text><text class="n18" text-anchor="middle" x="340" y="218">algoritmos CCN · validación</text>
+<rect fill="#fbeaea" height="54" rx="4" width="206" x="454" y="172"></rect><text class="d18" text-anchor="middle" x="557" y="189">ALTO · +R4</text><text class="n18" text-anchor="middle" x="557" y="205">además, un segundo factor:</text><text class="n18" text-anchor="middle" x="557" y="218">algo que se sabe o que se es</text>
+<text class="k18" x="20" y="248">FORMATOS Y NIVELES DE LONGEVIDAD</text>
+<rect fill="#0055a0" height="60" rx="4" width="150" x="20" y="256"></rect><text class="t18" text-anchor="middle" x="95" y="274">CAdES</text><text class="s18" text-anchor="middle" x="95" y="290">cualquier binario</text><text class="s18" text-anchor="middle" x="95" y="305">sobre CMS</text>
+<rect fill="#2d8659" height="60" rx="4" width="150" x="184" y="256"></rect><text class="t18" text-anchor="middle" x="259" y="274">XAdES</text><text class="s18" text-anchor="middle" x="259" y="290">documentos XML</text><text class="s18" text-anchor="middle" x="259" y="305">Facturae, expediente</text>
+<rect fill="#e89822" height="60" rx="4" width="150" x="348" y="256"></rect><text class="t18" text-anchor="middle" x="423" y="274">PAdES</text><text class="s18" text-anchor="middle" x="423" y="290">documentos PDF</text><text class="s18" text-anchor="middle" x="423" y="305">firma visible en el visor</text>
+<rect fill="#7a2f8a" height="60" rx="4" width="148" x="512" y="256"></rect><text class="t18" text-anchor="middle" x="586" y="274">ASiC</text><text class="s18" text-anchor="middle" x="586" y="290">contenedor que agrupa</text><text class="s18" text-anchor="middle" x="586" y="305">datos y firmas</text>
+<rect fill="#eef3f8" height="26" rx="3" width="152" x="20" y="324"></rect><text class="d18" text-anchor="middle" x="96" y="341">-B básica</text>
+<rect fill="#cfe4f7" height="26" rx="3" width="152" x="178" y="324"></rect><text class="d18" text-anchor="middle" x="254" y="341">-T + sello de tiempo</text>
+<rect fill="#9fc9ec" height="26" rx="3" width="152" x="336" y="324"></rect><text class="d18" text-anchor="middle" x="412" y="341">-LT + datos de validación</text>
+<rect fill="#0055a0" height="26" rx="3" width="166" x="494" y="324"></rect><text class="s18" text-anchor="middle" x="577" y="341">-LTA + sellos de archivo</text>
+<text class="n18" text-anchor="end" x="670" y="366">[Fuente: EIDAS, arts. 25 y 26; ENS, mp.info.3; ETSI319]</text>
+</svg>

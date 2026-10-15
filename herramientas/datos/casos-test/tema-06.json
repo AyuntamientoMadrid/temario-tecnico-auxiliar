@@ -1,0 +1,692 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, la ciudadana no dispone de certificado electrónico ni de Cl@ve. ¿Puede presentar la solicitud de ayuda por medios electrónicos?",
+    "o": [
+     "Sí: un funcionario público habilitado puede realizar su identificación o firma electrónica con el sistema de firma del que esté dotado.",
+     "No: antes de presentar la solicitud debe obtener un certificado electrónico cualificado de firma.",
+     "No: la asistencia en el uso de medios electrónicos solo se presta a las personas jurídicas."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · art. 12.2 LPACAP",
+    "e": "Si un interesado no obligado a relacionarse electrónicamente carece de medios electrónicos, su identificación o firma puede realizarla válidamente un funcionario público habilitado (art. 12.2 LPACAP)."
+   },
+   {
+    "q": "Para que el funcionario de la Oficina de Atención a la Ciudadanía pueda firmar la solicitud por ella, la ciudadana debe:",
+    "o": [
+     "Otorgar un poder notarial a favor del funcionario e inscribirlo en el registro de apoderamientos.",
+     "Identificarse ante el funcionario y prestar su consentimiento expreso, del que debe quedar constancia.",
+     "Obtener una resolución motivada del órgano competente que autorice esa firma."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · art. 12.2 LPACAP",
+    "e": "El artículo 12.2 LPACAP exige que el interesado se identifique ante el funcionario y preste su consentimiento expreso, del que queda constancia para los casos de discrepancia o litigio."
+   },
+   {
+    "q": "Además de la asistencia del funcionario habilitado, ¿dónde puede la ciudadana presentar su solicitud de forma presencial?",
+    "o": [
+     "Únicamente en el Registro Electrónico General, sin oficinas presenciales.",
+     "Solo en la sede del órgano que vaya a resolver la ayuda, previa cita.",
+     "En cualquier oficina de asistencia en materia de registros."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · art. 16.4.d LPACAP",
+    "e": "El artículo 16.4 LPACAP admite la presentación de documentos, entre otros lugares, en las oficinas de asistencia en materia de registros, que digitalizan los documentos en papel."
+   },
+   {
+    "q": "En el supuesto, ¿qué acredita la firma de la solicitud que no acredita por sí sola la identificación?",
+    "o": [
+     "La capacidad de obrar de la ciudadana con arreglo a las normas civiles.",
+     "La autenticidad de la expresión de su voluntad y consentimiento, y la integridad del documento.",
+     "La representación de su hijo para los actos de mero trámite del procedimiento."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · art. 10.1 LPACAP",
+    "e": "La firma permite acreditar la autenticidad de la expresión de la voluntad y consentimiento, así como la integridad e inalterabilidad del documento (art. 10.1 LPACAP); la identificación solo verifica la identidad."
+   },
+   {
+    "q": "La solicitud de ayuda que quiere presentar la ciudadana, ¿exige firma o basta con la identificación?",
+    "o": [
+     "Exige firma, porque la firma es obligatoria para formular solicitudes.",
+     "Basta la identificación, porque con carácter general es suficiente para cualquier actuación.",
+     "Exige firma solo si la ayuda solicitada supera la cuantía que fije la convocatoria."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · art. 11.2 LPACAP",
+    "e": "Aunque con carácter general basta acreditar la identidad (art. 11.1 LPACAP), la firma es obligatoria para formular solicitudes, presentar declaraciones responsables o comunicaciones, recurrir, desistir y renunciar (art. 11.2)."
+   },
+   {
+    "q": "Días después, la ciudadana quiere consultar en la sede electrónica el estado de tramitación de su expediente. Para esa actuación, con carácter general:",
+    "o": [
+     "Debe firmar electrónicamente la consulta, como cualquier trámite del procedimiento.",
+     "Debe acreditar de nuevo la representación otorgada a su hijo.",
+     "Basta con que acredite previamente su identidad."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · arts. 11.1 y 53.1.a LPACAP",
+    "e": "Para cualquier actuación prevista en el procedimiento basta con acreditar previamente la identidad (art. 11.1 LPACAP); consultar el estado de tramitación no es uno de los actos del artículo 11.2 que exigen firma."
+   },
+   {
+    "q": "Si es el hijo quien presenta la solicitud de ayuda en nombre de su madre, ¿debe acreditar la representación?",
+    "o": [
+     "No: la representación se presume siempre entre familiares en primer grado.",
+     "Solo si la solicitud se presenta por medios electrónicos y no en papel.",
+     "Sí, porque se trata de formular una solicitud en nombre de otra persona."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · art. 5.3 LPACAP",
+    "e": "Para formular solicitudes, presentar declaraciones responsables o comunicaciones, recurrir, desistir y renunciar en nombre de otra persona debe acreditarse la representación (art. 5.3 LPACAP)."
+   },
+   {
+    "q": "Una vez iniciado el procedimiento, el hijo se limita a realizar actos y gestiones de mero trámite en el expediente. Para esos actos, la representación:",
+    "o": [
+     "Se presume, sin necesidad de acreditarla.",
+     "Debe acreditarse mediante poder notarial.",
+     "No cabe: solo puede realizarlos la interesada."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · art. 5.3 LPACAP",
+    "e": "El artículo 5.3 LPACAP exige acreditar la representación para los actos que enumera, pero para los actos y gestiones de mero trámite la representación se presume."
+   },
+   {
+    "q": "¿Dónde puede inscribirse el poder que la ciudadana otorgue a su hijo?",
+    "o": [
+     "En el Registro Electrónico General del Ayuntamiento, como un escrito más.",
+     "En el registro electrónico general de apoderamientos de la Administración.",
+     "En el archivo electrónico único de los procedimientos finalizados."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · art. 6.1 LPACAP",
+    "e": "Las entidades locales, como la AGE y las comunidades autónomas, disponen de un registro electrónico general de apoderamientos (art. 6.1 LPACAP), distinto del registro de documentos del artículo 16 y del archivo del artículo 17."
+   },
+   {
+    "q": "Si la ciudadana opta por otorgar a su hijo un apoderamiento apud acta, puede hacerlo:",
+    "o": [
+     "Por comparecencia electrónica en la sede electrónica o por comparecencia personal en las oficinas de asistencia en materia de registros.",
+     "Únicamente ante notario, con inscripción posterior en el registro de apoderamientos.",
+     "Únicamente por comparecencia personal ante el órgano que vaya a resolver la ayuda."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · art. 6.5 LPACAP",
+    "e": "El apoderamiento apud acta se otorga mediante comparecencia electrónica en la sede electrónica o comparecencia personal en las oficinas de asistencia en materia de registros (art. 6.5 LPACAP)."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿cuáles de los cuatro sujetos están obligados a relacionarse electrónicamente con la Administración?",
+    "o": [
+     "Los cuatro, porque con la LPACAP la tramitación electrónica es obligatoria para todos.",
+     "La S.L. constructora, el abogado y el funcionario del IAM.",
+     "Solo la S.L. y el abogado; el funcionario elige canal como cualquier persona física."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · art. 14.2 LPACAP",
+    "e": "La S.L. (persona jurídica), el abogado en ejercicio de su profesión colegiada y el empleado público por razón de su condición figuran en el artículo 14.2 LPACAP; el vecino jubilado, persona física, no."
+   },
+   {
+    "q": "La S.L. constructora está obligada a la vía electrónica por ser:",
+    "o": [
+     "Una empresa que contrata habitualmente con el sector público.",
+     "Un sujeto que ejerce una actividad profesional de colegiación obligatoria.",
+     "Una persona jurídica, con independencia de su actividad."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · art. 14.2.a LPACAP",
+    "e": "Las personas jurídicas figuran en la letra a) del artículo 14.2 LPACAP entre los sujetos obligados a relacionarse electrónicamente."
+   },
+   {
+    "q": "El abogado del supuesto está obligado a relacionarse electrónicamente:",
+    "o": [
+     "Para los trámites que realice en ejercicio de su profesión de colegiación obligatoria.",
+     "Para cualquier trámite, también los que realice a título particular como vecino.",
+     "Solo cuando actúe en representación de una persona jurídica."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · art. 14.2.c LPACAP",
+    "e": "La obligación de los profesionales colegiados se limita a los trámites y actuaciones que realicen en ejercicio de esa actividad profesional (art. 14.2.c LPACAP)."
+   },
+   {
+    "q": "Para clasificar los escritos, el técnico repasa el artículo 14.2 LPACAP. ¿Cuál de estos sujetos NO figura en esa lista?",
+    "o": [
+     "Las entidades sin personalidad jurídica.",
+     "Quienes representen a un interesado obligado a relacionarse electrónicamente.",
+     "Las personas físicas que dispongan de certificado electrónico."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · art. 14.2 LPACAP",
+    "e": "El artículo 14.2 enumera personas jurídicas, entidades sin personalidad jurídica, profesionales colegiados, representantes de obligados y empleados públicos; tener certificado no convierte a una persona física en obligada."
+   },
+   {
+    "q": "¿Puede el vecino jubilado presentar su escrito en papel?",
+    "o": [
+     "No: desde la entrada en vigor de la LPACAP todas las personas deben usar el registro electrónico.",
+     "Sí: como persona física no obligada, puede elegir en todo momento si se comunica por medios electrónicos o no.",
+     "Sí, pero solo si acredita que no dispone de certificado electrónico ni de Cl@ve."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · art. 14.1 LPACAP",
+    "e": "Las personas físicas pueden elegir en todo momento el canal de comunicación con la Administración, salvo que estén obligadas a relacionarse electrónicamente (art. 14.1 LPACAP)."
+   },
+   {
+    "q": "Si el vecino jubilado presenta este escrito en papel y más adelante prefiere relacionarse por medios electrónicos:",
+    "o": [
+     "Puede modificar el medio elegido en cualquier momento.",
+     "Queda vinculado al papel hasta que concluya el procedimiento.",
+     "Necesita autorización expresa del órgano que tramita el expediente."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · art. 14.1 LPACAP",
+    "e": "La persona física no obligada elige el canal y el medio elegido puede ser modificado en cualquier momento (art. 14.1 LPACAP)."
+   },
+   {
+    "q": "¿Por qué el funcionario del IAM está obligado a usar la vía electrónica en su trámite?",
+    "o": [
+     "Porque el IAM, como organismo tecnológico, solo admite escritos electrónicos.",
+     "Porque es empleado público y el trámite se refiere a su condición de empleado público.",
+     "Porque su certificado de empleado público le impide elegir canal en cualquier trámite, también en los personales."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · art. 14.2.e LPACAP",
+    "e": "Los empleados de las Administraciones Públicas están obligados para los trámites y actuaciones que realicen con ellas por razón de su condición de empleado público (art. 14.2.e LPACAP), no para todos sus trámites."
+   },
+   {
+    "q": "Un particular, que no está obligado por sí mismo, presenta un escrito como representante de la S.L. constructora. Ese representante:",
+    "o": [
+     "Puede elegir el papel, porque la obligación es personal de la sociedad representada.",
+     "Solo está obligado a la vía electrónica si además es abogado colegiado.",
+     "También está obligado a relacionarse electrónicamente, por representar a un interesado obligado."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · art. 14.2.d LPACAP",
+    "e": "Quienes representen a un interesado obligado a relacionarse electrónicamente están también obligados (art. 14.2.d LPACAP)."
+   },
+   {
+    "q": "Si la S.L. presenta su escrito en papel pese a estar obligada a la vía electrónica, la Administración:",
+    "o": [
+     "Le requerirá para que lo subsane mediante su presentación electrónica.",
+     "Lo inadmitirá sin más trámite y sin posibilidad de subsanación.",
+     "Lo admitirá y lo digitalizará en la oficina de asistencia en materia de registros."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · art. 68.4 LPACAP",
+    "e": "Cuando un sujeto obligado presenta su solicitud presencialmente, la Administración le requiere para que la subsane a través de su presentación electrónica (art. 68.4 LPACAP)."
+   },
+   {
+    "q": "Si la S.L. subsana presentando el escrito electrónicamente, ¿qué fecha de presentación se le tiene en cuenta?",
+    "o": [
+     "La fecha en que entregó el escrito en papel.",
+     "La fecha en que se haya realizado la subsanación.",
+     "La fecha en que la Administración le notificó el requerimiento."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · art. 68.4 LPACAP",
+    "e": "El artículo 68.4 LPACAP considera como fecha de presentación aquella en la que se haya realizado la subsanación, no la del escrito en papel."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, la resolución se notifica el viernes 5 de junio y el plazo para recurrir es de un mes. ¿Desde cuándo se computa?",
+    "o": [
+     "Desde el mismo viernes 5 de junio, día de la notificación.",
+     "Desde el lunes 8 de junio, primer día hábil posterior a la notificación.",
+     "Desde el día 6 de junio, día siguiente a aquel en que tuvo lugar la notificación."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · art. 30.4 LPACAP",
+    "e": "Los plazos fijados en meses se computan a partir del día siguiente a aquel en que tenga lugar la notificación (art. 30.4 LPACAP)."
+   },
+   {
+    "q": "Sin tener en cuenta todavía si ese día es hábil o inhábil, ¿qué día concluye el plazo de un mes del supuesto?",
+    "o": [
+     "El 5 de julio, el mismo día en que se produjo la notificación, en el mes de vencimiento.",
+     "El 6 de julio, al cumplirse un mes completo desde el día siguiente a la notificación.",
+     "El 30 de junio, último día del mes siguiente al de la notificación."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 2 · art. 30.4 LPACAP",
+    "e": "Los plazos en meses concluyen el mismo día en que se produjo la notificación en el mes de vencimiento (art. 30.4 LPACAP): notificado el 5 de junio, el plazo concluye el 5 de julio."
+   },
+   {
+    "q": "Variante del supuesto: si la resolución se hubiera notificado el 31 de enero, el plazo de un mes expiraría:",
+    "o": [
+     "El 1 de marzo, primer día del mes posterior al de vencimiento.",
+     "El último día de febrero, al no existir en ese mes un día equivalente.",
+     "El 3 de marzo, sumando los días que faltan para completar treinta y uno."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · art. 30.4 LPACAP",
+    "e": "Si en el mes de vencimiento no hay día equivalente a aquel en que comienza el cómputo, el plazo expira el último día del mes (art. 30.4 LPACAP)."
+   },
+   {
+    "q": "¿Pudo el interesado presentar su escrito en el registro electrónico un sábado a las 23:50 h?",
+    "o": [
+     "Sí: el registro electrónico permite presentar documentos todos los días del año durante las veinticuatro horas.",
+     "No: el registro electrónico solo admite presentaciones en días hábiles y en horario de oficina.",
+     "Solo si el órgano competente hubiera habilitado expresamente ese sábado."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · art. 31.2.a LPACAP",
+    "e": "El registro electrónico permite la presentación de documentos todos los días del año durante las veinticuatro horas (art. 31.2.a LPACAP); otra cosa es la fecha a la que se entiende presentado."
+   },
+   {
+    "q": "A efectos del cómputo del plazo de un mes del supuesto, el escrito presentado en el registro electrónico el sábado a las 23:50 h se entiende presentado:",
+    "o": [
+     "En la primera hora del primer día hábil siguiente, porque el sábado es inhábil.",
+     "El viernes anterior, último día hábil antes de la presentación.",
+     "El sábado a las 23:50 h, porque la regla del primer día hábil siguiente solo opera en los plazos fijados en días hábiles."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · art. 31.2.b LPACAP",
+    "e": "La presentación en día inhábil se entiende realizada en la primera hora del primer día hábil siguiente solo a los efectos del cómputo de plazo fijado en días hábiles (art. 31.2.b LPACAP). En un plazo de un mes cuenta la fecha y hora oficial de la sede electrónica (art. 31.2): el propio sábado."
+   },
+   {
+    "q": "¿Qué fecha y hora se toman como referencia para el cómputo de plazos del escrito presentado en el registro electrónico?",
+    "o": [
+     "Las del dispositivo desde el que el interesado presentó el escrito.",
+     "La fecha y hora oficial de la sede electrónica de acceso.",
+     "Las que el propio interesado haga constar en su escrito."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · art. 31.2 LPACAP",
+    "e": "El registro electrónico se rige, a efectos de cómputo de los plazos, por la fecha y hora oficial de la sede electrónica de acceso (art. 31.2 LPACAP)."
+   },
+   {
+    "q": "Si el último día del plazo de un mes cae en sábado, ¿qué ocurre?",
+    "o": [
+     "El plazo vence el viernes anterior, último día hábil.",
+     "El plazo vence ese sábado, porque en los plazos por meses no se excluyen los inhábiles.",
+     "El plazo se prorroga al primer día hábil siguiente."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · art. 30.5 LPACAP",
+    "e": "Si el último día del plazo es inhábil, se entiende prorrogado al primer día hábil siguiente (art. 30.5 LPACAP); el sábado es inhábil."
+   },
+   {
+    "q": "Variante del supuesto: si la resolución hubiera concedido un plazo de diez días en lugar de un mes, ¿se contarían los sábados?",
+    "o": [
+     "Sí, porque en la LPACAP solo se excluyen los domingos y los festivos.",
+     "No: en los plazos por días se excluyen los sábados, los domingos y los festivos.",
+     "Sí, porque los plazos administrativos se cuentan siempre en días naturales."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · art. 30.2 LPACAP",
+    "e": "Salvo que una ley o el Derecho de la UE dispongan otro cómputo, los plazos por días son de días hábiles y se excluyen los sábados, los domingos y los festivos (art. 30.2 LPACAP)."
+   },
+   {
+    "q": "El interesado vive en otro municipio, donde el último día del plazo es festivo local, aunque es hábil en la sede del órgano municipal que resolvió. Ese día se considera:",
+    "o": [
+     "Inhábil en todo caso, por serlo en uno de los dos lugares.",
+     "Hábil, porque prevalece el calendario de la sede del órgano.",
+     "Hábil solo para las presentaciones electrónicas."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · art. 30.6 LPACAP",
+    "e": "Si un día es hábil en el municipio de residencia del interesado e inhábil en la sede del órgano, o a la inversa, se considera inhábil en todo caso (art. 30.6 LPACAP)."
+   },
+   {
+    "q": "El plazo del supuesto se expresa en meses. Si un plazo se fijara en horas, ¿cuál sería su duración máxima?",
+    "o": [
+     "Setenta y dos horas; por encima, se expresa en días naturales.",
+     "Cuarenta y ocho horas; por encima, se expresa en semanas.",
+     "Veinticuatro horas; por encima, se expresa en días."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · art. 30.1 LPACAP",
+    "e": "Los plazos por horas se cuentan de hora en hora y de minuto en minuto y no pueden durar más de veinticuatro horas; si no, se expresan en días (art. 30.1 LPACAP)."
+   }
+  ]
+ },
+ {
+  "k": 3,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, el periodista no expone ningún motivo en su solicitud. ¿Tiene derecho a acceder a la información del contrato?",
+    "o": [
+     "No: debe acreditar un interés legítimo vinculado a su actividad periodística.",
+     "Sí: todas las personas tienen derecho de acceso y el solicitante no está obligado a motivar su solicitud.",
+     "Sí, pero solo si acredita su condición de periodista ante el órgano competente."
+    ],
+    "c": 1,
+    "r": "Caso 4, cuestión 1 · arts. 12 y 17.3 LTBG",
+    "e": "Todas las personas tienen derecho a acceder a la información pública (art. 12 LTBG) y el solicitante no está obligado a motivar su solicitud (art. 17.3 LTBG)."
+   },
+   {
+    "q": "Si el periodista hubiera expuesto los motivos de su solicitud, esos motivos:",
+    "o": [
+     "Podrían tenerse en cuenta al dictar la resolución, aunque su ausencia no sería por sí sola causa de rechazo.",
+     "Serían irrelevantes, porque la ley prohíbe valorarlos al resolver.",
+     "Serían imprescindibles para que la solicitud pudiera admitirse a trámite."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 1 · art. 17.3 LTBG",
+    "e": "El solicitante puede exponer los motivos, que podrán ser tenidos en cuenta al dictar la resolución, pero la ausencia de motivación no es por sí sola causa de rechazo (art. 17.3 LTBG)."
+   },
+   {
+    "q": "El importe, el adjudicatario y las prórrogas del contrato de mantenimiento informático son, además, información:",
+    "o": [
+     "De carácter auxiliar, excluida del derecho de acceso.",
+     "Reservada hasta que finalice la ejecución del contrato.",
+     "Sujeta a publicidad activa, que debe publicarse de oficio."
+    ],
+    "c": 2,
+    "r": "Caso 4, cuestión 1 · art. 8.1.a LTBG",
+    "e": "Los contratos forman parte de la información económica, presupuestaria y estadística de publicidad activa (art. 8 LTBG), que se publica de oficio, sin solicitud."
+   },
+   {
+    "q": "¿En qué plazo debe resolver el Ayuntamiento la solicitud del periodista?",
+    "o": [
+     "En tres meses desde la presentación de la solicitud en cualquier registro.",
+     "En diez días hábiles desde la presentación de la solicitud.",
+     "En un mes desde la recepción de la solicitud por el órgano competente para resolver."
+    ],
+    "c": 2,
+    "r": "Caso 4, cuestión 2 · art. 20.1 LTBG",
+    "e": "La resolución debe notificarse en el plazo máximo de un mes desde la recepción de la solicitud por el órgano competente para resolver (art. 20.1 LTBG)."
+   },
+   {
+    "q": "El contrato tiene numerosas prórrogas y la documentación es muy voluminosa. Para resolver, el Ayuntamiento puede:",
+    "o": [
+     "Ampliar el plazo por otro mes, previa notificación al solicitante.",
+     "Suspender el plazo indefinidamente hasta reunir toda la información.",
+     "Inadmitir la solicitud por el volumen de la información pedida."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 2 · art. 20.1 LTBG",
+    "e": "El plazo de un mes es ampliable por otro mes si el volumen o la complejidad de la información lo hacen necesario, previa notificación al solicitante (art. 20.1 LTBG)."
+   },
+   {
+    "q": "Si el Ayuntamiento no resuelve en plazo, la solicitud del periodista se entiende:",
+    "o": [
+     "Estimada por silencio administrativo.",
+     "Desestimada por silencio administrativo.",
+     "Caducada, con archivo de las actuaciones."
+    ],
+    "c": 1,
+    "r": "Caso 4, cuestión 2 · art. 20.4 LTBG",
+    "e": "Transcurrido el plazo máximo sin resolución expresa, la solicitud de acceso se entiende desestimada (art. 20.4 LTBG)."
+   },
+   {
+    "q": "Parte de la información pedida ya está publicada en el Portal de Transparencia. ¿Cómo puede resolverse esa parte?",
+    "o": [
+     "Indicando al solicitante cómo acceder a la información ya publicada.",
+     "Inadmitiendo la solicitud por referirse a información en curso de publicación general.",
+     "Desestimando la solicitud porque la información ya es pública."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 3 · art. 22.3 LTBG",
+    "e": "Si la información ya ha sido publicada, la resolución puede limitarse a indicar al solicitante cómo puede acceder a ella (art. 22.3 LTBG)."
+   },
+   {
+    "q": "Si se deniega el acceso, ¿qué cauce administrativo tiene el periodista antes de acudir a los tribunales?",
+    "o": [
+     "Un recurso de alzada obligatorio ante el Alcalde.",
+     "Una queja ante el Defensor del Pueblo, que resuelve con carácter vinculante.",
+     "Una reclamación potestativa ante el CTBG o el órgano autonómico competente."
+    ],
+    "c": 2,
+    "r": "Caso 4, cuestión 4 · art. 24 y DA 4.ª LTBG",
+    "e": "Frente a las resoluciones en materia de acceso cabe una reclamación potestativa y previa a la vía contencioso-administrativa ante el CTBG o el órgano autonómico al que se haya atribuido la competencia (art. 24 y DA 4.ª LTBG)."
+   },
+   {
+    "q": "¿En qué plazo puede el periodista presentar esa reclamación?",
+    "o": [
+     "En tres meses desde la notificación de la resolución.",
+     "En un mes, desde el día siguiente a la notificación o al silencio.",
+     "En quince días hábiles desde la notificación de la resolución."
+    ],
+    "c": 1,
+    "r": "Caso 4, cuestión 4 · art. 24.2 LTBG",
+    "e": "El plazo para reclamar es de un mes, a contar desde el día siguiente al de la notificación del acto o al de producción de los efectos del silencio (art. 24.2 LTBG)."
+   },
+   {
+    "q": "¿Está obligado el periodista a presentar la reclamación antes de acudir a la jurisdicción contencioso-administrativa?",
+    "o": [
+     "Sí: la reclamación es un requisito previo obligatorio para recurrir.",
+     "No: puede acudir directamente a la jurisdicción contencioso-administrativa.",
+     "Sí: debe interponer antes un recurso potestativo de reposición."
+    ],
+    "c": 1,
+    "r": "Caso 4, cuestión 4 · arts. 20.5 y 24.1 LTBG",
+    "e": "La reclamación es potestativa: las resoluciones en materia de acceso son recurribles directamente ante la jurisdicción contencioso-administrativa (art. 20.5 LTBG)."
+   }
+  ]
+ },
+ {
+  "k": 4,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿puede inadmitirse la solicitud de las notas internas y borradores del equipo técnico sobre el futuro pliego?",
+    "o": [
+     "Sí: es información de carácter auxiliar o de apoyo, causa de inadmisión prevista en la LTBG.",
+     "No: toda la información que obra en poder del IAM debe facilitarse sin excepción.",
+     "Sí, pero solo porque el solicitante no ha motivado su solicitud."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 1 · art. 18.1.b LTBG",
+    "e": "Las solicitudes referidas a información auxiliar o de apoyo, como notas, borradores, opiniones o informes internos, se inadmiten a trámite (art. 18.1.b LTBG)."
+   },
+   {
+    "q": "La inadmisión de la petición de notas y borradores debe acordarse:",
+    "o": [
+     "Por silencio, sin necesidad de dictar resolución.",
+     "Mediante comunicación verbal al solicitante.",
+     "Mediante resolución motivada."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 1 · art. 18.1 LTBG",
+    "e": "El artículo 18.1 LTBG exige que la inadmisión a trámite se acuerde mediante resolución motivada."
+   },
+   {
+    "q": "El informe pedido contiene datos de salud de varios empleados. El acceso solo puede autorizarse:",
+    "o": [
+     "Previa ponderación razonada del interés público y de los derechos de los afectados.",
+     "Con el consentimiento expreso del afectado o si lo ampara una norma con rango de ley.",
+     "Siempre que el solicitante se comprometa a no difundir los datos."
+    ],
+    "c": 1,
+    "r": "Caso 5, cuestión 2 · art. 15.1 LTBG",
+    "e": "Los datos relativos a la salud son especialmente protegidos: su acceso exige el consentimiento expreso del afectado o el amparo de una norma con rango de ley (art. 15.1 LTBG); la ponderación es para los datos no especialmente protegidos (art. 15.3)."
+   },
+   {
+    "q": "Variante del supuesto: si el informe revelara la afiliación sindical de los empleados, el acceso exigiría:",
+    "o": [
+     "Que una norma con rango de ley lo ampare, aunque no conste el consentimiento.",
+     "El consentimiento expreso y por escrito del afectado, salvo que este hubiera hecho manifiestamente públicos los datos.",
+     "La autorización del jefe del servicio del IAM que custodia el informe."
+    ],
+    "c": 1,
+    "r": "Caso 5, cuestión 2 · art. 15.1 LTBG",
+    "e": "Para los datos que revelan ideología, afiliación sindical, religión o creencias, el acceso solo puede autorizarse con consentimiento expreso y por escrito del afectado, salvo que los hubiera hecho manifiestamente públicos (art. 15.1 LTBG)."
+   },
+   {
+    "q": "Si el informe solo incluyera los nombres y cargos de los técnicos que lo firman, datos meramente identificativos relacionados con la actividad del órgano, con carácter general:",
+    "o": [
+     "Se denegaría siempre el acceso, por tratarse de datos personales.",
+     "Se exigiría el consentimiento expreso y por escrito de cada técnico.",
+     "Se concedería el acceso, salvo que en el caso concreto prevaleciera la protección de datos u otros derechos."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 2 · art. 15.2 LTBG",
+    "e": "Con carácter general se concede el acceso a los datos meramente identificativos relacionados con la organización, funcionamiento o actividad pública del órgano, salvo que prevalezca en el caso concreto la protección de datos (art. 15.2 LTBG)."
+   },
+   {
+    "q": "¿Procede el acceso al estudio que el órgano aún está elaborando?",
+    "o": [
+     "No: la solicitud se inadmite por referirse a información en curso de elaboración.",
+     "Sí: se entrega el borrador en el estado en que se encuentre.",
+     "Sí, pero el plazo de resolución se amplía hasta que el estudio esté terminado."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 3 · art. 18.1.a LTBG",
+    "e": "Las solicitudes que se refieren a información en curso de elaboración o de publicación general se inadmiten a trámite (art. 18.1.a LTBG)."
+   },
+   {
+    "q": "Si concurre alguno de los límites del artículo 14 LTBG, el IAM debe aplicarlo:",
+    "o": [
+     "De forma justificada y proporcionada a su objeto y finalidad de protección, atendiendo a las circunstancias del caso.",
+     "De forma automática, en cuanto la información encaje en alguna de las categorías del artículo 14.1.",
+     "Solo cuando el solicitante no haya expuesto los motivos de su solicitud."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 4 · art. 14.2 LTBG",
+    "e": "La aplicación de los límites será justificada y proporcionada a su objeto y finalidad de protección y atenderá a las circunstancias del caso concreto (art. 14.2 LTBG)."
+   },
+   {
+    "q": "Si el límite afecta solo a una parte del informe, ¿cabe el acceso parcial?",
+    "o": [
+     "No: si un límite afecta a parte del documento, se deniega el acceso a todo él.",
+     "Sí: se concede previa omisión de la información afectada, indicando al solicitante qué parte se ha omitido.",
+     "Sí, pero sin indicar qué se ha omitido, para no revelar el contenido protegido."
+    ],
+    "c": 1,
+    "r": "Caso 5, cuestión 4 · art. 16 LTBG",
+    "e": "Si un límite no afecta a la totalidad de la información, se concede el acceso parcial previa omisión de la información afectada, indicando al solicitante qué parte se ha omitido (art. 16 LTBG)."
+   },
+   {
+    "q": "¿En qué caso NO procede conceder el acceso parcial al informe?",
+    "o": [
+     "Cuando el informe contenga cualquier dato de carácter personal.",
+     "Cuando el solicitante no haya indicado la modalidad de acceso que prefiere.",
+     "Cuando, tras la omisión, resulte una información distorsionada o que carezca de sentido."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 4 · art. 16 LTBG",
+    "e": "El acceso parcial se concede salvo que de la omisión resulte una información distorsionada o que carezca de sentido (art. 16 LTBG)."
+   },
+   {
+    "q": "Si el IAM se planteara dar acceso al informe y los empleados cuyos datos aparecen pudieran resultar afectados, debe:",
+    "o": [
+     "Concederles un plazo de quince días para alegaciones, informando al solicitante y suspendiendo el plazo para resolver.",
+     "Comunicarles la resolución una vez concedido el acceso, sin trámite previo de alegaciones.",
+     "Concederles diez días para alegar, transcurridos los cuales se les tiene por desistidos."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 2 · art. 19.3 LTBG",
+    "e": "Cuando la información pueda afectar a derechos o intereses de terceros, se les concede un plazo de quince días para alegaciones, se informa al solicitante y se suspende el plazo para resolver (art. 19.3 LTBG)."
+   }
+  ]
+ },
+ {
+  "k": 5,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, el Ayuntamiento quiere publicar más información de la que exige la ley estatal. ¿Es posible?",
+    "o": [
+     "No: la LTBG fija un régimen cerrado que las entidades locales no pueden ampliar.",
+     "Sí, pero solo con autorización previa del Consejo de Transparencia y Buen Gobierno.",
+     "Sí: las obligaciones de publicidad activa de la LTBG se entienden sin perjuicio de normas que prevean un régimen más amplio."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestión 1 · art. 5.2 LTBG",
+    "e": "Las obligaciones de publicidad activa de la LTBG se entienden sin perjuicio de otras disposiciones específicas que prevean un régimen más amplio en materia de publicidad (art. 5.2 LTBG)."
+   },
+   {
+    "q": "¿Cuál de estas categorías de información regula la Ordenanza de Transparencia de Madrid como contenido propio, que la LTBG no recoge?",
+    "o": [
+     "Los contratos, convenios y encomiendas de gestión.",
+     "La información urbanística.",
+     "Los presupuestos y las cuentas anuales."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestión 1 · arts. 14-16 ORD-MAD",
+    "e": "La Ordenanza añade categorías como la información medioambiental, urbanística y de movilidad; contratos, presupuestos y cuentas anuales ya figuran en el artículo 8 LTBG."
+   },
+   {
+    "q": "La Ordenanza de Transparencia de la Ciudad de Madrid en la que se apoya el supuesto se aprobó:",
+    "o": [
+     "Por Acuerdo del Pleno de 27 de julio de 2016.",
+     "Por Decreto del Alcalde de 9 de diciembre de 2013.",
+     "Por Acuerdo de la Junta de Gobierno de 2 de octubre de 2016."
+    ],
+    "c": 0,
+    "r": "Caso 6, cuestión 1 · ORD-MAD",
+    "e": "El Ayuntamiento de Madrid aprobó su Ordenanza de Transparencia por Acuerdo del Pleno de 27 de julio de 2016, en el marco de la Ley 19/2013."
+   },
+   {
+    "q": "¿Qué registro crea la Ordenanza para quienes pretenden hacer valer algún interés en la elaboración de la normativa y las políticas públicas municipales?",
+    "o": [
+     "El Registro de lobbies, gestionado por el área de transparencia.",
+     "El registro electrónico general de apoderamientos.",
+     "El Registro Electrónico General del Ayuntamiento."
+    ],
+    "c": 0,
+    "r": "Caso 6, cuestión 2 · art. 34.1 ORD-MAD",
+    "e": "El Registro de lobbies tiene por objeto la inscripción y el control de quienes actúan para hacer valer algún interés en la normativa, las políticas públicas y las decisiones municipales (art. 34.1 ORD-MAD)."
+   },
+   {
+    "q": "¿Qué naturaleza tiene ese registro?",
+    "o": [
+     "Es de pago, con una tasa por cada inscripción que se practique.",
+     "Es gratuito y público, y su información es accesible en formato abierto.",
+     "Es reservado y solo pueden consultarlo los concejales y directivos."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestión 2 · art. 35 ORD-MAD",
+    "e": "El Registro de lobbies es gratuito y público, y su información es accesible sin restricción y en formato abierto, con respeto a la protección de datos (art. 35 ORD-MAD)."
+   },
+   {
+    "q": "Una consultora quiere reunirse con un concejal para influir en el contenido de una futura ordenanza municipal. Conforme a la Ordenanza de Transparencia:",
+    "o": [
+     "Puede reunirse libremente, porque la inscripción en el registro es voluntaria.",
+     "Solo debe inscribirse si la reunión es con el Alcalde.",
+     "Debe inscribirse antes en el Registro de lobbies, requisito obligatorio para esa reunión."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestión 2 · art. 38.1 ORD-MAD",
+    "e": "La inscripción es requisito previo y obligatorio para mantener reuniones con esos fines con concejales, titulares de órganos directivos y personal eventual (art. 38.1 ORD-MAD)."
+   },
+   {
+    "q": "En ese caso, ¿a quién corresponde verificar que la reunión se mantiene con una persona inscrita en el registro?",
+    "o": [
+     "Al Consejo de Transparencia y Buen Gobierno.",
+     "Al IAM, a través del Portal de Transparencia.",
+     "Al propio concejal con el que se celebra la reunión."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestión 2 · art. 39 ORD-MAD",
+    "e": "Los concejales, titulares de órganos directivos y personal eventual son los responsables de verificar que esas reuniones se mantienen con personas inscritas (art. 39 ORD-MAD)."
+   },
+   {
+    "q": "¿Qué principio de la Ordenanza ampara que los datos del portal puedan descargarse en formatos abiertos para su reutilización?",
+    "o": [
+     "El principio de reutilización.",
+     "El principio de veracidad.",
+     "El principio de simplicidad."
+    ],
+    "c": 0,
+    "r": "Caso 6, cuestión 3 · art. 4.g ORD-MAD",
+    "e": "Entre los principios generales de la Ordenanza figura el de reutilización, que ampara la descarga y el uso de la información publicada en formatos abiertos."
+   },
+   {
+    "q": "Con carácter general, la información que publique el portal municipal podrá reutilizarse:",
+    "o": [
+     "Previa licencia individual y pago del precio público correspondiente.",
+     "Sin necesidad de autorización previa y de forma gratuita.",
+     "Solo para fines no comerciales y con autorización del área competente."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestión 3 · art. 27 ORD-MAD",
+    "e": "Con carácter general, la información publicada es reutilizable sin necesidad de autorización previa y de forma gratuita (art. 27 ORD-MAD), en formatos estándar, de uso libre y abiertos (art. 29.a)."
+   },
+   {
+    "q": "¿Qué papel cumple el IAM en las tres iniciativas del supuesto?",
+    "o": [
+     "Resuelve las reclamaciones que se presenten en materia de acceso a la información.",
+     "Gestiona el Registro de lobbies como titular del área de gobierno de transparencia.",
+     "Da soporte técnico al Portal de Transparencia y al portal de datos abiertos."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestión 4 · ORD-MAD",
+    "e": "El IAM es el soporte técnico del Portal de Transparencia (transparencia.madrid.es) y del portal de datos abiertos; la gestión del Registro de lobbies corresponde al titular del área de gobierno competente en transparencia (art. 34.2 ORD-MAD)."
+   }
+  ]
+ }
+]

@@ -1,0 +1,28 @@
+<svg aria-label="Tabla de mecanismos de persistencia local: pares clave-valor, ficheros, base de datos SQLite y almacén seguro, con su equivalente en Android y en iOS y su uso adecuado, más la advertencia de guardar credenciales solo en Keystore o Keychain" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t4{font:700 10px system-ui,sans-serif;fill:#fff}.s4{font:9.5px system-ui,sans-serif;fill:#fff}.d4{font:9.5px system-ui,sans-serif;fill:#333}.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}.k4{font:700 10px system-ui,sans-serif;fill:#fff}</style>
+<text class="h4" text-anchor="middle" x="340" y="20">Persistencia local: del ajuste simple a la base de datos</text>
+<rect fill="#0055a0" height="26" rx="4" width="150" x="20" y="34"></rect><text class="k4" text-anchor="middle" x="95" y="51">MECANISMO</text>
+<rect fill="#0055a0" height="26" rx="4" width="145" x="175" y="34"></rect><text class="k4" text-anchor="middle" x="247" y="51">ANDROID</text>
+<rect fill="#0055a0" height="26" rx="4" width="145" x="325" y="34"></rect><text class="k4" text-anchor="middle" x="397" y="51">iOS</text>
+<rect fill="#0055a0" height="26" rx="4" width="185" x="475" y="34"></rect><text class="k4" text-anchor="middle" x="567" y="51">USO ADECUADO</text>
+<rect fill="#888" height="44" rx="4" width="150" x="20" y="66"></rect><text class="t4" text-anchor="middle" x="95" y="93">Clave-valor</text>
+<rect fill="#eef3f8" height="44" rx="4" width="145" x="175" y="66"></rect><text class="d4" text-anchor="middle" x="247" y="85">SharedPreferences</text><text class="d4" text-anchor="middle" x="247" y="99">DataStore</text>
+<rect fill="#eef3f8" height="44" rx="4" width="145" x="325" y="66"></rect><text class="d4" text-anchor="middle" x="397" y="93">UserDefaults</text>
+<rect fill="#eef3f8" height="44" rx="4" width="185" x="475" y="66"></rect><text class="d4" text-anchor="middle" x="567" y="93">Preferencias y ajustes</text>
+<rect fill="#888" height="44" rx="4" width="150" x="20" y="116"></rect><text class="t4" text-anchor="middle" x="95" y="143">Ficheros</text>
+<rect fill="#eef3f8" height="44" rx="4" width="145" x="175" y="116"></rect><text class="d4" text-anchor="middle" x="247" y="136">Almacenamiento</text><text class="d4" text-anchor="middle" x="247" y="150">interno / externo</text>
+<rect fill="#eef3f8" height="44" rx="4" width="145" x="325" y="116"></rect><text class="d4" text-anchor="middle" x="397" y="136">Sandbox de la app</text><text class="d4" text-anchor="middle" x="397" y="150">(Documents, Caches)</text>
+<rect fill="#eef3f8" height="44" rx="4" width="185" x="475" y="116"></rect><text class="d4" text-anchor="middle" x="567" y="143">Fotos, adjuntos, cachés</text>
+<rect fill="#0055a0" height="44" rx="4" width="150" x="20" y="166"></rect><text class="t4" text-anchor="middle" x="95" y="187">Base de datos</text><text class="s4" text-anchor="middle" x="95" y="201">SQLite embebido</text>
+<rect fill="#eef3f8" height="44" rx="4" width="145" x="175" y="166"></rect><text class="d4" text-anchor="middle" x="247" y="193">Room (sobre SQLite)</text>
+<rect fill="#eef3f8" height="44" rx="4" width="145" x="325" y="166"></rect><text class="d4" text-anchor="middle" x="397" y="186">Core Data</text><text class="d4" text-anchor="middle" x="397" y="200">SwiftData</text>
+<rect fill="#eef3f8" height="44" rx="4" width="185" x="475" y="166"></rect><text class="d4" text-anchor="middle" x="567" y="186">Datos estructurados</text><text class="d4" text-anchor="middle" x="567" y="200">y trabajo sin conexión</text>
+<rect fill="#2d8659" height="44" rx="4" width="150" x="20" y="216"></rect><text class="t4" text-anchor="middle" x="95" y="243">Almacén seguro</text>
+<rect fill="#eef3f8" height="44" rx="4" width="145" x="175" y="216"></rect><text class="d4" text-anchor="middle" x="247" y="236">Keystore + cifrado</text><text class="d4" text-anchor="middle" x="247" y="250">de preferencias</text>
+<rect fill="#eef3f8" height="44" rx="4" width="145" x="325" y="216"></rect><text class="d4" text-anchor="middle" x="397" y="243">Keychain</text>
+<rect fill="#eef3f8" height="44" rx="4" width="185" x="475" y="216"></rect><text class="d4" text-anchor="middle" x="567" y="236">Credenciales, tokens</text><text class="d4" text-anchor="middle" x="567" y="250">y claves</text>
+<rect fill="#d13c3c" height="42" rx="5" width="640" x="20" y="270"></rect>
+<text class="t4" text-anchor="middle" x="340" y="288">NUNCA credenciales ni datos sensibles en preferencias o ficheros en claro</text>
+<text class="s4" text-anchor="middle" x="340" y="304">Van al Keystore (Android) o al Keychain (iOS) — OWASP Mobile: almacenamiento inseguro</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="332">[Fuente: SQLITE; JETPACK; COREDATA; OWASP-MOBILE]</text>
+</svg>

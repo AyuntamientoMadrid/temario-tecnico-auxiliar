@@ -1,0 +1,26 @@
+<svg aria-label="Los cuatro modos de entrega: unidifusión a uno, multidifusión a un grupo suscrito, difusión a todos y anydifusión al más cercano, con las direcciones de difusión y multidifusión en Ethernet, IPv4 e IPv6, y la advertencia de que IPv6 no tiene difusión" role="img" viewbox="0 0 680 344" xmlns="http://www.w3.org/2000/svg">
+<style>.t14{font:700 10.5px system-ui,sans-serif;fill:#fff}.s14{font:8.5px system-ui,sans-serif;fill:#fff}.d14{font:9px system-ui,sans-serif;fill:#333}.h14{font:700 13px system-ui,sans-serif;fill:#0055a0}.k14{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n14{font:8.5px system-ui,sans-serif;fill:#666}.m14{font:700 9.5px ui-monospace,monospace;fill:#0055a0}</style>
+<text class="h14" text-anchor="middle" x="340" y="20">A uno, a un grupo, a todos o al más cercano</text>
+<rect fill="#0055a0" height="56" rx="5" width="155" x="20" y="36"></rect><text class="t14" text-anchor="middle" x="97" y="56">UNIDIFUSIÓN</text><text class="s14" text-anchor="middle" x="97" y="72">uno a UNO</text><text class="s14" text-anchor="middle" x="97" y="85">la mayoría del tráfico</text>
+<rect fill="#2d8659" height="56" rx="5" width="155" x="182" y="36"></rect><text class="t14" text-anchor="middle" x="259" y="56">MULTIDIFUSIÓN</text><text class="s14" text-anchor="middle" x="259" y="72">uno a un GRUPO</text><text class="s14" text-anchor="middle" x="259" y="85">hay que suscribirse</text>
+<rect fill="#e89822" height="56" rx="5" width="155" x="344" y="36"></rect><text class="t14" text-anchor="middle" x="421" y="56">DIFUSIÓN</text><text class="s14" text-anchor="middle" x="421" y="72">uno a TODOS</text><text class="s14" text-anchor="middle" x="421" y="85">sin suscripción</text>
+<rect fill="#7a2f8a" height="56" rx="5" width="154" x="506" y="36"></rect><text class="t14" text-anchor="middle" x="583" y="56">ANYDIFUSIÓN</text><text class="s14" text-anchor="middle" x="583" y="72">al MÁS CERCANO</text><text class="s14" text-anchor="middle" x="583" y="85">propia de IPv6</text>
+<text class="k14" x="26" y="116">DIRECCIONES QUE HAY QUE SABER DE MEMORIA</text>
+<rect fill="#0055a0" height="26" rx="3" width="130" x="20" y="124"></rect><text class="t14" text-anchor="middle" x="85" y="141">Ethernet</text>
+<rect fill="#eef3f8" height="26" rx="3" width="502" x="158" y="124"></rect><text class="m14" text-anchor="middle" x="409" y="141">Difusión FF:FF:FF:FF:FF:FF · multidifusión IPv4 sobre MAC 01:00:5E:...</text>
+<rect fill="#0055a0" height="26" rx="3" width="130" x="20" y="154"></rect><text class="t14" text-anchor="middle" x="85" y="171">IPv4</text>
+<rect fill="#eef3f8" height="26" rx="3" width="502" x="158" y="154"></rect><text class="m14" text-anchor="middle" x="409" y="171">Difusión limitada 255.255.255.255 (no se encamina) · multidifusión 224.0.0.0/4</text>
+<rect fill="#d13c3c" height="26" rx="3" width="130" x="20" y="184"></rect><text class="t14" text-anchor="middle" x="85" y="201">IPv6</text>
+<rect fill="#fbeaea" height="26" rx="3" width="502" x="158" y="184"></rect><text class="m14" text-anchor="middle" x="409" y="201">SIN DIFUSIÓN · todos los nodos del enlace = ff02::1 · prefijo ff00::/8</text>
+<rect fill="#e8f4ee" height="60" rx="5" width="316" x="20" y="222"></rect>
+<text class="k14" text-anchor="middle" x="178" y="240">PARA QUÉ SIRVE LA DIFUSIÓN</text>
+<text class="n14" text-anchor="middle" x="178" y="256">ARP y DHCP: hablar con quien aún no se conoce</text>
+<text class="n14" text-anchor="middle" x="178" y="270">Descubrimiento de servicios y de vecinos</text>
+<rect fill="#fbeaea" height="60" rx="5" width="316" x="344" y="222"></rect>
+<text class="k14" text-anchor="middle" x="502" y="240">TORMENTA DE DIFUSIÓN</text>
+<text class="n14" text-anchor="middle" x="502" y="256">Bucle de nivel 2 + trama Ethernet sin TTL</text>
+<text class="n14" text-anchor="middle" x="502" y="270">Remedios: STP/RSTP, VLAN, control de tormentas</text>
+<rect fill="none" height="26" rx="5" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="292"></rect>
+<text class="k14" text-anchor="middle" x="340" y="309">Suscripción a grupos: IGMP en IPv4 · MLD en IPv6 · en el conmutador, vigilancia de IGMP</text>
+<text class="n14" text-anchor="end" x="670" y="338">[Fuente: RFC 1112; RFC 4291; RFC 826]</text>
+</svg>

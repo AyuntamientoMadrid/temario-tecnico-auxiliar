@@ -1,0 +1,4 @@
+<svg aria-label="Pirámide de pruebas: base ancha de pruebas unitarias con JUnit y Mockito, nivel intermedio de pruebas de carga con JMeter antes del despliegue, y vigilancia continua en producción con herramientas APM" role="img" viewbox="0 0 640 372" xmlns="http://www.w3.org/2000/svg">
+<style>.t12{font:700 11px system-ui,sans-serif;fill:#fff}.s12{font:9.5px system-ui,sans-serif;fill:#fff}.l12{font:11px system-ui,sans-serif;fill:#444}.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h12" text-anchor="middle" x="320" y="20">De la pirámide de pruebas a la observabilidad en producción</text>
+</svg>

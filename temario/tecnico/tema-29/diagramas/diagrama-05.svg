@@ -1,0 +1,31 @@
+<svg aria-label="Tabla visual de los protocolos de control y gestión remota con sus puertos: RFB VNC en el 5900, RDP en el 3389, SSH en el 22, Telnet en el 23 obsoleto, WinRM en el 5985 y 5986, SNMP en el 161 y 162, NETCONF en el 830, IPMI en el 623, Redfish en el 443, reenvío de X11 en el 6000 y Wake-on-LAN en los puertos 7 y 9" role="img" viewbox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 10px system-ui,sans-serif;fill:#fff}.d5{font:9px system-ui,sans-serif;fill:#333}.p5{font:700 10px system-ui,sans-serif;fill:#0055a0}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.k5{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n5{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h5" text-anchor="middle" x="340" y="20">Protocolos y puertos de gestión remota</text>
+<rect fill="#0055a0" height="20" rx="3" width="130" x="20" y="32"></rect><text class="t5" text-anchor="middle" x="85" y="46">PROTOCOLO</text>
+<rect fill="#0055a0" height="20" rx="3" width="95" x="155" y="32"></rect><text class="t5" text-anchor="middle" x="202" y="46">PUERTO</text>
+<rect fill="#0055a0" height="20" rx="3" width="160" x="255" y="32"></rect><text class="t5" text-anchor="middle" x="335" y="46">QUÉ TRANSMITE</text>
+<rect fill="#0055a0" height="20" rx="3" width="240" x="420" y="32"></rect><text class="t5" text-anchor="middle" x="540" y="46">USO PRINCIPAL</text>
+<rect fill="#eef3f8" height="24" rx="3" width="640" x="20" y="56"></rect>
+<text class="d5" x="30" y="72">RFB (VNC)</text><text class="p5" x="165" y="72">TCP 5900+N</text><text class="d5" x="265" y="72">Píxeles del framebuffer</text><text class="d5" x="430" y="72">Asistencia compartiendo la sesión del usuario</text>
+<rect fill="#f5f5f5" height="24" rx="3" width="640" x="20" y="84"></rect>
+<text class="d5" x="30" y="100">RDP</text><text class="p5" x="165" y="100">TCP/UDP 3389</text><text class="d5" x="265" y="100">Primitivas y canales</text><text class="d5" x="430" y="100">Escritorio remoto; abre sesión independiente</text>
+<rect fill="#eef3f8" height="24" rx="3" width="640" x="20" y="112"></rect>
+<text class="d5" x="30" y="128">SSH</text><text class="p5" x="165" y="128">TCP 22</text><text class="d5" x="265" y="128">Texto cifrado + túneles</text><text class="d5" x="430" y="128">Administración de Unix, Linux y red</text>
+<rect fill="#fbeaea" height="24" rx="3" width="640" x="20" y="140"></rect>
+<text class="d5" x="30" y="156">Telnet</text><text class="p5" x="165" y="156">TCP 23</text><text class="d5" x="265" y="156">Texto EN CLARO</text><text class="d5" style="font-size:8.6px" x="430" y="156">Obsoleto y desaconsejado: debe estar deshabilitado</text>
+<rect fill="#f5f5f5" height="24" rx="3" width="640" x="20" y="168"></rect>
+<text class="d5" x="30" y="184">WinRM</text><text class="p5" x="165" y="184">TCP 5985/5986</text><text class="d5" x="265" y="184">WS-Management (DMTF)</text><text class="d5" x="430" y="184">Órdenes y automatización en Windows</text>
+<rect fill="#eef3f8" height="24" rx="3" width="640" x="20" y="196"></rect>
+<text class="d5" x="30" y="212">SNMP</text><text class="p5" x="165" y="212">UDP 161/162</text><text class="d5" x="265" y="212">Consultas y avisos</text><text class="d5" x="430" y="212">Monitorización; v3 es la única con seguridad real</text>
+<rect fill="#f5f5f5" height="24" rx="3" width="640" x="20" y="224"></rect>
+<text class="d5" x="30" y="240">NETCONF</text><text class="p5" x="165" y="240">TCP 830</text><text class="d5" x="265" y="240">XML sobre SSH</text><text class="d5" x="430" y="240">Configuración de dispositivos de red</text>
+<rect fill="#fdf3e6" height="24" rx="3" width="640" x="20" y="252"></rect>
+<text class="d5" x="30" y="268">IPMI (BMC)</text><text class="p5" x="165" y="268">UDP 623</text><text class="d5" x="265" y="268">Fuera de banda</text><text class="d5" x="430" y="268">Control con el equipo apagado o el SO caído</text>
+<rect fill="#fdf3e6" height="24" rx="3" width="640" x="20" y="280"></rect>
+<text class="d5" x="30" y="296">Redfish</text><text class="p5" x="165" y="296">TCP 443</text><text class="d5" x="265" y="296">REST sobre HTTPS</text><text class="d5" x="430" y="296">Sucesor moderno de IPMI</text>
+<rect fill="#eef3f8" height="24" rx="3" width="640" x="20" y="308"></rect>
+<text class="d5" x="30" y="324">X11 (reenvío)</text><text class="p5" x="165" y="324">TCP 6000+N</text><text class="d5" x="265" y="324">Objetos gráficos</text><text class="d5" x="430" y="324">Aplicación gráfica Unix remota, siempre sobre SSH</text>
+<rect fill="#eaf3ee" height="24" rx="3" width="640" x="20" y="336"></rect>
+<text class="d5" x="30" y="352">Wake-on-LAN</text><text class="p5" x="165" y="352">UDP 7 / 9</text><text class="d5" x="265" y="352">Paquete mágico</text><text class="d5" x="430" y="352">Encendido remoto para mantenimiento nocturno</text>
+<text class="n5" text-anchor="end" x="670" y="374">[Fuente: RFC6143; MS-RDPBCGR; RFC4253; DSP0226; IPMI2]</text>
+</svg>

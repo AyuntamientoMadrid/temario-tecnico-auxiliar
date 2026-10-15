@@ -1,0 +1,67 @@
+<svg aria-label="Arquitectura VDI y flujo de conexión numerado en siete pasos: el cliente accede por la pasarela, el broker autentica contra el directorio, comprueba autorizaciones, selecciona o enciende el escritorio del conjunto aprovisionado desde la imagen maestra y redirige al cliente, tras lo cual el protocolo de representación fluye directamente entre cliente y escritorio" role="img" viewbox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
+<style>.t11{font:700 10px system-ui,sans-serif;fill:#fff}.s11{font:8.5px system-ui,sans-serif;fill:#fff}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}.k11{font:700 10px system-ui,sans-serif;fill:#0055a0}.n11{font:8.5px system-ui,sans-serif;fill:#333}.num11{font:700 11px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h11" text-anchor="middle" x="340" y="18">Flujo de una conexión VDI: quién decide y por dónde va el tráfico</text>
+<rect fill="#888" height="60" rx="5" width="120" x="16" y="36"></rect>
+<text class="t11" text-anchor="middle" x="76" y="56">CLIENTE</text>
+<text class="s11" text-anchor="middle" x="76" y="71">cliente ligero, PC</text>
+<text class="s11" text-anchor="middle" x="76" y="84">o navegador HTML5</text>
+<rect fill="#d13c3c" height="60" rx="5" width="110" x="156" y="36"></rect>
+<text class="t11" text-anchor="middle" x="211" y="56">PASARELA</text>
+<text class="s11" text-anchor="middle" x="211" y="71">publica hacia fuera</text>
+<text class="s11" text-anchor="middle" x="211" y="84">TLS + doble factor</text>
+<rect fill="#0055a0" height="60" rx="5" width="140" x="286" y="36"></rect>
+<text class="t11" text-anchor="middle" x="356" y="56">BROKER DE CONEXIONES</text>
+<text class="s11" text-anchor="middle" x="356" y="71">autentica · autoriza · elige</text>
+<text class="s11" text-anchor="middle" x="356" y="84">enciende · redirige · reconecta</text>
+<rect fill="#888" height="60" rx="5" width="106" x="446" y="36"></rect>
+<text class="t11" text-anchor="middle" x="499" y="56">DIRECTORIO</text>
+<text class="s11" text-anchor="middle" x="499" y="71">identidad y grupos</text>
+<text class="s11" text-anchor="middle" x="499" y="84">del empleado</text>
+<rect fill="#e89822" height="60" rx="5" width="102" x="562" y="36"></rect>
+<text class="t11" text-anchor="middle" x="613" y="56">PORTAL</text>
+<text class="s11" style="font-size:7.8px" text-anchor="middle" x="613" y="71">catálogo de recursos</text>
+<text class="s11" style="font-size:7.8px" text-anchor="middle" x="613" y="84">a los que tiene derecho</text>
+<path d="M136 60 L154 60" marker-end="url(#a11)" stroke="#d13c3c" stroke-width="2"></path>
+<defs><marker id="a11" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#d13c3c"></path></marker></defs>
+<text class="num11" text-anchor="middle" x="145" y="53">1</text>
+<path d="M266 60 L284 60" marker-end="url(#a11)" stroke="#d13c3c" stroke-width="2"></path>
+<text class="num11" text-anchor="middle" x="275" y="53">2</text>
+<path d="M426 60 L444 60" marker-end="url(#a11)" stroke="#d13c3c" stroke-width="2"></path>
+<text class="num11" text-anchor="middle" x="435" y="53">3</text>
+<text class="k11" text-anchor="middle" x="340" y="122">4 · El broker selecciona el escritorio: el suyo (dedicado) o uno libre del conjunto; si está apagado, lo enciende</text>
+<rect fill="#2d8659" height="100" rx="5" width="164" x="44" y="128"></rect>
+<text class="t11" text-anchor="middle" x="126" y="147">IMAGEN MAESTRA</text>
+<text class="s11" text-anchor="middle" x="126" y="163">plantilla única, parcheada</text>
+<text class="s11" text-anchor="middle" x="126" y="177">bastionada y optimizada</text>
+<text class="s11" text-anchor="middle" x="126" y="196">Se parchea UNA VEZ</text>
+<text class="s11" text-anchor="middle" x="126" y="210">y la heredan todos</text>
+<text class="s11" text-anchor="middle" x="126" y="223">al siguiente reinicio</text>
+<path d="M212 178 L228 178" marker-end="url(#a11b)" stroke="#2d8659" stroke-width="2.5"></path>
+<defs><marker id="a11b" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3.5"><path d="M0,0 L7,3.5 L0,7 z" fill="#2d8659"></path></marker></defs>
+<text style="font:700 7.5px system-ui;fill:#2d8659" text-anchor="middle" x="220" y="163">clona</text>
+<rect fill="#f2f6fa" height="100" rx="5" stroke="#0055a0" stroke-width="2" width="432" x="232" y="128"></rect>
+<text class="k11" text-anchor="middle" x="448" y="145">CONJUNTO DE ESCRITORIOS VIRTUALES (clúster de hipervisores)</text>
+<rect fill="#0055a0" height="30" rx="3" width="94" x="244" y="154"></rect><text class="s11" text-anchor="middle" x="291" y="173">Escritorio 1</text>
+<rect fill="#0055a0" height="30" rx="3" width="94" x="346" y="154"></rect><text class="s11" text-anchor="middle" x="393" y="173">Escritorio 2</text>
+<rect fill="#0055a0" height="30" rx="3" width="94" x="448" y="154"></rect><text class="s11" text-anchor="middle" x="495" y="173">Escritorio 3</text>
+<rect fill="#888" height="30" rx="3" width="102" x="550" y="154"></rect><text class="s11" text-anchor="middle" x="601" y="173">Escritorio n (apagado)</text>
+<text class="n11" text-anchor="middle" x="448" y="200">Cada escritorio ejecuta un AGENTE que lo registra en el broker, informa de su estado</text>
+<text class="n11" text-anchor="middle" x="448" y="215">y atiende el protocolo de representación (RDP · ICA/HDX · PCoIP · Blast · SPICE)</text>
+<path d="M356 100 L356 109" marker-end="url(#a11)" stroke="#d13c3c" stroke-width="2"></path>
+<path d="M76 100 L76 108 L28 108 L28 254 L286 254" fill="none" marker-end="url(#a11c)" stroke="#0055a0" stroke-width="2.5"></path>
+<defs><marker id="a11c" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3.5"><path d="M0,0 L7,3.5 L0,7 z" fill="#0055a0"></path></marker></defs>
+<text class="num11" text-anchor="middle" x="150" y="248">5-6</text>
+<rect fill="#0055a0" height="42" rx="5" width="374" x="290" y="234"></rect>
+<text class="t11" text-anchor="middle" x="477" y="251">7 · PROTOCOLO DE REPRESENTACIÓN — DIRECTO cliente ↔ escritorio</text>
+<text class="s11" text-anchor="middle" x="477" y="266">solo viajan imagen, audio y periféricos; los datos NUNCA salen del centro de datos</text>
+<rect fill="#d13c3c" height="48" rx="5" width="322" x="16" y="288"></rect>
+<text class="t11" text-anchor="middle" x="177" y="306">EL BROKER ES PUNTO ÚNICO DE FALLO</text>
+<text class="s11" text-anchor="middle" x="177" y="320">Si cae, no se pueden abrir sesiones NUEVAS</text>
+<text class="s11" text-anchor="middle" x="177" y="332">→ se despliega siempre redundado y balanceado</text>
+<rect fill="#2d8659" height="48" rx="5" width="318" x="346" y="288"></rect>
+<text class="t11" text-anchor="middle" x="505" y="306">EL BROKER NO ES CUELLO DE BOTELLA</text>
+<text class="s11" text-anchor="middle" x="505" y="320">Interviene en el ESTABLECIMIENTO, no en el tráfico</text>
+<text class="s11" text-anchor="middle" x="505" y="332">Gestiona además la reconexión e itinerancia de sesión</text>
+<text class="n11" text-anchor="middle" x="340" y="356">Perfil del usuario y datos personales: SIEMPRE fuera del escritorio (contenedor de perfil + redirección de carpetas) — ver D12</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="374">[Fuente: CITRIX-DOC; HORIZON-DOC; AVD-DOC]</text>
+</svg>

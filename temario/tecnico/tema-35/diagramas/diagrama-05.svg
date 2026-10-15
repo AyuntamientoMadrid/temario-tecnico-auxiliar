@@ -1,0 +1,28 @@
+<svg aria-label="Proceso de encapsulamiento: el mensaje HTTP de la capa de aplicación recibe la cabecera TCP y pasa a llamarse segmento, después la cabecera IP y pasa a llamarse paquete, después la cabecera Ethernet y la secuencia de comprobación y pasa a llamarse trama, y finalmente se transmite como bits. Se indica que la MTU de Ethernet es de 1500 bytes y que las direcciones MAC cambian en cada salto mientras las direcciones IP se conservan de extremo a extremo" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 9.5px system-ui,sans-serif;fill:#fff}.s5{font:8.5px system-ui,sans-serif;fill:#fff}.d5{font:9px system-ui,sans-serif;fill:#333}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.k5{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n5{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h5" text-anchor="middle" x="340" y="20">Cada capa trata como datos opacos todo lo que le entrega la superior</text>
+<text class="k5" x="20" y="42">BAJADA POR LA PILA EN EL EMISOR · el receptor hace el recorrido inverso</text>
+<rect fill="#0055a0" height="36" rx="4" width="118" x="20" y="50"></rect><text class="t5" text-anchor="middle" x="79" y="66">APLICACIÓN</text><text class="s5" text-anchor="middle" x="79" y="79">PDU: mensaje</text>
+<rect fill="#eef3f8" height="36" rx="4" width="514" x="146" y="50"></rect><text class="d5" text-anchor="middle" x="403" y="72">GET /tramites HTTP/1.1 · Host: sede.madrid.es · Cookie: ...</text>
+<rect fill="#2d8659" height="36" rx="4" width="118" x="20" y="92"></rect><text class="t5" text-anchor="middle" x="79" y="108">TRANSPORTE</text><text class="s5" text-anchor="middle" x="79" y="121">PDU: segmento</text>
+<rect fill="#2d8659" height="36" rx="4" width="128" x="146" y="92"></rect><text class="t5" text-anchor="middle" x="210" y="108">Cabecera TCP</text><text class="s5" text-anchor="middle" x="210" y="121">20 B · puerto 443</text>
+<rect fill="#eef3f8" height="36" rx="4" width="378" x="282" y="92"></rect><text class="d5" text-anchor="middle" x="471" y="114">Mensaje HTTP</text>
+<rect fill="#e89822" height="36" rx="4" width="118" x="20" y="134"></rect><text class="t5" text-anchor="middle" x="79" y="150">INTERNET</text><text class="s5" text-anchor="middle" x="79" y="163">PDU: paquete</text>
+<rect fill="#e89822" height="36" rx="4" width="128" x="146" y="134"></rect><text class="t5" text-anchor="middle" x="210" y="150">Cabecera IP</text><text class="s5" text-anchor="middle" x="210" y="163">IP origen y destino</text>
+<rect fill="#2d8659" height="36" rx="4" width="128" x="282" y="134"></rect><text class="t5" text-anchor="middle" x="346" y="156">Cabecera TCP</text>
+<rect fill="#eef3f8" height="36" rx="4" width="242" x="418" y="134"></rect><text class="d5" text-anchor="middle" x="539" y="156">Mensaje HTTP</text>
+<rect fill="#7a2f8a" height="36" rx="4" width="118" x="20" y="176"></rect><text class="t5" text-anchor="middle" x="79" y="192">ENLACE</text><text class="s5" text-anchor="middle" x="79" y="205">PDU: trama</text>
+<rect fill="#7a2f8a" height="36" rx="4" width="118" x="146" y="176"></rect><text class="t5" text-anchor="middle" x="205" y="192">Cabecera Ethernet</text><text class="s5" text-anchor="middle" x="205" y="205">MAC origen y destino</text>
+<rect fill="#e89822" height="36" rx="4" width="110" x="272" y="176"></rect><text class="t5" text-anchor="middle" x="327" y="198">Cabecera IP</text>
+<rect fill="#2d8659" height="36" rx="4" width="110" x="390" y="176"></rect><text class="t5" text-anchor="middle" x="445" y="198">Cabecera TCP</text>
+<rect fill="#eef3f8" height="36" rx="4" width="90" x="508" y="176"></rect><text class="d5" text-anchor="middle" x="553" y="198">Mensaje</text>
+<rect fill="#d13c3c" height="36" rx="4" width="54" x="606" y="176"></rect><text class="t5" text-anchor="middle" x="633" y="198">FCS</text>
+<rect fill="#555" height="30" rx="4" width="118" x="20" y="218"></rect><text class="t5" text-anchor="middle" x="79" y="237">FÍSICA · bits</text>
+<rect fill="#f0f0f0" height="30" rx="4" width="514" x="146" y="218"></rect><text class="d5" text-anchor="middle" x="403" y="237">1 0 1 1 0 0 1 0 · señales eléctricas, ópticas o radioeléctricas</text>
+<rect fill="#fdf3e3" height="26" rx="4" width="640" x="20" y="258"></rect>
+<text class="d5" text-anchor="middle" x="340" y="275">MTU de Ethernet: 1.500 bytes de carga útil · si el paquete no cabe, IPv4 permite fragmentar en el camino; IPv6, solo en el origen</text>
+<rect fill="none" height="34" rx="5" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="292"></rect>
+<text class="k5" text-anchor="middle" x="340" y="307">Las direcciones MAC CAMBIAN en cada salto · las direcciones IP se CONSERVAN de extremo a extremo</text>
+<text class="n5" text-anchor="middle" x="340" y="320">Salvo que haya un NAT, que precisamente lo que hace es reescribirlas · el TTL se decrementa en cada encaminador</text>
+<text class="n5" text-anchor="end" x="670" y="344">[Fuente: RFC 1122; RFC 791 y RFC 8200]</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg aria-label="Dos sistemas con cuatro capas cada uno: entre capas adyacentes del mismo sistema la comunicación es vertical y real a través de una interfaz, mientras que entre capas homólogas de sistemas distintos la comunicación es horizontal y virtual mediante un protocolo; solo la capa física transmite bits de forma real por el medio" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t1{font:700 10.5px system-ui,sans-serif;fill:#fff}.d1{font:9px system-ui,sans-serif;fill:#333}.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}.k1{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n1{font:8.5px system-ui,sans-serif;fill:#666}.g1{font:700 9px system-ui,sans-serif;fill:#2d8659}</style>
+<defs><marker id="a1" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#d13c3c"></path></marker><marker id="b1" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#2d8659"></path></marker></defs>
+<text class="h1" text-anchor="middle" x="340" y="20">Vertical = real (interfaz) · Horizontal = virtual (protocolo)</text>
+<text class="k1" text-anchor="middle" x="110" y="40">SISTEMA A</text>
+<text class="k1" text-anchor="middle" x="570" y="40">SISTEMA B</text>
+<rect fill="#0055a0" height="38" rx="4" width="170" x="25" y="48"></rect><text class="t1" text-anchor="middle" x="110" y="72">Capa 4 · Aplicación</text>
+<rect fill="#0055a0" height="38" rx="4" width="170" x="485" y="48"></rect><text class="t1" text-anchor="middle" x="570" y="72">Capa 4 · Aplicación</text>
+<rect fill="#0055a0" height="38" rx="4" width="170" x="25" y="100"></rect><text class="t1" text-anchor="middle" x="110" y="124">Capa 3 · Transporte</text>
+<rect fill="#0055a0" height="38" rx="4" width="170" x="485" y="100"></rect><text class="t1" text-anchor="middle" x="570" y="124">Capa 3 · Transporte</text>
+<rect fill="#0055a0" height="38" rx="4" width="170" x="25" y="152"></rect><text class="t1" text-anchor="middle" x="110" y="176">Capa 2 · Red</text>
+<rect fill="#0055a0" height="38" rx="4" width="170" x="485" y="152"></rect><text class="t1" text-anchor="middle" x="570" y="176">Capa 2 · Red</text>
+<rect fill="#2d8659" height="38" rx="4" width="170" x="25" y="204"></rect><text class="t1" text-anchor="middle" x="110" y="228">Capa 1 · Física</text>
+<rect fill="#2d8659" height="38" rx="4" width="170" x="485" y="204"></rect><text class="t1" text-anchor="middle" x="570" y="228">Capa 1 · Física</text>
+<text class="n1" text-anchor="middle" x="110" y="96">interfaz</text>
+<text class="n1" text-anchor="middle" x="110" y="148">interfaz</text>
+<text class="n1" text-anchor="middle" x="110" y="200">interfaz</text>
+<text class="n1" text-anchor="middle" x="570" y="96">interfaz</text>
+<text class="n1" text-anchor="middle" x="570" y="148">interfaz</text>
+<text class="n1" text-anchor="middle" x="570" y="200">interfaz</text>
+<path d="M195,67 L481,67" marker-end="url(#a1)" stroke="#d13c3c" stroke-dasharray="6,4" stroke-width="1.4"></path>
+<path d="M195,119 L481,119" marker-end="url(#a1)" stroke="#d13c3c" stroke-dasharray="6,4" stroke-width="1.4"></path>
+<path d="M195,171 L481,171" marker-end="url(#a1)" stroke="#d13c3c" stroke-dasharray="6,4" stroke-width="1.4"></path>
+<path d="M195,223 L481,223" marker-end="url(#b1)" stroke="#2d8659" stroke-width="2"></path>
+<text class="d1" text-anchor="middle" x="338" y="61">protocolo de aplicación (virtual)</text>
+<text class="d1" text-anchor="middle" x="338" y="113">protocolo de transporte (virtual)</text>
+<text class="d1" text-anchor="middle" x="338" y="165">protocolo de red (virtual)</text>
+<text class="g1" text-anchor="middle" x="338" y="217">MEDIO FÍSICO — única transmisión real</text>
+<rect fill="none" height="52" rx="5" stroke="#0055a0" stroke-width="1.5" width="630" x="25" y="258"></rect>
+<text class="k1" text-anchor="middle" x="340" y="277">La capa N de A cree que habla con la capa N de B; en realidad baja, cruza el cable y sube</text>
+<text class="d1" text-anchor="middle" x="340" y="294">Solo hay dos comunicaciones reales: las interfaces (dentro de cada máquina) y el medio físico (entre ambas)</text>
+<text class="n1" text-anchor="end" x="670" y="328">[Fuente: ISO/IEC 7498-1]</text>
+</svg>

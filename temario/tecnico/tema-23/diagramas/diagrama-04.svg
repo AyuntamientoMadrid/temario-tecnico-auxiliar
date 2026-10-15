@@ -1,0 +1,25 @@
+<svg aria-label="Separación de responsabilidades del front-end: HTML aporta estructura, CSS aporta presentación, JavaScript aporta comportamiento, las tres capas se combinan en la página final que ve el usuario" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t4{font:700 12px system-ui,sans-serif;fill:#fff}.s4{font:10px system-ui,sans-serif;fill:#fff}.l4{font:11px system-ui,sans-serif;fill:#444}.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h4" text-anchor="middle" x="340" y="20">HTML · CSS · JavaScript — responsabilidades separadas</text>
+<rect fill="#0055a0" height="90" rx="6" width="170" x="40" y="40"></rect>
+<text class="t4" text-anchor="middle" x="125" y="70">HTML</text>
+<text class="s4" text-anchor="middle" x="125" y="90">Estructura</text>
+<text class="s4" text-anchor="middle" x="125" y="106">«El esqueleto»</text>
+<rect fill="#2d8659" height="90" rx="6" width="170" x="255" y="40"></rect>
+<text class="t4" text-anchor="middle" x="340" y="70">CSS</text>
+<text class="s4" text-anchor="middle" x="340" y="90">Presentación</text>
+<text class="s4" text-anchor="middle" x="340" y="106">«El estilo»</text>
+<rect fill="#e89822" height="90" rx="6" width="170" x="470" y="40"></rect>
+<text class="t4" text-anchor="middle" x="555" y="70">JavaScript</text>
+<text class="s4" text-anchor="middle" x="555" y="90">Comportamiento</text>
+<text class="s4" text-anchor="middle" x="555" y="106">«Los reflejos»</text>
+<path d="M125 130 L300 168" marker-end="url(#c4)" stroke="#888" stroke-width="2"></path>
+<path d="M340 130 L340 168" marker-end="url(#c4)" stroke="#888" stroke-width="2"></path>
+<path d="M555 130 L380 168" marker-end="url(#c4)" stroke="#888" stroke-width="2"></path>
+<defs><marker id="c4" markerheight="9" markerwidth="9" orient="auto" refx="4.5" refy="4.5"><path d="M0 0 L9 4.5 L0 9 z" fill="#888"></path></marker></defs>
+<rect fill="#0055a0" height="60" rx="6" width="380" x="150" y="176"></rect>
+<text class="t4" text-anchor="middle" x="340" y="200">Página final en el navegador</text>
+<text class="s4" text-anchor="middle" x="340" y="220">Estructura + presentación + comportamiento combinados</text>
+<text style="font:700 11px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="264">Mezclar las tres capas degrada el mantenimiento — no es obligación técnica, es buena práctica</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="292">[Fuente: WHATWG-HTML; W3C-CSS]</text>
+</svg>

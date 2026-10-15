@@ -1,0 +1,32 @@
+<svg aria-label="Los tres factores de autenticación: algo que se sabe como la contraseña, algo que se tiene como la tarjeta criptográfica o el token, y algo que se es como la biometría. La autenticación multifactor exige dos factores de categorías distintas. Se incluye la tabla de aplicación de la medida op punto acc punto cinco, según la cual en nivel medio y alto desaparece la opción de contraseña sola y se hace obligatorio el registro de accesos con éxito y fallidos" role="img" viewbox="0 0 680 364" xmlns="http://www.w3.org/2000/svg">
+<style>.h14{font:700 13px system-ui,sans-serif;fill:#0055a0}.k14{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.t14{font:700 10px system-ui,sans-serif;fill:#fff}.s14{font:8.5px system-ui,sans-serif;fill:#fff}.d14{font:8.5px system-ui,sans-serif;fill:#333}.b14{font:700 9px system-ui,sans-serif;fill:#0055a0}.n14{font:8px system-ui,sans-serif;fill:#666}.r14{font:700 8.5px system-ui,sans-serif;fill:#d13c3c}.g14{font:700 8.5px system-ui,sans-serif;fill:#2d8659}.hd14{font:700 8.5px system-ui,sans-serif;fill:#fff}</style>
+<text class="h14" text-anchor="middle" x="340" y="20">MFA = dos factores de CATEGORÍAS DISTINTAS. Contraseña + PIN no es MFA</text>
+<text class="k14" x="20" y="42">LOS TRES ÚNICOS FACTORES</text>
+<rect fill="#0055a0" height="76" rx="5" width="206" x="20" y="50"></rect>
+<text class="t14" text-anchor="middle" x="123" y="68">ALGO QUE SE SABE</text>
+<text class="s14" text-anchor="middle" x="123" y="84">Contraseña · PIN · pregunta</text>
+<text class="hd14" text-anchor="middle" x="123" y="100">Su debilidad</text>
+<text class="s14" text-anchor="middle" x="123" y="114">Se adivina, se reutiliza, se roba</text>
+<rect fill="#0055a0" height="76" rx="5" width="206" x="236" y="50"></rect>
+<text class="t14" text-anchor="middle" x="339" y="68">ALGO QUE SE TIENE</text>
+<text class="s14" text-anchor="middle" x="339" y="84">Tarjeta criptográfica · token OTP</text>
+<text class="hd14" text-anchor="middle" x="339" y="100">Su debilidad</text>
+<text class="s14" text-anchor="middle" x="339" y="114">Se pierde, se roba, puede clonarse</text>
+<rect fill="#0055a0" height="76" rx="5" width="208" x="452" y="50"></rect>
+<text class="t14" text-anchor="middle" x="556" y="68">ALGO QUE SE ES</text>
+<text class="s14" text-anchor="middle" x="556" y="84">Huella · iris · rostro · voz</text>
+<text class="hd14" text-anchor="middle" x="556" y="100">Su debilidad</text>
+<text class="s14" text-anchor="middle" x="556" y="114">NO se puede cambiar si se compromete</text>
+<rect fill="#fdeeee" height="28" rx="4" stroke="#d13c3c" width="316" x="20" y="134"></rect><text class="r14" text-anchor="middle" x="178" y="152">NO es MFA: contraseña + PIN (los dos son «algo que se sabe»)</text>
+<rect fill="#eef7f1" height="28" rx="4" stroke="#2d8659" width="316" x="344" y="134"></rect><text class="g14" text-anchor="middle" x="502" y="152">SÍ es MFA: contraseña + código del móvil, o certificado + PIN</text>
+<text class="k14" x="20" y="182">LOS REFUERZOS DE op.acc.5, ORDENADOS POR ROBUSTEZ</text>
+<rect fill="#0055a0" height="20" rx="3" width="640" x="20" y="190"></rect>
+<text class="hd14" x="30" y="204">REFUERZO</text><text class="hd14" x="130" y="204">MECANISMO</text><text class="hd14" x="392" y="204">¿VALE EN NIVEL BAJO?</text><text class="hd14" x="536" y="204">¿VALE EN MEDIO Y ALTO?</text>
+<rect fill="#fdeeee" height="22" width="640" x="20" y="212"></rect><text class="b14" x="30" y="227">R1</text><text class="d14" x="130" y="227">Contraseña con complejidad y robustez mínimas</text><text class="g14" x="392" y="227">SÍ</text><text class="r14" x="536" y="227">NO — ya no vale</text>
+<rect fill="#fff" height="22" width="640" x="20" y="236"></rect><text class="b14" x="30" y="251">R2</text><text class="d14" x="130" y="251">Contraseña de un solo uso (OTP)</text><text class="g14" x="392" y="251">SÍ</text><text class="g14" x="536" y="251">SÍ</text>
+<rect fill="#f7f9fc" height="22" width="640" x="20" y="260"></rect><text class="b14" x="30" y="275">R3 y R4</text><text class="d14" x="130" y="275">Certificado CUALIFICADO protegido por segundo factor</text><text class="g14" x="392" y="275">SÍ</text><text class="g14" x="536" y="275">SÍ</text>
+<rect fill="#fff" height="22" width="640" x="20" y="284"></rect><text class="b14" x="30" y="299">R5</text><text class="d14" x="130" y="299">Registro de accesos con ÉXITO y FALLIDOS</text><text class="d14" x="392" y="299">Opcional</text><text class="r14" x="536" y="299">OBLIGATORIO</text>
+<rect fill="#e89822" height="26" rx="4" width="640" x="20" y="314"></rect>
+<text class="s14" text-anchor="middle" x="340" y="331">Tabla literal · BAJO: op.acc.5 + [R1 o R2 o R3 o R4] · MEDIO: op.acc.5 + [R2 o R3 o R4] + R5 · ALTO: igual que MEDIO</text>
+<text class="n14" x="20" y="358">[Fuente: ENS, RD 311/2022, op.acc.5 y op.acc.6 — texto y tabla del anexo II · Reglamento (UE) 2024/1183 (eIDAS 2)]</text>
+</svg>

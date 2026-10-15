@@ -1,0 +1,28 @@
+<svg aria-label="Notación del diagrama de clases UML: caja de tres compartimentos con nombre, atributos y métodos, y los cinco tipos de relación entre clases: generalización, composición, agregación, asociación y dependencia" role="img" viewbox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
+<style>.t11{font:700 12px system-ui,sans-serif;fill:#fff}.m11{font:10.5px monospace;fill:#123}.l11{font:11px system-ui,sans-serif;fill:#444}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h11" text-anchor="middle" x="340" y="20">Diagrama de Clases UML: caja de 3 compartimentos + 5 relaciones</text>
+<rect fill="#fff" height="100" stroke="#0055a0" stroke-width="1.5" width="170" x="40" y="36"></rect>
+<rect fill="#0055a0" height="24" width="170" x="40" y="36"></rect><text class="t11" text-anchor="middle" x="125" y="52">Expediente</text>
+<line stroke="#0055a0" x1="40" x2="210" y1="60" y2="60"></line>
+<text class="m11" x="46" y="76">- idExpediente</text>
+<text class="m11" x="46" y="90">- estado</text>
+<line stroke="#0055a0" x1="40" x2="210" y1="98" y2="98"></line>
+<text class="m11" x="46" y="114">+ getEstado()</text>
+<text class="m11" x="46" y="128">+ calcularPlazo()</text>
+<text class="l11" x="290" y="50">— caja de 3 compartimentos:</text>
+<text class="l11" x="290" y="66">nombre / atributos / métodos</text>
+<text class="l11" x="290" y="86">- private  # protected</text>
+<text class="l11" x="290" y="100">~ package  + public</text>
+<line stroke="#0055a0" stroke-width="2" x1="40" x2="100" y1="180" y2="180"></line><polygon fill="#fff" points="100,180 88,175 88,185" stroke="#0055a0"></polygon>
+<text class="l11" x="115" y="184">Generalización (herencia) — flecha triangular hueca</text>
+<line stroke="#0055a0" stroke-width="2" x1="62" x2="100" y1="206" y2="206"></line><polygon fill="#0055a0" points="40,206 51,200 62,206 51,212" stroke="#0055a0"></polygon>
+<text class="l11" x="115" y="210">Composición — rombo relleno («todo-parte» fuerte)</text>
+<line stroke="#0055a0" stroke-width="2" x1="62" x2="100" y1="232" y2="232"></line><polygon fill="#fff" points="40,232 51,226 62,232 51,238" stroke="#0055a0" stroke-width="1.5"></polygon>
+<text class="l11" x="115" y="236">Agregación — rombo hueco («todo-parte» débil)</text>
+<line stroke="#0055a0" stroke-width="2" x1="40" x2="100" y1="258" y2="258"></line>
+<text class="l11" x="115" y="262">Asociación — línea continua (colaboran, se conocen)</text>
+<line stroke="#0055a0" stroke-dasharray="4,3" stroke-width="2" x1="40" x2="100" y1="284" y2="284"></line>
+<text class="l11" x="115" y="288">Dependencia — línea discontinua (uso puntual)</text>
+<text style="font:700 12px system-ui;fill:#e89822" text-anchor="middle" x="340" y="330">Composición ≠ Agregación: composición controla el ciclo de vida de la parte</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="368">[Fuente: OMG-UML25; FOWLER-UML]</text>
+</svg>

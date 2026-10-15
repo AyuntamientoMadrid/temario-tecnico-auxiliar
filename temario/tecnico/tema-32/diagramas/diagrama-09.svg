@@ -1,0 +1,33 @@
+<svg aria-label="Comparativa de los cuatro modelos de control de acceso lógico: discrecional DAC, obligatorio MAC, basado en roles RBAC y basado en atributos ABAC, indicando quién decide, sobre qué base y su uso típico, más la dualidad entre los modelos formales de Bell-LaPadula para confidencialidad y Biba para integridad" role="img" viewbox="0 0 680 354" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 11px system-ui,sans-serif;fill:#fff}.s9{font:8.5px system-ui,sans-serif;fill:#fff}.d9{font:9px system-ui,sans-serif;fill:#333}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.k9{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n9{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">Cuatro modelos: quién decide y con qué criterio</text>
+<rect fill="#888" height="36" rx="5" width="155" x="20" y="36"></rect><text class="t9" text-anchor="middle" x="97" y="59">DAC — discrecional</text>
+<rect fill="#d13c3c" height="36" rx="5" width="155" x="182" y="36"></rect><text class="t9" text-anchor="middle" x="259" y="59">MAC — obligatorio</text>
+<rect fill="#0055a0" height="36" rx="5" width="155" x="344" y="36"></rect><text class="t9" text-anchor="middle" x="421" y="59">RBAC — por roles</text>
+<rect fill="#2d8659" height="36" rx="5" width="154" x="506" y="36"></rect><text class="t9" text-anchor="middle" x="583" y="59">ABAC — por atributos</text>
+<text class="k9" x="20" y="90">QUIÉN DECIDE</text>
+<rect fill="#eef3f8" height="28" rx="4" width="155" x="20" y="96"></rect><text class="d9" text-anchor="middle" x="97" y="114">El propietario</text>
+<rect fill="#eef3f8" height="28" rx="4" width="155" x="182" y="96"></rect><text class="d9" text-anchor="middle" x="259" y="114">La política central</text>
+<rect fill="#eef3f8" height="28" rx="4" width="155" x="344" y="96"></rect><text class="d9" text-anchor="middle" x="421" y="114">La organización</text>
+<rect fill="#eef3f8" height="28" rx="4" width="154" x="506" y="96"></rect><text class="d9" text-anchor="middle" x="583" y="114">La organización</text>
+<text class="k9" x="20" y="142">BASE DE LA DECISIÓN</text>
+<rect fill="#f5f5f5" height="28" rx="4" width="155" x="20" y="148"></rect><text class="d9" text-anchor="middle" x="97" y="166">Identidad y ACL</text>
+<rect fill="#f5f5f5" height="28" rx="4" width="155" x="182" y="148"></rect><text class="d9" text-anchor="middle" x="259" y="166">Etiquetas de seguridad</text>
+<rect fill="#f5f5f5" height="28" rx="4" width="155" x="344" y="148"></rect><text class="d9" text-anchor="middle" x="421" y="166">Rol del usuario</text>
+<rect fill="#f5f5f5" height="28" rx="4" width="154" x="506" y="148"></rect><text class="d9" text-anchor="middle" x="583" y="166">Atributos y contexto</text>
+<text class="k9" x="20" y="194">USO TÍPICO Y LÍMITE</text>
+<rect fill="#eef3f8" height="42" rx="4" width="155" x="20" y="200"></rect><text class="d9" text-anchor="middle" x="97" y="217">Ficheros y ofimática</text><text class="n9" text-anchor="middle" x="97" y="232">No auditable en conjunto</text>
+<rect fill="#eef3f8" height="42" rx="4" width="155" x="182" y="200"></rect><text class="d9" text-anchor="middle" x="259" y="217">Entornos clasificados</text><text class="n9" text-anchor="middle" x="259" y="232">Rígido y costoso</text>
+<rect fill="#eef3f8" height="42" rx="4" width="155" x="344" y="200"></rect><text class="d9" text-anchor="middle" x="421" y="217">Aplicaciones de gestión</text><text class="n9" text-anchor="middle" x="421" y="232">Explosión de roles</text>
+<rect fill="#eef3f8" height="42" rx="4" width="154" x="506" y="200"></rect><text class="d9" text-anchor="middle" x="583" y="217">Nube y federación</text><text class="n9" text-anchor="middle" x="583" y="232">Difícil de depurar</text>
+<rect fill="#0055a0" height="60" rx="4" width="316" x="20" y="256"></rect>
+<text class="t9" text-anchor="middle" x="178" y="274">BELL-LaPADULA — CONFIDENCIALIDAD</text>
+<text class="s9" text-anchor="middle" x="178" y="291">NO LEER ARRIBA (propiedad simple)</text>
+<text class="s9" text-anchor="middle" x="178" y="306">NO ESCRIBIR ABAJO (propiedad estrella)</text>
+<rect fill="#2d8659" height="60" rx="4" width="316" x="344" y="256"></rect>
+<text class="t9" text-anchor="middle" x="502" y="274">BIBA — INTEGRIDAD (el dual)</text>
+<text class="s9" text-anchor="middle" x="502" y="291">NO LEER ABAJO</text>
+<text class="s9" text-anchor="middle" x="502" y="306">NO ESCRIBIR ARRIBA</text>
+<text class="n9" text-anchor="middle" x="340" y="332">Matriz de control de acceso: por columnas da ACL (quién accede a este objeto), por filas da capacidades (a qué accede este sujeto)</text>
+<text class="n9" text-anchor="end" x="670" y="346">[Fuente: SP800-162; BLP; ENS, op.acc]</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg aria-label="FTP utiliza dos conexiones TCP: control por el puerto 21 y datos por el 20. En modo activo el servidor abre la conexión de datos hacia el cliente, lo que suele bloquear el cortafuegos; en modo pasivo el cliente abre ambas conexiones, por lo que funciona con NAT y cortafuegos. Alternativas seguras: FTPS es FTP sobre TLS, SFTP es un subsistema de SSH en el puerto 22 y no tiene relación con FTP, y SCP y HTTPS completan el cuadro" role="img" viewbox="0 0 680 364" xmlns="http://www.w3.org/2000/svg">
+<style>.t11{font:700 10px system-ui,sans-serif;fill:#fff}.s11{font:8.5px system-ui,sans-serif;fill:#fff}.d11{font:9px system-ui,sans-serif;fill:#333}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}.k11{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n11{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h11" text-anchor="middle" x="340" y="20">FTP abre DOS conexiones: quién abre la de datos define el modo</text>
+<text class="k11" x="20" y="42">MODO ACTIVO · el servidor llama al cliente</text>
+<rect fill="#0055a0" height="44" rx="5" width="126" x="20" y="50"></rect><text class="t11" text-anchor="middle" x="83" y="68">CLIENTE</text><text class="s11" text-anchor="middle" x="83" y="84">Puerto alto</text>
+<rect fill="#0055a0" height="44" rx="5" width="126" x="514" y="50"></rect><text class="t11" text-anchor="middle" x="577" y="68">SERVIDOR FTP</text><text class="s11" text-anchor="middle" x="577" y="84">Puertos 21 y 20</text>
+<path d="M146 64 L510 64" marker-end="url(#a11)" stroke="#2d8659" stroke-width="1.5"></path>
+<text class="n11" text-anchor="middle" x="328" y="60">1 · CONTROL: el cliente abre hacia el puerto 21 (comando PORT)</text>
+<path d="M510 84 L150 84" marker-end="url(#a11b)" stroke="#d13c3c" stroke-width="1.5"></path>
+<text class="n11" text-anchor="middle" x="330" y="80">2 · DATOS: el SERVIDOR abre desde su puerto 20 hacia el cliente</text>
+<defs><marker id="a11" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#2d8659"></path></marker><marker id="a11b" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#d13c3c"></path></marker></defs>
+<rect fill="#fbeaea" height="24" rx="4" width="620" x="20" y="100"></rect><text class="d11" text-anchor="middle" x="330" y="116">Esa conexión ENTRANTE la bloquean normalmente el cortafuegos y el NAT del cliente</text>
+<text class="k11" x="20" y="146">MODO PASIVO · el cliente abre las dos (comando PASV)</text>
+<rect fill="#0055a0" height="44" rx="5" width="126" x="20" y="154"></rect><text class="t11" text-anchor="middle" x="83" y="172">CLIENTE</text><text class="s11" text-anchor="middle" x="83" y="188">Abre ambas</text>
+<rect fill="#0055a0" height="44" rx="5" width="126" x="514" y="154"></rect><text class="t11" text-anchor="middle" x="577" y="172">SERVIDOR FTP</text><text class="s11" text-anchor="middle" x="577" y="188">21 y puerto alto</text>
+<path d="M146 168 L510 168" marker-end="url(#a11)" stroke="#2d8659" stroke-width="1.5"></path>
+<text class="n11" text-anchor="middle" x="328" y="164">1 · CONTROL hacia el puerto 21</text>
+<path d="M146 188 L510 188" marker-end="url(#a11)" stroke="#2d8659" stroke-width="1.5"></path>
+<text class="n11" text-anchor="middle" x="328" y="184">2 · DATOS: el CLIENTE abre hacia el puerto alto que le indica el servidor</text>
+<rect fill="#eaf5ef" height="24" rx="4" width="620" x="20" y="204"></rect><text class="d11" text-anchor="middle" x="330" y="220">Es el modo que funciona con NAT y cortafuegos, y por eso el habitual hoy</text>
+<text class="k11" x="20" y="250">ALTERNATIVAS SEGURAS · FTP transmite credenciales y datos EN CLARO</text>
+<rect fill="#e89822" height="44" rx="4" width="154" x="20" y="258"></rect><text class="t11" text-anchor="middle" x="97" y="276">FTPS</text><text class="s11" text-anchor="middle" x="97" y="292">FTP + TLS · 990 o 21</text>
+<rect fill="#2d8659" height="44" rx="4" width="154" x="182" y="258"></rect><text class="t11" text-anchor="middle" x="259" y="276">SFTP</text><text class="s11" text-anchor="middle" x="259" y="292">Subsistema de SSH · 22</text>
+<rect fill="#eef3f8" height="44" rx="4" width="154" x="344" y="258"></rect><text class="d11" text-anchor="middle" x="421" y="276">SCP</text><text class="n11" text-anchor="middle" x="421" y="292">Sobre SSH · desaconsejado</text>
+<rect fill="#eef3f8" height="44" rx="4" width="154" x="506" y="258"></rect><text class="d11" text-anchor="middle" x="583" y="276">HTTPS</text><text class="n11" text-anchor="middle" x="583" y="292">443 · atraviesa cualquier red</text>
+<rect fill="none" height="26" rx="4" stroke="#d13c3c" stroke-width="1.5" width="640" x="20" y="310"></rect>
+<text class="k11" text-anchor="middle" x="340" y="327">SFTP NO ES FTPS: SFTP es SSH y no tiene ninguna relación con el protocolo FTP</text>
+<text class="n11" text-anchor="end" x="670" y="356">[Fuente: RFC 959; RFC 4251-4254]</text>
+</svg>

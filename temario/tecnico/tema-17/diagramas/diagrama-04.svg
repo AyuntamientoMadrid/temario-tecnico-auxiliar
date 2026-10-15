@@ -1,0 +1,18 @@
+<svg aria-label="Integridad de entidad: la clave primaria no es nula; integridad referencial: la clave ajena apunta a una fila existente de la tabla referenciada" class="d17-4" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.d17-4 .b{font:600 11px system-ui,sans-serif;fill:#fff}.d17-4 .k{font:700 11px system-ui,sans-serif;fill:#fff}.d17-4 .l{font:11px system-ui,sans-serif;fill:#444}.d17-4 .h{font:700 12px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="145" y="26">HABITANTE</text>
+<rect fill="#0055a0" height="26" width="210" x="40" y="40"></rect><text class="k" x="55" y="58">dni (PK)</text><text class="k" x="130" y="58">cod_distrito (FK)</text>
+<rect fill="#e8f0f8" height="24" width="210" x="40" y="66"></rect><text class="l" x="55" y="83">0001A</text><text class="l" x="175" y="83">1</text>
+<rect fill="#fff" height="24" width="210" x="40" y="90"></rect><text class="l" x="55" y="107">0002B</text><text class="l" x="175" y="107">2</text>
+<rect fill="#fbeeed" height="24" width="210" x="40" y="114"></rect><text class="l" x="53" y="131">(nulo)</text><text class="l" x="175" y="131">1</text>
+<text fill="#d13c3c" style="font:700 11px system-ui,sans-serif" x="40" y="160">✗ PK nula → viola integridad de entidad</text>
+<text class="h" text-anchor="middle" x="500" y="26">DISTRITO</text>
+<rect fill="#2d8659" height="26" width="160" x="430" y="40"></rect><text class="k" x="450" y="58">codigo (PK)</text><text class="k" x="535" y="58">nombre</text>
+<rect fill="#e8f5ee" height="24" width="160" x="430" y="66"></rect><text class="l" x="450" y="83">1</text><text class="l" x="530" y="83">Centro</text>
+<rect fill="#fff" height="24" width="160" x="430" y="90"></rect><text class="l" x="450" y="107">2</text><text class="l" x="530" y="107">Arganzuela</text>
+<path d="M250 78 C340 78 340 78 428 78" fill="none" marker-end="url(#c)" stroke="#2d8659" stroke-width="2"></path>
+<text class="l" text-anchor="middle" x="340" y="72">FK → PK existente ✓</text>
+<text class="l" x="430" y="160">Integridad referencial: toda FK apunta</text><text class="l" x="430" y="176">a una fila real o es nula</text>
+<defs><marker id="c" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#2d8659"></path></marker></defs>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="670" y="288">[Fuente: CODD70; DATE, cap. 9]</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg aria-label="Layout de página con etiquetas semánticas HTML5: header en la parte superior, nav debajo, main con article a la izquierda y aside a la derecha, footer en la parte inferior" role="img" viewbox="0 0 680 350" xmlns="http://www.w3.org/2000/svg">
+<style>.t7{font:700 11px system-ui,sans-serif;fill:#fff}.s7{font:9.5px system-ui,sans-serif;fill:#fff}.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h7" text-anchor="middle" x="340" y="20">Etiquetas semánticas HTML5</text>
+<rect fill="#0055a0" height="44" rx="4" width="560" x="60" y="36"></rect><text class="t7" text-anchor="middle" x="340" y="63">&lt;header&gt;</text>
+<rect fill="#3778b5" height="34" rx="4" width="560" x="60" y="86"></rect><text class="t7" text-anchor="middle" x="340" y="108">&lt;nav&gt;</text>
+<rect fill="none" height="150" rx="4" stroke="#2d8659" stroke-dasharray="4 3" stroke-width="2" width="560" x="60" y="126"></rect>
+<text class="s7" style="fill:#2d8659;font-weight:700" x="80" y="142">&lt;main&gt;</text>
+<rect fill="#2d8659" height="116" rx="4" width="350" x="72" y="150"></rect><text class="t7" text-anchor="middle" x="247" y="212">&lt;article&gt;</text>
+<rect fill="#e89822" height="116" rx="4" width="176" x="432" y="150"></rect><text class="t7" text-anchor="middle" x="520" y="212">&lt;aside&gt;</text>
+<rect fill="#d13c3c" height="40" rx="4" width="560" x="60" y="284"></rect><text class="t7" text-anchor="middle" x="340" y="308">&lt;footer&gt;</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="343">[Fuente: WHATWG-HTML]</text>
+</svg>

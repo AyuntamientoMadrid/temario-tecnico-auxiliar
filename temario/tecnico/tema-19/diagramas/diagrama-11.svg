@@ -1,0 +1,18 @@
+<svg aria-label="Ciclo de vida de un cursor explícito: declarar el cursor sobre un SELECT, abrirlo, recorrer las filas con fetch en bucle hasta agotar el resultado, y cerrarlo" role="img" viewbox="0 0 640 320" xmlns="http://www.w3.org/2000/svg"><style>.t11{font:700 12px system-ui,sans-serif;fill:#fff}.s11{font:10.5px system-ui,sans-serif;fill:#fff}.l11{font:11px system-ui,sans-serif;fill:#444}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h11" text-anchor="middle" x="320" y="22">DECLARE → OPEN → FETCH (bucle) → CLOSE</text>
+<rect fill="#0055a0" height="50" rx="6" width="130" x="30" y="44"></rect><text class="t11" text-anchor="middle" x="95" y="64">DECLARE</text><text class="s11" text-anchor="middle" x="95" y="80">define el SELECT</text>
+<path d="M160 69 L188 69" marker-end="url(#a11)" stroke="#888" stroke-width="2"></path>
+<rect fill="#3778b5" height="50" rx="6" width="110" x="190" y="44"></rect><text class="t11" text-anchor="middle" x="245" y="64">OPEN</text><text class="s11" text-anchor="middle" x="245" y="80">ejecuta la consulta</text>
+<path d="M300 69 L328 69" marker-end="url(#a11)" stroke="#888" stroke-width="2"></path>
+<rect fill="#2d8659" height="50" rx="6" width="150" x="330" y="44"></rect><text class="t11" text-anchor="middle" x="405" y="64">FETCH</text><text class="s11" text-anchor="middle" x="405" y="80">obtiene la fila siguiente</text>
+<path d="M405 94 C 405 140 405 140 405 94" stroke="none"></path>
+<path d="M480 69 L495 69 L495 130 L405 130 L405 100" fill="none" marker-end="url(#a11)" stroke="#e89822" stroke-width="2"></path>
+<text style="font:700 11px system-ui;fill:#e89822" text-anchor="middle" x="450" y="150">¿quedan filas? → repetir FETCH</text>
+<path d="M405 160 L405 188" marker-end="url(#a11)" stroke="#888" stroke-width="2"></path>
+<text class="l11" x="440" y="180">no</text>
+<rect fill="#d13c3c" height="50" rx="6" width="150" x="330" y="190"></rect><text class="t11" text-anchor="middle" x="405" y="212">CLOSE</text><text class="s11" text-anchor="middle" x="405" y="228">libera el cursor</text>
+<rect fill="#fdecec" height="46" rx="6" stroke="#d13c3c" width="520" x="60" y="256"></rect>
+<text style="font:11px system-ui;fill:#8a1f1f" text-anchor="middle" x="320" y="284">Olvidar el CLOSE mantiene recursos y bloqueos ocupados durante toda la sesión</text>
+<defs><marker id="a11" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#888"></path></marker></defs>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="630" y="316">[Fuente: SILBERSCHATZ, cap. 5]</text>
+</svg>

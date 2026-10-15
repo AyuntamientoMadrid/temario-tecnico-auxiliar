@@ -1,0 +1,24 @@
+<svg aria-label="Árbol binario de búsqueda y sus recorridos preorden, inorden y postorden" class="svd5" role="img" viewbox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
+<style>.svd5 .n{fill:#0055a0}.svd5 .b{font:700 13px system-ui,sans-serif;fill:#fff}.svd5 .r{font:12px system-ui,sans-serif;fill:#1a1a1a}.svd5 .h{font:700 12px system-ui,sans-serif;fill:#0055a0}</style>
+<line stroke="#888" stroke-width="2" x1="330" x2="230" y1="50" y2="120"></line>
+<line stroke="#888" stroke-width="2" x1="330" x2="430" y1="50" y2="120"></line>
+<line stroke="#888" stroke-width="2" x1="230" x2="170" y1="120" y2="190"></line>
+<line stroke="#888" stroke-width="2" x1="230" x2="290" y1="120" y2="190"></line>
+<line stroke="#888" stroke-width="2" x1="290" x2="250" y1="190" y2="250"></line>
+<line stroke="#888" stroke-width="2" x1="290" x2="330" y1="190" y2="250"></line>
+<line stroke="#888" stroke-width="2" x1="430" x2="490" y1="120" y2="190"></line>
+<line stroke="#888" stroke-width="2" x1="490" x2="450" y1="190" y2="250"></line>
+<g><circle class="n" cx="330" cy="50" r="20"></circle><text class="b" text-anchor="middle" x="330" y="55">F</text></g>
+<g><circle class="n" cx="230" cy="120" r="20"></circle><text class="b" text-anchor="middle" x="230" y="125">B</text></g>
+<g><circle class="n" cx="430" cy="120" r="20"></circle><text class="b" text-anchor="middle" x="430" y="125">G</text></g>
+<g><circle class="n" cx="170" cy="190" r="20"></circle><text class="b" text-anchor="middle" x="170" y="195">A</text></g>
+<g><circle class="n" cx="290" cy="190" r="20"></circle><text class="b" text-anchor="middle" x="290" y="195">D</text></g>
+<g><circle class="n" cx="250" cy="250" r="20"></circle><text class="b" text-anchor="middle" x="250" y="255">C</text></g>
+<g><circle class="n" cx="330" cy="250" r="20"></circle><text class="b" text-anchor="middle" x="330" y="255">E</text></g>
+<g><circle class="n" cx="490" cy="190" r="20"></circle><text class="b" text-anchor="middle" x="490" y="195">I</text></g>
+<g><circle class="n" cx="450" cy="250" r="20"></circle><text class="b" text-anchor="middle" x="450" y="255">H</text></g>
+<text class="h" x="40" y="300">Preorden (R-I-D):</text><text class="r" x="190" y="300">F B A D C E G I H</text>
+<text class="h" x="40" y="322">Inorden (I-R-D):</text><text class="r" x="190" y="322">A B C D E F G H I  → ordenado</text>
+<text class="h" x="40" y="344">Postorden (I-D-R):</text><text class="r" x="190" y="344">A C E D B H I G F</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="600" y="356">[Fuente: CLRS, cap. 12]</text>
+</svg>

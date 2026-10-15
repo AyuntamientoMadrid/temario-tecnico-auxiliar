@@ -1,0 +1,59 @@
+<svg aria-label="Comparación entre la unidad de control multipunto (MCU), que decodifica, mezcla y vuelve a codificar, y la unidad de reenvío selectivo (SFU), que reenvía los flujos sin decodificarlos, en siete criterios: bajada, cómputo del servidor, retardo, composición, cifrado extremo a extremo, exigencia al cliente y uso típico" role="img" viewbox="0 0 680 356" xmlns="http://www.w3.org/2000/svg">
+<style>.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}.k8{font:700 10px system-ui,sans-serif;fill:#0055a0}.d8{font:9px system-ui,sans-serif;fill:#333}.n8{font:8.5px system-ui,sans-serif;fill:#666}.w8{font:700 10px system-ui,sans-serif;fill:#fff}.r8{font:700 9px system-ui,sans-serif;fill:#d13c3c}.g8{font:700 9px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h8" text-anchor="middle" x="340" y="19">MCU frente a SFU: la comparación central de la sección 2</text>
+<rect fill="#fdf3e3" height="66" rx="4" width="312" x="22" y="32"></rect>
+<rect fill="#e89822" height="22" rx="4" width="312" x="22" y="32"></rect>
+<text class="w8" text-anchor="middle" x="178" y="48">MCU — MEZCLA Y TRANSCODIFICA</text>
+<text class="d8" x="32" y="70">Decodifica todos los flujos, los compone en UNA imagen</text>
+<text class="d8" x="32" y="83">y la vuelve a codificar. En la RFC 7667 es un MEZCLADOR</text>
+<text class="n8" x="32" y="94">En H.323 se descompone en MC (control) y MP (procesado)</text>
+<rect fill="#e6f2ec" height="66" rx="4" width="312" x="346" y="32"></rect>
+<rect fill="#2d8659" height="22" rx="4" width="312" x="346" y="32"></rect>
+<text class="w8" text-anchor="middle" x="502" y="48">SFU — REENVÍA SIN DECODIFICAR</text>
+<text class="d8" x="356" y="70">No decodifica nada: reenvía los flujos tal cual, eligiendo</text>
+<text class="d8" x="356" y="83">cuáles y con qué calidad. Es un REENVIADOR SELECTIVO</text>
+<text class="n8" x="356" y="94">Es la arquitectura DOMINANTE en las plataformas actuales</text>
+<rect fill="#0055a0" height="20" rx="3" width="636" x="22" y="108"></rect>
+<text class="w8" text-anchor="middle" x="122" y="122">Criterio</text>
+<text class="w8" text-anchor="middle" x="340" y="122">MCU</text>
+<text class="w8" text-anchor="middle" x="560" y="122">SFU</text>
+<rect fill="#f5f8fb" height="18" width="636" x="22" y="130"></rect>
+<text class="d8" x="30" y="143">Bajada por participante</text>
+<text class="d8" text-anchor="middle" x="340" y="143">1 flujo, siempre igual</text>
+<text class="d8" text-anchor="middle" x="560" y="143">Hasta N−1 flujos</text>
+<rect fill="#fff" height="18" width="636" x="22" y="148"></rect>
+<text class="d8" x="30" y="161">Cómputo en el servidor</text>
+<text class="r8" text-anchor="middle" x="340" y="161">MUY ALTO (transcodifica)</text>
+<text class="g8" text-anchor="middle" x="560" y="161">MUY BAJO (solo mueve paquetes)</text>
+<rect fill="#f5f8fb" height="18" width="636" x="22" y="166"></rect>
+<text class="d8" x="30" y="179">Retardo añadido</text>
+<text class="r8" text-anchor="middle" x="340" y="179">Sí: decodificar y recodificar</text>
+<text class="g8" text-anchor="middle" x="560" y="179">Mínimo</text>
+<rect fill="#fff" height="18" width="636" x="22" y="184"></rect>
+<text class="d8" x="30" y="197">Composición de la vista</text>
+<text class="d8" text-anchor="middle" x="340" y="197">Única, la decide el servidor</text>
+<text class="d8" text-anchor="middle" x="560" y="197">Libre en cada cliente</text>
+<rect fill="#f5f8fb" height="18" width="636" x="22" y="202"></rect>
+<text class="d8" x="30" y="215">Cifrado extremo a extremo</text>
+<text class="r8" text-anchor="middle" x="340" y="215">IMPOSIBLE: para mezclar hay que descifrar</text>
+<text class="g8" text-anchor="middle" x="560" y="215">POSIBLE con SFrame (RFC 9605)</text>
+<rect fill="#fff" height="18" width="636" x="22" y="220"></rect>
+<text class="d8" x="30" y="233">Exigencia al terminal</text>
+<text class="g8" text-anchor="middle" x="340" y="233">Mínima: sirve un equipo antiguo</text>
+<text class="r8" text-anchor="middle" x="560" y="233">Alta: decodifica y compone</text>
+<rect fill="#f5f8fb" height="18" width="636" x="22" y="238"></rect>
+<text class="d8" x="30" y="251">Uso típico</text>
+<text class="d8" text-anchor="middle" x="340" y="251">Salas heredadas, interoperación</text>
+<text class="d8" text-anchor="middle" x="560" y="251">Reunión moderna en la nube</text>
+<rect fill="#eef4fa" height="62" rx="4" width="312" x="22" y="266"></rect>
+<text class="k8" x="32" y="282">LAS DOS TÉCNICAS QUE HACEN VIABLE LA SFU</text>
+<text class="d8" x="32" y="296">SIMULCAST (RFC 8853): cada emisor sube VARIAS calidades</text>
+<text class="d8" x="32" y="308">a la vez y la SFU elige la que conviene a cada receptor</text>
+<text class="d8" x="32" y="320">SVC: un flujo en CAPAS; la SFU descarta capas</text>
+<rect fill="#e6f2ec" height="62" rx="4" width="312" x="346" y="266"></rect>
+<text class="k8" x="356" y="282">EL CIFRADO DE GRUPO, NORMALIZADO EN 2023 Y 2024</text>
+<text class="d8" x="356" y="296">SFrame (RFC 9605, agosto de 2024): cifra el FOTOGRAMA,</text>
+<text class="d8" x="356" y="308">no el paquete; la SFU encamina pero no descifra</text>
+<text class="d8" x="356" y="320">MLS (RFC 9420, julio de 2023): lo mismo para mensajería</text>
+<text class="n8" text-anchor="end" x="658" y="348">[Fuente: RFC 7667 · RFC 8853 · RFC 9605 · RFC 9420]</text>
+</svg>

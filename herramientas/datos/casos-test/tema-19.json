@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, Hacienda quiere ver solo los distritos cuyo total recaudado supere los 100.000 €. ¿Dónde debe expresarse esa condición?",
+    "o": [
+     "En la cláusula WHERE, con la condición SUM(t.importe) > 100000, antes del GROUP BY.",
+     "En la cláusula HAVING, con la condición SUM(t.importe) > 100000, después del GROUP BY.",
+     "En la cláusula ORDER BY, que descarta los grupos que no alcanzan el valor indicado."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §2.4",
+    "e": "La condición depende de un total agregado por distrito, así que filtra grupos ya formados: eso es HAVING, que se evalúa después de GROUP BY."
+   },
+   {
+    "q": "¿Por qué la condición sobre el total recaudado no puede ir en la cláusula WHERE de la consulta?",
+    "o": [
+     "Porque WHERE filtra filas individuales antes de que existan los grupos y no puede contener funciones de agregación.",
+     "Porque WHERE se evalúa después del ORDER BY, cuando el resultado ya está ordenado y no admite más filtros.",
+     "Porque WHERE solo admite condiciones sobre columnas de clave primaria, como id_distrito o dni."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.3 y §2.4",
+    "e": "En el orden lógico de evaluación (FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY), WHERE actúa fila a fila antes de agrupar, por lo que no puede usar SUM()."
+   },
+   {
+    "q": "La consulta del distrito muestra id_distrito, nombre_distrito, COUNT(*) y SUM(t.importe). ¿Qué columnas deben figurar en el GROUP BY?",
+    "o": [
+     "Solo las expresiones agregadas COUNT(*) y SUM(t.importe), que son las que se calculan por grupo.",
+     "Ninguna, porque el motor agrupa automáticamente por todas las columnas que aparecen en el SELECT.",
+     "id_distrito y nombre_distrito, porque toda columna del SELECT no agregada debe figurar en el GROUP BY."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §2.4",
+    "e": "Regla de dependencia funcional del GROUP BY: toda columna del SELECT que no esté dentro de una función de agregación debe aparecer en la cláusula de agrupación."
+   },
+   {
+    "q": "La consulta termina con ORDER BY total_recaudado DESC, usando el alias definido en el SELECT. ¿Es válido?",
+    "o": [
+     "Sí, porque ORDER BY se evalúa después del SELECT, cuando el alias ya existe.",
+     "No, porque un alias del SELECT solo puede utilizarse dentro de la cláusula WHERE.",
+     "No, porque ORDER BY se evalúa antes del SELECT y hay que repetir SUM(t.importe)."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.3",
+    "e": "El orden lógico de evaluación sitúa ORDER BY después de SELECT; por eso el alias sí puede usarse en ORDER BY, aunque no en WHERE."
+   },
+   {
+    "q": "Para obtener todos los contribuyentes de un distrito, tengan o no algún tributo liquidado, ¿qué reunión debe usarse?",
+    "o": [
+     "Un INNER JOIN entre CONTRIBUYENTE y TRIBUTO por el DNI del contribuyente.",
+     "Un LEFT JOIN desde CONTRIBUYENTE hacia TRIBUTO por el DNI del contribuyente.",
+     "Un CROSS JOIN entre CONTRIBUYENTE y TRIBUTO, filtrado después por el distrito."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §2.5",
+    "e": "El LEFT JOIN conserva todas las filas de la tabla izquierda (CONTRIBUYENTE) aunque no tengan coincidencia en la derecha; el INNER JOIN perdería a quienes no tienen tributos."
+   },
+   {
+    "q": "En el resultado de esa reunión, ¿cómo aparece un contribuyente del distrito que no tiene ningún tributo liquidado?",
+    "o": [
+     "No aparece, porque la reunión descarta las filas sin coincidencia en la tabla de la derecha.",
+     "Aparece con el importe a cero, que el motor asigna por defecto a las filas sin pareja.",
+     "Aparece con su nombre y con la columna importe a NULL, al no existir la fila de la derecha."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §2.5",
+    "e": "En un LEFT JOIN, cuando la fila de la derecha no existe, sus columnas aparecen como NULL; el contribuyente se conserva."
+   },
+   {
+    "q": "El técnico quiere ahora listar solo los contribuyentes del distrito que NO tienen ningún tributo. Partiendo del LEFT JOIN anterior, ¿qué debe añadir?",
+    "o": [
+     "La condición WHERE t.importe IS NULL, que detecta la ausencia de fila en TRIBUTO.",
+     "La condición WHERE t.importe = 0, que identifica a los contribuyentes sin liquidaciones.",
+     "Un ORDER BY t.importe, que agrupa al principio a los contribuyentes sin tributos."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §2.5",
+    "e": "El NULL que genera el LEFT JOIN en las columnas de la derecha es precisamente lo que permite detectar la ausencia de relación con WHERE t.importe IS NULL."
+   },
+   {
+    "q": "En la cuestión 3, la subconsulta que calcula la media de importes filtra por el distrito de la fila que se está evaluando (c.id_distrito). ¿Qué tipo de subconsulta es?",
+    "o": [
+     "No correlacionada: el motor la ejecuta una sola vez y reutiliza su resultado para todas las filas.",
+     "Una expresión de tabla común recursiva, porque se referencia a sí misma en cada paso.",
+     "Correlacionada: referencia una columna de la consulta externa y su resultado depende de la fila actual."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §2.6",
+    "e": "Al referenciar c.id_distrito de la consulta externa, la media cambia según el contribuyente evaluado: es una subconsulta correlacionada."
+   },
+   {
+    "q": "Para mostrar cada tributo con el puesto que ocupa entre los tributos del mismo contribuyente, de mayor a menor importe y sin perder filas, ¿qué expresión es la adecuada?",
+    "o": [
+     "GROUP BY dni_contribuyente con COUNT(*), que numera los tributos de cada contribuyente.",
+     "RANK() OVER (PARTITION BY dni_contribuyente ORDER BY importe DESC).",
+     "ROW_NUMBER() OVER (ORDER BY dni_contribuyente), sin partición por contribuyente."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §2.8",
+    "e": "Una función de ventana conserva todas las filas y calcula el puesto dentro de cada partición; PARTITION BY agrupa por contribuyente y el ORDER BY del OVER fija el orden por importe."
+   },
+   {
+    "q": "Un contribuyente tiene cuatro tributos y los dos segundos de mayor importe empatan. Con RANK(), ¿qué puesto recibe el cuarto tributo?",
+    "o": [
+     "El 4, porque RANK() salta números tras un empate (1, 2, 2, 4).",
+     "El 3, porque RANK() no deja huecos en la numeración tras un empate.",
+     "El 2, porque RANK() repite el último puesto hasta el final de la partición."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · §2.8",
+    "e": "RANK() da el mismo puesto a los empatados y salta números después (1, 2, 2, 4); la numeración sin huecos (1, 2, 2, 3) es la de DENSE_RANK()."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "En la cabecera de bonificar_tributos_distrito, ¿qué modo debe tener el parámetro que indica el distrito a procesar?",
+    "o": [
+     "OUT, porque el procedimiento devuelve el distrito procesado al llamador al terminar.",
+     "INOUT, porque el procedimiento necesita modificar el distrito durante el recorrido.",
+     "IN, porque es un dato de entrada que el procedimiento solo lee y no modifica."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §3.3",
+    "e": "IN es el modo de entrada: el llamador pasa el valor y el procedimiento solo lo lee. Es, además, el modo por defecto."
+   },
+   {
+    "q": "¿Qué modo debe tener el parámetro que devuelve el número de tributos bonificados?",
+    "o": [
+     "IN, porque el llamador debe indicar de antemano cuántos tributos se van a bonificar.",
+     "OUT, porque el procedimiento le asigna el valor y lo devuelve al llamador al terminar.",
+     "Ninguno: un procedimiento devuelve siempre su resultado mediante la cláusula RETURN."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §3.3",
+    "e": "Un parámetro OUT recibe el valor que le asigna el procedimiento y se devuelve al llamador; su valor de entrada se ignora. RETURN es propio de las funciones."
+   },
+   {
+    "q": "Un compañero propone convertir el procedimiento en una función almacenada. ¿Qué rasgo distinguiría a la función?",
+    "o": [
+     "Que devuelve siempre un único valor mediante RETURN y puede usarse dentro de una expresión SQL.",
+     "Que admite varios parámetros de salida OUT y se invoca como sentencia independiente con CALL.",
+     "Que se ejecuta automáticamente cada vez que se actualiza un importe de la tabla TRIBUTO."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §3.1 y §3.3",
+    "e": "La función devuelve un único valor con RETURN y suele poder usarse en un SELECT; el procedimiento se invoca con CALL y puede devolver varios valores por parámetros OUT."
+   },
+   {
+    "q": "¿Por qué en este supuesto se recorre el resultado con un cursor en lugar de lanzar una única sentencia UPDATE de conjunto?",
+    "o": [
+     "Porque una sentencia UPDATE no puede modificar más de una fila de la tabla en cada ejecución.",
+     "Porque en una versión posterior cada tributo llevará una regla distinta según su tipo y hay que tratarlo fila a fila.",
+     "Porque recorrer fila a fila con un cursor es siempre más rápido que una operación de conjunto."
+    ],
+    "c": 1,
+    "r": "Caso 2, enunciado y cuestión 2 · §3.4",
+    "e": "El cursor está justificado cuando la regla no se puede expresar como un UPDATE de conjunto; si se pudiera, la operación de conjunto sería preferible por rendimiento."
+   },
+   {
+    "q": "¿Cuál es la secuencia correcta del ciclo de vida del cursor que recorre los tributos del distrito?",
+    "o": [
+     "OPEN → DECLARE → FETCH en bucle → CLOSE.",
+     "DECLARE → FETCH en bucle → OPEN → CLOSE.",
+     "DECLARE → OPEN → FETCH en bucle → CLOSE."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §3.4",
+    "e": "El cursor explícito se declara sobre un SELECT, se abre, se leen sus filas con FETCH dentro de un bucle hasta que no quedan más y, por último, se cierra."
+   },
+   {
+    "q": "El recorrido solo necesita avanzar, fila a fila, desde el primer tributo hasta el último. ¿Qué tipo de cursor es el adecuado?",
+    "o": [
+     "Un cursor forward-only, que solo avanza hacia adelante y es el más ligero.",
+     "Un cursor scrollable, que permite moverse hacia atrás y saltar a una fila concreta.",
+     "Un cursor implícito, que el programador declara y controla paso a paso."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §3.4",
+    "e": "El forward-only solo avanza, consume menos recursos y es el más usado; el scrollable consume más. El cursor implícito lo gestiona el propio SGBD, no el programador."
+   },
+   {
+    "q": "Si el programador olvidara la instrucción CLOSE al terminar el bucle, ¿qué consecuencia tendría?",
+    "o": [
+     "El cursor volvería automáticamente a la primera fila y repetiría el recorrido completo.",
+     "El SGBD desharía todas las bonificaciones aplicadas durante el recorrido del cursor.",
+     "El cursor seguiría consumiendo recursos del servidor (memoria, bloqueos) mientras dure la sesión."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §3.4",
+    "e": "Un cursor abierto y no cerrado consume memoria y bloqueos del servidor mientras dura la sesión; olvidar el CLOSE es una mala práctica habitual."
+   },
+   {
+    "q": "Dentro del bucle se aplica la bonificación del 10 % a un tributo de 800 €. ¿Qué importe queda y cómo se calcula?",
+    "o": [
+     "80 €, multiplicando el importe por 0,10.",
+     "720 €, multiplicando el importe por 0,90.",
+     "880 €, multiplicando el importe por 1,10."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3",
+    "e": "Bonificar un 10 % significa cobrar el 90 % del importe: 800 × 0,90 = 720 €."
+   },
+   {
+    "q": "Tras actualizar cada tributo dentro del bucle, ¿qué debe hacerse con el parámetro de salida que cuenta los tributos bonificados?",
+    "o": [
+     "Incrementarlo en una unidad: p_num_bonificados = p_num_bonificados + 1.",
+     "Asignarle el nuevo importe del tributo que se acaba de actualizar.",
+     "Leerlo para decidir si el tributo actual debe bonificarse o no."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §3.3",
+    "e": "El parámetro OUT acumula cuántos tributos se han bonificado: se suma uno por cada fila actualizada y su valor final se devuelve al llamador."
+   },
+   {
+    "q": "Durante la ejecución falla la actualización de un tributo concreto. Si el negocio no exige que el lote sea todo o nada, ¿cuál es el tratamiento más razonable?",
+    "o": [
+     "Hacer un ROLLBACK global que deshaga todas las bonificaciones aplicadas hasta ese momento.",
+     "Capturar la excepción con un manejador vacío, sin registrarla, y seguir con el recorrido.",
+     "Capturar la excepción dentro del bucle, registrar el error y continuar con el siguiente tributo."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §3.6",
+    "e": "El fallo de un tributo no debe impedir bonificar el resto, pero el error no puede silenciarse: un manejador vacío que «traga» la excepción oculta fallos difíciles de depurar."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "Para impedir que un expediente pase a CERRADO sin haber pasado antes por RESUELTO, ¿qué tipo de disparador debe usarse?",
+    "o": [
+     "AFTER UPDATE de sentencia, que se ejecuta una vez cuando el cambio ya se ha aplicado.",
+     "BEFORE UPDATE de fila, que valida cada fila y puede cancelar la operación antes de aplicarla.",
+     "INSTEAD OF UPDATE sobre la tabla EXPEDIENTE, que sustituye la actualización original."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §4.2",
+    "e": "El disparador BEFORE se ejecuta antes de aplicar el cambio y puede cancelarlo; de fila, para disponer de los valores de cada expediente. INSTEAD OF es exclusivo de vistas."
+   },
+   {
+    "q": "Para registrar en AUDITORIA_EXPEDIENTE cada cambio de estado, ¿qué tipo de disparador es el adecuado?",
+    "o": [
+     "BEFORE UPDATE de sentencia, que se ejecuta una sola vez antes de la actualización.",
+     "Un evento programado nocturno que revise los expedientes modificados durante el día.",
+     "AFTER UPDATE de fila, que registra el cambio de cada expediente una vez aplicado."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §4.2 y §4.3",
+    "e": "La auditoría es la elección natural de un disparador AFTER: se ejecuta cuando el dato ya ha quedado escrito y, siendo de fila, accede a los valores anterior y nuevo."
+   },
+   {
+    "q": "¿Por qué el disparador de auditoría debe ser de fila y no de sentencia?",
+    "o": [
+     "Porque el de fila se ejecuta por cada fila afectada con acceso a OLD y NEW; el de sentencia no accede a los valores de cada fila.",
+     "Porque el de sentencia no llega a ejecutarse cuando la actualización afecta a más de una fila de la tabla.",
+     "Porque el de fila es el único que puede activarse con UPDATE; el de sentencia solo responde a INSERT."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §4.2",
+    "e": "El disparador FOR EACH STATEMENT se ejecuta una sola vez por sentencia, afecte a cero o a diez mil filas, sin acceso directo a los valores individuales de cada fila."
+   },
+   {
+    "q": "¿Qué condición debe comprobar el disparador de validación para lanzar el error?",
+    "o": [
+     "SI ANTIGUO.estado = 'CERRADO' Y NUEVO.estado <> 'RESUELTO'.",
+     "SI NUEVO.estado = 'RESUELTO' Y ANTIGUO.estado <> 'CERRADO'.",
+     "SI NUEVO.estado = 'CERRADO' Y ANTIGUO.estado <> 'RESUELTO'."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §4.2",
+    "e": "Lo prohibido es llegar a CERRADO (valor nuevo) desde un estado que no sea RESUELTO (valor anterior)."
+   },
+   {
+    "q": "Cuando el disparador de validación detecta un cierre indebido, ¿qué debe hacer?",
+    "o": [
+     "Insertar una fila en la tabla de auditoría y dejar que la actualización continúe.",
+     "Lanzar un error de negocio con un mensaje descriptivo, que cancela la operación.",
+     "Ejecutar un COMMIT que confirme el estado anterior del expediente afectado."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §3.6 y §4.3",
+    "e": "Las reglas de negocio que no expresan las restricciones declarativas se implementan con un disparador BEFORE que, si no se cumple la condición, cancela la operación lanzando un error."
+   },
+   {
+    "q": "El disparador de auditoría solo debe insertar una fila cuando el estado ha cambiado realmente. ¿Qué condición lo garantiza?",
+    "o": [
+     "SI NUEVO.estado <> ANTIGUO.estado.",
+     "SI NUEVO.estado = 'CERRADO'.",
+     "SI ANTIGUO.estado = 'ABIERTO'."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §4.3",
+    "e": "Un UPDATE puede tocar otras columnas sin modificar el estado; comparar el valor anterior con el nuevo evita registrar cambios que no son de estado."
+   },
+   {
+    "q": "Para rellenar estado_anterior y estado_nuevo en AUDITORIA_EXPEDIENTE, ¿qué valores usa el disparador?",
+    "o": [
+     "Los de la última fila registrada en AUDITORIA_EXPEDIENTE para ese mismo expediente.",
+     "ANTIGUO.estado y NUEVO.estado, que el disparador de fila recibe del evento.",
+     "NUEVO.estado en ambas columnas, porque el valor anterior ya no existe tras el UPDATE."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §4.2",
+    "e": "Un disparador de fila sobre UPDATE accede a OLD (valor antes del cambio) y NEW (valor después); en un AFTER UPDATE ambos están disponibles."
+   },
+   {
+    "q": "Un desarrollador propone que la aplicación pase al disparador, como parámetro, el identificador del funcionario que hace el cambio. ¿Es viable?",
+    "o": [
+     "Sí, declarándolo como parámetro IN en la cabecera del disparador.",
+     "Sí, declarándolo como parámetro OUT para devolverlo a la aplicación.",
+     "No: el disparador no admite parámetros; recibe implícitamente el contexto del evento."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · §4.1",
+    "e": "Un disparador no se invoca por su nombre ni admite parámetros de entrada al estilo de un procedimiento: trabaja con los valores OLD/NEW de la fila afectada. El usuario se obtiene con una función como USUARIO_ACTUAL()."
+   },
+   {
+    "q": "En el futuro se añade un tercer disparador sobre EXPEDIENTE que también modifica la propia tabla EXPEDIENTE. ¿Qué riesgo hay que vigilar?",
+    "o": [
+     "Una cadena de disparadores que reactive los otros dos y pueda llegar a una recursión no controlada.",
+     "Que el nuevo disparador nunca llegue a ejecutarse, porque una tabla solo admite dos disparadores.",
+     "Que los disparadores anteriores pierdan el acceso a los valores ANTIGUO y NUEVO de cada fila."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · §4.4",
+    "e": "Un disparador que vuelve a modificar la tabla que lo activó puede desencadenar efectos en cascada («trigger chain»), difíciles de depurar y, en el peor caso, recursivos."
+   },
+   {
+    "q": "¿Qué medida mitiga ese riesgo de forma adecuada?",
+    "o": [
+     "Añadir nuevos disparadores de control que vigilen y registren la ejecución de los tres anteriores.",
+     "Documentar cada disparador, evitar que un AFTER reescriba su propia tabla y probar con cargas masivas.",
+     "Probar cada disparador solo con actualizaciones de una fila, para aislar bien el efecto de cada uno."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §4.4",
+    "e": "Las buenas prácticas son documentar cada disparador, evitar cascadas profundas y probar el comportamiento ante operaciones masivas, no solo ante cambios de una fila."
+   }
+  ]
+ }
+]

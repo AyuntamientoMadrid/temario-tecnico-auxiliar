@@ -1,0 +1,36 @@
+<svg aria-label="Los empleados públicos se clasifican en funcionarios de carrera, funcionarios interinos, personal laboral y personal eventual; el personal directivo se regula aparte en el artículo 13" class="svd2" role="img" viewbox="0 0 720 330" xmlns="http://www.w3.org/2000/svg">
+<style>.svd2 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd2 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd2 .s{font:10.5px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="46" rx="8" width="220" x="250" y="16"></rect>
+<text class="h" x="360" y="37">EMPLEADOS PÚBLICOS</text>
+<text class="h" style="font-weight:400;font-size:10.5px" x="360" y="54">art. 8 TREBEP</text>
+<line stroke="#0055a0" x1="360" x2="360" y1="62" y2="95"></line>
+<line stroke="#0055a0" x1="90" x2="630" y1="95" y2="95"></line>
+<line stroke="#0055a0" x1="90" x2="90" y1="95" y2="110"></line>
+<line stroke="#0055a0" x1="270" x2="270" y1="95" y2="110"></line>
+<line stroke="#0055a0" x1="450" x2="450" y1="95" y2="110"></line>
+<line stroke="#0055a0" x1="630" x2="630" y1="95" y2="110"></line>
+<rect fill="#e8f5ee" height="92" rx="8" stroke="#2d8659" width="140" x="20" y="110"></rect>
+<text class="t" style="font-weight:700" x="90" y="132">Funcionario</text>
+<text class="t" style="font-weight:700" x="90" y="149">de carrera</text>
+<text class="s" x="90" y="170">relación estatutaria</text>
+<text class="s" x="90" y="186">permanente (art. 9)</text>
+<rect fill="#e8f0f8" height="92" rx="8" stroke="#0055a0" width="140" x="200" y="110"></rect>
+<text class="t" style="font-weight:700" x="270" y="132">Funcionario</text>
+<text class="t" style="font-weight:700" x="270" y="149">interino</text>
+<text class="s" x="270" y="170">temporal, por</text>
+<text class="s" x="270" y="186">necesidad/urgencia (10)</text>
+<rect fill="#e8f0f8" height="92" rx="8" stroke="#0055a0" width="140" x="380" y="110"></rect>
+<text class="t" style="font-weight:700" x="450" y="132">Personal</text>
+<text class="t" style="font-weight:700" x="450" y="149">laboral</text>
+<text class="s" x="450" y="170">contrato de trabajo</text>
+<text class="s" x="450" y="186">fijo/indef./temp. (11)</text>
+<rect fill="#fdeaea" height="92" rx="8" stroke="#d13c3c" width="140" x="560" y="110"></rect>
+<text class="t" style="font-weight:700" x="630" y="132">Personal</text>
+<text class="t" style="font-weight:700" x="630" y="149">eventual</text>
+<text class="s" x="630" y="170">confianza/asesor.;</text>
+<text class="s" x="630" y="186">libre cese (art. 12)</text>
+<rect fill="#fff5e6" height="82" rx="8" stroke="#e89822" width="500" x="110" y="236"></rect>
+<text class="t" style="font-weight:700;fill:#b5740f" x="360" y="262">Personal directivo (art. 13)</text>
+<text class="s" x="360" y="284">funciones directivas profesionales ·</text>
+<text class="s" x="360" y="301">designación por mérito e idoneidad · sujeto a evaluación</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg aria-label="La Ley 22/2006 de Capitalidad y Régimen Especial de Madrid crea el Tribunal Económico-Administrativo Municipal y habilita la Agencia Tributaria Madrid; en lo no previsto se aplica el TRLHL" class="svd11" role="img" viewbox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd11 .h{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd11 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd11 .s{font:10.5px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="56" rx="8" width="400" x="150" y="18"></rect>
+<text class="h" x="350" y="42">Ley 22/2006 de Capitalidad</text>
+<text class="h" style="font-weight:400;font-size:11px" x="350" y="62">y de Régimen Especial de Madrid (LCREM)</text>
+<line stroke="#0055a0" x1="350" x2="350" y1="74" y2="92"></line>
+<line stroke="#0055a0" x1="190" x2="510" y1="92" y2="92"></line>
+<line stroke="#0055a0" x1="190" x2="190" y1="92" y2="108"></line>
+<line stroke="#0055a0" x1="510" x2="510" y1="92" y2="108"></line>
+<rect fill="#e8f0f8" height="92" rx="8" stroke="#0055a0" width="280" x="50" y="108"></rect>
+<text class="t" style="font-weight:700" x="190" y="134">Tribunal Económico-</text>
+<text class="t" style="font-weight:700" x="190" y="152">Administrativo Municipal</text>
+<text class="s" x="190" y="174">resuelve reclamaciones</text>
+<text class="s" x="190" y="190">económico-administrativas (art. 25)</text>
+<rect fill="#e8f5ee" height="92" rx="8" stroke="#2d8659" width="280" x="370" y="108"></rect>
+<text class="t" style="font-weight:700" x="510" y="134">Agencia Tributaria Madrid</text>
+<text class="s" x="510" y="156">órgano de gestión tributaria</text>
+<text class="s" x="510" y="174">integral de los tributos</text>
+<text class="s" x="510" y="190">municipales (art. 26)</text>
+<rect fill="#fff5e6" height="60" rx="8" stroke="#e89822" width="440" x="130" y="224"></rect>
+<text class="t" style="font-weight:700;fill:#b5740f" x="350" y="248">Madrid = municipio de gran población (Título X LBRL)</text>
+<text class="s" x="350" y="270">en lo no previsto por la LCREM se aplica el TRLHL</text>
+</svg>

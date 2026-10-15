@@ -1,0 +1,39 @@
+<svg aria-label="Cifrado en el puesto de usuario: en reposo con cifrado de disco completo, de volumen o de fichero, apoyado en el chip TPM; en tránsito con TLS 1.3, VPN, SSH, SFTP y LDAPS; y advertencia de que el cifrado de disco completo protege el equipo apagado pero no la sesión iniciada" role="img" viewbox="0 0 680 338" xmlns="http://www.w3.org/2000/svg">
+<style>.t10{font:700 10.5px system-ui,sans-serif;fill:#fff}.s10{font:9px system-ui,sans-serif;fill:#fff}.h10{font:700 13px system-ui,sans-serif;fill:#0055a0}.k10{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d10{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h10" text-anchor="middle" x="340" y="20">El cifrado: la última línea de defensa de la confidencialidad</text>
+<rect fill="#0055a0" height="28" rx="5" width="315" x="20" y="34"></rect>
+<text class="t10" text-anchor="middle" x="177" y="53">EN REPOSO — el dato guardado</text>
+<rect fill="#2d8659" height="28" rx="5" width="315" x="345" y="34"></rect>
+<text class="t10" text-anchor="middle" x="502" y="53">EN TRÁNSITO — el dato que viaja</text>
+<rect fill="#e6eff7" height="40" rx="4" width="315" x="20" y="70"></rect>
+<text class="d10" x="30" y="87"><tspan style="font-weight:700">Disco completo (FDE)</tspan> — todo el volumen, incluidos</text>
+<text class="d10" x="30" y="103">temporales, paginación e hibernación. Clave en TPM.</text>
+<rect fill="#e6eff7" height="34" rx="4" width="315" x="20" y="114"></rect>
+<text class="d10" x="30" y="131"><tspan style="font-weight:700">Volumen o contenedor</tspan> — un espacio delimitado</text>
+<text class="d10" x="30" y="145">dentro del disco para lo especialmente sensible.</text>
+<rect fill="#e6eff7" height="34" rx="4" width="315" x="20" y="152"></rect>
+<text class="d10" x="30" y="169"><tspan style="font-weight:700">Fichero</tspan> — protege el documento también CUANDO</text>
+<text class="d10" x="30" y="183">SALE del equipo (envío, USB, copia de seguridad).</text>
+<rect fill="#e6f2ec" height="40" rx="4" width="315" x="345" y="70"></rect>
+<text class="d10" x="355" y="87"><tspan style="font-weight:700">TLS 1.3</tspan> — web, correo y servicios: confidencialidad,</text>
+<text class="d10" x="355" y="103">integridad y autenticación del servidor. Con HSTS.</text>
+<rect fill="#e6f2ec" height="34" rx="4" width="315" x="345" y="114"></rect>
+<text class="d10" x="355" y="131"><tspan style="font-weight:700">VPN / zero trust</tspan> — teletrabajo, con MFA y</text>
+<text class="d10" x="355" y="145">comprobación del estado del dispositivo.</text>
+<rect fill="#e6f2ec" height="34" rx="4" width="315" x="345" y="152"></rect>
+<text class="d10" x="355" y="169"><tspan style="font-weight:700">Sustituir lo que va en claro</tspan> — SSH por Telnet,</text>
+<text class="d10" x="355" y="183">SFTP/FTPS por FTP, LDAPS por LDAP.</text>
+<line stroke="#ccc" stroke-width="1" x1="20" x2="660" y1="198" y2="198"></line>
+<text class="k10" text-anchor="middle" x="340" y="216">El límite del cifrado de disco: qué protege y qué no</text>
+<rect fill="#2d8659" height="56" rx="5" width="310" x="20" y="226"></rect>
+<text class="t10" text-anchor="middle" x="175" y="246">SÍ PROTEGE</text>
+<text class="s10" text-anchor="middle" x="175" y="263">Equipo apagado · disco extraído</text>
+<text class="s10" text-anchor="middle" x="175" y="277">Portátil robado o perdido</text>
+<rect fill="#d13c3c" height="56" rx="5" width="310" x="350" y="226"></rect>
+<text class="t10" text-anchor="middle" x="505" y="246">NO PROTEGE</text>
+<text class="s10" text-anchor="middle" x="505" y="263">Sesión iniciada · código malicioso en ejecución</text>
+<text class="s10" text-anchor="middle" x="505" y="277">Usuario legítimo que exfiltra el dato</text>
+<rect fill="none" height="26" rx="5" stroke="#0055a0" stroke-width="2" width="560" x="60" y="290"></rect>
+<text style="font:700 10px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="307">Sin custodia y recuperación de claves, la confidencialidad se convierte en pérdida de disponibilidad</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="333">[Fuente: NIST-800-111; RFC9846; FIPS197; ENS]</text>
+</svg>

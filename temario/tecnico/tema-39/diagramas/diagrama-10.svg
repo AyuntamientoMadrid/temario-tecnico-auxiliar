@@ -1,0 +1,68 @@
+<svg aria-label="Recorrido de una solicitud en la sede electrónica municipal con la dimensión de seguridad que actúa en cada momento: al identificarse actúa la autenticidad, al firmar actúan autenticidad e integridad, al registrarse actúa la trazabilidad con sello de tiempo si el nivel lo exige, y meses después al auditar quién consultó el expediente actúa de nuevo la trazabilidad" role="img" viewbox="0 0 680 356" xmlns="http://www.w3.org/2000/svg">
+<style>.h10{font:700 13px system-ui,sans-serif;fill:#0055a0}.k10{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d10{font:8.5px system-ui,sans-serif;fill:#333}.n10{font:8.5px system-ui,sans-serif;fill:#666}.w10{font:700 10px system-ui,sans-serif;fill:#fff}.wd10{font:8px system-ui,sans-serif;fill:#fff}.lb10{font:700 13px system-ui,sans-serif;fill:#fff}</style>
+<text class="h10" text-anchor="middle" x="340" y="19">Autenticidad, integridad y trazabilidad sobre una solicitud de la sede municipal</text>
+<text class="n10" text-anchor="middle" x="340" y="35">Las tres responden a un «quién», pero a quiénes distintos y en momentos distintos</text>
+<line stroke="#5a6b7c" stroke-width="1.4" x1="66" x2="656" y1="70" y2="70"></line>
+<text class="n10" x="24" y="74">tiempo</text>
+<circle cx="140" cy="70" fill="#0055a0" r="4"></circle>
+<circle cx="290" cy="70" fill="#0055a0" r="4"></circle>
+<circle cx="440" cy="70" fill="#0055a0" r="4"></circle>
+<circle cx="590" cy="70" fill="#0055a0" r="4"></circle>
+<rect fill="#eef4fa" height="88" rx="4" stroke="#0055a0" stroke-width="1.2" width="148" x="66" y="82"></rect>
+<text class="k10" text-anchor="middle" x="140" y="99">1 · SE IDENTIFICA</text>
+<text class="d10" text-anchor="middle" x="140" y="113">Certificado electrónico</text>
+<text class="d10" text-anchor="middle" x="140" y="125">o Cl@ve</text>
+<rect fill="#0055a0" height="20" rx="10" width="68" x="106" y="132"></rect>
+<text class="w10" text-anchor="middle" x="140" y="146">A</text>
+<text class="d10" text-anchor="middle" x="140" y="164">op.acc.5 · op.acc.6</text>
+<rect fill="#eef4fa" height="88" rx="4" stroke="#0055a0" stroke-width="1.2" width="148" x="216" y="82"></rect>
+<text class="k10" text-anchor="middle" x="290" y="99">2 · FIRMA</text>
+<text class="d10" text-anchor="middle" x="290" y="113">La firma acredita a la vez</text>
+<text class="d10" text-anchor="middle" x="290" y="125">quién y que nada cambió</text>
+<rect fill="#0055a0" height="20" rx="10" width="68" x="256" y="132"></rect>
+<text class="w10" text-anchor="middle" x="290" y="146">A + I</text>
+<text class="d10" text-anchor="middle" x="290" y="164">mp.info.3 · mp.com.3</text>
+<rect fill="#eef4fa" height="88" rx="4" stroke="#0055a0" stroke-width="1.2" width="148" x="366" y="82"></rect>
+<text class="k10" text-anchor="middle" x="440" y="99">3 · SE REGISTRA</text>
+<text class="d10" text-anchor="middle" x="440" y="113">Número y fecha del asiento;</text>
+<text class="d10" text-anchor="middle" x="440" y="125">sello de tiempo si D es ALTO</text>
+<rect fill="#0055a0" height="20" rx="10" width="68" x="406" y="132"></rect>
+<text class="w10" text-anchor="middle" x="440" y="146">T</text>
+<text class="d10" text-anchor="middle" x="440" y="164">mp.info.4 (solo ALTA)</text>
+<rect fill="#eef4fa" height="88" rx="4" stroke="#0055a0" stroke-width="1.2" width="148" x="516" y="82"></rect>
+<text class="k10" text-anchor="middle" x="590" y="99">4 · SE AUDITA</text>
+<text class="d10" text-anchor="middle" x="590" y="113">Meses después: quién</text>
+<text class="d10" text-anchor="middle" x="590" y="125">consultó el expediente</text>
+<rect fill="#0055a0" height="20" rx="10" width="68" x="556" y="132"></rect>
+<text class="w10" text-anchor="middle" x="590" y="146">T</text>
+<text class="d10" text-anchor="middle" x="590" y="164">op.exp.8 · op.mon.3</text>
+<rect fill="#0055a0" height="82" rx="4" width="204" x="24" y="186"></rect>
+<rect fill="#01406f" height="28" rx="4" width="34" x="34" y="196"></rect>
+<text class="lb10" text-anchor="middle" x="51" y="216">A</text>
+<text class="w10" x="78" y="209">AUTENTICIDAD</text>
+<text class="wd10" x="78" y="222">MIRA HACIA EL ORIGEN</text>
+<text class="wd10" x="34" y="240">¿Es quien dice ser? ¿Vienen los datos de</text>
+<text class="wd10" x="34" y="252">donde dicen? Actúa EN EL MOMENTO.</text>
+<text class="wd10" x="34" y="263">Es lo que hace válido el acto.</text>
+<rect fill="#0055a0" height="82" rx="4" width="204" x="238" y="186"></rect>
+<rect fill="#01406f" height="28" rx="4" width="34" x="248" y="196"></rect>
+<text class="lb10" text-anchor="middle" x="265" y="216">I</text>
+<text class="w10" x="292" y="209">INTEGRIDAD</text>
+<text class="wd10" x="292" y="222">MIRA HACIA EL CONTENIDO</text>
+<text class="wd10" x="248" y="240">¿Ha cambiado algo sin autorización?</text>
+<text class="wd10" x="248" y="252">Inseparable de la autenticidad cuando</text>
+<text class="wd10" x="248" y="263">el mecanismo es criptográfico.</text>
+<rect fill="#0055a0" height="82" rx="4" width="204" x="452" y="186"></rect>
+<rect fill="#01406f" height="28" rx="4" width="34" x="462" y="196"></rect>
+<text class="lb10" text-anchor="middle" x="479" y="216">T</text>
+<text class="w10" x="506" y="209">TRAZABILIDAD</text>
+<text class="wd10" x="506" y="222">MIRA HACIA ATRÁS</text>
+<text class="wd10" x="462" y="240">¿Quién hizo qué y cuándo? Actúa</text>
+<text class="wd10" x="462" y="252">DESPUÉS. No protege: permite</text>
+<text class="wd10" x="462" y="263">reconstruir y rendir cuentas.</text>
+<rect fill="#e6f2ec" height="26" rx="4" width="632" x="24" y="278"></rect>
+<text class="k10" x="36" y="289">POR QUÉ VIAJAN EMPAREJADAS EN EL ANEXO II</text>
+<text class="d10" x="286" y="289">mp.com.3 lleva I y A · mp.info.3 lleva I y A · op.acc.1 lleva T y A.</text>
+<text class="d10" x="36" y="300">La denominación literal de mp.com.3 es «Protección de la INTEGRIDAD y de la AUTENTICIDAD», en ese orden.</text>
+<text class="n10" x="24" y="346">[Fuente: ENS, anexo I ap. 2, anexo II y glosario del anexo IV · L39, arts. 16 y 26]</text>
+</svg>

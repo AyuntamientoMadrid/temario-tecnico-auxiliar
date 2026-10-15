@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿qué visibilidad deben tener los atributos idExpediente y estado de la clase Expediente para que queden correctamente encapsulados?",
+    "o": [
+     "public, para que el controlador y las subclases puedan leerlos y modificarlos directamente.",
+     "protected, para que cualquier clase de la aplicación pueda consultarlos sin métodos get.",
+     "private, de modo que solo se acceda a ellos a través de métodos públicos como getEstado()."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §2.3",
+    "e": "La regla de diseño es exponer el mínimo nivel de visibilidad: atributos casi siempre private, accesibles solo mediante métodos get/set que pueden validar el valor."
+   },
+   {
+    "q": "Desde un método de la subclase ExpedienteLicenciaObra, situada en otro paquete, ¿puede leerse directamente el atributo private estado heredado de Expediente?",
+    "o": [
+     "No: un atributo private solo es accesible desde su propia clase; la subclase debe usar getEstado().",
+     "Sí: las subclases heredan el acceso directo a todos los atributos de la superclase.",
+     "Sí: basta con marcar el método de la subclase con la anotación @Override."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.3",
+    "e": "Según la tabla de modificadores de Java, private es visible solo en la misma clase: ni desde el mismo paquete ni desde subclases."
+   },
+   {
+    "q": "Expediente solo tiene un constructor, que recibe el identificador. Si en ExpedienteLicenciaObra se omitiera la llamada super(id), ¿qué ocurriría?",
+    "o": [
+     "El objeto se crearía igualmente, con el identificador y el estado sin inicializar y sin ningún aviso.",
+     "Error de compilación: Java intentaría invocar un constructor sin argumentos de Expediente, que no existe.",
+     "Java llamaría automáticamente a super(id) usando el identificador recibido por la subclase."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §2.2",
+    "e": "Si la subclase no invoca explícitamente un constructor de la superclase, Java invoca el constructor sin argumentos; si este no existe, se produce un error de compilación."
+   },
+   {
+    "q": "Se registra una licencia de obra con tipoLicencia «ACTIVIDAD». ¿Qué plazo de resolución devuelve calcularPlazoResolucion()?",
+    "o": [
+     "30 días, porque solo «OBRA_MAYOR» tiene un plazo distinto.",
+     "90 días, porque toda licencia de obra tiene el plazo largo.",
+     "15 días, porque «ACTIVIDAD» no es una obra propiamente dicha."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2",
+    "e": "La regla de la subclase de obra es: 90 días si tipoLicencia es «OBRA_MAYOR» y 30 en el resto de casos, entre ellos «ACTIVIDAD»."
+   },
+   {
+    "q": "Una solicitud de terraza declara exactamente 20 metros cuadrados. ¿Qué plazo devuelve calcularPlazoResolucion()?",
+    "o": [
+     "30 días, porque a partir de 20 metros cuadrados se aplica el plazo largo.",
+     "90 días, el mismo plazo que se aplica a una licencia de obra mayor.",
+     "15 días, porque la condición es menor o igual a 20 metros cuadrados."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2",
+    "e": "La regla de terraza es metrosCuadrados <= 20 → 15 días; solo por encima de 20 se aplican 30 días."
+   },
+   {
+    "q": "¿Qué aporta la anotación @Override sobre calcularPlazoResolucion() en cada subclase?",
+    "o": [
+     "Hace que la versión que se ejecuta se decida en tiempo de compilación, no de ejecución.",
+     "Hace que el compilador verifique que existe en la superclase un método con la misma firma.",
+     "Es obligatoria: sin ella, Java ejecutaría siempre la versión de la superclase Expediente."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §2.5",
+    "e": "@Override es opcional pero recomendada: obliga al compilador a comprobar que realmente se está sobrescribiendo un método de igual firma de la superclase."
+   },
+   {
+    "q": "Las dos versiones de notificar (una con mensaje y otra con mensaje y canal) conviven en Expediente. ¿Qué mecanismo es y cuándo se decide cuál se invoca?",
+    "o": [
+     "Sobrecarga: mismo nombre y distinta firma; el compilador elige la versión en tiempo de compilación.",
+     "Sobrescritura: misma firma y distinta clase; la JVM elige la versión en tiempo de ejecución.",
+     "Polimorfismo: misma firma en la misma clase; la versión depende del objeto real que la recibe."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §2.5",
+    "e": "La sobrecarga define en la misma clase varios métodos con el mismo nombre y distinta lista de parámetros, y se resuelve por ligadura estática, en compilación."
+   },
+   {
+    "q": "Una lista declarada como List<Expediente> contiene una licencia de obra «OBRA_MAYOR» y una terraza de 12 m². Al recorrerla llamando a calcularPlazoResolucion(), ¿qué se obtiene?",
+    "o": [
+     "30 y 30, porque se ejecuta la versión correspondiente al tipo declarado Expediente.",
+     "90 y 15, porque se ejecuta la versión de la clase real de cada objeto (ligadura dinámica).",
+     "Un error de compilación, porque el método está declarado como abstracto en Expediente."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §2.6",
+    "e": "Con el polimorfismo, al invocar un método sobrescrito se ejecuta la versión de la clase real del objeto, no la del tipo declarado de la variable."
+   },
+   {
+    "q": "¿Por qué conviene que calcularPlazoResolucion() sea abstracto en lugar de tener en Expediente una implementación por defecto de 30 días?",
+    "o": [
+     "Porque los métodos abstractos se resuelven con ligadura estática y son más rápidos de ejecutar.",
+     "Porque Java no permite que una clase concreta tenga subclases que sobrescriban sus métodos.",
+     "Porque así el compilador exige la implementación en cada subclase y no se devuelve un plazo erróneo en silencio."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 4 · §1.4",
+    "e": "Con un valor por defecto, una subclase nueva que olvidara sobrescribir el método devolvería 30 días sin avisar; declararlo abstracto convierte ese olvido en un error de compilación."
+   },
+   {
+    "q": "Urbanismo añade un nuevo tipo de expediente creando otra subclase de Expediente, sin tocar el código que ya trabaja con Expediente. ¿Qué principio SOLID se está respetando?",
+    "o": [
+     "El principio abierto/cerrado: abierto a extensión y cerrado a modificación.",
+     "El principio de responsabilidad única: una sola razón para cambiar.",
+     "El principio de segregación de interfaces: interfaces específicas de cliente."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · §1.4",
+    "e": "Añadir un nuevo tipo de expediente no debería obligar a modificar el código que ya trata con Expediente: basta con crear una nueva subclase. Es el principio abierto/cerrado."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "Para crear el tipo de expediente correcto a partir del código recibido del formulario, sin que el controlador web conozca las clases concretas, ¿qué patrón creacional GoF se aplica?",
+    "o": [
+     "Factory Method, que delega en una fábrica la decisión de qué clase concreta instanciar.",
+     "Singleton, que garantiza una única instancia global del expediente que se va a crear.",
+     "Prototype, que crea cada expediente nuevo clonando un expediente ya existente."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §4.3",
+    "e": "Factory Method desacopla al código cliente de las clases concretas que se crean; el controlador pide un Expediente y la fábrica decide si es de obra o de terraza."
+   },
+   {
+    "q": "¿Qué inconveniente tendría instanciar directamente con new cada subclase dentro del controlador web?",
+    "o": [
+     "Que new es más lento que una fábrica, porque reserva memoria cada vez que se ejecuta.",
+     "Que Java no permite instanciar subclases fuera del paquete donde se declara la superclase.",
+     "Que acopla el controlador a las clases concretas y obliga a modificarlo al añadir un tipo nuevo."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §4.3",
+    "e": "Escribir new ExpedienteLicenciaObra(...) en el cliente lo acopla a las clases concretas; cada tipo nuevo obligaría a tocar el controlador, en contra del principio abierto/cerrado."
+   },
+   {
+    "q": "La fábrica recibe desde el formulario un código de tipo que todavía no está soportado. ¿Cómo debe comportarse el método crear?",
+    "o": [
+     "Devolver null, para que el controlador decida después qué hacer con la solicitud.",
+     "Lanzar una IllegalArgumentException que indique que el tipo de expediente no está soportado.",
+     "Crear por defecto una licencia de obra, que es el tipo de expediente más frecuente."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §4.3",
+    "e": "La rama default del switch de la fábrica lanza IllegalArgumentException(«Tipo no soportado…»): el caso no previsto se trata de forma explícita."
+   },
+   {
+    "q": "¿Qué tipo de retorno debe declarar el método crear de ExpedienteFactory?",
+    "o": [
+     "Object, para que la fábrica pueda devolver cualquier clase de la aplicación.",
+     "ExpedienteLicenciaObra, porque es la primera subclase contemplada en el switch.",
+     "Expediente, la superclase abstracta, para que el controlador solo dependa de la abstracción."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §4.3",
+    "e": "La fábrica devuelve un Expediente: el código cliente trabaja con la superclase y no sabe qué subclase concreta se ha creado."
+   },
+   {
+    "q": "Para notificar al ciudadano por el canal que haya elegido (correo, SMS o sede electrónica), pudiendo añadirse canales nuevos, ¿qué patrón de comportamiento se aplica?",
+    "o": [
+     "Strategy, que encapsula algoritmos intercambiables tras una interfaz común.",
+     "Observer, que avisa a todos los suscriptores cuando cambia el estado del sujeto.",
+     "Singleton, que mantiene un único canal global para todas las notificaciones."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §4.5",
+    "e": "Strategy encapsula una familia de algoritmos intercambiables (los canales de notificación) tras una interfaz común, seleccionable en tiempo de ejecución."
+   },
+   {
+    "q": "El código que notifica depende de la interfaz CanalNotificacion y no de clases concretas como el envío por SMTP. ¿Qué principio SOLID se cumple así?",
+    "o": [
+     "El de sustitución de Liskov.",
+     "El de inversión de dependencias.",
+     "El de responsabilidad única."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §1.4",
+    "e": "El principio de inversión de dependencias pide que los módulos dependan de abstracciones (interfaces), no de implementaciones concretas; depender de una clase EnvioCorreoSMTP lo violaría."
+   },
+   {
+    "q": "El Ayuntamiento añade un cuarto canal: notificación push en la app municipal. ¿Qué cambio exige el diseño propuesto?",
+    "o": [
+     "Añadir en el código que notifica una nueva rama if para el canal push.",
+     "Añadir a la interfaz CanalNotificacion un método enviarPush específico.",
+     "Crear una clase NotificacionPush que implemente CanalNotificacion."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §1.4",
+    "e": "Con Strategy, el canal nuevo es una implementación más de la interfaz; el código que recibe un CanalNotificacion y llama a enviar(...) no cambia."
+   },
+   {
+    "q": "Se añade además el tipo ExpedienteVadoPermanente. ¿Qué hay que modificar?",
+    "o": [
+     "Crear la nueva subclase y añadir su case en la fábrica; el controlador que la invoca no cambia.",
+     "Modificar el controlador web para que instancie directamente la nueva subclase con new.",
+     "Nada: la fábrica detecta y crea automáticamente cualquier subclase nueva de Expediente."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · §4.3",
+    "e": "Con la fábrica, un tipo nuevo solo afecta a la nueva clase y a ExpedienteFactory; el código cliente que llama a crear(...) permanece igual."
+   },
+   {
+    "q": "¿A qué familias del catálogo GoF pertenecen los dos patrones aplicados en el supuesto?",
+    "o": [
+     "Ambos pertenecen a la familia de los patrones estructurales.",
+     "Factory Method es creacional y Strategy, de comportamiento.",
+     "Factory Method es de comportamiento y Strategy, creacional."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestiones 1 y 3 · §4.3 y §4.5",
+    "e": "Los creacionales abstraen la instanciación de objetos (Factory Method); los de comportamiento, cómo colaboran y se reparten responsabilidades los objetos (Strategy)."
+   },
+   {
+    "q": "Si en lugar de fábrica y estrategia el controlador web concentrara la creación de todos los tipos de expediente y el envío por todos los canales, ¿en qué anti-patrón se incurriría?",
+    "o": [
+     "Golden Hammer, por aplicar a todo el mismo patrón conocido.",
+     "Herencia por conveniencia, por heredar solo para reutilizar.",
+     "God Object, por acumular demasiadas responsabilidades."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §4.2",
+    "e": "Una clase que acumula demasiadas responsabilidades y controla la mayor parte del sistema es un God Object: viola el principio de responsabilidad única."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el diagrama de clases del módulo de licencias, ¿cuántos compartimentos tiene el rectángulo de la clase Expediente y qué contienen?",
+    "o": [
+     "Dos: el nombre de la clase y la lista de métodos.",
+     "Tres: el nombre de la clase, sus atributos y sus métodos.",
+     "Cuatro: nombre, atributos, métodos y relaciones con otras clases."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §5.3",
+    "e": "Cada clase se dibuja como un rectángulo con tres compartimentos: nombre, atributos y métodos, estos dos últimos con su visibilidad."
+   },
+   {
+    "q": "¿Cómo se anota en el diagrama de clases el atributo private idExpediente de tipo String?",
+    "o": [
+     "- idExpediente : String",
+     "# idExpediente : String",
+     "+ idExpediente : String"
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §2.3 y §5.3",
+    "e": "En UML la visibilidad se anota con - (private), # (protected), ~ (package) y + (public)."
+   },
+   {
+    "q": "¿Con qué notación se une ExpedienteLicenciaObra a Expediente en el diagrama de clases?",
+    "o": [
+     "Con un rombo relleno en el extremo de Expediente, que indica composición.",
+     "Con una línea discontinua y flecha abierta, que indica una dependencia puntual.",
+     "Con una flecha de generalización de punta triangular hueca hacia Expediente."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §5.3",
+    "e": "La herencia (generalización) se dibuja con una flecha de punta triangular hueca que apunta a la superclase."
+   },
+   {
+    "q": "Cada expediente guarda una referencia permanente a su canal de notificación preferido. ¿Por qué esa relación NO es una composición?",
+    "o": [
+     "Porque la composición solo puede unir clases abstractas con sus subclases concretas.",
+     "Porque el expediente no controla el ciclo de vida del canal, que existe con independencia de él.",
+     "Porque la composición no admite que una clase guarde una referencia a otra como atributo."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §2.8",
+    "e": "En la composición el contenedor gestiona el ciclo de vida del contenido (si se destruye uno, se destruye el otro); el canal de notificación sigue existiendo aunque desaparezca el expediente."
+   },
+   {
+    "q": "En el diagrama de casos de uso de «solicitar una licencia de obra», ¿cuál es el actor y cuál el caso de uso principal?",
+    "o": [
+     "Actor: Ciudadano; caso de uso: «Solicitar licencia de obra».",
+     "Actor: PortalWeb; caso de uso: «Crear expediente de obra».",
+     "Actor: ExpedienteFactory; caso de uso: «Calcular el plazo»."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 2 · §5.5",
+    "e": "Los actores son roles externos que interactúan con el sistema, como el ciudadano; el caso de uso es la funcionalidad completa que el sistema le ofrece."
+   },
+   {
+    "q": "«Autenticarse en sede electrónica» es un paso obligatorio de la solicitud y se reutiliza en otras (terraza, vado). ¿Qué relación lo une a «Solicitar licencia de obra»?",
+    "o": [
+     "«extend», porque amplía la solicitud solo bajo ciertas condiciones.",
+     "Generalización, porque la autenticación es un tipo de solicitud.",
+     "«include», porque es funcionalidad obligatoria y reutilizada."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §5.5",
+    "e": "«include» se usa para funcionalidad obligatoria y reutilizada por varios casos de uso; «extend», para funcionalidad opcional bajo ciertas condiciones."
+   },
+   {
+    "q": "El equipo quiere reflejar también que «Adjuntar plano técnico» solo se añade a la solicitud cuando la licencia es de obra mayor. ¿Qué relación corresponde?",
+    "o": [
+     "«include», porque el plano forma parte de toda solicitud de licencia.",
+     "«extend», porque es funcionalidad opcional que amplía el caso de uso bajo una condición.",
+     "Asociación, porque el plano es un actor externo que interactúa con el sistema."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §5.5",
+    "e": "«extend» modela funcionalidad opcional que amplía otro caso de uso solo cuando se da una condición, como la obra mayor."
+   },
+   {
+    "q": "En el diagrama de secuencia de la solicitud, ¿cuál es el primer mensaje?",
+    "o": [
+     "PortalWeb → ExpedienteFactory: crear(\"OBRA\", id, tipoLicencia).",
+     "ExpedienteFactory → ExpedienteLicenciaObra: new (mensaje de creación).",
+     "Ciudadano → PortalWeb: enviarSolicitud(datosFormulario)."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · §5.6",
+    "e": "El escenario empieza cuando el ciudadano envía el formulario al portal; después el portal pide a la fábrica que cree el expediente y esta lo instancia."
+   },
+   {
+    "q": "El expediente de obra mayor responde al portal con el plazo de 90 días. ¿Cómo se dibuja ese mensaje en el diagrama de secuencia?",
+    "o": [
+     "Como un mensaje de retorno, con flecha discontinua hacia la línea de vida de PortalWeb.",
+     "Como un rombo relleno sobre la línea de vida del expediente que devuelve el valor.",
+     "Como una flecha de punta triangular hueca que sube hacia el primer mensaje enviado."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §5.6",
+    "e": "Los mensajes son flechas horizontales entre líneas de vida, en orden temporal de arriba abajo; el retorno se dibuja con flecha discontinua."
+   },
+   {
+    "q": "Para mostrar en qué ubicación física está el servidor que aloja el módulo de licencias, ¿qué diagrama UML se usa y de qué familia es?",
+    "o": [
+     "El Diagrama de Despliegue, de la familia de comportamiento.",
+     "El Diagrama de Despliegue, de la familia estructural.",
+     "El Diagrama de Componentes, de la familia estructural."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §5.4",
+    "e": "El Diagrama de Despliegue representa la arquitectura física (nodos de hardware y sus conexiones) y es uno de los siete diagramas estructurales; el de Componentes muestra la organización lógica del software."
+   }
+  ]
+ }
+]

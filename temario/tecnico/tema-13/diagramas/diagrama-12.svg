@@ -1,0 +1,20 @@
+<svg aria-label="Curvas de crecimiento de las complejidades O(1), O(log n), O(n), O(n log n), O(n cuadrado)" class="svd12" role="img" viewbox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
+<style>.svd12 .ax{stroke:#888;stroke-width:1.5}.svd12 .lab{font:11px system-ui,sans-serif;fill:#1a1a1a}.svd12 .t{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="t" text-anchor="middle" x="330" y="28">Crecimiento según el tamaño de la entrada (n)</text>
+<line class="ax" x1="70" x2="600" y1="300" y2="300"></line>
+<line class="ax" x1="70" x2="70" y1="300" y2="50"></line>
+<text class="lab" text-anchor="middle" x="330" y="335">tamaño de la entrada (n) →</text>
+<text class="lab" transform="rotate(-90 30 180)" x="30" y="180">operaciones →</text>
+<path d="M 70 295 L 600 290" fill="none" stroke="#2d8659" stroke-width="2.5"></path>
+<text class="lab" fill="#2d8659" x="605" y="290">O(1)</text>
+<path d="M 70 290 Q 250 270 600 255" fill="none" stroke="#3378b9" stroke-width="2.5"></path>
+<text class="lab" fill="#3378b9" x="605" y="255">O(log n)</text>
+<path d="M 70 295 L 560 90" fill="none" stroke="#0055a0" stroke-width="2.5"></path>
+<text class="lab" fill="#0055a0" x="565" y="86">O(n)</text>
+<path d="M 70 298 Q 320 200 430 60" fill="none" stroke="#e89822" stroke-width="2.5"></path>
+<text class="lab" fill="#e89822" x="435" y="56">O(n log n)</text>
+<path d="M 70 300 Q 200 290 250 55" fill="none" stroke="#d13c3c" stroke-width="2.5"></path>
+<text class="lab" fill="#d13c3c" text-anchor="middle" x="250" y="48">O(n²)</text>
+<text class="lab" style="fill:#666" x="330" y="235">mejor ↓ peor (cuanto más plana, mejor escala)</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="650" y="352">[Fuente: CLRS, cap. 3]</text>
+</svg>

@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el portal de cita previa, los iconos de cada trámite tienen como alt el nombre del fichero («icono-01.png»). ¿Qué principio y qué pauta de WCAG se vulneran?",
+    "o": [
+     "Perceptible, pauta 1.1 Alternativas textuales: la alternativa debe ser equivalente, no un relleno.",
+     "Operable, pauta 2.4 Navegable: el nombre del fichero impide saltar los bloques repetidos.",
+     "Comprensible, pauta 3.1 Legible: el nombre del fichero no declara el idioma de la imagen."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.1",
+    "e": "Todo contenido no textual necesita una alternativa textual equivalente (1.1.1, nivel A); si el icono es decorativo, alt=\"\"."
+   },
+   {
+    "q": "El calendario para elegir el día solo responde al ratón. ¿Qué incumple?",
+    "o": [
+     "El principio Perceptible, pauta 1.3 Adaptable (marcado semántico de la tabla del calendario).",
+     "El principio Operable, pauta 2.1 Accesible por teclado (criterio 2.1.1, nivel A).",
+     "El principio Comprensible, pauta 3.2 Predecible (cambio de contexto al elegir un día)."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §2.1",
+    "e": "Toda la funcionalidad debe poder usarse solo con teclado y sin trampas de foco."
+   },
+   {
+    "q": "Los campos obligatorios del formulario de cita se señalan solo con el borde en rojo. ¿Qué criterio se incumple en primer término?",
+    "o": [
+     "El 2.2.1 Ajuste de tiempo (nivel A), porque el usuario tarda más en localizar los campos.",
+     "El 4.1.3 Mensajes de estado (nivel AA), porque el borde rojo no se anuncia como región activa.",
+     "El 1.4.1 Uso del color (nivel A), además del 3.3.2 Etiquetas o instrucciones por la falta de texto."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §2.1",
+    "e": "No se puede transmitir información solo mediante el color; hay que añadir un texto o un icono con alternativa textual."
+   },
+   {
+    "q": "La sesión del portal caduca a los cinco minutos sin aviso ni prórroga y el formulario se pierde. ¿Qué pauta de WCAG se vulnera?",
+    "o": [
+     "La 3.2 Predecible (3.2.6 Ayuda coherente): el aviso de caducidad debe aparecer siempre en el mismo sitio.",
+     "La 2.2 Tiempo suficiente (2.2.1 Ajuste de tiempo): el límite debe poder desactivarse, ajustarse o prorrogarse.",
+     "La 2.3 Convulsiones y reacciones físicas: el cierre brusco de la sesión provoca un destello de pantalla."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §2.1",
+    "e": "Los límites de tiempo deben poder desactivarse, ajustarse o prorrogarse; es un criterio del principio Operable."
+   },
+   {
+    "q": "El pie del portal no enlaza ninguna declaración de accesibilidad. ¿Cómo debe calificarse este hallazgo?",
+    "o": [
+     "No es un criterio de WCAG: es un incumplimiento del artículo 15 del RD 1112/2018.",
+     "Es un incumplimiento del criterio 3.2.6 Ayuda coherente de WCAG 2.2, de nivel A.",
+     "Es un incumplimiento del artículo 16 del RD 1112/2018, que regula la declaración."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.3 · art. 15 RD 1112/2018",
+    "e": "La declaración de accesibilidad es una obligación del RD 1112/2018 (art. 15), no un criterio de conformidad de WCAG; el art. 16 regula la unidad responsable."
+   },
+   {
+    "q": "¿Qué nivel de conformidad es exigible al Ayuntamiento para el portal y en virtud de qué norma?",
+    "o": [
+     "El nivel A, por la Directiva (UE) 2019/882, transpuesta por la Ley 11/2023.",
+     "El nivel AAA, por el RD 1112/2018, al tratarse de un servicio público esencial.",
+     "El nivel AA de WCAG, por el RD 1112/2018, que remite a la UNE-EN 301 549 vigente."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §2.3",
+    "e": "El requisito técnico del RD 1112/2018 es la conformidad con la UNE-EN 301 549, lo que supone el nivel AA de WCAG en la parte web; la Ley 11/2023 se dirige sobre todo al sector privado."
+   },
+   {
+    "q": "¿Por qué el pliego de un nuevo desarrollo debe exigir la EN 301 549 y no solo «WCAG AA»?",
+    "o": [
+     "Porque deroga los criterios de WCAG para la web y los sustituye por requisitos propios más estrictos.",
+     "Porque solo la EN 301 549 obliga a alcanzar el nivel AAA en los procesos de cita previa.",
+     "Porque es la norma armonizada de la contratación pública y abarca además documentos, software y hardware."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §2.2",
+    "e": "La EN 301 549 incorpora los criterios A y AA de WCAG (cap. 9) y añade documentos no web, software, hardware, comunicación bidireccional y servicios de apoyo."
+   },
+   {
+    "q": "El área gestora quiere declarar el portal «plenamente conforme» porque el analizador automático no da errores. ¿Es correcto?",
+    "o": [
+     "No: los hallazgos prueban incumplimientos, y una herramienta automática solo comprueba una parte de los criterios.",
+     "Sí, siempre que el analizador se base en reglas ACT y la declaración cite su nombre como método.",
+     "Sí, con carácter provisional, hasta la revisión anual obligatoria de la declaración de accesibilidad."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §2.4",
+    "e": "La evaluación válida combina revisión automática, revisión manual experta y prueba con tecnologías de apoyo; declarar un grado superior al real es en sí un incumplimiento."
+   },
+   {
+    "q": "¿Qué debe incluir, como mínimo, la declaración de accesibilidad del portal?",
+    "o": [
+     "La lista de herramientas automáticas empleadas y el porcentaje de páginas sin errores detectados.",
+     "El grado de cumplimiento, el contenido no accesible, las alternativas, la fecha y el método, y la vía de reclamación.",
+     "El nombre de la empresa desarrolladora, el importe del contrato y el plazo de garantía del portal."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §2.4",
+    "e": "El modelo de la Decisión (UE) 2018/1523 fija esos elementos; la declaración se enlaza desde todas las páginas y se revisa al menos cada año."
+   },
+   {
+    "q": "Un vecino no puede completar la cita con su lector de pantalla y presenta una queja. ¿Quién debe atenderla?",
+    "o": [
+     "La unidad responsable de accesibilidad que el artículo 16 del RD 1112/2018 obliga a designar.",
+     "El Observatorio de Accesibilidad Web de la Administración General del Estado.",
+     "El delegado de protección de datos del Ayuntamiento, por tratarse de un trámite con datos personales."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · §2.4 · art. 16 RD 1112/2018",
+    "e": "La unidad responsable de accesibilidad es obligatoria en cada organismo y, entre sus funciones, responde las comunicaciones y reclamaciones."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "La empleada introduce su usuario y contraseña en el enlace de un correo que suplanta al servicio informático. ¿Qué tipo de ataque ha sufrido?",
+    "o": [
+     "Un ataque de fuerza bruta contra la contraseña, que acaba con el acceso desde el extranjero.",
+     "Un phishing (ingeniería social) que deriva en robo de credenciales y en un acceso no autorizado.",
+     "Un ransomware que, tras cifrar el puesto, envía las credenciales al servidor del atacante."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §3.1",
+    "e": "El ataque explota la confianza y la urgencia, no un fallo técnico: la propia empleada entrega sus credenciales."
+   },
+   {
+    "q": "¿Qué medida habría neutralizado con más eficacia este primer suceso?",
+    "o": [
+     "Un segundo factor por SMS, el canal que NIST considera más robusto frente a la interceptación.",
+     "La caducidad obligatoria de la contraseña cada 30 días, que inutiliza pronto la credencial robada.",
+     "La autenticación multifactor resistente al phishing (FIDO2/WebAuthn o certificado en tarjeta)."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §3.2.1",
+    "e": "Su credencial está ligada criptográficamente al dominio legítimo y no puede entregarse a un sitio suplantado ni siquiera por un usuario engañado."
+   },
+   {
+    "q": "Roban el portátil del inspector, que estaba apagado y con cifrado de disco completo. ¿Qué dimensión se ve afectada con seguridad?",
+    "o": [
+     "La disponibilidad; la confidencialidad no se compromete si la clave no era accesible para el tercero.",
+     "La confidencialidad, en todo caso, porque el soporte con los expedientes ha salido del perímetro.",
+     "La integridad, porque el ladrón puede modificar los expedientes aunque el disco esté cifrado."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §3.2.2",
+    "e": "El cifrado de disco completo protege el equipo apagado: el inspector pierde su herramienta y los datos locales, pero la información es ininteligible para el tercero."
+   },
+   {
+    "q": "¿Qué problema de fondo revela el robo del portátil del inspector?",
+    "o": [
+     "Que el cifrado de disco completo no protege la información cuando el equipo está apagado.",
+     "Que el inspector no tenía permisos de administrador local para cifrar sus propias carpetas.",
+     "Que había información única en el disco local, cuando el dato debe vivir en el repositorio corporativo."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §3.1.2",
+    "e": "Regla de oro: en el puesto no debe residir información única; el disco local es caché de trabajo, no archivo."
+   },
+   {
+    "q": "El ransomware cifra la unidad de red y la última copia es de hace 26 horas. ¿Cuál es el dato correcto del incidente?",
+    "o": [
+     "Un RTO de 26 horas: el servicio tardará más de un día en volver a estar disponible.",
+     "Un RPO efectivo de 26 horas: se pierde el trabajo de más de un día.",
+     "Un RPO de cero horas, porque la unidad de red compartida estaba respaldada."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §3.1.2",
+    "e": "El RPO mira hacia atrás y mide la información perdida desde la última copia; el RTO mide el tiempo hasta recuperar el servicio."
+   },
+   {
+    "q": "Además de la frecuencia, ¿qué defecto de la política de copias de la oficina es el más grave?",
+    "o": [
+     "Que nunca se haya probado la restauración, de modo que la copia es una hipótesis y no una garantía.",
+     "Que las copias estén cifradas, porque el cifrado impide restaurarlas tras un ataque de ransomware.",
+     "Que se usen copias incrementales, que no pueden restaurarse si falta la copia completa más reciente."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §3.3.2",
+    "e": "Una copia que no se ha restaurado nunca no es una copia de seguridad; la prueba periódica de restauración es requisito expreso del ENS."
+   },
+   {
+    "q": "¿Qué debe hacerse antes de dar por recuperado el servicio tras el ransomware?",
+    "o": [
+     "Desinfectar el puesto con el antivirus y restaurar la copia más reciente, aunque sea posterior a la infección.",
+     "Restaurar la copia y reconectar el puesto sin cambiar credenciales, porque el cifrado ya ha terminado.",
+     "Reconstruir el puesto desde imagen limpia y restaurar desde una copia anterior a la infección, verificando su integridad."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §3.3.1",
+    "e": "Hay que erradicar y determinar el vector, reconstruir desde imagen limpia, restaurar una copia previa a la infección, rotar credenciales y revisar los registros."
+   },
+   {
+    "q": "¿Por qué disponer de copias no exime de tratar el ransomware como posible brecha de datos personales?",
+    "o": [
+     "Porque el ransomware actual practica doble extorsión: además de cifrar, exfiltra la información.",
+     "Porque las copias de seguridad no pueden incluir nunca la unidad de red compartida de un área.",
+     "Porque el RGPD obliga a notificar en 24 horas cualquier pérdida de disponibilidad de datos."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §3.3.1",
+    "e": "Puede haber compromiso de confidencialidad aunque la disponibilidad se recupere con las copias."
+   },
+   {
+    "q": "Todos los usuarios de la oficina son administradores locales de su equipo. ¿Qué principio se vulnera y cómo se corrige?",
+    "o": [
+     "La necesidad de conocer; se corrige restringiendo las carpetas de red del área a quien de verdad las necesite.",
+     "El mínimo privilegio; se retira el privilegio de la cuenta ordinaria y se usan cuentas administrativas separadas y nominativas.",
+     "La segregación de funciones; se corrige exigiendo que un compañero de la oficina apruebe cada programa instalado."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · §3.2.1",
+    "e": "Que el usuario no sea administrador local es la medida que más limita la instalación no autorizada y el alcance del código malicioso."
+   },
+   {
+    "q": "En los puestos de atención se usa la cuenta genérica «oac-mostrador». ¿Qué dimensión se vulnera y cuál es la corrección?",
+    "o": [
+     "La disponibilidad; se crea una segunda cuenta genérica de respaldo por si la primera se bloquea.",
+     "La integridad; se obliga a cambiar la contraseña de la cuenta genérica cada 30 días.",
+     "La trazabilidad; se usan cuentas nominativas, con sesión individual aunque el puesto sea compartido."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §3.2.1",
+    "e": "Sin cuentas nominativas ninguna actuación es imputable a una persona; las cuentas genéricas están proscritas en el ENS salvo justificación excepcional."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "La consulta /expedientes/ver?id=48213 no comprueba en el servidor que el expediente sea del usuario. ¿En qué categoría del OWASP Top 10:2021 encaja?",
+    "o": [
+     "A07 Fallos de identificación y autenticación.",
+     "A05 Configuración de seguridad defectuosa.",
+     "A01 Pérdida de control de acceso."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §4.3.1",
+    "e": "Es una referencia directa insegura a objetos (IDOR): un fallo de autorización, la primera categoría del Top 10:2021."
+   },
+   {
+    "q": "El buscador construye la consulta a la base de datos concatenando el texto del usuario. ¿Qué categoría del Top 10:2021 le corresponde?",
+    "o": [
+     "A03 Inyección.",
+     "A06 Componentes vulnerables y desactualizados.",
+     "A08 Fallos de integridad del software y de los datos."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §4.2.2",
+    "e": "El sistema no distingue entre datos y código: el texto introducido puede alterar la estructura de la consulta SQL."
+   },
+   {
+    "q": "Ante un error, la aplicación devuelve la traza con la versión del gestor de base de datos y la ruta del servidor. ¿Cómo se clasifica?",
+    "o": [
+     "A09 Fallos de registro y monitorización; en STRIDE, R (repudio).",
+     "A05 Configuración de seguridad defectuosa; en STRIDE, I (revelación de información).",
+     "A02 Fallos criptográficos; en STRIDE, T (manipulación)."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §4.2.4",
+    "e": "Las páginas de error detalladas en producción revelan información y dan al atacante el mapa del sistema."
+   },
+   {
+    "q": "El JWT de sesión se guarda en el almacenamiento local y no caduca nunca. ¿Cómo se clasifica?",
+    "o": [
+     "A07 Fallos de identificación y autenticación; en STRIDE, S (suplantación).",
+     "A10 Falsificación de peticiones del lado del servidor; en STRIDE, E (elevación de privilegios).",
+     "A04 Diseño inseguro; en STRIDE, D (denegación de servicio)."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §4.2.3",
+    "e": "El token equivale a la credencial: quien lo roba se hace pasar por el usuario, y una gestión de sesión deficiente es un fallo de autenticación."
+   },
+   {
+    "q": "¿Cuál es la corrección adecuada del fallo de la consulta de expedientes por identificador?",
+    "o": [
+     "Cifrar el identificador del expediente en la URL para que el vecino no pueda deducir otros números.",
+     "Ocultar el enlace de consulta en el menú de los usuarios que no tengan expedientes asignados.",
+     "Comprobar en el servidor, en cada petición, que el expediente es del usuario autenticado, denegando por defecto."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §4.2.3",
+    "e": "Ocultar en el cliente no es autorizar, y cifrar el identificador es seguridad por oscuridad; los UUID solo son una medida complementaria."
+   },
+   {
+    "q": "¿Cómo se corrige la consulta del buscador construida por concatenación?",
+    "o": [
+     "Escapando las comillas del texto introducido antes de concatenarlo a la consulta.",
+     "Con consultas parametrizadas (sentencias preparadas), en las que los valores viajan aparte.",
+     "Con una lista negra que rechace palabras reservadas como SELECT, DROP o UNION."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §4.2.2",
+    "e": "La consulta se compila con marcadores y los valores no pueden alterar su estructura; escapar o filtrar con listas negras siempre queda incompleto."
+   },
+   {
+    "q": "¿Qué corrección procede para el JWT sin caducidad guardado en el almacenamiento local?",
+    "o": [
+     "Alargar la vida del token y borrarlo del almacenamiento local cuando el usuario cierre la sesión.",
+     "Vida corta con exp validada, token de refresco revocable con rotación y cookie HttpOnly, Secure y SameSite.",
+     "Mantenerlo en el almacenamiento local, pero aceptar el algoritmo que indique el propio token."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §4.2.3",
+    "e": "Un JWT es autocontenido y no revocable por sí mismo: exige vida corta, refresco revocable en el servidor y un almacenamiento no legible por guiones."
+   },
+   {
+    "q": "¿Qué catálogo de OWASP es el idóneo para redactar las exigencias de seguridad del pliego?",
+    "o": [
+     "OWASP ASVS, catálogo de requisitos verificables del producto.",
+     "El OWASP Top 10, por ser el documento de referencia del sector.",
+     "OWASP SAMM, porque mide la madurez del proceso del proveedor."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §4.1.1",
+    "e": "ASVS habla del producto y sus requisitos son verificables en la recepción; el Top 10 es de concienciación y SAMM evalúa el proceso."
+   },
+   {
+    "q": "¿Qué técnica habría detectado de forma fiable el fallo de autorización de la consulta de expedientes?",
+    "o": [
+     "El análisis de composición (SCA) integrado en la construcción.",
+     "El análisis estático (SAST) ejecutado en cada confirmación.",
+     "La revisión manual de código y la prueba de penetración."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §4.3.2",
+    "e": "Ninguna herramienta automática entiende la lógica de negocio ni sabe qué expediente corresponde a qué persona."
+   },
+   {
+    "q": "¿Qué debe implantar el proveedor para responder con rapidez cuando se publique una vulnerabilidad en una dependencia?",
+    "o": [
+     "Un cortafuegos de aplicación que sustituya a la actualización de la biblioteca afectada.",
+     "Un SBOM en formato normalizado (SPDX o CycloneDX) y análisis SCA continuo en la construcción.",
+     "Una prueba de penetración anual que incluya la revisión de las bibliotecas de terceros."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §4.3.3",
+    "e": "El inventario de dependencias permite responder en horas, y no en semanas, si la aplicación está afectada; el WAF nunca sustituye a la corrección."
+   }
+  ]
+ }
+]

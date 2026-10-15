@@ -1,0 +1,692 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿qué figura corresponde a la recogida domiciliaria de basuras, de prestación obligatoria?",
+    "o": [
+     "Un precio público, porque es un servicio de competencia local.",
+     "Una tasa, porque el servicio no es de solicitud o recepción voluntaria.",
+     "Una contribución especial, porque beneficia a todos los vecinos."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · art. 20.1.B.a TRLHL",
+    "e": "Es tasa la prestación de un servicio de competencia local cuando no sea de solicitud o recepción voluntaria para los administrados (art. 20.1.B.a TRLHL); la recogida de residuos figura además en el art. 20.4."
+   },
+   {
+    "q": "¿Qué figura corresponde al campamento urbano de verano, de inscripción voluntaria, que también ofrecen empresas privadas de la zona?",
+    "o": [
+     "Una tasa, porque es un servicio que presta el Ayuntamiento a quien lo solicita.",
+     "Un impuesto, porque se exige sin contraprestación a las familias inscritas.",
+     "Un precio público, porque el servicio es voluntario y lo presta también el sector privado."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · art. 41 TRLHL",
+    "e": "Cabe precio público cuando no concurre ninguna de las circunstancias del art. 20.1.B): el servicio es de solicitud voluntaria y lo presta también el sector privado (art. 41 TRLHL)."
+   },
+   {
+    "q": "Variante del supuesto: si ninguna empresa privada ofreciera campamentos en la zona, aunque la inscripción siguiera siendo voluntaria, la contraprestación sería:",
+    "o": [
+     "Una tasa, porque basta con que el servicio no lo preste el sector privado.",
+     "Un precio público, porque la inscripción sigue siendo voluntaria.",
+     "Una contribución especial, porque el campamento beneficia a las familias."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · art. 20.1.B.b TRLHL",
+    "e": "En la modalidad B) basta con que se produzca cualquiera de las dos circunstancias: que el servicio no sea voluntario o que no lo preste el sector privado (art. 20.1.B TRLHL)."
+   },
+   {
+    "q": "¿Qué figura corresponde a la pavimentación de la calle, que revaloriza los inmuebles colindantes?",
+    "o": [
+     "Una tasa por el aprovechamiento especial del dominio público local.",
+     "Un precio público, porque los propietarios se benefician de forma voluntaria.",
+     "Una contribución especial, por el aumento de valor de los bienes derivado de una obra pública."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · art. 28 TRLHL",
+    "e": "El hecho imponible de las contribuciones especiales es el beneficio o aumento de valor de los bienes como consecuencia de obras públicas o del establecimiento o ampliación de servicios públicos locales (art. 28 TRLHL)."
+   },
+   {
+    "q": "¿Cuál de las tres figuras del supuesto carece de naturaleza tributaria?",
+    "o": [
+     "La tasa por la recogida de basuras (a).",
+     "El precio público del campamento urbano (b).",
+     "La contribución especial por la pavimentación (c)."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · art. 2.1.b y e TRLHL",
+    "e": "Los tributos propios son tasas, contribuciones especiales e impuestos (art. 2.1.b TRLHL); el precio público no es tributo y se enumera aparte (art. 2.1.e)."
+   },
+   {
+    "q": "¿Por qué el precio público del campamento carece de naturaleza tributaria?",
+    "o": [
+     "Porque el art. 2.1 TRLHL no lo incluye entre los tributos propios y lo enumera en una letra aparte.",
+     "Porque no es un ingreso de derecho público y se rige por el derecho privado.",
+     "Porque lo aprueba la Junta de Gobierno y no el Pleno mediante ordenanza fiscal."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · art. 2.1.e TRLHL",
+    "e": "El artículo 2.1 TRLHL enumera los tributos propios en la letra b) y los precios públicos en la letra e); aun así, el precio público es un ingreso de derecho público (art. 2.2)."
+   },
+   {
+    "q": "¿Qué límite de cuantía rige la tasa de recogida de basuras (a)?",
+    "o": [
+     "Debe cubrir, como mínimo, el coste del servicio prestado.",
+     "No puede exceder, en su conjunto, del coste real o previsible del servicio.",
+     "No puede exceder del 90 % del coste soportado por el Ayuntamiento."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 3 · art. 24.2 TRLHL",
+    "e": "El importe de las tasas por prestación de servicios no puede exceder, en su conjunto, del coste real o previsible del servicio (art. 24.2 TRLHL): el coste es el máximo."
+   },
+   {
+    "q": "¿Qué límite de cuantía rige el precio público del campamento (b)?",
+    "o": [
+     "No puede exceder del coste real o previsible del servicio prestado.",
+     "Se fija libremente por el Pleno, sin referencia al coste del servicio.",
+     "Debe cubrir como mínimo el coste, salvo razones sociales u otras de interés público."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · art. 44 TRLHL",
+    "e": "El importe de los precios públicos debe cubrir como mínimo el coste del servicio (art. 44.1), aunque puede fijarse por debajo por razones sociales, benéficas, culturales o de interés público (art. 44.2 TRLHL)."
+   },
+   {
+    "q": "Si, por razones sociales, el Ayuntamiento fija el precio del campamento por debajo del coste, deberá:",
+    "o": [
+     "Consignar en el presupuesto las dotaciones oportunas para cubrir la diferencia.",
+     "Transformar el precio público en una tasa mediante ordenanza fiscal.",
+     "Obtener la autorización previa de la Comunidad de Madrid."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · art. 44.2 TRLHL",
+    "e": "Cuando se fijen precios públicos por debajo del coste, deben consignarse en los presupuestos las dotaciones oportunas para la cobertura de la diferencia resultante (art. 44.2 TRLHL)."
+   },
+   {
+    "q": "¿Qué porcentaje máximo del coste de la pavimentación puede repartirse entre los propietarios beneficiados, y en qué artículo se fija?",
+    "o": [
+     "El 90 % del coste soportado, conforme al artículo 32.",
+     "El 90 % del coste soportado, conforme al artículo 31.",
+     "El 100 % del coste total de la obra, conforme al artículo 31."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · art. 31.1 TRLHL",
+    "e": "La base imponible de las contribuciones especiales es, como máximo, el 90 % del coste soportado (art. 31.1 TRLHL); el artículo 32 regula los módulos de reparto."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿cómo se clasifica el IBI impagado del local comercial?",
+    "o": [
+     "Como ingreso de derecho privado, porque el local es de un particular.",
+     "Como ingreso de derecho público, por ser un tributo.",
+     "Como ingreso de derecho privado, por ser rendimiento del patrimonio."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · art. 2.2 TRLHL",
+    "e": "Los tributos son ingresos de derecho público de la hacienda local (art. 2.2 TRLHL); el IBI es un impuesto municipal."
+   },
+   {
+    "q": "¿Cómo se clasifica la renta del piso municipal alquilado a un particular?",
+    "o": [
+     "Como ingreso de derecho privado, por ser un rendimiento del patrimonio municipal.",
+     "Como ingreso de derecho público, por ser un bien del Ayuntamiento.",
+     "Como precio público, por tratarse de un servicio voluntario."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · art. 3.1 TRLHL",
+    "e": "Son ingresos de derecho privado los rendimientos o productos de cualquier naturaleza derivados del patrimonio de la entidad local (art. 3.1 TRLHL)."
+   },
+   {
+    "q": "¿Cómo se clasifica el inmueble que un vecino lega al Ayuntamiento en su testamento?",
+    "o": [
+     "Como ingreso de derecho público, por adquirirlo una Administración.",
+     "Como una subvención, por tratarse de una aportación sin contraprestación.",
+     "Como ingreso de derecho privado, por ser una adquisición a título de legado."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · art. 3.1 TRLHL",
+    "e": "Las adquisiciones a título de herencia, legado o donación son ingresos de derecho privado de las entidades locales (art. 3.1 TRLHL)."
+   },
+   {
+    "q": "A efectos de los ingresos de derecho privado, el piso alquilado forma parte del patrimonio municipal porque:",
+    "o": [
+     "Está inscrito en el Registro de la Propiedad a nombre del Ayuntamiento.",
+     "Produce rentas superiores a su coste de mantenimiento.",
+     "Es un bien de propiedad municipal que no está afecto al uso o servicio público."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · art. 3.2 TRLHL",
+    "e": "Se considera patrimonio de las entidades locales el constituido por los bienes de su propiedad y los derechos susceptibles de valoración económica, siempre que no se hallen afectos al uso o servicio público (art. 3.2 TRLHL)."
+   },
+   {
+    "q": "Para cobrar el IBI impagado, la hacienda municipal:",
+    "o": [
+     "Ostenta las prerrogativas establecidas legalmente para la Hacienda del Estado.",
+     "Debe acudir a la jurisdicción civil, como cualquier otro acreedor.",
+     "Solo puede compensarlo con los pagos futuros que deba al contribuyente."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · art. 2.2 TRLHL",
+    "e": "Para la cobranza de los tributos y demás ingresos de derecho público, la hacienda local ostenta las prerrogativas establecidas legalmente para la Hacienda del Estado (art. 2.2 TRLHL)."
+   },
+   {
+    "q": "¿Qué ley rige la recaudación del IBI del supuesto?",
+    "o": [
+     "El Código Civil, por tratarse de una deuda pendiente.",
+     "La Ley General Tributaria, por remisión del TRLHL.",
+     "La ordenanza fiscal, sin remisión a ninguna ley estatal."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · art. 12.1 TRLHL",
+    "e": "La gestión, liquidación, inspección y recaudación de los tributos locales se realizan conforme a la Ley 58/2003, General Tributaria, y demás leyes del Estado reguladoras de la materia (art. 12.1 TRLHL)."
+   },
+   {
+    "q": "Si el IBI no se paga en período voluntario, ¿por qué procedimiento se cobra en período ejecutivo?",
+    "o": [
+     "Por el procedimiento administrativo de apremio.",
+     "Por un juicio monitorio ante el juzgado civil.",
+     "Por una reclamación ante el Tribunal Económico-Administrativo Municipal."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · arts. 160.2 y 161.3 LGT",
+    "e": "La recaudación en período ejecutivo se realiza a través del procedimiento administrativo de apremio (art. 160.2 LGT, aplicable por la remisión del art. 12.1 TRLHL)."
+   },
+   {
+    "q": "El procedimiento de apremio con que se cobra el IBI es:",
+    "o": [
+     "Judicial, ante los juzgados de lo contencioso-administrativo.",
+     "Mixto: lo inicia la Administración y lo concluye un juez civil.",
+     "Exclusivamente administrativo."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · art. 163.1 LGT",
+    "e": "El procedimiento de apremio es exclusivamente administrativo (art. 163.1 LGT)."
+   },
+   {
+    "q": "Si el inquilino no paga la renta del piso municipal, ¿cómo hará efectivo el Ayuntamiento su derecho?",
+    "o": [
+     "Con las prerrogativas de la Hacienda del Estado y el apremio administrativo.",
+     "Con sujeción a las normas y procedimientos del derecho privado.",
+     "Mediante una liquidación tributaria y la vía económico-administrativa."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · art. 4 TRLHL",
+    "e": "La efectividad de los derechos de la hacienda local derivados de ingresos de derecho privado se lleva a cabo con sujeción a las normas y procedimientos del derecho privado (art. 4 TRLHL)."
+   },
+   {
+    "q": "¿Puede ser ingreso de derecho privado el rendimiento que obtenga el Ayuntamiento de una plaza pública?",
+    "o": [
+     "Sí, si el Ayuntamiento lo obtiene mediante un contrato con un particular.",
+     "No: los ingresos que procedan de bienes de dominio público local nunca son de derecho privado.",
+     "Sí, cuando se trate de un rendimiento de carácter periódico."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · art. 3.3 TRLHL",
+    "e": "En ningún caso tendrán la consideración de ingresos de derecho privado los que procedan, por cualquier concepto, de los bienes de dominio público local (art. 3.3 TRLHL)."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, el servicio de tramitación de licencias cuesta 500.000 € anuales. ¿Cuánto puede recaudarse como máximo, en su conjunto, con la tasa?",
+    "o": [
+     "450.000 €.",
+     "550.000 €.",
+     "500.000 €."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · art. 24.2 TRLHL",
+    "e": "El importe de las tasas por prestación de servicios no puede exceder, en su conjunto, del coste real o previsible del servicio (art. 24.2 TRLHL): aquí, 500.000 €."
+   },
+   {
+    "q": "¿Qué artículo del TRLHL establece ese tope para la tasa de tramitación de licencias?",
+    "o": [
+     "El artículo 44.1.",
+     "El artículo 24.2.",
+     "El artículo 31.1."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · art. 24.2 TRLHL",
+    "e": "El artículo 24.2 TRLHL fija el coste del servicio como máximo de las tasas; el 44.1 se refiere a los precios públicos y el 31.1 a las contribuciones especiales."
+   },
+   {
+    "q": "Para calcular el coste de 500.000 € del servicio, el Ayuntamiento puede tener en cuenta:",
+    "o": [
+     "Los costes directos e indirectos, incluidos los financieros y la amortización del inmovilizado.",
+     "Solo los costes directos del personal que tramita las licencias.",
+     "Los costes directos más un margen de beneficio para el Ayuntamiento."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · art. 24.2 TRLHL",
+    "e": "Para determinar el coste se consideran los costes directos e indirectos, inclusive los financieros, la amortización del inmovilizado y los necesarios para el mantenimiento y desarrollo razonable del servicio (art. 24.2 TRLHL)."
+   },
+   {
+    "q": "La tasa por las terrazas de hostelería es una tasa por:",
+    "o": [
+     "La utilización privativa o el aprovechamiento especial del dominio público local.",
+     "La prestación de un servicio que no es de solicitud voluntaria.",
+     "El aumento de valor de los locales de hostelería."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 2 · art. 20.3 TRLHL",
+    "e": "La ocupación de terrenos de uso público local con mesas, sillas y elementos análogos con finalidad lucrativa es un supuesto de utilización privativa o aprovechamiento especial del dominio público (art. 20.3 TRLHL)."
+   },
+   {
+    "q": "¿Cómo se cuantifica, con carácter general, la tasa por las terrazas?",
+    "o": [
+     "Por el coste real o previsible del servicio de inspección de terrazas.",
+     "Tomando como referencia el valor de mercado de la utilidad, si los bienes no fuesen de dominio público.",
+     "Por el 1,5 % de los ingresos brutos de facturación de cada establecimiento."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · art. 24.1.a TRLHL",
+    "e": "En las tasas por utilización del dominio público se toma como referencia el valor que tendría en el mercado la utilidad derivada, si los bienes no fuesen de dominio público (art. 24.1.a); el 1,5 % solo rige para las empresas de suministros de interés general."
+   },
+   {
+    "q": "¿A la vista de qué documento deben adoptarse los acuerdos de establecimiento de las dos tasas?",
+    "o": [
+     "De un dictamen del Tribunal Económico-Administrativo Municipal.",
+     "De un informe de la Dirección General del Catastro.",
+     "De informes técnico-económicos."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · art. 25 TRLHL",
+    "e": "Los acuerdos de establecimiento de tasas por utilización del dominio público o para financiar nuevos servicios se adoptan a la vista de informes técnico-económicos (art. 25 TRLHL)."
+   },
+   {
+    "q": "¿Qué deben poner de manifiesto esos informes en cada tasa del supuesto?",
+    "o": [
+     "La previsible cobertura del coste en la de terrazas y el valor de mercado en la de licencias.",
+     "En ambas, el número previsto de contribuyentes y la recaudación estimada.",
+     "El valor de mercado en la de terrazas y la previsible cobertura del coste en la de licencias."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · art. 25 TRLHL",
+    "e": "El informe técnico-económico pone de manifiesto el valor de mercado en las tasas por dominio público y la previsible cobertura del coste en las tasas por nuevos servicios (art. 25 TRLHL)."
+   },
+   {
+    "q": "¿Qué órgano aprueba las nuevas tasas y mediante qué instrumento?",
+    "o": [
+     "El Pleno, mediante ordenanza fiscal.",
+     "La Junta de Gobierno, mediante decreto.",
+     "El Alcalde, mediante bando."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · art. 15.1 TRLHL y art. 11.1.d y g LCREM",
+    "e": "Las entidades locales acuerdan la imposición de sus tributos propios y aprueban las ordenanzas fiscales (art. 15.1 TRLHL); en Madrid, la aprobación corresponde al Pleno (art. 11.1.d y g LCREM)."
+   },
+   {
+    "q": "Antes de la aprobación definitiva, el acuerdo provisional de las tasas debe exponerse en el tablón de anuncios para reclamaciones durante:",
+    "o": [
+     "Quince días, como mínimo.",
+     "Treinta días, como mínimo.",
+     "Diez días hábiles."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · art. 17.1 TRLHL",
+    "e": "Los acuerdos provisionales se exponen en el tablón de anuncios durante treinta días, como mínimo, para que los interesados examinen el expediente y presenten reclamaciones (art. 17.1 TRLHL)."
+   },
+   {
+    "q": "¿Cuándo entran en vigor las nuevas tasas del Ayuntamiento de Madrid?",
+    "o": [
+     "Al día siguiente de su aprobación definitiva por el Pleno.",
+     "Al publicarse un extracto de la ordenanza en el BOE.",
+     "Al publicarse el texto íntegro de la ordenanza en el BOCM."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · art. 17.4 TRLHL",
+    "e": "Las ordenanzas fiscales no entran en vigor hasta que se publica su texto íntegro en el boletín oficial de la provincia o de la comunidad autónoma uniprovincial (art. 17.4 TRLHL): en Madrid, el BOCM."
+   }
+  ]
+ },
+ {
+  "k": 3,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, la obra cuesta 1.000.000 € y una subvención autonómica financia 200.000 €. ¿Cuál es el coste soportado por el Ayuntamiento?",
+    "o": [
+     "800.000 €.",
+     "1.000.000 €.",
+     "720.000 €."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 1 · art. 31.5 TRLHL",
+    "e": "El coste soportado es el coste total menos las subvenciones o auxilios obtenidos (art. 31.5 TRLHL): 1.000.000 − 200.000 = 800.000 €."
+   },
+   {
+    "q": "¿Cuál es la base imponible máxima que puede repartirse entre los propietarios beneficiados?",
+    "o": [
+     "900.000 €.",
+     "720.000 €.",
+     "800.000 €."
+    ],
+    "c": 1,
+    "r": "Caso 4, cuestión 2 · art. 31.1 TRLHL",
+    "e": "La base imponible es, como máximo, el 90 % del coste soportado (art. 31.1 TRLHL): 90 % de 800.000 € = 720.000 €. El 90 % no se aplica sobre el coste total."
+   },
+   {
+    "q": "¿Qué artículo del TRLHL fija el límite del 90 % de la base imponible?",
+    "o": [
+     "El artículo 32.1.",
+     "El artículo 24.2.",
+     "El artículo 31.1."
+    ],
+    "c": 2,
+    "r": "Caso 4, cuestión 2 · art. 31.1 TRLHL",
+    "e": "El límite del 90 % de la base imponible está en el artículo 31.1 TRLHL; el 32 regula los módulos de reparto y el 24.2 la cuantía de las tasas."
+   },
+   {
+    "q": "¿Quiénes son los sujetos pasivos de esta contribución especial?",
+    "o": [
+     "Todos los vecinos empadronados en el distrito donde se ejecuta la obra.",
+     "Los propietarios de los inmuebles colindantes, especialmente beneficiados por la obra.",
+     "Las personas que circulan habitualmente por el tramo soterrado."
+    ],
+    "c": 1,
+    "r": "Caso 4 (escenario) · art. 30 TRLHL",
+    "e": "Son sujetos pasivos las personas especialmente beneficiadas por la obra; en obras que afectan a bienes inmuebles, se consideran tales sus propietarios (art. 30.2 TRLHL)."
+   },
+   {
+    "q": "¿Cuál de estos grupos está formado por módulos de reparto que prevé la ley?",
+    "o": [
+     "Metros lineales de fachada, superficie y volumen edificable de los inmuebles.",
+     "Renta de los propietarios, número de ocupantes y antigüedad del inmueble.",
+     "Cifra de negocios, potencia fiscal y número de plazas de aparcamiento."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 3 · art. 32.1 TRLHL",
+    "e": "Con carácter general se aplican, conjunta o separadamente, como módulos de reparto los metros lineales de fachada, la superficie, el volumen edificable y el valor catastral a efectos del IBI (art. 32.1 TRLHL)."
+   },
+   {
+    "q": "¿Puede usarse el valor catastral a efectos del IBI como módulo de reparto de esta contribución especial?",
+    "o": [
+     "No, porque el valor catastral solo sirve para el IBI.",
+     "Solo si lo autoriza la Dirección General del Catastro.",
+     "Sí, de forma conjunta o separada con los demás módulos."
+    ],
+    "c": 2,
+    "r": "Caso 4, cuestión 3 · art. 32.1 TRLHL",
+    "e": "El valor catastral a efectos del IBI es uno de los módulos de reparto que el artículo 32.1 TRLHL permite aplicar conjunta o separadamente."
+   },
+   {
+    "q": "¿Puede el Ayuntamiento exigir el pago de la contribución especial antes de terminar las obras?",
+    "o": [
+     "No: solo puede exigirse una vez ejecutadas íntegramente las obras de soterramiento.",
+     "Sí: puede exigir desde el inicio el importe total de la base imponible repartida.",
+     "Sí: aprobada la imposición y ordenación, por anticipado según el coste previsto del año siguiente."
+    ],
+    "c": 2,
+    "r": "Caso 4, cuestión 4 · art. 33.2 TRLHL",
+    "e": "Aprobado el acuerdo concreto de imposición y ordenación, la entidad local puede exigir por anticipado el pago en función del importe del coste previsto para el año siguiente (art. 33.2 TRLHL)."
+   },
+   {
+    "q": "Si el Ayuntamiento ha cobrado ya un anticipo, ¿puede exigir el de una nueva anualidad?",
+    "o": [
+     "Solo si se han ejecutado las obras para las que se exigió el anticipo anterior.",
+     "Sí, en cualquier caso, aunque las obras anteriores no se hayan ejecutado.",
+     "No, porque solo puede exigirse un único anticipo por obra."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 4 · art. 33.2 TRLHL",
+    "e": "No puede exigirse el anticipo de una nueva anualidad sin que se hayan ejecutado las obras para las que se exigió el anterior (art. 33.2 TRLHL)."
+   },
+   {
+    "q": "Si no se exige anticipo, ¿cuándo se devenga la contribución especial?",
+    "o": [
+     "Al aprobarse el acuerdo de imposición.",
+     "En el momento en que las obras se hayan ejecutado.",
+     "Al adjudicarse el contrato de las obras."
+    ],
+    "c": 1,
+    "r": "Caso 4, cuestión 4 · art. 33.1 TRLHL",
+    "e": "Las contribuciones especiales se devengan en el momento en que las obras se hayan ejecutado o el servicio haya comenzado a prestarse (art. 33.1 TRLHL)."
+   },
+   {
+    "q": "Si al final el coste real de la obra resulta mayor que el presupuestado, para calcular las cuotas se toma:",
+    "o": [
+     "El coste real.",
+     "El presupuestado.",
+     "La media de ambos."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 2 · art. 31.3 TRLHL",
+    "e": "El coste total presupuestado tiene carácter de mera previsión: si el coste real es mayor o menor, se toma aquel a efectos del cálculo de las cuotas (art. 31.3 TRLHL)."
+   }
+  ]
+ },
+ {
+  "k": 4,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, la empresa tiene una cifra de negocios de 800.000 €. ¿Está obligada a pagar el IAE?",
+    "o": [
+     "Sí: toda empresa que ejerce una actividad económica debe pagarlo.",
+     "Sí: la exención por cifra de negocios solo alcanza a las personas físicas.",
+     "No: está exenta por tener una cifra de negocios inferior a 1.000.000 €."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 1 · art. 82.1.c TRLHL",
+    "e": "Están exentos del IAE los sujetos pasivos del Impuesto sobre Sociedades y demás entidades con un importe neto de la cifra de negocios inferior a 1.000.000 € (art. 82.1.c TRLHL)."
+   },
+   {
+    "q": "¿Qué impuesto grava la obra de la nave industrial?",
+    "o": [
+     "El Impuesto sobre Construcciones, Instalaciones y Obras (ICIO).",
+     "El Impuesto sobre el Incremento de Valor de los Terrenos (IIVTNU).",
+     "El Impuesto sobre Bienes Inmuebles (IBI)."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 2 · art. 100.1 TRLHL",
+    "e": "El ICIO grava la realización en el término municipal de construcciones, instalaciones u obras para las que se exija licencia, declaración responsable o comunicación previa (art. 100.1 TRLHL)."
+   },
+   {
+    "q": "¿Cuál es el tipo máximo de ese impuesto?",
+    "o": [
+     "El 1,10 %.",
+     "El 4 %.",
+     "El 3 %."
+    ],
+    "c": 1,
+    "r": "Caso 5, cuestión 2 · art. 102.3 TRLHL",
+    "e": "El tipo del ICIO lo fija cada ayuntamiento sin que pueda exceder del cuatro por cien (art. 102.3 TRLHL); el 1,10 % es el tipo máximo del IBI urbano."
+   },
+   {
+    "q": "¿Qué impuesto obligatorio grava el local del que la empresa es propietaria?",
+    "o": [
+     "El IBI, que grava la titularidad del derecho de propiedad sobre el inmueble.",
+     "El IAE, que grava el local en el que se ejerce la actividad.",
+     "El ICIO, que grava los inmuebles de uso comercial."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 3 · art. 61.1 TRLHL",
+    "e": "El hecho imponible del IBI incluye la titularidad del derecho de propiedad sobre los bienes inmuebles (art. 61.1 TRLHL)."
+   },
+   {
+    "q": "¿Qué impuesto grava la flota de furgonetas de la empresa?",
+    "o": [
+     "El IAE, porque las furgonetas se usan en la actividad empresarial.",
+     "El Impuesto sobre Gastos Suntuarios, en su modalidad de vehículos.",
+     "El IVTM, que grava la titularidad de vehículos aptos para circular."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 3 · art. 92 TRLHL",
+    "e": "El IVTM grava la titularidad de los vehículos de tracción mecánica aptos para circular por las vías públicas (art. 92.1 TRLHL); el de gastos suntuarios solo subsiste para cotos de caza y pesca."
+   },
+   {
+    "q": "¿Qué impuestos de los citados en el supuesto son de exacción obligatoria para el Ayuntamiento?",
+    "o": [
+     "El IBI, el IVTM y el ICIO.",
+     "El IBI, el IAE y el IVTM.",
+     "El IBI, el IAE y el IIVTNU."
+    ],
+    "c": 1,
+    "r": "Caso 5, cuestión 4 · art. 59.1 TRLHL",
+    "e": "Los ayuntamientos exigirán el IBI, el IAE y el IVTM (art. 59.1 TRLHL); el ICIO y el IIVTNU son potestativos (art. 59.2)."
+   },
+   {
+    "q": "¿Cuál de estos impuestos NO es de exacción obligatoria para el Ayuntamiento?",
+    "o": [
+     "El IAE, aunque la empresa del supuesto esté exenta.",
+     "El IVTM que grava las furgonetas.",
+     "El IIVTNU que grava la plusvalía del solar."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 4 · art. 59.2 TRLHL",
+    "e": "El IIVTNU, como el ICIO, es potestativo (art. 59.2 TRLHL); el IAE es obligatorio aunque un sujeto concreto esté exento."
+   },
+   {
+    "q": "Con la regulación vigente, ¿cómo se calcula como regla general la base imponible del impuesto sobre la plusvalía del solar?",
+    "o": [
+     "Diferencia entre el precio de venta y el de compra del solar, en todo caso.",
+     "Valor del terreno en el devengo multiplicado por el coeficiente del periodo de generación.",
+     "Valor catastral de las construcciones multiplicado por el tipo del IBI."
+    ],
+    "c": 1,
+    "r": "Caso 5, cuestión 5 · art. 107.1 TRLHL",
+    "e": "Tras la STC 182/2021 y el RDL 26/2021, la base es, por regla general, el valor del terreno en el devengo multiplicado por el coeficiente del periodo de generación (art. 107.1 TRLHL)."
+   },
+   {
+    "q": "Si, a instancia de la empresa, se constata que el incremento real de valor del solar es inferior al que resulta de los coeficientes:",
+    "o": [
+     "Se toma como base ese incremento real.",
+     "Se aplican igualmente los coeficientes.",
+     "Se aplica la media de los dos importes."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 5 · art. 107.5 TRLHL",
+    "e": "Cuando, a instancia del sujeto pasivo, se constata que el incremento real es inferior a la base calculada por coeficientes, se toma ese incremento como base imponible (art. 107.5 TRLHL)."
+   },
+   {
+    "q": "Variante del supuesto: si se constatara que la venta del solar no ha generado ningún incremento de valor:",
+    "o": [
+     "Se pagaría la cuota mínima fijada por la ordenanza.",
+     "La base se calcularía igualmente por coeficientes.",
+     "La transmisión no estaría sujeta al impuesto."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 5 · art. 104.5 TRLHL",
+    "e": "No hay sujeción al IIVTNU en las transmisiones respecto de las que se constate la inexistencia de incremento de valor (art. 104.5 TRLHL)."
+   }
+  ]
+ },
+ {
+  "k": 5,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿ante qué órgano puede reclamar el contribuyente contra la liquidación del IBI en Madrid?",
+    "o": [
+     "Ante el Tribunal Económico-Administrativo Municipal de Madrid.",
+     "Ante la Dirección General del Catastro.",
+     "Ante Informática del Ayuntamiento de Madrid (IAM)."
+    ],
+    "c": 0,
+    "r": "Caso 6, cuestión 1 · art. 25.1.a LCREM",
+    "e": "El Tribunal Económico-Administrativo Municipal de Madrid conoce y resuelve las reclamaciones en relación con la aplicación de los tributos y la imposición de sanciones tributarias del Ayuntamiento (art. 25 LCREM)."
+   },
+   {
+    "q": "¿Qué norma atribuye a ese órgano el conocimiento de las reclamaciones tributarias en Madrid?",
+    "o": [
+     "El texto refundido de la Ley Reguladora de las Haciendas Locales.",
+     "La Ley 39/2015, del Procedimiento Administrativo Común.",
+     "La Ley 22/2006, de Capitalidad y de Régimen Especial de Madrid."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestión 1 · art. 25 LCREM",
+    "e": "El Tribunal Económico-Administrativo Municipal de Madrid se regula en el artículo 25 de la Ley 22/2006, de Capitalidad y de Régimen Especial de Madrid (LCREM)."
+   },
+   {
+    "q": "Antes de acudir a ese órgano, el contribuyente:",
+    "o": [
+     "Debe interponer obligatoriamente recurso de alzada ante el Pleno.",
+     "Puede interponer, con carácter potestativo, recurso de reposición.",
+     "Debe presentar una reclamación previa ante la Dirección General del Catastro."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestión 1 · art. 25.3 LCREM",
+    "e": "Con carácter potestativo, el contribuyente puede interponer recurso de reposición antes de la reclamación económico-administrativa (art. 25.3 LCREM)."
+   },
+   {
+    "q": "Si el Tribunal Económico-Administrativo Municipal desestima la reclamación, ¿qué puede hacer el contribuyente?",
+    "o": [
+     "Interponer recurso de alzada ante la Junta de Gobierno de la Ciudad.",
+     "Acudir al contencioso-administrativo, al poner fin a la vía administrativa.",
+     "Interponer recurso de reposición ante la Agencia Tributaria Madrid."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestión 1 · art. 25 LCREM",
+    "e": "La resolución del Tribunal Económico-Administrativo Municipal pone fin a la vía administrativa; contra ella solo cabe recurso contencioso-administrativo."
+   },
+   {
+    "q": "¿Qué órgano gestiona de forma integral los tributos del Ayuntamiento de Madrid?",
+    "o": [
+     "La Dirección General del Catastro.",
+     "Informática del Ayuntamiento de Madrid (IAM).",
+     "La Agencia Tributaria Madrid."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestión 2 · art. 26 LCREM",
+    "e": "La Agencia Tributaria Madrid es el ente autónomo de gestión tributaria previsto en el artículo 26 LCREM para la gestión integral del sistema tributario municipal, con la función de recaudación."
+   },
+   {
+    "q": "¿Qué órgano puede crear ese ente autónomo de gestión tributaria?",
+    "o": [
+     "El Pleno del Ayuntamiento.",
+     "La Junta de Gobierno de la Ciudad de Madrid.",
+     "La Asamblea de Madrid, mediante ley autonómica."
+    ],
+    "c": 0,
+    "r": "Caso 6, cuestión 2 · art. 26 LCREM",
+    "e": "Para la gestión integral del sistema tributario municipal, el Pleno podrá crear un ente autónomo de gestión tributaria (art. 26 LCREM)."
+   },
+   {
+    "q": "En el IBI del contribuyente, ¿a quién corresponden la liquidación, la recaudación y la revisión de los actos de gestión tributaria?",
+    "o": [
+     "Al Ayuntamiento, con carácter exclusivo.",
+     "A la Dirección General del Catastro.",
+     "A la Administración tributaria del Estado."
+    ],
+    "c": 0,
+    "r": "Caso 6, cuestión 3 · art. 77.1 TRLHL",
+    "e": "La liquidación y recaudación del IBI, así como la revisión de los actos dictados en vía de gestión tributaria, son competencia exclusiva de los ayuntamientos (art. 77.1 TRLHL)."
+   },
+   {
+    "q": "¿Qué elabora la Dirección General del Catastro para que el Ayuntamiento gestione el IBI?",
+    "o": [
+     "La matrícula del impuesto.",
+     "El padrón catastral.",
+     "El padrón municipal de habitantes."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestión 3 · art. 77.5 TRLHL",
+    "e": "El IBI se gestiona a partir del padrón catastral elaborado por la Dirección General del Catastro (art. 77.5 TRLHL); la matrícula es el instrumento del IAE."
+   },
+   {
+    "q": "A diferencia del ICIO o de la plusvalía, el IBI del contribuyente se gestiona:",
+    "o": [
+     "Por autoliquidación anual que presenta el propietario del inmueble.",
+     "Por la matrícula que elabora la Administración tributaria del Estado.",
+     "Por padrón: la Agencia Tributaria Madrid emite el documento de cobro sin que haya que declarar cada año."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestiones 3 y 4 · art. 77.5 TRLHL",
+    "e": "El IBI, el IVTM y el IAE se gestionan por padrón o matrícula, con documento de cobro periódico; el ICIO y el IIVTNU, por autoliquidación del contribuyente."
+   },
+   {
+    "q": "¿Qué papel cumple el IAM en la gestión tributaria del supuesto?",
+    "o": [
+     "Da soporte TIC a padrones, autoliquidaciones y sede electrónica de la Agencia Tributaria Madrid.",
+     "Resuelve en primera instancia las reclamaciones contra las liquidaciones del IBI de la ciudad.",
+     "Elabora el padrón catastral del IBI a partir de los datos que le facilita el Ayuntamiento."
+    ],
+    "c": 0,
+    "r": "Caso 6, cuestión 4",
+    "e": "El IAM es el soporte tecnológico de la recaudación: sistemas de padrones (IBI, IVTM), censos (IAE), autoliquidaciones (ICIO, IIVTNU) y sede electrónica de la Agencia Tributaria Madrid."
+   }
+  ]
+ }
+]

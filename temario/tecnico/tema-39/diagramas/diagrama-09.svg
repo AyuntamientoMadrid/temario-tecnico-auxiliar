@@ -1,0 +1,40 @@
+<svg aria-label="Las cinco dimensiones de seguridad del anexo I del ENS en su orden vigente: confidencialidad, integridad, trazabilidad, autenticidad y disponibilidad, con la definición del glosario, la pregunta que responde cada una y sus medidas características del anexo II; el derogado Real Decreto 3/2010 las ordenaba disponibilidad, autenticidad, integridad, confidencialidad y trazabilidad" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.k9{font:700 10px system-ui,sans-serif;fill:#0055a0}.d9{font:8.5px system-ui,sans-serif;fill:#333}.n9{font:8.5px system-ui,sans-serif;fill:#666}.ini9{font:700 18px system-ui,sans-serif;fill:#fff}.q9{font:700 9px system-ui,sans-serif;fill:#2d8659}.r9{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h9" text-anchor="middle" x="340" y="19">Las cinco dimensiones de seguridad — anexo I, apartado 2, en su orden vigente</text>
+<text class="n9" text-anchor="middle" x="340" y="35">Se identifican «por sus correspondientes iniciales en mayúsculas». Regla mnemotécnica: se leen como CITAD</text>
+<rect fill="#eef4fa" height="46" rx="4" width="632" x="24" y="46"></rect>
+<rect fill="#0055a0" height="46" rx="4" width="42" x="24" y="46"></rect>
+<text class="ini9" text-anchor="middle" x="45" y="76">C</text>
+<text class="k9" x="76" y="62">CONFIDENCIALIDAD</text>
+<text class="d9" x="76" y="75">«Ni se pone a disposición, ni se revela a individuos o procesos NO AUTORIZADOS»</text>
+<text class="q9" x="76" y="88">¿QUIÉN PUEDE VER ESTO? — mp.si.1 marcado · mp.si.2 criptografía · mp.si.5 borrado · mp.info.2 y mp.info.5 · mp.com.2</text>
+<rect fill="#eef4fa" height="46" rx="4" width="632" x="24" y="96"></rect>
+<rect fill="#0055a0" height="46" rx="4" width="42" x="24" y="96"></rect>
+<text class="ini9" text-anchor="middle" x="45" y="126">I</text>
+<text class="k9" x="76" y="112">INTEGRIDAD</text>
+<text class="d9" x="76" y="125">«El activo de información NO HA SIDO ALTERADO de manera no autorizada»</text>
+<text class="q9" x="76" y="138">¿ES ESTO LO MISMO QUE SE GUARDÓ? — mp.info.3 firma · mp.com.3 integridad y autenticidad · mp.si.2 · op.exp.3</text>
+<rect fill="#eef4fa" height="46" rx="4" width="632" x="24" y="146"></rect>
+<rect fill="#0055a0" height="46" rx="4" width="42" x="24" y="146"></rect>
+<text class="ini9" text-anchor="middle" x="45" y="176">T</text>
+<text class="k9" x="76" y="162">TRAZABILIDAD</text>
+<text class="d9" x="76" y="175">«Las actuaciones de una entidad pueden ser TRAZADAS DE FORMA INDISCUTIBLE hasta ella»</text>
+<text class="q9" x="76" y="188">¿QUIÉN HIZO QUÉ Y CUÁNDO? — op.exp.8 registro de actividad · op.exp.9 incidentes · mp.info.4 sellos de tiempo · op.mon.3</text>
+<rect fill="#eef4fa" height="46" rx="4" width="632" x="24" y="196"></rect>
+<rect fill="#0055a0" height="46" rx="4" width="42" x="24" y="196"></rect>
+<text class="ini9" text-anchor="middle" x="45" y="226">A</text>
+<text class="k9" x="76" y="212">AUTENTICIDAD</text>
+<text class="d9" x="76" y="225">«Una entidad ES QUIEN DICE SER, o bien garantiza LA FUENTE de la que proceden los datos»</text>
+<text class="q9" x="76" y="238">¿ES DE QUIEN DICE SER? — op.acc.1 identificación · op.acc.5 y op.acc.6 autenticación · mp.info.3 · mp.com.3 · mp.eq.2</text>
+<rect fill="#eef4fa" height="46" rx="4" width="632" x="24" y="246"></rect>
+<rect fill="#0055a0" height="46" rx="4" width="42" x="24" y="246"></rect>
+<text class="ini9" text-anchor="middle" x="45" y="276">D</text>
+<text class="k9" x="76" y="262">DISPONIBILIDAD</text>
+<text class="d9" x="76" y="275">«Las entidades o procesos autorizados TIENEN ACCESO CUANDO LO REQUIEREN»</text>
+<text class="q9" x="76" y="288">¿ESTÁ CUANDO HACE FALTA? — op.cont.1 a 4 continuidad · op.pl.4 capacidad · mp.if.4 a mp.if.6 · mp.info.6 copias · mp.s.4</text>
+<rect fill="#fdf3e3" height="26" rx="4" stroke="#d13c3c" stroke-width="1.3" width="632" x="24" y="298"></rect>
+<text class="r9" x="36" y="309">AVISO — DOS LISTAS QUE SE CONFUNDEN:</text>
+<text class="d9" x="256" y="309">el RD 3/2010 las ordenaba D-A-I-C-T. Y las SIETE propiedades del art. 1.2</text>
+<text class="d9" x="36" y="320">del ENS añaden ACCESO y CONSERVACIÓN, que NO son dimensiones y no se valoran: las del anexo I son solo cinco.</text>
+<text class="n9" x="24" y="342">[Fuente: ENS, anexo I ap. 2, anexo II y glosario del anexo IV · RD3-2010, anexo I ap. 2]</text>
+</svg>

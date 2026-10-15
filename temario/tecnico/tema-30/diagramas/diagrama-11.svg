@@ -1,0 +1,36 @@
+<svg aria-label="Tabla visual con los protocolos de administración y monitorización de una red de área local y sus puertos: SSH 22, Telnet 23 obsoleto, HTTPS 443, DNS 53, DHCP 67 y 68, Kerberos 88, NTP 123, SNMP 161 y 162, LDAP 389 y 636, syslog 514 y 6514 sobre TLS, RADIUS 1812 y 1813, NETCONF 830, NetFlow e IPFIX 2055, sFlow 6343 y DNS sobre TLS 853, señalando cuáles son inseguros y por qué protocolo deben sustituirse" role="img" viewbox="0 0 680 398" xmlns="http://www.w3.org/2000/svg">
+<style>.tb{font:700 9.5px system-ui,sans-serif;fill:#fff}.sb{font:8.5px system-ui,sans-serif;fill:#fff}.db{font:9px system-ui,sans-serif;fill:#333}.hb{font:700 13px system-ui,sans-serif;fill:#0055a0}.kb{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.nb{font:8.5px system-ui,sans-serif;fill:#666}.pb{font:700 11px system-ui,sans-serif;fill:#fff}</style>
+<text class="hb" text-anchor="middle" x="340" y="20">Puertos y normas: todo lo memorizable del tema, en un sitio</text>
+<text class="kb" x="24" y="42">SERVICIOS QUE HACEN UTILIZABLE LA RED</text>
+<rect fill="#0055a0" height="34" rx="4" width="156" x="20" y="48"></rect><text class="tb" text-anchor="middle" x="98" y="63">DNS</text><text class="sb" text-anchor="middle" x="98" y="76">53 UDP y TCP · RFC 1034/35</text>
+<rect fill="#0055a0" height="34" rx="4" width="156" x="182" y="48"></rect><text class="tb" text-anchor="middle" x="260" y="63">DHCP</text><text class="sb" text-anchor="middle" x="260" y="76">67 servidor / 68 cliente · RFC 2131</text>
+<rect fill="#0055a0" height="34" rx="4" width="156" x="344" y="48"></rect><text class="tb" text-anchor="middle" x="422" y="63">DHCPv6</text><text class="sb" text-anchor="middle" x="422" y="76">546 / 547 · RFC 8415</text>
+<rect fill="#0055a0" height="34" rx="4" width="154" x="506" y="48"></rect><text class="tb" text-anchor="middle" x="583" y="63">NTP</text><text class="sb" text-anchor="middle" x="583" y="76">123 UDP · RFC 5905</text>
+<text class="kb" x="24" y="102">IDENTIDAD Y CONTROL DE ACCESO</text>
+<rect fill="#2d8659" height="34" rx="4" width="156" x="20" y="108"></rect><text class="tb" text-anchor="middle" x="98" y="123">KERBEROS</text><text class="sb" text-anchor="middle" x="98" y="136">88 · RFC 4120</text>
+<rect fill="#2d8659" height="34" rx="4" width="156" x="182" y="108"></rect><text class="tb" text-anchor="middle" x="260" y="123">LDAP / LDAPS</text><text class="sb" text-anchor="middle" x="260" y="136">389 / 636 · RFC 4511</text>
+<rect fill="#2d8659" height="34" rx="4" width="156" x="344" y="108"></rect><text class="tb" text-anchor="middle" x="422" y="123">RADIUS</text><text class="sb" text-anchor="middle" x="422" y="136">1812 auth / 1813 cuentas</text>
+<rect fill="#2d8659" height="34" rx="4" width="154" x="506" y="108"></rect><text class="tb" text-anchor="middle" x="583" y="123">802.1X</text><text class="sb" text-anchor="middle" x="583" y="136">EAPOL · sin puerto IP</text>
+<text class="kb" x="24" y="162">ADMINISTRACIÓN DE LOS DISPOSITIVOS</text>
+<rect fill="#e89822" height="34" rx="4" width="156" x="20" y="168"></rect><text class="tb" text-anchor="middle" x="98" y="183">SSH</text><text class="sb" text-anchor="middle" x="98" y="196">22 TCP</text>
+<rect fill="#e89822" height="34" rx="4" width="156" x="182" y="168"></rect><text class="tb" text-anchor="middle" x="260" y="183">HTTPS de gestión</text><text class="sb" text-anchor="middle" x="260" y="196">443 TCP</text>
+<rect fill="#e89822" height="34" rx="4" width="156" x="344" y="168"></rect><text class="tb" text-anchor="middle" x="422" y="183">NETCONF</text><text class="sb" text-anchor="middle" x="422" y="196">830 sobre SSH · RFC 6241</text>
+<rect fill="#e89822" height="34" rx="4" width="154" x="506" y="168"></rect><text class="tb" text-anchor="middle" x="583" y="183">SNMP</text><text class="sb" text-anchor="middle" x="583" y="196">161 consulta / 162 trap</text>
+<text class="kb" x="24" y="222">MONITORIZACIÓN, FLUJOS Y REGISTRO</text>
+<rect fill="#0055a0" height="34" rx="4" width="156" x="20" y="228"></rect><text class="tb" text-anchor="middle" x="98" y="243">SYSLOG</text><text class="sb" text-anchor="middle" x="98" y="256">514 UDP · 6514 TLS · RFC 5424</text>
+<rect fill="#0055a0" height="34" rx="4" width="156" x="182" y="228"></rect><text class="tb" text-anchor="middle" x="260" y="243">NETFLOW v9</text><text class="sb" text-anchor="middle" x="260" y="256">2055 UDP · RFC 3954</text>
+<rect fill="#0055a0" height="34" rx="4" width="156" x="344" y="228"></rect><text class="tb" text-anchor="middle" x="422" y="243">IPFIX</text><text class="sb" text-anchor="middle" x="422" y="256">2055 UDP · RFC 7011</text>
+<rect fill="#0055a0" height="34" rx="4" width="154" x="506" y="228"></rect><text class="tb" text-anchor="middle" x="583" y="243">sFLOW</text><text class="sb" text-anchor="middle" x="583" y="256">6343 UDP · RFC 3176</text>
+<text class="kb" x="24" y="282">SUSTITUCIONES OBLIGADAS: FUERA LO QUE VIAJA EN CLARO</text>
+<rect fill="#d13c3c" height="30" rx="4" width="200" x="20" y="288"></rect><text class="pb" text-anchor="middle" x="120" y="307">TELNET 23  ✕</text>
+<text class="db" x="228" y="307">→</text>
+<rect fill="#2d8659" height="30" rx="4" width="200" x="244" y="288"></rect><text class="pb" text-anchor="middle" x="344" y="307">SSH 22  ✓</text>
+<rect fill="#fbeaea" height="30" rx="4" stroke="#d13c3c" stroke-width="1.2" width="200" x="460" y="288"></rect><text class="db" text-anchor="middle" x="560" y="307">FTP/TFTP → SCP/SFTP</text>
+<rect fill="#d13c3c" height="30" rx="4" width="200" x="20" y="324"></rect><text class="pb" text-anchor="middle" x="120" y="343">SNMP v1 / v2c  ✕</text>
+<text class="db" x="228" y="343">→</text>
+<rect fill="#2d8659" height="30" rx="4" width="200" x="244" y="324"></rect><text class="pb" text-anchor="middle" x="344" y="343">SNMPv3  ✓</text>
+<rect fill="#fbeaea" height="30" rx="4" stroke="#d13c3c" stroke-width="1.2" width="200" x="460" y="324"></rect><text class="db" text-anchor="middle" x="560" y="343">LDAP 389 → LDAPS 636</text>
+<rect fill="none" height="20" rx="4" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="360"></rect>
+<text class="kb" text-anchor="middle" x="340" y="374">v1 y v2c usan CADENA DE COMUNIDAD en claro · solo v3 autentica (authNoPriv) y cifra (authPriv)</text>
+<text class="nb" text-anchor="end" x="670" y="394">[Fuente: RFC3411; RFC5424; RFC7011; RFC2865]</text>
+</svg>

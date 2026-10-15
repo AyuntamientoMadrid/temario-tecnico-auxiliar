@@ -1,0 +1,1109 @@
+{
+  "tema": 18,
+  "bloque": "tecnico",
+  "titulo": "Lenguajes de programación",
+  "enunciado_oficial": "Lenguajes de programación. Representación de tipos de datos. Operadores. Instrucciones condicionales. Bucles y recursividad. Procedimientos, funciones y parámetros. Vectores y registros. Estructura de un programa.",
+  "calificacion": "+1 acierto, -1/3 error, 0 en blanco (BOAM 10.032, base 5.2)",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Qué es un lenguaje de programación de alto nivel?",
+      "opciones": {
+        "a": "Una notación cercana al lenguaje humano e independiente de la máquina, que necesita un traductor",
+        "b": "El conjunto de instrucciones en binario que ejecuta directamente el procesador",
+        "c": "Un lenguaje que solo funciona en una arquitectura de CPU concreta"
+      },
+      "correcta": "a",
+      "referencia": "§1.2 [SEBESTA]",
+      "explicacion": "El alto nivel abstrae el hardware; el binario (B) y el dependiente de la CPU (C) son de bajo nivel."
+    },
+    {
+      "numero": 2,
+      "pregunta": "La diferencia fundamental entre un algoritmo y un programa es que:",
+      "opciones": {
+        "a": "Son sinónimos exactos, no hay diferencia",
+        "b": "El algoritmo es la secuencia lógica de pasos, independiente del lenguaje; el programa es ese algoritmo escrito en un lenguaje ejecutable",
+        "c": "El programa es más abstracto que el algoritmo"
+      },
+      "correcta": "b",
+      "referencia": "§1.1 [SEBESTA]",
+      "explicacion": "Un mismo algoritmo puede programarse en C, Java o Python."
+    },
+    {
+      "numero": 3,
+      "pregunta": "¿Cuáles son los tres componentes con que se define todo lenguaje de programación?",
+      "opciones": {
+        "a": "Compilador, intérprete y ensamblador",
+        "b": "Variables, funciones y bucles",
+        "c": "Léxico, sintaxis y semántica"
+      },
+      "correcta": "c",
+      "referencia": "§1.1 [ASU]",
+      "explicacion": "Vocabulario (léxico), reglas gramaticales (sintaxis) y significado (semántica), igual que un lenguaje natural."
+    },
+    {
+      "numero": 4,
+      "pregunta": "En la clasificación por generaciones, SQL es un ejemplo típico de:",
+      "opciones": {
+        "a": "Lenguaje de 2.ª generación (ensamblador)",
+        "b": "Lenguaje de 4.ª generación (declarativo)",
+        "c": "Lenguaje de 1.ª generación (máquina)"
+      },
+      "correcta": "b",
+      "referencia": "§1.2 [PRATT]",
+      "explicacion": "Los 4GL son declarativos: se indica QUÉ se quiere, no CÓMO obtenerlo. SQL es el ejemplo clásico."
+    },
+    {
+      "numero": 5,
+      "pregunta": "¿Qué caracteriza a un lenguaje del paradigma imperativo frente a uno declarativo?",
+      "opciones": {
+        "a": "El imperativo solo se usa en inteligencia artificial",
+        "b": "El imperativo no admite variables",
+        "c": "En el imperativo se indica CÓMO resolver el problema (los pasos); en el declarativo, QUÉ se quiere obtener"
+      },
+      "correcta": "c",
+      "referencia": "§1.2 [SEBESTA]",
+      "explicacion": "El declarativo (SQL, Prolog) deja el «cómo» al sistema."
+    },
+    {
+      "numero": 6,
+      "pregunta": "¿Cuál es la diferencia entre un compilador y un intérprete?",
+      "opciones": {
+        "a": "El compilador traduce el programa completo antes de ejecutarlo; el intérprete traduce y ejecuta instrucción a instrucción",
+        "b": "El compilador es más lento porque traduce línea a línea",
+        "c": "El intérprete genera siempre un fichero ejecutable independiente"
+      },
+      "correcta": "a",
+      "referencia": "§1.2 [SEBESTA]",
+      "explicacion": "El compilador detecta muchos errores antes de ejecutar; el intérprete los revela en ejecución."
+    },
+    {
+      "numero": 7,
+      "pregunta": "El modelo de ejecución de Java («compile once, run anywhere») se basa en:",
+      "opciones": {
+        "a": "Interpretar directamente el código fuente sin traducirlo",
+        "b": "Compilar a código máquina específico de cada procesador",
+        "c": "Compilar a un código intermedio (bytecode) que ejecuta una máquina virtual (JVM)"
+      },
+      "correcta": "c",
+      "referencia": "§1.2 [SEBESTA]",
+      "explicacion": "Es un modelo híbrido: portabilidad del bytecode + compilación JIT para rendimiento."
+    },
+    {
+      "numero": 8,
+      "pregunta": "La descripción formal de la sintaxis de un lenguaje suele expresarse mediante:",
+      "opciones": {
+        "a": "Gramáticas en notación BNF (Backus-Naur Form)",
+        "b": "Tablas de verdad booleanas",
+        "c": "Diagramas entidad-relación"
+      },
+      "correcta": "a",
+      "referencia": "§1.4 [ASU]",
+      "explicacion": "La BNF define reglas de producción que el análisis sintáctico del compilador comprueba."
+    },
+    {
+      "numero": 9,
+      "pregunta": "Escribir <code>resultado = total / num</code> cuando <code>num</code> vale 0 constituye un:",
+      "opciones": {
+        "a": "Error de sintaxis detectado al compilar",
+        "b": "Error semántico dinámico (se manifiesta al ejecutar)",
+        "c": "Error de estilo o pragmática, sin consecuencias"
+      },
+      "correcta": "b",
+      "referencia": "§1.4 [SCOTT]",
+      "explicacion": "La sentencia es sintácticamente correcta; el fallo (división por cero) aparece en tiempo de ejecución."
+    },
+    {
+      "numero": 10,
+      "pregunta": "¿Qué es un identificador en un lenguaje de programación?",
+      "opciones": {
+        "a": "El nombre que el programador da a variables, constantes, funciones o tipos",
+        "b": "Un valor numérico fijo que no puede cambiar",
+        "c": "Un símbolo que representa una operación aritmética"
+      },
+      "correcta": "a",
+      "referencia": "§1.5 [SEBESTA]",
+      "explicacion": "Suele distinguir mayúsculas de minúsculas y no puede coincidir con una palabra reservada."
+    },
+    {
+      "numero": 11,
+      "pregunta": "¿Cuál es la diferencia entre una variable y una constante?",
+      "opciones": {
+        "a": "La constante ocupa más memoria que la variable",
+        "b": "La variable puede cambiar de valor durante la ejecución; la constante mantiene fijo su valor",
+        "c": "La variable no tiene tipo y la constante sí"
+      },
+      "correcta": "b",
+      "referencia": "§1.5 [MCCONNELL]",
+      "explicacion": "Usar constantes con nombre evita «números mágicos» y mejora el mantenimiento."
+    },
+    {
+      "numero": 12,
+      "pregunta": "En programación, ¿qué distingue a una expresión de una sentencia?",
+      "opciones": {
+        "a": "La sentencia siempre ocupa una sola línea; la expresión, varias",
+        "b": "Solo las expresiones pueden contener variables",
+        "c": "Una expresión se evalúa y produce un valor; una sentencia se ejecuta y produce un efecto"
+      },
+      "correcta": "c",
+      "referencia": "§1.6 [SEBESTA]",
+      "explicacion": "<code>x + 1</code> es expresión; <code>x = x + 1</code> es una sentencia de asignación."
+    },
+    {
+      "numero": 13,
+      "pregunta": "Un tipo de dato se define como:",
+      "opciones": {
+        "a": "La cantidad de memoria RAM instalada en el equipo",
+        "b": "Un conjunto de valores posibles junto con las operaciones permitidas sobre ellos",
+        "c": "El nombre que damos a una variable"
+      },
+      "correcta": "b",
+      "referencia": "§2.1 [PIERCE]",
+      "explicacion": "El tipo acota valores, fija la memoria ocupada y permite detectar errores."
+    },
+    {
+      "numero": 14,
+      "pregunta": "¿Cuál de los siguientes es un tipo de dato simple o primitivo?",
+      "opciones": {
+        "a": "El registro (struct)",
+        "b": "El array o vector",
+        "c": "El booleano"
+      },
+      "correcta": "c",
+      "referencia": "§2.2 [SEBESTA]",
+      "explicacion": "Booleano, entero, real y carácter son primitivos (atómicos); array y registro son estructurados."
+    },
+    {
+      "numero": 15,
+      "pregunta": "Los números reales se representan en los computadores según la norma:",
+      "opciones": {
+        "a": "IEEE 754 (coma flotante), con precisión finita",
+        "b": "ASCII de 7 bits",
+        "c": "Complemento a dos exacto sin pérdida"
+      },
+      "correcta": "a",
+      "referencia": "§2.2 [IEEE754]",
+      "explicacion": "Por eso no todos los decimales son exactos y no se deben comparar reales con <code>=</code> directamente."
+    },
+    {
+      "numero": 16,
+      "pregunta": "¿Por qué no conviene comparar dos números reales con el operador de igualdad <code>==</code>?",
+      "opciones": {
+        "a": "Porque el operador <code>==</code> no existe para reales en ningún lenguaje",
+        "b": "Porque los reales siempre son negativos",
+        "c": "Porque su representación en coma flotante es aproximada; se compara si su diferencia es menor que una tolerancia"
+      },
+      "correcta": "c",
+      "referencia": "§2.2 [IEEE754]",
+      "explicacion": "Se usa <code>|a − b| &lt; ε</code> en lugar de <code>a == b</code>."
+    },
+    {
+      "numero": 17,
+      "pregunta": "Para almacenar importes de dinero (tributos, tasas) sin errores de redondeo, se recomienda:",
+      "opciones": {
+        "a": "Usar entero de céntimos o un tipo decimal exacto, no coma flotante",
+        "b": "Usar siempre variables de tipo carácter",
+        "c": "Usar coma flotante de doble precisión, que es exacta"
+      },
+      "correcta": "a",
+      "referencia": "§2.2 [IEEE754]",
+      "explicacion": "Un error de un céntimo por recibo, multiplicado por miles, es un problema contable real."
+    },
+    {
+      "numero": 18,
+      "pregunta": "Un tipo enumerado (enum) como <code>ESTADO = {ABIERTO, EN_TRAMITE, RESUELTO}</code> sirve para:",
+      "opciones": {
+        "a": "Almacenar números reales con muchos decimales",
+        "b": "Definir un conjunto fijo de valores con nombre, mejorando la legibilidad frente a usar números",
+        "c": "Reservar memoria dinámica en el montículo"
+      },
+      "correcta": "b",
+      "referencia": "§2.3 [SEBESTA]",
+      "explicacion": "Es un tipo definido por el usuario."
+    },
+    {
+      "numero": 19,
+      "pregunta": "La conversión de tipo que realiza automáticamente el lenguaje, normalmente ampliando de un tipo menor a uno mayor sin pérdida, se llama:",
+      "opciones": {
+        "a": "Conversión implícita o coerción",
+        "b": "Conversión explícita o cast forzado",
+        "c": "Truncamiento manual"
+      },
+      "correcta": "a",
+      "referencia": "§2.4 [SCOTT]",
+      "explicacion": "Ejemplo: en <code>3 + 2.5</code> el entero <code>3</code> se convierte a <code>3.0</code> automáticamente (widening)."
+    },
+    {
+      "numero": 20,
+      "pregunta": "Python es un lenguaje de tipado fuerte y dinámico. Esto significa que:",
+      "opciones": {
+        "a": "El tipo se comprueba en compilación y permite mezclar tipos libremente",
+        "b": "Controla las mezclas de tipos incoherentes (fuerte) y el tipo se asocia al valor y se comprueba en ejecución (dinámico)",
+        "c": "No tiene tipos de datos"
+      },
+      "correcta": "b",
+      "referencia": "§2.4 [PIERCE]",
+      "explicacion": "Fuerte/débil y estático/dinámico son ejes independientes."
+    },
+    {
+      "numero": 21,
+      "pregunta": "Los ejes «fuerte/débil» y «estático/dinámico» de un sistema de tipos:",
+      "opciones": {
+        "a": "Son exactamente lo mismo expresado de dos formas",
+        "b": "Solo se aplican a lenguajes compilados",
+        "c": "Son independientes: uno mide cuán estricto es con las mezclas de tipos, el otro cuándo se comprueba el tipo"
+      },
+      "correcta": "c",
+      "referencia": "§2.4 [PIERCE]",
+      "explicacion": "Python es fuerte y dinámico; C es estático y relativamente débil."
+    },
+    {
+      "numero": 22,
+      "pregunta": "En un lenguaje con división entera, ¿qué vale <code>resultado</code> tras <code>entero a=7; entero b=2; real resultado = a / b;</code>?",
+      "opciones": {
+        "a": "3.5, porque el resultado es real",
+        "b": "Da error de compilación siempre",
+        "c": "3.0, porque la división se hace primero entre enteros (7/2=3) y luego se convierte a real"
+      },
+      "correcta": "c",
+      "referencia": "§2.4 [SCOTT]",
+      "explicacion": "Para obtener 3.5 hay que convertir ANTES de dividir: <code>(real)a / b</code>."
+    },
+    {
+      "numero": 23,
+      "pregunta": "El operador módulo (<code>mod</code>, <code>%</code>) devuelve:",
+      "opciones": {
+        "a": "El resto de la división entera entre dos números",
+        "b": "El cociente sin decimales",
+        "c": "La potencia del primer número elevado al segundo"
+      },
+      "correcta": "a",
+      "referencia": "§3.1 [SEBESTA]",
+      "explicacion": "<code>n mod 2 == 0</code> comprueba si <code>n</code> es par."
+    },
+    {
+      "numero": 24,
+      "pregunta": "¿Qué operador se usa para comprobar si un número <code>n</code> es par?",
+      "opciones": {
+        "a": "<code>n / 2 == 0</code>",
+        "b": "<code>n mod 2 == 0</code>",
+        "c": "<code>n ^ 2 == 0</code>"
+      },
+      "correcta": "b",
+      "referencia": "§3.1 [SEBESTA]",
+      "explicacion": "Si el resto de dividir entre 2 es cero, el número es par."
+    },
+    {
+      "numero": 25,
+      "pregunta": "Los operadores relacionales (<code>&lt;</code>, <code>&gt;</code>, <code>==</code>, <code>!=</code>) devuelven un valor de tipo:",
+      "opciones": {
+        "a": "Entero",
+        "b": "Booleano (verdadero o falso)",
+        "c": "Carácter"
+      },
+      "correcta": "b",
+      "referencia": "§3.2 [SEBESTA]",
+      "explicacion": "Comparan dos valores y producen el resultado de la comparación."
+    },
+    {
+      "numero": 26,
+      "pregunta": "El error de escribir <code>si (x = 5)</code> en lugar de <code>si (x == 5)</code> consiste en:",
+      "opciones": {
+        "a": "Confundir el operador de asignación (<code>=</code>, guarda un valor) con el de comparación (<code>==</code>, pregunta si son iguales)",
+        "b": "Usar un operador que no existe",
+        "c": "Escribir un comentario mal cerrado"
+      },
+      "correcta": "a",
+      "referencia": "§3.2 [SEBESTA]",
+      "explicacion": "En muchos lenguajes no da error de compilación y provoca un fallo lógico difícil de detectar."
+    },
+    {
+      "numero": 27,
+      "pregunta": "La evaluación en cortocircuito (short-circuit) en <code>a Y b</code> significa que:",
+      "opciones": {
+        "a": "Siempre se evalúan ambos operandos antes de decidir",
+        "b": "Si <code>a</code> es falso, <code>b</code> no se evalúa porque el resultado ya es falso",
+        "c": "El operador <code>Y</code> se convierte en <code>O</code> automáticamente"
+      },
+      "correcta": "b",
+      "referencia": "§3.2 [SEBESTA]",
+      "explicacion": "Se aprovecha para proteger operaciones, p. ej. evitar una división por cero."
+    },
+    {
+      "numero": 28,
+      "pregunta": "¿Cuál es el resultado de la expresión <code>2 + 3 * 4</code> aplicando la precedencia habitual de operadores?",
+      "opciones": {
+        "a": "20",
+        "b": "24",
+        "c": "14"
+      },
+      "correcta": "c",
+      "referencia": "§3.4 [SEBESTA]",
+      "explicacion": "La multiplicación tiene mayor precedencia que la suma: <code>3*4=12</code>, luego <code>2+12=14</code>. Los paréntesis alterarían el orden."
+    },
+    {
+      "numero": 29,
+      "pregunta": "La sentencia <code>x += 3</code> es equivalente a:",
+      "opciones": {
+        "a": "<code>x = x + 3</code>",
+        "b": "<code>x = 3</code>",
+        "c": "<code>x = x * 3</code>"
+      },
+      "correcta": "a",
+      "referencia": "§3.3 [SEBESTA]",
+      "explicacion": "Es una asignación compuesta que combina la suma con la asignación."
+    },
+    {
+      "numero": 30,
+      "pregunta": "En una expresión con varios operadores, ¿qué elemento fuerza siempre el orden de evaluación por encima de la precedencia?",
+      "opciones": {
+        "a": "El operador de asignación",
+        "b": "El operador módulo",
+        "c": "Los paréntesis"
+      },
+      "correcta": "c",
+      "referencia": "§3.4 [SEBESTA]",
+      "explicacion": "Lo que está entre paréntesis se evalúa primero; en caso de duda, conviene usarlos para mayor legibilidad."
+    },
+    {
+      "numero": 31,
+      "pregunta": "Según el teorema de Böhm-Jacopini (1966), cualquier algoritmo puede escribirse combinando únicamente:",
+      "opciones": {
+        "a": "Compiladores, intérpretes y ensambladores",
+        "b": "Secuencia, selección e iteración",
+        "c": "Variables, constantes y punteros"
+      },
+      "correcta": "b",
+      "referencia": "§4.1 [BOHM66]",
+      "explicacion": "Es el fundamento de la programación estructurada, que evita el <code>goto</code> (Dijkstra, 1968)."
+    },
+    {
+      "numero": 32,
+      "pregunta": "¿Por qué la programación estructurada desaconseja el uso de la instrucción <code>goto</code>?",
+      "opciones": {
+        "a": "Porque el <code>goto</code> es más lento de ejecutar",
+        "b": "Porque el <code>goto</code> no existe en ningún lenguaje moderno",
+        "c": "Porque genera «código espagueti» difícil de leer y mantener (Dijkstra, 1968)"
+      },
+      "correcta": "c",
+      "referencia": "§4.1 [DIJKSTRA68]",
+      "explicacion": "Un programa estructurado tiene un único punto de entrada y de salida por bloque."
+    },
+    {
+      "numero": 33,
+      "pregunta": "La estructura de selección múltiple <code>segun</code> / <code>switch</code> / <code>case</code> es preferible a muchos <code>si</code> encadenados cuando:",
+      "opciones": {
+        "a": "Se decide sobre los distintos valores discretos de una misma expresión",
+        "b": "Solo hay dos caminos posibles",
+        "c": "No se conoce ninguna condición"
+      },
+      "correcta": "a",
+      "referencia": "§4.2 [SEBESTA]",
+      "explicacion": "Es más legible; la rama <code>por_defecto</code> captura los valores no contemplados."
+    },
+    {
+      "numero": 34,
+      "pregunta": "En un <code>switch</code> de lenguajes como C o Java, olvidar el <code>break</code> al final de cada caso provoca:",
+      "opciones": {
+        "a": "Un error de compilación inmediato",
+        "b": "Que el programa se detenga",
+        "c": "Que la ejecución «caiga» (fall-through) al siguiente caso"
+      },
+      "correcta": "c",
+      "referencia": "§4.2 [SEBESTA]",
+      "explicacion": "Es un error frecuente; el <code>break</code> corta la ejecución del caso."
+    },
+    {
+      "numero": 35,
+      "pregunta": "¿Cuál es la diferencia entre un bucle <code>mientras</code> (while) y un <code>repetir…hasta</code> (do-while)?",
+      "opciones": {
+        "a": "El <code>mientras</code> comprueba la condición antes (puede ejecutarse 0 veces); el <code>repetir…hasta</code> la comprueba después (se ejecuta al menos 1 vez)",
+        "b": "El <code>mientras</code> se ejecuta siempre exactamente 10 veces",
+        "c": "No hay ninguna diferencia entre ellos"
+      },
+      "correcta": "a",
+      "referencia": "§4.3 [SEBESTA]",
+      "explicacion": "El primero es precondicional; el segundo, postcondicional."
+    },
+    {
+      "numero": 36,
+      "pregunta": "El bucle <code>para</code> (for) es el más adecuado cuando:",
+      "opciones": {
+        "a": "La condición no puede evaluarse nunca",
+        "b": "Se conoce de antemano el número de repeticiones",
+        "c": "Se quiere ejecutar el cuerpo una única vez seguro"
+      },
+      "correcta": "b",
+      "referencia": "§4.3 [SEBESTA]",
+      "explicacion": "Integra inicialización, condición e incremento del contador."
+    },
+    {
+      "numero": 37,
+      "pregunta": "¿Cuántas veces se ejecuta el cuerpo de <code>i = 5; mientras (i &lt; 5) hacer … i = i + 1; fin_mientras</code>?",
+      "opciones": {
+        "a": "0 veces, porque la condición <code>5 &lt; 5</code> es falsa de entrada",
+        "b": "5 veces",
+        "c": "Infinitas veces"
+      },
+      "correcta": "a",
+      "referencia": "§4.3 [SEBESTA]",
+      "explicacion": "El <code>mientras</code> es precondicional; comprueba antes de entrar."
+    },
+    {
+      "numero": 38,
+      "pregunta": "Un bucle infinito se produce cuando:",
+      "opciones": {
+        "a": "El bucle tiene demasiadas iteraciones definidas",
+        "b": "La condición de continuación nunca llega a hacerse falsa (p. ej. se olvida incrementar el contador)",
+        "c": "Se usa un bucle <code>para</code> con contador"
+      },
+      "correcta": "b",
+      "referencia": "§4.3 [SEBESTA]",
+      "explicacion": "Es un error grave que cuelga el programa."
+    },
+    {
+      "numero": 39,
+      "pregunta": "Toda función recursiva correctamente construida debe tener:",
+      "opciones": {
+        "a": "Al menos tres parámetros",
+        "b": "Una variable global compartida",
+        "c": "Un caso base (condición de parada) y un caso recursivo que se acerque a él"
+      },
+      "correcta": "c",
+      "referencia": "§4.4 [ABELSON]",
+      "explicacion": "Sin caso base, la recursión es infinita y desborda la pila (stack overflow)."
+    },
+    {
+      "numero": 40,
+      "pregunta": "¿Qué ocurre si una función recursiva carece de caso base o nunca lo alcanza?",
+      "opciones": {
+        "a": "El compilador la convierte automáticamente en iterativa",
+        "b": "Se produce recursión infinita que agota la pila de llamadas (stack overflow)",
+        "c": "Devuelve siempre el valor 0"
+      },
+      "correcta": "b",
+      "referencia": "§4.4 [CLRS]",
+      "explicacion": "Cada llamada pendiente ocupa un marco en la pila."
+    },
+    {
+      "numero": 41,
+      "pregunta": "Comparando recursividad e iteración para el mismo problema:",
+      "opciones": {
+        "a": "La recursión nunca puede sustituirse por iteración",
+        "b": "La iteración siempre da resultados incorrectos",
+        "c": "Todo algoritmo recursivo puede reescribirse de forma iterativa; la recursión suele ser más elegante pero consume más memoria (marcos de pila)"
+      },
+      "correcta": "c",
+      "referencia": "§4.4 [CLRS]",
+      "explicacion": "La iteración es más eficiente en memoria."
+    },
+    {
+      "numero": 42,
+      "pregunta": "¿Qué valor devuelve <code>factorial(4)</code> según la definición <code>factorial(n) = n * factorial(n-1)</code>, con caso base <code>factorial(1) = 1</code>?",
+      "opciones": {
+        "a": "24",
+        "b": "10",
+        "c": "12"
+      },
+      "correcta": "a",
+      "referencia": "§4.4 [ABELSON]",
+      "explicacion": "<code>4 <em> 3 </em> 2 * 1 = 24</code>. Se apilan 4 llamadas y se desenrollan desde el caso base."
+    },
+    {
+      "numero": 43,
+      "pregunta": "¿Cuál es la diferencia entre una función y un procedimiento?",
+      "opciones": {
+        "a": "El procedimiento solo puede tener un parámetro",
+        "b": "La función se ejecuta más rápido siempre",
+        "c": "La función devuelve un valor (se usa en una expresión); el procedimiento no devuelve valor, actúa por sus efectos"
+      },
+      "correcta": "c",
+      "referencia": "§4.5 [ABELSON]",
+      "explicacion": "Muchos lenguajes los unifican como funciones que devuelven <code>void</code>."
+    },
+    {
+      "numero": 44,
+      "pregunta": "Los beneficios de la programación modular (dividir el programa en subprogramas) incluyen:",
+      "opciones": {
+        "a": "Reutilización, legibilidad, mantenimiento y prueba independiente, con alta cohesión y bajo acoplamiento",
+        "b": "Aumentar el número de líneas de código para que parezca más completo",
+        "c": "Impedir el uso de funciones y procedimientos"
+      },
+      "correcta": "a",
+      "referencia": "§4.5 [MCCONNELL]",
+      "explicacion": "Es aplicar «divide y vencerás» al diseño del software."
+    },
+    {
+      "numero": 45,
+      "pregunta": "En el paso de parámetros, el «parámetro formal» es:",
+      "opciones": {
+        "a": "El valor concreto que se pasa en la llamada",
+        "b": "La variable que aparece en la definición del subprograma",
+        "c": "Un tipo de dato primitivo"
+      },
+      "correcta": "b",
+      "referencia": "§4.6 [SCOTT]",
+      "explicacion": "El valor concreto de la llamada es el «argumento» o parámetro real."
+    },
+    {
+      "numero": 46,
+      "pregunta": "Si un procedimiento <code>duplica(x) { x = x * 2 }</code> recibe la variable <code>a = 10</code> por VALOR, tras la llamada <code>duplica(a)</code>:",
+      "opciones": {
+        "a": "<code>a</code> sigue valiendo 10, porque se duplicó una copia y el original no cambia",
+        "b": "<code>a</code> pasa a valer 20",
+        "c": "<code>a</code> queda sin valor definido"
+      },
+      "correcta": "a",
+      "referencia": "§4.6 [SCOTT]",
+      "explicacion": "Por referencia, en cambio, <code>a</code> pasaría a valer 20."
+    },
+    {
+      "numero": 47,
+      "pregunta": "En el paso por referencia, a diferencia del paso por valor:",
+      "opciones": {
+        "a": "Nunca se pueden modificar los datos del llamador",
+        "b": "Se copia el argumento y el original queda intacto",
+        "c": "Se pasa la dirección de la variable, por lo que el subprograma puede modificar el original"
+      },
+      "correcta": "c",
+      "referencia": "§4.6 [SCOTT]",
+      "explicacion": "En C se emula con punteros; permite devolver varios resultados."
+    },
+    {
+      "numero": 48,
+      "pregunta": "El ámbito (scope) de una variable se refiere a:",
+      "opciones": {
+        "a": "La cantidad de memoria que ocupa",
+        "b": "El número de veces que cambia de valor",
+        "c": "La región del programa donde la variable es visible y puede usarse"
+      },
+      "correcta": "c",
+      "referencia": "§4.7 [SCOTT]",
+      "explicacion": "Puede ser local (dentro de un subprograma) o global (todo el programa)."
+    },
+    {
+      "numero": 49,
+      "pregunta": "Una variable local declarada <code>static</code> en C tiene:",
+      "opciones": {
+        "a": "Ámbito global y tiempo de vida local",
+        "b": "Ámbito local (solo visible en su función) pero tiempo de vida global (conserva su valor entre llamadas)",
+        "c": "Ni ámbito ni tiempo de vida"
+      },
+      "correcta": "b",
+      "referencia": "§4.7 [SCOTT]",
+      "explicacion": "Ámbito (dónde es visible) y tiempo de vida (cuánto existe) son conceptos distintos."
+    },
+    {
+      "numero": 50,
+      "pregunta": "Las variables locales automáticas de un subprograma se ubican en la memoria denominada:",
+      "opciones": {
+        "a": "Pila (stack): nacen al entrar en el subprograma y mueren al salir",
+        "b": "Montículo (heap) reservado con <code>new</code>",
+        "c": "Registro del procesador exclusivamente"
+      },
+      "correcta": "a",
+      "referencia": "§4.7 [SCOTT]",
+      "explicacion": "La memoria dinámica (con <code>new</code>/<code>malloc</code>) va al montículo (heap)."
+    },
+    {
+      "numero": 51,
+      "pregunta": "Un array (vector) se caracteriza por:",
+      "opciones": {
+        "a": "Agrupar campos de tipos distintos accedidos por nombre",
+        "b": "No tener un orden definido entre sus elementos",
+        "c": "Ser una colección de elementos del mismo tipo, contiguos en memoria y accesibles por índice en tiempo O(1)"
+      },
+      "correcta": "c",
+      "referencia": "§5.1 [KNUTH1]",
+      "explicacion": "El acceso directo por índice es su gran ventaja."
+    },
+    {
+      "numero": 52,
+      "pregunta": "Acceder a <code>array[i]</code> con un índice <code>i</code> fuera del rango declarado:",
+      "opciones": {
+        "a": "Siempre devuelve el valor 0 sin problemas",
+        "b": "Es un error grave: en C corrompe memoria; en Java/Python lanza una excepción (IndexOutOfBounds)",
+        "c": "Amplía automáticamente el tamaño del array"
+      },
+      "correcta": "b",
+      "referencia": "§5.1 [KNUTH1]",
+      "explicacion": "Hay que respetar los límites del array."
+    },
+    {
+      "numero": 53,
+      "pregunta": "¿Cuál es la diferencia esencial entre un array y un registro?",
+      "opciones": {
+        "a": "El array agrupa elementos del mismo tipo accedidos por índice; el registro agrupa campos de tipos distintos accedidos por nombre",
+        "b": "El array no cabe en memoria y el registro sí",
+        "c": "El registro solo puede tener un campo"
+      },
+      "correcta": "a",
+      "referencia": "§5.2 [KNUTH1]",
+      "explicacion": "Un array de registros combina ambos."
+    },
+    {
+      "numero": 54,
+      "pregunta": "El Padrón Municipal (con dni, nombre, fecha de nacimiento y distrito de cada habitante) se modela de forma natural como:",
+      "opciones": {
+        "a": "Un único número entero muy grande",
+        "b": "Un array (o lista) de registros «Habitante», donde cada habitante es un registro",
+        "c": "Una constante booleana"
+      },
+      "correcta": "b",
+      "referencia": "§5.2 [KNUTH1]",
+      "explicacion": "Es el paso previo a persistirlo en una base de datos relacional (T17/T19)."
+    },
+    {
+      "numero": 55,
+      "pregunta": "La búsqueda binaria (dicotómica) sobre un array:",
+      "opciones": {
+        "a": "Funciona sobre cualquier array, esté ordenado o no",
+        "b": "Es más lenta que la búsqueda secuencial",
+        "c": "Requiere que el array esté ordenado y tiene coste O(log n), más rápida que la secuencial O(n)"
+      },
+      "correcta": "c",
+      "referencia": "§5.3 [CLRS]",
+      "explicacion": "Divide el rango a la mitad en cada paso."
+    },
+    {
+      "numero": 56,
+      "pregunta": "El principio DRY (Don't Repeat Yourself) en buenas prácticas de programación consiste en:",
+      "opciones": {
+        "a": "No repetir código, factorizando lo común en funciones reutilizables",
+        "b": "Repetir el código tres veces para asegurar que funciona",
+        "c": "Documentar cada línea con un comentario"
+      },
+      "correcta": "a",
+      "referencia": "§6.2 [MCCONNELL]",
+      "explicacion": "Junto con KISS (mantenlo simple) y YAGNI, mejora la mantenibilidad."
+    },
+    {
+      "numero": 57,
+      "pregunta": "Un «error lógico» en un programa se caracteriza por:",
+      "opciones": {
+        "a": "Impedir que el programa compile",
+        "b": "Detener el programa con un mensaje del sistema operativo",
+        "c": "Que el programa se ejecuta sin fallar pero produce un resultado incorrecto; es el más difícil de detectar"
+      },
+      "correcta": "c",
+      "referencia": "§6.3 [KP]",
+      "explicacion": "Se caza con pruebas (testing); se distingue del error de compilación y del de ejecución."
+    },
+    {
+      "numero": 58,
+      "pregunta": "Las pruebas que comprueban una función o módulo de forma aislada se denominan:",
+      "opciones": {
+        "a": "Pruebas de aceptación del usuario",
+        "b": "Pruebas unitarias",
+        "c": "Pruebas de sistema completo"
+      },
+      "correcta": "b",
+      "referencia": "§6.3 [KP]",
+      "explicacion": "Las de integración comprueban módulos juntos; las de sistema/aceptación, el conjunto frente a los requisitos."
+    },
+    {
+      "numero": 59,
+      "pregunta": "El «tipado gradual» (type hints en Python, TypeScript sobre JavaScript) es una tendencia que busca:",
+      "opciones": {
+        "a": "Añadir anotaciones de tipo opcionales a lenguajes dinámicos para detectar errores antes sin perder flexibilidad",
+        "b": "Eliminar todos los tipos de datos de los lenguajes",
+        "c": "Convertir todos los lenguajes en ensamblador"
+      },
+      "correcta": "a",
+      "referencia": "§7 [SCOTT]",
+      "explicacion": "Acerca lo mejor del tipado estático y del dinámico."
+    },
+    {
+      "numero": 60,
+      "pregunta": "Respecto a las tendencias actuales (seguridad de memoria, concurrencia, IA), los fundamentos del tema (tipos, operadores, estructuras de control, modularidad):",
+      "opciones": {
+        "a": "Han quedado obsoletos y ya no se usan",
+        "b": "Siguen plenamente vigentes por debajo de todas esas tendencias",
+        "c": "Solo se aplican a lenguajes de bajo nivel"
+      },
+      "correcta": "b",
+      "referencia": "§7 [SEBESTA]",
+      "explicacion": "Rust, WebAssembly o los asistentes de IA se apoyan en los mismos fundamentos."
+    }
+  ],
+  "casos": [
+    {
+      "caso": 1,
+      "titulo": "Cálculo de la tasa de un servicio municipal",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el supuesto de la tasa, ¿qué tipo de dato debe usarse para el importe_base y la cuota_final?",
+          "opciones": {
+            "a": "Un real en coma flotante, porque admite decimales.",
+            "b": "Un entero de céntimos o un tipo decimal exacto.",
+            "c": "Una cadena de caracteres, para guardar el símbolo €."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 1 · §2.2",
+          "explicacion": "Para dinero se recomienda un entero de céntimos o un tipo decimal exacto, no coma flotante, porque los reales en coma flotante son aproximaciones."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Por qué no conviene guardar esos importes en coma flotante?",
+          "opciones": {
+            "a": "Porque la representación IEEE 754 es aproximada y puede introducir céntimos erróneos.",
+            "b": "Porque la coma flotante no admite valores con parte decimal, como los céntimos.",
+            "c": "Porque la coma flotante no permite representar importes negativos ni el cero."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 1 · §2.2",
+          "explicacion": "Los reales se representan según IEEE 754 con precisión finita: no todos los decimales son exactos, y un céntimo de error multiplicado por miles de recibos es un problema contable."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Qué tipo de dato corresponde al indicador de familia numerosa?",
+          "opciones": {
+            "a": "Real, en tanto por uno.",
+            "b": "Enumerado con los tramos de renta.",
+            "c": "Booleano (verdadero/falso)."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 1 · §2.2",
+          "explicacion": "El indicador solo puede tomar dos valores, sí o no: es un booleano. El tanto por uno es propio de la bonificación."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Qué estructura de control es la más adecuada para asignar la bonificación por tramos de renta?",
+          "opciones": {
+            "a": "Una selección múltiple segun / switch sobre la renta.",
+            "b": "Un condicional múltiple anidado (si … si_no si … si_no).",
+            "c": "Un bucle mientras que recorra los tramos de renta."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 2 · §4.2",
+          "explicacion": "El condicional múltiple anidado encadena varias condiciones sobre rangos (renta < 12.000; renta ≤ 20.000, porque el tramo «entre 12.000 y 20.000 €» incluye los 20.000; resto), que es lo que pide el cálculo."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Por qué se descarta aquí la selección múltiple segun / switch?",
+          "opciones": {
+            "a": "Porque switch compara contra valores constantes y aquí se decide por rangos.",
+            "b": "Porque switch no admite una rama por defecto para los demás valores.",
+            "c": "Porque switch solo puede distinguir entre dos casos distintos."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 2 · §4.2",
+          "explicacion": "La selección múltiple compara una expresión contra varios valores constantes y es útil con valores discretos; la renta es continua y se clasifica por rangos."
+        },
+        {
+          "numero": 6,
+          "pregunta": "Un solicitante tiene una renta de 15.000 € y familia numerosa. ¿Qué bonificación total (en tanto por uno) le corresponde?",
+          "opciones": {
+            "a": "0,25.",
+            "b": "0,55.",
+            "c": "0,30."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestiones 2 y 3",
+          "explicacion": "La renta está entre 12.000 y 20.000 €, tramo del 25 % (0,25); la familia numerosa suma 5 puntos acumulables (0,05): 0,25 + 0,05 = 0,30."
+        },
+        {
+          "numero": 7,
+          "pregunta": "¿Qué expresión calcula correctamente la cuota_final?",
+          "opciones": {
+            "a": "cuota_final = importe_base * (1 - bonificacion)",
+            "b": "cuota_final = importe_base * 1 - bonificacion",
+            "c": "cuota_final = importe_base * bonificacion"
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 3 · §3.1, §3.4",
+          "explicacion": "La cuota es la parte no bonificada del importe: importe_base × (1 − bonificación). Sin paréntesis, la multiplicación se evalúa antes que la resta y el resultado sería importe_base − bonificación."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Con un importe_base de 200 € y una bonificación total de 0,30, ¿cuál es la cuota_final?",
+          "opciones": {
+            "a": "60 €.",
+            "b": "140 €.",
+            "c": "199,70 €."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 3",
+          "explicacion": "cuota_final = 200 × (1 − 0,30) = 200 × 0,70 = 140 €. Los 60 € son el importe bonificado, no la cuota."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿Qué fragmento garantiza que la cuota final nunca sea negativa?",
+          "opciones": {
+            "a": "si (cuota_final == 0) entonces cuota_final = 0 fin_si",
+            "b": "si (cuota_final < 0) entonces cuota_final = importe_base fin_si",
+            "c": "si (cuota_final < 0) entonces cuota_final = 0 fin_si"
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 3 · §3.2, §4.2",
+          "explicacion": "Un condicional simple comprueba si la cuota es menor que cero y, en ese caso, la fija en 0; comparar con == 0 no corrige nada y poner el importe base anularía la bonificación."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Los umbrales (12.000, 20.000) y los porcentajes aparecen como literales en el código. ¿Cómo se facilita el cambio de tramos del año que viene?",
+          "opciones": {
+            "a": "Sustituyéndolos por constantes con nombre declaradas en un único lugar.",
+            "b": "Añadiendo un comentario junto a cada literal que explique su significado.",
+            "c": "Usando variables globales que cualquier función pueda modificar."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 4 · §1.5, §6.2",
+          "explicacion": "Las constantes con nombre (UMBRAL_BAJO = 12000…) eliminan los «números mágicos»: el cambio se hace en un solo punto. Las variables globales modificables se desaconsejan."
+        }
+      ]
+    },
+    {
+      "caso": 2,
+      "titulo": "Procesado del censo de habitantes por distrito",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el supuesto del censo, ¿qué estructura representa a cada Habitante, con su dni, nombre, edad y codigo_distrito?",
+          "opciones": {
+            "a": "Un array de cuatro elementos, todos ellos del mismo tipo de dato.",
+            "b": "Un tipo enumerado, con una lista fija de nombres de valores.",
+            "c": "Un registro, porque agrupa campos de tipos distintos accesibles por nombre."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 1 · §5.2",
+          "explicacion": "El registro agrupa campos de tipos posiblemente distintos (cadenas y enteros) bajo un nombre y se accede por nombre de campo; el array es homogéneo."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Qué declaraciones necesita el módulo para el censo y para la población por distrito?",
+          "opciones": {
+            "a": "censo : array[1..N] de Habitante y poblacion : array[1..21] de entero.",
+            "b": "censo : registro de N campos y poblacion : array[1..N] de entero.",
+            "c": "censo : array[1..21] de Habitante y poblacion : array[1..N] de entero."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 1 · §5.1, §5.2",
+          "explicacion": "El censo es un array de registros (uno por habitante) y la población es un array de 21 contadores enteros, uno por distrito."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Qué bucle es el adecuado para recorrer el censo y por qué?",
+          "opciones": {
+            "a": "Un bucle mientras, porque el número de habitantes es desconocido.",
+            "b": "Un bucle para (for), porque se conoce el número N de habitantes.",
+            "c": "Un bucle repetir … hasta, porque el censo debe procesarse dos veces."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 2 · §4.3",
+          "explicacion": "El bucle para se usa cuando se conoce de antemano el número de repeticiones, como aquí, donde N es conocido."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Cuántos recorridos del censo hacen falta para obtener los tres resultados y con qué coste?",
+          "opciones": {
+            "a": "Tres recorridos, uno por resultado, con coste O(n²).",
+            "b": "Veintiún recorridos, uno por distrito, con coste O(n).",
+            "c": "Un único recorrido, con coste O(n)."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 2 · §5.3",
+          "explicacion": "Dentro del mismo bucle se actualizan el total, los mayores de edad y el contador del distrito: un solo recorrido lineal, O(n)."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Antes de recorrer el censo, ¿qué debe hacerse con el array poblacion?",
+          "opciones": {
+            "a": "Nada: el lenguaje pone siempre a 0 sus posiciones al declararlo.",
+            "b": "Inicializar a 0 sus 21 posiciones, igual que total y mayores.",
+            "c": "Cargar en cada posición la edad del primer habitante del distrito."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 2 · §1.5",
+          "explicacion": "Los contadores deben inicializarse antes de acumular; usar una variable declarada pero no inicializada es una fuente clásica de errores (valor «basura» en C)."
+        },
+        {
+          "numero": 6,
+          "pregunta": "¿Qué condición cuenta correctamente a los mayores de edad (18 o más)?",
+          "opciones": {
+            "a": "si (censo[i].edad >= 18)",
+            "b": "si (censo[i].edad > 18)",
+            "c": "si (censo.edad[i] >= 18)"
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 2 · §3.2, §5.2",
+          "explicacion": "Hay que incluir los 18 años (>=) y acceder primero al registro i-ésimo y después a su campo edad: censo[i].edad."
+        },
+        {
+          "numero": 7,
+          "pregunta": "En la expresión censo[i].codigo_distrito, ¿cómo se accede a cada parte?",
+          "opciones": {
+            "a": "censo[i] accede al campo por nombre; .codigo_distrito, al registro por índice.",
+            "b": "Ambas partes acceden por índice: i al registro y codigo_distrito a la posición.",
+            "c": "censo[i] accede al registro por índice; .codigo_distrito, al campo por nombre."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 3 · §5.1, §5.2",
+          "explicacion": "Al elemento de un array se accede por índice (en tiempo constante) y al campo de un registro, por su nombre con el punto."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Con dist = censo[i].codigo_distrito, ¿qué sentencia incrementa el contador del distrito de ese habitante?",
+          "opciones": {
+            "a": "poblacion[i] = poblacion[i] + 1",
+            "b": "poblacion[dist] = poblacion[dist] + 1",
+            "c": "poblacion = poblacion + dist"
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 3 · §5.1",
+          "explicacion": "El valor del campo codigo_distrito se usa como índice del array poblacion; el índice i recorre habitantes, no distritos."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿Qué comprobación defensiva debe hacerse antes de usar dist como índice de poblacion?",
+          "opciones": {
+            "a": "si (dist >= 1 Y dist <= 21) entonces …",
+            "b": "si (dist >= 1 O dist <= 21) entonces …",
+            "c": "si (dist > 1 Y dist < 21) entonces …"
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 4 · §3.2, §6.2",
+          "explicacion": "Hay que exigir a la vez (Y) que el valor esté entre 1 y 21, ambos incluidos. Con O la condición siempre es verdadera, y con > y < se excluyen los distritos 1 y 21."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Si un registro trae el distrito 0 o 25 y no se comprueba el rango, ¿qué ocurre?",
+          "opciones": {
+            "a": "El lenguaje ajusta el índice al extremo más cercano y suma el habitante al distrito 1 o 21.",
+            "b": "El compilador detecta el valor erróneo del registro e impide ejecutar el programa.",
+            "c": "Un acceso fuera de rango: corrompe memoria en C o lanza IndexOutOfBounds en Java/Python."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 4 · §5.1",
+          "explicacion": "Acceder a un índice fuera del rango declarado es un error grave: en C corrompe memoria silenciosamente y en Java o Python lanza una excepción."
+        }
+      ]
+    },
+    {
+      "caso": 3,
+      "titulo": "Tramitación y numeración de expedientes",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el supuesto de los expedientes, ¿qué expresión usa la función es_par(n)?",
+          "opciones": {
+            "a": "n mod 2 == 0",
+            "b": "n div 2 == 0",
+            "c": "n / 2 == 0"
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 1 · §3.1",
+          "explicacion": "El operador módulo devuelve el resto de la división entera: si el resto de dividir entre 2 es cero, el número es par. div devuelve el cociente."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Por qué es_par se define como función y no como procedimiento?",
+          "opciones": {
+            "a": "Porque no devuelve ningún valor y actúa por sus efectos.",
+            "b": "Porque devuelve un valor (booleano) que se usa en expresiones.",
+            "c": "Porque recibe un parámetro, cosa que no admite un procedimiento."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 1 · §4.5",
+          "explicacion": "La función devuelve un valor y se usa dentro de expresiones; el procedimiento no devuelve valor y actúa por sus efectos. Ambos pueden recibir parámetros."
+        },
+        {
+          "numero": 3,
+          "pregunta": "En la función recursiva suma_hasta(n), ¿cuál es el caso base?",
+          "opciones": {
+            "a": "devolver n + suma_hasta(n - 1)",
+            "b": "La llamada inicial suma_hasta(4)",
+            "c": "si (n <= 1) entonces devolver n"
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 2 · §4.4",
+          "explicacion": "El caso base es la condición de parada que se resuelve directamente sin volver a llamarse: para n ≤ 1 se devuelve n."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Qué caso recursivo es correcto para suma_hasta(n)?",
+          "opciones": {
+            "a": "devolver n + suma_hasta(n - 1)",
+            "b": "devolver n + suma_hasta(n + 1)",
+            "c": "devolver n + suma_hasta(n)"
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 2 · §4.4",
+          "explicacion": "El caso recursivo debe llamarse con un problema más pequeño que se acerque al caso base; con n + 1 se aleja y con n no avanza."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Qué pasaría si suma_hasta no tuviera caso base?",
+          "opciones": {
+            "a": "Devolvería 0 al llegar a n = 0 y terminaría con normalidad.",
+            "b": "El compilador lo detectaría como error de sintaxis.",
+            "c": "Recursión infinita hasta agotar la pila (stack overflow)."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 2 · §4.4",
+          "explicacion": "Sin caso base la recursión no termina: cada llamada pendiente ocupa un marco en la pila hasta agotarla."
+        },
+        {
+          "numero": 6,
+          "pregunta": "¿Qué valor devuelve suma_hasta(4)?",
+          "opciones": {
+            "a": "24.",
+            "b": "10.",
+            "c": "6."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 3 · §4.4",
+          "explicacion": "suma_hasta(4) = 4 + (3 + (2 + suma_hasta(1))), con suma_hasta(1) = 1: 2 + 1 = 3, 3 + 3 = 6, 4 + 6 = 10. El 24 sería el factorial de 4."
+        },
+        {
+          "numero": 7,
+          "pregunta": "¿Cuántas llamadas a suma_hasta llegan a estar apiladas a la vez al calcular suma_hasta(4)?",
+          "opciones": {
+            "a": "Cuatro: suma_hasta(4), (3), (2) y (1).",
+            "b": "Tres: suma_hasta(4), (3) y (2).",
+            "c": "Cinco: de suma_hasta(4) a suma_hasta(0)."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 3 · §4.4",
+          "explicacion": "La recursión se detiene en suma_hasta(1), el caso base; hasta entonces cada llamada pendiente ocupa un marco en la pila: 4, 3, 2 y 1."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Se llama a incrementar(c) { c = c + 1 } con contador = 10. Si el paso es por valor, ¿cuánto vale contador después?",
+          "opciones": {
+            "a": "11, porque c y contador comparten la misma dirección.",
+            "b": "10, porque se incrementó una copia del argumento.",
+            "c": "0, porque la copia se destruye al salir del procedimiento."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 4 · §4.6",
+          "explicacion": "En el paso por valor el subprograma trabaja sobre una copia; los cambios no afectan a la variable original del llamador."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿Y si el paso de contador a incrementar(c) es por referencia?",
+          "opciones": {
+            "a": "10, porque el original nunca se modifica.",
+            "b": "12, porque se incrementan c y contador.",
+            "c": "11, porque se modifica el original."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 4 · §4.6",
+          "explicacion": "En el paso por referencia el subprograma accede a la variable real, de modo que el incremento persiste: contador pasa de 10 a 11."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Qué explica que, con el paso por referencia, la llamada sí modifique contador?",
+          "opciones": {
+            "a": "Que el procedimiento devuelve el nuevo valor de c al llamador.",
+            "b": "Que se pasa la dirección de la variable, no una copia de su valor.",
+            "c": "Que c se declara como variable global visible en todo el programa."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 4 · §4.5, §4.6",
+          "explicacion": "Por referencia se pasa la dirección de la variable original y el subprograma trabaja sobre ella; un procedimiento, además, no devuelve valor."
+        }
+      ]
+    }
+  ]
+}

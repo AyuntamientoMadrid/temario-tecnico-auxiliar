@@ -1,0 +1,27 @@
+<svg aria-label="Tres niveles de abstracción: TAD, estructura de datos e implementación, ejemplo Pila" class="svd1" role="img" viewbox="0 0 640 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd1 .t{font:700 14px system-ui,sans-serif;fill:#fff}.svd1 .s{font:12px system-ui,sans-serif;fill:#1a1a1a}.svd1 .h{font:700 12px system-ui,sans-serif;fill:#0055a0;letter-spacing:.5px}
+  </style>
+<rect fill="#003d73" height="60" rx="8" width="560" x="40" y="30"></rect>
+<text class="t" x="60" y="58">TAD (especificación)</text>
+<text class="s" style="fill:#cfe2f3" x="60" y="78">Pila: apilar, desapilar, cima, esVacía · regla LIFO · axiomas</text>
+<rect fill="#0055a0" height="56" rx="8" width="220" x="90" y="120"></rect>
+<rect fill="#0055a0" height="56" rx="8" width="220" x="350" y="120"></rect>
+<text class="t" text-anchor="middle" x="200" y="146">Estructura: Array</text>
+<text class="s" style="fill:#cfe2f3" text-anchor="middle" x="200" y="165">contiguo, compacto</text>
+<text class="t" text-anchor="middle" x="460" y="146">Estructura: Lista enlazada</text>
+<text class="s" style="fill:#cfe2f3" text-anchor="middle" x="460" y="165">nodos + punteros</text>
+<rect fill="#6ea3d2" height="48" rx="6" width="160" x="60" y="210"></rect>
+<rect fill="#6ea3d2" height="48" rx="6" width="160" x="240" y="210"></rect>
+<rect fill="#6ea3d2" height="48" rx="6" width="160" x="420" y="210"></rect>
+<text class="s" fill="#fff" text-anchor="middle" x="140" y="239">Java ArrayList</text>
+<text class="s" fill="#fff" text-anchor="middle" x="320" y="239">C++ vector</text>
+<text class="s" fill="#fff" text-anchor="middle" x="500" y="239">Python list / deque</text>
+<line stroke="#0055a0" stroke-width="2" x1="200" x2="200" y1="90" y2="120"></line>
+<line stroke="#0055a0" stroke-width="2" x1="460" x2="460" y1="90" y2="120"></line>
+<line stroke="#6ea3d2" stroke-width="2" x1="140" x2="140" y1="176" y2="210"></line>
+<line stroke="#6ea3d2" stroke-width="2" x1="290" x2="290" y1="176" y2="210"></line>
+<line stroke="#6ea3d2" stroke-width="2" x1="500" x2="500" y1="176" y2="210"></line>
+<text class="h" transform="rotate(-90 20 62)" x="20" y="62">QUÉ</text>
+<text class="h" transform="rotate(-90 20 152)" x="20" y="152">CÓMO</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="middle" x="320" y="288">[Fuente: AHU · LISKOV-GUTTAG]</text>
+</svg>

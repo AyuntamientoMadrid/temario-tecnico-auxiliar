@@ -1,0 +1,19 @@
+<svg aria-label="Las empresas de cincuenta o más personas trabajadoras deben elaborar y aplicar un plan de igualdad, previa negociación; debe partir de un diagnóstico y fijar medidas, objetivos, estrategias y seguimiento, y se inscribe en el Registro de Planes de Igualdad" class="svd6" role="img" viewbox="0 0 720 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd6 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd6 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd6 .s{font:10px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="46" rx="8" width="220" x="250" y="14"></rect>
+<text class="h" x="360" y="35">Plan de igualdad de empresa</text>
+<text class="h" style="font-weight:400;font-size:10px" x="360" y="52">LOIEMH, arts. 45-49</text>
+<rect fill="#fdeaea" height="64" rx="8" stroke="#d13c3c" width="280" x="60" y="86"></rect>
+<text class="t" style="font-weight:700" x="200" y="110">¿50 o más personas?</text>
+<text class="s" x="200" y="131">≥ 50 → OBLIGATORIO (art. 45.2)</text>
+<text class="s" x="200" y="146">&lt; 50 → voluntario o por convenio</text>
+<rect fill="#e8f5ee" height="64" rx="8" stroke="#2d8659" width="280" x="380" y="86"></rect>
+<text class="t" style="font-weight:700" x="520" y="110">Previa NEGOCIACIÓN</text>
+<text class="s" x="520" y="131">con la representación legal</text>
+<text class="s" x="520" y="146">de la plantilla</text>
+<rect fill="#e8f0f8" height="58" rx="8" stroke="#0055a0" width="600" x="60" y="170"></rect>
+<text class="t" style="font-weight:700" x="360" y="192">Contenido mínimo (art. 46)</text>
+<text class="s" x="360" y="213">diagnóstico → medidas → objetivos → estrategias y prácticas → seguimiento y evaluación</text>
+<rect fill="#fff5e6" height="40" rx="8" stroke="#e89822" width="400" x="160" y="248"></rect>
+<text class="s" style="font-weight:700;fill:#b5740f" x="360" y="272">Inscripción obligatoria en el Registro (art. 46.5)</text>
+</svg>

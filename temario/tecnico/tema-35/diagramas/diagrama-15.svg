@@ -1,0 +1,26 @@
+<svg aria-label="Evolución de HTTP: la versión 0.9 de 1991 solo servía documentos; la 1.0 de 1996 añadió cabeceras y códigos de estado pero abría una conexión por recurso; la 1.1 introdujo conexiones persistentes y la cabecera Host obligatoria pero sufre bloqueo de cabecera de línea en la aplicación; HTTP/2 es binario y multiplexado con compresión HPACK pero mantiene el bloqueo en TCP; HTTP/3 se apoya en QUIC sobre UDP con cifrado obligatorio y elimina el bloqueo del transporte" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.t15{font:700 10px system-ui,sans-serif;fill:#fff}.s15{font:8.5px system-ui,sans-serif;fill:#fff}.d15{font:9px system-ui,sans-serif;fill:#333}.h15{font:700 13px system-ui,sans-serif;fill:#0055a0}.k15{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n15{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h15" text-anchor="middle" x="340" y="20">Cada versión de HTTP resuelve el cuello de botella de la anterior</text>
+<text class="k15" x="20" y="42">VERSIÓN</text>
+<text class="k15" x="136" y="42">QUÉ APORTA</text>
+<text class="k15" x="442" y="42">QUÉ PROBLEMA DEJA ABIERTO</text>
+<rect fill="#888" height="44" rx="4" width="110" x="20" y="50"></rect><text class="t15" text-anchor="middle" x="75" y="70">HTTP/0.9</text><text class="s15" text-anchor="middle" x="75" y="85">1991</text>
+<rect fill="#eef3f8" height="44" rx="4" width="300" x="136" y="50"></rect><text class="d15" text-anchor="middle" x="286" y="70">Una sola línea: GET /pagina</text><text class="n15" text-anchor="middle" x="286" y="85">Sin cabeceras, sin códigos de estado, sin versiones</text>
+<rect fill="#fbeaea" height="44" rx="4" width="218" x="442" y="50"></rect><text class="n15" text-anchor="middle" x="551" y="76">Solo sirve documentos HTML</text>
+<rect fill="#888" height="44" rx="4" width="110" x="20" y="100"></rect><text class="t15" text-anchor="middle" x="75" y="120">HTTP/1.0</text><text class="s15" text-anchor="middle" x="75" y="135">1996 · RFC 1945</text>
+<rect fill="#eef3f8" height="44" rx="4" width="300" x="136" y="100"></rect><text class="d15" text-anchor="middle" x="286" y="120">Cabeceras, códigos de estado y MIME</text><text class="n15" text-anchor="middle" x="286" y="135">Aparecen los métodos HEAD y POST</text>
+<rect fill="#fbeaea" height="44" rx="4" width="218" x="442" y="100"></rect><text class="n15" text-anchor="middle" x="551" y="126">Una conexión TCP por cada recurso</text>
+<rect fill="#0055a0" height="44" rx="4" width="110" x="20" y="150"></rect><text class="t15" text-anchor="middle" x="75" y="170">HTTP/1.1</text><text class="s15" text-anchor="middle" x="75" y="185">RFC 9112 · STD 99</text>
+<rect fill="#eef3f8" height="44" rx="4" width="300" x="136" y="150"></rect><text class="d15" text-anchor="middle" x="286" y="170">Conexiones persistentes y Host obligatoria</text><text class="n15" text-anchor="middle" x="286" y="185">Alojamiento virtual, rangos, caché y chunked</text>
+<rect fill="#fbeaea" height="44" rx="4" width="218" x="442" y="150"></rect><text class="n15" text-anchor="middle" x="551" y="170">Bloqueo de cabecera de línea</text><text class="n15" text-anchor="middle" x="551" y="184">en la APLICACIÓN: respuestas en orden</text>
+<rect fill="#2d8659" height="44" rx="4" width="110" x="20" y="200"></rect><text class="t15" text-anchor="middle" x="75" y="220">HTTP/2</text><text class="s15" text-anchor="middle" x="75" y="235">2015 · RFC 9113</text>
+<rect fill="#eaf5ef" height="44" rx="4" width="300" x="136" y="200"></rect><text class="d15" text-anchor="middle" x="286" y="220">Binario y multiplexado sobre UNA conexión</text><text class="n15" text-anchor="middle" x="286" y="235">Compresión de cabeceras HPACK y priorización</text>
+<rect fill="#fbeaea" height="44" rx="4" width="218" x="442" y="200"></rect><text class="n15" text-anchor="middle" x="551" y="220">Persiste el bloqueo en TCP: un</text><text class="n15" text-anchor="middle" x="551" y="234">segmento perdido detiene TODO</text>
+<rect fill="#2d8659" height="44" rx="4" width="110" x="20" y="250"></rect><text class="t15" text-anchor="middle" x="75" y="270">HTTP/3</text><text class="s15" text-anchor="middle" x="75" y="285">2022 · RFC 9114</text>
+<rect fill="#eaf5ef" height="44" rx="4" width="300" x="136" y="250"></rect><text class="d15" text-anchor="middle" x="286" y="270">Sobre QUIC (RFC 9000) y UDP</text><text class="n15" text-anchor="middle" x="286" y="285">Cifrado obligatorio, QPACK, 1-RTT y migración</text>
+<rect fill="#fdf3e3" height="44" rx="4" width="218" x="442" y="250"></rect><text class="n15" text-anchor="middle" x="551" y="270">Exige UDP abierto y dificulta la</text><text class="n15" text-anchor="middle" x="551" y="284">inspección en equipos intermedios</text>
+<rect fill="none" height="42" rx="5" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="304"></rect>
+<text class="k15" text-anchor="middle" x="340" y="320">La semántica es la MISMA en las tres versiones vigentes: métodos, códigos y cabeceras no cambian</text>
+<text class="n15" text-anchor="middle" x="340" y="334">Lo que cambia es cómo se transmiten · HTTP/2 se negocia por ALPN dentro de TLS y HTTP/3 se anuncia con Alt-Svc</text>
+<text class="n15" text-anchor="end" x="670" y="364">[Fuente: RFC 9110 a RFC 9114; RFC 9000]</text>
+</svg>

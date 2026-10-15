@@ -1,0 +1,54 @@
+<svg aria-label="Tipos de copia de seguridad: completa, diferencial que se mide desde la última completa y se restaura con dos piezas, e incremental que se mide desde la última copia de cualquier tipo y exige toda la cadena; regla 3-2-1 reforzada con copia inmutable; y línea temporal que sitúa el RPO antes del incidente y el RTO después" role="img" viewbox="0 0 680 370" xmlns="http://www.w3.org/2000/svg">
+<style>.t11{font:700 10px system-ui,sans-serif;fill:#fff}.s11{font:9px system-ui,sans-serif;fill:#fff}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}.k11{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d11{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h11" text-anchor="middle" x="340" y="20">Copias de seguridad: qué copia cada tipo y qué exige restaurar</text>
+<rect fill="#0055a0" height="70" rx="5" width="208" x="20" y="34"></rect>
+<text class="t11" text-anchor="middle" x="124" y="52">COMPLETA (full)</text>
+<text class="s11" text-anchor="middle" x="124" y="70">Copia: todos los datos</text>
+<text class="s11" text-anchor="middle" x="124" y="85">Restaura con: 1 pieza</text>
+<text class="s11" text-anchor="middle" x="124" y="99">Lenta y voluminosa</text>
+<rect fill="#2d8659" height="70" rx="5" width="208" x="238" y="34"></rect>
+<text class="t11" text-anchor="middle" x="342" y="52">DIFERENCIAL</text>
+<text class="s11" text-anchor="middle" x="342" y="70">Copia: desde la última COMPLETA</text>
+<text class="s11" text-anchor="middle" x="342" y="85">Restaura con: 2 piezas</text>
+<text class="s11" text-anchor="middle" x="342" y="99">Crece cada día</text>
+<rect fill="#e89822" height="70" rx="5" width="204" x="456" y="34"></rect>
+<text class="t11" text-anchor="middle" x="558" y="52">INCREMENTAL</text>
+<text class="s11" text-anchor="middle" x="558" y="70">Copia: desde la ÚLTIMA cualquiera</text>
+<text class="s11" text-anchor="middle" x="558" y="85">Restaura con: TODA la cadena</text>
+<text class="s11" text-anchor="middle" x="558" y="99">La más rápida de ejecutar</text>
+<rect fill="#fbe9e9" height="24" rx="5" stroke="#d13c3c" width="560" x="60" y="112"></rect>
+<text style="font:700 10px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="128">La instantánea (snapshot) NO es copia de seguridad: depende del mismo almacenamiento</text>
+<text class="k11" x="20" y="156">REGLA 3-2-1 REFORZADA</text>
+<rect fill="#0055a0" height="46" rx="5" width="120" x="20" y="164"></rect>
+<text class="t11" text-anchor="middle" x="80" y="182">3 COPIAS</text>
+<text class="s11" text-anchor="middle" x="80" y="199">de los datos</text>
+<rect fill="#0055a0" height="46" rx="5" width="120" x="150" y="164"></rect>
+<text class="t11" text-anchor="middle" x="210" y="182">2 SOPORTES</text>
+<text class="s11" text-anchor="middle" x="210" y="199">de tipo distinto</text>
+<rect fill="#0055a0" height="46" rx="5" width="120" x="280" y="164"></rect>
+<text class="t11" text-anchor="middle" x="340" y="182">1 FUERA</text>
+<text class="s11" text-anchor="middle" x="340" y="199">de las instalaciones</text>
+<rect fill="#2d8659" height="46" rx="5" width="120" x="410" y="164"></rect>
+<text class="t11" text-anchor="middle" x="470" y="182">1 INMUTABLE</text>
+<text class="s11" text-anchor="middle" x="470" y="199">o desconectada</text>
+<rect fill="#e89822" height="46" rx="5" width="120" x="540" y="164"></rect>
+<text class="t11" text-anchor="middle" x="600" y="182">0 ERRORES</text>
+<text class="s11" text-anchor="middle" x="600" y="199">tras verificación</text>
+<line stroke="#ccc" stroke-width="1" x1="20" x2="660" y1="226" y2="226"></line>
+<text class="k11" text-anchor="middle" x="340" y="244">RPO y RTO sobre la línea temporal del incidente</text>
+<line stroke="#333" stroke-width="2" x1="60" x2="620" y1="290" y2="290"></line>
+<line stroke="#d13c3c" stroke-width="3" x1="340" x2="340" y1="262" y2="318"></line>
+<text style="font:700 10px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="256">INCIDENTE</text>
+<circle cx="180" cy="290" fill="#0055a0" r="6"></circle>
+<text class="d11" text-anchor="middle" x="180" y="278">última copia válida</text>
+<circle cx="500" cy="290" fill="#2d8659" r="6"></circle>
+<text class="d11" text-anchor="middle" x="500" y="278">servicio restablecido</text>
+<path d="M180 306 L340 306" stroke="#0055a0" stroke-width="2"></path>
+<text style="font:700 10px system-ui;fill:#0055a0" text-anchor="middle" x="248" y="320">RPO — datos que puedo perder</text>
+<text class="d11" text-anchor="middle" x="248" y="333">→ define la FRECUENCIA de la copia</text>
+<path d="M340 306 L500 306" stroke="#2d8659" stroke-width="2"></path>
+<text style="font:700 10px system-ui;fill:#2d8659" text-anchor="middle" x="430" y="320">RTO — tiempo sin servicio</text>
+<text class="d11" text-anchor="middle" x="430" y="333">→ define la CAPACIDAD de restaurar</text>
+<text style="font:700 10px system-ui;fill:#0055a0" x="60" y="352">Una copia que nunca se ha restaurado no es una copia: es una hipótesis</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="364">[Fuente: ENS; ISO27002; NIST-CSF]</text>
+</svg>

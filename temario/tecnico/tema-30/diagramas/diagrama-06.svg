@@ -1,0 +1,31 @@
+<svg aria-label="Flujo del protocolo DHCP: el cliente envía Discover en difusión, el servidor responde con Offer, el cliente envía Request también en difusión y el servidor confirma con Ack, usando los puertos UDP 68 en el cliente y 67 en el servidor; se muestra el agente de retransmisión que convierte la difusión en unidifusión hacia un servidor central y la opción 82 que añade el conmutador y el puerto de origen" role="img" viewbox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 10px system-ui,sans-serif;fill:#fff}.s6{font:8.5px system-ui,sans-serif;fill:#fff}.d6{font:9px system-ui,sans-serif;fill:#333}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}.k6{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n6{font:8.5px system-ui,sans-serif;fill:#666}.m6{font:700 9px system-ui,sans-serif;fill:#0055a0}</style>
+<defs><marker id="a6" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker>
+<marker id="b6" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#2d8659"></path></marker></defs>
+<text class="h6" text-anchor="middle" x="340" y="20">DHCP: ciclo DORA, retransmisión y opción 82</text>
+<rect fill="#0055a0" height="34" rx="4" width="110" x="20" y="36"></rect><text class="t6" text-anchor="middle" x="75" y="52">CLIENTE</text><text class="s6" text-anchor="middle" x="75" y="64">UDP 68</text>
+<rect fill="#2d8659" height="34" rx="4" width="110" x="550" y="36"></rect><text class="t6" text-anchor="middle" x="605" y="52">SERVIDOR</text><text class="s6" text-anchor="middle" x="605" y="64">UDP 67</text>
+<line stroke="#999" stroke-dasharray="3,3" stroke-width="1" x1="75" x2="75" y1="76" y2="234"></line>
+<line stroke="#999" stroke-dasharray="3,3" stroke-width="1" x1="605" x2="605" y1="76" y2="234"></line>
+<line marker-end="url(#a6)" stroke="#0055a0" stroke-width="2" x1="80" x2="598" y1="96" y2="96"></line>
+<text class="m6" text-anchor="middle" x="340" y="90">1 · DISCOVER — DIFUSIÓN («¿hay algún servidor?»)</text>
+<line marker-end="url(#b6)" stroke="#2d8659" stroke-width="2" x1="598" x2="82" y1="130" y2="130"></line>
+<text style="font:700 9px system-ui;fill:#2d8659" text-anchor="middle" x="340" y="124">2 · OFFER — te ofrezco esta dirección</text>
+<line marker-end="url(#a6)" stroke="#0055a0" stroke-width="2" x1="80" x2="598" y1="164" y2="164"></line>
+<text class="m6" text-anchor="middle" x="340" y="158">3 · REQUEST — DIFUSIÓN (acepto esa; los demás, liberad la vuestra)</text>
+<line marker-end="url(#b6)" stroke="#2d8659" stroke-width="2" x1="598" x2="82" y1="198" y2="198"></line>
+<text style="font:700 9px system-ui;fill:#2d8659" text-anchor="middle" x="340" y="192">4 · ACK — confirmada, con tiempo de concesión</text>
+<rect fill="#fdf3e3" height="26" rx="4" width="400" x="140" y="210"></rect>
+<text class="d6" text-anchor="middle" x="340" y="227">Entrega además: máscara · puerta de enlace (3) · DNS (6) · dominio (15) · NTP (42)</text>
+<rect fill="#eef3f8" height="60" rx="4" width="316" x="20" y="248"></rect>
+<text class="k6" text-anchor="middle" x="178" y="265">RENOVACIÓN DE LA CONCESIÓN</text>
+<text class="d6" text-anchor="middle" x="178" y="281">T1 al 50 % → unidifusión al mismo servidor</text>
+<text class="d6" text-anchor="middle" x="178" y="295">T2 al 87,5 % → difusión a cualquiera</text>
+<rect fill="#e8f4ee" height="60" rx="4" width="316" x="344" y="248"></rect>
+<text class="k6" text-anchor="middle" x="502" y="265">AGENTE DE RETRANSMISIÓN (relay)</text>
+<text class="d6" text-anchor="middle" x="502" y="281">Convierte la DIFUSIÓN en UNIDIFUSIÓN</text>
+<text class="d6" text-anchor="middle" x="502" y="295">→ un servidor central para muchas VLAN</text>
+<rect fill="#fbeaea" height="24" rx="4" stroke="#d13c3c" stroke-width="1.2" width="640" x="20" y="316"></rect>
+<text class="d6" text-anchor="middle" x="340" y="332">Opción 82: añade conmutador y PUERTO de origen · Inspección DHCP: bloquea servidores no autorizados</text>
+<text class="n6" text-anchor="end" x="670" y="355">[Fuente: RFC2131; RFC3046]</text>
+</svg>

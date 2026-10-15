@@ -1,0 +1,27 @@
+<svg aria-label="Comparación entre la captura de paquetes, que obtiene el contenido completo pero genera un volumen enorme y es muy sensible en protección de datos, y los registros de flujo, que obtienen metadatos sobre quién habla con quién cuánto y cuándo, con volumen reducido y cobertura de toda la red; se distinguen además el espejo de puertos SPAN de la derivación física TAP, y NetFlow v9 de IPFIX y de sFlow" role="img" viewbox="0 0 680 350" xmlns="http://www.w3.org/2000/svg">
+<style>.te{font:700 11px system-ui,sans-serif;fill:#fff}.se{font:8.5px system-ui,sans-serif;fill:#fff}.de{font:9px system-ui,sans-serif;fill:#333}.he{font:700 13px system-ui,sans-serif;fill:#0055a0}.ke{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.ne{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="he" text-anchor="middle" x="340" y="20">Dos instrumentos, dos preguntas distintas</text>
+<rect fill="#d13c3c" height="30" rx="5" width="316" x="20" y="34"></rect><text class="te" text-anchor="middle" x="178" y="54">CAPTURA DE PAQUETES — «¿qué se dijeron?»</text>
+<rect fill="#2d8659" height="30" rx="5" width="316" x="344" y="34"></rect><text class="te" text-anchor="middle" x="502" y="54">REGISTROS DE FLUJO — «¿quién habló con quién?»</text>
+<text class="ke" x="24" y="82">QUÉ OBTIENE</text>
+<rect fill="#fbeaea" height="28" rx="4" width="316" x="20" y="88"></rect><text class="de" text-anchor="middle" x="178" y="106">El CONTENIDO completo de la conversación</text>
+<rect fill="#e8f4ee" height="28" rx="4" width="316" x="344" y="88"></rect><text class="de" text-anchor="middle" x="502" y="106">METADATOS: origen, destino, volumen, momento</text>
+<text class="ke" x="24" y="134">VOLUMEN Y COBERTURA</text>
+<rect fill="#fbeaea" height="28" rx="4" width="316" x="20" y="140"></rect><text class="de" text-anchor="middle" x="178" y="158">Enorme (terabytes) · un solo punto de la red</text>
+<rect fill="#e8f4ee" height="28" rx="4" width="316" x="344" y="140"></rect><text class="de" text-anchor="middle" x="502" y="158">Muy reducido · TODA la red, de forma continua</text>
+<text class="ke" x="24" y="186">USO NATURAL Y PROTECCIÓN DE DATOS</text>
+<rect fill="#fbeaea" height="42" rx="4" width="316" x="20" y="192"></rect>
+<text class="de" text-anchor="middle" x="178" y="209">Diagnóstico PUNTUAL y dirigido</text><text class="de" text-anchor="middle" x="178" y="225">Muy sensible: contiene comunicaciones de personas</text>
+<rect fill="#e8f4ee" height="42" rx="4" width="316" x="344" y="192"></rect>
+<text class="de" text-anchor="middle" x="502" y="209">Vigilancia CONTINUA e investigación retrospectiva</text><text class="de" text-anchor="middle" x="502" y="225">Sensible, pero SIN contenido</text>
+<text class="ke" x="24" y="256">CÓMO SE CAPTURA</text>
+<rect fill="#0055a0" height="42" rx="4" width="156" x="20" y="262"></rect><text class="te" text-anchor="middle" x="98" y="276">SPAN</text><text class="se" text-anchor="middle" x="98" y="289">espejo por configuración</text><text class="se" text-anchor="middle" x="98" y="300">descarta si se satura</text>
+<rect fill="#2d8659" height="42" rx="4" width="156" x="182" y="262"></rect><text class="te" text-anchor="middle" x="260" y="276">TAP</text><text class="se" text-anchor="middle" x="260" y="289">derivación física pasiva</text><text class="se" text-anchor="middle" x="260" y="300">fiel al 100 %</text>
+<text class="ke" x="348" y="256">CÓMO SE EXPORTAN LOS FLUJOS</text>
+<rect fill="#e89822" height="42" rx="4" width="102" x="344" y="262"></rect><text class="te" text-anchor="middle" x="395" y="276">NetFlow v9</text><text class="se" text-anchor="middle" x="395" y="289">Cisco · RFC 3954</text><text class="se" text-anchor="middle" x="395" y="300">flujo completo</text>
+<rect fill="#0055a0" height="42" rx="4" width="102" x="452" y="262"></rect><text class="te" text-anchor="middle" x="503" y="276">IPFIX</text><text class="se" text-anchor="middle" x="503" y="289">IETF · RFC 7011</text><text class="se" text-anchor="middle" x="503" y="300">la norma abierta</text>
+<rect fill="#2d8659" height="42" rx="4" width="100" x="560" y="262"></rect><text class="te" text-anchor="middle" x="610" y="276">sFlow</text><text class="se" text-anchor="middle" x="610" y="289">RFC 3176</text><text class="se" text-anchor="middle" x="610" y="300">por MUESTREO</text>
+<rect fill="none" height="24" rx="4" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="312"></rect>
+<text class="ke" text-anchor="middle" x="340" y="328">Flujo = quíntupla: IP y puerto de origen + IP y puerto de destino + protocolo</text>
+<text class="ne" text-anchor="end" x="670" y="347">[Fuente: RFC3954; RFC7011; SFLOW; WIRESHARK]</text>
+</svg>

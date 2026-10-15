@@ -1,0 +1,54 @@
+<svg aria-label="Esquema del acceso múltiple de TETRA. Primero se divide el espectro en portadoras de 25 kilohercios, lo que es FDMA. Después cada portadora se divide en cuatro intervalos de tiempo, lo que es TDMA. El resultado son cuatro canales físicos por portadora, uno de los cuales suele ser el canal de control. Debajo, la cadena de cifras: 18.000 símbolos por segundo, dos bits por símbolo, 36 kilobits por segundo brutos por portadora y 7,2 kilobits por segundo netos por intervalo, o 28,8 agregando los cuatro" role="img" viewbox="0 0 680 308" xmlns="http://www.w3.org/2000/svg">
+<style>.t10{font:700 10px system-ui,sans-serif;fill:#fff}.s10{font:8.5px system-ui,sans-serif;fill:#fff}.d10{font:8.5px system-ui,sans-serif;fill:#333}.h10{font:700 13px system-ui,sans-serif;fill:#0055a0}.k10{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n10{font:8.5px system-ui,sans-serif;fill:#666}.b10{font:700 9px system-ui,sans-serif;fill:#0055a0}.m10{font:700 11px system-ui,sans-serif;fill:#fff}</style>
+<text class="h10" text-anchor="middle" x="340" y="22">Primero se divide en frecuencia (FDMA); luego, en tiempo (TDMA)</text>
+<text class="k10" x="20" y="46">PASO 1 · FDMA — el espectro se trocea en portadoras de 25 kHz</text>
+<rect fill="#6b7c8c" height="30" rx="4" width="156" x="20" y="54"></rect>
+<text class="s10" text-anchor="middle" x="98" y="73">Portadora 1 · 25 kHz</text>
+<rect fill="#0055a0" height="30" rx="4" width="156" x="184" y="54"></rect>
+<text class="s10" text-anchor="middle" x="262" y="73">Portadora 2 · 25 kHz</text>
+<rect fill="#6b7c8c" height="30" rx="4" width="156" x="348" y="54"></rect>
+<text class="s10" text-anchor="middle" x="426" y="73">Portadora 3 · 25 kHz</text>
+<rect fill="#6b7c8c" height="30" rx="4" width="156" x="512" y="54"></rect>
+<text class="s10" text-anchor="middle" x="590" y="73">Portadora 4 · 25 kHz</text>
+<path d="M262,86 L262,102" stroke="#0055a0" stroke-width="2"></path>
+<path d="M258,94 L262,102 L266,94 Z" fill="#0055a0"></path>
+<text class="k10" x="20" y="122">PASO 2 · TDMA — cada portadora se divide en 4 intervalos de tiempo</text>
+<rect fill="#d13c3c" height="44" rx="4" width="158" x="20" y="130"></rect>
+<text class="t10" text-anchor="middle" x="99" y="148">Intervalo 1</text>
+<text class="s10" text-anchor="middle" x="99" y="164">CANAL DE CONTROL</text>
+<rect fill="#2d8659" height="44" rx="4" width="158" x="186" y="130"></rect>
+<text class="t10" text-anchor="middle" x="265" y="148">Intervalo 2</text>
+<text class="s10" text-anchor="middle" x="265" y="164">Tráfico</text>
+<rect fill="#2d8659" height="44" rx="4" width="158" x="352" y="130"></rect>
+<text class="t10" text-anchor="middle" x="431" y="148">Intervalo 3</text>
+<text class="s10" text-anchor="middle" x="431" y="164">Tráfico</text>
+<rect fill="#2d8659" height="44" rx="4" width="150" x="518" y="130"></rect>
+<text class="t10" text-anchor="middle" x="593" y="148">Intervalo 4</text>
+<text class="s10" text-anchor="middle" x="593" y="164">Tráfico</text>
+<text class="k10" x="20" y="196">LA CADENA DE CIFRAS QUE HAY QUE SABER ENCADENAR</text>
+<rect fill="#0055a0" height="52" rx="4" width="120" x="20" y="204"></rect>
+<text class="m10" text-anchor="middle" x="80" y="224">18 kbaudios</text>
+<text class="s10" text-anchor="middle" x="80" y="241">símbolos/segundo</text>
+<path d="M142,230 L156,230" stroke="#0055a0" stroke-width="2"></path>
+<path d="M150,226 L158,230 L150,234 Z" fill="#0055a0"></path>
+<rect fill="#0055a0" height="52" rx="4" width="120" x="160" y="204"></rect>
+<text class="m10" text-anchor="middle" x="220" y="224">× 2 bits</text>
+<text class="s10" text-anchor="middle" x="220" y="241">π/4-DQPSK</text>
+<path d="M282,230 L296,230" stroke="#0055a0" stroke-width="2"></path>
+<path d="M290,226 L298,230 L290,234 Z" fill="#0055a0"></path>
+<rect fill="#0055a0" height="52" rx="4" width="120" x="300" y="204"></rect>
+<text class="m10" text-anchor="middle" x="360" y="224">36 kbit/s</text>
+<text class="s10" text-anchor="middle" x="360" y="241">brutos, por portadora</text>
+<path d="M422,230 L436,230" stroke="#0055a0" stroke-width="2"></path>
+<path d="M430,226 L438,230 L430,234 Z" fill="#0055a0"></path>
+<rect fill="#2d8659" height="52" rx="4" width="110" x="440" y="204"></rect>
+<text class="m10" text-anchor="middle" x="495" y="224">7,2 kbit/s</text>
+<text class="s10" text-anchor="middle" x="495" y="241">netos por intervalo</text>
+<path d="M552,230 L566,230" stroke="#2d8659" stroke-width="2"></path>
+<path d="M560,226 L568,230 L560,234 Z" fill="#2d8659"></path>
+<rect fill="#d13c3c" height="52" rx="4" width="98" x="570" y="204"></rect>
+<text class="m10" text-anchor="middle" x="619" y="224">28,8 kbit/s</text>
+<text class="s10" text-anchor="middle" x="619" y="241">con los 4 juntos</text>
+<text class="k10" text-anchor="middle" x="340" y="278">Ese techo de 28,8 kbit/s es exactamente la razón de ser de TEDS</text>
+<text class="n10" text-anchor="end" x="670" y="300">[Fuente: elaboración propia sobre ETSI EN 300 392-2]</text>
+</svg>

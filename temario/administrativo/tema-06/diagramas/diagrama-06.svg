@@ -1,0 +1,31 @@
+<svg aria-label="Cada Administración dispone de un Registro Electrónico General, único, interoperable y operativo 24 horas todos los días; los documentos pueden presentarse en el registro electrónico, en oficinas de Correos, en oficinas consulares, en las oficinas de asistencia en materia de registros y en otros lugares previstos por la ley" class="svd6" role="img" viewbox="0 0 720 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd6 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd6 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd6 .s{font:10.5px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="56" rx="8" width="340" x="190" y="16"></rect>
+<text class="h" x="360" y="40">REGISTRO ELECTRÓNICO GENERAL</text>
+<text class="h" style="font-weight:400;font-size:11px" x="360" y="60">Uno por Administración · interoperable · 24/7 (art. 16)</text>
+<text class="s" style="font-weight:700;fill:#0055a0" x="360" y="96">¿DÓNDE SE PUEDEN PRESENTAR DOCUMENTOS? (art. 16.4)</text>
+<rect fill="#e8f0f8" height="78" rx="8" stroke="#0055a0" width="135" x="20" y="112"></rect>
+<text class="t" style="font-weight:700" x="87" y="142">Registro</text>
+<text class="t" style="font-weight:700" x="87" y="160">electrónico</text>
+<text class="s" x="87" y="178">de la Adm. destino</text>
+<rect fill="#e8f0f8" height="78" rx="8" stroke="#0055a0" width="135" x="168" y="112"></rect>
+<text class="t" style="font-weight:700" x="235" y="142">Oficinas de</text>
+<text class="t" style="font-weight:700" x="235" y="160">Correos</text>
+<text class="s" x="235" y="178">(art. 16.4.b)</text>
+<rect fill="#e8f0f8" height="78" rx="8" stroke="#0055a0" width="135" x="316" y="112"></rect>
+<text class="t" style="font-weight:700" x="383" y="142">Consulados y</text>
+<text class="t" style="font-weight:700" x="383" y="160">embajadas</text>
+<text class="s" x="383" y="178">en el extranjero</text>
+<rect fill="#e8f5ee" height="78" rx="8" stroke="#2d8659" width="135" x="464" y="112"></rect>
+<text class="t" style="font-weight:700" x="531" y="138">Oficinas de</text>
+<text class="t" style="font-weight:700" x="531" y="156">asistencia en</text>
+<text class="t" style="font-weight:700" x="531" y="174">materia de registros</text>
+<rect fill="#e8f0f8" height="78" rx="8" stroke="#0055a0" width="88" x="612" y="112"></rect>
+<text class="t" style="font-weight:700" x="656" y="146">Otros</text>
+<text class="s" x="656" y="164">previstos</text>
+<text class="s" x="656" y="180">por ley</text>
+<rect fill="#fff5e6" height="80" rx="8" stroke="#e89822" width="480" x="120" y="216"></rect>
+<text class="t" style="font-weight:700;fill:#b5740f" x="360" y="240">El asiento deja constancia de (art. 16.3)</text>
+<text class="s" x="360" y="262">Nº de asiento · naturaleza del documento · fecha y hora de presentación</text>
+<text class="s" x="360" y="280">identificación del interesado · órgano destinatario</text>
+</svg>

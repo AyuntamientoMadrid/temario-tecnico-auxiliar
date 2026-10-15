@@ -1,0 +1,40 @@
+<svg aria-label="Tabla visual de protocolos de almacenamiento: Fibre Channel, FCoE, iSCSI, NVMe over Fabrics, NFS, SMB y HTTP para objetos, con su tipo de acceso, transporte, puerto o identificador y nota característica" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 10px system-ui,sans-serif;fill:#fff}.s3{font:9px system-ui,sans-serif;fill:#fff}.d3{font:9px system-ui,sans-serif;fill:#333}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 9px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h3" text-anchor="middle" x="340" y="20">Protocolos de almacenamiento: acceso, transporte e identificador</text>
+<rect fill="#0055a0" height="22" rx="3" width="150" x="20" y="32"></rect><text class="t3" text-anchor="middle" x="95" y="47">PROTOCOLO</text>
+<rect fill="#0055a0" height="22" rx="3" width="110" x="174" y="32"></rect><text class="t3" text-anchor="middle" x="229" y="47">ACCESO</text>
+<rect fill="#0055a0" height="22" rx="3" width="180" x="288" y="32"></rect><text class="t3" text-anchor="middle" x="378" y="47">TRANSPORTE</text>
+<rect fill="#0055a0" height="22" rx="3" width="188" x="472" y="32"></rect><text class="t3" text-anchor="middle" x="566" y="47">PUERTO / IDENTIFICADOR</text>
+<rect fill="#eef3f8" height="24" rx="3" width="150" x="20" y="58"></rect><text class="d3" x="30" y="74">FCP (Fibre Channel)</text>
+<rect fill="#2d8659" height="24" rx="3" width="110" x="174" y="58"></rect><text class="s3" text-anchor="middle" x="229" y="74">Bloque</text>
+<rect fill="#eef3f8" height="24" rx="3" width="180" x="288" y="58"></rect><text class="d3" x="298" y="74">Red FC dedicada</text>
+<rect fill="#eef3f8" height="24" rx="3" width="188" x="472" y="58"></rect><text class="d3" x="482" y="74">WWN · zoning en el switch</text>
+<rect fill="#eef3f8" height="24" rx="3" width="150" x="20" y="86"></rect><text class="d3" x="30" y="102">FCoE</text>
+<rect fill="#2d8659" height="24" rx="3" width="110" x="174" y="86"></rect><text class="s3" text-anchor="middle" x="229" y="102">Bloque</text>
+<rect fill="#eef3f8" height="24" rx="3" width="180" x="288" y="86"></rect><text class="d3" x="298" y="102">Ethernet sin pérdidas</text>
+<rect fill="#eef3f8" height="24" rx="3" width="188" x="472" y="86"></rect><text class="d3" x="482" y="102">WWN sobre MAC</text>
+<rect fill="#eef3f8" height="24" rx="3" width="150" x="20" y="114"></rect><text class="d3" x="30" y="130">iSCSI</text>
+<rect fill="#2d8659" height="24" rx="3" width="110" x="174" y="114"></rect><text class="s3" text-anchor="middle" x="229" y="130">Bloque</text>
+<rect fill="#eef3f8" height="24" rx="3" width="180" x="288" y="114"></rect><text class="d3" x="298" y="130">TCP/IP (Ethernet)</text>
+<rect fill="#e89822" height="24" rx="3" width="188" x="472" y="114"></rect><text class="s3" x="482" y="130">3260 · IQN · CHAP</text>
+<rect fill="#eef3f8" height="24" rx="3" width="150" x="20" y="142"></rect><text class="d3" x="30" y="158">NVMe-oF</text>
+<rect fill="#2d8659" height="24" rx="3" width="110" x="174" y="142"></rect><text class="s3" text-anchor="middle" x="229" y="158">Bloque</text>
+<rect fill="#eef3f8" height="24" rx="3" width="180" x="288" y="142"></rect><text class="d3" x="298" y="158">RDMA, FC o TCP</text>
+<rect fill="#eef3f8" height="24" rx="3" width="188" x="472" y="142"></rect><text class="d3" x="482" y="158">NQN · colas paralelas</text>
+<rect fill="#eef3f8" height="24" rx="3" width="150" x="20" y="170"></rect><text class="d3" x="30" y="186">NFS (v3 / v4.1)</text>
+<rect fill="#0055a0" height="24" rx="3" width="110" x="174" y="170"></rect><text class="s3" text-anchor="middle" x="229" y="186">Fichero</text>
+<rect fill="#eef3f8" height="24" rx="3" width="180" x="288" y="170"></rect><text class="d3" x="298" y="186">TCP/IP · mundo Unix</text>
+<rect fill="#e89822" height="24" rx="3" width="188" x="472" y="170"></rect><text class="s3" x="482" y="186">2049 · Kerberos · pNFS</text>
+<rect fill="#eef3f8" height="24" rx="3" width="150" x="20" y="198"></rect><text class="d3" x="30" y="214">SMB 3.x</text>
+<rect fill="#0055a0" height="24" rx="3" width="110" x="174" y="198"></rect><text class="s3" text-anchor="middle" x="229" y="214">Fichero</text>
+<rect fill="#eef3f8" height="24" rx="3" width="180" x="288" y="198"></rect><text class="d3" x="298" y="214">TCP/IP · mundo Windows</text>
+<rect fill="#e89822" height="24" rx="3" width="188" x="472" y="198"></rect><text class="s3" x="482" y="214">445 · cifrado · multichannel</text>
+<rect fill="#eef3f8" height="24" rx="3" width="150" x="20" y="226"></rect><text class="d3" x="30" y="242">HTTP/S (tipo S3)</text>
+<rect fill="#d13c3c" height="24" rx="3" width="110" x="174" y="226"></rect><text class="s3" text-anchor="middle" x="229" y="242">Objeto</text>
+<rect fill="#eef3f8" height="24" rx="3" width="180" x="288" y="226"></rect><text class="d3" x="298" y="242">TCP/IP · REST</text>
+<rect fill="#e89822" height="24" rx="3" width="188" x="472" y="226"></rect><text class="s3" x="482" y="242">443 · versionado · WORM</text>
+<rect fill="none" height="30" rx="5" stroke="#0055a0" stroke-width="2" width="640" x="20" y="262"></rect>
+<text class="k3" text-anchor="middle" x="340" y="281">Los cuatro números clave: iSCSI 3260 · NFS 2049 · SMB 445 · objeto 443 (HTTPS)</text>
+<text class="d3" text-anchor="middle" x="340" y="312">Identificadores: IQN en iSCSI · WWN en Fibre Channel · NQN en NVMe over Fabrics</text>
+<text style="font:9px system-ui;fill:#666" text-anchor="end" x="670" y="332">[Fuente: RFC7143; T11-FC; RFC8881; MS-SMB2; NVME-OF]</text>
+</svg>

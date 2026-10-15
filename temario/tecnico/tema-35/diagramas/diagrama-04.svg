@@ -1,0 +1,26 @@
+<svg aria-label="Comparación entre el modelo OSI de siete capas y el modelo TCP/IP de cuatro capas: aplicación, presentación y sesión de OSI se corresponden con la capa de aplicación de TCP/IP; transporte y red se corresponden una a una; enlace de datos y física se corresponden con la capa de acceso a red. Se indican los protocolos y la unidad de datos de cada nivel: mensaje, segmento o datagrama, paquete y trama" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.t4{font:700 10px system-ui,sans-serif;fill:#fff}.s4{font:8.5px system-ui,sans-serif;fill:#fff}.d4{font:9px system-ui,sans-serif;fill:#333}.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}.k4{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n4{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h4" text-anchor="middle" x="340" y="20">OSI es el modelo de referencia; TCP/IP es la pila que funciona</text>
+<text class="k4" x="20" y="42">MODELO OSI · 7 CAPAS</text>
+<text class="k4" x="214" y="42">TCP/IP · 4 CAPAS</text>
+<text class="k4" x="406" y="42">PROTOCOLOS Y UNIDAD DE DATOS (PDU)</text>
+<rect fill="#eef3f8" height="34" rx="4" width="180" x="20" y="50"></rect><text class="d4" text-anchor="middle" x="110" y="71">7 · Aplicación</text>
+<rect fill="#eef3f8" height="34" rx="4" width="180" x="20" y="86"></rect><text class="d4" text-anchor="middle" x="110" y="107">6 · Presentación</text>
+<rect fill="#eef3f8" height="34" rx="4" width="180" x="20" y="122"></rect><text class="d4" text-anchor="middle" x="110" y="143">5 · Sesión</text>
+<rect fill="#eef3f8" height="34" rx="4" width="180" x="20" y="158"></rect><text class="d4" text-anchor="middle" x="110" y="179">4 · Transporte</text>
+<rect fill="#eef3f8" height="34" rx="4" width="180" x="20" y="194"></rect><text class="d4" text-anchor="middle" x="110" y="215">3 · Red</text>
+<rect fill="#eef3f8" height="34" rx="4" width="180" x="20" y="230"></rect><text class="d4" text-anchor="middle" x="110" y="251">2 · Enlace de datos</text>
+<rect fill="#eef3f8" height="34" rx="4" width="180" x="20" y="266"></rect><text class="d4" text-anchor="middle" x="110" y="287">1 · Física</text>
+<rect fill="#0055a0" height="106" rx="4" width="178" x="214" y="50"></rect><text class="t4" text-anchor="middle" x="303" y="96">APLICACIÓN</text><text class="s4" text-anchor="middle" x="303" y="112">Absorbe TRES capas de OSI</text>
+<rect fill="#2d8659" height="34" rx="4" width="178" x="214" y="158"></rect><text class="t4" text-anchor="middle" x="303" y="179">TRANSPORTE</text>
+<rect fill="#e89822" height="34" rx="4" width="178" x="214" y="194"></rect><text class="t4" text-anchor="middle" x="303" y="215">INTERNET</text>
+<rect fill="#7a2f8a" height="70" rx="4" width="178" x="214" y="230"></rect><text class="t4" text-anchor="middle" x="303" y="260">ACCESO A RED</text><text class="s4" text-anchor="middle" x="303" y="276">Absorbe DOS capas de OSI</text>
+<rect fill="#fdf3e3" height="106" rx="4" width="254" x="406" y="50"></rect><text class="d4" text-anchor="middle" x="533" y="76">HTTP · HTTPS · DNS · SMTP · IMAP</text><text class="d4" text-anchor="middle" x="533" y="92">FTP · SSH · DHCP · NTP · SNMP</text><text class="n4" text-anchor="middle" x="533" y="112">PDU: MENSAJE (datos de aplicación)</text><text class="n4" text-anchor="middle" x="533" y="130">Dispositivo: pasarela y proxy</text>
+<rect fill="#eaf5ef" height="34" rx="4" width="254" x="406" y="158"></rect><text class="d4" text-anchor="middle" x="533" y="173">TCP · UDP · QUIC (sobre UDP)</text><text class="n4" text-anchor="middle" x="533" y="186">PDU: SEGMENTO (TCP) o DATAGRAMA (UDP)</text>
+<rect fill="#fdf3e3" height="34" rx="4" width="254" x="406" y="194"></rect><text class="d4" text-anchor="middle" x="533" y="209">IPv4 · IPv6 · ICMP · IGMP · BGP · OSPF</text><text class="n4" text-anchor="middle" x="533" y="222">PDU: PAQUETE · Dispositivo: encaminador</text>
+<rect fill="#f3ecf6" height="70" rx="4" width="254" x="406" y="230"></rect><text class="d4" text-anchor="middle" x="533" y="252">Ethernet 802.3 · Wi-Fi 802.11 · PPP</text><text class="n4" text-anchor="middle" x="533" y="268">PDU: TRAMA (enlace) y BIT (física)</text><text class="n4" text-anchor="middle" x="533" y="286">Dispositivo: conmutador y concentrador</text>
+<rect fill="none" height="34" rx="5" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="308"></rect>
+<text class="k4" text-anchor="middle" x="340" y="323">EL RELOJ DE ARENA: muchas tecnologías de acceso abajo, muchas aplicaciones arriba y UN SOLO protocolo en el centro, IP</text>
+<text class="n4" text-anchor="middle" x="340" y="336">ARP queda entre las capas 2 y 3: el RFC 1122 lo sitúa en la de enlace · La variante didáctica de 5 capas separa física y enlace</text>
+<text class="n4" text-anchor="end" x="670" y="364">[Fuente: RFC 1122; ISO/IEC 7498-1]</text>
+</svg>

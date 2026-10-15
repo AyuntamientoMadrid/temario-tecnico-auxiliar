@@ -1,0 +1,26 @@
+<svg aria-label="Lista enlazada simple y doblemente enlazada" class="svd3" role="img" viewbox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd3 .ti{font:700 14px system-ui,sans-serif;fill:#0055a0}.svd3 .b{font:700 13px system-ui,sans-serif;fill:#fff}.svd3 .lab{font:11px system-ui,sans-serif;fill:#666}</style>
+<text class="ti" x="30" y="40">Simplemente enlazada</text>
+<g>
+<rect fill="#0055a0" height="40" width="80" x="30" y="60"></rect><text class="b" text-anchor="middle" x="70" y="85">A</text>
+<rect fill="#0055a0" height="40" width="80" x="190" y="60"></rect><text class="b" text-anchor="middle" x="230" y="85">B</text>
+<rect fill="#0055a0" height="40" width="80" x="350" y="60"></rect><text class="b" text-anchor="middle" x="390" y="85">C</text>
+<line marker-end="url(#a3)" stroke="#444" stroke-width="2" x1="110" x2="188" y1="80" y2="80"></line>
+<line marker-end="url(#a3)" stroke="#444" stroke-width="2" x1="270" x2="348" y1="80" y2="80"></line>
+<line stroke="#444" stroke-width="2" x1="430" x2="500" y1="80" y2="80"></line>
+<text class="lab" x="505" y="84">nulo</text>
+</g>
+<text class="ti" x="30" y="160">Doblemente enlazada</text>
+<g>
+<rect fill="#2d8659" height="40" width="80" x="30" y="180"></rect><text class="b" text-anchor="middle" x="70" y="205">A</text>
+<rect fill="#2d8659" height="40" width="80" x="190" y="180"></rect><text class="b" text-anchor="middle" x="230" y="205">B</text>
+<rect fill="#2d8659" height="40" width="80" x="350" y="180"></rect><text class="b" text-anchor="middle" x="390" y="205">C</text>
+<line marker-end="url(#a3)" stroke="#444" stroke-width="2" x1="110" x2="188" y1="192" y2="192"></line>
+<line marker-end="url(#a3)" stroke="#444" stroke-width="2" x1="188" x2="110" y1="208" y2="208"></line>
+<line marker-end="url(#a3)" stroke="#444" stroke-width="2" x1="270" x2="348" y1="192" y2="192"></line>
+<line marker-end="url(#a3)" stroke="#444" stroke-width="2" x1="348" x2="270" y1="208" y2="208"></line>
+</g>
+<text class="lab" x="30" y="255">Acceso O(n) · inserción/borrado O(1) con puntero al nodo</text>
+<defs><marker id="a3" markerheight="10" markerwidth="10" orient="auto" refx="8" refy="5"><polygon fill="#444" points="0,0 10,5 0,10"></polygon></marker></defs>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="middle" x="330" y="288">[Fuente: KNUTH-V1, §2.2.3]</text>
+</svg>

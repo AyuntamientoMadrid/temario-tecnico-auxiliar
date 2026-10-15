@@ -1,0 +1,28 @@
+<svg aria-label="Comparación de RAID 0, RAID 1 y RAID 5" class="svd11" role="img" viewbox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<style>.svd11 .t{font:700 13px system-ui,sans-serif;fill:#0055a0}.svd11 .b{font:700 11px system-ui,sans-serif;fill:#fff}.svd11 .lab{font:11px system-ui,sans-serif;fill:#666}.svd11 .d{stroke:#0055a0;stroke-width:1}</style>
+<text class="t" text-anchor="middle" x="110" y="30">RAID 0 (striping)</text>
+<rect class="d" fill="#fff" height="80" width="60" x="50" y="50"></rect><rect class="d" fill="#fff" height="80" width="60" x="130" y="50"></rect>
+<rect fill="#3378b9" height="26" width="60" x="50" y="50"></rect><text class="b" text-anchor="middle" x="80" y="68">A1</text>
+<rect fill="#3378b9" height="26" width="60" x="130" y="50"></rect><text class="b" text-anchor="middle" x="160" y="68">A2</text>
+<rect fill="#6ea3d2" height="26" width="60" x="50" y="76"></rect><text class="b" text-anchor="middle" x="80" y="94">A3</text>
+<rect fill="#6ea3d2" height="26" width="60" x="130" y="76"></rect><text class="b" text-anchor="middle" x="160" y="94">A4</text>
+<text class="lab" fill="#d13c3c" x="50" y="150">Sin redundancia (1 fallo = todo)</text>
+<text class="t" text-anchor="middle" x="350" y="30">RAID 1 (espejo)</text>
+<rect class="d" fill="#fff" height="80" width="60" x="290" y="50"></rect><rect class="d" fill="#fff" height="80" width="60" x="370" y="50"></rect>
+<rect fill="#2d8659" height="26" width="60" x="290" y="50"></rect><text class="b" text-anchor="middle" x="320" y="68">A1</text>
+<rect fill="#2d8659" height="26" width="60" x="370" y="50"></rect><text class="b" text-anchor="middle" x="400" y="68">A1</text>
+<rect fill="#4a9e73" height="26" width="60" x="290" y="76"></rect><text class="b" text-anchor="middle" x="320" y="94">A2</text>
+<rect fill="#4a9e73" height="26" width="60" x="370" y="76"></rect><text class="b" text-anchor="middle" x="400" y="94">A2</text>
+<text class="lab" fill="#2d8659" x="290" y="150">Copia idéntica (tolera 1 fallo, 50%)</text>
+<text class="t" text-anchor="middle" x="590" y="30">RAID 5 (paridad)</text>
+<rect class="d" fill="#fff" height="80" width="50" x="510" y="50"></rect><rect class="d" fill="#fff" height="80" width="50" x="560" y="50"></rect><rect class="d" fill="#fff" height="80" width="50" x="610" y="50"></rect>
+<rect fill="#3378b9" height="26" width="50" x="510" y="50"></rect><text class="b" text-anchor="middle" x="535" y="68">A1</text>
+<rect fill="#3378b9" height="26" width="50" x="560" y="50"></rect><text class="b" text-anchor="middle" x="585" y="68">A2</text>
+<rect fill="#e89822" height="26" width="50" x="610" y="50"></rect><text class="b" text-anchor="middle" x="635" y="68">P</text>
+<rect fill="#6ea3d2" height="26" width="50" x="510" y="76"></rect><text class="b" text-anchor="middle" x="535" y="94">A3</text>
+<rect fill="#e89822" height="26" width="50" x="560" y="76"></rect><text class="b" text-anchor="middle" x="585" y="94">P</text>
+<rect fill="#6ea3d2" height="26" width="50" x="610" y="76"></rect><text class="b" text-anchor="middle" x="635" y="94">A4</text>
+<text class="lab" x="500" y="150">Paridad distribuida (tolera 1, mín. 3)</text>
+<text class="lab" x="40" y="200">P = bloque de paridad · el RAID NO sustituye a la copia de seguridad</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="690" y="325">[Fuente: PATTERSON-RAID · SNIA-RAID]</text>
+</svg>

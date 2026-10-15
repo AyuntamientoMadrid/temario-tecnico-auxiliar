@@ -1,0 +1,32 @@
+<svg aria-label="Estructura de un mensaje HTTP: línea de inicio, cabeceras y, tras una línea en blanco, cuerpo opcional. Ejemplo de petición GET con las cabeceras Host y Cookie y de respuesta 200 OK con Content-Type y Content-Length. Clasificación de métodos: GET, HEAD, OPTIONS y TRACE son seguros e idempotentes; PUT y DELETE son idempotentes pero no seguros; POST y PATCH no son ni seguros ni idempotentes. Familias de códigos de estado del 1xx al 5xx" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.t14{font:700 10px system-ui,sans-serif;fill:#fff}.s14{font:8.5px system-ui,sans-serif;fill:#fff}.d14{font:9px system-ui,sans-serif;fill:#333}.h14{font:700 13px system-ui,sans-serif;fill:#0055a0}.k14{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n14{font:8.5px system-ui,sans-serif;fill:#666}.m14{font:8.5px ui-monospace,monospace;fill:#333}</style>
+<text class="h14" text-anchor="middle" x="340" y="20">Línea de inicio + cabeceras + línea en blanco + cuerpo opcional</text>
+<text class="k14" x="20" y="42">PETICIÓN</text>
+<text class="k14" x="348" y="42">RESPUESTA</text>
+<rect fill="#eef3f8" height="108" rx="5" width="312" x="20" y="50"></rect>
+<text class="m14" x="30" y="68">GET /tramites/licencias?id=471 HTTP/1.1</text>
+<text class="m14" x="30" y="84">Host: sede.madrid.es</text>
+<text class="m14" x="30" y="100">Accept: text/html</text>
+<text class="m14" x="30" y="116">Cookie: JSESSIONID=8F2A...</text>
+<text class="n14" x="30" y="140">Línea en blanco y, si el método lo lleva, cuerpo</text>
+<rect fill="#eaf5ef" height="108" rx="5" width="312" x="348" y="50"></rect>
+<text class="m14" x="358" y="68">HTTP/1.1 200 OK</text>
+<text class="m14" x="358" y="84">Content-Type: text/html; charset=utf-8</text>
+<text class="m14" x="358" y="100">Content-Length: 34871</text>
+<text class="m14" x="358" y="116">Cache-Control: no-store</text>
+<text class="n14" x="358" y="140">Línea en blanco y cuerpo con el documento</text>
+<text class="k14" x="20" y="180">MÉTODOS · seguro = no modifica el estado · idempotente = repetirlo da el mismo efecto</text>
+<rect fill="#2d8659" height="46" rx="5" width="206" x="20" y="188"></rect><text class="t14" text-anchor="middle" x="123" y="206">SEGUROS E IDEMPOTENTES</text><text class="s14" text-anchor="middle" x="123" y="222">GET · HEAD · OPTIONS · TRACE</text>
+<rect fill="#e89822" height="46" rx="5" width="206" x="237" y="188"></rect><text class="t14" text-anchor="middle" x="340" y="206">SOLO IDEMPOTENTES</text><text class="s14" text-anchor="middle" x="340" y="222">PUT · DELETE</text>
+<rect fill="#d13c3c" height="46" rx="5" width="206" x="454" y="188"></rect><text class="t14" text-anchor="middle" x="557" y="206">NI SEGUROS NI IDEMPOTENTES</text><text class="s14" text-anchor="middle" x="557" y="222">POST · PATCH</text>
+<text class="k14" x="20" y="254">CÓDIGOS DE ESTADO · la primera cifra manda</text>
+<rect fill="#eef3f8" height="48" rx="4" width="120" x="20" y="262"></rect><text class="d14" text-anchor="middle" x="80" y="280">1xx</text><text class="n14" text-anchor="middle" x="80" y="295">Informativo</text>
+<rect fill="#eaf5ef" height="48" rx="4" width="120" x="150" y="262"></rect><text class="d14" text-anchor="middle" x="210" y="280">2xx · éxito</text><text class="n14" text-anchor="middle" x="210" y="295">200 · 201 · 204</text>
+<rect fill="#fdf3e3" height="48" rx="4" width="120" x="280" y="262"></rect><text class="d14" text-anchor="middle" x="340" y="280">3xx · redirección</text><text class="n14" text-anchor="middle" x="340" y="295">301 · 302 · 304</text>
+<rect fill="#fbeaea" height="48" rx="4" width="120" x="410" y="262"></rect><text class="d14" text-anchor="middle" x="470" y="280">4xx · cliente</text><text class="n14" text-anchor="middle" x="470" y="295">400 · 401 · 403 · 404</text>
+<rect fill="#fbeaea" height="48" rx="4" width="120" x="540" y="262"></rect><text class="d14" text-anchor="middle" x="600" y="280">5xx · servidor</text><text class="n14" text-anchor="middle" x="600" y="295">500 · 502 · 503 · 504</text>
+<rect fill="none" height="34" rx="5" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="316"></rect>
+<text class="k14" text-anchor="middle" x="340" y="331">401 = NO AUTENTICADO · 403 = autenticado pero SIN PERMISO · 301 permanente y cacheada · 302 y 307 temporales</text>
+<text class="n14" text-anchor="middle" x="340" y="344">POST no cifra nada: solo evita que el dato quede escrito en la URL; lo que protege el contenido es HTTPS</text>
+<text class="n14" text-anchor="end" x="670" y="364">[Fuente: RFC 9110 y RFC 9112]</text>
+</svg>

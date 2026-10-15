@@ -1,0 +1,21 @@
+<svg aria-label="Comparación entre la JVM tradicional con compilación JIT en tiempo de ejecución, arranque en segundos, y GraalVM Native Image con compilación AOT en tiempo de construcción, arranque en milisegundos, usado por Quarkus y Spring Boot" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 12px system-ui,sans-serif;fill:#fff}.s6{font:10.5px system-ui,sans-serif;fill:#fff}.l6{font:11px system-ui,sans-serif;fill:#444}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h6" text-anchor="middle" x="340" y="22">Dos estrategias de compilación para Java</text>
+<rect fill="#3778b5" height="150" rx="8" width="280" x="40" y="44"></rect>
+<text class="t6" text-anchor="middle" x="180" y="70">JVM TRADICIONAL (JIT)</text>
+<text class="s6" text-anchor="middle" x="180" y="94">Compila en tiempo de EJECUCIÓN</text>
+<text class="s6" text-anchor="middle" x="180" y="114">Arranque: SEGUNDOS</text>
+<text class="s6" text-anchor="middle" x="180" y="134">Memoria de partida: mayor</text>
+<text class="s6" text-anchor="middle" x="180" y="154">Óptimo: procesos de larga duración</text>
+<text class="s6" text-anchor="middle" x="180" y="174">Servidores Jakarta EE clásicos</text>
+<rect fill="#2d8659" height="150" rx="8" width="280" x="360" y="44"></rect>
+<text class="t6" text-anchor="middle" x="500" y="70">GRAALVM NATIVE IMAGE (AOT)</text>
+<text class="s6" text-anchor="middle" x="500" y="94">Compila en tiempo de CONSTRUCCIÓN</text>
+<text class="s6" text-anchor="middle" x="500" y="114">Arranque: MILISEGUNDOS</text>
+<text class="s6" text-anchor="middle" x="500" y="134">Memoria de partida: menor</text>
+<text class="s6" text-anchor="middle" x="500" y="154">Óptimo: contenedores efímeros, serverless</text>
+<text class="s6" text-anchor="middle" x="500" y="174">Usado por Quarkus y Spring Boot 3+</text>
+<text style="font:700 11px system-ui;fill:#e89822" text-anchor="middle" x="340" y="222">Native Image es una TECNOLOGÍA; Quarkus/Spring Boot son FRAMEWORKS que la aprovechan</text>
+<text class="l6" text-anchor="middle" x="340" y="244">Reflexión y proxies dinámicos requieren configuración explícita en compilación AOT</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="312">[Fuente: GRAALVM-DOC; QUARKUS-DOC]</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg aria-label="Los dos caminos de la conformidad con el ENS: la categoría básica solo requiere autoevaluación por el propio personal que administra el sistema y produce una declaración de conformidad firmada por la propia entidad, mientras que las categorías media y alta requieren auditoría de certificación por entidad certificadora y producen una certificación de conformidad; ambos distintivos se publican en la sede electrónica en formato PDF-A" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.h14{font:700 13px system-ui,sans-serif;fill:#0055a0}.k14{font:700 10px system-ui,sans-serif;fill:#0055a0}.d14{font:8.5px system-ui,sans-serif;fill:#333}.n14{font:8.5px system-ui,sans-serif;fill:#666}.w14{font:700 11px system-ui,sans-serif;fill:#fff}.wd14{font:8.5px system-ui,sans-serif;fill:#fff}.r14{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}.g14{font:700 9.5px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h14" text-anchor="middle" x="340" y="19">Los dos caminos de la conformidad — artículo 38 y anexo III</text>
+<text class="n14" text-anchor="middle" x="340" y="35">Es el precepto clave del ENS. Sea cual sea el camino, la auditoría del art. 31 sigue siendo obligatoria cada dos años</text>
+<rect fill="#0055a0" height="30" rx="5" width="184" x="248" y="44"></rect>
+<text class="w14" text-anchor="middle" x="340" y="63">CATEGORÍA DEL SISTEMA</text>
+<path d="M300 74 L300 88 L150 88 L150 100" fill="none" stroke="#0055a0" stroke-width="1.6"></path>
+<path d="M380 74 L380 88 L500 88 L500 100" fill="none" stroke="#0055a0" stroke-width="1.6"></path>
+<rect fill="#e6f2ec" height="120" rx="5" stroke="#2d8659" stroke-width="1.4" width="290" x="24" y="100"></rect>
+<rect fill="#2d8659" height="26" rx="5" width="290" x="24" y="100"></rect>
+<text class="w14" text-anchor="middle" x="169" y="118">BÁSICA</text>
+<text class="g14" text-anchor="middle" x="169" y="141">AUTOEVALUACIÓN</text>
+<text class="d14" x="36" y="157">La realiza «EL MISMO PERSONAL QUE ADMINISTRA</text>
+<text class="d14" x="36" y="169">EL SISTEMA o en quien éste delegue» (anexo III)</text>
+<text class="d14" x="36" y="183">Debe estar DOCUMENTADA: si cada medida está</text>
+<text class="d14" x="36" y="195">implantada, revisada y con qué EVIDENCIAS</text>
+<text class="g14" x="36" y="211">RESULTADO: DECLARACIÓN DE CONFORMIDAD</text>
+<rect fill="#fdf3e3" height="120" rx="5" stroke="#e89822" stroke-width="1.4" width="290" x="366" y="100"></rect>
+<rect fill="#e89822" height="26" rx="5" width="290" x="366" y="100"></rect>
+<text class="w14" text-anchor="middle" x="511" y="118">MEDIA Y ALTA</text>
+<text class="r14" text-anchor="middle" x="511" y="141">AUDITORÍA DE CERTIFICACIÓN</text>
+<text class="d14" x="378" y="157">La realiza una ENTIDAD DE CERTIFICACIÓN, cuyos</text>
+<text class="d14" x="378" y="169">requisitos concreta la ITS de Conformidad</text>
+<text class="d14" x="378" y="183">El informe identifica los HALLAZGOS DE</text>
+<text class="d14" x="378" y="195">CONFORMIDAD Y NO CONFORMIDAD, con su alcance</text>
+<text class="r14" x="378" y="211">RESULTADO: CERTIFICACIÓN DE CONFORMIDAD</text>
+<rect fill="#eef4fa" height="30" rx="4" width="632" x="24" y="228"></rect>
+<text class="k14" x="36" y="243">AMBOS SE MATERIALIZAN EN UN DISTINTIVO EN FORMATO PDF-A, PUBLICADO EN SEDE (art. 38.2)</text>
+<text class="d14" x="36" y="255">La diferencia está en la firma: la DECLARACIÓN la firma LA PROPIA ENTIDAD · la CERTIFICACIÓN, LA ENTIDAD DE CERTIFICACIÓN</text>
+<text class="k14" x="24" y="278">EL CIRCUITO DEL INFORME DE AUDITORÍA — ARTÍCULO 31.5 Y 31.6</text>
+<rect fill="#0055a0" height="42" rx="4" width="142" x="24" y="286"></rect>
+<text class="w14" text-anchor="middle" x="95" y="303">EL AUDITOR</text>
+<text class="wd14" text-anchor="middle" x="95" y="318">informa y dictamina</text>
+<path d="M166 307 L188 307" fill="none" marker-end="url(#a14)" stroke="#5a6b7c" stroke-width="1.8"></path>
+<defs><marker id="a14" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3.5"><path d="M0 0 L7 3.5 L0 7 z" fill="#5a6b7c"></path></marker></defs>
+<rect fill="#2d8659" height="42" rx="4" width="188" x="190" y="286"></rect>
+<text class="w14" text-anchor="middle" x="284" y="303">RESPONSABLE DE SEGURIDAD</text>
+<text class="wd14" style="font-size:7.8px" text-anchor="middle" x="284" y="318">ANALIZA el informe y presenta conclusiones</text>
+<path d="M378 307 L400 307" fill="none" marker-end="url(#a14)" stroke="#5a6b7c" stroke-width="1.8"></path>
+<rect fill="#e89822" height="42" rx="4" width="188" x="402" y="286"></rect>
+<text class="w14" text-anchor="middle" x="496" y="303">RESPONSABLE DEL SISTEMA</text>
+<text class="wd14" text-anchor="middle" x="496" y="318">ADOPTA las medidas correctoras</text>
+<path d="M590 307 L612 307" fill="none" marker-end="url(#a14r)" stroke="#d13c3c" stroke-width="1.8"></path>
+<defs><marker id="a14r" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3.5"><path d="M0 0 L7 3.5 L0 7 z" fill="#d13c3c"></path></marker></defs>
+<rect fill="#d13c3c" height="42" rx="4" width="42" x="614" y="286"></rect>
+<text class="w14" text-anchor="middle" x="635" y="303">ALTA</text>
+<text class="wd14" text-anchor="middle" x="635" y="318">art. 31.6</text>
+<rect fill="#fdf3e3" height="20" rx="3" width="632" x="24" y="334"></rect>
+<text class="d14" x="36" y="348">SOLO EN CATEGORÍA ALTA el responsable del sistema puede SUSPENDER TEMPORALMENTE el tratamiento o la operación, hasta subsanar</text>
+<text class="n14" x="24" y="366">[Fuente: ENS, arts. 31 y 38, anexo III y glosario del anexo IV · ITS de Conformidad]</text>
+</svg>

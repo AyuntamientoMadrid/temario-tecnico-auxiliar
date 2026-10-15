@@ -1,0 +1,58 @@
+<svg aria-label="Los tres medios guiados de una red local: par trenzado con su nomenclatura de apantallamiento y su tabla de categorías y clases desde Cat 5e clase D hasta Cat 8.1 clase I; cable coaxial, retirado de las redes locales y superviviente en la distribución de televisión; y fibra óptica en sus dos variantes multimodo para el troncal del edificio y monomodo para el enlace entre edificios" role="img" viewbox="0 0 680 390" xmlns="http://www.w3.org/2000/svg">
+<style>.h10{font:700 13px system-ui,sans-serif;fill:#0055a0}.k10{font:700 10px system-ui,sans-serif;fill:#0055a0}.d10{font:8.5px system-ui,sans-serif;fill:#333}.n10{font:8px system-ui,sans-serif;fill:#666}.w10{font:700 8.5px system-ui,sans-serif;fill:#fff}.g10{font:700 8.5px system-ui,sans-serif;fill:#2d8659}.r10{font:700 8.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h10" text-anchor="middle" x="340" y="20">Los tres medios guiados y su nomenclatura</text>
+<rect fill="#eef4fa" height="126" rx="5" width="206" x="22" y="32"></rect>
+<text class="k10" text-anchor="middle" x="125" y="48">PAR TRENZADO</text>
+<path d="M40,62 q10,-8 20,0 q10,8 20,0 q10,-8 20,0 q10,8 20,0 q10,-8 20,0" fill="none" stroke="#0055a0" stroke-width="1.6"></path>
+<path d="M40,62 q10,8 20,0 q10,-8 20,0 q10,8 20,0 q10,-8 20,0 q10,8 20,0" fill="none" stroke="#d13c3c" stroke-width="1.6"></path>
+<text class="n10" x="152" y="65">Cuatro pares</text>
+<text class="d10" x="32" y="82">El trenzado cancela la interferencia y</text>
+<text class="d10" x="32" y="93">reduce la diafonía entre pares</text>
+<text class="g10" x="32" y="107">A más trenzas por metro, más categoría</text>
+<text class="d10" x="32" y="123">U/UTP no apantallado · F/UTP lámina</text>
+<text class="d10" x="32" y="134">S/FTP trenza global y lámina por par</text>
+<text class="r10" x="32" y="149">Apantallado: TIERRA en los dos extremos</text>
+<rect fill="#fbeaea" height="126" rx="5" width="206" x="236" y="32"></rect>
+<text class="k10" text-anchor="middle" x="339" y="48">CABLE COAXIAL</text>
+<circle cx="290" cy="88" fill="none" r="26" stroke="#333" stroke-width="1.4"></circle>
+<circle cx="290" cy="88" fill="none" r="19" stroke="#999" stroke-width="1.4"></circle>
+<circle cx="290" cy="88" fill="#eee" r="12" stroke="#ccc" stroke-width="1"></circle>
+<circle cx="290" cy="88" fill="#d13c3c" r="3.5"></circle>
+<text class="n10" x="324" y="74">Conductor central</text>
+<text class="n10" x="324" y="86">Dieléctrico</text>
+<text class="n10" x="324" y="98">Malla conductora</text>
+<text class="n10" x="324" y="110">Cubierta</text>
+<text class="r10" x="246" y="130">RETIRADO de las redes locales</text>
+<text class="d10" x="246" y="144">Sobrevive en televisión (RG-6), en las ICT</text>
+<text class="d10" x="246" y="154">del edificio y en el acceso DOCSIS</text>
+<rect fill="#e6f2ec" height="126" rx="5" width="208" x="450" y="32"></rect>
+<text class="k10" text-anchor="middle" x="554" y="48">FIBRA ÓPTICA</text>
+<rect fill="#cfe3d8" height="18" rx="9" width="184" x="462" y="62"></rect>
+<rect fill="#2d8659" height="6" width="184" x="462" y="68"></rect>
+<path d="M470,71 L500,66 L530,76 L560,66 L590,76 L620,71" fill="none" stroke="#e89822" stroke-width="1.2"></path>
+<text class="n10" x="460" y="93">Reflexión total interna: la luz queda confinada</text>
+<text class="g10" x="460" y="109">MULTIMODO 50 o 62,5 µm · LED o VCSEL</text>
+<text class="n10" x="460" y="120">Cientos de metros. Troncal DENTRO del edificio</text>
+<text class="g10" x="460" y="136">MONOMODO 8-10 µm · láser</text>
+<text class="n10" x="460" y="147">Decenas de km. ENTRE edificios y operador</text>
+<text class="k10" text-anchor="middle" x="340" y="180">CATEGORÍA (de los componentes)  frente a  CLASE (del enlace instalado y medido)</text>
+<rect fill="#0055a0" height="17" width="636" x="22" y="188"></rect>
+<text class="w10" x="32" y="200">CATEGORÍA</text>
+<text class="w10" x="130" y="200">CLASE</text>
+<text class="w10" x="210" y="200">FRECUENCIA</text>
+<text class="w10" x="320" y="200">APLICACIÓN TÍPICA</text>
+<rect fill="#f7f9fb" height="17" width="636" x="22" y="206"></rect>
+<text class="d10" x="32" y="218">Cat 5e</text><text class="d10" x="130" y="218">D</text><text class="d10" x="210" y="218">100 MHz</text><text class="d10" x="320" y="218">1000BASE-T · 2.5GBASE-T</text>
+<rect fill="#eef4fa" height="17" width="636" x="22" y="224"></rect>
+<text class="d10" x="32" y="236">Cat 6</text><text class="d10" x="130" y="236">E</text><text class="d10" x="210" y="236">250 MHz</text><text class="d10" x="320" y="236">1000BASE-T · 10GBASE-T SOLO HASTA 55 m</text>
+<rect fill="#cfe3d8" height="17" width="636" x="22" y="242"></rect>
+<text class="d10" x="32" y="254">Cat 6A</text><text class="d10" x="130" y="254">EA</text><text class="d10" x="210" y="254">500 MHz</text><text class="d10" x="320" y="254">10GBASE-T a 100 m — ES EL ESTÁNDAR DE OBRA NUEVA</text>
+<rect fill="#f7f9fb" height="17" width="636" x="22" y="260"></rect>
+<text class="d10" x="32" y="272">Cat 7 / 7A</text><text class="d10" x="130" y="272">F / FA</text><text class="d10" x="210" y="272">600 / 1000 MHz</text><text class="d10" x="320" y="272">Conector no RJ-45 (GG45, TERA). Poca implantación</text>
+<rect fill="#eef4fa" height="17" width="636" x="22" y="278"></rect>
+<text class="d10" x="32" y="290">Cat 8.1</text><text class="d10" x="130" y="290">I</text><text class="d10" x="210" y="290">2000 MHz</text><text class="d10" x="320" y="290">25 y 40 Gbit/s a 30 m. Centro de proceso de datos</text>
+<rect fill="none" height="48" rx="5" stroke="#0055a0" stroke-width="1.5" width="636" x="22" y="306"></rect>
+<text class="k10" text-anchor="middle" x="340" y="326">Parámetros que se miden al certificar el cableado instalado</text>
+<text class="d10" text-anchor="middle" x="340" y="342">Atenuación · NEXT y PSNEXT · ACR-F · pérdida de retorno · retardo de propagación y diferencia de retardo entre pares</text>
+<text class="n10" text-anchor="end" x="670" y="378">[Fuente: ISO/IEC 11801-1:2017 · EN 50173]</text>
+</svg>

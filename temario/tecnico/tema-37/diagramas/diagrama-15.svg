@@ -1,0 +1,54 @@
+<svg aria-label="Las tres realizaciones del paso de testigo: Token Ring de IEEE 802.5 a 4 y 16 megabits por segundo con unidad de acceso al medio y monitor activo; Token Bus de IEEE 802.4 con anillo lógico sobre bus físico para entorno industrial; y FDDI a 100 megabits por segundo sobre fibra con doble anillo contrarrotante que se pliega ante un corte para mantener el servicio" role="img" viewbox="0 0 680 374" xmlns="http://www.w3.org/2000/svg">
+<style>.h15{font:700 13px system-ui,sans-serif;fill:#0055a0}.k15{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d15{font:8.5px system-ui,sans-serif;fill:#333}.n15{font:8px system-ui,sans-serif;fill:#666}.w15{font:700 8.5px system-ui,sans-serif;fill:#fff}.g15{font:700 9px system-ui,sans-serif;fill:#2d8659}.r15{font:700 9px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h15" text-anchor="middle" x="340" y="20">Paso de testigo: sin colisiones y con retardo acotado</text>
+<text class="n15" text-anchor="middle" x="340" y="37">Circula un permiso explícito para transmitir; solo emite quien lo posee</text>
+<rect fill="#eef4fa" height="150" rx="5" width="204" x="22" y="48"></rect>
+<text class="k15" text-anchor="middle" x="124" y="64">IEEE 802.5 · TOKEN RING</text>
+<circle cx="124" cy="112" fill="none" r="30" stroke="#0055a0" stroke-width="2"></circle>
+<circle cx="124" cy="82" fill="#0055a0" r="5"></circle>
+<circle cx="154" cy="112" fill="#0055a0" r="5"></circle>
+<circle cx="124" cy="142" fill="#0055a0" r="5"></circle>
+<circle cx="94" cy="112" fill="#0055a0" r="5"></circle>
+<path d="M140,86 L158,86 L158,96 L140,96 z" fill="#e89822"></path>
+<text class="n15" x="176" y="94">testigo</text>
+<text class="d15" x="32" y="162">4 y 16 Mbit/s · IBM · cableado en MAU</text>
+<text class="d15" x="32" y="174">Testigo de 3 octetos, 3 bits de prioridad</text>
+<text class="d15" x="32" y="186">y 3 de reserva · MONITOR ACTIVO</text>
+<rect fill="#fdf3e3" height="150" rx="5" width="204" x="238" y="48"></rect>
+<text class="k15" text-anchor="middle" x="340" y="64">IEEE 802.4 · TOKEN BUS</text>
+<path d="M256,120 L424,120" stroke="#0055a0" stroke-width="2.5"></path>
+<circle cx="280" cy="100" fill="#0055a0" r="5"></circle><path d="M280,105 L280,120" stroke="#666" stroke-width="1"></path>
+<circle cx="330" cy="100" fill="#0055a0" r="5"></circle><path d="M330,105 L330,120" stroke="#666" stroke-width="1"></path>
+<circle cx="380" cy="100" fill="#0055a0" r="5"></circle><path d="M380,105 L380,120" stroke="#666" stroke-width="1"></path>
+<circle cx="410" cy="140" fill="#0055a0" r="5"></circle><path d="M410,135 L410,120" stroke="#666" stroke-width="1"></path>
+<path d="M280,92 q25,-16 50,0 M330,92 q25,-16 50,0" fill="none" stroke="#e89822" stroke-dasharray="4,3" stroke-width="1.4"></path>
+<path d="M410,148 q-65,14 -130,-40" fill="none" stroke="#e89822" stroke-dasharray="4,3" stroke-width="1.4"></path>
+<text class="d15" text-anchor="middle" x="340" y="162">ANILLO LÓGICO sobre BUS FÍSICO</text>
+<text class="d15" x="248" y="176">Las estaciones se ordenan por dirección</text>
+<text class="d15" x="248" y="188">Uso industrial · base del perfil MAP</text>
+<rect fill="#e6f2ec" height="150" rx="5" width="204" x="454" y="48"></rect>
+<text class="k15" text-anchor="middle" x="556" y="64">FDDI · ANSI / ISO, no IEEE</text>
+<circle cx="556" cy="108" fill="none" r="32" stroke="#0055a0" stroke-width="2"></circle>
+<circle cx="556" cy="108" fill="none" r="24" stroke="#2d8659" stroke-dasharray="5,3" stroke-width="2"></circle>
+<circle cx="556" cy="76" fill="#0055a0" r="5"></circle>
+<circle cx="588" cy="108" fill="#0055a0" r="5"></circle>
+<circle cx="556" cy="140" fill="#0055a0" r="5"></circle>
+<circle cx="524" cy="108" fill="#0055a0" r="5"></circle>
+<path d="M578,130 L594,146" stroke="#d13c3c" stroke-width="2.4"></path>
+<path d="M594,130 L578,146" stroke="#d13c3c" stroke-width="2.4"></path>
+<text class="r15" x="622" y="144">corte</text>
+<text class="d15" x="464" y="160">100 Mbit/s sobre fibra · 200 km</text>
+<text class="d15" x="464" y="172">500 estaciones · doble anillo</text>
+<text class="g15" x="464" y="184">PLIEGA LOS DOS ANILLOS EN UNO</text>
+<text class="n15" x="464" y="194">ante un corte, y el servicio continúa</text>
+<rect fill="#f7f9fb" height="20" rx="3" width="636" x="22" y="210"></rect>
+<text class="d15" x="32" y="224">Ventajas: sin colisiones por construcción · retardo máximo ACOTADO · el rendimiento NO se degrada al saturarse · admite prioridades</text>
+<rect fill="#eef4fa" height="20" rx="3" width="636" x="22" y="234"></rect>
+<text class="d15" x="32" y="248">Inconvenientes: complejidad de mantener el anillo y detectar el testigo perdido o duplicado · coste · menos eficiente con CARGA BAJA</text>
+<rect fill="#f7f9fb" height="20" rx="3" width="636" x="22" y="258"></rect>
+<text class="d15" x="32" y="272">FDDI, acceso temporizado: se pacta un tiempo objetivo de rotación (TTRT) y, si el testigo llega antes, hay tiempo de retención (THT)</text>
+<rect fill="none" height="48" rx="5" stroke="#0055a0" stroke-width="1.5" width="636" x="22" y="290"></rect>
+<text class="k15" text-anchor="middle" x="340" y="310">Con carga alta gana el testigo · con carga baja y a ráfagas gana Ethernet</text>
+<text class="d15" text-anchor="middle" x="340" y="326">Y con conmutador y dúplex la discusión desaparece: ya no hay colisiones que resolver</text>
+<text class="n15" text-anchor="end" x="670" y="362">[Fuente: IEEE 802.5 · IEEE 802.4 · ISO/IEC 9314]</text>
+</svg>

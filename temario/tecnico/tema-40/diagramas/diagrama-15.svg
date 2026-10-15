@@ -1,0 +1,51 @@
+<svg aria-label="Las cuatro vías de interoperación entre sistemas de videoconferencia heterogéneos, ordenadas de menor a mayor coste: estándar común, pasarela que traduce señalización, transcodificación que traduce también el media, y acceso telefónico como mínimo común denominador; con los cuatro requisitos que hay que exigir en un pliego" role="img" viewbox="0 0 680 332" xmlns="http://www.w3.org/2000/svg">
+<style>.h15{font:700 13px system-ui,sans-serif;fill:#0055a0}.k15{font:700 10px system-ui,sans-serif;fill:#0055a0}.d15{font:9px system-ui,sans-serif;fill:#333}.n15{font:8.5px system-ui,sans-serif;fill:#666}.w15{font:700 9.5px system-ui,sans-serif;fill:#fff}.g15{font:700 9.5px system-ui,sans-serif;fill:#2d8659}.r15{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h15" text-anchor="middle" x="340" y="19">Las cuatro vías de interoperación, ordenadas por lo que cuestan</text>
+<rect fill="#eef4fa" height="14" rx="7" width="636" x="22" y="32"></rect>
+<rect fill="#2d8659" height="14" rx="7" width="159" x="22" y="32"></rect>
+<rect fill="#d13c3c" height="14" rx="7" width="159" x="499" y="32"></rect>
+<text class="g15" x="22" y="60">SIN COSTE</text>
+<text class="r15" text-anchor="end" x="658" y="60">MÁXIMA DEGRADACIÓN</text>
+<rect fill="#e6f2ec" height="94" rx="4" width="152" x="22" y="68"></rect>
+<rect fill="#2d8659" height="20" rx="4" width="152" x="22" y="68"></rect>
+<text class="w15" text-anchor="middle" x="98" y="82">1 · ESTÁNDAR COMÚN</text>
+<text class="d15" x="30" y="103">Todos los extremos hablan</text>
+<text class="d15" x="30" y="116">SIP y RTP, con códecs</text>
+<text class="d15" x="30" y="129">compartidos</text>
+<text class="g15" x="30" y="146">Coste: CERO</text>
+<text class="n15" x="30" y="157">Lo que exigir en el pliego</text>
+<rect fill="#eef4fa" height="94" rx="4" width="152" x="184" y="68"></rect>
+<rect fill="#0055a0" height="20" rx="4" width="152" x="184" y="68"></rect>
+<text class="w15" text-anchor="middle" x="260" y="82">2 · PASARELA</text>
+<text class="d15" x="192" y="103">Traduce SEÑALIZACIÓN:</text>
+<text class="d15" x="192" y="116">H.323 a SIP, SIP a WebRTC,</text>
+<text class="d15" x="192" y="129">red telefónica a SIP</text>
+<text class="k15" x="192" y="146">Coste: BAJO</text>
+<text class="n15" x="192" y="157">Si los códecs coinciden</text>
+<rect fill="#fdf3e3" height="94" rx="4" width="152" x="346" y="68"></rect>
+<rect fill="#e89822" height="20" rx="4" width="152" x="346" y="68"></rect>
+<text class="w15" text-anchor="middle" x="422" y="82">3 · TRANSCODIFICACIÓN</text>
+<text class="d15" x="354" y="103">Traduce también el MEDIA:</text>
+<text class="d15" x="354" y="116">decodifica y recodifica</text>
+<text class="d15" x="354" y="129">Funciona siempre</text>
+<text class="r15" x="354" y="146">Coste: ALTO</text>
+<text class="n15" x="354" y="157">Cómputo, retardo y CALIDAD</text>
+<rect fill="#fbe9e9" height="94" rx="4" width="150" x="508" y="68"></rect>
+<rect fill="#d13c3c" height="20" rx="4" width="150" x="508" y="68"></rect>
+<text class="w15" text-anchor="middle" x="583" y="82">4 · ACCESO TELEFÓNICO</text>
+<text class="d15" x="516" y="103">El mínimo común</text>
+<text class="d15" x="516" y="116">denominador: entrar</text>
+<text class="d15" x="516" y="129">por teléfono</text>
+<text class="r15" x="516" y="146">Se pierde el vídeo</text>
+<text class="n15" x="516" y="157">Y funciona SIEMPRE</text>
+<rect fill="#e6f2ec" height="40" rx="4" width="636" x="22" y="176"></rect>
+<text class="g15" x="32" y="192">EL DATO JURÍDICO QUE ACOMPAÑA A LA CUARTA VÍA, Y QUE LA HACE MEJOR DE LO QUE PARECE</text>
+<text class="d15" x="32" y="207">El art. 17.1 de la Ley 40/2015 considera medios válidos «el correo electrónico, LAS AUDIOCONFERENCIAS y las videoconferencias»</text>
+<rect fill="#eef4fa" height="76" rx="4" width="636" x="22" y="226"></rect>
+<text class="k15" x="32" y="242">LOS CUATRO REQUISITOS QUE HAY QUE EXIGIR EN UN PLIEGO PARA NO QUEDAR ATRAPADO</text>
+<text class="d15" x="32" y="258">1. Señalización normalizada: SIP (RFC 3261) y, si hay parque heredado, H.323</text>
+<text class="d15" x="32" y="271">2. Códecs normalizados: H.264 y VP8 en vídeo, Opus y G.711 en audio — el mínimo de WebRTC, que garantiza el entendimiento</text>
+<text class="d15" x="32" y="284">3. Acceso por NAVEGADOR sin instalación, basado en WebRTC, y acceso telefónico de respaldo</text>
+<text class="d15" x="32" y="297">4. EXPORTABILIDAD: grabaciones y actas en formatos del ENI, no en contenedor propietario. Sin marca (art. 126.6 LCSP)</text>
+<text class="n15" text-anchor="end" x="658" y="324">[Fuente: RFC 3261 · Ley 40/2015, art. 17.1 · RD 4/2010 (ENI) · Ley 9/2017]</text>
+</svg>

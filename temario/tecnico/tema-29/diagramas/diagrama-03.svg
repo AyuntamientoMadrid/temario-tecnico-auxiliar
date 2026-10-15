@@ -1,0 +1,32 @@
+<svg aria-label="Tres arquitecturas de conexión de control remoto: conexión directa cliente-servidor que exige puertos entrantes abiertos, conexión mediada por un servidor de intermediación con retransmisión, y conexión punto a punto establecida tras la mediación, indicando en cada caso el sentido de las conexiones" role="img" viewbox="0 0 680 370" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 10px system-ui,sans-serif;fill:#fff}.d3{font:9px system-ui,sans-serif;fill:#333}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 10px system-ui,sans-serif;fill:#0055a0}.n3{font:8.5px system-ui,sans-serif;fill:#666}.lb3{font:8.5px system-ui,sans-serif;fill:#0055a0}</style>
+<defs><marker id="a3" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="h3" text-anchor="middle" x="340" y="20">Cómo se ponen en contacto los dos extremos</text>
+<text class="k3" x="20" y="46">1 · CONEXIÓN DIRECTA CLIENTE-SERVIDOR</text>
+<rect fill="#0055a0" height="44" rx="5" width="130" x="20" y="54"></rect><text class="t3" text-anchor="middle" x="85" y="72">TÉCNICO</text><text class="t3" style="font-weight:400" text-anchor="middle" x="85" y="88">cliente / visor</text>
+<rect fill="#2d8659" height="44" rx="5" width="130" x="530" y="54"></rect><text class="t3" text-anchor="middle" x="595" y="72">PUESTO</text><text class="t3" style="font-weight:400" text-anchor="middle" x="595" y="88">servidor: escucha</text>
+<line marker-end="url(#a3)" stroke="#0055a0" stroke-width="2" x1="150" x2="525" y1="76" y2="76"></line>
+<text class="lb3" text-anchor="middle" x="337" y="70">conexión entrante al puerto 3389 o 5900</text>
+<rect fill="#d13c3c" height="18" rx="3" width="92" x="292" y="80"></rect><text class="t3" text-anchor="middle" x="338" y="93">CORTAFUEGOS</text>
+<text class="d3" x="20" y="118">Requiere visibilidad de red y puertos entrantes abiertos. Inviable fuera de la red corporativa.</text>
+<line stroke="#ddd" stroke-width="1" x1="20" x2="660" y1="128" y2="128"></line>
+<text class="k3" x="20" y="150">2 · CONEXIÓN MEDIADA CON RETRANSMISIÓN</text>
+<rect fill="#0055a0" height="44" rx="5" width="130" x="20" y="158"></rect><text class="t3" text-anchor="middle" x="85" y="176">TÉCNICO</text><text class="t3" style="font-weight:400" text-anchor="middle" x="85" y="192">salida por 443</text>
+<rect fill="#e89822" height="44" rx="5" width="130" x="275" y="158"></rect><text class="t3" text-anchor="middle" x="340" y="176">MEDIADOR</text><text class="t3" style="font-weight:400" text-anchor="middle" x="340" y="192">empareja y retransmite</text>
+<rect fill="#2d8659" height="44" rx="5" width="130" x="530" y="158"></rect><text class="t3" text-anchor="middle" x="595" y="176">PUESTO</text><text class="t3" style="font-weight:400" text-anchor="middle" x="595" y="192">salida por 443</text>
+<line marker-end="url(#a3)" stroke="#0055a0" stroke-width="2" x1="150" x2="270" y1="180" y2="180"></line>
+<line marker-end="url(#a3)" stroke="#0055a0" stroke-width="2" x1="530" x2="410" y1="180" y2="180"></line>
+<text class="d3" x="20" y="222">Ambos extremos abren conexión SALIENTE: atraviesa NAT y cortafuegos sin publicar puertos.</text>
+<text class="d3" x="20" y="236">Todo el tráfico pasa por el mediador, que centraliza autenticación y registro.</text>
+<line stroke="#ddd" stroke-width="1" x1="20" x2="660" y1="246" y2="246"></line>
+<text class="k3" x="20" y="268">3 · PUNTO A PUNTO TRAS LA MEDIACIÓN</text>
+<rect fill="#0055a0" height="44" rx="5" width="130" x="20" y="276"></rect><text class="t3" text-anchor="middle" x="85" y="294">TÉCNICO</text><text class="t3" style="font-weight:400" text-anchor="middle" x="85" y="310">cliente / visor</text>
+<rect fill="#888" height="30" rx="5" width="130" x="275" y="276"></rect><text class="t3" text-anchor="middle" x="340" y="295">solo señalización</text>
+<rect fill="#2d8659" height="44" rx="5" width="130" x="530" y="276"></rect><text class="t3" text-anchor="middle" x="595" y="294">PUESTO</text><text class="t3" style="font-weight:400" text-anchor="middle" x="595" y="310">agente</text>
+<line stroke="#888" stroke-dasharray="4,3" stroke-width="1.5" x1="150" x2="270" y1="286" y2="286"></line>
+<line stroke="#888" stroke-dasharray="4,3" stroke-width="1.5" x1="530" x2="410" y1="286" y2="286"></line>
+<path d="M85,320 L85,338 L595,338 L595,320" fill="none" marker-end="url(#a3)" stroke="#2d8659" stroke-width="2.5"></path>
+<text class="lb3" text-anchor="middle" x="340" y="334">canal directo tras perforar el NAT (si falla, cae en retransmisión)</text>
+<text class="d3" x="20" y="356">Mejor rendimiento y el mediador deja de ver el tráfico. Modelo dominante en herramientas comerciales.</text>
+<text class="n3" text-anchor="end" x="670" y="366">[Fuente: RFC6143; MS-RDS]</text>
+</svg>

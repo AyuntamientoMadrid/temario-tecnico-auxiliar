@@ -1,0 +1,226 @@
+{{HEAD}}
+<body data-page="app" data-base="" data-v="{{VER}}">
+{{SPRITE}}
+{{HEADER}}
+
+<!-- ═══ PRESENTACIÓN (portada pública) ═══ -->
+<main class="screen" id="screen-landing" tabindex="-1">
+  <section class="l-hero">
+    <div class="l-inner">
+      <span class="l-tag">18 plazas · turno libre · Oferta de Empleo Público 2025</span>
+      <h1>Técnico/a Auxiliar de Tecnologías de la Información y la Comunicación</h1>
+      <p>Temario de los 40 temas del programa de la convocatoria (BOAM n.º 10.032, de 23 de diciembre de 2025), con test de autoevaluación, casos prácticos y simulacros con el formato del examen.</p>
+      <div class="l-btns">
+        <a href="#/progreso" class="btn btn-lg btn-blanco">Empezar a estudiar</a>
+        <a href="#/temario" class="btn btn-lg btn-borde">Ver el temario</a>
+      </div>
+      <div class="l-datos">
+        <div><strong>40</strong>temas del programa</div>
+        <div><strong>{{TOTAL_PREGUNTAS}}</strong>preguntas de test</div>
+        <div><strong>90 + 30</strong>preguntas en el examen</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="l-section">
+    <div class="l-inner">
+      <h2>Qué encontrarás</h2>
+      <p class="lede">Todo el material está organizado según el programa oficial: 10 temas del Grupo I (administrativo) y 30 del Grupo II (técnico).</p>
+      <div class="l-features">
+        <div class="card l-feat"><div class="hub-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></div><h3>Los 40 temas</h3><p>Cada tema con índice, contenido, diagramas, fuentes y una ficha con su extensión y el tiempo estimado de estudio.</p></div>
+        <div class="card l-feat"><div class="hub-icon"><svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg></div><h3>Exámenes y casos prácticos</h3><p>Exámenes de cada tema con la explicación de cada respuesta, y supuestos aplicados al Ayuntamiento de Madrid.</p></div>
+        <div class="card l-feat"><div class="hub-icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></div><h3>Simulacros de examen</h3><p>Parte teórica (90 preguntas en 90 minutos) y parte práctica (30 preguntas en 60 minutos), corregidas como en el examen.</p></div>
+        <div class="card l-feat"><div class="hub-icon"><svg class="icon" aria-hidden="true"><use href="#i-gauge"/></svg></div><h3>Tu progreso</h3><p>Marca los epígrafes que vas estudiando, revisa tus intentos e imprime cada tema con tu avance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="l-section gris" aria-labelledby="proc-titulo">
+    <div class="l-inner">
+      <h2 id="proc-titulo" style="margin-bottom:22px">Cómo se ha elaborado este material</h2>
+      <div class="l-proc" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+        <div class="card"><h3>Fuentes oficiales</h3><p>Cada tema se apoya en la normativa vigente y en los estándares y la documentación técnica de referencia, que se citan en su pestaña «Fuentes».</p></div>
+        <div class="card"><h3>Material de apoyo</h3><p>Es una herramienta de estudio: no sustituye a las bases de la convocatoria ni a los textos oficiales, y el examen puede incluir preguntas sobre aspectos del programa que no figuren aquí de forma literal.</p></div>
+      </div>
+      <p class="l-nota">Contenido actualizado a octubre de 2026. La imagen de la portada se ha generado con inteligencia artificial. Si detectas un error o quieres proponer una mejora, escribe al <a href="mailto:procesosselectivostic@madrid.es" data-buzon>buzón de sugerencias</a>.</p>
+    </div>
+  </section>
+
+  <section class="l-section" aria-labelledby="priv-titulo">
+    <div class="l-inner">
+      <h2 id="priv-titulo">Sin registro y sin datos personales</h2>
+      <p class="lede">No necesitas crear una cuenta. Tu avance y tus resultados se guardan solo en el navegador que uses: si cambias de navegador o de dispositivo, o borras los datos de navegación, no se conservan. Puedes borrarlos tú mismo en «Estadísticas».</p>
+      <div class="l-btns">
+        <a href="#/progreso" class="btn btn-lg btn-azul">Empezar a estudiar</a>
+        <a href="{{PROCESOS_URL}}" class="btn btn-lg btn-ghost">Información de la convocatoria</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="app" id="app">
+  <aside class="sidebar" id="sidebar" aria-label="Navegación">
+    <nav class="sb-nav">
+      {{NAV}}
+      <div class="sb-section">Información</div>
+      <a class="sb-link" href="#/inicio"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg> Presentación</a>
+    </nav>
+  </aside>
+  <div class="overlay"></div>
+  <main class="main" id="contenido-principal" tabindex="-1">
+
+    <!-- ═══ MI PROGRESO ═══ -->
+    <section class="screen" id="screen-progreso" hidden>
+      <div class="main-header"><nav class="breadcrumb" aria-label="Ruta"><span aria-current="page">Mi progreso</span></nav></div>
+      <div class="main-body">
+        {{AVISO}}
+        <h1 class="page-title">Mi progreso</h1>
+        <p class="page-sub">Tu avance en el temario y en los test, guardado en este navegador.</p>
+        <div class="stats-grid" id="prog-stats"></div>
+        <div id="prog-continuar" style="margin-bottom:24px"></div>
+        <div class="hub-grid cols-2">
+          <a class="card card-link hub-card" href="#/temario"><div class="hub-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></div><h2>Temario</h2><p>Los 40 temas en fichas, por bloques, con tu avance en cada uno.</p><div class="hub-meta">Ir al temario <svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></div></a>
+          <a class="card card-link hub-card" href="#/test"><div class="hub-icon"><svg class="icon" aria-hidden="true"><use href="#i-clipboard"/></svg></div><h2>Test</h2><p>Simulacros con el formato del examen y exámenes cortos por tema, con su historial.</p><div class="hub-meta">Ir a Test <svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></div></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TEMARIO ═══ -->
+    <section class="screen" id="screen-temario" hidden>
+      <div class="main-header"><nav class="breadcrumb" aria-label="Ruta"><a href="#/progreso" aria-label="Mi progreso"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></a> <span aria-hidden="true">›</span> <span aria-current="page">Temario</span></nav></div>
+      <div class="main-body">
+        <h1 class="page-title">Temario</h1>
+        <p class="page-sub">40 temas del programa (BOAM n.º 10.032). Cada ficha abre el tema con su índice, contenido, diagramas, fuentes y casos prácticos.</p>
+        <div class="toolbar">
+          <div class="search-box"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><input type="search" id="temario-q" placeholder="Buscar un tema…" aria-label="Buscar un tema"></div>
+          <button type="button" class="chip" data-f="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="chip" data-f="I" aria-pressed="false">Bloque I</button>
+          <button type="button" class="chip" data-f="II" aria-pressed="false">Bloque II</button>
+          <button type="button" class="chip" data-f="pendientes" aria-pressed="false">Pendientes</button>
+        </div>
+        <div id="temario-fichas"></div>
+      </div>
+    </section>
+
+    <!-- ═══ TEST (hub) ═══ -->
+    <section class="screen" id="screen-test" hidden>
+      <div class="main-header"><nav class="breadcrumb" aria-label="Ruta"><a href="#/progreso" aria-label="Mi progreso"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></a> <span aria-hidden="true">›</span> <span aria-current="page">Test</span></nav></div>
+      <div class="main-body">
+        <h1 class="page-title">Test</h1>
+        <p class="page-sub">El examen es un único ejercicio tipo test con dos partes. Cada pregunta tiene tres respuestas y solo una es correcta; los errores restan 1/3 de acierto y para aprobar hacen falta 5 puntos en cada parte.</p>
+        <div class="hub-grid">
+          <a class="card card-link hub-card azul" href="#/simulacro-teorico"><div class="hub-icon"><svg class="icon" aria-hidden="true"><use href="#i-clipboard"/></svg></div><h2>Simulacro · parte teórica</h2><p>90 preguntas de los 40 temas en 90 minutos.</p><div class="hub-meta"><span id="hub-simteo"></span> <svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></div></a>
+          <a class="card card-link hub-card" href="#/simulacro-practico"><div class="hub-icon"><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg></div><h2>Simulacro · parte práctica</h2><p>Un supuesto con 30 preguntas del Grupo II en 60 minutos.</p><div class="hub-meta"><span id="hub-simprac"></span> <svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></div></a>
+          <a class="card card-link hub-card" href="#/examenes"><div class="hub-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></div><h2>Exámenes por tema</h2><p>15 preguntas al azar de un tema en 15 minutos, para reforzar lo que acabas de estudiar.</p><div class="hub-meta"><span id="hub-extemas"></span> <svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></div></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SIMULACRO TEÓRICO ═══ -->
+    <section class="screen" id="screen-simteo" hidden>
+      <div class="main-header"><nav class="breadcrumb" aria-label="Ruta"><a href="#/progreso" aria-label="Mi progreso"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></a> <span aria-hidden="true">›</span> <a href="#/test">Test</a> <span aria-hidden="true">›</span> <span aria-current="page">Simulacro · parte teórica</span></nav></div>
+      <div class="main-body">
+        <h1 class="page-title">Simulacro · parte teórica</h1>
+        <p class="page-sub">Como la parte teórica del examen: 90 preguntas del Grupo I y del Grupo II en 90 minutos. Se eligen al azar del banco de los 40 temas (dos de cada tema y diez más), así que cada simulacro es distinto.</p>
+        <div class="card hub-card azul" style="display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:28px">
+          <div><h2 style="margin:0">Nuevo simulacro</h2><p style="margin:4px 0 0">90 preguntas · 90 minutos · se entrega solo al acabar el tiempo</p></div>
+          <button type="button" class="btn btn-lg btn-blanco btn-empezar" data-empezar="simteo"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Empezar</button>
+        </div>
+        <h2 class="section-title">Simulacros anteriores</h2>
+        <div class="card" style="overflow-x:auto"><table class="hist-table"><thead><tr><th scope="col">Fecha</th><th scope="col">Duración</th><th scope="col">Aciertos</th><th scope="col">Nota</th><th scope="col">Resultado</th><th scope="col"><span class="visually-hidden">Revisión</span></th></tr></thead><tbody id="hist-simteo"></tbody></table></div>
+      </div>
+    </section>
+
+    <!-- ═══ SIMULACRO PRÁCTICO ═══ -->
+    <section class="screen" id="screen-simprac" hidden>
+      <div class="main-header"><nav class="breadcrumb" aria-label="Ruta"><a href="#/progreso" aria-label="Mi progreso"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></a> <span aria-hidden="true">›</span> <a href="#/test">Test</a> <span aria-hidden="true">›</span> <span aria-current="page">Simulacro · parte práctica</span></nav></div>
+      <div class="main-body">
+        <h1 class="page-title">Simulacro · parte práctica</h1>
+        <p class="page-sub">Como la parte práctica del examen: un supuesto de un proyecto del Ayuntamiento y 30 preguntas sobre el temario del Grupo II, en 60 minutos. Las preguntas piden aplicar los conocimientos al caso, no solo recordarlos.</p>
+        <div class="card hub-card azul" style="display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:28px">
+          <div><h2 style="margin:0">Nuevo simulacro</h2><p style="margin:4px 0 0">1 supuesto · 30 preguntas · 60 minutos</p></div>
+          <button type="button" class="btn btn-lg btn-blanco btn-empezar" data-empezar="simprac"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Empezar</button>
+        </div>
+        <h2 class="section-title">Simulacros anteriores</h2>
+        <div class="card" style="overflow-x:auto"><table class="hist-table"><thead><tr><th scope="col">Fecha</th><th scope="col">Duración</th><th scope="col">Aciertos</th><th scope="col">Nota</th><th scope="col">Resultado</th><th scope="col"><span class="visually-hidden">Revisión</span></th></tr></thead><tbody id="hist-simprac"></tbody></table></div>
+      </div>
+    </section>
+
+    <!-- ═══ EXÁMENES POR TEMA ═══ -->
+    <section class="screen" id="screen-extemas" hidden>
+      <div class="main-header"><nav class="breadcrumb" aria-label="Ruta"><a href="#/progreso" aria-label="Mi progreso"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></a> <span aria-hidden="true">›</span> <a href="#/test">Test</a> <span aria-hidden="true">›</span> <span aria-current="page">Exámenes por tema</span></nav></div>
+      <div class="main-body">
+        <h1 class="page-title">Exámenes por tema</h1>
+        <p class="page-sub">Elige un tema: 15 preguntas al azar de su banco en 15 minutos.</p>
+        <div id="extemas-fichas"></div>
+      </div>
+    </section>
+
+    <!-- ═══ EXAMEN DE UN TEMA ═══ -->
+    <section class="screen" id="screen-extema" hidden>
+      <div class="main-header"><nav class="breadcrumb" aria-label="Ruta"><a href="#/progreso" aria-label="Mi progreso"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></a> <span aria-hidden="true">›</span> <a href="#/test">Test</a> <span aria-hidden="true">›</span> <a href="#/examenes">Exámenes por tema</a> <span aria-hidden="true">›</span> <span aria-current="page" id="extema-crumb"></span></nav></div>
+      <div class="main-body">
+        <div class="card tema-hero" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+          <div><div class="tema-eyebrow"><span class="badge badge-azul" id="extema-badge"></span></div><h1 id="extema-title" style="font-size:20px"></h1><a id="extema-link" href="#" style="font-size:13px">Abrir el tema</a></div>
+          <button type="button" class="btn btn-azul btn-lg btn-empezar" id="extema-start"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Nuevo examen</button>
+        </div>
+        <h2 class="section-title">Exámenes anteriores de este tema</h2>
+        <div class="card" style="overflow-x:auto"><table class="hist-table"><thead><tr><th scope="col">Fecha</th><th scope="col">Duración</th><th scope="col">Aciertos</th><th scope="col">Nota</th><th scope="col">Resultado</th><th scope="col"><span class="visually-hidden">Revisión</span></th></tr></thead><tbody id="hist-extema"></tbody></table></div>
+      </div>
+    </section>
+
+    <!-- ═══ EXAMEN EN CURSO ═══ -->
+    <section class="screen runner" id="screen-runner" hidden>
+      <div class="main-header"><nav class="breadcrumb" aria-label="Ruta"><a href="#/test">Test</a> <span aria-hidden="true">›</span> <span aria-current="page" id="runner-crumb"></span></nav></div>
+      <div class="main-body">
+        <h1 class="page-title" id="runner-title"></h1>
+        <div class="test-bar">
+          <div class="kpi">Contestadas<b id="runner-cont">0</b></div>
+          <span class="timer" id="runner-timer" role="timer" aria-label="Tiempo restante"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> 0:00</span>
+          <button type="button" class="btn btn-ghost" id="runner-pausa" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-pause"/></svg> <span>Pausar</span></button>
+          <span class="spacer"></span>
+          <button type="button" class="btn btn-verde" id="runner-entregar"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Entregar</button>
+        </div>
+        <p class="page-sub">Pulsa una respuesta para marcarla; vuelve a pulsarla para dejar la pregunta en blanco. Las preguntas en blanco no restan.</p>
+        <div class="pausa-aviso" id="runner-pausa-aviso" role="status" hidden><h2>Examen en pausa</h2><p>El tiempo está parado y las preguntas, ocultas. Cuando quieras seguir, pulsa «Reanudar».</p><button type="button" class="btn btn-azul btn-lg" id="runner-reanudar"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Reanudar</button></div>
+        <div class="supuesto" id="runner-supuesto" hidden></div>
+        <div id="runner-qs"></div>
+        <div style="margin-top:20px"><button type="button" class="btn btn-verde btn-lg" id="runner-entregar-2"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Entregar el examen</button></div>
+      </div>
+    </section>
+
+    <!-- ═══ RESULTADO ═══ -->
+    <section class="screen" id="screen-resultado" hidden>
+      <div class="main-header"><nav class="breadcrumb" aria-label="Ruta"><a href="#/progreso" aria-label="Mi progreso"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></a> <span aria-hidden="true">›</span> <a href="#/test">Test</a> <span aria-hidden="true">›</span> <span aria-current="page">Resultado</span></nav></div>
+      <div class="main-body">
+        <h1 class="page-title" id="res-title">Resultado</h1>
+        <div id="res-body"></div>
+      </div>
+    </section>
+
+    <!-- ═══ ESTADÍSTICAS ═══ -->
+    <section class="screen" id="screen-stats" hidden>
+      <div class="main-header"><nav class="breadcrumb" aria-label="Ruta"><a href="#/progreso" aria-label="Mi progreso"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></a> <span aria-hidden="true">›</span> <span aria-current="page">Estadísticas</span></nav></div>
+      <div class="main-body">
+        <h1 class="page-title">Estadísticas</h1>
+        <p class="page-sub">Tu rendimiento por tema y la evolución de tus simulacros.</p>
+        <div class="stats-grid" id="stats-cards"></div>
+        <h2 class="section-title">Rendimiento por tema (nota media)</h2>
+        <div class="card card-pad" id="stats-temas"></div>
+        <h2 class="section-title">Últimos simulacros</h2>
+        <div class="card card-pad" id="stats-sims"></div>
+        <h2 class="section-title">Tus datos</h2>
+        <div class="card card-pad" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+          <p style="font-size:14px;color:var(--g600);flex:1;min-width:240px">Tu avance de lectura y tus intentos están guardados solo en este navegador. Puedes borrarlos cuando quieras.</p>
+          <button type="button" class="btn btn-rojo-ghost" id="borrar-datos"><svg class="icon" aria-hidden="true"><use href="#i-trash"/></svg> Borrar mis datos</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+{{FOOTER}}
+<script src="assets/js/temas.js?v={{VER}}"></script>
+<script src="assets/js/app.js?v={{VER}}"></script>
+</body>
+</html>

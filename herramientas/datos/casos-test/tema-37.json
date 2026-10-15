@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "Para el tramo del puesto al armario de planta, con una vida útil prevista de 20 años y dispositivos alimentados por PoE, ¿qué medio debe especificarse?",
+    "o": [
+     "Par trenzado U/UTP Cat 6A (clase EA, 500 MHz), que garantiza 10GBASE-T en los 100 m del canal.",
+     "Par trenzado Cat 6, que garantiza 10GBASE-T en todo el canal de 100 m y abarata la obra.",
+     "Fibra multimodo OM4 hasta cada toma, porque el par trenzado no admite PoE de tipo 3 o 4."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §3.5.1",
+    "e": "Cat 6A (clase EA, 500 MHz) da 10 Gbit/s a 100 m durante la vida útil del cableado y admite PoE de tipo 3 o 4. Cat 6 solo llega a 10 Gbit/s hasta 55 m."
+   },
+   {
+    "q": "Para unir cada armario de planta con el armario principal, a unos 40 metros y con 10 Gbit/s como velocidad objetivo, ¿qué medio procede?",
+    "o": [
+     "Fibra monomodo OS2, porque la fibra multimodo no alcanza los 10 Gbit/s a 40 metros de distancia.",
+     "Par trenzado Cat 5e, que admite 10 Gbit/s en los tramos troncales inferiores a 55 metros.",
+     "Fibra multimodo OM4, que da 10 Gbit/s con margen y evita los problemas de tierras entre plantas."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §3.5.1",
+    "e": "OM3 y OM4 son las multimodo de obra nueva para 10 y 40 Gbit/s; la fibra, además, elimina los problemas de tierras entre plantas. Cat 5e no llega a 10 Gbit/s."
+   },
+   {
+    "q": "El edificio debe conectarse con el centro de proceso de datos del IAM, a 6 kilómetros. ¿Qué medio debe especificarse?",
+    "o": [
+     "Fibra multimodo OM4, que con fuente láser cubre sin problema decenas de kilómetros.",
+     "Fibra monomodo OS2, porque 6 km exceden el alcance del cobre y el de la multimodo.",
+     "Par trenzado Cat 6A, porque en los tramos troncales su canal puede superar los 100 m."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §3.5.1",
+    "e": "La monomodo con fuente láser cubre decenas de kilómetros; el par trenzado está limitado a un canal de 100 m con independencia del tramo, y la multimodo se queda corta."
+   },
+   {
+    "q": "Las tomas más alejadas quedan a 86 m y a 112 m de su armario, medidas sobre canalización. ¿Cumplen la norma?",
+    "o": [
+     "Ninguna de las dos cumple, porque el límite normalizado de cable horizontal fijo es de 80 metros.",
+     "Ambas cumplen si se instala Cat 6A, porque esa categoría amplía el canal hasta los 120 metros.",
+     "La de 86 m cumple, con muy poco margen para latiguillos; la de 112 m no, y requiere un armario intermedio en el anexo."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §6.1",
+    "e": "El canal máximo es de 100 m: 90 m de cable horizontal fijo más 10 m de latiguillos. A 86 m quedan solo 4 m para los dos latiguillos; a 112 m no hay excepción posible, y el límite no depende de la categoría."
+   },
+   {
+    "q": "¿Qué norma de cableado estructurado procede citar en el pliego español?",
+    "o": [
+     "La EN 50173, equivalente europea de la ISO/IEC 11801-1:2017.",
+     "La IEEE 802.3bt, que regula los subsistemas horizontal y vertical.",
+     "La IEEE 802.1Q, que fija el canal máximo de 100 m del cableado."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §6.1",
+    "e": "Los subsistemas del cableado (horizontal, área de trabajo, vertical y campus) y la regla de los 90 + 10 m los fijan ISO/IEC 11801 y su equivalente europea EN 50173, que es la que procede citar en un pliego español."
+   },
+   {
+    "q": "¿Qué topología física y lógica resulta en el edificio?",
+    "o": [
+     "Física en bus en cada planta y lógica en anillo, con paso de testigo entre los armarios de las tres plantas.",
+     "Física en árbol (tres estrellas colgando de una cuarta) y lógica punto a punto conmutada, con VLAN superpuestas.",
+     "Física en estrella única y lógica en bus compartido, con CSMA/CD activo en cada puerto del conmutador."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 3 · §2.2.2",
+    "e": "Tres estrellas por planta cuelgan de la del armario principal (árbol). Cada puerto de conmutador es un enlace dedicado en dúplex: no hay bus lógico ni colisiones, y CSMA/CD está desactivado."
+   },
+   {
+    "q": "Cada planta tendrá unos 68 puertos activos de 1 Gbit/s. ¿Basta un enlace ascendente de 1 Gbit/s hacia el armario principal?",
+    "o": [
+     "No: la sobresuscripción sería de 68:1; con 10 Gbit/s baja a 6,8:1, dentro del rango habitual de 20:1 a 4:1.",
+     "Sí: como nunca transmiten todos a la vez, cualquier ascendente de 1 Gbit/s es suficiente para una planta.",
+     "No: hay que sumar las velocidades nominales de todos los puertos, lo que exige un ascendente de 68 Gbit/s."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §2.2.2 · §5.2.1",
+    "e": "No se suman las velocidades nominales: se trabaja con una sobresuscripción aceptada, entre 20:1 y 4:1 en el nivel de acceso. 68:1 es inadmisible; 6,8:1 es razonable."
+   },
+   {
+    "q": "¿Qué norma de alimentación por Ethernet debe exigirse para teléfonos, cámaras y puntos de acceso?",
+    "o": [
+     "IEEE 802.3af, porque su potencia basta para los teléfonos, las cámaras y los puntos de acceso.",
+     "IEEE 802.3bt, y como mínimo 802.3at, porque un punto de acceso Wi-Fi 6 o 7 puede requerir el tipo 3.",
+     "IEEE 802.3bz, porque es la norma que alimenta puntos de acceso sobre cableado Cat 5e y Cat 6."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §5.4",
+    "e": "802.3af cubre un teléfono IP; una cámara motorizada necesita 802.3at, y un punto de acceso con varias radios puede requerir 802.3bt de tipo 3. 802.3bz es una norma de velocidad (2,5 y 5 Gbit/s), no de alimentación."
+   },
+   {
+    "q": "Al dimensionar los conmutadores de acceso con PoE, ¿qué precaución es imprescindible?",
+    "o": [
+     "Comprobar solo que todos los puertos admitan PoE, porque cada uno entrega siempre su máximo.",
+     "Elegir modelos de 48 puertos, porque ese formato garantiza 1.440 W de potencia PoE disponible.",
+     "Comprobar su presupuesto total de potencia frente a la suma del consumo real de los dispositivos."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 4 · §5.4",
+    "e": "No basta con PoE en todos los puertos: 48 puertos a 30 W serían 1.440 W, cifra que ningún equipo entrega. Hay que sumar el consumo real previsto y elegir la fuente, con redundancia si cuelga la telefonía."
+   },
+   {
+    "q": "¿Cómo debe redactarse en el pliego la prescripción técnica de los conmutadores?",
+    "o": [
+     "Describiendo funcionalmente las normas exigidas (802.3at, 802.1Q, 802.1X…), sin mencionar marcas ni fabricantes.",
+     "Citando el modelo concreto del fabricante homologado por el IAM, para asegurar la compatibilidad del parque.",
+     "Citando la marca de referencia sin más, porque en los suministros TIC la Ley 9/2017 no limita esa mención."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · art. 126.6 Ley 9/2017",
+    "e": "Conforme al artículo 126.6 de la Ley 9/2017, las prescripciones técnicas no pueden mencionar una marca, patente o fabricante salvo que sea imprescindible, y entonces con la mención «o equivalente»."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "Un puesto de la segunda planta va muy lento, y su puerto muestra colisiones tardías y errores de FCS pese a ser una red conmutada. ¿Cuál es el diagnóstico?",
+    "o": [
+     "Un bucle de capa 2 que genera una tormenta de difusión en toda la segunda planta.",
+     "Una saturación del enlace ascendente entre el armario de planta y el armario principal.",
+     "Una discordancia de dúplex: un extremo del enlace está en dúplex y el otro en semidúplex."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §4.2.1",
+    "e": "El extremo en semidúplex aplica CSMA/CD y el otro transmite sin escuchar: el enlace funciona, pero con pérdidas y retransmisiones. En dúplex punto a punto no debería haber colisión alguna."
+   },
+   {
+    "q": "¿Qué es una colisión tardía, como las que registra el puerto de ese puesto?",
+    "o": [
+     "La detectada después de transmitir 1.518 octetos, es decir, al final de la trama máxima de Ethernet.",
+     "La detectada después de transmitir los primeros 64 octetos, es decir, una vez pasada la ranura de colisión.",
+     "La que se produce tras agotar los 16 intentos de retransmisión permitidos para una misma trama."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §4.2.1",
+    "e": "La ranura de colisión es de 512 tiempos de bit (64 octetos). Una colisión normal se detecta dentro de esa ventana; la tardía llega cuando la estación ya se creía a salvo."
+   },
+   {
+    "q": "¿Cómo debe corregirse la incidencia de ese puesto?",
+    "o": [
+     "Con la negociación automática en ambos extremos, o fijando velocidad y dúplex a mano en los dos, nunca en uno solo.",
+     "Fijando velocidad y dúplex a mano solo en el puerto del conmutador y dejando el puesto en negociación automática.",
+     "Activando CSMA/CD en el puerto del conmutador, para que gestione las colisiones que envía el puesto de trabajo."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §4.2.1",
+    "e": "Fijar solo un extremo es la causa más frecuente del problema: el otro, al no recibir el intercambio de negociación, cae por omisión a semidúplex."
+   },
+   {
+    "q": "La primera planta sufre cortes y un enorme tráfico de difusión tras conectar un pequeño conmutador bajo una mesa. ¿Por qué la trama Ethernet no detiene por sí sola el bucle?",
+    "o": [
+     "Porque su campo FCS no detecta las tramas duplicadas que recorren el bucle.",
+     "Porque carece de campo de tiempo de vida, a diferencia del datagrama IP.",
+     "Porque las tramas de difusión no llevan dirección MAC de destino en su cabecera."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §5.2.1",
+    "e": "Una trama de difusión que entra en el bucle se replica indefinidamente: nada la detiene, porque la trama Ethernet no tiene tiempo de vida. Por eso un encaminador no necesita árbol de expansión y un conmutador sí."
+   },
+   {
+    "q": "¿Qué control de protocolo habría impedido la tormenta de difusión de la primera planta?",
+    "o": [
+     "La agregación de enlaces 802.1AX, que reparte la difusión entre los dos cables que forman el bucle y la absorbe.",
+     "El etiquetado 802.1Q en los troncales, que añade a cada trama un tiempo de vida que se agota en cada salto.",
+     "El árbol de expansión (802.1D, con 802.1w y 802.1s), activo en todos los conmutadores y con protección del puente raíz."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §5.2.1",
+    "e": "El árbol de expansión bloquea lógicamente los enlaces redundantes y deja una topología sin bucles; la protección del puente raíz impide que un equipo ajeno se anuncie como raíz."
+   },
+   {
+    "q": "¿Y qué control de configuración en los puertos de acceso habría impedido conectar ese conmutador?",
+    "o": [
+     "La seguridad de puerto, que limita las direcciones MAC que aprende cada puerto, y deshabilitar los puertos no usados.",
+     "Subir los puertos de acceso a 10 Gbit/s, para que puedan absorber la tormenta de difusión sin llegar a saturarse.",
+     "Configurar los puertos de acceso en modo libre de fragmentos, que descarta las tramas de difusión duplicadas."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §5.2.1",
+    "e": "La seguridad de puerto bloquea o alerta si aparecen más direcciones MAC de las permitidas, lo que delata un conmutador no autorizado. La causa última es organizativa: ningún equipo de red se conecta sin inventariar (mp.eq.4)."
+   },
+   {
+    "q": "La Wi-Fi de la sala de espera va bien a primera hora y se vuelve inservible con unas cuarenta personas esperando; las quejas son de lentitud, no de cobertura. ¿Cuál es el diagnóstico?",
+    "o": [
+     "Interferencia de la banda de 6 GHz sobre la red corporativa del mismo edificio.",
+     "Agotamiento de las direcciones del servidor DHCP de la red de invitados.",
+     "Saturación por contienda del medio inalámbrico, que es compartido y semidúplex."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §4.2.2",
+    "e": "La velocidad nominal es la del canal y se reparte entre todas las estaciones; al aumentar su número crecen la contienda y los retrocesos, y se gasta más canal sin transmitir datos."
+   },
+   {
+    "q": "Entre las causas de la incidencia de la sala de espera está el problema de la tasa ancla. ¿En qué consiste?",
+    "o": [
+     "Los móviles en el límite de cobertura negocian una modulación lenta y ocupan el canal mucho tiempo, degradando a todos.",
+     "Los móviles cercanos al punto de acceso acaparan el canal porque emiten con más potencia que los más alejados.",
+     "El punto de acceso fija la velocidad del canal en la del cliente más rápido y desasocia a los más lentos."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §4.2.2",
+    "e": "Al tardar mucho en enviar poco, una sola estación lenta ocupa el canal un tiempo desproporcionado y degrada a todas las demás, aunque estén cerca del punto de acceso."
+   },
+   {
+    "q": "¿Qué medida NO debe adoptarse para corregir la incidencia de la sala de espera?",
+    "o": [
+     "Fijar una velocidad mínima de asociación en la celda.",
+     "Subir la potencia de emisión del punto de acceso.",
+     "Añadir puntos de acceso de menor potencia y canales sin solapar."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §4.2.2",
+    "e": "Subir la potencia agranda la celda, hace que más estaciones compitan por el mismo canal, aumenta la interferencia con las celdas vecinas y no mejora el enlace de subida, porque la potencia del móvil no cambia."
+   },
+   {
+    "q": "Las cámaras del anexo, cableadas con una tirada de 112 metros, pierden la conexión de forma aleatoria. ¿Por qué el fallo es intermitente y qué solución procede?",
+    "o": [
+     "El enlace se corta en cuanto supera los 100 m; basta con sustituir el cable por otro de una categoría superior que admita 150 m.",
+     "El PoE no llega con potencia suficiente a 112 m; basta con pasar las cámaras a 802.3bt para compensar la caída de tensión.",
+     "Superar los 100 m degrada los márgenes de atenuación y diafonía sin cortar el enlace; procede un armario intermedio con fibra."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §3.5.1 · §6.1",
+    "e": "Superar el límite no corta el enlace, degrada sus márgenes, y el tráfico continuo de las cámaras es el peor escenario. La solución es un armario intermedio enlazado por fibra; cambiar de categoría no sirve, porque el límite de 100 m no depende de ella."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "El sistema de tramitación es de categoría MEDIA. ¿Es exigible mp.com.4 y qué refuerzo satisface una segmentación con VLAN?",
+    "o": [
+     "No: mp.com.4 es la única medida del grupo mp.com que solo se exige cuando el sistema es de categoría ALTA.",
+     "Sí: en MEDIA se exige con uno de los refuerzos R1, R2 o R3, y las VLAN satisfacen R1, segmentación lógica básica.",
+     "Sí, pero en MEDIA exige además R4, puntos de interconexión, que una segmentación con VLAN no satisface."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §6.3 · mp.com.4 ENS",
+    "e": "mp.com.4 no aplica en BÁSICA —es la única del grupo mp.com que no se exige siempre—, pero sí en MEDIA con [R1 o R2 o R3]. R4 se exige en ALTA."
+   },
+   {
+    "q": "En la segmentación de la oficina, ¿qué tratamiento debe recibir la interfaz de gestión de los conmutadores y puntos de acceso?",
+    "o": [
+     "Una VLAN de gestión propia, nunca accesible desde la VLAN de usuarios.",
+     "La VLAN 1 por defecto, compartida con los puestos para simplificar.",
+     "La VLAN de invitados, por ser la que está aislada del resto de la red."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §5.2.2 · mp.com.4.r1 ENS",
+    "e": "El refuerzo R1 de mp.com.4 ordena segregar como mínimo en usuarios, servicios y administración: la gestión de red va en su propio segmento, nunca accesible desde la VLAN de usuarios."
+   },
+   {
+    "q": "¿Cómo viaja el tráfico de las distintas VLAN por el enlace entre dos conmutadores de la oficina?",
+    "o": [
+     "Por un puerto de acceso para cada VLAN, porque un enlace físico solo puede transportar una VLAN sin etiquetar.",
+     "Por un puerto troncal con una etiqueta de 2 octetos y un VID de 8 bits, que admite hasta 254 VLAN utilizables.",
+     "Por un puerto troncal que etiqueta cada trama con 4 octetos 802.1Q, con un VID de 12 bits y 4.094 VLAN utilizables."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §5.2.2",
+    "e": "La etiqueta 802.1Q tiene 4 octetos (TPID 0x8100, PCP, DEI y VID de 12 bits); se reservan el 0 y el 4095, de modo que quedan 4.094 VLAN, y la trama máxima pasa de 1.518 a 1.522 octetos."
+   },
+   {
+    "q": "¿Qué recomendación procede sobre la VLAN nativa de los enlaces troncales?",
+    "o": [
+     "Asignarla a una VLAN sin uso, y no dejarla en la VLAN 1, por el riesgo de salto de VLAN por doble etiquetado.",
+     "Asignarla a la VLAN de gestión, para que la administración de los equipos viaje sin etiquetar por el troncal.",
+     "Suprimirla, porque 802.1Q obliga a que todas las tramas de un enlace troncal viajen sin etiquetar."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §5.2.2",
+    "e": "La VLAN nativa circula sin etiquetar por el troncal y es una debilidad conocida frente al salto de VLAN por doble etiquetado; se recomienda asignarla a una VLAN sin uso."
+   },
+   {
+    "q": "La Wi-Fi de la sala de espera comparte segmento con la red corporativa. ¿Qué requisito literal del ENS incumple?",
+    "o": [
+     "mp.com.1.1: «las comunicaciones inalámbricas se cifrarán en todo caso con WPA3».",
+     "mp.com.4.2: «si se emplean comunicaciones inalámbricas, será en un segmento separado».",
+     "mp.eq.4: «las redes inalámbricas de invitados dispondrán de portal de acceso»."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §6.3 · mp.com.4.2 ENS",
+    "e": "Es un requisito literal, no una buena práctica. Su fundamento técnico es que el medio inalámbrico no se puede acotar físicamente: la señal sale a la calle y el control de acceso al edificio no protege la red."
+   },
+   {
+    "q": "¿Cuál es el diseño correcto de la Wi-Fi para la ciudadanía en la sala de espera?",
+    "o": [
+     "El mismo SSID que la red corporativa, con una contraseña distinta para la ciudadanía que se renueve cada día.",
+     "Un SSID propio dentro de la VLAN corporativa, con WPA3 y la contraseña entregada en el mostrador de la oficina.",
+     "SSID y VLAN propios con salida directa a internet, sin visibilidad de las demás VLAN y con aislamiento entre clientes."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §3.5 · §6.3",
+    "e": "La red de invitados va en su propia VLAN etiquetada hasta el cortafuegos y sale directamente a internet, sin ver las redes municipales; el aislamiento entre clientes impide que los dispositivos de la sala se vean entre sí. Una contraseña conocida por cientos de personas no es un control de acceso."
+   },
+   {
+    "q": "Para controlar las tomas de la sala de espera y de la sala de reuniones se implanta IEEE 802.1X. ¿Cómo se reparten sus tres papeles?",
+    "o": [
+     "Suplicante, el conmutador de planta; autenticador, el servidor RADIUS; servidor de autenticación, el directorio corporativo.",
+     "Suplicante, el cliente del equipo que se conecta; autenticador, el conmutador; servidor de autenticación, normalmente RADIUS.",
+     "Suplicante, el servidor RADIUS; autenticador, el equipo que se conecta; servidor de autenticación, el punto de acceso."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §6.2",
+    "e": "El suplicante es el programa cliente del equipo; el autenticador, el conmutador o el punto de acceso, que controla el estado del puerto; y el servidor de autenticación, normalmente RADIUS, verifica las credenciales contra el directorio."
+   },
+   {
+    "q": "Con 802.1X activo, un visitante conecta su portátil a una toma de la sala de espera. ¿Qué deja pasar el puerto antes de la autenticación?",
+    "o": [
+     "DHCP y DNS, para que el equipo pueda localizar el servidor RADIUS.",
+     "Todo el tráfico, pero dentro de la VLAN corporativa de los puestos.",
+     "Solo tramas EAPOL: el equipo no obtiene dirección por DHCP ni alcanza nada."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · §6.2",
+    "e": "Antes de autenticarse, el puerto está en estado no controlado y solo deja pasar EAPOL. Tras autenticar pasa a controlado, y el servidor puede asignar la VLAN que corresponde al usuario o equipo."
+   },
+   {
+    "q": "¿Qué hacer con las impresoras y cámaras, que no admiten suplicante 802.1X?",
+    "o": [
+     "Usar autenticación por dirección MAC o VLAN restringida, como excepción documentada y con seguridad de puerto.",
+     "Excluirlas de todo control de acceso, porque esos dispositivos no son susceptibles de ser suplantados.",
+     "Usar autenticación por dirección MAC, igual de robusta que 802.1X porque la MAC no puede alterarse."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §6.2",
+    "e": "La autenticación por MAC (MAC Authentication Bypass) es más débil: una dirección MAC se suplanta trivialmente. Por eso se documenta como excepción, se limita a puertos concretos y se combina con seguridad de puerto."
+   },
+   {
+    "q": "¿Qué medidas del ENS amparan, respectivamente, el hallazgo de los armarios abiertos en el pasillo y el de los equipos sin hora sincronizada?",
+    "o": [
+     "mp.eq.4, otros dispositivos conectados a la red, y op.mon.1, detección de intrusión.",
+     "mp.if.1, áreas separadas y con control de acceso, y op.exp.8, registro de la actividad.",
+     "mp.com.1, perímetro seguro, y mp.com.4, separación de flujos de información en la red."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §6.2 · §6.3 · mp.if.1 y op.exp.8 ENS",
+    "e": "Un armario abierto permite conectarse a un troncal con todas las VLAN y anular la segmentación (mp.if.1). Sin una base de tiempo común (op.exp.8), los registros de conmutadores, puntos de acceso, RADIUS y cortafuegos no se pueden correlacionar."
+   }
+  ]
+ }
+]

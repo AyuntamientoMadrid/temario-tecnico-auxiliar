@@ -1,0 +1,15 @@
+<svg aria-label="Cuatro tipos de EJB: Stateless sin estado con pool de instancias, Stateful con conversación e instancia dedicada, Singleton con una única instancia por aplicación, y Message-Driven Bean invocado de forma asíncrona por JMS" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 11px system-ui,sans-serif;fill:#fff}.s9{font:9.5px system-ui,sans-serif;fill:#fff}.l9{font:11px system-ui,sans-serif;fill:#444}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">Session Beans (Stateless/Stateful/Singleton) + Message-Driven Bean</text>
+<rect fill="#0055a0" height="90" rx="6" width="150" x="20" y="40"></rect><text class="t9" text-anchor="middle" x="95" y="62">STATELESS</text><text class="s9" text-anchor="middle" x="95" y="80">sin conversación</text><text class="s9" text-anchor="middle" x="95" y="94">pool de instancias</text><text class="s9" text-anchor="middle" x="95" y="108">intercambiables</text>
+<rect fill="#3778b5" height="90" rx="6" width="150" x="185" y="40"></rect><text class="t9" text-anchor="middle" x="260" y="62">STATEFUL</text><text class="s9" text-anchor="middle" x="260" y="80">con conversación</text><text class="s9" text-anchor="middle" x="260" y="94">instancia dedicada</text><text class="s9" text-anchor="middle" x="260" y="108">por cliente</text>
+<rect fill="#2d8659" height="90" rx="6" width="150" x="350" y="40"></rect><text class="t9" text-anchor="middle" x="425" y="62">SINGLETON</text><text class="s9" text-anchor="middle" x="425" y="80">una única instancia</text><text class="s9" text-anchor="middle" x="425" y="94">para toda la</text><text class="s9" text-anchor="middle" x="425" y="108">aplicación</text>
+<rect fill="#e89822" height="90" rx="6" width="150" x="515" y="40"></rect><text class="t9" text-anchor="middle" x="590" y="62">MDB</text><text class="s9" text-anchor="middle" x="590" y="80">invocación asíncrona</text><text class="s9" text-anchor="middle" x="590" y="94">consume mensajes</text><text class="s9" text-anchor="middle" x="590" y="108">JMS (§2.5.1)</text>
+<rect fill="#fdecec" height="70" rx="6" stroke="#d13c3c" width="560" x="60" y="150"></rect>
+<text style="font:700 12px system-ui;fill:#8a1f1f" text-anchor="middle" x="340" y="172">Entity Beans — MODELO OBSOLETO (Java EE 1.x-5)</text>
+<text class="l9" text-anchor="middle" x="340" y="192">Sustituidas por completo por JPA (§2.5.4) desde 2006 — no forman parte del modelo actual</text>
+<rect fill="#eef4fa" height="70" rx="6" stroke="#0055a0" width="560" x="60" y="234"></rect>
+<text style="font:700 12px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="256">Todos gestionados por el contenedor EJB: transacciones, seguridad, concurrencia</text>
+<text class="l9" text-anchor="middle" x="340" y="276">@Stateless es el tipo por defecto y el más habitual en la capa de negocio</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="332">[Fuente: JAKARTA-EJB]</text>
+</svg>

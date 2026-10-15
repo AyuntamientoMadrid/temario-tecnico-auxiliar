@@ -1,0 +1,29 @@
+<svg aria-label="Comparación entre comunicación síncrona, en la que el emisor se bloquea esperando la respuesta del receptor, y comunicación asíncrona con un intermediario de mensajes que absorbe el pico de carga; incluye los tres patrones de cola, publicación-suscripción y flujo de eventos y las tres garantías de entrega" role="img" viewbox="0 0 680 353" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 10px system-ui,sans-serif;fill:#fff}.s6{font:8.5px system-ui,sans-serif;fill:#fff}.d6{font:9px system-ui,sans-serif;fill:#333}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}.k6{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.f6{font:8px system-ui,sans-serif;fill:#777}</style>
+<text class="h6" text-anchor="middle" x="340" y="20">Síncrono frente a asíncrono</text>
+<rect fill="#d13c3c" height="22" rx="4" width="640" x="20" y="32"></rect><text class="t6" text-anchor="middle" x="340" y="47">SÍNCRONO — el emisor espera y se degrada con el receptor</text>
+<rect fill="#0055a0" height="26" rx="5" width="120" x="40" y="64"></rect><text class="s6" text-anchor="middle" x="100" y="81">PORTAL</text>
+<path d="M164 77 h150" marker-end="url(#a6)" stroke="#d13c3c" stroke-width="2"></path>
+<text class="d6" text-anchor="middle" x="239" y="72">40.000 peticiones/hora</text>
+<rect fill="#888" height="26" rx="5" width="120" x="318" y="64"></rect><text class="s6" text-anchor="middle" x="378" y="81">REGISTRO</text>
+<rect fill="#fdecec" height="26" rx="5" width="208" x="452" y="64"></rect><text class="d6" text-anchor="middle" x="556" y="81">solo admite 18.000/hora → errores</text>
+<rect fill="#2d8659" height="22" rx="4" width="640" x="20" y="102"></rect><text class="t6" text-anchor="middle" x="340" y="117">ASÍNCRONO — el intermediario amortigua el pico</text>
+<rect fill="#0055a0" height="26" rx="5" width="120" x="40" y="134"></rect><text class="s6" text-anchor="middle" x="100" y="151">PORTAL</text>
+<path d="M164 147 h50" marker-end="url(#b6)" stroke="#2d8659" stroke-width="2"></path>
+<rect fill="#e89822" height="26" rx="5" width="150" x="218" y="134"></rect><text class="s6" text-anchor="middle" x="293" y="151">COLA (amortigua)</text>
+<path d="M372 147 h50" marker-end="url(#b6)" stroke="#2d8659" stroke-width="2"></path>
+<rect fill="#888" height="26" rx="5" width="120" x="426" y="134"></rect><text class="s6" text-anchor="middle" x="486" y="151">REGISTRO</text>
+<rect fill="#e8f4ec" height="26" rx="5" width="104" x="556" y="134"></rect><text class="d6" text-anchor="middle" x="608" y="151">a su ritmo</text>
+<text class="d6" x="40" y="180">El portal responde al instante con justificante y número de referencia</text>
+<defs><marker id="a6" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0 0 L6 3 L0 6 z" fill="#d13c3c"></path></marker><marker id="b6" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0 0 L6 3 L0 6 z" fill="#2d8659"></path></marker></defs>
+<text class="k6" x="20" y="204">TRES PATRONES</text>
+<rect fill="#eef3f8" height="42" rx="5" width="205" x="20" y="210"></rect><text class="d6" text-anchor="middle" x="122" y="226">Cola punto a punto</text><text class="d6" text-anchor="middle" x="122" y="240">un mensaje → un consumidor</text>
+<rect fill="#eef3f8" height="42" rx="5" width="205" x="238" y="210"></rect><text class="d6" text-anchor="middle" x="340" y="226">Publicación-suscripción</text><text class="d6" text-anchor="middle" x="340" y="240">un mensaje → todos</text>
+<rect fill="#eef3f8" height="42" rx="5" width="204" x="456" y="210"></rect><text class="d6" text-anchor="middle" x="558" y="226">Flujo de eventos</text><text class="d6" text-anchor="middle" x="558" y="240">se conserva y se relee</text>
+<text class="k6" x="20" y="272">GARANTÍAS DE ENTREGA</text>
+<rect fill="#f5f5f5" height="26" rx="5" width="205" x="20" y="278"></rect><text class="d6" text-anchor="middle" x="122" y="295">Como mucho una vez: pierde</text>
+<rect fill="#e8f4ec" height="26" rx="5" width="205" x="238" y="278"></rect><text class="d6" text-anchor="middle" x="340" y="295">Al menos una vez: duplica</text>
+<rect fill="#f5f5f5" height="26" rx="5" width="204" x="456" y="278"></rect><text class="d6" text-anchor="middle" x="558" y="295">Exactamente una vez: cara</text>
+<rect fill="#0055a0" height="20" rx="4" width="640" x="20" y="310"></rect><text class="s6" text-anchor="middle" x="340" y="324">La garantía habitual es «al menos una vez»: el consumidor debe ser idempotente</text>
+<text class="f6" text-anchor="middle" x="340" y="344">[Fuente: AMQP, MQTT]</text>
+</svg>

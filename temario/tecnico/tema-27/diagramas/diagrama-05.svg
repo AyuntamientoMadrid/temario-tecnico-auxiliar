@@ -1,0 +1,45 @@
+<svg aria-label="Esquema de memoria virtual: el proceso emite una dirección virtual, la unidad de gestión de memoria la traduce con la tabla de páginas y la caché de traducción TLB; si la página no está en memoria física se produce un fallo de página y se trae del espacio de intercambio. Abajo, la firma diagnóstica de la hiperpaginación" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 10.5px system-ui,sans-serif;fill:#fff}.s5{font:9px system-ui,sans-serif;fill:#fff}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.k5{font:700 10px system-ui,sans-serif;fill:#0055a0}.d5{font:9px system-ui,sans-serif;fill:#444}.e5{font:8.5px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h5" text-anchor="middle" x="340" y="20">Memoria virtual: traducción, fallo de página e intercambio</text>
+<rect fill="#2d8659" height="52" rx="5" width="120" x="16" y="40"></rect>
+<text class="t5" text-anchor="middle" x="76" y="61">PROCESO</text>
+<text class="s5" text-anchor="middle" x="76" y="80">dirección virtual</text>
+<rect fill="#0055a0" height="52" rx="5" width="140" x="176" y="40"></rect>
+<text class="t5" text-anchor="middle" x="246" y="61">MMU + TLB</text>
+<text class="s5" text-anchor="middle" x="246" y="80">tabla de páginas</text>
+<rect fill="#0055a0" height="52" rx="5" width="140" x="356" y="40"></rect>
+<text class="t5" text-anchor="middle" x="426" y="61">MEMORIA FÍSICA</text>
+<text class="s5" text-anchor="middle" x="426" y="80">marcos de página</text>
+<rect fill="#e89822" height="52" rx="5" width="128" x="536" y="40"></rect>
+<text class="t5" text-anchor="middle" x="600" y="61">INTERCAMBIO</text>
+<text class="s5" text-anchor="middle" x="600" y="80">swap · pagefile.sys</text>
+<path d="M136 66 L172 66" stroke="#666" stroke-width="2"></path>
+<path d="M316 66 L352 66" stroke="#666" stroke-width="2"></path>
+<path d="M496 66 L532 66" stroke="#d13c3c" stroke-dasharray="4 3" stroke-width="2"></path>
+<text class="e5" text-anchor="middle" x="154" y="60">virtual</text>
+<text class="e5" text-anchor="middle" x="334" y="60">física</text>
+<text class="e5" text-anchor="middle" x="514" y="36">fallo de página</text>
+<rect fill="#f0f4f8" height="76" rx="5" stroke="#0055a0" width="318" x="16" y="108"></rect>
+<text class="k5" text-anchor="middle" x="175" y="127">Fallo de página (page fault)</text>
+<text class="d5" text-anchor="middle" x="175" y="146">La página no está en memoria física: el núcleo la trae</text>
+<text class="d5" text-anchor="middle" x="175" y="161">de disco, actualiza la tabla y reanuda la instrucción</text>
+<text class="d5" text-anchor="middle" x="175" y="176">Reemplazo: LRU · FIFO · reloj (anomalía de Belady en FIFO)</text>
+<rect fill="#f0f4f8" height="76" rx="5" stroke="#0055a0" width="318" x="346" y="108"></rect>
+<text class="k5" text-anchor="middle" x="505" y="127">Fragmentación</text>
+<text class="d5" text-anchor="middle" x="505" y="146">INTERNA: se desperdicia espacio dentro de la unidad</text>
+<text class="d5" text-anchor="middle" x="505" y="161">asignada (la última página nunca se llena del todo)</text>
+<text class="d5" text-anchor="middle" x="505" y="176">EXTERNA: huecos libres dispersos e inservibles</text>
+<rect fill="#d13c3c" height="86" rx="5" width="648" x="16" y="198"></rect>
+<text class="t5" text-anchor="middle" x="340" y="219">HIPERPAGINACIÓN (THRASHING): el sistema intercambia más de lo que trabaja</text>
+<text class="s5" text-anchor="middle" x="180" y="243">SÍNTOMA</text>
+<text class="s5" text-anchor="middle" x="180" y="260">CPU de usuario baja</text>
+<text class="s5" text-anchor="middle" x="180" y="275">%wa alto · si/so constantes</text>
+<text class="s5" text-anchor="middle" x="400" y="243">CAUSA</text>
+<text class="s5" text-anchor="middle" x="400" y="260">Demasiados procesos para</text>
+<text class="s5" text-anchor="middle" x="400" y="275">la memoria disponible</text>
+<text class="s5" text-anchor="middle" x="580" y="243">SOLUCIÓN</text>
+<text class="s5" text-anchor="middle" x="580" y="260">Añadir memoria o bajar la</text>
+<text class="s5" text-anchor="middle" x="580" y="275">multiprogramación</text>
+<text class="d5" text-anchor="middle" x="340" y="304">Un disco más rápido no lo arregla: solo hace el mismo error más deprisa</text>
+<text style="font:9.5px system-ui;fill:#666" text-anchor="end" x="670" y="314">[Fuente: SILBERSCHATZ; TANENBAUM]</text>
+</svg>

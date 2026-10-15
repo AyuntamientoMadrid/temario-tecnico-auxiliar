@@ -1,0 +1,27 @@
+<svg aria-label="Los cuatro niveles del modelo TCP-IP según la RFC 1122: aplicación con HTTP, DNS, SMTP y otros; transporte con TCP y UDP; internet con IP en sus versiones 4 y 6 más ICMP y ARP; y acceso a la red con Ethernet, Wi-Fi y PPP. El conjunto forma un reloj de arena con IP en el cuello, único protocolo común a todo el sistema" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 10.5px system-ui,sans-serif;fill:#fff}.s6{font:8.5px system-ui,sans-serif;fill:#fff}.d6{font:9px system-ui,sans-serif;fill:#333}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}.k6{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n6{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h6" text-anchor="middle" x="340" y="20">Modelo TCP/IP · 4 niveles (RFC 1122) y el reloj de arena</text>
+<rect fill="#0055a0" height="46" rx="5" width="380" x="20" y="38"></rect>
+<text class="t6" text-anchor="middle" x="210" y="58">4 · APLICACIÓN</text>
+<text class="s6" text-anchor="middle" x="210" y="74">HTTP · DNS · SMTP · FTP · SSH · SNMP · DHCP · NTP · LDAP</text>
+<rect fill="#e89822" height="46" rx="5" width="380" x="20" y="92"></rect>
+<text class="t6" text-anchor="middle" x="210" y="112">3 · TRANSPORTE</text>
+<text class="s6" text-anchor="middle" x="210" y="128">TCP (fiable, con conexión) · UDP (datagramas) · SCTP · QUIC</text>
+<rect fill="#2d8659" height="46" rx="5" width="380" x="20" y="146"></rect>
+<text class="t6" text-anchor="middle" x="210" y="166">2 · INTERNET</text>
+<text class="s6" text-anchor="middle" x="210" y="182">IPv4 e IPv6 · ICMP e ICMPv6 · ARP y ND · IGMP</text>
+<rect fill="#5a6b7d" height="46" rx="5" width="380" x="20" y="200"></rect>
+<text class="t6" text-anchor="middle" x="210" y="220">1 · ACCESO A LA RED</text>
+<text class="s6" text-anchor="middle" x="210" y="236">No lo especifica el modelo: Ethernet · Wi-Fi · PPP · MPLS</text>
+<text class="k6" text-anchor="middle" x="537" y="46">EL RELOJ DE ARENA</text>
+<path d="M424,58 L650,58 L560,128 L650,240 L424,240 L514,128 z" fill="none" stroke="#0055a0" stroke-width="1.6"></path>
+<text class="d6" text-anchor="middle" x="537" y="78">muchas aplicaciones</text>
+<rect fill="#2d8659" height="22" rx="4" width="86" x="494" y="118"></rect><text class="t6" text-anchor="middle" x="537" y="133">IP</text>
+<text class="d6" text-anchor="middle" x="537" y="174">un único protocolo</text>
+<text class="d6" text-anchor="middle" x="537" y="188">en el cuello</text>
+<text class="d6" text-anchor="middle" x="537" y="226">muchas tecnologías de red</text>
+<rect fill="#eef3f8" height="46" rx="4" width="640" x="20" y="262"></rect>
+<text class="k6" text-anchor="middle" x="340" y="279">IP no es fiable ni orientado a conexión: la fiabilidad, si se quiere, la pone TCP en los extremos</text>
+<text class="d6" text-anchor="middle" x="340" y="296">El nivel de acceso a la red es el único que la arquitectura deja sin especificar, y por eso IP funciona sobre cualquier medio</text>
+<text class="n6" text-anchor="end" x="670" y="344">[Fuente: RFC 1122, RFC 1958]</text>
+</svg>

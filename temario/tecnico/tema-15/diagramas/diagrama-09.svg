@@ -1,0 +1,11 @@
+<svg aria-label="Triángulo del teorema CAP: consistencia, disponibilidad y tolerancia a particiones" class="svd9" role="img" viewbox="0 0 620 340" xmlns="http://www.w3.org/2000/svg">
+<style>.svd9 .v{font:700 14px system-ui,sans-serif;fill:#0055a0}.svd9 .l{font:11px system-ui,sans-serif;fill:#444}</style>
+<polygon fill="#e8f0f8" points="310,50 110,280 510,280" stroke="#0055a0" stroke-width="2"></polygon>
+<circle cx="310" cy="50" fill="#0055a0" r="8"></circle><text class="v" text-anchor="middle" x="310" y="38">C — Consistencia</text>
+<circle cx="110" cy="280" fill="#0055a0" r="8"></circle><text class="v" text-anchor="middle" x="110" y="305">A — Disponibilidad</text>
+<circle cx="510" cy="280" fill="#0055a0" r="8"></circle><text class="v" text-anchor="middle" x="510" y="305">P — Particiones</text>
+<text fill="#d13c3c" font="700 13px system-ui,sans-serif" text-anchor="middle" x="310" y="190">Solo 2 de 3</text>
+<text class="l" text-anchor="middle" x="310" y="215">Ante una partición de red (inevitable),</text>
+<text class="l" text-anchor="middle" x="310" y="232">se elige entre Consistencia y Disponibilidad</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="610" y="330">[Fuente: CAP-BREWER]</text>
+</svg>

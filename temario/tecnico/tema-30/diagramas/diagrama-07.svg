@@ -1,0 +1,39 @@
+<svg aria-label="Funcionamiento del sistema de nombres de dominio: el cliente formula una consulta recursiva a su resolutor y este realiza consultas iterativas a la raíz, al dominio de primer nivel y al servidor autoritativo, guardando la respuesta en memoria caché durante el tiempo de vida indicado; se acompaña de la tabla de tipos de registro A, AAAA, PTR, CNAME, MX, NS, SOA, SRV y TXT" role="img" viewbox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t7{font:700 10px system-ui,sans-serif;fill:#fff}.s7{font:8.5px system-ui,sans-serif;fill:#fff}.d7{font:9px system-ui,sans-serif;fill:#333}.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}.k7{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n7{font:8.5px system-ui,sans-serif;fill:#666}.c7{font:700 8.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<defs><marker id="a7" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="h7" text-anchor="middle" x="340" y="20">DNS: quién pregunta a quién, y qué se pregunta</text>
+<rect fill="#0055a0" height="40" rx="4" width="104" x="20" y="36"></rect><text class="t7" text-anchor="middle" x="72" y="54">CLIENTE</text><text class="s7" text-anchor="middle" x="72" y="68">equipo del usuario</text>
+<line marker-end="url(#a7)" stroke="#0055a0" stroke-width="2" x1="126" x2="184" y1="56" y2="56"></line>
+<text class="c7" text-anchor="middle" x="155" y="48">RECURSIVA</text>
+<rect fill="#2d8659" height="40" rx="4" width="116" x="188" y="36"></rect><text class="t7" text-anchor="middle" x="246" y="54">RESOLUTOR</text><text class="s7" text-anchor="middle" x="246" y="68">recursivo + caché</text>
+<line marker-end="url(#a7)" stroke="#0055a0" stroke-width="1.5" x1="306" x2="392" y1="48" y2="48"></line>
+<text class="c7" text-anchor="middle" x="349" y="40">ITERATIVAS</text>
+<rect fill="#888" height="26" rx="4" width="80" x="396" y="34"></rect><text class="t7" text-anchor="middle" x="436" y="51">RAÍZ « . »</text>
+<rect fill="#888" height="26" rx="4" width="80" x="486" y="34"></rect><text class="t7" text-anchor="middle" x="526" y="51">TLD « .es »</text>
+<rect fill="#e89822" height="26" rx="4" width="84" x="576" y="34"></rect><text class="t7" style="font-size:9px" text-anchor="middle" x="618" y="51">AUTORITATIVO</text>
+<line stroke="#0055a0" stroke-width="1.5" x1="478" x2="484" y1="47" y2="47"></line><line stroke="#0055a0" stroke-width="1.5" x1="568" x2="574" y1="47" y2="47"></line>
+<text class="d7" text-anchor="middle" x="528" y="74">cada uno responde «pregunta a este otro»</text>
+<rect fill="#fdf3e3" height="24" rx="4" width="116" x="188" y="86"></rect><text class="d7" text-anchor="middle" x="246" y="102">Guarda en caché el TTL</text>
+<text class="k7" x="24" y="132">TIPOS DE REGISTRO QUE HAY QUE RECONOCER</text>
+<rect fill="#0055a0" height="30" rx="4" width="156" x="20" y="138"></rect><text class="t7" text-anchor="middle" x="98" y="151">A / AAAA</text><text class="s7" text-anchor="middle" x="98" y="164">nombre → IPv4 / IPv6</text>
+<rect fill="#2d8659" height="30" rx="4" width="156" x="182" y="138"></rect><text class="t7" text-anchor="middle" x="260" y="151">PTR</text><text class="s7" text-anchor="middle" x="260" y="164">IP → nombre (in-addr.arpa)</text>
+<rect fill="#888" height="30" rx="4" width="156" x="344" y="138"></rect><text class="t7" text-anchor="middle" x="422" y="151">CNAME</text><text class="s7" text-anchor="middle" x="422" y="164">alias de otro nombre</text>
+<rect fill="#888" height="30" rx="4" width="154" x="506" y="138"></rect><text class="t7" text-anchor="middle" x="583" y="151">MX</text><text class="s7" text-anchor="middle" x="583" y="164">servidor de correo</text>
+<rect fill="#888" height="30" rx="4" width="156" x="20" y="174"></rect><text class="t7" text-anchor="middle" x="98" y="187">NS</text><text class="s7" text-anchor="middle" x="98" y="200">servidores de la zona</text>
+<rect fill="#888" height="30" rx="4" width="156" x="182" y="174"></rect><text class="t7" text-anchor="middle" x="260" y="187">SOA</text><text class="s7" text-anchor="middle" x="260" y="200">inicio de autoridad</text>
+<rect fill="#d13c3c" height="30" rx="4" width="156" x="344" y="174"></rect><text class="t7" text-anchor="middle" x="422" y="187">SRV</text><text class="s7" text-anchor="middle" x="422" y="200">localiza un SERVICIO</text>
+<rect fill="#888" height="30" rx="4" width="154" x="506" y="174"></rect><text class="t7" text-anchor="middle" x="583" y="187">TXT</text><text class="s7" text-anchor="middle" x="583" y="200">texto libre</text>
+<rect fill="#fbeaea" height="26" rx="4" stroke="#d13c3c" stroke-width="1.2" width="640" x="20" y="212"></rect>
+<text class="d7" text-anchor="middle" x="340" y="229">Los registros SRV localizan los CONTROLADORES DE DOMINIO: sin ellos, «no puedo iniciar sesión pero navego bien»</text>
+<rect fill="#eef3f8" height="56" rx="4" width="316" x="20" y="248"></rect>
+<text class="k7" text-anchor="middle" x="178" y="265">DNSSEC (RFC 4033-4035)</text>
+<text class="d7" text-anchor="middle" x="178" y="281">Firma las zonas: AUTENTICIDAD e INTEGRIDAD</text>
+<text class="d7" text-anchor="middle" x="178" y="295">NO aporta confidencialidad</text>
+<rect fill="#e8f4ee" height="56" rx="4" width="316" x="344" y="248"></rect>
+<text class="k7" text-anchor="middle" x="502" y="265">DoT (853) y DoH (443)</text>
+<text class="d7" text-anchor="middle" x="502" y="281">Cifran el canal: CONFIDENCIALIDAD</text>
+<text class="d7" text-anchor="middle" x="502" y="295">Riesgo: el navegador elude el resolutor corporativo</text>
+<rect fill="none" height="24" rx="4" stroke="#0055a0" stroke-width="1.5" width="500" x="90" y="312"></rect>
+<text class="k7" text-anchor="middle" x="340" y="328">DNS = puerto 53 · UDP para consultas · TCP para respuestas grandes y transferencias de zona</text>
+<text class="n7" text-anchor="end" x="670" y="356">[Fuente: RFC1034; RFC4033; RFC7858; MS-DNS]</text>
+</svg>

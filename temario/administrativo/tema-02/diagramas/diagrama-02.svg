@@ -1,0 +1,39 @@
+<svg aria-label="Principios generales del Título VIII: autonomía artículo 137, solidaridad artículo 138, igualdad artículo 139" role="img" viewbox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .d2-col{stroke-width:2}
+    .d2-h{font:700 15px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .d2-a{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .d2-t{font:13px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}
+    .d2-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+  </style>
+<rect fill="#0055a0" height="56" rx="8" width="200" x="30" y="30"></rect>
+<text class="d2-a" x="130" y="55">Art. 137</text>
+<text class="d2-h" x="130" y="75">AUTONOMÍA</text>
+<rect class="d2-col" fill="#fff" height="180" rx="8" stroke="#0055a0" width="200" x="30" y="100"></rect>
+<text class="d2-t" x="130" y="135">Municipios, provincias</text>
+<text class="d2-t" x="130" y="153">y CCAA gozan de</text>
+<text class="d2-t" x="130" y="171">autonomía para gestionar</text>
+<text class="d2-t" x="130" y="189">sus intereses</text>
+<text class="d2-s" x="130" y="225">CCAA: autonomía política</text>
+<text class="d2-s" x="130" y="243">Local: autonomía admin.</text>
+<rect fill="#2d8659" height="56" rx="8" width="200" x="250" y="30"></rect>
+<text class="d2-a" x="350" y="55">Art. 138</text>
+<text class="d2-h" x="350" y="75">SOLIDARIDAD</text>
+<rect class="d2-col" fill="#fff" height="180" rx="8" stroke="#2d8659" width="200" x="250" y="100"></rect>
+<text class="d2-t" x="350" y="135">Equilibrio económico</text>
+<text class="d2-t" x="350" y="153">adecuado y justo entre</text>
+<text class="d2-t" x="350" y="171">territorios</text>
+<text class="d2-s" x="350" y="207">atención al hecho insular</text>
+<text class="d2-s" x="350" y="243">sin privilegios entre</text>
+<text class="d2-s" x="350" y="261">Estatutos (138.2)</text>
+<rect fill="#e89822" height="56" rx="8" width="200" x="470" y="30"></rect>
+<text class="d2-a" x="570" y="55">Art. 139</text>
+<text class="d2-h" x="570" y="75">IGUALDAD</text>
+<rect class="d2-col" fill="#fff" height="180" rx="8" stroke="#e89822" width="200" x="470" y="100"></rect>
+<text class="d2-t" x="570" y="135">Mismos derechos y</text>
+<text class="d2-t" x="570" y="153">obligaciones en todo</text>
+<text class="d2-t" x="570" y="171">el territorio</text>
+<text class="d2-s" x="570" y="225">unidad de mercado:</text>
+<text class="d2-s" x="570" y="243">libre circulación de</text>
+<text class="d2-s" x="570" y="261">personas y bienes</text>
+</svg>

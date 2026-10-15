@@ -1,0 +1,34 @@
+<svg aria-label="Según el artículo 137, el Estado se organiza territorialmente en municipios, provincias y Comunidades Autónomas; el Estado no es un cuarto nivel" role="img" viewbox="0 0 700 360" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .d1-root{fill:#0055a0;stroke:#003d73;stroke-width:2}
+    .d1-box{fill:#ffffff;stroke:#0055a0;stroke-width:1.5}
+    .d1-t{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .d1-h{font:700 13px system-ui,sans-serif;fill:#003d73;text-anchor:middle}
+    .d1-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+    .d1-l{stroke:#0055a0;stroke-width:1.5;fill:none}
+  </style>
+<rect class="d1-root" height="46" rx="8" width="160" x="270" y="20"></rect>
+<text class="d1-t" x="350" y="40">ART. 137 CE</text>
+<text class="d1-t" style="font-weight:400;font-size:11px" x="350" y="57">el Estado se organiza en</text>
+<line class="d1-l" x1="350" x2="350" y1="66" y2="100"></line>
+<line class="d1-l" x1="130" x2="130" y1="120" y2="100"></line>
+<line class="d1-l" x1="350" x2="350" y1="120" y2="100"></line>
+<line class="d1-l" x1="570" x2="570" y1="120" y2="100"></line>
+<line class="d1-l" x1="130" x2="570" y1="100" y2="100"></line>
+<rect class="d1-box" height="64" rx="8" width="180" x="40" y="120"></rect>
+<text class="d1-h" x="130" y="145">Comunidades</text>
+<text class="d1-h" x="130" y="162">Autónomas</text>
+<text class="d1-s" x="130" y="178">autonomía POLÍTICA (legislan)</text>
+<rect class="d1-box" height="64" rx="8" width="180" x="260" y="120"></rect>
+<text class="d1-h" x="350" y="153">Provincias</text>
+<text class="d1-s" x="350" y="170">entidad local + división</text>
+<rect class="d1-box" height="64" rx="8" width="180" x="480" y="120"></rect>
+<text class="d1-h" x="570" y="153">Municipios</text>
+<text class="d1-s" x="570" y="170">unidad básica</text>
+<rect fill="#e8f0f8" height="58" rx="8" stroke="#0055a0" stroke-width="1.5" width="380" x="260" y="230"></rect>
+<text class="d1-h" x="450" y="255">ENTIDADES LOCALES</text>
+<text class="d1-s" x="450" y="273">autonomía ADMINISTRATIVA (no legislan) · arts. 140-142</text>
+<line class="d1-l" x1="350" x2="350" y1="184" y2="230"></line>
+<line class="d1-l" x1="570" x2="570" y1="184" y2="230"></line>
+<text class="d1-s" style="font-style:italic" x="350" y="320">La soberanía reside en el pueblo español (art. 1.2); la autonomía es para los intereses propios.</text>
+</svg>

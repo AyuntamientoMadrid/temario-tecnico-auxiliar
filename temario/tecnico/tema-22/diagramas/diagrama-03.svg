@@ -1,0 +1,15 @@
+<svg aria-label="Comparativa entre cliente ligero, que renderiza en el navegador con lógica en el servidor y actualización centralizada, y cliente pesado, que ejecuta lógica local, mantiene datos locales y requiere instalación y actualización en cada puesto" role="img" viewbox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 12px system-ui,sans-serif;fill:#fff}.s3{font:9.5px system-ui,sans-serif;fill:#fff}.l3{font:10.5px system-ui,sans-serif;fill:#444}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h3" text-anchor="middle" x="330" y="20">Cliente ligero vs. cliente pesado</text>
+<rect fill="#0055a0" height="34" rx="5" width="280" x="30" y="40"></rect><text class="t3" text-anchor="middle" x="170" y="62">CLIENTE LIGERO (thin client)</text>
+<rect fill="#e89822" height="34" rx="5" width="280" x="350" y="40"></rect><text class="t3" text-anchor="middle" x="490" y="62">CLIENTE PESADO (thick/fat client)</text>
+<rect fill="#eef4fb" height="42" rx="4" stroke="#0055a0" width="280" x="30" y="84"></rect><text class="l3" text-anchor="middle" x="170" y="102">Lógica de negocio: en el servidor</text><text class="l3" text-anchor="middle" x="170" y="118">Ejemplo: navegador web</text>
+<rect fill="#fdf3e2" height="42" rx="4" stroke="#e89822" width="280" x="350" y="84"></rect><text class="l3" text-anchor="middle" x="490" y="102">Lógica de negocio: total o parcial en cliente</text><text class="l3" text-anchor="middle" x="490" y="118">Ejemplo: app de escritorio clásica</text>
+<rect fill="#eef4fb" height="42" rx="4" stroke="#0055a0" width="280" x="30" y="132"></rect><text class="l3" text-anchor="middle" x="170" y="150">Despliegue: centralizado, transparente</text><text class="l3" text-anchor="middle" x="170" y="166">Nada que instalar en el puesto</text>
+<rect fill="#fdf3e2" height="42" rx="4" stroke="#e89822" width="280" x="350" y="132"></rect><text class="l3" text-anchor="middle" x="490" y="150">Despliegue: instalar/actualizar cada puesto</text><text class="l3" text-anchor="middle" x="490" y="166">Coste de mantenimiento alto</text>
+<rect fill="#eef4fb" height="42" rx="4" stroke="#0055a0" width="280" x="30" y="180"></rect><text class="l3" text-anchor="middle" x="170" y="198">Uso de red: mayor (ida/vuelta por acción)</text><text class="l3" text-anchor="middle" x="170" y="214">Offline: limitado o nulo</text>
+<rect fill="#fdf3e2" height="42" rx="4" stroke="#e89822" width="280" x="350" y="180"></rect><text class="l3" text-anchor="middle" x="490" y="198">Uso de red: menor (datos locales)</text><text class="l3" text-anchor="middle" x="490" y="214">Offline: posible con sincronización</text>
+<text style="font:700 11px system-ui;fill:#d13c3c" text-anchor="middle" x="330" y="256">El problema de despliegue del cliente pesado impulsó la migración al cliente ligero web</text>
+<text class="l3" text-anchor="middle" x="330" y="276">Temas 23 (front-end web) y 24 (móvil nativo/híbrido) desarrollan cada extremo</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="650" y="308">[Fuente: FOWLER-PEAA]</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg aria-label="Seguridad del DNS: el problema de la autenticidad, es decir el envenenamiento de caché y las respuestas falsas, lo resuelve DNSSEC firmando las respuestas; el problema de la confidencialidad, es decir que cualquiera puede ver qué sitios se consultan, lo resuelven DNS sobre TLS en el puerto 853 y DNS sobre HTTPS en el 443. DNSSEC no cifra y DoT y DoH no autentican la zona: son complementarios" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 10px system-ui,sans-serif;fill:#fff}.s9{font:8.5px system-ui,sans-serif;fill:#fff}.d9{font:9px system-ui,sans-serif;fill:#333}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.k9{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n9{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">DNSSEC autentica y no cifra; DoT y DoH cifran y no autentican la zona</text>
+<text class="k9" x="20" y="42">DOS PROBLEMAS DISTINTOS DEL DNS ORIGINAL</text>
+<rect fill="#d13c3c" height="44" rx="5" width="312" x="20" y="50"></rect><text class="t9" text-anchor="middle" x="176" y="68">PROBLEMA 1 · ¿ES VERDAD LA RESPUESTA?</text><text class="s9" text-anchor="middle" x="176" y="84">Envenenamiento de caché y respuestas suplantadas</text>
+<rect fill="#d13c3c" height="44" rx="5" width="312" x="348" y="50"></rect><text class="t9" text-anchor="middle" x="504" y="68">PROBLEMA 2 · ¿QUIÉN VE MIS CONSULTAS?</text><text class="s9" text-anchor="middle" x="504" y="84">El DNS clásico viaja en claro: revela qué se visita</text>
+<path d="M176 94 L176 110" marker-end="url(#a9)" stroke="#666" stroke-width="1.5"></path>
+<path d="M504 94 L504 110" marker-end="url(#a9)" stroke="#666" stroke-width="1.5"></path>
+<defs><marker id="a9" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#666"></path></marker></defs>
+<rect fill="#2d8659" height="80" rx="5" width="312" x="20" y="114"></rect><text class="t9" text-anchor="middle" x="176" y="134">DNSSEC · RFC 4033 a 4035</text><text class="s9" text-anchor="middle" x="176" y="150">FIRMA digitalmente los datos de la zona</text><text class="s9" text-anchor="middle" x="176" y="164">Cadena de confianza desde la raíz</text><text class="s9" text-anchor="middle" x="176" y="180">Aporta AUTENTICIDAD e INTEGRIDAD</text>
+<rect fill="#0055a0" height="80" rx="5" width="312" x="348" y="114"></rect><text class="t9" text-anchor="middle" x="504" y="134">DoT (TCP/853) y DoH (HTTPS/443)</text><text class="s9" text-anchor="middle" x="504" y="150">CIFRAN el transporte de la consulta</text><text class="s9" text-anchor="middle" x="504" y="164">RFC 7858 y RFC 8484</text><text class="s9" text-anchor="middle" x="504" y="180">Aportan CONFIDENCIALIDAD</text>
+<rect fill="#fbeaea" height="26" rx="4" width="312" x="20" y="202"></rect><text class="n9" text-anchor="middle" x="176" y="219">NO cifra: la respuesta sigue siendo legible</text>
+<rect fill="#fbeaea" height="26" rx="4" width="312" x="348" y="202"></rect><text class="n9" text-anchor="middle" x="504" y="219">NO garantizan que el dato de la zona sea auténtico</text>
+<rect fill="#fdf3e3" height="26" rx="4" width="640" x="20" y="238"></rect>
+<text class="d9" text-anchor="middle" x="340" y="255">A julio de 2026, 1.348 de los 1.437 dominios de primer nivel de la raíz estaban firmados con DNSSEC (≈ 93,8 %)</text>
+<rect fill="none" height="34" rx="5" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="274"></rect>
+<text class="k9" text-anchor="middle" x="340" y="289">SON COMPLEMENTARIOS, NO ALTERNATIVOS: lo ideal es DNSSEC en la zona propia y DoT o DoH en el cliente</text>
+<text class="n9" text-anchor="middle" x="340" y="302">Otras amenazas: secuestro del dominio en el registrador, dominios homógrafos y exfiltración por túnel DNS</text>
+<text class="n9" text-anchor="end" x="670" y="332">[Fuente: RFC 4033-4035, RFC 7858, RFC 8484; ICANN]</text>
+</svg>

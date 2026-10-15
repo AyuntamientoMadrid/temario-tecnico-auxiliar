@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿cómo deben tratarse en la red de la sede las 22 cámaras del contrato de seguridad?",
+    "o": [
+     "Integradas en la VLAN de datos de tramitación, con un agente antivirus instalado en cada cámara, como en cualquier otro puesto.",
+     "Conectadas a la red del contratista de seguridad, fuera del inventario municipal, porque no son equipamiento del departamento.",
+     "Confinadas en una VLAN propia sin capacidad de iniciar conexiones hacia el resto y con su firmware bajo seguimiento en el inventario."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §1.1.2, §3.2.1 (mp.eq.4)",
+    "e": "Llegan por un contrato ajeno, rara vez admiten agente y casi nunca se actualizan: el ENS las contempla en la medida mp.eq.4 (otros dispositivos conectados a la red) y la respuesta es confinarlas."
+   },
+   {
+    "q": "¿Qué separación exige la red inalámbrica de los visitantes de la zona de espera?",
+    "o": [
+     "Tres niveles a la vez: VLAN propia, encaminamiento que solo permite salir a internet y portal con condiciones de uso.",
+     "Basta con una VLAN propia, porque el aislamiento de nivel 2 ya impide cualquier acceso a la red interna de la sede.",
+     "Basta con compartir la red inalámbrica corporativa con una contraseña distinta, comunicada en la zona de espera."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §1.1.2 (mp.com.4)",
+    "e": "La separación debe hacerse en nivel 2, en nivel 3 y en la política de uso; quitar cualquiera de los tres deja un agujero."
+   },
+   {
+    "q": "¿Qué arquitectura física y lógica resulta adecuada para una sede de este tamaño?",
+    "o": [
+     "Tres capas completas, con un núcleo independiente en cada planta además de la distribución, para separar el tráfico de cada piso.",
+     "Dos capas con núcleo colapsado: acceso por planta y una pareja de distribución en el armario principal que hace de frontera de nivel 3.",
+     "Una red plana sin VLAN, con todos los equipos en un único segmento conectado al conmutador del armario principal de la sede."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §1.1.1",
+    "e": "En la variante de dos capas, la distribución asume también el papel de núcleo local y encamina entre VLAN mediante interfaces virtuales (SVI) que actúan como puerta de enlace."
+   },
+   {
+    "q": "Cada puesto tiene el teléfono IP conectado a la roseta y el ordenador conectado detrás del teléfono. ¿Cómo se configura ese puerto del conmutador?",
+    "o": [
+     "Como puerto de acceso para el ordenador que, además, transporta etiquetada la VLAN de voz del teléfono.",
+     "Como puerto troncal que transporta las ocho VLAN de la sede, igual que los enlaces entre conmutadores.",
+     "Como puerto de acceso solo en la VLAN de voz, de modo que el ordenador necesita otra roseta propia."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §1.1.2",
+    "e": "Los puertos hacia equipos finales son de acceso; la excepción es el del teléfono IP, que añade la VLAN de voz etiquetada. Los troncales quedan para los enlaces entre conmutadores, los puntos de acceso y los servidores de virtualización."
+   },
+   {
+    "q": "¿Qué mecanismo hace que la avería de uno de los dos conmutadores de distribución sea transparente para los puestos en cuanto a su puerta de enlace?",
+    "o": [
+     "La agregación de enlaces LACP, que suma la capacidad de varios enlaces físicos.",
+     "La guarda de BPDU, que deshabilita el puerto cuando recibe tramas de árbol de expansión.",
+     "VRRP entre ambos conmutadores, que comparten la puerta de enlace de cada VLAN."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §1.1.3",
+    "e": "Con VRRP los dos conmutadores de distribución comparten la puerta de enlace de cada VLAN, de modo que si uno cae el otro la asume sin que el equipo final cambie de configuración."
+   },
+   {
+    "q": "Un empleado conecta en su roseta un pequeño conmutador doméstico. ¿Qué protección del puerto de acceso lo detecta y deshabilita el puerto?",
+    "o": [
+     "La inspección DHCP, porque el conmutador doméstico pide una dirección a un servidor no confiable.",
+     "La guarda de BPDU, porque un puerto de usuario nunca debe recibir tramas del árbol de expansión.",
+     "El control de tormentas, porque todo conmutador doméstico genera tráfico de difusión excesivo."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §1.1.3",
+    "e": "Puerto de borde más guarda de BPDU es la combinación canónica: el usuario legítimo obtiene red rápido y el puerto se apaga en cuanto detecta un dispositivo que habla el protocolo de árbol de expansión."
+   },
+   {
+    "q": "Dentro del bloque 10.42.0.0/20, ¿qué tamaño de subred es razonable para la VLAN de datos de tramitación (180 puestos, portátiles y margen a tres años)?",
+    "o": [
+     "Una /25, con 126 direcciones útiles.",
+     "Una /23, con 510 direcciones útiles.",
+     "Todo el /20, con 4.094 direcciones útiles."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 3 · §1.2.1",
+    "e": "Una /25 no alcanza ni para los 180 puestos, y asignar todo el /20 a una sola VLAN dejaría sin direcciones a las otras siete; una /23 cubre los puestos, los portátiles y el margen."
+   },
+   {
+    "q": "¿Qué mecanismo permite atender las ocho VLAN de la sede con un único servidor DHCP central?",
+    "o": [
+     "Un servidor DHCP en cada VLAN, porque los mensajes de difusión del cliente atraviesan los encaminadores y llegan a cualquier segmento.",
+     "La configuración manual de una dirección fija en cada equipo, porque así queda bajo el control directo del administrador de la red.",
+     "El agente de retransmisión en cada interfaz virtual del conmutador de distribución, que convierte la difusión del cliente en unidifusión hacia el servidor."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §1.2.1",
+    "e": "La difusión DHCP no atraviesa encaminadores; el agente de retransmisión la reenvía como unidifusión e indica la subred de origen. Las direcciones fijas a mano quedan fuera del control del administrador."
+   },
+   {
+    "q": "¿Dónde se sitúa la frontera de confianza del esquema de calidad de servicio de la sede?",
+    "o": [
+     "En el puerto de acceso: se confía en el marcado del teléfono IP identificado por LLDP-MED y se remarca el del ordenador.",
+     "En el núcleo: los conmutadores de acceso respetan el marcado de todos los equipos y el núcleo lo clasifica de nuevo.",
+     "En el ordenador del puesto: se confía en el marcado que aplique cada aplicación, sin remarcar nada en la red."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · §4.1.4",
+    "e": "El tráfico se clasifica en el borde: el acceso confía, todo lo más, en el teléfono identificado y remarca lo demás salvo las aplicaciones corporativas identificadas; el núcleo solo encola según lo que llega marcado."
+   },
+   {
+    "q": "¿Dónde está en esta sede el punto real de congestión en el que el encolamiento de la voz (EF, DSCP 46) tiene efecto?",
+    "o": [
+     "En los puertos de acceso de cada planta, porque cada puesto comparte el puerto con el teléfono.",
+     "En el enlace hacia el centro de proceso de datos, porque dentro del edificio sobra capacidad.",
+     "En la red inalámbrica de visitantes, porque es la que más dispositivos simultáneos concentra."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §4.1.4",
+    "e": "El marcado se hace en el acceso y el encolamiento en la distribución y en el enlace hacia el CPD, que es el cuello de botella real de la sede."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, las 340 cuentas habilitadas de personas que causaron baja hace más de un año son:",
+    "o": [
+     "Cuentas huérfanas, que comprometen la medida op.acc.4 del ENS, proceso de gestión de derechos de acceso.",
+     "Cuentas genéricas, que comprometen la medida mp.eq.2 del ENS, bloqueo del puesto de trabajo del usuario.",
+     "Cuentas de servicio, que comprometen la medida mp.com.4 del ENS, separación de flujos de información en la red."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §2.1.3 (op.acc.4)",
+    "e": "Son cuentas de personas que ya no están: amplían la superficie de ataque y falsean la trazabilidad, y su revisión periódica es exigible por la medida op.acc.4."
+   },
+   {
+    "q": "¿Qué debe hacerse de inmediato con esas 340 cuentas?",
+    "o": [
+     "Borrarlas directamente del directorio, porque una cuenta deshabilitada sigue siendo tan peligrosa como una cuenta habilitada.",
+     "Mantenerlas habilitadas hasta que finalice el traslado, para no alterar los permisos de las carpetas compartidas en curso.",
+     "Deshabilitarlas, sin borrarlas, para conservar la trazabilidad histórica y los identificadores de seguridad ligados a los permisos."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestiones 1 y 4 · §2.1.3",
+    "e": "Deshabilitar corta el riesgo al instante y conserva el historial; el borrado se hace después, mediante el procedimiento de baja definitiva."
+   },
+   {
+    "q": "Para rediseñar la concesión de permisos conforme al anidamiento AGDLP, ¿a qué se concede el permiso sobre la carpeta compartida?",
+    "o": [
+     "Al grupo global, que contiene directamente las cuentas de las personas de cada unidad.",
+     "Al grupo local de dominio, que contiene los grupos globales en los que están las cuentas.",
+     "A cada cuenta de usuario, que se incluye después en el grupo global de su distrito."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §2.1.3",
+    "e": "Las cuentas (A) van a grupos globales (G) que dicen quién es alguien; estos, a grupos locales de dominio (DL) que dicen a qué da derecho; y el permiso (P) se concede al grupo local de dominio, nunca a cuentas ni a grupos globales."
+   },
+   {
+    "q": "Con el modelo AGDLP implantado, una tramitadora pasa del Distrito A al Distrito B. ¿Qué hay que hacer?",
+    "o": [
+     "Localizar todos los recursos donde aparece su cuenta y cambiar uno por uno sus permisos sobre ellos.",
+     "Crearle una cuenta nueva en el Distrito B y deshabilitar la cuenta que tenía en el Distrito A.",
+     "Quitarla del grupo global Tramitacion-Distrito-A y añadirla al grupo global Tramitacion-Distrito-B."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §2.1.3",
+    "e": "Son dos operaciones con efecto inmediato y simultáneo sobre todos los recursos, con registro de quién hizo el cambio; los 60 traslados pasan de semanas a una tarde y no quedan accesos residuales."
+   },
+   {
+    "q": "¿Por qué conviene un único dominio en lugar de crear uno por distrito?",
+    "o": [
+     "Porque multiplicar dominios multiplica el coste de administración sin aportar seguridad: el límite real de seguridad es el bosque.",
+     "Porque el dominio es el límite real de seguridad del directorio, y un solo dominio concentra mejor la protección de toda la organización.",
+     "Porque la estructura del directorio debe reproducir el organigrama municipal, que agrupa todos los distritos bajo una misma área."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §2.1.2",
+    "e": "El límite de seguridad del directorio es el bosque, no el dominio; además, las unidades organizativas deben responder a cómo se administra la organización y no a su organigrama, que cambia con cada legislatura."
+   },
+   {
+    "q": "¿Qué capacidad conviene delegar a los técnicos de cada distrito sobre su unidad organizativa?",
+    "o": [
+     "Administrar todo el dominio, para que puedan resolver cualquier incidencia sin tener que escalarla.",
+     "Restablecer contraseñas y desbloquear cuentas de su ámbito, sin ser administradores de nada más.",
+     "Crear y vincular directivas de grupo en el dominio, para adaptar sus puestos sin pedir permiso."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §2.1.2 (op.acc.3)",
+    "e": "Delegar solo lo necesario sobre su propio ámbito es la aplicación de la segregación de funciones y del mínimo privilegio (op.acc.3)."
+   },
+   {
+    "q": "¿Cómo se da un tratamiento diferenciado a los puestos de mostrador de la Oficina de Atención a la Ciudadanía?",
+    "o": [
+     "Con una única directiva para todo el dominio, igual para mostradores y despachos, porque las diferencias de trato complican la administración.",
+     "Configurando a mano cada puesto de mostrador con el bloqueo de pantalla y las restricciones, sin usar directivas de grupo del directorio.",
+     "Con una unidad organizativa propia para esos equipos y una directiva que fije bloqueo de pantalla breve y deshabilite el almacenamiento extraíble."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §2.2.2, §2.2.3 (mp.eq.1, mp.eq.2)",
+    "e": "Son puestos de cara al público con documentación de terceros en pantalla: necesitan un bloqueo más estricto que un despacho cerrado, y la directiva vinculada a su unidad organizativa lo aplica de forma centralizada."
+   },
+   {
+    "q": "El distrito ha activado el bloqueo de herencia en la unidad organizativa de los mostradores para que no les lleguen otras directivas. ¿Recibirán los puestos de mostrador los ajustes mínimos de seguridad que el Ayuntamiento fija en una directiva del dominio marcada como forzada?",
+    "o": [
+     "Sí: la marca de forzada prevalece sobre el bloqueo de herencia, y así la organización garantiza sus mínimos en todo el parque.",
+     "No: el bloqueo de herencia corta todas las directivas del dominio, y los mínimos habría que repetirlos en la unidad organizativa.",
+     "Solo si no hay otra directiva en la unidad organizativa, porque siempre prevalece la más próxima al objeto, sin excepciones."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §2.2.2",
+    "e": "Gana la última directiva en aplicarse salvo una excepción: la marcada como forzada prevalece sobre las posteriores y sobre el bloqueo de herencia; así se garantizan los mínimos en todo el parque."
+   },
+   {
+    "q": "El personal técnico de los distritos administra con su cuenta ordinaria, que también tiene correo y navegación. ¿Cómo debe corregirse?",
+    "o": [
+     "Con una sola cuenta privilegiada para todo, con una contraseña más larga y cambiada con mayor frecuencia.",
+     "Con dos cuentas: la ordinaria para el día a día y otra administrativa sin correo ni navegación, con segundo factor.",
+     "Con la cuenta ordinaria, pero bloqueando la navegación solo durante las horas de mayor actividad del servicio."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · §2.2.4",
+    "e": "El correo y la navegación son los dos vectores habituales de compromiso y nunca deben ocurrir bajo una identidad privilegiada; la cuenta administrativa se usa solo desde puestos de administración."
+   },
+   {
+    "q": "¿Cuál es la solución correcta para las cinco cuentas genéricas de mostrador cuya contraseña conocen unas veinte personas?",
+    "o": [
+     "Suprimirlas y sustituirlas por cuentas nominativas, con inicio de sesión rápido con la tarjeta del empleado para agilizar el turno.",
+     "Mantenerlas y cambiar su contraseña cada semana, comunicándola en cada turno solo al personal que esté en el mostrador ese día.",
+     "Mantenerlas y reducirlas a una sola cuenta genérica para toda la oficina, para que haya menos contraseñas compartidas que vigilar."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · §2.2.4 (op.acc.1)",
+    "e": "Las cuentas compartidas impiden atribuir una consulta a un expediente a una persona concreta: destruyen la trazabilidad. La tarjeta permite cambiar de turno con agilidad sin penalizar la atención al público."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿qué instrumento permite averiguar quién consume el enlace hacia el centro de proceso de datos entre las 9:00 y las 9:45?",
+    "o": [
+     "Un sondeo SNMP más frecuente de la interfaz, porque los contadores de la MIB-II distinguen cada conversación.",
+     "Los registros de flujo (NetFlow v9, IPFIX o sFlow) exportados desde el conmutador de distribución a un colector.",
+     "Una captura completa de paquetes del enlace durante las tres semanas, para disponer de todo el contenido."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §4.2.2",
+    "e": "SNMP ya dice cuánto (la interfaz está al 100 %), pero sus contadores son agregados por interfaz; el flujo responde a quién habla con quién, cuánto y cuándo."
+   },
+   {
+    "q": "Los flujos de esa franja muestran muchos equipos de la VLAN de datos hablando con un mismo destino externo por el puerto 443, coincidiendo con el encendido de los puestos. ¿Qué indican?",
+    "o": [
+     "Un ataque de denegación de servicio lanzado desde internet contra la sede de distrito.",
+     "La actividad del equipo no inventariado, que se replica al resto de la VLAN de datos.",
+     "La descarga simultánea de las actualizaciones del sistema operativo de los puestos."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §4.2.2",
+    "e": "Muchos orígenes internos hacia un mismo destino externo al encenderse los equipos es el patrón típico del servicio de actualizaciones del sistema operativo."
+   },
+   {
+    "q": "Identificada la causa, ¿cuál es la solución de menor coste?",
+    "o": [
+     "Desplazar la ventana de actualización a horario nocturno mediante directiva.",
+     "Ampliar la capacidad del enlace hacia el centro de proceso de datos.",
+     "Sustituir los conmutadores de acceso por modelos de mayor capacidad."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §4.2.2",
+    "e": "Las soluciones, de menor a mayor coste, son mover la ventana, desplegar una caché local de actualizaciones, limitar la clase con calidad de servicio y, solo en último término, ampliar el enlace; dentro del edificio no hay falta de capacidad."
+   },
+   {
+    "q": "Para localizar físicamente el equipo desconocido, ¿qué registro indica directamente el conmutador y el puerto desde los que pidió su dirección?",
+    "o": [
+     "La tabla de encaminamiento del conmutador del CPD.",
+     "El histórico SNMP de utilización de las interfaces.",
+     "El registro de concesiones DHCP con la opción 82."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §1.2.1",
+    "e": "La opción 82 añade a cada concesión el conmutador y el puerto de origen, lo que convierte una investigación de horas en una consulta de segundos; después se identifica la roseta en la documentación de cableado."
+   },
+   {
+    "q": "¿Qué contención debe aplicarse sobre el equipo desconocido antes de desplazarse a la roseta?",
+    "o": [
+     "Desconectar el cable de inmediato y, una vez desconectado, recoger los registros que hayan quedado.",
+     "Deshabilitar el puerto o pasarlo a una VLAN de cuarentena, preservando la evidencia antes de desconectar.",
+     "Apagarlo a distancia y formatear su disco, para eliminar cuanto antes cualquier código malicioso."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §3.2.3",
+    "e": "La contención aísla el equipo sin destruir información; los registros de flujo, DHCP y autenticación se conservan con cadena de custodia, porque desconectar primero destruye evidencia."
+   },
+   {
+    "q": "¿Qué mecanismo habría impedido que un equipo no inventariado obtuviera acceso a la VLAN de datos?",
+    "o": [
+     "El control de admisión 802.1X, que solo deja pasar EAPOL hasta autenticar el equipo contra el directorio.",
+     "MAB, que autentica el equipo con una credencial robusta basada en su dirección MAC, imposible de falsificar.",
+     "La guarda de BPDU, que impide que en un puerto de acceso se conecte cualquier equipo no inventariado."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 2 · §3.2.3",
+    "e": "Con 802.1X el puerto no deja pasar más que la autenticación hasta validar el equipo. MAB es un mecanismo débil, inventario aplicado y no credencial, y la guarda de BPDU solo actúa ante conmutadores."
+   },
+   {
+    "q": "¿Qué condición es imprescindible para poder correlacionar los registros de los distintos equipos de red durante la investigación?",
+    "o": [
+     "Que cada dispositivo conserve sus propios registros en memoria local, con su hora configurada a mano.",
+     "Que se centralicen en un servidor externo a los dispositivos y con una hora común sincronizada por NTP.",
+     "Que se exporten en texto plano una vez al año a una hoja de cálculo para su revisión por el auditor."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §4.2.3",
+    "e": "Sin una hora común los tiempos de distintos equipos no son comparables y la correlación es imposible; centralizarlos fuera de los dispositivos los protege y los conserva."
+   },
+   {
+    "q": "¿Qué límite jurídico condiciona el registro del tráfico de la sede?",
+    "o": [
+     "Ninguno, porque las direcciones IP son datos técnicos de la red y no tienen en ningún caso la consideración de datos personales.",
+     "Ninguno si el registro se usa para el control laboral de la plantilla, porque esa finalidad no exige informar a los trabajadores.",
+     "Una IP asociada a un usuario identificable es dato personal: exige finalidad, minimización, plazo e información previa a la plantilla."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · §4.2.3",
+    "e": "El registro de tráfico es un tratamiento sujeto al RGPD: la seguridad del sistema lo sostiene, no el control laboral encubierto; debe figurar en el registro de actividades (art. 30 RGPD) y hay que informar a la plantilla y a sus representantes (arts. 87-91 LOPDGDD)."
+   },
+   {
+    "q": "¿Qué medida del ENS resulta incumplida de raíz por la existencia del equipo desconocido?",
+    "o": [
+     "mp.eq.2, bloqueo del puesto de trabajo.",
+     "op.mon.2, sistema de métricas.",
+     "op.exp.1, inventario de activos."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §4.2.4",
+    "e": "Un equipo que comunica con la red y no consta en ningún sitio revela que el inventario no está conciliado; la conciliación debe ejecutarse y convertirse en tarea periódica."
+   },
+   {
+    "q": "Siendo la sede un sistema de categoría MEDIA, ¿cómo deberán acreditarse los hallazgos y su corrección?",
+    "o": [
+     "Documentalmente ante el auditor, porque la categoría MEDIA está sujeta a auditoría al menos cada dos años.",
+     "Mediante una autoevaluación interna, porque la auditoría externa solo es obligatoria para la categoría ALTA.",
+     "No hace falta acreditarlos, porque la corrección de un incidente interno no forma parte de la conformidad."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · §4.2.4",
+    "e": "Los sistemas de categoría MEDIA y ALTA se auditan al menos bienalmente; la autoevaluación corresponde solo a la categoría BÁSICA."
+   }
+  ]
+ }
+]

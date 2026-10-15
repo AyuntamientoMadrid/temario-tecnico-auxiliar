@@ -1,0 +1,25 @@
+<svg aria-label="Mapa de la gobernanza de Internet en tres bloques: identificadores únicos gestionados por ICANN, la función IANA operada por PTI desde 2016 y los cinco registros regionales; estándares elaborados por el IETF bajo supervisión del IAB y el IESG dentro de la Internet Society; y otros ámbitos como el W3C para la Web, el IEEE para las capas físicas, la ITU-T y el foro de gobernanza de Internet, que no adopta decisiones vinculantes" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 10.5px system-ui,sans-serif;fill:#fff}.s2{font:8.5px system-ui,sans-serif;fill:#fff}.d2{font:9px system-ui,sans-serif;fill:#333}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}.k2{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n2{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h2" text-anchor="middle" x="340" y="20">Nadie manda en Internet: se coordina lo imprescindible</text>
+<text class="k2" x="20" y="42">IDENTIFICADORES ÚNICOS</text>
+<text class="k2" x="237" y="42">ESTÁNDARES TÉCNICOS</text>
+<text class="k2" x="454" y="42">OTROS ÁMBITOS</text>
+<rect fill="#0055a0" height="46" rx="5" width="206" x="20" y="50"></rect><text class="t2" text-anchor="middle" x="123" y="68">ICANN (1998)</text><text class="s2" text-anchor="middle" x="123" y="84">Coordina nombres y números</text>
+<rect fill="#2d8659" height="46" rx="5" width="206" x="237" y="50"></rect><text class="t2" text-anchor="middle" x="340" y="68">ISOC</text><text class="s2" text-anchor="middle" x="340" y="84">Paraguas institucional del IETF</text>
+<rect fill="#e89822" height="46" rx="5" width="206" x="454" y="50"></rect><text class="t2" text-anchor="middle" x="557" y="68">W3C (1994)</text><text class="s2" text-anchor="middle" x="557" y="84">Estándares de la WEB: HTML, CSS</text>
+<rect fill="#0055a0" height="46" rx="5" width="206" x="20" y="102"></rect><text class="t2" text-anchor="middle" x="123" y="120">Función IANA · PTI</text><text class="s2" text-anchor="middle" x="123" y="136">Raíz DNS, bloques IP, parámetros</text>
+<rect fill="#2d8659" height="46" rx="5" width="206" x="237" y="102"></rect><text class="t2" text-anchor="middle" x="340" y="120">IAB + IESG</text><text class="s2" text-anchor="middle" x="340" y="136">Arquitectura y aprobación</text>
+<rect fill="#e89822" height="46" rx="5" width="206" x="454" y="102"></rect><text class="t2" text-anchor="middle" x="557" y="120">IEEE</text><text class="s2" text-anchor="middle" x="557" y="136">802.3 Ethernet y 802.11 Wi-Fi</text>
+<rect fill="#0055a0" height="46" rx="5" width="206" x="20" y="154"></rect><text class="t2" text-anchor="middle" x="123" y="172">5 RIR</text><text class="s2" text-anchor="middle" x="123" y="188">ARIN · RIPE NCC · APNIC · LACNIC · AFRINIC</text>
+<rect fill="#2d8659" height="46" rx="5" width="206" x="237" y="154"></rect><text class="t2" text-anchor="middle" x="340" y="172">IETF</text><text class="s2" text-anchor="middle" x="340" y="188">Escribe los RFC. IRTF: investigación</text>
+<rect fill="#888" height="46" rx="5" width="206" x="454" y="154"></rect><text class="t2" text-anchor="middle" x="557" y="172">ITU-T · IGF</text><text class="s2" text-anchor="middle" x="557" y="188">El IGF dialoga: NO decide</text>
+<rect fill="#eef3f8" height="42" rx="5" width="206" x="20" y="206"></rect><text class="d2" text-anchor="middle" x="123" y="222">LIR (operadores)</text><text class="n2" text-anchor="middle" x="123" y="236">España pertenece a RIPE NCC</text>
+<rect fill="#fdf3e3" height="42" rx="5" width="423" x="237" y="206"></rect><text class="d2" text-anchor="middle" x="448" y="222">HTTP, TLS, IP, DNS y el correo son estándares del IETF, no del W3C</text><text class="n2" text-anchor="middle" x="448" y="236">El W3C estandariza lo que se ejecuta DENTRO del navegador; el IETF, cómo viaja por la red</text>
+<rect fill="#fbeaea" height="44" rx="5" width="640" x="20" y="258"></rect>
+<text class="d2" text-anchor="middle" x="340" y="276">TRANSICIÓN IANA: el contrato con el Gobierno de EE. UU. expiró el 30-9-2016</text>
+<text class="n2" text-anchor="middle" x="340" y="292">Desde el 1-10-2016 las funciones IANA las ejerce PTI, filial de ICANN, bajo modelo de múltiples partes interesadas</text>
+<rect fill="none" height="34" rx="5" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="312"></rect>
+<text class="k2" text-anchor="middle" x="340" y="327">ICANN reparte IDENTIFICADORES · IETF escribe PROTOCOLOS · W3C estandariza la WEB</text>
+<text class="n2" text-anchor="middle" x="340" y="340">Cadena de direcciones: IANA da bloques al RIR, el RIR al LIR (operador) y el LIR al usuario final</text>
+<text class="n2" text-anchor="end" x="670" y="364">[Fuente: ICANN, IETF, W3C, RIPE NCC]</text>
+</svg>

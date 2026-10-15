@@ -1,0 +1,33 @@
+<svg aria-label="Línea de tiempo de un incidente que sitúa el RPO hacia atrás, como cantidad de datos que se pierden desde la última copia, y el RTO hacia delante, como tiempo de interrupción hasta que el servicio vuelve a estar operativo" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 10.5px system-ui,sans-serif;fill:#fff}.s9{font:9px system-ui,sans-serif;fill:#fff}.d9{font:9px system-ui,sans-serif;fill:#333}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.k9{font:700 10px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">RPO mira al pasado · RTO mira al futuro</text>
+<line stroke="#333" stroke-width="2" x1="30" x2="650" y1="120" y2="120"></line>
+<circle cx="150" cy="120" fill="#0055a0" r="6"></circle><circle cx="340" cy="120" fill="#d13c3c" r="8"></circle><circle cx="560" cy="120" fill="#2d8659" r="6"></circle>
+<text class="d9" text-anchor="middle" x="150" y="142">Última copia válida</text>
+<text style="font:700 10px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="142">INCIDENTE</text>
+<text class="d9" text-anchor="middle" x="560" y="142">Servicio restablecido</text>
+<text class="d9" text-anchor="middle" x="150" y="155">02:00</text>
+<text class="d9" text-anchor="middle" x="340" y="155">06:00</text>
+<text class="d9" text-anchor="middle" x="560" y="155">08:00</text>
+<rect fill="#e89822" height="30" rx="4" width="190" x="150" y="76"></rect>
+<text class="s9" text-anchor="middle" x="245" y="95">RPO = datos perdidos (4 h)</text>
+<rect fill="#2d8659" height="30" rx="4" width="220" x="340" y="76"></rect>
+<text class="s9" text-anchor="middle" x="450" y="95">RTO = tiempo de parada (2 h)</text>
+<path d="M338 66 L152 66" marker-end="url(#a9)" stroke="#e89822" stroke-width="2"></path>
+<path d="M342 66 L558 66" marker-end="url(#b9)" stroke="#2d8659" stroke-width="2"></path>
+<defs>
+<marker id="a9" markerheight="8" markerwidth="8" orient="auto" refx="6" refy="3"><path d="M0,0 L0,6 L7,3 z" fill="#e89822"></path></marker>
+<marker id="b9" markerheight="8" markerwidth="8" orient="auto" refx="6" refy="3"><path d="M0,0 L0,6 L7,3 z" fill="#2d8659"></path></marker>
+</defs>
+<rect fill="#e89822" height="60" rx="5" width="310" x="20" y="176"></rect>
+<text class="t9" text-anchor="middle" x="175" y="195">RPO · Recovery Point Objective</text>
+<text class="s9" text-anchor="middle" x="175" y="212">Cuántos DATOS puedo perder</text>
+<text class="s9" text-anchor="middle" x="175" y="228">→ determina la FRECUENCIA de la copia</text>
+<rect fill="#2d8659" height="60" rx="5" width="310" x="350" y="176"></rect>
+<text class="t9" text-anchor="middle" x="505" y="195">RTO · Recovery Time Objective</text>
+<text class="s9" text-anchor="middle" x="505" y="212">Cuánto TIEMPO puedo estar caído</text>
+<text class="s9" text-anchor="middle" x="505" y="228">→ determina la TECNOLOGÍA de recuperación</text>
+<rect fill="none" height="30" rx="5" stroke="#0055a0" stroke-width="2" width="560" x="60" y="248"></rect>
+<text class="k9" text-anchor="middle" x="340" y="267">Ambos salen del análisis de impacto (BIA) y se fijan servicio por servicio · RTO &lt; MTD</text>
+<text style="font:9px system-ui;fill:#666" text-anchor="end" x="670" y="294">[Fuente: ISO22301; NIST-SP800-34]</text>
+</svg>

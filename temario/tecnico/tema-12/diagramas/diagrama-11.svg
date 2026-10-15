@@ -1,0 +1,12 @@
+<svg aria-label="RGB es aditivo y suma luz hasta el blanco, usado en pantallas; CMYK es sustractivo y resta luz con tintas hasta el negro, usado en impresión; CIELAB es la referencia independiente del dispositivo" class="svd11" role="img" viewbox="0 0 680 310" xmlns="http://www.w3.org/2000/svg">
+<style>.svd11 .t{font:700 14px system-ui,sans-serif;fill:#fff}.svd11 .s{font:12px system-ui,sans-serif;fill:#333}.svd11 .h{font:700 14px system-ui,sans-serif;fill:#0055a0}.svd11 .lab{font:700 12px system-ui,sans-serif;fill:#fff}</style>
+<text class="h" text-anchor="middle" x="340" y="26">Dos formas de construir el color</text>
+<rect fill="#0e0e0e" height="180" rx="10" width="300" x="30" y="46"></rect>
+<circle cx="130" cy="120" fill="#ff2d2d" fill-opacity="0.75" r="46"></circle><circle cx="180" cy="120" fill="#2dff2d" fill-opacity="0.7" r="46"></circle><circle cx="155" cy="160" fill="#2d6bff" fill-opacity="0.7" r="46"></circle>
+<text class="t" text-anchor="middle" x="180" y="72">RGB · ADITIVO</text><text class="s" style="fill:#fff" text-anchor="middle" x="255" y="120">Suma luz</text><text class="s" style="fill:#fff" text-anchor="middle" x="255" y="150">→ blanco</text><text class="s" style="fill:#fff" text-anchor="middle" x="180" y="212">Pantallas, cámaras, escáneres</text>
+<rect fill="#f4f4f4" height="180" rx="10" stroke="#ccc" width="300" x="350" y="46"></rect>
+<circle cx="450" cy="120" fill="#00b6d8" fill-opacity="0.6" r="46"></circle><circle cx="500" cy="120" fill="#e5008d" fill-opacity="0.55" r="46"></circle><circle cx="475" cy="160" fill="#ffe000" fill-opacity="0.7" r="46"></circle>
+<text class="h" text-anchor="middle" x="500" y="72">CMYK · SUSTRACTIVO</text><text class="s" text-anchor="middle" x="575" y="120">Resta luz</text><text class="s" text-anchor="middle" x="575" y="150">→ negro (K)</text><text class="s" text-anchor="middle" x="500" y="212">Impresión con tintas</text>
+<rect fill="#6ea3d2" height="50" rx="8" width="620" x="30" y="236"></rect><text class="lab" text-anchor="middle" x="340" y="256">CIELAB (L·a·b): espacio de referencia independiente del dispositivo</text><text class="lab" text-anchor="middle" x="340" y="275">para convertir con fidelidad entre ambos</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="672" y="304">[Fuente: CIE]</text>
+</svg>

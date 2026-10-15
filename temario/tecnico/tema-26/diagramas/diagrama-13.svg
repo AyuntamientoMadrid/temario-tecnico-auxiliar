@@ -1,0 +1,27 @@
+<svg aria-label="Comparación entre la copia basada en agente instalado en el sistema operativo y la copia sin agente mediante la API del hipervisor, con el flujo de instantánea, congelación con VSS, lectura de bloques cambiados mediante CBT y consolidación" role="img" viewbox="0 0 680 350" xmlns="http://www.w3.org/2000/svg">
+<style>.t13{font:700 10.5px system-ui,sans-serif;fill:#fff}.s13{font:9px system-ui,sans-serif;fill:#fff}.d13{font:9px system-ui,sans-serif;fill:#333}.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.k13{font:700 9.5px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h13" text-anchor="middle" x="340" y="20">Con agente (desde dentro) frente a sin agente (desde el hipervisor)</text>
+<rect fill="#e89822" height="24" rx="5" width="310" x="20" y="32"></rect><text class="t13" text-anchor="middle" x="175" y="49">CON AGENTE · sistema físico o virtual</text>
+<rect fill="#2d8659" height="24" rx="5" width="310" x="350" y="32"></rect><text class="t13" text-anchor="middle" x="505" y="49">SIN AGENTE · solo entornos virtuales</text>
+<rect fill="#eef3f8" height="30" rx="4" stroke="#888" width="310" x="20" y="64"></rect><text class="d13" text-anchor="middle" x="175" y="83">Aplicación y sistema operativo</text>
+<rect fill="#e89822" height="30" rx="4" width="310" x="20" y="100"></rect><text class="s13" text-anchor="middle" x="175" y="119">AGENTE instalado: lee, congela con VSS y envía</text>
+<rect fill="#eef3f8" height="30" rx="4" stroke="#888" width="310" x="20" y="136"></rect><text class="d13" text-anchor="middle" x="175" y="155">Disco (físico o virtual)</text>
+<rect fill="#eef3f8" height="30" rx="4" stroke="#888" width="310" x="350" y="64"></rect><text class="d13" text-anchor="middle" x="505" y="83">Máquina virtual: sin nada instalado</text>
+<rect fill="#2d8659" height="30" rx="4" width="310" x="350" y="100"></rect><text class="s13" text-anchor="middle" x="505" y="119">HIPERVISOR: API de protección de datos + CBT</text>
+<rect fill="#eef3f8" height="30" rx="4" stroke="#888" width="310" x="350" y="136"></rect><text class="d13" text-anchor="middle" x="505" y="155">Almacén de datos con los discos virtuales</text>
+<text class="k13" x="20" y="188">FLUJO DE LA COPIA SIN AGENTE</text>
+<rect fill="#0055a0" height="46" rx="4" width="122" x="20" y="196"></rect><text class="s13" text-anchor="middle" x="81" y="213">1 · Instantánea</text><text class="s13" text-anchor="middle" x="81" y="228">de la VM</text>
+<rect fill="#0055a0" height="46" rx="4" width="122" x="150" y="196"></rect><text class="s13" text-anchor="middle" x="211" y="213">2 · VSS congela</text><text class="s13" text-anchor="middle" x="211" y="228">la aplicación</text>
+<rect fill="#0055a0" height="46" rx="4" width="122" x="280" y="196"></rect><text class="s13" text-anchor="middle" x="341" y="213">3 · Escrituras</text><text class="s13" text-anchor="middle" x="341" y="228">nuevas al delta</text>
+<rect fill="#0055a0" height="46" rx="4" width="122" x="410" y="196"></rect><text class="s13" text-anchor="middle" x="471" y="213">4 · Se leen SOLO</text><text class="s13" text-anchor="middle" x="471" y="228">bloques cambiados</text>
+<rect fill="#0055a0" height="46" rx="4" width="120" x="540" y="196"></rect><text class="s13" text-anchor="middle" x="600" y="213">5 · Consolidar</text><text class="s13" text-anchor="middle" x="600" y="228">y borrar el delta</text>
+<rect fill="#eef3f8" height="44" rx="5" stroke="#e89822" stroke-width="2" width="310" x="20" y="252"></rect>
+<text class="k13" text-anchor="middle" x="175" y="269">CUÁNDO SIGUE HACIENDO FALTA EL AGENTE</text>
+<text class="d13" text-anchor="middle" x="175" y="286">Bases de datos con registro de transacciones, puestos, nube</text>
+<rect fill="#eef3f8" height="44" rx="5" stroke="#2d8659" stroke-width="2" width="310" x="350" y="252"></rect>
+<text class="k13" text-anchor="middle" x="505" y="269">QUÉ APORTA EL CBT</text>
+<text class="d13" text-anchor="middle" x="505" y="286">Incrementales en minutos e incremental para siempre</text>
+<rect fill="none" height="26" rx="5" stroke="#d13c3c" stroke-width="2" width="560" x="60" y="304"></rect>
+<text style="font:700 10px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="321">Sin agente NO significa sin consistencia: el hipervisor sigue llamando a VSS dentro del invitado</text>
+<text style="font:9px system-ui;fill:#666" text-anchor="end" x="670" y="344">[Fuente: VMW-VADP; HYPERV-RCT; MS-VSS]</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg aria-label="Comparación entre ficheros aislados con datos redundantes y una base de datos integrada" class="svd1" role="img" viewbox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd1 .t{font:700 13px system-ui,sans-serif;fill:#0055a0}.svd1 .b{font:600 11px system-ui,sans-serif;fill:#fff}.svd1 .l{font:11px system-ui,sans-serif;fill:#444}</style>
+<text class="t" text-anchor="middle" x="160" y="34">Ficheros aislados</text>
+<rect fill="#d13c3c" height="44" rx="4" width="90" x="60" y="55"></rect><text class="b" text-anchor="middle" x="105" y="81">App A + datos</text>
+<rect fill="#d13c3c" height="44" rx="4" width="90" x="60" y="110"></rect><text class="b" text-anchor="middle" x="105" y="136">App B + datos</text>
+<rect fill="#d13c3c" height="44" rx="4" width="90" x="60" y="165"></rect><text class="b" text-anchor="middle" x="105" y="191">App C + datos</text>
+<text class="l" x="60" y="235">Datos duplicados → redundancia e inconsistencia</text>
+<text class="t" text-anchor="middle" x="500" y="34">Base de datos</text>
+<rect fill="#3378b9" height="30" rx="4" width="60" x="430" y="55"></rect><text class="b" text-anchor="middle" x="460" y="75">App A</text>
+<rect fill="#3378b9" height="30" rx="4" width="60" x="430" y="95"></rect><text class="b" text-anchor="middle" x="460" y="115">App B</text>
+<rect fill="#3378b9" height="30" rx="4" width="60" x="430" y="135"></rect><text class="b" text-anchor="middle" x="460" y="155">App C</text>
+<rect fill="#2d8659" height="60" rx="6" width="90" x="520" y="80"></rect><text class="b" text-anchor="middle" x="565" y="105">SGBD</text><text class="b" text-anchor="middle" x="565" y="125">+ BD única</text>
+<line stroke="#888" x1="490" x2="518" y1="70" y2="100"></line><line stroke="#888" x1="490" x2="518" y1="110" y2="110"></line><line stroke="#888" x1="490" x2="518" y1="150" y2="120"></line>
+<text class="l" text-anchor="middle" x="520" y="235">Datos integrados, sin redundancia, compartidos</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="650" y="290">[Fuente: ELMASRI, cap. 1]</text>
+</svg>

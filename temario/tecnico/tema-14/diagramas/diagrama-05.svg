@@ -1,0 +1,16 @@
+<svg aria-label="Comparación entre proceso de un solo hilo y proceso multihilo" class="svd5" role="img" viewbox="0 0 640 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd5 .t{font:700 13px system-ui,sans-serif;fill:#0055a0}.svd5 .b{font:600 11px system-ui,sans-serif;fill:#fff}.svd5 .l{font:11px system-ui,sans-serif;fill:#444}</style>
+<text class="t" text-anchor="middle" x="150" y="34">Proceso monohilo</text>
+<rect fill="#e8f0f8" height="150" rx="6" stroke="#0055a0" width="180" x="60" y="50"></rect>
+<rect fill="#0055a0" height="28" width="150" x="75" y="65"></rect><text class="b" text-anchor="middle" x="150" y="84">Código + Datos</text>
+<rect fill="#3378b9" height="28" width="150" x="75" y="100"></rect><text class="b" text-anchor="middle" x="150" y="119">Montículo</text>
+<rect fill="#e89822" height="40" width="150" x="75" y="150"></rect><text class="b" text-anchor="middle" x="150" y="174">Pila + registros (1 hilo)</text>
+<text class="t" text-anchor="middle" x="450" y="34">Proceso multihilo</text>
+<rect fill="#e8f0f8" height="150" rx="6" stroke="#0055a0" width="260" x="340" y="50"></rect>
+<rect fill="#0055a0" height="28" width="230" x="355" y="65"></rect><text class="b" style="font-size:10px" text-anchor="middle" x="470" y="83">Código + Datos + Montículo (compartidos)</text>
+<rect fill="#e89822" height="40" width="70" x="355" y="150"></rect><text class="b" text-anchor="middle" x="390" y="174">Pila h1</text>
+<rect fill="#e89822" height="40" width="70" x="435" y="150"></rect><text class="b" text-anchor="middle" x="470" y="174">Pila h2</text>
+<rect fill="#e89822" height="40" width="70" x="515" y="150"></rect><text class="b" text-anchor="middle" x="550" y="174">Pila h3</text>
+<text class="l" x="60" y="235">Los hilos comparten código, datos y montículo; cada uno tiene su propia pila y registros.</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="630" y="288">[Fuente: SILBERSCHATZ-OS, cap. 4]</text>
+</svg>

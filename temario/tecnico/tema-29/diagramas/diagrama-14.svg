@@ -1,0 +1,32 @@
+<svg aria-label="Los dos ejes del escalado: el escalado funcional u horizontal, que traslada la incidencia a grupos con mayor conocimiento técnico del nivel 1 al nivel 3 y al proveedor, y el escalado jerárquico o vertical, que informa a niveles de autoridad superiores para decidir, autorizar o aportar recursos, con la indicación de que pueden coexistir y de que la propiedad del tique nunca se transfiere" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t14{font:700 10px system-ui,sans-serif;fill:#fff}.s14{font:9px system-ui,sans-serif;fill:#fff}.d14{font:9px system-ui,sans-serif;fill:#333}.h14{font:700 13px system-ui,sans-serif;fill:#0055a0}.k14{font:700 10px system-ui,sans-serif;fill:#0055a0}.n14{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<defs><marker id="a14" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker><marker id="b14" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#d13c3c"></path></marker></defs>
+<text class="h14" text-anchor="middle" x="340" y="20">Dos escalados que no se confunden</text>
+<text class="k14" text-anchor="middle" x="200" y="44">FUNCIONAL (horizontal) → busca QUIEN SEPA</text>
+<rect fill="#0055a0" height="42" rx="5" width="120" x="30" y="54"></rect><text class="t14" text-anchor="middle" x="90" y="72">NIVEL 1</text><text class="s14" text-anchor="middle" x="90" y="87">CAU generalista</text>
+<rect fill="#0055a0" height="42" rx="5" width="120" x="170" y="54"></rect><text class="t14" text-anchor="middle" x="230" y="72">NIVEL 2</text><text class="s14" text-anchor="middle" x="230" y="87">especialistas</text>
+<rect fill="#0055a0" height="42" rx="5" width="120" x="310" y="54"></rect><text class="t14" text-anchor="middle" x="370" y="72">NIVEL 3</text><text class="s14" text-anchor="middle" x="370" y="87">expertos</text>
+<rect fill="#888" height="42" rx="5" width="120" x="450" y="54"></rect><text class="t14" text-anchor="middle" x="510" y="72">PROVEEDOR</text><text class="s14" text-anchor="middle" x="510" y="87">contrato UC</text>
+<line marker-end="url(#a14)" stroke="#0055a0" stroke-width="2.5" x1="150" x2="166" y1="75" y2="75"></line>
+<line marker-end="url(#a14)" stroke="#0055a0" stroke-width="2.5" x1="290" x2="306" y1="75" y2="75"></line>
+<line marker-end="url(#a14)" stroke="#0055a0" stroke-width="2.5" x1="430" x2="446" y1="75" y2="75"></line>
+<text class="d14" x="30" y="116">Motivo: NO SÉ o NO PUEDO resolverlo. Aporta conocimiento técnico y permisos. No aporta autoridad.</text>
+<line stroke="#ddd" stroke-width="1" x1="20" x2="660" y1="128" y2="128"></line>
+<text class="k14" text-anchor="middle" x="200" y="150">JERÁRQUICO (vertical) → busca QUIEN DECIDA</text>
+<rect fill="#0055a0" height="30" rx="5" width="180" x="30" y="244"></rect><text class="t14" text-anchor="middle" x="120" y="264">TÉCNICO DEL CAU</text>
+<rect fill="#e89822" height="30" rx="5" width="180" x="30" y="200"></rect><text class="t14" text-anchor="middle" x="120" y="220">RESPONSABLE DEL CAU</text>
+<rect fill="#d13c3c" height="30" rx="5" width="180" x="30" y="156"></rect><text class="t14" text-anchor="middle" x="120" y="176">DIRECCIÓN / JEFATURA</text>
+<line marker-end="url(#b14)" stroke="#d13c3c" stroke-width="2.5" x1="120" x2="120" y1="243" y2="232"></line>
+<line marker-end="url(#b14)" stroke="#d13c3c" stroke-width="2.5" x1="120" x2="120" y1="199" y2="188"></line>
+<rect fill="#fbeaea" height="118" rx="5" width="430" x="230" y="156"></rect>
+<text class="k14" x="245" y="176">CUÁNDO SE ESCALA JERÁRQUICAMENTE</text>
+<text class="d14" x="245" y="196">· Se van a incumplir los plazos comprometidos en el SLA</text>
+<text class="d14" x="245" y="214">· Hace falta AUTORIZAR una parada, un gasto o una excepción</text>
+<text class="d14" x="245" y="232">· El impacto es institucional y exige comunicación a la dirección</text>
+<text class="d14" x="245" y="250">· Hay conflicto de prioridades entre áreas y alguien debe arbitrar</text>
+<text class="d14" x="245" y="268">· Se activa el procedimiento de incidencia grave</text>
+<rect fill="#2d8659" height="26" rx="5" width="315" x="20" y="286"></rect>
+<text class="t14" text-anchor="middle" x="177" y="304">Pueden coexistir en la misma incidencia</text>
+<rect fill="#0055a0" height="26" rx="5" width="315" x="345" y="286"></rect>
+<text class="t14" text-anchor="middle" x="502" y="304">La PROPIEDAD del tique nunca se transfiere</text>
+</svg>

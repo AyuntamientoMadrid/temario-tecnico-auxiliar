@@ -1,0 +1,52 @@
+<svg aria-label="Esquema de la federación de identidad: el usuario se autentica ante el proveedor de identidad de su organización, que emite un aserto firmado al proveedor de servicio; la contraseña nunca llega a la plataforma. Se comparan SAML 2.0, OpenID Connect sobre OAuth 2.0 y SCIM 2.0 por su función" role="img" viewbox="0 0 680 344" xmlns="http://www.w3.org/2000/svg">
+<style>.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 10px system-ui,sans-serif;fill:#0055a0}.d3{font:9px system-ui,sans-serif;fill:#333}.n3{font:8.5px system-ui,sans-serif;fill:#666}.w3{font:700 10px system-ui,sans-serif;fill:#fff}.r3{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}.g3{font:700 9.5px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h3" text-anchor="middle" x="340" y="19">Identidad federada: quién autentica, quién autoriza y quién aprovisiona</text>
+<rect fill="#0055a0" height="46" rx="5" width="150" x="30" y="40"></rect>
+<text class="w3" text-anchor="middle" x="105" y="60">USUARIO</text>
+<text style="fill:#dce8f4;font:8.5px system-ui,sans-serif" text-anchor="middle" x="105" y="76">Empleado municipal</text>
+<rect fill="#0055a0" height="46" rx="5" width="150" x="265" y="40"></rect>
+<text class="w3" text-anchor="middle" x="340" y="60">PROVEEDOR DE IDENTIDAD</text>
+<text style="fill:#dce8f4;font:8.5px system-ui,sans-serif" text-anchor="middle" x="340" y="76">Directorio del Ayuntamiento</text>
+<rect fill="#2d8659" height="46" rx="5" width="150" x="500" y="40"></rect>
+<text class="w3" text-anchor="middle" x="575" y="60">PROVEEDOR DE SERVICIO</text>
+<text style="fill:#dff0e8;font:8.5px system-ui,sans-serif" text-anchor="middle" x="575" y="76">Plataforma colaborativa</text>
+<line marker-end="url(#a3)" stroke="#0055a0" stroke-width="1.6" x1="180" x2="258" y1="56" y2="56"></line>
+<text class="n3" text-anchor="middle" x="219" y="51">1. Credencial</text>
+<line marker-end="url(#a3b)" stroke="#2d8659" stroke-width="1.6" x1="415" x2="493" y1="70" y2="70"></line>
+<text class="g3" text-anchor="middle" x="454" y="63">2. Aserto</text>
+<defs>
+<marker id="a3" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker>
+<marker id="a3b" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#2d8659"></path></marker>
+</defs>
+<rect fill="#fbe9e9" height="24" rx="4" width="636" x="22" y="98"></rect>
+<text class="r3" text-anchor="middle" x="340" y="114">LA CONTRASEÑA NUNCA LLEGA AL PROVEEDOR DE SERVICIO — solo llega una afirmación firmada por el proveedor de identidad</text>
+<rect fill="#eef4fa" height="94" rx="4" width="206" x="22" y="134"></rect>
+<rect fill="#0055a0" height="20" rx="4" width="206" x="22" y="134"></rect>
+<text class="w3" text-anchor="middle" x="125" y="148">SAML 2.0 — AUTENTICA</text>
+<text class="d3" x="32" y="170">OASIS, marzo de 2005. XML</text>
+<text class="d3" x="32" y="184">Unidad: el ASERTO (autenticación,</text>
+<text class="d3" x="32" y="197">atributo, decisión de autorización)</text>
+<text class="d3" x="32" y="210">Perfil de navegador con POST</text>
+<text class="n3" x="32" y="220">El clásico de la federación en las AAPP</text>
+<rect fill="#eef4fa" height="94" rx="4" width="206" x="237" y="134"></rect>
+<rect fill="#0055a0" height="20" rx="4" width="206" x="237" y="134"></rect>
+<text class="w3" text-anchor="middle" x="340" y="148">OAuth 2.0 + OIDC</text>
+<text class="d3" x="247" y="170">OAuth 2.0 = RFC 6749: AUTORIZA</text>
+<text class="d3" x="247" y="184">OpenID Connect = capa encima:</text>
+<text class="d3" x="247" y="197">AUTENTICA, con testigo de identidad</text>
+<text class="d3" x="247" y="210">en formato JWT (RFC 7519)</text>
+<text class="n3" x="247" y="220">OAuth por sí solo NO autentica</text>
+<rect fill="#e6f2ec" height="94" rx="4" width="206" x="452" y="134"></rect>
+<rect fill="#2d8659" height="20" rx="4" width="206" x="452" y="134"></rect>
+<text class="w3" text-anchor="middle" x="555" y="148">SCIM 2.0 — APROVISIONA</text>
+<text class="d3" x="462" y="170">RFC 7643 esquema · RFC 7644</text>
+<text class="d3" x="462" y="184">protocolo (API REST sobre JSON)</text>
+<text class="d3" x="462" y="197">Crea, modifica y BORRA cuentas</text>
+<text class="d3" x="462" y="210">Alta y baja propagadas solas</text>
+<text class="n3" x="462" y="220">Sin él nacen las cuentas huérfanas</text>
+<rect fill="none" height="46" rx="5" stroke="#0055a0" stroke-width="1.5" width="636" x="22" y="242"></rect>
+<text class="k3" text-anchor="middle" x="340" y="260">LA FRASE QUE HAY QUE LLEVAR MEMORIZADA</text>
+<text class="k3" text-anchor="middle" x="340" y="276">«OAuth 2.0 AUTORIZA · OpenID Connect AUTENTICA · SCIM APROVISIONA»</text>
+<text class="d3" text-anchor="middle" x="340" y="304">El ENS lo exige en op.acc.5 (usuarios externos) y op.acc.6 (usuarios de la organización), que empujan hacia el segundo factor en MEDIA y ALTA</text>
+<text class="n3" text-anchor="end" x="658" y="332">[Fuente: OASIS SAML 2.0 · RFC 6749 · RFC 7519 · RFC 7643 y 7644]</text>
+</svg>

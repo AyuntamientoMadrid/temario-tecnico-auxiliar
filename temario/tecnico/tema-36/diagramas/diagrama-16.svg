@@ -1,0 +1,33 @@
+<svg aria-label="Taxonomía de redes privadas virtuales: por topología, de sitio a sitio que une dos redes entre pasarelas, y de acceso remoto que une un dispositivo con una red; por nivel del modelo, protocolos de nivel dos como PPTP y L2TP, de nivel tres como IPsec y GRE, y de niveles superiores como las VPN basadas en TLS. Se marca cuáles cifran y cuáles no: L2TP, GRE y MPLS no cifran, PPTP está roto, y ESP y TLS sí cifran" role="img" viewbox="0 0 680 364" xmlns="http://www.w3.org/2000/svg">
+<style>.h16{font:700 13px system-ui,sans-serif;fill:#0055a0}.k16{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.t16{font:700 9.5px system-ui,sans-serif;fill:#fff}.s16{font:8px system-ui,sans-serif;fill:#fff}.d16{font:8.5px system-ui,sans-serif;fill:#333}.b16{font:700 9px system-ui,sans-serif;fill:#0055a0}.n16{font:8px system-ui,sans-serif;fill:#666}.a16{font:8px system-ui,sans-serif;fill:#666}.hd16{font:700 8.5px system-ui,sans-serif;fill:#fff}.r16{font:700 8.5px system-ui,sans-serif;fill:#d13c3c}.g16{font:700 8.5px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h16" text-anchor="middle" x="340" y="20">Túnel + cifrado = VPN. Sin cifrado solo hay túnel</text>
+<text class="k16" x="20" y="42">CLASIFICACIÓN 1 · POR TOPOLOGÍA Y PROPÓSITO</text>
+<rect fill="#eef4fa" height="90" rx="5" stroke="#0055a0" width="316" x="20" y="50"></rect>
+<text class="b16" text-anchor="middle" x="178" y="66">SITIO A SITIO — une DOS REDES</text>
+<rect fill="#0055a0" height="30" rx="3" width="76" x="34" y="76"></rect><text class="s16" text-anchor="middle" x="72" y="95">Red CPD</text>
+<rect fill="#e89822" height="30" rx="3" width="42" x="118" y="76"></rect><text class="s16" text-anchor="middle" x="139" y="95">GW</text>
+<rect fill="#999" height="30" rx="3" width="42" x="168" y="76"></rect><text class="s16" text-anchor="middle" x="189" y="95">WAN</text>
+<rect fill="#e89822" height="30" rx="3" width="42" x="218" y="76"></rect><text class="s16" text-anchor="middle" x="239" y="95">GW</text>
+<rect fill="#0055a0" height="30" rx="3" width="54" x="268" y="76"></rect><text class="s16" text-anchor="middle" x="295" y="95">Distrito</text>
+<text class="d16" x="34" y="122">Permanente · autentican las PASARELAS · el usuario no instala nada</text>
+<text class="d16" x="34" y="133">Tecnología: IPsec en MODO TÚNEL con ESP</text>
+<rect fill="#eef7f1" height="90" rx="5" stroke="#2d8659" width="316" x="344" y="50"></rect>
+<text class="b16" text-anchor="middle" x="502" y="66">ACCESO REMOTO — une UN DISPOSITIVO</text>
+<rect fill="#2d8659" height="30" rx="3" width="76" x="358" y="76"></rect><text class="s16" text-anchor="middle" x="396" y="95">Portátil</text>
+<rect fill="#999" height="30" rx="3" width="42" x="442" y="76"></rect><text class="s16" text-anchor="middle" x="463" y="95">Internet</text>
+<rect fill="#e89822" height="30" rx="3" width="54" x="492" y="76"></rect><text class="s16" text-anchor="middle" x="519" y="95">Pasarela</text>
+<rect fill="#2d8659" height="30" rx="3" width="92" x="554" y="76"></rect><text class="s16" text-anchor="middle" x="600" y="95">Segmento teletrabajo</text>
+<text class="d16" x="358" y="122">Por sesión · autentica el USUARIO · requiere cliente o navegador</text>
+<text class="d16" x="358" y="133">Tecnología: SSL/TLS VPN o IPsec con IKEv2</text>
+<text class="k16" x="20" y="158">CLASIFICACIÓN 2 · POR NIVEL DEL MODELO, Y QUIÉN CIFRA DE VERDAD</text>
+<rect fill="#0055a0" height="20" rx="3" width="640" x="20" y="166"></rect>
+<text class="hd16" x="30" y="180">NIVEL</text><text class="hd16" x="110" y="180">PROTOCOLO</text><text class="hd16" x="242" y="180">RFC</text><text class="hd16" x="330" y="180">PUERTO O Nº</text><text class="hd16" x="440" y="180">¿CIFRA?</text><text class="hd16" x="524" y="180">SITUACIÓN EN 2026</text>
+<rect fill="#fdeeee" height="20" width="640" x="20" y="188"></rect><text class="d16" x="30" y="202">2 · Enlace</text><text class="d16" x="110" y="202">PPTP</text><text class="d16" x="242" y="202">2637</text><text class="d16" x="330" y="202">TCP 1723 + GRE</text><text class="r16" x="440" y="202">Sí, pero ROTO</text><text class="r16" x="524" y="202">PROHIBIDO</text>
+<rect fill="#fff" height="20" width="640" x="20" y="210"></rect><text class="d16" x="30" y="224">2 · Enlace</text><text class="d16" x="110" y="224">L2TP y L2TPv3</text><text class="d16" x="242" y="224">2661 · 3931</text><text class="d16" x="330" y="224">UDP 1701</text><text class="r16" x="440" y="224">NO</text><text class="d16" x="524" y="224">Válido SOLO como L2TP/IPsec</text>
+<rect fill="#f7f9fc" height="20" width="640" x="20" y="232"></rect><text class="d16" x="30" y="246">3 · Red</text><text class="d16" x="110" y="246">GRE</text><text class="d16" x="242" y="246">2784</text><text class="d16" x="330" y="246">Protocolo IP 47</text><text class="r16" x="440" y="246">NO</text><text class="d16" x="524" y="246">Vigente, siempre bajo IPsec</text>
+<rect fill="#fff" height="20" width="640" x="20" y="254"></rect><text class="d16" x="30" y="268">3 · Red</text><text class="d16" x="110" y="268">IPsec — AH</text><text class="d16" x="242" y="268">4302</text><text class="d16" x="330" y="268">Protocolo IP 51</text><text class="r16" x="440" y="268">NO — integridad</text><text class="d16" x="524" y="268">En desuso; falla con NAT</text>
+<rect fill="#eef7f1" height="20" width="640" x="20" y="276"></rect><text class="d16" x="30" y="290">3 · Red</text><text class="d16" x="110" y="290">IPsec — ESP</text><text class="d16" x="242" y="290">4303</text><text class="d16" x="330" y="290">Protocolo IP 50</text><text class="g16" x="440" y="290">SÍ</text><text class="g16" x="524" y="290">EL ESTÁNDAR</text>
+<rect fill="#fff" height="20" width="640" x="20" y="298"></rect><text class="d16" x="30" y="312">— · Claves</text><text class="d16" x="110" y="312">IKEv2</text><text class="d16" x="242" y="312">7296 (STD 79)</text><text class="d16" x="330" y="312">UDP 500 y 4500</text><text class="d16" x="440" y="312">Negocia las claves</text><text class="d16" x="524" y="312">Vigente; IKEv1 obsoleto</text>
+<rect fill="#eef7f1" height="20" width="640" x="20" y="320"></rect><text class="d16" x="30" y="334">4-7</text><text class="d16" x="110" y="334">SSL/TLS VPN</text><text class="d16" x="242" y="334">9846</text><text class="d16" x="330" y="334">TCP 443</text><text class="g16" x="440" y="334">SÍ</text><text class="g16" x="524" y="334">Vigente: TLS 1.2 y 1.3</text>
+<text class="n16" x="20" y="356">[Fuente: RFC 2637, 2661, 2784, 3931, 4302, 4303, 7296, 9395 y 9846 — verificados contra el índice oficial del RFC Editor · CCN-STIC-836]</text>
+</svg>

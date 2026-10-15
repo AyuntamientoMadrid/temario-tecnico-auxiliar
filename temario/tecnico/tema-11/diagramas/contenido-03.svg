@@ -1,0 +1,31 @@
+<svg aria-label="Pirámide de tipos de sistemas de información por nivel organizacional: TPS-Operativo, MIS-Gestión, DSS-Analítico, EIS-Estratégico" role="img" viewbox="0 0 600 360" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .tps-eis{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .tps-eis-dark{font:700 14px system-ui,sans-serif;fill:#0a2540;text-anchor:middle}
+    .tps-user{font:11px system-ui,sans-serif;fill:#1a1a1a}
+    .tps-title{font:700 13px system-ui,sans-serif;fill:#003d73}
+    .tps-axis{font:italic 11px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}
+  </style>
+<polygon fill="#003d73" points="275,30 325,30 340,75 260,75"></polygon>
+<polygon fill="#0055a0" points="260,75 340,75 360,130 240,130"></polygon>
+<polygon fill="#3378b9" points="240,130 360,130 385,195 215,195"></polygon>
+<polygon fill="#6ea3d2" points="215,195 385,195 415,270 185,270"></polygon>
+<text class="tps-eis" x="300" y="56">EIS</text>
+<text class="tps-eis" x="300" y="107">DSS</text>
+<text class="tps-eis" x="300" y="167">MIS</text>
+<text class="tps-eis-dark" x="300" y="237">TPS</text>
+<line stroke="#0055a0" stroke-width="1" x1="415" x2="455" y1="50" y2="50"></line>
+<text class="tps-title" x="460" y="40">Estratégico</text>
+<text class="tps-user" x="460" y="55">Alta dirección</text>
+<line stroke="#0055a0" stroke-width="1" x1="415" x2="455" y1="102" y2="102"></line>
+<text class="tps-title" x="460" y="92">Analítico</text>
+<text class="tps-user" x="460" y="107">Analistas</text>
+<line stroke="#0055a0" stroke-width="1" x1="415" x2="455" y1="162" y2="162"></line>
+<text class="tps-title" x="460" y="152">Gestión / Táctico</text>
+<text class="tps-user" x="460" y="167">Mandos medios</text>
+<line stroke="#0055a0" stroke-width="1" x1="415" x2="455" y1="230" y2="230"></line>
+<text class="tps-title" x="460" y="220">Operativo</text>
+<text class="tps-user" x="460" y="235">Operarios</text>
+<text class="tps-axis" x="300" y="305">Cima: más agregación, menos volumen de datos</text>
+<text class="tps-axis" x="300" y="325">Base: menos agregación, más volumen de datos</text>
+</svg>

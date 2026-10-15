@@ -1,0 +1,43 @@
+<svg aria-label="Comparación de los modelos de virtualización del puesto de usuario: VDI con una máquina virtual y un sistema operativo de cliente por usuario, escritorios basados en sesiones con un único sistema operativo de servidor compartido por muchas sesiones, y virtualización de aplicaciones que entrega solo la aplicación empaquetada en una burbuja aislada" role="img" viewbox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t10{font:700 10.5px system-ui,sans-serif;fill:#fff}.s10{font:9px system-ui,sans-serif;fill:#fff}.h10{font:700 13px system-ui,sans-serif;fill:#0055a0}.k10{font:700 10.5px system-ui,sans-serif;fill:#0055a0}.n10{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h10" text-anchor="middle" x="340" y="20">Qué se virtualiza en cada modelo de puesto de trabajo</text>
+<rect fill="#0055a0" height="26" rx="4" width="206" x="20" y="34"></rect><text class="t10" text-anchor="middle" x="123" y="52">VDI — se virtualiza LA MÁQUINA</text>
+<rect fill="#2d8659" height="26" rx="4" width="206" x="237" y="34"></rect><text class="t10" style="font-size:10px" text-anchor="middle" x="340" y="52">SESIONES — el SISTEMA OPERATIVO</text>
+<rect fill="#e89822" height="26" rx="4" width="206" x="454" y="34"></rect><text class="t10" text-anchor="middle" x="557" y="52">APLICACIONES — LA APLICACIÓN</text>
+<rect fill="#888" height="52" rx="3" width="60" x="26" y="68"></rect><text class="s10" text-anchor="middle" x="56" y="87">Usuario 1</text><text class="s10" text-anchor="middle" x="56" y="102">SO cliente</text><text class="s10" text-anchor="middle" x="56" y="114">VM propia</text>
+<rect fill="#888" height="52" rx="3" width="60" x="93" y="68"></rect><text class="s10" text-anchor="middle" x="123" y="87">Usuario 2</text><text class="s10" text-anchor="middle" x="123" y="102">SO cliente</text><text class="s10" text-anchor="middle" x="123" y="114">VM propia</text>
+<rect fill="#888" height="52" rx="3" width="60" x="160" y="68"></rect><text class="s10" text-anchor="middle" x="190" y="87">Usuario 3</text><text class="s10" text-anchor="middle" x="190" y="102">SO cliente</text><text class="s10" text-anchor="middle" x="190" y="114">VM propia</text>
+<rect fill="#0055a0" height="24" rx="3" width="194" x="26" y="124"></rect><text class="t10" text-anchor="middle" x="123" y="141">HIPERVISOR</text>
+<rect fill="#888" height="30" rx="3" width="60" x="243" y="68"></rect><text class="s10" text-anchor="middle" x="273" y="87">Sesión 1</text>
+<rect fill="#888" height="30" rx="3" width="60" x="310" y="68"></rect><text class="s10" text-anchor="middle" x="340" y="87">Sesión 2</text>
+<rect fill="#888" height="30" rx="3" width="60" x="377" y="68"></rect><text class="s10" text-anchor="middle" x="407" y="87">Sesión n</text>
+<rect fill="#2d8659" height="46" rx="3" width="194" x="243" y="102"></rect><text class="t10" text-anchor="middle" x="340" y="120">UN ÚNICO SO DE SERVIDOR</text><text class="s10" text-anchor="middle" x="340" y="135">compartido por todas las sesiones (RDSH)</text>
+<rect fill="#888" height="30" rx="3" width="194" x="460" y="68"></rect><text class="s10" text-anchor="middle" x="557" y="87">Escritorio del usuario (físico o virtual)</text>
+<rect fill="#e89822" height="46" rx="3" width="92" x="460" y="102"></rect><text class="s10" text-anchor="middle" x="506" y="120">Burbuja aislada</text><text class="s10" text-anchor="middle" x="506" y="135">App v1</text>
+<rect fill="#e89822" height="46" rx="3" width="92" x="562" y="102"></rect><text class="s10" text-anchor="middle" x="608" y="120">Burbuja aislada</text><text class="s10" text-anchor="middle" x="608" y="135">App v2</text>
+<rect fill="#eaf0f6" height="88" rx="4" stroke="#0055a0" width="194" x="26" y="156"></rect>
+<text class="n10" text-anchor="middle" x="123" y="174">Densidad: BAJA (decenas)</text>
+<text class="n10" text-anchor="middle" x="123" y="190">Coste por puesto: ALTO</text>
+<text style="font:700 9px system-ui;fill:#0055a0" text-anchor="middle" x="123" y="206">Aislamiento: ALTO</text>
+<text class="n10" text-anchor="middle" x="123" y="222">Personalización: ALTA</text>
+<text class="n10" text-anchor="middle" x="123" y="238">Compatibilidad de SO cliente</text>
+<rect fill="#eaf5ec" height="88" rx="4" stroke="#2d8659" width="194" x="243" y="156"></rect>
+<text class="n10" text-anchor="middle" x="340" y="174">Densidad: ALTA</text>
+<text style="font:700 9px system-ui;fill:#2d8659" text-anchor="middle" x="340" y="190">Coste por puesto: BAJO</text>
+<text class="n10" text-anchor="middle" x="340" y="206">Aislamiento: MEDIO</text>
+<text class="n10" text-anchor="middle" x="340" y="222">Personalización: LIMITADA</text>
+<text class="n10" text-anchor="middle" x="340" y="238">Un cuelgue afecta a TODOS</text>
+<rect fill="#fdf3e3" height="88" rx="4" stroke="#e89822" width="194" x="460" y="156"></rect>
+<text class="n10" text-anchor="middle" x="557" y="174">No virtualiza el escritorio</text>
+<text class="n10" text-anchor="middle" x="557" y="190">Resuelve CONFLICTOS entre</text>
+<text class="n10" text-anchor="middle" x="557" y="204">versiones de aplicaciones</text>
+<text class="n10" text-anchor="middle" x="557" y="222">Entrega bajo demanda</text>
+<text class="n10" text-anchor="middle" x="557" y="238">Coste inicial: empaquetado</text>
+<rect fill="#0055a0" height="34" rx="4" width="640" x="20" y="254"></rect>
+<text class="t10" style="font-size:10px" text-anchor="middle" x="340" y="268">NO SON EXCLUYENTES: lo habitual es usar virtualización de APLICACIONES dentro de un escritorio VDI o de sesiones</text>
+<text class="s10" text-anchor="middle" x="340" y="282">y asignar cada colectivo al modelo que le corresponde según su perfil de uso</text>
+<rect fill="none" height="24" rx="4" stroke="#d13c3c" stroke-width="2" width="640" x="20" y="296"></rect>
+<text style="font:700 10px system-ui;fill:#a02020" text-anchor="middle" x="340" y="312">CLIENTE LIGERO = el dispositivo terminal · VDI = la arquitectura del lado del servidor. No es lo mismo</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="336">[Fuente: HORIZON-DOC; CITRIX-DOC; AVD-DOC; APPV]</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="352">Un cuarto modelo, la virtualización en el propio cliente, ejecuta la VM en el equipo del usuario</text>
+</svg>

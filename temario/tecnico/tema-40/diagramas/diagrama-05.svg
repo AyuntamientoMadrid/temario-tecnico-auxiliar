@@ -1,0 +1,46 @@
+<svg aria-label="Las tres familias de solución a la edición concurrente de documentos: bloqueo pesimista, transformación operacional con servidor central y tipos de datos replicados sin conflictos o CRDT, comparadas por simultaneidad, necesidad de servidor central y soporte de trabajo sin conexión" role="img" viewbox="0 0 680 346" xmlns="http://www.w3.org/2000/svg">
+<style>.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.k5{font:700 10px system-ui,sans-serif;fill:#0055a0}.d5{font:9px system-ui,sans-serif;fill:#333}.n5{font:8.5px system-ui,sans-serif;fill:#666}.w5{font:700 10px system-ui,sans-serif;fill:#fff}.r5{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}.g5{font:700 9.5px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h5" text-anchor="middle" x="340" y="19">Edición concurrente: las tres únicas familias de solución</text>
+<rect fill="#fbe9e9" height="26" rx="4" width="636" x="22" y="30"></rect>
+<text class="r5" text-anchor="middle" x="340" y="47">EL PROBLEMA: LA ACTUALIZACIÓN PERDIDA — dos personas abren el mismo documento y gana quien guarda la última</text>
+<rect fill="#eef4fa" height="150" rx="4" width="206" x="22" y="66"></rect>
+<rect fill="#0055a0" height="22" rx="4" width="206" x="22" y="66"></rect>
+<text class="w5" text-anchor="middle" x="125" y="82">1 · BLOQUEO (pesimista)</text>
+<text class="d5" x="32" y="104">Quien abre RESERVA el documento</text>
+<text class="d5" x="32" y="117">y nadie más escribe hasta que</text>
+<text class="d5" x="32" y="130">lo devuelve. Método LOCK de</text>
+<text class="d5" x="32" y="143">WebDAV (RFC 4918)</text>
+<text class="g5" x="32" y="163">+ Cero conflictos posibles</text>
+<text class="g5" x="32" y="176">+ Simple de auditar</text>
+<text class="r5" x="32" y="192">− CERO SIMULTANEIDAD</text>
+<text class="r5" x="32" y="205">− Bloqueo huérfano</text>
+<rect fill="#fdf3e3" height="150" rx="4" width="206" x="237" y="66"></rect>
+<rect fill="#e89822" height="22" rx="4" width="206" x="237" y="66"></rect>
+<text class="w5" text-anchor="middle" x="340" y="82">2 · TRANSFORMACIÓN OPERACIONAL</text>
+<text class="d5" x="247" y="104">No se transmite el documento:</text>
+<text class="d5" x="247" y="117">se transmiten OPERACIONES, que</text>
+<text class="d5" x="247" y="130">se transforman una contra otra</text>
+<text class="d5" x="247" y="143">para converger (Ellis y Gibbs)</text>
+<text class="g5" x="247" y="163">+ Simultaneidad real</text>
+<text class="g5" x="247" y="176">+ Carácter a carácter</text>
+<text class="r5" x="247" y="192">− NECESITA SERVIDOR CENTRAL</text>
+<text class="r5" x="247" y="205">− Difícil de implementar bien</text>
+<rect fill="#e6f2ec" height="150" rx="4" width="206" x="452" y="66"></rect>
+<rect fill="#2d8659" height="22" rx="4" width="206" x="452" y="66"></rect>
+<text class="w5" text-anchor="middle" x="555" y="82">3 · CRDT (sin conflictos)</text>
+<text class="d5" x="462" y="104">Las estructuras se diseñan para</text>
+<text class="d5" x="462" y="117">que las operaciones CONMUTEN:</text>
+<text class="d5" x="462" y="130">da igual el orden de llegada</text>
+<text class="d5" x="462" y="143">Los hay de estado y de operación</text>
+<text class="g5" x="462" y="163">+ NO NECESITA SERVIDOR CENTRAL</text>
+<text class="g5" x="462" y="176">+ Base del modo SIN CONEXIÓN</text>
+<text class="r5" x="462" y="192">− Coste en metadatos</text>
+<text class="n5" x="462" y="205">Shapiro y otros, INRIA, 2011</text>
+<rect fill="none" height="46" rx="5" stroke="#0055a0" stroke-width="1.5" width="636" x="22" y="230"></rect>
+<text class="k5" text-anchor="middle" x="340" y="248">LA PISTA QUE DELATA LA RESPUESTA EN UN ENUNCIADO</text>
+<text class="d5" text-anchor="middle" x="340" y="265">Si el enunciado menciona MODO SIN CONEXIÓN o SINCRONIZACIÓN ENTRE VARIOS DISPOSITIVOS del mismo usuario, la respuesta es CRDT</text>
+<rect fill="#fdf3e3" height="34" rx="4" width="636" x="22" y="286"></rect>
+<text class="k5" x="32" y="301">Y LO QUE NO RESUELVE NINGUNA DE LAS TRES: SACAR EL DOCUMENTO FUERA</text>
+<text class="d5" x="32" y="314">Antes de publicar hay que congelar la versión, exportarla al formato del ENI y LIMPIARLA de metadatos y comentarios — es mp.info.5</text>
+<text class="n5" text-anchor="end" x="658" y="336">[Fuente: Ellis, Gibbs y Rein (1991) · Shapiro y otros (2011) · RFC 4918 · RD 311/2022]</text>
+</svg>

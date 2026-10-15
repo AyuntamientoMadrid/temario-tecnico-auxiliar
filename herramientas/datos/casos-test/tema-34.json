@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿qué prefijo corresponde a la subred de los 420 puestos de usuario dentro del bloque 10.30.16.0/22?",
+    "o": [
+     "Un /24, con 254 direcciones asignables.",
+     "Un /23, con 510 direcciones asignables.",
+     "Un /22, con 1.022 direcciones asignables."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §6.1",
+    "e": "420 puestos no caben en un /24; el /23 es el tamaño mínimo que los cubre, y asignar el /22 entero no dejaría sitio a las demás subredes."
+   },
+   {
+    "q": "¿Qué prefijo corresponde a la subred de los 90 teléfonos IP?",
+    "o": [
+     "Un /26, con 62 direcciones asignables.",
+     "Un /27, con 30 direcciones asignables.",
+     "Un /25, con 126 direcciones asignables."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §6.1",
+    "e": "Con máscara de longitud variable se asigna a cada subred el tamaño mínimo que la cubre: 90 teléfonos no caben en un /26 y sí en un /25."
+   },
+   {
+    "q": "La subred de las 40 cámaras es 10.30.18.128/26. ¿Cuál es su dirección de difusión?",
+    "o": [
+     "10.30.18.191",
+     "10.30.18.255",
+     "10.30.18.127"
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §6.1",
+    "e": "Un /26 abarca 64 direcciones: de 10.30.18.128 a 10.30.18.191; la última es la de difusión y el rango asignable va de .129 a .190."
+   },
+   {
+    "q": "Asignadas las cinco subredes por orden de tamaño decreciente, ¿qué parte del bloque queda libre?",
+    "o": [
+     "Nada: el reparto con máscara variable consume siempre el bloque completo.",
+     "Todo el 10.30.19.0/24, un 25 % del bloque reservado para el crecimiento.",
+     "Solo las direcciones de red y de difusión de cada una de las cinco subredes."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §6.1",
+    "e": "Asignar por orden de tamaño decreciente y alineado evita solapamientos y deja libre un /24 completo, buena práctica en un diseño a cuatro años."
+   },
+   {
+    "q": "¿Es exigible a esta oficina la medida mp.com.4 del ENS, y qué refuerzo satisface la segmentación con VLAN?",
+    "o": [
+     "Sí: no aplica en BÁSICA pero sí en MEDIA, y las VLAN satisfacen el R1, que exige separar usuarios, servicios y administración.",
+     "No: mp.com.4 solo es exigible a los sistemas de categoría ALTA, y la oficina accede a un sistema de categoría MEDIA.",
+     "Sí, pero solo su refuerzo R3, que obliga a separar físicamente cada subred con cableado y conmutadores independientes."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §9.2 (mp.com.4)",
+    "e": "En categoría MEDIA se exige mp.com.4 más uno de los refuerzos R1, R2 o R3; el diseño, con cinco segmentos y una VLAN de gestión, cumple el R1 con holgura."
+   },
+   {
+    "q": "Si la oficina dispusiera también de red Wi-Fi, ¿qué exigiría el ENS sobre el diseño de segmentos?",
+    "o": [
+     "Integrar los equipos inalámbricos en la VLAN de puestos, para que hereden sus mismas reglas.",
+     "Nada adicional, porque las redes Wi-Fi quedan fuera del ámbito de mp.com.4.",
+     "Añadir un segmento separado para las comunicaciones inalámbricas (mp.com.4.2)."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §9.2 (mp.com.4.2)",
+    "e": "mp.com.4.2 dispone que, si hay comunicaciones inalámbricas, deben ir en un segmento separado, lo que obligaría a añadir una VLAN más."
+   },
+   {
+    "q": "El servidor DHCP está en el CPD. ¿Por qué el diseño no funcionaría sin un agente de retransmisión configurado en el encaminador?",
+    "o": [
+     "Porque DHCP usa TCP y el encaminador no reenvía conexiones de transporte.",
+     "Porque DISCOVER y REQUEST van por difusión, que no atraviesa encaminadores.",
+     "Porque el servidor DHCP solo atiende peticiones de su propia subred IP."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 3 · §8.1",
+    "e": "Sin agente, la petición moriría en su VLAN; el agente, configurado en la interfaz de cada VLAN con clientes, la convierte en unidifusión al servidor y le indica la subred de origen."
+   },
+   {
+    "q": "Si fallase el servicio DHCP, ¿qué le ocurriría a un puesto que arranca sin concesión previa?",
+    "o": [
+     "Conservaría la última dirección usada por otro equipo y accedería con normalidad a la sede.",
+     "Obtendría una dirección del encaminador, que asume el papel de servidor DHCP de respaldo.",
+     "Se autoasignaría una dirección 169.254.x.x y solo podría comunicarse dentro de su propio segmento."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §8.1",
+    "e": "Sin oferta, el equipo toma una dirección de enlace local (APIPA), sin puerta de enlace ni DNS; un puesto con concesión vigente seguiría funcionando hasta que expirase."
+   },
+   {
+    "q": "El puesto 10.30.16.50 accede a https://sede.madrid.es, alojada en el CPD. ¿Qué direcciones lleva la primera trama que sale del puesto?",
+    "o": [
+     "MAC destino del encaminador de la oficina e IP destino del servidor de la sede.",
+     "MAC destino del servidor de la sede e IP destino del encaminador de la oficina.",
+     "MAC e IP de destino del servidor de la sede, obtenidas ambas mediante una consulta DNS."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · §5.2, §6.4",
+    "e": "Al ver que el destino está fuera de su subred, el puesto envía la trama a la puerta de enlace, cuya MAC resuelve por ARP; la IP de destino es la del servidor."
+   },
+   {
+    "q": "¿Qué ocurre con las direcciones y cabeceras del paquete en cada encaminador del trayecto, sin traducción de direcciones?",
+    "o": [
+     "Cambian las direcciones IP y se mantienen las MAC; el TTL y la suma de comprobación no varían.",
+     "Cambian las MAC, se decrementa el TTL y se recalcula la suma de comprobación; las IP no cambian.",
+     "Se mantienen las direcciones MAC e IP; el encaminador solo modifica el puerto TCP de destino."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §6.4",
+    "e": "El encaminador construye una trama nueva para cada enlace, decrementa el TTL y, por eso, recalcula la suma de comprobación de la cabecera IP; no toca las IP ni la cabecera TCP."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, un puesto no abre sede.madrid.es («no se encuentra el servidor»), pero el ping a 10.10.5.20 responde. ¿Dónde está el fallo?",
+    "o": [
+     "En la capa física, por un cable dañado entre el puesto y la roseta.",
+     "En la capa de red, por un error de encaminamiento hacia el servidor.",
+     "En la capa de aplicación: la resolución DNS de ese puesto."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §8.1",
+    "e": "Si el ping a la IP funciona, cable, trama, encaminamiento y conectividad extremo a extremo están sanos; el problema solo puede estar por encima: la resolución del nombre."
+   },
+   {
+    "q": "¿Qué principio del modelo por capas permite localizar con precisión ese fallo a partir del ping?",
+    "o": [
+     "Que si una capa funciona, todas las inferiores funcionan: el ping (ICMP, capa 3) prueba las capas 1 a 3.",
+     "Que cada capa es independiente de las demás, de modo que el ping no informa sobre ninguna otra capa.",
+     "Que el ping es un servicio de capa 7, igual que el navegador, y por eso prueba la misma ruta que este."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §1.1, §8.1",
+    "e": "Es el principio de estratificación: cada capa presta servicio a la superior apoyándose en la inferior. Por eso se prueba de abajo arriba y se detiene la búsqueda en la primera capa que falla."
+   },
+   {
+    "q": "Todos los puestos de una planta tardan más de treinta segundos en abrir cualquier página, y las demás plantas van bien. ¿Dónde apunta el diagnóstico?",
+    "o": [
+     "Al servidor DNS corporativo, porque la lentitud afecta a la navegación web.",
+     "Al conmutador de planta o a su enlace ascendente, que es el elemento común.",
+     "A la aplicación de expedientes, porque es la más usada en esa planta."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §8.1",
+    "e": "Afecta a todas las aplicaciones de una planta y no de otras: apunta a capas 2 y 3 en el elemento común (velocidad o dúplex mal negociados, bucle o saturación del enlace)."
+   },
+   {
+    "q": "La aplicación de expedientes se conecta, pero la descarga de un documento grande se cuelga indefinidamente. ¿Cuál es la causa más probable?",
+    "o": [
+     "El servidor DNS devuelve una dirección distinta para las descargas de documentos grandes.",
+     "El ámbito DHCP se ha agotado y el puesto pierde la dirección al empezar la descarga.",
+     "Hay un enlace con MTU menor en el camino y se bloquea el ICMP tipo 3 código 4."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestiones 1 y 3 · §6.3",
+    "e": "El encaminador del enlace estrecho descarta el paquete grande con DF activo y avisa con ICMP tipo 3 código 4; si un cortafuegos bloquea ese aviso, el servidor nunca reduce el tamaño: es el agujero negro de la MTU."
+   },
+   {
+    "q": "¿Por qué, en ese mismo puesto, la conexión llega a establecerse y la pantalla de inicio se muestra?",
+    "o": [
+     "Porque los segmentos del saludo de tres vías son pequeños y caben en cualquier enlace.",
+     "Porque la pantalla de inicio se descarga por UDP, que no está sujeto a la MTU del camino.",
+     "Porque el saludo inicial se envía sin cabecera IP y no lo examina ningún cortafuegos."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §6.3, §7.2",
+    "e": "El fallo solo aparece cuando el servidor envía segmentos de tamaño máximo (paquetes de 1.500 octetos con DF activo); lo pequeño pasa."
+   },
+   {
+    "q": "¿Qué corrección es la adecuada para ese fallo?",
+    "o": [
+     "Bloquear todo el tráfico ICMP en los cortafuegos, para cerrar el paso a los paquetes que se pierden.",
+     "Permitir el ICMP tipo 3 código 4 en todos los cortafuegos del trayecto; ajustar el MSS solo como paliativo.",
+     "Desactivar el control de congestión de TCP en el servidor, para que reenvíe los segmentos más rápido."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §6.3",
+    "e": "Es la solución correcta; ajustar el MSS o reducir la MTU son paliativos. Bloquear todo ICMP es una mala práctica y este síntoma es su consecuencia más frecuente."
+   },
+   {
+    "q": "¿Por qué ese mismo bloqueo de ICMP sería todavía más grave si el tráfico fuera IPv6?",
+    "o": [
+     "Porque en IPv6 los encaminadores no fragmentan nunca y el descubrimiento de la MTU es el único mecanismo.",
+     "Porque IPv6 fragmenta siempre en cada salto, y el ICMP es necesario para volver a montar los fragmentos.",
+     "Porque IPv6 no usa ICMP, y cualquier bloqueo afecta a la resolución de nombres a través del DNS."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §6.2, §6.3",
+    "e": "En IPv6 el problema es estructural: bloquear el ICMPv6 «paquete demasiado grande» rompe la conectividad de forma sistemática."
+   },
+   {
+    "q": "El cuarto puesto muestra la dirección 169.254.83.12. ¿Qué indica?",
+    "o": [
+     "Que el puesto tiene una dirección fija mal tecleada por el técnico.",
+     "Que el servidor DNS no ha podido resolver el nombre del propio equipo.",
+     "Que no ha recibido respuesta de ningún servicio DHCP alcanzable."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §6.1, §8.1",
+    "e": "La dirección de enlace local (APIPA) la autoasigna el equipo solo cuando no hay respuesta DHCP: servidor caído, agente mal configurado, ámbito agotado o puerto en la VLAN equivocada."
+   },
+   {
+    "q": "¿Qué prueba confirma el diagnóstico del puesto cuya descarga grande se cuelga?",
+    "o": [
+     "Un ipconfig /renew, que debería mostrar mensajes DISCOVER repetidos sin ninguna oferta.",
+     "Un ping con tamaño creciente y el bit de no fragmentar activo, que falla a partir de cierto tamaño.",
+     "Un nslookup del nombre de la aplicación contra otro servidor DNS distinto del configurado."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · §6.3",
+    "e": "Con DF activo (ping -f -l en Windows, ping -M do -s en Linux), el ping funciona hasta cierto tamaño y deja de hacerlo sin devolver el ICMP: el umbral revela la MTU real del camino."
+   },
+   {
+    "q": "¿Qué herramientas confirman el diagnóstico del primer puesto, que no resuelve sede.madrid.es?",
+    "o": [
+     "Un traceroute hasta 10.10.5.20, que mostrará el salto en que se pierden los paquetes.",
+     "Los contadores de errores del puerto del conmutador al que está conectado el puesto.",
+     "nslookup o dig sobre el nombre e ipconfig /all para ver el DNS configurado en el puesto."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §8.1",
+    "e": "Si la consulta falla o devuelve una dirección incorrecta y la misma consulta contra otro servidor DNS resuelve, queda confirmado que el problema es de resolución y no de conectividad."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿qué estrategia técnica conviene para publicar la sede electrónica por IPv6?",
+    "o": [
+     "Doble pila, porque el objetivo es ser alcanzable desde redes solo IPv6, no ahorrar direcciones IPv4.",
+     "Traducción NAT64 y DNS64, porque es el mecanismo recomendado con carácter general por el IETF.",
+     "Túneles automáticos como 6to4 o Teredo, porque no exigen modificar la infraestructura perimetral."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §6.2",
+    "e": "La doble pila es el mecanismo recomendado; los túneles añaden un punto de fallo y algunos están desaconsejados por seguridad, y la traducción rompe el principio extremo a extremo y solo se justifica sin direcciones IPv4."
+   },
+   {
+    "q": "¿Qué debe hacerse en el DNS para que la sede sea alcanzable por IPv6?",
+    "o": [
+     "Sustituir el registro A por un registro AAAA con la dirección IPv6 del balanceador.",
+     "Publicar un registro AAAA con la IPv6 del balanceador, manteniendo el registro A.",
+     "Publicar un registro PTR con la IPv6 del balanceador y dejar el A sin cambios."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §6.2",
+    "e": "Con ambos registros, un cliente solo IPv6 usa el AAAA, uno solo IPv4 sigue igual y uno con doble pila elige según su preferencia."
+   },
+   {
+    "q": "¿Qué debe hacerse antes de publicar el registro AAAA?",
+    "o": [
+     "Nada: el AAAA puede publicarse primero y el filtrado IPv6 ajustarse cuando llegue tráfico.",
+     "Convertir a doble pila toda la red interna, el CPD y los puestos de las oficinas de distrito.",
+     "Replicar en IPv6 las reglas de filtrado y probar el servicio con clientes controlados."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §6.2",
+    "e": "Publicar el AAAA antes de probar el servicio provoca caídas para los clientes que prefieren IPv6; después se publica con tiempo de vida bajo, y la red interna se convierte en fases posteriores."
+   },
+   {
+    "q": "¿Qué instrumento ordena la incorporación de IPv6 en las Administraciones españolas?",
+    "o": [
+     "El Plan de fomento para la incorporación del protocolo IPv6 en España, de 29 de abril de 2011 (Orden PRE/1716/2011).",
+     "La Norma Técnica de Interoperabilidad de conexión a la red SARA, aprobada por Resolución de 19 de julio de 2011.",
+     "El Real Decreto 311/2022 del Esquema Nacional de Seguridad, en su medida mp.com.4 de separación de flujos."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 2 · §9.1",
+    "e": "Fue aprobado por Acuerdo de Consejo de Ministros de 29 de abril de 2011 y publicado mediante la Orden PRE/1716/2011."
+   },
+   {
+    "q": "¿Qué medida de ese plan tiene mayor alcance práctico para que el Ayuntamiento no siga «adquiriendo el problema»?",
+    "o": [
+     "La traducción NAT64 obligatoria en todas las sedes electrónicas de la Administración.",
+     "La supresión de IPv4 en todas las redes públicas a partir de la fecha de aprobación del plan.",
+     "La exigencia de soporte de IPv6 como requisito en la contratación pública de equipos y servicios."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §9.1",
+    "e": "Si todo equipo, servidor o servicio que se contrate debe soportar IPv6 de forma nativa, el parque deja de crecer con equipamiento incompatible."
+   },
+   {
+    "q": "¿Por qué publicar la sede por IPv6 no es una decisión meramente técnica?",
+    "o": [
+     "Porque la Ley 11/2022 obliga a todos los operadores a ofrecer a sus clientes únicamente conectividad IPv6.",
+     "Porque afecta al derecho a relacionarse electrónicamente y a la obligación de ciertos sujetos (arts. 13.a y 14 Ley 39/2015).",
+     "Porque el ENS prohíbe publicar solo por IPv4 los servicios electrónicos de los sistemas de categoría MEDIA."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §9.1 (arts. 13.a y 14 Ley 39/2015)",
+    "e": "Si un ciudadano no alcanza la sede desde su red, o un obligado no puede cumplir su obligación electrónica, el problema afecta al ejercicio de un derecho y al cumplimiento de un deber legal."
+   },
+   {
+    "q": "¿Cuál es el riesgo principal de seguridad que introduce la doble pila en la sede?",
+    "o": [
+     "La asimetría de filtrado: un cortafuegos afinado para IPv4 y abierto o inexistente para IPv6.",
+     "El agotamiento de las direcciones IPv4 públicas, que la doble pila consume el doble de rápido.",
+     "La pérdida del registro A, que deja la sede inaccesible para los ciudadanos que usan solo IPv4."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §6.2",
+    "e": "La doble pila duplica la superficie de exposición: hay que replicar todas las reglas en IPv6 antes de habilitarla y auditar la equivalencia."
+   },
+   {
+    "q": "¿Cómo se mitiga el riesgo de túneles automáticos como 6to4, Teredo o ISATAP que atraviesan el perímetro sin inspección?",
+    "o": [
+     "Publicando un registro AAAA con un tiempo de vida bajo, para poder revertir con rapidez.",
+     "Deshabilitándolos y bloqueando en el perímetro el protocolo IP 41 y el tráfico de Teredo.",
+     "Activando las extensiones de privacidad de IPv6 en todos los puestos de la red interna."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §6.2",
+    "e": "Si no se emplean, deben deshabilitarse expresamente y bloquearse en el perímetro, porque pueden encapsular tráfico IPv6 que escapa a la inspección."
+   },
+   {
+    "q": "En la conexión del organismo autónomo a la red SARA, ¿qué papel desempeña el Ayuntamiento de Madrid?",
+    "o": [
+     "El de órgano usuario final, que se conecta a SARA por su cuenta e independientemente del organismo.",
+     "El de órgano gestor de la red, que administra SARA y presta su soporte permanente a todas las AAPP.",
+     "El de proveedor de acceso: punto único de conexión para el organismo autónomo que depende de él."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §9.2",
+    "e": "Conforme a la Norma Técnica de Interoperabilidad de requisitos de conexión a la red de las AAPP (Resolución de 19 de julio de 2011), el organismo autónomo es usuario final y se conecta a través de su proveedor de acceso."
+   },
+   {
+    "q": "Establecida la conexión a SARA, ¿cómo se garantiza que el tráfico hacia otras Administraciones entre por SARA y no salga a internet?",
+    "o": [
+     "Con rutas específicas hacia los prefijos de SARA, que ganan a la ruta por defecto por la regla del prefijo más largo.",
+     "Con una ruta por defecto hacia SARA, de modo que todo el tráfico del organismo, también el de internet, pase por ella.",
+     "Con la misma salida a internet de siempre, porque SARA solo cambia el cifrado y no el encaminamiento del tráfico."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · §6.4, §9.2",
+    "e": "Cuando varias rutas encajan, se aplica la de prefijo más largo; además, el organismo no puede mantener su salida indiferenciada: la conexión exige un área propia con arquitectura de zona desmilitarizada."
+   }
+  ]
+ }
+]

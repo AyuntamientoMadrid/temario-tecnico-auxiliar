@@ -1,0 +1,42 @@
+<svg aria-label="Los cuatro modelos de entrada y salida en virtualización: emulación completa de dispositivo, dispositivo paravirtualizado tipo virtio, asignación directa con passthrough y SR-IOV con funciones virtuales, comparados en rendimiento, requisitos y compatibilidad con la migración en caliente" role="img" viewbox="0 0 680 346" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 10.5px system-ui,sans-serif;fill:#fff}.s6{font:9px system-ui,sans-serif;fill:#fff}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}.k6{font:700 10px system-ui,sans-serif;fill:#0055a0}.n6{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h6" text-anchor="middle" x="340" y="20">Modelos de E/S: del más flexible al más rápido</text>
+<rect fill="#888" height="30" rx="4" width="152" x="20" y="34"></rect><text class="t6" text-anchor="middle" x="96" y="54">1 · EMULACIÓN</text>
+<rect fill="#2d8659" height="30" rx="4" width="152" x="182" y="34"></rect><text class="t6" text-anchor="middle" x="258" y="54">2 · PARAVIRTUALIZADO</text>
+<rect fill="#e89822" height="30" rx="4" width="152" x="344" y="34"></rect><text class="t6" text-anchor="middle" x="420" y="54">3 · ASIGNACIÓN DIRECTA</text>
+<rect fill="#0055a0" height="30" rx="4" width="154" x="506" y="34"></rect><text class="t6" text-anchor="middle" x="583" y="54">4 · SR-IOV</text>
+<rect fill="#f2f6fa" height="26" rx="3" stroke="#888" width="152" x="20" y="70"></rect><text class="n6" text-anchor="middle" x="96" y="87">Máquina virtual</text>
+<rect fill="#f2f6fa" height="26" rx="3" stroke="#2d8659" width="152" x="182" y="70"></rect><text class="n6" text-anchor="middle" x="258" y="87">Máquina virtual</text>
+<rect fill="#f2f6fa" height="26" rx="3" stroke="#e89822" width="152" x="344" y="70"></rect><text class="n6" text-anchor="middle" x="420" y="87">Máquina virtual</text>
+<rect fill="#f2f6fa" height="26" rx="3" stroke="#0055a0" width="154" x="506" y="70"></rect><text class="n6" text-anchor="middle" x="583" y="87">VM A · VM B · VM C</text>
+<rect fill="#d13c3c" height="40" rx="3" width="152" x="20" y="102"></rect><text class="s6" text-anchor="middle" x="96" y="118">Dispositivo REAL emulado</text><text class="s6" text-anchor="middle" x="96" y="133">registro a registro</text>
+<rect fill="#2d8659" height="40" rx="3" width="152" x="182" y="102"></rect><text class="s6" text-anchor="middle" x="258" y="118">Controlador virtio en el</text><text class="s6" text-anchor="middle" x="258" y="133">huésped + colas compartidas</text>
+<rect fill="#e89822" height="40" rx="3" width="152" x="344" y="102"></rect><text class="s6" text-anchor="middle" x="420" y="118">Controlador NATIVO del</text><text class="s6" text-anchor="middle" x="420" y="133">huésped sobre el hardware</text>
+<rect fill="#0055a0" height="40" rx="3" width="154" x="506" y="102"></rect><text class="s6" text-anchor="middle" x="583" y="118">Una función virtual (VF)</text><text class="s6" text-anchor="middle" x="583" y="133">por máquina virtual</text>
+<rect fill="#0055a0" height="24" opacity="0.85" rx="3" width="314" x="20" y="148"></rect><text class="t6" text-anchor="middle" x="177" y="165">EL HIPERVISOR INTERVIENE EN CADA OPERACIÓN</text>
+<rect fill="#333" height="24" rx="3" width="316" x="344" y="148"></rect><text class="t6" text-anchor="middle" x="502" y="165">EL HIPERVISOR SE APARTA — requiere IOMMU</text>
+<rect fill="#333" height="26" rx="3" width="640" x="20" y="178"></rect><text class="t6" text-anchor="middle" x="340" y="196">HARDWARE FÍSICO (tarjeta de red, controladora de disco, GPU)</text>
+<text class="k6" text-anchor="middle" x="96" y="226">Rendimiento: BAJO</text>
+<text class="k6" text-anchor="middle" x="258" y="226">Rendimiento: ALTO</text>
+<text class="k6" text-anchor="middle" x="420" y="226">Rendimiento: MUY ALTO</text>
+<text class="k6" text-anchor="middle" x="583" y="226">Rendimiento: MUY ALTO</text>
+<rect fill="#f2f6fa" height="60" rx="4" stroke="#888" width="152" x="20" y="234"></rect>
+<text class="n6" text-anchor="middle" x="96" y="251">Sin requisitos</text>
+<text class="n6" text-anchor="middle" x="96" y="266">Migración: SÍ</text>
+<text class="n6" style="font-size:8.5px" text-anchor="middle" x="96" y="284">Instalación y huéspedes antiguos</text>
+<rect fill="#eaf5ec" height="60" rx="4" stroke="#2d8659" stroke-width="2" width="152" x="182" y="234"></rect>
+<text class="n6" text-anchor="middle" x="258" y="251">Controlador en el huésped</text>
+<text class="n6" text-anchor="middle" x="258" y="266">Migración: SÍ</text>
+<text style="font:700 9px system-ui;fill:#2d8659" text-anchor="middle" x="258" y="284">OPCIÓN POR DEFECTO</text>
+<rect fill="#fdf3e3" height="60" rx="4" stroke="#e89822" width="152" x="344" y="234"></rect>
+<text class="n6" text-anchor="middle" x="420" y="251">IOMMU obligatoria</text>
+<text style="font:700 9px system-ui;fill:#a02020" text-anchor="middle" x="420" y="266">Migración: NO</text>
+<text class="n6" style="font-size:8.5px" text-anchor="middle" x="420" y="284">GPU, cifrado, tarjetas especiales</text>
+<rect fill="#e8f0f8" height="60" rx="4" stroke="#0055a0" width="154" x="506" y="234"></rect>
+<text class="n6" text-anchor="middle" x="583" y="251">IOMMU + tarjeta compatible</text>
+<text style="font:700 9px system-ui;fill:#a02020" text-anchor="middle" x="583" y="266">Migración: NO</text>
+<text class="n6" style="font-size:8.5px" text-anchor="middle" x="583" y="284">Red de altísimo rendimiento, NFV</text>
+<rect fill="none" height="24" rx="4" stroke="#0055a0" stroke-width="2" width="440" x="120" y="302"></rect>
+<text class="k6" text-anchor="middle" x="340" y="318">virtio ES paravirtualización, aunque el huésped no esté paravirtualizado</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="336">[Fuente: VIRTIO; PCI-SRIOV; INTEL-VTD]</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg aria-label="Comparación entre dominio de colisión y dominio de difusión: el dominio de colisión coincide con cada puerto de conmutador y lo eliminó la conmutación, mientras que el dominio de difusión coincide con cada red local virtual o interfaz de encaminador; segmentar en VLAN reduce el dominio de difusión pero no el de colisión" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 11px system-ui,sans-serif;fill:#fff}.s2{font:9px system-ui,sans-serif;fill:#fff}.d2{font:9px system-ui,sans-serif;fill:#333}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}.k2{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n2{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h2" text-anchor="middle" x="340" y="20">Dominio de colisión frente a dominio de difusión</text>
+<rect fill="#0055a0" height="30" rx="5" width="316" x="20" y="34"></rect><text class="t2" text-anchor="middle" x="178" y="54">DOMINIO DE COLISIÓN</text>
+<rect fill="#2d8659" height="30" rx="5" width="316" x="344" y="34"></rect><text class="t2" text-anchor="middle" x="502" y="54">DOMINIO DE DIFUSIÓN</text>
+<text class="k2" x="24" y="82">¿QUÉ LO DELIMITA?</text>
+<rect fill="#eef3f8" height="30" rx="4" width="316" x="20" y="88"></rect><text class="d2" text-anchor="middle" x="178" y="107">Cada PUERTO de conmutador</text>
+<rect fill="#eef3f8" height="30" rx="4" width="316" x="344" y="88"></rect><text class="d2" text-anchor="middle" x="502" y="107">Cada VLAN, o cada interfaz de encaminador</text>
+<text class="k2" x="24" y="136">¿QUÉ TRÁFICO LO SATURA?</text>
+<rect fill="#f5f5f5" height="30" rx="4" width="316" x="20" y="142"></rect><text class="d2" text-anchor="middle" x="178" y="161">Transmisiones simultáneas en el medio</text>
+<rect fill="#f5f5f5" height="30" rx="4" width="316" x="344" y="142"></rect><text class="d2" text-anchor="middle" x="502" y="161">ARP, DHCP Discover, anuncios de servicios</text>
+<text class="k2" x="24" y="190">¿CÓMO SE REDUJO O SE REDUCE?</text>
+<rect fill="#eef3f8" height="34" rx="4" width="316" x="20" y="196"></rect><text class="d2" text-anchor="middle" x="178" y="211">Con la CONMUTACIÓN: en la práctica</text><text class="d2" text-anchor="middle" x="178" y="225">ya está eliminado en redes modernas</text>
+<rect fill="#e8f4ee" height="34" rx="4" width="316" x="344" y="196"></rect><text class="d2" text-anchor="middle" x="502" y="211">SEGMENTANDO en VLAN: es lo único</text><text class="d2" text-anchor="middle" x="502" y="225">que reduce el dominio de difusión</text>
+<rect fill="#fbeaea" height="26" rx="4" stroke="#d13c3c" stroke-width="1.2" width="640" x="20" y="242"></rect>
+<text class="d2" text-anchor="middle" x="340" y="259">Error clásico: «segmentar en VLAN reduce las colisiones». NO: reduce la DIFUSIÓN</text>
+<rect fill="none" height="26" rx="4" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="276"></rect>
+<text class="k2" text-anchor="middle" x="340" y="293">Dos VLAN nunca se comunican en nivel 2: hace falta encaminar (nivel 3)</text>
+<text class="n2" text-anchor="end" x="670" y="315">[Fuente: IEEE8023; IEEE8021Q]</text>
+</svg>

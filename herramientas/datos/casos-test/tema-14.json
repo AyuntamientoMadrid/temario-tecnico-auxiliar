@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿qué servicio de Windows centraliza la autenticación y la administración de los miles de puestos, y con qué protocolo autentica a los empleados?",
+    "o": [
+     "WSUS, que registra usuarios y equipos en un dominio y autentica mediante el chip TPM.",
+     "El Registro de Windows, que guarda los usuarios de cada puesto y autentica mediante UAC.",
+     "Active Directory, que organiza usuarios y equipos en un dominio y autentica mediante Kerberos."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §3.6",
+    "e": "Active Directory es el servicio de directorio que centraliza en un dominio la autenticación, los usuarios y los equipos; el protocolo de autenticación que emplea es Kerberos."
+   },
+   {
+    "q": "El técnico quiere imponer a la vez el bloqueo de pantalla, el cifrado y las restricciones de software en todos los puestos del dominio. ¿Qué mecanismo emplea?",
+    "o": [
+     "Las políticas de grupo (GPO), definidas en Active Directory y aplicadas a todos los equipos.",
+     "La edición del Registro con regedit en cada puesto, replicando a mano la misma configuración.",
+     "El Administrador de Control de Servicios, que propaga la configuración como un servicio más."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §3.6",
+    "e": "Las GPO se aplican desde Active Directory y llevan la misma configuración y seguridad de forma uniforme a miles de puestos, sin tocar equipo por equipo."
+   },
+   {
+    "q": "La configuración de seguridad que se distribuya por GPO a los puestos del Ayuntamiento, como sistemas del sector público, debe ajustarse a:",
+    "o": [
+     "El estándar POSIX (IEEE 1003), que fija la configuración segura de los puestos Windows.",
+     "Las guías CCN-STIC del Centro Criptológico Nacional, que definen el bastionado obligatorio.",
+     "La jerarquía FHS, que establece qué directorios del puesto deben quedar protegidos."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §2.5, §3.6",
+    "e": "En el sector público, el ENS y las guías CCN-STIC del Centro Criptológico Nacional definen el bastionado (hardening) de los sistemas operativos. POSIX y FHS son estándares de Unix/Linux."
+   },
+   {
+    "q": "Para impedir que los empleados instalen software o cambien la configuración del sistema, ¿qué medida es la adecuada?",
+    "o": [
+     "Retirar a los usuarios los derechos de administrador local y mantener UAC activo (mínimo privilegio).",
+     "Conceder a todos derechos de administrador local y confiar en el antivirus Defender para frenarlos.",
+     "Desactivar UAC para que los avisos no interrumpan y registrar después los cambios en el Visor de eventos."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §2.5, §3.6",
+    "e": "El principio de mínimo privilegio concede a cada usuario solo los permisos imprescindibles: sin administrador local y con UAC exigiendo confirmación para las acciones privilegiadas."
+   },
+   {
+    "q": "Un empleado intenta modificar una opción del sistema y aparece una ventana que pide confirmación con credenciales de administrador. ¿Qué componente actúa?",
+    "o": [
+     "Microsoft Defender, que bloquea la acción por considerarla un posible malware.",
+     "BitLocker, que exige las credenciales antes de permitir acceder al disco cifrado.",
+     "UAC (User Account Control), que pide confirmación para las acciones privilegiadas."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §3.6",
+    "e": "UAC solicita confirmación explícita para las acciones que requieren privilegios de administrador, aplicando el mínimo privilegio."
+   },
+   {
+    "q": "¿Cómo distribuiría el técnico los parches de seguridad a todo el parque de forma controlada?",
+    "o": [
+     "Dejando que cada usuario ejecute Windows Update cuando lo considere oportuno.",
+     "Centralizando el parcheado con WSUS o Intune, que aprueban y distribuyen las actualizaciones.",
+     "Instalando los parches con el gestor de paquetes APT desde repositorios firmados."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 3 · §3.6",
+    "e": "En entornos corporativos Windows Update se centraliza con WSUS o Microsoft Intune, que permiten aprobar y distribuir las actualizaciones; APT es el gestor de paquetes de Debian/Ubuntu."
+   },
+   {
+    "q": "Un responsable propone aplazar indefinidamente los parches del parque para evitar incidencias tras las actualizaciones. ¿Qué objeción técnica procede?",
+    "o": [
+     "Que un sistema operativo sin parchear es la principal vía de ataque contra los puestos.",
+     "Que los parches solo añaden funciones nuevas y nunca corrigen vulnerabilidades del sistema.",
+     "Que, con BitLocker activo en los puestos, aplazar el parcheado no tiene ningún efecto."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §2.5",
+    "e": "Las actualizaciones de seguridad corrigen periódicamente vulnerabilidades; un SO sin parchear es la principal vía de ataque, con o sin cifrado de disco."
+   },
+   {
+    "q": "La ventana de actualizaciones de los puestos (cuándo se instalan los parches) debe ser la misma en todo el dominio. ¿Dónde se configura de forma centralizada?",
+    "o": [
+     "En el Registro de cada puesto, que el usuario ajusta desde regedit.",
+     "En el TPM de cada portátil, que fija la hora de instalación de parches.",
+     "En una política de grupo (GPO) aplicada desde Active Directory."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestiones 2 y 3 · §3.6",
+    "e": "La ventana de actualizaciones forma parte de la configuración de seguridad que las GPO imponen de forma centralizada a todos los puestos del dominio."
+   },
+   {
+    "q": "Para que los datos de un portátil robado no puedan leerse, ¿qué tecnología de Windows aplicaría el técnico?",
+    "o": [
+     "ReFS, que protege la integridad de los datos del disco mediante checksums.",
+     "BitLocker, que cifra el disco completo del portátil.",
+     "Microsoft Defender, que impide abrir los ficheros desde otro equipo."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §3.6",
+    "e": "BitLocker es el cifrado de disco completo integrado en Windows: aunque roben el portátil, sin las credenciales el disco es ilegible."
+   },
+   {
+    "q": "¿En qué componente del portátil se apoya BitLocker para proteger el cifrado del disco?",
+    "o": [
+     "En el chip TPM del equipo.",
+     "En el Secure Enclave del procesador.",
+     "En la HAL del núcleo NT."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · §3.6",
+    "e": "BitLocker se apoya en el chip TPM. El Secure Enclave es el coprocesador de iOS y la HAL es la capa que abstrae el hardware en el núcleo NT."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "Para ver en tiempo real qué procesos del servidor consumen más CPU, el técnico ejecuta:",
+    "o": [
+     "df, que muestra los procesos ordenados por uso de CPU.",
+     "journalctl, que lista en directo el consumo de cada proceso.",
+     "top (o htop, o ps aux --sort=-%cpu)."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §2.1, §4.3",
+    "e": "top (o htop/ps) muestra los procesos por consumo de CPU; df informa del espacio en disco y journalctl consulta los registros de systemd."
+   },
+   {
+    "q": "Un proceso monopoliza la CPU. Los demás procesos, que están preparados para ejecutarse y solo les falta la CPU, ¿en qué estado se encuentran?",
+    "o": [
+     "Listo (ready), esperando en la cola de listos.",
+     "Bloqueado, esperando el fin de una E/S.",
+     "Nuevo, pendiente de que se cree su PCB."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §2.1",
+    "e": "Un proceso preparado que espera a que el planificador le asigne la CPU está en estado listo; el estado bloqueado corresponde a la espera de un evento como el fin de una E/S."
+   },
+   {
+    "q": "¿Cómo reparte la CPU un sistema operativo de tiempo compartido para que ningún proceso la acapare?",
+    "o": [
+     "Por orden de llegada (FCFS): cada proceso usa la CPU hasta terminar.",
+     "Por turnos con Round-Robin: cada proceso recibe un quantum y vuelve al final de la cola.",
+     "Por la ráfaga más corta (SJF): primero se atienden siempre los trabajos breves."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §2.1",
+    "e": "Round-Robin asigna a cada proceso un quantum de tiempo fijo y, al agotarlo, lo pasa al final de la cola de listos; es la base del tiempo compartido."
+   },
+   {
+    "q": "El servidor tiene poca RAM libre y mucho uso de swap. ¿Qué es la memoria virtual que está utilizando?",
+    "o": [
+     "Un espacio lógico por proceso mayor que la RAM, con el disco (swap) como respaldo.",
+     "Una ampliación física de la RAM que se obtiene usando la caché del procesador.",
+     "Un modo en que cada proceso usa directamente direcciones físicas de la RAM."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §2.2",
+    "e": "La memoria virtual da a cada proceso un espacio de direcciones lógico propio y mayor que la RAM; la MMU traduce las direcciones y las partes no usadas quedan en disco (swap)."
+   },
+   {
+    "q": "Los indicadores del servidor muestran muchísimos fallos de página. ¿Qué significa cada uno?",
+    "o": [
+     "Que una página tiene un error de escritura y el SO debe reparar el disco.",
+     "Que la MMU no puede traducir la dirección y el proceso se termina.",
+     "Que la página solicitada no está en RAM y el SO debe traerla de disco."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §2.2",
+    "e": "Un fallo de página se produce al acceder a una página que no está en RAM: el SO la trae de disco y, si no hay marcos libres, expulsa una víctima."
+   },
+   {
+    "q": "Con tan poca RAM, el servidor pasa más tiempo intercambiando páginas con el disco que ejecutando procesos. ¿Cómo se llama este fenómeno?",
+    "o": [
+     "Interbloqueo (deadlock).",
+     "Hiperpaginación (thrashing).",
+     "Inanición (starvation)."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §2.2",
+    "e": "Un exceso de fallos de página por falta de RAM provoca hiperpaginación: el sistema intercambia páginas en lugar de ejecutar y el rendimiento se desploma."
+   },
+   {
+    "q": "Diagnosticada la hiperpaginación en el servidor de la sede, ¿qué medida la resuelve?",
+    "o": [
+     "Reducir el quantum de Round-Robin para que los procesos roten más rápido.",
+     "Cambiar el planificador a FCFS para eliminar los cambios de contexto.",
+     "Ampliar la RAM del servidor o reducir la carga que soporta."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §2.2",
+    "e": "La hiperpaginación nace de la falta de memoria física, no de la planificación de la CPU: se corrige dando más RAM o reduciendo la carga."
+   },
+   {
+    "q": "¿Qué componente es el proceso PID 1 del servidor y gestiona el arranque y los servicios?",
+    "o": [
+     "systemd, que sustituyó al init tradicional de System V.",
+     "El init de System V, con sus runlevels de 0 a 6.",
+     "El VFS, que arranca los servicios del sistema."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §4.2, §4.3",
+    "e": "En Linux moderno el primer proceso (PID 1) es systemd, que sustituyó al init de System V y gestiona los servicios como units."
+   },
+   {
+    "q": "¿Con qué órdenes comprueba y reinicia el técnico el servicio web Apache y consulta después sus registros?",
+    "o": [
+     "services.msc para reiniciarlo y el Visor de eventos para los registros.",
+     "systemctl status/restart apache2 y, para los registros, journalctl.",
+     "kill apache2 para reiniciarlo y df para consultar los registros."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §4.3",
+    "e": "systemd se administra con systemctl (start, stop, enable, status, restart) y sus registros se consultan con journalctl; services.msc y el Visor de eventos son herramientas de Windows."
+   },
+   {
+    "q": "Para una acción administrativa puntual sin trabajar permanentemente como root, ¿qué emplea el técnico y qué principio respeta?",
+    "o": [
+     "El comando su para abrir una sesión de root, conforme a la defensa en profundidad.",
+     "Un chmod 777 sobre el fichero afectado, conforme al principio de mínimo privilegio.",
+     "El comando sudo, controlado y auditado, conforme al principio de mínimo privilegio."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §4.6",
+    "e": "sudo ejecuta órdenes puntuales con privilegios elevados de forma controlada y auditada, en lugar de trabajar siempre como root: es el mínimo privilegio."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "¿Qué mecanismo impide, tanto en Android como en iOS, que la app municipal de inspección lea los datos de otra aplicación del terminal?",
+    "o": [
+     "El Secure Enclave, que guarda por separado los datos de cada aplicación.",
+     "La HAL, que reparte el almacenamiento entre las aplicaciones instaladas.",
+     "El sandboxing, que aísla cada app con acceso solo a sus propios datos."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §5.1",
+    "e": "El sandboxing ejecuta cada aplicación aislada, con acceso solo a sus propios datos y a los permisos concedidos. El Secure Enclave custodia claves y biometría."
+   },
+   {
+    "q": "En las tabletas Android, ¿cómo se materializa ese aislamiento de cada aplicación?",
+    "o": [
+     "Todas las apps comparten un mismo usuario y se separan solo por permisos.",
+     "Cada app se ejecuta con su propio UID de Linux.",
+     "Cada app arranca su propio núcleo Linux independiente."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §5.2",
+    "e": "En Android cada app se ejecuta aislada con su propio UID de Linux, reforzada además por SELinux."
+   },
+   {
+    "q": "La app de inspección necesita la cámara y la ubicación. En Android, ¿cómo obtiene acceso a esos recursos sensibles?",
+    "o": [
+     "Mediante permisos por app concedidos en tiempo de ejecución y revocables.",
+     "Mediante un permiso global del sistema que vale para todas las apps.",
+     "Mediante la instalación, tras la cual el permiso ya no puede revocarse."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §5.2",
+    "e": "Desde Android 6 los permisos sensibles (ubicación, cámara, micrófono, contactos) se conceden a cada app en tiempo de ejecución y son revocables."
+   },
+   {
+    "q": "¿En qué núcleo se basa cada sistema operativo de los terminales de los inspectores?",
+    "o": [
+     "Android en Darwin/XNU e iOS en el kernel Linux.",
+     "Android en el kernel Linux e iOS en Darwin/XNU (Unix).",
+     "Ambos en el microkernel MINIX, adaptado por cada fabricante."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §5.2, §5.3",
+    "e": "Android se construye sobre el kernel Linux; iOS se basa en Darwin, cuyo núcleo es XNU (Mach + BSD)."
+   },
+   {
+    "q": "El servicio quiere publicar la app municipal en los terminales. ¿Qué diferencia de distribución de aplicaciones debe tener en cuenta?",
+    "o": [
+     "Que Android solo admite Google Play e iOS admite tiendas alternativas.",
+     "Que ambas plataformas admiten tiendas alternativas sin restricciones.",
+     "Que Android admite Google Play y tiendas alternativas; iOS, solo el App Store."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §5.4",
+    "e": "Android es abierto y admite Google Play y tiendas alternativas; iOS es cerrado y su única vía de instalación es el App Store."
+   },
+   {
+    "q": "Si el Ayuntamiento quiere comprar tabletas a varios fabricantes distintos, ¿qué plataforma lo permite y por qué?",
+    "o": [
+     "Android, porque es abierto (AOSP) y lo adaptan numerosos fabricantes.",
+     "iOS, porque Apple licencia su sistema a otros fabricantes de tabletas.",
+     "Cualquiera de las dos, porque ambas se distribuyen como código AOSP."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 2 · §5.2, §5.4",
+    "e": "Android es de código abierto (AOSP) y multifabricante; iOS es cerrado y funciona solo en hardware de Apple."
+   },
+   {
+    "q": "Para administrar de forma centralizada el cifrado, el PIN, las restricciones y la distribución de las apps municipales en todos los terminales, el técnico propone:",
+    "o": [
+     "Una consola WSUS que apruebe las apps y las políticas de los móviles.",
+     "Una solución MDM (Mobile Device Management) en la que se inscriben los dispositivos.",
+     "El Secure Enclave de cada terminal, configurado uno a uno por el técnico."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §5.4",
+    "e": "Las soluciones MDM/EMM inscriben los dispositivos y aplican de forma centralizada políticas (cifrado, PIN, restricciones), distribución de apps y borrado remoto."
+   },
+   {
+    "q": "Algunos inspectores usan la tableta también para fines personales. ¿Qué función del MDM permite proteger los datos municipales sin invadir lo personal?",
+    "o": [
+     "El borrado remoto periódico de todos los datos del terminal.",
+     "La revocación de todos los permisos de las apps personales.",
+     "La separación del perfil corporativo respecto del personal."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · §5.4",
+    "e": "Entre las funciones del MDM está separar el perfil corporativo del personal, de modo que las políticas y los datos municipales quedan aislados de lo privado."
+   },
+   {
+    "q": "Un inspector pierde una tableta con datos de ciudadanos. ¿Qué medida técnica protege la información?",
+    "o": [
+     "El borrado remoto del terminal desde la plataforma MDM, además del cifrado.",
+     "La desinstalación de la app municipal desde Google Play cuando aparezca.",
+     "El cambio de la contraseña del inspector en el dominio Active Directory."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · §5.4",
+    "e": "La plataforma MDM permite borrar remotamente un terminal perdido o robado; junto con el cifrado del dispositivo, protege los datos del ciudadano."
+   },
+   {
+    "q": "¿Qué normativa exige proteger los datos de los ciudadanos de los terminales perdidos?",
+    "o": [
+     "La licencia GPL y el estándar POSIX.",
+     "El ENS y la normativa de protección de datos.",
+     "El ENI únicamente, por ser datos públicos."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §5.4 [ENS-RD311]",
+    "e": "La gestión de los terminales corporativos y el borrado remoto responden al Esquema Nacional de Seguridad y a la normativa de protección de datos."
+   }
+  ]
+ }
+]

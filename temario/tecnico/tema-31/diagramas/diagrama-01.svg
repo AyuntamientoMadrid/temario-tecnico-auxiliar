@@ -1,0 +1,25 @@
+<svg aria-label="Comparativa entre sistema centralizado, sistema paralelo y sistema distribuido, indicando para cada uno si hay memoria compartida, si hay reloj global, qué ocurre cuando falla un componente y cuál es su objetivo principal" role="img" viewbox="0 0 680 323" xmlns="http://www.w3.org/2000/svg">
+<style>.t1{font:700 11px system-ui,sans-serif;fill:#fff}.s1{font:9px system-ui,sans-serif;fill:#fff}.d1{font:9px system-ui,sans-serif;fill:#333}.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}.k1{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.f1{font:8px system-ui,sans-serif;fill:#777}</style>
+<text class="h1" text-anchor="middle" x="340" y="20">Centralizado, paralelo y distribuido</text>
+<rect fill="#888" height="36" rx="5" width="205" x="20" y="34"></rect><text class="t1" text-anchor="middle" x="122" y="50">CENTRALIZADO</text><text class="s1" text-anchor="middle" x="122" y="63">un solo nodo hace todo</text>
+<rect fill="#e89822" height="36" rx="5" width="205" x="238" y="34"></rect><text class="t1" text-anchor="middle" x="340" y="50">PARALELO</text><text class="s1" text-anchor="middle" x="340" y="63">muchos procesadores, un sistema</text>
+<rect fill="#0055a0" height="36" rx="5" width="204" x="456" y="34"></rect><text class="t1" text-anchor="middle" x="558" y="50">DISTRIBUIDO</text><text class="s1" text-anchor="middle" x="558" y="63">nodos independientes en red</text>
+<text class="k1" x="20" y="88">MEMORIA</text>
+<rect fill="#eef3f8" height="26" rx="4" width="205" x="20" y="94"></rect><text class="d1" text-anchor="middle" x="122" y="111">Compartida</text>
+<rect fill="#eef3f8" height="26" rx="4" width="205" x="238" y="94"></rect><text class="d1" text-anchor="middle" x="340" y="111">Compartida o acoplada</text>
+<rect fill="#fdecec" height="26" rx="4" width="204" x="456" y="94"></rect><text class="d1" text-anchor="middle" x="558" y="111">Privada de cada nodo</text>
+<text class="k1" x="20" y="138">RELOJ</text>
+<rect fill="#f5f5f5" height="26" rx="4" width="205" x="20" y="144"></rect><text class="d1" text-anchor="middle" x="122" y="161">Único</text>
+<rect fill="#f5f5f5" height="26" rx="4" width="205" x="238" y="144"></rect><text class="d1" text-anchor="middle" x="340" y="161">Común o sincronizado</text>
+<rect fill="#fdecec" height="26" rx="4" width="204" x="456" y="144"></rect><text class="d1" text-anchor="middle" x="558" y="161">Uno por nodo</text>
+<text class="k1" x="20" y="188">SI FALLA UN COMPONENTE</text>
+<rect fill="#eef3f8" height="26" rx="4" width="205" x="20" y="194"></rect><text class="d1" text-anchor="middle" x="122" y="211">Cae todo el sistema</text>
+<rect fill="#eef3f8" height="26" rx="4" width="205" x="238" y="194"></rect><text class="d1" text-anchor="middle" x="340" y="211">Suele caer todo</text>
+<rect fill="#e8f4ec" height="26" rx="4" width="204" x="456" y="194"></rect><text class="d1" text-anchor="middle" x="558" y="211">Fallo parcial: el resto sigue</text>
+<text class="k1" x="20" y="238">OBJETIVO PRINCIPAL</text>
+<rect fill="#f5f5f5" height="26" rx="4" width="205" x="20" y="244"></rect><text class="d1" text-anchor="middle" x="122" y="261">Simplicidad</text>
+<rect fill="#f5f5f5" height="26" rx="4" width="205" x="238" y="244"></rect><text class="d1" text-anchor="middle" x="340" y="261">Velocidad de cálculo</text>
+<rect fill="#f5f5f5" height="26" rx="4" width="204" x="456" y="244"></rect><text class="d1" text-anchor="middle" x="558" y="261">Escalar y no caerse</text>
+<rect fill="#0055a0" height="22" rx="4" width="640" x="20" y="280"></rect><text class="s1" text-anchor="middle" x="340" y="295">Las dos ausencias del sistema distribuido — sin memoria compartida y sin reloj global — obligan al paso de mensajes</text>
+<text class="f1" text-anchor="middle" x="340" y="314">[Fuente: TANENBAUM]</text>
+</svg>

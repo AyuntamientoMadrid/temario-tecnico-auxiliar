@@ -1,0 +1,22 @@
+<svg aria-label="Competencias del concejal-presidente según el artículo 65" role="img" viewbox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .f-head{fill:#0055a0}
+    .f-h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .f-s{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:start}
+    .f-k{font:700 12px system-ui,sans-serif;fill:#0055a0;text-anchor:middle}
+  </style>
+<rect class="f-head" height="36" rx="8" width="580" x="60" y="20"></rect>
+<text class="f-h" x="350" y="44">CONCEJAL-PRESIDENTE · dirección, planificación y coordinación (art. 65)</text>
+<rect fill="#e8f0f8" height="30" rx="5" width="580" x="60" y="66"></rect>
+<text class="f-k" x="80" y="86">a</text><text class="f-s" x="105" y="86">Representación, dirección, gestión e inspección del distrito</text>
+<rect fill="#fff" height="30" rx="5" stroke="#e8ecf0" width="580" x="60" y="100"></rect>
+<text class="f-k" x="80" y="120">b</text><text class="f-s" x="105" y="120">Fijar objetivos, aprobar planes de actuación y asignar recursos</text>
+<rect fill="#e8f0f8" height="30" rx="5" width="580" x="60" y="134"></rect>
+<text class="f-k" x="80" y="154">c</text><text class="f-s" x="105" y="154">Proponer al titular del Área las propuestas para el Pleno o la Junta de Gobierno</text>
+<rect fill="#fff" height="30" rx="5" stroke="#e8ecf0" width="580" x="60" y="168"></rect>
+<text class="f-k" x="80" y="188">d</text><text class="f-s" x="105" y="188">Proponer al alcalde los proyectos de organización del distrito</text>
+<rect fill="#e8f0f8" height="30" rx="5" width="580" x="60" y="202"></rect>
+<text class="f-k" x="80" y="222">e</text><text class="f-s" x="105" y="222">Evaluar la ejecución de los planes por los coordinadores; control de eficacia</text>
+<rect fill="#fff" height="30" rx="5" stroke="#e8ecf0" width="580" x="60" y="236"></rect>
+<text class="f-k" x="80" y="256">f</text><text class="f-s" x="105" y="256">Superior autoridad sobre el personal del distrito</text>
+</svg>

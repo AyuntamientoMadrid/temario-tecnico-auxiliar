@@ -1,0 +1,38 @@
+<svg aria-label="Comparación de los tres medios de transmisión guiados: par trenzado con sus categorías y el límite de cien metros, cable coaxial de cincuenta y setenta y cinco ohmios, y fibra óptica monomodo y multimodo con sus diámetros de núcleo y sus ventanas de trabajo" role="img" viewbox="0 0 680 356" xmlns="http://www.w3.org/2000/svg">
+<style>.t4{font:700 10.5px system-ui,sans-serif;fill:#fff}.s4{font:8.5px system-ui,sans-serif;fill:#fff}.d4{font:9px system-ui,sans-serif;fill:#333}.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}.k4{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n4{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h4" text-anchor="middle" x="340" y="20">Cobre trenzado, coaxial y luz</text>
+<rect fill="#0055a0" height="30" rx="5" width="206" x="20" y="34"></rect><text class="t4" text-anchor="middle" x="123" y="54">PAR TRENZADO</text>
+<rect fill="#0055a0" height="30" rx="5" width="206" x="237" y="34"></rect><text class="t4" text-anchor="middle" x="340" y="54">CABLE COAXIAL</text>
+<rect fill="#2d8659" height="30" rx="5" width="206" x="454" y="34"></rect><text class="t4" text-anchor="middle" x="557" y="54">FIBRA ÓPTICA</text>
+<rect fill="#eef3f8" height="94" rx="4" width="206" x="20" y="70"></rect>
+<text class="d4" text-anchor="middle" x="123" y="88">Dos hilos trenzados; el trenzado</text><text class="d4" text-anchor="middle" x="123" y="102">cancela la diafonía</text>
+<text class="d4" text-anchor="middle" x="123" y="120">UTP · FTP · STP · S/FTP</text>
+<text class="d4" text-anchor="middle" x="123" y="138">Cat 5e · 6 · 6A · 7 · 8</text>
+<text class="d4" text-anchor="middle" x="123" y="156">Conector RJ-45 · admite PoE</text>
+<rect fill="#eef3f8" height="94" rx="4" width="206" x="237" y="70"></rect>
+<text class="d4" text-anchor="middle" x="340" y="88">Conductor central más malla</text><text class="d4" text-anchor="middle" x="340" y="102">apantallada concéntrica</text>
+<text class="d4" text-anchor="middle" x="340" y="120">50 ohmios: digital banda base</text>
+<text class="d4" text-anchor="middle" x="340" y="138">75 ohmios: TV y cable</text>
+<text class="d4" text-anchor="middle" x="340" y="156">Topología natural: BUS</text>
+<rect fill="#e8f4ee" height="94" rx="4" width="206" x="454" y="70"></rect>
+<text class="d4" text-anchor="middle" x="557" y="88">Núcleo y revestimiento; la luz</text><text class="d4" text-anchor="middle" x="557" y="102">avanza por reflexión total</text>
+<text class="d4" text-anchor="middle" x="557" y="120">Inmune a interferencias</text>
+<text class="d4" text-anchor="middle" x="557" y="138">Sin diafonía · no radia</text>
+<text class="d4" text-anchor="middle" x="557" y="156">No transporta energía</text>
+<rect fill="#fdf3e3" height="26" rx="4" width="640" x="20" y="176"></rect>
+<text class="d4" text-anchor="middle" x="340" y="193">LÍMITE DEL COBRE EN ETHERNET: 100 m de enlace = 90 m de cable horizontal + 10 m de latiguillos</text>
+<text class="k4" x="26" y="226">MONOMODO FRENTE A MULTIMODO</text>
+<rect fill="#0055a0" height="70" rx="4" width="315" x="20" y="234"></rect>
+<text class="t4" text-anchor="middle" x="177" y="252">MULTIMODO — OM1 a OM5</text>
+<text class="s4" text-anchor="middle" x="177" y="268">Núcleo 50 o 62,5 micras · LED o VCSEL</text>
+<text class="s4" text-anchor="middle" x="177" y="282">Dispersión modal · decenas o cientos de metros</text>
+<text class="s4" text-anchor="middle" x="177" y="295">Vertical de edificio y centro de datos</text>
+<rect fill="#2d8659" height="70" rx="4" width="315" x="345" y="234"></rect>
+<text class="t4" text-anchor="middle" x="502" y="252">MONOMODO — OS1 y OS2</text>
+<text class="s4" text-anchor="middle" x="502" y="268">Núcleo 9 micras aprox. · diodo láser</text>
+<text class="s4" text-anchor="middle" x="502" y="282">Decenas o cientos de kilómetros</text>
+<text class="s4" text-anchor="middle" x="502" y="295">Enlaces entre sedes, acceso FTTH, troncal</text>
+<rect fill="none" height="24" rx="4" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="312"></rect>
+<text class="k4" text-anchor="middle" x="340" y="328">A MAYOR NÚCLEO, MÁS MODOS, MÁS DISPERSIÓN Y MENOS ALCANCE · ventanas 850, 1310 y 1550 nm</text>
+<text class="n4" text-anchor="end" x="670" y="350">[Fuente: ISO/IEC 11801; IEEE 802.3]</text>
+</svg>

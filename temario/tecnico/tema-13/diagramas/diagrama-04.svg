@@ -1,0 +1,27 @@
+<svg aria-label="Tabla hash con resolución de colisiones por encadenamiento" class="svd4" role="img" viewbox="0 0 640 340" xmlns="http://www.w3.org/2000/svg">
+<style>.svd4 .ti{font:700 13px system-ui,sans-serif;fill:#0055a0}.svd4 .b{font:700 12px system-ui,sans-serif;fill:#fff}.svd4 .lab{font:11px system-ui,sans-serif;fill:#444}</style>
+<text class="ti" x="30" y="30">h(clave) = clave mod 7</text>
+<g fill="#1a1a1a" font="12px system-ui,sans-serif">
+<rect fill="#e9eef5" height="34" stroke="#0055a0" width="40" x="120" y="50"></rect><text text-anchor="end" x="100" y="72">0</text>
+<rect fill="#e9eef5" height="34" stroke="#0055a0" width="40" x="120" y="84"></rect><text text-anchor="end" x="100" y="106">1</text>
+<rect fill="#e9eef5" height="34" stroke="#0055a0" width="40" x="120" y="118"></rect><text text-anchor="end" x="100" y="140">2</text>
+<rect fill="#e9eef5" height="34" stroke="#0055a0" width="40" x="120" y="152"></rect><text text-anchor="end" x="100" y="174">3</text>
+<rect fill="#e9eef5" height="34" stroke="#0055a0" width="40" x="120" y="186"></rect><text text-anchor="end" x="100" y="208">4</text>
+<rect fill="#e9eef5" height="34" stroke="#0055a0" width="40" x="120" y="220"></rect><text text-anchor="end" x="100" y="242">5</text>
+<rect fill="#e9eef5" height="34" stroke="#0055a0" width="40" x="120" y="254"></rect><text text-anchor="end" x="100" y="276">6</text>
+</g>
+<rect fill="#0055a0" height="34" width="56" x="200" y="50"></rect><text class="b" text-anchor="middle" x="228" y="72">700</text>
+<g>
+<rect fill="#d13c3c" height="34" width="56" x="200" y="84"></rect><text class="b" text-anchor="middle" x="228" y="106">50</text>
+<rect fill="#d13c3c" height="34" width="56" x="290" y="84"></rect><text class="b" text-anchor="middle" x="318" y="106">85</text>
+<rect fill="#d13c3c" height="34" width="56" x="380" y="84"></rect><text class="b" text-anchor="middle" x="408" y="106">92</text>
+<line marker-end="url(#a4)" stroke="#444" stroke-width="2" x1="256" x2="288" y1="101" y2="101"></line>
+<line marker-end="url(#a4)" stroke="#444" stroke-width="2" x1="346" x2="378" y1="101" y2="101"></line>
+</g>
+<rect fill="#0055a0" height="34" width="56" x="200" y="152"></rect><text class="b" text-anchor="middle" x="228" y="174">73</text>
+<rect fill="#0055a0" height="34" width="56" x="200" y="254"></rect><text class="b" text-anchor="middle" x="228" y="276">76</text>
+<text class="lab" fill="#d13c3c" x="300" y="140">colisión en la cubeta 1 → lista encadenada [50, 85, 92]</text>
+<text class="lab" x="30" y="312">Acceso medio O(1) · factor de carga α = n/m</text>
+<defs><marker id="a4" markerheight="10" markerwidth="10" orient="auto" refx="8" refy="5"><polygon fill="#444" points="0,0 10,5 0,10"></polygon></marker></defs>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="middle" x="330" y="330">[Fuente: CLRS, cap. 11]</text>
+</svg>

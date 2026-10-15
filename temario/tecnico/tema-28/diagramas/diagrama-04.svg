@@ -1,0 +1,42 @@
+<svg aria-label="Arquitectura de un entorno de virtualización de servidores: servidor de gestión centralizado, clúster de tres anfitriones con hipervisor y máquinas virtuales, almacenamiento compartido accesible por todos y cuatro redes separadas para gestión, máquinas virtuales, almacenamiento y migración" role="img" viewbox="0 0 680 394" xmlns="http://www.w3.org/2000/svg">
+<style>.t4{font:700 10.5px system-ui,sans-serif;fill:#fff}.s4{font:9px system-ui,sans-serif;fill:#fff}.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}.k4{font:700 10.5px system-ui,sans-serif;fill:#0055a0}.n4{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h4" text-anchor="middle" x="340" y="20">Entorno de virtualización de servidores: piezas y flujos</text>
+<rect fill="#0055a0" height="52" rx="5" width="180" x="20" y="34"></rect><text class="t4" text-anchor="middle" x="110" y="52">SERVIDOR DE GESTIÓN</text><text class="s4" text-anchor="middle" x="110" y="66">inventario · políticas de clúster</text><text class="s4" text-anchor="middle" x="110" y="79">roles (RBAC) · registro de actividad</text>
+<rect fill="#e89822" height="52" rx="5" width="228" x="212" y="34"></rect><text class="t4" text-anchor="middle" x="326" y="52">CATÁLOGO DE PLANTILLAS E IMÁGENES</text><text class="s4" text-anchor="middle" x="326" y="66">máquinas molde bastionadas y versionadas</text><text class="s4" text-anchor="middle" x="326" y="79">despliegue reproducible</text>
+<rect fill="#888" height="52" rx="5" width="208" x="452" y="34"></rect><text class="t4" text-anchor="middle" x="556" y="52">CONSOLA DEL ADMINISTRADOR</text><text class="s4" text-anchor="middle" x="556" y="66">acceso privilegiado nominal</text><text class="s4" text-anchor="middle" x="556" y="79">con autenticación reforzada</text>
+<line stroke="#0055a0" stroke-width="2" x1="110" x2="110" y1="88" y2="106"></line>
+<line stroke="#0055a0" stroke-width="2" x1="326" x2="326" y1="88" y2="106"></line>
+<line stroke="#0055a0" stroke-width="2" x1="556" x2="556" y1="88" y2="106"></line>
+<rect fill="#0055a0" height="18" opacity="0.15" rx="3" stroke="#0055a0" width="640" x="20" y="106"></rect>
+<text class="k4" text-anchor="middle" x="340" y="119">RED DE GESTIÓN — aislada, nunca accesible desde la red de usuarios</text>
+<text class="k4" text-anchor="middle" x="340" y="140">CLÚSTER DE ANFITRIONES</text>
+<rect fill="#f2f6fa" height="94" rx="5" stroke="#0055a0" stroke-width="2" width="206" x="20" y="148"></rect>
+<rect fill="#888" height="24" rx="3" width="60" x="30" y="156"></rect><text class="s4" text-anchor="middle" x="60" y="172">VM</text>
+<rect fill="#888" height="24" rx="3" width="60" x="94" y="156"></rect><text class="s4" text-anchor="middle" x="124" y="172">VM</text>
+<rect fill="#888" height="24" rx="3" width="60" x="158" y="156"></rect><text class="s4" text-anchor="middle" x="188" y="172">VM</text>
+<rect fill="#0055a0" height="22" rx="3" width="188" x="30" y="184"></rect><text class="t4" text-anchor="middle" x="124" y="199">Hipervisor Tipo 1</text>
+<rect fill="#333" height="24" rx="3" width="188" x="30" y="210"></rect><text class="t4" text-anchor="middle" x="124" y="226">Anfitrión 1</text>
+<rect fill="#f2f6fa" height="94" rx="5" stroke="#0055a0" stroke-width="2" width="206" x="237" y="148"></rect>
+<rect fill="#888" height="24" rx="3" width="60" x="247" y="156"></rect><text class="s4" text-anchor="middle" x="277" y="172">VM</text>
+<rect fill="#888" height="24" rx="3" width="60" x="311" y="156"></rect><text class="s4" text-anchor="middle" x="341" y="172">VM</text>
+<rect fill="#888" height="24" rx="3" width="60" x="375" y="156"></rect><text class="s4" text-anchor="middle" x="405" y="172">VM</text>
+<rect fill="#0055a0" height="22" rx="3" width="188" x="247" y="184"></rect><text class="t4" text-anchor="middle" x="341" y="199">Hipervisor Tipo 1</text>
+<rect fill="#333" height="24" rx="3" width="188" x="247" y="210"></rect><text class="t4" text-anchor="middle" x="341" y="226">Anfitrión 2</text>
+<rect fill="#f2f6fa" height="94" rx="5" stroke="#2d8659" stroke-dasharray="5 3" stroke-width="2" width="206" x="454" y="148"></rect>
+<text style="font:700 10.5px system-ui;fill:#2d8659" text-anchor="middle" x="557" y="180">Anfitrión 3 — capacidad N+1</text>
+<text class="n4" text-anchor="middle" x="557" y="198">reservado para absorber la carga</text>
+<text class="n4" text-anchor="middle" x="557" y="214">del anfitrión que falle (HA)</text>
+<text class="n4" text-anchor="middle" x="557" y="232">y para el modo mantenimiento</text>
+<rect fill="#2d8659" height="18" opacity="0.2" rx="3" stroke="#2d8659" width="315" x="20" y="252"></rect>
+<text style="font:700 9.5px system-ui;fill:#2d8659" text-anchor="middle" x="177" y="265">RED DE MÁQUINAS VIRTUALES (usuarios)</text>
+<rect fill="#e89822" height="18" opacity="0.25" rx="3" stroke="#e89822" width="315" x="345" y="252"></rect>
+<text style="font:700 9.5px system-ui;fill:#a06000" text-anchor="middle" x="502" y="265">RED DE MIGRACIÓN EN CALIENTE (dedicada)</text>
+<rect fill="#d13c3c" height="18" opacity="0.18" rx="3" stroke="#d13c3c" width="640" x="20" y="278"></rect>
+<text style="font:700 9.5px system-ui;fill:#a02020" text-anchor="middle" x="340" y="291">RED DE ALMACENAMIENTO (FC / iSCSI / NFS)</text>
+<rect fill="#0055a0" height="52" rx="5" width="400" x="140" y="304"></rect>
+<text class="t4" text-anchor="middle" x="340" y="322">ALMACENAMIENTO COMPARTIDO</text>
+<text class="s4" text-anchor="middle" x="340" y="336">accesible desde TODOS los anfitriones — requisito de HA y de migración en caliente</text>
+<text class="s4" text-anchor="middle" x="340" y="348">cabina SAN / NAS o almacenamiento distribuido hiperconvergente (§4.1)</text>
+<text class="n4" text-anchor="middle" x="340" y="374">La separación de los cuatro flujos de red es una buena práctica de seguridad recogida por el NIST y exigible vía ENS</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="388">[Fuente: VMWARE-DOC; HYPERV-DOC; NIST-SP800-125]</text>
+</svg>

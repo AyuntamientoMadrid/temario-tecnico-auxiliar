@@ -1,0 +1,29 @@
+<svg aria-label="Comparativa de los cuatro modelos de puesto de trabajo: escritorio tradicional, infraestructura de escritorio virtual VDI, servicios de escritorio remoto por sesión RDSH y escritorio como servicio DaaS, indicando dónde se ejecuta la aplicación, qué viaja por la red y la consecuencia para el soporte técnico" role="img" viewbox="0 0 680 346" xmlns="http://www.w3.org/2000/svg">
+<style>.t1{font:700 11px system-ui,sans-serif;fill:#fff}.s1{font:9px system-ui,sans-serif;fill:#fff}.d1{font:9px system-ui,sans-serif;fill:#333}.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}.k1{font:700 9.5px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h1" text-anchor="middle" x="340" y="20">Cuatro modelos de puesto de trabajo</text>
+<rect fill="#0055a0" height="38" rx="5" width="152" x="20" y="34"></rect><text class="t1" text-anchor="middle" x="96" y="50">TRADICIONAL</text><text class="s1" text-anchor="middle" x="96" y="64">cliente pesado (PC)</text>
+<rect fill="#2d8659" height="38" rx="5" width="152" x="187" y="34"></rect><text class="t1" text-anchor="middle" x="263" y="50">VDI</text><text class="s1" text-anchor="middle" x="263" y="64">1 máquina virtual/usuario</text>
+<rect fill="#e89822" height="38" rx="5" width="152" x="354" y="34"></rect><text class="t1" text-anchor="middle" x="430" y="50">RDSH</text><text class="s1" text-anchor="middle" x="430" y="64">N sesiones / 1 servidor</text>
+<rect fill="#888" height="38" rx="5" width="152" x="521" y="34"></rect><text class="t1" text-anchor="middle" x="597" y="50">DaaS</text><text class="s1" text-anchor="middle" x="597" y="64">lo anterior, en la nube</text>
+<text class="k1" x="20" y="90">DÓNDE SE EJECUTA LA APLICACIÓN</text>
+<rect fill="#eef3f8" height="30" rx="4" width="152" x="20" y="96"></rect><text class="d1" text-anchor="middle" x="96" y="115">En el equipo del usuario</text>
+<rect fill="#eef3f8" height="30" rx="4" width="152" x="187" y="96"></rect><text class="d1" text-anchor="middle" x="263" y="115">En el centro de datos</text>
+<rect fill="#eef3f8" height="30" rx="4" width="152" x="354" y="96"></rect><text class="d1" text-anchor="middle" x="430" y="115">En el centro de datos</text>
+<rect fill="#eef3f8" height="30" rx="4" width="152" x="521" y="96"></rect><text class="d1" text-anchor="middle" x="597" y="115">En la nube del proveedor</text>
+<text class="k1" x="20" y="144">QUÉ VIAJA POR LA RED</text>
+<rect fill="#f5f5f5" height="30" rx="4" width="152" x="20" y="150"></rect><text class="d1" text-anchor="middle" x="96" y="169">Datos de aplicación</text>
+<rect fill="#f5f5f5" height="30" rx="4" width="486" x="187" y="150"></rect><text class="d1" text-anchor="middle" x="430" y="169">Pantalla, teclado, ratón, audio y periféricos redirigidos</text>
+<text class="k1" x="20" y="198">AISLAMIENTO ENTRE USUARIOS</text>
+<rect fill="#eef3f8" height="30" rx="4" width="152" x="20" y="204"></rect><text class="d1" text-anchor="middle" x="96" y="223">Total (equipo propio)</text>
+<rect fill="#eef3f8" height="30" rx="4" width="152" x="187" y="204"></rect><text class="d1" text-anchor="middle" x="263" y="223">Alto (SO propio)</text>
+<rect fill="#fbeaea" height="30" rx="4" width="152" x="354" y="204"></rect><text class="d1" text-anchor="middle" x="430" y="223">Bajo (SO compartido)</text>
+<rect fill="#eef3f8" height="30" rx="4" width="152" x="521" y="204"></rect><text class="d1" text-anchor="middle" x="597" y="223">Según la modalidad</text>
+<text class="k1" x="20" y="252">CONSECUENCIA PARA EL SOPORTE</text>
+<rect fill="#f5f5f5" height="44" rx="4" width="152" x="20" y="258"></rect><text class="d1" text-anchor="middle" x="96" y="275">Equipo a equipo:</text><text class="d1" text-anchor="middle" x="96" y="290">parchear y reparar</text>
+<rect fill="#f5f5f5" height="44" rx="4" width="152" x="187" y="258"></rect><text class="d1" text-anchor="middle" x="263" y="275">Reasignar otra máquina</text><text class="d1" text-anchor="middle" x="263" y="290">virtual en minutos</text>
+<rect fill="#f5f5f5" height="44" rx="4" width="152" x="354" y="258"></rect><text class="d1" text-anchor="middle" x="430" y="275">Un usuario puede</text><text class="d1" text-anchor="middle" x="430" y="290">degradar a los demás</text>
+<rect fill="#f5f5f5" height="44" rx="4" width="152" x="521" y="258"></rect><text class="d1" text-anchor="middle" x="597" y="275">Capacidad y datos</text><text class="d1" text-anchor="middle" x="597" y="290">en manos del proveedor</text>
+<rect fill="none" height="20" rx="4" stroke="#0055a0" stroke-width="1.5" width="500" x="90" y="310"></rect>
+<text class="k1" text-anchor="middle" x="340" y="324">Sin red no hay puesto en VDI, RDSH ni DaaS; el tradicional trabaja en local</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="343">[Fuente: MS-RDS; VDI-VENDORS]</text>
+</svg>

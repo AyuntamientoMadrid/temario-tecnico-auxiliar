@@ -1,0 +1,19 @@
+<svg aria-label="Las cuatro capas de iOS de arriba abajo: Cocoa Touch con UIKit y SwiftUI, la capa Media con gráficos y audio, Core Services con Foundation y Core Data, y Core OS con el núcleo Darwin y la seguridad del sistema" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t11{font:700 11.5px system-ui,sans-serif;fill:#fff}.s11{font:9.5px system-ui,sans-serif;fill:#fff}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}.n11{font:700 10px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h11" text-anchor="middle" x="340" y="20">Arquitectura por capas de iOS</text>
+<text class="n11" text-anchor="middle" x="340" y="38">↑ más cercana al programador</text>
+<rect fill="#0055a0" height="52" rx="5" width="620" x="30" y="48"></rect>
+<text class="t11" text-anchor="middle" x="340" y="70">COCOA TOUCH — capa superior</text>
+<text class="s11" text-anchor="middle" x="340" y="88">UIKit y SwiftUI · eventos táctiles · multitarea · notificaciones · cámara · MapKit</text>
+<rect fill="#2d8659" height="48" rx="5" width="620" x="30" y="108"></rect>
+<text class="t11" text-anchor="middle" x="340" y="128">MEDIA</text>
+<text class="s11" text-anchor="middle" x="340" y="146">Core Graphics · Core Animation · Metal · AVFoundation</text>
+<rect fill="#e89822" height="48" rx="5" width="620" x="30" y="164"></rect>
+<text class="t11" text-anchor="middle" x="340" y="184">CORE SERVICES</text>
+<text class="s11" text-anchor="middle" x="340" y="202">Foundation · Core Data · Core Location · red · ficheros · iCloud</text>
+<rect fill="#888" height="52" rx="5" width="620" x="30" y="220"></rect>
+<text class="t11" text-anchor="middle" x="340" y="242">CORE OS</text>
+<text class="s11" text-anchor="middle" x="340" y="260">Núcleo Darwin/XNU · memoria y procesos · controladores · Keychain y Secure Enclave</text>
+<text class="n11" text-anchor="middle" x="340" y="292">Cada app se ejecuta en su propio sandbox, con permisos concedidos en tiempo de ejecución</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="312">[Fuente: APPLE-ARCH; APPLE-DEV]</text>
+</svg>

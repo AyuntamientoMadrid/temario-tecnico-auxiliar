@@ -1,0 +1,692 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, el técnico explica al nuevo compañero qué administraciones territoriales conviven en la ciudad de Madrid. Son:",
+    "o": [
+     "El Estado (por la capitalidad), la Comunidad de Madrid y el Ayuntamiento de Madrid.",
+     "La Comunidad de Madrid, la Diputación Provincial de Madrid y el Ayuntamiento de Madrid.",
+     "El Estado, la Diputación Provincial de Madrid y el Ayuntamiento de Madrid."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · art. 137 CE",
+    "e": "En Madrid conviven el Estado por la capitalidad, la Comunidad de Madrid (CA uniprovincial) y el Ayuntamiento; no existe una Diputación Provincial diferenciada."
+   },
+   {
+    "q": "El compañero pregunta qué fue de la Diputación Provincial de Madrid, ya que la provincia es uno de los niveles del artículo 137 de la Constitución. El técnico debe responder que:",
+    "o": [
+     "La Diputación sigue gobernando la provincia junto a la Comunidad de Madrid, con competencias propias.",
+     "La Comunidad de Madrid asumió todas las competencias, medios y recursos que correspondían a la Diputación Provincial.",
+     "El Ayuntamiento de Madrid asumió las competencias de la Diputación por su condición de capital del Estado."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · DT 4.ª.2 EAM",
+    "e": "La DT 4.ª.2 EAM atribuye a la Comunidad de Madrid todas las competencias, medios y recursos de la antigua Diputación Provincial."
+   },
+   {
+    "q": "¿Qué rasgo permite afirmar que la Comunidad de Madrid goza de autonomía política?",
+    "o": [
+     "Que su Presidente es nombrado por el Rey a propuesta del Congreso de los Diputados.",
+     "Que puede alterar por ley propia los límites de la provincia de Madrid.",
+     "Que la Asamblea de Madrid ejerce la potestad legislativa de la Comunidad."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · art. 9 EAM",
+    "e": "La autonomía política se caracteriza por la potestad legislativa, que en Madrid ejerce la Asamblea; la alteración de límites provinciales exige ley orgánica de las Cortes Generales."
+   },
+   {
+    "q": "Si el Ayuntamiento de Madrid aprueba una ordenanza que regule su sede electrónica, estará ejerciendo:",
+    "o": [
+     "La potestad reglamentaria, propia de su autonomía administrativa.",
+     "La potestad legislativa, propia de su autonomía política.",
+     "Una potestad legislativa delegada por la Comunidad mediante ley marco."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · art. 4.1.a LBRL",
+    "e": "El Ayuntamiento tiene autonomía administrativa: potestad reglamentaria y de autoorganización, sin potestad legislativa."
+   },
+   {
+    "q": "En el supuesto planteado, ¿cuál de estas potestades NO corresponde al Ayuntamiento de Madrid?",
+    "o": [
+     "La potestad reglamentaria.",
+     "La potestad de autoorganización.",
+     "La potestad legislativa."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · art. 137 CE y art. 4.1.a LBRL",
+    "e": "Las entidades locales ejercen potestad reglamentaria y de autoorganización, pero no dictan leyes."
+   },
+   {
+    "q": "El compañero afirma que, por gozar de autonomía, el Ayuntamiento es «soberano» en sus asuntos. El técnico debe corregirle porque:",
+    "o": [
+     "La soberanía corresponde a las Cortes Generales y la autonomía se reconoce solo a las Comunidades Autónomas.",
+     "La autonomía se reconoce para la gestión de sus respectivos intereses y la soberanía nacional reside en el pueblo español.",
+     "La soberanía la comparten el Estado y las Comunidades Autónomas, y la autonomía es solo de los municipios."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 3 · arts. 1.2 y 137 CE",
+    "e": "El art. 137 reconoce autonomía «para la gestión de sus respectivos intereses», y la soberanía nacional reside en el pueblo español (art. 1.2 CE)."
+   },
+   {
+    "q": "Para fundamentar quién es el titular de la soberanía, el técnico debe citar:",
+    "o": [
+     "El artículo 1.2 de la Constitución.",
+     "El artículo 137 de la Constitución.",
+     "El artículo 140 de la Constitución."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · art. 1.2 CE",
+    "e": "Es el art. 1.2 CE el que dispone que la soberanía nacional reside en el pueblo español; el 137 regula la autonomía y el 140 el municipio."
+   },
+   {
+    "q": "¿Qué norma confiere al municipio de Madrid su régimen especial?",
+    "o": [
+     "La Ley 7/1985, Reguladora de las Bases del Régimen Local.",
+     "La Ley Orgánica 3/1983, de Estatuto de Autonomía de Madrid.",
+     "La Ley 22/2006, de Capitalidad y de Régimen Especial de Madrid."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 4 · Ley 22/2006",
+    "e": "El régimen especial del municipio de Madrid lo regula la Ley 22/2006; la LBRL es el régimen común."
+   },
+   {
+    "q": "¿Por qué razón el municipio de Madrid cuenta con ese régimen especial?",
+    "o": [
+     "Por estar situado en una Comunidad Autónoma uniprovincial.",
+     "Por su doble condición de capital del Estado y de gran ciudad.",
+     "Por haber asumido las competencias de la antigua Diputación."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · Ley 22/2006",
+    "e": "El régimen especial de Madrid responde a su doble condición de capital del Estado y de gran ciudad (Ley 22/2006)."
+   },
+   {
+    "q": "Para articular las tres administraciones que operan en la ciudad, la Ley 22/2006 crea un órgano de cooperación. ¿Cuál?",
+    "o": [
+     "La Junta de Gobierno de la Ciudad de Madrid, con miembros del Estado, la Comunidad y el Ayuntamiento.",
+     "La Comisión Interadministrativa de Capitalidad, con igual número de miembros del Estado, la Comunidad y el Ayuntamiento.",
+     "La Comisión Mixta de Transferencias, con mayoría de miembros de la Administración del Estado."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · art. 5 LCREM (§11.2)",
+    "e": "La Ley 22/2006 crea la Comisión Interadministrativa de Capitalidad, formada por igual número de miembros de las tres administraciones."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "El ciudadano pregunta, a través del registro electrónico, cómo se eligen los Concejales. Conforme al artículo 140 de la Constitución, se eligen:",
+    "o": [
+     "Por los vecinos del municipio mediante sufragio universal, igual, libre, indirecto y secreto.",
+     "Por la Asamblea de Madrid, entre los candidatos presentados en cada municipio.",
+     "Por los vecinos del municipio mediante sufragio universal, igual, libre, directo y secreto."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · art. 140 CE",
+    "e": "El art. 140 CE atribuye la elección de los Concejales a los vecinos por sufragio universal, igual, libre, directo y secreto."
+   },
+   {
+    "q": "Al contestar, el técnico debe enumerar las características del sufragio en la elección de Concejales. ¿Qué enumeración es correcta?",
+    "o": [
+     "Cinco: universal, igual, libre, directo y secreto.",
+     "Cuatro: universal, libre, directo y secreto.",
+     "Cinco: universal, igual, libre, proporcional y secreto."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · art. 140 CE",
+    "e": "El art. 140 CE enumera cinco caracteres del sufragio: universal, igual, libre, directo y secreto."
+   },
+   {
+    "q": "La Constitución no agota la regulación de la elección de Concejales. ¿A qué remite la forma concreta de elección?",
+    "o": [
+     "Al Reglamento Orgánico del Pleno de cada Ayuntamiento.",
+     "A lo que establezca la ley, en este caso la LOREG.",
+     "Al Estatuto de Autonomía de la Comunidad de Madrid."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · art. 140 CE",
+    "e": "El art. 140 CE remite a «la forma establecida por la ley», que la solución identifica con la LOREG."
+   },
+   {
+    "q": "El ciudadano sostiene que la Constitución obliga a que el Alcalde sea elegido siempre directamente por los vecinos. El técnico debe responder que la Constitución prevé que el Alcalde sea elegido:",
+    "o": [
+     "Siempre por los vecinos, en votación separada.",
+     "Por el Pleno de la Diputación Provincial.",
+     "Por los Concejales o por los vecinos."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · art. 140 CE",
+    "e": "El art. 140 CE contempla una doble vía: elección por los Concejales o por los vecinos."
+   },
+   {
+    "q": "Sobre la personalidad jurídica del municipio desde el que se plantea la consulta, la Constitución establece que:",
+    "o": [
+     "El municipio goza de personalidad jurídica plena.",
+     "El municipio goza de personalidad jurídica limitada.",
+     "El municipio actúa con la personalidad de su Comunidad."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · art. 140 CE",
+    "e": "El art. 140 CE reconoce a los municipios personalidad jurídica plena."
+   },
+   {
+    "q": "¿Qué órgano tiene encomendados el gobierno y la administración del municipio?",
+    "o": [
+     "La Junta de Gobierno, integrada por el Alcalde y los delegados del Gobierno.",
+     "El Ayuntamiento, integrado por el Alcalde y los Concejales.",
+     "El Pleno, integrado por los Concejales y por todos los vecinos electores."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · art. 140 CE",
+    "e": "El gobierno y la administración municipales corresponden al Ayuntamiento, integrado por el Alcalde y los Concejales."
+   },
+   {
+    "q": "El ciudadano pregunta si la Constitución regula el régimen de concejo abierto. La respuesta correcta es que la Constitución:",
+    "o": [
+     "Remite a la ley la regulación de las condiciones en las que proceda ese régimen.",
+     "Lo regula íntegramente en el artículo 142, junto a las Haciendas locales.",
+     "No lo menciona, porque solo se recoge en los Estatutos de Autonomía."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · art. 140 CE",
+    "e": "El art. 140 CE remite a la ley las condiciones en que proceda el concejo abierto; su régimen se desarrolla en el art. 29.3 LBRL."
+   },
+   {
+    "q": "Si el municipio del supuesto funcionara en régimen de concejo abierto, su gobierno y administración corresponderían a:",
+    "o": [
+     "Un Alcalde y unos Concejales elegidos por sufragio indirecto entre los electores.",
+     "Una asamblea vecinal sin Alcalde, presidida por el vecino de mayor edad.",
+     "Un Alcalde y una asamblea vecinal de la que forman parte todos los electores."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · art. 29.3 LBRL",
+    "e": "En el concejo abierto gobiernan un Alcalde y una asamblea vecinal integrada por todos los electores (art. 29.3 LBRL)."
+   },
+   {
+    "q": "El ciudadano pregunta si el Ayuntamiento, en virtud de su autonomía, podría aprobar una ley propia sobre la elección de sus Concejales. El técnico debe responder que:",
+    "o": [
+     "Sí, porque la autonomía municipal del artículo 140 incluye la potestad legislativa.",
+     "No, porque las entidades locales tienen autonomía administrativa y no dictan leyes.",
+     "Sí, siempre que la Asamblea de Madrid se lo autorice mediante una ley marco."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestiones 1 y 3 · art. 4.1.a LBRL (§2.1)",
+    "e": "Las entidades locales ejercen potestad reglamentaria y de autoorganización, pero no dictan leyes; además, la forma de elección la fija la ley (LOREG)."
+   },
+   {
+    "q": "Para responder sobre el desarrollo legal del concejo abierto, el técnico acude a la norma básica del régimen local, que es:",
+    "o": [
+     "La Ley 22/2006, de Capitalidad y de Régimen Especial de Madrid.",
+     "El Texto Refundido de la Ley Reguladora de las Haciendas Locales.",
+     "La Ley 7/1985, Reguladora de las Bases del Régimen Local."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · art. 29.3 LBRL (§4.5)",
+    "e": "El concejo abierto se desarrolla en el art. 29.3 de la LBRL (Ley 7/1985), norma de desarrollo del régimen local."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, el servicio jurídico analiza la materia «ordenación del territorio y urbanismo». Debe concluir que es una competencia:",
+    "o": [
+     "Exclusiva del Estado (art. 149.1.18.ª CE).",
+     "Asumible por la Comunidad Autónoma (art. 148.1.3.ª CE).",
+     "Exclusiva del Estado (art. 149.1.3.ª CE)."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · art. 148.1.3.ª CE",
+    "e": "La ordenación del territorio y el urbanismo figuran en la lista del art. 148.1 (3.ª), que la CA puede asumir."
+   },
+   {
+    "q": "Respecto de la Administración de Justicia, el servicio jurídico debe advertir que:",
+    "o": [
+     "Es asumible por la Comunidad como parte de su autogobierno.",
+     "Es asumible por la Comunidad a través de su Tribunal Superior de Justicia.",
+     "Es competencia exclusiva del Estado (art. 149.1.5.ª CE)."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · art. 149.1.5.ª CE",
+    "e": "La Administración de Justicia es competencia exclusiva del Estado (art. 149.1.5.ª CE)."
+   },
+   {
+    "q": "Si el interés general exigiera armonizar las disposiciones normativas de las Comunidades Autónomas en esta materia mediante una ley de armonización, ¿quién apreciaría esa necesidad y con qué mayoría?",
+    "o": [
+     "Las Cortes Generales, por mayoría absoluta de cada Cámara.",
+     "El Gobierno, previo dictamen del Consejo de Estado.",
+     "El Senado, por mayoría absoluta y previo requerimiento."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · art. 150.3 CE (§7.4)",
+    "e": "En las leyes de armonización, la necesidad la aprecian las Cortes por mayoría absoluta de cada Cámara (art. 150.3 CE)."
+   },
+   {
+    "q": "La Comunidad quiere incluir en su norma la promoción del turismo en su territorio y la firma de acuerdos con Estados extranjeros. El servicio jurídico debe advertir que:",
+    "o": [
+     "La promoción del turismo es asumible por la CA, pero las relaciones internacionales son exclusivas del Estado.",
+     "Ambas materias son asumibles por la CA si su Estatuto las recoge expresamente.",
+     "Ambas materias son exclusivas del Estado conforme al artículo 149.1.3.ª."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · arts. 148.1.18.ª y 149.1.3.ª CE",
+    "e": "La promoción del turismo es asumible (art. 148.1.18.ª CE) y las relaciones internacionales son exclusivas del Estado (art. 149.1.3.ª CE)."
+   },
+   {
+    "q": "La norma autonómica proyectada incluye trámites de procedimiento administrativo. ¿Qué precepto reserva al Estado la competencia exclusiva sobre el procedimiento administrativo común?",
+    "o": [
+     "El artículo 149.1.1.ª de la Constitución.",
+     "El artículo 149.1.18.ª de la Constitución.",
+     "El artículo 148.1.1.ª de la Constitución."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · art. 149.1.18.ª CE",
+    "e": "El art. 149.1.18.ª atribuye al Estado las bases del régimen jurídico de las Administraciones públicas y el procedimiento administrativo común."
+   },
+   {
+    "q": "Según el artículo 149.1.18.ª, las bases del régimen jurídico de las Administraciones públicas que fije el Estado deben garantizar a los administrados:",
+    "o": [
+     "Un procedimiento idéntico ante ellas.",
+     "Una tramitación electrónica ante ellas.",
+     "Un tratamiento común ante ellas."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · art. 149.1.18.ª CE",
+    "e": "El precepto exige que las bases garanticen a los administrados «un tratamiento común ante ellas»."
+   },
+   {
+    "q": "En materia de procedimiento, ¿puede la Comunidad de Madrid introducir alguna especialidad en su norma?",
+    "o": [
+     "No, porque el artículo 149.1.18.ª excluye cualquier especialidad autonómica en materia de procedimiento.",
+     "Sí, las especialidades derivadas de su organización propia, sin perjuicio del procedimiento administrativo común.",
+     "Sí, cualquiera, porque el procedimiento administrativo es una materia asumible conforme al artículo 148."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · art. 149.1.18.ª CE",
+    "e": "El 149.1.18.ª reserva al Estado el procedimiento administrativo común «sin perjuicio de las especialidades derivadas de la organización propia de las CCAA»."
+   },
+   {
+    "q": "Si la norma autonómica entrara en conflicto con una norma estatal en una materia no atribuida a la exclusiva competencia de la Comunidad, ¿qué regla del artículo 149.3 se aplica?",
+    "o": [
+     "Prevalece la norma del Estado.",
+     "Prevalece la norma autonómica.",
+     "Prevalece la norma posterior."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · art. 149.3 CE",
+    "e": "Regla de prevalencia: en conflicto, prevalecen las normas del Estado en lo no atribuido a la exclusiva competencia de las CCAA."
+   },
+   {
+    "q": "En una materia de competencia autonómica, la ley de la Comunidad deja sin regular un aspecto concreto. Conforme a la regla de supletoriedad del artículo 149.3:",
+    "o": [
+     "Se aplican las ordenanzas del Ayuntamiento afectado, como norma más próxima.",
+     "La materia pasa a ser competencia exclusiva del Estado hasta que se regule.",
+     "Se aplica el derecho estatal, que es en todo caso supletorio del autonómico."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · art. 149.3 CE",
+    "e": "Regla de supletoriedad: el derecho estatal es, en todo caso, supletorio del autonómico."
+   },
+   {
+    "q": "Si las Cortes quisieran atribuir a la Comunidad la facultad de dictar normas legislativas en el marco de una ley estatal, el instrumento adecuado sería:",
+    "o": [
+     "Una ley marco (art. 150.1 CE).",
+     "Una ley de armonización (art. 150.3 CE).",
+     "Una ley de transferencia (art. 150.2 CE)."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · art. 150.1 CE (§7.4)",
+    "e": "Mediante las leyes marco las Cortes atribuyen a las CCAA la facultad de dictar normas legislativas en el marco de una ley estatal."
+   }
+  ]
+ },
+ {
+  "k": 3,
+  "preguntas": [
+   {
+    "q": "En la sesión formativa se comparan las fracciones de municipios exigidas en la iniciativa de cada vía. ¿Qué afirmación es correcta?",
+    "o": [
+     "Tres cuartas partes en la vía del artículo 143 y dos terceras partes en la del artículo 151.",
+     "Dos terceras partes en ambas vías; la del artículo 151 solo añade el referéndum.",
+     "Dos terceras partes en la vía del artículo 143 y tres cuartas partes en la del artículo 151."
+    ],
+    "c": 2,
+    "r": "Caso 4, cuestiones 1 y 2 · arts. 143.2 y 151.1 CE",
+    "e": "La vía ordinaria exige 2/3 de los municipios (art. 143.2) y la rápida 3/4 (art. 151.1), en ambos casos con la mayoría del censo."
+   },
+   {
+    "q": "Junto a la fracción de municipios, ¿quién más debe promover la iniciativa autonómica por la vía ordinaria del artículo 143?",
+    "o": [
+     "La mayoría absoluta de los Diputados y Senadores elegidos en las provincias afectadas.",
+     "Todas las Diputaciones interesadas o, en su caso, el órgano interinsular.",
+     "Las Cortes Generales, mediante ley orgánica y por motivos de interés nacional."
+    ],
+    "c": 1,
+    "r": "Caso 4, cuestión 1 · art. 143.2 CE",
+    "e": "La iniciativa del art. 143.2 corresponde a todas las Diputaciones interesadas (u órgano interinsular) y a 2/3 de los municipios."
+   },
+   {
+    "q": "En un ejemplo de la sesión, la primera Corporación local interesada adopta el acuerdo de iniciativa por la vía del artículo 143. ¿De qué plazo se dispone para reunir los requisitos de la iniciativa?",
+    "o": [
+     "Seis meses desde ese primer acuerdo.",
+     "Cinco años desde ese primer acuerdo.",
+     "Tres meses desde ese primer acuerdo."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 1 · art. 143.2 CE",
+    "e": "Los requisitos deben cumplirse en el plazo de seis meses desde el primer acuerdo adoptado."
+   },
+   {
+    "q": "Si esa iniciativa autonómica por la vía del artículo 143 no prospera, ¿cuándo podrá reiterarse?",
+    "o": [
+     "Pasados seis meses.",
+     "Pasados cinco años.",
+     "Pasados tres años."
+    ],
+    "c": 1,
+    "r": "Caso 4, cuestión 1 · art. 143.3 CE",
+    "e": "Si la iniciativa fracasa, solo podrá reiterarse a los cinco años (art. 143.3 CE)."
+   },
+   {
+    "q": "Además de la iniciativa reforzada de las Corporaciones locales, la vía del artículo 151 exige:",
+    "o": [
+     "Ratificación mediante referéndum por mayoría simple de los votos emitidos en todo el territorio.",
+     "Aprobación de la iniciativa por mayoría absoluta del Senado.",
+     "Ratificación mediante referéndum por mayoría absoluta de los electores de cada provincia."
+    ],
+    "c": 2,
+    "r": "Caso 4, cuestión 2 · art. 151.1 CE",
+    "e": "La iniciativa del art. 151 debe ratificarse en referéndum por mayoría absoluta de los electores de cada provincia."
+   },
+   {
+    "q": "¿Qué consecuencia tenía para una Comunidad acceder a la autonomía cumpliendo los requisitos del artículo 151.1?",
+    "o": [
+     "No era preciso dejar transcurrir el plazo de cinco años del artículo 148.2.",
+     "Podía federarse con otras Comunidades Autónomas sin autorización de las Cortes.",
+     "Su Estatuto no necesitaba aprobarse mediante ley orgánica de las Cortes Generales."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 2 · art. 151.1 CE",
+    "e": "Cumplidos los requisitos del 151.1, no hacía falta esperar los cinco años del art. 148.2; la federación de CCAA está prohibida (art. 145.1)."
+   },
+   {
+    "q": "¿Cómo accedieron a la autonomía Cataluña, País Vasco y Galicia?",
+    "o": [
+     "Por la vía del artículo 151, con referéndum de iniciativa, como Andalucía.",
+     "Por el artículo 144.c), al sustituir las Cortes la iniciativa de las Corporaciones.",
+     "Por la Disposición transitoria segunda, sin la iniciativa del artículo 151.1."
+    ],
+    "c": 2,
+    "r": "Caso 4, cuestión 3 · DT 2.ª CE",
+    "e": "Se acogieron a la DT 2.ª, que les permitía proceder inmediatamente sin la iniciativa del art. 151.1."
+   },
+   {
+    "q": "¿Qué circunstancia permitió a esos tres territorios acogerse a la Disposición transitoria segunda?",
+    "o": [
+     "No superar su ámbito territorial el de una provincia y no reunir las condiciones del artículo 143.1.",
+     "Haber plebiscitado afirmativamente en el pasado proyectos de Estatuto y contar con regímenes provisionales de autonomía.",
+     "Haber reunido la iniciativa de las tres cuartas partes de sus municipios en el plazo de seis meses."
+    ],
+    "c": 1,
+    "r": "Caso 4, cuestión 3 · DT 2.ª CE",
+    "e": "La DT 2.ª se aplicaba a territorios que hubiesen plebiscitado afirmativamente proyectos de Estatuto y contasen con regímenes provisionales de autonomía."
+   },
+   {
+    "q": "¿Al amparo de qué precepto se constituyó la Comunidad de Madrid?",
+    "o": [
+     "Del artículo 144.a), con autorización de la LO 6/1982 por razones de interés nacional.",
+     "Del artículo 143, por iniciativa de la Diputación y de dos tercios de los municipios.",
+     "Del artículo 144.b), como territorio no integrado en la organización provincial."
+    ],
+    "c": 0,
+    "r": "Caso 4, cuestión 4 · art. 144.a) CE",
+    "e": "La LO 6/1982 autorizó a la provincia de Madrid, por razones de interés nacional, a constituirse en CA al amparo del art. 144.a) CE."
+   },
+   {
+    "q": "¿Qué peculiaridad de Madrid explica que se acudiera al artículo 144.a)?",
+    "o": [
+     "No estaba integrada en la organización provincial, igual que Ceuta y Melilla.",
+     "Había plebiscitado en el pasado un proyecto de Estatuto de autonomía.",
+     "Su ámbito territorial no supera el de una provincia y no reúne las condiciones del artículo 143.1."
+    ],
+    "c": 2,
+    "r": "Caso 4, cuestión 4 · art. 144.a) CE",
+    "e": "Madrid no supera el ámbito de una provincia ni reúne las condiciones del art. 143.1, que es el supuesto del art. 144.a)."
+   }
+  ]
+ },
+ {
+  "k": 4,
+  "preguntas": [
+   {
+    "q": "En el seminario se plantea que una ley aprobada por una Asamblea autonómica podría ser contraria a la Constitución. ¿A quién corresponde ese control?",
+    "o": [
+     "Al Tribunal Constitucional.",
+     "A la jurisdicción contencioso-administrativa.",
+     "Al Tribunal de Cuentas."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 1 · art. 153.a) CE",
+    "e": "El control de constitucionalidad de las disposiciones autonómicas con fuerza de ley corresponde al Tribunal Constitucional."
+   },
+   {
+    "q": "Un reglamento aprobado por una Consejería autonómica se considera contrario a la ley. ¿Qué vía de control del artículo 153 es la adecuada?",
+    "o": [
+     "El Tribunal Constitucional.",
+     "El Tribunal de Cuentas.",
+     "La jurisdicción contencioso-administrativa."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 1 · art. 153.c) CE",
+    "e": "La administración autónoma y sus normas reglamentarias se controlan por la jurisdicción contencioso-administrativa."
+   },
+   {
+    "q": "Una Comunidad ejerce facultades que el Estado le delegó por ley orgánica conforme al artículo 150.2. ¿Quién controla ese ejercicio?",
+    "o": [
+     "El Senado, previa audiencia del Presidente autonómico.",
+     "El Gobierno, previo dictamen del Consejo de Estado.",
+     "El Tribunal de Cuentas, previo informe del Gobierno."
+    ],
+    "c": 1,
+    "r": "Caso 5, cuestión 1 · art. 153.b) CE",
+    "e": "El ejercicio de funciones delegadas del art. 150.2 lo controla el Gobierno, previo dictamen del Consejo de Estado."
+   },
+   {
+    "q": "Se detectan irregularidades en la ejecución del presupuesto de una Comunidad Autónoma. ¿Qué órgano ejerce el control económico y presupuestario?",
+    "o": [
+     "El Tribunal de Cuentas.",
+     "El Tribunal Constitucional.",
+     "El Delegado del Gobierno."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 1 · art. 153.d) CE",
+    "e": "El control económico y presupuestario de los órganos de las CCAA corresponde al Tribunal de Cuentas."
+   },
+   {
+    "q": "¿Cuál de estos órganos NO figura entre las cuatro vías de control de la actividad de las Comunidades Autónomas del artículo 153?",
+    "o": [
+     "El Tribunal de Cuentas.",
+     "El Delegado del Gobierno.",
+     "El Tribunal Constitucional."
+    ],
+    "c": 1,
+    "r": "Caso 5, cuestión 1 · arts. 153 y 154 CE",
+    "e": "Las cuatro vías del art. 153 son TC, Gobierno, jurisdicción contencioso-administrativa y Tribunal de Cuentas; el Delegado del Gobierno se regula en el art. 154."
+   },
+   {
+    "q": "¿Qué función atribuye el artículo 154 al Delegado nombrado por el Gobierno?",
+    "o": [
+     "Dirige la administración propia de la Comunidad y coordina, cuando proceda, la del Estado en su territorio.",
+     "Controla la legalidad de los reglamentos autonómicos y la ejecución del presupuesto de la Comunidad.",
+     "Dirige la Administración del Estado en el territorio de la Comunidad y la coordina, cuando proceda, con la administración autonómica."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 2 · art. 154 CE",
+    "e": "El Delegado dirige la Administración del Estado en el territorio de la CA y la coordina, cuando proceda, con la administración propia de la Comunidad."
+   },
+   {
+    "q": "¿Cuál de estas situaciones constituye el presupuesto para aplicar el artículo 155?",
+    "o": [
+     "Que la Comunidad apruebe una norma que el Gobierno considere inoportuna, aunque sea conforme con la Constitución y las leyes.",
+     "Que la Asamblea autonómica rechace un proyecto de ley remitido por su propio Consejo de Gobierno.",
+     "Que la Comunidad no cumpla las obligaciones que le imponen la Constitución u otras leyes, o actúe atentando gravemente al interés general de España."
+    ],
+    "c": 2,
+    "r": "Caso 5, cuestión 3 · art. 155.1 CE",
+    "e": "El art. 155 se activa por incumplimiento de obligaciones constitucionales o legales, o por actuación que atente gravemente al interés general de España."
+   },
+   {
+    "q": "Antes de someter las medidas del artículo 155 a la aprobación del Senado, el Gobierno debe:",
+    "o": [
+     "Formular un requerimiento al Presidente de la Comunidad Autónoma.",
+     "Obtener el dictamen previo del Consejo de Estado.",
+     "Obtener la autorización del Tribunal Constitucional."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 3 · art. 155.1 CE",
+    "e": "El art. 155 exige requerimiento previo al Presidente de la CA; solo si no es atendido se acude al Senado."
+   },
+   {
+    "q": "Desatendido el requerimiento, ¿qué mayoría exige el artículo 155 para aprobar las medidas?",
+    "o": [
+     "Mayoría simple del Congreso y del Senado.",
+     "Mayoría absoluta del Senado.",
+     "Mayoría de dos tercios del Senado."
+    ],
+    "c": 1,
+    "r": "Caso 5, cuestión 3 · art. 155.1 CE",
+    "e": "Las medidas requieren la aprobación por mayoría absoluta del Senado."
+   },
+   {
+    "q": "Una vez aprobadas las medidas del artículo 155, ¿qué puede hacer el Gobierno para ejecutarlas?",
+    "o": [
+     "Dar instrucciones a todas las autoridades de la Comunidad Autónoma.",
+     "Derogar el Estatuto de Autonomía de la Comunidad mediante real decreto.",
+     "Asumir la potestad legislativa de la Asamblea por tiempo indefinido."
+    ],
+    "c": 0,
+    "r": "Caso 5, cuestión 4 · art. 155.2 CE",
+    "e": "El art. 155.2 permite al Gobierno dar instrucciones a todas las autoridades de la CA."
+   }
+  ]
+ },
+ {
+  "k": 5,
+  "preguntas": [
+   {
+    "q": "El Área de Hacienda debe identificar los principios rectores de la autonomía financiera de las Comunidades Autónomas. Según el artículo 156.1, son:",
+    "o": [
+     "La suficiencia financiera y la participación en los tributos del Estado.",
+     "La coordinación con la Hacienda estatal y la solidaridad entre todos los españoles.",
+     "La coordinación con las Haciendas locales y el equilibrio presupuestario."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestión 1 · art. 156.1 CE",
+    "e": "El art. 156.1 fija dos principios: coordinación con la Hacienda estatal y solidaridad entre todos los españoles."
+   },
+   {
+    "q": "¿Cuál de estos ingresos es un recurso de la Comunidad de Madrid según el artículo 157.1?",
+    "o": [
+     "El producto de sus operaciones de crédito.",
+     "Las tasas que cobra el Ayuntamiento de Madrid.",
+     "Los rendimientos del patrimonio del Ayuntamiento."
+    ],
+    "c": 0,
+    "r": "Caso 6, cuestión 2 · art. 157.1 CE",
+    "e": "El producto de las operaciones de crédito figura entre los recursos de las CCAA del art. 157.1."
+   },
+   {
+    "q": "En el análisis del Área, ¿cuál de estos ingresos NO es un recurso de las Comunidades Autónomas según el artículo 157.1?",
+    "o": [
+     "Los impuestos cedidos total o parcialmente por el Estado y los recargos.",
+     "Los rendimientos procedentes de su patrimonio.",
+     "La participación en los tributos de las entidades locales."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestión 2 · art. 157.1 CE",
+    "e": "El art. 157.1 incluye impuestos cedidos y recargos y rendimientos del patrimonio, pero no una participación en los tributos locales."
+   },
+   {
+    "q": "La Comunidad estudia establecer un tributo sobre bienes situados fuera de su territorio. ¿Qué debe advertir el Área de Hacienda?",
+    "o": [
+     "Que puede hacerlo si lo prevé expresamente su Estatuto de Autonomía.",
+     "Que no puede adoptar medidas tributarias sobre bienes situados fuera de su territorio.",
+     "Que puede hacerlo previa autorización de las Cortes Generales."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestión 2 · art. 157.2 CE (§10)",
+    "e": "El art. 157.2 impide a las CCAA adoptar medidas tributarias sobre bienes situados fuera de su territorio."
+   },
+   {
+    "q": "Al pasar a la Hacienda del Ayuntamiento de Madrid, ¿qué principio consagra el artículo 142 respecto de las Haciendas locales?",
+    "o": [
+     "El principio de suficiencia financiera.",
+     "El principio de autonomía financiera.",
+     "El principio de supletoriedad financiera."
+    ],
+    "c": 0,
+    "r": "Caso 6, cuestión 3 · art. 142 CE",
+    "e": "El art. 142 consagra la suficiencia financiera: las Haciendas locales deben disponer de medios suficientes."
+   },
+   {
+    "q": "¿De qué se nutre fundamentalmente la Hacienda del Ayuntamiento de Madrid conforme al artículo 142?",
+    "o": [
+     "De las transferencias del Fondo de Compensación Interterritorial que le asignan las Cortes.",
+     "De recargos sobre los impuestos autonómicos y del producto de operaciones de crédito.",
+     "De tributos propios y de participación en los del Estado y de las Comunidades Autónomas."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestión 3 · art. 142 CE",
+    "e": "Las Haciendas locales se nutren fundamentalmente de tributos propios y de participación en los del Estado y de las CCAA."
+   },
+   {
+    "q": "Para su informe, el Área debe emparejar cada nivel territorial con su principio financiero. ¿Qué emparejamiento es correcto?",
+    "o": [
+     "Comunidades Autónomas: suficiencia financiera (art. 142); entidades locales: autonomía financiera (art. 156.1).",
+     "Comunidades Autónomas: autonomía financiera (art. 156.1); entidades locales: suficiencia financiera (art. 142).",
+     "Comunidades Autónomas y entidades locales: suficiencia financiera, ambas conforme al artículo 157."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestiones 1 y 3 · arts. 142 y 156.1 CE",
+    "e": "Los criterios piden distinguir la autonomía financiera de las CCAA (art. 156.1) de la suficiencia financiera de las entidades locales (art. 142)."
+   },
+   {
+    "q": "¿Cuál es la finalidad del Fondo de Compensación del artículo 158.2?",
+    "o": [
+     "Financiar gastos corrientes de los Ayuntamientos con déficit para garantizar su suficiencia financiera.",
+     "Financiar las competencias que asumieron las Comunidades que accedieron por la vía del artículo 151.",
+     "Financiar gastos de inversión para corregir desequilibrios económicos interterritoriales y hacer efectiva la solidaridad."
+    ],
+    "c": 2,
+    "r": "Caso 6, cuestión 4 · art. 158.2 CE",
+    "e": "El Fondo se destina a gastos de inversión para corregir desequilibrios interterritoriales y hacer efectiva la solidaridad."
+   },
+   {
+    "q": "¿Quién distribuye los recursos del Fondo de Compensación?",
+    "o": [
+     "Las Cortes Generales.",
+     "El Gobierno de España.",
+     "Las Asambleas autonómicas."
+    ],
+    "c": 0,
+    "r": "Caso 6, cuestión 4 · art. 158.2 CE",
+    "e": "Los recursos del Fondo de Compensación los distribuyen las Cortes Generales."
+   },
+   {
+    "q": "Para profundizar en la financiación autonómica, el Área de Hacienda debe acudir a la norma que desarrolla los artículos 156 a 158. ¿Cuál es?",
+    "o": [
+     "El Texto Refundido de la Ley Reguladora de las Haciendas Locales (RDLeg. 2/2004).",
+     "La LO 8/1980, de Financiación de las Comunidades Autónomas (LOFCA).",
+     "La Ley 7/1985, Reguladora de las Bases del Régimen Local (LBRL)."
+    ],
+    "c": 1,
+    "r": "Caso 6, cuestiones 1, 2 y 4 · LOFCA (§10)",
+    "e": "El desarrollo de la financiación autonómica corresponde a la LOFCA; el TRLRHL desarrolla el art. 142 (Haciendas locales)."
+   }
+  ]
+ }
+]

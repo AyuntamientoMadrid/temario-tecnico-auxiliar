@@ -1,0 +1,23 @@
+<svg aria-label="Paginación: traducción de dirección lógica a física mediante la MMU y la tabla de páginas" class="svd7" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.svd7 .t{font:700 12px system-ui,sans-serif;fill:#0055a0}.svd7 .b{font:600 11px system-ui,sans-serif;fill:#fff}.svd7 .m{font:12px monospace;fill:#1a1a1a}.svd7 .l{font:11px system-ui,sans-serif;fill:#444}</style>
+<text class="t" text-anchor="middle" x="90" y="40">Memoria lógica</text>
+<rect fill="#6ea3d2" height="30" width="100" x="40" y="55"></rect><text class="b" text-anchor="middle" x="90" y="75">Página 0</text>
+<rect fill="#6ea3d2" height="30" width="100" x="40" y="85"></rect><text class="b" text-anchor="middle" x="90" y="105">Página 1</text>
+<rect fill="#0055a0" height="30" width="100" x="40" y="115"></rect><text class="b" text-anchor="middle" x="90" y="135">Página 2</text>
+<text class="t" text-anchor="middle" x="320" y="40">MMU + Tabla de páginas</text>
+<rect fill="#e8f0f8" height="120" rx="6" stroke="#0055a0" width="140" x="250" y="60"></rect>
+<text class="m" x="260" y="82">pág 0 → marco 3</text>
+<text class="m" x="260" y="104">pág 1 → marco 7</text>
+<text class="m" fill="#d13c3c" x="260" y="126">pág 2 → marco 5</text>
+<text class="l" text-anchor="middle" x="320" y="200">dir. lógica = nº pág + desplazamiento</text>
+<text class="t" text-anchor="middle" x="560" y="40">Memoria física</text>
+<rect fill="#e8ecf0" height="26" stroke="#888" width="100" x="510" y="55"></rect><text class="l" x="620" y="73">marco 3</text>
+<rect fill="#0055a0" height="26" width="100" x="510" y="111"></rect><text class="b" text-anchor="middle" x="560" y="129">marco 5</text>
+<rect fill="#e8ecf0" height="26" stroke="#888" width="100" x="510" y="165"></rect><text class="l" x="620" y="183">marco 7</text>
+<path d="M 140 130 L 248 120" marker-end="url(#a7)" stroke="#444" stroke-width="2"></path>
+<path d="M 390 126 L 508 124" marker-end="url(#a7)" stroke="#d13c3c" stroke-width="2"></path>
+<text class="l" x="40" y="250">La TLB cachea las traducciones recientes · página fija = marco (sin fragmentación externa)</text>
+<text class="l" fill="#d13c3c" x="40" y="272">Si la página no está en RAM → fallo de página (se trae de disco/swap)</text>
+<defs><marker id="a7" markerheight="10" markerwidth="10" orient="auto" refx="8" refy="5"><polygon fill="#444" points="0,0 10,5 0,10"></polygon></marker></defs>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="660" y="326">[Fuente: SILBERSCHATZ-OS, cap. 9-10]</text>
+</svg>

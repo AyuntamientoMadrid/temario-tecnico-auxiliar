@@ -1,0 +1,16 @@
+<svg aria-label="Ciclo de una petición HTTP en el contenedor web: llega al servlet único que despacha por verbo HTTP a doGet o doPost, o al FacesServlet que ejecuta el ciclo de seis fases de JSF sobre un managed bean CDI" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t7{font:700 11px system-ui,sans-serif;fill:#fff}.s7{font:9.5px system-ui,sans-serif;fill:#fff}.l7{font:11px system-ui,sans-serif;fill:#444}.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h7" text-anchor="middle" x="340" y="20">Petición HTTP → contenedor web → Servlet / JSF</text>
+<rect fill="#0055a0" height="50" rx="6" width="140" x="30" y="42"></rect><text class="t7" text-anchor="middle" x="100" y="62">Petición HTTP</text><text class="s7" text-anchor="middle" x="100" y="78">del navegador</text>
+<path d="M170 67 L198 67" marker-end="url(#a7)" stroke="#888" stroke-width="2"></path>
+<rect fill="#3778b5" height="50" rx="6" width="150" x="200" y="42"></rect><text class="t7" text-anchor="middle" x="275" y="62">Contenedor web</text><text class="s7" text-anchor="middle" x="275" y="78">una instancia por servlet</text>
+<path d="M260 92 C 240 120 220 130 212 150" fill="none" marker-end="url(#a7)" stroke="#2d8659" stroke-width="2"></path>
+<path d="M290 92 C 330 120 410 130 432 150" fill="none" marker-end="url(#a7)" stroke="#e89822" stroke-width="2"></path>
+<rect fill="#2d8659" height="50" rx="6" width="180" x="120" y="158"></rect><text class="t7" text-anchor="middle" x="210" y="178">Servlet directo</text><text class="s7" text-anchor="middle" x="210" y="194">doGet() / doPost()</text>
+<rect fill="#e89822" height="50" rx="6" width="220" x="330" y="158"></rect><text class="t7" text-anchor="middle" x="440" y="178">FacesServlet (JSF)</text><text class="s7" text-anchor="middle" x="440" y="194">ciclo de 6 fases → managed bean CDI</text>
+<rect fill="#eef4fa" height="56" rx="6" stroke="#0055a0" width="440" x="140" y="230"></rect>
+<text style="font:700 12px system-ui;fill:#0055a0" text-anchor="middle" x="360" y="252">Una sola instancia atiende todas las peticiones (hilos distintos)</text>
+<text class="l7" text-anchor="middle" x="360" y="270">No guardar estado mutable en variables de instancia del servlet</text>
+<defs><marker id="a7" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#888"></path></marker></defs>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="312">[Fuente: JAKARTA-SERVLET; JAKARTA-FACES]</text>
+</svg>

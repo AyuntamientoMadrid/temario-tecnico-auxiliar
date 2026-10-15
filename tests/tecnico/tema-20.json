@@ -1,0 +1,1109 @@
+{
+  "tema": 20,
+  "bloque": "tecnico",
+  "titulo": "Diseño y programación orientada a objetos",
+  "enunciado_oficial": "Diseño y programación orientada a objetos. Elementos y componentes software: objetos, clases, herencia, métodos, sobrecarga. Ventajas e inconvenientes. Patrones de diseño y lenguaje de modelado unificado (UML).",
+  "calificacion": "+1 acierto, -1/3 error, 0 en blanco (BOAM 10.032, base 5.2)",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Qué teorema demuestra que cualquier algoritmo puede expresarse combinando secuencia, selección e iteración, marcando la transición hacia la programación estructurada?",
+      "opciones": {
+        "a": "Teorema de Böhm-Jacopini",
+        "b": "Teorema de Church-Turing",
+        "c": "Teorema de Codd"
+      },
+      "correcta": "a",
+      "referencia": "§1.1 [BOOCH07]",
+      "explicacion": "Este teorema (1966) demuestra que cualquier programa puede escribirse con solo tres estructuras de control, fundamento de la programación estructurada que precede históricamente a la POO."
+    },
+    {
+      "numero": 2,
+      "pregunta": "¿Qué lenguaje se considera el primero en introducir el concepto de clases y objetos, orientado a la simulación de sistemas?",
+      "opciones": {
+        "a": "Smalltalk",
+        "b": "Simula 67",
+        "c": "C++"
+      },
+      "correcta": "b",
+      "referencia": "§1.1 [BOOCH07]",
+      "explicacion": "Dahl y Nygaard lo crearon en 1967 para simular sistemas complejos; introduce por primera vez clases y objetos, raíz histórica del paradigma OO."
+    },
+    {
+      "numero": 3,
+      "pregunta": "¿Qué lenguaje populariza el término \"orientado a objetos\" y el envío de mensajes como mecanismo de interacción entre objetos?",
+      "opciones": {
+        "a": "Java",
+        "b": "Simula 67",
+        "c": "Smalltalk"
+      },
+      "correcta": "c",
+      "referencia": "§1.1 [BOOCH07]",
+      "explicacion": "Desarrollado en Xerox PARC en los años 70, consolida el vocabulario y la filosofía de la POO —incluido el envío de mensajes— antes de que C++ y Java la popularizasen en la industria."
+    },
+    {
+      "numero": 4,
+      "pregunta": "¿Qué pilar de la POO responde a la pregunta \"qué hace un objeto\", materializándose en su interfaz pública?",
+      "opciones": {
+        "a": "Abstracción",
+        "b": "Encapsulamiento",
+        "c": "Herencia"
+      },
+      "correcta": "a",
+      "referencia": "§1.2 [MEYER97]",
+      "explicacion": "Identifica las características esenciales de una entidad ignorando detalles irrelevantes, y se expresa en el conjunto de operaciones que el objeto ofrece al exterior."
+    },
+    {
+      "numero": 5,
+      "pregunta": "¿Qué mecanismo oculta el estado interno de un objeto y restringe el acceso a él a través de una interfaz controlada?",
+      "opciones": {
+        "a": "Polimorfismo",
+        "b": "Encapsulamiento",
+        "c": "Modularidad"
+      },
+      "correcta": "b",
+      "referencia": "§1.2 [MEYER97]",
+      "explicacion": "Protege los invariantes del objeto y permite cambiar la implementación interna sin romper el código cliente, siempre que la interfaz pública se mantenga."
+    },
+    {
+      "numero": 6,
+      "pregunta": "Una clase cuyos atributos y métodos están fuertemente relacionados entre sí, contribuyendo todos a una única responsabilidad, tiene:",
+      "opciones": {
+        "a": "Alto acoplamiento",
+        "b": "Baja cohesión",
+        "c": "Alta cohesión"
+      },
+      "correcta": "c",
+      "referencia": "§1.3 [SOMMERVILLE16]",
+      "explicacion": "El objetivo de diseño es alta cohesión combinada con bajo acoplamiento entre clases distintas."
+    },
+    {
+      "numero": 7,
+      "pregunta": "¿Qué principio SOLID establece que una clase debe tener una única razón para cambiar?",
+      "opciones": {
+        "a": "Single Responsibility",
+        "b": "Open/Closed",
+        "c": "Liskov Substitution"
+      },
+      "correcta": "a",
+      "referencia": "§1.4 [MARTIN03]",
+      "explicacion": "Si una clase acumula más de una responsabilidad, tiene más de una razón para cambiar y debería dividirse."
+    },
+    {
+      "numero": 8,
+      "pregunta": "El principio de sustitución de Liskov exige que:",
+      "opciones": {
+        "a": "Una clase dependa siempre de implementaciones concretas",
+        "b": "Un objeto de una subclase pueda sustituir a uno de la superclase sin alterar la corrección del programa",
+        "c": "Una interfaz agrupe todos los métodos posibles de un dominio"
+      },
+      "correcta": "b",
+      "referencia": "§1.4 [LISKOV94]",
+      "explicacion": "Formulado por Liskov y Wing (1994); si una subclase devuelve valores o lanza excepciones no esperadas por el código que trata con la superclase, se viola LSP."
+    },
+    {
+      "numero": 9,
+      "pregunta": "La plantilla que define atributos y métodos comunes a un conjunto de entidades se denomina:",
+      "opciones": {
+        "a": "Objeto",
+        "b": "Instancia",
+        "c": "Clase"
+      },
+      "correcta": "c",
+      "referencia": "§2.1 [BOOCH07]",
+      "explicacion": "Una clase no ocupa memoria de datos en tiempo de ejecución; es una definición. Un objeto, instancia concreta de una clase, sí."
+    },
+    {
+      "numero": 10,
+      "pregunta": "¿Qué mecanismo libera automáticamente la memoria de un objeto en Java cuando ya no existe ninguna referencia alcanzable a él?",
+      "opciones": {
+        "a": "El recolector de basura (garbage collector)",
+        "b": "El destructor explícito",
+        "c": "El operador delete"
+      },
+      "correcta": "a",
+      "referencia": "§2.1 [GOSLING-JLS]",
+      "explicacion": "A diferencia de C++, Java gestiona automáticamente la destrucción de objetos; el programador no invoca <code>delete</code>."
+    },
+    {
+      "numero": 11,
+      "pregunta": "Un atributo declarado como <code>static</code> en Java:",
+      "opciones": {
+        "a": "Tiene una copia distinta por cada objeto de la clase",
+        "b": "Tiene una única copia compartida por todos los objetos de la clase",
+        "c": "Solo existe dentro de un método"
+      },
+      "correcta": "b",
+      "referencia": "§2.2 [GOSLING-JLS]",
+      "explicacion": "Se accede sin instancia, con el nombre de la clase (p. ej. <code>Expediente.getTotalAbiertos()</code>)."
+    },
+    {
+      "numero": 12,
+      "pregunta": "El constructor de una clase en Java se caracteriza por:",
+      "opciones": {
+        "a": "Ser siempre estático",
+        "b": "Ejecutarse solo una vez para toda la clase",
+        "c": "Tener el mismo nombre que la clase y no declarar tipo de retorno"
+      },
+      "correcta": "c",
+      "referencia": "§2.2 [GOSLING-JLS]",
+      "explicacion": "Se invoca automáticamente al crear un objeto con <code>new</code>, y su responsabilidad es dejarlo en un estado inicial válido."
+    },
+    {
+      "numero": 13,
+      "pregunta": "Un atributo <code>private</code> de una clase Java es accesible desde:",
+      "opciones": {
+        "a": "Únicamente la propia clase",
+        "b": "Cualquier clase del mismo paquete",
+        "c": "Cualquier subclase, esté o no en el mismo paquete"
+      },
+      "correcta": "a",
+      "referencia": "§2.3 [GOSLING-JLS]",
+      "explicacion": "Es el nivel de visibilidad más restrictivo de los cuatro que define Java."
+    },
+    {
+      "numero": 14,
+      "pregunta": "Un método <code>protected</code> es visible desde:",
+      "opciones": {
+        "a": "Solo la propia clase",
+        "b": "La propia clase, el mismo paquete y las subclases de otros paquetes",
+        "c": "Cualquier clase del programa, sin restricción"
+      },
+      "correcta": "b",
+      "referencia": "§2.3 [GOSLING-JLS]",
+      "explicacion": "Es el nivel pensado para que las subclases reutilicen o sobrescriban el miembro, sin exponerlo públicamente."
+    },
+    {
+      "numero": 15,
+      "pregunta": "Java resuelve el problema del diamante de la herencia múltiple:",
+      "opciones": {
+        "a": "Permitiendo herencia múltiple de clases con reglas de precedencia",
+        "b": "Obligando a declarar todas las clases como abstractas",
+        "c": "Prohibiendo la herencia múltiple de clases, pero permitiendo implementar varias interfaces"
+      },
+      "correcta": "c",
+      "referencia": "§2.4 [GOSLING-JLS; MEYER97]",
+      "explicacion": "<code>extends</code> admite una única superclase; <code>implements</code> admite varias interfaces, evitando el conflicto de estado del diamante."
+    },
+    {
+      "numero": 16,
+      "pregunta": "La relación que modela la herencia entre dos clases se describe habitualmente como:",
+      "opciones": {
+        "a": "\"es un\" (is-a)",
+        "b": "\"tiene un\" (has-a)",
+        "c": "\"usa un\" (uses-a)"
+      },
+      "correcta": "a",
+      "referencia": "§2.4 [BOOCH07]",
+      "explicacion": "<code>ExpedienteLicencia</code> <strong>es un</strong> <code>Expediente</code>. La relación \"tiene un\" (has-a) corresponde a composición o agregación, no a herencia."
+    },
+    {
+      "numero": 17,
+      "pregunta": "La sobrecarga (overloading) de métodos se resuelve:",
+      "opciones": {
+        "a": "En tiempo de ejecución, según la clase real del objeto",
+        "b": "En tiempo de compilación, según los tipos de los argumentos de la llamada",
+        "c": "De forma aleatoria según el orden de declaración"
+      },
+      "correcta": "b",
+      "referencia": "§2.5 [GOSLING-JLS §8.4]",
+      "explicacion": "Es ligadura estática: el compilador decide qué versión del método invocar antes de ejecutar el programa."
+    },
+    {
+      "numero": 18,
+      "pregunta": "La sobrescritura (overriding) de un método exige que la subclase declare:",
+      "opciones": {
+        "a": "Un método con distinto número de parámetros",
+        "b": "Un atributo con el mismo nombre que un método heredado",
+        "c": "Un método con la misma firma que el de la superclase"
+      },
+      "correcta": "c",
+      "referencia": "§2.5 [GOSLING-JLS §8.4]",
+      "explicacion": "Se marca opcionalmente con <code>@Override</code>; si la firma difiere, no hay sobrescritura, sino sobrecarga (o un error si no coincide con ningún método heredado)."
+    },
+    {
+      "numero": 19,
+      "pregunta": "El mecanismo por el cual la JVM decide, en tiempo de ejecución, qué versión de un método invocar según la clase real del objeto se llama:",
+      "opciones": {
+        "a": "Ligadura dinámica",
+        "b": "Ligadura estática",
+        "c": "Sobrecarga"
+      },
+      "correcta": "a",
+      "referencia": "§2.6 [BOOCH07]",
+      "explicacion": "También llamada tardía (<em>late binding</em>); es la base técnica del polimorfismo."
+    },
+    {
+      "numero": 20,
+      "pregunta": "El principio de diseño de GoF \"favorece la composición sobre la herencia\" advierte principalmente contra:",
+      "opciones": {
+        "a": "El uso de interfaces en Java",
+        "b": "El uso indiscriminado de herencia para reutilizar código cuando la relación real es \"tiene un\"",
+        "c": "La sobrecarga de constructores"
+      },
+      "correcta": "b",
+      "referencia": "§2.7 [GOF94, cap. 1]",
+      "explicacion": "La herencia crea un acoplamiento muy fuerte (problema de la clase base frágil); la composición permite reconfigurar comportamiento en tiempo de ejecución."
+    },
+    {
+      "numero": 21,
+      "pregunta": "¿Qué afirmación describe correctamente el coste del software a lo largo de su ciclo de vida?",
+      "opciones": {
+        "a": "El coste total del software se concentra siempre en la fase de análisis de requisitos",
+        "b": "El mantenimiento del software orientado a objetos es gratuito gracias al encapsulamiento",
+        "c": "La mayor parte del coste total del software corresponde históricamente al mantenimiento, no al desarrollo inicial"
+      },
+      "correcta": "c",
+      "referencia": "§3.1 [PRESSMAN14, cap. 20]",
+      "explicacion": "Esta es la justificación económica última de perseguir mantenibilidad mediante encapsulamiento y modularidad."
+    },
+    {
+      "numero": 22,
+      "pregunta": "¿Qué ventaja de la POO facilita la comunicación entre el equipo técnico y los expertos del dominio de negocio?",
+      "opciones": {
+        "a": "La correspondencia directa entre las clases del modelo y las entidades del mundo real del problema",
+        "b": "La ausencia de documentación en el código",
+        "c": "La eliminación completa de las pruebas unitarias"
+      },
+      "correcta": "a",
+      "referencia": "§3.1 [PRESSMAN14]",
+      "explicacion": "Clases como <code>Expediente</code> o <code>Ciudadano</code> reducen la distancia conceptual entre modelo y sistema."
+    },
+    {
+      "numero": 23,
+      "pregunta": "Cuando un fallo en la implementación interna de una clase no altera su interfaz pública ni sus invariantes, y por tanto no se propaga en cascada, se dice que el sistema logra:",
+      "opciones": {
+        "a": "Herencia múltiple",
+        "b": "Aislamiento de errores",
+        "c": "Sobrecarga de operadores"
+      },
+      "correcta": "b",
+      "referencia": "§3.2 [PRESSMAN14]",
+      "explicacion": "Es una consecuencia directa del encapsulamiento y facilita las pruebas unitarias por clase."
+    },
+    {
+      "numero": 24,
+      "pregunta": "La escalabilidad del equipo de desarrollo en un proyecto OO se ve favorecida principalmente por:",
+      "opciones": {
+        "a": "El uso exclusivo de variables globales compartidas",
+        "b": "La ausencia de una jerarquía de herencia",
+        "c": "La división en clases con responsabilidades delimitadas e interfaces bien definidas"
+      },
+      "correcta": "c",
+      "referencia": "§3.2 [SOMMERVILLE16]",
+      "explicacion": "Permite que distintos desarrolladores trabajen en paralelo con interferencia mínima."
+    },
+    {
+      "numero": 25,
+      "pregunta": "Uno de los principales costes formativos de la POO frente a la programación estructurada básica es:",
+      "opciones": {
+        "a": "Una curva de aprendizaje más larga, al exigir dominar simultáneamente abstracción, encapsulamiento, herencia y polimorfismo",
+        "b": "La imposibilidad de reutilizar código entre proyectos",
+        "c": "La obligación de usar siempre herencia múltiple"
+      },
+      "correcta": "a",
+      "referencia": "§3.3 [PRESSMAN14]",
+      "explicacion": "Errores conceptuales tempranos suelen arrastrarse y ser costosos de corregir más adelante."
+    },
+    {
+      "numero": 26,
+      "pregunta": "Un mal diseño OO inicial puede resultar más rígido de modificar que el equivalente estructurado, sobre todo debido a:",
+      "opciones": {
+        "a": "La ausencia total de clases en el sistema",
+        "b": "El acoplamiento fuerte que introduce una jerarquía de herencia extensa y profunda",
+        "c": "El uso de comentarios en el código fuente"
+      },
+      "correcta": "b",
+      "referencia": "§3.3 [GOF94]",
+      "explicacion": "Un cambio en una superclase puede romper subclases: el problema de la clase base frágil."
+    },
+    {
+      "numero": 27,
+      "pregunta": "El coste en rendimiento de la ligadura dinámica frente a una llamada resuelta en compilación se debe principalmente a:",
+      "opciones": {
+        "a": "La necesidad de recompilar el programa en cada ejecución",
+        "b": "La ausencia de modificadores de acceso en el lenguaje",
+        "c": "Una consulta indirecta a la tabla de métodos de la clase real del objeto en cada invocación"
+      },
+      "correcta": "c",
+      "referencia": "§3.4 [GOSLING-JLS]",
+      "explicacion": "Esta indirección es más costosa que una llamada directa resuelta en compilación."
+    },
+    {
+      "numero": 28,
+      "pregunta": "La creación y destrucción frecuente de muchos objetos de vida corta en Java incrementa la presión sobre:",
+      "opciones": {
+        "a": "El recolector de basura (garbage collector)",
+        "b": "El compilador estático de tipos",
+        "c": "El motor de renderizado gráfico"
+      },
+      "correcta": "a",
+      "referencia": "§3.4 [GOSLING-JLS]",
+      "explicacion": "Puede introducir pausas apreciables en sistemas de alto rendimiento o tiempo real."
+    },
+    {
+      "numero": 29,
+      "pregunta": "Una clase que acumula demasiadas responsabilidades y conoce/controla la mayor parte del sistema, violando el principio de responsabilidad única, se conoce como el anti-patrón:",
+      "opciones": {
+        "a": "Factory Method",
+        "b": "God Object",
+        "c": "Singleton"
+      },
+      "correcta": "b",
+      "referencia": "§3.5 [GOF94]",
+      "explicacion": "Concentra un acoplamiento extremo y es contrario al SRP (§1.4)."
+    },
+    {
+      "numero": 30,
+      "pregunta": "¿Qué disciplina de diseño evita que las ventajas teóricas de la POO se conviertan, en la práctica, en un sistema difícil de mantener?",
+      "opciones": {
+        "a": "La eliminación de todas las relaciones de herencia del sistema",
+        "b": "La sustitución completa de las clases por funciones globales",
+        "c": "La aplicación de SOLID, patrones de diseño y revisión del acoplamiento"
+      },
+      "correcta": "c",
+      "referencia": "§3.5 [MARTIN03]",
+      "explicacion": "No es opcional en sistemas OO de tamaño medio o grande."
+    },
+    {
+      "numero": 31,
+      "pregunta": "Un patrón de diseño es, según GoF:",
+      "opciones": {
+        "a": "Una solución general y reutilizable a un problema de diseño OO recurrente, no código listo para copiar",
+        "b": "Un fragmento de código que se copia literalmente en cada proyecto",
+        "c": "Una regla obligatoria del compilador de Java"
+      },
+      "correcta": "a",
+      "referencia": "§4.1 [GOF94, cap. 1]",
+      "explicacion": "Es una plantilla conceptual que se adapta a cada situación concreta."
+    },
+    {
+      "numero": 32,
+      "pregunta": "¿Cuántos patrones componen el catálogo original de Gamma, Helm, Johnson y Vlissides (Gang of Four)?",
+      "opciones": {
+        "a": "12",
+        "b": "23",
+        "c": "30"
+      },
+      "correcta": "b",
+      "referencia": "§4.1 [GOF94]",
+      "explicacion": "Distribuidos en 5 creacionales, 7 estructurales y 11 de comportamiento."
+    },
+    {
+      "numero": 33,
+      "pregunta": "Cada patrón GoF documenta, entre otros elementos:",
+      "opciones": {
+        "a": "Únicamente el nombre del patrón y su autor",
+        "b": "El número de líneas de código que ocupa su implementación",
+        "c": "Intención, aplicabilidad, estructura (mini diagrama de clases) y consecuencias"
+      },
+      "correcta": "c",
+      "referencia": "§4.1 [GOF94]",
+      "explicacion": "Este formato da a los equipos un vocabulario común de diseño."
+    },
+    {
+      "numero": 34,
+      "pregunta": "Una solución frecuente en la práctica pero contraproducente a medio o largo plazo, que suele surgir de aplicar un patrón fuera de contexto, se denomina:",
+      "opciones": {
+        "a": "Anti-patrón",
+        "b": "Patrón estructural",
+        "c": "Diagrama de despliegue"
+      },
+      "correcta": "a",
+      "referencia": "§4.2 [GOF94]",
+      "explicacion": "Ejemplos: God Object, Spaghetti Code orientado a objetos, Golden Hammer."
+    },
+    {
+      "numero": 35,
+      "pregunta": "El anti-patrón que consiste en aplicar sistemáticamente un mismo patrón conocido a cualquier problema, por familiaridad del equipo, se llama:",
+      "opciones": {
+        "a": "Factory Method",
+        "b": "Golden Hammer (martillo de oro)",
+        "c": "Composite"
+      },
+      "correcta": "b",
+      "referencia": "§4.2 [GOF94]",
+      "explicacion": "Se aplica el patrón conocido aunque no encaje realmente con el problema."
+    },
+    {
+      "numero": 36,
+      "pregunta": "Usar <code>extends</code> únicamente para reutilizar código de una clase con la que no existe una relación \"es un\" real es un ejemplo de:",
+      "opciones": {
+        "a": "Principio de inversión de dependencias",
+        "b": "Patrón Observer",
+        "c": "Herencia por conveniencia"
+      },
+      "correcta": "c",
+      "referencia": "§4.2 [GOF94]",
+      "explicacion": "Genera jerarquías semánticamente falsas y es uno de los anti-patrones más citados en diseño OO."
+    },
+    {
+      "numero": 37,
+      "pregunta": "¿Cuántos patrones creacionales componen el catálogo GoF?",
+      "opciones": {
+        "a": "5",
+        "b": "7",
+        "c": "11"
+      },
+      "correcta": "a",
+      "referencia": "§4.3 [GOF94]",
+      "explicacion": "Singleton, Factory Method, Abstract Factory, Builder y Prototype."
+    },
+    {
+      "numero": 38,
+      "pregunta": "El patrón creacional que garantiza que una clase tenga una única instancia global y proporciona un punto de acceso a ella es:",
+      "opciones": {
+        "a": "Builder",
+        "b": "Singleton",
+        "c": "Prototype"
+      },
+      "correcta": "b",
+      "referencia": "§4.3 [GOF94]",
+      "explicacion": "Útil, por ejemplo, para un gestor de configuración cargado una sola vez."
+    },
+    {
+      "numero": 39,
+      "pregunta": "El patrón que define una interfaz para crear un objeto, dejando que las subclases decidan qué clase concreta instanciar, es:",
+      "opciones": {
+        "a": "Adapter",
+        "b": "Observer",
+        "c": "Factory Method"
+      },
+      "correcta": "c",
+      "referencia": "§4.3 [GOF94]",
+      "explicacion": "Desacopla al código cliente de las clases concretas que finalmente se crean."
+    },
+    {
+      "numero": 40,
+      "pregunta": "¿Cuántos patrones estructurales componen el catálogo GoF?",
+      "opciones": {
+        "a": "7",
+        "b": "5",
+        "c": "11"
+      },
+      "correcta": "a",
+      "referencia": "§4.4 [GOF94]",
+      "explicacion": "Adapter, Bridge, Composite, Decorator, Facade, Flyweight y Proxy."
+    },
+    {
+      "numero": 41,
+      "pregunta": "El patrón estructural que proporciona una interfaz unificada y simplificada a un conjunto de interfaces de un subsistema complejo es:",
+      "opciones": {
+        "a": "Decorator",
+        "b": "Facade",
+        "c": "Bridge"
+      },
+      "correcta": "b",
+      "referencia": "§4.4 [GOF94]",
+      "explicacion": "Oculta la complejidad interna de un subsistema tras un punto de entrada único."
+    },
+    {
+      "numero": 42,
+      "pregunta": "El patrón de comportamiento que encapsula una familia de algoritmos intercambiables tras una interfaz común, seleccionable en tiempo de ejecución, es:",
+      "opciones": {
+        "a": "Visitor",
+        "b": "Memento",
+        "c": "Strategy"
+      },
+      "correcta": "c",
+      "referencia": "§4.5 [GOF94]",
+      "explicacion": "Aplicable, por ejemplo, a los distintos canales de notificación a un ciudadano (§1.4)."
+    },
+    {
+      "numero": 43,
+      "pregunta": "UML surge de la unificación de tres notaciones de modelado OO previas:",
+      "opciones": {
+        "a": "El método Booch, la OMT de Rumbaugh y el OOSE de Jacobson",
+        "b": "El álgebra relacional, el cálculo relacional y SQL",
+        "c": "Los diagramas de flujo de datos, los flujogramas y los pseudocódigos"
+      },
+      "correcta": "a",
+      "referencia": "§5.1 [RUMBAUGH05, prefacio]",
+      "explicacion": "Sus autores, «los tres amigos», unieron sus notaciones en Rational Software a partir de 1994."
+    },
+    {
+      "numero": 44,
+      "pregunta": "¿Qué organismo adopta y mantiene el estándar UML desde 1997?",
+      "opciones": {
+        "a": "ISO (International Organization for Standardization)",
+        "b": "OMG (Object Management Group)",
+        "c": "W3C (World Wide Web Consortium)"
+      },
+      "correcta": "b",
+      "referencia": "§5.1 [OMG-UML25]",
+      "explicacion": "Mantiene desde entonces las sucesivas versiones, hasta la vigente UML 2.5.1 (2017)."
+    },
+    {
+      "numero": 45,
+      "pregunta": "UML debe entenderse principalmente como:",
+      "opciones": {
+        "a": "Una metodología de desarrollo obligatoria",
+        "b": "Un lenguaje de programación orientado a objetos",
+        "c": "Una notación gráfica, sin prescribir un proceso de desarrollo concreto"
+      },
+      "correcta": "c",
+      "referencia": "§5.1 [OMG-UML25]",
+      "explicacion": "Puede usarse en metodologías predictivas o ágiles, según las necesidades del proyecto."
+    },
+    {
+      "numero": 46,
+      "pregunta": "Los estereotipos como <code>«interface»</code> o <code>«actor»</code> son un ejemplo de:",
+      "opciones": {
+        "a": "Mecanismo de extensibilidad de UML",
+        "b": "Un tipo de diagrama de comportamiento",
+        "c": "Un modificador de acceso de Java"
+      },
+      "correcta": "a",
+      "referencia": "§5.2 [OMG-UML25, §7]",
+      "explicacion": "Permiten adaptar la notación estándar a necesidades específicas de un dominio sin crear un lenguaje nuevo."
+    },
+    {
+      "numero": 47,
+      "pregunta": "El diagrama UML más utilizado en la práctica, y con frecuencia el único elaborado por completo en proyectos pequeños, es el:",
+      "opciones": {
+        "a": "Diagrama de Despliegue",
+        "b": "Diagrama de Clases",
+        "c": "Diagrama de Temporización"
+      },
+      "correcta": "b",
+      "referencia": "§5.3 [FOWLER-UML, cap. 5]",
+      "explicacion": "Representa clases, atributos, métodos y relaciones con una caja de tres compartimentos."
+    },
+    {
+      "numero": 48,
+      "pregunta": "En la notación de un diagrama de clases UML, un rombo relleno en el extremo de una relación representa:",
+      "opciones": {
+        "a": "Agregación",
+        "b": "Asociación simple",
+        "c": "Composición"
+      },
+      "correcta": "c",
+      "referencia": "§5.3 [RUMBAUGH05]",
+      "explicacion": "El rombo hueco, en cambio, representa agregación (dependencia de ciclo de vida más débil)."
+    },
+    {
+      "numero": 49,
+      "pregunta": "A diferencia del diagrama de clases, el Diagrama de Objetos UML representa:",
+      "opciones": {
+        "a": "Una instantánea de instancias concretas en un momento dado, con sus valores de atributo reales",
+        "b": "Los nodos de hardware sobre los que se despliega el sistema",
+        "c": "La secuencia temporal de mensajes entre objetos"
+      },
+      "correcta": "a",
+      "referencia": "§5.3 [FOWLER-UML]",
+      "explicacion": "Útil para ilustrar ejemplos concretos de una relación compleja o depurar un estado del sistema."
+    },
+    {
+      "numero": 50,
+      "pregunta": "El Diagrama de Clases UML se diferencia del modelo Entidad-Relación (Tema 16) principalmente en que:",
+      "opciones": {
+        "a": "El E/R incluye siempre métodos y el diagrama de clases nunca",
+        "b": "El diagrama de clases modela datos y comportamiento juntos (con métodos), mientras que el E/R modela datos persistentes para una base de datos relacional",
+        "c": "Ambos son exactamente el mismo diagrama con distinto nombre"
+      },
+      "correcta": "b",
+      "referencia": "§5.3 [FOWLER-UML]",
+      "explicacion": "Un mismo concepto del dominio puede aparecer en ambos con contenido distinto."
+    },
+    {
+      "numero": 51,
+      "pregunta": "El diagrama UML que representa la arquitectura física, es decir, los nodos de hardware y sus conexiones de red, es el:",
+      "opciones": {
+        "a": "Diagrama de Componentes",
+        "b": "Diagrama de Paquetes",
+        "c": "Diagrama de Despliegue"
+      },
+      "correcta": "c",
+      "referencia": "§5.4 [OMG-UML25]",
+      "explicacion": "(<em>deployment</em>) muestra sobre qué servidores o dispositivos se despliegan los artefactos software."
+    },
+    {
+      "numero": 52,
+      "pregunta": "¿Cuántos tipos de diagrama estructural define UML 2.5?",
+      "opciones": {
+        "a": "7",
+        "b": "5",
+        "c": "14"
+      },
+      "correcta": "a",
+      "referencia": "§5.4 [UML-DIAG-TYPES]",
+      "explicacion": "Clases, Objetos, Componentes, Despliegue, Paquetes, Estructura Compuesta y Perfiles (más 7 de comportamiento = 14 en total)."
+    },
+    {
+      "numero": 53,
+      "pregunta": "En un Diagrama de Casos de Uso, la relación <code>«include»</code> indica:",
+      "opciones": {
+        "a": "Que un actor puede realizar la acción de forma opcional",
+        "b": "Que un caso de uso incorpora obligatoriamente la funcionalidad de otro, reutilizada",
+        "c": "Que dos actores son en realidad el mismo rol"
+      },
+      "correcta": "b",
+      "referencia": "§5.5 [OMG-UML25]",
+      "explicacion": "Frente a <code>«extend»</code>, que representa funcionalidad opcional bajo ciertas condiciones."
+    },
+    {
+      "numero": 54,
+      "pregunta": "En un Diagrama de Secuencia, el tiempo avanza:",
+      "opciones": {
+        "a": "De izquierda a derecha, sobre líneas de vida horizontales",
+        "b": "En sentido circular alrededor de los objetos",
+        "c": "De arriba abajo, sobre líneas de vida verticales"
+      },
+      "correcta": "c",
+      "referencia": "§5.6 [FOWLER-UML]",
+      "explicacion": "Los mensajes se dibujan como flechas horizontales entre líneas de vida, en el orden temporal exacto en que se producen."
+    },
+    {
+      "numero": 55,
+      "pregunta": "El Diagrama de Comunicación (o de Colaboración) se diferencia del de Secuencia en que:",
+      "opciones": {
+        "a": "Organiza a los objetos espacialmente como un grafo, numerando los mensajes para indicar el orden, en lugar de usar la posición vertical",
+        "b": "No permite representar el envío de mensajes entre objetos",
+        "c": "Solo puede usarse para modelar bases de datos relacionales"
+      },
+      "correcta": "a",
+      "referencia": "§5.6 [OMG-UML25]",
+      "explicacion": "Ambos diagramas son semánticamente equivalentes; difieren en el énfasis visual."
+    },
+    {
+      "numero": 56,
+      "pregunta": "El Diagrama de Máquina de Estados es especialmente útil para modelar:",
+      "opciones": {
+        "a": "La arquitectura física de red del sistema",
+        "b": "Los distintos estados por los que pasa un objeto a lo largo de su vida y las transiciones entre ellos",
+        "c": "La lista de atributos privados de una clase"
+      },
+      "correcta": "b",
+      "referencia": "§5.7 [OMG-UML25]",
+      "explicacion": "Heredero del <em>statechart</em> de Harel; el patrón State (§4.5) es su implementación en código."
+    },
+    {
+      "numero": 57,
+      "pregunta": "Las expresiones lambda e interfaces funcionales incorporadas en Java desde la versión 8 permiten, en muchos casos:",
+      "opciones": {
+        "a": "Eliminar por completo la necesidad de usar clases en Java",
+        "b": "Sustituir la herencia múltiple de C++ dentro de Java",
+        "c": "Sustituir una implementación completa del patrón Strategy por una alternativa más ligera, sin abandonar el modelo de clases y objetos"
+      },
+      "correcta": "c",
+      "referencia": "§6 [GOSLING-JLS]",
+      "explicacion": "Reflejan la influencia de la programación funcional sobre los lenguajes OO modernos."
+    },
+    {
+      "numero": 58,
+      "pregunta": "El Diseño Dirigido por el Dominio (Domain-Driven Design) extiende explícitamente al diseño de servicios distribuidos:",
+      "opciones": {
+        "a": "Conceptos de modelado OO como entidades con identidad, objetos de valor inmutables y agregados como unidad de consistencia",
+        "b": "La programación no estructurada basada en saltos GOTO",
+        "c": "La eliminación de todo vocabulario compartido con el negocio"
+      },
+      "correcta": "a",
+      "referencia": "§6 [BOOCH07]",
+      "explicacion": "DDD refuerza, más que sustituye, los fundamentos de la POO clásica."
+    },
+    {
+      "numero": 59,
+      "pregunta": "La inyección de dependencias, hoy sistematizada como mecanismo de plataforma en los grandes frameworks Java, es una forma sistematizada de:",
+      "opciones": {
+        "a": "El problema del diamante de la herencia múltiple",
+        "b": "El principio de inversión de dependencias (DIP) y del patrón Factory",
+        "c": "El anti-patrón God Object"
+      },
+      "correcta": "b",
+      "referencia": "§6 [MARTIN03; GOF94]",
+      "explicacion": "Reduce la necesidad de implementar manualmente Factory Method o Abstract Factory en cada proyecto."
+    },
+    {
+      "numero": 60,
+      "pregunta": "El modelado ejecutable y la generación de código a partir de diagramas de clases UML, con ida y vuelta entre modelo y código, se conoce como:",
+      "opciones": {
+        "a": "Garbage collection",
+        "b": "Ligadura estática",
+        "c": "Round-trip engineering"
+      },
+      "correcta": "c",
+      "referencia": "§6 [OMG-UML25]",
+      "explicacion": "Tendencia actual de las herramientas de modelado, sin renunciar a la semántica formal del estándar OMG."
+    }
+  ],
+  "casos": [
+    {
+      "caso": 1,
+      "titulo": "Diseño de clases para la tramitación de licencias",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el supuesto planteado, ¿qué visibilidad deben tener los atributos idExpediente y estado de la clase Expediente para que queden correctamente encapsulados?",
+          "opciones": {
+            "a": "public, para que el controlador y las subclases puedan leerlos y modificarlos directamente.",
+            "b": "protected, para que cualquier clase de la aplicación pueda consultarlos sin métodos get.",
+            "c": "private, de modo que solo se acceda a ellos a través de métodos públicos como getEstado()."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 1 · §2.3",
+          "explicacion": "La regla de diseño es exponer el mínimo nivel de visibilidad: atributos casi siempre private, accesibles solo mediante métodos get/set que pueden validar el valor."
+        },
+        {
+          "numero": 2,
+          "pregunta": "Desde un método de la subclase ExpedienteLicenciaObra, situada en otro paquete, ¿puede leerse directamente el atributo private estado heredado de Expediente?",
+          "opciones": {
+            "a": "No: un atributo private solo es accesible desde su propia clase; la subclase debe usar getEstado().",
+            "b": "Sí: las subclases heredan el acceso directo a todos los atributos de la superclase.",
+            "c": "Sí: basta con marcar el método de la subclase con la anotación @Override."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 1 · §2.3",
+          "explicacion": "Según la tabla de modificadores de Java, private es visible solo en la misma clase: ni desde el mismo paquete ni desde subclases."
+        },
+        {
+          "numero": 3,
+          "pregunta": "Expediente solo tiene un constructor, que recibe el identificador. Si en ExpedienteLicenciaObra se omitiera la llamada super(id), ¿qué ocurriría?",
+          "opciones": {
+            "a": "El objeto se crearía igualmente, con el identificador y el estado sin inicializar y sin ningún aviso.",
+            "b": "Error de compilación: Java intentaría invocar un constructor sin argumentos de Expediente, que no existe.",
+            "c": "Java llamaría automáticamente a super(id) usando el identificador recibido por la subclase."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 2 · §2.2",
+          "explicacion": "Si la subclase no invoca explícitamente un constructor de la superclase, Java invoca el constructor sin argumentos; si este no existe, se produce un error de compilación."
+        },
+        {
+          "numero": 4,
+          "pregunta": "Se registra una licencia de obra con tipoLicencia «ACTIVIDAD». ¿Qué plazo de resolución devuelve calcularPlazoResolucion()?",
+          "opciones": {
+            "a": "30 días, porque solo «OBRA_MAYOR» tiene un plazo distinto.",
+            "b": "90 días, porque toda licencia de obra tiene el plazo largo.",
+            "c": "15 días, porque «ACTIVIDAD» no es una obra propiamente dicha."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 2",
+          "explicacion": "La regla de la subclase de obra es: 90 días si tipoLicencia es «OBRA_MAYOR» y 30 en el resto de casos, entre ellos «ACTIVIDAD»."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Una solicitud de terraza declara exactamente 20 metros cuadrados. ¿Qué plazo devuelve calcularPlazoResolucion()?",
+          "opciones": {
+            "a": "30 días, porque a partir de 20 metros cuadrados se aplica el plazo largo.",
+            "b": "90 días, el mismo plazo que se aplica a una licencia de obra mayor.",
+            "c": "15 días, porque la condición es menor o igual a 20 metros cuadrados."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 2",
+          "explicacion": "La regla de terraza es metrosCuadrados <= 20 → 15 días; solo por encima de 20 se aplican 30 días."
+        },
+        {
+          "numero": 6,
+          "pregunta": "¿Qué aporta la anotación @Override sobre calcularPlazoResolucion() en cada subclase?",
+          "opciones": {
+            "a": "Hace que la versión que se ejecuta se decida en tiempo de compilación, no de ejecución.",
+            "b": "Hace que el compilador verifique que existe en la superclase un método con la misma firma.",
+            "c": "Es obligatoria: sin ella, Java ejecutaría siempre la versión de la superclase Expediente."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 2 · §2.5",
+          "explicacion": "@Override es opcional pero recomendada: obliga al compilador a comprobar que realmente se está sobrescribiendo un método de igual firma de la superclase."
+        },
+        {
+          "numero": 7,
+          "pregunta": "Las dos versiones de notificar (una con mensaje y otra con mensaje y canal) conviven en Expediente. ¿Qué mecanismo es y cuándo se decide cuál se invoca?",
+          "opciones": {
+            "a": "Sobrecarga: mismo nombre y distinta firma; el compilador elige la versión en tiempo de compilación.",
+            "b": "Sobrescritura: misma firma y distinta clase; la JVM elige la versión en tiempo de ejecución.",
+            "c": "Polimorfismo: misma firma en la misma clase; la versión depende del objeto real que la recibe."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 3 · §2.5",
+          "explicacion": "La sobrecarga define en la misma clase varios métodos con el mismo nombre y distinta lista de parámetros, y se resuelve por ligadura estática, en compilación."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Una lista declarada como List<Expediente> contiene una licencia de obra «OBRA_MAYOR» y una terraza de 12 m². Al recorrerla llamando a calcularPlazoResolucion(), ¿qué se obtiene?",
+          "opciones": {
+            "a": "30 y 30, porque se ejecuta la versión correspondiente al tipo declarado Expediente.",
+            "b": "90 y 15, porque se ejecuta la versión de la clase real de cada objeto (ligadura dinámica).",
+            "c": "Un error de compilación, porque el método está declarado como abstracto en Expediente."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 2 · §2.6",
+          "explicacion": "Con el polimorfismo, al invocar un método sobrescrito se ejecuta la versión de la clase real del objeto, no la del tipo declarado de la variable."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿Por qué conviene que calcularPlazoResolucion() sea abstracto en lugar de tener en Expediente una implementación por defecto de 30 días?",
+          "opciones": {
+            "a": "Porque los métodos abstractos se resuelven con ligadura estática y son más rápidos de ejecutar.",
+            "b": "Porque Java no permite que una clase concreta tenga subclases que sobrescriban sus métodos.",
+            "c": "Porque así el compilador exige la implementación en cada subclase y no se devuelve un plazo erróneo en silencio."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 4 · §1.4",
+          "explicacion": "Con un valor por defecto, una subclase nueva que olvidara sobrescribir el método devolvería 30 días sin avisar; declararlo abstracto convierte ese olvido en un error de compilación."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Urbanismo añade un nuevo tipo de expediente creando otra subclase de Expediente, sin tocar el código que ya trabaja con Expediente. ¿Qué principio SOLID se está respetando?",
+          "opciones": {
+            "a": "El principio abierto/cerrado: abierto a extensión y cerrado a modificación.",
+            "b": "El principio de responsabilidad única: una sola razón para cambiar.",
+            "c": "El principio de segregación de interfaces: interfaces específicas de cliente."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 4 · §1.4",
+          "explicacion": "Añadir un nuevo tipo de expediente no debería obligar a modificar el código que ya trata con Expediente: basta con crear una nueva subclase. Es el principio abierto/cerrado."
+        }
+      ]
+    },
+    {
+      "caso": 2,
+      "titulo": "Aplicación de patrones de diseño al alta de expedientes",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "Para crear el tipo de expediente correcto a partir del código recibido del formulario, sin que el controlador web conozca las clases concretas, ¿qué patrón creacional GoF se aplica?",
+          "opciones": {
+            "a": "Factory Method, que delega en una fábrica la decisión de qué clase concreta instanciar.",
+            "b": "Singleton, que garantiza una única instancia global del expediente que se va a crear.",
+            "c": "Prototype, que crea cada expediente nuevo clonando un expediente ya existente."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 1 · §4.3",
+          "explicacion": "Factory Method desacopla al código cliente de las clases concretas que se crean; el controlador pide un Expediente y la fábrica decide si es de obra o de terraza."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Qué inconveniente tendría instanciar directamente con new cada subclase dentro del controlador web?",
+          "opciones": {
+            "a": "Que new es más lento que una fábrica, porque reserva memoria cada vez que se ejecuta.",
+            "b": "Que Java no permite instanciar subclases fuera del paquete donde se declara la superclase.",
+            "c": "Que acopla el controlador a las clases concretas y obliga a modificarlo al añadir un tipo nuevo."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 1 · §4.3",
+          "explicacion": "Escribir new ExpedienteLicenciaObra(...) en el cliente lo acopla a las clases concretas; cada tipo nuevo obligaría a tocar el controlador, en contra del principio abierto/cerrado."
+        },
+        {
+          "numero": 3,
+          "pregunta": "La fábrica recibe desde el formulario un código de tipo que todavía no está soportado. ¿Cómo debe comportarse el método crear?",
+          "opciones": {
+            "a": "Devolver null, para que el controlador decida después qué hacer con la solicitud.",
+            "b": "Lanzar una IllegalArgumentException que indique que el tipo de expediente no está soportado.",
+            "c": "Crear por defecto una licencia de obra, que es el tipo de expediente más frecuente."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 2 · §4.3",
+          "explicacion": "La rama default del switch de la fábrica lanza IllegalArgumentException(«Tipo no soportado…»): el caso no previsto se trata de forma explícita."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Qué tipo de retorno debe declarar el método crear de ExpedienteFactory?",
+          "opciones": {
+            "a": "Object, para que la fábrica pueda devolver cualquier clase de la aplicación.",
+            "b": "ExpedienteLicenciaObra, porque es la primera subclase contemplada en el switch.",
+            "c": "Expediente, la superclase abstracta, para que el controlador solo dependa de la abstracción."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 2 · §4.3",
+          "explicacion": "La fábrica devuelve un Expediente: el código cliente trabaja con la superclase y no sabe qué subclase concreta se ha creado."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Para notificar al ciudadano por el canal que haya elegido (correo, SMS o sede electrónica), pudiendo añadirse canales nuevos, ¿qué patrón de comportamiento se aplica?",
+          "opciones": {
+            "a": "Strategy, que encapsula algoritmos intercambiables tras una interfaz común.",
+            "b": "Observer, que avisa a todos los suscriptores cuando cambia el estado del sujeto.",
+            "c": "Singleton, que mantiene un único canal global para todas las notificaciones."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 3 · §4.5",
+          "explicacion": "Strategy encapsula una familia de algoritmos intercambiables (los canales de notificación) tras una interfaz común, seleccionable en tiempo de ejecución."
+        },
+        {
+          "numero": 6,
+          "pregunta": "El código que notifica depende de la interfaz CanalNotificacion y no de clases concretas como el envío por SMTP. ¿Qué principio SOLID se cumple así?",
+          "opciones": {
+            "a": "El de sustitución de Liskov.",
+            "b": "El de inversión de dependencias.",
+            "c": "El de responsabilidad única."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 3 · §1.4",
+          "explicacion": "El principio de inversión de dependencias pide que los módulos dependan de abstracciones (interfaces), no de implementaciones concretas; depender de una clase EnvioCorreoSMTP lo violaría."
+        },
+        {
+          "numero": 7,
+          "pregunta": "El Ayuntamiento añade un cuarto canal: notificación push en la app municipal. ¿Qué cambio exige el diseño propuesto?",
+          "opciones": {
+            "a": "Añadir en el código que notifica una nueva rama if para el canal push.",
+            "b": "Añadir a la interfaz CanalNotificacion un método enviarPush específico.",
+            "c": "Crear una clase NotificacionPush que implemente CanalNotificacion."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 4 · §1.4",
+          "explicacion": "Con Strategy, el canal nuevo es una implementación más de la interfaz; el código que recibe un CanalNotificacion y llama a enviar(...) no cambia."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Se añade además el tipo ExpedienteVadoPermanente. ¿Qué hay que modificar?",
+          "opciones": {
+            "a": "Crear la nueva subclase y añadir su case en la fábrica; el controlador que la invoca no cambia.",
+            "b": "Modificar el controlador web para que instancie directamente la nueva subclase con new.",
+            "c": "Nada: la fábrica detecta y crea automáticamente cualquier subclase nueva de Expediente."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 4 · §4.3",
+          "explicacion": "Con la fábrica, un tipo nuevo solo afecta a la nueva clase y a ExpedienteFactory; el código cliente que llama a crear(...) permanece igual."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿A qué familias del catálogo GoF pertenecen los dos patrones aplicados en el supuesto?",
+          "opciones": {
+            "a": "Ambos pertenecen a la familia de los patrones estructurales.",
+            "b": "Factory Method es creacional y Strategy, de comportamiento.",
+            "c": "Factory Method es de comportamiento y Strategy, creacional."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestiones 1 y 3 · §4.3 y §4.5",
+          "explicacion": "Los creacionales abstraen la instanciación de objetos (Factory Method); los de comportamiento, cómo colaboran y se reparten responsabilidades los objetos (Strategy)."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Si en lugar de fábrica y estrategia el controlador web concentrara la creación de todos los tipos de expediente y el envío por todos los canales, ¿en qué anti-patrón se incurriría?",
+          "opciones": {
+            "a": "Golden Hammer, por aplicar a todo el mismo patrón conocido.",
+            "b": "Herencia por conveniencia, por heredar solo para reutilizar.",
+            "c": "God Object, por acumular demasiadas responsabilidades."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 4 · §4.2",
+          "explicacion": "Una clase que acumula demasiadas responsabilidades y controla la mayor parte del sistema es un God Object: viola el principio de responsabilidad única."
+        }
+      ]
+    },
+    {
+      "caso": 3,
+      "titulo": "Modelado UML del flujo de tramitación",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el diagrama de clases del módulo de licencias, ¿cuántos compartimentos tiene el rectángulo de la clase Expediente y qué contienen?",
+          "opciones": {
+            "a": "Dos: el nombre de la clase y la lista de métodos.",
+            "b": "Tres: el nombre de la clase, sus atributos y sus métodos.",
+            "c": "Cuatro: nombre, atributos, métodos y relaciones con otras clases."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 1 · §5.3",
+          "explicacion": "Cada clase se dibuja como un rectángulo con tres compartimentos: nombre, atributos y métodos, estos dos últimos con su visibilidad."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Cómo se anota en el diagrama de clases el atributo private idExpediente de tipo String?",
+          "opciones": {
+            "a": "- idExpediente : String",
+            "b": "# idExpediente : String",
+            "c": "+ idExpediente : String"
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 1 · §2.3 y §5.3",
+          "explicacion": "En UML la visibilidad se anota con - (private), # (protected), ~ (package) y + (public)."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Con qué notación se une ExpedienteLicenciaObra a Expediente en el diagrama de clases?",
+          "opciones": {
+            "a": "Con un rombo relleno en el extremo de Expediente, que indica composición.",
+            "b": "Con una línea discontinua y flecha abierta, que indica una dependencia puntual.",
+            "c": "Con una flecha de generalización de punta triangular hueca hacia Expediente."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 1 · §5.3",
+          "explicacion": "La herencia (generalización) se dibuja con una flecha de punta triangular hueca que apunta a la superclase."
+        },
+        {
+          "numero": 4,
+          "pregunta": "Cada expediente guarda una referencia permanente a su canal de notificación preferido. ¿Por qué esa relación NO es una composición?",
+          "opciones": {
+            "a": "Porque la composición solo puede unir clases abstractas con sus subclases concretas.",
+            "b": "Porque el expediente no controla el ciclo de vida del canal, que existe con independencia de él.",
+            "c": "Porque la composición no admite que una clase guarde una referencia a otra como atributo."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 1 · §2.8",
+          "explicacion": "En la composición el contenedor gestiona el ciclo de vida del contenido (si se destruye uno, se destruye el otro); el canal de notificación sigue existiendo aunque desaparezca el expediente."
+        },
+        {
+          "numero": 5,
+          "pregunta": "En el diagrama de casos de uso de «solicitar una licencia de obra», ¿cuál es el actor y cuál el caso de uso principal?",
+          "opciones": {
+            "a": "Actor: Ciudadano; caso de uso: «Solicitar licencia de obra».",
+            "b": "Actor: PortalWeb; caso de uso: «Crear expediente de obra».",
+            "c": "Actor: ExpedienteFactory; caso de uso: «Calcular el plazo»."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 2 · §5.5",
+          "explicacion": "Los actores son roles externos que interactúan con el sistema, como el ciudadano; el caso de uso es la funcionalidad completa que el sistema le ofrece."
+        },
+        {
+          "numero": 6,
+          "pregunta": "«Autenticarse en sede electrónica» es un paso obligatorio de la solicitud y se reutiliza en otras (terraza, vado). ¿Qué relación lo une a «Solicitar licencia de obra»?",
+          "opciones": {
+            "a": "«extend», porque amplía la solicitud solo bajo ciertas condiciones.",
+            "b": "Generalización, porque la autenticación es un tipo de solicitud.",
+            "c": "«include», porque es funcionalidad obligatoria y reutilizada."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 2 · §5.5",
+          "explicacion": "«include» se usa para funcionalidad obligatoria y reutilizada por varios casos de uso; «extend», para funcionalidad opcional bajo ciertas condiciones."
+        },
+        {
+          "numero": 7,
+          "pregunta": "El equipo quiere reflejar también que «Adjuntar plano técnico» solo se añade a la solicitud cuando la licencia es de obra mayor. ¿Qué relación corresponde?",
+          "opciones": {
+            "a": "«include», porque el plano forma parte de toda solicitud de licencia.",
+            "b": "«extend», porque es funcionalidad opcional que amplía el caso de uso bajo una condición.",
+            "c": "Asociación, porque el plano es un actor externo que interactúa con el sistema."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 2 · §5.5",
+          "explicacion": "«extend» modela funcionalidad opcional que amplía otro caso de uso solo cuando se da una condición, como la obra mayor."
+        },
+        {
+          "numero": 8,
+          "pregunta": "En el diagrama de secuencia de la solicitud, ¿cuál es el primer mensaje?",
+          "opciones": {
+            "a": "PortalWeb → ExpedienteFactory: crear(\"OBRA\", id, tipoLicencia).",
+            "b": "ExpedienteFactory → ExpedienteLicenciaObra: new (mensaje de creación).",
+            "c": "Ciudadano → PortalWeb: enviarSolicitud(datosFormulario)."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 3 · §5.6",
+          "explicacion": "El escenario empieza cuando el ciudadano envía el formulario al portal; después el portal pide a la fábrica que cree el expediente y esta lo instancia."
+        },
+        {
+          "numero": 9,
+          "pregunta": "El expediente de obra mayor responde al portal con el plazo de 90 días. ¿Cómo se dibuja ese mensaje en el diagrama de secuencia?",
+          "opciones": {
+            "a": "Como un mensaje de retorno, con flecha discontinua hacia la línea de vida de PortalWeb.",
+            "b": "Como un rombo relleno sobre la línea de vida del expediente que devuelve el valor.",
+            "c": "Como una flecha de punta triangular hueca que sube hacia el primer mensaje enviado."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 3 · §5.6",
+          "explicacion": "Los mensajes son flechas horizontales entre líneas de vida, en orden temporal de arriba abajo; el retorno se dibuja con flecha discontinua."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Para mostrar en qué ubicación física está el servidor que aloja el módulo de licencias, ¿qué diagrama UML se usa y de qué familia es?",
+          "opciones": {
+            "a": "El Diagrama de Despliegue, de la familia de comportamiento.",
+            "b": "El Diagrama de Despliegue, de la familia estructural.",
+            "c": "El Diagrama de Componentes, de la familia estructural."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 4 · §5.4",
+          "explicacion": "El Diagrama de Despliegue representa la arquitectura física (nodos de hardware y sus conexiones) y es uno de los siete diagramas estructurales; el de Componentes muestra la organización lógica del software."
+        }
+      ]
+    }
+  ]
+}

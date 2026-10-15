@@ -1,0 +1,34 @@
+<svg aria-label="Bandas del espectro radioeléctrico según la Unión Internacional de Telecomunicaciones, de muy baja frecuencia a extra alta frecuencia, con el uso característico de cada una y la regla de que a mayor frecuencia hay más capacidad pero menos alcance y peor penetración" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 10px system-ui,sans-serif;fill:#fff}.s5{font:8.5px system-ui,sans-serif;fill:#fff}.d5{font:9px system-ui,sans-serif;fill:#333}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.k5{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n5{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<defs><marker id="a5" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="h5" text-anchor="middle" x="340" y="20">Ocho bandas decádicas y una sola regla</text>
+<text class="k5" x="26" y="42">BANDA</text><text class="k5" x="140" y="42">FRECUENCIAS</text><text class="k5" x="300" y="42">USO CARACTERÍSTICO</text>
+<rect fill="#8fa9c4" height="26" rx="3" width="106" x="20" y="50"></rect><text class="t5" text-anchor="middle" x="73" y="67">VLF · LF</text>
+<rect fill="#f5f5f5" height="26" rx="3" width="150" x="132" y="50"></rect><text class="d5" text-anchor="middle" x="207" y="67">3 kHz - 300 kHz</text>
+<rect fill="#eef3f8" height="26" rx="3" width="372" x="288" y="50"></rect><text class="d5" text-anchor="middle" x="474" y="67">Submarinos, radionavegación, onda larga</text>
+<rect fill="#7196b8" height="26" rx="3" width="106" x="20" y="80"></rect><text class="t5" text-anchor="middle" x="73" y="97">MF</text>
+<rect fill="#f5f5f5" height="26" rx="3" width="150" x="132" y="80"></rect><text class="d5" text-anchor="middle" x="207" y="97">300 kHz - 3 MHz</text>
+<rect fill="#eef3f8" height="26" rx="3" width="372" x="288" y="80"></rect><text class="d5" text-anchor="middle" x="474" y="97">Radiodifusión en onda media (AM) · onda de superficie</text>
+<rect fill="#5384ac" height="26" rx="3" width="106" x="20" y="110"></rect><text class="t5" text-anchor="middle" x="73" y="127">HF</text>
+<rect fill="#f5f5f5" height="26" rx="3" width="150" x="132" y="110"></rect><text class="d5" text-anchor="middle" x="207" y="127">3 - 30 MHz</text>
+<rect fill="#eef3f8" height="26" rx="3" width="372" x="288" y="110"></rect><text class="d5" text-anchor="middle" x="474" y="127">Onda corta · propagación IONOSFÉRICA intercontinental</text>
+<rect fill="#3571a0" height="26" rx="3" width="106" x="20" y="140"></rect><text class="t5" text-anchor="middle" x="73" y="157">VHF</text>
+<rect fill="#f5f5f5" height="26" rx="3" width="150" x="132" y="140"></rect><text class="d5" text-anchor="middle" x="207" y="157">30 - 300 MHz</text>
+<rect fill="#eef3f8" height="26" rx="3" width="372" x="288" y="140"></rect><text class="d5" text-anchor="middle" x="474" y="157">Radio FM, aviación, marina · empieza la visión directa</text>
+<rect fill="#0055a0" height="26" rx="3" width="106" x="20" y="170"></rect><text class="t5" text-anchor="middle" x="73" y="187">UHF</text>
+<rect fill="#f5f5f5" height="26" rx="3" width="150" x="132" y="170"></rect><text class="d5" text-anchor="middle" x="207" y="187">300 MHz - 3 GHz</text>
+<rect fill="#fdf3e3" height="26" rx="3" width="372" x="288" y="170"></rect><text class="d5" text-anchor="middle" x="474" y="187">TDT, móvil 700 MHz, TETRA, Wi-Fi de 2,4 GHz</text>
+<rect fill="#e89822" height="26" rx="3" width="106" x="20" y="200"></rect><text class="t5" text-anchor="middle" x="73" y="217">SHF</text>
+<rect fill="#f5f5f5" height="26" rx="3" width="150" x="132" y="200"></rect><text class="d5" text-anchor="middle" x="207" y="217">3 - 30 GHz</text>
+<rect fill="#fdf3e3" height="26" rx="3" width="372" x="288" y="200"></rect><text class="d5" text-anchor="middle" x="474" y="217">Microondas y satélite · Wi-Fi de 5 y 6 GHz · 5G de 26 GHz</text>
+<rect fill="#d13c3c" height="26" rx="3" width="106" x="20" y="230"></rect><text class="t5" text-anchor="middle" x="73" y="247">EHF</text>
+<rect fill="#f5f5f5" height="26" rx="3" width="150" x="132" y="230"></rect><text class="d5" text-anchor="middle" x="207" y="247">30 - 300 GHz</text>
+<rect fill="#fbeaea" height="26" rx="3" width="372" x="288" y="230"></rect><text class="d5" text-anchor="middle" x="474" y="247">Ondas milimétricas · radioenlaces de gran capacidad</text>
+<path d="M40 270 L640 270" marker-end="url(#a5)" stroke="#0055a0" stroke-width="2"></path>
+<text class="n5" x="40" y="286">menos frecuencia</text>
+<text class="n5" text-anchor="end" x="640" y="286">más frecuencia</text>
+<rect fill="none" height="34" rx="5" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="294"></rect>
+<text class="k5" text-anchor="middle" x="340" y="309">A MAYOR FRECUENCIA: más ancho de banda y capacidad, antenas más pequeñas</text>
+<text class="n5" text-anchor="middle" x="340" y="323">pero MENOS alcance, PEOR penetración en obstáculos y más sensibilidad a la lluvia</text>
+<text class="n5" text-anchor="end" x="670" y="346">[Fuente: UIT-R; LGT art. 85 y anexo II.21]</text>
+</svg>

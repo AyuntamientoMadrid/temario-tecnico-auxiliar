@@ -1,0 +1,37 @@
+<svg aria-label="Estructura de UTF-8" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .u8-title{font:700 16px system-ui,sans-serif;text-anchor:middle;fill:#0055a0}
+    .u8-len{font:700 12px system-ui,sans-serif;fill:#0055a0}
+    .u8-bits{font:600 11px monospace;fill:#fff;text-anchor:middle}
+    .u8-range{font:italic 11px system-ui,sans-serif;fill:#555}
+  </style>
+<text class="u8-title" x="340" y="28">Estructura de UTF-8</text>
+<text class="u8-len" x="35" y="85">1 byte</text>
+<rect fill="#0055a0" height="28" width="80" x="100" y="68"></rect>
+<text class="u8-bits" x="140" y="86">0xxxxxxx</text>
+<text class="u8-range" x="195" y="85">U+0000 - U+007F  ·  ASCII</text>
+<text class="u8-len" x="35" y="135">2 bytes</text>
+<rect fill="#0055a0" height="28" width="80" x="100" y="118"></rect>
+<text class="u8-bits" x="140" y="136">110xxxxx</text>
+<rect fill="#3378b9" height="28" width="80" x="182" y="118"></rect>
+<text class="u8-bits" x="222" y="136">10xxxxxx</text>
+<text class="u8-range" x="275" y="135">U+0080 - U+07FF  ·  Latin extendido</text>
+<text class="u8-len" x="35" y="185">3 bytes</text>
+<rect fill="#0055a0" height="28" width="80" x="100" y="168"></rect>
+<text class="u8-bits" x="140" y="186">1110xxxx</text>
+<rect fill="#3378b9" height="28" width="80" x="182" y="168"></rect>
+<text class="u8-bits" x="222" y="186">10xxxxxx</text>
+<rect fill="#3378b9" height="28" width="80" x="264" y="168"></rect>
+<text class="u8-bits" x="304" y="186">10xxxxxx</text>
+<text class="u8-range" x="355" y="185">U+0800 - U+FFFF  ·  resto del BMP (CJK)</text>
+<text class="u8-len" x="35" y="235">4 bytes</text>
+<rect fill="#0055a0" height="28" width="80" x="100" y="218"></rect>
+<text class="u8-bits" x="140" y="236">11110xxx</text>
+<rect fill="#3378b9" height="28" width="80" x="182" y="218"></rect>
+<text class="u8-bits" x="222" y="236">10xxxxxx</text>
+<rect fill="#3378b9" height="28" width="80" x="264" y="218"></rect>
+<text class="u8-bits" x="304" y="236">10xxxxxx</text>
+<rect fill="#3378b9" height="28" width="80" x="346" y="218"></rect>
+<text class="u8-bits" x="386" y="236">10xxxxxx</text>
+<text class="u8-range" x="435" y="235">U+10000+  ·  emojis, suplement.</text>
+</svg>

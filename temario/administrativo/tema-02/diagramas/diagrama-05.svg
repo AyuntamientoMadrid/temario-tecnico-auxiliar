@@ -1,0 +1,31 @@
+<svg aria-label="Gobierno municipal: el Ayuntamiento integrado por Alcalde y Concejales; los Concejales elegidos por sufragio universal y el Alcalde por los Concejales o los vecinos" role="img" viewbox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .d5-root{fill:#0055a0;stroke:#003d73;stroke-width:2}
+    .d5-box{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .d5-t{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .d5-h{font:700 13px system-ui,sans-serif;fill:#003d73;text-anchor:middle}
+    .d5-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+    .d5-l{stroke:#0055a0;stroke-width:1.5;fill:none}
+  </style>
+<rect class="d5-root" height="46" rx="8" width="160" x="270" y="20"></rect>
+<text class="d5-t" x="350" y="48">AYUNTAMIENTO</text>
+<line class="d5-l" x1="350" x2="350" y1="66" y2="86"></line>
+<line class="d5-l" x1="200" x2="200" y1="104" y2="86"></line>
+<line class="d5-l" x1="500" x2="500" y1="104" y2="86"></line>
+<line class="d5-l" x1="200" x2="500" y1="86" y2="86"></line>
+<rect class="d5-box" height="58" rx="8" width="180" x="110" y="104"></rect>
+<text class="d5-h" x="200" y="138">ALCALDE</text>
+<rect class="d5-box" height="58" rx="8" width="180" x="410" y="104"></rect>
+<text class="d5-h" x="500" y="138">CONCEJALES</text>
+<rect fill="#e8f5ee" height="86" rx="8" stroke="#2d8659" stroke-width="1.5" width="180" x="110" y="210"></rect>
+<text class="d5-h" style="fill:#1f5e3f" x="200" y="238">Elegido por</text>
+<text class="d5-s" x="200" y="258">los Concejales</text>
+<text class="d5-s" x="200" y="275">o por los vecinos</text>
+<rect fill="#e8f5ee" height="86" rx="8" stroke="#2d8659" stroke-width="1.5" width="180" x="410" y="210"></rect>
+<text class="d5-h" style="fill:#1f5e3f" x="500" y="234">Elegidos por sufragio</text>
+<text class="d5-s" x="500" y="253">universal, igual, libre,</text>
+<text class="d5-s" x="500" y="270">directo y secreto</text>
+<text class="d5-s" x="500" y="287">(vecinos del municipio)</text>
+<line class="d5-l" x1="200" x2="200" y1="162" y2="210"></line>
+<line class="d5-l" x1="500" x2="500" y1="162" y2="210"></line>
+</svg>

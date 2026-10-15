@@ -1,0 +1,43 @@
+<svg aria-label="Las tres funciones AAA: autenticación que responde a quién eres, autorización a qué puedes hacer y auditoría a qué hiciste. Debajo, los tres factores de autenticación y los cuatro modelos de control de acceso: discrecional, obligatorio, basado en roles y basado en atributos" role="img" viewbox="0 0 680 316" xmlns="http://www.w3.org/2000/svg">
+<style>.t8{font:700 11px system-ui,sans-serif;fill:#fff}.s8{font:9px system-ui,sans-serif;fill:#fff}.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}.k8{font:700 10px system-ui,sans-serif;fill:#0055a0}.d8{font:9px system-ui,sans-serif;fill:#444}</style>
+<text class="h8" text-anchor="middle" x="340" y="20">Autenticación, autorización y auditoría: tres cosas distintas</text>
+<rect fill="#0055a0" height="64" rx="5" width="196" x="16" y="34"></rect>
+<text class="t8" text-anchor="middle" x="114" y="55">1 · AUTENTICACIÓN</text>
+<text class="s8" text-anchor="middle" x="114" y="74">¿QUIÉN ERES?</text>
+<text class="s8" text-anchor="middle" x="114" y="90">contraseña · certificado · biometría</text>
+<rect fill="#2d8659" height="64" rx="5" width="196" x="242" y="34"></rect>
+<text class="t8" text-anchor="middle" x="340" y="55">2 · AUTORIZACIÓN</text>
+<text class="s8" text-anchor="middle" x="340" y="74">¿QUÉ PUEDES HACER?</text>
+<text class="s8" text-anchor="middle" x="340" y="90">permisos · ACL · grupos · roles</text>
+<rect fill="#e89822" height="64" rx="5" width="196" x="468" y="34"></rect>
+<text class="t8" text-anchor="middle" x="566" y="55">3 · AUDITORÍA</text>
+<text class="s8" text-anchor="middle" x="566" y="74">¿QUÉ HICISTE?</text>
+<text class="s8" text-anchor="middle" x="566" y="90">registro · retención · protección</text>
+<path d="M212 66 L240 66" stroke="#666" stroke-width="2"></path>
+<path d="M438 66 L466 66" stroke="#666" stroke-width="2"></path>
+<rect fill="#f0f4f8" height="52" rx="5" stroke="#0055a0" width="648" x="16" y="110"></rect>
+<text class="k8" text-anchor="middle" x="340" y="128">Los tres FACTORES de autenticación (multifactor = factores de categorías DISTINTAS)</text>
+<text class="d8" text-anchor="middle" x="130" y="150">Algo que SABES (contraseña, PIN)</text>
+<text class="d8" text-anchor="middle" x="340" y="150">Algo que TIENES (tarjeta, token, certificado)</text>
+<text class="d8" text-anchor="middle" x="560" y="150">Algo que ERES (biometría)</text>
+<text class="k8" text-anchor="middle" x="340" y="184">Los cuatro modelos de control de acceso</text>
+<rect fill="#0055a0" height="72" rx="5" width="156" x="16" y="196"></rect>
+<text class="t8" text-anchor="middle" x="94" y="216">DAC · discrecional</text>
+<text class="s8" text-anchor="middle" x="94" y="236">Decide el PROPIETARIO</text>
+<text class="s8" text-anchor="middle" x="94" y="253">del recurso</text>
+<rect fill="#004077" height="72" rx="5" width="156" x="180" y="196"></rect>
+<text class="t8" text-anchor="middle" x="258" y="216">MAC · obligatorio</text>
+<text class="s8" text-anchor="middle" x="258" y="236">Lo impone el SISTEMA</text>
+<text class="s8" text-anchor="middle" x="258" y="253">por etiquetas (SELinux)</text>
+<rect fill="#2d8659" height="72" rx="5" width="156" x="344" y="196"></rect>
+<text class="t8" text-anchor="middle" x="422" y="216">RBAC · por roles</text>
+<text class="s8" text-anchor="middle" x="422" y="236">Permisos al ROL y</text>
+<text class="s8" text-anchor="middle" x="422" y="253">personas al rol</text>
+<rect fill="#7a3b8f" height="72" rx="5" width="156" x="508" y="196"></rect>
+<text class="t8" text-anchor="middle" x="586" y="216">ABAC · por atributos</text>
+<text class="s8" text-anchor="middle" x="586" y="236">Sujeto + recurso +</text>
+<text class="s8" text-anchor="middle" x="586" y="253">contexto (hora, lugar)</text>
+<rect fill="none" height="24" rx="5" stroke="#d13c3c" stroke-width="2" width="500" x="90" y="272"></rect>
+<text class="k8" text-anchor="middle" x="340" y="289">Las contraseñas no se guardan: se guarda su resumen con SAL</text>
+<text style="font:9.5px system-ui;fill:#666" text-anchor="end" x="670" y="311">[Fuente: SILBERSCHATZ; ISO27002; ENS]</text>
+</svg>

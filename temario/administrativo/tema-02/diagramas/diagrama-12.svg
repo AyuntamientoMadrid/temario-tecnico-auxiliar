@@ -1,0 +1,19 @@
+<svg aria-label="Las tres administraciones que ejercen competencias en Madrid: el Estado por la capitalidad, la Comunidad de Madrid uniprovincial y el Ayuntamiento de Madrid de régimen especial" role="img" viewbox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .d12-b{stroke-width:1.5}
+    .d12-h{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .d12-s{font:11px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .d12-n{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+  </style>
+<rect class="d12-b" fill="#0055a0" height="64" rx="8" width="460" x="120" y="24"></rect>
+<text class="d12-h" x="350" y="50">ESTADO — capital del Estado</text>
+<text class="d12-s" x="350" y="72">Madrid es sede de las instituciones del Estado (capitalidad)</text>
+<rect class="d12-b" fill="#2d8659" height="64" rx="8" width="460" x="120" y="116"></rect>
+<text class="d12-h" x="350" y="142">COMUNIDAD DE MADRID</text>
+<text class="d12-s" x="350" y="164">CA uniprovincial · LO 6/1982 (art. 144.a) CE) · EA: LO 3/1983</text>
+<rect class="d12-b" fill="#e89822" height="76" rx="8" width="460" x="120" y="208"></rect>
+<text class="d12-h" x="350" y="234">AYUNTAMIENTO DE MADRID</text>
+<text class="d12-s" x="350" y="256">Municipio de RÉGIMEN ESPECIAL</text>
+<text class="d12-s" x="350" y="274">Ley 22/2006 de Capitalidad y de Régimen Especial</text>
+<text class="d12-n" style="font-style:italic" x="350" y="304">Tres administraciones conviven en el territorio de la ciudad de Madrid</text>
+</svg>

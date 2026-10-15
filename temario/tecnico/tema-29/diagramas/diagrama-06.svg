@@ -1,0 +1,23 @@
+<svg aria-label="Comparación entre gestión dentro de banda, que depende del sistema operativo del equipo y usa RDP, VNC, SSH o WinRM, y gestión fuera de banda, que usa un controlador dedicado con red y alimentación propias mediante IPMI o Redfish y funciona con el equipo apagado o con el sistema operativo caído" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 11px system-ui,sans-serif;fill:#fff}.s6{font:9px system-ui,sans-serif;fill:#fff}.d6{font:9.5px system-ui,sans-serif;fill:#333}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}.k6{font:700 10px system-ui,sans-serif;fill:#0055a0}.n6{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<defs><marker id="a6" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="h6" text-anchor="middle" x="340" y="20">Dentro de banda frente a fuera de banda</text>
+<rect fill="#0055a0" height="26" rx="5" width="315" x="20" y="34"></rect><text class="t6" text-anchor="middle" x="177" y="52">DENTRO DE BANDA (in-band)</text>
+<rect fill="#e89822" height="26" rx="5" width="315" x="345" y="34"></rect><text class="t6" text-anchor="middle" x="502" y="52">FUERA DE BANDA (out-of-band)</text>
+<rect fill="#eef3f8" height="120" rx="5" width="315" x="20" y="70"></rect>
+<rect fill="#2d8659" height="26" rx="4" width="275" x="40" y="84"></rect><text class="s6" text-anchor="middle" x="177" y="102">Aplicación de gestión (servidor RDP, VNC, sshd)</text>
+<rect fill="#0055a0" height="26" rx="4" width="275" x="40" y="116"></rect><text class="s6" text-anchor="middle" x="177" y="134">Sistema operativo del equipo</text>
+<rect fill="#666" height="26" rx="4" width="275" x="40" y="148"></rect><text class="s6" text-anchor="middle" x="177" y="166">Hardware · tarjeta de red del sistema</text>
+<rect fill="#fdf3e6" height="120" rx="5" width="315" x="345" y="70"></rect>
+<rect fill="#888" height="26" opacity="0.5" rx="4" width="275" x="365" y="84"></rect><text class="s6" text-anchor="middle" x="502" y="102">Sistema operativo: puede estar caído o apagado</text>
+<rect fill="#e89822" height="58" rx="4" width="275" x="365" y="116"></rect><text class="t6" text-anchor="middle" x="502" y="136">CONTROLADOR DE GESTIÓN (BMC)</text><text class="s6" text-anchor="middle" x="502" y="152">procesador, memoria, red y alimentación propios</text><text class="s6" text-anchor="middle" x="502" y="168">IPMI · UDP 623 · Redfish · HTTPS</text>
+<text class="k6" x="30" y="210">PERMITE</text>
+<text class="d6" x="30" y="228">Ver el escritorio, ejecutar órdenes,</text>
+<text class="d6" x="30" y="244">instalar software, leer registros</text>
+<text class="k6" x="355" y="210">PERMITE ADEMÁS</text>
+<text class="d6" x="355" y="228">Encender y apagar, entrar en el firmware,</text>
+<text class="d6" x="355" y="244">ver la consola desde el arranque, montar imagen</text>
+<rect fill="#d13c3c" height="26" rx="4" width="315" x="20" y="256"></rect><text class="t6" text-anchor="middle" x="177" y="274">Si el sistema operativo no arranca, NO SIRVE</text>
+<rect fill="#2d8659" height="26" rx="4" width="315" x="345" y="256"></rect><text class="t6" text-anchor="middle" x="502" y="274">Funciona con el equipo apagado o averiado</text>
+<text class="n6" text-anchor="end" x="670" y="296">[Fuente: IPMI2; DSP0266]</text>
+</svg>

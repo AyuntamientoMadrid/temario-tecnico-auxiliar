@@ -1,0 +1,22 @@
+<svg aria-label="Comparación entre sobrecarga de métodos, resuelta en tiempo de compilación dentro de la misma clase, y sobrescritura de métodos, resuelta en tiempo de ejecución entre superclase y subclase" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t7{font:700 12px system-ui,sans-serif;fill:#fff}.s7{font:10.5px system-ui,sans-serif;fill:#fff}.l7{font:11px system-ui,sans-serif;fill:#444}.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h7" text-anchor="middle" x="340" y="22">SOBRECARGA (overloading) frente a SOBRESCRITURA (overriding)</text>
+<rect fill="#0055a0" height="170" rx="8" width="290" x="40" y="40"></rect>
+<text class="t7" text-anchor="middle" x="185" y="66">SOBRECARGA</text>
+<text class="s7" text-anchor="middle" x="185" y="88">Mismo nombre, DISTINTA firma</text>
+<text class="s7" text-anchor="middle" x="185" y="106">Misma clase</text>
+<text class="s7" text-anchor="middle" x="185" y="128">notificar(String)</text>
+<text class="s7" text-anchor="middle" x="185" y="144">notificar(String, String)</text>
+<text style="font:700 11px system-ui;fill:#fff" text-anchor="middle" x="185" y="172">Ligadura ESTÁTICA</text>
+<text class="s7" text-anchor="middle" x="185" y="190">(tiempo de compilación)</text>
+<rect fill="#2d8659" height="170" rx="8" width="290" x="350" y="40"></rect>
+<text class="t7" text-anchor="middle" x="495" y="66">SOBRESCRITURA</text>
+<text class="s7" text-anchor="middle" x="495" y="88">MISMA firma, distinta clase</text>
+<text class="s7" text-anchor="middle" x="495" y="106">Superclase → subclase</text>
+<text class="s7" text-anchor="middle" x="495" y="128">@Override</text>
+<text class="s7" text-anchor="middle" x="495" y="144">calcularPlazoResolucion()</text>
+<text style="font:700 11px system-ui;fill:#fff" text-anchor="middle" x="495" y="172">Ligadura DINÁMICA</text>
+<text class="s7" text-anchor="middle" x="495" y="190">(tiempo de ejecución)</text>
+<text style="font:700 12px system-ui;fill:#e89822" text-anchor="middle" x="340" y="240">Overloading ≈ mismo nombre distinta lista de parámetros ; Overriding ≈ redefinición heredada</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="284">[Fuente: GOSLING-JLS §8.4]</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg aria-label="Pila de almacenamiento de abajo arriba: dispositivo físico, dispositivo de bloques, particiones, gestor de volúmenes lógicos con volumen físico, grupo de volúmenes y volumen lógico, sistema de archivos y punto de montaje. A la derecha se explican las cuotas de disco con límite blando y límite duro" role="img" viewbox="0 0 680 350" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 10.5px system-ui,sans-serif;fill:#fff}.s6{font:9px system-ui,sans-serif;fill:#fff}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}.k6{font:700 10px system-ui,sans-serif;fill:#0055a0}.d6{font:9px system-ui,sans-serif;fill:#444}</style>
+<text class="h6" text-anchor="middle" x="340" y="20">De la cabeza del disco al directorio del usuario</text>
+<rect fill="#2d8659" height="34" rx="5" width="420" x="16" y="34"></rect>
+<text class="t6" text-anchor="middle" x="226" y="49">PUNTO DE MONTAJE · /srv/expedientes o D:\</text>
+<text class="s6" text-anchor="middle" x="226" y="63">lo que ve el usuario y la aplicación</text>
+<rect fill="#0055a0" height="40" rx="5" width="420" x="16" y="74"></rect>
+<text class="t6" text-anchor="middle" x="226" y="90">SISTEMA DE ARCHIVOS · ext4 · XFS · NTFS · ReFS</text>
+<text class="s6" text-anchor="middle" x="226" y="106">archivos, directorios, inodos, permisos y diario (journaling)</text>
+<rect fill="#e89822" height="92" rx="5" width="420" x="16" y="120"></rect>
+<text class="t6" text-anchor="middle" x="226" y="138">GESTOR DE VOLÚMENES LÓGICOS (LVM)</text>
+<rect fill="#fff" height="52" rx="4" width="126" x="28" y="148"></rect>
+<text class="k6" text-anchor="middle" x="91" y="168">PV</text>
+<text class="d6" text-anchor="middle" x="91" y="186">volumen físico</text>
+<rect fill="#fff" height="52" rx="4" width="126" x="163" y="148"></rect>
+<text class="k6" text-anchor="middle" x="226" y="168">VG</text>
+<text class="d6" text-anchor="middle" x="226" y="186">grupo de volúmenes</text>
+<rect fill="#fff" height="52" rx="4" width="126" x="298" y="148"></rect>
+<text class="k6" text-anchor="middle" x="361" y="168">LV</text>
+<text class="d6" text-anchor="middle" x="361" y="186">volumen lógico</text>
+<rect fill="#0055a0" height="34" rx="5" width="420" x="16" y="218"></rect>
+<text class="t6" text-anchor="middle" x="226" y="240">PARTICIONES · tabla GPT o MBR</text>
+<rect fill="#004077" height="34" rx="5" width="420" x="16" y="258"></rect>
+<text class="t6" text-anchor="middle" x="226" y="280">DISPOSITIVO DE BLOQUES · /dev/sda · PhysicalDrive0</text>
+<rect fill="#555" height="32" rx="5" width="420" x="16" y="298"></rect>
+<text class="t6" text-anchor="middle" x="226" y="319">DISPOSITIVO FÍSICO · HDD · SSD · LUN de cabina</text>
+<rect fill="#f0f4f8" height="118" rx="5" stroke="#0055a0" width="214" x="450" y="34"></rect>
+<text class="k6" text-anchor="middle" x="557" y="53">CUOTAS DE DISCO</text>
+<text class="d6" text-anchor="middle" x="557" y="74">Límite BLANDO (soft): se puede</text>
+<text class="d6" text-anchor="middle" x="557" y="88">superar durante un periodo</text>
+<text class="d6" text-anchor="middle" x="557" y="102">de gracia, con avisos</text>
+<text class="d6" text-anchor="middle" x="557" y="122">Límite DURO (hard): la escritura</text>
+<text class="d6" text-anchor="middle" x="557" y="136">falla, sin excepción</text>
+<rect fill="#f0f4f8" height="90" rx="5" stroke="#2d8659" width="214" x="450" y="162"></rect>
+<text class="k6" text-anchor="middle" x="557" y="181">VENTAJAS DE LVM</text>
+<text class="d6" text-anchor="middle" x="557" y="197">Redimensionar EN CALIENTE</text>
+<text class="d6" text-anchor="middle" x="557" y="211">Instantáneas (snapshots)</text>
+<text class="d6" text-anchor="middle" x="557" y="225">Agregar varios discos en uno</text>
+<text class="d6" text-anchor="middle" x="557" y="239">Windows: Espacios de almacenamiento</text>
+<rect fill="#d13c3c" height="68" rx="5" width="214" x="450" y="262"></rect>
+<text class="t6" text-anchor="middle" x="557" y="281">AMPLIAR SON DOS PASOS</text>
+<text class="s6" text-anchor="middle" x="557" y="300">1) lvextend  → agranda el volumen</text>
+<text class="s6" text-anchor="middle" x="557" y="316">2) resize2fs → agranda el sistema</text>
+<text style="font:9.5px system-ui;fill:#666" text-anchor="end" x="670" y="344">[Fuente: LVM-DOC; RH-DOC; MAN-PAGES]</text>
+</svg>

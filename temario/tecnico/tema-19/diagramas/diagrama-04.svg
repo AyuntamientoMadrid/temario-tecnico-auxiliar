@@ -1,0 +1,15 @@
+<svg aria-label="Cinco sublenguajes de un SGBD: DDL define la estructura, DML manipula datos, DQL consulta datos, DCL controla permisos, TCL controla transacciones" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t4{font:700 12px system-ui,sans-serif;fill:#fff}.s4{font:10.5px system-ui,sans-serif;fill:#fff}.l4{font:11px system-ui,sans-serif;fill:#444}.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h4" text-anchor="middle" x="340" y="22">Los cinco sublenguajes que componen SQL</text>
+<rect fill="#0055a0" height="86" rx="6" width="120" x="20" y="42"></rect><text class="t4" text-anchor="middle" x="80" y="64">DDL</text><text class="s4" text-anchor="middle" x="80" y="82">Define estructura</text><text class="s4" text-anchor="middle" x="80" y="98">CREATE ALTER</text><text class="s4" text-anchor="middle" x="80" y="114">DROP TRUNCATE</text>
+<rect fill="#2d8659" height="86" rx="6" width="120" x="150" y="42"></rect><text class="t4" text-anchor="middle" x="210" y="64">DML</text><text class="s4" text-anchor="middle" x="210" y="82">Manipula datos</text><text class="s4" text-anchor="middle" x="210" y="98">INSERT UPDATE</text><text class="s4" text-anchor="middle" x="210" y="114">DELETE MERGE</text>
+<rect fill="#3778b5" height="86" rx="6" width="120" x="280" y="42"></rect><text class="t4" text-anchor="middle" x="340" y="64">DQL</text><text class="s4" text-anchor="middle" x="340" y="82">Consulta datos</text><text class="s4" text-anchor="middle" x="340" y="98">SELECT</text><text class="s4" text-anchor="middle" x="340" y="114">(subconjunto DML)</text>
+<rect fill="#e89822" height="86" rx="6" width="120" x="410" y="42"></rect><text class="t4" text-anchor="middle" x="470" y="64">DCL</text><text class="s4" text-anchor="middle" x="470" y="82">Controla permisos</text><text class="s4" text-anchor="middle" x="470" y="98">GRANT</text><text class="s4" text-anchor="middle" x="470" y="114">REVOKE</text>
+<rect fill="#d13c3c" height="86" rx="6" width="120" x="540" y="42"></rect><text class="t4" text-anchor="middle" x="600" y="64">TCL</text><text class="s4" text-anchor="middle" x="600" y="82">Control transacciones</text><text class="s4" text-anchor="middle" x="600" y="98">COMMIT ROLLBACK</text><text class="s4" text-anchor="middle" x="600" y="114">SAVEPOINT</text>
+<rect fill="#eef4fa" height="90" rx="6" stroke="#0055a0" width="560" x="60" y="150"></rect>
+<text style="font:700 12px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="172">Ejemplo: alta de una nueva tasa municipal</text>
+<text class="l4" text-anchor="middle" x="340" y="194">DDL crea la tabla · DML inserta los registros · DQL comprueba la carga</text>
+<text class="l4" text-anchor="middle" x="340" y="212">DCL concede permiso al perfil gestor · TCL confirma la carga como unidad atómica</text>
+<text style="font:700 12px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="266">El estándar ISO/IEC 9075 clasifica SELECT dentro de DML — DQL es convención didáctica</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="330">[Fuente: SILBERSCHATZ, cap. 3]</text>
+</svg>

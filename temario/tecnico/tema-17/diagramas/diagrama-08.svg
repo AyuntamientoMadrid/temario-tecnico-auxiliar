@@ -1,0 +1,11 @@
+<svg aria-label="Las superclaves contienen a las claves candidatas; una de las candidatas se elige como clave primaria y las demás son alternativas; la clave ajena referencia otra tabla" class="d17-8" role="img" viewbox="0 0 620 340" xmlns="http://www.w3.org/2000/svg">
+<style>.d17-8 .t{font:700 12px system-ui,sans-serif;fill:#0055a0}.d17-8 .s{font:11px system-ui,sans-serif;fill:#444}.d17-8 .b{font:600 11px system-ui,sans-serif;fill:#fff}</style>
+<text class="t" text-anchor="middle" x="230" y="26">Jerarquía de claves</text>
+<ellipse cx="230" cy="160" fill="#e8f0f8" rx="200" ry="120" stroke="#6ea3d2"></ellipse><text class="t" text-anchor="middle" x="230" y="62">Superclaves</text>
+<ellipse cx="230" cy="175" fill="#cfe0f1" rx="150" ry="90" stroke="#3378b9"></ellipse><text class="t" text-anchor="middle" x="230" y="118">Claves candidatas (mínimas)</text>
+<ellipse cx="230" cy="195" fill="#0055a0" rx="92" ry="52"></ellipse><text class="b" text-anchor="middle" x="230" y="190">Clave primaria</text><text class="b" text-anchor="middle" x="230" y="208">(elegida, sin nulos)</text>
+<text class="s" text-anchor="middle" x="230" y="136">alternativas = candidatas no elegidas</text>
+<rect fill="#2d8659" height="80" rx="6" width="130" x="460" y="120"></rect><text class="b" text-anchor="middle" x="525" y="150">Clave ajena</text><text class="b" text-anchor="middle" x="525" y="170">(FK) → PK</text><text class="b" text-anchor="middle" x="525" y="186">de otra tabla</text>
+<text class="s" text-anchor="middle" x="310" y="312">superclave ⊇ candidata ⊇ primaria · la FK da integridad referencial</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="610" y="330">[Fuente: DATE, cap. 9]</text>
+</svg>

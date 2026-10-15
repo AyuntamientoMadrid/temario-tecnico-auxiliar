@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto de la tasa, ¿qué tipo de dato debe usarse para el importe_base y la cuota_final?",
+    "o": [
+     "Un real en coma flotante, porque admite decimales.",
+     "Un entero de céntimos o un tipo decimal exacto.",
+     "Una cadena de caracteres, para guardar el símbolo €."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §2.2",
+    "e": "Para dinero se recomienda un entero de céntimos o un tipo decimal exacto, no coma flotante, porque los reales en coma flotante son aproximaciones."
+   },
+   {
+    "q": "¿Por qué no conviene guardar esos importes en coma flotante?",
+    "o": [
+     "Porque la representación IEEE 754 es aproximada y puede introducir céntimos erróneos.",
+     "Porque la coma flotante no admite valores con parte decimal, como los céntimos.",
+     "Porque la coma flotante no permite representar importes negativos ni el cero."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.2",
+    "e": "Los reales se representan según IEEE 754 con precisión finita: no todos los decimales son exactos, y un céntimo de error multiplicado por miles de recibos es un problema contable."
+   },
+   {
+    "q": "¿Qué tipo de dato corresponde al indicador de familia numerosa?",
+    "o": [
+     "Real, en tanto por uno.",
+     "Enumerado con los tramos de renta.",
+     "Booleano (verdadero/falso)."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §2.2",
+    "e": "El indicador solo puede tomar dos valores, sí o no: es un booleano. El tanto por uno es propio de la bonificación."
+   },
+   {
+    "q": "¿Qué estructura de control es la más adecuada para asignar la bonificación por tramos de renta?",
+    "o": [
+     "Una selección múltiple segun / switch sobre la renta.",
+     "Un condicional múltiple anidado (si … si_no si … si_no).",
+     "Un bucle mientras que recorra los tramos de renta."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §4.2",
+    "e": "El condicional múltiple anidado encadena varias condiciones sobre rangos (renta < 12.000; renta ≤ 20.000, porque el tramo «entre 12.000 y 20.000 €» incluye los 20.000; resto), que es lo que pide el cálculo."
+   },
+   {
+    "q": "¿Por qué se descarta aquí la selección múltiple segun / switch?",
+    "o": [
+     "Porque switch compara contra valores constantes y aquí se decide por rangos.",
+     "Porque switch no admite una rama por defecto para los demás valores.",
+     "Porque switch solo puede distinguir entre dos casos distintos."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §4.2",
+    "e": "La selección múltiple compara una expresión contra varios valores constantes y es útil con valores discretos; la renta es continua y se clasifica por rangos."
+   },
+   {
+    "q": "Un solicitante tiene una renta de 15.000 € y familia numerosa. ¿Qué bonificación total (en tanto por uno) le corresponde?",
+    "o": [
+     "0,25.",
+     "0,55.",
+     "0,30."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestiones 2 y 3",
+    "e": "La renta está entre 12.000 y 20.000 €, tramo del 25 % (0,25); la familia numerosa suma 5 puntos acumulables (0,05): 0,25 + 0,05 = 0,30."
+   },
+   {
+    "q": "¿Qué expresión calcula correctamente la cuota_final?",
+    "o": [
+     "cuota_final = importe_base * (1 - bonificacion)",
+     "cuota_final = importe_base * 1 - bonificacion",
+     "cuota_final = importe_base * bonificacion"
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §3.1, §3.4",
+    "e": "La cuota es la parte no bonificada del importe: importe_base × (1 − bonificación). Sin paréntesis, la multiplicación se evalúa antes que la resta y el resultado sería importe_base − bonificación."
+   },
+   {
+    "q": "Con un importe_base de 200 € y una bonificación total de 0,30, ¿cuál es la cuota_final?",
+    "o": [
+     "60 €.",
+     "140 €.",
+     "199,70 €."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 3",
+    "e": "cuota_final = 200 × (1 − 0,30) = 200 × 0,70 = 140 €. Los 60 € son el importe bonificado, no la cuota."
+   },
+   {
+    "q": "¿Qué fragmento garantiza que la cuota final nunca sea negativa?",
+    "o": [
+     "si (cuota_final == 0) entonces cuota_final = 0 fin_si",
+     "si (cuota_final < 0) entonces cuota_final = importe_base fin_si",
+     "si (cuota_final < 0) entonces cuota_final = 0 fin_si"
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §3.2, §4.2",
+    "e": "Un condicional simple comprueba si la cuota es menor que cero y, en ese caso, la fija en 0; comparar con == 0 no corrige nada y poner el importe base anularía la bonificación."
+   },
+   {
+    "q": "Los umbrales (12.000, 20.000) y los porcentajes aparecen como literales en el código. ¿Cómo se facilita el cambio de tramos del año que viene?",
+    "o": [
+     "Sustituyéndolos por constantes con nombre declaradas en un único lugar.",
+     "Añadiendo un comentario junto a cada literal que explique su significado.",
+     "Usando variables globales que cualquier función pueda modificar."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · §1.5, §6.2",
+    "e": "Las constantes con nombre (UMBRAL_BAJO = 12000…) eliminan los «números mágicos»: el cambio se hace en un solo punto. Las variables globales modificables se desaconsejan."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "En el supuesto del censo, ¿qué estructura representa a cada Habitante, con su dni, nombre, edad y codigo_distrito?",
+    "o": [
+     "Un array de cuatro elementos, todos ellos del mismo tipo de dato.",
+     "Un tipo enumerado, con una lista fija de nombres de valores.",
+     "Un registro, porque agrupa campos de tipos distintos accesibles por nombre."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §5.2",
+    "e": "El registro agrupa campos de tipos posiblemente distintos (cadenas y enteros) bajo un nombre y se accede por nombre de campo; el array es homogéneo."
+   },
+   {
+    "q": "¿Qué declaraciones necesita el módulo para el censo y para la población por distrito?",
+    "o": [
+     "censo : array[1..N] de Habitante y poblacion : array[1..21] de entero.",
+     "censo : registro de N campos y poblacion : array[1..N] de entero.",
+     "censo : array[1..21] de Habitante y poblacion : array[1..N] de entero."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §5.1, §5.2",
+    "e": "El censo es un array de registros (uno por habitante) y la población es un array de 21 contadores enteros, uno por distrito."
+   },
+   {
+    "q": "¿Qué bucle es el adecuado para recorrer el censo y por qué?",
+    "o": [
+     "Un bucle mientras, porque el número de habitantes es desconocido.",
+     "Un bucle para (for), porque se conoce el número N de habitantes.",
+     "Un bucle repetir … hasta, porque el censo debe procesarse dos veces."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §4.3",
+    "e": "El bucle para se usa cuando se conoce de antemano el número de repeticiones, como aquí, donde N es conocido."
+   },
+   {
+    "q": "¿Cuántos recorridos del censo hacen falta para obtener los tres resultados y con qué coste?",
+    "o": [
+     "Tres recorridos, uno por resultado, con coste O(n²).",
+     "Veintiún recorridos, uno por distrito, con coste O(n).",
+     "Un único recorrido, con coste O(n)."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §5.3",
+    "e": "Dentro del mismo bucle se actualizan el total, los mayores de edad y el contador del distrito: un solo recorrido lineal, O(n)."
+   },
+   {
+    "q": "Antes de recorrer el censo, ¿qué debe hacerse con el array poblacion?",
+    "o": [
+     "Nada: el lenguaje pone siempre a 0 sus posiciones al declararlo.",
+     "Inicializar a 0 sus 21 posiciones, igual que total y mayores.",
+     "Cargar en cada posición la edad del primer habitante del distrito."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §1.5",
+    "e": "Los contadores deben inicializarse antes de acumular; usar una variable declarada pero no inicializada es una fuente clásica de errores (valor «basura» en C)."
+   },
+   {
+    "q": "¿Qué condición cuenta correctamente a los mayores de edad (18 o más)?",
+    "o": [
+     "si (censo[i].edad >= 18)",
+     "si (censo[i].edad > 18)",
+     "si (censo.edad[i] >= 18)"
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §3.2, §5.2",
+    "e": "Hay que incluir los 18 años (>=) y acceder primero al registro i-ésimo y después a su campo edad: censo[i].edad."
+   },
+   {
+    "q": "En la expresión censo[i].codigo_distrito, ¿cómo se accede a cada parte?",
+    "o": [
+     "censo[i] accede al campo por nombre; .codigo_distrito, al registro por índice.",
+     "Ambas partes acceden por índice: i al registro y codigo_distrito a la posición.",
+     "censo[i] accede al registro por índice; .codigo_distrito, al campo por nombre."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §5.1, §5.2",
+    "e": "Al elemento de un array se accede por índice (en tiempo constante) y al campo de un registro, por su nombre con el punto."
+   },
+   {
+    "q": "Con dist = censo[i].codigo_distrito, ¿qué sentencia incrementa el contador del distrito de ese habitante?",
+    "o": [
+     "poblacion[i] = poblacion[i] + 1",
+     "poblacion[dist] = poblacion[dist] + 1",
+     "poblacion = poblacion + dist"
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §5.1",
+    "e": "El valor del campo codigo_distrito se usa como índice del array poblacion; el índice i recorre habitantes, no distritos."
+   },
+   {
+    "q": "¿Qué comprobación defensiva debe hacerse antes de usar dist como índice de poblacion?",
+    "o": [
+     "si (dist >= 1 Y dist <= 21) entonces …",
+     "si (dist >= 1 O dist <= 21) entonces …",
+     "si (dist > 1 Y dist < 21) entonces …"
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · §3.2, §6.2",
+    "e": "Hay que exigir a la vez (Y) que el valor esté entre 1 y 21, ambos incluidos. Con O la condición siempre es verdadera, y con > y < se excluyen los distritos 1 y 21."
+   },
+   {
+    "q": "Si un registro trae el distrito 0 o 25 y no se comprueba el rango, ¿qué ocurre?",
+    "o": [
+     "El lenguaje ajusta el índice al extremo más cercano y suma el habitante al distrito 1 o 21.",
+     "El compilador detecta el valor erróneo del registro e impide ejecutar el programa.",
+     "Un acceso fuera de rango: corrompe memoria en C o lanza IndexOutOfBounds en Java/Python."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §5.1",
+    "e": "Acceder a un índice fuera del rango declarado es un error grave: en C corrompe memoria silenciosamente y en Java o Python lanza una excepción."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el supuesto de los expedientes, ¿qué expresión usa la función es_par(n)?",
+    "o": [
+     "n mod 2 == 0",
+     "n div 2 == 0",
+     "n / 2 == 0"
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §3.1",
+    "e": "El operador módulo devuelve el resto de la división entera: si el resto de dividir entre 2 es cero, el número es par. div devuelve el cociente."
+   },
+   {
+    "q": "¿Por qué es_par se define como función y no como procedimiento?",
+    "o": [
+     "Porque no devuelve ningún valor y actúa por sus efectos.",
+     "Porque devuelve un valor (booleano) que se usa en expresiones.",
+     "Porque recibe un parámetro, cosa que no admite un procedimiento."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §4.5",
+    "e": "La función devuelve un valor y se usa dentro de expresiones; el procedimiento no devuelve valor y actúa por sus efectos. Ambos pueden recibir parámetros."
+   },
+   {
+    "q": "En la función recursiva suma_hasta(n), ¿cuál es el caso base?",
+    "o": [
+     "devolver n + suma_hasta(n - 1)",
+     "La llamada inicial suma_hasta(4)",
+     "si (n <= 1) entonces devolver n"
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §4.4",
+    "e": "El caso base es la condición de parada que se resuelve directamente sin volver a llamarse: para n ≤ 1 se devuelve n."
+   },
+   {
+    "q": "¿Qué caso recursivo es correcto para suma_hasta(n)?",
+    "o": [
+     "devolver n + suma_hasta(n - 1)",
+     "devolver n + suma_hasta(n + 1)",
+     "devolver n + suma_hasta(n)"
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 2 · §4.4",
+    "e": "El caso recursivo debe llamarse con un problema más pequeño que se acerque al caso base; con n + 1 se aleja y con n no avanza."
+   },
+   {
+    "q": "¿Qué pasaría si suma_hasta no tuviera caso base?",
+    "o": [
+     "Devolvería 0 al llegar a n = 0 y terminaría con normalidad.",
+     "El compilador lo detectaría como error de sintaxis.",
+     "Recursión infinita hasta agotar la pila (stack overflow)."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §4.4",
+    "e": "Sin caso base la recursión no termina: cada llamada pendiente ocupa un marco en la pila hasta agotarla."
+   },
+   {
+    "q": "¿Qué valor devuelve suma_hasta(4)?",
+    "o": [
+     "24.",
+     "10.",
+     "6."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §4.4",
+    "e": "suma_hasta(4) = 4 + (3 + (2 + suma_hasta(1))), con suma_hasta(1) = 1: 2 + 1 = 3, 3 + 3 = 6, 4 + 6 = 10. El 24 sería el factorial de 4."
+   },
+   {
+    "q": "¿Cuántas llamadas a suma_hasta llegan a estar apiladas a la vez al calcular suma_hasta(4)?",
+    "o": [
+     "Cuatro: suma_hasta(4), (3), (2) y (1).",
+     "Tres: suma_hasta(4), (3) y (2).",
+     "Cinco: de suma_hasta(4) a suma_hasta(0)."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §4.4",
+    "e": "La recursión se detiene en suma_hasta(1), el caso base; hasta entonces cada llamada pendiente ocupa un marco en la pila: 4, 3, 2 y 1."
+   },
+   {
+    "q": "Se llama a incrementar(c) { c = c + 1 } con contador = 10. Si el paso es por valor, ¿cuánto vale contador después?",
+    "o": [
+     "11, porque c y contador comparten la misma dirección.",
+     "10, porque se incrementó una copia del argumento.",
+     "0, porque la copia se destruye al salir del procedimiento."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §4.6",
+    "e": "En el paso por valor el subprograma trabaja sobre una copia; los cambios no afectan a la variable original del llamador."
+   },
+   {
+    "q": "¿Y si el paso de contador a incrementar(c) es por referencia?",
+    "o": [
+     "10, porque el original nunca se modifica.",
+     "12, porque se incrementan c y contador.",
+     "11, porque se modifica el original."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §4.6",
+    "e": "En el paso por referencia el subprograma accede a la variable real, de modo que el incremento persiste: contador pasa de 10 a 11."
+   },
+   {
+    "q": "¿Qué explica que, con el paso por referencia, la llamada sí modifique contador?",
+    "o": [
+     "Que el procedimiento devuelve el nuevo valor de c al llamador.",
+     "Que se pasa la dirección de la variable, no una copia de su valor.",
+     "Que c se declara como variable global visible en todo el programa."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §4.5, §4.6",
+    "e": "Por referencia se pasa la dirección de la variable original y el subprograma trabaja sobre ella; un procedimiento, además, no devuelve valor."
+   }
+  ]
+ }
+]

@@ -1,0 +1,29 @@
+<svg aria-label="Comparativa entre arquitectura orientada a servicios con bus de servicios empresarial y base de datos compartida, y arquitectura de microservicios con canal ligero y una base de datos por servicio, señalando que la diferencia está en dónde vive la lógica de integración y quién posee los datos" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t4{font:700 10px system-ui,sans-serif;fill:#fff}.s4{font:8.5px system-ui,sans-serif;fill:#fff}.d4{font:9px system-ui,sans-serif;fill:#333}.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}.k4{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.f4{font:8px system-ui,sans-serif;fill:#777}</style>
+<text class="h4" text-anchor="middle" x="340" y="20">SOA frente a microservicios</text>
+<rect fill="#888" height="22" rx="4" width="310" x="20" y="32"></rect><text class="t4" text-anchor="middle" x="175" y="47">SOA CLÁSICA</text>
+<rect fill="#0055a0" height="22" rx="4" width="310" x="350" y="32"></rect><text class="t4" text-anchor="middle" x="505" y="47">MICROSERVICIOS</text>
+<rect fill="#eef3f8" height="24" rx="4" width="86" x="32" y="64"></rect><text class="d4" text-anchor="middle" x="75" y="80">Servicio A</text>
+<rect fill="#eef3f8" height="24" rx="4" width="86" x="132" y="64"></rect><text class="d4" text-anchor="middle" x="175" y="80">Servicio B</text>
+<rect fill="#eef3f8" height="24" rx="4" width="86" x="232" y="64"></rect><text class="d4" text-anchor="middle" x="275" y="80">Servicio C</text>
+<path d="M75 90 v14" stroke="#888" stroke-width="1.5"></path><path d="M175 90 v14" stroke="#888" stroke-width="1.5"></path><path d="M275 90 v14" stroke="#888" stroke-width="1.5"></path>
+<rect fill="#e89822" height="30" rx="5" width="286" x="32" y="106"></rect><text class="t4" text-anchor="middle" x="175" y="119">BUS DE SERVICIOS (ESB)</text><text class="s4" text-anchor="middle" x="175" y="131">enruta, transforma y contiene lógica</text>
+<path d="M175 138 v14" stroke="#888" stroke-width="1.5"></path>
+<rect fill="#2d8659" height="26" rx="5" width="166" x="92" y="154"></rect><text class="t4" text-anchor="middle" x="175" y="171">BASE DE DATOS COMPARTIDA</text>
+<rect fill="#eef3f8" height="24" rx="4" width="86" x="362" y="64"></rect><text class="d4" text-anchor="middle" x="405" y="80">Micro A</text>
+<rect fill="#eef3f8" height="24" rx="4" width="86" x="462" y="64"></rect><text class="d4" text-anchor="middle" x="505" y="80">Micro B</text>
+<rect fill="#eef3f8" height="24" rx="4" width="86" x="562" y="64"></rect><text class="d4" text-anchor="middle" x="605" y="80">Micro C</text>
+<path d="M405 90 v14" stroke="#0055a0" stroke-width="1.5"></path><path d="M505 90 v14" stroke="#0055a0" stroke-width="1.5"></path><path d="M605 90 v14" stroke="#0055a0" stroke-width="1.5"></path>
+<rect fill="#c9d9e8" height="20" rx="4" width="286" x="362" y="106"></rect><text class="d4" text-anchor="middle" x="505" y="120">canal ligero: API o mensajería, sin lógica</text>
+<rect fill="#2d8659" height="24" rx="4" width="86" x="362" y="140"></rect><text class="s4" text-anchor="middle" x="405" y="156">BD propia A</text>
+<rect fill="#2d8659" height="24" rx="4" width="86" x="462" y="140"></rect><text class="s4" text-anchor="middle" x="505" y="156">BD propia B</text>
+<rect fill="#2d8659" height="24" rx="4" width="86" x="562" y="140"></rect><text class="s4" text-anchor="middle" x="605" y="156">BD propia C</text>
+<text class="k4" x="20" y="200">TAMAÑO</text>
+<rect fill="#f5f5f5" height="22" rx="4" width="310" x="20" y="206"></rect><text class="d4" text-anchor="middle" x="175" y="221">Servicios de grano grueso</text>
+<rect fill="#f5f5f5" height="22" rx="4" width="310" x="350" y="206"></rect><text class="d4" text-anchor="middle" x="505" y="221">Una capacidad de negocio por servicio</text>
+<text class="k4" x="20" y="246">DESPLIEGUE</text>
+<rect fill="#eef3f8" height="22" rx="4" width="310" x="20" y="252"></rect><text class="d4" text-anchor="middle" x="175" y="267">Coordinado, con frecuencia conjunto</text>
+<rect fill="#eef3f8" height="22" rx="4" width="310" x="350" y="252"></rect><text class="d4" text-anchor="middle" x="505" y="267">Independiente por servicio</text>
+<rect fill="#0055a0" height="24" rx="4" width="640" x="20" y="286"></rect><text class="s4" text-anchor="middle" x="340" y="302">La diferencia no es el tamaño: es dónde vive la lógica de integración y quién es dueño de los datos</text>
+<text class="f4" text-anchor="middle" x="340" y="326">[Fuente: FOWLER]</text>
+</svg>

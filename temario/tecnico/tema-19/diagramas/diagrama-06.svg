@@ -1,0 +1,17 @@
+<svg aria-label="Orden lógico de evaluación de un SELECT: FROM, JOIN, WHERE, GROUP BY, HAVING, SELECT, DISTINCT, ORDER BY, LIMIT, distinto del orden en que se escribe la sentencia" role="img" viewbox="0 0 660 370" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 12px system-ui,sans-serif;fill:#fff}.l6{font:10.5px system-ui,sans-serif;fill:#444}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h6" text-anchor="middle" x="330" y="22">Orden de escritura ≠ orden de evaluación</text>
+<text style="font:700 11px system-ui;fill:#e89822" text-anchor="middle" x="330" y="42">▼ El motor evalúa en este orden, de arriba abajo ▼</text>
+<g>
+<rect fill="#0055a0" height="30" rx="4" width="580" x="40" y="56"></rect><text class="t6" text-anchor="middle" x="330" y="76">1. FROM — identifica y combina las tablas de origen</text>
+<rect fill="#3778b5" height="30" rx="4" width="580" x="40" y="90"></rect><text class="t6" text-anchor="middle" x="330" y="110">2. JOIN / ON — aplica las condiciones de reunión</text>
+<rect fill="#2d8659" height="30" rx="4" width="580" x="40" y="124"></rect><text class="t6" text-anchor="middle" x="330" y="144">3. WHERE — filtra filas individuales</text>
+<rect fill="#3f9970" height="30" rx="4" width="580" x="40" y="158"></rect><text class="t6" text-anchor="middle" x="330" y="178">4. GROUP BY — agrupa las filas restantes</text>
+<rect fill="#e89822" height="30" rx="4" width="580" x="40" y="192"></rect><text class="t6" text-anchor="middle" x="330" y="212">5. HAVING — filtra grupos ya agregados</text>
+<rect fill="#c98a1f" height="30" rx="4" width="580" x="40" y="226"></rect><text class="t6" text-anchor="middle" x="330" y="246">6. SELECT — calcula columnas/expresiones de salida</text>
+<rect fill="#8a6fb0" height="30" rx="4" width="580" x="40" y="260"></rect><text class="t6" text-anchor="middle" x="330" y="280">7. DISTINCT — elimina filas duplicadas</text>
+<rect fill="#d13c3c" height="30" rx="4" width="580" x="40" y="294"></rect><text class="t6" text-anchor="middle" x="330" y="314">8. ORDER BY / LIMIT — ordena y recorta el resultado final</text>
+</g>
+<text style="font:700 11px system-ui;fill:#0055a0" text-anchor="middle" x="330" y="342">Por eso un alias del SELECT no sirve en WHERE, pero sí en ORDER BY</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="650" y="364">[Fuente: SILBERSCHATZ, cap. 3]</text>
+</svg>

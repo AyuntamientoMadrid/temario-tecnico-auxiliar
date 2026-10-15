@@ -1,0 +1,29 @@
+<svg aria-label="Escala de redes por cobertura geográfica desde la red de área personal de metros hasta la red de área extensa de alcance continental, pasando por la red local, la de campus y la metropolitana, con los tres criterios que separan una red local de una red extensa: titularidad del medio, velocidad y latencia, y tasa de error" role="img" viewbox="0 0 680 326" xmlns="http://www.w3.org/2000/svg">
+<style>.t11{font:700 10.5px system-ui,sans-serif;fill:#fff}.s11{font:8.5px system-ui,sans-serif;fill:#fff}.d11{font:9px system-ui,sans-serif;fill:#333}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}.k11{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n11{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<defs><marker id="a11" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="h11" text-anchor="middle" x="340" y="20">De los metros a los continentes</text>
+<rect fill="#7a2f8a" height="58" rx="5" width="124" x="20" y="38"></rect><text class="t11" text-anchor="middle" x="82" y="58">PAN</text><text class="s11" text-anchor="middle" x="82" y="73">metros</text><text class="s11" text-anchor="middle" x="82" y="87">Bluetooth, NFC</text>
+<rect fill="#0055a0" height="58" rx="5" width="124" x="152" y="38"></rect><text class="t11" text-anchor="middle" x="214" y="58">LAN</text><text class="s11" text-anchor="middle" x="214" y="73">edificio</text><text class="s11" text-anchor="middle" x="214" y="87">Ethernet, Wi-Fi</text>
+<rect fill="#2d8659" height="58" rx="5" width="124" x="284" y="38"></rect><text class="t11" text-anchor="middle" x="346" y="58">CAN</text><text class="s11" text-anchor="middle" x="346" y="73">campus</text><text class="s11" text-anchor="middle" x="346" y="87">varios edificios</text>
+<rect fill="#e89822" height="58" rx="5" width="124" x="416" y="38"></rect><text class="t11" text-anchor="middle" x="478" y="58">MAN</text><text class="s11" text-anchor="middle" x="478" y="73">ciudad</text><text class="s11" text-anchor="middle" x="478" y="87">anillo de fibra</text>
+<rect fill="#d13c3c" height="58" rx="5" width="112" x="548" y="38"></rect><text class="t11" text-anchor="middle" x="604" y="58">WAN</text><text class="s11" text-anchor="middle" x="604" y="73">país o mundo</text><text class="s11" text-anchor="middle" x="604" y="87">internet, SARA</text>
+<path d="M40 110 L640 110" marker-end="url(#a11)" stroke="#0055a0" stroke-width="2"></path>
+<text class="n11" x="40" y="126">metros</text><text class="n11" text-anchor="end" x="640" y="126">miles de kilómetros</text>
+<text class="k11" x="26" y="150">LOS TRES CRITERIOS QUE DE VERDAD SEPARAN LAN DE WAN</text>
+<rect fill="#eef3f8" height="52" rx="5" width="206" x="20" y="158"></rect>
+<text class="k11" text-anchor="middle" x="123" y="176">1 · TITULARIDAD</text>
+<text class="n11" text-anchor="middle" x="123" y="192">LAN: el cable es propio</text><text class="n11" text-anchor="middle" x="123" y="204">WAN: se contrata al operador</text>
+<rect fill="#eef3f8" height="52" rx="5" width="206" x="237" y="158"></rect>
+<text class="k11" text-anchor="middle" x="340" y="176">2 · VELOCIDAD Y LATENCIA</text>
+<text class="n11" text-anchor="middle" x="340" y="192">LAN: gigabits, microsegundos</text><text class="n11" text-anchor="middle" x="340" y="204">WAN: menos por euro, milisegundos</text>
+<rect fill="#eef3f8" height="52" rx="5" width="206" x="454" y="158"></rect>
+<text class="k11" text-anchor="middle" x="557" y="176">3 · TASA DE ERROR</text>
+<text class="n11" text-anchor="middle" x="557" y="192">LAN: medio controlado</text><text class="n11" text-anchor="middle" x="557" y="204">WAN: medios heterogéneos</text>
+<text class="k11" x="26" y="234">CATEGORÍAS POR OTROS CRITERIOS, QUE NO SON DE ESCALA</text>
+<rect fill="#f5f5f5" height="34" rx="4" width="155" x="20" y="242"></rect><text class="d11" text-anchor="middle" x="97" y="257">SAN</text><text class="n11" text-anchor="middle" x="97" y="270">por función: almacenamiento</text>
+<rect fill="#f5f5f5" height="34" rx="4" width="155" x="182" y="242"></rect><text class="d11" text-anchor="middle" x="259" y="257">VPN</text><text class="n11" text-anchor="middle" x="259" y="270">por arquitectura: túnel cifrado</text>
+<rect fill="#f5f5f5" height="34" rx="4" width="155" x="344" y="242"></rect><text class="d11" text-anchor="middle" x="421" y="257">BAN</text><text class="n11" text-anchor="middle" x="421" y="270">sensores sobre el cuerpo</text>
+<rect fill="#f5f5f5" height="34" rx="4" width="154" x="506" y="242"></rect><text class="d11" text-anchor="middle" x="583" y="257">W + PAN/LAN/MAN/WAN</text><text class="n11" text-anchor="middle" x="583" y="270">versión inalámbrica de cada una</text>
+<text class="n11" text-anchor="middle" x="340" y="298">Red de ALTA capacidad = al menos 30 Mbps · red de MUY ALTA capacidad = fibra hasta el punto de distribución</text>
+<text class="n11" text-anchor="end" x="670" y="320">[Fuente: LGT, anexo II.61-63; TANENBAUM]</text>
+</svg>

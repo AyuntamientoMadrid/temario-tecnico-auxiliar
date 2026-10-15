@@ -1,0 +1,40 @@
+<svg aria-label="Comparativa Von Neumann vs Harvard" role="img" viewbox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .arch-label{font:600 13px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}
+    .arch-sub{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+    .arch-title{font:700 16px system-ui,sans-serif;text-anchor:middle}
+  </style>
+<text class="arch-title" fill="#0055a0" x="170" y="32">Arquitectura Von Neumann</text>
+<text class="arch-sub" x="170" y="50">1945 · 1 memoria · 1 bus</text>
+<rect fill="#d6e4f0" height="50" rx="4" stroke="#0055a0" stroke-width="1.5" width="100" x="60" y="80"></rect>
+<text class="arch-label" x="110" y="103">CPU</text>
+<text class="arch-sub" x="110" y="118">fetch + exec</text>
+<rect fill="#d6e4f0" height="50" rx="4" stroke="#0055a0" stroke-width="1.5" width="130" x="220" y="80"></rect>
+<text class="arch-label" x="285" y="101">Memoria única</text>
+<text class="arch-sub" x="285" y="117">datos + instrucciones</text>
+<line stroke="#0055a0" stroke-width="3" x1="160" x2="220" y1="105" y2="105"></line>
+<text class="arch-sub" x="190" y="74">bus compartido</text>
+<rect fill="#fce4e4" height="60" rx="4" stroke="#d13c3c" stroke-dasharray="5 3" stroke-width="1.5" width="290" x="60" y="160"></rect>
+<text class="arch-label" fill="#d13c3c" x="205" y="185">Cuello de botella Von Neumann</text>
+<text class="arch-sub" x="205" y="205">no se lee dato e instrucción a la vez</text>
+<line stroke="#c0c7cf" stroke-dasharray="3 3" stroke-width="1" x1="360" x2="360" y1="40" y2="320"></line>
+<text class="arch-title" fill="#2d8659" x="510" y="32">Arquitectura Harvard</text>
+<text class="arch-sub" x="495" y="50">Harvard Mark I 1944</text>
+<rect fill="#d8f0dc" height="50" rx="4" stroke="#2d8659" stroke-width="1.5" width="100" x="400" y="80"></rect>
+<text class="arch-label" x="450" y="103">CPU</text>
+<text class="arch-sub" x="450" y="118">fetch || exec</text>
+<rect fill="#d8f0dc" height="40" rx="4" stroke="#2d8659" stroke-width="1.5" width="110" x="560" y="50"></rect>
+<text class="arch-label" x="615" y="70">Mem. instr.</text>
+<rect fill="#d8f0dc" height="40" rx="4" stroke="#2d8659" stroke-width="1.5" width="110" x="560" y="120"></rect>
+<text class="arch-label" x="615" y="140">Mem. datos</text>
+<line stroke="#2d8659" stroke-width="3" x1="500" x2="560" y1="95" y2="70"></line>
+<line stroke="#2d8659" stroke-width="3" x1="500" x2="560" y1="115" y2="140"></line>
+<text class="arch-sub" x="525" y="74">bus I</text>
+<text class="arch-sub" x="525" y="146">bus D</text>
+<rect fill="#d8f0dc" height="60" rx="4" stroke="#2d8659" stroke-dasharray="5 3" stroke-width="1.5" width="270" x="400" y="180"></rect>
+<text class="arch-label" fill="#2d8659" x="535" y="205">Acceso paralelo</text>
+<text class="arch-sub" x="535" y="225">instrucción y dato simultáneos</text>
+<rect fill="#f5f5f5" height="50" rx="4" stroke="#c0c7cf" width="610" x="60" y="295"></rect>
+<text fill="#0055a0" style="font:600 12px system-ui,sans-serif" x="70" y="314">Harvard modificada (actual):</text>
+<text fill="#555" style="font:11px system-ui,sans-serif" x="70" y="332">x86-64, ARM · caché L1 separada (I/D) pero memoria principal única · combina lo mejor</text>
+</svg>

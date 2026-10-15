@@ -1,0 +1,20 @@
+<svg aria-label="Tres vistas del modelado: estática con E-R, dinámica con DTE y funcional con DFD, y sus equivalentes UML" class="svd4" role="img" viewbox="0 0 660 280" xmlns="http://www.w3.org/2000/svg">
+<style>.svd4 .t{font:700 13px system-ui,sans-serif;fill:#fff}.svd4 .s{font:11px system-ui,sans-serif;fill:#1a1a1a}.svd4 .q{font:italic 11px system-ui,sans-serif;fill:#555}.svd4 .h{font:700 13px system-ui,sans-serif;fill:#0055a0}.svd4 .uml{font:11px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h" text-anchor="middle" x="330" y="24">Sistema de información: tres perspectivas</text>
+<rect fill="#eaf1f8" height="180" rx="10" stroke="#0055a0" width="190" x="30" y="50"></rect>
+<rect fill="#0055a0" height="34" rx="6" width="170" x="40" y="60"></rect><text class="t" text-anchor="middle" x="125" y="83">ESTÁTICA</text>
+<text class="q" text-anchor="middle" x="125" y="118">¿qué datos y cómo</text><text class="q" text-anchor="middle" x="125" y="133">se relacionan?</text>
+<text class="s" style="font-weight:700" text-anchor="middle" x="125" y="170">Modelo E-R</text>
+<text class="uml" text-anchor="middle" x="125" y="210">UML: clases</text>
+<rect fill="#eaf1f8" height="180" rx="10" stroke="#0055a0" width="190" x="235" y="50"></rect>
+<rect fill="#0055a0" height="34" rx="6" width="170" x="245" y="60"></rect><text class="t" text-anchor="middle" x="330" y="83">DINÁMICA</text>
+<text class="q" text-anchor="middle" x="330" y="118">¿cómo cambia de</text><text class="q" text-anchor="middle" x="330" y="133">estado ante eventos?</text>
+<text class="s" style="font-weight:700" text-anchor="middle" x="330" y="170">DTE</text>
+<text class="uml" text-anchor="middle" x="330" y="210">UML: estados</text>
+<rect fill="#eaf1f8" height="180" rx="10" stroke="#0055a0" width="190" x="440" y="50"></rect>
+<rect fill="#0055a0" height="34" rx="6" width="170" x="450" y="60"></rect><text class="t" text-anchor="middle" x="535" y="83">FUNCIONAL</text>
+<text class="q" text-anchor="middle" x="535" y="118">¿qué transformaciones</text><text class="q" text-anchor="middle" x="535" y="133">sufren los datos?</text>
+<text class="s" style="font-weight:700" text-anchor="middle" x="535" y="170">DFD</text>
+<text class="uml" text-anchor="middle" x="535" y="210">UML: actividad</text>
+<text class="q" text-anchor="end" x="630" y="262">[Fuente: RUMBAUGH · YOURDON]</text>
+</svg>

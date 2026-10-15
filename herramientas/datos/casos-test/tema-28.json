@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "La utilización media de los 34 servidores es del 11 % de CPU. ¿Qué ventaja de la virtualización explota directamente ese dato?",
+    "o": [
+     "La consolidación: agrupar máquinas virtuales en pocos anfitriones eleva la utilización.",
+     "La emulación: ejecutar en x86 aplicaciones escritas para otra arquitectura de procesador.",
+     "La tolerancia a fallos: duplicar cada servidor en otro anfitrión sincronizado."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §1.1",
+    "e": "Un servidor dedicado a una sola aplicación opera muy por debajo de su capacidad; agrupar varias máquinas virtuales reduce drásticamente el número de equipos."
+   },
+   {
+    "q": "La consolidación concentra el riesgo: la caída de un anfitrión afecta a muchos servicios. ¿Cuál es su contramedida?",
+    "o": [
+     "Asignar más vCPU de las necesarias a cada máquina, para que absorba los picos.",
+     "Un clúster con capacidad N+1, alta disponibilidad (HA) y reglas de antiafinidad.",
+     "Desactivar la HA, para que un fallo no arrastre las máquinas a otro anfitrión."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §1.1",
+    "e": "Si un anfitrión soporta muchas máquinas virtuales, su caída afecta a todos sus servicios; el clúster debe poder perder un nodo."
+   },
+   {
+    "q": "Cada anfitrión tiene 32 núcleos físicos y se toma una ratio de 4 vCPU por núcleo. ¿Qué resulta para las 96 vCPU necesarias?",
+    "o": [
+     "32 vCPU asignables por anfitrión: por CPU harían falta tres.",
+     "256 vCPU por anfitrión, porque el multihilo duplica los núcleos útiles.",
+     "128 vCPU asignables por anfitrión: por CPU bastaría con uno solo."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §2.2",
+    "e": "32 núcleos × 4 = 128 vCPU por anfitrión; el multihilo simultáneo no duplica la capacidad real."
+   },
+   {
+    "q": "Sin sobreasignar memoria, ¿cuántos anfitriones hacen falta para los 680 GB y qué recurso limita el dimensionamiento?",
+    "o": [
+     "Dos anfitriones: el recurso limitante es la CPU, por las 96 vCPU.",
+     "Dos anfitriones (680 / 512 = 1,33): el recurso limitante es la memoria.",
+     "Uno: sobreasignando la memoria no hay ningún recurso limitante."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §2.2.1",
+    "e": "La memoria es el recurso que de verdad limita la densidad de un anfitrión; por CPU bastaba uno."
+   },
+   {
+    "q": "Aplicando la regla N+1, ¿cuántos anfitriones debe tener el clúster?",
+    "o": [
+     "Tres: los dos que exige la memoria más uno de reserva.",
+     "Dos: la regla N+1 ya está incluida en el redondeo de 1,33 a 2.",
+     "Cuatro: uno por cada procesador de los dos anfitriones necesarios."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §2.4",
+    "e": "N+1 dimensiona el clúster para perder un nodo: con tres, la caída de uno deja 1.024 GB para los 680 GB comprometidos."
+   },
+   {
+    "q": "¿Qué mecanismo permite parchear el hardware de un anfitrión sin parar el padrón ni el registro?",
+    "o": [
+     "Apagar las máquinas, moverlas en frío a otro anfitrión y arrancarlas allí de madrugada.",
+     "La alta disponibilidad (HA), que reinicia las máquinas en otro anfitrión sin ningún corte.",
+     "El modo mantenimiento, que vacía el anfitrión migrando sus máquinas en caliente."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §2.4",
+    "e": "La migración en caliente usa precopia iterativa de memoria y solo detiene la máquina unos milisegundos; la HA, en cambio, reinicia y sí implica corte."
+   },
+   {
+    "q": "¿Qué circunstancia impide migrar en caliente una máquina virtual al vaciar el anfitrión?",
+    "o": [
+     "Usar controladores paravirtualizados virtio para la red y el disco.",
+     "Tener más vCPU asignadas que núcleos físicos tiene el anfitrión de destino.",
+     "Tener un dispositivo asignado directamente (passthrough o SR-IOV)."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §2.4",
+    "e": "Los requisitos son CPU compatible, red compartida y de migración, almacenamiento común y ausencia de dispositivos en passthrough o SR-IOV."
+   },
+   {
+    "q": "¿Qué protege al par redundante del registro frente a la caída de un único servidor físico?",
+    "o": [
+     "Una regla de antiafinidad, que impide que los dos nodos se ejecuten en el mismo anfitrión.",
+     "Una regla de afinidad, que los mantiene en el mismo anfitrión para reducir su latencia.",
+     "La migración en caliente, que los traslada antes de que el anfitrión llegue a fallar."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §2.4",
+    "e": "La antiafinidad es imprescindible para los pares redundantes; la HA reinicia después las máquinas ante un fallo no planificado, con corte."
+   },
+   {
+    "q": "¿Qué mide el PUE y cuál es su limitación?",
+    "o": [
+     "Energía del equipamiento TI entre energía total; cuanto más alto, más eficiente es el centro de datos.",
+     "Energía total del centro entre energía del equipamiento TI; no dice si los servidores están bien aprovechados.",
+     "La ratio de máquinas virtuales por anfitrión; no tiene en cuenta el consumo de la refrigeración."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §5.4",
+    "e": "El óptimo teórico es 1,0; un centro con PUE excelente lleno de servidores ociosos sigue derrochando, por eso se lee junto con la utilización real."
+   },
+   {
+    "q": "¿Por qué elevar la utilización media de los anfitriones es una palanca de ahorro energético?",
+    "o": [
+     "Porque el consumo de un servidor no es proporcional a su carga: tiene un consumo de base considerable.",
+     "Porque un servidor al 11 % de carga consume el 11 % de su potencia máxima, y al subirla se ahorra.",
+     "Porque los anfitriones muy cargados desactivan solos la refrigeración de la sala."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 4 · §5.4",
+    "e": "Un servidor casi ocioso consume una fracción muy elevada de su potencia máxima; pocos servidores bien utilizados consumen menos que muchos infrautilizados."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "¿Qué modelo conviene a los 700 usuarios de mostrador, con cuatro aplicaciones fijas y sin instalar software?",
+    "o": [
+     "VDI con escritorios dedicados persistentes, uno por usuario y con clon completo.",
+     "Escritorios basados en sesiones (RDSH), por su densidad y menor coste por puesto.",
+     "Virtualización en el cliente, con un hipervisor de Tipo 2 en cada puesto de mostrador."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §3.1.2",
+    "e": "Es el colectivo numeroso y homogéneo con un conjunto fijo de aplicaciones, caso natural del modelo de sesiones, que comparte un único sistema de servidor."
+   },
+   {
+    "q": "¿Y a los 150 técnicos que necesitan instalar de vez en cuando herramientas propias?",
+    "o": [
+     "Escritorios por sesiones, porque cada usuario puede instalar software en su sesión.",
+     "Solo virtualización de aplicaciones, sin escritorio virtual de ningún tipo.",
+     "VDI, por la personalización y el aislamiento de una máquina virtual por usuario."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §3.1.1",
+    "e": "En un sistema compartido no se instala software por usuario; VDI ofrece aislamiento alto y la compatibilidad de un sistema de cliente."
+   },
+   {
+    "q": "¿Qué modelo procede para los 50 usuarios de cartografía con carga gráfica elevada?",
+    "o": [
+     "VDI con GPU virtual, porque su perfil de recursos no cabe en un servidor de sesiones.",
+     "Escritorios por sesiones, aumentando el número de usuarios por servidor.",
+     "Clientes ligeros conectados a un escritorio por sesiones sin aceleración gráfica."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §3.1.1",
+    "e": "El perfil avanzado (4-8 vCPU, 16 GB y GPU virtual) degradaría a los demás usuarios de un servidor de sesiones."
+   },
+   {
+    "q": "¿Qué estrategia de persistencia conviene a los 700 puestos homogéneos de mostrador?",
+    "o": [
+     "Persistente con clones completos, para que cada usuario conserve los cambios que haga.",
+     "Dedicada, porque solo los escritorios dedicados se parchean desde una imagen maestra.",
+     "No persistente: una sola imagen que parchear, gran ahorro de almacenamiento y escritorio limpio cada vez."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §3.4",
+    "e": "Con el modelo de sesiones elegido, el usuario no tiene máquina propia: entra en cualquiera de los servidores de sesión, idénticos y creados desde una imagen maestra, y su entorno va aparte. El entorno limpio en cada inicio refuerza además la confidencialidad de los datos del padrón del mostrador."
+   },
+   {
+    "q": "¿Qué piezas impiden que el usuario de un escritorio no persistente pierda su entorno?",
+    "o": [
+     "Guardar el perfil en el disco del propio escritorio para que se recupere al reiniciar.",
+     "Contenedor de perfil en disco virtual, redirección de carpetas a la red y directivas en cada inicio.",
+     "Convertir los escritorios en persistentes cuando un usuario se queje de perder datos."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §3.4",
+    "e": "El modelo no persistente exige resolver la persistencia del usuario fuera del escritorio; las capas de aplicación completan el esquema."
+   },
+   {
+    "q": "¿Cómo se aplica un parche crítico del sistema operativo a esos escritorios?",
+    "o": [
+     "Una vez sobre la imagen maestra: copia de trabajo, parche, piloto, nueva versión sellada y publicación.",
+     "Escritorio por escritorio, con la herramienta de despliegue de software corporativa.",
+     "Directamente sobre todos los escritorios, sin piloto, porque se recrean cada noche."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §3.2.2",
+    "e": "Los escritorios no persistentes adoptan la nueva versión en su siguiente reinicio, y si es defectuosa se revierte a la anterior con la misma operación."
+   },
+   {
+    "q": "Todos los usuarios inician sesión entre las 8:00 y las 8:20. ¿Qué fenómeno provocará?",
+    "o": [
+     "Un «cerebro dividido» (split brain), porque dos anfitriones arrancan el mismo escritorio.",
+     "Una tormenta de arranque y de inicio de sesión: un pico de E/S que el almacenamiento no absorbe.",
+     "Una hiperpaginación de los anfitriones por falta de núcleos físicos de CPU."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §3.1.1",
+    "e": "Cientos de escritorios arrancan, cargan perfiles y actualizan el antivirus a la vez; si el almacenamiento se dimensionó por consumo medio, no lo absorbe."
+   },
+   {
+    "q": "¿Cuál de estas medidas mitiga ese fenómeno?",
+    "o": [
+     "Lanzar el análisis antivirus completo de cada escritorio al iniciar sesión.",
+     "Dimensionar el almacenamiento por el consumo medio de la jornada laboral.",
+     "Preencender los escritorios de forma programada y escalonada antes de las 8:00."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §3.1.1",
+    "e": "También valen el almacenamiento de estado sólido con caché de lectura, los clones instantáneos, el antivirus desfasado y la deduplicación."
+   },
+   {
+    "q": "En los dos distritos con enlaces problemáticos, ¿qué factor de red determina la calidad percibida del escritorio virtual?",
+    "o": [
+     "La latencia de ida y vuelta y su estabilidad (fluctuación), más que el ancho de banda bruto.",
+     "El ancho de banda bruto del enlace, con independencia de su latencia y su estabilidad.",
+     "El número de saltos de encaminamiento entre la oficina y el centro de datos."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · §3.3",
+    "e": "Un enlace de mucho caudal pero inestable da peor experiencia que uno modesto y estable."
+   },
+   {
+    "q": "¿Cómo se firma con la tarjeta criptográfica desde el escritorio virtual y qué riesgo introduce ese mecanismo?",
+    "o": [
+     "Copiando el certificado en la imagen maestra; el riesgo es que la imagen ocupe más espacio.",
+     "Instalando el lector en el anfitrión del centro de datos; el riesgo es la latencia del enlace.",
+     "Con la redirección del lector de tarjeta por un canal virtual; los canales de redirección son vías de fuga."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §3.3",
+    "e": "Portapapeles, unidades locales, impresión y USB deben estar deshabilitados por defecto y habilitarse por excepción justificada (art. 25 RGPD)."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "La consola de gestión del clúster es accesible desde la red de usuarios. ¿Por qué es grave y cómo se corrige?",
+    "o": [
+     "Consume caudal de la red de usuarios: basta con limitar su ancho de banda.",
+     "No es grave si la contraseña de la consola es larga y compleja.",
+     "Quien controla la consola controla todas las máquinas: hay que segregar la red de gestión."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §5.1",
+    "e": "Es el activo más crítico del entorno; si hace falta acceso remoto, solo a través de un mecanismo seguro con doble factor."
+   },
+   {
+    "q": "Tres administradores comparten una cuenta. ¿Qué dimensión del ENS se destruye y cuál es la corrección?",
+    "o": [
+     "La trazabilidad; cuentas nominales, roles con mínimo privilegio y registro exportado fuera del entorno.",
+     "La disponibilidad; basta con cambiar la contraseña compartida una vez al mes y comunicarla a los tres.",
+     "Ninguna, si la contraseña de la cuenta se custodia en un sobre cerrado y bajo llave."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §4.3",
+    "e": "Con una cuenta compartida no se puede saber quién ejecutó cada operación; el registro se exporta fuera para que no pueda alterarse desde el propio entorno."
+   },
+   {
+    "q": "¿Qué riesgo tienen las doce instantáneas de más de seis meses?",
+    "o": [
+     "Son copias de seguridad válidas que conviene conservar como histórico del entorno.",
+     "Degradan el rendimiento y pueden llenar el almacén de datos, deteniendo máquinas virtuales.",
+     "Ninguno, porque una instantánea no ocupa espacio en el almacén de datos."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §4.3",
+    "e": "Una instantánea no es una copia de seguridad; las antiguas se consolidan y eliminan."
+   },
+   {
+    "q": "¿Qué hacer con las cuarenta máquinas virtuales apagadas desde hace más de un año y sin parchear?",
+    "o": [
+     "Incluirlas en los ciclos de actualización o darlas de baja tras consultar a la unidad responsable.",
+     "Dejarlas como están, porque una máquina virtual apagada no puede ser vulnerable a ningún ataque.",
+     "Eliminarlas de inmediato sin consultar a nadie, porque ninguna unidad las ha usado en un año."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §5.1",
+    "e": "Es proliferación descontrolada: una máquina latente no recibe parches y es un sistema vulnerable el día que alguien la enciende."
+   },
+   {
+    "q": "Las copias están en un repositorio del propio clúster, con las mismas credenciales que el hipervisor. ¿Qué riesgo concreto supone?",
+    "o": [
+     "Que las copias consumen ciclos de CPU de las máquinas virtuales en producción.",
+     "Que la restauración es más lenta por estar el repositorio en el mismo clúster.",
+     "Un compromiso del plano de gestión destruiría a la vez los datos y sus copias."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §5.3",
+    "e": "Es exactamente lo que busca el ransomware moderno, que localiza y cifra las copias antes de actuar; además se incumple la regla 3-2-1."
+   },
+   {
+    "q": "¿En qué se funda jurídicamente la obligación de hacer pruebas de restauración?",
+    "o": [
+     "En el artículo 5.1.c del RGPD, que impone la minimización de los datos personales.",
+     "En el artículo 32 del RGPD (capacidad de restaurar y verificación de la eficacia) y en el ENS.",
+     "En el artículo 28 del RGPD, que regula los contratos con el encargado del tratamiento."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §5.2 · art. 32 RGPD",
+    "e": "El artículo 32 exige la capacidad de restaurar la disponibilidad tras un incidente y verificar periódicamente las medidas; el ENS, pruebas periódicas de continuidad."
+   },
+   {
+    "q": "La sede tiene un RPO de 15 minutos y un RTO de 1 hora, y se protege con una copia completa nocturna. ¿Los cumple?",
+    "o": [
+     "Sí: la copia completa nocturna garantiza un RPO de 15 minutos y un RTO de 1 hora.",
+     "No: el RPO real es de hasta 24 horas y la restauración completa suele superar la hora.",
+     "Solo incumple el RTO, porque el RPO de una copia diaria se mide en minutos."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §5.3",
+    "e": "Una copia nocturna da un RPO de hasta 24 horas, y restaurar la máquina completa desde el repositorio consume en general más de una hora."
+   },
+   {
+    "q": "¿Qué combinación técnica sí satisface esos objetivos?",
+    "o": [
+     "Replicación asíncrona cada 15 minutos o menos a un segundo emplazamiento y recuperación orquestada probada.",
+     "Copia incremental horaria en el mismo clúster y restauración manual de las máquinas afectadas.",
+     "Copia completa nocturna en cinta y restauración completa desde la cinta en el segundo emplazamiento."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §5.3",
+    "e": "El plan orquestado fija el orden de arranque, las dependencias y el direccionamiento, y se prueba en una red aislada sin afectar a producción."
+   },
+   {
+    "q": "¿Quién debe fijar el RTO y el RPO de la sede electrónica?",
+    "o": [
+     "El técnico de sistemas, según la tecnología de copia y réplica que tenga disponible.",
+     "La organización responsable del servicio, mediante el análisis de impacto (BIA).",
+     "El fabricante del hipervisor, según las capacidades de su producto de réplica."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §5.3",
+    "e": "Son decisiones de la organización, no del técnico: de ellos se derivan la tecnología y el coste, nunca al revés."
+   },
+   {
+    "q": "Desarrollo trabaja con un clon del padrón con datos reales en un entorno sin las medidas de producción. ¿Qué procede?",
+    "o": [
+     "Mantenerlo, siempre que se cifre el disco virtual del clon de pruebas.",
+     "Mantenerlo, porque el artículo 32 del RGPD permite clonar datos para pruebas.",
+     "Sustituirlo por datos seudonimizados o sintéticos (minimización y protección desde el diseño)."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §5.2 · arts. 5.1.c y 25 RGPD",
+    "e": "Un clon de producción olvidado en un entorno menos protegido es uno de los orígenes más frecuentes de brecha; además debe autorizarse, protegerse como el original y tener fecha de destrucción."
+   }
+  ]
+ }
+]

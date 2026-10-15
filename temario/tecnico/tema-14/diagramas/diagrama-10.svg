@@ -1,0 +1,24 @@
+<svg aria-label="Árbol de directorios de Linux según el FHS desde la raíz" class="svd10" role="img" viewbox="0 0 660 340" xmlns="http://www.w3.org/2000/svg">
+<style>.svd10 .n{fill:#0055a0}.svd10 .b{font:700 12px monospace;fill:#fff}.svd10 .l{font:11px system-ui,sans-serif;fill:#444}</style>
+<rect class="n" height="32" rx="4" width="60" x="300" y="40"></rect><text class="b" text-anchor="middle" x="330" y="62">/</text>
+<g>
+<line stroke="#888" x1="330" x2="80" y1="72" y2="120"></line><line stroke="#888" x1="330" x2="200" y1="72" y2="120"></line><line stroke="#888" x1="330" x2="320" y1="72" y2="120"></line><line stroke="#888" x1="330" x2="440" y1="72" y2="120"></line><line stroke="#888" x1="330" x2="560" y1="72" y2="120"></line>
+</g>
+<g fill="#fff" font="700 12px monospace">
+<rect class="n" height="30" rx="4" width="70" x="45" y="120"></rect><text text-anchor="middle" x="80" y="140">/bin</text>
+<rect class="n" height="30" rx="4" width="80" x="160" y="120"></rect><text text-anchor="middle" x="200" y="140">/etc</text>
+<rect class="n" height="30" rx="4" width="80" x="280" y="120"></rect><text text-anchor="middle" x="320" y="140">/home</text>
+<rect class="n" height="30" rx="4" width="80" x="400" y="120"></rect><text text-anchor="middle" x="440" y="140">/var</text>
+<rect class="n" height="30" rx="4" width="80" x="520" y="120"></rect><text text-anchor="middle" x="560" y="140">/dev</text>
+</g>
+<g class="l">
+<text text-anchor="middle" x="80" y="172">binarios</text>
+<text text-anchor="middle" x="200" y="172">configuración</text>
+<text text-anchor="middle" x="320" y="172">usuarios</text>
+<text text-anchor="middle" x="440" y="172">logs/datos</text>
+<text text-anchor="middle" x="560" y="172">dispositivos</text>
+</g>
+<text class="l" x="40" y="230">Raíz única: no hay letras de unidad (C:, D:). Los discos se MONTAN en directorios.</text>
+<text class="l" x="40" y="252">Otros: /proc y /sys (kernel), /tmp (temporales), /boot (arranque), /mnt y /media (montajes).</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="650" y="328">[Fuente: FHS 3.0]</text>
+</svg>

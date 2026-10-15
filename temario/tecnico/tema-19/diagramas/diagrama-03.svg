@@ -1,0 +1,24 @@
+<svg aria-label="Tabla de los operadores del álgebra relacional: selección, proyección, renombrado como unarios; unión, diferencia, producto cartesiano como binarios de conjunto; reunión y división como derivados" role="img" viewbox="0 0 660 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 12px system-ui,sans-serif;fill:#fff}.s3{font:11px system-ui,sans-serif;fill:#123}.l3{font:11px system-ui,sans-serif;fill:#444}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h3" text-anchor="middle" x="330" y="22">Operadores del álgebra relacional</text>
+<rect fill="#0055a0" height="26" width="190" x="30" y="36"></rect><text class="t3" text-anchor="middle" x="125" y="54">UNARIOS</text>
+<rect fill="#2d8659" height="26" width="190" x="230" y="36"></rect><text class="t3" text-anchor="middle" x="325" y="54">BINARIOS (conjuntos)</text>
+<rect fill="#e89822" height="26" width="200" x="430" y="36"></rect><text class="t3" text-anchor="middle" x="530" y="54">DERIVADOS</text>
+<rect fill="#eef4fa" height="30" width="190" x="30" y="66"></rect><text class="s3" x="40" y="86">σ Selección (filas)</text>
+<rect fill="#fff" height="30" width="190" x="30" y="98"></rect><text class="s3" x="40" y="118">π Proyección (columnas)</text>
+<rect fill="#eef4fa" height="30" width="190" x="30" y="130"></rect><text class="s3" x="40" y="150">ρ Renombrado</text>
+<rect fill="#e7f3ec" height="30" width="190" x="230" y="66"></rect><text class="s3" x="240" y="86">∪ Unión</text>
+<rect fill="#fff" height="30" width="190" x="230" y="98"></rect><text class="s3" x="240" y="118">− Diferencia</text>
+<rect fill="#e7f3ec" height="30" width="190" x="230" y="130"></rect><text class="s3" x="240" y="150">× Producto cartesiano</text>
+<rect fill="#fbe9cf" height="30" width="200" x="430" y="66"></rect><text class="s3" x="440" y="86">⋈ Reunión (join)</text>
+<rect fill="#fff" height="30" width="200" x="430" y="98"></rect><text class="s3" x="440" y="118">÷ División</text>
+<rect fill="#fbe9cf" height="30" width="200" x="430" y="130"></rect><text class="s3" x="440" y="150">∩ Intersección</text>
+<text class="l3" text-anchor="middle" x="330" y="182">Unarios: una relación de entrada · Binarios: dos relaciones COMPATIBLES POR UNIÓN</text>
+<text class="l3" text-anchor="middle" x="330" y="200">Derivados: se expresan a partir de los anteriores, pero son fundamentales en la práctica</text>
+<rect fill="#fdf3e3" height="90" rx="6" stroke="#e89822" width="500" x="80" y="222"></rect>
+<text style="font:700 12px system-ui;fill:#8a5a00" text-anchor="middle" x="330" y="244">Cierre relacional</text>
+<text class="l3" text-anchor="middle" x="330" y="264">Toda operación del álgebra toma relación(es) como entrada</text>
+<text class="l3" text-anchor="middle" x="330" y="282">y produce OTRA RELACIÓN como salida → permite componer</text>
+<text class="l3" text-anchor="middle" x="330" y="300">operadores anidando el resultado de uno como entrada de otro</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="650" y="332">[Fuente: DATE-INTRO, cap. 6]</text>
+</svg>

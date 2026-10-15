@@ -1,0 +1,26 @@
+<svg aria-label="Jerarquía de memoria" role="img" viewbox="0 0 640 380" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .jm-label{font:600 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .jm-label-dark{font:600 13px system-ui,sans-serif;fill:#0a2540;text-anchor:middle}
+    .jm-speed{font:11px system-ui,sans-serif;fill:#1a1a1a;text-anchor:start}
+  </style>
+<text fill="#0055a0" font="700 16px system-ui,sans-serif" text-anchor="middle" x="320" y="28">Jerarquía de memoria</text>
+<polygon fill="#003d73" points="295,55 345,55 360,85 280,85"></polygon>
+<text class="jm-label" x="320" y="75">Registros</text>
+<polygon fill="#0055a0" points="280,85 360,85 375,120 265,120"></polygon>
+<text class="jm-label" x="320" y="108">Cache L1</text>
+<polygon fill="#0055a0" opacity="0.85" points="265,120 375,120 395,160 245,160"></polygon>
+<text class="jm-label" x="320" y="144">Cache L2 / L3</text>
+<polygon fill="#3378b9" points="245,160 395,160 420,210 220,210"></polygon>
+<text class="jm-label" x="320" y="189">RAM</text>
+<polygon fill="#6ea3d2" points="220,210 420,210 450,265 190,265"></polygon>
+<text class="jm-label-dark" x="320" y="242">SSD</text>
+<polygon fill="#d6e4f0" points="190,265 450,265 485,320 155,320"></polygon>
+<text class="jm-label-dark" x="320" y="295">HDD / cinta / nube</text>
+<text class="jm-speed" x="500" y="75">~0,3 ns · KB</text>
+<text class="jm-speed" x="500" y="107">~1 ns · 32-64 KB</text>
+<text class="jm-speed" x="500" y="142">~3-20 ns · 1-32 MB</text>
+<text class="jm-speed" x="500" y="188">~100 ns · 8-128 GB</text>
+<text class="jm-speed" x="500" y="240">~50 µs · 1-4 TB</text>
+<text class="jm-speed" x="500" y="292">~10 ms · 1-20 TB</text>
+</svg>

@@ -1,0 +1,72 @@
+<svg aria-label="OWASP Top 10 de 2021 con sus diez categorías, destacando que A01 es la pérdida de control de acceso y que A04 diseño inseguro, A08 fallos de integridad y A10 SSRF son nuevas en esa edición; y comparativa de las técnicas de verificación SAST, DAST, IAST, SCA, revisión manual y prueba de penetración indicando qué ve y qué no ve cada una" role="img" viewbox="0 0 680 414" xmlns="http://www.w3.org/2000/svg">
+<style>.t14{font:700 9.5px system-ui,sans-serif;fill:#fff}.s14{font:8.5px system-ui,sans-serif;fill:#fff}.h14{font:700 13px system-ui,sans-serif;fill:#0055a0}.k14{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d14{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h14" text-anchor="middle" x="340" y="20">OWASP Top 10:2021 — categorías de riesgo en aplicaciones web</text>
+<rect fill="#d13c3c" height="36" rx="4" width="212" x="20" y="32"></rect>
+<text class="t14" x="30" y="47">A01 · Pérdida de control de acceso</text>
+<text class="s14" x="30" y="61">IDOR, elevación de privilegios — la nº 1</text>
+<rect fill="#0055a0" height="36" rx="4" width="212" x="238" y="32"></rect>
+<text class="t14" x="248" y="47">A02 · Fallos criptográficos</text>
+<text class="s14" x="248" y="61">Sin cifrar, algoritmos obsoletos, claves</text>
+<rect fill="#0055a0" height="36" rx="4" width="204" x="456" y="32"></rect>
+<text class="t14" x="466" y="47">A03 · Inyección</text>
+<text class="s14" x="466" y="61">SQL, LDAP, mandatos y XSS</text>
+<rect fill="#e89822" height="36" rx="4" width="212" x="20" y="72"></rect>
+<text class="t14" x="30" y="87">A04 · Diseño inseguro (NUEVA)</text>
+<text class="s14" x="30" y="101">No se parchea: se rediseña</text>
+<rect fill="#0055a0" height="36" rx="4" width="212" x="238" y="72"></rect>
+<text class="t14" x="248" y="87">A05 · Configuración defectuosa</text>
+<text class="s14" x="248" y="101">Valores por defecto, errores expuestos</text>
+<rect fill="#0055a0" height="36" rx="4" width="204" x="456" y="72"></rect>
+<text class="t14" x="466" y="87">A06 · Componentes vulnerables</text>
+<text class="s14" x="466" y="101">Bibliotecas sin actualizar</text>
+<rect fill="#0055a0" height="36" rx="4" width="212" x="20" y="112"></rect>
+<text class="t14" x="30" y="127">A07 · Identificación y autenticación</text>
+<text class="s14" x="30" y="141">Sin MFA, fuerza bruta, sesión débil</text>
+<rect fill="#e89822" height="36" rx="4" width="212" x="238" y="112"></rect>
+<text class="t14" x="248" y="127">A08 · Integridad (NUEVA)</text>
+<text class="s14" x="248" y="141">Deserialización, cadena de suministro</text>
+<rect fill="#0055a0" height="36" rx="4" width="204" x="456" y="112"></rect>
+<text class="t14" x="466" y="127">A09 · Registro y monitorización</text>
+<text class="s14" x="466" y="141">El ataque pasa inadvertido</text>
+<rect fill="#e89822" height="34" rx="4" width="212" x="238" y="152"></rect>
+<text class="t14" x="248" y="167">A10 · SSRF (NUEVA)</text>
+<text class="s14" x="248" y="180">El servidor pide una URL del atacante</text>
+<rect fill="#eef3f8" height="34" rx="4" width="212" x="20" y="152"></rect>
+<text class="d14" text-anchor="middle" x="126" y="167">CWE = debilidades (tipos)</text>
+<text class="d14" text-anchor="middle" x="126" y="180">CVE = vulnerabilidades concretas</text>
+<rect fill="#eef3f8" height="34" rx="4" width="204" x="456" y="152"></rect>
+<text class="d14" text-anchor="middle" x="558" y="167">CVSS = severidad 0,0-10,0</text>
+<text class="d14" text-anchor="middle" x="558" y="180">crítica a partir de 9,0</text>
+<line stroke="#ccc" stroke-width="1" x1="20" x2="660" y1="198" y2="198"></line>
+<text class="k14" text-anchor="middle" x="340" y="216">Técnicas de verificación: qué ve y qué no ve cada una</text>
+<text class="k14" x="30" y="234">TÉCNICA</text>
+<text class="k14" x="200" y="234">QUÉ VE BIEN</text>
+<text class="k14" x="440" y="234">SU PUNTO CIEGO</text>
+<rect fill="#0055a0" height="28" rx="4" width="160" x="20" y="240"></rect>
+<text class="t14" x="30" y="258">SAST — código sin ejecutar</text>
+<rect fill="#e6eff7" height="28" rx="4" width="240" x="186" y="240"></rect>
+<text class="d14" x="196" y="258">Inyección, secretos, criptografía</text>
+<rect fill="#fbe9e9" height="28" rx="4" width="228" x="432" y="240"></rect>
+<text class="d14" x="442" y="258">Entorno, lógica · falsos positivos</text>
+<rect fill="#2d8659" height="28" rx="4" width="160" x="20" y="272"></rect>
+<text class="t14" x="30" y="290">DAST — app en ejecución</text>
+<rect fill="#e6f2ec" height="28" rx="4" width="240" x="186" y="272"></rect>
+<text class="d14" x="196" y="290">Configuración, sesión, cabeceras</text>
+<rect fill="#fbe9e9" height="28" rx="4" width="228" x="432" y="272"></rect>
+<text class="d14" x="442" y="290">No ve el código · cobertura parcial</text>
+<rect fill="#e89822" height="28" rx="4" width="160" x="20" y="304"></rect>
+<text class="t14" x="30" y="322">IAST / SCA</text>
+<rect fill="#fdf1de" height="28" rx="4" width="240" x="186" y="304"></rect>
+<text class="d14" x="196" y="322">Precisión interna / dependencias</text>
+<rect fill="#fbe9e9" height="28" rx="4" width="228" x="432" y="304"></rect>
+<text class="d14" x="442" y="322">Exige instrumentar / no ve tu código</text>
+<rect fill="#888" height="28" rx="4" width="160" x="20" y="336"></rect>
+<text class="t14" x="30" y="354">Revisión manual · pentest</text>
+<rect fill="#f0f0f0" height="28" rx="4" width="240" x="186" y="336"></rect>
+<text class="d14" x="196" y="354">LÓGICA DE NEGOCIO y autorización</text>
+<rect fill="#fbe9e9" height="28" rx="4" width="228" x="432" y="336"></rect>
+<text class="d14" x="442" y="354">Cara · foto de un momento</text>
+<rect fill="none" height="22" rx="5" stroke="#d13c3c" stroke-width="2" width="560" x="60" y="368"></rect>
+<text style="font:700 10px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="383">Ninguna herramienta automática detecta fallos de lógica de negocio ni de autorización</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="410">[Fuente: OWASP-TOP10; OWASP-ASVS; CWE; CVE; CVSS]</text>
+</svg>

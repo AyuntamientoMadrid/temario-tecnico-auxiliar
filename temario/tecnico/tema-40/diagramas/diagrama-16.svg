@@ -1,0 +1,52 @@
+<svg aria-label="Acondicionamiento de una sala de videoconferencia: distinción entre aislamiento acústico, que impide que el sonido entre o salga, y acondicionamiento acústico, que controla la reverberación interior; valores límite del tiempo de reverberación del Documento Básico HR del Código Técnico de la Edificación y valores de iluminación de la norma UNE-EN 12464-1 de 2022" role="img" viewbox="0 0 680 366" xmlns="http://www.w3.org/2000/svg">
+<style>.h16{font:700 13px system-ui,sans-serif;fill:#0055a0}.k16{font:700 10px system-ui,sans-serif;fill:#0055a0}.d16{font:9px system-ui,sans-serif;fill:#333}.n16{font:8.5px system-ui,sans-serif;fill:#666}.w16{font:700 9.5px system-ui,sans-serif;fill:#fff}.r16{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}.g16{font:700 9.5px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h16" text-anchor="middle" x="340" y="19">Acondicionamiento de salas: dos acústicas distintas y sus cifras</text>
+<rect fill="#eef4fa" height="80" rx="4" width="312" x="22" y="32"></rect>
+<rect fill="#0055a0" height="20" rx="4" width="312" x="22" y="32"></rect>
+<text class="w16" text-anchor="middle" x="178" y="46">AISLAMIENTO ACÚSTICO (insonorización)</text>
+<text class="d16" x="32" y="67">Impedir que el sonido ENTRE o SALGA de la sala</text>
+<text class="d16" x="32" y="81">Se resuelve con MASA, ESTANQUEIDAD y DESACOPLAMIENTO:</text>
+<text class="d16" x="32" y="94">tabique pesado, puerta con junta, sin rendijas, suelo flotante</text>
+<text class="k16" x="32" y="107">Sirve para: la CONFIDENCIALIDAD y el ruido exterior</text>
+<rect fill="#e6f2ec" height="80" rx="4" width="312" x="346" y="32"></rect>
+<rect fill="#2d8659" height="20" rx="4" width="312" x="346" y="32"></rect>
+<text class="w16" text-anchor="middle" x="502" y="46">ACONDICIONAMIENTO ACÚSTICO (corrección)</text>
+<text class="d16" x="356" y="67">Controlar cómo se comporta el sonido DENTRO de la sala</text>
+<text class="d16" x="356" y="81">Se resuelve con ABSORCIÓN y DIFUSIÓN: paneles, moqueta,</text>
+<text class="d16" x="356" y="94">cortinas, techo absorbente</text>
+<text class="g16" x="356" y="107">Sirve para: la INTELIGIBILIDAD</text>
+<rect fill="#fbe9e9" height="24" rx="4" width="636" x="22" y="120"></rect>
+<text class="r16" text-anchor="middle" x="340" y="136">SON PROBLEMAS DISTINTOS Y CONTRAPUESTOS: una sala bien aislada suele tener una acústica interior pésima</text>
+<text class="k16" x="24" y="164">TIEMPO DE REVERBERACIÓN — VALORES LÍMITE DEL CTE, DOCUMENTO BÁSICO HR (RD 1371/2007), APARTADO 2.2</text>
+<rect fill="#0055a0" height="20" rx="3" width="636" x="22" y="172"></rect>
+<text class="w16" text-anchor="middle" x="200" y="186">Recinto</text>
+<text class="w16" text-anchor="middle" x="452" y="186">Condición</text>
+<text class="w16" text-anchor="middle" x="610" y="186">Límite</text>
+<rect fill="#f5f8fb" height="18" width="636" x="22" y="194"></rect>
+<text class="d16" text-anchor="middle" x="200" y="207">Aula o sala de conferencias</text>
+<text class="d16" text-anchor="middle" x="452" y="207">VACÍA, sin ocupación ni mobiliario, V &lt; 350 m³</text>
+<text class="r16" text-anchor="middle" x="610" y="207">T ≤ 0,7 s</text>
+<rect fill="#fff" height="18" width="636" x="22" y="212"></rect>
+<text class="d16" text-anchor="middle" x="200" y="225">Aula o sala de conferencias</text>
+<text class="d16" text-anchor="middle" x="452" y="225">Vacía pero INCLUYENDO EL TOTAL DE LAS BUTACAS</text>
+<text class="r16" text-anchor="middle" x="610" y="225">T ≤ 0,5 s</text>
+<rect fill="#f5f8fb" height="18" width="636" x="22" y="230"></rect>
+<text class="d16" text-anchor="middle" x="200" y="243">Restaurante o comedor</text>
+<text class="d16" text-anchor="middle" x="452" y="243">Vacío</text>
+<text class="r16" text-anchor="middle" x="610" y="243">T ≤ 0,9 s</text>
+<rect fill="#fdf3e3" height="18" width="636" x="22" y="248"></rect>
+<text class="d16" text-anchor="middle" x="200" y="261">Aula o sala de conferencias</text>
+<text class="d16" text-anchor="middle" x="452" y="261">Volumen MAYOR que 350 m³</text>
+<text class="k16" style="font-size:8.6px" text-anchor="middle" x="610" y="261">Estudio específico</text>
+<rect fill="#eef4fa" height="64" rx="4" width="312" x="22" y="276"></rect>
+<text class="k16" x="32" y="292">ILUMINACIÓN — UNE-EN 12464-1:2022</text>
+<text class="d16" x="32" y="307">Oficinas y salas de reuniones y conferencias:</text>
+<text class="d16" x="32" y="320">500 lx · UGR ≤ 19 · Uo ≥ 0,60 · Ra ≥ 80</text>
+<text class="n16" x="32" y="333">Sobre el plano de trabajo, a 0,85 m del suelo</text>
+<rect fill="#fdf3e3" height="64" rx="4" width="312" x="346" y="276"></rect>
+<text class="k16" x="356" y="292">LAS TRES REGLAS PROPIAS DE UNA SALA DE VÍDEO</text>
+<text class="d16" x="356" y="307">1. Luz DE FRENTE, no de detrás: la ventana al fondo</text>
+<text class="d16" x="356" y="320">convierte a la persona en silueta   2. Luz DIFUSA</text>
+<text class="d16" x="356" y="333">3. Zonificada y regulable: la luz y la pantalla se estorban</text>
+<text class="n16" text-anchor="end" x="658" y="360">[Fuente: CTE DB-HR (RD 1371/2007), ap. 2.2 · UNE-EN 12464-1:2022 · ANSI/AVIXA V201.01:2021]</text>
+</svg>

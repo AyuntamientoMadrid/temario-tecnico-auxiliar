@@ -1,0 +1,23 @@
+<svg aria-label="Notación de Chen: entidad en rectángulo, relación en rombo, y tipos de atributos en elipses" class="svd5" role="img" viewbox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd5 .t{font:700 12px system-ui,sans-serif;fill:#0055a0}.svd5 .w{font:700 12px system-ui,sans-serif;fill:#fff}.svd5 .lab{font:11px system-ui,sans-serif;fill:#555}.svd5 .h{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="330" y="22">Símbolos del modelo Entidad-Relación (Chen)</text>
+<!-- entidad + relación + entidad -->
+<rect fill="#0055a0" height="50" rx="2" width="120" x="40" y="120"></rect><text class="w" text-anchor="middle" x="100" y="150">HABITANTE</text>
+<polygon fill="#e89822" points="300,120 360,145 300,170 240,145"></polygon><text class="w" style="font-size:11px" text-anchor="middle" x="300" y="149">EMPADRON.</text>
+<rect fill="#0055a0" height="50" rx="2" width="120" x="440" y="120"></rect><text class="w" text-anchor="middle" x="500" y="150">VIVIENDA</text>
+<line stroke="#333" stroke-width="1.5" x1="160" x2="240" y1="145" y2="145"></line><text class="lab" text-anchor="middle" x="200" y="138">N</text>
+<line stroke="#333" stroke-width="1.5" x1="360" x2="440" y1="145" y2="145"></line><text class="lab" text-anchor="middle" x="400" y="138">1</text>
+<!-- atributos de habitante -->
+<ellipse cx="60" cy="60" fill="#fff" rx="48" ry="20" stroke="#0055a0"></ellipse><text class="t" text-anchor="middle" text-decoration="underline" x="60" y="64">DNI</text>
+<line stroke="#0055a0" x1="70" x2="90" y1="78" y2="118"></line>
+<ellipse cx="165" cy="55" fill="#fff" rx="50" ry="20" stroke="#0055a0"></ellipse><ellipse cx="165" cy="55" fill="none" rx="45" ry="15" stroke="#0055a0"></ellipse><text class="t" style="font-size:10px" text-anchor="middle" x="165" y="59">teléfono</text>
+<line stroke="#0055a0" x1="150" x2="110" y1="72" y2="118"></line>
+<ellipse cx="270" cy="55" fill="#fff" rx="46" ry="20" stroke="#0055a0" stroke-dasharray="4 3"></ellipse><text class="t" style="font-size:10px" text-anchor="middle" x="270" y="59">edad</text>
+<line stroke="#0055a0" stroke-dasharray="3 3" x1="250" x2="135" y1="70" y2="118"></line>
+<!-- leyenda -->
+<rect fill="#f5f7fa" height="80" rx="8" stroke="#d1d7df" width="580" x="40" y="220"></rect>
+<text class="lab" x="55" y="243"><tspan font-weight="700">Rectángulo</tspan> = entidad   ◆ <tspan font-weight="700">Rombo</tspan> = relación   ⬭ <tspan font-weight="700">Elipse</tspan> = atributo</text>
+<text class="lab" x="55" y="266"><tspan font-weight="700">Subrayado</tspan> = identificador (clave)   ·   <tspan font-weight="700">Elipse doble</tspan> = multivaluado</text>
+<text class="lab" x="55" y="289"><tspan font-weight="700">Elipse discontinua</tspan> = derivado   ·   <tspan font-weight="700">Rectángulo doble</tspan> = entidad débil</text>
+<text class="lab" style="fill:#888" text-anchor="end" x="630" y="315">[Fuente: CHEN · ELMASRI cap. 3]</text>
+</svg>

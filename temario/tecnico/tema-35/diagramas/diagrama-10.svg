@@ -1,0 +1,27 @@
+<svg aria-label="Recorrido de un mensaje de correo desde el cliente emisor al agente de envío en el puerto 587, de ahí al agente de transferencia del dominio destino por el puerto 25, y finalmente al buzón, del que el destinatario lo recoge con IMAP en el 993 o POP3 en el 995. Puertos de SMTP, POP3 e IMAP. Mecanismos de autenticación del remitente: SPF, DKIM y DMARC, reeditado en mayo de 2026 por los RFC 9989, 9990 y 9991" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.t10{font:700 10px system-ui,sans-serif;fill:#fff}.s10{font:8.5px system-ui,sans-serif;fill:#fff}.d10{font:9px system-ui,sans-serif;fill:#333}.h10{font:700 13px system-ui,sans-serif;fill:#0055a0}.k10{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n10{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h10" text-anchor="middle" x="340" y="20">SMTP envía y transporta; POP3 e IMAP solo recogen del buzón</text>
+<text class="k10" x="20" y="42">EL CAMINO DE UN MENSAJE</text>
+<rect fill="#0055a0" height="50" rx="5" width="146" x="20" y="50"></rect><text class="t10" text-anchor="middle" x="93" y="70">MUA emisor</text><text class="s10" text-anchor="middle" x="93" y="86">Cliente o correo web</text>
+<rect fill="#2d8659" height="50" rx="5" width="146" x="184" y="50"></rect><text class="t10" text-anchor="middle" x="257" y="70">MSA · puerto 587</text><text class="s10" text-anchor="middle" x="257" y="86">Recibe y valida el envío</text>
+<rect fill="#2d8659" height="50" rx="5" width="146" x="348" y="50"></rect><text class="t10" text-anchor="middle" x="421" y="70">MTA · puerto 25</text><text class="s10" text-anchor="middle" x="421" y="86">Encamina entre dominios</text>
+<rect fill="#e89822" height="50" rx="5" width="146" x="512" y="50"></rect><text class="t10" text-anchor="middle" x="585" y="70">MDA y buzón</text><text class="s10" text-anchor="middle" x="585" y="86">IMAP 993 · POP3 995</text>
+<path d="M166 76 L180 76" marker-end="url(#a10)" stroke="#666" stroke-width="1.5"></path>
+<path d="M330 76 L344 76" marker-end="url(#a10)" stroke="#666" stroke-width="1.5"></path>
+<path d="M494 76 L508 76" marker-end="url(#a10)" stroke="#666" stroke-width="1.5"></path>
+<defs><marker id="a10" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#666"></path></marker></defs>
+<text class="k10" x="20" y="122">PROTOCOLOS Y PUERTOS</text>
+<rect fill="#eef3f8" height="44" rx="4" width="206" x="20" y="130"></rect><text class="d10" text-anchor="middle" x="123" y="146">SMTP · RFC 5321 · ENVÍO</text><text class="n10" text-anchor="middle" x="123" y="161">25 servidores · 587 y 465 desde el cliente</text>
+<rect fill="#eef3f8" height="44" rx="4" width="206" x="237" y="130"></rect><text class="d10" text-anchor="middle" x="340" y="146">POP3 · RFC 1939 · RECOGIDA</text><text class="n10" text-anchor="middle" x="340" y="161">110 y 995 · descarga y borra del servidor</text>
+<rect fill="#eaf5ef" height="44" rx="4" width="206" x="454" y="130"></rect><text class="d10" text-anchor="middle" x="557" y="146">IMAP · RFC 9051 · RECOGIDA</text><text class="n10" text-anchor="middle" x="557" y="161">143 y 993 · mantiene y sincroniza</text>
+<text class="k10" x="20" y="196">AUTENTICACIÓN DEL REMITENTE · los tres se publican como registros TXT en el DNS</text>
+<rect fill="#0055a0" height="56" rx="5" width="206" x="20" y="204"></rect><text class="t10" text-anchor="middle" x="123" y="222">SPF · RFC 7208</text><text class="s10" text-anchor="middle" x="123" y="238">Qué servidores pueden</text><text class="s10" text-anchor="middle" x="123" y="251">enviar con ese dominio</text>
+<rect fill="#0055a0" height="56" rx="5" width="206" x="237" y="204"></rect><text class="t10" text-anchor="middle" x="340" y="222">DKIM · RFC 6376</text><text class="s10" text-anchor="middle" x="340" y="238">FIRMA criptográfica de</text><text class="s10" text-anchor="middle" x="340" y="251">cabeceras y cuerpo</text>
+<rect fill="#2d8659" height="56" rx="5" width="206" x="454" y="204"></rect><text class="t10" text-anchor="middle" x="557" y="222">DMARC · RFC 9989 (2026)</text><text class="s10" text-anchor="middle" x="557" y="238">Alineamiento, política</text><text class="s10" text-anchor="middle" x="557" y="251">(none, quarantine, reject)</text>
+<rect fill="#fbeaea" height="26" rx="4" width="640" x="20" y="268"></rect>
+<text class="d10" text-anchor="middle" x="340" y="285">La cabecera From la escribe el emisor y SMTP no la autentica: esa es la raíz técnica de la suplantación y del fraude</text>
+<rect fill="none" height="34" rx="5" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="302"></rect>
+<text class="k10" text-anchor="middle" x="340" y="317">Un cliente de correo necesita SIEMPRE dos servidores: uno de salida (SMTP) y uno de entrada (IMAP o POP3)</text>
+<text class="n10" text-anchor="middle" x="340" y="330">La cabecera Bcc no viaja al destinatario: el servidor la elimina · MIME permite acentos, HTML y adjuntos</text>
+<text class="n10" text-anchor="end" x="670" y="364">[Fuente: RFC 5321, RFC 1939, RFC 9051, RFC 9989; ENS mp.s.1]</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg aria-label="Fases de la migración en caliente por precopia iterativa: preparación del destino, copia iterativa de la memoria mientras la máquina sigue funcionando, parada breve de milisegundos para transferir las últimas páginas sucias y el estado de CPU, y conmutación al destino con aviso a la red" role="img" viewbox="0 0 680 318" xmlns="http://www.w3.org/2000/svg">
+<style>.t8{font:700 10.5px system-ui,sans-serif;fill:#fff}.s8{font:9px system-ui,sans-serif;fill:#fff}.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}.k8{font:700 10.5px system-ui,sans-serif;fill:#0055a0}.n8{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h8" text-anchor="middle" x="340" y="20">Migración en caliente: la máquina virtual nunca se apaga</text>
+<rect fill="#333" height="30" rx="4" width="200" x="20" y="34"></rect><text class="t8" text-anchor="middle" x="120" y="54">ANFITRIÓN ORIGEN</text>
+<rect fill="#333" height="30" rx="4" width="200" x="460" y="34"></rect><text class="t8" text-anchor="middle" x="560" y="54">ANFITRIÓN DESTINO</text>
+<rect fill="#e89822" height="30" rx="4" width="200" x="240" y="34"></rect><text class="t8" text-anchor="middle" x="340" y="54">RED DEDICADA DE MIGRACIÓN</text>
+<rect fill="#0055a0" height="40" rx="4" width="640" x="20" y="76"></rect>
+<text style="font:700 10.5px system-ui;fill:#fff" x="34" y="93">FASE 1 · PREPARACIÓN</text>
+<text class="s8" x="34" y="108">El destino reserva CPU, memoria y red · se comprueba compatibilidad de CPU y acceso al mismo almacenamiento</text>
+<rect fill="#2d8659" height="52" rx="4" width="640" x="20" y="122"></rect>
+<text style="font:700 10.5px system-ui;fill:#fff" x="34" y="139">FASE 2 · COPIA ITERATIVA DE MEMORIA — la VM SIGUE FUNCIONANDO en el origen</text>
+<text class="s8" x="34" y="154">Pasada 1: se copian TODAS las páginas · Pasada 2: solo las que el huésped ha vuelto a escribir (páginas «sucias»)</text>
+<text class="s8" x="34" y="168">Pasada 3, 4, n: cada vez quedan menos, hasta que el conjunto pendiente es lo bastante pequeño</text>
+<rect fill="#d13c3c" height="40" rx="4" width="640" x="20" y="180"></rect>
+<text style="font:700 10.5px system-ui;fill:#fff" x="34" y="197">FASE 3 · PARADA BREVE (stun) — ÚNICA INTERRUPCIÓN, DE MILISEGUNDOS</text>
+<text class="s8" x="34" y="212">Se detiene la VM y se transfieren las últimas páginas sucias más el estado de CPU y de dispositivos</text>
+<rect fill="#0055a0" height="40" rx="4" width="640" x="20" y="226"></rect>
+<text style="font:700 10.5px system-ui;fill:#fff" x="34" y="243">FASE 4 · CONMUTACIÓN</text>
+<text class="s8" x="34" y="258">La VM se reanuda en el destino · aviso a la red (ARP gratuito) para reaprender su MAC · se liberan los recursos del origen</text>
+<rect fill="#f2f6fa" height="20" rx="3" stroke="#0055a0" width="640" x="20" y="272"></rect>
+<text class="n8" text-anchor="middle" x="340" y="286">Requisitos: CPU compatible · red compartida y dedicada · mismo almacenamiento accesible · SIN dispositivos asignados en passthrough</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="313">[Fuente: VMWARE-DOC; HYPERV-DOC; KVM-DOC]</text>
+</svg>

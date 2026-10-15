@@ -1,0 +1,61 @@
+<svg aria-label="Estructura del Real Decreto 311/2022: siete capítulos con 41 artículos y cuatro anexos. Capítulo I disposiciones generales artículos 1 a 4, capítulo II principios básicos artículos 5 a 11, capítulo III política y requisitos mínimos artículos 12 a 30, capítulo IV auditoría e incidentes artículos 31 a 34, capítulo V normas de conformidad artículos 35 a 38, capítulo VI actualización artículo 39, capítulo VII categorización artículos 40 y 41; anexo I categorías, anexo II las 73 medidas, anexo III auditoría y anexo IV glosario" role="img" viewbox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
+<style>.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 10px system-ui,sans-serif;fill:#0055a0}.d3{font:9px system-ui,sans-serif;fill:#333}.n3{font:8.5px system-ui,sans-serif;fill:#666}.w3{font:700 10px system-ui,sans-serif;fill:#fff}.cap3{font:700 9.5px system-ui,sans-serif;fill:#fff}.al3{font:700 9px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h3" text-anchor="middle" x="340" y="19">Real Decreto 311/2022: 41 artículos en 7 capítulos y 4 anexos</text>
+<text class="n3" text-anchor="middle" x="340" y="35">Mapa para localizar cualquier precepto. Los anexos pesan más que el articulado: el anexo II es casi toda la norma</text>
+<text class="k3" x="24" y="54">ARTICULADO</text>
+<rect fill="#0055a0" height="52" rx="4" width="90" x="24" y="60"></rect>
+<text class="cap3" text-anchor="middle" x="69" y="76">CAP. I</text>
+<text class="w3" text-anchor="middle" x="69" y="90">arts. 1-4</text>
+<text class="cap3" text-anchor="middle" x="69" y="104">Generales</text>
+<rect fill="#d13c3c" height="52" rx="4" width="90" x="118" y="60"></rect>
+<text class="cap3" text-anchor="middle" x="163" y="76">CAP. II</text>
+<text class="w3" text-anchor="middle" x="163" y="90">arts. 5-11</text>
+<text class="cap3" text-anchor="middle" x="163" y="104">PRINCIPIOS</text>
+<rect fill="#0055a0" height="52" rx="4" width="102" x="212" y="60"></rect>
+<text class="cap3" text-anchor="middle" x="263" y="76">CAP. III</text>
+<text class="w3" text-anchor="middle" x="263" y="90">arts. 12-30</text>
+<text class="cap3" text-anchor="middle" x="263" y="104">Requisitos mínimos</text>
+<rect fill="#0055a0" height="52" rx="4" width="96" x="318" y="60"></rect>
+<text class="cap3" text-anchor="middle" x="366" y="76">CAP. IV</text>
+<text class="w3" text-anchor="middle" x="366" y="90">arts. 31-34</text>
+<text class="cap3" text-anchor="middle" x="366" y="104">Auditoría</text>
+<rect fill="#0055a0" height="52" rx="4" width="90" x="418" y="60"></rect>
+<text class="cap3" text-anchor="middle" x="463" y="76">CAP. V</text>
+<text class="w3" text-anchor="middle" x="463" y="90">arts. 35-38</text>
+<text class="cap3" text-anchor="middle" x="463" y="104">Conformidad</text>
+<rect fill="#0055a0" height="52" rx="4" width="62" x="512" y="60"></rect>
+<text class="cap3" text-anchor="middle" x="543" y="76">CAP. VI</text>
+<text class="w3" text-anchor="middle" x="543" y="90">art. 39</text>
+<text class="cap3" text-anchor="middle" x="543" y="104">Actualiz.</text>
+<rect fill="#e89822" height="52" rx="4" width="78" x="578" y="60"></rect>
+<text class="cap3" text-anchor="middle" x="617" y="76">CAP. VII</text>
+<text class="w3" text-anchor="middle" x="617" y="90">arts. 40-41</text>
+<text class="cap3" text-anchor="middle" x="617" y="104">CATEGORÍAS</text>
+<text class="al3" x="578" y="126">AL FINAL</text>
+<path d="M617 118 L617 112" fill="none" stroke="#d13c3c" stroke-width="1.4"></path>
+<text class="n3" x="24" y="126">El capítulo II es el que pide el enunciado; el VII va al final aunque lógicamente precede a las medidas</text>
+<text class="k3" x="24" y="150">ANEXOS — DONDE ESTÁ EL DETALLE</text>
+<rect fill="#eef4fa" height="38" rx="4" width="632" x="24" y="158"></rect>
+<rect fill="#0055a0" height="38" rx="4" width="86" x="24" y="158"></rect>
+<text class="w3" text-anchor="middle" x="67" y="181">ANEXO I</text>
+<text class="k3" x="120" y="174">CATEGORÍAS DE SEGURIDAD</text>
+<text class="d3" x="120" y="188">5 dimensiones C-I-T-A-D · niveles BAJO, MEDIO y ALTO · categorías BÁSICA, MEDIA y ALTA · regla del máximo</text>
+<rect fill="#fdf3e3" height="38" rx="4" width="632" x="24" y="200"></rect>
+<rect fill="#e89822" height="38" rx="4" width="86" x="24" y="200"></rect>
+<text class="w3" text-anchor="middle" x="67" y="223">ANEXO II</text>
+<text class="k3" x="120" y="216">MEDIDAS DE SEGURIDAD — 73 MEDIDAS EN 3 GRUPOS Y 16 FAMILIAS</text>
+<text class="d3" x="120" y="230">org (4) organizativo · op (33) operacional · mp (36) protección · tabla de aplicación por categoría y dimensión</text>
+<rect fill="#eef4fa" height="38" rx="4" width="632" x="24" y="242"></rect>
+<rect fill="#0055a0" height="38" rx="4" width="86" x="24" y="242"></rect>
+<text class="w3" text-anchor="middle" x="67" y="265">ANEXO III</text>
+<text class="k3" x="120" y="258">AUDITORÍA DE LA SEGURIDAD</text>
+<text class="d3" x="120" y="272">6 extremos a constatar · 4 clases de evidencia · BÁSICA: autoevaluación · MEDIA y ALTA: informe con hallazgos</text>
+<rect fill="#eef4fa" height="38" rx="4" width="632" x="24" y="284"></rect>
+<rect fill="#0055a0" height="38" rx="4" width="86" x="24" y="284"></rect>
+<text class="w3" text-anchor="middle" x="67" y="307">ANEXO IV</text>
+<text class="k3" x="120" y="300">GLOSARIO</text>
+<text class="d3" x="120" y="314">Definiciones de las cinco dimensiones, de categoría, de perfil de cumplimiento y de los distintivos en PDF-A</text>
+<rect fill="#e6f2ec" height="20" rx="3" width="632" x="24" y="326"></rect>
+<text class="n3" text-anchor="middle" x="340" y="340">Completan la norma: 3 disposiciones adicionales, 1 transitoria (24 meses de adecuación), 1 derogatoria y 3 finales</text>
+<text class="n3" x="24" y="368">[Fuente: ENS — Real Decreto 311/2022, texto consolidado del BOE]</text>
+</svg>

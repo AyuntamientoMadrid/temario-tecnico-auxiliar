@@ -1,0 +1,21 @@
+<svg aria-label="Comparación de concentrador, conmutador y encaminador según los dominios de colisión y de difusión que crean: el concentrador deja un único dominio de colisión y uno de difusión, el conmutador crea un dominio de colisión por puerto pero mantiene uno solo de difusión, y el encaminador crea un dominio de difusión por interfaz" role="img" viewbox="0 0 680 330" xmlns="http://www.w3.org/2000/svg">
+<style>.t10{font:700 10.5px system-ui,sans-serif;fill:#fff}.s10{font:8.5px system-ui,sans-serif;fill:#fff}.d10{font:9px system-ui,sans-serif;fill:#333}.h10{font:700 13px system-ui,sans-serif;fill:#0055a0}.k10{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n10{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h10" text-anchor="middle" x="340" y="20">Quién segmenta qué</text>
+<text class="k10" x="26" y="42">EQUIPO</text><text class="k10" x="250" y="42">DOMINIOS DE COLISIÓN</text><text class="k10" x="470" y="42">DOMINIOS DE DIFUSIÓN</text>
+<rect fill="#e89822" height="46" rx="5" width="200" x="20" y="50"></rect><text class="t10" text-anchor="middle" x="120" y="70">CONCENTRADOR (hub)</text><text class="s10" text-anchor="middle" x="120" y="86">capa 1 · semidúplex</text>
+<rect fill="#fbeaea" height="46" rx="5" width="200" x="228" y="50"></rect><text class="d10" text-anchor="middle" x="328" y="70">UNO SOLO</text><text class="n10" text-anchor="middle" x="328" y="86">todos compiten por el medio</text>
+<rect fill="#fbeaea" height="46" rx="5" width="224" x="436" y="50"></rect><text class="d10" text-anchor="middle" x="548" y="70">UNO SOLO</text><text class="n10" text-anchor="middle" x="548" y="86">la difusión llega a todos</text>
+<rect fill="#2d8659" height="46" rx="5" width="200" x="20" y="104"></rect><text class="t10" text-anchor="middle" x="120" y="124">CONMUTADOR (switch)</text><text class="s10" text-anchor="middle" x="120" y="140">capa 2 · dúplex</text>
+<rect fill="#e8f4ee" height="46" rx="5" width="200" x="228" y="104"></rect><text class="d10" text-anchor="middle" x="328" y="124">UNO POR PUERTO</text><text class="n10" text-anchor="middle" x="328" y="140">enlace dedicado a cada equipo</text>
+<rect fill="#fbeaea" height="46" rx="5" width="224" x="436" y="104"></rect><text class="d10" text-anchor="middle" x="548" y="124">UNO SOLO — salvo VLAN</text><text class="n10" text-anchor="middle" x="548" y="140">cada VLAN es un dominio distinto</text>
+<rect fill="#0055a0" height="46" rx="5" width="200" x="20" y="158"></rect><text class="t10" text-anchor="middle" x="120" y="178">ENCAMINADOR (router)</text><text class="s10" text-anchor="middle" x="120" y="194">capa 3 · dúplex</text>
+<rect fill="#e8f4ee" height="46" rx="5" width="200" x="228" y="158"></rect><text class="d10" text-anchor="middle" x="328" y="178">UNO POR INTERFAZ</text><text class="n10" text-anchor="middle" x="328" y="194">—</text>
+<rect fill="#e8f4ee" height="46" rx="5" width="224" x="436" y="158"></rect><text class="d10" text-anchor="middle" x="548" y="178">UNO POR INTERFAZ</text><text class="n10" text-anchor="middle" x="548" y="194">detiene la difusión</text>
+<rect fill="#fdf3e3" height="26" rx="4" width="640" x="20" y="216"></rect>
+<text class="d10" text-anchor="middle" x="340" y="233">EL CONMUTADOR NO DIVIDE EL DOMINIO DE DIFUSIÓN: solo lo hacen el encaminador y las VLAN</text>
+<rect fill="none" height="56" rx="5" stroke="#d13c3c" stroke-width="1.5" width="640" x="20" y="252"></rect>
+<text class="k10" text-anchor="middle" x="340" y="270">POR QUÉ IMPORTA: la tormenta de difusión</text>
+<text class="n10" text-anchor="middle" x="340" y="286">La trama Ethernet NO tiene TTL, así que un bucle de nivel 2 la multiplica sin fin. Remedios: STP/RSTP,</text>
+<text class="n10" text-anchor="middle" x="340" y="299">VLAN para acotar el dominio y control de tormentas por puerto</text>
+<text class="n10" text-anchor="end" x="670" y="324">[Fuente: IEEE 802.1; TANENBAUM]</text>
+</svg>

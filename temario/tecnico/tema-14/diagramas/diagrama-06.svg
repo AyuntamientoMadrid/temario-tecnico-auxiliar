@@ -1,0 +1,18 @@
+<svg aria-label="Las cuatro condiciones de Coffman y un ciclo de espera circular" class="svd6" role="img" viewbox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd6 .t{font:700 13px system-ui,sans-serif;fill:#0055a0}.svd6 .c{font:12px system-ui,sans-serif;fill:#1a1a1a}.svd6 .b{font:700 12px system-ui,sans-serif;fill:#fff}.svd6 .l{font:11px system-ui,sans-serif;fill:#444}</style>
+<text class="t" x="40" y="40">4 condiciones (todas a la vez):</text>
+<text class="c" x="40" y="70">1 · Exclusión mutua</text>
+<text class="c" x="40" y="94">2 · Retención y espera</text>
+<text class="c" x="40" y="118">3 · No apropiación</text>
+<text class="c" x="40" y="142">4 · Espera circular</text>
+<text class="l" fill="#d13c3c" x="40" y="180">Romper cualquiera evita el deadlock</text>
+<circle cx="470" cy="100" fill="#0055a0" r="30"></circle><text class="b" text-anchor="middle" x="470" y="105">P1</text>
+<circle cx="560" cy="200" fill="#0055a0" r="30"></circle><text class="b" text-anchor="middle" x="560" y="205">P2</text>
+<circle cx="380" cy="200" fill="#0055a0" r="30"></circle><text class="b" text-anchor="middle" x="380" y="205">P3</text>
+<path d="M 492 122 L 540 178" marker-end="url(#a6)" stroke="#d13c3c" stroke-width="2"></path>
+<path d="M 533 218 L 405 218" marker-end="url(#a6)" stroke="#d13c3c" stroke-width="2"></path>
+<path d="M 400 178 L 450 122" marker-end="url(#a6)" stroke="#d13c3c" stroke-width="2"></path>
+<text class="l" text-anchor="middle" x="470" y="270">espera circular: P1→P2→P3→P1</text>
+<defs><marker id="a6" markerheight="10" markerwidth="10" orient="auto" refx="8" refy="5"><polygon fill="#d13c3c" points="0,0 10,5 0,10"></polygon></marker></defs>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="630" y="308">[Fuente: TANENBAUM-MOS, cap. 6]</text>
+</svg>

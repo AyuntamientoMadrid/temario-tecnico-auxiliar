@@ -1,0 +1,21 @@
+<svg aria-label="Comparación entre álgebra relacional, que es procedimental y describe cómo obtener el resultado paso a paso, y cálculo relacional, que es declarativo y describe qué debe cumplir el resultado" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 13px system-ui,sans-serif;fill:#fff}.s2{font:11px system-ui,sans-serif;fill:#fff}.l2{font:11px system-ui,sans-serif;fill:#444}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h2" text-anchor="middle" x="340" y="24">Dos lenguajes equivalentes para interrogar el modelo relacional</text>
+<rect fill="#0055a0" height="160" rx="8" width="280" x="40" y="44"></rect>
+<text class="t2" text-anchor="middle" x="180" y="72">ÁLGEBRA RELACIONAL</text>
+<text class="s2" text-anchor="middle" x="180" y="96">PROCEDIMENTAL — dice CÓMO</text>
+<text class="s2" text-anchor="middle" x="180" y="120">Secuencia de operadores:</text>
+<text class="s2" text-anchor="middle" x="180" y="138">σ selección · π proyección</text>
+<text class="s2" text-anchor="middle" x="180" y="156">ρ renombrado · ⋈ reunión</text>
+<text class="s2" text-anchor="middle" x="180" y="180">El orden de aplicación importa</text>
+<rect fill="#2d8659" height="160" rx="8" width="280" x="360" y="44"></rect>
+<text class="t2" text-anchor="middle" x="500" y="72">CÁLCULO RELACIONAL</text>
+<text class="s2" text-anchor="middle" x="500" y="96">DECLARATIVO — dice QUÉ</text>
+<text class="s2" text-anchor="middle" x="500" y="120">Lógica de predicados:</text>
+<text class="s2" text-anchor="middle" x="500" y="138">{ t | P(t) }</text>
+<text class="s2" text-anchor="middle" x="500" y="156">de tuplas o de dominios</text>
+<text class="s2" text-anchor="middle" x="500" y="180">No se indica el procedimiento</text>
+<text class="l2" text-anchor="middle" x="340" y="228">Codd demostró su EQUIVALENCIA EXPRESIVA (cálculo seguro) → «completitud relacional»</text>
+<text style="font:700 12px system-ui;fill:#e89822" text-anchor="middle" x="340" y="250">SQL: sintaxis declarativa (como el cálculo) + ejecución interna algebraica</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="292">[Fuente: CODD70; DATE-REL]</text>
+</svg>

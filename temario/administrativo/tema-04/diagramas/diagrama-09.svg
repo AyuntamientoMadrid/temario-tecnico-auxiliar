@@ -1,0 +1,29 @@
+<svg aria-label="El coordinador del distrito: nombrado por la Junta de Gobierno a propuesta del concejal-presidente, con rango de director general, según los artículos 70 y 71" role="img" viewbox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .i-c{fill:#0055a0;stroke:#003d75;stroke-width:2}
+    .i-b{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .i-t{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .i-h{font:700 12px system-ui,sans-serif;fill:#003d75;text-anchor:middle}
+    .i-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+    .i-l{stroke:#0055a0;stroke-width:1.5;fill:none}
+  </style>
+<rect class="i-c" height="56" rx="10" width="200" x="250" y="110"></rect>
+<text class="i-t" x="350" y="134">COORDINADOR</text>
+<text class="i-t" x="350" y="152">DEL DISTRITO</text>
+<rect class="i-b" height="56" rx="8" width="280" x="40" y="30"></rect>
+<text class="i-h" x="180" y="54">Lo nombra la JUNTA DE GOBIERNO</text>
+<text class="i-s" x="180" y="72">a propuesta del concejal-presidente (art. 70.1)</text>
+<rect fill="#fdf4e4" height="56" rx="8" stroke="#e89822" stroke-width="1.5" width="280" x="380" y="30"></rect>
+<text class="i-h" style="fill:#a8650f" x="520" y="54">Rango de DIRECTOR GENERAL</text>
+<text class="i-s" x="520" y="72">nombramiento conforme al art. 49 (Tema 3)</text>
+<rect class="i-b" height="56" rx="8" width="280" x="40" y="200"></rect>
+<text class="i-h" x="180" y="224">Jefatura inmediata</text>
+<text class="i-s" x="180" y="242">de las unidades adscritas (art. 71)</text>
+<rect fill="#e8f5ee" height="56" rx="8" stroke="#2d8659" stroke-width="1.5" width="280" x="380" y="200"></rect>
+<text class="i-h" style="fill:#1f5e3f" x="520" y="224">Sus actos: RESOLUCIÓN</text>
+<text class="i-s" x="520" y="242">(art. 71.2)</text>
+<line class="i-l" x1="300" x2="300" y1="120" y2="86"></line>
+<line class="i-l" x1="400" x2="430" y1="120" y2="86"></line>
+<line class="i-l" x1="300" x2="280" y1="166" y2="200"></line>
+<line class="i-l" x1="400" x2="450" y1="166" y2="200"></line>
+</svg>

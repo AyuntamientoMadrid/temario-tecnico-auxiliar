@@ -1,0 +1,34 @@
+<svg aria-label="Comparativa de almacenamiento en el cliente: cookies con envío automático al servidor y persistencia configurable, localStorage persistente sin envío automático, sessionStorage limitado a la pestaña, IndexedDB para grandes volúmenes" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 11px system-ui,sans-serif;fill:#fff}.s6{font:9.5px system-ui,sans-serif;fill:#fff}.l6{font:10.5px system-ui,sans-serif;fill:#444}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h6" text-anchor="middle" x="340" y="20">Almacenamiento en el cliente</text>
+<rect fill="#0055a0" height="110" rx="6" width="150" x="30" y="40"></rect>
+<text class="t6" text-anchor="middle" x="105" y="66">Cookies</text>
+<text class="s6" text-anchor="middle" x="105" y="86">~4 KB</text>
+<text class="s6" text-anchor="middle" x="105" y="102">Envío AUTOMÁTICO</text>
+<text class="s6" text-anchor="middle" x="105" y="118">en cada petición</text>
+<text class="s6" text-anchor="middle" x="105" y="134">HttpOnly/Secure/SameSite</text>
+<rect fill="#2d8659" height="110" rx="6" width="150" x="190" y="40"></rect>
+<text class="t6" text-anchor="middle" x="265" y="66">localStorage</text>
+<text class="s6" text-anchor="middle" x="265" y="86">~5-10 MB</text>
+<text class="s6" text-anchor="middle" x="265" y="102">Sin envío automático</text>
+<text class="s6" text-anchor="middle" x="265" y="118">Persiste indefinido</text>
+<text class="s6" text-anchor="middle" x="265" y="134">hasta borrado explícito</text>
+<rect fill="#e89822" height="110" rx="6" width="150" x="350" y="40"></rect>
+<text class="t6" text-anchor="middle" x="425" y="66">sessionStorage</text>
+<text class="s6" text-anchor="middle" x="425" y="86">~5-10 MB</text>
+<text class="s6" text-anchor="middle" x="425" y="102">Sin envío automático</text>
+<text class="s6" text-anchor="middle" x="425" y="118">Dura lo que</text>
+<text class="s6" text-anchor="middle" x="425" y="134">la pestaña abierta</text>
+<rect fill="#d13c3c" height="110" rx="6" width="150" x="510" y="40"></rect>
+<text class="t6" text-anchor="middle" x="585" y="66">IndexedDB</text>
+<text class="s6" text-anchor="middle" x="585" y="86">Cientos de MB</text>
+<text class="s6" text-anchor="middle" x="585" y="102">Sin envío automático</text>
+<text class="s6" text-anchor="middle" x="585" y="118">Base de datos</text>
+<text class="s6" text-anchor="middle" x="585" y="134">estructurada local</text>
+<rect fill="#f0f0f0" height="120" rx="6" stroke="#0055a0" stroke-width="2" width="500" x="90" y="176"></rect>
+<text style="font:700 12px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="200">Caché HTTP y Cache API (Service Worker, §9.3)</text>
+<text class="l6" text-anchor="middle" x="340" y="224">Cache-Control / ETag evitan repetir peticiones de recursos sin cambios</text>
+<text class="l6" text-anchor="middle" x="340" y="244">La Cache API, gestionada por el Service Worker, es la base técnica</text>
+<text class="l6" text-anchor="middle" x="340" y="264">del funcionamiento OFFLINE de una PWA</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="332">[Fuente: MDN-JS; SERVICE-WORKERS]</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg aria-label="La Junta Municipal del Distrito ejerce competencias por delegación del alcalde o de la Junta de Gobierno, según el artículo 63" role="img" viewbox="0 0 700 250" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .d-box{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .d-c{fill:#0055a0}
+    .d-h{font:700 12px system-ui,sans-serif;fill:#003d75;text-anchor:middle}
+    .d-t{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .d-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+    .d-l{stroke:#0055a0;stroke-width:1.5;fill:none}
+  </style>
+<rect class="d-box" height="50" rx="8" width="180" x="50" y="40"></rect>
+<text class="d-h" x="140" y="63">ALCALDE</text>
+<text class="d-s" x="140" y="80">delega</text>
+<rect class="d-box" height="50" rx="8" width="180" x="50" y="150"></rect>
+<text class="d-h" x="140" y="173">JUNTA DE GOBIERNO</text>
+<text class="d-s" x="140" y="190">delega</text>
+<rect class="d-c" height="60" rx="8" width="260" x="410" y="95"></rect>
+<text class="d-t" x="540" y="120">JUNTA MUNICIPAL</text>
+<text class="d-t" style="font-weight:400;font-size:11px" x="540" y="138">competencias ejecutivas/administrativas</text>
+<line class="d-l" x1="230" x2="410" y1="65" y2="115"></line>
+<line class="d-l" x1="230" x2="410" y1="175" y2="135"></line>
+<text class="d-s" style="font-style:italic" x="350" y="225">…sin perjuicio de las que le atribuya el Pleno (art. 123.1.c LBRL)</text>
+</svg>

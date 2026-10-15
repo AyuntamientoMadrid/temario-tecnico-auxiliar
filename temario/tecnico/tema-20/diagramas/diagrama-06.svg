@@ -1,0 +1,24 @@
+<svg aria-label="Comparación entre herencia simple de Java, con una sola superclase, y herencia múltiple de C++, que puede producir el problema del diamante cuando dos superclases comparten un ancestro común" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 11px system-ui,sans-serif;fill:#fff}.l6{font:11px system-ui,sans-serif;fill:#444}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h6" text-anchor="middle" x="340" y="20">Herencia simple (Java) frente a herencia múltiple (C++)</text>
+<text style="font:700 12px system-ui;fill:#2d8659" text-anchor="middle" x="150" y="44">HERENCIA SIMPLE</text>
+<rect fill="#0055a0" height="30" rx="4" width="100" x="100" y="56"></rect><text class="t6" text-anchor="middle" x="150" y="76">Expediente</text>
+<line stroke="#0055a0" stroke-width="2" x1="150" x2="150" y1="86" y2="106"></line><polygon fill="#0055a0" points="150,112 144,102 156,102"></polygon>
+<rect fill="#2d8659" height="30" rx="4" width="100" x="100" y="112"></rect><text class="t6" text-anchor="middle" x="150" y="132">ExpLicencia</text>
+<text class="l6" text-anchor="middle" x="150" y="164">Una única superclase.</text>
+<text class="l6" text-anchor="middle" x="150" y="180">Sin ambigüedad posible.</text>
+<line stroke="#ddd" x1="330" x2="330" y1="30" y2="255"></line>
+<text style="font:700 12px system-ui;fill:#d13c3c" text-anchor="middle" x="510" y="44">HERENCIA MÚLTIPLE — diamante</text>
+<rect fill="#0055a0" height="28" rx="4" width="100" x="460" y="56"></rect><text class="t6" text-anchor="middle" x="510" y="75">A</text>
+<line stroke="#0055a0" stroke-width="2" x1="490" x2="440" y1="84" y2="112"></line>
+<line stroke="#0055a0" stroke-width="2" x1="530" x2="580" y1="84" y2="112"></line>
+<rect fill="#0055a0" height="28" rx="4" width="100" x="390" y="112"></rect><text class="t6" text-anchor="middle" x="440" y="131">B (redefine m)</text>
+<rect fill="#0055a0" height="28" rx="4" width="100" x="530" y="112"></rect><text class="t6" text-anchor="middle" x="580" y="131">C (redefine m)</text>
+<line stroke="#d13c3c" stroke-width="2" x1="440" x2="490" y1="140" y2="168"></line>
+<line stroke="#d13c3c" stroke-width="2" x1="580" x2="530" y1="140" y2="168"></line>
+<rect fill="#d13c3c" height="28" rx="4" width="100" x="460" y="168"></rect><text class="t6" text-anchor="middle" x="510" y="187">D — ¿m()?</text>
+<text class="l6" text-anchor="middle" x="510" y="222">D hereda de B y C, que redefinen "m":</text>
+<text class="l6" text-anchor="middle" x="510" y="238">¿qué versión de "m" usa D? — ambigüedad</text>
+<text style="font:700 12px system-ui;fill:#e89822" text-anchor="middle" x="330" y="280">Java prohíbe el diamante: extends simple + implements múltiple de interfaces</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="328">[Fuente: GOSLING-JLS; MEYER97]</text>
+</svg>

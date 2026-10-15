@@ -1,0 +1,2567 @@
+{
+  "tema": 5,
+  "bloque": "administrativo",
+  "titulo": "El personal al servicio de la Administración Pública (TREBEP)",
+  "enunciado_oficial": "El personal al servicio de la Administración Pública conforme al texto refundido de la Ley del Estatuto Básico del Empleado Público, aprobado por Real Decreto Legislativo 5/2015, de 30 de octubre: clases de personal. Adquisición y pérdida de la relación de servicio. Situaciones administrativas. Derechos de los empleados públicos. Derecho a la carrera profesional y a la promoción interna. La evaluación del desempeño. Derechos retributivos. Derechos a la jornada de trabajo, permisos y vacaciones. Régimen disciplinario.",
+  "calificacion": "+1 acierto, -1/3 error, 0 en blanco (BOAM 10.032, base 5.2)",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "El texto refundido de la Ley del Estatuto Básico del Empleado Público se aprobó por:",
+      "opciones": {
+        "a": "El Real Decreto Legislativo 5/2015, de 30 de octubre.",
+        "b": "La Ley 7/1985, de 2 de abril.",
+        "c": "El Real Decreto 364/1995, de 10 de marzo."
+      },
+      "correcta": "a",
+      "referencia": "RDL 5/2015, artículo único",
+      "explicacion": ""
+    },
+    {
+      "numero": 2,
+      "pregunta": "El TREBEP tiene por objeto establecer:",
+      "opciones": {
+        "a": "El régimen retributivo único de todos los empleados públicos.",
+        "b": "El estatuto exclusivo del personal laboral.",
+        "c": "Las bases del régimen estatutario de los funcionarios públicos."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 1",
+      "explicacion": ""
+    },
+    {
+      "numero": 3,
+      "pregunta": "¿Cuál de los siguientes NO es un fundamento de actuación del art. 1.3 del TREBEP?",
+      "opciones": {
+        "a": "Igualdad, mérito y capacidad en el acceso y la promoción.",
+        "b": "Discrecionalidad política en la selección.",
+        "c": "Objetividad, profesionalidad e imparcialidad."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 1.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 4,
+      "pregunta": "El TREBEP se aplica al personal de las entidades locales:",
+      "opciones": {
+        "a": "No, las entidades locales quedan excluidas.",
+        "b": "Solo a su personal laboral.",
+        "c": "Sí, al personal funcionario y, en lo que proceda, al personal laboral."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 2.1.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 5,
+      "pregunta": "¿A cuál de estas Administraciones NO se aplica el TREBEP según el art. 2?",
+      "opciones": {
+        "a": "Las Universidades Públicas.",
+        "b": "Los organismos públicos y agencias.",
+        "c": "Las empresas privadas con contratos públicos."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 2",
+      "explicacion": ""
+    },
+    {
+      "numero": 6,
+      "pregunta": "El TREBEP tiene carácter ___ para todo el personal de las Administraciones Públicas no incluido en su ámbito de aplicación:",
+      "opciones": {
+        "a": "Exclusivo.",
+        "b": "Supletorio.",
+        "c": "Excluyente."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 2.5",
+      "explicacion": ""
+    },
+    {
+      "numero": 7,
+      "pregunta": "En desarrollo del TREBEP, las leyes reguladoras de la Función Pública de la Administración General del Estado y de las comunidades autónomas las aprueban:",
+      "opciones": {
+        "a": "El Gobierno, mediante real decreto, para todas las Administraciones.",
+        "b": "Las Cortes Generales y las asambleas legislativas de las comunidades autónomas, en el ámbito de sus competencias.",
+        "c": "Las Mesas Generales de Negociación de cada Administración."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 6",
+      "explicacion": ""
+    },
+    {
+      "numero": 8,
+      "pregunta": "El servicio a los ciudadanos y a los intereses generales es, en el TREBEP:",
+      "opciones": {
+        "a": "Una recomendación sin valor normativo.",
+        "b": "Un fundamento de actuación del empleado público.",
+        "c": "Una competencia exclusiva del personal directivo."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 1.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 9,
+      "pregunta": "¿Qué norma derogó expresamente la Ley 7/2007, de 12 de abril, del Estatuto Básico del Empleado Público?",
+      "opciones": {
+        "a": "La Ley 39/2015.",
+        "b": "El RDL 5/2015 (texto refundido).",
+        "c": "La Ley 40/2015."
+      },
+      "correcta": "b",
+      "referencia": "RDL 5/2015, disposición derogatoria única",
+      "explicacion": ""
+    },
+    {
+      "numero": 10,
+      "pregunta": "Conforme al art. 3.1 del TREBEP, el personal funcionario de las entidades locales se rige por:",
+      "opciones": {
+        "a": "Exclusivamente por las ordenanzas de cada entidad local.",
+        "b": "Solo por los convenios colectivos de cada entidad local.",
+        "c": "La legislación estatal que resulte de aplicación, de la que forma parte el TREBEP, y por la legislación de las comunidades autónomas, con respeto a la autonomía local."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 11,
+      "pregunta": "Son empleados públicos quienes:",
+      "opciones": {
+        "a": "Tienen contrato mercantil con la Administración.",
+        "b": "Desempeñan funciones retribuidas en las AAPP al servicio de los intereses generales.",
+        "c": "Prestan servicios gratuitos de forma voluntaria."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 8.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 12,
+      "pregunta": "El funcionario de carrera está vinculado a la Administración por una relación:",
+      "opciones": {
+        "a": "Laboral indefinida.",
+        "b": "Mercantil de servicios.",
+        "c": "Estatutaria regulada por el Derecho Administrativo."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 9.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 13,
+      "pregunta": "El ejercicio de funciones que impliquen participación en potestades públicas corresponde:",
+      "opciones": {
+        "a": "A cualquier empleado público.",
+        "b": "Exclusivamente a los funcionarios públicos.",
+        "c": "Preferentemente al personal eventual."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 9.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 14,
+      "pregunta": "El funcionario interino se nombra por razones de:",
+      "opciones": {
+        "a": "Necesidad y urgencia, expresamente justificadas.",
+        "b": "Confianza política del órgano de gobierno.",
+        "c": "Mera conveniencia organizativa."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 10.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 15,
+      "pregunta": "El nombramiento de funcionario interino por existencia de plazas vacantes tiene una duración máxima de:",
+      "opciones": {
+        "a": "Un año.",
+        "b": "Tres años.",
+        "c": "Cinco años."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 10.1.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 16,
+      "pregunta": "El funcionario interino por exceso o acumulación de tareas puede serlo, como máximo:",
+      "opciones": {
+        "a": "Doce meses dentro de un periodo de veinticuatro meses.",
+        "b": "Nueve meses dentro de un periodo de dieciocho meses.",
+        "c": "Seis meses dentro de un periodo de doce meses."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 10.1.d)",
+      "explicacion": ""
+    },
+    {
+      "numero": 17,
+      "pregunta": "La selección del funcionario interino se rige, entre otros, por el principio de:",
+      "opciones": {
+        "a": "Libre designación política.",
+        "b": "Celeridad.",
+        "c": "Antigüedad exclusiva."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 10.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 18,
+      "pregunta": "El personal laboral puede ser:",
+      "opciones": {
+        "a": "Solo fijo.",
+        "b": "Fijo, por tiempo indefinido o temporal.",
+        "c": "Solo temporal."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 11.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 19,
+      "pregunta": "El personal eventual realiza funciones:",
+      "opciones": {
+        "a": "Permanentes de gestión ordinaria.",
+        "b": "Idénticas a las del funcionario de carrera.",
+        "c": "Expresamente calificadas de confianza o asesoramiento especial."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 12.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 20,
+      "pregunta": "El nombramiento y cese del personal eventual son:",
+      "opciones": {
+        "a": "Reglados y motivados.",
+        "b": "Libres.",
+        "c": "Competencia del tribunal de selección."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 12.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 21,
+      "pregunta": "El cese del personal eventual se produce, en todo caso, cuando:",
+      "opciones": {
+        "a": "Transcurren cinco años desde el nombramiento.",
+        "b": "Aprueba una oposición.",
+        "c": "Cesa la autoridad a la que presta la función de confianza."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 12.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 22,
+      "pregunta": "¿La condición de personal eventual constituye mérito para el acceso a la función pública?",
+      "opciones": {
+        "a": "No, no puede constituir mérito.",
+        "b": "Sí, siempre.",
+        "c": "Solo para la promoción interna horizontal."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 12.4",
+      "explicacion": ""
+    },
+    {
+      "numero": 23,
+      "pregunta": "El personal directivo profesional está sujeto a:",
+      "opciones": {
+        "a": "Libre cese sin evaluación alguna.",
+        "b": "Evaluación con criterios de eficacia, eficiencia y responsabilidad por su gestión.",
+        "c": "El régimen exclusivo del personal eventual."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 13.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 24,
+      "pregunta": "La designación del personal directivo atiende a principios de:",
+      "opciones": {
+        "a": "Mérito, capacidad e idoneidad, con publicidad y concurrencia.",
+        "b": "Exclusiva confianza personal.",
+        "c": "Antigüedad en el cuerpo."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 13.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 25,
+      "pregunta": "El funcionario de carrera desempeña servicios de carácter:",
+      "opciones": {
+        "a": "Estacional.",
+        "b": "Permanente.",
+        "c": "Esporádico."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 9.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 26,
+      "pregunta": "La ejecución de programas de carácter temporal por funcionario interino no puede superar:",
+      "opciones": {
+        "a": "Tres años, ampliable hasta doce meses por las leyes de Función Pública.",
+        "b": "Cinco años improrrogables.",
+        "c": "Un año improrrogable."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 10.1.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 27,
+      "pregunta": "¿Cuál de las siguientes es una clase de empleado público del art. 8?",
+      "opciones": {
+        "a": "Personal becario investigador.",
+        "b": "Personal funcionario interino.",
+        "c": "Personal en prácticas extracurriculares."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 8.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 28,
+      "pregunta": "Al personal eventual le es aplicable, en lo adecuado a su condición:",
+      "opciones": {
+        "a": "Exclusivamente el Estatuto de los Trabajadores.",
+        "b": "El régimen general de los funcionarios de carrera.",
+        "c": "Ningún régimen supletorio."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 12.5",
+      "explicacion": ""
+    },
+    {
+      "numero": 29,
+      "pregunta": "El acceso al empleo público se rige por los principios constitucionales de:",
+      "opciones": {
+        "a": "Antigüedad y confianza.",
+        "b": "Mérito y discrecionalidad política.",
+        "c": "Igualdad, mérito y capacidad."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 55.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 30,
+      "pregunta": "¿Cuál es un requisito general para participar en procesos selectivos?",
+      "opciones": {
+        "a": "Tener experiencia previa en el sector privado.",
+        "b": "Estar afiliado a un sindicato.",
+        "c": "Poseer la capacidad funcional para el desempeño de las tareas."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 56.1.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 31,
+      "pregunta": "La edad mínima para participar en procesos selectivos es:",
+      "opciones": {
+        "a": "18 años.",
+        "b": "21 años.",
+        "c": "16 años."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 56.1.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 32,
+      "pregunta": "No puede participar en procesos selectivos quien:",
+      "opciones": {
+        "a": "Resida fuera de la localidad de la convocatoria.",
+        "b": "Haya sido separado mediante expediente disciplinario o esté inhabilitado.",
+        "c": "Carezca de experiencia previa."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 56.1.d)",
+      "explicacion": ""
+    },
+    {
+      "numero": 33,
+      "pregunta": "La reserva de plazas para personas con discapacidad es de un cupo no inferior al:",
+      "opciones": {
+        "a": "5%.",
+        "b": "10%.",
+        "c": "7%."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 59.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 34,
+      "pregunta": "¿Quién NO puede formar parte de los órganos de selección?",
+      "opciones": {
+        "a": "El personal de elección o designación política, los interinos y el eventual.",
+        "b": "El personal funcionario de carrera.",
+        "c": "Los empleados públicos con titulación adecuada."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 60.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 35,
+      "pregunta": "Los sistemas selectivos de funcionarios de carrera son:",
+      "opciones": {
+        "a": "Oposición y concurso-oposición; solo en virtud de ley y con carácter excepcional, concurso.",
+        "b": "Únicamente la oposición libre.",
+        "c": "Concurso de méritos en todo caso."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 61.6",
+      "explicacion": ""
+    },
+    {
+      "numero": 36,
+      "pregunta": "La condición de funcionario de carrera se adquiere, entre otros, por:",
+      "opciones": {
+        "a": "La toma de posesión tras el nombramiento.",
+        "b": "La mera superación de la oposición.",
+        "c": "La firma de un contrato de trabajo."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 62.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 37,
+      "pregunta": "Uno de los requisitos para adquirir la condición de funcionario de carrera es el acto de acatamiento de:",
+      "opciones": {
+        "a": "La Constitución y, en su caso, del Estatuto de Autonomía correspondiente y del resto del Ordenamiento Jurídico.",
+        "b": "Las instrucciones del órgano de selección.",
+        "c": "El reglamento interno de la unidad de destino."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 62.1.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 38,
+      "pregunta": "¿Cuál de estas NO es causa de pérdida de la condición de funcionario?",
+      "opciones": {
+        "a": "La renuncia.",
+        "b": "La jubilación.",
+        "c": "El traslado forzoso por necesidades del servicio."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 63",
+      "explicacion": ""
+    },
+    {
+      "numero": 39,
+      "pregunta": "La renuncia a la condición de funcionario:",
+      "opciones": {
+        "a": "No inhabilita para ingresar de nuevo en la Administración Pública a través del procedimiento de selección establecido.",
+        "b": "Inhabilita definitivamente para el reingreso.",
+        "c": "Solo puede ser verbal."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 64.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 40,
+      "pregunta": "No podrá aceptarse la renuncia cuando el funcionario:",
+      "opciones": {
+        "a": "Tenga menos de cinco años de servicio.",
+        "b": "Esté sujeto a expediente disciplinario o se haya dictado en su contra auto de procesamiento o de apertura de juicio oral por la comisión de algún delito.",
+        "c": "Resida en otra comunidad autónoma."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 64.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 41,
+      "pregunta": "La jubilación forzosa se declara, con carácter general, al cumplir:",
+      "opciones": {
+        "a": "Los 60 años.",
+        "b": "Los 70 años.",
+        "c": "Los 65 años."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 67.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 42,
+      "pregunta": "Se podrá solicitar la prolongación de la permanencia en el servicio activo como máximo hasta que se cumplan:",
+      "opciones": {
+        "a": "Setenta años de edad.",
+        "b": "Sesenta y siete años de edad.",
+        "c": "Setenta y dos años de edad."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 67.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 43,
+      "pregunta": "¿Cuál de estas es una situación administrativa del art. 85?",
+      "opciones": {
+        "a": "Comisión de confianza.",
+        "b": "Servicio reducido.",
+        "c": "Servicios especiales."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 85.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 44,
+      "pregunta": "El funcionario que presta servicios y no le corresponde otra situación está en:",
+      "opciones": {
+        "a": "Servicio activo.",
+        "b": "Excedencia forzosa.",
+        "c": "Servicios especiales."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 86.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 45,
+      "pregunta": "El funcionario nombrado miembro del Gobierno se declara en situación de:",
+      "opciones": {
+        "a": "Excedencia voluntaria.",
+        "b": "Suspensión de funciones.",
+        "c": "Servicios especiales."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 87.1.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 46,
+      "pregunta": "En servicios especiales, el funcionario percibe:",
+      "opciones": {
+        "a": "Las retribuciones de su puesto de funcionario.",
+        "b": "Las retribuciones del puesto o cargo que desempeña, sin perjuicio del derecho a percibir los trienios que tenga reconocidos.",
+        "c": "No percibe retribución alguna."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 87.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 47,
+      "pregunta": "El tiempo en servicios especiales se computa a efectos de:",
+      "opciones": {
+        "a": "Solo de trienios.",
+        "b": "No se computa a ningún efecto.",
+        "c": "Ascensos, reconocimiento de trienios, promoción interna y derechos en el régimen de Seguridad Social."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 87.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 48,
+      "pregunta": "El funcionario de carrera que, por los procedimientos de provisión de puestos de trabajo, obtiene destino en una Administración Pública distinta es declarado en situación de:",
+      "opciones": {
+        "a": "Excedencia voluntaria.",
+        "b": "Suspensión firme.",
+        "c": "Servicio en otras Administraciones Públicas."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 88.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 49,
+      "pregunta": "La excedencia voluntaria por interés particular exige haber prestado servicios efectivos en cualquiera de las Administraciones Públicas durante un periodo mínimo, inmediatamente anterior, de:",
+      "opciones": {
+        "a": "Tres años.",
+        "b": "Diez años.",
+        "c": "Cinco años."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 89.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 50,
+      "pregunta": "La excedencia voluntaria por interés particular:",
+      "opciones": {
+        "a": "Devenga el sueldo base íntegro.",
+        "b": "No devenga retribuciones ni computa a ascensos, trienios y Seguridad Social.",
+        "c": "Computa a todos los efectos como servicio activo."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 89.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 51,
+      "pregunta": "No podrá declararse la excedencia voluntaria por interés particular cuando al funcionario:",
+      "opciones": {
+        "a": "Le falten cinco años para la jubilación.",
+        "b": "Resida en otra localidad.",
+        "c": "Se le instruya expediente disciplinario."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 89.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 52,
+      "pregunta": "La excedencia por agrupación familiar:",
+      "opciones": {
+        "a": "Exige diez años de servicios previos.",
+        "b": "No exige tiempo previo de servicios efectivos.",
+        "c": "Devenga retribuciones íntegras."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 89.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 53,
+      "pregunta": "La excedencia por cuidado de cada hijo tiene una duración máxima de:",
+      "opciones": {
+        "a": "Un año.",
+        "b": "Tres años.",
+        "c": "Cinco años."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 89.4",
+      "explicacion": ""
+    },
+    {
+      "numero": 54,
+      "pregunta": "En la excedencia por cuidado de familiares, el puesto de trabajo se reserva, al menos, durante:",
+      "opciones": {
+        "a": "Seis meses.",
+        "b": "Cinco años.",
+        "c": "Dos años."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 89.4",
+      "explicacion": ""
+    },
+    {
+      "numero": 55,
+      "pregunta": "El tiempo de excedencia por cuidado de familiares:",
+      "opciones": {
+        "a": "Es computable a efectos de trienios, carrera y Seguridad Social.",
+        "b": "No computa a ningún efecto.",
+        "c": "Solo computa a efectos de Seguridad Social."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 89.4",
+      "explicacion": ""
+    },
+    {
+      "numero": 56,
+      "pregunta": "La excedencia por razón de violencia de género o de violencia sexual:",
+      "opciones": {
+        "a": "Exige cinco años de servicios previos.",
+        "b": "No permite la reserva del puesto.",
+        "c": "Puede solicitarse sin haber prestado un tiempo mínimo de servicios previos y sin que sea exigible plazo de permanencia en la misma."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 89.5",
+      "explicacion": ""
+    },
+    {
+      "numero": 57,
+      "pregunta": "En la excedencia por violencia de género, la reserva del puesto durante los primeros seis meses puede prorrogarse hasta un máximo de:",
+      "opciones": {
+        "a": "Doce meses.",
+        "b": "Dieciocho meses.",
+        "c": "Veinticuatro meses."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 89.5",
+      "explicacion": ""
+    },
+    {
+      "numero": 58,
+      "pregunta": "La suspensión de funciones determina la pérdida del puesto de trabajo cuando exceda de:",
+      "opciones": {
+        "a": "Tres meses.",
+        "b": "Seis meses.",
+        "c": "Un año."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 90.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 59,
+      "pregunta": "La suspensión firme por sanción disciplinaria no podrá exceder de:",
+      "opciones": {
+        "a": "Seis años.",
+        "b": "Tres años.",
+        "c": "Diez años."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 90.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 60,
+      "pregunta": "La suspensión firme se impone en virtud de:",
+      "opciones": {
+        "a": "Decisión unilateral del superior jerárquico.",
+        "b": "Sentencia dictada en causa criminal o sanción disciplinaria.",
+        "c": "Acuerdo de la junta de personal."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 90.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 61,
+      "pregunta": "¿Cuál de estos es un derecho individual del art. 14?",
+      "opciones": {
+        "a": "La inamovilidad en la condición de funcionario de carrera.",
+        "b": "El derecho de huelga.",
+        "c": "La negociación colectiva."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 14.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 62,
+      "pregunta": "La formación continua del empleado público se realiza:",
+      "opciones": {
+        "a": "Preferentemente en horario laboral.",
+        "b": "Siempre fuera del horario laboral.",
+        "c": "A costa exclusiva del trabajador."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 14.g)",
+      "explicacion": ""
+    },
+    {
+      "numero": 63,
+      "pregunta": "El derecho a la desconexión digital del empleado público se reconoce en:",
+      "opciones": {
+        "a": "El art. 14.j bis) del TREBEP.",
+        "b": "El art. 15 del TREBEP.",
+        "c": "No está reconocido en el TREBEP."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 14.j bis)",
+      "explicacion": ""
+    },
+    {
+      "numero": 64,
+      "pregunta": "¿Cuál de estos es un derecho de ejercicio colectivo del art. 15?",
+      "opciones": {
+        "a": "La inamovilidad.",
+        "b": "La defensa jurídica de la Administración.",
+        "c": "La libertad sindical."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 15.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 65,
+      "pregunta": "El derecho de huelga del empleado público:",
+      "opciones": {
+        "a": "Es absoluto y sin límites.",
+        "b": "Está prohibido en todo caso.",
+        "c": "Se ejerce con la garantía del mantenimiento de los servicios esenciales de la comunidad."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 15.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 66,
+      "pregunta": "La negociación colectiva es, en el TREBEP, un derecho:",
+      "opciones": {
+        "a": "Individual que se ejerce de forma colectiva.",
+        "b": "Exclusivamente individual.",
+        "c": "Reservado al personal directivo."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 15.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 67,
+      "pregunta": "El derecho a la defensa jurídica y protección de la Administración Pública procede en los procedimientos que se sigan ante cualquier orden jurisdiccional:",
+      "opciones": {
+        "a": "Como consecuencia del ejercicio legítimo de sus funciones o cargos públicos.",
+        "b": "Por cualquier asunto privado del empleado público.",
+        "c": "Solo cuando el procedimiento sea penal y haya sentencia absolutoria."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 14.f)",
+      "explicacion": ""
+    },
+    {
+      "numero": 68,
+      "pregunta": "El derecho a la no discriminación del empleado público alcanza, entre otras causas, a:",
+      "opciones": {
+        "a": "Solo el sexo.",
+        "b": "El nacimiento, origen racial, género, religión, opinión o discapacidad.",
+        "c": "Únicamente la afiliación sindical."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 14.i)",
+      "explicacion": ""
+    },
+    {
+      "numero": 69,
+      "pregunta": "El planteamiento de conflictos colectivos de trabajo es un derecho:",
+      "opciones": {
+        "a": "De ejercicio colectivo (art. 15).",
+        "b": "Individual del art. 14.",
+        "c": "Exclusivo de los sindicatos no afiliados."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 15.d)",
+      "explicacion": ""
+    },
+    {
+      "numero": 70,
+      "pregunta": "El derecho a percibir las retribuciones e indemnizaciones por razón del servicio es:",
+      "opciones": {
+        "a": "Un derecho individual (art. 14).",
+        "b": "Un derecho de ejercicio colectivo (art. 15).",
+        "c": "Una mera expectativa."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 14.d)",
+      "explicacion": ""
+    },
+    {
+      "numero": 71,
+      "pregunta": "El derecho de reunión de los empleados públicos se regula en:",
+      "opciones": {
+        "a": "El art. 46 del TREBEP.",
+        "b": "El art. 14 del TREBEP.",
+        "c": "La Ley 53/1984."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 15.e) y 46",
+      "explicacion": ""
+    },
+    {
+      "numero": 72,
+      "pregunta": "La carrera profesional es el conjunto ordenado de oportunidades de ascenso conforme a:",
+      "opciones": {
+        "a": "Igualdad, mérito y capacidad.",
+        "b": "Antigüedad exclusiva.",
+        "c": "Confianza del superior."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 16.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 73,
+      "pregunta": "La carrera horizontal consiste en:",
+      "opciones": {
+        "a": "La progresión de grado o categoría sin cambiar de puesto de trabajo.",
+        "b": "El ascenso a un puesto superior.",
+        "c": "El cambio a otra Administración."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 16.3.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 74,
+      "pregunta": "La carrera vertical consiste en:",
+      "opciones": {
+        "a": "El ascenso en la estructura de puestos por procedimientos de provisión.",
+        "b": "La progresión de grado sin cambio de puesto.",
+        "c": "El acceso a una comunidad autónoma."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 16.3.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 75,
+      "pregunta": "La promoción interna vertical consiste en el ascenso desde un Subgrupo a:",
+      "opciones": {
+        "a": "Un cuerpo del mismo Subgrupo.",
+        "b": "Otro Subgrupo o Grupo superior.",
+        "c": "Un puesto de personal eventual."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 16.3.c) y 18",
+      "explicacion": ""
+    },
+    {
+      "numero": 76,
+      "pregunta": "La promoción interna horizontal consiste en el acceso a cuerpos o escalas:",
+      "opciones": {
+        "a": "Del mismo Subgrupo profesional.",
+        "b": "De un Subgrupo superior.",
+        "c": "De otra Administración Pública."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 16.3.d) y 18",
+      "explicacion": ""
+    },
+    {
+      "numero": 77,
+      "pregunta": "Para la promoción interna se exige una antigüedad mínima de:",
+      "opciones": {
+        "a": "Dos años de servicio activo en el Subgrupo inferior.",
+        "b": "Cinco años en cualquier Administración.",
+        "c": "No se exige antigüedad."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 18.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 78,
+      "pregunta": "La promoción interna se efectúa mediante procesos que garanticen:",
+      "opciones": {
+        "a": "Igualdad, mérito y capacidad.",
+        "b": "La libre designación del órgano de gobierno.",
+        "c": "La antigüedad como único criterio."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 18.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 79,
+      "pregunta": "El personal laboral tiene derecho a la promoción profesional a través de:",
+      "opciones": {
+        "a": "El Estatuto de los Trabajadores o los convenios colectivos.",
+        "b": "Exclusivamente la oposición libre.",
+        "c": "El régimen del personal eventual."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 19.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 80,
+      "pregunta": "La carrera vertical consiste en el ascenso en la estructura de puestos de trabajo por los procedimientos de provisión establecidos en:",
+      "opciones": {
+        "a": "El capítulo II del título III del TREBEP.",
+        "b": "El capítulo III del título V del TREBEP.",
+        "c": "El título VII del TREBEP."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 16.3.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 81,
+      "pregunta": "La progresión de grado sin cambiar de puesto es propia de:",
+      "opciones": {
+        "a": "La carrera vertical.",
+        "b": "La carrera horizontal.",
+        "c": "La promoción interna vertical."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 16.3.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 82,
+      "pregunta": "La promoción interna debe respetar, junto con el mérito y la capacidad, el principio de:",
+      "opciones": {
+        "a": "Libre designación.",
+        "b": "Confianza política.",
+        "c": "Igualdad."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 18.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 83,
+      "pregunta": "La evaluación del desempeño mide y valora:",
+      "opciones": {
+        "a": "Únicamente la antigüedad.",
+        "b": "La conducta profesional y el rendimiento o logro de resultados.",
+        "c": "La afiliación sindical."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 20.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 84,
+      "pregunta": "Los sistemas de evaluación del desempeño se adecuarán a criterios de:",
+      "opciones": {
+        "a": "Transparencia, objetividad, imparcialidad y no discriminación.",
+        "b": "Discrecionalidad del superior.",
+        "c": "Confidencialidad absoluta sin garantías."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 20.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 85,
+      "pregunta": "¿Sobre cuál de estos elementos puede repercutir la evaluación del desempeño?",
+      "opciones": {
+        "a": "Las retribuciones básicas exclusivamente.",
+        "b": "La carrera horizontal, la formación, la provisión de puestos y las retribuciones complementarias.",
+        "c": "La pérdida de la nacionalidad."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 20.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 86,
+      "pregunta": "La evaluación del desempeño se aplica:",
+      "opciones": {
+        "a": "Sin menoscabo de los derechos de los empleados públicos.",
+        "b": "Suspendiendo los derechos del empleado evaluado.",
+        "c": "Solo al personal directivo."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 20.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 87,
+      "pregunta": "La continuidad en un puesto de trabajo obtenido por concurso quedará vinculada a:",
+      "opciones": {
+        "a": "La sola voluntad del interesado.",
+        "b": "La antigüedad en el cuerpo.",
+        "c": "La evaluación del desempeño, de acuerdo con los sistemas de evaluación que cada Administración Pública determine."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 20.4",
+      "explicacion": ""
+    },
+    {
+      "numero": 88,
+      "pregunta": "Las retribuciones de los funcionarios de carrera se clasifican en:",
+      "opciones": {
+        "a": "Fijas y variables únicamente.",
+        "b": "Ordinarias y extraordinarias por convenio.",
+        "c": "Básicas y complementarias."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 22.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 89,
+      "pregunta": "Las retribuciones básicas se fijan en:",
+      "opciones": {
+        "a": "Los convenios colectivos.",
+        "b": "La Ley de Presupuestos Generales del Estado.",
+        "c": "El reglamento de cada organismo."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 23",
+      "explicacion": ""
+    },
+    {
+      "numero": 90,
+      "pregunta": "Las retribuciones básicas están integradas única y exclusivamente por:",
+      "opciones": {
+        "a": "El sueldo y el complemento de destino.",
+        "b": "El complemento específico y la productividad.",
+        "c": "El sueldo y los trienios."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 23",
+      "explicacion": ""
+    },
+    {
+      "numero": 91,
+      "pregunta": "Los trienios consisten en una cantidad por cada:",
+      "opciones": {
+        "a": "Cinco años de servicio.",
+        "b": "Tres años de servicio, igual para cada Subgrupo o Grupo.",
+        "c": "Año natural trabajado."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 23.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 92,
+      "pregunta": "La cuantía y estructura de las retribuciones complementarias las establecen:",
+      "opciones": {
+        "a": "Las correspondientes leyes de cada Administración Pública.",
+        "b": "Exclusivamente el Estado.",
+        "c": "Los tribunales de selección."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 24",
+      "explicacion": ""
+    },
+    {
+      "numero": 93,
+      "pregunta": "¿Cuál de estos factores se tiene en cuenta para las retribuciones complementarias?",
+      "opciones": {
+        "a": "La especial dificultad técnica, responsabilidad o dedicación del puesto.",
+        "b": "La edad del funcionario.",
+        "c": "El lugar de nacimiento."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 24.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 94,
+      "pregunta": "El rendimiento y los resultados del funcionario se vinculan a:",
+      "opciones": {
+        "a": "Las retribuciones básicas.",
+        "b": "Las retribuciones complementarias.",
+        "c": "Los trienios."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 24.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 95,
+      "pregunta": "Las retribuciones del personal laboral se determinan según:",
+      "opciones": {
+        "a": "Exclusivamente la Ley de Presupuestos del Estado.",
+        "b": "El régimen estatutario de los funcionarios.",
+        "c": "La legislación laboral, el convenio colectivo y el contrato."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 27",
+      "explicacion": ""
+    },
+    {
+      "numero": 96,
+      "pregunta": "El sueldo se asigna en función de:",
+      "opciones": {
+        "a": "La antigüedad exclusivamente.",
+        "b": "La unidad de destino.",
+        "c": "El Subgrupo o Grupo de clasificación profesional."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 23.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 97,
+      "pregunta": "Los servicios extraordinarios prestados fuera de la jornada normal se retribuyen mediante:",
+      "opciones": {
+        "a": "Trienios adicionales.",
+        "b": "Un incremento del sueldo base.",
+        "c": "Retribuciones complementarias."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 24.d)",
+      "explicacion": ""
+    },
+    {
+      "numero": 98,
+      "pregunta": "Conforme al art. 28 del TREBEP, los funcionarios percibirán por razón del servicio las correspondientes:",
+      "opciones": {
+        "a": "Retribuciones diferidas.",
+        "b": "Indemnizaciones.",
+        "c": "Pagas extraordinarias."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 28",
+      "explicacion": ""
+    },
+    {
+      "numero": 99,
+      "pregunta": "El teletrabajo se define en el TREBEP como:",
+      "opciones": {
+        "a": "La jornada partida presencial.",
+        "b": "Una situación administrativa.",
+        "c": "La modalidad de prestación de servicios a distancia en la que el contenido competencial del puesto puede desarrollarse fuera de las dependencias de la Administración mediante el uso de TIC."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 47 bis.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 100,
+      "pregunta": "El personal que teletrabaja tiene:",
+      "opciones": {
+        "a": "Los mismos deberes y derechos, individuales y colectivos, que el resto del personal que presta servicios en modalidad presencial.",
+        "b": "Menos derechos que el personal presencial.",
+        "c": "Un régimen retributivo reducido."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 47 bis.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 101,
+      "pregunta": "Las vacaciones anuales retribuidas son de:",
+      "opciones": {
+        "a": "Treinta días naturales.",
+        "b": "Quince días hábiles.",
+        "c": "Veintidós días hábiles."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 50.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 102,
+      "pregunta": "A efectos del cómputo de vacaciones, los sábados:",
+      "opciones": {
+        "a": "No se consideran días hábiles, sin perjuicio de las adaptaciones que se establezcan para los horarios especiales.",
+        "b": "Se consideran siempre hábiles.",
+        "c": "Cuentan como dos días."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 50.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 103,
+      "pregunta": "El permiso por lactancia de un hijo menor de doce meses da derecho a:",
+      "opciones": {
+        "a": "Dos horas diarias de ausencia retribuida.",
+        "b": "Una semana adicional de vacaciones.",
+        "c": "Una hora de ausencia del trabajo, que podrá dividir en dos fracciones."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 48.f)",
+      "explicacion": ""
+    },
+    {
+      "numero": 104,
+      "pregunta": "El permiso por traslado de domicilio sin cambio de residencia es de:",
+      "opciones": {
+        "a": "Un día.",
+        "b": "Tres días.",
+        "c": "Cinco días."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 48.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 105,
+      "pregunta": "El permiso por nacimiento para la madre biológica es de:",
+      "opciones": {
+        "a": "Dieciséis semanas.",
+        "b": "Doce semanas.",
+        "c": "Diecinueve semanas."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 49.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 106,
+      "pregunta": "El permiso del progenitor diferente de la madre biológica por nacimiento es de:",
+      "opciones": {
+        "a": "Dieciséis semanas.",
+        "b": "Cuatro semanas.",
+        "c": "Diecinueve semanas."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 49.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 107,
+      "pregunta": "El permiso por adopción, guarda con fines de adopción o acogimiento es de:",
+      "opciones": {
+        "a": "Diecinueve semanas para cada adoptante, guardador o acogedor.",
+        "b": "Ocho semanas en total.",
+        "c": "Doce semanas para uno solo de los progenitores."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 49.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 108,
+      "pregunta": "El permiso por fallecimiento del cónyuge, pareja de hecho o familiar dentro del primer grado de consanguinidad o afinidad, cuando el suceso se produzca en la misma localidad, es de:",
+      "opciones": {
+        "a": "Un día.",
+        "b": "Diez días.",
+        "c": "Tres días hábiles."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 48.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 109,
+      "pregunta": "Conforme al art. 47.1 del TREBEP, las Administraciones Públicas establecerán:",
+      "opciones": {
+        "a": "Una jornada única e inmodificable para todas las Administraciones.",
+        "b": "La jornada que cada funcionario fije libremente.",
+        "c": "La jornada general y las especiales de trabajo de sus funcionarios públicos."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 47.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 110,
+      "pregunta": "Según el Acuerdo-Convenio del Ayuntamiento de Madrid, el personal que haya completado veinte años de servicio en la Administración tiene derecho a:",
+      "opciones": {
+        "a": "Un día hábil adicional de vacaciones anuales.",
+        "b": "Dos días hábiles adicionales de vacaciones anuales.",
+        "c": "Cuatro días hábiles adicionales de vacaciones anuales."
+      },
+      "correcta": "b",
+      "referencia": "Acuerdo-Convenio Ayto. Madrid, art. 14.7",
+      "explicacion": ""
+    },
+    {
+      "numero": 111,
+      "pregunta": "La negociación colectiva de condiciones de trabajo de los funcionarios públicos está sujeta, entre otros, al principio de:",
+      "opciones": {
+        "a": "Libre desistimiento unilateral.",
+        "b": "Buena fe negocial.",
+        "c": "Confidencialidad frente a los empleados."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 33.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 112,
+      "pregunta": "Será específicamente objeto de negociación en el ámbito de la Mesa General de Negociación de las Administraciones Públicas:",
+      "opciones": {
+        "a": "El incremento global de las retribuciones del personal al servicio de las AAPP que corresponda incluir en el Proyecto de Ley de Presupuestos Generales del Estado de cada año.",
+        "b": "La determinación de las condiciones de trabajo del personal directivo.",
+        "c": "Las decisiones de las Administraciones Públicas que afecten a sus potestades de organización."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 36.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 113,
+      "pregunta": "Los Acuerdos versan sobre materias competencia de los órganos de gobierno de las Administraciones Públicas. Para su validez y eficacia:",
+      "opciones": {
+        "a": "Será necesaria su aprobación expresa y formal por estos órganos.",
+        "b": "Basta su firma en la Mesa Sectorial correspondiente.",
+        "c": "No requieren aprobación alguna."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 38.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 114,
+      "pregunta": "Los Pactos celebrados en la negociación colectiva:",
+      "opciones": {
+        "a": "Requieren ratificación parlamentaria.",
+        "b": "Son meras recomendaciones.",
+        "c": "Se aplicarán directamente al personal del ámbito correspondiente."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 38.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 115,
+      "pregunta": "Los órganos de representación del personal funcionario son:",
+      "opciones": {
+        "a": "Únicamente los comités de empresa.",
+        "b": "Los tribunales de selección.",
+        "c": "Los Delegados de Personal y las Juntas de Personal."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 39",
+      "explicacion": ""
+    },
+    {
+      "numero": 116,
+      "pregunta": "Las Juntas de Personal se constituirán en unidades electorales que cuenten con un censo mínimo de:",
+      "opciones": {
+        "a": "10 funcionarios.",
+        "b": "100 funcionarios.",
+        "c": "50 funcionarios."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 39.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 117,
+      "pregunta": "En las unidades electorales donde el número de funcionarios sea igual o superior a 6 e inferior a 50, la representación corresponde a:",
+      "opciones": {
+        "a": "La Junta de Personal.",
+        "b": "Los Delegados de Personal.",
+        "c": "El comité de empresa."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 39.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 118,
+      "pregunta": "Los miembros de las Juntas de Personal gozan, entre otras, de la garantía de:",
+      "opciones": {
+        "a": "Inamovilidad absoluta en su puesto.",
+        "b": "No ser discriminados en su formación ni en su promoción económica o profesional por razón del desempeño de su representación.",
+        "c": "Exención de la jornada laboral."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 41.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 119,
+      "pregunta": "Están legitimados para convocar una reunión, además de las organizaciones sindicales:",
+      "opciones": {
+        "a": "Cualquier empleado público de forma individual.",
+        "b": "Los Delegados de Personal, las Juntas de Personal, los Comités de Empresa y los empleados públicos en número no inferior al 40 por 100 del colectivo convocado.",
+        "c": "Solo el órgano competente en materia de personal."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 46.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 120,
+      "pregunta": "Los deberes de los empleados públicos exigen actuar con sujeción y observancia de:",
+      "opciones": {
+        "a": "Las instrucciones sindicales.",
+        "b": "La Constitución y el resto del ordenamiento jurídico.",
+        "c": "La conveniencia política del momento."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 52",
+      "explicacion": ""
+    },
+    {
+      "numero": 121,
+      "pregunta": "Los principios éticos del código de conducta se regulan en:",
+      "opciones": {
+        "a": "El art. 53 del TREBEP.",
+        "b": "El art. 54 del TREBEP.",
+        "c": "El art. 52 del TREBEP."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 53",
+      "explicacion": ""
+    },
+    {
+      "numero": 122,
+      "pregunta": "Los principios de conducta del código se regulan en:",
+      "opciones": {
+        "a": "El art. 53 del TREBEP.",
+        "b": "El art. 95 del TREBEP.",
+        "c": "El art. 54 del TREBEP."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 54",
+      "explicacion": ""
+    },
+    {
+      "numero": 123,
+      "pregunta": "El empleado público debe abstenerse en aquellos asuntos en que:",
+      "opciones": {
+        "a": "Tengan un interés personal.",
+        "b": "No tengan formación específica.",
+        "c": "Coincidan con un compañero de trabajo."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 53.5",
+      "explicacion": ""
+    },
+    {
+      "numero": 124,
+      "pregunta": "El deber de obediencia a las órdenes del superior cede cuando estas:",
+      "opciones": {
+        "a": "Constituyan una infracción manifiesta del ordenamiento jurídico.",
+        "b": "Resulten incómodas para el empleado.",
+        "c": "Provengan de otra unidad administrativa."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 54.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 125,
+      "pregunta": "Entre los principios éticos figura:",
+      "opciones": {
+        "a": "Priorizar el interés personal sobre el general.",
+        "b": "Guardar secreto de las materias clasificadas u otras cuya difusión esté prohibida legalmente.",
+        "c": "Aceptar regalos de cortesía sin límite."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 53.12",
+      "explicacion": ""
+    },
+    {
+      "numero": 126,
+      "pregunta": "Rechazar cualquier regalo, favor o servicio en condiciones ventajosas que vaya más allá de los usos habituales, sociales y de cortesía es:",
+      "opciones": {
+        "a": "Un principio ético del art. 53.",
+        "b": "Un principio de conducta del art. 54.",
+        "c": "Una falta leve del art. 95."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 54.6",
+      "explicacion": ""
+    },
+    {
+      "numero": 127,
+      "pregunta": "El trato con atención y respeto a los ciudadanos y compañeros es:",
+      "opciones": {
+        "a": "Un principio ético (art. 53).",
+        "b": "Una falta disciplinaria.",
+        "c": "Un principio de conducta (art. 54)."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 54.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 128,
+      "pregunta": "La potestad disciplinaria se ejerce conforme al principio de:",
+      "opciones": {
+        "a": "Oportunidad política.",
+        "b": "Legalidad y tipicidad de faltas y sanciones.",
+        "c": "Retroactividad de las normas desfavorables."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 94.2.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 129,
+      "pregunta": "¿Cuál de estos principios rige la potestad disciplinaria?",
+      "opciones": {
+        "a": "Presunción de inocencia.",
+        "b": "Inversión de la carga de la prueba.",
+        "c": "Responsabilidad objetiva sin culpa."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 94.2.e)",
+      "explicacion": ""
+    },
+    {
+      "numero": 130,
+      "pregunta": "Las faltas disciplinarias se clasifican en:",
+      "opciones": {
+        "a": "Graves y leves únicamente.",
+        "b": "Dolosas y culposas.",
+        "c": "Muy graves, graves y leves."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 95.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 131,
+      "pregunta": "¿Cuál de estas es una falta muy grave del art. 95?",
+      "opciones": {
+        "a": "El abandono del servicio.",
+        "b": "La impuntualidad ocasional.",
+        "c": "El error material involuntario."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 95.2.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 132,
+      "pregunta": "El acoso laboral es, según el TREBEP, una falta:",
+      "opciones": {
+        "a": "Muy grave.",
+        "b": "Leve.",
+        "c": "No tipificada."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 95.2.o)",
+      "explicacion": ""
+    },
+    {
+      "numero": 133,
+      "pregunta": "Las faltas graves serán establecidas por:",
+      "opciones": {
+        "a": "El TREBEP en una lista cerrada.",
+        "b": "El superior jerárquico en cada caso.",
+        "c": "Ley de las Cortes Generales o de la asamblea legislativa de la correspondiente comunidad autónoma o, para el personal laboral, por los convenios colectivos."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 95.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 134,
+      "pregunta": "La sanción de separación del servicio solo puede imponerse por la comisión de faltas:",
+      "opciones": {
+        "a": "Muy graves.",
+        "b": "Graves.",
+        "c": "Leves."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 96.1.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 135,
+      "pregunta": "La sanción de suspensión firme de funciones tiene una duración máxima de:",
+      "opciones": {
+        "a": "Seis años.",
+        "b": "Tres años.",
+        "c": "Diez años."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 96.1.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 136,
+      "pregunta": "¿Cuál de estas es una sanción disciplinaria del art. 96?",
+      "opciones": {
+        "a": "La pérdida de la nacionalidad.",
+        "b": "La jubilación forzosa.",
+        "c": "El traslado forzoso."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 96.1.d)",
+      "explicacion": ""
+    },
+    {
+      "numero": 137,
+      "pregunta": "El demérito como sanción consiste en:",
+      "opciones": {
+        "a": "La reducción del sueldo base.",
+        "b": "La pérdida de antigüedad.",
+        "c": "La penalización a efectos de carrera, promoción o movilidad voluntaria."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 96.1.e)",
+      "explicacion": ""
+    },
+    {
+      "numero": 138,
+      "pregunta": "Las faltas muy graves prescriben a los:",
+      "opciones": {
+        "a": "Dos años.",
+        "b": "Tres años.",
+        "c": "Seis meses."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 97.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 139,
+      "pregunta": "Las faltas graves prescriben a los:",
+      "opciones": {
+        "a": "Dos años.",
+        "b": "Tres años.",
+        "c": "Seis meses."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 97.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 140,
+      "pregunta": "Las faltas leves prescriben a los:",
+      "opciones": {
+        "a": "Seis meses.",
+        "b": "Un año.",
+        "c": "Dos años."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, art. 97.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 141,
+      "pregunta": "Las sanciones impuestas por faltas leves prescriben:",
+      "opciones": {
+        "a": "A los seis meses.",
+        "b": "Al año.",
+        "c": "A los dos años."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 97.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 142,
+      "pregunta": "El plazo de prescripción de las faltas comienza a contarse desde:",
+      "opciones": {
+        "a": "La firmeza de la resolución sancionadora.",
+        "b": "Que se hubieran cometido, y desde el cese de su comisión cuando se trate de faltas continuadas.",
+        "c": "La incoación del expediente."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 97.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 143,
+      "pregunta": "Conforme a la Ley 53/1984, el personal incluido en su ámbito no podrá compatibilizar sus actividades con el desempeño de un segundo puesto de trabajo, cargo o actividad en el sector público:",
+      "opciones": {
+        "a": "En ningún caso y sin excepción alguna.",
+        "b": "Salvo en los supuestos previstos en la propia Ley.",
+        "c": "Salvo autorización verbal del superior jerárquico."
+      },
+      "correcta": "b",
+      "referencia": "Ley 53/1984, art. 1.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 144,
+      "pregunta": "Para el ejercicio de la segunda actividad en el sector público es indispensable:",
+      "opciones": {
+        "a": "La previa y expresa autorización de compatibilidad.",
+        "b": "Una mera comunicación posterior.",
+        "c": "El visto bueno de la junta de personal."
+      },
+      "correcta": "a",
+      "referencia": "Ley 53/1984, art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 145,
+      "pregunta": "El incumplimiento de las normas sobre incompatibilidades puede constituir:",
+      "opciones": {
+        "a": "Falta siempre leve.",
+        "b": "Falta muy grave cuando dé lugar a una situación de incompatibilidad.",
+        "c": "Una mera irregularidad sin sanción."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 95.2.n)",
+      "explicacion": ""
+    },
+    {
+      "numero": 146,
+      "pregunta": "La autorización de compatibilidad se efectuará en todo caso en razón de:",
+      "opciones": {
+        "a": "La conveniencia económica del empleado.",
+        "b": "La antigüedad en el cuerpo.",
+        "c": "El interés público."
+      },
+      "correcta": "c",
+      "referencia": "Ley 53/1984, art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 147,
+      "pregunta": "Un funcionario interino sancionado con la separación del servicio:",
+      "opciones": {
+        "a": "Pasa a personal laboral.",
+        "b": "Ve revocado su nombramiento.",
+        "c": "Es trasladado forzosamente."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, art. 96.1.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 148,
+      "pregunta": "¿Cuál de estos plazos es correcto?",
+      "opciones": {
+        "a": "Suspensión que hace perder el puesto: 3 meses.",
+        "b": "Excedencia voluntaria por interés particular: 5 años de servicios previos.",
+        "c": "Vacaciones anuales: 30 días hábiles."
+      },
+      "correcta": "b",
+      "referencia": "TREBEP, arts. 89.2, 90.1 y 50.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 149,
+      "pregunta": "¿Cuál de estos derechos NO figura entre los derechos individuales que se ejercen de forma colectiva del art. 15?",
+      "opciones": {
+        "a": "La inamovilidad en la condición de funcionario.",
+        "b": "La huelga.",
+        "c": "La negociación colectiva."
+      },
+      "correcta": "a",
+      "referencia": "TREBEP, arts. 14-15",
+      "explicacion": ""
+    },
+    {
+      "numero": 150,
+      "pregunta": "Señale la afirmación correcta sobre el régimen disciplinario:",
+      "opciones": {
+        "a": "Todas las faltas prescriben al año.",
+        "b": "Las faltas leves no prescriben.",
+        "c": "Las faltas muy graves prescriben a los 3 años y las leves a los 6 meses."
+      },
+      "correcta": "c",
+      "referencia": "TREBEP, art. 97.1",
+      "explicacion": ""
+    }
+  ],
+  "casos": [
+    {
+      "caso": 1,
+      "titulo": "CASO PRÁCTICO 1 — Clases de personal e interinidad",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "El IAM necesita cubrir con urgencia una plaza vacante de Técnico Auxiliar TIC que no puede proveerse de inmediato por funcionario de carrera. ¿Qué clase de personal permitiría cubrirla?",
+          "opciones": {
+            "a": "Un funcionario interino por existencia de plaza vacante.",
+            "b": "Personal eventual, por la urgencia de la cobertura.",
+            "c": "Personal directivo profesional, designado por su idoneidad."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 1 · art. 10.1.a) TREBEP",
+          "explicacion": "El artículo 10.1.a) TREBEP permite nombrar funcionarios interinos cuando existan plazas vacantes que no puedan cubrirse por funcionarios de carrera."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Qué duración máxima puede tener el nombramiento del interino que cubra la plaza vacante?",
+          "opciones": {
+            "a": "Nueve meses.",
+            "b": "Tres años.",
+            "c": "Dieciocho meses."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 1 · art. 10.1.a) TREBEP",
+          "explicacion": "El interino por plaza vacante puede permanecer como máximo tres años (art. 10.1.a TREBEP); nueve meses dentro de un periodo de dieciocho es el límite del interino por exceso o acumulación de tareas."
+        },
+        {
+          "numero": 3,
+          "pregunta": "Para atender el pico de trabajo por acumulación de tareas en la digitalización de expedientes, la figura adecuada es:",
+          "opciones": {
+            "a": "Un funcionario interino por sustitución transitoria de los titulares.",
+            "b": "Personal eventual nombrado por la autoridad a la que sirve.",
+            "c": "Un funcionario interino por exceso o acumulación de tareas."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 2 · art. 10.1.d) TREBEP",
+          "explicacion": "El artículo 10.1.d) TREBEP prevé el nombramiento de interinos por exceso o acumulación de tareas; la sustitución transitoria exige que haya titulares a los que sustituir."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Qué plazo máximo tiene el interino nombrado por exceso o acumulación de tareas?",
+          "opciones": {
+            "a": "Doce meses dentro de un periodo de veinticuatro meses.",
+            "b": "Nueve meses dentro de un periodo de dieciocho meses.",
+            "c": "Tres años, ampliables doce meses por las leyes de Función Pública."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 2 · art. 10.1.d) TREBEP",
+          "explicacion": "El nombramiento por exceso o acumulación de tareas tiene un máximo de nueve meses dentro de un periodo de dieciocho meses (art. 10.1.d TREBEP); los tres años ampliables corresponden a los programas temporales."
+        },
+        {
+          "numero": 5,
+          "pregunta": "El interino por acumulación de tareas ya ha prestado seis meses de servicio dentro del periodo de referencia. ¿Cuánto tiempo más podría mantenerse su nombramiento, como máximo?",
+          "opciones": {
+            "a": "Tres meses.",
+            "b": "Seis meses.",
+            "c": "Doce meses."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 2 · art. 10.1.d) TREBEP",
+          "explicacion": "Con un máximo de nueve meses dentro de un periodo de dieciocho, y seis ya consumidos, quedan como máximo tres meses (9 − 6 = 3)."
+        },
+        {
+          "numero": 6,
+          "pregunta": "¿Qué principios rigen la selección de estos funcionarios interinos?",
+          "opciones": {
+            "a": "Confianza, libre designación y cese discrecional.",
+            "b": "Antigüedad, preferencia local y urgencia administrativa.",
+            "c": "Igualdad, mérito, capacidad, publicidad y celeridad."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 3 · art. 10.2 TREBEP",
+          "explicacion": "La selección de los interinos es pública y se rige por los principios de igualdad, mérito, capacidad, publicidad y celeridad (art. 10.2 TREBEP)."
+        },
+        {
+          "numero": 7,
+          "pregunta": "El procedimiento público de selección de los interinos tiene como finalidad:",
+          "opciones": {
+            "a": "La cobertura inmediata del puesto.",
+            "b": "La adquisición de la condición de funcionario de carrera.",
+            "c": "La conversión del puesto en plaza de personal laboral fijo."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 3 · art. 10.2 TREBEP",
+          "explicacion": "El artículo 10.2 TREBEP establece que la selección del interino se hace mediante procedimiento público con la finalidad de la cobertura inmediata del puesto."
+        },
+        {
+          "numero": 8,
+          "pregunta": "¿Podría el IAM encargar el proyecto de digitalización de expedientes a personal eventual?",
+          "opciones": {
+            "a": "Sí, porque su nombramiento es libre y permite atender necesidades urgentes del servicio.",
+            "b": "Sí, siempre que el proyecto no se prolongue durante más de tres años.",
+            "c": "No, porque el eventual solo realiza funciones expresamente calificadas de confianza o asesoramiento especial."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 4 · art. 12 TREBEP",
+          "explicacion": "El personal eventual solo realiza funciones expresamente calificadas como de confianza o asesoramiento especial (art. 12.1 TREBEP); la digitalización de expedientes es una función técnica ordinaria."
+        },
+        {
+          "numero": 9,
+          "pregunta": "Para nombrar a cualquiera de estos funcionarios interinos, el IAM debe justificar expresamente:",
+          "opciones": {
+            "a": "La imposibilidad de contratar personal laboral fijo.",
+            "b": "Razones de necesidad y urgencia.",
+            "c": "La conformidad previa de la Junta de Personal."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestiones 1 y 2 · art. 10.1 TREBEP",
+          "explicacion": "Los funcionarios interinos se nombran por razones expresamente justificadas de necesidad y urgencia (art. 10.1 TREBEP)."
+        },
+        {
+          "numero": 10,
+          "pregunta": "El interino que cubra la plaza vacante de Técnico Auxiliar TIC desempeñará:",
+          "opciones": {
+            "a": "Funciones propias de funcionarios de carrera, con carácter temporal.",
+            "b": "Solo funciones de confianza o asesoramiento especial.",
+            "c": "Funciones directivas profesionales sujetas a evaluación."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 1 · art. 10.1 TREBEP",
+          "explicacion": "El funcionario interino se nombra con carácter temporal para desempeñar funciones propias de funcionarios de carrera (art. 10.1 TREBEP); las de confianza son del eventual y las directivas, del personal directivo."
+        }
+      ]
+    },
+    {
+      "caso": 2,
+      "titulo": "CASO PRÁCTICO 2 — Situaciones administrativas y excedencias",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "La funcionaria quiere atender el cuidado de su hija de un año (opción a). ¿Qué situación le corresponde?",
+          "opciones": {
+            "a": "Excedencia voluntaria por interés particular.",
+            "b": "Excedencia voluntaria por agrupación familiar.",
+            "c": "Excedencia por cuidado de familiares."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 1 · art. 89.4 TREBEP",
+          "explicacion": "El cuidado de un hijo da lugar a la excedencia por cuidado de familiares del artículo 89.4 TREBEP."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Cuánto tiempo, como máximo, podría permanecer en esa excedencia por el cuidado de su hija?",
+          "opciones": {
+            "a": "Hasta tres años.",
+            "b": "Hasta dos años.",
+            "c": "Hasta que la hija cumpla ocho años."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 1 · art. 89.4 TREBEP",
+          "explicacion": "La excedencia por cuidado de familiares dura hasta tres años por cada sujeto causante (art. 89.4 TREBEP); los dos años son el periodo de reserva del puesto."
+        },
+        {
+          "numero": 3,
+          "pregunta": "En la opción (a), ¿qué ocurre con su puesto de trabajo?",
+          "opciones": {
+            "a": "Se le reserva durante toda la excedencia, sea cual sea su duración.",
+            "b": "Se le reserva durante dos años; después, tendrá derecho a un puesto en la misma localidad e igual retribución.",
+            "c": "No se le reserva, porque se trata de una excedencia sin derecho a reserva."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 1 · art. 89.4 TREBEP",
+          "explicacion": "En la excedencia por cuidado de familiares se reserva el puesto durante dos años y, después, se garantiza un puesto en la misma localidad y de igual retribución (art. 89.4 TREBEP)."
+        },
+        {
+          "numero": 4,
+          "pregunta": "A efectos de antigüedad, el tiempo de la excedencia de la opción (a):",
+          "opciones": {
+            "a": "Computa a efectos de trienios, carrera y Seguridad Social.",
+            "b": "No computa a ningún efecto mientras dure la excedencia.",
+            "c": "Computa a efectos de Seguridad Social, pero no de trienios."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 1 · art. 89.4 TREBEP",
+          "explicacion": "El periodo de excedencia por cuidado de familiares es computable a efectos de trienios, carrera y derechos en el régimen de Seguridad Social (art. 89.4 TREBEP)."
+        },
+        {
+          "numero": 5,
+          "pregunta": "La opción (b), marcharse dos años por motivos personales, corresponde a:",
+          "opciones": {
+            "a": "La excedencia por cuidado de familiares.",
+            "b": "La situación de servicios especiales.",
+            "c": "La excedencia voluntaria por interés particular."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 2 · art. 89.2 TREBEP",
+          "explicacion": "Ausentarse por motivos personales encaja en la excedencia voluntaria por interés particular del artículo 89.2 TREBEP."
+        },
+        {
+          "numero": 6,
+          "pregunta": "¿Cumple la funcionaria, con siete años de servicio, el requisito temporal de la opción (b)?",
+          "opciones": {
+            "a": "No, porque se exigen diez años de servicios efectivos previos.",
+            "b": "Sí, porque se exigen cinco años de servicios efectivos previos y tiene siete.",
+            "c": "No, porque se exigen ocho años de servicios en la misma Administración."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 2 · art. 89.2 TREBEP",
+          "explicacion": "La excedencia voluntaria por interés particular exige cinco años de servicios efectivos inmediatamente anteriores; con siete años, el requisito se cumple."
+        },
+        {
+          "numero": 7,
+          "pregunta": "Durante la excedencia de la opción (b), la funcionaria:",
+          "opciones": {
+            "a": "No devengará retribuciones, pero el tiempo sí computará a efectos de trienios.",
+            "b": "Percibirá el sueldo base, pero no las retribuciones complementarias.",
+            "c": "No devengará retribuciones y el tiempo no computará a ascensos, trienios ni Seguridad Social."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 3 · art. 89.2 TREBEP",
+          "explicacion": "Los funcionarios en excedencia voluntaria por interés particular no devengan retribuciones ni les computa el tiempo a efectos de ascensos, trienios y Seguridad Social (art. 89.2 TREBEP)."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Si al solicitar la opción (b) se le estuviera instruyendo un expediente disciplinario:",
+          "opciones": {
+            "a": "La excedencia se declararía y el expediente quedaría archivado.",
+            "b": "No podría declarársele la excedencia voluntaria por interés particular.",
+            "c": "Podría declararse, pero por un máximo de dos años."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 2 · art. 89.2 TREBEP",
+          "explicacion": "El artículo 89.2 TREBEP impide declarar la excedencia voluntaria por interés particular cuando al funcionario se le instruya expediente disciplinario."
+        },
+        {
+          "numero": 9,
+          "pregunta": "La opción (c), ser nombrada asesora en un organismo internacional, se encuadra en la situación de:",
+          "opciones": {
+            "a": "La situación de servicios especiales.",
+            "b": "La situación de servicio en otras Administraciones Públicas.",
+            "c": "Excedencia voluntaria por interés particular."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 4 · art. 87.1 TREBEP",
+          "explicacion": "Ser designada miembro de organizaciones internacionales o autorizada para una misión en organismos internacionales son supuestos de servicios especiales (art. 87.1 TREBEP)."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Si pasa a servicios especiales, ¿qué retribuciones percibirá?",
+          "opciones": {
+            "a": "Las de funcionaria de carrera del IAM, más las del nuevo puesto o cargo.",
+            "b": "Ninguna, igual que en la excedencia voluntaria por interés particular.",
+            "c": "Las del puesto o cargo que desempeñe, sin perjuicio de los trienios que tenga reconocidos."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 4 · art. 87.2 TREBEP",
+          "explicacion": "En servicios especiales se perciben las retribuciones del puesto o cargo que se desempeña y no las de funcionario de carrera, sin perjuicio del derecho a los trienios reconocidos (art. 87.2 TREBEP)."
+        }
+      ]
+    },
+    {
+      "caso": 3,
+      "titulo": "CASO PRÁCTICO 3 — Acceso y pérdida de la condición de funcionario",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "¿En qué orden debe cumplir el aspirante los requisitos para adquirir la condición de funcionario de carrera?",
+          "opciones": {
+            "a": "Superación del proceso selectivo, toma de posesión, nombramiento y acatamiento de la Constitución.",
+            "b": "Superación del proceso selectivo, nombramiento, acatamiento de la Constitución y toma de posesión.",
+            "c": "Nombramiento, superación del proceso selectivo, toma de posesión y acatamiento de la Constitución."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 1 · art. 62 TREBEP",
+          "explicacion": "La condición de funcionario de carrera se adquiere por el cumplimiento sucesivo de cuatro requisitos: superación del proceso selectivo, nombramiento, acatamiento de la Constitución y toma de posesión (art. 62 TREBEP)."
+        },
+        {
+          "numero": 2,
+          "pregunta": "El aspirante ya ha sido nombrado y ha prestado el acto de acatamiento de la Constitución. ¿Qué le falta para ser funcionario de carrera?",
+          "opciones": {
+            "a": "Superar un periodo de evaluación del desempeño de dos años.",
+            "b": "Obtener la autorización de compatibilidad del Ayuntamiento.",
+            "c": "Tomar posesión dentro del plazo establecido."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 1 · art. 62 TREBEP",
+          "explicacion": "El último de los cuatro requisitos sucesivos del artículo 62 TREBEP es la toma de posesión dentro del plazo establecido."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Cuál de las siguientes es causa de pérdida de la condición de funcionario?",
+          "opciones": {
+            "a": "La renuncia a la condición de funcionario.",
+            "b": "El traslado forzoso con cambio de localidad.",
+            "c": "El pase a excedencia voluntaria por interés particular."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 2 · art. 63 TREBEP",
+          "explicacion": "La renuncia es causa de pérdida de la condición de funcionario (arts. 63.a y 64 TREBEP); el traslado forzoso es una sanción y la excedencia, una situación administrativa."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Cuál de las siguientes situaciones también le haría perder la condición de funcionario?",
+          "opciones": {
+            "a": "Una sanción firme de suspensión de funciones de seis meses.",
+            "b": "La declaración en la situación de servicios especiales.",
+            "c": "Una condena firme a pena de inhabilitación especial para cargo público."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 2 · arts. 63.e) y 66 TREBEP",
+          "explicacion": "La pena principal o accesoria de inhabilitación absoluta o especial para cargo público, cuando es firme, es causa de pérdida de la condición de funcionario (art. 66 TREBEP)."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Si en el futuro quisiera renunciar mientras se le instruye un expediente disciplinario:",
+          "opciones": {
+            "a": "La renuncia se aceptaría y el expediente se archivaría.",
+            "b": "La renuncia no podría ser aceptada.",
+            "c": "La renuncia se entendería aceptada por silencio."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 3 · art. 64 TREBEP",
+          "explicacion": "La renuncia no puede ser aceptada cuando el funcionario esté sujeto a expediente disciplinario (art. 64 TREBEP)."
+        },
+        {
+          "numero": 6,
+          "pregunta": "Si renunciara y, años después, quisiera volver a la Administración:",
+          "opciones": {
+            "a": "Podría hacerlo superando de nuevo el procedimiento de selección establecido.",
+            "b": "No podría, porque la renuncia inhabilita para volver a ingresar.",
+            "c": "Podría reingresar directamente solicitando la rehabilitación."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 3 · art. 64.3 TREBEP",
+          "explicacion": "La renuncia no inhabilita para ingresar de nuevo en la Administración Pública a través del procedimiento de selección establecido (art. 64.3 TREBEP); la rehabilitación del artículo 68 no está prevista para la renuncia."
+        },
+        {
+          "numero": 7,
+          "pregunta": "Si, en cambio, fuera separado del servicio por sanción disciplinaria firme, ¿podría presentarse a un nuevo proceso selectivo?",
+          "opciones": {
+            "a": "Sí, en las mismas condiciones que quien ha renunciado.",
+            "b": "No, porque se exige no haber sido separado mediante expediente disciplinario.",
+            "c": "Sí, una vez transcurridos seis años desde la sanción."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 3 · arts. 56.1.d) y 63.d) TREBEP",
+          "explicacion": "Entre los requisitos para participar en los procesos selectivos figura no haber sido separado mediante expediente disciplinario del servicio de cualquier Administración Pública (art. 56.1.d TREBEP)."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Si perdiera la nacionalidad y, más tarde, desapareciera esa causa, ¿qué podría hacer?",
+          "opciones": {
+            "a": "Solicitar la rehabilitación de su condición de funcionario, que le será concedida.",
+            "b": "Volver únicamente superando un nuevo proceso selectivo.",
+            "c": "Nada, porque no podría volver a la función pública."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 3 · art. 68 TREBEP",
+          "explicacion": "En caso de pérdida de la nacionalidad, desaparecida la causa, el interesado puede solicitar la rehabilitación, «que le será concedida» (art. 68 TREBEP)."
+        },
+        {
+          "numero": 9,
+          "pregunta": "Conforme al artículo 67.3 del TREBEP, la jubilación forzosa se declara de oficio al cumplir:",
+          "opciones": {
+            "a": "Sesenta y siete años.",
+            "b": "Setenta años.",
+            "c": "Sesenta y cinco años."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 4 · art. 67.3 TREBEP",
+          "explicacion": "El artículo 67.3 TREBEP dispone que la jubilación forzosa se declare de oficio a los sesenta y cinco años; los setenta son el límite de la prolongación."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Hasta qué edad podría solicitar, como máximo, la prolongación de la permanencia en el servicio activo?",
+          "opciones": {
+            "a": "Hasta los sesenta y siete años.",
+            "b": "Hasta los setenta años.",
+            "c": "Hasta los setenta y dos años."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 4 · art. 67.3 TREBEP",
+          "explicacion": "En los términos de las leyes de Función Pública, puede solicitarse la prolongación de la permanencia en el servicio activo como máximo hasta los setenta años (art. 67.3 TREBEP)."
+        }
+      ]
+    },
+    {
+      "caso": 4,
+      "titulo": "CASO PRÁCTICO 4 — Derechos, jornada, permisos y vacaciones",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "El técnico va a ser padre y no es la madre biológica. ¿De cuántas semanas de permiso dispone?",
+          "opciones": {
+            "a": "Diecinueve semanas.",
+            "b": "Dieciséis semanas.",
+            "c": "Seis semanas."
+          },
+          "correcta": "a",
+          "referencia": "Caso 4, cuestión 1 · art. 49.c) TREBEP",
+          "explicacion": "El permiso del progenitor diferente de la madre biológica por nacimiento es de diecinueve semanas (art. 49.c TREBEP), treinta y dos en caso de monoparentalidad."
+        },
+        {
+          "numero": 2,
+          "pregunta": "De ese permiso, ¿qué parte es de disfrute obligatorio?",
+          "opciones": {
+            "a": "Las dos primeras semanas, que pueden disfrutarse de forma discontinua.",
+            "b": "Ninguna, porque todo el permiso es de disfrute voluntario.",
+            "c": "Las seis semanas ininterrumpidas inmediatamente posteriores al nacimiento."
+          },
+          "correcta": "c",
+          "referencia": "Caso 4, cuestión 1 · art. 49.c) TREBEP",
+          "explicacion": "Las seis semanas ininterrumpidas inmediatamente posteriores al hecho causante son obligatorias (art. 49.c TREBEP)."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Cuántos días de vacaciones anuales retribuidas le reconoce el TREBEP?",
+          "opciones": {
+            "a": "Treinta días naturales.",
+            "b": "Veintidós días hábiles.",
+            "c": "Veinticinco días hábiles."
+          },
+          "correcta": "b",
+          "referencia": "Caso 4, cuestión 2 · art. 50.1 TREBEP",
+          "explicacion": "El artículo 50.1 TREBEP reconoce veintidós días hábiles de vacaciones retribuidas por año natural, o los que correspondan proporcionalmente."
+        },
+        {
+          "numero": 4,
+          "pregunta": "Para computar esos días de vacaciones, los sábados:",
+          "opciones": {
+            "a": "Se consideran días hábiles, salvo que el puesto tenga horario especial.",
+            "b": "Se consideran días hábiles, pero solo durante el periodo de verano.",
+            "c": "No se consideran días hábiles, sin perjuicio de las adaptaciones para los horarios especiales."
+          },
+          "correcta": "c",
+          "referencia": "Caso 4, cuestión 2 · art. 50.1 TREBEP",
+          "explicacion": "A efectos de vacaciones, los sábados no se consideran días hábiles, sin perjuicio de las adaptaciones que se establezcan para los horarios especiales (art. 50.1 TREBEP)."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Si el técnico se hubiera incorporado al IAM a mitad de año, sus vacaciones de ese año serían:",
+          "opciones": {
+            "a": "Los días que correspondan proporcionalmente al tiempo de servicio.",
+            "b": "Los veintidós días hábiles completos, sin reducción alguna.",
+            "c": "Ninguna, hasta completar un año entero de servicio."
+          },
+          "correcta": "a",
+          "referencia": "Caso 4, cuestión 2 · art. 50.1 TREBEP",
+          "explicacion": "Si el tiempo de servicio durante el año es menor, corresponden los días que resulten proporcionalmente (art. 50.1 TREBEP)."
+        },
+        {
+          "numero": 6,
+          "pregunta": "Un compañero del IAM con veinte años de antigüedad en la Administración consulta sus vacaciones anuales. Conforme al Acuerdo-Convenio, le corresponden:",
+          "opciones": {
+            "a": "Veintidós días hábiles.",
+            "b": "Veinticuatro días hábiles.",
+            "c": "Veintitrés días hábiles."
+          },
+          "correcta": "b",
+          "referencia": "Caso 4, cuestión 2 · art. 50 TREBEP · art. 14 Acuerdo-Convenio",
+          "explicacion": "Al personal del IAM el Acuerdo-Convenio le reconoce 22 días hábiles más días adicionales por antigüedad; con 20 años de servicio suma dos, es decir, 24."
+        },
+        {
+          "numero": 7,
+          "pregunta": "Si el técnico no llegara a disfrutar sus vacaciones, ¿podría pedir que se le abonaran en dinero?",
+          "opciones": {
+            "a": "No, salvo que concluya la relación de servicios por causas ajenas a su voluntad.",
+            "b": "Sí, siempre que lo solicite antes de que termine el año natural.",
+            "c": "Sí, pero solo por la mitad de los días no disfrutados."
+          },
+          "correcta": "a",
+          "referencia": "Caso 4, cuestión 2 · art. 50 TREBEP",
+          "explicacion": "El periodo de vacaciones no puede sustituirse por una cuantía económica, salvo cuando concluya la relación de servicios por causas ajenas a la voluntad del funcionario (art. 50 TREBEP)."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Si se le autoriza a teletrabajar, ¿qué derechos y deberes tendrá respecto del personal presencial?",
+          "opciones": {
+            "a": "Los mismos derechos individuales, pero no los colectivos, al no prestar servicio presencial.",
+            "b": "Los mismos derechos y deberes, individuales y colectivos, incluida la normativa de prevención de riesgos laborales.",
+            "c": "Los mismos derechos y deberes, salvo la protección en materia de prevención de riesgos laborales."
+          },
+          "correcta": "b",
+          "referencia": "Caso 4, cuestión 3 · art. 47 bis TREBEP",
+          "explicacion": "El personal que teletrabaja tiene los mismos deberes y derechos, individuales y colectivos, que el presencial, incluida la normativa de prevención de riesgos laborales aplicable (art. 47 bis TREBEP)."
+        },
+        {
+          "numero": 9,
+          "pregunta": "En cuanto a su régimen, el teletrabajo que solicita el técnico:",
+          "opciones": {
+            "a": "Es un derecho automático del empleado que no necesita autorización.",
+            "b": "Es obligatorio e irreversible una vez que la Administración lo concede.",
+            "c": "Ha de autorizarse expresamente y es voluntario y reversible, salvo supuestos excepcionales."
+          },
+          "correcta": "c",
+          "referencia": "Caso 4, cuestión 3 · art. 47 bis TREBEP",
+          "explicacion": "El teletrabajo ha de ser expresamente autorizado y tiene carácter voluntario y reversible, salvo supuestos excepcionales debidamente justificados (art. 47 bis TREBEP)."
+        },
+        {
+          "numero": 10,
+          "pregunta": "En cuanto a la formación continua, el técnico debe saber que:",
+          "opciones": {
+            "a": "Es un derecho individual y se realiza preferentemente en horario laboral.",
+            "b": "Es un derecho de ejercicio colectivo y se realiza fuera del horario laboral.",
+            "c": "Es una mera facultad de la Administración y se realiza fuera de la jornada."
+          },
+          "correcta": "a",
+          "referencia": "Caso 4, cuestión 4 · art. 14.g) TREBEP",
+          "explicacion": "La formación continua y la actualización permanente son un derecho individual del artículo 14.g) TREBEP, que se ejerce preferentemente en horario laboral."
+        }
+      ]
+    },
+    {
+      "caso": 5,
+      "titulo": "CASO PRÁCTICO 5 — Carrera, evaluación y retribuciones",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "El técnico, del Subgrupo C1, quiere ascender a un Subgrupo superior. ¿Qué vía de la carrera profesional se lo permite?",
+          "opciones": {
+            "a": "La promoción interna horizontal.",
+            "b": "La carrera horizontal.",
+            "c": "La promoción interna vertical."
+          },
+          "correcta": "c",
+          "referencia": "Caso 5, cuestión 1 · arts. 16.3.c) y 18 TREBEP",
+          "explicacion": "La promoción interna vertical consiste en el ascenso desde un cuerpo o escala de un Subgrupo a otro superior (arts. 16.3.c y 18 TREBEP); la horizontal da acceso a cuerpos del mismo Subgrupo."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Qué antigüedad mínima se le exige para la promoción interna?",
+          "opciones": {
+            "a": "Tres años de servicio activo en el Subgrupo inferior.",
+            "b": "Dos años de servicio activo en el Subgrupo inferior.",
+            "c": "Cinco años de servicios efectivos en cualquier Administración."
+          },
+          "correcta": "b",
+          "referencia": "Caso 5, cuestión 1 · art. 18 TREBEP",
+          "explicacion": "El artículo 18 TREBEP exige una antigüedad de, al menos, dos años de servicio activo en el inferior Subgrupo; los cinco años son el requisito de la excedencia por interés particular."
+        },
+        {
+          "numero": 3,
+          "pregunta": "El técnico lleva dieciocho meses de servicio activo en el Subgrupo C1. ¿Puede presentarse ya a la promoción interna a un cuerpo del Subgrupo A2?",
+          "opciones": {
+            "a": "No, porque necesita al menos dos años de servicio activo en el Subgrupo inferior.",
+            "b": "Sí, porque basta con haber superado el periodo de prácticas.",
+            "c": "Sí, porque la promoción interna no exige una antigüedad mínima."
+          },
+          "correcta": "a",
+          "referencia": "Caso 5, cuestión 1 · art. 18 TREBEP",
+          "explicacion": "Dieciocho meses no alcanzan los dos años de servicio activo en el Subgrupo inferior que exige el artículo 18 TREBEP."
+        },
+        {
+          "numero": 4,
+          "pregunta": "Además de la antigüedad, para la promoción interna vertical el técnico necesitará:",
+          "opciones": {
+            "a": "Obtener una evaluación del desempeño favorable durante cinco años consecutivos.",
+            "b": "Poseer la titulación y los demás requisitos exigidos para el ingreso y superar las pruebas selectivas.",
+            "c": "Contar con la propuesta favorable de su superior jerárquico inmediato."
+          },
+          "correcta": "b",
+          "referencia": "Caso 5, cuestión 1 · art. 18 TREBEP",
+          "explicacion": "La promoción interna exige poseer los requisitos exigidos para el ingreso, la antigüedad mínima y superar las pruebas selectivas, en procesos que garanticen igualdad, mérito y capacidad (art. 18 TREBEP)."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Si quisiera progresar de grado o categoría sin cambiar de puesto de trabajo, la modalidad aplicable sería:",
+          "opciones": {
+            "a": "La carrera vertical.",
+            "b": "La promoción interna vertical.",
+            "c": "La carrera horizontal."
+          },
+          "correcta": "c",
+          "referencia": "Caso 5, cuestión 1 · art. 16.3.a) TREBEP",
+          "explicacion": "La carrera horizontal consiste en la progresión de grado, categoría, escalón u otros conceptos análogos sin necesidad de cambiar de puesto de trabajo (art. 16.3.a TREBEP)."
+        },
+        {
+          "numero": 6,
+          "pregunta": "Al revisar su nómina, ¿qué conceptos integran sus retribuciones básicas?",
+          "opciones": {
+            "a": "Únicamente el sueldo y los trienios.",
+            "b": "El sueldo, los trienios y el complemento de destino.",
+            "c": "El sueldo y las indemnizaciones por razón del servicio."
+          },
+          "correcta": "a",
+          "referencia": "Caso 5, cuestión 2 · art. 23 TREBEP",
+          "explicacion": "Las retribuciones básicas están integradas única y exclusivamente por el sueldo y los trienios (art. 23 TREBEP)."
+        },
+        {
+          "numero": 7,
+          "pregunta": "¿Dónde se fijan las retribuciones básicas del técnico?",
+          "opciones": {
+            "a": "En las leyes de Función Pública de cada Administración Pública.",
+            "b": "En el Acuerdo-Convenio del Ayuntamiento de Madrid.",
+            "c": "En la Ley de Presupuestos Generales del Estado."
+          },
+          "correcta": "c",
+          "referencia": "Caso 5, cuestión 2 · art. 23 TREBEP",
+          "explicacion": "Las retribuciones básicas se fijan en la Ley de Presupuestos Generales del Estado (art. 23 TREBEP); las leyes de cada Administración fijan las complementarias."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Si el técnico acumula diez años de servicio, ¿cuántos trienios completos tendrá reconocidos en su nómina?",
+          "opciones": {
+            "a": "Tres.",
+            "b": "Dos.",
+            "c": "Cuatro."
+          },
+          "correcta": "a",
+          "referencia": "Caso 5, cuestión 2 · art. 23.b) TREBEP",
+          "explicacion": "Los trienios consisten en una cantidad por cada tres años de servicio; con diez años se completan tres trienios (3 × 3 = 9 años)."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿De qué dependen sus retribuciones complementarias?",
+          "opciones": {
+            "a": "Exclusivamente del Subgrupo de clasificación profesional y de los años de servicio prestados.",
+            "b": "De la progresión en la carrera, las características del puesto, el rendimiento y los servicios extraordinarios.",
+            "c": "De la cuantía uniforme que fija cada año la Ley de Presupuestos Generales del Estado."
+          },
+          "correcta": "b",
+          "referencia": "Caso 5, cuestión 3 · art. 24 TREBEP",
+          "explicacion": "Las retribuciones complementarias atienden, entre otros factores, a la progresión en la carrera, la especial dificultad técnica, responsabilidad, dedicación o incompatibilidad del puesto, el rendimiento y los servicios extraordinarios (art. 24 TREBEP)."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Sobre qué elementos puede repercutir su evaluación del desempeño?",
+          "opciones": {
+            "a": "El sueldo, los trienios y las demás retribuciones básicas fijadas en los Presupuestos.",
+            "b": "Las vacaciones, los permisos, la jornada de trabajo y la edad de jubilación forzosa.",
+            "c": "La carrera horizontal, la formación, la provisión de puestos y las retribuciones complementarias."
+          },
+          "correcta": "c",
+          "referencia": "Caso 5, cuestión 4 · art. 20.3 TREBEP",
+          "explicacion": "Las Administraciones determinan los efectos de la evaluación del desempeño en la carrera horizontal, la formación, la provisión de puestos y las retribuciones complementarias (art. 20.3 TREBEP)."
+        }
+      ]
+    },
+    {
+      "caso": 6,
+      "titulo": "CASO PRÁCTICO 6 — Régimen disciplinario e incompatibilidades",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "¿Qué principios rigen la potestad disciplinaria que debe respetar el expediente abierto al técnico?",
+          "opciones": {
+            "a": "Oportunidad, discrecionalidad técnica, jerarquía, responsabilidad objetiva y celeridad en la resolución del expediente.",
+            "b": "Legalidad y tipicidad, irretroactividad de las disposiciones sancionadoras no favorables, proporcionalidad, culpabilidad y presunción de inocencia.",
+            "c": "Legalidad, aplicación analógica de las faltas, retroactividad de las sanciones y presunción de responsabilidad."
+          },
+          "correcta": "b",
+          "referencia": "Caso 6, cuestión 1 · art. 94.2 TREBEP",
+          "explicacion": "El artículo 94.2 TREBEP enumera los principios de legalidad y tipicidad, irretroactividad de las disposiciones sancionadoras no favorables, proporcionalidad, culpabilidad y presunción de inocencia."
+        },
+        {
+          "numero": 2,
+          "pregunta": "Si, después de los hechos, entrara en vigor una norma que agravara la sanción prevista, ¿se aplicaría al técnico?",
+          "opciones": {
+            "a": "No, por la irretroactividad de las disposiciones sancionadoras no favorables.",
+            "b": "Sí, porque se aplica siempre la norma vigente en el momento de resolver.",
+            "c": "Sí, siempre que el expediente no se hubiera iniciado todavía."
+          },
+          "correcta": "a",
+          "referencia": "Caso 6, cuestión 1 · art. 94.2 TREBEP",
+          "explicacion": "La potestad disciplinaria respeta la irretroactividad de las disposiciones sancionadoras no favorables (art. 94.2 TREBEP), por lo que la norma más severa posterior no se aplica."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Cómo se califica la difusión de información reservada de expedientes municipales a la que el técnico tenía acceso por su puesto?",
+          "opciones": {
+            "a": "Como falta grave.",
+            "b": "Como falta leve.",
+            "c": "Como falta muy grave."
+          },
+          "correcta": "c",
+          "referencia": "Caso 6, cuestión 2 · art. 95.2.e) TREBEP",
+          "explicacion": "La publicación o utilización indebida de la documentación o información a que se tenga acceso por razón del cargo es falta muy grave (art. 95.2.e TREBEP)."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Cuál es la sanción más grave que podría imponérsele por esa falta?",
+          "opciones": {
+            "a": "La separación del servicio del funcionario.",
+            "b": "La suspensión firme de funciones durante seis meses.",
+            "c": "El traslado forzoso con cambio de localidad."
+          },
+          "correcta": "a",
+          "referencia": "Caso 6, cuestión 2 · art. 96.1.a) TREBEP",
+          "explicacion": "La separación del servicio es la sanción más grave para un funcionario y solo puede imponerse por faltas muy graves (art. 96.1.a TREBEP)."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Si la falta se hubiera calificado solo como grave, ¿podría imponérsele la separación del servicio?",
+          "opciones": {
+            "a": "Sí, si concurre reincidencia dentro del mismo año.",
+            "b": "No, porque la separación del servicio solo puede sancionar faltas muy graves.",
+            "c": "Sí, si así lo propone el instructor del expediente."
+          },
+          "correcta": "b",
+          "referencia": "Caso 6, cuestión 2 · art. 96.1.a) TREBEP",
+          "explicacion": "El TREBEP reserva expresamente la separación del servicio a la comisión de faltas muy graves (art. 96.1.a TREBEP)."
+        },
+        {
+          "numero": 6,
+          "pregunta": "El desempeño de la segunda actividad sin reconocimiento de compatibilidad, cuando dé lugar a una situación de incompatibilidad, constituye:",
+          "opciones": {
+            "a": "Una falta leve.",
+            "b": "Una falta grave.",
+            "c": "Una falta muy grave."
+          },
+          "correcta": "c",
+          "referencia": "Caso 6, cuestión 3 · art. 95.2.n) TREBEP",
+          "explicacion": "El incumplimiento de las normas sobre incompatibilidades, cuando dé lugar a una situación de incompatibilidad, es falta muy grave (art. 95.2.n TREBEP)."
+        },
+        {
+          "numero": 7,
+          "pregunta": "El régimen de incompatibilidades de la Ley 53/1984 que se aplica al técnico parte del principio de:",
+          "opciones": {
+            "a": "Libre compatibilidad de cualquier actividad fuera del horario.",
+            "b": "Dedicación del personal a un solo puesto de trabajo.",
+            "c": "Compatibilidad automática si no se altera la jornada."
+          },
+          "correcta": "b",
+          "referencia": "Caso 6, cuestión 3 · Ley 53/1984",
+          "explicacion": "La Ley 53/1984 parte, según su preámbulo, del principio de dedicación del personal a un solo puesto de trabajo."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Si la falta fuera muy grave, ¿en qué plazo prescribiría?",
+          "opciones": {
+            "a": "A los dos años.",
+            "b": "A los seis meses.",
+            "c": "A los tres años."
+          },
+          "correcta": "c",
+          "referencia": "Caso 6, cuestión 4 · art. 97.1 TREBEP",
+          "explicacion": "Las faltas muy graves prescriben a los tres años, las graves a los dos y las leves a los seis meses (art. 97 TREBEP)."
+        },
+        {
+          "numero": 9,
+          "pregunta": "La segunda actividad se mantuvo durante meses (falta continuada). ¿Desde cuándo se cuenta el plazo de prescripción?",
+          "opciones": {
+            "a": "Desde el cese de su comisión.",
+            "b": "Desde el día en que comenzó la actividad.",
+            "c": "Desde la incoación del expediente disciplinario."
+          },
+          "correcta": "a",
+          "referencia": "Caso 6, cuestión 4 · art. 97.2 TREBEP",
+          "explicacion": "El plazo de prescripción de las faltas se cuenta desde que se cometieron y, en las faltas continuadas, desde el cese de su comisión (art. 97 TREBEP)."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Durante la tramitación se acuerda la suspensión provisional del técnico como medida cautelar. Salvo paralización imputable a él, esa suspensión no podrá exceder de:",
+          "opciones": {
+            "a": "Seis años.",
+            "b": "Seis meses.",
+            "c": "Tres años."
+          },
+          "correcta": "b",
+          "referencia": "Caso 6 · art. 98 TREBEP",
+          "explicacion": "La suspensión provisional como medida cautelar no puede exceder de seis meses, salvo paralización del procedimiento imputable al interesado (art. 98 TREBEP); los seis años son el máximo de la suspensión firme."
+        }
+      ]
+    }
+  ]
+}

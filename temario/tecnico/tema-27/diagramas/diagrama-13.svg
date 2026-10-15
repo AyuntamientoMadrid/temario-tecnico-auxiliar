@@ -1,0 +1,61 @@
+<svg aria-label="Ciclo de gestión de parches en seis pasos según el NIST: inventariar, identificar, priorizar, probar, desplegar y verificar. Debajo, los cuatro anillos de despliegue desde laboratorio hasta producción crítica, la escala de gravedad CVSS y los mecanismos de marcha atrás disponibles" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.t13{font:700 10px system-ui,sans-serif;fill:#fff}.s13{font:9px system-ui,sans-serif;fill:#fff}.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.k13{font:700 10px system-ui,sans-serif;fill:#0055a0}.d13{font:9px system-ui,sans-serif;fill:#444}</style>
+<text class="h13" text-anchor="middle" x="340" y="20">Gestión de parches: seis pasos, cuatro anillos, una marcha atrás</text>
+<rect fill="#0055a0" height="48" rx="5" width="104" x="14" y="32"></rect>
+<text class="t13" text-anchor="middle" x="66" y="52">1 · INVENTARIAR</text>
+<text class="s13" text-anchor="middle" x="66" y="69">op.exp.1</text>
+<rect fill="#0055a0" height="48" rx="5" width="104" x="124" y="32"></rect>
+<text class="t13" text-anchor="middle" x="176" y="52">2 · IDENTIFICAR</text>
+<text class="s13" text-anchor="middle" x="176" y="69">boletines · CVE</text>
+<rect fill="#e89822" height="48" rx="5" width="104" x="234" y="32"></rect>
+<text class="t13" text-anchor="middle" x="286" y="52">3 · PRIORIZAR</text>
+<text class="s13" text-anchor="middle" x="286" y="69">riesgo real</text>
+<rect fill="#e89822" height="48" rx="5" width="104" x="344" y="32"></rect>
+<text class="t13" text-anchor="middle" x="396" y="52">4 · PROBAR</text>
+<text class="s13" text-anchor="middle" x="396" y="69">preproducción</text>
+<rect fill="#2d8659" height="48" rx="5" width="104" x="454" y="32"></rect>
+<text class="t13" text-anchor="middle" x="506" y="52">5 · DESPLEGAR</text>
+<text class="s13" text-anchor="middle" x="506" y="69">por anillos</text>
+<rect fill="#2d8659" height="48" rx="5" width="102" x="564" y="32"></rect>
+<text class="t13" text-anchor="middle" x="615" y="52">6 · VERIFICAR</text>
+<text class="s13" text-anchor="middle" x="615" y="69">y documentar</text>
+<path d="M118 56 L124 56" stroke="#666" stroke-width="2"></path>
+<path d="M228 56 L234 56" stroke="#666" stroke-width="2"></path>
+<path d="M338 56 L344 56" stroke="#666" stroke-width="2"></path>
+<path d="M448 56 L454 56" stroke="#666" stroke-width="2"></path>
+<path d="M558 56 L564 56" stroke="#666" stroke-width="2"></path>
+<text class="k13" text-anchor="middle" x="340" y="102">Anillos de despliegue: nunca todo a la vez</text>
+<rect fill="#0055a0" height="58" rx="5" width="158" x="14" y="112"></rect>
+<text class="t13" text-anchor="middle" x="93" y="132">0 · LABORATORIO</text>
+<text class="s13" text-anchor="middle" x="93" y="150">clones de producción</text>
+<text class="s13" text-anchor="middle" x="93" y="165">¿instala sin romper?</text>
+<rect fill="#0055a0" height="58" rx="5" width="158" x="180" y="112"></rect>
+<text class="t13" text-anchor="middle" x="259" y="132">1 · PILOTO</text>
+<text class="s13" text-anchor="middle" x="259" y="150">grupo representativo</text>
+<text class="s13" text-anchor="middle" x="259" y="165">con el software real</text>
+<rect fill="#e89822" height="58" rx="5" width="158" x="346" y="112"></rect>
+<text class="t13" text-anchor="middle" x="425" y="132">2 · PRODUCCIÓN</text>
+<text class="s13" text-anchor="middle" x="425" y="150">puestos de usuario</text>
+<text class="s13" text-anchor="middle" x="425" y="165">despliegue masivo</text>
+<rect fill="#d13c3c" height="58" rx="5" width="154" x="512" y="112"></rect>
+<text class="t13" text-anchor="middle" x="589" y="132">3 · CRÍTICA</text>
+<text class="s13" text-anchor="middle" x="589" y="150">sede, Padrón, bases</text>
+<text class="s13" text-anchor="middle" x="589" y="165">ventana + instantánea</text>
+<rect fill="#f0f4f8" height="92" rx="5" stroke="#0055a0" width="322" x="14" y="184"></rect>
+<text class="k13" text-anchor="middle" x="175" y="202">Priorizar: CVE identifica, CVSS puntúa</text>
+<text class="d13" text-anchor="middle" x="175" y="222">9,0 – 10,0 CRÍTICA · 7,0 – 8,9 alta</text>
+<text class="d13" text-anchor="middle" x="175" y="238">4,0 – 6,9 media · 0,1 – 3,9 baja</text>
+<text class="d13" text-anchor="middle" x="175" y="258">La prioridad real = CVSS + exposición del activo</text>
+<text class="d13" text-anchor="middle" x="175" y="272">+ criticidad del servicio + explotación activa</text>
+<rect fill="#f0f4f8" height="92" rx="5" stroke="#2d8659" width="322" x="344" y="184"></rect>
+<text class="k13" text-anchor="middle" x="505" y="202">Mecanismos de marcha atrás</text>
+<text class="d13" text-anchor="middle" x="505" y="222">Instantánea de máquina virtual o de volumen</text>
+<text class="d13" text-anchor="middle" x="505" y="238">Punto de restauración · desinstalar el parche</text>
+<text class="d13" text-anchor="middle" x="505" y="254">Arrancar con el núcleo anterior · revertir driver</text>
+<text class="d13" text-anchor="middle" x="505" y="270">Restaurar desde copia (último recurso: RPO)</text>
+<rect fill="#d13c3c" height="30" rx="5" width="652" x="14" y="288"></rect>
+<text class="t13" text-anchor="middle" x="340" y="308">Una INSTANTÁNEA no es una copia de seguridad: vive en el mismo almacenamiento</text>
+<rect fill="#0055a0" height="26" rx="5" width="652" x="14" y="324"></rect>
+<text class="t13" text-anchor="middle" x="340" y="342">Regla de oro: no se aplica en producción un cambio que no se sepa deshacer (op.exp.4 R2)</text>
+<text style="font:9.5px system-ui;fill:#666" text-anchor="end" x="670" y="366">[Fuente: NIST80040; NIST-CVSS; ENS; MS-WSUS]</text>
+</svg>

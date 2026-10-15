@@ -1,0 +1,31 @@
+<svg aria-label="Tabla de protocolos en claro y su versión segura con los puertos: Telnet 23 sustituido por SSH 22; FTP 21 por SFTP 22 o FTPS 990; HTTP 80 por HTTPS 443; SMTP 25 por envío con TLS en 587 o 465; POP3 110 e IMAP 143 por POP3S 995 e IMAPS 993; LDAP 389 por LDAPS 636; SNMP versión 1 y 2c por SNMP versión 3; DNS 53 por DNS sobre TLS en 853 y DNS sobre HTTPS en 443; syslog 514 por syslog sobre TLS en 6514; y escritorio remoto RDP en 3389 que nunca se publica a internet" role="img" viewbox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
+<style>.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.k5{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d5{font:8.5px system-ui,sans-serif;fill:#333}.b5{font:700 9px system-ui,sans-serif;fill:#0055a0}.n5{font:8px system-ui,sans-serif;fill:#666}.hd5{font:700 8.5px system-ui,sans-serif;fill:#fff}.pr5{font:700 9px system-ui,sans-serif;fill:#d13c3c}.pg5{font:700 9px system-ui,sans-serif;fill:#2d8659}.s5{font:8.5px system-ui,sans-serif;fill:#fff}</style>
+<text class="h5" text-anchor="middle" x="340" y="20">Todo protocolo clásico de internet nació en claro y tiene hoy su versión protegida</text>
+<rect fill="#0055a0" height="20" rx="4" width="640" x="20" y="32"></rect>
+<text class="hd5" x="30" y="46">SERVICIO</text><text class="hd5" x="180" y="46">EN CLARO — NO USAR</text><text class="hd5" x="316" y="46">PUERTO</text><text class="hd5" x="392" y="46">VERSIÓN SEGURA</text><text class="hd5" x="566" y="46">PUERTO</text>
+<rect fill="#f7f9fc" height="24" width="640" x="20" y="54"></rect>
+<text class="d5" x="30" y="70">Consola remota de texto</text><text class="pr5" x="180" y="70">Telnet</text><text class="d5" x="316" y="70">TCP 23</text><text class="pg5" x="392" y="70">SSH</text><text class="d5" x="566" y="70">TCP 22</text>
+<rect fill="#fff" height="24" width="640" x="20" y="80"></rect>
+<text class="d5" x="30" y="96">Sesión remota (heredado)</text><text class="pr5" x="180" y="96">rlogin · rsh · rcp</text><text class="d5" x="316" y="96">TCP 513-514</text><text class="pg5" x="392" y="96">SSH y sus derivados</text><text class="d5" x="566" y="96">TCP 22</text>
+<rect fill="#f7f9fc" height="24" width="640" x="20" y="106"></rect>
+<text class="d5" x="30" y="122">Transferencia de ficheros</text><text class="pr5" x="180" y="122">FTP · TFTP</text><text class="d5" x="316" y="122">TCP 21 · UDP 69</text><text class="pg5" x="392" y="122">SFTP (en SSH) · FTPS (en TLS)</text><text class="d5" x="566" y="122">TCP 22 · 990</text>
+<rect fill="#fff" height="24" width="640" x="20" y="132"></rect>
+<text class="d5" x="30" y="148">Web</text><text class="pr5" x="180" y="148">HTTP</text><text class="d5" x="316" y="148">TCP 80</text><text class="pg5" x="392" y="148">HTTPS (HTTP sobre TLS)</text><text class="d5" x="566" y="148">TCP 443</text>
+<rect fill="#f7f9fc" height="24" width="640" x="20" y="158"></rect>
+<text class="d5" x="30" y="174">Correo entre servidores</text><text class="pr5" x="180" y="174">SMTP sin cifrar</text><text class="d5" x="316" y="174">TCP 25</text><text class="pg5" x="392" y="174">SMTP con STARTTLS</text><text class="d5" x="566" y="174">TCP 25 · 587</text>
+<rect fill="#fff" height="24" width="640" x="20" y="184"></rect>
+<text class="d5" x="30" y="200">Envío desde el cliente</text><text class="pr5" x="180" y="200">SMTP en claro</text><text class="d5" x="316" y="200">TCP 25</text><text class="pg5" x="392" y="200">Envío con TLS implícito</text><text class="d5" x="566" y="200">TCP 465 · 587</text>
+<rect fill="#f7f9fc" height="24" width="640" x="20" y="210"></rect>
+<text class="d5" x="30" y="226">Lectura de correo</text><text class="pr5" x="180" y="226">POP3 · IMAP</text><text class="d5" x="316" y="226">TCP 110 · 143</text><text class="pg5" x="392" y="226">POP3S · IMAPS</text><text class="d5" x="566" y="226">TCP 995 · 993</text>
+<rect fill="#fff" height="24" width="640" x="20" y="236"></rect>
+<text class="d5" x="30" y="252">Directorio</text><text class="pr5" x="180" y="252">LDAP</text><text class="d5" x="316" y="252">TCP 389</text><text class="pg5" x="392" y="252">LDAPS o LDAP con STARTTLS</text><text class="d5" x="566" y="252">TCP 636</text>
+<rect fill="#f7f9fc" height="24" width="640" x="20" y="262"></rect>
+<text class="d5" x="30" y="278">Gestión de red</text><text class="pr5" x="180" y="278">SNMPv1 y v2c</text><text class="d5" x="316" y="278">UDP 161</text><text class="pg5" x="392" y="278">SNMPv3 (autenticación y cifrado)</text><text class="d5" x="566" y="278">UDP 161</text>
+<rect fill="#fff" height="24" width="640" x="20" y="288"></rect>
+<text class="d5" x="30" y="304">Resolución de nombres</text><text class="pr5" x="180" y="304">DNS sin cifrar</text><text class="d5" x="316" y="304">UDP/TCP 53</text><text class="pg5" x="392" y="304">DoT · DoH (DNSSEC firma, no cifra)</text><text class="d5" x="566" y="304">TCP 853 · 443</text>
+<rect fill="#f7f9fc" height="24" width="640" x="20" y="314"></rect>
+<text class="d5" x="30" y="330">Registro centralizado</text><text class="pr5" x="180" y="330">Syslog sin cifrar</text><text class="d5" x="316" y="330">UDP 514</text><text class="pg5" x="392" y="330">Syslog sobre TLS (RFC 5425)</text><text class="d5" x="566" y="330">TCP 6514</text>
+<rect fill="#d13c3c" height="20" rx="3" width="640" x="20" y="342"></rect>
+<text class="s5" text-anchor="middle" x="340" y="355.5">Y el que se usa mal: RDP, escritorio remoto, TCP y UDP 3389 — NUNCA se publica a internet; se accede por VPN o pasarela</text>
+<text class="n5" x="20" y="375">[Fuente: RFC 8314 (correo con TLS) · RFC 9846 (TLS 1.3) · RFC 4251-4254 (SSH) · RFC 5425 (syslog sobre TLS) · RFC 7858 y 8484 (DoT y DoH)]</text>
+</svg>

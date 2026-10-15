@@ -1,0 +1,36 @@
+<svg aria-label="Estructura interna de un Área de Gobierno: Secretaría General Técnica y Direcciones Generales, con Subdirecciones, Servicios, Departamentos y Secciones, según el artículo 41" role="img" viewbox="0 0 700 360" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .e-root{fill:#0055a0;stroke:#003d75;stroke-width:2}
+    .e-box{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .e-low{fill:#e8f0f8;stroke:#0055a0;stroke-width:1}
+    .e-t{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .e-h{font:700 12px system-ui,sans-serif;fill:#003d75;text-anchor:middle}
+    .e-s{font:10.5px system-ui,sans-serif;fill:#444;text-anchor:middle}
+    .e-l{stroke:#0055a0;stroke-width:1.3;fill:none}
+  </style>
+<rect class="e-root" height="42" rx="8" width="180" x="260" y="16"></rect>
+<text class="e-t" x="350" y="42">ÁREA DE GOBIERNO</text>
+<line class="e-l" x1="350" x2="350" y1="58" y2="78"></line>
+<line class="e-l" x1="160" x2="160" y1="96" y2="78"></line>
+<line class="e-l" x1="350" x2="350" y1="96" y2="78"></line>
+<line class="e-l" x1="540" x2="540" y1="96" y2="78"></line>
+<line class="e-l" x1="160" x2="540" y1="78" y2="78"></line>
+<rect class="e-box" height="52" rx="8" width="180" x="70" y="96"></rect>
+<text class="e-h" x="160" y="118">Coordinador/es</text>
+<text class="e-h" x="160" y="135">general/es</text>
+<rect class="e-box" height="52" rx="8" width="170" x="265" y="96"></rect>
+<text class="e-h" x="350" y="118">Secretaría</text>
+<text class="e-h" x="350" y="135">General Técnica</text>
+<rect class="e-box" height="52" rx="8" width="180" x="450" y="96"></rect>
+<text class="e-h" x="540" y="118">Direcciones</text>
+<text class="e-h" x="540" y="135">Generales</text>
+<line class="e-l" style="stroke-dasharray:3" x1="540" x2="540" y1="148" y2="180"></line>
+<line class="e-l" style="stroke-dasharray:3" x1="540" x2="350" y1="180" y2="180"></line>
+<rect class="e-low" height="120" rx="8" width="320" x="190" y="210"></rect>
+<text class="e-h" x="350" y="236">Unidades inferiores</text>
+<text class="e-s" x="350" y="262">Subdirecciones Generales</text>
+<text class="e-s" x="350" y="282">Servicios · Departamentos</text>
+<text class="e-s" x="350" y="302">Secciones y otras unidades</text>
+<text class="e-s" style="font-style:italic;fill:#777" x="350" y="322">art. 41.2</text>
+<line class="e-l" x1="350" x2="350" y1="148" y2="210"></line>
+</svg>

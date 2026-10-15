@@ -1,0 +1,21 @@
+<svg aria-label="Relación entre el alcalde, la Junta de Gobierno y el Pleno en la cadena de decisión municipal" role="img" viewbox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .j-box{stroke-width:1.5}
+    .j-h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .j-s{font:11px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .j-n{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+  </style>
+<rect class="j-box" fill="#003d75" height="60" rx="8" width="320" x="190" y="24"></rect>
+<text class="j-h" x="350" y="50">ALCALDE</text>
+<text class="j-s" x="350" y="70">dirige y delega · máxima representación</text>
+<rect class="j-box" fill="#0055a0" height="60" rx="8" width="260" x="60" y="150"></rect>
+<text class="j-h" x="190" y="176">JUNTA DE GOBIERNO LOCAL</text>
+<text class="j-s" x="190" y="196">nombra directivos · aprueba disposiciones</text>
+<rect class="j-box" fill="#2d8659" height="60" rx="8" width="260" x="380" y="150"></rect>
+<text class="j-h" x="510" y="176">PLENO</text>
+<text class="j-s" x="510" y="196">funciones normativas y de control</text>
+<line stroke="#0055a0" stroke-width="1.5" x1="300" x2="190" y1="84" y2="150"></line>
+<line stroke="#2d8659" stroke-width="1.5" x1="400" x2="510" y1="84" y2="150"></line>
+<text class="j-n" x="350" y="252">Los concejales de Gobierno elevan propuestas al Pleno (44.c)</text>
+<text class="j-n" x="350" y="270">y proponen disposiciones y nombramientos a la Junta de Gobierno (44.d, 44.j)</text>
+</svg>

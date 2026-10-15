@@ -1,0 +1,24 @@
+<svg aria-label="Modelo de responsabilidad compartida: el proveedor responde de la seguridad de la nube (instalaciones, hardware, red troncal, hipervisor y aislamiento entre inquilinos) y el cliente responde de la seguridad en la nube (datos, identidades, configuración, red virtual, sistema operativo en IaaS, código y copias); se enumeran los tres errores de configuración que concentran los incidentes" role="img" viewbox="0 0 680 351" xmlns="http://www.w3.org/2000/svg">
+<style>.t15{font:700 10.5px system-ui,sans-serif;fill:#fff}.s15{font:8.5px system-ui,sans-serif;fill:#fff}.d15{font:9px system-ui,sans-serif;fill:#333}.h15{font:700 13px system-ui,sans-serif;fill:#0055a0}.k15{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n15{font:700 11px system-ui,sans-serif;fill:#fff}.f15{font:8px system-ui,sans-serif;fill:#777}</style>
+<text class="h15" text-anchor="middle" x="340" y="20">Responsabilidad compartida</text>
+<rect fill="#0055a0" height="26" rx="5" width="310" x="20" y="34"></rect><text class="t15" text-anchor="middle" x="175" y="52">SEGURIDAD EN LA NUBE — CLIENTE</text>
+<rect fill="#888" height="26" rx="5" width="310" x="350" y="34"></rect><text class="t15" text-anchor="middle" x="505" y="52">SEGURIDAD DE LA NUBE — PROVEEDOR</text>
+<rect fill="#c9d9e8" height="20" rx="3" width="310" x="20" y="66"></rect><text class="d15" text-anchor="middle" x="175" y="80">Datos y su clasificación</text>
+<rect fill="#c9d9e8" height="20" rx="3" width="310" x="20" y="90"></rect><text class="d15" text-anchor="middle" x="175" y="104">Identidades, permisos y mínimo privilegio</text>
+<rect fill="#c9d9e8" height="20" rx="3" width="310" x="20" y="114"></rect><text class="d15" text-anchor="middle" x="175" y="128">Configuración de cada servicio contratado</text>
+<rect fill="#c9d9e8" height="20" rx="3" width="310" x="20" y="138"></rect><text class="d15" text-anchor="middle" x="175" y="152">Red virtual, cifrado y gestión de claves</text>
+<rect fill="#c9d9e8" height="20" rx="3" width="310" x="20" y="162"></rect><text class="d15" text-anchor="middle" x="175" y="176">Sistema operativo y parcheo (solo en IaaS)</text>
+<rect fill="#c9d9e8" height="20" rx="3" width="310" x="20" y="186"></rect><text class="d15" text-anchor="middle" x="175" y="200">Código de la aplicación y copias de seguridad</text>
+<rect fill="#e8e8e8" height="20" rx="3" width="310" x="350" y="66"></rect><text class="d15" text-anchor="middle" x="505" y="80">Instalaciones, energía y refrigeración</text>
+<rect fill="#e8e8e8" height="20" rx="3" width="310" x="350" y="90"></rect><text class="d15" text-anchor="middle" x="505" y="104">Hardware y red troncal</text>
+<rect fill="#e8e8e8" height="20" rx="3" width="310" x="350" y="114"></rect><text class="d15" text-anchor="middle" x="505" y="128">Hipervisor y aislamiento entre inquilinos</text>
+<rect fill="#e8e8e8" height="20" rx="3" width="310" x="350" y="138"></rect><text class="d15" text-anchor="middle" x="505" y="152">Disponibilidad de regiones y zonas</text>
+<rect fill="#f5f5f5" height="44" rx="3" width="310" x="350" y="162"></rect><text class="d15" text-anchor="middle" x="505" y="180">Y, según el modelo, el sistema operativo,</text><text class="d15" text-anchor="middle" x="505" y="196">el middleware y la propia aplicación</text>
+<rect fill="#e89822" height="22" rx="4" width="640" x="20" y="214"></rect><text class="s15" text-anchor="middle" x="340" y="229">La frontera sube con el modelo de servicio, pero datos, identidades y configuración son SIEMPRE del cliente</text>
+<text class="k15" x="20" y="256">LOS TRES ERRORES QUE CONCENTRAN LOS INCIDENTES</text>
+<rect fill="#d13c3c" height="42" rx="5" width="205" x="20" y="262"></rect><text class="n15" x="30" y="278">1</text><text class="s15" text-anchor="middle" x="122" y="278">Almacenamiento de objetos</text><text class="s15" text-anchor="middle" x="122" y="292">expuesto públicamente</text>
+<rect fill="#d13c3c" height="42" rx="5" width="205" x="238" y="262"></rect><text class="n15" x="248" y="278">2</text><text class="s15" text-anchor="middle" x="340" y="278">Credenciales y claves</text><text class="s15" text-anchor="middle" x="340" y="292">incrustadas en el código</text>
+<rect fill="#d13c3c" height="42" rx="5" width="204" x="456" y="262"></rect><text class="n15" x="466" y="278">3</text><text class="s15" text-anchor="middle" x="558" y="278">Permisos excesivos</text><text class="s15" text-anchor="middle" x="558" y="292">«por comodidad»</text>
+<rect fill="#0055a0" height="18" rx="4" width="640" x="20" y="310"></rect><text class="s15" text-anchor="middle" x="340" y="323">La responsabilidad jurídica del dato se delega operativamente, pero nunca se externaliza</text>
+<text class="f15" text-anchor="middle" x="340" y="342">[Fuente: NIST144, CCN823, RGPD]</text>
+</svg>

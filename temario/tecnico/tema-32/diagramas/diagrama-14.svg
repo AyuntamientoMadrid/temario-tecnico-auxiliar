@@ -1,0 +1,26 @@
+<svg aria-label="Esquema del cifrado híbrido o sobre digital en cinco pasos, en el que una clave de sesión simétrica aleatoria cifra los datos y la criptografía asimétrica protege esa clave de sesión, y su aplicación en el saludo de TLS con confidencialidad directa mediante Diffie-Hellman efímero" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.t14{font:700 10.5px system-ui,sans-serif;fill:#fff}.s14{font:8.5px system-ui,sans-serif;fill:#fff}.d14{font:9px system-ui,sans-serif;fill:#333}.h14{font:700 13px system-ui,sans-serif;fill:#0055a0}.k14{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n14{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h14" text-anchor="middle" x="340" y="20">El sobre digital: lo mejor de cada familia</text>
+<rect fill="#0055a0" height="46" rx="4" width="124" x="20" y="36"></rect><text class="t14" text-anchor="middle" x="82" y="54">1 · GENERAR</text><text class="s14" text-anchor="middle" x="82" y="69">clave de sesión aleatoria</text>
+<rect fill="#0055a0" height="46" rx="4" width="124" x="152" y="36"></rect><text class="t14" text-anchor="middle" x="214" y="54">2 · CIFRAR DATOS</text><text class="s14" text-anchor="middle" x="214" y="69">simétrico, rápido</text>
+<rect fill="#2d8659" height="46" rx="4" width="124" x="284" y="36"></rect><text class="t14" text-anchor="middle" x="346" y="54">3 · CIFRAR CLAVE</text><text class="s14" text-anchor="middle" x="346" y="69">con la pública del receptor</text>
+<rect fill="#e89822" height="46" rx="4" width="124" x="416" y="36"></rect><text class="t14" text-anchor="middle" x="478" y="54">4 · ENVIAR AMBOS</text><text class="s14" text-anchor="middle" x="478" y="69">criptograma + sobre</text>
+<rect fill="#7a2f8a" height="46" rx="4" width="112" x="548" y="36"></rect><text class="t14" text-anchor="middle" x="604" y="54">5 · ABRIR</text><text class="s14" text-anchor="middle" x="604" y="69">con la privada propia</text>
+<rect fill="#fdf3e3" height="24" rx="4" width="640" x="20" y="92"></rect>
+<text class="d14" text-anchor="middle" x="340" y="108">La ASIMÉTRICA negocia la clave · la SIMÉTRICA cifra el tráfico — así funcionan TLS, IPsec, S/MIME y PGP</text>
+<text class="k14" x="20" y="138">EL SALUDO DE TLS, PASO A PASO</text>
+<rect fill="#eef3f8" height="132" rx="4" width="90" x="20" y="146"></rect><text class="k14" text-anchor="middle" x="65" y="164">CLIENTE</text>
+<rect fill="#eef3f8" height="132" rx="4" width="90" x="570" y="146"></rect><text class="k14" text-anchor="middle" x="615" y="164">SERVIDOR</text>
+<rect fill="#0055a0" height="23" rx="3" width="444" x="118" y="150"></rect><text class="s14" text-anchor="middle" x="340" y="165">1 · ClientHello: versiones, suites de cifrado y valor aleatorio</text>
+<rect fill="#2d8659" height="23" rx="3" width="444" x="118" y="177"></rect><text class="s14" text-anchor="middle" x="340" y="192">2 · ServerHello + CERTIFICADO X.509 del servidor</text>
+<rect fill="#e89822" height="23" rx="3" width="444" x="118" y="204"></rect><text class="s14" text-anchor="middle" x="340" y="219">3 · El cliente VALIDA: cadena, vigencia, revocación y nombre</text>
+<rect fill="#7a2f8a" height="23" rx="3" width="444" x="118" y="231"></rect><text class="s14" text-anchor="middle" x="340" y="246">4 · Negociación de la clave de sesión con ECDHE (efímero)</text>
+<rect fill="#333" height="20" rx="3" width="444" x="118" y="258"></rect><text class="s14" text-anchor="middle" x="340" y="272">5 · Canal cifrado: a partir de aquí, simétrico</text>
+<rect fill="#0055a0" height="44" rx="4" width="316" x="20" y="288"></rect>
+<text class="t14" text-anchor="middle" x="178" y="306">CONFIDENCIALIDAD DIRECTA (PFS)</text>
+<text class="s14" text-anchor="middle" x="178" y="323">Comprometer la clave privada del servidor NO descifra el tráfico pasado</text>
+<rect fill="#2d8659" height="44" rx="4" width="316" x="344" y="288"></rect>
+<text class="t14" text-anchor="middle" x="502" y="306">TLS 1.3 · RFC 9846</text>
+<text class="s14" text-anchor="middle" x="502" y="323">1-RTT · sin RSA de intercambio · solo AEAD · PFS obligatoria</text>
+<text class="n14" text-anchor="end" x="670" y="344">[Fuente: RFC9846; RFC5246; DH]</text>
+</svg>

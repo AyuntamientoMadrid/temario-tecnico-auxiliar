@@ -1,0 +1,117 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "Atendiendo a su función de registro de altas, bajas y modificaciones de los datos padronales, ¿qué tipo de sistema de información es el Padrón y en qué nivel organizacional se sitúa?",
+    "o": [
+     "Un TPS, en el nivel operativo.",
+     "Un MIS, en el nivel de gestión o táctico.",
+     "Un DSS, en el nivel analítico."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.6",
+    "e": "En esa función el Padrón registra transacciones individuales (altas, bajas y modificaciones) en tiempo real: es un TPS, el tipo de sistema propio del nivel operativo."
+   },
+   {
+    "q": "¿Qué rasgo del Padrón justifica esa clasificación?",
+    "o": [
+     "Elabora informes periódicos consolidados que utilizan los mandos medios para supervisar el servicio.",
+     "Procesa transacciones individuales de altas, bajas y modificaciones en tiempo real, en el nivel operativo.",
+     "Ofrece un cuadro de mando con indicadores muy agregados para el equipo de gobierno municipal."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §2.6",
+    "e": "El TPS es el sistema del nivel operativo: maneja transacciones individuales, en tiempo real y en alto volumen. Los informes periódicos son propios del MIS y el cuadro de mando, del EIS."
+   },
+   {
+    "q": "¿Cuántos hilos lógicos presenta al sistema operativo el servidor del Padrón, con 2 procesadores AMD EPYC 9354 de 32 núcleos con SMT cada uno?",
+    "o": [
+     "64 hilos lógicos.",
+     "256 hilos lógicos.",
+     "128 hilos lógicos."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §5.2.3",
+    "e": "Con SMT cada núcleo ejecuta 2 hilos: 32 núcleos × 2 = 64 hilos por procesador, y con 2 procesadores, 128 hilos lógicos."
+   },
+   {
+    "q": "Los puestos de atención llevan un Intel Core i5-14400 con 6 núcleos P y 4 núcleos E, y la tabla indica 16 hilos. ¿Cómo se obtiene esa cifra?",
+    "o": [
+     "Cada núcleo P ejecuta 2 hilos con HyperThreading y cada núcleo E, 1 hilo: 6 × 2 + 4 = 16.",
+     "Cada uno de los 10 núcleos ejecuta 2 hilos, menos 4 hilos reservados para el sistema: 10 × 2 − 4 = 16.",
+     "Solo los núcleos E tienen HyperThreading y ejecutan 4 hilos cada uno, sin contar los núcleos P: 4 × 4 = 16."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §5.2.3",
+    "e": "Los núcleos de eficiencia (E) no tienen HyperThreading para ahorrar energía; solo los núcleos de rendimiento (P) ejecutan 2 hilos cada uno."
+   },
+   {
+    "q": "El servidor del Padrón monta dos procesadores físicos en una placa con dos zócalos. Esta configuración es un ejemplo de:",
+    "o": [
+     "Multinúcleo.",
+     "Multithreading.",
+     "Multiprocesamiento."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §5.2.3",
+    "e": "Un equipo con más de una CPU física (varios zócalos) es multiprocesamiento; el multinúcleo es un único chip con varios núcleos y el multithreading duplica las unidades lógicas de cada núcleo."
+   },
+   {
+    "q": "¿Pueden instalarse los módulos DDR5 de los puestos nuevos en las placas base DDR4 existentes?",
+    "o": [
+     "Sí, porque ambos tipos utilizan módulos DIMM de 288 pines.",
+     "No, porque DDR4 y DDR5 son física y eléctricamente incompatibles.",
+     "Sí, siempre que se ajuste el voltaje de la placa desde la BIOS."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 3 · §6.2.3",
+    "e": "Aunque comparten 288 pines, DDR4 y DDR5 son incompatibles física y eléctricamente: hace falta una placa base compatible con DDR5."
+   },
+   {
+    "q": "Un compañero sostiene que, al tener DDR4 y DDR5 los mismos pines, los módulos deberían encajar. ¿Qué diferencias desmienten su razonamiento?",
+    "o": [
+     "DDR4 funciona a 1,2 V y DDR5 a 1,1 V, y la muesca está en distinta posición.",
+     "DDR4 funciona a 1,5 V y DDR5 a 1,2 V, y DDR5 tiene 240 pines en lugar de 288.",
+     "DDR4 funciona a 1,1 V y DDR5 a 1,2 V, y DDR4 integra el PMIC en el propio módulo."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §6.2.3",
+    "e": "La tabla comparativa DDR asigna 1,2 V a DDR4 y 1,1 V a DDR5; además, la muesca cambia de posición y DDR5 integra el PMIC en el módulo."
+   },
+   {
+    "q": "¿Qué capacidad de corrección aporta la memoria ECC del servidor del Padrón?",
+    "o": [
+     "Detecta y corrige errores de 1 y de 2 bits, y detecta sin corregir los de 3 bits.",
+     "Detecta y corrige errores de 1 bit, y detecta sin corregir los errores de 2 bits.",
+     "Detecta errores de 1 bit sin corregirlos, y corrige los errores de 2 bits o más."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §6.2.5",
+    "e": "La memoria ECC detecta y corrige los errores de un bit y detecta, sin poder corregirlos, los de dos bits."
+   },
+   {
+    "q": "¿Por qué el servidor del Padrón usa memoria ECC y los puestos de atención no?",
+    "o": [
+     "Porque la memoria ECC es más rápida que la No-ECC y el servidor necesita el máximo rendimiento.",
+     "Porque la ECC no requiere soporte de la placa base ni del procesador, a diferencia de la No-ECC.",
+     "Porque en el servidor un error de memoria podría generar inconsistencias en los datos de los ciudadanos."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 4 · §6.2.5",
+    "e": "La ECC es crítica en servidores que gestionan datos de ciudadanos; es algo más cara y más lenta (~2-3 %) y exige soporte de placa base y procesador, mientras que los puestos de uso interactivo no necesitan ese nivel de fiabilidad."
+   },
+   {
+    "q": "Los SSD de los equipos son NAND Flash TLC. ¿Qué implica esta tecnología frente a SLC o MLC?",
+    "o": [
+     "Almacena 3 bits por celda: más densidad y menor coste, pero menor durabilidad.",
+     "Almacena 1 bit por celda: más velocidad y durabilidad, pero mayor coste.",
+     "Almacena 4 bits por celda: máxima densidad, pero la mínima durabilidad."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 5 · §6.3.1",
+    "e": "TLC (Triple-Level Cell) guarda 3 bits por celda: gana densidad y abarata el coste frente a SLC (1 bit) y MLC (2 bits), a cambio de menor durabilidad; 4 bits por celda es QLC."
+   }
+  ]
+ }
+]

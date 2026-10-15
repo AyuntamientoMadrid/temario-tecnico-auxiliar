@@ -1,0 +1,32 @@
+<svg aria-label="Ciclo de gestión de vulnerabilidades en cinco fases y línea temporal que muestra la ventana de exposición desde el descubrimiento de la vulnerabilidad hasta la aplicación efectiva del parche, con los umbrales de la puntuación CVSS y la diferencia entre CVE, CVSS y CWE" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.t12{font:700 10.5px system-ui,sans-serif;fill:#fff}.s12{font:8.5px system-ui,sans-serif;fill:#fff}.d12{font:9px system-ui,sans-serif;fill:#333}.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}.k12{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n12{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h12" text-anchor="middle" x="340" y="20">El ciclo y la ventana que hay que cerrar</text>
+<text class="k12" x="20" y="42">CICLO DE GESTIÓN DE VULNERABILIDADES</text>
+<rect fill="#0055a0" height="44" rx="4" width="122" x="20" y="50"></rect><text class="t12" text-anchor="middle" x="81" y="68">1 · INVENTARIO</text><text class="s12" text-anchor="middle" x="81" y="84">op.exp.1</text>
+<rect fill="#1a6bb0" height="44" rx="4" width="122" x="150" y="50"></rect><text class="t12" text-anchor="middle" x="211" y="68">2 · DETECCIÓN</text><text class="s12" text-anchor="middle" x="211" y="84">escáner, SCA, SAST</text>
+<rect fill="#e89822" height="44" rx="4" width="122" x="280" y="50"></rect><text class="t12" text-anchor="middle" x="341" y="68">3 · PRIORIZACIÓN</text><text class="s12" text-anchor="middle" x="341" y="84">op.exp.4.2</text>
+<rect fill="#2d8659" height="44" rx="4" width="122" x="410" y="50"></rect><text class="t12" text-anchor="middle" x="471" y="68">4 · CORRECCIÓN</text><text class="s12" text-anchor="middle" x="471" y="84">parche o mitigación</text>
+<rect fill="#7a2f8a" height="44" rx="4" width="120" x="540" y="50"></rect><text class="t12" text-anchor="middle" x="600" y="68">5 · VERIFICACIÓN</text><text class="s12" text-anchor="middle" x="600" y="84">y vuelta a empezar</text>
+<text class="k12" x="20" y="118">LÍNEA TEMPORAL DE UNA VULNERABILIDAD</text>
+<line stroke="#333" stroke-width="1.5" x1="30" x2="650" y1="150" y2="150"></line>
+<circle cx="70" cy="150" fill="#d13c3c" r="5"></circle><text class="n12" text-anchor="middle" x="70" y="140">existe</text>
+<circle cx="210" cy="150" fill="#d13c3c" r="5"></circle><text class="n12" text-anchor="middle" x="210" y="140">se descubre</text>
+<circle cx="370" cy="150" fill="#e89822" r="5"></circle><text class="n12" text-anchor="middle" x="370" y="140">parche publicado</text>
+<circle cx="560" cy="150" fill="#2d8659" r="5"></circle><text class="n12" text-anchor="middle" x="560" y="140">parche aplicado</text>
+<rect fill="#fbeaea" height="20" width="140" x="70" y="158"></rect><text class="d12" text-anchor="middle" x="140" y="172">latente</text>
+<rect fill="#d13c3c" height="20" width="160" x="210" y="158"></rect><text class="s12" text-anchor="middle" x="290" y="172">DÍA CERO: sin parche</text>
+<rect fill="#e89822" height="20" width="190" x="370" y="158"></rect><text class="s12" text-anchor="middle" x="465" y="172">parche disponible pero NO instalado</text>
+<rect fill="#2d8659" height="20" width="90" x="560" y="158"></rect><text class="s12" text-anchor="middle" x="605" y="172">protegido</text>
+<line stroke="#d13c3c" stroke-width="2" x1="210" x2="560" y1="188" y2="188"></line>
+<text class="k12" text-anchor="middle" x="385" y="202">VENTANA DE EXPOSICIÓN — termina al APLICAR el parche, no al publicarlo</text>
+<text class="k12" x="20" y="228">TRES SISTEMAS QUE NO SON LO MISMO</text>
+<rect fill="#eef3f8" height="42" rx="4" width="206" x="20" y="236"></rect><text class="d12" text-anchor="middle" x="123" y="253">CVE — identificador único</text><text class="d12" text-anchor="middle" x="123" y="268">de la vulnerabilidad concreta</text>
+<rect fill="#eef3f8" height="42" rx="4" width="206" x="237" y="236"></rect><text class="d12" text-anchor="middle" x="340" y="253">CVSS — puntuación</text><text class="d12" text-anchor="middle" x="340" y="268">de gravedad, de 0,0 a 10,0</text>
+<rect fill="#eef3f8" height="42" rx="4" width="206" x="454" y="236"></rect><text class="d12" text-anchor="middle" x="557" y="253">CWE — tipo de debilidad</text><text class="d12" text-anchor="middle" x="557" y="268">la categoría, no la instancia</text>
+<rect fill="#2d8659" height="24" rx="3" width="152" x="20" y="288"></rect><text class="s12" text-anchor="middle" x="96" y="304">0,1 - 3,9 BAJA</text>
+<rect fill="#e89822" height="24" rx="3" width="152" x="178" y="288"></rect><text class="s12" text-anchor="middle" x="254" y="304">4,0 - 6,9 MEDIA</text>
+<rect fill="#d95d3c" height="24" rx="3" width="152" x="336" y="288"></rect><text class="s12" text-anchor="middle" x="412" y="304">7,0 - 8,9 ALTA</text>
+<rect fill="#8e1c1c" height="24" rx="3" width="166" x="494" y="288"></rect><text class="s12" text-anchor="middle" x="577" y="304">9,0 - 10,0 CRÍTICA</text>
+<text class="n12" text-anchor="middle" x="340" y="330">La puntuación CVSS NO es el riesgo: riesgo = gravedad × exposición × criticidad del activo</text>
+<text class="n12" text-anchor="end" x="670" y="344">[Fuente: CVE; CVSS v3.1; CWE; ENS, op.exp.4]</text>
+</svg>

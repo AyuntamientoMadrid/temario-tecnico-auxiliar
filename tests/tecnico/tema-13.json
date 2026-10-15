@@ -1,0 +1,1109 @@
+{
+  "tema": 13,
+  "bloque": "tecnico",
+  "titulo": "La gestión de los datos",
+  "enunciado_oficial": "Tipos abstractos y Estructuras de datos. Organizaciones de ficheros. Algoritmos. Formatos de información y ficheros.",
+  "calificacion": "+1 acierto, -1/3 error, 0 en blanco (BOAM 10.032, base 5.2)",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Por qué se define un Tipo Abstracto de Datos (TAD)?",
+      "opciones": {
+        "a": "Por su representación interna en memoria",
+        "b": "Por el lenguaje de programación en que se codifica",
+        "c": "Por las operaciones que ofrece y su comportamiento, con independencia de la implementación"
+      },
+      "correcta": "c",
+      "referencia": "§1.1 [AHU][LISKOV-GUTTAG]",
+      "explicacion": "Un TAD se define por *qué* operaciones ofrece y *qué* hacen (su comportamiento), no por *cómo* se almacenan los datos. La representación es la estructura de datos; el TAD es la especificación."
+    },
+    {
+      "numero": 2,
+      "pregunta": "El principio que esconde la representación interna de un TAD, exponiendo solo su interfaz pública, se denomina:",
+      "opciones": {
+        "a": "Encapsulamiento",
+        "b": "Ocultación de la información",
+        "c": "Modularidad"
+      },
+      "correcta": "b",
+      "referencia": "§1.2 [LISKOV-GUTTAG]",
+      "explicacion": "La **ocultación de la información** (information hiding) hace que la representación interna no sea accesible desde el exterior; solo se expone la interfaz. El encapsulamiento es agrupar datos y operaciones; la ocultación es esconder la representación."
+    },
+    {
+      "numero": 3,
+      "pregunta": "¿Cuáles son las tres patas de la especificación de un TAD?",
+      "opciones": {
+        "a": "Datos, punteros y memoria",
+        "b": "Valores, operaciones y comportamiento",
+        "c": "Clases, objetos y herencia"
+      },
+      "correcta": "b",
+      "referencia": "§1.3 [AHU]",
+      "explicacion": "Un TAD se especifica por sus **valores** (dominio), sus **operaciones** (interfaz) y su **comportamiento** (axiomas que rigen la semántica)."
+    },
+    {
+      "numero": 4,
+      "pregunta": "El comportamiento de un TAD se formaliza mediante:",
+      "opciones": {
+        "a": "Diagramas de flujo",
+        "b": "Axiomas (especificación algebraica)",
+        "c": "Código fuente en C"
+      },
+      "correcta": "b",
+      "referencia": "§1.3 [AHU][KNUTH-V1]",
+      "explicacion": "El comportamiento se expresa con **axiomas ecuacionales** (especificación algebraica) que relacionan las operaciones, sin mencionar ninguna implementación."
+    },
+    {
+      "numero": 5,
+      "pregunta": "Una propiedad deseable de la modularidad es:",
+      "opciones": {
+        "a": "Alta cohesión y bajo acoplamiento",
+        "b": "Bajo cohesión y alto acoplamiento",
+        "c": "Máximo número de dependencias entre módulos"
+      },
+      "correcta": "a",
+      "referencia": "§1.2",
+      "explicacion": "Un buen diseño modular busca **alta cohesión** (cada módulo hace una cosa bien) y **bajo acoplamiento** (mínima dependencia entre módulos)."
+    },
+    {
+      "numero": 6,
+      "pregunta": "¿Qué relación existe entre un TAD y una estructura de datos?",
+      "opciones": {
+        "a": "Son sinónimos exactos",
+        "b": "El TAD es la especificación; la estructura de datos es una de sus posibles implementaciones",
+        "c": "La estructura de datos es la especificación; el TAD es el código"
+      },
+      "correcta": "b",
+      "referencia": "§1.4",
+      "explicacion": "Un mismo TAD admite varias estructuras de datos; por ejemplo, el TAD Pila puede implementarse con un array o con una lista enlazada."
+    },
+    {
+      "numero": 7,
+      "pregunta": "Los cuatro principios fundamentales en que se sustentan los TAD son:",
+      "opciones": {
+        "a": "Herencia, polimorfismo, sobrecarga y composición",
+        "b": "Abstracción, encapsulamiento, ocultación y modularidad",
+        "c": "Cohesión, acoplamiento, recursividad e iteración"
+      },
+      "correcta": "b",
+      "referencia": "§1.2 [LISKOV-GUTTAG]",
+      "explicacion": "Abstracción (qué, no cómo), encapsulamiento (agrupar), ocultación (esconder la representación) y modularidad (descomponer en módulos)."
+    },
+    {
+      "numero": 8,
+      "pregunta": "En Java, el TAD Diccionario se corresponde con la interfaz:",
+      "opciones": {
+        "a": "`Map`",
+        "b": "`List`",
+        "c": "`Queue`"
+      },
+      "correcta": "a",
+      "referencia": "§1.5 [ORACLE-JCF]",
+      "explicacion": "El TAD Diccionario (pares clave→valor) se materializa en `Map` (`HashMap`, `TreeMap`). `List` es secuencia; `Queue`, cola FIFO."
+    },
+    {
+      "numero": 9,
+      "pregunta": "El acceso a un elemento por su índice en un array tiene complejidad:",
+      "opciones": {
+        "a": "O(n)",
+        "b": "O(1)",
+        "c": "O(log n)"
+      },
+      "correcta": "b",
+      "referencia": "§2.2 [WIRTH]",
+      "explicacion": "El array permite **acceso directo O(1)**: la dirección se calcula con `B + i × T`, sin recorrer la estructura."
+    },
+    {
+      "numero": 10,
+      "pregunta": "En un array bidimensional `A[F][C]` almacenado por filas (row-major), la dirección de `A[i][j]` es:",
+      "opciones": {
+        "a": "`B + (j × F + i) × T`",
+        "b": "`B + (i × C + j) × T`",
+        "c": "`B + (i + j) × T`"
+      },
+      "correcta": "b",
+      "referencia": "§2.2",
+      "explicacion": "En row-major (C, Java), `dirección = B + (i × C + j) × T`. La fórmula B corresponde a column-major (Fortran)."
+    },
+    {
+      "numero": 11,
+      "pregunta": "Frente a un array, una ventaja de la lista enlazada es:",
+      "opciones": {
+        "a": "Acceso por posición en O(1)",
+        "b": "Inserción y borrado en O(1) con puntero al nodo",
+        "c": "Menor consumo de memoria"
+      },
+      "correcta": "b",
+      "referencia": "§2.3 [KNUTH-V1]",
+      "explicacion": "La lista enlazada inserta/borra en O(1) (con puntero al nodo), pero su acceso por posición es O(n) y consume más memoria (punteros)."
+    },
+    {
+      "numero": 12,
+      "pregunta": "Una pila (stack) sigue la política:",
+      "opciones": {
+        "a": "FIFO (primero en entrar, primero en salir)",
+        "b": "LIFO (último en entrar, primero en salir)",
+        "c": "Acceso aleatorio por índice"
+      },
+      "correcta": "b",
+      "referencia": "§2.4 [KNUTH-V1]",
+      "explicacion": "La pila es **LIFO**: se apila y desapila por el mismo extremo (la cima). El último en entrar es el primero en salir."
+    },
+    {
+      "numero": 13,
+      "pregunta": "¿Qué estructura de datos usa el recorrido en anchura (BFS) de un grafo o árbol?",
+      "opciones": {
+        "a": "Una cola",
+        "b": "Una pila",
+        "c": "Un montículo"
+      },
+      "correcta": "a",
+      "referencia": "§2.6.1, §2.7 [CLRS, cap. 20]",
+      "explicacion": "El recorrido por niveles / BFS se implementa con una **cola** (FIFO). El DFS usa pila o recursión."
+    },
+    {
+      "numero": 14,
+      "pregunta": "Una cola de prioridad se implementa eficientemente con:",
+      "opciones": {
+        "a": "Un array desordenado",
+        "b": "Una lista enlazada simple",
+        "c": "Un montículo (heap)"
+      },
+      "correcta": "c",
+      "referencia": "§2.4, §2.6.4 [CLRS, cap. 6]",
+      "explicacion": "El **montículo** permite insertar y extraer el elemento de mayor prioridad en O(log n), lo que lo hace ideal para una cola de prioridad."
+    },
+    {
+      "numero": 15,
+      "pregunta": "En una tabla hash, una colisión se produce cuando:",
+      "opciones": {
+        "a": "La tabla está llena",
+        "b": "Dos claves distintas producen el mismo índice",
+        "c": "La función hash devuelve un valor negativo"
+      },
+      "correcta": "b",
+      "referencia": "§2.5 [CLRS, cap. 11]",
+      "explicacion": "Una colisión es que dos claves diferentes den el mismo índice. Es inevitable (principio del palomar) y se resuelve por encadenamiento o direccionamiento abierto."
+    },
+    {
+      "numero": 16,
+      "pregunta": "El acceso medio a una tabla hash bien dimensionada es:",
+      "opciones": {
+        "a": "O(1)",
+        "b": "O(log n)",
+        "c": "O(n)"
+      },
+      "correcta": "a",
+      "referencia": "§2.5 [CLRS, cap. 11]",
+      "explicacion": "El acceso medio es **O(1)**; el peor caso es O(n) (si todas las claves colisionan en la misma cubeta)."
+    },
+    {
+      "numero": 17,
+      "pregunta": "El factor de carga de una tabla hash se define como:",
+      "opciones": {
+        "a": "`α = n/m` (elementos / posiciones)",
+        "b": "`α = m/n` (posiciones / elementos)",
+        "c": "El número de colisiones totales"
+      },
+      "correcta": "a",
+      "referencia": "§2.5",
+      "explicacion": "El factor de carga es **α = n/m** (elementos almacenados / posiciones de la tabla). Cuando supera ~0,75, se hace rehashing."
+    },
+    {
+      "numero": 18,
+      "pregunta": "El recorrido inorden de un árbol binario de búsqueda (ABB) produce:",
+      "opciones": {
+        "a": "Los elementos ordenados",
+        "b": "Los elementos en orden aleatorio",
+        "c": "Solo las hojas"
+      },
+      "correcta": "a",
+      "referencia": "§2.6.1 [CLRS, cap. 12]",
+      "explicacion": "El recorrido **inorden** (Izquierdo-Raíz-Derecho) de un ABB devuelve la secuencia **ordenada** de claves."
+    },
+    {
+      "numero": 19,
+      "pregunta": "En el recorrido preorden de un árbol binario, ¿qué se visita primero?",
+      "opciones": {
+        "a": "El subárbol izquierdo",
+        "b": "La raíz",
+        "c": "El subárbol derecho"
+      },
+      "correcta": "b",
+      "referencia": "§2.6.1",
+      "explicacion": "Preorden = **Raíz** – Izquierdo – Derecho: la raíz se visita antes que los subárboles. En postorden, la raíz va la última."
+    },
+    {
+      "numero": 20,
+      "pregunta": "¿Qué le ocurre a un ABB si se insertan claves ya ordenadas y no está autoequilibrado?",
+      "opciones": {
+        "a": "Se mantiene equilibrado automáticamente",
+        "b": "Degenera en una lista, con operaciones O(n)",
+        "c": "Se convierte en un grafo"
+      },
+      "correcta": "b",
+      "referencia": "§2.6.2 [CLRS, cap. 12-13]",
+      "explicacion": "Sin equilibrado, insertar datos ordenados hace que el ABB **degenere** en una lista enlazada, y las operaciones pasan de O(log n) a O(n). Por eso existen AVL y rojo-negro."
+    },
+    {
+      "numero": 21,
+      "pregunta": "¿Qué estructura es el índice estándar de las bases de datos y muchos sistemas de ficheros?",
+      "opciones": {
+        "a": "Lista enlazada",
+        "b": "B+árbol",
+        "c": "Tabla hash sin colisiones"
+      },
+      "correcta": "b",
+      "referencia": "§2.6.3 [CLRS, cap. 18][FOLK-FILESTRUCT]",
+      "explicacion": "El **B+árbol** es el índice por excelencia: equilibrado, con muchas claves por nodo (optimizado para disco) y hojas enlazadas para recorridos por rango."
+    },
+    {
+      "numero": 22,
+      "pregunta": "En un max-heap almacenado en array, los hijos del nodo en la posición `i` están en:",
+      "opciones": {
+        "a": "`i-1` e `i+1`",
+        "b": "`i/2` e `i×2`",
+        "c": "`2i+1` y `2i+2`"
+      },
+      "correcta": "c",
+      "referencia": "§2.6.4 [CLRS, cap. 6]",
+      "explicacion": "En un heap sobre array, los hijos de `i` están en `2i+1` y `2i+2`, y el padre en `⌊(i−1)/2⌋`."
+    },
+    {
+      "numero": 23,
+      "pregunta": "Para un grafo disperso (pocas aristas), la representación más eficiente en memoria es:",
+      "opciones": {
+        "a": "Matriz de adyacencia, O(V²)",
+        "b": "Lista de adyacencia, O(V+E)",
+        "c": "Tabla hash de vértices"
+      },
+      "correcta": "b",
+      "referencia": "§2.7 [CLRS, cap. 20]",
+      "explicacion": "La **lista de adyacencia** ocupa O(V+E), ideal para grafos dispersos. La matriz de adyacencia (O(V²)) conviene a grafos densos."
+    },
+    {
+      "numero": 24,
+      "pregunta": "El recorrido en profundidad (DFS) de un grafo se apoya en:",
+      "opciones": {
+        "a": "Una pila o recursión",
+        "b": "Una cola",
+        "c": "Un árbol B+"
+      },
+      "correcta": "a",
+      "referencia": "§2.7",
+      "explicacion": "El **DFS** usa una **pila** (o recursión, que usa la pila de ejecución). El BFS usa una cola."
+    },
+    {
+      "numero": 25,
+      "pregunta": "¿Qué algoritmo calcula el camino de coste mínimo en un grafo ponderado con pesos no negativos?",
+      "opciones": {
+        "a": "Dijkstra",
+        "b": "Quicksort",
+        "c": "Búsqueda binaria"
+      },
+      "correcta": "a",
+      "referencia": "§2.7",
+      "explicacion": "El algoritmo de **Dijkstra** resuelve el camino mínimo con pesos no negativos. Bellman-Ford admite pesos negativos."
+    },
+    {
+      "numero": 26,
+      "pregunta": "Una estructura de datos NO lineal es:",
+      "opciones": {
+        "a": "La pila",
+        "b": "La cola",
+        "c": "El árbol"
+      },
+      "correcta": "c",
+      "referencia": "§2.1",
+      "explicacion": "El **árbol** (y el grafo) es no lineal: un elemento puede tener varios sucesores. Pila, cola, array y lista son lineales."
+    },
+    {
+      "numero": 27,
+      "pregunta": "En la organización secuencial de ficheros, acceder al registro n-ésimo concreto tiene coste:",
+      "opciones": {
+        "a": "O(1)",
+        "b": "O(n)",
+        "c": "O(log n)"
+      },
+      "correcta": "b",
+      "referencia": "§3.2 [FOLK-FILESTRUCT]",
+      "explicacion": "En la organización **secuencial** hay que recorrer los registros anteriores → O(n). Es óptima, en cambio, para procesar todo el fichero de una pasada."
+    },
+    {
+      "numero": 28,
+      "pregunta": "La organización de ficheros que permite acceso directo Y secuencial mediante un índice se denomina:",
+      "opciones": {
+        "a": "Directa (hash)",
+        "b": "Secuencial indexada (ISAM/VSAM)",
+        "c": "Contigua pura"
+      },
+      "correcta": "b",
+      "referencia": "§3.2 [FOLK-FILESTRUCT][TANENBAUM-MOS]",
+      "explicacion": "La **secuencial indexada** (ISAM/VSAM) combina un fichero ordenado con un índice (hoy, un B+árbol), permitiendo acceso directo y secuencial."
+    },
+    {
+      "numero": 29,
+      "pregunta": "En la organización directa (hashing) de ficheros, la posición del registro:",
+      "opciones": {
+        "a": "Se busca recorriendo el fichero entero",
+        "b": "Siempre coincide con el orden alfabético",
+        "c": "Se calcula a partir de su clave con una función hash"
+      },
+      "correcta": "c",
+      "referencia": "§3.3 [KNUTH-V3]",
+      "explicacion": "En la organización **directa**, `h(clave)` calcula la dirección → acceso O(1). Inconveniente: no mantiene el orden de las claves."
+    },
+    {
+      "numero": 30,
+      "pregunta": "Un índice disperso (sparse) tiene:",
+      "opciones": {
+        "a": "Una entrada por cada registro",
+        "b": "Una entrada por cada campo",
+        "c": "Una entrada por cada bloque"
+      },
+      "correcta": "c",
+      "referencia": "§3.4 [SILBERSCHATZ-OS]",
+      "explicacion": "El índice **disperso** tiene una entrada por bloque (no por registro), por lo que es más pequeño; requiere datos ordenados. El denso tiene una entrada por registro."
+    },
+    {
+      "numero": 31,
+      "pregunta": "¿Qué sistema de ficheros tiene un límite de 4 GB por fichero?",
+      "opciones": {
+        "a": "NTFS",
+        "b": "FAT32",
+        "c": "ext4"
+      },
+      "correcta": "b",
+      "referencia": "§3.5",
+      "explicacion": "**FAT32** limita los ficheros a 4 GB. exFAT lo supera; NTFS y ext4 admiten ficheros mucho mayores."
+    },
+    {
+      "numero": 32,
+      "pregunta": "El mecanismo por el que el sistema de ficheros anota las operaciones en un diario para poder recuperarse tras un fallo se llama:",
+      "opciones": {
+        "a": "Striping",
+        "b": "Journaling",
+        "c": "Defragmentación"
+      },
+      "correcta": "b",
+      "referencia": "§3.6 [SILBERSCHATZ-OS]",
+      "explicacion": "El **journaling** registra las operaciones en un diario antes de aplicarlas; tras un corte, rehace o deshace lo pendiente. Lo usan NTFS, ext4 y XFS."
+    },
+    {
+      "numero": 33,
+      "pregunta": "¿Qué nivel RAID ofrece striping SIN ninguna redundancia?",
+      "opciones": {
+        "a": "RAID 1",
+        "b": "RAID 5",
+        "c": "RAID 0"
+      },
+      "correcta": "c",
+      "referencia": "§3.6 [PATTERSON-RAID]",
+      "explicacion": "**RAID 0** reparte los datos (striping) para máximo rendimiento, pero sin redundancia: el fallo de un disco pierde todo."
+    },
+    {
+      "numero": 34,
+      "pregunta": "RAID 5 utiliza:",
+      "opciones": {
+        "a": "Paridad distribuida, tolerando el fallo de un disco",
+        "b": "Espejo completo de los datos",
+        "c": "Doble paridad, tolerando dos fallos"
+      },
+      "correcta": "a",
+      "referencia": "§3.6 [SNIA-RAID]",
+      "explicacion": "**RAID 5** usa **paridad distribuida** y tolera el fallo de **un** disco (mínimo 3). La doble paridad (2 fallos) es RAID 6."
+    },
+    {
+      "numero": 35,
+      "pregunta": "Cuatro discos de 4 TB en RAID 5 ofrecen una capacidad útil de:",
+      "opciones": {
+        "a": "16 TB",
+        "b": "8 TB",
+        "c": "12 TB"
+      },
+      "correcta": "c",
+      "referencia": "§3.6",
+      "explicacion": "Capacidad útil = `(n−1)/n × total = 3/4 × 16 = 12 TB` (el equivalente a un disco se dedica a paridad)."
+    },
+    {
+      "numero": 36,
+      "pregunta": "¿Cuál de estas afirmaciones sobre RAID es correcta?",
+      "opciones": {
+        "a": "El RAID no sustituye a la copia de seguridad",
+        "b": "El RAID sustituye a la copia de seguridad",
+        "c": "RAID 1 no tolera ningún fallo"
+      },
+      "correcta": "a",
+      "referencia": "§3.6",
+      "explicacion": "El RAID protege frente a fallos de disco, pero **no** frente a borrados, ransomware o desastres: **no sustituye al backup**. RAID 1 (espejo) sí tolera 1 fallo."
+    },
+    {
+      "numero": 37,
+      "pregunta": "El método de asignación de espacio en disco que usa un bloque índice (inodo/MFT) con punteros a los bloques del fichero es la asignación:",
+      "opciones": {
+        "a": "Indexada",
+        "b": "Contigua",
+        "c": "Enlazada"
+      },
+      "correcta": "a",
+      "referencia": "§3.5 [SILBERSCHATZ-OS]",
+      "explicacion": "La asignación **indexada** usa un bloque índice (inodo en Unix, registro MFT en NTFS) con los punteros a los bloques. Es la de ext4, NTFS y APFS."
+    },
+    {
+      "numero": 38,
+      "pregunta": "El sistema de ficheros que emplea copy-on-write y snapshots en macOS/iOS es:",
+      "opciones": {
+        "a": "FAT32",
+        "b": "NTFS",
+        "c": "APFS"
+      },
+      "correcta": "c",
+      "referencia": "§3.5, §3.6 [APFS-REF]",
+      "explicacion": "**APFS** (Apple File System) usa copy-on-write, snapshots y clones. ZFS también usa COW; NTFS usa journaling."
+    },
+    {
+      "numero": 39,
+      "pregunta": "¿Cuál de estas NO es una propiedad obligatoria de un algoritmo según Knuth?",
+      "opciones": {
+        "a": "Finitud",
+        "b": "Recursividad",
+        "c": "Efectividad"
+      },
+      "correcta": "b",
+      "referencia": "§4.1 [KNUTH-V1]",
+      "explicacion": "Las propiedades son finitud, definición, entrada, salida y efectividad. La **recursividad** es una técnica, no un requisito (un algoritmo puede ser iterativo)."
+    },
+    {
+      "numero": 40,
+      "pregunta": "La notación que expresa la cota superior (peor caso) de la complejidad es:",
+      "opciones": {
+        "a": "O grande",
+        "b": "Omega (Ω)",
+        "c": "Theta (Θ)"
+      },
+      "correcta": "a",
+      "referencia": "§4.2 [CLRS, cap. 3]",
+      "explicacion": "**O grande** es la cota superior (no crece más que g(n)). Ω es la cota inferior y Θ la cota ajustada."
+    },
+    {
+      "numero": 41,
+      "pregunta": "Ordena de menor a mayor crecimiento estas complejidades: O(n²), O(1), O(n log n), O(log n).",
+      "opciones": {
+        "a": "O(log n) < O(1) < O(n²) < O(n log n)",
+        "b": "O(1) < O(n²) < O(log n) < O(n log n)",
+        "c": "O(1) < O(log n) < O(n log n) < O(n²)"
+      },
+      "correcta": "c",
+      "referencia": "§4.2",
+      "explicacion": "La jerarquía es O(1) < O(log n) < O(n) < O(n log n) < O(n²) < … Memorizarla es de alto rendimiento."
+    },
+    {
+      "numero": 42,
+      "pregunta": "Todo algoritmo recursivo debe tener obligatoriamente:",
+      "opciones": {
+        "a": "Un caso base que detiene la recursión",
+        "b": "Un único parámetro",
+        "c": "Más de dos llamadas recursivas"
+      },
+      "correcta": "a",
+      "referencia": "§4.3 [CLRS, cap. 4]",
+      "explicacion": "Necesita un **caso base** (que detiene) y un caso recursivo que converge hacia él. Sin caso base se produce stack overflow."
+    },
+    {
+      "numero": 43,
+      "pregunta": "¿Dónde se apilan los marcos de activación de las llamadas recursivas?",
+      "opciones": {
+        "a": "En la cola de tareas",
+        "b": "En la pila de ejecución",
+        "c": "En el montículo de prioridad"
+      },
+      "correcta": "b",
+      "referencia": "§4.3, §2.4",
+      "explicacion": "Cada llamada recursiva apila un marco de activación en la **pila de ejecución**. Una recursión que no converge la desborda (stack overflow)."
+    },
+    {
+      "numero": 44,
+      "pregunta": "¿Cuál de estos algoritmos de ordenación es O(n²) en el caso medio?",
+      "opciones": {
+        "a": "Inserción",
+        "b": "Mergesort",
+        "c": "Heapsort"
+      },
+      "correcta": "a",
+      "referencia": "§4.4.1, §4.4.4",
+      "explicacion": "La **inserción** (como burbuja y selección) es O(n²). Mergesort y heapsort son O(n log n)."
+    },
+    {
+      "numero": 45,
+      "pregunta": "¿Qué algoritmo de ordenación garantiza O(n log n) y es estable, pero requiere O(n) de memoria auxiliar?",
+      "opciones": {
+        "a": "Mergesort",
+        "b": "Quicksort",
+        "c": "Burbuja"
+      },
+      "correcta": "a",
+      "referencia": "§4.4.2 [CLRS, cap. 2]",
+      "explicacion": "**Mergesort** garantiza O(n log n) y es estable, pero necesita O(n) de memoria para la mezcla. Ideal para ordenación externa."
+    },
+    {
+      "numero": 46,
+      "pregunta": "El peor caso de quicksort es:",
+      "opciones": {
+        "a": "O(n log n)",
+        "b": "O(log n)",
+        "c": "O(n²)"
+      },
+      "correcta": "c",
+      "referencia": "§4.4.2 [CLRS, cap. 7]",
+      "explicacion": "Quicksort es O(n log n) de media, pero **O(n²)** en el peor caso (pivote sistemáticamente mal elegido). Es in-place y muy rápido en la práctica."
+    },
+    {
+      "numero": 47,
+      "pregunta": "¿Qué algoritmo de ordenación es O(n log n) garantizado e in-place (memoria O(1))?",
+      "opciones": {
+        "a": "Mergesort",
+        "b": "Inserción",
+        "c": "Heapsort"
+      },
+      "correcta": "c",
+      "referencia": "§4.4.2 [CLRS, cap. 6]",
+      "explicacion": "**Heapsort** garantiza O(n log n) y es in-place, aunque no es estable. Mergesort gasta O(n); inserción es O(n²)."
+    },
+    {
+      "numero": 48,
+      "pregunta": "El límite teórico inferior de la ordenación por comparación es:",
+      "opciones": {
+        "a": "Ω(n)",
+        "b": "Ω(n²)",
+        "c": "Ω(n log n)"
+      },
+      "correcta": "c",
+      "referencia": "§4.4.4 [CLRS, cap. 8]",
+      "explicacion": "Ningún algoritmo de ordenación **por comparación** puede bajar de **Ω(n log n)**. Los no comparativos (counting, radix) lo evitan usando el valor como índice."
+    },
+    {
+      "numero": 49,
+      "pregunta": "La búsqueda binaria tiene complejidad O(log n) pero exige que:",
+      "opciones": {
+        "a": "Los datos estén en una lista enlazada",
+        "b": "Haya menos de 100 elementos",
+        "c": "Los datos estén ordenados"
+      },
+      "correcta": "c",
+      "referencia": "§4.5.2 [KNUTH-V3]",
+      "explicacion": "La **búsqueda binaria** requiere datos **ordenados** y de acceso directo (array). Si no, hay que ordenarlos antes o usar búsqueda secuencial."
+    },
+    {
+      "numero": 50,
+      "pregunta": "Buscar un valor en un vector ordenado de 1.000.000 de elementos con búsqueda binaria requiere, como máximo, unas:",
+      "opciones": {
+        "a": "20 comparaciones",
+        "b": "1.000 comparaciones",
+        "c": "1.000.000 comparaciones"
+      },
+      "correcta": "a",
+      "referencia": "§4.5.2",
+      "explicacion": "⌈log₂(1.000.000)⌉ ≈ **20** comparaciones. La secuencial necesitaría hasta 1.000.000."
+    },
+    {
+      "numero": 51,
+      "pregunta": "La búsqueda secuencial (lineal) es la única posible cuando:",
+      "opciones": {
+        "a": "Los datos están ordenados en un array",
+        "b": "Se usa una tabla hash",
+        "c": "Los datos no están ordenados o están en una lista enlazada"
+      },
+      "correcta": "c",
+      "referencia": "§4.5.1",
+      "explicacion": "Sobre datos **no ordenados** o estructuras de acceso secuencial (listas, ficheros secuenciales), solo cabe la búsqueda secuencial O(n)."
+    },
+    {
+      "numero": 52,
+      "pregunta": "La búsqueda por interpolación, frente a la binaria, es más rápida cuando los datos:",
+      "opciones": {
+        "a": "Están ordenados y uniformemente distribuidos",
+        "b": "Están desordenados",
+        "c": "Son de tipo texto"
+      },
+      "correcta": "a",
+      "referencia": "§4.5.3 [KNUTH-V3]",
+      "explicacion": "La **interpolación** estima la posición y alcanza O(log log n) de media si los datos están ordenados y **uniformemente distribuidos**."
+    },
+    {
+      "numero": 53,
+      "pregunta": "El formato de un fichero determina:",
+      "opciones": {
+        "a": "El tamaño físico del disco",
+        "b": "La velocidad del procesador",
+        "c": "Cómo se interpretan sus bytes (su significado)"
+      },
+      "correcta": "c",
+      "referencia": "§5.1",
+      "explicacion": "El **formato** es el convenio que determina cómo deben interpretarse los bytes. Sin conocer el formato, una secuencia de bytes carece de significado."
+    },
+    {
+      "numero": 54,
+      "pregunta": "En la codificación UTF-8, la letra \"ñ\" (U+00F1) ocupa:",
+      "opciones": {
+        "a": "2 bytes",
+        "b": "1 byte",
+        "c": "4 bytes"
+      },
+      "correcta": "a",
+      "referencia": "§5.2 [UNICODE-STD]",
+      "explicacion": "Los code points entre U+0080 y U+07FF se codifican en **2 bytes** en UTF-8 (la \"ñ\" es C3 B1). Los caracteres ASCII ocupan 1 byte."
+    },
+    {
+      "numero": 55,
+      "pregunta": "El orden de bytes \"big-endian\" se caracteriza por colocar primero el byte:",
+      "opciones": {
+        "a": "Menos significativo",
+        "b": "De paridad",
+        "c": "Más significativo"
+      },
+      "correcta": "c",
+      "referencia": "§5.1",
+      "explicacion": "**Big-endian** coloca el byte más significativo primero (orden de red). Little-endian (x86) coloca primero el menos significativo."
+    },
+    {
+      "numero": 56,
+      "pregunta": "¿Qué identifica de forma fiable el tipo real de un fichero, con independencia de su extensión?",
+      "opciones": {
+        "a": "El nombre del fichero",
+        "b": "La fecha de creación",
+        "c": "El número mágico (bytes iniciales)"
+      },
+      "correcta": "c",
+      "referencia": "§5.4 [LIBMAGIC]",
+      "explicacion": "El **número mágico** (primeros bytes, p. ej. `%PDF`, `PK`, `89 50 4E 47` de PNG) identifica el formato real. La extensión es solo una convención del nombre."
+    },
+    {
+      "numero": 57,
+      "pregunta": "La normativa de la Administración (ENI) obliga, para garantizar la conservación, a usar:",
+      "opciones": {
+        "a": "Formatos propietarios cerrados",
+        "b": "Únicamente formatos comprimidos con pérdida",
+        "c": "Formatos abiertos y estándar (PDF/A, ODF, XML)"
+      },
+      "correcta": "c",
+      "referencia": "§5.3 [ENI-RD4-2010][NTI-FORMATOS]",
+      "explicacion": "El **Esquema Nacional de Interoperabilidad** exige **formatos abiertos y estándar** (PDF/A para archivo, ODF, XML/JSON/CSV)."
+    },
+    {
+      "numero": 58,
+      "pregunta": "El permiso POSIX `chmod 640` sobre un fichero significa:",
+      "opciones": {
+        "a": "Propietario rwx, grupo rwx, otros rwx",
+        "b": "Propietario r--, grupo rw-, otros rwx",
+        "c": "Propietario rw-, grupo r--, otros ---"
+      },
+      "correcta": "c",
+      "referencia": "§5.5.1 [POSIX]",
+      "explicacion": "6 = rw- (propietario), 4 = r-- (grupo), 0 = --- (otros). Es el permiso típico de un documento confidencial de solo lectura para el grupo."
+    },
+    {
+      "numero": 59,
+      "pregunta": "En el modelo de permisos NTFS basado en ACL, ante un conflicto:",
+      "opciones": {
+        "a": "Prevalece la denegación explícita",
+        "b": "Prevalece siempre el permiso",
+        "c": "Se ignoran ambas reglas"
+      },
+      "correcta": "a",
+      "referencia": "§5.5.2 [MS-NTFS]",
+      "explicacion": "En NTFS, la **denegación explícita prevalece** sobre el permiso. Las ACL admiten reglas por usuario concreto y herencia desde la carpeta padre."
+    },
+    {
+      "numero": 60,
+      "pregunta": "Cuando el control de acceso del sistema operativo no protege (p. ej. robo físico del disco), la medida adecuada es:",
+      "opciones": {
+        "a": "Cifrar la información (EFS, BitLocker, LUKS)",
+        "b": "Cambiar la extensión de los ficheros",
+        "c": "Comprimir los ficheros con ZIP"
+      },
+      "correcta": "a",
+      "referencia": "§5.5.3 [ENS-RD311]",
+      "explicacion": "Ante el robo del disco (que evita el SO), la protección es el **cifrado** a nivel de fichero (EFS) o de volumen (BitLocker, LUKS, FileVault)."
+    }
+  ],
+  "casos": [
+    {
+      "caso": 1,
+      "titulo": "El fichero del Padrón Municipal de Habitantes",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "Para la consulta de un habitante por su DNI/NIE en el fichero del Padrón (unos 3,3 millones de registros), ¿qué organización de fichero es la más adecuada?",
+          "opciones": {
+            "a": "Secuencial indexada, con un índice que permita el acceso directo por DNI/NIE.",
+            "b": "Secuencial pura, con los registros grabados por orden de fecha de alta.",
+            "c": "Enlazada, con cada registro apuntando al siguiente de su mismo distrito."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 1 · §3.2",
+          "explicacion": "La organización secuencial indexada combina el fichero de datos con índices que permiten el acceso directo por clave además del secuencial."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Por qué no bastaría una organización secuencial pura para esa consulta?",
+          "opciones": {
+            "a": "Porque no admite registros de longitud variable como el nombre y los apellidos del habitante.",
+            "b": "Porque obligaría a recorrer hasta 3,3 millones de registros en cada consulta, con coste O(n).",
+            "c": "Porque solo puede utilizarse sobre soportes de cinta y no sobre discos ni sobre SSD."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 1 · §3.2",
+          "explicacion": "En un fichero secuencial, para leer un registro concreto hay que recorrer los anteriores: el acceso es O(n), lento para consultas individuales."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Qué índice crearía sobre el DNI/NIE y con qué complejidad de acceso?",
+          "opciones": {
+            "a": "Un árbol binario de búsqueda sin equilibrar, con acceso O(1).",
+            "b": "Un montículo (heap) sobre el DNI/NIE, con acceso O(n log n).",
+            "c": "Un índice primario B+árbol, con acceso O(log n)."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 2 · §2.6.3, §3.4",
+          "explicacion": "El B+árbol es el índice estándar de ficheros y bases de datos: equilibrado, con muchas claves por nodo y acceso O(log n)."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Cuántos accesos a disco necesita, aproximadamente, localizar a un habitante con ese índice?",
+          "opciones": {
+            "a": "3-4 accesos, la altura del árbol.",
+            "b": "Unos 20 accesos, como un árbol binario.",
+            "c": "Hasta 3,3 millones, uno por registro."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 2 · §3.4",
+          "explicacion": "Al almacenar muchas claves por nodo, el B+árbol tiene pocos niveles: con 3,3 millones de registros basta con 3-4 accesos a disco."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Para la operación 2 (listar a todos los habitantes de un distrito), conviene:",
+          "opciones": {
+            "a": "Recorrer el fichero completo ordenado por DNI/NIE y filtrar por distrito.",
+            "b": "Una tabla hash sobre el DNI/NIE, que localiza cada registro en O(1).",
+            "c": "Un índice secundario sobre el distrito, para no recorrer todo el fichero."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 2 · §3.4",
+          "explicacion": "Un índice secundario por distrito permite listar los habitantes de un distrito sin recorrer los 3,3 millones de registros; el índice por DNI no sirve para esa consulta."
+        },
+        {
+          "numero": 6,
+          "pregunta": "¿Qué característica del B+árbol facilita los recorridos por rango?",
+          "opciones": {
+            "a": "Que sus nodos internos guardan los registros completos y no solo claves-guía.",
+            "b": "Que sus hojas, donde están todas las claves, están enlazadas en una lista ordenada.",
+            "c": "Que calcula la posición de cada clave con una función hash que mantiene el orden."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 2 · §2.6.3",
+          "explicacion": "En el B+árbol todas las claves de datos están en las hojas, enlazadas formando una lista ordenada; los nodos internos solo tienen claves-guía."
+        },
+        {
+          "numero": 7,
+          "pregunta": "Para validar en tiempo real, durante un alta, si un DNI ya existe, ¿qué estructura elegiría?",
+          "opciones": {
+            "a": "Una tabla hash (o el índice único sobre DNI), con coste medio O(1).",
+            "b": "Una búsqueda secuencial sobre el fichero, con coste medio O(n/2).",
+            "c": "Una lista enlazada ordenada por DNI, con coste medio O(log n)."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 3 · §2.5, §4.5.4",
+          "explicacion": "Comprobar si una clave existe en una tabla hash cuesta O(1) de media, idóneo para una validación inmediata durante el alta."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Ese coste O(1) es el del caso medio. ¿Qué coste tendría la comprobación en el peor caso, si todas las claves colisionaran en la misma posición?",
+          "opciones": {
+            "a": "O(log n).",
+            "b": "O(n).",
+            "c": "O(n²)."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 3 · §2.5",
+          "explicacion": "En una tabla hash el acceso medio es O(1), pero si todas las claves colisionan en la misma posición la búsqueda degenera a O(n)."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿En qué operaciones se nota el coste de mantener varios índices sobre el Padrón?",
+          "opciones": {
+            "a": "En las consultas por DNI/NIE, porque deben consultarse todos los índices.",
+            "b": "En los listados por distrito, porque el índice secundario se recalcula entero.",
+            "c": "En las altas, bajas y modificaciones, porque cada índice debe actualizarse."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 4 · §3.4",
+          "explicacion": "Cada índice acelera un tipo de consulta a costa de espacio y de un coste de mantenimiento en altas, bajas y modificaciones."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Cómo justificaría ese coste ante un responsable?",
+          "opciones": {
+            "a": "Las consultas, mucho más frecuentes que las altas, pasan de O(n) a O(log n) u O(1).",
+            "b": "Los índices reducen el espacio total que ocupa el fichero del Padrón en el disco.",
+            "c": "Los índices evitan tener que actualizar el fichero de datos cuando se producen altas."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 4 · §3.4",
+          "explicacion": "El balance favorece los índices: penalizan algo las altas, pero aceleran las consultas, que son mucho más frecuentes; además ocupan espacio adicional, no lo reducen."
+        }
+      ]
+    },
+    {
+      "caso": 2,
+      "titulo": "Procesamiento del censo electoral",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "El censo de 200.000 electores no cabe cómodamente en memoria y hay que conservar el orden previo por segundo apellido. ¿Qué algoritmo de ordenación elegiría?",
+          "opciones": {
+            "a": "Quicksort.",
+            "b": "Mergesort.",
+            "c": "Heapsort."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 1 · §4.4.2",
+          "explicacion": "Mergesort es O(n log n) garantizado, estable y apto para ordenación externa, porque se basa en mezclar bloques ya ordenados."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Qué propiedades justifican esa elección?",
+          "opciones": {
+            "a": "Es in situ, no necesita memoria adicional y es el más rápido en la práctica.",
+            "b": "Es O(n) en todos los casos porque usa el valor de la clave como índice.",
+            "c": "Es O(n log n) garantizado, estable y apto para ordenación externa."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 1 · §4.4.2",
+          "explicacion": "Mergesort garantiza O(n log n), es estable y se usa para ficheros que no caben en memoria; ser in situ y el más rápido en la práctica describe a quicksort, y el O(n) sin comparar claves, a los algoritmos no comparativos."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Por qué se descarta quicksort en este caso, aunque sea rápido?",
+          "opciones": {
+            "a": "Porque no es estable y degrada a O(n²) en el peor caso.",
+            "b": "Porque es estable pero necesita memoria auxiliar O(n).",
+            "c": "Porque solo ordena claves numéricas de rango acotado."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 1 · §4.4.2",
+          "explicacion": "Quicksort es O(n log n) de media pero O(n²) en el peor caso, y no es estable: no garantiza conservar el orden por segundo apellido."
+        },
+        {
+          "numero": 4,
+          "pregunta": "Heapsort también garantiza O(n log n). ¿Por qué no sirve aquí?",
+          "opciones": {
+            "a": "Porque necesita memoria auxiliar O(n).",
+            "b": "Porque no es estable.",
+            "c": "Porque degrada a O(n²) en el peor caso."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 1 · §4.4.2, §4.4.4",
+          "explicacion": "Heapsort es O(n log n) garantizado e in situ, pero no es estable, así que no conservaría el orden previo por segundo apellido."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Qué inconveniente tiene mergesort que conviene tener en cuenta al dimensionar el sistema?",
+          "opciones": {
+            "a": "Requiere memoria auxiliar O(n) para la fase de mezcla.",
+            "b": "No es estable cuando hay apellidos repetidos en el censo.",
+            "c": "Degrada a O(n²) si el censo ya viene casi ordenado."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 4 · §4.4.2",
+          "explicacion": "Mergesort es estable y garantiza O(n log n) en todos los casos, pero gasta memoria auxiliar O(n) para mezclar."
+        },
+        {
+          "numero": 6,
+          "pregunta": "¿Qué significa que un algoritmo de ordenación sea estable?",
+          "opciones": {
+            "a": "Que su tiempo de ejecución no varía con el orden inicial de los datos.",
+            "b": "Que ordena sin necesitar memoria adicional a la del propio vector.",
+            "c": "Que conserva el orden relativo de los elementos con clave igual."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 2 · §4.4",
+          "explicacion": "Un algoritmo es estable si conserva el orden relativo de los elementos con clave igual; ordenar sin memoria adicional es ser in situ."
+        },
+        {
+          "numero": 7,
+          "pregunta": "¿Por qué es relevante la estabilidad al ordenar el censo por primer apellido?",
+          "opciones": {
+            "a": "Porque sin ella el algoritmo no podría ordenar a los electores que tienen dos apellidos compuestos.",
+            "b": "Porque los electores con igual primer apellido deben mantener el orden por segundo apellido ya fijado.",
+            "c": "Porque un algoritmo estable ordena el censo en O(n), más rápido que uno que no lo es."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 2 · §4.4",
+          "explicacion": "Al ordenar por varios criterios sucesivos, solo un algoritmo estable garantiza que, a igual primer apellido, se conserve el orden por segundo apellido de la pasada anterior."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Durante la jornada electoral hay que localizar a un elector por su posición alfabética. ¿Qué algoritmo de búsqueda se aplica y qué requisito impone?",
+          "opciones": {
+            "a": "Búsqueda secuencial, O(log n), que exige que el censo esté ordenado.",
+            "b": "Búsqueda binaria, O(n), que no exige ningún orden previo del censo.",
+            "c": "Búsqueda binaria, O(log n), que exige que el censo esté ordenado."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 3 · §4.5.2",
+          "explicacion": "La búsqueda binaria divide a la mitad el espacio de búsqueda en cada paso (O(log n)), pero exige datos ordenados; la secuencial es O(n) y no requiere orden."
+        },
+        {
+          "numero": 9,
+          "pregunta": "Para 200.000 electores, ¿cuántas comparaciones necesita como máximo la búsqueda binaria, frente a la secuencial?",
+          "opciones": {
+            "a": "Unas 18, frente a hasta 200.000 de la secuencial.",
+            "b": "Unas 100.000, frente a hasta 200.000 de la secuencial.",
+            "c": "Unas 448, frente a hasta 200.000 de la secuencial."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 3 · §4.5.2",
+          "explicacion": "La binaria necesita a lo sumo ⌈log₂(200.000)⌉ = 18 comparaciones (2¹⁸ = 262.144); la secuencial puede necesitar recorrer los 200.000."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Si un proceso auxiliar fuese O(n²), ¿de qué orden sería el número de operaciones con n = 200.000?",
+          "opciones": {
+            "a": "Del orden de 4 × 10⁵ operaciones.",
+            "b": "Del orden de 4 × 10¹⁰ operaciones.",
+            "c": "Del orden de 3,5 × 10⁶ operaciones."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 4 · §4.2",
+          "explicacion": "n² = (2 × 10⁵)² = 4 × 10¹⁰; 4 × 10⁵ sería 2n, y unos 3,5 × 10⁶ corresponden a n log₂ n."
+        }
+      ]
+    },
+    {
+      "caso": 3,
+      "titulo": "Gestión documental segura en la sede electrónica",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "¿Qué formato de fichero exigiría para los documentos de archivo de la sede electrónica?",
+          "opciones": {
+            "a": "DOCX.",
+            "b": "JPEG.",
+            "c": "PDF/A."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 1 · §5.3",
+          "explicacion": "PDF/A es el formato para documentos de archivo: autocontenido, sin dependencias externas y pensado para la conservación a largo plazo."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿De qué normativa procede la obligación de usar formatos abiertos y estándar en la Administración?",
+          "opciones": {
+            "a": "Del Esquema Nacional de Interoperabilidad (RD 4/2010) y la Norma Técnica de Catálogo de estándares.",
+            "b": "Del Esquema Nacional de Seguridad y de la norma técnica de control de acceso a los ficheros.",
+            "c": "Del Reglamento de los Servicios de Prevención y de la norma técnica de digitalización."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 1 · §5.3 [ENI-RD4-2010]",
+          "explicacion": "El Esquema Nacional de Interoperabilidad y la Norma Técnica de Catálogo de estándares obligan a usar formatos abiertos y estándar para la conservación y el acceso a largo plazo."
+        },
+        {
+          "numero": 3,
+          "pregunta": "Solo el funcionario instructor debe poder modificar el expediente, su unidad consultarlo y el resto no tener acceso. ¿Qué permiso POSIX lo implementa?",
+          "opciones": {
+            "a": "chmod 750.",
+            "b": "chmod 640.",
+            "c": "chmod 664."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 2 · §5.5.1",
+          "explicacion": "640 equivale a rw- para el propietario, r-- para el grupo y --- para otros; 750 da ejecución y 664 permite escribir al grupo y leer a otros."
+        },
+        {
+          "numero": 4,
+          "pregunta": "Con ese esquema, ¿qué pueden hacer los miembros de la unidad del instructor?",
+          "opciones": {
+            "a": "Leer y modificar el expediente.",
+            "b": "Ni leer ni modificar el expediente.",
+            "c": "Leer el expediente, pero no modificarlo."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 2 · §5.5.1",
+          "explicacion": "El dígito 4 del grupo equivale a r--: solo lectura."
+        },
+        {
+          "numero": 5,
+          "pregunta": "En un entorno Windows/NTFS, un usuario de otra unidad tiene permiso de lectura a través de un grupo, pero también una denegación explícita sobre el expediente. ¿Qué ocurre?",
+          "opciones": {
+            "a": "Puede leerlo, porque el permiso del grupo prevalece sobre la denegación.",
+            "b": "No puede acceder, porque la denegación explícita prevalece sobre el permiso.",
+            "c": "Puede leerlo, porque en NTFS se aplica el permiso concedido en primer lugar."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 2 · §5.5.2",
+          "explicacion": "En el modelo ACL de NTFS, las reglas de denegación explícita prevalecen sobre las de permiso."
+        },
+        {
+          "numero": 6,
+          "pregunta": "¿Qué mecanismo emplearía para detectar si un documento se ha alterado tras su firma?",
+          "opciones": {
+            "a": "Una función hash criptográfica, como SHA-256.",
+            "b": "Una suma de verificación simple, como un CRC.",
+            "c": "Un algoritmo de compresión sin pérdida, como GZIP."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 3 · §5.3",
+          "explicacion": "Con una función hash criptográfica cualquier alteración del documento cambia radicalmente su huella, lo que permite detectar manipulaciones."
+        },
+        {
+          "numero": 7,
+          "pregunta": "¿Por qué no basta con un checksum o CRC simple para esta finalidad?",
+          "opciones": {
+            "a": "Porque no detecta los errores de transmisión ni de almacenamiento del documento.",
+            "b": "Porque solo puede calcularse sobre ficheros de texto plano y no sobre PDF/A.",
+            "c": "Porque detecta errores accidentales, pero no resiste una manipulación intencionada."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 3 · §5.3",
+          "explicacion": "Los checksums y CRC detectan errores de transmisión o almacenamiento, pero no resisten la manipulación intencionada."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Un proveedor propone calcular las huellas de los documentos con MD5. ¿Es adecuado?",
+          "opciones": {
+            "a": "No, porque MD5 se considera obsoleta por colisiones demostradas.",
+            "b": "Sí, porque MD5 es una función hash criptográfica como SHA-256.",
+            "c": "Sí, siempre que se combine con un CRC sobre el mismo documento."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 3 · §5.3",
+          "explicacion": "MD5 y SHA-1 se consideran obsoletas por colisiones demostradas; para integridad se usan SHA-256 o SHA-3."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿Qué configuración de almacenamiento permite seguir operando ante el fallo de un disco?",
+          "opciones": {
+            "a": "RAID 0, con reparto de datos, que tolera el fallo de un disco.",
+            "b": "RAID 5, con paridad distribuida, que tolera el fallo de un disco.",
+            "c": "Un único disco con journaling, que tolera el fallo de ese disco."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 4 · §3.6",
+          "explicacion": "RAID 5 reparte los datos con paridad distribuida y tolera el fallo de un disco; RAID 0 no tiene redundancia y el journaling protege la consistencia, no frente a la pérdida del disco."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Sustituye ese RAID a la copia de seguridad de los expedientes?",
+          "opciones": {
+            "a": "Sí, porque con la paridad se pueden reconstruir siempre todos los datos perdidos.",
+            "b": "Sí, siempre que se use RAID 6, que tolera el fallo simultáneo de dos discos.",
+            "c": "No, porque protege del fallo de disco, pero no de borrados, ransomware ni desastres."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 4 · §3.6",
+          "explicacion": "El RAID protege de fallos de disco, pero no de borrados, ransomware ni desastres: hace falta, además, copia de seguridad."
+        }
+      ]
+    }
+  ]
+}

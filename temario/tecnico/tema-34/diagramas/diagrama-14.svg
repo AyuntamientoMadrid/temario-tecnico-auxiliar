@@ -1,0 +1,40 @@
+<svg aria-label="Comparación de los protocolos auxiliares de la capa de red: ARP resuelve direcciones IPv4 en direcciones MAC dentro del enlace mediante difusión; ICMP notifica errores y sirve de diagnóstico con el número de protocolo 1; y el descubrimiento de vecinos de IPv6 sustituye a ARP usando ICMPv6 y multidifusión, con cinco mensajes" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.t14{font:700 10px system-ui,sans-serif;fill:#fff}.s14{font:8.5px system-ui,sans-serif;fill:#fff}.d14{font:8.5px system-ui,sans-serif;fill:#333}.h14{font:700 13px system-ui,sans-serif;fill:#0055a0}.k14{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n14{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h14" text-anchor="middle" x="340" y="20">Los tres protocolos auxiliares de la capa de red</text>
+<rect fill="#0055a0" height="118" rx="5" width="206" x="20" y="38"></rect>
+<text class="t14" text-anchor="middle" x="123" y="58">ARP — solo IPv4</text>
+<text class="s14" text-anchor="middle" x="123" y="78">IP → MAC dentro del enlace</text>
+<text class="s14" text-anchor="middle" x="123" y="94">Petición por DIFUSIÓN</text>
+<text class="s14" text-anchor="middle" x="123" y="110">Respuesta por UNIDIFUSIÓN</text>
+<text class="s14" text-anchor="middle" x="123" y="126">EtherType 0x0806, sin cabecera IP</text>
+<text class="s14" text-anchor="middle" x="123" y="146">Ataque: suplantación de ARP</text>
+<rect fill="#2d8659" height="118" rx="5" width="206" x="236" y="38"></rect>
+<text class="t14" text-anchor="middle" x="339" y="58">ICMP — protocolo IP 1</text>
+<text class="s14" text-anchor="middle" x="339" y="78">Notifica errores; NO los corrige</text>
+<text class="s14" text-anchor="middle" x="339" y="94">Viaja encapsulado en IP</text>
+<text class="s14" text-anchor="middle" x="339" y="110">Lleva la cabecera del paquete</text>
+<text class="s14" text-anchor="middle" x="339" y="126">que provocó el error</text>
+<text class="s14" text-anchor="middle" x="339" y="146">ICMPv6 es el protocolo IP 58</text>
+<rect fill="#e89822" height="118" rx="5" width="208" x="452" y="38"></rect>
+<text class="t14" text-anchor="middle" x="556" y="58">ND — solo IPv6</text>
+<text class="s14" text-anchor="middle" x="556" y="78">Sustituye a ARP y lo amplía</text>
+<text class="s14" text-anchor="middle" x="556" y="94">Viaja sobre ICMPv6</text>
+<text class="s14" text-anchor="middle" x="556" y="110">Usa MULTIDIFUSIÓN, no difusión</text>
+<text class="s14" text-anchor="middle" x="556" y="126">Cinco mensajes: RS, RA, NS, NA</text>
+<text class="s14" text-anchor="middle" x="556" y="146">y redirección · más DAD y SLAAC</text>
+<text class="k14" x="20" y="178">TIPOS ICMP DE MEMORIZACIÓN OBLIGATORIA</text>
+<rect fill="#0055a0" height="20" rx="3" width="640" x="20" y="186"></rect>
+<text class="t14" x="30" y="200">TIPO</text><text class="t14" x="110" y="200">NOMBRE</text><text class="t14" x="330" y="200">PARA QUÉ SIRVE</text>
+<rect fill="#eef3f8" height="18" width="640" x="20" y="208"></rect>
+<text class="d14" x="30" y="221">8 y 0</text><text class="d14" x="110" y="221">Solicitud y respuesta de eco</text><text class="d14" x="330" y="221">Es el comando ping</text>
+<rect fill="#fff" height="18" width="640" x="20" y="227"></rect>
+<text class="d14" x="30" y="240">3</text><text class="d14" x="110" y="240">Destino inaccesible</text><text class="d14" x="330" y="240">Código 3 puerto · código 4 fragmentación necesaria</text>
+<rect fill="#eef3f8" height="18" width="640" x="20" y="246"></rect>
+<text class="d14" x="30" y="259">5</text><text class="d14" x="110" y="259">Redirección</text><text class="d14" x="330" y="259">Un encaminador informa de una ruta mejor</text>
+<rect fill="#fff" height="18" width="640" x="20" y="265"></rect>
+<text class="d14" x="30" y="278">11</text><text class="d14" x="110" y="278">Tiempo excedido</text><text class="d14" x="330" y="278">TTL agotado: es lo que hace funcionar traceroute</text>
+<rect fill="#fdf3e3" height="34" rx="4" width="640" x="20" y="292"></rect>
+<text class="k14" text-anchor="middle" x="340" y="308">Bloquear todo ICMP en el cortafuegos es una mala práctica</text>
+<text class="d14" text-anchor="middle" x="340" y="321">Sin el tipo 3 código 4 no funciona el descubrimiento de la MTU del camino: las conexiones se abren y se cuelgan</text>
+<text class="n14" text-anchor="end" x="670" y="344">[Fuente: RFC 792, RFC 826, RFC 4861]</text>
+</svg>

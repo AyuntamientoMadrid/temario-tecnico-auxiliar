@@ -1,0 +1,1109 @@
+{
+  "tema": 26,
+  "bloque": "tecnico",
+  "titulo": "Almacenamiento, virtualización y copias de seguridad",
+  "enunciado_oficial": "Sistemas de almacenamiento y su virtualización. Políticas, sistemas y procedimientos de backup y su recuperación. Backup de sistemas físicos y virtuales.",
+  "calificacion": "+1 acierto, -1/3 error, 0 en blanco (BOAM 10.032, base 5.2)",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Qué caracteriza al almacenamiento de conexión directa (DAS)?",
+      "opciones": {
+        "a": "Está conectado directamente a un servidor por un bus local y no se comparte con otros servidores",
+        "b": "Sirve ficheros por la red IP mediante NFS o SMB a muchos clientes simultáneos",
+        "c": "Requiere una red dedicada de Fibre Channel con conmutadores y zoning"
+      },
+      "correcta": "a",
+      "referencia": "§1.1.1 [SNIA-DICT]",
+      "explicacion": "El DAS emplea interfaces SAS, SATA o NVMe sin red de almacenamiento de por medio; su limitación esencial no es el rendimiento, que es excelente, sino la imposibilidad de compartirlo."
+    },
+    {
+      "numero": 2,
+      "pregunta": "En una cabina NAS, ¿quién gestiona el sistema de ficheros?",
+      "opciones": {
+        "a": "El servidor cliente, que formatea el volumen recibido",
+        "b": "La propia cabina, que publica carpetas y ficheros a los clientes",
+        "c": "El conmutador de la red de almacenamiento"
+      },
+      "correcta": "b",
+      "referencia": "§1.1.2 [SNIA-DICT]",
+      "explicacion": "Es la diferencia estructural con la SAN: si se sirven ficheros, el sistema de ficheros vive en la cabina; si se sirven bloques, lo pone el servidor."
+    },
+    {
+      "numero": 3,
+      "pregunta": "¿Qué unidad presenta una SAN a los servidores?",
+      "opciones": {
+        "a": "Una carpeta compartida con permisos por usuario",
+        "b": "Un contenedor de objetos accesible por HTTP",
+        "c": "Un LUN, que el servidor ve como si fuera un disco propio"
+      },
+      "correcta": "c",
+      "referencia": "§1.1.2 [SNIA-DICT] [T10-SCSI]",
+      "explicacion": "El LUN (<em>Logical Unit Number</em>) es la unidad lógica de bloque que la cabina presenta; el servidor le aplica su tabla de particiones y su sistema de ficheros."
+    },
+    {
+      "numero": 4,
+      "pregunta": "¿Dónde se configura el zoning en una red de almacenamiento Fibre Channel?",
+      "opciones": {
+        "a": "En la controladora RAID del servidor",
+        "b": "En el conmutador de la SAN",
+        "c": "En el sistema operativo invitado de cada máquina virtual"
+      },
+      "correcta": "b",
+      "referencia": "§1.1.2 [T11-FC] [NIST-SP800-209]",
+      "explicacion": "El zoning se configura en el conmutador y decide qué iniciador ve qué objetivo; el LUN masking, que es complementario, se configura en la cabina y decide qué unidad lógica ve cada servidor."
+    },
+    {
+      "numero": 5,
+      "pregunta": "¿Cuál de estos rasgos define al almacenamiento de objetos?",
+      "opciones": {
+        "a": "Un árbol jerárquico de directorios con permisos heredados",
+        "b": "Acceso mediante comandos SCSI encapsulados en TCP",
+        "c": "Espacio de nombres plano, metadatos ricos y acceso por API REST sobre HTTP"
+      },
+      "correcta": "c",
+      "referencia": "§1.1.3 [SNIA-DICT] [RFC9110]",
+      "explicacion": "El objeto se compone de contenido, metadatos extensibles e identificador único, y se guarda en contenedores sin jerarquía real de carpetas."
+    },
+    {
+      "numero": 6,
+      "pregunta": "¿Para cuál de estos usos NO es adecuado el almacenamiento de objetos?",
+      "opciones": {
+        "a": "Alojar el disco de una base de datos transaccional en producción",
+        "b": "Guardar copias de seguridad inmutables con retención WORM",
+        "c": "Conservar documentos digitalizados del archivo electrónico"
+      },
+      "correcta": "a",
+      "referencia": "§1.1.3 [SNIA-DICT] [S3-LOCK]",
+      "explicacion": "El objeto no admite modificación parcial —se escribe una versión nueva— y su latencia es la de una petición HTTP, lo que lo descarta para cargas transaccionales."
+    },
+    {
+      "numero": 7,
+      "pregunta": "¿Qué es una cabina de almacenamiento unificado?",
+      "opciones": {
+        "a": "Una cabina que solo admite un protocolo, elegido en la instalación",
+        "b": "Un conjunto de cabinas idénticas replicadas entre dos centros de proceso de datos",
+        "c": "Una cabina que ofrece simultáneamente acceso por bloque, por fichero y, en muchos casos, por objeto sobre el mismo pool"
+      },
+      "correcta": "c",
+      "referencia": "§1.1.3 [SNIA-DICT]",
+      "explicacion": "Su ventaja es la consolidación; su riesgo, convertirse en un punto único de fallo de servicios muy distintos, lo que obliga a que las copias no residan en ella."
+    },
+    {
+      "numero": 8,
+      "pregunta": "¿Qué puerto TCP utiliza iSCSI de forma estándar?",
+      "opciones": {
+        "a": "3260",
+        "b": "2049",
+        "c": "445"
+      },
+      "correcta": "a",
+      "referencia": "§1.2.1 [RFC7143]",
+      "explicacion": "El 2049 corresponde a NFS y el 445 a SMB. Los extremos iSCSI se nombran con IQN y la autenticación estándar es CHAP."
+    },
+    {
+      "numero": 9,
+      "pregunta": "¿Qué identificador emplea Fibre Channel para nombrar sus puertos?",
+      "opciones": {
+        "a": "IQN",
+        "b": "WWN",
+        "c": "NQN"
+      },
+      "correcta": "b",
+      "referencia": "§1.2.1 [T11-FC]",
+      "explicacion": "El WWN (<em>World Wide Name</em>) es un identificador único de 64 bits, análogo funcional de la dirección MAC. El IQN identifica extremos iSCSI y el NQN, extremos NVMe over Fabrics."
+    },
+    {
+      "numero": 10,
+      "pregunta": "¿Qué aporta NVMe over Fabrics frente a iSCSI?",
+      "opciones": {
+        "a": "Permite servir ficheros además de bloques",
+        "b": "Elimina la necesidad de red, al ser una conexión directa",
+        "c": "Transporta el juego de comandos NVMe, con colas paralelas y menor latencia, sobre RDMA, Fibre Channel o TCP"
+      },
+      "correcta": "c",
+      "referencia": "§1.2.1 [NVME-OF]",
+      "explicacion": "Sustituye el modelo de cola única de SCSI por miles de colas paralelas, diseñado para memoria flash."
+    },
+    {
+      "numero": 11,
+      "pregunta": "¿Qué versión de NFS incorpora sesiones con estado, seguridad Kerberos integrada y pNFS?",
+      "opciones": {
+        "a": "NFS versión 2",
+        "b": "NFS versión 4.1",
+        "c": "NFS versión 3"
+      },
+      "correcta": "b",
+      "referencia": "§1.2.1 [RFC8881] [RFC1813]",
+      "explicacion": "Definida en el RFC 8881, unifica montaje y bloqueo en un solo protocolo sobre el puerto 2049, frente a la versión 3, sin estado y dependiente de protocolos auxiliares."
+    },
+    {
+      "numero": 12,
+      "pregunta": "¿Cuál de estas funciones es propia de SMB 3.x?",
+      "opciones": {
+        "a": "Cifrado en tránsito, multichannel y continuidad transparente ante la caída de un nodo",
+        "b": "Encapsular comandos SCSI para presentar LUN a los servidores",
+        "c": "Calcular la ubicación de los objetos mediante el algoritmo CRUSH"
+      },
+      "correcta": "a",
+      "referencia": "§1.2.1 [MS-SMB2]",
+      "explicacion": "SMB 3.x opera sobre el puerto 445 y se integra con la autenticación de dominio y las listas de control de acceso."
+    },
+    {
+      "numero": 13,
+      "pregunta": "En un conjunto RAID 5 de 8 discos de 4 TB, ¿cuál es la capacidad útil aproximada y cuántos discos tolera?",
+      "opciones": {
+        "a": "32 TB y tolera 1 disco",
+        "b": "16 TB y tolera 2 discos",
+        "c": "28 TB y tolera 1 disco"
+      },
+      "correcta": "c",
+      "referencia": "§1.2.2 [PATTERSON88]",
+      "explicacion": "RAID 5 ofrece una capacidad útil de n−1 discos: (8−1) × 4 = 28 TB, con tolerancia al fallo de un solo disco."
+    },
+    {
+      "numero": 14,
+      "pregunta": "¿Qué nivel RAID ofrece doble paridad distribuida?",
+      "opciones": {
+        "a": "RAID 6",
+        "b": "RAID 5",
+        "c": "RAID 10"
+      },
+      "correcta": "a",
+      "referencia": "§1.2.2 [PATTERSON88]",
+      "explicacion": "RAID 6 tolera el fallo simultáneo de dos discos y ofrece una capacidad útil de n−2, lo que lo ha convertido en el mínimo razonable con discos de gran capacidad por el riesgo durante la reconstrucción."
+    },
+    {
+      "numero": 15,
+      "pregunta": "¿Qué nivel RAID conviene a una base de datos con escritura muy intensa?",
+      "opciones": {
+        "a": "RAID 5, porque desperdicia menos capacidad",
+        "b": "RAID 10, porque su penalización de escritura es de solo dos operaciones",
+        "c": "RAID 0, porque es el más rápido en todos los escenarios"
+      },
+      "correcta": "b",
+      "referencia": "§1.2.2 [PATTERSON88]",
+      "explicacion": "RAID 5 exige cuatro operaciones físicas por escritura y RAID 6 seis; además, RAID 0 carece por completo de tolerancia a fallos."
+    },
+    {
+      "numero": 16,
+      "pregunta": "¿Cuál es el riesgo característico del aprovisionamiento fino (thin provisioning)?",
+      "opciones": {
+        "a": "Que el servidor no pueda ampliar el volumen en caliente",
+        "b": "Que obligue a reservar toda la capacidad desde el primer momento",
+        "c": "Que, si el pool se llena físicamente, fallen a la vez todos los volúmenes que dependen de él"
+      },
+      "correcta": "c",
+      "referencia": "§1.2.2 [SNIA-DICT] [T10-SCSI]",
+      "explicacion": "El sobreaprovisionamiento exige umbrales de alerta y un procedimiento de ampliación; la orden UNMAP permite devolver al pool el espacio liberado."
+    },
+    {
+      "numero": 17,
+      "pregunta": "¿Qué diferencia hay entre deduplicación en origen y en destino?",
+      "opciones": {
+        "a": "En origen se ejecuta en el cliente, con lo que se reduce también el tráfico de red; en destino, en la cabina o el repositorio",
+        "b": "En origen se ejecuta después de escribir y en destino antes de escribir",
+        "c": "En origen solo se aplica a ficheros y en destino solo a bloques"
+      },
+      "correcta": "a",
+      "referencia": "§1.2.2 [SNIA-DICT]",
+      "explicacion": "La distinción entre antes o después de escribir es la de deduplicación en línea (inline) frente a posproceso, que es un eje diferente."
+    },
+    {
+      "numero": 18,
+      "pregunta": "¿En qué consiste la virtualización del almacenamiento?",
+      "opciones": {
+        "a": "En ejecutar varios sistemas operativos sobre un mismo servidor mediante un hipervisor",
+        "b": "En sustituir los discos magnéticos por unidades de estado sólido",
+        "c": "En interponer una capa de abstracción que presenta volúmenes lógicos independientes del hardware físico que los soporta"
+      },
+      "correcta": "c",
+      "referencia": "§2.1 [SNIA-DICT]",
+      "explicacion": "No debe confundirse con la virtualización de servidores, que es su principal consumidor pero una disciplina distinta."
+    },
+    {
+      "numero": 19,
+      "pregunta": "LVM en Linux es un ejemplo canónico de virtualización de almacenamiento…",
+      "opciones": {
+        "a": "Basada en la cabina",
+        "b": "Basada en el host",
+        "c": "Basada en la red"
+      },
+      "correcta": "b",
+      "referencia": "§2.1.1 [LVM-LINUX]",
+      "explicacion": "El gestor de volúmenes lógicos se ejecuta en el sistema operativo del servidor y agrupa volúmenes físicos en grupos de volúmenes de los que talla volúmenes lógicos ampliables en caliente."
+    },
+    {
+      "numero": 20,
+      "pregunta": "Se quiere unificar cabinas de fabricantes distintos y migrar los datos sin parar el servicio. ¿Qué modelo de virtualización encaja mejor?",
+      "opciones": {
+        "a": "Basada en la red, mediante un appliance o conmutador virtualizador situado en el fabric",
+        "b": "Basada en el host, instalando un gestor de volúmenes en cada servidor",
+        "c": "Basada en la cabina, activando los pools de una de ellas"
+      },
+      "correcta": "a",
+      "referencia": "§2.1.1 [SNIA-DICT]",
+      "explicacion": "Es el modelo que mejor resuelve la heterogeneidad; su precio es la latencia añadida al operar en banda y la necesidad de duplicar el dispositivo."
+    },
+    {
+      "numero": 21,
+      "pregunta": "En una capa de virtualización que trabaja «fuera de banda» (out-of-band)…",
+      "opciones": {
+        "a": "Todas las lecturas y escrituras atraviesan la capa de virtualización",
+        "b": "La capa se ejecuta necesariamente dentro de la cabina de almacenamiento",
+        "c": "La capa gestiona solo los metadatos y los datos van directamente del servidor a la cabina"
+      },
+      "correcta": "c",
+      "referencia": "§2.1 [SNIA-DICT]",
+      "explicacion": "Por eso no añade latencia, a costa de exigir software específico en cada servidor. El modelo en banda es el contrario."
+    },
+    {
+      "numero": 22,
+      "pregunta": "¿Cuál es el rasgo definitorio del almacenamiento definido por software (SDS)?",
+      "opciones": {
+        "a": "Que se gestiona mediante una consola gráfica en lugar de por línea de órdenes",
+        "b": "Que separa el plano de control, basado en políticas, del plano de datos, y se ejecuta sobre hardware estándar",
+        "c": "Que sustituye el RAID por una controladora propietaria de doble paridad"
+      },
+      "correcta": "b",
+      "referencia": "§2.1.2 [SNIA-SDS]",
+      "explicacion": "No basta con que un producto se gobierne por software: lo distintivo es que la inteligencia deja de residir en hardware propietario y el crecimiento es horizontal."
+    },
+    {
+      "numero": 23,
+      "pregunta": "¿Cómo protege el dato una solución SDS típica?",
+      "opciones": {
+        "a": "Mediante réplica de varias copias entre nodos o codificación de borrado (erasure coding)",
+        "b": "Mediante una única controladora RAID compartida por todos los nodos",
+        "c": "Mediante cintas WORM insertadas en cada nodo"
+      },
+      "correcta": "a",
+      "referencia": "§2.1.2 [CEPH] [SNIA-SDS]",
+      "explicacion": "La protección se hace por software y puede tolerar la caída de discos, de nodos o incluso de armarios completos, según la política definida."
+    },
+    {
+      "numero": 24,
+      "pregunta": "¿Qué elimina una infraestructura hiperconvergente (HCI) respecto de la arquitectura clásica de tres capas?",
+      "opciones": {
+        "a": "La necesidad de hipervisor, al ejecutar las aplicaciones directamente sobre el hardware",
+        "b": "La necesidad de copias de seguridad, al replicar los bloques entre nodos",
+        "c": "La cabina de almacenamiento dedicada, sustituida por los discos locales de los nodos agregados por software"
+      },
+      "correcta": "c",
+      "referencia": "§2.2.1 [VSAN] [NUTANIX]",
+      "explicacion": "Con ella desaparecen también el fabric Fibre Channel, el zoning y el LUN masking, y la gestión se unifica en una sola consola."
+    },
+    {
+      "numero": 25,
+      "pregunta": "¿Cuál es la unidad de crecimiento de una infraestructura hiperconvergente?",
+      "opciones": {
+        "a": "El nodo, que aporta a la vez cómputo, memoria y capacidad",
+        "b": "La bandeja de discos de la cabina",
+        "c": "El conmutador de la red de almacenamiento"
+      },
+      "correcta": "a",
+      "referencia": "§2.2.1 [VSAN] [S2D]",
+      "explicacion": "Es su virtud —crecimiento incremental y predecible— y su limitación, porque ambos recursos crecen acoplados, algo que se mitiga con nodos solo de almacenamiento."
+    },
+    {
+      "numero": 26,
+      "pregunta": "¿Por qué debe reservarse espacio libre sin usar en el pool de un clúster hiperconvergente?",
+      "opciones": {
+        "a": "Porque el aprovisionamiento fino lo exige para poder crear volúmenes nuevos",
+        "b": "Porque el sistema necesita sitio para reconstruir los datos cuando cae un disco o un nodo",
+        "c": "Porque el hipervisor guarda ahí los ficheros de configuración del clúster"
+      },
+      "correcta": "b",
+      "referencia": "§2.2.1 [VSAN] [NUTANIX]",
+      "explicacion": "Llenar el pool al límite deja al clúster sin capacidad de autorrepararse; es el error de dimensionado más frecuente en estas arquitecturas."
+    },
+    {
+      "numero": 27,
+      "pregunta": "¿Cuál de estas causas de pérdida de datos NO queda cubierta por un RAID 6?",
+      "opciones": {
+        "a": "El fallo simultáneo de dos discos del conjunto",
+        "b": "El borrado accidental de una carpeta por un usuario",
+        "c": "El fallo de un único disco durante la reconstrucción de otro"
+      },
+      "correcta": "b",
+      "referencia": "§3.1 [ISO27002] [NIST-SP800-209]",
+      "explicacion": "El RAID protege del fallo físico del disco, pero replica al instante el borrado, la corrupción lógica y el cifrado por ransomware: no es una copia de seguridad."
+    },
+    {
+      "numero": 28,
+      "pregunta": "¿Qué determina el RPO en una política de copias?",
+      "opciones": {
+        "a": "La tecnología de recuperación que hay que emplear",
+        "b": "El número de emplazamientos alternativos necesarios",
+        "c": "La frecuencia con que hay que realizar las copias"
+      },
+      "correcta": "c",
+      "referencia": "§3.1.1 [ISO22301] [NIST-SP800-34]",
+      "explicacion": "El RPO expresa cuántos datos, medidos en tiempo, se acepta perder; si es de 4 horas, no puede copiarse una sola vez al día."
+    },
+    {
+      "numero": 29,
+      "pregunta": "Un servicio tiene un RTO de 15 minutos. ¿Qué solución es coherente?",
+      "opciones": {
+        "a": "Disponer de una réplica encendible en el emplazamiento alternativo",
+        "b": "Realizar una copia completa diaria en cinta y custodiarla fuera del edificio",
+        "c": "Ampliar la retención de las copias diarias a 30 días"
+      },
+      "correcta": "a",
+      "referencia": "§3.1.1 [NIST-SP800-34]",
+      "explicacion": "El RTO determina la tecnología de recuperación: restaurar volúmenes grandes desde cinta se mide en horas, no en minutos. La retención no influye en el tiempo de recuperación."
+    },
+    {
+      "numero": 30,
+      "pregunta": "¿Qué significa MTD (o MTPD) en la planificación de la continuidad?",
+      "opciones": {
+        "a": "El tiempo medio de reparación de un componente averiado",
+        "b": "El tiempo máximo que el servicio puede estar interrumpido antes de que el daño sea inasumible",
+        "c": "El intervalo disponible para ejecutar la copia sin degradar el servicio"
+      },
+      "correcta": "b",
+      "referencia": "§3.1.1 [ISO22301]",
+      "explicacion": "El RTO debe fijarse siempre por debajo del MTD. El tiempo medio de reparación es el MTTR y el intervalo de ejecución es la ventana de copia."
+    },
+    {
+      "numero": 31,
+      "pregunta": "¿En qué consiste la regla 3-2-1?",
+      "opciones": {
+        "a": "Tres copias de los datos, en dos soportes distintos, con una fuera de la ubicación",
+        "b": "Tres copias diarias, dos semanales y una mensual",
+        "c": "Tres emplazamientos, dos redes y un único administrador responsable"
+      },
+      "correcta": "a",
+      "referencia": "§3.1.2 [ISO27002] [NIST-SP800-209]",
+      "explicacion": "Las tres copias incluyen el propio original más dos copias adicionales; su extensión 3-2-1-1-0 añade una copia inmutable o fuera de línea y cero errores de verificación."
+    },
+    {
+      "numero": 32,
+      "pregunta": "¿Qué añade la regla 3-2-1-1-0 respecto de la clásica 3-2-1?",
+      "opciones": {
+        "a": "Una copia adicional en la misma cabina y un informe mensual",
+        "b": "Un servidor de copia adicional y cero agentes instalados",
+        "c": "Una copia inmutable o fuera de línea y la exigencia de cero errores tras la verificación"
+      },
+      "correcta": "c",
+      "referencia": "§3.1.2 [NIST-SP800-209]",
+      "explicacion": "El añadido responde al ransomware moderno, que busca y cifra primero las copias y el catálogo para impedir la recuperación."
+    },
+    {
+      "numero": 33,
+      "pregunta": "¿Cumple la regla 3-2-1 una copia guardada en la misma cabina que aloja los datos originales?",
+      "opciones": {
+        "a": "Sí, siempre que se guarde en un pool distinto del original",
+        "b": "No, porque comparte el fallo de la cabina, el incendio de la sala y el alcance de un atacante",
+        "c": "Sí, siempre que la copia esté cifrada"
+      },
+      "correcta": "b",
+      "referencia": "§3.1.2 [ISO27002]",
+      "explicacion": "La independencia respecto del original es justamente lo que distingue una copia de seguridad de una instantánea."
+    },
+    {
+      "numero": 34,
+      "pregunta": "En el esquema de retención GFS, ¿qué representa el nivel «abuelo»?",
+      "opciones": {
+        "a": "La copia mensual, conservada típicamente durante doce meses",
+        "b": "La copia diaria, conservada entre siete y catorce días",
+        "c": "La copia inmutable custodiada por un tercero"
+      },
+      "correcta": "a",
+      "referencia": "§3.1.2 [ISO27002]",
+      "explicacion": "El «hijo» es la copia diaria, el «padre» la semanal y el «abuelo» la mensual, con vigencia creciente; por encima suele añadirse una copia anual."
+    },
+    {
+      "numero": 35,
+      "pregunta": "¿Por qué la retención de las copias no puede ser indefinida cuando contienen datos personales?",
+      "opciones": {
+        "a": "Porque el software de copia no admite retenciones superiores a un año",
+        "b": "Porque el catálogo perdería la referencia de las copias antiguas",
+        "c": "Porque el artículo 5.1.e del RGPD impone la limitación del plazo de conservación"
+      },
+      "correcta": "c",
+      "referencia": "§3.1.2 [RGPD] [NIST-SP800-88]",
+      "explicacion": "La retención debe estar justificada y documentada, y su vencimiento debe ejecutarse con destrucción segura del soporte."
+    },
+    {
+      "numero": 36,
+      "pregunta": "Una copia incremental guarda…",
+      "opciones": {
+        "a": "Todo lo que ha cambiado desde la última copia completa",
+        "b": "Todo lo que ha cambiado desde la copia anterior, sea del tipo que sea",
+        "c": "Todos los datos seleccionados, con independencia de si han cambiado"
+      },
+      "correcta": "b",
+      "referencia": "§3.2.1 [NIST-SP800-34]",
+      "explicacion": "Es la más rápida y la que menos ocupa, pero la restauración exige la completa y toda la cadena de incrementales posteriores en orden."
+    },
+    {
+      "numero": 37,
+      "pregunta": "Se hace copia completa el domingo y diferenciales de lunes a sábado. ¿Cuántas piezas hacen falta para restaurar el estado del jueves?",
+      "opciones": {
+        "a": "Cinco: la completa y las cuatro diferenciales",
+        "b": "Una: solo la diferencial del jueves",
+        "c": "Dos: la completa del domingo y la diferencial del jueves"
+      },
+      "correcta": "c",
+      "referencia": "§3.2.1 [NIST-SP800-34]",
+      "explicacion": "La diferencial acumula todos los cambios desde la última completa, de modo que basta con la última. Con incrementales harían falta cinco piezas encadenadas."
+    },
+    {
+      "numero": 38,
+      "pregunta": "¿Qué es una copia completa sintética?",
+      "opciones": {
+        "a": "Una completa que el software fabrica en el repositorio combinando la completa anterior con los incrementales, sin leer el sistema de origen",
+        "b": "Una completa que se realiza con el servicio detenido para garantizar la consistencia",
+        "c": "Una completa cifrada y firmada digitalmente antes de enviarla a la nube"
+      },
+      "correcta": "a",
+      "referencia": "§3.2.1 [VEEAM-DOC]",
+      "explicacion": "Es la base del modelo incremental para siempre: no consume ventana ni carga la producción y deja un punto de restauración de una sola pieza."
+    },
+    {
+      "numero": 39,
+      "pregunta": "¿Qué técnica ofrece el RPO más bajo posible?",
+      "opciones": {
+        "a": "La copia diferencial cada seis horas",
+        "b": "La protección continua de datos (CDP), que registra cada escritura según se produce",
+        "c": "La copia completa sintética diaria"
+      },
+      "correcta": "b",
+      "referencia": "§3.2.1 [NIST-SP800-34]",
+      "explicacion": "Permite volver a prácticamente cualquier instante, con un RPO de segundos, a costa de un consumo de recursos considerablemente mayor."
+    },
+    {
+      "numero": 40,
+      "pregunta": "¿Qué nivel de consistencia obtiene una copia realizada sin coordinación alguna con la aplicación?",
+      "opciones": {
+        "a": "Consistente con la aplicación",
+        "b": "Consistente con el sistema de ficheros",
+        "c": "Consistente con el bloque (crash-consistent), equivalente a haber desenchufado el servidor"
+      },
+      "correcta": "c",
+      "referencia": "§4.1 [MS-VSS] [VMW-VADP]",
+      "explicacion": "Los bloques están, pero puede faltar lo que había en memoria, de modo que la base de datos restaurada podría necesitar recuperación o no abrir."
+    },
+    {
+      "numero": 41,
+      "pregunta": "¿Qué caracteriza a una copia inmutable con bloqueo de objetos en modo de cumplimiento?",
+      "opciones": {
+        "a": "Que solo puede leerla el usuario que la creó",
+        "b": "Que no puede modificarse ni borrarse por nadie, ni siquiera por la cuenta administradora, hasta que expire la retención",
+        "c": "Que se guarda automáticamente en un soporte extraíble"
+      },
+      "correcta": "b",
+      "referencia": "§3.2.2 [S3-LOCK]",
+      "explicacion": "En el modo de gobernanza, en cambio, un usuario con un permiso especial sí puede levantar la retención antes de tiempo."
+    },
+    {
+      "numero": 42,
+      "pregunta": "¿Cuál es la ventaja distintiva de la cinta LTO como soporte de copia?",
+      "opciones": {
+        "a": "Que un cartucho extraído de la biblioteca queda físicamente inalcanzable por la red, con coste por terabyte mínimo",
+        "b": "Que ofrece la restauración más rápida de todos los soportes",
+        "c": "Que permite modificar los datos ya escritos sin reescribir el cartucho"
+      },
+      "correcta": "a",
+      "referencia": "§3.2.2 [LTO]",
+      "explicacion": "Su acceso es secuencial, por lo que la restauración es lenta; existen además cartuchos WORM que impiden por hardware la reescritura."
+    },
+    {
+      "numero": 43,
+      "pregunta": "¿Qué diferencia hay entre una copia inmutable y una copia fuera de línea?",
+      "opciones": {
+        "a": "Ninguna: son dos nombres del mismo mecanismo",
+        "b": "La inmutable se guarda en cinta y la fuera de línea, en disco",
+        "c": "La inmutable está conectada pero no puede modificarse durante la retención; la fuera de línea es inalcanzable porque no existe camino hasta ella"
+      },
+      "correcta": "c",
+      "referencia": "§3.2.2 [S3-LOCK] [NIST-SP800-209]",
+      "explicacion": "Ambas persiguen el mismo fin: que un atacante con credenciales de administrador no pueda destruir la copia."
+    },
+    {
+      "numero": 44,
+      "pregunta": "¿Cuál es la pieza más crítica de la arquitectura de una solución de copias de seguridad?",
+      "opciones": {
+        "a": "El agente instalado en cada sistema de origen",
+        "b": "El catálogo del servidor de control, que indexa qué hay en cada copia",
+        "c": "La consola gráfica de administración"
+      },
+      "correcta": "b",
+      "referencia": "§3.3.1 [NIST-SP800-34]",
+      "explicacion": "Sin catálogo la restauración granular es casi imposible, por lo que debe copiarse aparte y todo plan de recuperación debe contemplar su reconstrucción como primer paso."
+    },
+    {
+      "numero": 45,
+      "pregunta": "¿Para qué sirve el protocolo NDMP?",
+      "opciones": {
+        "a": "Para copiar una cabina NAS enviando sus datos directamente al destino sin pasar por un servidor intermedio",
+        "b": "Para cifrar el tráfico entre el agente y el servidor de copia",
+        "c": "Para deduplicar los bloques en el cliente antes de enviarlos"
+      },
+      "correcta": "a",
+      "referencia": "§3.3.1 [NDMP]",
+      "explicacion": "Preserva además los atributos y permisos propios del sistema de ficheros de la cabina."
+    },
+    {
+      "numero": 46,
+      "pregunta": "¿Cuál es la única verificación que mide el RTO real de un servicio?",
+      "opciones": {
+        "a": "La comprobación de que el trabajo de copia ha terminado sin errores",
+        "b": "El cálculo de la suma de verificación de los bloques escritos",
+        "c": "La prueba de restauración real, documentada y cronometrada"
+      },
+      "correcta": "c",
+      "referencia": "§3.3.2 [ENS] [RGPD]",
+      "explicacion": "Que un trabajo termine «con éxito» no significa que la copia sirva; el ENS exige probar el plan y el RGPD, en su artículo 32.1.d, la verificación regular de la eficacia."
+    },
+    {
+      "numero": 47,
+      "pregunta": "¿Qué relación hay entre el plan de recuperación ante desastres (DRP) y el plan de continuidad del negocio (BCP)?",
+      "opciones": {
+        "a": "El DRP es la parte TIC del BCP, que es más amplio y abarca personas, sedes, procesos y proveedores",
+        "b": "Son sinónimos y la norma emplea ambos términos indistintamente",
+        "c": "El BCP es la parte técnica y el DRP el documento de gestión"
+      },
+      "correcta": "a",
+      "referencia": "§3.3.2 [ISO27031] [NIST-SP800-34]",
+      "explicacion": "Su articulación se describe en la norma ISO/IEC 27031 y en la guía NIST SP 800-34."
+    },
+    {
+      "numero": 48,
+      "pregunta": "Un emplazamiento alternativo que dispone de espacio, energía y comunicaciones, pero sin equipos ni datos, se denomina…",
+      "opciones": {
+        "a": "Emplazamiento caliente (hot site)",
+        "b": "Emplazamiento frío (cold site)",
+        "c": "Emplazamiento templado (warm site)"
+      },
+      "correcta": "b",
+      "referencia": "§3.3.2 [NIST-SP800-34]",
+      "explicacion": "Su activación se mide en días o semanas y su coste es bajo; el templado tiene el equipamiento instalado y datos parcialmente actualizados, y el caliente permite conmutar en minutos u horas."
+    },
+    {
+      "numero": 49,
+      "pregunta": "En Windows, ¿qué papel desempeña el Servicio de instantáneas de volumen (VSS)?",
+      "opciones": {
+        "a": "Deduplicar los bloques del volumen antes de enviarlos al repositorio",
+        "b": "Cifrar la copia en tránsito hacia el servidor de control",
+        "c": "Coordinar solicitante, escritores y proveedor para lograr una copia consistente con la aplicación"
+      },
+      "correcta": "c",
+      "referencia": "§4.1 [MS-VSS]",
+      "explicacion": "Los escritores —SQL Server, Exchange, Active Directory— vacían sus búferes y congelan sus escrituras unos segundos mientras se crea la instantánea."
+    },
+    {
+      "numero": 50,
+      "pregunta": "¿Qué requisitos exige una recuperación bare-metal sobre hardware distinto del original?",
+      "opciones": {
+        "a": "Una copia de imagen o volumen, un soporte de arranque de rescate y la inyección de controladores de almacenamiento y red",
+        "b": "Una copia de ficheros y la reinstalación previa del sistema operativo",
+        "c": "Una réplica síncrona del volumen y un sistema de ficheros de clúster"
+      },
+      "correcta": "a",
+      "referencia": "§4.1.1 [NIST-SP800-34]",
+      "explicacion": "Sin esos controladores el sistema restaurado no arranca; restaurar una copia de ficheros sobre un equipo vacío no reconstruye un sistema arrancable."
+    },
+    {
+      "numero": 51,
+      "pregunta": "En la copia sin agente de una máquina virtual, ¿de dónde obtiene los datos el software de copia?",
+      "opciones": {
+        "a": "De un agente ligero instalado temporalmente en el sistema invitado",
+        "b": "Del registro de transacciones de la aplicación",
+        "c": "Del hipervisor, a través de su API de protección de datos, leyendo los discos virtuales"
+      },
+      "correcta": "c",
+      "referencia": "§4.2.1 [VMW-VADP] [HYPERV-RCT]",
+      "explicacion": "En vSphere ese conjunto de interfaces se conoce como VADP; en Hyper-V se apoya en los escritores VSS del anfitrión y en RCT."
+    },
+    {
+      "numero": 52,
+      "pregunta": "¿Qué modo de transporte de la copia sin agente lee directamente el LUN de la cabina sin cargar la red IP?",
+      "opciones": {
+        "a": "NBDSSL",
+        "b": "SAN, también llamado LAN-free",
+        "c": "HotAdd"
+      },
+      "correcta": "b",
+      "referencia": "§4.2.1 [VMW-VADP]",
+      "explicacion": "Exige un proxy con acceso a la red de almacenamiento. HotAdd conecta en caliente los discos al proxy virtual y NBD/NBDSSL usa la red de gestión del anfitrión, más lenta pero siempre disponible."
+    },
+    {
+      "numero": 53,
+      "pregunta": "Una instantánea de máquina virtual mantenida durante meses provoca principalmente…",
+      "opciones": {
+        "a": "Crecimiento incontrolado del fichero delta, degradación del rendimiento y una consolidación muy costosa",
+        "b": "La pérdida del seguimiento de bloques modificados del hipervisor",
+        "c": "La imposibilidad de migrar la máquina virtual entre anfitriones"
+      },
+      "correcta": "a",
+      "referencia": "§4.2.2 [VMW-SNAP]",
+      "explicacion": "El delta puede llegar a llenar el almacén de datos, y cada lectura debe recorrer la cadena de instantáneas encadenadas."
+    },
+    {
+      "numero": 54,
+      "pregunta": "¿Por qué una instantánea no es una copia de seguridad?",
+      "opciones": {
+        "a": "Porque no captura el estado de la memoria de la máquina virtual",
+        "b": "Porque vive en el mismo almacén que el dato original y depende de él",
+        "c": "Porque no puede crearse con la máquina encendida"
+      },
+      "correcta": "b",
+      "referencia": "§4.2.2 [VMW-SNAP] [ISO27002]",
+      "explicacion": "Si se pierde o se corrompe el almacén de datos, se pierden ambos; la copia de seguridad, en cambio, es independiente y reside en otro sitio."
+    },
+    {
+      "numero": 55,
+      "pregunta": "¿Qué aporta el seguimiento de bloques modificados (CBT) a la copia de una máquina virtual?",
+      "opciones": {
+        "a": "Cifra los bloques antes de enviarlos al repositorio",
+        "b": "Garantiza la consistencia de la base de datos alojada en la máquina virtual",
+        "c": "Permite que el incremental lea solo los bloques cambiados, sin recorrer todo el disco virtual"
+      },
+      "correcta": "c",
+      "referencia": "§4.2.2 [VMW-VADP] [HYPERV-RCT]",
+      "explicacion": "Es una función del hipervisor —RCT en Hyper-V—, reduce drásticamente la ventana de copia y hace viable el modelo incremental para siempre."
+    },
+    {
+      "numero": 56,
+      "pregunta": "¿Cuál es la diferencia esencial entre replicar una máquina virtual y hacer su copia de seguridad?",
+      "opciones": {
+        "a": "La réplica está lista para arrancar en el destino, mientras que la copia hay que restaurarla antes de poder usarla",
+        "b": "La réplica conserva más puntos de restauración históricos que la copia",
+        "c": "La réplica protege mejor frente a la corrupción lógica y el ransomware"
+      },
+      "correcta": "a",
+      "referencia": "§4.2.3 [NIST-SP800-34]",
+      "explicacion": "Precisamente por eso la réplica da un RTO de minutos, pero guarda pocos puntos en el tiempo y replica la corrupción casi al instante: ambas son complementarias."
+    },
+    {
+      "numero": 57,
+      "pregunta": "¿En qué consiste la restauración instantánea (instant recovery) de una máquina virtual?",
+      "opciones": {
+        "a": "En restaurar únicamente los ficheros seleccionados por el usuario",
+        "b": "En arrancar la máquina directamente desde el repositorio de copias mientras sus datos se migran en segundo plano",
+        "c": "En conmutar el servicio a la réplica del emplazamiento alternativo"
+      },
+      "correcta": "b",
+      "referencia": "§4.2.3 [VEEAM-DOC]",
+      "explicacion": "El servicio vuelve en minutos aunque la restauración completa tarde horas; es la técnica que más ha reducido el RTO en la última década."
+    },
+    {
+      "numero": 58,
+      "pregunta": "¿Qué artículo del Real Decreto 311/2022 (ENS) establece que los sistemas dispondrán de copias de seguridad y de mecanismos que garanticen la continuidad de las operaciones?",
+      "opciones": {
+        "a": "El artículo 26, sobre continuidad de la actividad",
+        "b": "El artículo 5, sobre categorización de los sistemas",
+        "c": "El artículo 44, sobre auditoría de la seguridad"
+      },
+      "correcta": "a",
+      "referencia": "§5.1.1 [ENS]",
+      "explicacion": "Ese mandato se desarrolla en el Anexo II mediante la medida mp.info.6, de copias de seguridad, y el grupo op.cont, de continuidad del servicio."
+    },
+    {
+      "numero": 59,
+      "pregunta": "Según el ENS, ¿qué nivel de protección debe aplicarse a las copias de seguridad?",
+      "opciones": {
+        "a": "Un nivel inferior al de los datos originales, por tratarse de información ya consolidada",
+        "b": "Únicamente la protección física del soporte donde residen",
+        "c": "El mismo nivel de seguridad que a los datos originales, en control de acceso, cifrado y protección física"
+      },
+      "correcta": "c",
+      "referencia": "§5.1.1 [ENS] [CCN-STIC]",
+      "explicacion": "Es la exigencia menos intuitiva y la más incumplida: una copia mal custodiada es una fuga de datos esperando a ocurrir."
+    },
+    {
+      "numero": 60,
+      "pregunta": "Un ciudadano ejerce su derecho de supresión y los datos figuran también en las copias de seguridad. ¿Cuál es la actuación correcta?",
+      "opciones": {
+        "a": "Restaurar cada copia, borrar el dato y volver a generar la copia",
+        "b": "Suprimir el dato en producción, bloquear el tratamiento en las copias y volver a aplicar la supresión si alguna se restaura",
+        "c": "Destruir de inmediato todas las copias que contengan ese dato"
+      },
+      "correcta": "b",
+      "referencia": "§5.2.1 [RGPD] [LOPDGDD] [AEPD]",
+      "explicacion": "Editar una copia consolidada es inviable y destruiría su integridad; la supresión efectiva llega cuando la copia vence conforme a la política de retención."
+    }
+  ],
+  "casos": [
+    {
+      "caso": 1,
+      "titulo": "Diseño del almacenamiento para el nuevo CPD municipal",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "Para la base de datos del Padrón, con escritura intensa y latencia mínima, ¿qué modo de acceso conviene?",
+          "opciones": {
+            "a": "Por bloque: el motor pone su propio sistema de ficheros y modifica bloques parcialmente.",
+            "b": "Por fichero: la cabina NAS gestiona el sistema de ficheros y los bloqueos del motor.",
+            "c": "Por objeto: cada registro del Padrón se guarda como un objeto con metadatos ricos."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 1 · §1.1.3",
+          "explicacion": "El acceso por bloque ofrece la latencia más baja y permite la modificación parcial; el objeto no la permite y su latencia es la de una petición HTTP."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Qué modo de acceso conviene a las carpetas departamentales de los 1.200 empleados?",
+          "opciones": {
+            "a": "Por bloque, con un LUN por departamento que cada puesto formatea con su propio sistema de ficheros.",
+            "b": "Por fichero, porque los usuarios comparten carpetas con permisos y bloqueos gestionados por la cabina.",
+            "c": "Por objeto, porque el espacio de nombres plano facilita los permisos por unidad administrativa."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 1 · §1.1.2",
+          "explicacion": "Lo que se comparte son ficheros entre muchos usuarios concurrentes; un LUN no se comparte entre cientos de puestos."
+        },
+        {
+          "numero": 3,
+          "pregunta": "Los documentos de expedientes finalizados se escriben una vez, se consultan poco y se conservan muchos años con sus metadatos. ¿Qué modo de acceso les conviene?",
+          "opciones": {
+            "a": "Por bloque, porque su latencia mínima acelera las consultas ocasionales al archivo.",
+            "b": "Por fichero, porque solo un árbol de directorios conserva los metadatos del expediente.",
+            "c": "Por objeto, que admite metadatos ricos y encaja con el versionado y la inmutabilidad."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 1 · §1.1.3",
+          "explicacion": "El terreno del almacenamiento de objetos es el dato que se escribe una vez y se lee poco, con metadatos definibles por el usuario y retención WORM."
+        },
+        {
+          "numero": 4,
+          "pregunta": "Las carpetas departamentales están en un entorno Windows con autenticación de dominio. ¿Qué protocolo procede?",
+          "opciones": {
+            "a": "iSCSI, sobre el puerto 3260, con autenticación CHAP entre la cabina y los puestos.",
+            "b": "SMB 3.x, sobre el puerto 445, integrado con Kerberos y las ACL del dominio.",
+            "c": "NFS v3, sin estado, apoyado en mountd y lockd para gestionar los bloqueos."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 2 · §1.2.1",
+          "explicacion": "SMB es el protocolo de fichero del mundo Windows; NFS se usaría en un entorno Unix e iSCSI es de bloque."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Qué protocolo de acceso es adecuado para el Padrón y para los discos de las máquinas virtuales?",
+          "opciones": {
+            "a": "Fibre Channel, o iSCSI sobre una red segregada de 10/25 Gbit/s si el presupuesto lo aconseja.",
+            "b": "SMB 3.x con multichannel, porque reparte el tráfico de la base de datos entre varias tarjetas.",
+            "c": "HTTPS con la API de S3, porque el acceso REST reduce la latencia de las escrituras."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 2 · §1.2.1",
+          "explicacion": "Las dos cargas necesitan acceso de bloque de baja latencia; NVMe-oF sería la opción si se busca la latencia mínima."
+        },
+        {
+          "numero": 6,
+          "pregunta": "¿Qué nivel RAID conviene al Padrón, con escritura intensa?",
+          "opciones": {
+            "a": "RAID 5, porque desperdicia menos disco y su paridad distribuida acelera las escrituras.",
+            "b": "RAID 6, porque la doble paridad reduce la penalización de escritura respecto a RAID 10.",
+            "c": "RAID 10, porque cada escritura cuesta dos operaciones físicas, frente a cuatro en RAID 5 y seis en RAID 6."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 2 · §1.2.2",
+          "explicacion": "Con mucha escritura importa la penalización: RAID 10 la tiene mínima, aunque solo aproveche la mitad de la capacidad."
+        },
+        {
+          "numero": 7,
+          "pregunta": "¿Qué esquema de protección conviene al archivo electrónico, de lectura dominante y discos de gran capacidad?",
+          "opciones": {
+            "a": "RAID 0, porque los documentos se leen poco y basta con repartirlos en bandas entre todos los discos del grupo.",
+            "b": "RAID 10, porque su espejo es el único nivel que tolera el fallo simultáneo de dos discos cualesquiera.",
+            "c": "RAID 6 o codificación de borrado, porque prima la capacidad y RAID 5 es arriesgado al reconstruir discos grandes."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 2 · §1.2.2",
+          "explicacion": "Con discos de decenas de terabytes la reconstrucción dura horas o días y un segundo fallo destruiría un RAID 5; RAID 6 tolera dos."
+        },
+        {
+          "numero": 8,
+          "pregunta": "¿Qué modelo de virtualización permite migrar los datos de la cabina antigua a la nueva, de otro fabricante, sin detener el servicio?",
+          "opciones": {
+            "a": "La virtualización basada en red (o la de cabina externa desde la nueva), que migra los bloques en segundo plano.",
+            "b": "La virtualización basada en host con LVM, que comparte un mismo pool entre todos los servidores.",
+            "c": "La virtualización basada en la cabina antigua, que exporta sus instantáneas a la nueva cabina."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 3 · §2.1.1",
+          "explicacion": "El modelo de red unifica cabinas heterogéneas y permite la migración sin parada; la abstracción de host no se comparte entre servidores."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿Cuál es el inconveniente característico de ese modelo de virtualización?",
+          "opciones": {
+            "a": "Que exige instalar software específico en cada servidor para localizar sus bloques.",
+            "b": "Que, al operar en banda, añade latencia y es un punto crítico que hay que desplegar en pareja.",
+            "c": "Que consume CPU de cada servidor y multiplica los puntos de administración."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 3 · §2.1.1",
+          "explicacion": "Todas las lecturas y escrituras pasan por el dispositivo intermedio: su caída dejaría sin datos a todos los servidores."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Qué dos técnicas ahorrarán más espacio en los discos de las 120 máquinas virtuales y qué riesgo operativo introducen?",
+          "opciones": {
+            "a": "Deduplicación y thin provisioning; si el pool se llena de verdad, todos los volúmenes fallan a la vez.",
+            "b": "Instantáneas de cabina y cifrado en reposo; las instantáneas dependen del volumen original.",
+            "c": "RAID 5 y compresión; cada escritura exige cuatro operaciones físicas en la cabina."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 4 · §1.2.2",
+          "explicacion": "La misma imagen base da ratios de deduplicación de 5:1 a 20:1, y el aprovisionamiento fino sobreaprovisiona: exige alertas y vigilancia del llenado real."
+        }
+      ]
+    },
+    {
+      "caso": 2,
+      "titulo": "Política de copias, RTO/RPO y ventana de respaldo",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "Con la copia completa diaria a las 02:00 y una restauración que tarda unas 3 horas, ¿cuáles son el RPO y el RTO reales del Padrón?",
+          "opciones": {
+            "a": "RPO de 3 horas y RTO de hasta 24 horas.",
+            "b": "RPO de hasta 24 horas y RTO de al menos 3 horas.",
+            "c": "RPO de 15 minutos y RTO de 1 hora, porque la copia es completa."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 1 · §3.1.1",
+          "explicacion": "El RPO mide los datos perdidos desde la última copia (hasta un día) y el RTO el tiempo de vuelta al servicio (la restauración de 3 horas)."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Qué corrección permite cumplir el RPO de 15 minutos del Padrón?",
+          "opciones": {
+            "a": "Adelantar la copia completa diaria a las 00:00.",
+            "b": "Sustituir la copia completa diaria por una diferencial diaria.",
+            "c": "Añadir una copia del registro de transacciones cada 15 minutos."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 1 · §3.1.1",
+          "explicacion": "El RPO fija la frecuencia: copiar el registro cada 15 minutos permite además recuperar la base de datos hasta un instante concreto."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Y qué corrección permite cumplir el RTO de 1 hora?",
+          "opciones": {
+            "a": "Una réplica de la base de datos en el segundo emplazamiento, o una restauración instantánea.",
+            "b": "Copiar el registro de transacciones con más frecuencia, porque acelera la restauración.",
+            "c": "Ampliar la retención de las copias de 14 a 30 días en el mismo repositorio."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 1 · §3.1.1",
+          "explicacion": "El RTO se corrige cambiando la tecnología de recuperación: copiar más a menudo no acelera ni un minuto la restauración."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Caben los 20 TB en la ventana de 8 horas con una red de 10 Gbit/s?",
+          "opciones": {
+            "a": "No cabe: a 10 Gbit/s solo se transfieren unos 3,6 TB en 8 horas, aun con eficiencia plena.",
+            "b": "Cabe con holgura: 10 Gbit/s equivalen a 10 GB/s, unos 288 TB en la ventana nocturna.",
+            "c": "Cabe muy justo (≈ 21,6 TB con un 60 % de eficiencia) y solo si origen y destino sostienen ese caudal."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 2 · §3.1.2",
+          "explicacion": "10 Gbit/s ≈ 1,25 GB/s; al 60 %, 0,75 GB/s × 28.800 s ≈ 21,6 TB. En la práctica la limitación suele ser la lectura del origen, no la red."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Qué medida resuelve el problema de la ventana de forma sostenible?",
+          "opciones": {
+            "a": "Copiar desde el sistema en marcha en lugar de desde instantáneas, para no ocupar espacio en la cabina.",
+            "b": "Pasar a completa semanal e incrementales diarios, o a incremental para siempre con completas sintéticas.",
+            "c": "Duplicar la retención para no tener que repetir la copia completa cada noche."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 2 · §3.1.2",
+          "explicacion": "Los incrementales mueven solo el 2-5 % diario; las completas sintéticas se fabrican en el repositorio sin leer de nuevo el origen."
+        },
+        {
+          "numero": 6,
+          "pregunta": "Respecto de la regla 3-2-1, ¿qué incumple la política actual de copias?",
+          "opciones": {
+            "a": "Hay solo dos copias (original y repositorio) y ninguna está fuera de la ubicación.",
+            "b": "Solo la verificación, porque el original y el repositorio ya suman las tres copias exigidas.",
+            "c": "Nada, porque el repositorio de copias es un equipo distinto de la cabina de producción."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 3 · §3.1.2",
+          "explicacion": "La regla exige tres copias (el original y dos más) y una fuera de la ubicación; un repositorio en la misma sala comparte el incendio o la inundación."
+        },
+        {
+          "numero": 7,
+          "pregunta": "El repositorio de copias está integrado en el dominio corporativo con las mismas credenciales de administración. ¿Por qué es grave?",
+          "opciones": {
+            "a": "Porque impide cifrar las copias en tránsito entre el repositorio y la cabina.",
+            "b": "Porque un atacante que comprometa el directorio podría destruir también las copias.",
+            "c": "Porque obliga a restaurar con la cuenta del responsable del servicio afectado."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 3 · §3.1.2",
+          "explicacion": "Una copia conectada con credenciales del mismo dominio no cumple la copia inmutable o desconectada; procede usar credenciales separadas y MFA en la consola."
+        },
+        {
+          "numero": 8,
+          "pregunta": "¿Qué diseño de destinos satisface la regla 3-2-1-1-0 en el CPD municipal?",
+          "opciones": {
+            "a": "Dos repositorios de disco en la misma sala, ambos con las credenciales del dominio corporativo.",
+            "b": "Instantáneas de la cabina como segunda copia y RAID 6 en la cabina como tercera copia.",
+            "c": "Repositorio local deduplicado, réplica al segundo CPD y copia inmutable WORM en objetos más cinta LTO extraída."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 3 · §3.1.2",
+          "explicacion": "Da tres copias, dos soportes, una fuera, una inmutable o fuera de línea; las instantáneas y el RAID no son copias de seguridad."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿Qué exige la normativa respecto de las pruebas de restauración?",
+          "opciones": {
+            "a": "El ENS (verificar copias y, en categoría ALTA, probar el plan) y el RGPD (art. 32.1.d, verificación regular).",
+            "b": "Nada con carácter obligatorio: son una recomendación de las guías CCN-STIC sin rango normativo.",
+            "c": "Solo el RGPD, en su artículo 5.1.e, que obliga a restaurar cada copia antes de destruirla."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 4 · §3.3.2 · art. 32.1.d RGPD",
+          "explicacion": "La prueba de restauración es una obligación jurídica, no una buena práctica opcional."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Qué límite legal tiene el esquema de retención escalonada (GFS) que se proponga?",
+          "opciones": {
+            "a": "Ninguno: el artículo 17 de la Ley 39/2015 permite conservar las copias de seguridad de forma indefinida, sin plazo.",
+            "b": "El artículo 32.1.c del RGPD, que fija una retención máxima de 14 días para las copias diarias del repositorio.",
+            "c": "La limitación del plazo de conservación del artículo 5.1.e del RGPD: retención justificada y destrucción segura al vencer."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 4 · §3.1.2 · art. 5.1.e RGPD",
+          "explicacion": "Las copias con datos personales no pueden guardarse «para siempre por si acaso»; el archivo electrónico de la Ley 39/2015 es otra función."
+        }
+      ]
+    },
+    {
+      "caso": 3,
+      "titulo": "Recuperación ante un incidente de ransomware",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "¿Por qué la réplica de las máquinas virtuales al segundo CPD no sirvió frente al ransomware?",
+          "opciones": {
+            "a": "Porque solo copia la configuración de las máquinas virtuales y no sus discos.",
+            "b": "Porque el segundo CPD no tenía la categoría ALTA del Esquema Nacional de Seguridad.",
+            "c": "Porque mantiene una copia fiel y actualizada y replicó el cifrado casi al instante."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 1 · §4.2.3",
+          "explicacion": "La réplica reduce el RTO ante el desastre del emplazamiento, pero no protege frente a la corrupción del contenido ni conserva estados anteriores."
+        },
+        {
+          "numero": 2,
+          "pregunta": "En este incidente, ¿qué mecanismo conserva estados anteriores y resiste a un atacante con credenciales de administrador?",
+          "opciones": {
+            "a": "La copia de seguridad inmutable o fuera de línea.",
+            "b": "La instantánea de la máquina virtual en su almacén de datos.",
+            "c": "La réplica síncrona al segundo emplazamiento."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 1 · §3.2.2",
+          "explicacion": "Solo la copia da profundidad histórica, y solo la inmutable o desconectada resiste a quien tiene credenciales de administrador."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Cuál debe ser la primera actuación de la recuperación?",
+          "opciones": {
+            "a": "Restaurar el gestor de expedientes, por ser el servicio de mayor criticidad del CPD.",
+            "b": "Contener el incidente (aislar la red, detener la propagación, preservar evidencias) y declarar el desastre.",
+            "c": "Notificar a la AEPD antes de tocar ninguno de los sistemas afectados por el cifrado."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 2 · §3.3.2",
+          "explicacion": "Antes de restaurar hay que detener la propagación y declarar el desastre conforme al DRP."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Cuál es la primera tarea técnica ineludible de la reconstrucción?",
+          "opciones": {
+            "a": "Reconstruir el servidor de copia y su catálogo, sin el cual no hay restauración granular.",
+            "b": "Restaurar el servidor de ficheros departamental, por ser el más usado por los empleados.",
+            "c": "Encender la réplica del segundo CPD para recuperar el servicio en minutos."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 2 · §3.3.1",
+          "explicacion": "El catálogo sabe qué hay en cada copia: todo DRP debe prever reconstruirlo antes de restaurar nada más."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Sobre qué sistemas deben restaurarse los servicios?",
+          "opciones": {
+            "a": "Sobre los mismos servidores cifrados, una vez eliminados los ficheros cifrados.",
+            "b": "Sobre la réplica del segundo CPD, que ya tiene las máquinas virtuales configuradas.",
+            "c": "Sobre sistemas reconstruidos desde cero y parcheados, nunca sobre los comprometidos."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 2 · §3.3.2",
+          "explicacion": "Los servicios se restauran por orden de criticidad conforme a sus RTO, y se validan antes de reabrirlos."
+        },
+        {
+          "numero": 6,
+          "pregunta": "El forense sitúa la primera actividad anómala nueve días antes del cifrado. ¿Desde qué punto debe restaurarse?",
+          "opciones": {
+            "a": "Desde la copia más reciente de la copia inmutable, la del día anterior al cifrado.",
+            "b": "Desde un punto anterior a la primera actividad anómala, es decir, de más de nueve días atrás.",
+            "c": "Desde la réplica del segundo CPD, tras descifrar sus bloques con las claves de la copia."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 3 · §3.1.2",
+          "explicacion": "Las copias posteriores a la intrusión pueden contener ya las herramientas del atacante o datos comprometidos."
+        },
+        {
+          "numero": 7,
+          "pregunta": "¿Qué consecuencia tiene ese punto de restauración sobre la retención mínima de la política?",
+          "opciones": {
+            "a": "Hay que reducir la retención a siete días, para que las copias no conserven el código del atacante.",
+            "b": "Retención escalonada de semanas y meses, y copia inmutable más larga que la permanencia oculta del atacante.",
+            "c": "Hay que conservar todas las copias de forma indefinida, sin plazo de destrucción."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 3 · §3.1.2",
+          "explicacion": "Una retención de pocos días habría dejado a la organización sin ningún punto limpio; es la justificación práctica de la retención larga (GFS)."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Entre los datos cifrados hay datos personales de ciudadanos. ¿Qué obligación impone el RGPD?",
+          "opciones": {
+            "a": "Notificar la violación de seguridad a la AEPD en 72 horas desde que se tuvo constancia (art. 33).",
+            "b": "Ninguna, porque una pérdida de disponibilidad sin divulgación no es una violación de seguridad.",
+            "c": "Notificarla a la AEPD en el plazo de un mes, una vez concluida la restauración (art. 32)."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 4 · §5.2.1 · art. 33 RGPD",
+          "explicacion": "La violación de seguridad abarca la destrucción, pérdida o alteración, no solo la divulgación; una pérdida de disponibilidad también es una brecha."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿Cuándo hay que comunicar además el incidente a los ciudadanos afectados?",
+          "opciones": {
+            "a": "Siempre, en las mismas 72 horas, con independencia del riesgo para sus derechos.",
+            "b": "Cuando el riesgo para sus derechos y libertades sea alto (art. 34 RGPD).",
+            "c": "Nunca, si existe una copia inmutable que permita recuperar los datos."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 4 · §5.2.1 · art. 34 RGPD",
+          "explicacion": "La comunicación a los interesados depende de que el riesgo para sus derechos y libertades sea alto."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Qué medida del ENS exige que las copias no puedan alterarse ni destruirse de forma no autorizada y que se autorice y registre cada restauración?",
+          "opciones": {
+            "a": "La medida [op.cont.1] Análisis de impacto.",
+            "b": "La medida [op.ext] de servicios prestados por terceros.",
+            "c": "La medida [mp.info.6] Copias de seguridad."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 4 · §5.1.1",
+          "explicacion": "La medida [mp.info.6], que despliega el artículo 26 del RD 311/2022, incluye la protección de las copias y el registro de las restauraciones."
+        }
+      ]
+    }
+  ]
+}

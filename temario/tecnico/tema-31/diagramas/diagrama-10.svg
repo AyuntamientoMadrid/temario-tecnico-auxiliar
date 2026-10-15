@@ -1,0 +1,59 @@
+<svg aria-label="Matriz de nueve capas (datos, identidades, aplicación, tiempo de ejecución, middleware, sistema operativo, virtualización, servidores y almacenamiento, y red e instalaciones) frente a los cuatro modelos local, IaaS, PaaS y SaaS, indicando en cada celda si la gestiona el cliente o el proveedor; se señala que la frontera entre local e IaaS es la virtualización y entre IaaS y PaaS el sistema operativo" role="img" viewbox="0 0 680 405" xmlns="http://www.w3.org/2000/svg">
+<style>.t10{font:700 10px system-ui,sans-serif;fill:#fff}.s10{font:8.5px system-ui,sans-serif;fill:#fff}.d10{font:9px system-ui,sans-serif;fill:#333}.h10{font:700 13px system-ui,sans-serif;fill:#0055a0}.k10{font:700 9px system-ui,sans-serif;fill:#0055a0}.f10{font:8px system-ui,sans-serif;fill:#777}</style>
+<text class="h10" text-anchor="middle" x="340" y="20">La pila de responsabilidad</text>
+<rect fill="#0055a0" height="22" rx="4" width="200" x="20" y="32"></rect><text class="t10" text-anchor="middle" x="120" y="47">CAPA</text>
+<rect fill="#888" height="22" rx="4" width="108" x="226" y="32"></rect><text class="t10" text-anchor="middle" x="280" y="47">LOCAL</text>
+<rect fill="#0055a0" height="22" rx="4" width="108" x="340" y="32"></rect><text class="t10" text-anchor="middle" x="394" y="47">IaaS</text>
+<rect fill="#e89822" height="22" rx="4" width="108" x="454" y="32"></rect><text class="t10" text-anchor="middle" x="508" y="47">PaaS</text>
+<rect fill="#2d8659" height="22" rx="4" width="92" x="568" y="32"></rect><text class="t10" text-anchor="middle" x="614" y="47">SaaS</text>
+<rect fill="#eef3f8" height="24" rx="3" width="200" x="20" y="58"></rect><text class="d10" x="30" y="74">Datos y su clasificación</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="226" y="58"></rect><text class="d10" text-anchor="middle" x="280" y="74">Cliente</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="340" y="58"></rect><text class="d10" text-anchor="middle" x="394" y="74">Cliente</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="454" y="58"></rect><text class="d10" text-anchor="middle" x="508" y="74">Cliente</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="92" x="568" y="58"></rect><text class="d10" text-anchor="middle" x="614" y="74">Cliente</text>
+<rect fill="#eef3f8" height="24" rx="3" width="200" x="20" y="84"></rect><text class="d10" x="30" y="100">Identidades y accesos</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="226" y="84"></rect><text class="d10" text-anchor="middle" x="280" y="100">Cliente</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="340" y="84"></rect><text class="d10" text-anchor="middle" x="394" y="100">Cliente</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="454" y="84"></rect><text class="d10" text-anchor="middle" x="508" y="100">Cliente</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="92" x="568" y="84"></rect><text class="d10" text-anchor="middle" x="614" y="100">Cliente</text>
+<rect fill="#f5f5f5" height="24" rx="3" width="200" x="20" y="110"></rect><text class="d10" x="30" y="126">Aplicación</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="226" y="110"></rect><text class="d10" text-anchor="middle" x="280" y="126">Cliente</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="340" y="110"></rect><text class="d10" text-anchor="middle" x="394" y="126">Cliente</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="454" y="110"></rect><text class="d10" text-anchor="middle" x="508" y="126">Cliente</text>
+<rect fill="#cfe3d6" height="24" rx="3" width="92" x="568" y="110"></rect><text class="d10" text-anchor="middle" x="614" y="126">Proveedor</text>
+<rect fill="#f5f5f5" height="24" rx="3" width="200" x="20" y="136"></rect><text class="d10" x="30" y="152">Tiempo de ejecución</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="226" y="136"></rect><text class="d10" text-anchor="middle" x="280" y="152">Cliente</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="340" y="136"></rect><text class="d10" text-anchor="middle" x="394" y="152">Cliente</text>
+<rect fill="#cfe3d6" height="24" rx="3" width="108" x="454" y="136"></rect><text class="d10" text-anchor="middle" x="508" y="152">Proveedor</text>
+<rect fill="#cfe3d6" height="24" rx="3" width="92" x="568" y="136"></rect><text class="d10" text-anchor="middle" x="614" y="152">Proveedor</text>
+<rect fill="#f5f5f5" height="24" rx="3" width="200" x="20" y="162"></rect><text class="d10" x="30" y="178">Middleware</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="226" y="162"></rect><text class="d10" text-anchor="middle" x="280" y="178">Cliente</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="340" y="162"></rect><text class="d10" text-anchor="middle" x="394" y="178">Cliente</text>
+<rect fill="#cfe3d6" height="24" rx="3" width="108" x="454" y="162"></rect><text class="d10" text-anchor="middle" x="508" y="178">Proveedor</text>
+<rect fill="#cfe3d6" height="24" rx="3" width="92" x="568" y="162"></rect><text class="d10" text-anchor="middle" x="614" y="178">Proveedor</text>
+<rect fill="#fdf3e2" height="24" rx="3" width="200" x="20" y="188"></rect><text class="d10" x="30" y="204">Sistema operativo</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="226" y="188"></rect><text class="d10" text-anchor="middle" x="280" y="204">Cliente</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="340" y="188"></rect><text class="d10" text-anchor="middle" x="394" y="204">Cliente</text>
+<rect fill="#cfe3d6" height="24" rx="3" width="108" x="454" y="188"></rect><text class="d10" text-anchor="middle" x="508" y="204">Proveedor</text>
+<rect fill="#cfe3d6" height="24" rx="3" width="92" x="568" y="188"></rect><text class="d10" text-anchor="middle" x="614" y="204">Proveedor</text>
+<rect fill="#fdf3e2" height="24" rx="3" width="200" x="20" y="214"></rect><text class="d10" x="30" y="230">Virtualización</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="226" y="214"></rect><text class="d10" text-anchor="middle" x="280" y="230">Cliente</text>
+<rect fill="#cfe3d6" height="24" rx="3" width="108" x="340" y="214"></rect><text class="d10" text-anchor="middle" x="394" y="230">Proveedor</text>
+<rect fill="#cfe3d6" height="24" rx="3" width="108" x="454" y="214"></rect><text class="d10" text-anchor="middle" x="508" y="230">Proveedor</text>
+<rect fill="#cfe3d6" height="24" rx="3" width="92" x="568" y="214"></rect><text class="d10" text-anchor="middle" x="614" y="230">Proveedor</text>
+<rect fill="#f5f5f5" height="24" rx="3" width="200" x="20" y="240"></rect><text class="d10" x="30" y="256">Servidores y almacenamiento</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="226" y="240"></rect><text class="d10" text-anchor="middle" x="280" y="256">Cliente</text>
+<rect fill="#cfe3d6" height="24" rx="3" width="108" x="340" y="240"></rect><text class="d10" text-anchor="middle" x="394" y="256">Proveedor</text>
+<rect fill="#cfe3d6" height="24" rx="3" width="108" x="454" y="240"></rect><text class="d10" text-anchor="middle" x="508" y="256">Proveedor</text>
+<rect fill="#cfe3d6" height="24" rx="3" width="92" x="568" y="240"></rect><text class="d10" text-anchor="middle" x="614" y="256">Proveedor</text>
+<rect fill="#f5f5f5" height="24" rx="3" width="200" x="20" y="266"></rect><text class="d10" x="30" y="282">Red e instalaciones físicas</text>
+<rect fill="#c9d9e8" height="24" rx="3" width="108" x="226" y="266"></rect><text class="d10" text-anchor="middle" x="280" y="282">Cliente</text>
+<rect fill="#cfe3d6" height="24" rx="3" width="108" x="340" y="266"></rect><text class="d10" text-anchor="middle" x="394" y="282">Proveedor</text>
+<rect fill="#cfe3d6" height="24" rx="3" width="108" x="454" y="266"></rect><text class="d10" text-anchor="middle" x="508" y="282">Proveedor</text>
+<rect fill="#cfe3d6" height="24" rx="3" width="92" x="568" y="266"></rect><text class="d10" text-anchor="middle" x="614" y="282">Proveedor</text>
+<rect fill="#e89822" height="26" rx="5" width="320" x="20" y="300"></rect><text class="s10" text-anchor="middle" x="180" y="317">Frontera LOCAL / IaaS: la virtualización</text>
+<rect fill="#d13c3c" height="26" rx="5" width="310" x="350" y="300"></rect><text class="s10" text-anchor="middle" x="505" y="317">Frontera IaaS / PaaS: el sistema operativo</text>
+<rect fill="#0055a0" height="26" rx="5" width="640" x="20" y="332"></rect><text class="s10" text-anchor="middle" x="340" y="349">Los datos y las identidades NUNCA cambian de dueño: son siempre del cliente</text>
+<rect fill="#eef3f8" height="20" rx="4" width="640" x="20" y="364"></rect><text class="d10" text-anchor="middle" x="340" y="378">Cuanto más arriba se sube, menos se gestiona y menos se controla</text>
+<text class="f10" text-anchor="middle" x="340" y="396">[Fuente: NIST145, CCN823]</text>
+</svg>

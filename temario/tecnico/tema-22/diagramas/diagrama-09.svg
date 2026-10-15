@@ -1,0 +1,18 @@
+<svg aria-label="Flujo OAuth 2.0: el propietario del recurso autoriza al cliente, el cliente solicita un token al servidor de autorización, recibe un token JWT firmado, y lo presenta al servidor de recursos para acceder sin conocer la contraseña del usuario" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 11px system-ui,sans-serif;fill:#fff}.s9{font:9px system-ui,sans-serif;fill:#fff}.l9{font:10px system-ui,sans-serif;fill:#444}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">OAuth 2.0: roles y flujo del token</text>
+<rect fill="#888" height="50" rx="5" width="140" x="30" y="46"></rect><text class="t9" text-anchor="middle" x="100" y="68">Resource Owner</text><text class="s9" text-anchor="middle" x="100" y="84">El usuario/ciudadano</text>
+<rect fill="#0055a0" height="50" rx="5" width="140" x="270" y="46"></rect><text class="t9" text-anchor="middle" x="340" y="68">Client</text><text class="s9" text-anchor="middle" x="340" y="84">La aplicación</text>
+<rect fill="#2d8659" height="50" rx="5" width="140" x="510" y="46"></rect><text class="t9" text-anchor="middle" x="580" y="68">Authorization Server</text><text class="s9" text-anchor="middle" x="580" y="84">Emite el token</text>
+<rect fill="#e89822" height="50" rx="5" width="140" x="510" y="150"></rect><text class="t9" text-anchor="middle" x="580" y="172">Resource Server</text><text class="s9" text-anchor="middle" x="580" y="188">Protege el recurso</text>
+<path d="M100 96 L100 130 L300 130 L300 104" fill="none" marker-end="url(#a9)" stroke="#0055a0" stroke-width="2.5"></path><text style="font:9px system-ui;fill:#0055a0" text-anchor="middle" x="170" y="122">1. autoriza</text>
+<path d="M410 60 L508 60" marker-end="url(#a9)" stroke="#0055a0" stroke-width="2.5"></path><text style="font:9px system-ui;fill:#0055a0" text-anchor="middle" x="460" y="54">2. solicita</text>
+<path d="M508 86 L410 86" marker-end="url(#a9)" stroke="#2d8659" stroke-width="2.5"></path><text style="font:9px system-ui;fill:#2d8659" text-anchor="middle" x="460" y="100">3. token</text>
+<path d="M412 96 L508 175" fill="none" marker-end="url(#a9)" stroke="#e89822" stroke-width="2.5"></path><text style="font:9px system-ui;fill:#e89822" text-anchor="middle" x="500" y="220">4. presenta token → accede</text>
+<defs><marker id="a9" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="context-stroke"></path></marker></defs>
+<rect fill="#f4f4f4" height="66" rx="6" stroke="#ccc" width="620" x="30" y="240"></rect>
+<text style="font:700 11px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="264">El cliente nunca ve ni almacena la contraseña del usuario</text>
+<text class="l9" text-anchor="middle" x="340" y="282">JWT (header.payload.signature) es, con frecuencia, el formato concreto del token — no un sinónimo de OAuth</text>
+<text class="l9" text-anchor="middle" x="340" y="298">La firma permite validar el token sin consultar al emisor en cada petición</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="330">[Fuente: RFC6749; RFC7519]</text>
+</svg>

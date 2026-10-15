@@ -1,0 +1,29 @@
+<svg aria-label="Secuencia de acceso remoto del empleado municipal en seis pasos: portátil corporativo con disco cifrado; conexión del cliente VPN a la pasarela situada en la zona desmilitarizada; segundo factor de autenticación validado contra el servidor AAA y el directorio; comprobación del estado del dispositivo con desvío a cuarentena si no cumple; acceso a un segmento de teletrabajo con permisos mínimos; y registro de toda la actividad en el sistema de correlación de eventos. Cada paso cita la medida del Esquema Nacional de Seguridad que lo respalda" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.k13{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.t13{font:700 9.5px system-ui,sans-serif;fill:#fff}.ts13{font:700 8px system-ui,sans-serif;fill:#fff}.s13{font:8px system-ui,sans-serif;fill:#fff}.d13{font:8.5px system-ui,sans-serif;fill:#333}.b13{font:700 9px system-ui,sans-serif;fill:#0055a0}.n13{font:8px system-ui,sans-serif;fill:#666}.a13{font:8px system-ui,sans-serif;fill:#666}.num13{font:700 11px system-ui,sans-serif;fill:#fff}.r13{font:700 8.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h13" text-anchor="middle" x="340" y="20">Seis pasos, seis medidas del ENS: el teletrabajador NO entra en «la red»</text>
+<rect fill="#f7f9fc" height="106" rx="5" stroke="#ccc" width="640" x="20" y="34"></rect>
+<text class="k13" x="30" y="50">DOMICILIO DEL EMPLEADO</text>
+<text class="k13" x="270" y="50">DMZ DEL AYUNTAMIENTO</text>
+<text class="k13" x="500" y="50">RED CORPORATIVA</text>
+<rect fill="#0055a0" height="42" rx="4" width="118" x="30" y="58"></rect><text class="ts13" text-anchor="middle" x="89" y="76">PORTÁTIL CORPORATIVO</text><text class="s13" text-anchor="middle" x="89" y="90">Cifrado · EDR · parcheado</text>
+<text class="a13" x="154" y="82">→</text>
+<rect fill="#999" height="42" rx="4" width="82" x="172" y="58"></rect><text class="t13" text-anchor="middle" x="213" y="76">INTERNET</text><text class="s13" text-anchor="middle" x="213" y="90">Red no controlada</text>
+<text class="a13" x="260" y="82">→</text>
+<rect fill="#e89822" height="42" rx="4" width="118" x="276" y="58"></rect><text class="t13" text-anchor="middle" x="335" y="76">PASARELA VPN</text><text class="s13" text-anchor="middle" x="335" y="90">En la DMZ, nunca dentro</text>
+<text class="a13" x="400" y="82">→</text>
+<rect fill="#0055a0" height="42" rx="4" width="110" x="416" y="58"></rect><text class="t13" text-anchor="middle" x="471" y="76">AAA + DIRECTORIO</text><text class="s13" text-anchor="middle" x="471" y="90">RADIUS · MFA</text>
+<text class="a13" x="532" y="82">→</text>
+<rect fill="#2d8659" height="42" rx="4" width="102" x="548" y="58"></rect><text class="t13" text-anchor="middle" x="599" y="76">SEGMENTO</text><text class="s13" text-anchor="middle" x="599" y="90">de teletrabajo</text>
+<rect fill="#fdeeee" height="24" rx="3" stroke="#d13c3c" width="242" x="30" y="108"></rect><text class="d13" text-anchor="middle" x="151" y="124">Si no supera el estado: VLAN de CUARENTENA</text>
+<rect fill="#eef4fa" height="24" rx="3" stroke="#0055a0" width="364" x="286" y="108"></rect><text class="d13" text-anchor="middle" x="468" y="124">Todo lo que ocurre se registra y se envía al SIEM · op.exp.8 y op.mon.3.r1</text>
+<text class="k13" x="20" y="160">LOS SEIS PASOS Y SU RESPALDO NORMATIVO</text>
+<circle cx="32" cy="178" fill="#0055a0" r="9"></circle><text class="num13" text-anchor="middle" x="32" y="182">1</text><text class="d13" x="48" y="176">El equipo arranca con disco cifrado y el usuario se autentica en él</text><text class="b13" x="48" y="188">mp.eq.3.r1 (cifrado si la confidencialidad es MEDIA) · mp.eq.2 (bloqueo)</text>
+<circle cx="32" cy="206" fill="#0055a0" r="9"></circle><text class="num13" text-anchor="middle" x="32" y="210">2</text><text class="d13" x="48" y="204">El cliente VPN establece el túnel cifrado con la pasarela publicada en la DMZ</text><text class="b13" x="48" y="216">mp.com.2.1 (VPN cifrada fuera del dominio propio) · mp.com.3</text>
+<circle cx="32" cy="234" fill="#0055a0" r="9"></circle><text class="num13" text-anchor="middle" x="32" y="238">3</text><text class="d13" x="48" y="232">Se exige SEGUNDO FACTOR y se valida contra el servidor AAA y el directorio</text><text class="b13" x="48" y="244">op.acc.5 en nivel MEDIO: + [R2 o R3 o R4] + R5 — la contraseña sola ya no vale</text>
+<circle cx="32" cy="262" fill="#0055a0" r="9"></circle><text class="num13" text-anchor="middle" x="32" y="266">4</text><text class="d13" x="48" y="260">Se comprueba el ESTADO del dispositivo: corporativo, cifrado, parcheado, con EDR activo</text><text class="b13" x="48" y="272">op.exp.4 y op.exp.6 · principio 4 y 5 de la NIST SP 800-207</text>
+<circle cx="32" cy="290" fill="#0055a0" r="9"></circle><text class="num13" text-anchor="middle" x="32" y="294">5</text><text class="d13" x="48" y="288">Se concede acceso a un SEGMENTO DE TELETRABAJO con lo mínimo imprescindible</text><text class="b13" x="48" y="300">mp.eq.3.3 (mínimos imprescindibles desde redes no controladas) · mp.com.4</text>
+<circle cx="32" cy="318" fill="#0055a0" r="9"></circle><text class="num13" text-anchor="middle" x="32" y="322">6</text><text class="d13" x="48" y="316">Todo queda registrado, incluidos los intentos fallidos, y se revoca al cesar el empleado</text><text class="b13" x="48" y="328">op.exp.8 · op.acc.5.r5 · op.acc.5.6 · y sobre todo op.acc.4.5</text>
+<rect fill="#e89822" height="20" rx="3" width="640" x="20" y="336"></rect>
+<text class="s13" text-anchor="middle" x="340" y="350">Base legal: art. 47 bis del TREBEP (RDL 29/2020) — teletrabajo autorizado, voluntario y reversible, con MEDIOS a cargo de la Administración</text>
+<text class="n13" x="20" y="368">[Fuente: ENS, RD 311/2022, op.acc.4.5, op.acc.5, mp.com.2, mp.eq.3 · TREBEP art. 47 bis (RDL 29/2020)]</text>
+</svg>

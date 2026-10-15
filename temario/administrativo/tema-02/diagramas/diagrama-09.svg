@@ -1,0 +1,27 @@
+<svg aria-label="Organización institucional autonómica del artículo 152: Asamblea Legislativa, Consejo de Gobierno, Presidente y Tribunal Superior de Justicia" role="img" viewbox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .d9-box{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .d9-h{font:700 13px system-ui,sans-serif;fill:#003d73;text-anchor:middle}
+    .d9-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+    .d9-l{stroke:#0055a0;stroke-width:1.5;fill:none}
+  </style>
+<rect fill="#0055a0" height="64" rx="8" width="250" x="225" y="30"></rect>
+<text class="d9-h" style="fill:#fff" x="350" y="58">ASAMBLEA LEGISLATIVA</text>
+<text class="d9-s" style="fill:#dbe7f3" x="350" y="78">sufragio universal · proporcional · legisla</text>
+<rect class="d9-box" height="74" rx="8" width="230" x="60" y="160"></rect>
+<text class="d9-h" x="175" y="188">PRESIDENTE</text>
+<text class="d9-s" x="175" y="207">elegido por la Asamblea,</text>
+<text class="d9-s" x="175" y="222">nombrado por el Rey</text>
+<rect class="d9-box" height="74" rx="8" width="230" x="410" y="160"></rect>
+<text class="d9-h" x="525" y="188">CONSEJO DE GOBIERNO</text>
+<text class="d9-s" x="525" y="207">funciones ejecutivas</text>
+<text class="d9-s" x="525" y="222">y administrativas</text>
+<line class="d9-l" x1="350" x2="350" y1="94" y2="120"></line>
+<line class="d9-l" x1="175" x2="175" y1="160" y2="120"></line>
+<line class="d9-l" x1="525" x2="525" y1="160" y2="120"></line>
+<line class="d9-l" x1="175" x2="525" y1="120" y2="120"></line>
+<text class="d9-s" style="font-style:italic" x="350" y="135">responsables políticamente ante la Asamblea</text>
+<rect fill="#e8f5ee" height="56" rx="8" stroke="#2d8659" stroke-width="1.5" width="300" x="200" y="270"></rect>
+<text class="d9-h" style="fill:#1f5e3f" x="350" y="296">TRIBUNAL SUPERIOR DE JUSTICIA</text>
+<text class="d9-s" x="350" y="314">culmina la organización judicial de la CA</text>
+</svg>

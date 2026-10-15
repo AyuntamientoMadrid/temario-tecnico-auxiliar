@@ -1,0 +1,22 @@
+<svg aria-label="Responsive Web Design: la misma página se reorganiza en móvil con columna única, tablet con dos columnas y escritorio con tres columnas, mediante media queries sobre el mismo código" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 11px system-ui,sans-serif;fill:#fff}.s5{font:9.5px system-ui,sans-serif;fill:#fff}.l5{font:11px system-ui,sans-serif;fill:#444}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h5" text-anchor="middle" x="340" y="20">Una base de código · tres disposiciones</text>
+<rect fill="#f0f0f0" height="200" rx="8" stroke="#0055a0" stroke-width="2" width="120" x="40" y="40"></rect>
+<rect fill="#0055a0" height="30" rx="3" width="96" x="52" y="52"></rect><text class="s5" text-anchor="middle" x="100" y="72">Cabecera</text>
+<rect fill="#2d8659" height="60" rx="3" width="96" x="52" y="90"></rect><text class="s5" text-anchor="middle" x="100" y="124">Contenido</text>
+<rect fill="#e89822" height="60" rx="3" width="96" x="52" y="158"></rect><text class="s5" text-anchor="middle" x="100" y="192">Barra lateral</text>
+<text class="l5" style="font-weight:700" text-anchor="middle" x="100" y="256">Móvil (&lt; 600px)</text>
+<rect fill="#f0f0f0" height="200" rx="8" stroke="#0055a0" stroke-width="2" width="220" x="200" y="40"></rect>
+<rect fill="#0055a0" height="30" rx="3" width="196" x="212" y="52"></rect><text class="s5" text-anchor="middle" x="310" y="72">Cabecera</text>
+<rect fill="#2d8659" height="128" rx="3" width="120" x="212" y="90"></rect><text class="s5" text-anchor="middle" x="272" y="158">Contenido</text>
+<rect fill="#e89822" height="128" rx="3" width="70" x="338" y="90"></rect><text class="s5" text-anchor="middle" x="373" y="158">Lateral</text>
+<text class="l5" style="font-weight:700" text-anchor="middle" x="310" y="256">Tablet (600-960px)</text>
+<rect fill="#f0f0f0" height="200" rx="8" stroke="#0055a0" stroke-width="2" width="180" x="460" y="40"></rect>
+<rect fill="#0055a0" height="30" rx="3" width="156" x="472" y="52"></rect><text class="s5" text-anchor="middle" x="550" y="72">Cabecera</text>
+<rect fill="#e89822" height="128" rx="3" width="60" x="472" y="90"></rect><text class="s5" style="font-size:8px" text-anchor="middle" x="502" y="158">Nav</text>
+<rect fill="#2d8659" height="128" rx="3" width="60" x="536" y="90"></rect><text class="s5" style="font-size:8px" text-anchor="middle" x="566" y="158">Contenido</text>
+<rect fill="#d13c3c" height="128" rx="3" width="28" x="600" y="90"></rect><text class="s5" dy="3" style="font-size:8px" text-anchor="middle" transform="rotate(-90 614 154)" x="614" y="154">Lateral</text>
+<text class="l5" style="font-weight:700" text-anchor="middle" x="550" y="256">Escritorio (&gt; 960px)</text>
+<text style="font:700 11px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="288">@media (max-width: 600px) { .layout { flex-direction: column } }</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="312">[Fuente: MDN-CSS]</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg aria-label="Los cinco objetos de la gestión de servicios: incidencia como interrupción no planificada, problema como causa de una o varias incidencias, error conocido como problema ya analizado con rodeo documentado, petición de servicio como solicitud prevista en la que nada está roto, y evento como cambio de estado significativo con sus tres tipos informativo, advertencia y excepción" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t15{font:700 10.5px system-ui,sans-serif;fill:#fff}.s15{font:9px system-ui,sans-serif;fill:#fff}.d15{font:9px system-ui,sans-serif;fill:#333}.h15{font:700 13px system-ui,sans-serif;fill:#0055a0}.k15{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n15{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<defs><marker id="a15" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="h15" text-anchor="middle" x="340" y="20">Cinco objetos que no deben confundirse</text>
+<rect fill="#d13c3c" height="60" rx="5" width="200" x="20" y="34"></rect>
+<text class="t15" text-anchor="middle" x="120" y="52">INCIDENCIA</text>
+<text class="s15" text-anchor="middle" x="120" y="68">Interrupción NO planificada</text>
+<text class="s15" text-anchor="middle" x="120" y="83">Objetivo: RESTABLECER</text>
+<rect fill="#e89822" height="60" rx="5" width="200" x="240" y="34"></rect>
+<text class="t15" text-anchor="middle" x="340" y="52">PROBLEMA</text>
+<text class="s15" text-anchor="middle" x="340" y="68">CAUSA de una o varias</text>
+<text class="s15" text-anchor="middle" x="340" y="83">Objetivo: CAUSA RAÍZ</text>
+<rect fill="#2d8659" height="60" rx="5" width="200" x="460" y="34"></rect>
+<text class="t15" text-anchor="middle" x="560" y="52">ERROR CONOCIDO</text>
+<text class="s15" text-anchor="middle" x="560" y="68">Problema YA analizado</text>
+<text class="s15" text-anchor="middle" x="560" y="83">con rodeo documentado</text>
+<line marker-end="url(#a15)" stroke="#0055a0" stroke-width="2" x1="220" x2="236" y1="64" y2="64"></line>
+<line marker-end="url(#a15)" stroke="#0055a0" stroke-width="2" x1="440" x2="456" y1="64" y2="64"></line>
+<path d="M560,94 L560,112 L120,112 L120,98" fill="none" marker-end="url(#a15)" stroke="#2d8659" stroke-width="2"></path>
+<text class="n15" text-anchor="middle" x="340" y="109">la KEDB devuelve el rodeo al primer nivel: la siguiente incidencia se resuelve en minutos</text>
+<rect fill="#0055a0" height="60" rx="5" width="320" x="20" y="124"></rect>
+<text class="t15" text-anchor="middle" x="180" y="142">PETICIÓN DE SERVICIO</text>
+<text class="s15" text-anchor="middle" x="180" y="158">Solicitud prevista y acordada · NADA ESTÁ ROTO</text>
+<text class="s15" text-anchor="middle" x="180" y="174">Suele exigir autorización previa · se mide por plazo</text>
+<rect fill="#888" height="60" rx="5" width="300" x="360" y="124"></rect>
+<text class="t15" text-anchor="middle" x="510" y="142">EVENTO</text>
+<text class="s15" text-anchor="middle" x="510" y="158">Cambio de estado significativo</text>
+<text class="s15" text-anchor="middle" x="510" y="174">detectado por la monitorización</text>
+<text class="k15" x="20" y="204">LOS TRES TIPOS DE EVENTO</text>
+<rect fill="#eef3f8" height="46" rx="4" width="205" x="20" y="212"></rect>
+<text class="k15" text-anchor="middle" x="122" y="230">INFORMATIVO</text>
+<text class="d15" text-anchor="middle" x="122" y="248">Ocurrió lo previsto: no hay acción</text>
+<rect fill="#fdf3e6" height="46" rx="4" width="205" x="237" y="212"></rect>
+<text class="k15" text-anchor="middle" x="339" y="230">ADVERTENCIA</text>
+<text class="d15" text-anchor="middle" x="339" y="248">Se acerca a un umbral: ACTUAR ANTES</text>
+<rect fill="#fbeaea" height="46" rx="4" width="206" x="454" y="212"></rect>
+<text class="k15" text-anchor="middle" x="557" y="230">EXCEPCIÓN</text>
+<text class="d15" text-anchor="middle" x="557" y="248">Se superó el umbral: genera incidencia</text>
+<text class="k15" x="20" y="278">EJEMPLOS EN UNA MISMA IMPRESORA</text>
+<rect fill="#f5f5f5" height="36" rx="4" width="155" x="20" y="286"></rect><text class="d15" text-anchor="middle" x="97" y="302">Incidencia: no imprime</text><text class="d15" text-anchor="middle" x="97" y="316">y hay gente esperando</text>
+<rect fill="#f5f5f5" height="36" rx="4" width="155" x="182" y="286"></rect><text class="d15" text-anchor="middle" x="259" y="302">Problema: el controlador</text><text class="d15" text-anchor="middle" x="259" y="316">falla tras el último parche</text>
+<rect fill="#f5f5f5" height="36" rx="4" width="155" x="344" y="286"></rect><text class="d15" text-anchor="middle" x="421" y="302">Petición: instalar esa</text><text class="d15" text-anchor="middle" x="421" y="316">impresora a un usuario</text>
+<rect fill="#f5f5f5" height="36" rx="4" width="154" x="506" y="286"></rect><text class="d15" text-anchor="middle" x="583" y="302">Evento: la cola supera</text><text class="d15" text-anchor="middle" x="583" y="316">los 200 trabajos</text>
+<text class="n15" text-anchor="end" x="670" y="336">[Fuente: ITIL4; ISO20000]</text>
+</svg>

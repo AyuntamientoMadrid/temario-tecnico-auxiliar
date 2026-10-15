@@ -1,0 +1,30 @@
+<svg aria-label="El procedimiento de acceso: el solicitante presenta su solicitud sin necesidad de motivarla; si afecta a terceros se les dan 15 días de alegaciones; la Administración resuelve en el plazo máximo de un mes ampliable a otro mes; el silencio es negativo; el acceso se formaliza preferentemente por vía electrónica" class="svd10" role="img" viewbox="0 0 720 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd10 .h{font:700 12px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd10 .t{font:11.5px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd10 .s{font:10px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="92" rx="8" width="150" x="14" y="60"></rect>
+<text class="h" x="89" y="92">1 · SOLICITUD</text>
+<text class="h" style="font-weight:400;font-size:10px" x="89" y="114">Sin motivar</text>
+<text class="h" style="font-weight:400;font-size:10px" x="89" y="132">(art. 17)</text>
+<path d="M168 106 h26" marker-end="url(#a10)" stroke="#0055a0" stroke-width="2"></path>
+<rect fill="#0055a0" height="92" rx="8" width="150" x="198" y="60"></rect>
+<text class="h" x="273" y="86">2 · TERCEROS</text>
+<text class="h" style="font-weight:400;font-size:10px" x="273" y="108">15 días de</text>
+<text class="h" style="font-weight:400;font-size:10px" x="273" y="124">alegaciones</text>
+<text class="h" style="font-weight:400;font-size:10px" x="273" y="142">(art. 19.3)</text>
+<path d="M352 106 h26" marker-end="url(#a10)" stroke="#0055a0" stroke-width="2"></path>
+<rect fill="#0055a0" height="92" rx="8" width="150" x="382" y="60"></rect>
+<text class="h" x="457" y="86">3 · RESOLUCIÓN</text>
+<text class="h" style="font-weight:400;font-size:10px" x="457" y="108">Máx. 1 MES</text>
+<text class="h" style="font-weight:400;font-size:10px" x="457" y="124">(ampliable a 2)</text>
+<text class="h" style="font-weight:400;font-size:10px" x="457" y="142">(art. 20.1)</text>
+<path d="M536 106 h26" marker-end="url(#a10)" stroke="#0055a0" stroke-width="2"></path>
+<rect fill="#2d8659" height="92" rx="8" width="140" x="566" y="60"></rect>
+<text class="h" x="636" y="92">4 · ACCESO</text>
+<text class="h" style="font-weight:400;font-size:10px" x="636" y="114">Preferentemente</text>
+<text class="h" style="font-weight:400;font-size:10px" x="636" y="132">electrónico (art. 22)</text>
+<rect fill="#fdecea" height="98" rx="8" stroke="#d13c3c" width="260" x="230" y="190"></rect>
+<text class="t" style="font-weight:700;fill:#b32d2d" x="360" y="222">Silencio NEGATIVO</text>
+<text class="s" x="360" y="244">Si no resuelve en plazo, la solicitud</text>
+<text class="s" x="360" y="260">se entiende DESESTIMADA (art. 20.4)</text>
+<text class="s" x="360" y="277">El solicitante no debe motivar la solicitud</text>
+<defs><marker id="a10" markerheight="8" markerwidth="8" orient="auto" refx="6" refy="3"><path d="M0 0 L6 3 L0 6 z" fill="#0055a0"></path></marker></defs>
+</svg>

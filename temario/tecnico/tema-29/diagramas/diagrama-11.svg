@@ -1,0 +1,34 @@
+<svg aria-label="Las ocho etapas del ciclo de vida de una incidencia, desde la detección y el registro hasta la recuperación y el cierre, con los estados asociados y la indicación de en cuáles se detiene el reloj del acuerdo de nivel de servicio, más los cuatro flujos diferenciados: estándar, incidencia grave, incidencia de seguridad y petición de servicio" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t11{font:700 9.5px system-ui,sans-serif;fill:#fff}.d11{font:9px system-ui,sans-serif;fill:#333}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}.k11{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n11{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<defs><marker id="a11" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="2.5"><path d="M0,0 L6,2.5 L0,5 z" fill="#0055a0"></path></marker></defs>
+<text class="h11" text-anchor="middle" x="340" y="20">De la detección al cierre: ocho etapas</text>
+<rect fill="#0055a0" height="36" rx="4" width="152" x="20" y="34"></rect><text class="t11" text-anchor="middle" x="96" y="49">1 · DETECCIÓN</text><text class="t11" style="font-weight:400" text-anchor="middle" x="96" y="63">usuario o monitorización</text>
+<rect fill="#0055a0" height="36" rx="4" width="152" x="184" y="34"></rect><text class="t11" text-anchor="middle" x="260" y="49">2 · REGISTRO</text><text class="t11" style="font-weight:400" text-anchor="middle" x="260" y="63">lo no registrado no existe</text>
+<rect fill="#0055a0" height="36" rx="4" width="152" x="348" y="34"></rect><text class="t11" text-anchor="middle" x="424" y="49">3 · CATEGORIZACIÓN</text><text class="t11" style="font-weight:400" text-anchor="middle" x="424" y="63">taxonomía y encaminamiento</text>
+<rect fill="#0055a0" height="36" rx="4" width="148" x="512" y="34"></rect><text class="t11" text-anchor="middle" x="586" y="49">4 · PRIORIZACIÓN</text><text class="t11" style="font-weight:400" text-anchor="middle" x="586" y="63">impacto × urgencia</text>
+<line marker-end="url(#a11)" stroke="#0055a0" stroke-width="2" x1="172" x2="181" y1="52" y2="52"></line>
+<line marker-end="url(#a11)" stroke="#0055a0" stroke-width="2" x1="336" x2="345" y1="52" y2="52"></line>
+<line marker-end="url(#a11)" stroke="#0055a0" stroke-width="2" x1="500" x2="509" y1="52" y2="52"></line>
+<path d="M660,70 L668,70 L668,88 L12,88 L12,106 L17,106" fill="none" marker-end="url(#a11)" stroke="#0055a0" stroke-width="2"></path>
+<rect fill="#2d8659" height="36" rx="4" width="152" x="20" y="100"></rect><text class="t11" text-anchor="middle" x="96" y="115">5 · DIAGNÓSTICO</text><text class="t11" style="font-weight:400" text-anchor="middle" x="96" y="129">asistencia remota · N1</text>
+<rect fill="#e89822" height="36" rx="4" width="152" x="184" y="100"></rect><text class="t11" text-anchor="middle" x="260" y="115">6 · ESCALADO</text><text class="t11" style="font-weight:400" text-anchor="middle" x="260" y="129">funcional o jerárquico</text>
+<rect fill="#2d8659" height="36" rx="4" width="152" x="348" y="100"></rect><text class="t11" text-anchor="middle" x="424" y="115">7 · RESOLUCIÓN</text><text class="t11" style="font-weight:400" text-anchor="middle" x="424" y="129">solución o rodeo</text>
+<rect fill="#2d8659" height="36" rx="4" width="148" x="512" y="100"></rect><text class="t11" text-anchor="middle" x="586" y="115">8 · CIERRE</text><text class="t11" style="font-weight:400" text-anchor="middle" x="586" y="129">confirma el usuario</text>
+<line marker-end="url(#a11)" stroke="#0055a0" stroke-width="2" x1="172" x2="181" y1="118" y2="118"></line>
+<line marker-end="url(#a11)" stroke="#0055a0" stroke-width="2" x1="336" x2="345" y1="118" y2="118"></line>
+<line marker-end="url(#a11)" stroke="#0055a0" stroke-width="2" x1="500" x2="509" y1="118" y2="118"></line>
+<text class="k11" x="20" y="158">ESTADOS Y RELOJ DEL SLA</text>
+<rect fill="#eef3f8" height="34" rx="4" width="126" x="20" y="166"></rect><text class="d11" text-anchor="middle" x="83" y="182">Nuevo · Asignado</text><text class="d11" text-anchor="middle" x="83" y="195">En curso</text>
+<rect fill="#fdf3e6" height="34" rx="4" width="126" x="152" y="166"></rect><text class="d11" text-anchor="middle" x="215" y="182">Espera del usuario</text><text class="d11" text-anchor="middle" x="215" y="195">Espera de terceros</text>
+<rect fill="#eaf3ee" height="34" rx="4" width="126" x="284" y="166"></rect><text class="d11" text-anchor="middle" x="347" y="182">Resuelto</text><text class="d11" text-anchor="middle" x="347" y="195">Cerrado</text>
+<rect fill="#fbeaea" height="34" rx="4" width="126" x="416" y="166"></rect><text class="d11" text-anchor="middle" x="479" y="182">Reabierto</text><text class="d11" text-anchor="middle" x="479" y="195">(penaliza calidad)</text>
+<rect fill="#0055a0" height="34" rx="4" width="112" x="548" y="166"></rect><text class="t11" style="font-size:9px" text-anchor="middle" x="604" y="182">EL RELOJ SE</text><text class="t11" style="font-size:9px" text-anchor="middle" x="604" y="195">DETIENE EN NARANJA</text>
+<text class="k11" x="20" y="226">CUATRO FLUJOS DIFERENCIADOS</text>
+<rect fill="#0055a0" height="52" rx="4" width="155" x="20" y="234"></rect><text class="t11" text-anchor="middle" x="97" y="252">ESTÁNDAR</text><text class="t11" style="font-weight:400" text-anchor="middle" x="97" y="268">la mayoría de casos</text>
+<rect fill="#d13c3c" height="52" rx="4" width="155" x="182" y="234"></rect><text class="t11" text-anchor="middle" x="259" y="252">INCIDENCIA GRAVE</text><text class="t11" style="font-weight:400" text-anchor="middle" x="259" y="268">responsable designado,</text><text class="t11" style="font-weight:400" text-anchor="middle" x="259" y="281">comunicación y revisión</text>
+<rect fill="#e89822" height="52" rx="4" width="155" x="344" y="234"></rect><text class="t11" text-anchor="middle" x="421" y="252">SEGURIDAD</text><text class="t11" style="font-weight:400" text-anchor="middle" x="421" y="268">preservar evidencias;</text><text class="t11" style="font-weight:400" text-anchor="middle" x="421" y="281">valorar notificación</text>
+<rect fill="#2d8659" height="52" rx="4" width="154" x="506" y="234"></rect><text class="t11" text-anchor="middle" x="583" y="252">PETICIÓN</text><text class="t11" style="font-weight:400" text-anchor="middle" x="583" y="268">nada está roto:</text><text class="t11" style="font-weight:400" text-anchor="middle" x="583" y="281">autorización y plazo</text>
+<rect fill="none" height="24" rx="5" stroke="#d13c3c" stroke-width="1.5" width="500" x="90" y="298"></rect>
+<text class="k11" text-anchor="middle" x="340" y="314">Abusar del estado «en espera» para parar el reloj falsea todos los indicadores</text>
+<text class="n11" text-anchor="end" x="670" y="336">[Fuente: ITIL4; ISO20000]</text>
+</svg>

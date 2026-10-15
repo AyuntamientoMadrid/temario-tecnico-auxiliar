@@ -1,0 +1,57 @@
+<svg aria-label="Ciclo de estados de un proceso: nuevo, preparado, en ejecución, bloqueado y terminado, con las transiciones de admisión, despacho, expropiación, petición de entrada y salida y fin. A la derecha, la diferencia entre proceso e hilo. Debajo, los estados patológicos zombi, huérfano y espera ininterrumpible" role="img" viewbox="0 0 680 350" xmlns="http://www.w3.org/2000/svg">
+<style>.t4{font:700 10.5px system-ui,sans-serif;fill:#fff}.s4{font:9px system-ui,sans-serif;fill:#fff}.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}.k4{font:700 10px system-ui,sans-serif;fill:#0055a0}.d4{font:9px system-ui,sans-serif;fill:#444}.e4{font:8.5px system-ui,sans-serif;fill:#0055a0}</style>
+<defs>
+<marker id="a4" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker>
+<marker id="r4" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#d13c3c"></path></marker>
+<marker id="o4" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#e89822"></path></marker>
+</defs>
+<text class="h4" text-anchor="middle" x="340" y="20">Estados de un proceso · proceso frente a hilo</text>
+<text class="e4" text-anchor="middle" x="117" y="40">admisión</text>
+<text class="e4" text-anchor="middle" x="253" y="40">despacho</text>
+<text class="e4" text-anchor="middle" x="389" y="40">fin</text>
+<rect fill="#888" height="34" rx="5" width="86" x="16" y="46"></rect>
+<text class="t4" text-anchor="middle" x="59" y="68">NUEVO</text>
+<rect fill="#0055a0" height="34" rx="5" width="106" x="132" y="46"></rect>
+<text class="t4" text-anchor="middle" x="185" y="68">PREPARADO</text>
+<rect fill="#2d8659" height="34" rx="5" width="106" x="268" y="46"></rect>
+<text class="t4" text-anchor="middle" x="321" y="68">EN EJECUCIÓN</text>
+<rect fill="#888" height="34" rx="5" width="86" x="404" y="46"></rect>
+<text class="t4" text-anchor="middle" x="447" y="68">TERMINADO</text>
+<path d="M102 63 L128 63" marker-end="url(#a4)" stroke="#0055a0" stroke-width="2"></path>
+<path d="M238 57 L264 57" marker-end="url(#a4)" stroke="#0055a0" stroke-width="2"></path>
+<path d="M264 72 L238 72" marker-end="url(#r4)" stroke="#d13c3c" stroke-width="2"></path>
+<path d="M374 63 L400 63" marker-end="url(#a4)" stroke="#0055a0" stroke-width="2"></path>
+<text class="e4" text-anchor="middle" x="253" y="96">expropiación (fin de quantum)</text>
+<path d="M350 82 L350 132" marker-end="url(#o4)" stroke="#e89822" stroke-width="2"></path>
+<path d="M150 132 L150 82" marker-end="url(#a4)" stroke="#0055a0" stroke-width="2"></path>
+<text class="e4" text-anchor="middle" x="392" y="112">pide E/S</text>
+<text class="e4" text-anchor="middle" x="108" y="112">llega la E/S</text>
+<rect fill="#e89822" height="34" rx="5" width="290" x="110" y="136"></rect>
+<text class="t4" text-anchor="middle" x="255" y="158">BLOQUEADO / EN ESPERA (de E/S o de un evento)</text>
+<rect fill="#f0f4f8" height="126" rx="5" stroke="#0055a0" width="158" x="506" y="46"></rect>
+<text class="k4" text-anchor="middle" x="585" y="65">PROCESO vs HILO</text>
+<text class="d4" text-anchor="middle" x="585" y="86">El PROCESO posee el espacio</text>
+<text class="d4" text-anchor="middle" x="585" y="100">de direcciones y los recursos</text>
+<text class="d4" text-anchor="middle" x="585" y="120">El HILO es la unidad de</text>
+<text class="d4" text-anchor="middle" x="585" y="134">planificación y lo comparte</text>
+<text class="d4" text-anchor="middle" x="585" y="156">Cambiar de hilo es más barato</text>
+<text class="k4" text-anchor="middle" x="340" y="194">Estados patológicos que hay que saber reconocer</text>
+<rect fill="#d13c3c" height="76" rx="5" width="210" x="16" y="206"></rect>
+<text class="t4" text-anchor="middle" x="121" y="227">ZOMBI</text>
+<text class="s4" text-anchor="middle" x="121" y="246">Terminó, pero el padre no ha</text>
+<text class="s4" text-anchor="middle" x="121" y="261">recogido su código de salida</text>
+<text class="s4" text-anchor="middle" x="121" y="276">Ocupa entrada, no consume CPU</text>
+<rect fill="#e89822" height="76" rx="5" width="210" x="234" y="206"></rect>
+<text class="t4" text-anchor="middle" x="339" y="227">HUÉRFANO</text>
+<text class="s4" text-anchor="middle" x="339" y="246">Su padre murió antes que él</text>
+<text class="s4" text-anchor="middle" x="339" y="261">El proceso inicial (PID 1)</text>
+<text class="s4" text-anchor="middle" x="339" y="276">lo adopta</text>
+<rect fill="#7a3b8f" height="76" rx="5" width="212" x="452" y="206"></rect>
+<text class="t4" text-anchor="middle" x="558" y="227">ESPERA ININTERRUMPIBLE (D)</text>
+<text class="s4" text-anchor="middle" x="558" y="246">Bloqueado en una E/S que no</text>
+<text class="s4" text-anchor="middle" x="558" y="261">responde. Carga media altísima</text>
+<text class="s4" text-anchor="middle" x="558" y="276">con la CPU ociosa</text>
+<rect fill="none" height="30" rx="5" stroke="#0055a0" stroke-width="2" width="540" x="70" y="294"></rect>
+<text class="k4" text-anchor="middle" x="340" y="314">SIGTERM (15) pide terminar y permite cerrar bien · SIGKILL (9) mata sin remedio</text>
+<text style="font:9.5px system-ui;fill:#666" text-anchor="end" x="670" y="344">[Fuente: SILBERSCHATZ; MAN-PAGES]</text>
+</svg>

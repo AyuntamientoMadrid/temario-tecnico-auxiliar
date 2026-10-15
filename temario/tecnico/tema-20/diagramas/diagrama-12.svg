@@ -1,0 +1,25 @@
+<svg aria-label="Las tres familias de diagramas UML de comportamiento: casos de uso para requisitos funcionales, diagramas de interacción (secuencia y comunicación) para colaboración temporal, y diagramas de máquina de estados y actividades para control de flujo" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t12{font:700 12px system-ui,sans-serif;fill:#fff}.s12{font:10px system-ui,sans-serif;fill:#fff}.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h12" text-anchor="middle" x="340" y="20">Diagramas UML de comportamiento — 7 tipos, 3 grandes familias</text>
+<rect fill="#0055a0" height="150" rx="8" width="190" x="30" y="40"></rect>
+<text class="t12" text-anchor="middle" x="125" y="64">CASOS DE USO</text>
+<text class="s12" text-anchor="middle" x="125" y="86">Requisitos funcionales</text>
+<text class="s12" text-anchor="middle" x="125" y="102">Actor + elipse</text>
+<text class="s12" text-anchor="middle" x="125" y="118">«include» / «extend»</text>
+<text class="s12" text-anchor="middle" x="125" y="140">§5.5</text>
+<rect fill="#2d8659" height="150" rx="8" width="190" x="245" y="40"></rect>
+<text class="t12" text-anchor="middle" x="340" y="64">INTERACCIÓN</text>
+<text class="s12" text-anchor="middle" x="340" y="86">Secuencia (temporal)</text>
+<text class="s12" text-anchor="middle" x="340" y="102">Comunicación (espacial)</text>
+<text class="s12" text-anchor="middle" x="340" y="118">Mensajes entre objetos</text>
+<text class="s12" text-anchor="middle" x="340" y="140">§5.6</text>
+<rect fill="#e89822" height="150" rx="8" width="190" x="460" y="40"></rect>
+<text class="t12" text-anchor="middle" x="555" y="64">CONTROL DE FLUJO</text>
+<text class="s12" text-anchor="middle" x="555" y="86">Máquina de Estados</text>
+<text class="s12" text-anchor="middle" x="555" y="102">(ciclo de vida objeto)</text>
+<text class="s12" text-anchor="middle" x="555" y="118">Actividades (proceso)</text>
+<text class="s12" text-anchor="middle" x="555" y="140">§5.7</text>
+<text style="font:700 12px system-ui;fill:#123" text-anchor="middle" x="340" y="222">Faltan del recuento: Diagrama General de Interacción y Diagrama de Temporización</text>
+<text style="font:11px system-ui;fill:#444" text-anchor="middle" x="340" y="242">Total: 7 diagramas de comportamiento + 7 estructurales (D11) = 14 tipos UML 2.5</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="300">[Fuente: OMG-UML25; UML-DIAG-TYPES]</text>
+</svg>

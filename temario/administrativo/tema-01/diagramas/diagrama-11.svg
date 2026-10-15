@@ -1,0 +1,15 @@
+<svg aria-label="Flujo recurso de amparo" role="img" viewbox="0 0 700 440" xmlns="http://www.w3.org/2000/svg">
+<style>.d11-start{fill:#e89822}.d11-ord{fill:#0055a0}.d11-tc{fill:#d13c3c}.d11-ok{fill:#2d8659}.d11-title{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.d11-sub{font:11px system-ui,sans-serif;fill:#fff;text-anchor:middle}.d11-note{font:italic 11px system-ui,sans-serif;fill:#333;text-anchor:middle}.d11-arrow{stroke:#333;stroke-width:2;fill:none;marker-end:url(#d11-arrow)}</style>
+<defs><marker id="d11-arrow" markerheight="6" markerwidth="6" orient="auto" refx="8" refy="5" viewbox="0 0 10 10"><path d="M 0 0 L 10 5 L 0 10 z" fill="#333"></path></marker></defs>
+<rect class="d11-start" height="50" rx="8" width="220" x="240" y="20"></rect><text class="d11-title" x="350" y="42">1. VULNERACIÓN</text><text class="d11-sub" x="350" y="58">derecho arts. 14-29 o 30 (objeción)</text>
+<line class="d11-arrow" x1="350" x2="350" y1="70" y2="100"></line>
+<rect class="d11-ord" height="60" rx="8" width="220" x="240" y="100"></rect><text class="d11-title" x="350" y="122">2. TRIBUNALES ORDINARIOS</text><text class="d11-sub" x="350" y="138">Procedimiento PREFERENTE</text><text class="d11-sub" x="350" y="152">y SUMARIO (art. 53.2)</text>
+<line class="d11-arrow" x1="350" x2="350" y1="160" y2="200"></line>
+<rect class="d11-ord" height="50" rx="8" width="220" x="240" y="200"></rect><text class="d11-title" x="350" y="222">3. AGOTAMIENTO VÍA JUDICIAL</text><text class="d11-sub" x="350" y="238">requisito previo al amparo</text>
+<line class="d11-arrow" x1="350" x2="350" y1="250" y2="290"></line>
+<rect class="d11-tc" height="60" rx="8" width="220" x="240" y="290"></rect><text class="d11-title" x="350" y="312">4. RECURSO DE AMPARO</text><text class="d11-sub" x="350" y="328">Tribunal Constitucional</text><text class="d11-sub" x="350" y="342">plazo 30 días</text>
+<line class="d11-arrow" x1="350" x2="350" y1="350" y2="380"></line>
+<rect class="d11-ok" height="44" rx="8" width="220" x="240" y="380"></rect><text class="d11-title" x="350" y="407">AMPARO / DENEGACIÓN</text>
+<rect fill="#fff" height="120" rx="8" stroke="#0055a0" width="200" x="20" y="100"></rect><text class="d11-note" style="font-weight:700" x="120" y="122">ÁMBITO DEL AMPARO</text><text class="d11-note" x="120" y="142">Art. 14 (igualdad)</text><text class="d11-note" x="120" y="158">Arts. 15-29 (fundamentales)</text><text class="d11-note" x="120" y="174">Art. 30.2 (objeción</text><text class="d11-note" x="120" y="188">de conciencia)</text><text class="d11-note" style="font-weight:700;fill:#d13c3c" x="120" y="210">NO: principios rectores</text>
+<rect fill="#fff" height="120" rx="8" stroke="#0055a0" width="200" x="480" y="100"></rect><text class="d11-note" style="font-weight:700" x="580" y="122">LEGITIMACIÓN</text><text class="d11-note" x="580" y="142">· Persona con interés</text><text class="d11-note" x="580" y="158">· Defensor del Pueblo</text><text class="d11-note" x="580" y="174">· Ministerio Fiscal</text><text class="d11-note" style="font-style:italic" x="580" y="200">LOTC 2/1979</text>
+</svg>

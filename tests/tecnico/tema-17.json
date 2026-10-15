@@ -1,0 +1,1109 @@
+{
+  "tema": 17,
+  "bloque": "tecnico",
+  "titulo": "Diseño de bases de datos y normalización",
+  "enunciado_oficial": "Diseño de bases de datos. Diseño lógico y físico. El modelo lógico relacional. Normalización.",
+  "calificacion": "+1 acierto, -1/3 error, 0 en blanco (BOAM 10.032, base 5.2)",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Cuál es el orden correcto de los tres niveles de diseño de una base de datos?",
+      "opciones": {
+        "a": "Físico → lógico → conceptual",
+        "b": "Conceptual → lógico → físico",
+        "c": "Lógico → conceptual → físico"
+      },
+      "correcta": "b",
+      "referencia": "§1.2 [ELMASRI]",
+      "explicacion": "Se va de lo más abstracto (independiente del SGBD) a lo más concreto (producto y almacenamiento)."
+    },
+    {
+      "numero": 2,
+      "pregunta": "El diseño conceptual de una base de datos se caracteriza por ser:",
+      "opciones": {
+        "a": "Una descripción de los ficheros físicos en disco",
+        "b": "Dependiente del producto concreto (Oracle, PostgreSQL)",
+        "c": "Independiente de cualquier SGBD"
+      },
+      "correcta": "c",
+      "referencia": "§1.2 [ELMASRI]",
+      "explicacion": "El modelo conceptual (típicamente E-R) describe la realidad sin atarse a ninguna tecnología."
+    },
+    {
+      "numero": 3,
+      "pregunta": "¿Qué permite la independencia física de datos?",
+      "opciones": {
+        "a": "Cambiar el nombre de las entidades sin más",
+        "b": "Eliminar las claves primarias",
+        "c": "Modificar el almacenamiento (índices, ficheros) sin alterar el esquema lógico ni las aplicaciones"
+      },
+      "correcta": "c",
+      "referencia": "§1.3 [DATE]",
+      "explicacion": "Es la independencia más fácil de conseguir gracias a la separación en niveles."
+    },
+    {
+      "numero": 4,
+      "pregunta": "¿Cuál NO es un objetivo del diseño de bases de datos?",
+      "opciones": {
+        "a": "Mínima redundancia controlada",
+        "b": "Maximizar deliberadamente la duplicación de datos",
+        "c": "Integridad de los datos"
+      },
+      "correcta": "b",
+      "referencia": "§1.3 [ELMASRI]",
+      "explicacion": "La redundancia no controlada provoca anomalías; el diseño busca minimizarla."
+    },
+    {
+      "numero": 5,
+      "pregunta": "El diseño lógico de una base de datos relacional produce:",
+      "opciones": {
+        "a": "El conjunto de tablas con sus claves, normalizadas, independiente del producto",
+        "b": "El diagrama de despliegue de servidores",
+        "c": "El código fuente de la aplicación cliente"
+      },
+      "correcta": "a",
+      "referencia": "§2.1 [ELMASRI]",
+      "explicacion": "Transforma el modelo conceptual en el modelo del tipo de SGBD elegido (relacional)."
+    },
+    {
+      "numero": 6,
+      "pregunta": "La independencia lógica de datos se apoya principalmente en:",
+      "opciones": {
+        "a": "Los índices bitmap",
+        "b": "El particionamiento por rango",
+        "c": "Las vistas"
+      },
+      "correcta": "c",
+      "referencia": "§1.3 [DATE]",
+      "explicacion": "Las vistas permiten cambiar el esquema lógico afectando lo mínimo a las aplicaciones que consultan a través de ellas."
+    },
+    {
+      "numero": 7,
+      "pregunta": "¿A qué nivel de diseño corresponde decidir el particionamiento de una tabla y sus índices?",
+      "opciones": {
+        "a": "Diseño conceptual",
+        "b": "Diseño físico",
+        "c": "Análisis de requisitos"
+      },
+      "correcta": "b",
+      "referencia": "§2.6 [RAMAKRISHNAN]",
+      "explicacion": "El diseño físico decide el almacenamiento y las estructuras de acceso en el producto concreto."
+    },
+    {
+      "numero": 8,
+      "pregunta": "La arquitectura ANSI/SPARC de tres esquemas se relaciona con el diseño en niveles en que:",
+      "opciones": {
+        "a": "El esquema interno equivale al diseño físico y los esquemas externos a las vistas",
+        "b": "Solo define un único esquema global",
+        "c": "Sustituye al modelo relacional"
+      },
+      "correcta": "a",
+      "referencia": "§1.2 [SILBER]",
+      "explicacion": "Interno↔físico, conceptual↔lógico, externos↔vistas de usuario."
+    },
+    {
+      "numero": 9,
+      "pregunta": "En el modelo entidad-relación, una entidad se representa gráficamente con:",
+      "opciones": {
+        "a": "Un rombo",
+        "b": "Una elipse",
+        "c": "Un rectángulo"
+      },
+      "correcta": "c",
+      "referencia": "§1.4 [CHEN76]",
+      "explicacion": "El rombo es la relación y la elipse el atributo."
+    },
+    {
+      "numero": 10,
+      "pregunta": "¿Qué representa un rombo en un diagrama E-R?",
+      "opciones": {
+        "a": "Una relación (interrelación) entre entidades",
+        "b": "Un atributo",
+        "c": "Una clave primaria"
+      },
+      "correcta": "a",
+      "referencia": "§1.4 [CHEN76]",
+      "explicacion": "El rombo une dos o más entidades; la cardinalidad se anota en las líneas."
+    },
+    {
+      "numero": 11,
+      "pregunta": "Una relación 1:N entre DISTRITO y HABITANTE se transforma en el modelo relacional:",
+      "opciones": {
+        "a": "Creando una tabla intermedia con dos claves ajenas",
+        "b": "Propagando la clave de DISTRITO como clave ajena en HABITANTE",
+        "c": "Fusionando ambas entidades en una sola tabla siempre"
+      },
+      "correcta": "b",
+      "referencia": "§2.2 [ELMASRI]",
+      "explicacion": "En 1:N la clave del lado «1» va al lado «N»; no se crea tabla nueva."
+    },
+    {
+      "numero": 12,
+      "pregunta": "Una relación N:M entre HABITANTE y TRIBUTO se transforma:",
+      "opciones": {
+        "a": "Propagando la clave de uno en el otro",
+        "b": "Sin cambios en el esquema",
+        "c": "Creando una tabla intermedia con clave compuesta y dos claves ajenas"
+      },
+      "correcta": "c",
+      "referencia": "§2.2 [ELMASRI]",
+      "explicacion": "La tabla puente almacena además los atributos propios de la relación (p. ej. porcentaje de titularidad)."
+    },
+    {
+      "numero": 13,
+      "pregunta": "Un atributo multivaluado (p. ej. varios teléfonos de un habitante) se transforma en:",
+      "opciones": {
+        "a": "Una tabla aparte relacionada por clave ajena",
+        "b": "Una columna que contiene la lista separada por comas",
+        "c": "Tres columnas fijas: telefono1, telefono2, telefono3"
+      },
+      "correcta": "a",
+      "referencia": "§2.2 [ELMASRI]",
+      "explicacion": "Guardar varios valores en una celda violaría la 1FN; las columnas fijas limitan artificialmente el número."
+    },
+    {
+      "numero": 14,
+      "pregunta": "¿Qué es una entidad débil?",
+      "opciones": {
+        "a": "Una entidad con muchos atributos",
+        "b": "Una entidad que no participa en ninguna relación",
+        "c": "Una entidad sin clave propia que depende de otra entidad fuerte"
+      },
+      "correcta": "c",
+      "referencia": "§1.4 [ELMASRI]",
+      "explicacion": "Su clave primaria incluye la clave de la entidad fuerte de la que depende."
+    },
+    {
+      "numero": 15,
+      "pregunta": "La participación total de una entidad en una relación significa que:",
+      "opciones": {
+        "a": "La relación es siempre N:M",
+        "b": "La entidad tiene varios atributos clave",
+        "c": "Toda ocurrencia de la entidad debe participar en la relación"
+      },
+      "correcta": "c",
+      "referencia": "§1.4 [ELMASRI]",
+      "explicacion": "En el modelo lógico se traduce en una clave ajena NOT NULL."
+    },
+    {
+      "numero": 16,
+      "pregunta": "Un atributo derivado (como la edad a partir de la fecha de nacimiento):",
+      "opciones": {
+        "a": "En principio no se almacena, se calcula",
+        "b": "Debe ser siempre clave primaria",
+        "c": "Obliga a crear una tabla intermedia"
+      },
+      "correcta": "a",
+      "referencia": "§2.2 [ELMASRI]",
+      "explicacion": "Almacenarlo introduce redundancia; solo se hace por desnormalización justificada."
+    },
+    {
+      "numero": 17,
+      "pregunta": "Una relación recursiva (reflexiva) es aquella en la que:",
+      "opciones": {
+        "a": "Una entidad se relaciona consigo misma",
+        "b": "Participan exactamente tres entidades",
+        "c": "No hay cardinalidad definida"
+      },
+      "correcta": "a",
+      "referencia": "§1.4 [ELMASRI]",
+      "explicacion": "Ejemplo: un EMPLEADO «es jefe de» otro EMPLEADO."
+    },
+    {
+      "numero": 18,
+      "pregunta": "Una clave subrogada (surrogate) es:",
+      "opciones": {
+        "a": "Una clave ajena que admite nulos",
+        "b": "Un identificador artificial sin significado de negocio (p. ej. autonumérico)",
+        "c": "Una clave formada por todos los atributos de la tabla"
+      },
+      "correcta": "b",
+      "referencia": "§2.5 [DATE]",
+      "explicacion": "Aporta estabilidad frente a las claves naturales, que pueden cambiar."
+    },
+    {
+      "numero": 19,
+      "pregunta": "La integridad de entidad establece que:",
+      "opciones": {
+        "a": "Las claves ajenas no pueden existir",
+        "b": "Toda tabla debe tener al menos 100 filas",
+        "c": "Ningún atributo de la clave primaria puede ser nulo"
+      },
+      "correcta": "c",
+      "referencia": "§2.4 [CODD70]",
+      "explicacion": "Si lo fuera, no podría identificar unívocamente la fila."
+    },
+    {
+      "numero": 20,
+      "pregunta": "La integridad referencial exige que el valor de una clave ajena:",
+      "opciones": {
+        "a": "Coincida con un valor existente de la clave primaria referenciada o sea nulo",
+        "b": "Sea siempre distinto al de la clave primaria",
+        "c": "Sea único en toda la base de datos"
+      },
+      "correcta": "a",
+      "referencia": "§2.4 [DATE]",
+      "explicacion": "Evita las «referencias colgantes»."
+    },
+    {
+      "numero": 21,
+      "pregunta": "¿Qué política referencial borra automáticamente las filas hijas al borrar la fila padre?",
+      "opciones": {
+        "a": "NO ACTION / RESTRICT",
+        "b": "CASCADE",
+        "c": "SET DEFAULT"
+      },
+      "correcta": "b",
+      "referencia": "§2.4 [ISO9075]",
+      "explicacion": "Propaga el borrado o la actualización a las filas que referencian la fila padre."
+    },
+    {
+      "numero": 22,
+      "pregunta": "¿A qué sublenguaje de SQL pertenece la sentencia CREATE TABLE?",
+      "opciones": {
+        "a": "DML",
+        "b": "DCL",
+        "c": "DDL"
+      },
+      "correcta": "c",
+      "referencia": "§2.5 [ISO9075]",
+      "explicacion": "El DDL (Data Definition Language) define la estructura: tablas, índices, vistas y restricciones."
+    },
+    {
+      "numero": 23,
+      "pregunta": "Las sentencias GRANT y REVOKE pertenecen a:",
+      "opciones": {
+        "a": "DCL (control de acceso/permisos)",
+        "b": "DML",
+        "c": "TCL"
+      },
+      "correcta": "a",
+      "referencia": "§2.5 [ISO9075]",
+      "explicacion": "El DCL controla los privilegios de usuarios y roles."
+    },
+    {
+      "numero": 24,
+      "pregunta": "¿Cuál de estas afirmaciones sobre DELETE y TRUNCATE es correcta?",
+      "opciones": {
+        "a": "Ambas son DML y soportan WHERE",
+        "b": "TRUNCATE permite borrar filas concretas con WHERE",
+        "c": "DELETE es DML (transaccional, con WHERE) y TRUNCATE es DDL (vacía la tabla)"
+      },
+      "correcta": "c",
+      "referencia": "§2.5 [ISO9075]",
+      "explicacion": "TRUNCATE es rápida y normalmente no transaccional ni filtrable."
+    },
+    {
+      "numero": 25,
+      "pregunta": "Un índice de tipo hash es adecuado para:",
+      "opciones": {
+        "a": "Búsquedas por rango (BETWEEN, &lt;, &gt;)",
+        "b": "Búsquedas por igualdad exacta",
+        "c": "Ordenar el resultado con ORDER BY"
+      },
+      "correcta": "b",
+      "referencia": "§2.8 [RAMAKRISHNAN]",
+      "explicacion": "El hash no soporta rangos ni orden; para eso se usa el B+tree."
+    },
+    {
+      "numero": 26,
+      "pregunta": "¿Qué ventaja tiene el índice B+tree que no tiene el hash?",
+      "opciones": {
+        "a": "Sirve para búsquedas por igualdad y también por rango y orden",
+        "b": "Ocupa menos espacio siempre",
+        "c": "No necesita mantenerse al insertar"
+      },
+      "correcta": "a",
+      "referencia": "§2.8 [RAMAKRISHNAN]",
+      "explicacion": "Sus hojas están al mismo nivel y enlazadas, lo que facilita los recorridos por rango."
+    },
+    {
+      "numero": 27,
+      "pregunta": "Crear muchos índices sobre una tabla:",
+      "opciones": {
+        "a": "Siempre mejora el rendimiento global",
+        "b": "No tiene ningún efecto secundario",
+        "c": "Acelera lecturas pero penaliza escrituras y consume espacio"
+      },
+      "correcta": "c",
+      "referencia": "§2.8 [RAMAKRISHNAN]",
+      "explicacion": "Cada índice debe mantenerse en cada INSERT/UPDATE/DELETE."
+    },
+    {
+      "numero": 28,
+      "pregunta": "El índice bitmap es especialmente eficiente en columnas:",
+      "opciones": {
+        "a": "De muy alta cardinalidad (como el DNI)",
+        "b": "De baja cardinalidad (como el sexo o el distrito) en entornos analíticos",
+        "c": "De tipo BLOB"
+      },
+      "correcta": "b",
+      "referencia": "§2.8 [ORA-CONCEPTS]",
+      "explicacion": "Penaliza la concurrencia de escrituras, por eso es típico de OLAP."
+    },
+    {
+      "numero": 29,
+      "pregunta": "Un índice agrupado (clustered):",
+      "opciones": {
+        "a": "Puede haber tantos como se quiera por tabla",
+        "b": "Determina el orden físico de las filas y solo puede haber uno por tabla",
+        "c": "No tiene relación con el orden de las filas"
+      },
+      "correcta": "b",
+      "referencia": "§2.8 [MS-SQL-INDEX]",
+      "explicacion": "A menudo coincide con la clave primaria."
+    },
+    {
+      "numero": 30,
+      "pregunta": "El plan de ejecución de una consulta es:",
+      "opciones": {
+        "a": "La ruta de operaciones físicas que el optimizador elige para resolverla",
+        "b": "El texto literal de la sentencia SQL",
+        "c": "La lista de usuarios con permiso sobre la tabla"
+      },
+      "correcta": "a",
+      "referencia": "§2.9 [SILBER]",
+      "explicacion": "Se inspecciona con EXPLAIN y depende de las estadísticas."
+    },
+    {
+      "numero": 31,
+      "pregunta": "En el modelo relacional, el grado de una relación es:",
+      "opciones": {
+        "a": "El número de tuplas (filas)",
+        "b": "El número de atributos (columnas)",
+        "c": "El número de claves ajenas"
+      },
+      "correcta": "b",
+      "referencia": "§3.1 [DATE]",
+      "explicacion": "La cardinalidad, en cambio, es el número de filas."
+    },
+    {
+      "numero": 32,
+      "pregunta": "La cardinalidad de una relación se refiere a:",
+      "opciones": {
+        "a": "El número de tuplas (filas)",
+        "b": "El número de columnas",
+        "c": "El número de dominios definidos"
+      },
+      "correcta": "a",
+      "referencia": "§3.1 [DATE]",
+      "explicacion": "Grado = columnas; cardinalidad = filas."
+    },
+    {
+      "numero": 33,
+      "pregunta": "El dominio de un atributo es:",
+      "opciones": {
+        "a": "El nombre de la tabla",
+        "b": "La clave primaria de la relación",
+        "c": "El conjunto de valores válidos que puede tomar el atributo"
+      },
+      "correcta": "c",
+      "referencia": "§3.1 [DATE]",
+      "explicacion": "Por ejemplo, el dominio de «distrito» son los códigos 1..21."
+    },
+    {
+      "numero": 34,
+      "pregunta": "¿Qué diferencia hay entre una relación teórica y una tabla SQL?",
+      "opciones": {
+        "a": "Ninguna, son idénticas",
+        "b": "La tabla SQL no admite claves",
+        "c": "La relación teórica es un conjunto (sin duplicados); la tabla SQL es un multiconjunto (permite filas repetidas salvo restricción)"
+      },
+      "correcta": "c",
+      "referencia": "§3.1 [DATE]",
+      "explicacion": "Por eso SELECT puede devolver duplicados salvo DISTINCT."
+    },
+    {
+      "numero": 35,
+      "pregunta": "Una superclave es:",
+      "opciones": {
+        "a": "Un conjunto de atributos que identifica unívocamente una tupla (puede no ser mínimo)",
+        "b": "Siempre un único atributo",
+        "c": "Una clave que apunta a otra tabla"
+      },
+      "correcta": "a",
+      "referencia": "§3.2 [DATE]",
+      "explicacion": "La clave candidata es la superclave mínima."
+    },
+    {
+      "numero": 36,
+      "pregunta": "Una clave candidata es:",
+      "opciones": {
+        "a": "Cualquier columna de la tabla",
+        "b": "Una superclave mínima (si se le quita un atributo deja de identificar)",
+        "c": "La clave que se descarta del diseño"
+      },
+      "correcta": "b",
+      "referencia": "§3.2 [ELMASRI]",
+      "explicacion": "De entre las candidatas, la elegida es la primaria; las demás, alternativas."
+    },
+    {
+      "numero": 37,
+      "pregunta": "Las claves candidatas no elegidas como primaria se denominan:",
+      "opciones": {
+        "a": "Claves alternativas",
+        "b": "Claves ajenas",
+        "c": "Superclaves"
+      },
+      "correcta": "a",
+      "referencia": "§3.2 [DATE]",
+      "explicacion": "Suelen implementarse con una restricción UNIQUE."
+    },
+    {
+      "numero": 38,
+      "pregunta": "En la relación HABITANTE(dni, nss, nombre), si elegimos dni como primaria, el NSS es:",
+      "opciones": {
+        "a": "Una clave ajena",
+        "b": "Un atributo no clave cualquiera",
+        "c": "Una clave alternativa (candidata no elegida)"
+      },
+      "correcta": "c",
+      "referencia": "§3.2 [DATE]",
+      "explicacion": "El NSS también identifica unívocamente, pero no fue elegido como primaria."
+    },
+    {
+      "numero": 39,
+      "pregunta": "El valor NULL en el modelo relacional representa:",
+      "opciones": {
+        "a": "El número cero",
+        "b": "Información ausente o desconocida",
+        "c": "Una cadena vacía"
+      },
+      "correcta": "b",
+      "referencia": "§3.3 [DATE]",
+      "explicacion": "No es cero ni cadena vacía, e introduce una lógica de tres valores."
+    },
+    {
+      "numero": 40,
+      "pregunta": "¿Cuál de estas es una regla de integridad del modelo relacional?",
+      "opciones": {
+        "a": "Toda tabla debe tener exactamente una clave ajena",
+        "b": "Los nombres de columna deben ir en mayúsculas",
+        "c": "La integridad referencial: toda clave ajena referencia una fila existente o es nula"
+      },
+      "correcta": "c",
+      "referencia": "§3.3 [CODD70]",
+      "explicacion": "Junto con la integridad de entidad, de dominio y las reglas de negocio."
+    },
+    {
+      "numero": 41,
+      "pregunta": "El álgebra relacional es un lenguaje:",
+      "opciones": {
+        "a": "Procedimental (indica cómo obtener el resultado paso a paso)",
+        "b": "Declarativo puro (solo indica qué se quiere)",
+        "c": "De definición de estructura (DDL)"
+      },
+      "correcta": "a",
+      "referencia": "§3.4 [DATE]",
+      "explicacion": "El cálculo relacional, en cambio, es declarativo."
+    },
+    {
+      "numero": 42,
+      "pregunta": "La operación de selección (σ) del álgebra relacional:",
+      "opciones": {
+        "a": "Elige columnas",
+        "b": "Filtra las filas que cumplen una condición",
+        "c": "Une dos tablas"
+      },
+      "correcta": "b",
+      "referencia": "§3.4 [ELMASRI]",
+      "explicacion": "La proyección (π) es la que elige columnas."
+    },
+    {
+      "numero": 43,
+      "pregunta": "La operación de proyección (π) del álgebra relacional:",
+      "opciones": {
+        "a": "Selecciona columnas (atributos), eliminando duplicados",
+        "b": "Filtra filas según una condición",
+        "c": "Calcula el producto cartesiano"
+      },
+      "correcta": "a",
+      "referencia": "§3.4 [ELMASRI]",
+      "explicacion": "No confundir con la selección σ, que filtra filas."
+    },
+    {
+      "numero": 44,
+      "pregunta": "¿Cuáles son los cinco operadores primitivos del álgebra relacional?",
+      "opciones": {
+        "a": "Join, intersección, división, unión y selección",
+        "b": "Selección, proyección, unión, diferencia y producto cartesiano",
+        "c": "Selección, proyección, join, división y renombrado"
+      },
+      "correcta": "b",
+      "referencia": "§3.4 [CODD70]",
+      "explicacion": "El join, la intersección y la división se derivan de estos cinco."
+    },
+    {
+      "numero": 45,
+      "pregunta": "La operación de división (÷) resuelve consultas del tipo:",
+      "opciones": {
+        "a": "«cuántas filas tiene la tabla»",
+        "b": "«cuál es el valor máximo de una columna»",
+        "c": "«qué elementos están relacionados con TODOS los de otro conjunto»"
+      },
+      "correcta": "c",
+      "referencia": "§3.4 [DATE]",
+      "explicacion": "Por ejemplo, qué habitantes han pagado todos los tributos obligatorios."
+    },
+    {
+      "numero": 46,
+      "pregunta": "El cálculo relacional es un lenguaje:",
+      "opciones": {
+        "a": "Declarativo (describe qué se quiere, no cómo obtenerlo)",
+        "b": "Procedimental",
+        "c": "De control de transacciones"
+      },
+      "correcta": "a",
+      "referencia": "§3.5 [DATE]",
+      "explicacion": "Tiene dos variantes: de tuplas y de dominios."
+    },
+    {
+      "numero": 47,
+      "pregunta": "Respecto al poder expresivo, el álgebra relacional y el cálculo relacional:",
+      "opciones": {
+        "a": "El álgebra es más potente que el cálculo",
+        "b": "El cálculo es más potente que el álgebra",
+        "c": "Son equivalentes (mismo poder expresivo)"
+      },
+      "correcta": "c",
+      "referencia": "§3.5 [DATE]",
+      "explicacion": "Es el teorema de equivalencia de Codd; SQL se inspira en ambos."
+    },
+    {
+      "numero": 48,
+      "pregunta": "La normalización tiene como objetivo principal:",
+      "opciones": {
+        "a": "Aumentar la velocidad de todas las consultas",
+        "b": "Eliminar la redundancia y las anomalías de actualización",
+        "c": "Reducir el número de tablas al mínimo"
+      },
+      "correcta": "b",
+      "referencia": "§4.1 [CODD72]",
+      "explicacion": "Se basa en el análisis de las dependencias funcionales."
+    },
+    {
+      "numero": 49,
+      "pregunta": "¿Cuáles son las tres anomalías que provoca un mal diseño?",
+      "opciones": {
+        "a": "De compilación, de ejecución y de sintaxis",
+        "b": "De inserción, de borrado y de actualización",
+        "c": "De red, de disco y de memoria"
+      },
+      "correcta": "b",
+      "referencia": "§4.1 [ELMASRI]",
+      "explicacion": "Las tres derivan de la redundancia de datos."
+    },
+    {
+      "numero": 50,
+      "pregunta": "Una dependencia funcional X → Y significa que:",
+      "opciones": {
+        "a": "Y siempre es mayor que X",
+        "b": "X e Y son claves ajenas",
+        "c": "El valor de X determina unívocamente el valor de Y"
+      },
+      "correcta": "c",
+      "referencia": "§4.2 [ELMASRI]",
+      "explicacion": "X es el determinante; dos tuplas con igual X tienen igual Y."
+    },
+    {
+      "numero": 51,
+      "pregunta": "¿Cuáles son los tres axiomas de Armstrong?",
+      "opciones": {
+        "a": "Reflexividad, aumento y transitividad",
+        "b": "Unión, descomposición y pseudotransitividad",
+        "c": "Inserción, borrado y actualización"
+      },
+      "correcta": "a",
+      "referencia": "§4.2 [ARMSTRONG74]",
+      "explicacion": "Son correctos y completos; las demás reglas se derivan de ellos."
+    },
+    {
+      "numero": 52,
+      "pregunta": "El cierre de atributos X⁺ sirve para:",
+      "opciones": {
+        "a": "Ordenar las filas de una tabla",
+        "b": "Determinar si X es superclave y hallar las claves candidatas",
+        "c": "Calcular el tamaño físico de la tabla"
+      },
+      "correcta": "b",
+      "referencia": "§4.2 [ELMASRI]",
+      "explicacion": "Si X⁺ contiene todos los atributos, X es superclave."
+    },
+    {
+      "numero": 53,
+      "pregunta": "Una relación está en Primera Forma Normal (1FN) cuando:",
+      "opciones": {
+        "a": "No tiene claves ajenas",
+        "b": "Todos sus atributos son atómicos (un solo valor por celda)",
+        "c": "Tiene menos de cinco columnas"
+      },
+      "correcta": "b",
+      "referencia": "§4.3 [CODD70]",
+      "explicacion": "Sin grupos repetitivos ni valores multivaluados."
+    },
+    {
+      "numero": 54,
+      "pregunta": "La Segunda Forma Normal (2FN) elimina:",
+      "opciones": {
+        "a": "Las dependencias transitivas",
+        "b": "Las dependencias multivaluadas",
+        "c": "Las dependencias funcionales parciales de la clave"
+      },
+      "correcta": "c",
+      "referencia": "§4.4 [CODD72]",
+      "explicacion": "Solo tiene riesgo cuando la clave primaria es compuesta."
+    },
+    {
+      "numero": 55,
+      "pregunta": "Si la clave primaria de una relación en 1FN es un único atributo, entonces:",
+      "opciones": {
+        "a": "Está automáticamente en 2FN",
+        "b": "Nunca puede estar en 3FN",
+        "c": "No puede tener claves ajenas"
+      },
+      "correcta": "a",
+      "referencia": "§4.4 [CODD72]",
+      "explicacion": "Sin clave compuesta no puede haber dependencias parciales."
+    },
+    {
+      "numero": 56,
+      "pregunta": "La Tercera Forma Normal (3FN) exige que no haya:",
+      "opciones": {
+        "a": "Dependencias transitivas entre atributos no clave",
+        "b": "Claves primarias",
+        "c": "Valores nulos en ninguna columna"
+      },
+      "correcta": "a",
+      "referencia": "§4.5 [CODD72]",
+      "explicacion": "Mnemotecnia: cada atributo depende de la clave, toda la clave y nada más que la clave."
+    },
+    {
+      "numero": 57,
+      "pregunta": "La Forma Normal de Boyce-Codd (BCNF) exige que:",
+      "opciones": {
+        "a": "Toda tabla tenga clave subrogada",
+        "b": "Todo determinante de una dependencia funcional no trivial sea clave candidata",
+        "c": "No existan claves ajenas"
+      },
+      "correcta": "b",
+      "referencia": "§4.6 [CODD74BCNF]",
+      "explicacion": "Es una 3FN reforzada; toda relación en BCNF está en 3FN."
+    },
+    {
+      "numero": 58,
+      "pregunta": "¿Qué propiedad de una descomposición es obligatoria?",
+      "opciones": {
+        "a": "Que aumente el número de tablas",
+        "b": "La descomposición sin pérdida de información (lossless join)",
+        "c": "Que elimine todas las claves ajenas"
+      },
+      "correcta": "b",
+      "referencia": "§4.6 [SILBER]",
+      "explicacion": "Se garantiza si el atributo común es clave de al menos una de las tablas resultantes."
+    },
+    {
+      "numero": 59,
+      "pregunta": "La Cuarta Forma Normal (4FN) trata las dependencias:",
+      "opciones": {
+        "a": "Funcionales parciales",
+        "b": "Transitivas",
+        "c": "Multivaluadas"
+      },
+      "correcta": "c",
+      "referencia": "§4.7 [FAGIN77]",
+      "explicacion": "La 5FN, por su parte, trata las dependencias de reunión (join)."
+    },
+    {
+      "numero": 60,
+      "pregunta": "La desnormalización controlada consiste en:",
+      "opciones": {
+        "a": "Reintroducir redundancia de forma deliberada para mejorar el rendimiento, asumiendo el coste de mantener la coherencia",
+        "b": "Eliminar todas las claves primarias",
+        "c": "Volver siempre a la 1FN"
+      },
+      "correcta": "a",
+      "referencia": "§4.8 [RAMAKRISHNAN]",
+      "explicacion": "Se aplica al final, sobre cuellos de botella medidos, típica en entornos OLAP."
+    }
+  ],
+  "casos": [
+    {
+      "caso": 1,
+      "titulo": "Diseño lógico del registro de expedientes",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el supuesto del registro de expedientes, ¿qué entidades deben identificarse?",
+          "opciones": {
+            "a": "PROCEDIMIENTO, EXPEDIENTE, INTERESADO y UNIDAD.",
+            "b": "EXPEDIENTE, INTERESADO y UNIDAD; el procedimiento es solo un atributo del expediente.",
+            "c": "EXPEDIENTE, CIUDADANO, FECHA_APERTURA y UNIDAD."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 1 · §1.4",
+          "explicacion": "Son objetos con existencia propia sobre los que se guardan datos: el procedimiento tiene su propio código y denominación, y la fecha de apertura es un atributo del expediente."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Qué clave primaria corresponde a la tabla EXPEDIENTE?",
+          "opciones": {
+            "a": "fecha_apertura.",
+            "b": "La combinación (num_exp, cod_proc).",
+            "c": "num_exp."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 1 · §3.2",
+          "explicacion": "El número identifica cada expediente. (num_exp, cod_proc) también identifica, pero no es mínima: es una superclave, no una clave candidata."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Cómo se representa en el modelo relacional la relación «una unidad tramita muchos expedientes»?",
+          "opciones": {
+            "a": "Con num_exp como clave ajena en UNIDAD, sin crear tabla nueva.",
+            "b": "Con cod_unidad como clave ajena en EXPEDIENTE, sin crear tabla nueva.",
+            "c": "Con una tabla intermedia UNIDAD_EXPEDIENTE con ambas claves."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 2 · §2.2",
+          "explicacion": "En una relación 1:N, la clave de la entidad del lado «1» (UNIDAD) se propaga como clave ajena en la tabla del lado «N» (EXPEDIENTE); la tabla intermedia es para las N:M."
+        },
+        {
+          "numero": 4,
+          "pregunta": "Teniendo en cuenta sus relaciones 1:N, ¿cómo queda la tabla EXPEDIENTE?",
+          "opciones": {
+            "a": "EXPEDIENTE(num_exp PK, fecha_apertura, dni FK, cod_unidad FK).",
+            "b": "EXPEDIENTE(num_exp, cod_unidad PK, fecha_apertura, cod_proc FK).",
+            "c": "EXPEDIENTE(num_exp PK, fecha_apertura, cod_proc FK, cod_unidad FK)."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 2 · §2.2",
+          "explicacion": "Recibe como claves ajenas las de PROCEDIMIENTO y UNIDAD (lados «1»). El DNI no puede ir en EXPEDIENTE, porque con interesados es N:M y un expediente tiene varios."
+        },
+        {
+          "numero": 5,
+          "pregunta": "La relación entre EXPEDIENTE e INTERESADO es N:M. ¿Cuál es la solución relacional correcta?",
+          "opciones": {
+            "a": "Una tabla INTERVENCION(num_exp, dni, rol) con PK(num_exp, dni) y dos claves ajenas.",
+            "b": "Añadir dni como clave ajena en EXPEDIENTE para enlazar con el interesado.",
+            "c": "Una tabla INTERVENCION(num_exp, dni, rol) con PK(num_exp) y dni como clave ajena."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 3 · §2.2",
+          "explicacion": "La N:M se resuelve con una tabla intermedia cuya clave primaria combina las claves de ambas entidades, con una clave ajena hacia cada una; con PK(num_exp) un expediente solo podría tener un interesado."
+        },
+        {
+          "numero": 6,
+          "pregunta": "En cada expediente, el ciudadano interviene como titular o como representante. ¿Dónde se guarda ese rol?",
+          "opciones": {
+            "a": "En la tabla INTERESADO, como atributo del ciudadano.",
+            "b": "En la tabla intermedia INTERVENCION, como atributo de la relación.",
+            "c": "En la tabla EXPEDIENTE, como atributo del expediente."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 3 · §2.2",
+          "explicacion": "El rol depende de la pareja expediente-ciudadano (el mismo ciudadano puede ser titular en uno y representante en otro): es propio de la relación y vive en la tabla intermedia."
+        },
+        {
+          "numero": 7,
+          "pregunta": "¿Qué regla de integridad garantiza que no exista ningún expediente sin número?",
+          "opciones": {
+            "a": "La integridad de entidad, porque num_exp es la clave primaria.",
+            "b": "La integridad referencial, porque num_exp se referencia desde INTERVENCION.",
+            "c": "La integridad de dominio, porque num_exp tiene un formato definido."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 4 · §2.4",
+          "explicacion": "La integridad de entidad prohíbe que un atributo de la clave primaria tome valor nulo: si fuese nula, no podría identificar la fila."
+        },
+        {
+          "numero": 8,
+          "pregunta": "¿Qué regla impide asignar un expediente a una unidad tramitadora que no existe?",
+          "opciones": {
+            "a": "La integridad de entidad sobre la columna cod_unidad.",
+            "b": "Una restricción UNIQUE sobre cod_unidad en EXPEDIENTE.",
+            "c": "La integridad referencial sobre la clave ajena cod_unidad."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 4 · §2.4",
+          "explicacion": "La integridad referencial exige que el valor de una clave ajena coincida con una clave primaria existente (o sea nulo). Un UNIQUE impediría que una unidad tramitase varios expedientes."
+        },
+        {
+          "numero": 9,
+          "pregunta": "Se intenta borrar una unidad que aún tramita expedientes. ¿Qué política referencial es la adecuada?",
+          "opciones": {
+            "a": "CASCADE: borrar a la vez todos los expedientes de la unidad.",
+            "b": "RESTRICT / NO ACTION: rechazar el borrado mientras haya expedientes.",
+            "c": "SET NULL: dejar a nulo la unidad de esos expedientes."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 4 · §2.4",
+          "explicacion": "RESTRICT/NO ACTION rechaza la operación si hay filas hijas que referencian la fila padre, de modo que ningún expediente queda sin unidad ni se borra."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Si por error se hubiera definido CASCADE sobre cod_unidad, ¿qué pasaría al borrar esa unidad?",
+          "opciones": {
+            "a": "El SGBD rechazaría el borrado de la unidad.",
+            "b": "Los expedientes quedarían con la unidad a nulo.",
+            "c": "Se borrarían también todos los expedientes que tramita."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 4 · §2.4",
+          "explicacion": "CASCADE propaga el borrado de la fila padre a las filas hijas; rechazar es RESTRICT y poner a nulo es SET NULL."
+        }
+      ]
+    },
+    {
+      "caso": 2,
+      "titulo": "Normalización del registro de licencias",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el supuesto de la tabla LICENCIA, el mismo distrito aparece con nombres distintos en filas diferentes. ¿Qué anomalía lo explica?",
+          "opciones": {
+            "a": "La anomalía de inserción.",
+            "b": "La anomalía de actualización.",
+            "c": "La anomalía de borrado."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 1 · §4.1",
+          "explicacion": "Un dato repetido en muchas filas hay que cambiarlo en todas; si se olvida alguna, queda inconsistente. Eso ha ocurrido con el nombre del distrito."
+        },
+        {
+          "numero": 2,
+          "pregunta": "Al borrar la última licencia de un distrito se pierde su tasa. ¿Qué anomalía es?",
+          "opciones": {
+            "a": "La anomalía de borrado.",
+            "b": "La anomalía de inserción.",
+            "c": "La anomalía de actualización."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 1 · §4.1",
+          "explicacion": "Hay anomalía de borrado cuando, al eliminar una fila, se pierde información que no se quería eliminar, como el nombre y la tasa del distrito."
+        },
+        {
+          "numero": 3,
+          "pregunta": "El servicio quiere registrar un distrito nuevo con su tasa antes de que tenga ninguna licencia, y no puede. ¿Qué anomalía sufre?",
+          "opciones": {
+            "a": "La anomalía de borrado.",
+            "b": "La anomalía de actualización.",
+            "c": "La anomalía de inserción."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 1 · §4.1",
+          "explicacion": "La anomalía de inserción impide dar de alta un hecho (el distrito) sin conocer otro no relacionado (una licencia), porque ambos viven en la misma tabla."
+        },
+        {
+          "numero": 4,
+          "pregunta": "El atributo tecnicos guarda varios nombres separados por comas. ¿Qué forma normal incumple?",
+          "opciones": {
+            "a": "La 1FN, porque la celda no contiene un valor atómico.",
+            "b": "La 2FN, porque depende de una parte de la clave.",
+            "c": "La 3FN, porque depende de otro atributo no clave."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 2 · §4.3",
+          "explicacion": "La 1FN exige que todos los atributos sean atómicos, con un único valor por celda; una lista de nombres en una celda la viola."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Cómo se lleva la tabla LICENCIA a 1FN?",
+          "opciones": {
+            "a": "Sustituyendo tecnicos por las columnas tecnico1, tecnico2 y tecnico3.",
+            "b": "Con una tabla ASIGNACION(num_lic, tecnico) cuya clave es (num_lic, tecnico).",
+            "c": "Manteniendo la lista de técnicos, pero ordenada alfabéticamente."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 2 · §4.3",
+          "explicacion": "Los valores multivaluados se extraen a una tabla aparte relacionada por clave ajena; las columnas repetidas tecnico1, tecnico2… son también una violación típica de la 1FN."
+        },
+        {
+          "numero": 6,
+          "pregunta": "Tras pasar a 1FN, ¿está LICENCIA(num_lic PK, titular_dni, titular_nombre, cod_distrito, nombre_distrito, tasa_distrito) en 2FN?",
+          "opciones": {
+            "a": "No: titular_nombre depende solo de una parte de la clave primaria.",
+            "b": "No: hay que separar antes DISTRITO para poder alcanzar la 2FN.",
+            "c": "Sí: su clave es simple (num_lic), así que no puede haber dependencias parciales."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 3 · §4.4",
+          "explicacion": "La 2FN elimina dependencias de una parte de la clave, lo que solo puede ocurrir con claves compuestas; con clave de un único atributo, 1FN implica 2FN."
+        },
+        {
+          "numero": 7,
+          "pregunta": "num_lic → cod_distrito y cod_distrito → {nombre_distrito, tasa_distrito}. ¿Qué tipo de dependencia hay y qué forma normal la elimina?",
+          "opciones": {
+            "a": "Parcial, que elimina la 2FN.",
+            "b": "Transitiva, que elimina la 3FN.",
+            "c": "Multivaluada, que elimina la 4FN."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 3 · §4.2, §4.5",
+          "explicacion": "nombre_distrito y tasa_distrito dependen de la clave a través de un atributo no clave (cod_distrito): es una dependencia transitiva, y la 3FN la elimina."
+        },
+        {
+          "numero": 8,
+          "pregunta": "¿Qué conjunto de tablas deja LICENCIA (sin los técnicos) en 3FN?",
+          "opciones": {
+            "a": "LICENCIA(num_lic PK, titular_dni FK, cod_distrito FK), TITULAR(titular_dni PK, titular_nombre) y DISTRITO(cod_distrito PK, nombre_distrito, tasa_distrito).",
+            "b": "LICENCIA(num_lic PK, titular_dni, titular_nombre, cod_distrito FK), DISTRITO(cod_distrito PK, nombre_distrito) y TASA(cod_distrito PK, tasa_distrito).",
+            "c": "LICENCIA(num_lic PK, titular_dni FK, cod_distrito FK, nombre_distrito), TITULAR(titular_dni PK, titular_nombre) y DISTRITO(cod_distrito PK, tasa_distrito)."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 3 · §4.5",
+          "explicacion": "Hay dos dependencias transitivas (a través de cod_distrito y de titular_dni): se separan DISTRITO y TITULAR, y en LICENCIA quedan solo sus claves ajenas."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿Por qué el diseño normalizado elimina las incoherencias detectadas en los nombres de distrito?",
+          "opciones": {
+            "a": "Porque los índices de cada tabla impiden guardar valores duplicados.",
+            "b": "Porque los disparadores corrigen las filas que quedan inconsistentes.",
+            "c": "Porque cada hecho, como el nombre del distrito, se guarda una sola vez."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 4 · §4.1",
+          "explicacion": "La normalización garantiza que cada hecho se almacene una sola vez: el nombre y la tasa del distrito viven solo en DISTRITO y no pueden quedar inconsistentes."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Hasta qué forma normal es razonable llegar en este diseño?",
+          "opciones": {
+            "a": "Hasta la 3FN, que aquí ya cumple BCNF porque todo determinante es clave.",
+            "b": "Hasta la 4FN, porque la lista de técnicos es una dependencia multivaluada.",
+            "c": "Solo hasta la 2FN, porque la clave de LICENCIA es un único atributo."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 4 · §4.6, §4.7",
+          "explicacion": "En las tablas resultantes el único determinante es la clave, de modo que cumplen BCNF; llegar a 3FN o BCNF es suficiente en la inmensa mayoría de los diseños."
+        }
+      ]
+    },
+    {
+      "caso": 3,
+      "titulo": "Diseño físico y consultas sobre las multas de tráfico",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En la tabla MULTA, ¿qué índice propondría para la consulta (a), buscar multas por matrícula?",
+          "opciones": {
+            "a": "Un índice bitmap sobre matricula, columna de baja cardinalidad.",
+            "b": "Ninguno: el full table scan es lo más rápido en tablas grandes.",
+            "c": "Un índice B-tree sobre matricula, columna muy selectiva."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 1 · §2.8",
+          "explicacion": "La matrícula es muy selectiva y la búsqueda es por igualdad: un B-tree es adecuado. El bitmap es para columnas de baja cardinalidad, y el full scan solo compensa en tablas pequeñas."
+        },
+        {
+          "numero": 2,
+          "pregunta": "Para la consulta (b), listar multas de un rango de fechas, ¿qué índice es el adecuado?",
+          "opciones": {
+            "a": "Un índice hash sobre fecha_denuncia.",
+            "b": "Un índice B-tree sobre fecha_denuncia.",
+            "c": "Un índice bitmap sobre importe."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 1 · §2.8",
+          "explicacion": "El B-tree sirve para igualdad y para rangos (BETWEEN, <, >); el hash solo sirve para igualdad exacta y no admite rangos."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Qué efecto tendrán los nuevos índices sobre la carga nocturna de denuncias?",
+          "opciones": {
+            "a": "La ralentizarán, porque cada INSERT debe actualizar los índices.",
+            "b": "La acelerarán, porque las filas se insertan ya ordenadas.",
+            "c": "No le afectarán, porque los índices solo intervienen en lecturas."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 1 · §2.8",
+          "explicacion": "Los índices aceleran las lecturas pero penalizan las escrituras, porque hay que mantenerlos en cada INSERT; hay que equilibrar cuántos se crean."
+        },
+        {
+          "numero": 4,
+          "pregunta": "La consulta por matrícula hace un full table scan. ¿Con qué herramienta lo comprueba el técnico?",
+          "opciones": {
+            "a": "Con ANALYZE, que muestra el plan elegido.",
+            "b": "Con EXPLAIN o EXPLAIN PLAN, que muestra el plan de ejecución.",
+            "c": "Con REINDEX, que muestra los índices usados."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 2 · §2.9",
+          "explicacion": "El plan de ejecución se inspecciona con EXPLAIN (PostgreSQL/MySQL) o EXPLAIN PLAN (Oracle). ANALYZE recalcula estadísticas y REINDEX reconstruye índices."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Qué necesita el optimizador para elegir bien el plan de ejecución?",
+          "opciones": {
+            "a": "Que la tabla MULTA esté normalizada hasta BCNF.",
+            "b": "Un índice hash sobre cada columna de la tabla.",
+            "c": "Estadísticas actualizadas sobre filas y distribución de valores."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 2 · §2.9",
+          "explicacion": "El optimizador basado en costes estima cada plan con estadísticas (número de filas, distribución de valores, cardinalidad); por eso hay que mantenerlas al día (ANALYZE)."
+        },
+        {
+          "numero": 6,
+          "pregunta": "Tras crear el índice sobre matricula, la consulta sigue haciendo full table scan. ¿Qué causa es posible?",
+          "opciones": {
+            "a": "Que las estadísticas estén desactualizadas o la consulta aplique una función sobre la columna.",
+            "b": "Que un índice B-tree no pueda usarse en búsquedas por igualdad exacta.",
+            "c": "Que el plan de ejecución se fije al crear la tabla y ya no pueda cambiar."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 2 · §2.9",
+          "explicacion": "El optimizador puede ignorar un índice si las estadísticas están desactualizadas o si la consulta aplica una función sobre la columna indexada (WHERE UPPER(…) = …)."
+        },
+        {
+          "numero": 7,
+          "pregunta": "¿Cómo organizaría físicamente MULTA para que el informe anual no recorra los 20 millones de filas?",
+          "opciones": {
+            "a": "Particionándola por hash de la matrícula.",
+            "b": "Separándola en dos tablas, pagadas y pendientes.",
+            "c": "Particionándola por rango de fecha, por años."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 3 · §2.9",
+          "explicacion": "El particionamiento por rango de fechas permite que la consulta de un año acceda solo a su partición; el hash por matrícula reparte las filas sin agruparlas por año."
+        },
+        {
+          "numero": 8,
+          "pregunta": "¿Cómo se llama el beneficio por el que el informe del año solo lee su partición?",
+          "opciones": {
+            "a": "Index-only scan.",
+            "b": "Partition pruning.",
+            "c": "Hash join."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 3 · §2.9",
+          "explicacion": "Con partition pruning la consulta accede solo a la partición relevante; además, el particionamiento facilita el mantenimiento y el archivado."
+        },
+        {
+          "numero": 9,
+          "pregunta": "Para el cuadro de mando con el total recaudado por distrito y año, ¿qué técnica aplicaría?",
+          "opciones": {
+            "a": "Una vista materializada (o tabla de resumen) con esos totales.",
+            "b": "Normalizar la tabla MULTA hasta la forma normal de Boyce-Codd.",
+            "c": "Un índice hash sobre la columna importe de la tabla MULTA."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 4 · §2.9, §4.8",
+          "explicacion": "La vista materializada o tabla de resumen precalcula el agregado y evita recalcularlo en cada acceso: es una técnica de desnormalización controlada."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Qué contrapartida asume esa técnica y cómo se tratan el sistema transaccional y el analítico?",
+          "opciones": {
+            "a": "Ninguna, porque se actualiza sola; ambos sistemas se desnormalizan.",
+            "b": "Hay que refrescarla; el transaccional sigue normalizado y el analítico se desnormaliza.",
+            "c": "Hay que refrescarla; el transaccional se desnormaliza y el analítico no."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 4 · §4.8",
+          "explicacion": "La desnormalización gana velocidad de lectura a costa de redundancia que hay que mantener; es típica de los entornos analíticos y poco recomendable en los transaccionales con muchas escrituras."
+        }
+      ]
+    }
+  ]
+}

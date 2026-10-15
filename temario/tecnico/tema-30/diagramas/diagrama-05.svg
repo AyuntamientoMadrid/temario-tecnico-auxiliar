@@ -1,0 +1,31 @@
+<svg aria-label="Comparativa de los mecanismos de redundancia en el nivel de enlace: protocolo de árbol de expansión 802.1D, su versión rápida 802.1w incorporada en 2004, el árbol de expansión múltiple 802.1s integrado en 802.1Q, y la agregación de enlaces 802.1AX con el protocolo LACP, indicando norma, convergencia y comportamiento de los enlaces redundantes" role="img" viewbox="0 0 680 362" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 11px system-ui,sans-serif;fill:#fff}.s5{font:8.5px system-ui,sans-serif;fill:#fff}.d5{font:9px system-ui,sans-serif;fill:#333}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.k5{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n5{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h5" text-anchor="middle" x="340" y="20">Enlaces redundantes sin bucles: cuatro respuestas</text>
+<rect fill="#888" height="36" rx="5" width="155" x="20" y="34"></rect><text class="t5" text-anchor="middle" x="97" y="50">STP</text><text class="s5" text-anchor="middle" x="97" y="63">IEEE 802.1D</text>
+<rect fill="#0055a0" height="36" rx="5" width="155" x="182" y="34"></rect><text class="t5" text-anchor="middle" x="259" y="50">RSTP</text><text class="s5" text-anchor="middle" x="259" y="63">802.1w → en 802.1D-2004</text>
+<rect fill="#e89822" height="36" rx="5" width="155" x="344" y="34"></rect><text class="t5" text-anchor="middle" x="421" y="50">MSTP</text><text class="s5" text-anchor="middle" x="421" y="63">802.1s → en 802.1Q</text>
+<rect fill="#2d8659" height="36" rx="5" width="154" x="506" y="34"></rect><text class="t5" text-anchor="middle" x="583" y="50">AGREGACIÓN</text><text class="s5" text-anchor="middle" x="583" y="63">802.1AX (antes 802.3ad)</text>
+<text class="k5" x="24" y="88">CONVERGENCIA TRAS UN FALLO</text>
+<rect fill="#fbeaea" height="30" rx="4" width="155" x="20" y="94"></rect><text class="d5" text-anchor="middle" x="97" y="113">30-50 segundos</text>
+<rect fill="#eef3f8" height="30" rx="4" width="155" x="182" y="94"></rect><text class="d5" text-anchor="middle" x="259" y="113">Pocos segundos</text>
+<rect fill="#eef3f8" height="30" rx="4" width="155" x="344" y="94"></rect><text class="d5" text-anchor="middle" x="421" y="113">Como RSTP, por instancia</text>
+<rect fill="#e8f4ee" height="30" rx="4" width="154" x="506" y="94"></rect><text class="d5" text-anchor="middle" x="583" y="113">Inmediata (subsegundo)</text>
+<text class="k5" x="24" y="142">¿QUÉ HACE CON EL ENLACE REDUNDANTE?</text>
+<rect fill="#f5f5f5" height="44" rx="4" width="317" x="20" y="148"></rect>
+<text class="d5" text-anchor="middle" x="178" y="166">Lo BLOQUEA: existe, pero no transporta nada.</text><text class="d5" text-anchor="middle" x="178" y="182">La capacidad instalada se desperdicia</text>
+<rect fill="#fdf3e3" height="44" rx="4" width="155" x="344" y="148"></rect>
+<text class="d5" text-anchor="middle" x="421" y="166">Bloquea, pero reparte</text><text class="d5" text-anchor="middle" x="421" y="182">VLAN entre instancias</text>
+<rect fill="#e8f4ee" height="44" rx="4" width="154" x="506" y="148"></rect>
+<text class="d5" text-anchor="middle" x="583" y="166">Lo USA: los enlaces son</text><text class="d5" text-anchor="middle" x="583" y="182">uno solo; STP no bloquea</text>
+<text class="k5" x="24" y="210">CÓMO SE ELIGE EL PUENTE RAÍZ (STP / RSTP / MSTP)</text>
+<rect fill="#eef3f8" height="30" rx="4" width="480" x="20" y="216"></rect>
+<text class="d5" text-anchor="middle" x="260" y="235">Menor IDENTIFICADOR DE PUENTE = prioridad configurable + MAC → fíjalo por configuración</text>
+<rect fill="#e8f4ee" height="30" rx="4" width="154" x="506" y="216"></rect><text class="d5" text-anchor="middle" x="583" y="235">LACP negocia el grupo</text>
+<rect fill="#fbeaea" height="26" rx="4" stroke="#d13c3c" stroke-width="1.2" width="640" x="20" y="256"></rect>
+<text class="d5" text-anchor="middle" x="340" y="273">La agregación reparte POR FLUJO: 4×1 Gbit/s = 4 Gbit/s agregados, pero 1 Gbit/s por conversación</text>
+<rect fill="#e8f4ee" height="26" rx="4" stroke="#2d8659" stroke-width="1.2" width="640" x="20" y="290"></rect>
+<text class="d5" text-anchor="middle" x="340" y="307">En el puerto de acceso: PUERTO DE BORDE + GUARDA DE BPDU (+ guarda de raíz y control de tormentas)</text>
+<rect fill="none" height="20" rx="4" stroke="#0055a0" stroke-width="1.5" width="500" x="90" y="324"></rect>
+<text class="k5" text-anchor="middle" x="340" y="338">Puerta de enlace redundante: VRRP (estándar) · HSRP y GLBP (propietarios)</text>
+<text class="n5" text-anchor="end" x="670" y="358">[Fuente: IEEE8021D; IEEE8021Q; IEEE8021AX]</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg aria-label="Órganos centrales directivos: coordinador general, secretario general técnico y director general, con sus funciones según los artículos 46 a 48" role="img" viewbox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .h-box{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .h-head{fill:#0055a0}
+    .h-h{font:700 12px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .h-s{font:11px system-ui,sans-serif;fill:#444;text-anchor:middle}
+    .h-a{font:700 11px system-ui,sans-serif;fill:#003d75;text-anchor:middle}
+  </style>
+<rect class="h-box" height="210" rx="8" width="210" x="20" y="30"></rect>
+<rect class="h-head" height="38" rx="8" width="210" x="20" y="30"></rect>
+<text class="h-h" x="125" y="54">Coordinador general</text>
+<text class="h-a" x="125" y="92">art. 46</text>
+<text class="h-s" x="125" y="120">Coordinación y dirección</text>
+<text class="h-s" x="125" y="138">de las Direcciones</text>
+<text class="h-s" x="125" y="156">Generales dependientes</text>
+<text class="h-s" style="font-style:italic" x="125" y="196">puede no ser funcionario</text>
+<text class="h-s" style="font-style:italic" x="125" y="212">(excepción art. 49)</text>
+<rect class="h-box" height="210" rx="8" width="210" x="245" y="30"></rect>
+<rect class="h-head" height="38" rx="8" width="210" x="245" y="30"></rect>
+<text class="h-h" x="350" y="54">Secretario general técnico</text>
+<text class="h-a" x="350" y="92">art. 47 · rango de director general</text>
+<text class="h-s" x="350" y="120">Servicios comunes</text>
+<text class="h-s" x="350" y="138">Asistencia jurídica y</text>
+<text class="h-s" x="350" y="156">técnica al titular del Área</text>
+<text class="h-s" style="font-style:italic" x="350" y="196">depende del titular</text>
+<text class="h-s" style="font-style:italic" x="350" y="212">del Área (siempre funcionario)</text>
+<rect class="h-box" height="210" rx="8" width="210" x="470" y="30"></rect>
+<rect class="h-head" height="38" rx="8" width="210" x="470" y="30"></rect>
+<text class="h-h" x="575" y="54">Director general</text>
+<text class="h-a" x="575" y="92">art. 48</text>
+<text class="h-s" x="575" y="120">Dirección y gestión de</text>
+<text class="h-s" x="575" y="138">ámbitos homogéneos</text>
+<text class="h-s" x="575" y="156">de competencia</text>
+<text class="h-s" style="font-style:italic" x="575" y="196">jefatura de las unidades</text>
+<text class="h-s" style="font-style:italic" x="575" y="212">adscritas</text>
+</svg>

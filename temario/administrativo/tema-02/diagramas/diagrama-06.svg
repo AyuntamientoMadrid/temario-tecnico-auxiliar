@@ -1,0 +1,35 @@
+<svg aria-label="Comparación de las vías de acceso a la autonomía: vía ordinaria artículo 143 y vía rápida artículo 151" role="img" viewbox="0 0 700 430" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .d6-hb{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .d6-r{font:600 12px system-ui,sans-serif;fill:#003d73;text-anchor:start}
+    .d6-v{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}
+    .d6-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+  </style>
+<rect fill="#0055a0" height="42" rx="8" width="180" x="40" y="20"></rect>
+<text class="d6-hb" x="130" y="40">Vía ORDINARIA</text>
+<text class="d6-hb" style="font-weight:400;font-size:11px" x="130" y="56">art. 143 (lenta)</text>
+<rect fill="#2d8659" height="42" rx="8" width="180" x="480" y="20"></rect>
+<text class="d6-hb" x="570" y="40">Vía RÁPIDA</text>
+<text class="d6-hb" style="font-weight:400;font-size:11px" x="570" y="56">art. 151 (privilegiada)</text>
+<text class="d6-r" style="fill:#777;text-anchor:middle" x="350" y="100">Municipios en la iniciativa</text>
+<rect fill="#e8f0f8" height="40" rx="6" width="180" x="40" y="110"></rect>
+<text class="d6-v" x="130" y="135">2/3 de municipios</text>
+<rect fill="#e8f5ee" height="40" rx="6" width="180" x="480" y="110"></rect>
+<text class="d6-v" x="570" y="135">3/4 de municipios</text>
+<text class="d6-r" style="fill:#777;text-anchor:middle" x="350" y="178">Referéndum de iniciativa</text>
+<rect fill="#e8f0f8" height="40" rx="6" width="180" x="40" y="188"></rect>
+<text class="d6-v" x="130" y="213">No exigido</text>
+<rect fill="#e8f5ee" height="40" rx="6" width="180" x="480" y="188"></rect>
+<text class="d6-v" x="570" y="213">Obligatorio</text>
+<text class="d6-r" style="fill:#777;text-anchor:middle" x="350" y="256">Nivel competencial inicial</text>
+<rect fill="#e8f0f8" height="54" rx="6" width="180" x="40" y="266"></rect>
+<text class="d6-v" x="130" y="288">Materias del art. 148</text>
+<text class="d6-s" x="130" y="306">ampliable a los 5 años (148.2)</text>
+<rect fill="#e8f5ee" height="54" rx="6" width="180" x="480" y="266"></rect>
+<text class="d6-v" x="570" y="288">Más amplio, sin esperar</text>
+<text class="d6-s" x="570" y="306">5 años · respeta el art. 149</text>
+<rect fill="#fff" height="78" rx="8" stroke="#d1d7df" stroke-width="1" width="620" x="40" y="340"></rect>
+<text class="d6-s" style="font-weight:700;fill:#003d73" x="350" y="362">Ejemplos</text>
+<text class="d6-s" x="350" y="384">Ordinaria: la mayoría de CCAA (Madrid: LO 6/1982, art. 144.a; Estatuto, LO 3/1983)</text>
+<text class="d6-s" x="350" y="404">Rápida: Cataluña, País Vasco, Galicia (DT 2.ª) y Andalucía (151)</text>
+</svg>

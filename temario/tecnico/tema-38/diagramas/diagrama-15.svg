@@ -1,0 +1,47 @@
+<svg aria-label="Los servicios de datos de TETRA. Arriba, la mensajería corta: el mensaje de estado con 16 bits precodificados, el SDS tipo 1 con 16 bits, el tipo 2 con 32, el tipo 3 con 64 y el tipo 4 con hasta 2047 bits definidos por el usuario, sobre el que se define la capa de transporte SDS-TL con acuse de recibo y encadenamiento. Abajo, la comparación entre datos por circuito, que reserva un canal con tasas de 7,2, 4,8 o 2,4 kilobits por segundo por intervalo, y datos por paquetes, que comparte recursos y transporta IP mediante SNDCP" role="img" viewbox="0 0 680 348" xmlns="http://www.w3.org/2000/svg">
+<style>.t15{font:700 10px system-ui,sans-serif;fill:#fff}.s15{font:8.5px system-ui,sans-serif;fill:#fff}.d15{font:8.5px system-ui,sans-serif;fill:#333}.h15{font:700 13px system-ui,sans-serif;fill:#0055a0}.k15{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n15{font:8.5px system-ui,sans-serif;fill:#666}.b15{font:700 9px system-ui,sans-serif;fill:#0055a0}.m15{font:700 11px system-ui,sans-serif;fill:#fff}</style>
+<text class="h15" text-anchor="middle" x="340" y="22">El SDS tipo 4 es el que se usa: hasta 2.047 bits</text>
+<text class="k15" x="20" y="46">MENSAJERÍA CORTA (SDS) — viaja por los canales de CONTROL, sin ocupar canal de tráfico</text>
+<rect fill="#6b7c8c" height="60" rx="4" width="120" x="20" y="54"></rect>
+<text class="m15" text-anchor="middle" x="80" y="74">ESTADO</text>
+<text class="s15" text-anchor="middle" x="80" y="91">16 bits</text>
+<text class="s15" text-anchor="middle" x="80" y="105">precodificados</text>
+<rect fill="#0055a0" height="60" rx="4" width="120" x="152" y="54"></rect>
+<text class="m15" text-anchor="middle" x="212" y="74">SDS TIPO 1</text>
+<text class="s15" text-anchor="middle" x="212" y="91">16 bits</text>
+<text class="s15" text-anchor="middle" x="212" y="105">de usuario</text>
+<rect fill="#0055a0" height="60" rx="4" width="120" x="284" y="54"></rect>
+<text class="m15" text-anchor="middle" x="344" y="74">SDS TIPO 2</text>
+<text class="s15" text-anchor="middle" x="344" y="91">32 bits</text>
+<text class="s15" text-anchor="middle" x="344" y="105">de usuario</text>
+<rect fill="#0055a0" height="60" rx="4" width="120" x="416" y="54"></rect>
+<text class="m15" text-anchor="middle" x="476" y="74">SDS TIPO 3</text>
+<text class="s15" text-anchor="middle" x="476" y="91">64 bits</text>
+<text class="s15" text-anchor="middle" x="476" y="105">de usuario</text>
+<rect fill="#2d8659" height="60" rx="4" width="120" x="548" y="54"></rect>
+<text class="m15" text-anchor="middle" x="608" y="74">SDS TIPO 4</text>
+<text class="s15" text-anchor="middle" x="608" y="91">hasta 2.047 bits</text>
+<text class="s15" text-anchor="middle" x="608" y="105">de usuario</text>
+<rect fill="#e89822" height="36" rx="4" width="648" x="20" y="124"></rect>
+<text class="t15" x="36" y="139">SDS-TL · capa de transporte sobre el tipo 4</text>
+<text class="s15" x="36" y="153">Añade identificador de protocolo de aplicación, acuse de recibo y encadenamiento. Es la base del texto y del envío de posición (LIP)</text>
+<text class="k15" x="20" y="182">LOS DOS MODOS DE DATOS DE MAYOR VOLUMEN</text>
+<rect fill="none" height="112" rx="5" stroke="#d13c3c" stroke-width="2" width="314" x="20" y="190"></rect>
+<rect fill="#d13c3c" height="22" rx="3" width="290" x="32" y="200"></rect>
+<text class="t15" text-anchor="middle" x="177" y="216">POR CIRCUITO — recurso RESERVADO</text>
+<text class="d15" x="44" y="238">Sin protección de errores: 7,2 kbit/s por intervalo</text>
+<text class="d15" x="44" y="252">Protección baja: 4,8 kbit/s por intervalo</text>
+<text class="d15" x="44" y="266">Protección alta: 2,4 kbit/s por intervalo</text>
+<text class="b15" x="44" y="282">Agregando los 4 intervalos: hasta 28,8 kbit/s</text>
+<text class="d15" x="44" y="295">Ineficiente a ráfagas, pero de caudal predecible</text>
+<rect fill="none" height="112" rx="5" stroke="#2d8659" stroke-width="2" width="322" x="346" y="190"></rect>
+<rect fill="#2d8659" height="22" rx="3" width="298" x="358" y="200"></rect>
+<text class="t15" text-anchor="middle" x="507" y="216">POR PAQUETES — recurso COMPARTIDO</text>
+<text class="d15" x="370" y="238">Solo consume canal cuando hay paquetes que enviar</text>
+<text class="d15" x="370" y="252">Transporta IP mediante el protocolo SNDCP de capa 3</text>
+<text class="d15" x="370" y="266">El terminal se comporta como un dispositivo IP más</text>
+<text class="b15" x="370" y="282">Es el modo adecuado para consultas y aplicaciones</text>
+<text class="d15" x="370" y="295">Eficiente a ráfagas, sin caudal garantizado</text>
+<text class="k15" text-anchor="middle" x="340" y="318">Con este techo se hace texto, posiciones y consultas breves; no se hace vídeo ni cartografía</text>
+<text class="n15" text-anchor="end" x="670" y="340">[Fuente: elaboración propia sobre ETSI EN 300 392-2, capa 3]</text>
+</svg>

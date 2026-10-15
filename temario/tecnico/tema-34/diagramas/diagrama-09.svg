@@ -1,0 +1,30 @@
+<svg aria-label="Estructura de la trama Ethernet II: preámbulo de 7 octetos y delimitador de 1, dirección MAC de destino de 6 octetos, dirección MAC de origen de 6 octetos, campo EtherType de 2 octetos, datos de 46 a 1500 octetos y secuencia de comprobación de trama de 4 octetos. La dirección MAC tiene 48 bits, de los que los 24 primeros son el identificador único del fabricante" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 9.5px system-ui,sans-serif;fill:#fff}.s9{font:8px system-ui,sans-serif;fill:#fff}.d9{font:8.5px system-ui,sans-serif;fill:#333}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.k9{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n9{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">Trama Ethernet II: 64 octetos mínimo, 1.518 máximo</text>
+<rect fill="#9aa7b4" height="46" rx="3" width="72" x="20" y="44"></rect><text class="t9" text-anchor="middle" x="56" y="64">Preámbulo</text><text class="s9" text-anchor="middle" x="56" y="79">7 octetos</text>
+<rect fill="#9aa7b4" height="46" rx="3" width="46" x="94" y="44"></rect><text class="t9" text-anchor="middle" x="117" y="64">SFD</text><text class="s9" text-anchor="middle" x="117" y="79">1</text>
+<rect fill="#0055a0" height="46" rx="3" width="96" x="142" y="44"></rect><text class="t9" text-anchor="middle" x="190" y="64">MAC destino</text><text class="s9" text-anchor="middle" x="190" y="79">6 octetos</text>
+<rect fill="#0055a0" height="46" rx="3" width="96" x="240" y="44"></rect><text class="t9" text-anchor="middle" x="288" y="64">MAC origen</text><text class="s9" text-anchor="middle" x="288" y="79">6 octetos</text>
+<rect fill="#e89822" height="46" rx="3" width="84" x="338" y="44"></rect><text class="t9" text-anchor="middle" x="380" y="64">EtherType</text><text class="s9" text-anchor="middle" x="380" y="79">2 octetos</text>
+<rect fill="#8aa8c4" height="46" rx="3" width="164" x="424" y="44"></rect><text class="t9" text-anchor="middle" x="506" y="64">DATOS (paquete IP)</text><text class="s9" text-anchor="middle" x="506" y="79">46 a 1.500 octetos</text>
+<rect fill="#d13c3c" height="46" rx="3" width="70" x="590" y="44"></rect><text class="t9" text-anchor="middle" x="625" y="64">FCS</text><text class="s9" text-anchor="middle" x="625" y="79">4 octetos</text>
+<text class="n9" text-anchor="middle" x="56" y="106">capa 1</text>
+<path d="M142,100 L660,100" stroke="#0055a0" stroke-width="1.2"></path>
+<text class="k9" text-anchor="middle" x="401" y="118">TRAMA: 14 octetos de cabecera + datos + 4 de cola</text>
+<text class="k9" x="20" y="146">LA DIRECCIÓN MAC · 48 bits en hexadecimal</text>
+<rect fill="#0055a0" height="44" rx="4" width="316" x="20" y="154"></rect><text class="t9" text-anchor="middle" x="178" y="174">OUI — 24 bits</text><text class="s9" text-anchor="middle" x="178" y="189">lo asigna el IEEE al fabricante</text>
+<rect fill="#2d8659" height="44" rx="4" width="316" x="344" y="154"></rect><text class="t9" text-anchor="middle" x="502" y="174">Número de serie — 24 bits</text><text class="s9" text-anchor="middle" x="502" y="189">lo asigna el fabricante a cada tarjeta</text>
+<text class="d9" text-anchor="middle" x="340" y="216">Ejemplo: 00:1B:44 : 11:3A:B7 — los tres primeros octetos identifican al fabricante</text>
+<rect fill="#fbeaea" height="46" rx="4" width="209" x="20" y="228"></rect>
+<text class="k9" text-anchor="middle" x="124" y="246">DIFUSIÓN</text>
+<text class="d9" text-anchor="middle" x="124" y="263">FF:FF:FF:FF:FF:FF</text>
+<rect fill="#fdf3e3" height="46" rx="4" width="209" x="235" y="228"></rect>
+<text class="k9" text-anchor="middle" x="339" y="246">MULTIDIFUSIÓN</text>
+<text class="d9" text-anchor="middle" x="339" y="263">01:00:5E (IPv4) · 33:33 (IPv6)</text>
+<rect fill="#e7f2ec" height="46" rx="4" width="210" x="450" y="228"></rect>
+<text class="k9" text-anchor="middle" x="555" y="246">UNIDIFUSIÓN</text>
+<text class="d9" text-anchor="middle" x="555" y="263">un único destinatario</text>
+<rect fill="none" height="24" rx="4" stroke="#0055a0" stroke-width="1.4" width="640" x="20" y="286"></rect>
+<text class="k9" text-anchor="middle" x="340" y="302">La MAC es plana y de ámbito local, y cambia en cada salto; la IP es jerárquica, global y no cambia</text>
+<text class="n9" text-anchor="end" x="670" y="330">[Fuente: IEEE 802.3]</text>
+</svg>

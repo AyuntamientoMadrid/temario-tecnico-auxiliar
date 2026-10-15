@@ -1,0 +1,25 @@
+<svg aria-label="Comparativa de los tres modos de acceso al almacenamiento: bloque, fichero y objeto, con su unidad, protocolo, metadatos, escalabilidad y uso idóneo" role="img" viewbox="0 0 680 330" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 11px system-ui,sans-serif;fill:#fff}.s2{font:9px system-ui,sans-serif;fill:#fff}.d2{font:9px system-ui,sans-serif;fill:#333}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}.k2{font:700 9px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h2" text-anchor="middle" x="340" y="20">Bloque, fichero y objeto</text>
+<rect fill="#0055a0" height="32" rx="5" width="200" x="20" y="34"></rect><text class="t2" text-anchor="middle" x="120" y="47">BLOQUE</text><text class="s2" text-anchor="middle" x="120" y="61">SAN · DAS</text>
+<rect fill="#e89822" height="32" rx="5" width="200" x="240" y="34"></rect><text class="t2" text-anchor="middle" x="340" y="47">FICHERO</text><text class="s2" text-anchor="middle" x="340" y="61">NAS</text>
+<rect fill="#2d8659" height="32" rx="5" width="200" x="460" y="34"></rect><text class="t2" text-anchor="middle" x="560" y="47">OBJETO</text><text class="s2" text-anchor="middle" x="560" y="61">API REST sobre HTTP</text>
+<text class="k2" x="20" y="84">UNIDAD Y ORGANIZACIÓN</text>
+<rect fill="#eef3f8" height="34" rx="4" width="200" x="20" y="90"></rect><text class="d2" text-anchor="middle" x="120" y="105">Bloque de un LUN</text><text class="d2" text-anchor="middle" x="120" y="118">sin estructura propia</text>
+<rect fill="#eef3f8" height="34" rx="4" width="200" x="240" y="90"></rect><text class="d2" text-anchor="middle" x="340" y="105">Fichero en un árbol</text><text class="d2" text-anchor="middle" x="340" y="118">jerárquico de carpetas</text>
+<rect fill="#eef3f8" height="34" rx="4" width="200" x="460" y="90"></rect><text class="d2" text-anchor="middle" x="560" y="105">Objeto en contenedor</text><text class="d2" text-anchor="middle" x="560" y="118">de espacio plano</text>
+<text class="k2" x="20" y="144">METADATOS</text>
+<rect fill="#eef3f8" height="26" rx="4" width="200" x="20" y="150"></rect><text class="d2" text-anchor="middle" x="120" y="167">Ninguno</text>
+<rect fill="#eef3f8" height="26" rx="4" width="200" x="240" y="150"></rect><text class="d2" text-anchor="middle" x="340" y="167">Fijos: nombre, fechas, ACL</text>
+<rect fill="#2d8659" height="26" rx="4" width="200" x="460" y="150"></rect><text class="s2" text-anchor="middle" x="560" y="167">Ricos y extensibles</text>
+<text class="k2" x="20" y="196">MODIFICACIÓN PARCIAL Y LATENCIA</text>
+<rect fill="#2d8659" height="34" rx="4" width="200" x="20" y="202"></rect><text class="s2" text-anchor="middle" x="120" y="217">Sí · latencia mínima</text><text class="s2" text-anchor="middle" x="120" y="230">(microsegundos)</text>
+<rect fill="#2d8659" height="34" rx="4" width="200" x="240" y="202"></rect><text class="s2" text-anchor="middle" x="340" y="217">Sí · latencia baja</text><text class="s2" text-anchor="middle" x="340" y="230">(red IP)</text>
+<rect fill="#d13c3c" height="34" rx="4" width="200" x="460" y="202"></rect><text class="s2" text-anchor="middle" x="560" y="217">No: se escribe una</text><text class="s2" text-anchor="middle" x="560" y="230">versión nueva · HTTP</text>
+<text class="k2" x="20" y="256">USO IDÓNEO</text>
+<rect fill="#eef3f8" height="34" rx="4" width="200" x="20" y="262"></rect><text class="d2" text-anchor="middle" x="120" y="277">Bases de datos y discos</text><text class="d2" text-anchor="middle" x="120" y="290">de máquinas virtuales</text>
+<rect fill="#eef3f8" height="34" rx="4" width="200" x="240" y="262"></rect><text class="d2" text-anchor="middle" x="340" y="277">Carpetas compartidas</text><text class="d2" text-anchor="middle" x="340" y="290">y directorios de usuario</text>
+<rect fill="#eef3f8" height="34" rx="4" width="200" x="460" y="262"></rect><text class="d2" text-anchor="middle" x="560" y="277">Archivo, contenidos y</text><text class="d2" text-anchor="middle" x="560" y="290">copias inmutables</text>
+<text class="k2" text-anchor="middle" x="340" y="316">Escalabilidad creciente de izquierda a derecha · latencia también creciente</text>
+<text style="font:9px system-ui;fill:#666" text-anchor="end" x="670" y="328">[Fuente: SNIA-DICT; RFC9110; S3-LOCK]</text>
+</svg>

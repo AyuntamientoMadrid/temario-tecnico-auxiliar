@@ -1,0 +1,16 @@
+<svg aria-label="Anatomía de una relación: la tabla es la relación, cada fila es una tupla, cada columna es un atributo, sobre el ejemplo TRIBUTO" role="img" viewbox="0 0 640 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t1{font:700 12px system-ui,sans-serif;fill:#fff}.s1{font:11px system-ui,sans-serif;fill:#123}.l1{font:11px system-ui,sans-serif;fill:#444}.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h1" text-anchor="middle" x="320" y="24">RELACIÓN = TABLA · TUPLA = FILA · ATRIBUTO = COLUMNA</text>
+<rect fill="#0055a0" height="30" width="120" x="120" y="42"></rect><text class="t1" text-anchor="middle" x="180" y="62">id_tributo</text>
+<rect fill="#0055a0" height="30" width="120" x="240" y="42"></rect><text class="t1" text-anchor="middle" x="300" y="62">tipo</text>
+<rect fill="#0055a0" height="30" width="120" x="360" y="42"></rect><text class="t1" text-anchor="middle" x="420" y="62">importe</text>
+<rect fill="#eef4fa" height="28" width="360" x="120" y="72"></rect><text class="s1" text-anchor="middle" x="180" y="91">T-001</text><text class="s1" text-anchor="middle" x="300" y="91">IBI</text><text class="s1" text-anchor="middle" x="420" y="91">312,40</text>
+<rect fill="#fff" height="28" width="360" x="120" y="100"></rect><text class="s1" text-anchor="middle" x="180" y="119">T-002</text><text class="s1" text-anchor="middle" x="300" y="119">TASA</text><text class="s1" text-anchor="middle" x="420" y="119">58,00</text>
+<rect fill="#eef4fa" height="28" width="360" x="120" y="128"></rect><text class="s1" text-anchor="middle" x="180" y="147">T-003</text><text class="s1" text-anchor="middle" x="300" y="147">IBI</text><text class="s1" text-anchor="middle" x="420" y="147">401,10</text>
+<rect fill="none" height="114" stroke="#0055a0" stroke-width="1.5" width="360" x="120" y="42"></rect>
+<text class="l1" x="60" y="182">↑ La tabla completa es la RELACIÓN</text>
+<text class="l1" x="490" y="90">← una fila es una TUPLA</text>
+<text class="l1" text-anchor="middle" x="300" y="230">Cada columna (id_tributo, tipo, importe) es un ATRIBUTO;</text>
+<text class="l1" text-anchor="middle" x="300" y="248">el conjunto de nombres y tipos de columnas es el ESQUEMA de la relación.</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="630" y="292">[Fuente: CODD70]</text>
+</svg>

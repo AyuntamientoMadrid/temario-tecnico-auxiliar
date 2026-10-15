@@ -1,0 +1,22 @@
+<svg aria-label="Anatomía de una URL: esquema https, host sede.madrid.es, ruta portal/tramites/cita-previa, y query string ano=2026, con la relación URI contiene URL contiene URN" role="img" viewbox="0 0 680 260" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 11px system-ui,sans-serif;fill:#fff}.s2{font:10px system-ui,sans-serif;fill:#fff}.l2{font:12px ui-monospace,monospace;fill:#222}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h2" text-anchor="middle" x="340" y="22">Anatomía de una URL</text>
+<text class="l2" text-anchor="middle" x="340" y="50">https://sede.madrid.es/portal/tramites/cita-previa?ano=2026</text>
+<rect fill="#0055a0" height="30" rx="4" width="90" x="30" y="66"></rect><text class="t2" text-anchor="middle" x="75" y="86">esquema</text>
+<rect fill="#2d8659" height="30" rx="4" width="150" x="130" y="66"></rect><text class="t2" text-anchor="middle" x="205" y="86">host</text>
+<rect fill="#e89822" height="30" rx="4" width="210" x="290" y="66"></rect><text class="t2" text-anchor="middle" x="395" y="86">ruta</text>
+<rect fill="#d13c3c" height="30" rx="4" width="140" x="510" y="66"></rect><text class="t2" text-anchor="middle" x="580" y="86">query string</text>
+<line stroke="#0055a0" stroke-width="2" x1="75" x2="60" y1="96" y2="116"></line>
+<line stroke="#2d8659" stroke-width="2" x1="205" x2="205" y1="96" y2="116"></line>
+<line stroke="#e89822" stroke-width="2" x1="395" x2="395" y1="96" y2="116"></line>
+<line stroke="#d13c3c" stroke-width="2" x1="580" x2="600" y1="96" y2="116"></line>
+<text class="l2" style="fill:#0055a0;font-weight:700" text-anchor="middle" x="60" y="132">https</text>
+<text class="l2" style="fill:#2d8659;font-weight:700" text-anchor="middle" x="205" y="132">sede.madrid.es</text>
+<text class="l2" style="fill:#e89822;font-weight:700" text-anchor="middle" x="395" y="132">/portal/.../cita-previa</text>
+<text class="l2" style="fill:#d13c3c;font-weight:700" text-anchor="middle" x="600" y="132">ano=2026</text>
+<rect fill="none" height="76" rx="6" stroke="#0055a0" stroke-width="2" width="560" x="60" y="160"></rect>
+<text class="l2" style="fill:#0055a0;font-weight:700" x="80" y="180">URI (identifica)</text>
+<rect fill="#0055a0" height="34" rx="5" width="510" x="90" y="192"></rect>
+<text class="t2" text-anchor="middle" x="345" y="214">URL — identifica Y localiza (esta URL es un URI)</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="252">[Fuente: RFC3986]</text>
+</svg>

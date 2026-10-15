@@ -1,0 +1,25 @@
+<svg aria-label="Los 23 patrones de diseño del catálogo Gang of Four, agrupados en 5 patrones creacionales, 7 estructurales y 11 de comportamiento" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 13px system-ui,sans-serif;fill:#fff}.s9{font:10px system-ui,sans-serif;fill:#fff}.n9{font:700 22px system-ui,sans-serif;fill:#fff}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">CATÁLOGO GoF — 23 patrones de diseño [GOF94]</text>
+<rect fill="#0055a0" height="140" rx="8" width="190" x="30" y="40"></rect>
+<text class="n9" text-anchor="middle" x="125" y="66">5</text>
+<text class="t9" text-anchor="middle" x="125" y="88">CREACIONALES</text>
+<text class="s9" text-anchor="middle" x="125" y="108">Singleton · Factory Method</text>
+<text class="s9" text-anchor="middle" x="125" y="122">Abstract Factory</text>
+<text class="s9" text-anchor="middle" x="125" y="136">Builder · Prototype</text>
+<rect fill="#2d8659" height="140" rx="8" width="190" x="245" y="40"></rect>
+<text class="n9" text-anchor="middle" x="340" y="66">7</text>
+<text class="t9" text-anchor="middle" x="340" y="88">ESTRUCTURALES</text>
+<text class="s9" text-anchor="middle" x="340" y="108">Adapter · Bridge · Composite</text>
+<text class="s9" text-anchor="middle" x="340" y="122">Decorator · Facade</text>
+<text class="s9" text-anchor="middle" x="340" y="136">Flyweight · Proxy</text>
+<rect fill="#e89822" height="140" rx="8" width="190" x="460" y="40"></rect>
+<text class="n9" text-anchor="middle" x="555" y="66">11</text>
+<text class="t9" text-anchor="middle" x="555" y="88">COMPORTAMIENTO</text>
+<text class="s9" text-anchor="middle" x="555" y="108">Strategy · Observer · State</text>
+<text class="s9" text-anchor="middle" x="555" y="122">Command · Template Method…</text>
+<text class="s9" text-anchor="middle" x="555" y="136">(11 en total)</text>
+<text style="font:700 13px system-ui;fill:#123" text-anchor="middle" x="340" y="204">¿CÓMO se crean los objetos? · ¿CÓMO se componen? · ¿CÓMO colaboran?</text>
+<text style="font:11px system-ui;fill:#444" text-anchor="middle" x="340" y="230">Cada patrón documenta: intención, aplicabilidad, estructura (mini UML) y consecuencias</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="300">[Fuente: GOF94, cap. 1]</text>
+</svg>

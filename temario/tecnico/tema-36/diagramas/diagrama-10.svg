@@ -1,0 +1,40 @@
+<svg aria-label="Comparación entre sistema de detección de intrusiones IDS y sistema de prevención IPS: el IDS se coloca fuera de línea recibiendo una copia del tráfico por puerto espejo y solo alerta; el IPS se coloca en línea y bloquea. Matriz de los cuatro resultados posibles: verdadero positivo, falso positivo, falso negativo y verdadero negativo. Tabla de aplicación de la medida op punto mon punto uno: aplica en básica, más refuerzo uno en media y refuerzos uno y dos en alta" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.h10{font:700 13px system-ui,sans-serif;fill:#0055a0}.k10{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.t10{font:700 10px system-ui,sans-serif;fill:#fff}.s10{font:8.5px system-ui,sans-serif;fill:#fff}.d10{font:8.5px system-ui,sans-serif;fill:#333}.b10{font:700 9px system-ui,sans-serif;fill:#0055a0}.n10{font:8px system-ui,sans-serif;fill:#666}.a10{font:8px system-ui,sans-serif;fill:#666}.hd10{font:700 8.5px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h10" text-anchor="middle" x="340" y="20">IDS = espejo, avisa. IPS = camino, bloquea. Todo lo demás se deriva de ahí</text>
+<text class="k10" x="20" y="42">DÓNDE SE COLOCA CADA UNO</text>
+<rect fill="#f7f9fc" height="82" rx="5" stroke="#ccc" width="316" x="20" y="50"></rect>
+<text class="b10" text-anchor="middle" x="178" y="66">IDS · FUERA DE LÍNEA</text>
+<rect fill="#999" height="24" rx="3" width="62" x="34" y="76"></rect><text class="s10" text-anchor="middle" x="65" y="92">Internet</text>
+<text class="a10" x="102" y="92">→</text>
+<rect fill="#0055a0" height="24" rx="3" width="76" x="118" y="76"></rect><text class="s10" text-anchor="middle" x="156" y="92">Conmutador</text>
+<text class="a10" x="200" y="92">→</text>
+<rect fill="#0055a0" height="24" rx="3" width="106" x="216" y="76"></rect><text class="s10" text-anchor="middle" x="269" y="92">Red interna</text>
+<rect fill="#2d8659" height="20" rx="3" width="76" x="118" y="106"></rect><text class="s10" text-anchor="middle" x="156" y="120">IDS (copia)</text>
+<text class="d10" x="204" y="120">Recibe una COPIA del tráfico</text>
+<rect fill="#f7f9fc" height="82" rx="5" stroke="#ccc" width="316" x="344" y="50"></rect>
+<text class="b10" text-anchor="middle" x="502" y="66">IPS · EN LÍNEA</text>
+<rect fill="#999" height="24" rx="3" width="62" x="358" y="76"></rect><text class="s10" text-anchor="middle" x="389" y="92">Internet</text>
+<text class="a10" x="426" y="92">→</text>
+<rect fill="#d13c3c" height="24" rx="3" width="76" x="442" y="76"></rect><text class="s10" text-anchor="middle" x="480" y="92">IPS</text>
+<text class="a10" x="524" y="92">→</text>
+<rect fill="#0055a0" height="24" rx="3" width="106" x="540" y="76"></rect><text class="s10" text-anchor="middle" x="593" y="92">Red interna</text>
+<text class="d10" x="358" y="114">Todo el tráfico lo ATRAVIESA: si se avería y</text>
+<text class="d10" x="358" y="126">no tiene derivación, la red queda incomunicada</text>
+<text class="k10" x="20" y="152">CONSECUENCIAS DE LA UBICACIÓN</text>
+<rect fill="#0055a0" height="20" rx="3" width="640" x="20" y="160"></rect><text class="s10" x="30" y="174">CRITERIO</text><text class="s10" x="240" y="174">IDS</text><text class="s10" x="450" y="174">IPS</text>
+<rect fill="#f7f9fc" height="20" width="640" x="20" y="182"></rect><text class="d10" x="30" y="196">Qué hace ante un ataque</text><text class="d10" x="240" y="196">Detecta y ALERTA</text><text class="d10" x="450" y="196">Detecta y BLOQUEA o reinicia la conexión</text>
+<rect fill="#fff" height="20" width="640" x="20" y="204"></rect><text class="d10" x="30" y="218">Si el aparato se avería</text><text class="d10" x="240" y="218">No afecta al servicio</text><text class="d10" x="450" y="218">Puede cortar la red entera</text>
+<rect fill="#f7f9fc" height="20" width="640" x="20" y="226"></rect><text class="d10" x="30" y="240">Efecto de un falso positivo</text><text class="d10" x="240" y="240">Una alerta molesta</text><text class="d10" x="450" y="240">Corta TRÁFICO LEGÍTIMO: servicio público caído</text>
+<rect fill="#fff" height="20" width="640" x="20" y="248"></rect><text class="d10" x="30" y="262">Latencia que introduce</text><text class="d10" x="240" y="262">Ninguna</text><text class="d10" x="450" y="262">Sí: analiza antes de reenviar</text>
+<text class="k10" x="20" y="288">LOS CUATRO RESULTADOS POSIBLES</text>
+<rect fill="#fff" height="50" rx="5" stroke="#ccc" width="316" x="20" y="296"></rect>
+<rect fill="#0055a0" height="18" width="126" x="80" y="297"></rect><text class="s10" text-anchor="middle" x="143" y="310">HAY ATAQUE</text>
+<rect fill="#0055a0" height="18" width="118" x="212" y="297"></rect><text class="s10" text-anchor="middle" x="271" y="310">NO HAY ATAQUE</text>
+<text class="d10" x="28" y="329">Alerta</text><text class="d10" x="86" y="329">Verdadero positivo</text><text class="d10" x="218" y="329">FALSO POSITIVO</text>
+<text class="d10" x="28" y="341">Calla</text><text class="d10" x="86" y="341">FALSO NEGATIVO (peor)</text><text class="d10" x="218" y="341">Verdadero negativo</text>
+<rect fill="#eef4fa" height="50" rx="5" stroke="#0055a0" width="316" x="344" y="296"></rect>
+<text class="b10" text-anchor="middle" x="502" y="311">op.mon.1 Detección de intrusión — aplica ya en BÁSICA</text>
+<text class="d10" text-anchor="middle" x="502" y="325">MEDIA: + R1, detección BASADA EN REGLAS</text>
+<text class="d10" text-anchor="middle" x="502" y="337">ALTA: + R1 + R2, PROCEDIMIENTOS DE RESPUESTA a las alertas</text>
+<text class="n10" x="20" y="362">[Fuente: ENS, RD 311/2022, op.mon.1 y op.mon.3 — texto y tablas del anexo II verificados contra el PDF del BOE]</text>
+</svg>

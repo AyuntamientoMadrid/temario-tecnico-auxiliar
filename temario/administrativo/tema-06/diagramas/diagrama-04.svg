@@ -1,0 +1,35 @@
+<svg aria-label="Son interesados los titulares de derechos o intereses legítimos; tienen capacidad de obrar las personas físicas y jurídicas, los menores para lo que pueden sin asistencia y las entidades sin personalidad cuando la ley lo prevé; la representación se presume para trámites pero debe acreditarse para solicitudes, recursos, desistimiento y renuncia" class="svd4" role="img" viewbox="0 0 720 330" xmlns="http://www.w3.org/2000/svg">
+<style>.svd4 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd4 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd4 .s{font:10.5px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="42" rx="8" width="180" x="270" y="14"></rect>
+<text class="h" x="360" y="40">EL INTERESADO</text>
+<line stroke="#0055a0" x1="360" x2="360" y1="56" y2="72"></line>
+<line stroke="#0055a0" x1="130" x2="590" y1="72" y2="72"></line>
+<line stroke="#0055a0" x1="130" x2="130" y1="72" y2="86"></line>
+<line stroke="#0055a0" x1="360" x2="360" y1="72" y2="86"></line>
+<line stroke="#0055a0" x1="590" x2="590" y1="72" y2="86"></line>
+<rect fill="#e8f0f8" height="120" rx="8" stroke="#0055a0" width="220" x="20" y="86"></rect>
+<text class="t" style="font-weight:700" x="130" y="108">Concepto (art. 4)</text>
+<text class="s" x="130" y="130">Titulares de derechos o</text>
+<text class="s" x="130" y="146">intereses legítimos</text>
+<text class="s" x="130" y="162">individuales o colectivos;</text>
+<text class="s" x="130" y="178">quien lo promueve o</text>
+<text class="s" x="130" y="194">puede verse afectado</text>
+<rect fill="#e8f5ee" height="120" rx="8" stroke="#2d8659" width="220" x="250" y="86"></rect>
+<text class="t" style="font-weight:700" x="360" y="108">Capacidad de obrar (art. 3)</text>
+<text class="s" x="360" y="130">Personas físicas y jurídicas</text>
+<text class="s" x="360" y="146">+ menores (sin asistencia)</text>
+<text class="s" x="360" y="162">+ entidades sin personalidad</text>
+<text class="s" x="360" y="178">jurídica cuando la ley</text>
+<text class="s" x="360" y="194">lo declare</text>
+<rect fill="#e8f0f8" height="120" rx="8" stroke="#0055a0" width="220" x="480" y="86"></rect>
+<text class="t" style="font-weight:700" x="590" y="108">Representación (art. 5)</text>
+<text class="s" x="590" y="130">Se PRESUME para</text>
+<text class="s" x="590" y="146">actos de mero trámite</text>
+<text class="s" x="590" y="162">Debe ACREDITARSE para</text>
+<text class="s" x="590" y="178">solicitudes, recursos,</text>
+<text class="s" x="590" y="194">desistir y renunciar</text>
+<rect fill="#fff5e6" height="74" rx="8" stroke="#e89822" width="400" x="160" y="234"></rect>
+<text class="t" style="font-weight:700;fill:#b5740f" x="360" y="258">Registro Electrónico de Apoderamientos (art. 6)</text>
+<text class="s" x="360" y="280">Cada Administración inscribe los poderes otorgados</text>
+<text class="s" x="360" y="296">apud acta (presencial o electrónico). Interoperable.</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg aria-label="Comparación entre las tres dimensiones de la interoperabilidad del artículo 6 del ENI —organizativa, semántica y técnica, más la dimensión temporal añadida al final del precepto— y las cuatro capas del marco europeo de interoperabilidad, que añade la capa jurídica; cada dimensión del ENI se desarrolla en un capítulo distinto y tiene su propio instrumento" role="img" viewbox="0 0 680 356" xmlns="http://www.w3.org/2000/svg">
+<style>.h16{font:700 13px system-ui,sans-serif;fill:#0055a0}.k16{font:700 10px system-ui,sans-serif;fill:#0055a0}.d16{font:8.5px system-ui,sans-serif;fill:#333}.n16{font:8.5px system-ui,sans-serif;fill:#666}.w16{font:700 10.5px system-ui,sans-serif;fill:#fff}.wd16{font:8px system-ui,sans-serif;fill:#fff}.r16{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h16" text-anchor="middle" x="340" y="19">Las dimensiones de la interoperabilidad: tres en el ENI, cuatro en el marco europeo</text>
+<text class="n16" text-anchor="middle" x="340" y="35">El ENI dice «organizativa, semántica y técnica» y añade «sin olvidar la dimensión temporal»: no son cuatro, son tres más un añadido</text>
+<text class="k16" x="24" y="56">ENI — ART. 6 · CADA DIMENSIÓN, SU CAPÍTULO, SU PREGUNTA Y SU INSTRUMENTO</text>
+<rect fill="#2d8659" height="48" rx="4" width="632" x="24" y="64"></rect>
+<rect fill="#1e6142" height="48" rx="4" width="130" x="24" y="64"></rect>
+<text class="w16" text-anchor="middle" x="89" y="84">ORGANIZATIVA</text>
+<text class="wd16" text-anchor="middle" x="89" y="99">Cap. III · arts. 8-9</text>
+<text class="wd16" x="166" y="82">¿QUIÉN INTERCAMBIA CON QUIÉN Y CON QUÉ GARANTÍAS?</text>
+<text class="wd16" x="166" y="95">Publicar condiciones de acceso (finalidades, modalidades, requisitos, perfiles, protocolos y SEGURIDAD) ·</text>
+<text class="wd16" x="166" y="107">nodos de interoperabilidad · inventarios: procedimientos → SIA · órganos y oficinas → DIR3, codificación unívoca</text>
+<rect fill="#2d8659" height="48" rx="4" width="632" x="24" y="118"></rect>
+<rect fill="#1e6142" height="48" rx="4" width="130" x="24" y="118"></rect>
+<text class="w16" text-anchor="middle" x="89" y="138">SEMÁNTICA</text>
+<text class="wd16" text-anchor="middle" x="89" y="153">Cap. IV · art. 10</text>
+<text class="wd16" x="166" y="136">¿QUÉ SIGNIFICA LO QUE SE INTERCAMBIA?</text>
+<text class="wd16" x="166" y="149">Modelos de datos COMUNES, de preferente aplicación · SECTORIALES, de OBLIGATORIA aplicación · en el CISE</text>
+<text class="wd16" x="166" y="161">Es la dimensión difícil: los protocolos se pactan, el significado hay que acordarlo, y eso no se automatiza</text>
+<rect fill="#2d8659" height="48" rx="4" width="632" x="24" y="172"></rect>
+<rect fill="#1e6142" height="48" rx="4" width="130" x="24" y="172"></rect>
+<text class="w16" text-anchor="middle" x="89" y="192">TÉCNICA</text>
+<text class="wd16" text-anchor="middle" x="89" y="207">Cap. V · art. 11</text>
+<text class="wd16" x="166" y="190">¿CÓMO VIAJA?</text>
+<text class="wd16" x="166" y="203">ESTÁNDARES ABIERTOS como regla; los no abiertos solo si no hay alternativa y mientras no la haya</text>
+<text class="wd16" x="166" y="215">Infraestructuras y servicios comunes (12) · Red SARA (13) · plan de direccionamiento (14) · hora del ROA (15)</text>
+<rect fill="#fdf3e3" height="38" rx="4" stroke="#e89822" stroke-width="1.3" width="632" x="24" y="226"></rect>
+<rect fill="#e89822" height="38" rx="4" width="130" x="24" y="226"></rect>
+<text class="w16" text-anchor="middle" x="89" y="243">+ TEMPORAL</text>
+<text class="wd16" text-anchor="middle" x="89" y="257">Cap. X · arts. 21-24</text>
+<text class="k16" x="166" y="242">¿SEGUIRÁ SIENDO LEGIBLE Y VÁLIDO DENTRO DE 20 AÑOS?</text>
+<text class="d16" x="166" y="256">Trece medidas de conservación · repositorios electrónicos · copiado auténtico con cambio de formato</text>
+<text class="k16" x="24" y="284">MARCO EUROPEO — REGLAMENTO (UE) 2024/903 Y EIF · CUATRO CAPAS</text>
+<rect fill="#d13c3c" height="34" rx="4" width="152" x="24" y="292"></rect>
+<text class="w16" text-anchor="middle" x="100" y="308">JURÍDICA</text>
+<text class="wd16" text-anchor="middle" x="100" y="321">LA QUE EL ENI NO TIENE</text>
+<rect fill="#0055a0" height="34" rx="4" width="152" x="182" y="292"></rect>
+<text class="w16" text-anchor="middle" x="258" y="308">ORGANIZATIVA</text>
+<text class="wd16" text-anchor="middle" x="258" y="321">coincide con el ENI</text>
+<rect fill="#0055a0" height="34" rx="4" width="152" x="340" y="292"></rect>
+<text class="w16" text-anchor="middle" x="416" y="308">SEMÁNTICA</text>
+<text class="wd16" text-anchor="middle" x="416" y="321">coincide con el ENI</text>
+<rect fill="#0055a0" height="34" rx="4" width="158" x="498" y="292"></rect>
+<text class="w16" text-anchor="middle" x="577" y="308">TÉCNICA</text>
+<text class="wd16" text-anchor="middle" x="577" y="321">coincide con el ENI</text>
+<text class="n16" x="24" y="346">[Fuente: ENI, arts. 6 a 24 · Reglamento (UE) 2024/903, aplicable desde el 12-7-2024 · EIF]</text>
+</svg>

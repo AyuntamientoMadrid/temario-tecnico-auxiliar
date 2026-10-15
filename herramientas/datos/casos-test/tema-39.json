@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, una interrupción retrasa la tramitación, pero los plazos son restituibles y no se pierde información. ¿Qué nivel corresponde a la disponibilidad?",
+    "o": [
+     "MEDIO: toda interrupción de un sistema que da soporte a la sede electrónica causa un perjuicio significativo a la ciudadanía.",
+     "BAJO: la interrupción retrasa pero no impide, el incumplimiento es formal y subsanable y el perjuicio es fácilmente reparable.",
+     "ALTO: como la categoría del sistema es ALTA, la disponibilidad se eleva también al nivel ALTO por arrastre de la categoría."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §2.4.1 · anexo I ENS",
+    "e": "Las funciones siguen desempeñándose y los plazos pueden restituirse por el artículo 32 de la Ley 39/2015: el perjuicio es fácilmente reparable. La categoría no eleva las dimensiones que no influyeron en ella."
+   },
+   {
+    "q": "¿Qué dimensión determina que el sistema de expedientes sea de categoría ALTA?",
+    "o": [
+     "La confidencialidad, de nivel ALTO, porque se tratan datos de situación económica de los solicitantes de ayudas.",
+     "La trazabilidad, de nivel ALTO, porque hay que acreditar quién resolvió y quién consultó incluso años después.",
+     "La autenticidad, de nivel ALTO: sin ella no hay acto administrativo válido y se anularía la capacidad de resolver."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §2.4.2 · anexo I, ap. 4.1.a) ENS",
+    "e": "Basta con que una dimensión alcance el nivel ALTO para que la categoría sea ALTA. Aquí es la autenticidad; confidencialidad, integridad y trazabilidad se valoran en nivel MEDIO."
+   },
+   {
+    "q": "¿Quién valora los niveles de las dimensiones y quién determina la categoría del sistema?",
+    "o": [
+     "Valoran los responsables de la información y del servicio; determina la categoría el responsable de la seguridad.",
+     "Valora el responsable de la seguridad; determina la categoría el responsable del sistema, que lo opera el IAM.",
+     "Valora y determina la categoría el responsable del sistema, por ser quien conoce la arquitectura técnica."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §2.2.3 · art. 41 ENS",
+    "e": "Conforme al artículo 41 del ENS, valorar las dimensiones corresponde al responsable de la información y al del servicio (ap. 1), y determinar la categoría, al responsable de la seguridad (ap. 2)."
+   },
+   {
+    "q": "Al ser el sistema de categoría ALTA, ¿debe contar con plan de continuidad (op.cont.2)?",
+    "o": [
+     "Sí: toda medida del anexo II se aplica en su versión de ALTA cuando el sistema es de categoría ALTA.",
+     "Sí, pero en su versión de MEDIA, porque la disponibilidad no influyó en la determinación de la categoría.",
+     "No: la continuidad se exige por el nivel de disponibilidad, que sigue siendo BAJO, y no por la categoría."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §2.3.1 · §2.5.1 · op.cont.2 ENS",
+    "e": "op.cont.2, op.cont.3 y op.cont.4 se exigen por la dimensión D y solo en nivel ALTO. Con la disponibilidad en BAJO no aplican, aunque la categoría sea ALTA."
+   },
+   {
+    "q": "¿Qué precepto explica que la categoría ALTA del sistema no eleve el nivel de su disponibilidad?",
+    "o": [
+     "El artículo 28.2 del ENS: la Declaración de Aplicabilidad fija libremente el nivel de cada dimensión.",
+     "El apartado 4.2 del anexo I: la categoría no altera el nivel de las dimensiones que no influyeron en ella.",
+     "El apartado 2.2 del anexo II: la dimensión de disponibilidad se segrega siempre como un subsistema."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §2.4.2 · anexo I, ap. 4.2 ENS",
+    "e": "Conforme al apartado 4.2 del anexo I, determinar la categoría no altera el nivel de las dimensiones que no han influido en ella; por eso importa distinguir las medidas exigidas por categoría de las exigidas por dimensión."
+   },
+   {
+    "q": "¿Cuál de estas medidas se exige al sistema en su versión de ALTA por razón de su categoría?",
+    "o": [
+     "op.exp.4, mantenimiento y actualizaciones de seguridad.",
+     "op.cont.3, pruebas periódicas del plan de continuidad.",
+     "mp.s.4, protección frente a la denegación de servicio."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 2 · §2.5.1 · op.exp.4 ENS",
+    "e": "op.exp.4 se exige por categoría y aplica con R1 + R2 en ALTA. op.cont.3 y mp.s.4 dependen de la disponibilidad, que es BAJA, y no se exigen."
+   },
+   {
+    "q": "Para poder acreditar años después quién resolvió y quién consultó cada expediente, ¿qué medida del anexo II es la referencia?",
+    "o": [
+     "op.cont.1, análisis de impacto.",
+     "op.exp.8, registro de la actividad.",
+     "mp.if.4, energía eléctrica."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §2.5.1 · op.exp.8 ENS",
+    "e": "Acreditar quién hizo qué es la trazabilidad; op.exp.8 (registro de la actividad) se exige por esa dimensión, con sus refuerzos en nivel ALTO."
+   },
+   {
+    "q": "El módulo de expedientes de violencia de género exige una confidencialidad muy superior al resto y es delimitable. ¿Cómo debe tratarse?",
+    "o": [
+     "Segregándolo como subsistema con sus propias medidas y refuerzos (anexo II, ap. 2.2), porque es delimitable.",
+     "Elevando todo el sistema al nivel máximo, porque el ENS aplica siempre el nivel del módulo más exigente.",
+     "Anotándolo como medida compensatoria en la Declaración de Aplicabilidad, sin modificar las demás medidas."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §2.4.2 · anexo II, ap. 2.2 ENS",
+    "e": "El apartado 2.2 del anexo II permite segregar subsistemas que requieran un nivel de medidas diferente, siempre que puedan delimitarse la información y los servicios afectados. Si no fueran delimitables, mandaría el máximo."
+   },
+   {
+    "q": "¿Alcanza el ENS a la empresa adjudicataria del mantenimiento y a su subcontratista de la base de datos?",
+    "o": [
+     "Solo a la adjudicataria: la subcontratista queda fuera porque no tiene relación contractual directa con el Ayuntamiento.",
+     "No: el ENS solo obliga a las entidades del sector público, y el contratista se rige por su propia política de seguridad.",
+     "Sí: el art. 2.3 lo extiende al contratista y, según el análisis de riesgos, a su cadena de suministro, a través de los pliegos."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 4 · §2.1.1 · art. 2.3 ENS",
+    "e": "El artículo 2.3 del ENS extiende sus exigencias a las entidades privadas que prestan servicios al sector público y, en la medida necesaria según el análisis de riesgos, a su cadena de suministro. Se instrumenta por los pliegos, con Declaraciones o Certificaciones de Conformidad."
+   },
+   {
+    "q": "¿Quién conserva la responsabilidad última sobre la seguridad del servicio externalizado?",
+    "o": [
+     "La empresa adjudicataria, que la asume por contrato junto con la designación de su POC de seguridad.",
+     "El Ayuntamiento, como entidad pública destinataria del servicio; el contratista designa un POC de seguridad.",
+     "La subcontratista de la base de datos, por ser quien opera el componente más sensible del sistema."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §2.2.3 · art. 13.5 ENS",
+    "e": "Conforme al artículo 13.5 del ENS, la organización prestataria designa un POC de seguridad, «sin perjuicio de que la responsabilidad última resida en la entidad del sector público destinataria». La responsabilidad no se externaliza nunca."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "Para consultar la renta y el desempleo de los solicitantes, ¿qué obligación corresponde a la dimensión organizativa de la interoperabilidad?",
+    "o": [
+     "Consumir el modelo de datos común publicado en el CISE, sin crear campos propios para la renta o el desempleo.",
+     "Usar los protocolos de intermediación de la norma técnica de la letra f), sobre estándares abiertos y la Red SARA.",
+     "Adherirse a la plataforma de intermediación, aceptar sus condiciones e inventariar el procedimiento en el SIA y las oficinas en el DIR3."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 1 · §3.3.1 · arts. 8 y 9 ENI",
+    "e": "La dimensión organizativa (arts. 8 y 9 del ENI) es la de las condiciones de acceso y los inventarios. El modelo de datos del CISE es la semántica (art. 10) y los protocolos sobre la Red SARA, la técnica (arts. 11 a 13)."
+   },
+   {
+    "q": "Para que «estar en situación de desempleo» signifique lo mismo para el emisor y para el receptor, ¿dónde debe buscarse el modelo de datos común?",
+    "o": [
+     "En el CISE, el Centro de Interoperabilidad Semántica de la Administración.",
+     "En el CTT, el Centro de Transferencia de Tecnología de la Administración.",
+     "En el DIR3, el directorio común de unidades orgánicas y oficinas públicas."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §3.3.1 · art. 10 ENI",
+    "e": "Los modelos de datos comunes y sectoriales se publican en el CISE. El CTT es de aplicaciones y el DIR3, de órganos y oficinas: SIA = procedimientos, CISE = datos, CTT = aplicaciones, DIR3 = órganos."
+   },
+   {
+    "q": "¿Por qué red debe viajar la consulta a la Agencia Tributaria y al Servicio Público de Empleo Estatal?",
+    "o": [
+     "Por internet sin más, porque los estándares abiertos del art. 11 del ENI hacen innecesaria otra red.",
+     "Por la Red SARA, que presta la Red de comunicaciones de las Administraciones públicas españolas.",
+     "Por la red troncal del IAM, que el art. 13 del ENI designa como red de comunicaciones municipal."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §3.3.2 · art. 13 ENI",
+    "e": "Conforme al artículo 13 del ENI, la Red de comunicaciones de las Administraciones públicas españolas la presta la Red SARA, que transporta los protocolos de intermediación de datos."
+   },
+   {
+    "q": "¿Qué beneficio jurídico produce esa consulta automática para la persona que solicita la ayuda al alquiler?",
+    "o": [
+     "Que no se le puede exigir que aporte esos documentos, porque el Ayuntamiento puede consultarlos (art. 28 de la Ley 39/2015).",
+     "Que queda exenta de acreditar su renta en cualquier otro procedimiento posterior (art. 70 de la Ley 39/2015).",
+     "Que adquiere el derecho a una resolución automatizada de su solicitud de ayuda (art. 21.1 del ENI)."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §4.2.1 · art. 28 Ley 39/2015",
+    "e": "Conforme al artículo 28 de la Ley 39/2015, la Administración no puede exigir a la persona interesada documentos que ya obran en poder de las Administraciones y que puede consultar."
+   },
+   {
+    "q": "Un juzgado de lo contencioso-administrativo requiere un expediente de ayuda resuelto. ¿Qué debe remitirse?",
+    "o": [
+     "Una carpeta comprimida con todos los ficheros del expediente, firmada por el técnico que la ha preparado.",
+     "Solo la copia certificada de la resolución, porque el resto del expediente es información de apoyo.",
+     "El expediente completo, foliado y autentificado, con un índice electrónico firmado que garantiza su integridad."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §3.4.2 · art. 70.3 Ley 39/2015",
+    "e": "Conforme al artículo 70.3 de la Ley 39/2015, el expediente se remite completo, foliado, autentificado y con un índice también autentificado. Se produce conforme a la norma técnica de la letra d): índice firmado, documentos con sus metadatos y firmas, metadatos del expediente y firma del índice."
+   },
+   {
+    "q": "¿Cuál de estos elementos queda excluido del expediente que se remite al juzgado?",
+    "o": [
+     "Los informes preceptivos solicitados antes de resolver.",
+     "Los borradores y las notas internas de los tramitadores.",
+     "La copia electrónica certificada de la resolución."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §3.4.2 · art. 70.4 Ley 39/2015",
+    "e": "El artículo 70.4 excluye la información auxiliar o de apoyo (notas, borradores, opiniones, comunicaciones internas…), salvo los informes preceptivos y facultativos solicitados antes de la resolución. La copia certificada de la resolución debe constar."
+   },
+   {
+    "q": "Los expedientes deben conservarse treinta años. ¿A quién corresponde fijar ese periodo de conservación?",
+    "o": [
+     "Al responsable del sistema, según la capacidad de los repositorios electrónicos.",
+     "Al propio ENI, que fija treinta años para todos los expedientes de ayudas sociales.",
+     "A la comisión calificadora que corresponda, conforme al artículo 21.1.f) del ENI."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §3.3.2 · art. 21.1.f) ENI",
+    "e": "El artículo 21.1.f) del ENI atribuye el periodo de conservación a las comisiones calificadoras; no lo fija el informático ni la norma con carácter general."
+   },
+   {
+    "q": "Si el formato en que se guardaron los documentos deja de figurar entre los admitidos por el ENI, ¿qué procede?",
+    "o": [
+     "Conservarlos en el formato original sin cambio alguno, porque el artículo 23.1 del ENI prohíbe cualquier conversión.",
+     "Aplicar copiado auténtico con cambio de formato, con etiquetado del formato y, en su caso, migraciones (art. 23.3 ENI).",
+     "Exportarlos a PDF desde la propia aplicación, lo que mantiene su valor probatorio sin necesidad de otro trámite."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 3 · §3.4.3 · art. 23.3 ENI",
+    "e": "Ante riesgo de obsolescencia, el artículo 23.3 del ENI ordena copiado auténtico con cambio de formato. El copiado auténtico es una figura jurídica, regida por la norma técnica de la letra j), no una simple exportación."
+   },
+   {
+    "q": "¿Qué normas rigen la digitalización de las solicitudes en papel para que la imagen tenga valor de copia auténtica?",
+    "o": [
+     "El artículo 24 del ENI y su norma técnica de la letra c), junto con el artículo 27.3 de la Ley 39/2015.",
+     "Solo el artículo 23.3 del ENI, que regula el copiado auténtico con cambio de formato electrónico.",
+     "La norma técnica de la letra d), de expediente electrónico, que regula el escaneado de documentos."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §3.3.2 · art. 24 ENI · art. 27.3 Ley 39/2015",
+    "e": "La digitalización se rige por el artículo 24 del ENI y la norma técnica de la letra c) (formatos, resolución, imagen fiel e íntegra y metadatos). Para que valga como copia auténtica, el artículo 27.3 de la Ley 39/2015 exige ajustarse al ENI, al ENS y a sus normas técnicas."
+   },
+   {
+    "q": "El módulo de gestión de ayudas se publica en el CTT en modo producto y declarado de fuentes abiertas. ¿Qué condiciones se aplican?",
+    "o": [
+     "Se publican solo documentación y niveles de servicio, porque en modo producto el cedente opera la aplicación.",
+     "Se publica el código con licencia propietaria municipal, con convenio y contraprestación por cada cesión.",
+     "Se publican código, documentación y licencia, procurando la EUPL; por defecto, sin contraprestación ni convenio."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §3.2.2 · arts. 16 y 17.3 ENI",
+    "e": "El licenciamiento es por defecto sin contraprestación ni convenio (art. 16.1.f) y se procura la EUPL (art. 16.3). En modo producto se cede el código y se publican licencias; en modo servicio, el cedente opera la aplicación y se publican niveles de servicio."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En enero, el IAM debe acreditar la conformidad del sistema, de categoría ALTA. ¿Qué procedimiento corresponde?",
+    "o": [
+     "Una auditoría de certificación por una Entidad de Certificación, que emite una Certificación de Conformidad.",
+     "Una autoevaluación por el personal que administra el sistema, que da lugar a una Declaración de Conformidad.",
+     "Una declaración de conformidad con el ENI publicada en sede, sin intervención de ninguna entidad externa."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §2.5.2 · art. 38.1 ENS",
+    "e": "Conforme al artículo 38.1 del ENS, los sistemas de categoría MEDIA o ALTA requieren auditoría para la certificación de su conformidad. La autoevaluación con Declaración de Conformidad solo basta en categoría BÁSICA."
+   },
+   {
+    "q": "¿Cómo se materializa esa certificación y dónde debe publicarse?",
+    "o": [
+     "En un distintivo PDF-A firmado por la propia entidad, publicado en el Boletín Oficial del Estado durante dos años.",
+     "En un distintivo PDF-A firmado por la Entidad de Certificación, publicado en la sede o el portal mientras esté vigente.",
+     "En un certificado en papel firmado por el CCN, que se archiva en el expediente del sistema sin publicidad alguna."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §2.5.2 · art. 38.2 ENS",
+    "e": "El Distintivo de Certificación de Conformidad es un documento electrónico en PDF-A firmado por la Entidad de Certificación, con enlace a la certificación; el artículo 38.2 obliga a publicarlo en los portales de internet o sedes electrónicas."
+   },
+   {
+    "q": "En marzo se detecta que el responsable de la seguridad depende jerárquicamente del responsable del sistema. ¿Cómo se valora?",
+    "o": [
+     "Es conforme, porque el art. 13.3 del ENS solo exige que las dos funciones recaigan en personas distintas.",
+     "Es conforme si el responsable del sistema firma la Declaración de Aplicabilidad en lugar del de seguridad.",
+     "Infringe el art. 13.3 del ENS, que exige que sean distintos y que no exista dependencia jerárquica entre ambos."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §2.2.3 · art. 13.3 ENS",
+    "e": "No basta con que sean dos personas: la jerarquía es lo que la norma prohíbe, porque quien explota tiene incentivos para minimizar los avisos que le obligarían a parar. La Declaración de Aplicabilidad la firma el responsable de la seguridad (art. 28.2)."
+   },
+   {
+    "q": "La entidad alega falta de recursos para separar ambas funciones. ¿Es admisible la situación?",
+    "o": [
+     "No en ningún caso: el art. 13.3 del ENS no admite excepciones por falta de recursos en una entidad local.",
+     "Solo si la ausencia de recursos está justificada y se aplican medidas compensatorias aprobadas y recogidas en la política.",
+     "Sí, sin más requisitos, porque la falta de recursos exime a la entidad del principio de diferenciación."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §2.2.3 · art. 13.3 ENS",
+    "e": "El artículo 13.3 admite la situación excepcional cuando «la ausencia justificada de recursos» lo haga necesario, pero obliga a aplicar medidas compensatorias; la política de seguridad debe recogerlas (art. 11.3) y el auditor lo comprobará."
+   },
+   {
+    "q": "En junio, la sonda de vigilancia detecta el cifrado masivo de un servidor. Respecto de las cuatro fases del artículo 8 del ENS, ¿qué ha ocurrido?",
+    "o": [
+     "Ha funcionado la detección y ha fallado la prevención.",
+     "Ha funcionado la prevención y ha fallado la detección.",
+     "Ha funcionado la conservación y ha fallado la respuesta."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §2.2.2 · art. 8 ENS",
+    "e": "El cifrado llegó a producirse, luego la prevención falló (op.exp.2, op.exp.4, mp.com.4); la sonda lo detectó, luego la detección funcionó (op.mon.1, op.exp.8). La conservación también falla, como muestran los sellos de tiempo perdidos."
+   },
+   {
+    "q": "El servidor afectado lo opera la empresa adjudicataria. ¿A quién notifica el incidente cada uno de los dos sujetos implicados?",
+    "o": [
+     "Ambos directamente al CCN-CERT, porque el servidor afectado pertenece a un sistema del sector público.",
+     "El Ayuntamiento, al INCIBE-CERT; la adjudicataria, al CCN-CERT, por ser ella quien opera el servidor.",
+     "El Ayuntamiento, al CCN-CERT; la adjudicataria, al INCIBE-CERT, que lo traslada de inmediato al CCN-CERT."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · §4.1.1 · art. 33.2 y 33.7 ENS",
+    "e": "La entidad pública notifica al CCN-CERT los incidentes con impacto significativo (art. 33.2); la organización privada que presta servicios a una entidad pública notifica al INCIBE-CERT (art. 33.7), que lo pone en conocimiento del CCN-CERT."
+   },
+   {
+    "q": "Antes de reconectar el sistema tras el incidente, ¿quién determina técnicamente el riesgo de reconexión?",
+    "o": [
+     "El CCN-CERT, que indica los procedimientos y las salvaguardas que deben aplicarse.",
+     "El INCIBE-CERT, al ser una empresa privada la que opera el servidor afectado.",
+     "El responsable del sistema, que decide la reconexión sin intervención externa."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 3 · §4.1.1 · art. 33.6 ENS",
+    "e": "Conforme al artículo 33.6 del ENS, tras un incidente el CCN-CERT determina técnicamente el riesgo de reconexión. Si afecta a medios y servicios comunes, autoriza la SGAD con un informe del CCN-CERT."
+   },
+   {
+    "q": "Doscientos expedientes restaurados desde copia han perdido los sellos de tiempo de sus asientos registrales. ¿Qué dimensión y qué medida se han visto afectadas?",
+    "o": [
+     "La disponibilidad y op.cont.2, plan de continuidad.",
+     "La confidencialidad y mp.com.2, protección de la confidencialidad.",
+     "La trazabilidad y mp.info.4, sellos de tiempo."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §2.3.2 · mp.info.4 ENS",
+    "e": "Sin sello de tiempo no se puede acreditar de forma oponible frente a terceros el momento del asiento: es la trazabilidad. mp.info.4 aplica en categoría ALTA, precisamente porque el reloj del servidor no da fecha oponible."
+   },
+   {
+    "q": "¿Por qué el problema de los sellos de tiempo no se resuelve volviendo a sellar los expedientes recuperados?",
+    "o": [
+     "Porque solo el CCN-CERT puede volver a sellar documentos, y únicamente tras emitir su informe sobre el riesgo de reconexión.",
+     "Porque un sello no se regenera retroactivamente: sellar hoy acredita que el documento existía hoy, no en la fecha del asiento.",
+     "Porque los sellos de tiempo caducan a los cinco años del asiento y los de estos expedientes ya habían perdido su validez."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 4 · §4.2.1 · art. 21.1.g) ENI",
+    "e": "El problema es de valor probatorio, no de disponibilidad. El artículo 21.1.g) del ENI exige poder consultar la firma, el sello de tiempo y los metadatos durante todo el periodo de conservación."
+   },
+   {
+    "q": "En noviembre se produce una modificación sustancial del sistema. ¿Hay que auditar de nuevo?",
+    "o": [
+     "Sí: auditoría extraordinaria (art. 31.1 ENS), que fija la nueva fecha de cómputo de los dos años de la ordinaria.",
+     "No: basta con esperar a la auditoría regular ordinaria, que se realiza cada dos años en cualquier caso.",
+     "Sí: auditoría extraordinaria, pero el plazo de la ordinaria sigue contándose desde la auditoría anterior."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 5 · §2.5.2 · art. 31.1 ENS",
+    "e": "Conforme al artículo 31.1 del ENS, la auditoría extraordinaria procede ante modificaciones sustanciales que puedan repercutir en las medidas, y determina la fecha de cómputo de los dos años para la siguiente ordinaria. Además, hay que reevaluar la categoría."
+   }
+  ]
+ }
+]

@@ -1,0 +1,9 @@
+<svg aria-label="Los cuatro sublenguajes de SQL: DDL para la estructura, DML para los datos, DCL para los permisos y TCL para las transacciones" class="d17-5" role="img" viewbox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+<style>.d17-5 .t{font:700 13px system-ui,sans-serif;fill:#fff}.d17-5 .s{font:11px system-ui,sans-serif;fill:#fff}.d17-5 .h{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="330" y="28">SQL (ISO/IEC 9075) — cuatro sublenguajes</text>
+<rect fill="#0055a0" height="90" rx="6" width="280" x="40" y="50"></rect><text class="t" text-anchor="middle" x="180" y="78">DDL — Estructura</text><text class="s" text-anchor="middle" x="180" y="100">CREATE · ALTER · DROP · TRUNCATE</text><text class="s" text-anchor="middle" x="180" y="120">Define tablas, índices, vistas</text>
+<rect fill="#2d8659" height="90" rx="6" width="280" x="340" y="50"></rect><text class="t" text-anchor="middle" x="480" y="78">DML — Datos</text><text class="s" text-anchor="middle" x="480" y="100">SELECT · INSERT · UPDATE · DELETE</text><text class="s" text-anchor="middle" x="480" y="120">Consulta y modifica filas</text>
+<rect fill="#e89822" height="90" rx="6" width="280" x="40" y="155"></rect><text class="t" text-anchor="middle" x="180" y="183">DCL — Permisos</text><text class="s" text-anchor="middle" x="180" y="205">GRANT · REVOKE</text><text class="s" text-anchor="middle" x="180" y="225">Controla privilegios</text>
+<rect fill="#003d73" height="90" rx="6" width="280" x="340" y="155"></rect><text class="t" text-anchor="middle" x="480" y="183">TCL — Transacciones</text><text class="s" text-anchor="middle" x="480" y="205">COMMIT · ROLLBACK · SAVEPOINT</text><text class="s" text-anchor="middle" x="480" y="225">Confirma o deshace cambios</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="650" y="288">[Fuente: ISO9075]</text>
+</svg>

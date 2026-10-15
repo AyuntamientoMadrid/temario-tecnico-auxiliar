@@ -1,0 +1,19 @@
+<svg aria-label="Las retribuciones básicas son el sueldo y los trienios, fijados en la Ley de Presupuestos Generales del Estado; la cuantía y estructura de las complementarias se establecen por las leyes de cada Administración Pública" class="svd9" role="img" viewbox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+<style>.svd9 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd9 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:start}.svd9 .s{font:10.5px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="38" rx="8" width="260" x="220" y="16"></rect>
+<text class="h" x="350" y="40">RETRIBUCIONES · art. 22</text>
+<rect fill="#e8f5ee" height="170" rx="8" stroke="#2d8659" width="290" x="40" y="74"></rect>
+<text class="s" style="font-weight:700;fill:#1f5e3f;font-size:13px" x="185" y="100">BÁSICAS (art. 23)</text>
+<text class="t" x="60" y="134">• Sueldo (por Subgrupo/Grupo)</text>
+<text class="t" x="60" y="166">• Trienios (cada 3 años)</text>
+<rect fill="#fff" height="40" rx="6" stroke="#2d8659" width="250" x="60" y="190"></rect>
+<text class="s" style="font-weight:700" x="185" y="215">Se fijan en la Ley de PGE</text>
+<rect fill="#e8f0f8" height="170" rx="8" stroke="#0055a0" width="290" x="370" y="74"></rect>
+<text class="s" style="font-weight:700;fill:#0055a0;font-size:13px" x="515" y="100">COMPLEMENTARIAS (art. 24)</text>
+<text class="t" x="390" y="128">• Progresión en la carrera</text>
+<text class="t" x="390" y="152">• Dificultad / responsabilidad</text>
+<text class="t" x="390" y="176">• Rendimiento y resultados</text>
+<text class="t" x="390" y="200">• Servicios extraordinarios</text>
+<rect fill="#fff" height="22" rx="5" stroke="#0055a0" width="250" x="390" y="212"></rect>
+<text class="s" style="font-weight:700" x="515" y="227">Leyes de cada Administración</text>
+</svg>

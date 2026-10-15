@@ -1,0 +1,11 @@
+<svg aria-label="Jerarquia normativa" role="img" viewbox="0 0 640 380" xmlns="http://www.w3.org/2000/svg">
+<style>.d8-ce{fill:#0055a0}.d8-tr{fill:#3378b9}.d8-lo{fill:#5a94c9}.d8-lord{fill:#88b2d9}.d8-reg{fill:#b9cfea}.d8-cost{fill:#d8e3f2}.d8-title{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.d8-label{font:600 12px system-ui,sans-serif;fill:#1a1a1a}.d8-right{font:11px system-ui,sans-serif;fill:#333}.d8-head{font:700 14px system-ui,sans-serif;fill:#0055a0;text-anchor:middle}</style>
+<text class="d8-head" x="320" y="24">JERARQUÍA NORMATIVA — art. 9.3 CE</text>
+<polygon class="d8-ce" points="260,50 380,50 420,100 220,100"></polygon><text class="d8-title" x="320" y="82">CONSTITUCIÓN 1978</text>
+<rect class="d8-tr" height="38" width="240" x="200" y="105"></rect><text class="d8-title" x="320" y="128">Tratados Internacionales (art. 96)</text>
+<rect class="d8-lo" height="38" width="280" x="180" y="148"></rect><text class="d8-title" x="320" y="171">Leyes orgánicas (art. 81)</text>
+<rect class="d8-lord" height="38" width="320" x="160" y="191"></rect><text class="d8-title" style="font-size:11px;fill:#1a1a1a" x="320" y="214">Leyes ordinarias · Decretos-ley · Decretos legislativos</text>
+<rect class="d8-reg" height="38" width="360" x="140" y="234"></rect><text class="d8-label" style="text-anchor:middle" x="320" y="256">Reglamentos (Real Decreto · Orden · Ordenanza)</text>
+<rect class="d8-cost" height="38" width="400" x="120" y="277"></rect><text class="d8-label" style="text-anchor:middle" x="320" y="300">Costumbre · Principios generales del derecho</text>
+<text class="d8-right" style="text-anchor:middle;font-style:italic" x="320" y="360">Supremacía constitucional · TC intérprete supremo (art. 1 LOTC)</text>
+</svg>

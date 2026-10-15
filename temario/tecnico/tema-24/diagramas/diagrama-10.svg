@@ -1,0 +1,39 @@
+<svg aria-label="Los cuatro componentes de una aplicación Android (Activity, Service, Broadcast Receiver y Content Provider) se activan mediante Intents, que pueden ser explícitos o implícitos, y se declaran todos en el fichero AndroidManifest.xml" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t10{font:700 10.5px system-ui,sans-serif;fill:#fff}.s10{font:9px system-ui,sans-serif;fill:#fff}.h10{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h10" text-anchor="middle" x="340" y="20">Componentes de una aplicación Android e Intents</text>
+<rect fill="#0055a0" height="62" rx="5" width="150" x="20" y="36"></rect>
+<text class="t10" text-anchor="middle" x="95" y="58">ACTIVITY</text>
+<text class="s10" text-anchor="middle" x="95" y="76">Una pantalla con</text>
+<text class="s10" text-anchor="middle" x="95" y="90">interfaz de usuario</text>
+<rect fill="#2d8659" height="62" rx="5" width="150" x="185" y="36"></rect>
+<text class="t10" text-anchor="middle" x="260" y="58">SERVICE</text>
+<text class="s10" text-anchor="middle" x="260" y="76">Trabajo prolongado</text>
+<text class="s10" text-anchor="middle" x="260" y="90">sin interfaz</text>
+<rect fill="#e89822" height="62" rx="5" width="150" x="350" y="36"></rect>
+<text class="t10" text-anchor="middle" x="425" y="58">BROADCAST RECEIVER</text>
+<text class="s10" text-anchor="middle" x="425" y="76">Responde a anuncios</text>
+<text class="s10" text-anchor="middle" x="425" y="90">del sistema</text>
+<rect fill="#888" height="62" rx="5" width="145" x="515" y="36"></rect>
+<text class="t10" text-anchor="middle" x="587" y="58">CONTENT PROVIDER</text>
+<text class="s10" text-anchor="middle" x="587" y="76">Comparte datos con</text>
+<text class="s10" text-anchor="middle" x="587" y="90">otras apps vía URI</text>
+<path d="M280 138 L95 102" marker-end="url(#a10)" stroke="#0055a0" stroke-width="2"></path>
+<path d="M320 138 L260 102" marker-end="url(#a10b)" stroke="#2d8659" stroke-width="2"></path>
+<path d="M370 138 L425 102" marker-end="url(#a10c)" stroke="#e89822" stroke-width="2"></path>
+<path d="M410 138 L580 102" marker-end="url(#a10d)" stroke="#888" stroke-width="2"></path>
+<defs>
+<marker id="a10" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#0055a0"></path></marker>
+<marker id="a10b" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#2d8659"></path></marker>
+<marker id="a10c" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#e89822"></path></marker>
+<marker id="a10d" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#888"></path></marker>
+</defs>
+<rect fill="#0055a0" height="66" rx="6" width="330" x="175" y="142"></rect>
+<text class="t10" text-anchor="middle" x="340" y="164">INTENT — mensaje asíncrono que activa componentes</text>
+<text class="s10" text-anchor="middle" x="340" y="184">EXPLÍCITO: nombra la clase destino concreta (dentro de mi app)</text>
+<text class="s10" text-anchor="middle" x="340" y="200">IMPLÍCITO: acción + datos; el SISTEMA elige qué app lo atiende</text>
+<rect fill="#d13c3c" height="62" rx="6" width="560" x="60" y="224"></rect>
+<text class="t10" text-anchor="middle" x="340" y="246">AndroidManifest.xml</text>
+<text class="s10" text-anchor="middle" x="340" y="264">Declara los cuatro componentes, los permisos, los intent filters,</text>
+<text class="s10" text-anchor="middle" x="340" y="280">las versiones mínima y objetivo de la API y el hardware requerido</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="310">[Fuente: ANDROID-DEV]</text>
+</svg>

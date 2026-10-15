@@ -1,0 +1,2567 @@
+{
+  "tema": 4,
+  "bloque": "administrativo",
+  "titulo": "El ROGA (II): Los Distritos",
+  "enunciado_oficial": "El Reglamento Orgánico del Gobierno y de la Administración del Ayuntamiento de Madrid, de 31 de mayo de 2004 (II): Los Distritos: Disposiciones Generales. El Concejal Presidente. Estructura administrativa.",
+  "calificacion": "+1 acierto, -1/3 error, 0 en blanco (BOAM 10.032, base 5.2)",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "Según el artículo 61 del ROGA, los distritos constituyen:",
+      "opciones": {
+        "a": "Entidades locales con personalidad jurídica propia.",
+        "b": "Divisiones territoriales del municipio de Madrid.",
+        "c": "Organismos autónomos municipales."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 61.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 2,
+      "pregunta": "Los distritos están dotados de órganos de gestión:",
+      "opciones": {
+        "a": "Descentralizada.",
+        "b": "Desconcentrada.",
+        "c": "Privatizada."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 61.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 3,
+      "pregunta": "La finalidad de la gestión desconcentrada de los distritos es:",
+      "opciones": {
+        "a": "La recaudación de tributos estatales.",
+        "b": "El impulso y desarrollo de la participación ciudadana en la gestión de los asuntos municipales.",
+        "c": "La supresión de las Áreas de Gobierno."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 61.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 4,
+      "pregunta": "La gestión desconcentrada de los distritos se ejerce:",
+      "opciones": {
+        "a": "Sin perjuicio de la unidad de gobierno y gestión del municipio.",
+        "b": "Con plena independencia del Ayuntamiento.",
+        "c": "Bajo la dirección de la Comunidad de Madrid."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 61.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 5,
+      "pregunta": "Según el artículo 128.1 LBRL, los distritos son divisiones territoriales propias, dotadas de órganos de gestión:",
+      "opciones": {
+        "a": "Desconcentrada.",
+        "b": "Descentralizada.",
+        "c": "Delegada."
+      },
+      "correcta": "a",
+      "referencia": "LBRL art. 128.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 6,
+      "pregunta": "Corresponde establecer la división del municipio en distritos a:",
+      "opciones": {
+        "a": "El alcalde, por decreto.",
+        "b": "El Pleno del Ayuntamiento, mediante norma orgánica.",
+        "c": "La Junta de Gobierno."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 61.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 7,
+      "pregunta": "La determinación y regulación de los órganos representativos y participativos de los distritos corresponde a:",
+      "opciones": {
+        "a": "Cada concejal-presidente.",
+        "b": "El coordinador del distrito.",
+        "c": "El Pleno, mediante norma orgánica."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 61.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 8,
+      "pregunta": "La atribución del alcalde para determinar la organización de la administración ejecutiva se ejerce conforme a:",
+      "opciones": {
+        "a": "El artículo 140 de la Constitución.",
+        "b": "La LOFCA.",
+        "c": "El artículo 123.1.c) de la LBRL."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 61.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 9,
+      "pregunta": "El capítulo del ROGA sobre distritos establece:",
+      "opciones": {
+        "a": "Las normas esenciales de la organización administrativa de los distritos.",
+        "b": "El régimen electoral de los concejales.",
+        "c": "Las competencias de la Comunidad de Madrid."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 61.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 10,
+      "pregunta": "Según el artículo 61.3 ROGA, las normas esenciales de la organización administrativa de los distritos que establece ese capítulo se complementarán con:",
+      "opciones": {
+        "a": "Las que apruebe cada Junta Municipal del Distrito.",
+        "b": "Las que dicte la Comunidad de Madrid.",
+        "c": "Las referidas en el apartado anterior."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 61.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 11,
+      "pregunta": "Conforme al artículo 128.1 LBRL, los ayuntamientos a los que se aplica el régimen de los municipios de gran población:",
+      "opciones": {
+        "a": "Podrán crear distritos si así lo acuerda el Pleno.",
+        "b": "Podrán crear distritos si lo autoriza la Comunidad Autónoma.",
+        "c": "Deberán crear distritos."
+      },
+      "correcta": "c",
+      "referencia": "LBRL art. 128.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 12,
+      "pregunta": "La organización administrativa del Ayuntamiento de Madrid responde a los principios de división funcional en Áreas de Gobierno y de:",
+      "opciones": {
+        "a": "Gestión territorial integrada en distritos.",
+        "b": "Descentralización territorial en barrios.",
+        "c": "Gestión desconcentrada en organismos públicos."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 5",
+      "explicacion": ""
+    },
+    {
+      "numero": 13,
+      "pregunta": "Los órganos territoriales ejercen sus competencias:",
+      "opciones": {
+        "a": "Sobre todo el municipio.",
+        "b": "Sobre toda la Comunidad de Madrid.",
+        "c": "Exclusivamente en el ámbito de un distrito."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 6.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 14,
+      "pregunta": "Según el artículo 22.1 de la Ley 22/2006, de Capitalidad y de Régimen Especial de Madrid, deberá crear Distritos:",
+      "opciones": {
+        "a": "El Alcalde.",
+        "b": "La Junta de Gobierno.",
+        "c": "El Pleno."
+      },
+      "correcta": "c",
+      "referencia": "Ley 22/2006 art. 22.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 15,
+      "pregunta": "Los distritos están dotados de órganos de gestión desconcentrada para el impulso y desarrollo de la participación ciudadana en la gestión de los asuntos municipales y:",
+      "opciones": {
+        "a": "Su control.",
+        "b": "Su mejora.",
+        "c": "Su financiación."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 61.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 16,
+      "pregunta": "Según el artículo 128.2 LBRL, el Pleno determinará, en una norma de carácter orgánico, el porcentaje mínimo de los recursos presupuestarios de la corporación que deberán gestionarse por:",
+      "opciones": {
+        "a": "Los distritos, en su conjunto.",
+        "b": "Cada distrito, individualmente.",
+        "c": "Las Áreas de Gobierno."
+      },
+      "correcta": "a",
+      "referencia": "LBRL art. 128.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 17,
+      "pregunta": "Según el artículo 6.1 ROGA, el Ayuntamiento de Madrid se organiza en:",
+      "opciones": {
+        "a": "Órganos centrales y órganos periféricos.",
+        "b": "Áreas de Gobierno y Juntas Municipales de Distrito, exclusivamente.",
+        "c": "Órganos centrales, territoriales y organismos públicos."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 6.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 18,
+      "pregunta": "La regulación de las competencias de los órganos representativos y participativos del distrito se hace:",
+      "opciones": {
+        "a": "Por el coordinador del distrito.",
+        "b": "Por el Pleno mediante norma orgánica.",
+        "c": "Por la Comunidad de Madrid."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 61.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 19,
+      "pregunta": "El gobierno y administración del distrito corresponde, según el artículo 62, a:",
+      "opciones": {
+        "a": "La Junta Municipal y el concejal-presidente.",
+        "b": "El coordinador del distrito en exclusiva.",
+        "c": "El Pleno del Ayuntamiento."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 62",
+      "explicacion": ""
+    },
+    {
+      "numero": 20,
+      "pregunta": "Según el Reglamento Orgánico 6/2021 de los Distritos, la Junta Municipal del Distrito es el órgano:",
+      "opciones": {
+        "a": "Unipersonal de dirección del distrito.",
+        "b": "Directivo de gestión de los servicios del distrito.",
+        "c": "Colegiado de representación político-vecinal."
+      },
+      "correcta": "c",
+      "referencia": "RO-DISTRITOS art. 5.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 21,
+      "pregunta": "Según el artículo 62 ROGA, el gobierno y administración del distrito corresponde a la Junta Municipal y al concejal-presidente:",
+      "opciones": {
+        "a": "Del Pleno.",
+        "b": "De la misma.",
+        "c": "De la Junta de Gobierno."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 62",
+      "explicacion": ""
+    },
+    {
+      "numero": 22,
+      "pregunta": "La Junta Municipal del Distrito ejerce competencias ejecutivas o administrativas:",
+      "opciones": {
+        "a": "Por delegación exclusiva del Pleno.",
+        "b": "Por atribución directa de la Constitución.",
+        "c": "Por delegación del alcalde o de la Junta de Gobierno."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 63",
+      "explicacion": ""
+    },
+    {
+      "numero": 23,
+      "pregunta": "Además de las delegadas, la Junta Municipal del Distrito ejerce las competencias que le atribuya:",
+      "opciones": {
+        "a": "El coordinador del distrito.",
+        "b": "El Pleno, conforme al art. 123.1.c) de la LBRL.",
+        "c": "La Comunidad de Madrid."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 63",
+      "explicacion": ""
+    },
+    {
+      "numero": 24,
+      "pregunta": "El gobierno y administración del distrito se ejerce sin perjuicio de:",
+      "opciones": {
+        "a": "La disolución del distrito.",
+        "b": "Las competencias que correspondan a los demás órganos municipales.",
+        "c": "La intervención del Estado."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 62",
+      "explicacion": ""
+    },
+    {
+      "numero": 25,
+      "pregunta": "Las competencias que la Junta Municipal del Distrito ejerce por delegación del alcalde o de la Junta de Gobierno son:",
+      "opciones": {
+        "a": "Normativas o reglamentarias.",
+        "b": "Ejecutivas o administrativas.",
+        "c": "Consultivas o de asesoramiento."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 63",
+      "explicacion": ""
+    },
+    {
+      "numero": 26,
+      "pregunta": "Según el artículo 128.3 LBRL, la presidencia del distrito corresponderá en todo caso a:",
+      "opciones": {
+        "a": "Un funcionario de carrera del subgrupo A1.",
+        "b": "Un vocal vecino de la Junta Municipal.",
+        "c": "Un concejal."
+      },
+      "correcta": "c",
+      "referencia": "LBRL art. 128.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 27,
+      "pregunta": "Los dos órganos de gobierno del distrito son:",
+      "opciones": {
+        "a": "Junta Municipal y concejal-presidente.",
+        "b": "Coordinador y secretario general técnico.",
+        "c": "Alcalde y Pleno."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 62",
+      "explicacion": ""
+    },
+    {
+      "numero": 28,
+      "pregunta": "Según el artículo 63 ROGA, la Junta Municipal del Distrito ejerce las competencias que le correspondan por delegación del alcalde o de:",
+      "opciones": {
+        "a": "La Junta de Gobierno.",
+        "b": "El Pleno.",
+        "c": "El coordinador del distrito."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 63",
+      "explicacion": ""
+    },
+    {
+      "numero": 29,
+      "pregunta": "La Junta Municipal del Distrito es presidida por:",
+      "opciones": {
+        "a": "El concejal-presidente.",
+        "b": "El coordinador del distrito.",
+        "c": "El alcalde."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 64",
+      "explicacion": ""
+    },
+    {
+      "numero": 30,
+      "pregunta": "La atribución de competencias a la Junta Municipal por el Pleno se ampara en:",
+      "opciones": {
+        "a": "El artículo 140 de la Constitución.",
+        "b": "El apartado quinto del artículo 123.1.c) de la Ley 7/1985.",
+        "c": "La LOFCA."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 63",
+      "explicacion": ""
+    },
+    {
+      "numero": 31,
+      "pregunta": "El concejal-presidente es nombrado y separado por:",
+      "opciones": {
+        "a": "El Pleno.",
+        "b": "La Junta de Gobierno.",
+        "c": "El alcalde."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 64",
+      "explicacion": ""
+    },
+    {
+      "numero": 32,
+      "pregunta": "El concejal-presidente, respecto del distrito:",
+      "opciones": {
+        "a": "Carece de funciones representativas.",
+        "b": "Solo ejerce funciones consultivas.",
+        "c": "Lo representa y dirige su administración."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 64",
+      "explicacion": ""
+    },
+    {
+      "numero": 33,
+      "pregunta": "Respecto de la Junta Municipal, el concejal-presidente:",
+      "opciones": {
+        "a": "No puede convocarla.",
+        "b": "Convoca y preside sus sesiones.",
+        "c": "Solo asiste como invitado."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 64",
+      "explicacion": ""
+    },
+    {
+      "numero": 34,
+      "pregunta": "En caso de empate en la Junta Municipal, el concejal-presidente:",
+      "opciones": {
+        "a": "Dirime con su voto de calidad.",
+        "b": "Debe convocar nueva sesión.",
+        "c": "Eleva la decisión al Pleno."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 64",
+      "explicacion": ""
+    },
+    {
+      "numero": 35,
+      "pregunta": "Los acuerdos de la Junta Municipal del Distrito son ejecutados por:",
+      "opciones": {
+        "a": "El coordinador del distrito.",
+        "b": "El concejal-presidente.",
+        "c": "El alcalde."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 64",
+      "explicacion": ""
+    },
+    {
+      "numero": 36,
+      "pregunta": "El concejal-presidente, dentro de la clasificación del ROGA, es un órgano:",
+      "opciones": {
+        "a": "Directivo.",
+        "b": "Superior.",
+        "c": "De participación."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 7.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 37,
+      "pregunta": "La separación del concejal-presidente corresponde a:",
+      "opciones": {
+        "a": "El Pleno por mayoría absoluta.",
+        "b": "La Junta Municipal.",
+        "c": "El alcalde."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 64",
+      "explicacion": ""
+    },
+    {
+      "numero": 38,
+      "pregunta": "La dirección de la administración del distrito corresponde a:",
+      "opciones": {
+        "a": "El concejal-presidente.",
+        "b": "El Pleno.",
+        "c": "La Comunidad de Madrid."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 64",
+      "explicacion": ""
+    },
+    {
+      "numero": 39,
+      "pregunta": "El \"voto de calidad\" del concejal-presidente sirve para:",
+      "opciones": {
+        "a": "Vetar los acuerdos del Pleno.",
+        "b": "Dirimir los empates en la Junta Municipal.",
+        "c": "Nombrar al coordinador del distrito."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 64",
+      "explicacion": ""
+    },
+    {
+      "numero": 40,
+      "pregunta": "La presidencia de las sesiones de la Junta Municipal corresponde a:",
+      "opciones": {
+        "a": "El concejal-presidente.",
+        "b": "El coordinador del distrito.",
+        "c": "El secretario de la Junta."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 64",
+      "explicacion": ""
+    },
+    {
+      "numero": 41,
+      "pregunta": "La representación del distrito corresponde a:",
+      "opciones": {
+        "a": "El coordinador del distrito.",
+        "b": "El concejal-presidente.",
+        "c": "El interventor."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 64",
+      "explicacion": ""
+    },
+    {
+      "numero": 42,
+      "pregunta": "Conforme a la Ley 22/2006, nombrar y cesar a los Presidentes de los Distritos corresponde a:",
+      "opciones": {
+        "a": "El Pleno.",
+        "b": "La Junta de Gobierno.",
+        "c": "El Alcalde."
+      },
+      "correcta": "c",
+      "referencia": "Ley 22/2006 art. 14.3.d)",
+      "explicacion": ""
+    },
+    {
+      "numero": 43,
+      "pregunta": "Corresponde al concejal-presidente, con carácter general:",
+      "opciones": {
+        "a": "La aprobación de las ordenanzas fiscales.",
+        "b": "El nombramiento de los directores generales de las Áreas.",
+        "c": "La dirección, planificación y coordinación de los servicios municipales de la competencia del distrito."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 65.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 44,
+      "pregunta": "Entre las competencias del concejal-presidente está:",
+      "opciones": {
+        "a": "Aprobar el presupuesto general del Estado.",
+        "b": "Disolver la Junta de Gobierno.",
+        "c": "Ejercer la representación, dirección, gestión e inspección del distrito."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 65.1.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 45,
+      "pregunta": "Fijar los objetivos del distrito, aprobar sus planes de actuación y asignar recursos corresponde a:",
+      "opciones": {
+        "a": "El concejal-presidente.",
+        "b": "El coordinador del distrito.",
+        "c": "El Pleno."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 65.1.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 46,
+      "pregunta": "Proponer al titular del Área competente las propuestas que correspondan al Pleno o a la Junta de Gobierno es función:",
+      "opciones": {
+        "a": "Del concejal-presidente.",
+        "b": "Del coordinador del distrito.",
+        "c": "Del interventor general."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 65.1.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 47,
+      "pregunta": "Proponer al alcalde la aprobación de los proyectos de organización del distrito corresponde a:",
+      "opciones": {
+        "a": "El secretario general del Pleno.",
+        "b": "La Junta Municipal.",
+        "c": "El concejal-presidente."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 65.1.d)",
+      "explicacion": ""
+    },
+    {
+      "numero": 48,
+      "pregunta": "La evaluación de la ejecución de los planes de actuación del distrito por el coordinador y el control de eficacia corresponden a:",
+      "opciones": {
+        "a": "El concejal-presidente.",
+        "b": "El Tribunal de Cuentas.",
+        "c": "El Pleno."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 65.1.e)",
+      "explicacion": ""
+    },
+    {
+      "numero": 49,
+      "pregunta": "La superior autoridad sobre el personal del distrito corresponde al concejal-presidente:",
+      "opciones": {
+        "a": "Con exclusión total del alcalde.",
+        "b": "Sin perjuicio de las competencias del alcalde respecto de todo el personal del Ayuntamiento.",
+        "c": "Solo respecto del personal eventual."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 65.1.f)",
+      "explicacion": ""
+    },
+    {
+      "numero": 50,
+      "pregunta": "Además de las competencias propias, el concejal-presidente ejerce:",
+      "opciones": {
+        "a": "Las competencias legislativas autonómicas.",
+        "b": "Las funciones del interventor.",
+        "c": "Las atribuciones delegadas por el alcalde o la Junta de Gobierno."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 65.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 51,
+      "pregunta": "La aprobación de los planes de actuación del distrito corresponde a:",
+      "opciones": {
+        "a": "El coordinador del distrito.",
+        "b": "El concejal-presidente.",
+        "c": "La Comunidad de Madrid."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 65.1.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 52,
+      "pregunta": "La inspección del distrito que presida corresponde a:",
+      "opciones": {
+        "a": "El interventor general.",
+        "b": "El concejal-presidente.",
+        "c": "El secretario general técnico."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 65.1.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 53,
+      "pregunta": "El control de eficacia sobre la actuación del coordinador del distrito lo ejerce:",
+      "opciones": {
+        "a": "El Pleno.",
+        "b": "El alcalde directamente.",
+        "c": "El concejal-presidente."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 65.1.e)",
+      "explicacion": ""
+    },
+    {
+      "numero": 54,
+      "pregunta": "La asignación de los recursos necesarios para la ejecución de los planes del distrito corresponde a:",
+      "opciones": {
+        "a": "El coordinador del distrito.",
+        "b": "El Tribunal de Cuentas.",
+        "c": "El concejal-presidente, conforme a las normas presupuestarias."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 65.1.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 55,
+      "pregunta": "Las propuestas que corresponda aprobar al Pleno o a la Junta de Gobierno en el ámbito del distrito se canalizan:",
+      "opciones": {
+        "a": "Directamente por el coordinador.",
+        "b": "Por la Comunidad de Madrid.",
+        "c": "A través del titular del Área competente por razón de la materia."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 65.1.c)",
+      "explicacion": ""
+    },
+    {
+      "numero": 56,
+      "pregunta": "La aprobación de los proyectos de organización del distrito requiere:",
+      "opciones": {
+        "a": "Proponerlos al alcalde, previo informe del Área competente en organización administrativa.",
+        "b": "Acuerdo del Pleno por mayoría absoluta.",
+        "c": "Autorización de la Comunidad de Madrid."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 65.1.d)",
+      "explicacion": ""
+    },
+    {
+      "numero": 57,
+      "pregunta": "El concejal-presidente propone al alcalde la aprobación de los proyectos de organización de su distrito a través de:",
+      "opciones": {
+        "a": "El Área correspondiente.",
+        "b": "La Junta de Gobierno.",
+        "c": "El Pleno."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 65.1.d)",
+      "explicacion": ""
+    },
+    {
+      "numero": 58,
+      "pregunta": "Las demás competencias del concejal-presidente serán las que le atribuyan:",
+      "opciones": {
+        "a": "Únicamente el coordinador.",
+        "b": "La Comunidad de Madrid.",
+        "c": "Las disposiciones legales vigentes."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 65.1.g)",
+      "explicacion": ""
+    },
+    {
+      "numero": 59,
+      "pregunta": "El concejal-presidente responde políticamente de su gestión:",
+      "opciones": {
+        "a": "Ante los miembros de la Junta de Gobierno, sin perjuicio de la responsabilidad ante la Junta Municipal del Distrito.",
+        "b": "Únicamente ante el Pleno.",
+        "c": "Ante la Comunidad de Madrid."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 66",
+      "explicacion": ""
+    },
+    {
+      "numero": 60,
+      "pregunta": "Las resoluciones administrativas del concejal-presidente revisten la forma de:",
+      "opciones": {
+        "a": "Decreto.",
+        "b": "Resolución.",
+        "c": "Acuerdo."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 67",
+      "explicacion": ""
+    },
+    {
+      "numero": 61,
+      "pregunta": "Los actos del concejal-presidente se denominan:",
+      "opciones": {
+        "a": "\"Decretos del concejal-presidente de la Junta Municipal de Distrito\".",
+        "b": "\"Resoluciones del coordinador\".",
+        "c": "\"Acuerdos de la Junta de Gobierno\"."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 67",
+      "explicacion": ""
+    },
+    {
+      "numero": 62,
+      "pregunta": "El vicepresidente del distrito es nombrado por:",
+      "opciones": {
+        "a": "El alcalde, de entre los concejales-vocales de la Junta.",
+        "b": "El Pleno.",
+        "c": "El coordinador del distrito."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 68.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 63,
+      "pregunta": "El vicepresidente sustituye al concejal-presidente en caso de:",
+      "opciones": {
+        "a": "Discrepancia política.",
+        "b": "Cualquier acuerdo del Pleno.",
+        "c": "Vacante, ausencia o enfermedad."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 68.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 64,
+      "pregunta": "La suplencia del concejal-presidente por el vicepresidente:",
+      "opciones": {
+        "a": "Requiere acuerdo del Pleno.",
+        "b": "Requiere autorización del alcalde en cada caso.",
+        "c": "Se produce sin necesidad de un acto expreso declarativo, dando cuenta a la Junta Municipal."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 68.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 65,
+      "pregunta": "El vicepresidente del distrito es:",
+      "opciones": {
+        "a": "El coordinador del distrito.",
+        "b": "Un funcionario de carrera.",
+        "c": "Uno de los concejales-vocales de la Junta."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 68.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 66,
+      "pregunta": "La responsabilidad política del concejal-presidente se exige, en todo caso:",
+      "opciones": {
+        "a": "Ante el Tribunal de Cuentas.",
+        "b": "Ante la propia Junta Municipal del Distrito.",
+        "c": "Ante la Comunidad de Madrid."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 66",
+      "explicacion": ""
+    },
+    {
+      "numero": 67,
+      "pregunta": "El concejal-presidente responderá políticamente de su gestión en los términos establecidos en:",
+      "opciones": {
+        "a": "El propio ROGA.",
+        "b": "La Ley 22/2006.",
+        "c": "El Reglamento Orgánico del Pleno."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 66",
+      "explicacion": ""
+    },
+    {
+      "numero": 68,
+      "pregunta": "El nombramiento del vicepresidente recae sobre:",
+      "opciones": {
+        "a": "Un concejal-vocal de la Junta Municipal.",
+        "b": "El secretario general técnico.",
+        "c": "El interventor."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 68.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 69,
+      "pregunta": "Según el artículo 67 ROGA, revisten la forma de decreto las resoluciones administrativas que adopten:",
+      "opciones": {
+        "a": "Los concejales-presidentes.",
+        "b": "Los coordinadores de distrito.",
+        "c": "Las Juntas Municipales de Distrito."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 67",
+      "explicacion": ""
+    },
+    {
+      "numero": 70,
+      "pregunta": "La suplencia del concejal-presidente por enfermedad la asume:",
+      "opciones": {
+        "a": "El coordinador del distrito.",
+        "b": "El alcalde.",
+        "c": "El vicepresidente."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 68.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 71,
+      "pregunta": "La suplencia del concejal-presidente se producirá sin necesidad de un acto expreso declarativo, debiéndose dar cuenta de esta circunstancia a:",
+      "opciones": {
+        "a": "El Pleno.",
+        "b": "La Junta Municipal.",
+        "c": "La Junta de Gobierno."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 68.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 72,
+      "pregunta": "¿Quién nombra al vicepresidente y de entre quiénes?",
+      "opciones": {
+        "a": "El Pleno, de entre los vecinos.",
+        "b": "La Junta de Gobierno, de entre los funcionarios.",
+        "c": "El alcalde, de entre los concejales-vocales de la Junta."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 68.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 73,
+      "pregunta": "Los jefes superiores de la organización administrativa del distrito son:",
+      "opciones": {
+        "a": "Los coordinadores del distrito.",
+        "b": "Los concejales-presidentes.",
+        "c": "Los secretarios generales técnicos."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 69.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 74,
+      "pregunta": "Bajo la superior dirección del concejal-presidente, la dirección y coordinación de los servicios del distrito corresponde a:",
+      "opciones": {
+        "a": "El interventor general.",
+        "b": "El coordinador del distrito.",
+        "c": "El secretario general del Pleno."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 69.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 75,
+      "pregunta": "La organización administrativa del distrito se estructura en:",
+      "opciones": {
+        "a": "Áreas de Gobierno.",
+        "b": "Organismos autónomos.",
+        "c": "Unidades administrativas funcionalmente homogéneas."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 69.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 76,
+      "pregunta": "Las unidades administrativas del distrito se crean, modifican y suprimen:",
+      "opciones": {
+        "a": "Por ley de la Comunidad de Madrid.",
+        "b": "A propuesta del concejal-presidente, a través de la relación de puestos de trabajo.",
+        "c": "Por acuerdo del Pleno por mayoría absoluta."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 69.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 77,
+      "pregunta": "La propuesta de creación de unidades administrativas del distrito requiere previo informe de:",
+      "opciones": {
+        "a": "Las Áreas competentes en organización y en coordinación territorial.",
+        "b": "El Tribunal de Cuentas.",
+        "c": "La Comunidad de Madrid."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 69.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 78,
+      "pregunta": "El jefe superior de la organización administrativa del distrito es:",
+      "opciones": {
+        "a": "El concejal-presidente.",
+        "b": "El coordinador del distrito.",
+        "c": "El alcalde."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 69.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 79,
+      "pregunta": "La dirección y coordinación de los servicios del distrito se ejerce:",
+      "opciones": {
+        "a": "Por el Pleno.",
+        "b": "Por el interventor.",
+        "c": "Por el coordinador, bajo la superior dirección del concejal-presidente."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 69.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 80,
+      "pregunta": "Las unidades administrativas del distrito son:",
+      "opciones": {
+        "a": "Territorialmente independientes.",
+        "b": "Organismos con personalidad jurídica.",
+        "c": "Funcionalmente homogéneas."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 69.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 81,
+      "pregunta": "El instrumento a través del cual se crean las unidades administrativas del distrito es:",
+      "opciones": {
+        "a": "La ordenanza fiscal.",
+        "b": "El presupuesto general del Estado.",
+        "c": "La relación de puestos de trabajo (RPT)."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 69.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 82,
+      "pregunta": "Las unidades administrativas del distrito se crean, modifican y suprimen a propuesta de:",
+      "opciones": {
+        "a": "El coordinador del distrito.",
+        "b": "El concejal-presidente.",
+        "c": "La Junta Municipal del Distrito."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 69.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 83,
+      "pregunta": "La superior dirección de la organización administrativa del distrito corresponde a:",
+      "opciones": {
+        "a": "El concejal-presidente.",
+        "b": "El coordinador del distrito.",
+        "c": "El secretario general técnico."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 69.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 84,
+      "pregunta": "La creación de unidades administrativas del distrito puede verse afectada por:",
+      "opciones": {
+        "a": "Las leyes de la Comunidad de Madrid.",
+        "b": "El reglamento del Pleno.",
+        "c": "Las disposiciones que dicte el alcalde al amparo del art. 123.1.c) de la LBRL."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 69.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 85,
+      "pregunta": "El coordinador del distrito es nombrado y cesado por:",
+      "opciones": {
+        "a": "El alcalde directamente.",
+        "b": "La Junta de Gobierno, a propuesta del concejal-presidente.",
+        "c": "El Pleno."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 70.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 86,
+      "pregunta": "El coordinador del distrito ostenta, a todos los efectos, el rango de:",
+      "opciones": {
+        "a": "Director general.",
+        "b": "Coordinador general.",
+        "c": "Concejal."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 70.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 87,
+      "pregunta": "El nombramiento del coordinador del distrito se efectúa de conformidad con:",
+      "opciones": {
+        "a": "El artículo 140 de la Constitución.",
+        "b": "La LOFCA.",
+        "c": "El artículo 49 del ROGA."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 70.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 88,
+      "pregunta": "La propuesta de nombramiento del coordinador del distrito corresponde a:",
+      "opciones": {
+        "a": "El alcalde.",
+        "b": "El Pleno.",
+        "c": "El concejal-presidente de cada Junta."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 70.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 89,
+      "pregunta": "Las decisiones administrativas del coordinador del distrito revisten la forma de:",
+      "opciones": {
+        "a": "Resolución.",
+        "b": "Decreto.",
+        "c": "Acuerdo plenario."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 71.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 90,
+      "pregunta": "La jefatura inmediata de las unidades orgánicas adscritas a la coordinación corresponde a:",
+      "opciones": {
+        "a": "El coordinador del distrito.",
+        "b": "El concejal-presidente.",
+        "c": "El interventor."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 71.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 91,
+      "pregunta": "La elaboración, seguimiento y control del presupuesto anual asignado al distrito corresponde a:",
+      "opciones": {
+        "a": "El Pleno.",
+        "b": "El coordinador del distrito.",
+        "c": "La Comunidad de Madrid."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 71.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 92,
+      "pregunta": "La evaluación de los servicios del distrito corresponde a:",
+      "opciones": {
+        "a": "El Tribunal de Cuentas.",
+        "b": "El alcalde directamente.",
+        "c": "El coordinador del distrito."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 71.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 93,
+      "pregunta": "La coordinación de las relaciones de la Junta Municipal con las Áreas de Gobierno corresponde a:",
+      "opciones": {
+        "a": "El concejal-presidente en exclusiva.",
+        "b": "El coordinador del distrito.",
+        "c": "El secretario general del Pleno."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 71.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 94,
+      "pregunta": "La dirección, planificación y gestión de los servicios de su competencia corresponde a:",
+      "opciones": {
+        "a": "El Pleno.",
+        "b": "El coordinador del distrito.",
+        "c": "El interventor general."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 71.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 95,
+      "pregunta": "El coordinador del distrito, dentro de la clasificación del ROGA, es un órgano:",
+      "opciones": {
+        "a": "Directivo.",
+        "b": "Superior.",
+        "c": "De participación."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 7.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 96,
+      "pregunta": "El coordinador del distrito coordina las relaciones de la Junta Municipal de Distrito con el Área de Gobierno competente en materia de ___ y el resto de las Áreas de Gobierno, organismos públicos y empresas municipales:",
+      "opciones": {
+        "a": "Hacienda.",
+        "b": "Personal.",
+        "c": "Coordinación territorial."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 71.1.f)",
+      "explicacion": ""
+    },
+    {
+      "numero": 97,
+      "pregunta": "El coordinador del distrito ejerce sus funciones sin perjuicio de las que puedan delegarle:",
+      "opciones": {
+        "a": "La Comunidad de Madrid.",
+        "b": "El Estado.",
+        "c": "El alcalde, la Junta de Gobierno u otros órganos municipales."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 71.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 98,
+      "pregunta": "La propuesta de disposiciones, acuerdos y convenios de su ámbito corresponde a:",
+      "opciones": {
+        "a": "El coordinador del distrito.",
+        "b": "El concejal-presidente en exclusiva.",
+        "c": "El Pleno."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 71.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 99,
+      "pregunta": "El órgano que nombra al coordinador del distrito es:",
+      "opciones": {
+        "a": "La Junta de Gobierno.",
+        "b": "El alcalde.",
+        "c": "La Junta Municipal del Distrito."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 70.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 100,
+      "pregunta": "El coordinador del distrito tiene el mismo rango que:",
+      "opciones": {
+        "a": "Un coordinador general.",
+        "b": "Un concejal de Gobierno.",
+        "c": "Un director general."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 70.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 101,
+      "pregunta": "Según el artículo 71.2 ROGA, revisten la forma de «Resolución» las decisiones administrativas que adopten:",
+      "opciones": {
+        "a": "Los coordinadores de Distrito.",
+        "b": "Los concejales-presidentes.",
+        "c": "Las Juntas Municipales de Distrito."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 71.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 102,
+      "pregunta": "Las resoluciones del coordinador del distrito:",
+      "opciones": {
+        "a": "Requieren ratificación del Pleno.",
+        "b": "Tienen rango de ley.",
+        "c": "Se publican o notifican según las disposiciones aplicables."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 71.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 103,
+      "pregunta": "La dirección y coordinación de las unidades orgánicas adscritas a la coordinación corresponde a:",
+      "opciones": {
+        "a": "El concejal-presidente.",
+        "b": "El secretario general técnico.",
+        "c": "El coordinador del distrito."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 71.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 104,
+      "pregunta": "Las funciones que le deleguen los demás órganos municipales son ejercidas por:",
+      "opciones": {
+        "a": "El Pleno.",
+        "b": "El coordinador del distrito.",
+        "c": "La Comunidad de Madrid."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 71.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 105,
+      "pregunta": "El coordinador del distrito coordina las relaciones de la Junta Municipal con:",
+      "opciones": {
+        "a": "El Gobierno de la Nación.",
+        "b": "El Área de Gobierno competente en coordinación territorial y demás Áreas, organismos y empresas municipales.",
+        "c": "El Tribunal Constitucional."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 71.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 106,
+      "pregunta": "En los distritos podrán crearse, según el artículo 72:",
+      "opciones": {
+        "a": "Órganos de participación de los vecinos y de las asociaciones que los representen.",
+        "b": "Nuevas Áreas de Gobierno.",
+        "c": "Organismos autónomos con personalidad jurídica."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 72",
+      "explicacion": ""
+    },
+    {
+      "numero": 107,
+      "pregunta": "Los órganos de participación de los distritos se regulan:",
+      "opciones": {
+        "a": "Conforme a las normas orgánicas de participación ciudadana.",
+        "b": "Por la Constitución directamente.",
+        "c": "Por la LOFCA."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 72",
+      "explicacion": ""
+    },
+    {
+      "numero": 108,
+      "pregunta": "En los distritos podrán crearse órganos de participación de los vecinos y de:",
+      "opciones": {
+        "a": "Las asociaciones que los representen.",
+        "b": "Los grupos políticos municipales.",
+        "c": "Los empleados públicos del distrito."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 72",
+      "explicacion": ""
+    },
+    {
+      "numero": 109,
+      "pregunta": "La norma que divide hoy el término municipal de Madrid en 21 distritos es:",
+      "opciones": {
+        "a": "La Ley 22/2006, de Capitalidad y de Régimen Especial de Madrid.",
+        "b": "El Reglamento Orgánico 6/2021, de 1 de junio, de los Distritos del Ayuntamiento de Madrid.",
+        "c": "La Ley 7/1985, Reguladora de las Bases del Régimen Local."
+      },
+      "correcta": "b",
+      "referencia": "RO-DISTRITOS art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 110,
+      "pregunta": "El artículo 128 LBRL, que regula los distritos, forma parte del Título X, relativo al:",
+      "opciones": {
+        "a": "Régimen de organización de los municipios de gran población.",
+        "b": "Régimen del concejo abierto.",
+        "c": "Régimen de las entidades locales de ámbito inferior al municipio."
+      },
+      "correcta": "a",
+      "referencia": "LBRL Tít. X",
+      "explicacion": ""
+    },
+    {
+      "numero": 111,
+      "pregunta": "Según el artículo 22.2 de la Ley 22/2006, la Presidencia del Distrito corresponderá en todo caso a:",
+      "opciones": {
+        "a": "Un Concejal.",
+        "b": "Un funcionario de carrera.",
+        "c": "Un vecino elegido por la Junta Municipal."
+      },
+      "correcta": "a",
+      "referencia": "Ley 22/2006 art. 22.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 112,
+      "pregunta": "La participación de los vecinos en el distrito se articula a través de:",
+      "opciones": {
+        "a": "La Junta de Gobierno.",
+        "b": "Los órganos de participación previstos en las normas orgánicas.",
+        "c": "El Tribunal de Cuentas."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 72",
+      "explicacion": ""
+    },
+    {
+      "numero": 113,
+      "pregunta": "La Ley 22/2006 regula el régimen especial de:",
+      "opciones": {
+        "a": "La Comunidad de Madrid.",
+        "b": "La Villa de Madrid.",
+        "c": "Los municipios de gran población."
+      },
+      "correcta": "b",
+      "referencia": "Ley 22/2006 art. 1.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 114,
+      "pregunta": "La creación de órganos de participación en los distritos es:",
+      "opciones": {
+        "a": "Potestativa (\"podrán crearse\").",
+        "b": "Obligatoria en todo caso por la Constitución.",
+        "c": "Competencia del Estado."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 72",
+      "explicacion": ""
+    },
+    {
+      "numero": 115,
+      "pregunta": "Según el artículo 6.1 ROGA, los órganos centrales ejercen sus competencias:",
+      "opciones": {
+        "a": "Exclusivamente en el ámbito de un distrito.",
+        "b": "Sobre todo el territorio del municipio de Madrid.",
+        "c": "Sobre el territorio de la Comunidad de Madrid."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 6.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 116,
+      "pregunta": "El número de distritos en que se organiza el municipio de Madrid es:",
+      "opciones": {
+        "a": "15.",
+        "b": "7.",
+        "c": "21."
+      },
+      "correcta": "c",
+      "referencia": "RO-DISTRITOS art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 117,
+      "pregunta": "El distrito número 1 de Madrid es:",
+      "opciones": {
+        "a": "Centro.",
+        "b": "Barajas.",
+        "c": "Retiro."
+      },
+      "correcta": "a",
+      "referencia": "RO-DISTRITOS art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 118,
+      "pregunta": "El distrito número 21 de Madrid es:",
+      "opciones": {
+        "a": "Barajas.",
+        "b": "Centro.",
+        "c": "Vicálvaro."
+      },
+      "correcta": "a",
+      "referencia": "RO-DISTRITOS art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 119,
+      "pregunta": "Es uno de los distritos de Madrid:",
+      "opciones": {
+        "a": "Salamanca.",
+        "b": "Las Rozas.",
+        "c": "Alcobendas."
+      },
+      "correcta": "a",
+      "referencia": "RO-DISTRITOS art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 120,
+      "pregunta": "Pertenece a la relación de distritos de Madrid:",
+      "opciones": {
+        "a": "Puente de Vallecas.",
+        "b": "Getafe.",
+        "c": "Móstoles."
+      },
+      "correcta": "a",
+      "referencia": "RO-DISTRITOS art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 121,
+      "pregunta": "Figura entre los distritos del municipio de Madrid:",
+      "opciones": {
+        "a": "Pozuelo de Alarcón.",
+        "b": "Leganés.",
+        "c": "Fuencarral-El Pardo."
+      },
+      "correcta": "c",
+      "referencia": "RO-DISTRITOS art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 122,
+      "pregunta": "Es, de las siguientes, una denominación de distrito de Madrid:",
+      "opciones": {
+        "a": "San Blas-Canillejas.",
+        "b": "Coslada.",
+        "c": "Alcorcón."
+      },
+      "correcta": "a",
+      "referencia": "RO-DISTRITOS art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 123,
+      "pregunta": "La división del municipio en 21 distritos la establece:",
+      "opciones": {
+        "a": "El alcalde, por decreto.",
+        "b": "El Pleno, mediante norma orgánica.",
+        "c": "La Comunidad de Madrid."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 61.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 124,
+      "pregunta": "Cada distrito de Madrid se subdivide, a su vez, en:",
+      "opciones": {
+        "a": "Provincias.",
+        "b": "Barrios.",
+        "c": "Comarcas."
+      },
+      "correcta": "b",
+      "referencia": "RO-DISTRITOS art. 3.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 125,
+      "pregunta": "Según el Reglamento Orgánico 6/2021, alterar el número, denominación y límites territoriales de los distritos corresponde a:",
+      "opciones": {
+        "a": "El Alcalde.",
+        "b": "La Junta de Gobierno.",
+        "c": "El Pleno del Ayuntamiento."
+      },
+      "correcta": "c",
+      "referencia": "RO-DISTRITOS art. 3.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 126,
+      "pregunta": "Constituye uno de los distritos de la ciudad de Madrid:",
+      "opciones": {
+        "a": "Tres Cantos.",
+        "b": "Rivas-Vaciamadrid.",
+        "c": "Moncloa-Aravaca."
+      },
+      "correcta": "c",
+      "referencia": "RO-DISTRITOS art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 127,
+      "pregunta": "Se corresponde con un distrito de Madrid:",
+      "opciones": {
+        "a": "Fuenlabrada.",
+        "b": "Parla.",
+        "c": "Ciudad Lineal."
+      },
+      "correcta": "c",
+      "referencia": "RO-DISTRITOS art. 3.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 128,
+      "pregunta": "Según el artículo 7 ROGA, en el ámbito de los distritos:",
+      "opciones": {
+        "a": "Concejales-presidentes y coordinadores de Distrito son órganos directivos.",
+        "b": "Los concejales-presidentes son órganos superiores y los coordinadores de Distrito, órganos directivos.",
+        "c": "Los coordinadores de Distrito son órganos superiores y los concejales-presidentes, órganos directivos."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 7.2 y 7.3",
+      "explicacion": ""
+    },
+    {
+      "numero": 129,
+      "pregunta": "El concejal-presidente lo nombra el alcalde; el coordinador del distrito lo nombra:",
+      "opciones": {
+        "a": "La Junta de Gobierno (a propuesta del concejal-presidente).",
+        "b": "El Pleno.",
+        "c": "La Comunidad de Madrid."
+      },
+      "correcta": "a",
+      "referencia": "ROGA arts. 64 y 70",
+      "explicacion": ""
+    },
+    {
+      "numero": 130,
+      "pregunta": "Los actos del concejal-presidente son decretos; los del coordinador del distrito son:",
+      "opciones": {
+        "a": "Decretos también.",
+        "b": "Resoluciones.",
+        "c": "Acuerdos plenarios."
+      },
+      "correcta": "b",
+      "referencia": "ROGA arts. 67 y 71",
+      "explicacion": ""
+    },
+    {
+      "numero": 131,
+      "pregunta": "El distrito es una división territorial con gestión:",
+      "opciones": {
+        "a": "Desconcentrada.",
+        "b": "Descentralizada.",
+        "c": "Externalizada."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 61.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 132,
+      "pregunta": "La organización administrativa del Ayuntamiento de Madrid responde a los principios de división funcional en Áreas de Gobierno y de gestión territorial integrada en distritos:",
+      "opciones": {
+        "a": "Sin excepción alguna.",
+        "b": "Salvo las excepciones previstas por el propio ROGA.",
+        "c": "Salvo lo que disponga la Comunidad de Madrid."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 5",
+      "explicacion": ""
+    },
+    {
+      "numero": 133,
+      "pregunta": "Según el artículo 7.4 ROGA, a los órganos directivos corresponde:",
+      "opciones": {
+        "a": "La dirección, planificación y coordinación política.",
+        "b": "La ejecución de las decisiones adoptadas por los órganos superiores.",
+        "c": "El control y la fiscalización de los órganos de gobierno."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 7.4",
+      "explicacion": ""
+    },
+    {
+      "numero": 134,
+      "pregunta": "El coordinador del distrito ostenta el rango de director general:",
+      "opciones": {
+        "a": "A todos los efectos.",
+        "b": "Solo a efectos retributivos.",
+        "c": "Solo a efectos protocolarios."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 70.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 135,
+      "pregunta": "El órgano colegiado de gobierno del distrito es:",
+      "opciones": {
+        "a": "La Junta Municipal del Distrito.",
+        "b": "El coordinador del distrito.",
+        "c": "El Pleno del Ayuntamiento."
+      },
+      "correcta": "a",
+      "referencia": "RO-DISTRITOS art. 5.a)",
+      "explicacion": ""
+    },
+    {
+      "numero": 136,
+      "pregunta": "La figura que preside la Junta Municipal del Distrito y tiene voto de calidad es:",
+      "opciones": {
+        "a": "El coordinador del distrito.",
+        "b": "El concejal-presidente.",
+        "c": "El secretario."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 64",
+      "explicacion": ""
+    },
+    {
+      "numero": 137,
+      "pregunta": "El vicepresidente del distrito sustituye al concejal-presidente:",
+      "opciones": {
+        "a": "En cualquier acto ordinario.",
+        "b": "En vacante, ausencia o enfermedad.",
+        "c": "Nunca."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 68.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 138,
+      "pregunta": "La competencia para establecer la división del municipio en distritos es:",
+      "opciones": {
+        "a": "Del alcalde (decreto).",
+        "b": "Del Pleno (norma orgánica).",
+        "c": "De la Junta de Gobierno."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 61.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 139,
+      "pregunta": "¿Quién es el jefe superior de la organización administrativa del distrito?",
+      "opciones": {
+        "a": "El coordinador del distrito.",
+        "b": "El concejal-presidente.",
+        "c": "El interventor."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 69.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 140,
+      "pregunta": "Además de sus competencias propias, el concejal-presidente ejercerá las atribuciones que le hayan sido delegadas por:",
+      "opciones": {
+        "a": "El alcalde o la Junta de Gobierno.",
+        "b": "El Pleno o la Junta Municipal.",
+        "c": "El coordinador del distrito."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 65.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 141,
+      "pregunta": "Las resoluciones del coordinador del distrito serán publicadas o notificadas de acuerdo con lo dispuesto en:",
+      "opciones": {
+        "a": "Los acuerdos de la Junta Municipal del Distrito.",
+        "b": "Las disposiciones que resulten de aplicación.",
+        "c": "Los decretos del concejal-presidente."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 71.2",
+      "explicacion": ""
+    },
+    {
+      "numero": 142,
+      "pregunta": "La forma de los actos del concejal-presidente y del coordinador es, respectivamente:",
+      "opciones": {
+        "a": "Resolución y Decreto.",
+        "b": "Decreto y Resolución.",
+        "c": "Acuerdo y Decreto."
+      },
+      "correcta": "b",
+      "referencia": "ROGA arts. 67 y 71",
+      "explicacion": ""
+    },
+    {
+      "numero": 143,
+      "pregunta": "El concejal-presidente asigna los recursos necesarios para la ejecución de los planes de actuación del distrito de acuerdo con:",
+      "opciones": {
+        "a": "Las normas presupuestarias correspondientes.",
+        "b": "Las instrucciones del coordinador del distrito.",
+        "c": "Los acuerdos de la Junta Municipal."
+      },
+      "correcta": "a",
+      "referencia": "ROGA art. 65.1.b)",
+      "explicacion": ""
+    },
+    {
+      "numero": 144,
+      "pregunta": "Respecto de la actuación de los coordinadores de Distrito, el concejal-presidente ejerce el control de:",
+      "opciones": {
+        "a": "Legalidad.",
+        "b": "Cuentas.",
+        "c": "Eficacia."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 65.1.e)",
+      "explicacion": ""
+    },
+    {
+      "numero": 145,
+      "pregunta": "La afirmación correcta sobre el gobierno del distrito es:",
+      "opciones": {
+        "a": "Corresponde en exclusiva al coordinador.",
+        "b": "Corresponde a la Junta Municipal y al concejal-presidente.",
+        "c": "Corresponde al Pleno."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 62",
+      "explicacion": ""
+    },
+    {
+      "numero": 146,
+      "pregunta": "La afirmación correcta sobre el coordinador del distrito es:",
+      "opciones": {
+        "a": "Lo nombra el alcalde y sus actos son decretos.",
+        "b": "Lo nombra la Junta de Gobierno, tiene rango de director general y sus actos son resoluciones.",
+        "c": "Es un órgano superior de naturaleza política."
+      },
+      "correcta": "b",
+      "referencia": "ROGA arts. 70-71",
+      "explicacion": ""
+    },
+    {
+      "numero": 147,
+      "pregunta": "La afirmación correcta sobre el concejal-presidente es:",
+      "opciones": {
+        "a": "Lo nombra la Junta de Gobierno entre funcionarios.",
+        "b": "Lo nombra y separa el alcalde, preside la Junta Municipal y sus actos son decretos.",
+        "c": "Es un órgano directivo con rango de director general."
+      },
+      "correcta": "b",
+      "referencia": "ROGA arts. 64 y 67",
+      "explicacion": ""
+    },
+    {
+      "numero": 148,
+      "pregunta": "La afirmación correcta sobre los distritos de Madrid es:",
+      "opciones": {
+        "a": "Son 7 y los fija el alcalde.",
+        "b": "Son 21 y los establece el Pleno por norma orgánica.",
+        "c": "Son 15 y los fija la Comunidad de Madrid."
+      },
+      "correcta": "b",
+      "referencia": "ROGA art. 61.2 · RO-DISTRITOS",
+      "explicacion": ""
+    },
+    {
+      "numero": 149,
+      "pregunta": "La afirmación correcta sobre la naturaleza del distrito es:",
+      "opciones": {
+        "a": "Es una entidad local con personalidad jurídica propia.",
+        "b": "Es un organismo autónomo.",
+        "c": "Es una división territorial del municipio dotada de órganos de gestión desconcentrada."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 61.1",
+      "explicacion": ""
+    },
+    {
+      "numero": 150,
+      "pregunta": "La afirmación correcta sobre la estructura administrativa del distrito es:",
+      "opciones": {
+        "a": "El coordinador es jefe superior y el concejal-presidente ejecuta.",
+        "b": "Ambos tienen idéntico rango y funciones.",
+        "c": "El concejal-presidente es jefe superior y el coordinador dirige y coordina los servicios."
+      },
+      "correcta": "c",
+      "referencia": "ROGA art. 69",
+      "explicacion": ""
+    }
+  ],
+  "casos": [
+    {
+      "caso": 1,
+      "titulo": "CASO PRÁCTICO 1 — Naturaleza del distrito",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "El técnico recién incorporado a la Junta Municipal del Distrito de Chamberí pregunta qué es un distrito. Conforme al artículo 61 del ROGA, los distritos son:",
+          "opciones": {
+            "a": "Entidades locales con personalidad jurídica propia y gestión descentralizada.",
+            "b": "Organismos autónomos adscritos al Área competente en coordinación territorial.",
+            "c": "Divisiones territoriales del municipio dotadas de órganos de gestión desconcentrada."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 1 · art. 61.1 ROGA",
+          "explicacion": "El artículo 61.1 ROGA define los distritos como divisiones territoriales del municipio de Madrid dotadas de órganos de gestión desconcentrada."
+        },
+        {
+          "numero": 2,
+          "pregunta": "Un compañero sostiene que el Distrito de Chamberí tiene personalidad jurídica propia. ¿Es correcto?",
+          "opciones": {
+            "a": "No: su gestión es desconcentrada, por lo que no tiene personalidad jurídica propia.",
+            "b": "Sí: su gestión es descentralizada y por eso tiene personalidad jurídica propia.",
+            "c": "Sí, pero solo para ejercer las competencias que le atribuya el Pleno."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 1 · art. 61 ROGA · §2",
+          "explicacion": "Los distritos tienen gestión desconcentrada, no descentralizada, y por eso carecen de personalidad jurídica propia (art. 61 ROGA)."
+        },
+        {
+          "numero": 3,
+          "pregunta": "En la clasificación del artículo 6 del ROGA, los órganos del Distrito de Chamberí son:",
+          "opciones": {
+            "a": "Órganos centrales, que actúan sobre todo el territorio del municipio.",
+            "b": "Órganos territoriales, que actúan exclusivamente en el ámbito de su distrito.",
+            "c": "Organismos públicos adscritos al Área competente por razón de la materia."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 1 · art. 6.1 ROGA",
+          "explicacion": "Los órganos territoriales ejercen sus competencias exclusivamente en el ámbito de un distrito; los centrales, sobre todo el municipio (art. 6.1 ROGA)."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿A quién corresponde establecer la división del municipio de Madrid en distritos y mediante qué norma?",
+          "opciones": {
+            "a": "Al Pleno, mediante norma orgánica.",
+            "b": "Al alcalde, mediante decreto.",
+            "c": "A la Junta de Gobierno, mediante acuerdo."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 3 · art. 61.2 ROGA · art. 128.2 LBRL",
+          "explicacion": "Conforme al artículo 61.2 ROGA, corresponde al Pleno, mediante norma orgánica, establecer la división del municipio en distritos."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Aprobada por el Pleno la división en distritos, ¿qué atribución conserva el alcalde respecto de ellos?",
+          "opciones": {
+            "a": "La de alterar por decreto los límites territoriales de los distritos.",
+            "b": "La de aprobar definitivamente la norma orgánica de los distritos.",
+            "c": "La de determinar la organización y competencias de su administración ejecutiva."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestiones 2 y 3 · art. 61.2 ROGA",
+          "explicacion": "La competencia del Pleno se entiende sin perjuicio de las atribuciones del alcalde para determinar la organización y competencias de su administración ejecutiva (art. 61.2 ROGA); alterar los límites corresponde al Pleno."
+        },
+        {
+          "numero": 6,
+          "pregunta": "El técnico consulta el capítulo del ROGA dedicado a los distritos. ¿Qué encontrará en él?",
+          "opciones": {
+            "a": "La regulación completa de los distritos, sin necesidad de otras normas.",
+            "b": "Las normas esenciales de la organización administrativa de los distritos.",
+            "c": "La relación de puestos de trabajo de cada Junta Municipal de Distrito."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 2 · art. 61.3 ROGA",
+          "explicacion": "El capítulo del ROGA solo fija las normas esenciales de la organización administrativa de los distritos, que se complementan con otras normas orgánicas (art. 61.3 ROGA)."
+        },
+        {
+          "numero": 7,
+          "pregunta": "Esas normas esenciales del ROGA sobre los distritos se complementan con:",
+          "opciones": {
+            "a": "Los decretos que dicte cada concejal-presidente para regular su propio distrito.",
+            "b": "Los acuerdos de organización administrativa de la Junta de Gobierno, de forma exclusiva.",
+            "c": "Las normas orgánicas del Pleno sobre la división en distritos y sus órganos, como el Reglamento Orgánico 6/2021."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 2 · art. 61.2 y 61.3 ROGA",
+          "explicacion": "El capítulo del ROGA se complementa con las normas orgánicas del Pleno sobre la división en distritos y sus órganos, hoy el Reglamento Orgánico 6/2021 de los Distritos."
+        },
+        {
+          "numero": 8,
+          "pregunta": "¿Cuál es la finalidad de la gestión desconcentrada que tiene el Distrito de Chamberí?",
+          "opciones": {
+            "a": "Garantizar la autonomía política de cada distrito frente al Ayuntamiento de Madrid.",
+            "b": "El impulso y desarrollo de la participación ciudadana en la gestión de los asuntos municipales y su mejora.",
+            "c": "Sustituir a las Áreas de Gobierno en la prestación de todos los servicios municipales."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 4 · art. 61.1 ROGA",
+          "explicacion": "Los distritos están dotados de órganos de gestión desconcentrada para el impulso y desarrollo de la participación ciudadana en la gestión de los asuntos municipales y su mejora (art. 61.1 ROGA)."
+        },
+        {
+          "numero": 9,
+          "pregunta": "La desconcentración en el distrito tiene un límite expreso en el artículo 61.1 del ROGA. ¿Cuál?",
+          "opciones": {
+            "a": "La unidad de gobierno y gestión del municipio.",
+            "b": "La autorización previa de la Comunidad de Madrid.",
+            "c": "El acuerdo unánime de la Junta Municipal del Distrito."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 4 · art. 61.1 ROGA",
+          "explicacion": "La gestión desconcentrada de los distritos opera sin perjuicio de la unidad de gobierno y gestión del municipio (art. 61.1 ROGA)."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Según la Ley 22/2006 y el artículo 128.1 LBRL, la existencia de distritos en Madrid es:",
+          "opciones": {
+            "a": "Potestativa: el Pleno podrá crearlos si lo considera oportuno.",
+            "b": "Obligatoria, pero los crea el alcalde por decreto.",
+            "c": "Obligatoria: el Pleno deberá crear distritos."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 3 · art. 22.1 Ley 22/2006 · art. 128.1 LBRL",
+          "explicacion": "El artículo 22.1 de la Ley 22/2006 dispone que «el Pleno deberá crear Distritos», y el artículo 128.1 LBRL, que los ayuntamientos de gran población «deberán crear distritos»."
+        }
+      ]
+    },
+    {
+      "caso": 2,
+      "titulo": "CASO PRÁCTICO 2 — Órganos de gobierno del distrito",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el Distrito de Carabanchel se debate quién adopta las decisiones. Conforme al artículo 62 del ROGA, el gobierno y la administración del distrito corresponden a:",
+          "opciones": {
+            "a": "La Junta Municipal del Distrito y el concejal-presidente.",
+            "b": "La Junta Municipal del Distrito y el coordinador del distrito.",
+            "c": "El concejal-presidente y el Consejo de Proximidad del distrito."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 1 · art. 62 ROGA",
+          "explicacion": "El artículo 62 ROGA atribuye el gobierno y la administración del distrito a la Junta Municipal y a su concejal-presidente; el coordinador es un órgano directivo."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Qué naturaleza tiene la Junta Municipal del Distrito de Carabanchel?",
+          "opciones": {
+            "a": "Órgano unipersonal de dirección de la administración del distrito.",
+            "b": "Órgano colegiado de representación político-vecinal.",
+            "c": "Órgano directivo con rango de director general."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 2 · art. 5.a) RO 6/2021",
+          "explicacion": "El Reglamento Orgánico 6/2021 de los Distritos define la Junta Municipal como «órgano colegiado de representación político-vecinal» (art. 5.a)."
+        },
+        {
+          "numero": 3,
+          "pregunta": "Y el concejal-presidente del Distrito de Carabanchel es:",
+          "opciones": {
+            "a": "Un órgano colegiado, integrado por los concejales-vocales de la Junta.",
+            "b": "Un órgano directivo, que ejecuta las decisiones de la Junta de Gobierno.",
+            "c": "Un órgano unipersonal, que convoca y preside las sesiones de la Junta Municipal."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 2 · art. 64 ROGA",
+          "explicacion": "El concejal-presidente es un órgano unipersonal que convoca y preside las sesiones de la Junta Municipal (art. 64 ROGA); en la clasificación del ROGA es órgano superior, no directivo."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿De dónde provienen las competencias ejecutivas o administrativas de la Junta Municipal del Distrito?",
+          "opciones": {
+            "a": "De la atribución directa que le hace la Ley 7/1985.",
+            "b": "De la delegación del alcalde o de la Junta de Gobierno.",
+            "c": "De la delegación del coordinador del distrito."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 3 · art. 63 ROGA",
+          "explicacion": "La Junta Municipal ejerce las competencias ejecutivas o administrativas que le correspondan por delegación del alcalde o de la Junta de Gobierno (art. 63 ROGA)."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Además de las competencias delegadas, la Junta Municipal de Carabanchel puede ejercer:",
+          "opciones": {
+            "a": "Las que le atribuya el Pleno conforme al artículo 123.1.c) LBRL.",
+            "b": "Las que le atribuya el coordinador del distrito mediante resolución.",
+            "c": "Las que le reconozca el Consejo de Proximidad del distrito."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 3 · art. 63 ROGA",
+          "explicacion": "El artículo 63 ROGA añade a las competencias delegadas las demás que atribuya el Pleno a la Junta Municipal, conforme al artículo 123.1.c) LBRL."
+        },
+        {
+          "numero": 6,
+          "pregunta": "La presidencia del Distrito de Carabanchel corresponde, en todo caso, a:",
+          "opciones": {
+            "a": "Un funcionario con rango de director general.",
+            "b": "Un vecino elegido por el Consejo de Proximidad.",
+            "c": "Un concejal."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 4 · art. 128.3 LBRL · art. 22.2 Ley 22/2006",
+          "explicacion": "La presidencia del distrito corresponde en todo caso a un concejal (art. 22.2 de la Ley 22/2006 y art. 128.3 LBRL), que es el concejal-presidente."
+        },
+        {
+          "numero": 7,
+          "pregunta": "En una sesión de la Junta Municipal de Carabanchel se produce un empate en la votación. ¿Cómo se resuelve?",
+          "opciones": {
+            "a": "Lo dirime el concejal-presidente con su voto de calidad.",
+            "b": "Se eleva la cuestión al Pleno del Ayuntamiento.",
+            "c": "Decide el coordinador del distrito mediante resolución."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 4 · art. 64 ROGA",
+          "explicacion": "El concejal-presidente preside la Junta Municipal y dirime los empates con su voto de calidad (art. 64 ROGA)."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Adoptado un acuerdo por la Junta Municipal del Distrito, ¿quién lo ejecuta?",
+          "opciones": {
+            "a": "El Área de Gobierno competente por razón de la materia.",
+            "b": "El vicepresidente de la Junta Municipal.",
+            "c": "El concejal-presidente."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 4 · art. 64 ROGA",
+          "explicacion": "El artículo 64 ROGA atribuye al concejal-presidente la ejecución de los acuerdos de la Junta Municipal."
+        },
+        {
+          "numero": 9,
+          "pregunta": "El gobierno y la administración del distrito por la Junta Municipal y el concejal-presidente se entienden:",
+          "opciones": {
+            "a": "Con exclusión de cualquier otro órgano municipal en el ámbito del distrito.",
+            "b": "Sin perjuicio de las competencias que correspondan a los demás órganos municipales.",
+            "c": "Sujetos a la aprobación previa de cada acto por el Pleno del Ayuntamiento."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 1 · art. 62 ROGA",
+          "explicacion": "El artículo 62 ROGA atribuye el gobierno y la administración del distrito a sus dos órganos sin perjuicio de las competencias que correspondan a los demás órganos municipales."
+        },
+        {
+          "numero": 10,
+          "pregunta": "En la clasificación del artículo 7 del ROGA, el concejal-presidente de Carabanchel tiene la consideración de:",
+          "opciones": {
+            "a": "Órgano superior.",
+            "b": "Órgano directivo.",
+            "c": "Órgano de participación."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 2 · art. 7.2 ROGA",
+          "explicacion": "En el ámbito de los distritos, los concejales-presidentes tienen la consideración de órganos superiores (art. 7.2 ROGA); el coordinador del distrito es el órgano directivo."
+        }
+      ]
+    },
+    {
+      "caso": 3,
+      "titulo": "CASO PRÁCTICO 3 — El concejal-presidente",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "Constituida la corporación, ¿quién nombra y, en su caso, separa al concejal-presidente del Distrito de Retiro?",
+          "opciones": {
+            "a": "El Pleno.",
+            "b": "El alcalde.",
+            "c": "La Junta de Gobierno."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 1 · art. 64 ROGA",
+          "explicacion": "El concejal-presidente es nombrado y separado por el alcalde (art. 64 ROGA; también art. 14.3.d de la Ley 22/2006)."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Cuál de las siguientes es una función del concejal-presidente de Retiro conforme al artículo 65 del ROGA?",
+          "opciones": {
+            "a": "Fijar los objetivos del distrito, aprobar sus planes de actuación y asignar los recursos necesarios.",
+            "b": "Nombrar y cesar al coordinador del distrito mediante decreto de la Presidencia.",
+            "c": "Establecer la división del municipio en distritos y fijar sus límites territoriales."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 2 · art. 65.1.b) ROGA",
+          "explicacion": "Fijar objetivos, aprobar planes y asignar recursos es la letra b) del artículo 65.1 ROGA; el coordinador lo nombra la Junta de Gobierno y la división en distritos es del Pleno."
+        },
+        {
+          "numero": 3,
+          "pregunta": "El concejal-presidente de Retiro quiere reorganizar la estructura del distrito. Según el artículo 65 del ROGA, debe:",
+          "opciones": {
+            "a": "Aprobar la nueva organización por sí mismo mediante decreto, sin intervención del alcalde.",
+            "b": "Someter la nueva organización a la aprobación del Consejo de Proximidad del distrito.",
+            "c": "Proponer al alcalde, a través del Área correspondiente, la aprobación del proyecto de organización."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 2 · art. 65.1.d) ROGA",
+          "explicacion": "La letra d) del artículo 65.1 ROGA atribuye al concejal-presidente la función de proponer al alcalde, a través del Área correspondiente, la aprobación de los proyectos de organización de su distrito."
+        },
+        {
+          "numero": 4,
+          "pregunta": "Respecto del coordinador del Distrito de Retiro, el concejal-presidente:",
+          "opciones": {
+            "a": "Evalúa la ejecución de los planes de actuación y ejerce el control de eficacia sobre su actuación.",
+            "b": "Lo nombra y lo cesa libremente mediante decreto, sin intervención de otros órganos.",
+            "c": "Depende jerárquicamente de él en la dirección y gestión de los servicios del distrito."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 2 · art. 65.1.e) ROGA",
+          "explicacion": "La letra e) del artículo 65.1 ROGA atribuye al concejal-presidente la evaluación de la ejecución de los planes por los coordinadores y el control de eficacia; el nombramiento corresponde a la Junta de Gobierno (art. 70.1 ROGA)."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Sobre el personal del distrito, incluido el técnico TIC, el concejal-presidente:",
+          "opciones": {
+            "a": "No tiene competencia alguna, que corresponde en exclusiva al coordinador.",
+            "b": "Ejerce la superior autoridad, sin perjuicio de las competencias del alcalde.",
+            "c": "Ejerce una autoridad exclusiva que desplaza las competencias del alcalde."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 2 · art. 65.1.f) ROGA",
+          "explicacion": "La letra f) del artículo 65.1 ROGA atribuye al concejal-presidente la superior autoridad sobre el personal del distrito, sin perjuicio de las competencias del alcalde."
+        },
+        {
+          "numero": 6,
+          "pregunta": "El concejal-presidente quiere que la Junta de Gobierno apruebe una medida que afecta a Retiro. ¿Cómo la canaliza?",
+          "opciones": {
+            "a": "Elevándola él mismo directamente al Pleno del Ayuntamiento.",
+            "b": "Remitiéndola al coordinador del distrito para que la resuelva.",
+            "c": "Formulando la propuesta al titular del Área competente."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 2 · art. 65.1.c) ROGA",
+          "explicacion": "La letra c) del artículo 65.1 ROGA prevé que el concejal-presidente proponga al titular del Área competente las propuestas que correspondan al Pleno o a la Junta de Gobierno en el ámbito de su distrito."
+        },
+        {
+          "numero": 7,
+          "pregunta": "¿Ante quién responde políticamente de su gestión el concejal-presidente de Retiro?",
+          "opciones": {
+            "a": "Solo ante el Pleno del Ayuntamiento, como cualquier otro concejal de la corporación.",
+            "b": "Ante los miembros de la Junta de Gobierno y, en todo caso, ante la propia Junta Municipal del Distrito.",
+            "c": "Ante el coordinador del distrito y el Consejo de Proximidad, que controlan su gestión."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 3 · art. 66 ROGA",
+          "explicacion": "El artículo 66 ROGA establece una doble responsabilidad política: ante los miembros de la Junta de Gobierno y, en todo caso, ante la Junta Municipal del Distrito."
+        },
+        {
+          "numero": 8,
+          "pregunta": "¿Qué forma adoptan las resoluciones administrativas del concejal-presidente?",
+          "opciones": {
+            "a": "Resolución.",
+            "b": "Acuerdo.",
+            "c": "Decreto."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 4 · art. 67 ROGA",
+          "explicacion": "Las resoluciones administrativas de los concejales-presidentes revisten la forma de decreto (art. 67 ROGA); la forma de resolución es la del coordinador del distrito."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿Cómo se denominan esos actos del concejal-presidente?",
+          "opciones": {
+            "a": "«Decretos del concejal-presidente de la Junta Municipal de Distrito».",
+            "b": "«Resoluciones del Distrito de Retiro».",
+            "c": "«Acuerdos de la Junta Municipal del Distrito»."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 4 · art. 67 ROGA",
+          "explicacion": "El artículo 67 ROGA dispone que se denominarán «Decretos del concejal-presidente de la Junta Municipal de Distrito»."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Además de las competencias propias del artículo 65.1, el concejal-presidente de Retiro puede ejercer:",
+          "opciones": {
+            "a": "Las funciones de jefatura inmediata que corresponden al coordinador.",
+            "b": "Las atribuciones que le deleguen el alcalde o la Junta de Gobierno.",
+            "c": "La potestad de fijar el número y los límites de los distritos."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 2 · art. 65.2 ROGA",
+          "explicacion": "El artículo 65.2 ROGA prevé que el concejal-presidente ejerza también las atribuciones delegadas por el alcalde o la Junta de Gobierno."
+        }
+      ]
+    },
+    {
+      "caso": 4,
+      "titulo": "CASO PRÁCTICO 4 — Suplencia y estructura administrativa",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "El concejal-presidente del Distrito de Latina causa baja por enfermedad. ¿Quién lo sustituye?",
+          "opciones": {
+            "a": "El coordinador del distrito.",
+            "b": "El concejal-presidente de otro distrito que designe el Pleno.",
+            "c": "El vicepresidente de la Junta Municipal."
+          },
+          "correcta": "c",
+          "referencia": "Caso 4, cuestión 1 · art. 68.1 ROGA",
+          "explicacion": "El vicepresidente sustituye al concejal-presidente en caso de vacante, ausencia o enfermedad (art. 68.1 ROGA)."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Quién es el vicepresidente y quién lo nombra?",
+          "opciones": {
+            "a": "Un funcionario del distrito, nombrado por la Junta de Gobierno.",
+            "b": "Un concejal-vocal de la Junta, nombrado por el alcalde.",
+            "c": "Un vocal vecino, elegido por la propia Junta Municipal."
+          },
+          "correcta": "b",
+          "referencia": "Caso 4, cuestión 1 · art. 68.1 ROGA",
+          "explicacion": "El alcalde puede nombrar vicepresidente a uno de los concejales-vocales de la Junta (art. 68.1 ROGA)."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Activa la baja por enfermedad del concejal-presidente la suplencia del vicepresidente?",
+          "opciones": {
+            "a": "Sí, porque la suplencia procede en caso de vacante, ausencia o enfermedad.",
+            "b": "No, porque la suplencia solo procede en caso de vacante definitiva.",
+            "c": "Solo si la baja se prolonga y lo acuerda expresamente el Pleno."
+          },
+          "correcta": "a",
+          "referencia": "Caso 4, cuestión 1 · art. 68.1 ROGA",
+          "explicacion": "El artículo 68.1 ROGA prevé la sustitución del concejal-presidente por el vicepresidente en caso de vacante, ausencia o enfermedad."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Es necesario un acto expreso para que el vicepresidente asuma la suplencia?",
+          "opciones": {
+            "a": "Sí: se requiere un decreto del alcalde que declare la suplencia.",
+            "b": "No: la suplencia opera sin necesidad de acto expreso declarativo.",
+            "c": "Sí: se requiere un acuerdo de la Junta Municipal adoptado por mayoría."
+          },
+          "correcta": "b",
+          "referencia": "Caso 4, cuestión 2 · art. 68.2 ROGA",
+          "explicacion": "La suplencia se produce sin necesidad de acto expreso declarativo (art. 68.2 ROGA)."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Producida la suplencia, ¿a qué órgano debe darse cuenta?",
+          "opciones": {
+            "a": "Al Pleno del Ayuntamiento.",
+            "b": "A la Junta de Gobierno.",
+            "c": "A la Junta Municipal del Distrito."
+          },
+          "correcta": "c",
+          "referencia": "Caso 4, cuestión 2 · art. 68.2 ROGA",
+          "explicacion": "El artículo 68.2 ROGA exige dar cuenta de la suplencia a la Junta Municipal."
+        },
+        {
+          "numero": 6,
+          "pregunta": "¿Quién es el jefe superior de la organización administrativa del Distrito de Latina?",
+          "opciones": {
+            "a": "El concejal-presidente.",
+            "b": "El coordinador del distrito.",
+            "c": "El alcalde."
+          },
+          "correcta": "a",
+          "referencia": "Caso 4, cuestión 3 · art. 69.1 ROGA",
+          "explicacion": "Los concejales-presidentes son los jefes superiores de la organización administrativa del distrito (art. 69.1 ROGA)."
+        },
+        {
+          "numero": 7,
+          "pregunta": "¿A quién corresponde la dirección y coordinación de los servicios de la competencia del distrito?",
+          "opciones": {
+            "a": "Al vicepresidente, como sustituto permanente del concejal-presidente.",
+            "b": "Al Área de Gobierno competente en coordinación territorial.",
+            "c": "Al coordinador del distrito, bajo la superior dirección del concejal-presidente."
+          },
+          "correcta": "c",
+          "referencia": "Caso 4, cuestión 3 · art. 69.2 ROGA",
+          "explicacion": "El artículo 69.2 ROGA atribuye al coordinador del distrito la dirección y coordinación de los servicios, bajo la superior dirección del concejal-presidente."
+        },
+        {
+          "numero": 8,
+          "pregunta": "El coordinador plantea reorganizar las unidades. ¿En qué se estructura la organización administrativa del distrito?",
+          "opciones": {
+            "a": "En unidades administrativas funcionalmente homogéneas.",
+            "b": "En Direcciones Generales y Secretarías Generales Técnicas.",
+            "c": "En barrios dotados de órganos de gestión propios."
+          },
+          "correcta": "a",
+          "referencia": "Caso 4, cuestión 4 · art. 69.3 ROGA",
+          "explicacion": "La organización administrativa del distrito se estructura en unidades administrativas funcionalmente homogéneas (art. 69.3 ROGA)."
+        },
+        {
+          "numero": 9,
+          "pregunta": "Aunque la idea parta del coordinador, ¿a propuesta de quién se crean, modifican o suprimen esas unidades?",
+          "opciones": {
+            "a": "Del coordinador del distrito.",
+            "b": "Del concejal-presidente.",
+            "c": "De la Junta Municipal del Distrito."
+          },
+          "correcta": "b",
+          "referencia": "Caso 4, cuestión 4 · art. 69.3 ROGA",
+          "explicacion": "Las unidades administrativas del distrito se crean, modifican y suprimen a propuesta del concejal-presidente (art. 69.3 ROGA)."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Mediante qué instrumento se crean, modifican o suprimen las unidades administrativas del distrito?",
+          "opciones": {
+            "a": "Mediante decreto del concejal-presidente.",
+            "b": "Mediante norma orgánica aprobada por el Pleno.",
+            "c": "A través de la relación de puestos de trabajo (RPT)."
+          },
+          "correcta": "c",
+          "referencia": "Caso 4, cuestión 4 · art. 69.3 ROGA",
+          "explicacion": "El artículo 69.3 ROGA establece que las unidades del distrito se crean, modifican y suprimen a través de la relación de puestos de trabajo."
+        }
+      ]
+    },
+    {
+      "caso": 5,
+      "titulo": "CASO PRÁCTICO 5 — El coordinador del distrito",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "Recursos Humanos consulta el régimen del coordinador del Distrito de Hortaleza. ¿Quién lo nombra y lo cesa?",
+          "opciones": {
+            "a": "La Junta de Gobierno, a propuesta del concejal-presidente.",
+            "b": "El alcalde, a propuesta del Pleno.",
+            "c": "El concejal-presidente, previo informe de la Junta de Gobierno."
+          },
+          "correcta": "a",
+          "referencia": "Caso 5, cuestión 1 · art. 70.1 ROGA",
+          "explicacion": "El coordinador del distrito es nombrado y, en su caso, cesado por la Junta de Gobierno a propuesta del concejal-presidente de cada Junta (art. 70.1 ROGA)."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Qué rango ostenta el coordinador del distrito?",
+          "opciones": {
+            "a": "Rango de subdirector general.",
+            "b": "Rango de coordinador general.",
+            "c": "Rango de director general, a todos los efectos."
+          },
+          "correcta": "c",
+          "referencia": "Caso 5, cuestión 2 · art. 70.2 ROGA",
+          "explicacion": "El coordinador del distrito ostenta a todos los efectos el rango de director general (art. 70.2 ROGA)."
+        },
+        {
+          "numero": 3,
+          "pregunta": "Como su nombramiento se efectúa conforme al artículo 49 del ROGA, el coordinador deberá nombrarse, con carácter general:",
+          "opciones": {
+            "a": "Entre los concejales-vocales de la Junta Municipal.",
+            "b": "Entre funcionarios de carrera, conforme al artículo 130.3 LBRL.",
+            "c": "Entre los vecinos del distrito que propongan sus asociaciones."
+          },
+          "correcta": "b",
+          "referencia": "Caso 5, cuestión 2 · arts. 49 y 70.2 ROGA · art. 130.3 LBRL",
+          "explicacion": "El artículo 70.2 ROGA remite al artículo 49, que exige con carácter general el nombramiento de los órganos directivos entre funcionarios de carrera (art. 130.3 LBRL)."
+        },
+        {
+          "numero": 4,
+          "pregunta": "En la clasificación del artículo 7 del ROGA, el coordinador del Distrito de Hortaleza es:",
+          "opciones": {
+            "a": "Un órgano superior, al que corresponde la dirección política del distrito.",
+            "b": "Un órgano colegiado de representación político-vecinal.",
+            "c": "Un órgano directivo, al que corresponde ejecutar las decisiones de los órganos superiores."
+          },
+          "correcta": "c",
+          "referencia": "Caso 5 · art. 7.3 y 7.4 ROGA",
+          "explicacion": "En el ámbito de los distritos, los coordinadores son órganos directivos (art. 7.3 ROGA), a los que corresponde la ejecución de las decisiones de los órganos superiores (art. 7.4 ROGA)."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Cuál de las siguientes es una función del coordinador del distrito según el artículo 71 del ROGA?",
+          "opciones": {
+            "a": "La elaboración, seguimiento y control del presupuesto anual asignado.",
+            "b": "Fijar los objetivos del distrito y aprobar sus planes de actuación.",
+            "c": "Dirimir con su voto de calidad los empates de la Junta Municipal."
+          },
+          "correcta": "a",
+          "referencia": "Caso 5, cuestión 3 · art. 71.1 ROGA",
+          "explicacion": "El artículo 71.1 ROGA atribuye al coordinador la elaboración, seguimiento y control del presupuesto anual asignado; fijar objetivos y dirimir empates corresponden al concejal-presidente."
+        },
+        {
+          "numero": 6,
+          "pregunta": "El técnico TIC trabaja en una unidad orgánica adscrita a la coordinación del distrito. ¿Quién ostenta la jefatura inmediata de esa unidad?",
+          "opciones": {
+            "a": "El concejal-presidente.",
+            "b": "El coordinador del distrito.",
+            "c": "El Área de Gobierno competente en coordinación territorial."
+          },
+          "correcta": "b",
+          "referencia": "Caso 5, cuestión 3 · art. 71.1 ROGA",
+          "explicacion": "Al coordinador del distrito le corresponde la dirección y coordinación de las unidades orgánicas adscritas, cuya jefatura inmediata ostenta (art. 71.1 ROGA); el concejal-presidente es el jefe superior, no el inmediato."
+        },
+        {
+          "numero": 7,
+          "pregunta": "El distrito necesita coordinar sus actuaciones con el Área de Gobierno competente en coordinación territorial. ¿A quién corresponde coordinar esas relaciones?",
+          "opciones": {
+            "a": "Al coordinador del distrito.",
+            "b": "Al vicepresidente de la Junta Municipal.",
+            "c": "Al Consejo de Proximidad del distrito."
+          },
+          "correcta": "a",
+          "referencia": "Caso 5, cuestión 3 · art. 71.1 ROGA",
+          "explicacion": "El artículo 71.1 ROGA atribuye al coordinador la coordinación de las relaciones de la Junta Municipal con el Área competente en coordinación territorial y con las demás Áreas, organismos y empresas municipales."
+        },
+        {
+          "numero": 8,
+          "pregunta": "¿Qué forma adoptan las decisiones administrativas del coordinador del distrito?",
+          "opciones": {
+            "a": "Decreto.",
+            "b": "Resolución.",
+            "c": "Acuerdo."
+          },
+          "correcta": "b",
+          "referencia": "Caso 5, cuestión 4 · art. 71.2 ROGA",
+          "explicacion": "Las decisiones administrativas de los coordinadores de distrito revisten la forma de «Resolución» (art. 71.2 ROGA); el decreto es la forma de los actos del concejal-presidente."
+        },
+        {
+          "numero": 9,
+          "pregunta": "Además de las funciones del artículo 71.1, el coordinador del distrito puede ejercer:",
+          "opciones": {
+            "a": "Las competencias normativas del Pleno sobre la división en distritos.",
+            "b": "La presidencia de la Junta Municipal en ausencia del concejal-presidente.",
+            "c": "Las competencias que le deleguen el alcalde, la Junta de Gobierno u otros órganos."
+          },
+          "correcta": "c",
+          "referencia": "Caso 5, cuestión 3 · art. 71.1 ROGA",
+          "explicacion": "Las funciones del coordinador se entienden sin perjuicio de las competencias que puedan delegarle el alcalde, la Junta de Gobierno u otros órganos (art. 71.1 ROGA); la suplencia del concejal-presidente corresponde al vicepresidente."
+        },
+        {
+          "numero": 10,
+          "pregunta": "En un expediente antiguo del distrito aparece la figura del «gerente del distrito». ¿Qué figura le corresponde hoy?",
+          "opciones": {
+            "a": "El coordinador del distrito.",
+            "b": "El vicepresidente de la Junta Municipal.",
+            "c": "El concejal-presidente."
+          },
+          "correcta": "a",
+          "referencia": "Caso 5 · art. 70 ROGA · §10",
+          "explicacion": "El ROGA de 2004 denominaba «gerente del distrito» a la figura que hoy se llama coordinador del distrito (Reglamento Orgánico 6/2021)."
+        }
+      ]
+    },
+    {
+      "caso": 6,
+      "titulo": "CASO PRÁCTICO 6 — Los distritos de Madrid y la participación",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En la jornada de acogida se presenta el mapa de distritos. ¿En cuántos distritos se divide el término municipal de Madrid?",
+          "opciones": {
+            "a": "En 19.",
+            "b": "En 21.",
+            "c": "En 23."
+          },
+          "correcta": "b",
+          "referencia": "Caso 6, cuestión 1 · art. 3.1 RO 6/2021",
+          "explicacion": "El Reglamento Orgánico 6/2021 de los Distritos divide el término municipal de Madrid en 21 distritos."
+        },
+        {
+          "numero": 2,
+          "pregunta": "Si en el futuro se quisiera alterar el número o los límites de los distritos, ¿quién podría hacerlo?",
+          "opciones": {
+            "a": "El alcalde, mediante decreto de organización.",
+            "b": "La Junta de Gobierno, mediante acuerdo.",
+            "c": "El Pleno, modificando el reglamento orgánico de los distritos."
+          },
+          "correcta": "c",
+          "referencia": "Caso 6, cuestión 1 · art. 61.2 ROGA · art. 3.2 RO 6/2021",
+          "explicacion": "Corresponde al Pleno, mediante la modificación del reglamento orgánico, alterar el número, denominación y límites territoriales de los distritos (art. 3.2 RO 6/2021)."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Cuál de las siguientes relaciones contiene solo distritos de Madrid?",
+          "opciones": {
+            "a": "Centro, Salamanca y Barajas.",
+            "b": "Retiro, Tetuán y Pozuelo.",
+            "c": "Centro, Usera y Alcorcón."
+          },
+          "correcta": "a",
+          "referencia": "Caso 6, cuestión 1 · §13",
+          "explicacion": "Centro, Salamanca y Barajas figuran entre los 21 distritos de Madrid; Pozuelo y Alcorcón no son distritos de la ciudad."
+        },
+        {
+          "numero": 4,
+          "pregunta": "En el mapa numerado, los distritos 1 y 21 son, respectivamente:",
+          "opciones": {
+            "a": "Barajas y Centro.",
+            "b": "Centro y Vicálvaro.",
+            "c": "Centro y Barajas."
+          },
+          "correcta": "c",
+          "referencia": "Caso 6, cuestión 1 · §13",
+          "explicacion": "En la numeración de los distritos, el 1 es Centro y el 21 es Barajas; Vicálvaro es el 19."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Tienen todos los distritos la misma estructura de gobierno y administración?",
+          "opciones": {
+            "a": "No: solo los distritos más poblados tienen Junta Municipal.",
+            "b": "Sí: Junta Municipal, concejal-presidente y coordinador se aplican a los 21 distritos.",
+            "c": "No: cada distrito fija su estructura por decreto de su concejal-presidente."
+          },
+          "correcta": "b",
+          "referencia": "Caso 6, cuestión 2 · arts. 62-71 ROGA",
+          "explicacion": "La estructura de gobierno (Junta Municipal y concejal-presidente) y administrativa (coordinador del distrito) de los artículos 62 a 71 del ROGA se aplica a los 21 distritos."
+        },
+        {
+          "numero": 6,
+          "pregunta": "¿Qué órganos pueden crearse en los distritos para la participación vecinal, según el artículo 72 del ROGA?",
+          "opciones": {
+            "a": "Órganos de participación de los vecinos y de las asociaciones que los representen.",
+            "b": "Áreas Delegadas de participación ciudadana en cada distrito.",
+            "c": "Juntas de Gobierno de distrito elegidas directamente por los vecinos."
+          },
+          "correcta": "a",
+          "referencia": "Caso 6, cuestión 3 · art. 72 ROGA",
+          "explicacion": "El artículo 72 ROGA permite crear en los distritos órganos de participación de los vecinos y de las asociaciones que los representen."
+        },
+        {
+          "numero": 7,
+          "pregunta": "¿Por qué normas se rigen esos órganos de participación?",
+          "opciones": {
+            "a": "Por los decretos del concejal-presidente de cada distrito.",
+            "b": "Por las normas orgánicas de participación ciudadana.",
+            "c": "Por la relación de puestos de trabajo del distrito."
+          },
+          "correcta": "b",
+          "referencia": "Caso 6, cuestión 3 · art. 72 ROGA",
+          "explicacion": "Los órganos de participación de los distritos se crean conforme a las normas orgánicas de participación ciudadana (art. 72 ROGA)."
+        },
+        {
+          "numero": 8,
+          "pregunta": "¿Cuál es hoy el órgano de participación vecinal de los distritos de Madrid?",
+          "opciones": {
+            "a": "El Consejo de Proximidad, regulado por el Reglamento Orgánico 7/2021.",
+            "b": "El Foro Local, regulado por el reglamento orgánico de 2016.",
+            "c": "La Comisión Interadministrativa de Capitalidad."
+          },
+          "correcta": "a",
+          "referencia": "Caso 6, cuestión 3 · RO 7/2021",
+          "explicacion": "El Reglamento Orgánico 7/2021 creó los Consejos de Proximidad de los Distritos y derogó el reglamento de 2016 de los Foros Locales."
+        },
+        {
+          "numero": 9,
+          "pregunta": "En el registro del distrito hay dos documentos: uno del concejal-presidente y otro del coordinador del distrito. Revisten, respectivamente, la forma de:",
+          "opciones": {
+            "a": "Resolución y decreto.",
+            "b": "Acuerdo y decreto.",
+            "c": "Decreto y resolución."
+          },
+          "correcta": "c",
+          "referencia": "Caso 6, cuestión 4 · arts. 67 y 71.2 ROGA",
+          "explicacion": "Los actos del concejal-presidente son decretos (art. 67 ROGA) y los del coordinador del distrito, resoluciones (art. 71.2 ROGA)."
+        },
+        {
+          "numero": 10,
+          "pregunta": "Un nuevo empleado encuentra un documento del distrito titulado «Resolución». ¿Qué órgano lo ha adoptado?",
+          "opciones": {
+            "a": "El concejal-presidente, cuando actúa por delegación del alcalde.",
+            "b": "El coordinador del distrito.",
+            "c": "La Junta Municipal del Distrito, en sesión plenaria."
+          },
+          "correcta": "b",
+          "referencia": "Caso 6, cuestión 4 · arts. 67 y 71.2 ROGA",
+          "explicacion": "La forma de «Resolución» es la de las decisiones administrativas del coordinador del distrito (art. 71.2 ROGA); las del concejal-presidente revisten siempre la forma de decreto (art. 67 ROGA)."
+        }
+      ]
+    }
+  ]
+}

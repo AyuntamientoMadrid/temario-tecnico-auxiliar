@@ -1,0 +1,39 @@
+<svg aria-label="Explicación de la modulación pi cuartos DQPSK de TETRA. A la izquierda, una constelación con cuatro estados de fase y el detalle de que las transiciones nunca pasan por el origen, lo que evita que la envolvente caiga a cero. A la derecha, el desglose del nombre: PSK codifica en la fase, la cuarta parte quiere decir cuatro estados y por tanto dos bits por símbolo, la D indica codificación diferencial del cambio de fase y el desplazamiento de pi cuartos evita el paso por el origen. Abajo, la comparación con la modulación GMSK que usan TETRAPOL y GSM" role="img" viewbox="0 0 680 324" xmlns="http://www.w3.org/2000/svg">
+<style>.t11{font:700 10px system-ui,sans-serif;fill:#fff}.s11{font:8.5px system-ui,sans-serif;fill:#fff}.d11{font:8.5px system-ui,sans-serif;fill:#333}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}.k11{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n11{font:8.5px system-ui,sans-serif;fill:#666}.b11{font:700 9px system-ui,sans-serif;fill:#0055a0}.p11{font:700 8.5px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h11" text-anchor="middle" x="340" y="22">Cuatro fases, dos bits por símbolo, y nunca por el centro</text>
+<rect fill="#f1f5f9" height="196" rx="5" stroke="#c9d6e2" width="220" x="20" y="36"></rect>
+<text class="b11" text-anchor="middle" x="130" y="54">Constelación</text>
+<line stroke="#aab" stroke-width="1" x1="130" x2="130" y1="70" y2="212"></line>
+<line stroke="#aab" stroke-width="1" x1="52" x2="208" y1="141" y2="141"></line>
+<circle cx="130" cy="141" fill="none" r="52" stroke="#c9d6e2" stroke-width="1"></circle>
+<circle cx="167" cy="104" fill="#0055a0" r="5"></circle>
+<circle cx="167" cy="178" fill="#0055a0" r="5"></circle>
+<circle cx="93" cy="104" fill="#0055a0" r="5"></circle>
+<circle cx="93" cy="178" fill="#0055a0" r="5"></circle>
+<circle cx="182" cy="141" fill="#2d8659" r="5"></circle>
+<circle cx="78" cy="141" fill="#2d8659" r="5"></circle>
+<circle cx="130" cy="89" fill="#2d8659" r="5"></circle>
+<circle cx="130" cy="193" fill="#2d8659" r="5"></circle>
+<path d="M167,104 L182,141" stroke="#d13c3c" stroke-width="1.5"></path>
+<path d="M182,141 L167,178" stroke="#d13c3c" stroke-width="1.5"></path>
+<circle cx="130" cy="141" fill="none" r="14" stroke="#d13c3c" stroke-dasharray="3 2" stroke-width="1.5"></circle>
+<text class="p11" text-anchor="middle" x="130" y="226">Las transiciones esquivan el origen</text>
+<rect fill="none" height="196" rx="5" stroke="#0055a0" stroke-width="1.5" width="416" x="252" y="36"></rect>
+<text class="b11" x="264" y="54">Cómo se lee el nombre, pieza a pieza</text>
+<rect fill="#0055a0" height="38" rx="4" width="392" x="264" y="62"></rect>
+<text class="t11" x="278" y="78">PSK — Phase Shift Keying</text>
+<text class="s11" x="278" y="93">La información se codifica en la FASE de la portadora, no en amplitud ni en frecuencia</text>
+<rect fill="#0055a0" height="38" rx="4" width="392" x="264" y="104"></rect>
+<text class="t11" x="278" y="120">Q — quaternary: CUATRO estados de fase</text>
+<text class="s11" x="278" y="135">Cuatro estados = 2 bits por símbolo, porque 2 elevado a 2 son 4</text>
+<rect fill="#2d8659" height="38" rx="4" width="392" x="264" y="146"></rect>
+<text class="t11" x="278" y="162">D — differential: se codifica el CAMBIO de fase</text>
+<text class="s11" x="278" y="177">No hace falta recuperar una referencia de fase absoluta: receptor más simple y robusto</text>
+<rect fill="#d13c3c" height="38" rx="4" width="392" x="264" y="188"></rect>
+<text class="t11" x="278" y="204">π/4 — desplazamiento adicional de 45 grados</text>
+<text class="s11" x="278" y="219">Evita el paso por el origen: la envolvente nunca cae a cero</text>
+<rect fill="#e89822" height="52" rx="5" width="648" x="20" y="244"></rect>
+<text class="t11" x="36" y="264">COMPARACIÓN CLAVE</text>
+<text class="s11" x="36" y="281">TETRA: π/4-DQPSK, 2 bits por símbolo, 18 kbaudios en 25 kHz · TETRAPOL y GSM: GMSK, envolvente constante, 1 bit por símbolo</text>
+<text class="n11" text-anchor="end" x="670" y="316">[Fuente: elaboración propia sobre ETSI EN 300 392-2 e Informe UIT-R M.2014]</text>
+</svg>

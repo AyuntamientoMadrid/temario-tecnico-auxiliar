@@ -1,0 +1,42 @@
+<svg aria-label="Las faltas se clasifican en muy graves, graves y leves; las sanciones van de la separación del servicio al apercibimiento; la prescripción de las faltas es de tres años, dos años y seis meses respectivamente" class="svd11" role="img" viewbox="0 0 720 330" xmlns="http://www.w3.org/2000/svg">
+<style>.svd11 .h{font:700 12px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd11 .t{font:11.5px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd11 .s{font:10px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="34" rx="8" width="200" x="40" y="16"></rect>
+<text class="h" x="140" y="38">FALTAS (art. 95)</text>
+<rect fill="#003d75" height="34" rx="8" width="200" x="260" y="16"></rect>
+<text class="h" x="360" y="38">SANCIONES (art. 96)</text>
+<rect fill="#003d75" height="34" rx="8" width="200" x="480" y="16"></rect>
+<text class="h" x="580" y="38">PRESCRIPCIÓN (art. 97)</text>
+<rect fill="#fdeaea" height="50" rx="6" stroke="#d13c3c" width="200" x="40" y="66"></rect>
+<text class="t" style="font-weight:700" x="140" y="88">Muy graves</text>
+<text class="s" x="140" y="106">art. 95.2 y las que fije la ley</text>
+<rect fill="#fff5e6" height="50" rx="6" stroke="#e89822" width="200" x="40" y="124"></rect>
+<text class="t" style="font-weight:700" x="140" y="146">Graves</text>
+<text class="s" x="140" y="164">por ley / convenio (95.3)</text>
+<rect fill="#e8f5ee" height="50" rx="6" stroke="#2d8659" width="200" x="40" y="182"></rect>
+<text class="t" style="font-weight:700" x="140" y="204">Leves</text>
+<text class="s" x="140" y="222">por leyes de FP (95.4)</text>
+<rect fill="#fdeaea" height="30" rx="5" stroke="#d13c3c" width="200" x="260" y="66"></rect>
+<text class="s" style="font-weight:700" x="360" y="86">Separación del servicio</text>
+<rect fill="#f4f6f9" height="26" rx="5" stroke="#0055a0" width="200" x="260" y="100"></rect>
+<text class="s" x="360" y="118">Despido (laboral)</text>
+<rect fill="#f4f6f9" height="26" rx="5" stroke="#0055a0" width="200" x="260" y="130"></rect>
+<text class="s" x="360" y="148">Suspensión ≤ 6 años</text>
+<rect fill="#f4f6f9" height="26" rx="5" stroke="#0055a0" width="200" x="260" y="160"></rect>
+<text class="s" x="360" y="178">Traslado forzoso</text>
+<rect fill="#f4f6f9" height="26" rx="5" stroke="#0055a0" width="200" x="260" y="190"></rect>
+<text class="s" x="360" y="208">Demérito</text>
+<rect fill="#e8f5ee" height="26" rx="5" stroke="#2d8659" width="200" x="260" y="220"></rect>
+<text class="s" x="360" y="238">Apercibimiento</text>
+<rect fill="#fdeaea" height="50" rx="6" stroke="#d13c3c" width="200" x="480" y="66"></rect>
+<text class="t" style="font-weight:700" x="580" y="88">Muy graves: 3 años</text>
+<text class="s" x="580" y="106">sanción: 3 años</text>
+<rect fill="#fff5e6" height="50" rx="6" stroke="#e89822" width="200" x="480" y="124"></rect>
+<text class="t" style="font-weight:700" x="580" y="146">Graves: 2 años</text>
+<text class="s" x="580" y="164">sanción: 2 años</text>
+<rect fill="#e8f5ee" height="50" rx="6" stroke="#2d8659" width="200" x="480" y="182"></rect>
+<text class="t" style="font-weight:700" x="580" y="204">Leves: 6 meses</text>
+<text class="s" x="580" y="222">sanción: 1 año</text>
+<rect fill="#e8f0f8" height="44" rx="6" stroke="#0055a0" width="480" x="120" y="262"></rect>
+<text class="s" style="font-weight:700;fill:#0055a0" x="360" y="282">Principios (art. 94): legalidad y tipicidad · proporcionalidad ·</text>
+<text class="s" style="font-weight:700;fill:#0055a0" x="360" y="298">culpabilidad · presunción de inocencia · irretroactividad desfavorable</text>
+</svg>

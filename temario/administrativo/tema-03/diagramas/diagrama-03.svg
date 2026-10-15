@@ -1,0 +1,28 @@
+<svg aria-label="Órganos superiores frente a órganos directivos según el artículo 7: los superiores dirigen políticamente y los directivos ejecutan" role="img" viewbox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .c-hb{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .c-s{font:11px system-ui,sans-serif;fill:#1a1a1a;text-anchor:start}
+  </style>
+<rect fill="#fff" height="270" rx="10" stroke="#0055a0" stroke-width="1.5" width="310" x="30" y="20"></rect>
+<rect fill="#0055a0" height="44" rx="10" width="310" x="30" y="20"></rect>
+<text class="c-hb" x="185" y="48">ÓRGANOS SUPERIORES</text>
+<text class="c-s" style="font-weight:700;fill:#003d75" x="50" y="92">Función: dirección política</text>
+<text class="c-s" x="50" y="120">• El alcalde</text>
+<text class="c-s" x="50" y="144">• Miembros de la Junta de Gobierno Local</text>
+<text class="c-s" x="50" y="168">• Junta de Gobierno Local (órgano)</text>
+<text class="c-s" x="50" y="192">• Concejales con responsabilidades</text>
+<text class="c-s" x="62" y="208">de gobierno</text>
+<text class="c-s" x="50" y="232">• Concejales-presidentes de distrito</text>
+<text class="c-s" style="font-style:italic;fill:#777" x="50" y="266">dirección · planificación · coordinación</text>
+<rect fill="#fff" height="270" rx="10" stroke="#2d8659" stroke-width="1.5" width="310" x="360" y="20"></rect>
+<rect fill="#2d8659" height="44" rx="10" width="310" x="360" y="20"></rect>
+<text class="c-hb" x="515" y="48">ÓRGANOS DIRECTIVOS</text>
+<text class="c-s" style="font-weight:700;fill:#1f5e3f" x="380" y="92">Función: ejecución</text>
+<text class="c-s" x="380" y="120">• Coordinadores generales</text>
+<text class="c-s" x="380" y="144">• Secretarios generales técnicos</text>
+<text class="c-s" x="380" y="168">• Directores generales</text>
+<text class="c-s" x="380" y="192">• Asesoría Jurídica · interventor general</text>
+<text class="c-s" x="380" y="216">• Coord. de Distrito · gerentes de organismos</text>
+<text class="c-s" x="380" y="240">• Secretario general del Pleno</text>
+<text class="c-s" style="font-style:italic;fill:#777" x="380" y="266">ejecutan las decisiones</text>
+</svg>

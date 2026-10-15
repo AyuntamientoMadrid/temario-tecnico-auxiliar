@@ -1,0 +1,39 @@
+<svg aria-label="Los tres mecanismos de transición a IPv6: doble pila, en la que el equipo ejecuta las dos pilas simultáneamente y es el mecanismo recomendado; túneles, que encapsulan IPv6 dentro de IPv4 usando el número de protocolo 41; y traducción mediante NAT64 y DNS64, que permite a un cliente solo IPv6 alcanzar un servidor solo IPv4" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t13{font:700 10px system-ui,sans-serif;fill:#fff}.s13{font:8.5px system-ui,sans-serif;fill:#fff}.d13{font:8.5px system-ui,sans-serif;fill:#333}.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.k13{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n13{font:8.5px system-ui,sans-serif;fill:#666}.r13{font:700 8.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h13" text-anchor="middle" x="340" y="20">Tres mecanismos, uno recomendado</text>
+<rect fill="#2d8659" height="132" rx="5" width="206" x="20" y="38"></rect>
+<text class="t13" text-anchor="middle" x="123" y="60">1 · DOBLE PILA</text>
+<text class="s13" text-anchor="middle" x="123" y="80">El equipo ejecuta a la vez</text>
+<text class="s13" text-anchor="middle" x="123" y="94">las pilas IPv4 e IPv6</text>
+<text class="s13" text-anchor="middle" x="123" y="108">y elige según el destino</text>
+<rect fill="#fff" height="20" rx="3" width="174" x="36" y="118"></rect>
+<text class="k13" text-anchor="middle" x="123" y="132">MECANISMO RECOMENDADO</text>
+<text class="s13" text-anchor="middle" x="123" y="153">Inconveniente: no ahorra</text>
+<text class="s13" text-anchor="middle" x="123" y="164">direcciones IPv4</text>
+<rect fill="#e89822" height="132" rx="5" width="206" x="236" y="38"></rect>
+<text class="t13" text-anchor="middle" x="339" y="60">2 · TÚNELES</text>
+<text class="s13" text-anchor="middle" x="339" y="80">Se encapsula IPv6 dentro</text>
+<text class="s13" text-anchor="middle" x="339" y="94">de IPv4 para atravesar</text>
+<text class="s13" text-anchor="middle" x="339" y="108">una red que solo habla IPv4</text>
+<rect fill="#fff" height="20" rx="3" width="174" x="252" y="118"></rect>
+<text class="k13" text-anchor="middle" x="339" y="132">Número de protocolo IP: 41</text>
+<text class="s13" text-anchor="middle" x="339" y="153">6to4 · 6rd · Teredo · ISATAP</text>
+<text class="s13" text-anchor="middle" x="339" y="164">Varios, desaconsejados hoy</text>
+<rect fill="#0055a0" height="132" rx="5" width="208" x="452" y="38"></rect>
+<text class="t13" text-anchor="middle" x="556" y="60">3 · TRADUCCIÓN</text>
+<text class="s13" text-anchor="middle" x="556" y="80">Se convierte un protocolo</text>
+<text class="s13" text-anchor="middle" x="556" y="94">en el otro, para que un cliente</text>
+<text class="s13" text-anchor="middle" x="556" y="108">IPv6 alcance un servidor IPv4</text>
+<rect fill="#fff" height="20" rx="3" width="176" x="468" y="118"></rect>
+<text class="k13" text-anchor="middle" x="556" y="132">NAT64 + DNS64</text>
+<text class="s13" text-anchor="middle" x="556" y="153">Habitual en redes móviles</text>
+<text class="s13" text-anchor="middle" x="556" y="164">Rompe el extremo a extremo</text>
+<rect fill="#fbeaea" height="52" rx="4" width="640" x="20" y="186"></rect>
+<text class="r13" text-anchor="middle" x="340" y="204">RIESGO DE SEGURIDAD ESPECÍFICO DE LA TRANSICIÓN</text>
+<text class="d13" text-anchor="middle" x="340" y="220">Un equipo con doble pila cuyo cortafuegos solo filtra IPv4 queda efectivamente abierto por IPv6</text>
+<text class="d13" text-anchor="middle" x="340" y="233">Los túneles automáticos pueden atravesar el perímetro sin ser inspeccionados: deshabilitarlos si no se usan</text>
+<rect fill="#eef3f8" height="46" rx="4" width="640" x="20" y="250"></rect>
+<text class="k13" text-anchor="middle" x="340" y="267">IPv4 e IPv6 NO son compatibles entre sí</text>
+<text class="d13" text-anchor="middle" x="340" y="284">Un equipo que solo habla IPv4 no puede comunicarse con uno que solo habla IPv6 sin uno de estos tres mecanismos</text>
+<text class="n13" text-anchor="end" x="670" y="330">[Fuente: RFC 4213, RFC 6146]</text>
+</svg>

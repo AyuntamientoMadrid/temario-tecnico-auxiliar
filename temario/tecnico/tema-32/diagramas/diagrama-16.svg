@@ -1,0 +1,32 @@
+<svg aria-label="Componentes de una infraestructura de clave pública: autoridad de registro que identifica al solicitante, autoridad de certificación que emite y firma el certificado, autoridad de validación que informa del estado, repositorio y declaración de prácticas de certificación, más la jerarquía de confianza y la comparación entre listas de revocación CRL y el protocolo en línea OCSP" role="img" viewbox="0 0 680 364" xmlns="http://www.w3.org/2000/svg">
+<style>.t16{font:700 10.5px system-ui,sans-serif;fill:#fff}.s16{font:8.5px system-ui,sans-serif;fill:#fff}.d16{font:9px system-ui,sans-serif;fill:#333}.h16{font:700 13px system-ui,sans-serif;fill:#0055a0}.k16{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n16{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h16" text-anchor="middle" x="340" y="20">Quién identifica, quién emite y quién responde</text>
+<rect fill="#e89822" height="52" rx="5" width="150" x="20" y="36"></rect><text class="t16" text-anchor="middle" x="95" y="55">SOLICITANTE</text><text class="s16" text-anchor="middle" x="95" y="70">genera su par de claves</text><text class="s16" text-anchor="middle" x="95" y="83">y envía la petición (CSR)</text>
+<rect fill="#2d8659" height="52" rx="5" width="150" x="196" y="36"></rect><text class="t16" text-anchor="middle" x="271" y="55">AR · REGISTRO</text><text class="s16" text-anchor="middle" x="271" y="70">IDENTIFICA y verifica</text><text class="s16" text-anchor="middle" x="271" y="83">NO emite</text>
+<rect fill="#0055a0" height="52" rx="5" width="150" x="372" y="36"></rect><text class="t16" text-anchor="middle" x="447" y="55">AC · CERTIFICACIÓN</text><text class="s16" text-anchor="middle" x="447" y="70">EMITE, FIRMA y revoca</text><text class="s16" text-anchor="middle" x="447" y="83">con su clave privada</text>
+<rect fill="#7a2f8a" height="52" rx="5" width="112" x="548" y="36"></rect><text class="t16" text-anchor="middle" x="604" y="55">AV · VALIDACIÓN</text><text class="s16" text-anchor="middle" x="604" y="70">informa del ESTADO</text><text class="s16" text-anchor="middle" x="604" y="83">ni emite ni identifica</text>
+<path d="M170 62 L192 62" stroke="#666" stroke-width="1.5"></path><path d="M346 62 L368 62" stroke="#666" stroke-width="1.5"></path><path d="M522 62 L544 62" stroke="#666" stroke-width="1.5"></path>
+<text class="k16" x="20" y="112">JERARQUÍA DE CONFIANZA</text>
+<rect fill="#0055a0" height="34" rx="4" width="200" x="20" y="120"></rect><text class="s16" text-anchor="middle" x="120" y="135">AC RAÍZ — autofirmada</text><text class="s16" text-anchor="middle" x="120" y="148">clave privada FUERA DE LÍNEA en HSM</text>
+<rect fill="#3781c0" height="34" rx="4" width="200" x="240" y="120"></rect><text class="s16" text-anchor="middle" x="340" y="135">AC SUBORDINADA</text><text class="s16" text-anchor="middle" x="340" y="148">firmada por la raíz, opera a diario</text>
+<rect fill="#eef3f8" height="34" rx="4" width="200" x="460" y="120"></rect><text class="d16" text-anchor="middle" x="560" y="135">CERTIFICADO FINAL</text><text class="d16" text-anchor="middle" x="560" y="148">del titular o del servidor</text>
+<path d="M220 137 L236 137" stroke="#666" stroke-width="1.5"></path><path d="M440 137 L456 137" stroke="#666" stroke-width="1.5"></path>
+<rect fill="#fdf3e3" height="24" rx="4" width="640" x="20" y="164"></rect>
+<text class="d16" text-anchor="middle" x="340" y="180">El certificado contiene la clave PÚBLICA, nunca la privada · es información pública y se puede publicar sin riesgo</text>
+<text class="k16" x="20" y="210">COMPROBACIÓN DEL ESTADO: DOS MECANISMOS</text>
+<rect fill="#eef3f8" height="94" rx="4" width="316" x="20" y="218"></rect>
+<text class="k16" text-anchor="middle" x="178" y="236">CRL · lista de revocados</text>
+<text class="d16" text-anchor="middle" x="178" y="254">La AC publica periódicamente una lista</text>
+<text class="d16" text-anchor="middle" x="178" y="268">FIRMADA con los números de serie revocados</text>
+<text class="n16" text-anchor="middle" x="178" y="286">+ Funciona sin conexión una vez descargada</text>
+<text class="n16" text-anchor="middle" x="178" y="300">− Latencia y tamaño creciente · CRL delta lo mitiga</text>
+<rect fill="#eef3f8" height="94" rx="4" width="316" x="344" y="218"></rect>
+<text class="k16" text-anchor="middle" x="502" y="236">OCSP · consulta en línea</text>
+<text class="d16" text-anchor="middle" x="502" y="254">Se pregunta por UN certificado concreto</text>
+<text class="d16" text-anchor="middle" x="502" y="268">Respuesta firmada: good, revoked o unknown</text>
+<text class="n16" text-anchor="middle" x="502" y="286">+ Información fresca y respuesta ligera</text>
+<text class="n16" text-anchor="middle" x="502" y="300">− Depende del respondedor y revela qué se visita</text>
+<rect fill="none" height="24" rx="4" stroke="#2d8659" stroke-width="1.5" width="640" x="20" y="320"></rect>
+<text class="k16" text-anchor="middle" x="340" y="336">OCSP STAPLING: el propio servidor adjunta su respuesta firmada — quita carga, latencia y problema de privacidad</text>
+<text class="n16" text-anchor="end" x="670" y="356">[Fuente: RFC5280; RFC6960]</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg aria-label="Reparto competencial: artículo 148, materias que pueden asumir las Comunidades Autónomas; artículo 149, materias de competencia estatal con distinto alcance según el apartado; y cláusulas de cierre del 149.3" role="img" viewbox="0 0 700 360" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .d8-hb{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .d8-s{font:11px system-ui,sans-serif;fill:#1a1a1a;text-anchor:start}
+    .d8-cl{font:700 12px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+  </style>
+<rect fill="#fff" height="190" rx="10" stroke="#0055a0" stroke-width="1.5" width="300" x="30" y="20"></rect>
+<rect fill="#0055a0" height="40" rx="10" width="300" x="30" y="20"></rect>
+<text class="d8-hb" x="180" y="46">Art. 148 — 22 materias asumibles</text>
+<text class="d8-s" x="50" y="86">• Organización del autogobierno (1.ª)</text>
+<text class="d8-s" x="50" y="108">• Ordenación territorio, urbanismo, vivienda (3.ª)</text>
+<text class="d8-s" x="50" y="130">• Agricultura, turismo, asistencia social</text>
+<text class="d8-s" x="50" y="152">• Museos y patrimonio de interés de la CA</text>
+<text class="d8-s" x="50" y="174">• Coordinación de policías locales (22.ª)</text>
+<text class="d8-s" style="font-style:italic;fill:#777" x="50" y="196">asumibles vía Estatuto · ampliables (148.2)</text>
+<rect fill="#fff" height="190" rx="10" stroke="#d13c3c" stroke-width="1.5" width="300" x="370" y="20"></rect>
+<rect fill="#d13c3c" height="40" rx="10" width="300" x="370" y="20"></rect>
+<text class="d8-hb" x="520" y="46">Art. 149 — 32 materias estatales</text>
+<text class="d8-s" x="390" y="86">• Relaciones internacionales, Defensa (3.ª, 4.ª)</text>
+<text class="d8-s" x="390" y="108">• Administración de Justicia (5.ª)</text>
+<text class="d8-s" x="390" y="130">• Legislación mercantil, penal, civil, laboral</text>
+<text class="d8-s" x="390" y="152">• Bases régimen jurídico AAPP + proc. común (18.ª)</text>
+<text class="d8-s" x="390" y="174">• Seguridad pública (29.ª) · Hacienda general (14.ª)</text>
+<text class="d8-s" style="font-style:italic;fill:#777" x="390" y="196">alcance distinto: legislación, bases…</text>
+<rect fill="#e89822" height="86" rx="10" width="540" x="80" y="250"></rect>
+<text class="d8-cl" x="350" y="276">CLÁUSULAS DE CIERRE — art. 149.3</text>
+<text class="d8-cl" style="font-weight:400;font-size:12px" x="350" y="300">1. Residual: lo no atribuido al Estado → puede ser de las CCAA</text>
+<text class="d8-cl" style="font-weight:400;font-size:12px" x="350" y="320">2. Prevalencia del derecho estatal · 3. Supletoriedad "en todo caso"</text>
+</svg>

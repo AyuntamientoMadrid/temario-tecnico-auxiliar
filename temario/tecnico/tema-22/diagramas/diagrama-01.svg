@@ -1,0 +1,18 @@
+<svg aria-label="Línea de tiempo desde los sistemas centralizados con mainframe y terminales tontos hasta finales de los 80, pasando por cliente servidor en los 90, tres capas y n capas a finales de los 90 y 2000, arquitectura orientada a servicios en los 2000, y microservicios, contenedores y computación en la nube desde los 2010" role="img" viewbox="0 0 720 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t1{font:700 11px system-ui,sans-serif;fill:#fff}.s1{font:9.5px system-ui,sans-serif;fill:#fff}.l1{font:11px system-ui,sans-serif;fill:#444}.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h1" text-anchor="middle" x="360" y="22">De los sistemas centralizados a la nube</text>
+<line stroke="#0055a0" stroke-width="3" x1="30" x2="670" y1="60" y2="60"></line>
+<circle cx="50" cy="60" fill="#888" r="7"></circle><text class="l1" text-anchor="middle" x="50" y="42">&lt;1985</text><text class="l1" text-anchor="middle" x="50" y="80">Mainframe</text>
+<circle cx="150" cy="60" fill="#0055a0" r="7"></circle><text class="l1" text-anchor="middle" x="150" y="42">años 90</text><text style="font:700 10px system-ui;fill:#0055a0" text-anchor="middle" x="150" y="80">Cliente/servidor</text>
+<circle cx="250" cy="60" fill="#0055a0" r="7"></circle><text class="l1" text-anchor="middle" x="250" y="42">fin 90</text><text style="font:700 10px system-ui;fill:#0055a0" text-anchor="middle" x="250" y="80">3/n capas</text>
+<circle cx="360" cy="60" fill="#2d8659" r="7"></circle><text class="l1" text-anchor="middle" x="360" y="42">2000s</text><text style="font:700 10px system-ui;fill:#2d8659" text-anchor="middle" x="360" y="80">SOA / servicios web</text>
+<circle cx="500" cy="60" fill="#e89822" r="7"></circle><text class="l1" text-anchor="middle" x="500" y="42">2010s</text><text style="font:700 10px system-ui;fill:#e89822" text-anchor="middle" x="500" y="80">Microservicios / EDA</text>
+<circle cx="650" cy="60" fill="#d13c3c" r="7"></circle><text class="l1" text-anchor="middle" x="650" y="42">actual</text><text style="font:700 10px system-ui;fill:#d13c3c" text-anchor="middle" x="650" y="80">Contenedores/nube</text>
+<rect fill="#888" height="56" rx="5" width="190" x="20" y="110"></rect><text class="t1" text-anchor="middle" x="115" y="132">Centralizado</text><text class="s1" text-anchor="middle" x="115" y="150">Mainframe + terminal tonto</text>
+<rect fill="#0055a0" height="56" rx="5" width="240" x="225" y="110"></rect><text class="t1" text-anchor="middle" x="345" y="132">Cliente/servidor · n-capas</text><text class="s1" text-anchor="middle" x="345" y="150">§2-3 de este tema</text>
+<rect fill="#2d8659" height="56" rx="5" width="220" x="480" y="110"></rect><text class="t1" text-anchor="middle" x="590" y="132">SOA · servicios web</text><text class="s1" text-anchor="middle" x="590" y="150">§5-6 de este tema</text>
+<rect fill="#e89822" height="56" rx="5" width="460" x="130" y="182"></rect><text class="t1" text-anchor="middle" x="360" y="204">Microservicios · EDA · contenedores · cloud</text><text class="s1" text-anchor="middle" x="360" y="222">§7 de este tema · desarrollado en profundidad en el Tema 31</text>
+<text style="font:700 11px system-ui;fill:#0055a0" text-anchor="middle" x="360" y="264">El escalado vertical de un único servidor cede paso a arquitecturas distribuidas y elásticas</text>
+<text class="l1" text-anchor="middle" x="360" y="284">Cada oleada resuelve limitaciones de la anterior, sin eliminar del todo a las precedentes</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="700" y="312">[Fuente: GARTNER-3TIER; FOWLER-PEAA]</text>
+</svg>

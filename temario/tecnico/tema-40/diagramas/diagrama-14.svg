@@ -1,0 +1,66 @@
+<svg aria-label="Los cuatro parámetros de calidad de una comunicación en tiempo real con sus umbrales: ancho de banda según resolución, retardo de 150 milisegundos según la recomendación G punto 114, fluctuación por debajo de 30 milisegundos y pérdida de paquetes por debajo del 1 por ciento; con las tres estrategias de mejora y el marcado DSCP recomendado por la RFC 8837" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.h14{font:700 13px system-ui,sans-serif;fill:#0055a0}.k14{font:700 10px system-ui,sans-serif;fill:#0055a0}.d14{font:9px system-ui,sans-serif;fill:#333}.n14{font:8.5px system-ui,sans-serif;fill:#666}.w14{font:700 9.5px system-ui,sans-serif;fill:#fff}.r14{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}.g14{font:700 9.5px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h14" text-anchor="middle" x="340" y="19">Los cuatro parámetros de calidad, sus umbrales y su efecto</text>
+<rect fill="#eef4fa" height="78" rx="4" width="156" x="22" y="32"></rect>
+<rect fill="#0055a0" height="20" rx="4" width="156" x="22" y="32"></rect>
+<text class="w14" text-anchor="middle" x="100" y="46">1 · ANCHO DE BANDA</text>
+<text class="d14" x="30" y="67">360p ≈ 0,5 Mbit/s</text>
+<text class="d14" x="30" y="80">720p ≈ 1,5 Mbit/s</text>
+<text class="d14" x="30" y="93">1080p ≈ 3 Mbit/s</text>
+<text class="n14" x="30" y="105">Efecto: baja la calidad</text>
+<rect fill="#fbe9e9" height="78" rx="4" width="156" x="186" y="32"></rect>
+<rect fill="#d13c3c" height="20" rx="4" width="156" x="186" y="32"></rect>
+<text class="w14" text-anchor="middle" x="264" y="46">2 · RETARDO</text>
+<text class="r14" x="194" y="67">≤ 150 ms boca a oreja</text>
+<text class="d14" x="194" y="80">150 a 400 ms: con reservas</text>
+<text class="d14" x="194" y="93">&gt; 400 ms: inaceptable</text>
+<text class="n14" x="194" y="105">La gente se pisa. UIT-T G.114</text>
+<rect fill="#fdf3e3" height="78" rx="4" width="156" x="350" y="32"></rect>
+<rect fill="#e89822" height="20" rx="4" width="156" x="350" y="32"></rect>
+<text class="w14" text-anchor="middle" x="428" y="46">3 · FLUCTUACIÓN (jitter)</text>
+<text class="d14" x="358" y="67">Objetivo: &lt; 30 ms</text>
+<text class="d14" x="358" y="80">Se absorbe con un almacén</text>
+<text class="d14" x="358" y="93">intermedio, que AÑADE retardo</text>
+<text class="n14" x="358" y="105">Compromiso central del diseño</text>
+<rect fill="#fbe9e9" height="78" rx="4" width="144" x="514" y="32"></rect>
+<rect fill="#d13c3c" height="20" rx="4" width="144" x="514" y="32"></rect>
+<text class="w14" text-anchor="middle" x="586" y="46">4 · PÉRDIDA</text>
+<text class="r14" x="522" y="67">Objetivo: &lt; 1 %</text>
+<text class="d14" x="522" y="80">Audio: cortes, se disimulan</text>
+<text class="d14" x="522" y="93">Vídeo: rompe la predicción</text>
+<text class="n14" x="522" y="105">Pide imagen I: FIR y PLI</text>
+<text class="k14" x="24" y="132">LAS TRES ESTRATEGIAS, EN ORDEN DE COSTE Y DE ALCANCE</text>
+<rect fill="#eef4fa" height="62" rx="4" width="206" x="22" y="140"></rect>
+<text class="k14" x="32" y="156">A · SOBREDIMENSIONAR</text>
+<text class="d14" x="32" y="171">Poner capacidad de sobra</text>
+<text class="d14" x="32" y="184">Funciona DENTRO de la red propia</text>
+<text class="n14" x="32" y="196">Y no funciona fuera de ella</text>
+<rect fill="#fdf3e3" height="62" rx="4" width="206" x="237" y="140"></rect>
+<text class="k14" x="247" y="156">B · PRIORIZAR (DiffServ)</text>
+<text class="d14" x="247" y="171">Marcar con DSCP (RFC 2474)</text>
+<text class="d14" x="247" y="184">Solo sirve si la red lo RESPETA</text>
+<text class="n14" x="247" y="196">Fuera del dominio propio se reescribe</text>
+<rect fill="#e6f2ec" height="62" rx="4" width="206" x="452" y="140"></rect>
+<text class="k14" x="462" y="156">C · ADAPTAR (congestión)</text>
+<text class="d14" x="462" y="171">El extremo mide con RTCP y</text>
+<text class="d14" x="462" y="184">ajusta la tasa del códec (RFC 8836)</text>
+<text class="g14" x="462" y="196">Sostiene la reunión por internet</text>
+<rect fill="#0055a0" height="20" rx="3" width="636" x="22" y="216"></rect>
+<text class="w14" text-anchor="middle" x="140" y="230">Flujo</text>
+<text class="w14" text-anchor="middle" x="330" y="230">Marcado DSCP recomendado (RFC 8837)</text>
+<text class="w14" text-anchor="middle" x="560" y="230">Por qué</text>
+<rect fill="#e6f2ec" height="18" width="636" x="22" y="238"></rect>
+<text class="d14" text-anchor="middle" x="140" y="251">Audio</text>
+<text class="g14" text-anchor="middle" x="330" y="251">EF (46) — reenvío expedito</text>
+<text class="d14" text-anchor="middle" x="560" y="251">Sin audio no hay reunión</text>
+<rect fill="#f5f8fb" height="18" width="636" x="22" y="256"></rect>
+<text class="d14" text-anchor="middle" x="140" y="269">Vídeo de alta prioridad</text>
+<text class="d14" text-anchor="middle" x="330" y="269">AF41 (34)</text>
+<text class="d14" text-anchor="middle" x="560" y="269">Importante, pero prescindible</text>
+<rect fill="#fff" height="18" width="636" x="22" y="274"></rect>
+<text class="d14" text-anchor="middle" x="140" y="287">Datos y compartición</text>
+<text class="d14" text-anchor="middle" x="330" y="287">Clases inferiores</text>
+<text class="d14" text-anchor="middle" x="560" y="287">Tolera retardo</text>
+<text class="k14" text-anchor="middle" x="340" y="310">EL PRINCIPIO: EL AUDIO SE PRIORIZA POR ENCIMA DEL VÍDEO — una reunión sin vídeo funciona; sin audio, no existe</text>
+<text class="n14" text-anchor="end" x="658" y="332">[Fuente: UIT-T G.114 · RFC 2474 · RFC 8836 · RFC 8837]</text>
+</svg>

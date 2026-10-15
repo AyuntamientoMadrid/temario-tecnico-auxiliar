@@ -1,0 +1,36 @@
+<svg aria-label="Comparación de las pilas de máquinas virtuales y contenedores: la máquina virtual incluye un sistema operativo huésped completo sobre el hipervisor y el hardware, mientras que el contenedor comparte el núcleo del anfitrión a través de un motor de contenedores; abajo se muestra el modelo real combinado, con contenedores ejecutándose dentro de máquinas virtuales" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t7{font:700 10.5px system-ui,sans-serif;fill:#fff}.s7{font:9px system-ui,sans-serif;fill:#fff}.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}.k7{font:700 10.5px system-ui,sans-serif;fill:#0055a0}.n7{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h7" text-anchor="middle" x="340" y="20">Qué virtualiza cada uno: el hardware o el sistema operativo</text>
+<text class="k7" text-anchor="middle" x="175" y="40">MÁQUINAS VIRTUALES — virtualizan el HARDWARE</text>
+<text class="k7" text-anchor="middle" x="505" y="40">CONTENEDORES — virtualizan el SISTEMA OPERATIVO</text>
+<rect fill="#888" height="22" rx="3" width="96" x="24" y="50"></rect><text class="s7" text-anchor="middle" x="72" y="65">App A</text>
+<rect fill="#888" height="22" rx="3" width="96" x="127" y="50"></rect><text class="s7" text-anchor="middle" x="175" y="65">App B</text>
+<rect fill="#888" height="22" rx="3" width="96" x="230" y="50"></rect><text class="s7" text-anchor="middle" x="278" y="65">App C</text>
+<rect fill="#d13c3c" height="34" rx="3" width="96" x="24" y="76"></rect><text class="s7" text-anchor="middle" x="72" y="91">SO huésped</text><text class="s7" text-anchor="middle" x="72" y="104">núcleo propio</text>
+<rect fill="#d13c3c" height="34" rx="3" width="96" x="127" y="76"></rect><text class="s7" text-anchor="middle" x="175" y="91">SO huésped</text><text class="s7" text-anchor="middle" x="175" y="104">núcleo propio</text>
+<rect fill="#d13c3c" height="34" rx="3" width="96" x="230" y="76"></rect><text class="s7" text-anchor="middle" x="278" y="91">SO huésped</text><text class="s7" text-anchor="middle" x="278" y="104">núcleo propio</text>
+<rect fill="#0055a0" height="26" rx="3" width="302" x="24" y="114"></rect><text class="t7" text-anchor="middle" x="175" y="132">HIPERVISOR</text>
+<rect fill="#333" height="24" rx="3" width="302" x="24" y="144"></rect><text class="t7" text-anchor="middle" x="175" y="161">HARDWARE</text>
+<rect fill="#888" height="22" rx="3" width="96" x="354" y="50"></rect><text class="s7" text-anchor="middle" x="402" y="65">App A</text>
+<rect fill="#888" height="22" rx="3" width="96" x="457" y="50"></rect><text class="s7" text-anchor="middle" x="505" y="65">App B</text>
+<rect fill="#888" height="22" rx="3" width="96" x="560" y="50"></rect><text class="s7" text-anchor="middle" x="608" y="65">App C</text>
+<rect fill="#2d8659" height="34" rx="3" width="96" x="354" y="76"></rect><text class="s7" text-anchor="middle" x="402" y="91">Dependencias</text><text class="s7" text-anchor="middle" x="402" y="104">(solo librerías)</text>
+<rect fill="#2d8659" height="34" rx="3" width="96" x="457" y="76"></rect><text class="s7" text-anchor="middle" x="505" y="91">Dependencias</text><text class="s7" text-anchor="middle" x="505" y="104">(solo librerías)</text>
+<rect fill="#2d8659" height="34" rx="3" width="96" x="560" y="76"></rect><text class="s7" text-anchor="middle" x="608" y="91">Dependencias</text><text class="s7" text-anchor="middle" x="608" y="104">(solo librerías)</text>
+<rect fill="#e89822" height="26" rx="3" width="302" x="354" y="114"></rect><text class="t7" text-anchor="middle" x="505" y="132">MOTOR DE CONTENEDORES — namespaces + cgroups</text>
+<rect fill="#d13c3c" height="24" rx="3" width="302" x="354" y="144"></rect><text class="t7" text-anchor="middle" x="505" y="161">NÚCLEO DEL ANFITRIÓN — COMPARTIDO POR TODOS</text>
+<rect fill="#333" height="22" rx="3" width="302" x="354" y="172"></rect><text class="t7" text-anchor="middle" x="505" y="187">HARDWARE</text>
+<rect fill="#f2f6fa" height="20" rx="3" stroke="#0055a0" width="302" x="24" y="174"></rect>
+<text class="n7" text-anchor="middle" x="175" y="188">GB · segundos · decenas por anfitrión · cualquier SO</text>
+<rect fill="#f2f6fa" height="20" rx="3" stroke="#2d8659" width="302" x="354" y="198"></rect>
+<text class="n7" text-anchor="middle" x="505" y="212">MB · milisegundos · cientos · solo el SO del núcleo</text>
+<rect fill="#eaf0f6" height="18" rx="3" width="302" x="24" y="200"></rect>
+<text style="font:700 9px system-ui;fill:#0055a0" text-anchor="middle" x="175" y="213">Aislamiento FUERTE (frontera de hardware)</text>
+<rect fill="#fdeaea" height="18" rx="3" width="302" x="354" y="222"></rect>
+<text style="font:700 9px system-ui;fill:#a02020" text-anchor="middle" x="505" y="235">Aislamiento MÁS DÉBIL (frontera de núcleo)</text>
+<text class="k7" text-anchor="middle" x="340" y="262">EN LA PRÁCTICA NO SE ELIGE: SE ESTRATIFICA</text>
+<rect fill="#0055a0" height="46" rx="5" width="500" x="90" y="270"></rect>
+<text class="t7" text-anchor="middle" x="340" y="288">Contenedores DENTRO de máquinas virtuales DENTRO de un clúster de hipervisores</text>
+<text class="s7" text-anchor="middle" x="340" y="304">es el modelo de toda la nube pública y de la mayoría de instalaciones reales</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="334">[Fuente: OCI-SPEC; NIST-SP800-190; LINUX-NS]</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg aria-label="Los siete principios del diseño universal formulados por el Center for Universal Design en 1997: uso equitativo, flexibilidad de uso, uso simple e intuitivo, información perceptible, tolerancia al error, escaso esfuerzo físico y tamaño y espacio adecuados, cada uno con su traducción al diseño de software" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 10.5px system-ui,sans-serif;fill:#fff}.s2{font:9px system-ui,sans-serif;fill:#fff}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}.k2{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d2{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h2" text-anchor="middle" x="340" y="20">Los 7 principios del diseño universal (CUD, 1997)</text>
+<rect fill="#0055a0" height="62" rx="5" width="210" x="20" y="34"></rect>
+<text class="t2" text-anchor="middle" x="125" y="52">1 · USO EQUITATIVO</text>
+<text class="s2" text-anchor="middle" x="125" y="70">Útil para todos, sin segregar</text>
+<text class="s2" text-anchor="middle" x="125" y="86">→ un solo sitio, no versión aparte</text>
+<rect fill="#0055a0" height="62" rx="5" width="210" x="240" y="34"></rect>
+<text class="t2" text-anchor="middle" x="345" y="52">2 · FLEXIBILIDAD DE USO</text>
+<text class="s2" text-anchor="middle" x="345" y="70">Se adapta a preferencias</text>
+<text class="s2" text-anchor="middle" x="345" y="86">→ ratón, teclado, voz, táctil</text>
+<rect fill="#0055a0" height="62" rx="5" width="200" x="460" y="34"></rect>
+<text class="t2" text-anchor="middle" x="560" y="52">3 · SIMPLE E INTUITIVO</text>
+<text class="s2" text-anchor="middle" x="560" y="70">Fácil sin experiencia previa</text>
+<text class="s2" text-anchor="middle" x="560" y="86">→ lenguaje claro, sin jerga</text>
+<rect fill="#2d8659" height="62" rx="5" width="210" x="20" y="106"></rect>
+<text class="t2" text-anchor="middle" x="125" y="124">4 · INFORMACIÓN PERCEPTIBLE</text>
+<text class="s2" text-anchor="middle" x="125" y="142">Llega sea cual sea el sentido</text>
+<text class="s2" text-anchor="middle" x="125" y="158">→ nunca solo color; subtítulos</text>
+<rect fill="#2d8659" height="62" rx="5" width="210" x="240" y="106"></rect>
+<text class="t2" text-anchor="middle" x="345" y="124">5 · TOLERANCIA AL ERROR</text>
+<text class="s2" text-anchor="middle" x="345" y="142">Minimiza riesgo y consecuencia</text>
+<text class="s2" text-anchor="middle" x="345" y="158">→ confirmar, deshacer, conservar</text>
+<rect fill="#2d8659" height="62" rx="5" width="200" x="460" y="106"></rect>
+<text class="t2" text-anchor="middle" x="560" y="124">6 · ESCASO ESFUERZO FÍSICO</text>
+<text class="s2" text-anchor="middle" x="560" y="142">Uso cómodo y sin fatiga</text>
+<text class="s2" text-anchor="middle" x="560" y="158">→ sin gestos complejos</text>
+<rect fill="#e89822" height="52" rx="5" width="420" x="130" y="178"></rect>
+<text class="t2" text-anchor="middle" x="340" y="197">7 · TAMAÑO Y ESPACIO ADECUADOS PARA EL ACCESO Y EL USO</text>
+<text class="s2" text-anchor="middle" x="340" y="215">→ diseño adaptable, sin desplazamiento horizontal, zonas de pulsación suficientes</text>
+<line stroke="#ccc" stroke-width="1" x1="20" x2="660" y1="246" y2="246"></line>
+<text class="k2" x="20" y="266">EL VOCABULARIO ESPAÑOL EQUIVALENTE (RDL 1/2013)</text>
+<rect fill="#eef3f8" height="40" rx="4" width="205" x="20" y="274"></rect>
+<text class="d2" text-anchor="middle" x="122" y="290">Accesibilidad universal</text>
+<text class="d2" text-anchor="middle" x="122" y="305">= la condición del resultado</text>
+<rect fill="#eef3f8" height="40" rx="4" width="206" x="237" y="274"></rect>
+<text class="d2" text-anchor="middle" x="340" y="290">Diseño para todas las personas</text>
+<text class="d2" text-anchor="middle" x="340" y="305">= la actividad de diseñar</text>
+<rect fill="#eef3f8" height="40" rx="4" width="205" x="455" y="274"></rect>
+<text class="d2" text-anchor="middle" x="557" y="290">Ajustes razonables</text>
+<text class="d2" text-anchor="middle" x="557" y="305">= medida individual</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="332">[Fuente: CUD; TRLGDPD; CDPD]</text>
+</svg>

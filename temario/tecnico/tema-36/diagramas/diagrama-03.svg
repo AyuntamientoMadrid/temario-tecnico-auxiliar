@@ -1,0 +1,28 @@
+<svg aria-label="Amenazas y vectores de ataque: cadena de amenaza, vulnerabilidad, riesgo e impacto; clasificación de ataques en interceptación, modificación, fabricación e interrupción según la dimensión que rompen; y cifras del informe ENISA Threat Landscape 2025 con 4.875 incidentes, 77 por ciento de ataques de denegación de servicio pero solo 2 por ciento con interrupción real, 60 por ciento de phishing como vector de entrada y 21,3 por ciento de explotación de vulnerabilidades" role="img" viewbox="0 0 680 364" xmlns="http://www.w3.org/2000/svg">
+<style>.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.t3{font:700 10px system-ui,sans-serif;fill:#fff}.s3{font:8.5px system-ui,sans-serif;fill:#fff}.d3{font:8.5px system-ui,sans-serif;fill:#333}.b3{font:700 9px system-ui,sans-serif;fill:#0055a0}.n3{font:8px system-ui,sans-serif;fill:#666}.big3{font:700 17px system-ui,sans-serif;fill:#fff}.hd3{font:700 8.5px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h3" text-anchor="middle" x="340" y="20">Sobre la amenaza no se actúa: se actúa sobre la vulnerabilidad y el impacto</text>
+<text class="k3" x="20" y="40">LA CADENA DEL RIESGO</text>
+<rect fill="#999" height="42" rx="5" width="118" x="20" y="48"></rect><text class="t3" text-anchor="middle" x="79" y="66">AMENAZA</text><text class="s3" text-anchor="middle" x="79" y="80">Existe fuera de mí</text>
+<text class="d3" x="145" y="73">aprovecha</text>
+<rect fill="#d13c3c" height="42" rx="5" width="118" x="196" y="48"></rect><text class="t3" text-anchor="middle" x="255" y="66">VULNERABILIDAD</text><text class="s3" text-anchor="middle" x="255" y="80">Debilidad propia</text>
+<text class="d3" x="321" y="73">produce</text>
+<rect fill="#e89822" height="42" rx="5" width="118" x="366" y="48"></rect><text class="t3" text-anchor="middle" x="425" y="66">RIESGO</text><text class="s3" text-anchor="middle" x="425" y="80">Probabilidad × impacto</text>
+<text class="d3" x="491" y="73">lo reduce</text>
+<rect fill="#2d8659" height="42" rx="5" width="118" x="542" y="48"></rect><text class="t3" text-anchor="middle" x="601" y="66">SALVAGUARDA</text><text class="s3" text-anchor="middle" x="601" y="80">Deja riesgo residual</text>
+<text class="k3" x="20" y="112">CLASIFICACIÓN POR LA DIMENSIÓN QUE ROMPEN</text>
+<text class="hd3" x="26" y="128">TIPO</text><text class="hd3" x="176" y="128">DIMENSIÓN</text><text class="hd3" x="286" y="128">EJEMPLOS EN RED</text><text class="hd3" x="536" y="128">¿SE DETECTA?</text>
+<rect fill="#0055a0" height="26" rx="4" width="150" x="20" y="134"></rect><text class="s3" text-anchor="middle" x="95" y="151">INTERCEPTACIÓN · pasivo</text>
+<text class="d3" x="176" y="151">Confidencialidad</text><text class="d3" x="286" y="151">Escucha de tráfico, captura de credenciales</text><text class="d3" x="536" y="151">Muy difícil: prevenir</text>
+<rect fill="#d13c3c" height="26" rx="4" width="150" x="20" y="164"></rect><text class="s3" text-anchor="middle" x="95" y="181">MODIFICACIÓN · activo</text>
+<text class="d3" x="176" y="181">Integridad</text><text class="d3" x="286" y="181">Alterar un paquete, envenenar la caché DNS</text><text class="d3" x="536" y="181">Sí: HMAC y alertas</text>
+<rect fill="#d13c3c" height="26" rx="4" width="150" x="20" y="194"></rect><text class="s3" text-anchor="middle" x="95" y="211">FABRICACIÓN · activo</text>
+<text class="d3" x="176" y="211">Autenticidad</text><text class="d3" x="286" y="211">Suplantar IP o MAC, correo falsificado</text><text class="d3" x="536" y="211">Sí: autenticación</text>
+<rect fill="#d13c3c" height="26" rx="4" width="150" x="20" y="224"></rect><text class="s3" text-anchor="middle" x="95" y="241">INTERRUPCIÓN · activo</text>
+<text class="d3" x="176" y="241">Disponibilidad</text><text class="d3" x="286" y="241">DoS y DDoS, corte de enlace, agotamiento</text><text class="d3" x="536" y="241">Sí, y de inmediato</text>
+<text class="k3" x="20" y="268">LAS CIFRAS QUE CORRIGEN LA INTUICIÓN · ENISA ETL 2025 · 4.875 INCIDENTES · 1-7-2024 A 30-6-2025</text>
+<rect fill="#e89822" height="52" rx="5" width="156" x="20" y="276"></rect><text class="big3" text-anchor="middle" x="98" y="298">77 %</text><text class="s3" text-anchor="middle" x="98" y="313">de los incidentes son DDoS…</text><text class="s3" text-anchor="middle" x="98" y="324">pero solo el 2 % interrumpe</text>
+<rect fill="#d13c3c" height="52" rx="5" width="156" x="184" y="276"></rect><text class="big3" text-anchor="middle" x="262" y="298">60 %</text><text class="s3" text-anchor="middle" x="262" y="313">de los accesos iniciales</text><text class="s3" text-anchor="middle" x="262" y="324">son PHISHING</text>
+<rect fill="#d13c3c" height="52" rx="5" width="156" x="348" y="276"></rect><text class="big3" text-anchor="middle" x="426" y="298">21,3 %</text><text class="s3" text-anchor="middle" x="426" y="313">explotación de</text><text class="s3" text-anchor="middle" x="426" y="324">VULNERABILIDADES</text>
+<rect fill="#0055a0" height="52" rx="5" width="148" x="512" y="276"></rect><text class="big3" text-anchor="middle" x="586" y="298">80 %</text><text class="s3" text-anchor="middle" x="586" y="313">de la ingeniería social ya</text><text class="s3" text-anchor="middle" x="586" y="324">usa IA (principios de 2025)</text>
+<text class="n3" x="20" y="352">[Fuente: ENISA Threat Landscape 2025 · MAGERIT v3 · ENS, RD 311/2022, mp.com.3.2]</text>
+</svg>

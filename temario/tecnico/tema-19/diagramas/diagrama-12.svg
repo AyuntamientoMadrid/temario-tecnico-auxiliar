@@ -1,0 +1,27 @@
+<svg aria-label="Matriz de clasificación de disparadores: BEFORE y AFTER cruzados con de fila y de sentencia, más INSTEAD OF sobre vistas y eventos programados por tiempo" role="img" viewbox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t12{font:700 11px system-ui,sans-serif;fill:#fff}.s12{font:10px system-ui,sans-serif;fill:#fff}.l12{font:11px system-ui,sans-serif;fill:#444}.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h12" text-anchor="middle" x="340" y="20">Cuatro combinaciones DML + dos tipos especiales</text>
+<rect fill="#0055a0" height="26" width="180" x="180" y="34"></rect><text class="t12" text-anchor="middle" x="270" y="52">DE FILA</text>
+<rect fill="#2d8659" height="26" width="180" x="360" y="34"></rect><text class="t12" text-anchor="middle" x="450" y="52">DE SENTENCIA</text>
+<rect fill="#e89822" height="26" width="160" x="20" y="60"></rect><text class="t12" text-anchor="middle" x="100" y="78">BEFORE</text>
+<rect fill="#c98a1f" height="26" width="160" x="20" y="86"></rect><text class="t12" text-anchor="middle" x="100" y="104">AFTER</text>
+<rect fill="#fbe9cf" height="52" stroke="#fff" width="180" x="180" y="60"></rect><text style="font:10.5px system-ui;fill:#123" text-anchor="middle" x="270" y="81">valida/modifica antes,</text>
+<text style="font:10.5px system-ui;fill:#123" text-anchor="middle" x="270" y="97">1 ejecución por fila (OLD/NEW)</text>
+<rect fill="#e3f1e9" height="52" stroke="#fff" width="180" x="360" y="60"></rect><text style="font:10.5px system-ui;fill:#123" text-anchor="middle" x="450" y="81">valida antes del lote,</text>
+<text style="font:10.5px system-ui;fill:#123" text-anchor="middle" x="450" y="97">1 ejecución por sentencia</text>
+<rect fill="#0055a0" height="70" rx="6" width="300" x="20" y="130"></rect>
+<text class="t12" text-anchor="middle" x="170" y="152">INSTEAD OF (sobre vistas)</text>
+<text class="s12" text-anchor="middle" x="170" y="172">sustituye el DML cuando la vista</text>
+<text class="s12" text-anchor="middle" x="170" y="186">no es directamente actualizable</text>
+<rect fill="#d13c3c" height="70" rx="6" width="300" x="340" y="130"></rect>
+<text class="t12" text-anchor="middle" x="490" y="152">EVENTOS PROGRAMADOS</text>
+<text class="s12" text-anchor="middle" x="490" y="172">se disparan por TIEMPO, no por DML</text>
+<text class="s12" text-anchor="middle" x="490" y="186">mantenimiento periódico, purgas</text>
+<rect fill="#eef4fa" height="120" rx="6" stroke="#0055a0" width="560" x="60" y="216"></rect>
+<text style="font:700 12px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="238">Tres casos de uso principales</text>
+<text class="l12" text-anchor="middle" x="340" y="260">Auditoría y trazabilidad (AFTER + tabla de log con OLD/NEW)</text>
+<text class="l12" text-anchor="middle" x="340" y="280">Mantenimiento de integridad (BEFORE + validación cruzada entre tablas)</text>
+<text class="l12" text-anchor="middle" x="340" y="300">Automatización (contadores derivados, timestamps, notificaciones)</text>
+<text style="font:700 11px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="322">Usar con moderación: efectos ocultos, cascadas, coste en rendimiento</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="352">[Fuente: ELMASRI, cap. 5; MYSQL-DOC]</text>
+</svg>

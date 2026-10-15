@@ -1,0 +1,59 @@
+<svg aria-label="Secuencia temporal de CSMA barra CA: tras encontrar el medio libre durante un DIFS de 34 microsegundos la estación espera además un retroceso aleatorio de entre cero y CW menos uno ranuras de 9 microsegundos, transmite y el receptor responde con un acuse de recibo tras un SIFS de 16 microsegundos; debajo, el escenario del nodo oculto en el que dos estaciones que no se oyen entre sí colisionan en el punto de acceso, y su solución mediante el intercambio RTS CTS que actualiza el vector de asignación de red" role="img" viewbox="0 0 680 424" xmlns="http://www.w3.org/2000/svg">
+<style>.h14{font:700 13px system-ui,sans-serif;fill:#0055a0}.k14{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d14{font:8.5px system-ui,sans-serif;fill:#333}.n14{font:8px system-ui,sans-serif;fill:#666}.w14{font:700 8.5px system-ui,sans-serif;fill:#fff}.r14{font:700 9px system-ui,sans-serif;fill:#d13c3c}.g14{font:700 9px system-ui,sans-serif;fill:#2d8659}</style>
+<defs><marker id="m14" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="h14" text-anchor="middle" x="340" y="20">CSMA/CA: la colisión no se puede detectar, así que se evita</text>
+<text class="n14" text-anchor="middle" x="340" y="37">El emisor no oye mientras transmite: su propia antena ensordece su receptor</text>
+<text class="k14" x="30" y="58">SECUENCIA TEMPORAL</text>
+<rect fill="#c9d6e2" height="26" rx="3" width="80" x="30" y="66"></rect>
+<text class="d14" text-anchor="middle" x="70" y="83">MEDIO OCUPADO</text>
+<rect fill="#3d82c4" height="26" rx="3" width="76" x="112" y="66"></rect>
+<text class="w14" text-anchor="middle" x="150" y="83">DIFS 34 µs</text>
+<rect fill="#e89822" height="26" rx="2" width="24" x="190" y="66"></rect>
+<rect fill="#e89822" height="26" rx="2" width="24" x="216" y="66"></rect>
+<rect fill="#e89822" height="26" rx="2" width="24" x="242" y="66"></rect>
+<rect fill="#e89822" height="26" rx="2" width="24" x="268" y="66"></rect>
+<rect fill="#0055a0" height="26" rx="3" width="220" x="294" y="66"></rect>
+<text class="w14" text-anchor="middle" x="404" y="83">TRAMA DE DATOS</text>
+<rect fill="#7fa8cc" height="26" rx="3" width="42" x="516" y="66"></rect>
+<text class="w14" text-anchor="middle" x="537" y="83">SIFS</text>
+<rect fill="#2d8659" height="26" rx="3" width="60" x="560" y="66"></rect>
+<text class="w14" text-anchor="middle" x="590" y="83">ACK</text>
+<text class="k14" text-anchor="middle" x="241" y="60">RETROCESO ALEATORIO</text>
+<text class="n14" x="190" y="105">ranuras de 9 µs: se decrementa SOLO si el medio sigue libre, y se CONGELA si alguien transmite</text>
+<text class="g14" text-anchor="middle" x="344" y="120">El ACK espera solo un SIFS: prioridad absoluta, nunca colisiona</text>
+<rect fill="#eef4fa" height="20" rx="3" width="628" x="30" y="128"></rect>
+<text class="d14" x="40" y="142">Tiempos en 5 GHz: SIFS 16 µs · ranura 9 µs · DIFS = SIFS + 2 × ranura = 34 µs · PIFS = SIFS + 1 ranura = 25 µs</text>
+<rect fill="#f7f9fb" height="20" rx="3" width="628" x="30" y="152"></rect>
+<text class="d14" x="40" y="166">En 802.11b a 2,4 GHz: SIFS 10 µs y ranura 20 µs, luego DIFS = 50 µs. Los espacios crean prioridades: quien empieza antes, gana</text>
+<rect fill="#eef4fa" height="20" rx="3" width="628" x="30" y="176"></rect>
+<text class="d14" x="40" y="190">Ventana de contienda: CWmín 15 y CWmáx 1023 en OFDM. Se DUPLICA en cada intento fallido. Sin ACK, se supone colisión</text>
+<text class="k14" x="30" y="214">EL PROBLEMA DEL NODO OCULTO Y SU SOLUCIÓN</text>
+<rect fill="#fbeaea" height="100" rx="4" width="300" x="30" y="222"></rect>
+<circle cx="66" cy="266" fill="#0055a0" r="12"></circle><text class="w14" text-anchor="middle" x="66" y="270">A</text>
+<rect fill="#333" height="24" rx="3" width="32" x="164" y="254"></rect><text class="w14" text-anchor="middle" x="180" y="270">AP</text>
+<circle cx="294" cy="266" fill="#0055a0" r="12"></circle><text class="w14" text-anchor="middle" x="294" y="270">C</text>
+<path d="M80,266 L160,266" marker-end="url(#m14)" stroke="#2d8659" stroke-width="1.6"></path>
+<path d="M280,266 L200,266" marker-end="url(#m14)" stroke="#2d8659" stroke-width="1.6"></path>
+<text class="r14" text-anchor="middle" x="180" y="296">COLISIÓN aquí</text>
+<path d="M80,242 L280,242" stroke="#d13c3c" stroke-dasharray="5,4" stroke-width="1.4"></path>
+<text class="n14" text-anchor="middle" x="180" y="238">A y C NO se oyen entre sí</text>
+<text class="d14" x="40" y="314">La escucha falla: el medio que oye A no es el que ve el AP</text>
+<rect fill="#e6f2ec" height="100" rx="4" width="322" x="336" y="222"></rect>
+<text class="k14" x="346" y="238">SOLUCIÓN: RTS / CTS + NAV (detección VIRTUAL)</text>
+<rect fill="#0055a0" height="18" rx="3" width="60" x="346" y="246"></rect>
+<text class="w14" text-anchor="middle" x="376" y="259">A → RTS</text>
+<path d="M408,255 L424,255" marker-end="url(#m14)" stroke="#0055a0" stroke-width="1.4"></path>
+<rect fill="#2d8659" height="18" rx="3" width="66" x="428" y="246"></rect>
+<text class="w14" text-anchor="middle" x="461" y="259">AP → CTS</text>
+<path d="M496,255 L512,255" marker-end="url(#m14)" stroke="#2d8659" stroke-width="1.4"></path>
+<rect fill="#e89822" height="18" rx="3" width="132" x="516" y="246"></rect>
+<text class="w14" text-anchor="middle" x="582" y="259">TODOS actualizan su NAV</text>
+<text class="d14" x="346" y="280">La clave: el CTS lo oyen TODAS las estaciones al alcance del</text>
+<text class="d14" x="346" y="292">punto de acceso, incluida C, aunque no oyese el RTS de A</text>
+<text class="n14" x="346" y="310">Ambos llevan la DURACIÓN prevista de la ocupación del medio</text>
+<rect fill="none" height="56" rx="5" stroke="#0055a0" stroke-width="1.5" width="628" x="30" y="334"></rect>
+<text class="k14" text-anchor="middle" x="344" y="354">CSMA/CD frente a CSMA/CA — la comparación central del tema</text>
+<text class="d14" text-anchor="middle" x="344" y="370">detecta la colisión / la evita · cable / radio · sin acuse / ACK obligatorio · atasco de 32 bits / RTS-CTS y NAV</text>
+<text class="d14" text-anchor="middle" x="344" y="384">retroceso solo tras colisionar / también antes · se desactiva en dúplex / siempre activa, porque la radio es semidúplex</text>
+<text class="n14" text-anchor="end" x="670" y="412">[Fuente: IEEE 802.11 · Gast]</text>
+</svg>

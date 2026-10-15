@@ -1,0 +1,28 @@
+<svg aria-label="Estructura de la etiqueta 802.1Q insertada en la trama Ethernet: identificador de protocolo de etiqueta de 16 bits con valor hexadecimal 8100, punto de código de prioridad de 3 bits, indicador de elegibilidad de descarte de 1 bit e identificador de red local virtual de 12 bits; la etiqueta añade 4 bytes a la trama y permite 4094 redes virtuales utilizables" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 10px system-ui,sans-serif;fill:#fff}.s3{font:8.5px system-ui,sans-serif;fill:#fff}.d3{font:9px system-ui,sans-serif;fill:#333}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n3{font:8.5px system-ui,sans-serif;fill:#666}.b3{font:700 10px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h3" text-anchor="middle" x="340" y="20">La etiqueta 802.1Q dentro de la trama Ethernet</text>
+<text class="k3" x="24" y="42">TRAMA SIN ETIQUETAR</text>
+<rect fill="#888" height="28" rx="3" width="120" x="20" y="48"></rect><text class="t3" text-anchor="middle" x="80" y="66">MAC destino</text>
+<rect fill="#888" height="28" rx="3" width="120" x="144" y="48"></rect><text class="t3" text-anchor="middle" x="204" y="66">MAC origen</text>
+<rect fill="#aaa" height="28" rx="3" width="90" x="268" y="48"></rect><text class="t3" text-anchor="middle" x="313" y="66">EtherType</text>
+<rect fill="#ccc" height="28" rx="3" width="220" x="362" y="48"></rect><text style="font:700 10px system-ui;fill:#333" text-anchor="middle" x="472" y="66">Datos</text>
+<rect fill="#aaa" height="28" rx="3" width="74" x="586" y="48"></rect><text class="t3" text-anchor="middle" x="623" y="66">FCS</text>
+<text class="k3" x="24" y="104">TRAMA ETIQUETADA — se insertan 4 BYTES tras la MAC de origen</text>
+<rect fill="#888" height="28" rx="3" width="100" x="20" y="110"></rect><text class="t3" text-anchor="middle" x="70" y="128">MAC destino</text>
+<rect fill="#888" height="28" rx="3" width="100" x="124" y="110"></rect><text class="t3" text-anchor="middle" x="174" y="128">MAC origen</text>
+<rect fill="#0055a0" height="28" rx="3" stroke="#e89822" stroke-width="2" width="256" x="228" y="110"></rect><text class="t3" text-anchor="middle" x="356" y="128">ETIQUETA 802.1Q — 4 bytes</text>
+<rect fill="#aaa" height="28" rx="3" width="70" x="488" y="110"></rect><text class="t3" text-anchor="middle" x="523" y="128">EtherType</text>
+<rect fill="#ccc" height="28" rx="3" width="98" x="562" y="110"></rect><text style="font:700 10px system-ui;fill:#333" text-anchor="middle" x="611" y="128">Datos + FCS</text>
+<line stroke="#e89822" stroke-width="1.5" x1="228" x2="140" y1="140" y2="164"></line><line stroke="#e89822" stroke-width="1.5" x1="484" x2="660" y1="140" y2="164"></line>
+<rect fill="#0055a0" height="52" rx="4" width="140" x="136" y="166"></rect><text class="t3" text-anchor="middle" x="206" y="184">TPID</text><text class="s3" text-anchor="middle" x="206" y="198">16 bits</text><text class="s3" text-anchor="middle" x="206" y="212">valor fijo 0x8100</text>
+<rect fill="#2d8659" height="52" rx="4" width="110" x="280" y="166"></rect><text class="t3" text-anchor="middle" x="335" y="184">PCP</text><text class="s3" text-anchor="middle" x="335" y="198">3 bits</text><text class="s3" text-anchor="middle" x="335" y="212">prioridad 0-7</text>
+<rect fill="#e89822" height="52" rx="4" width="80" x="394" y="166"></rect><text class="t3" text-anchor="middle" x="434" y="184">DEI</text><text class="s3" text-anchor="middle" x="434" y="198">1 bit</text><text class="s3" text-anchor="middle" x="434" y="212">descartable</text>
+<rect fill="#d13c3c" height="52" rx="4" width="182" x="478" y="166"></rect><text class="t3" text-anchor="middle" x="569" y="184">VID</text><text class="s3" text-anchor="middle" x="569" y="198">12 bits</text><text class="s3" text-anchor="middle" x="569" y="212">identificador de VLAN</text>
+<rect fill="#eef3f8" height="42" rx="4" width="316" x="20" y="232"></rect>
+<text class="b3" text-anchor="middle" x="178" y="249">12 bits = 4096 valores</text><text class="d3" text-anchor="middle" x="178" y="265">0 y 4095 reservados → 1-4094 utilizables</text>
+<rect fill="#fbeaea" height="42" rx="4" width="316" x="344" y="232"></rect>
+<text class="b3" text-anchor="middle" x="502" y="249">La VLAN 1 es la predeterminada</text><text class="d3" text-anchor="middle" x="502" y="265">No usarla ni para datos, ni gestión, ni nativa</text>
+<rect fill="none" height="22" rx="4" stroke="#0055a0" stroke-width="1.5" width="500" x="90" y="282"></rect>
+<text class="k3" text-anchor="middle" x="340" y="297">La trama etiquetada mide 4 bytes más: los troncales deben admitirlo</text>
+<text class="n3" text-anchor="end" x="670" y="316">[Fuente: IEEE8021Q]</text>
+</svg>

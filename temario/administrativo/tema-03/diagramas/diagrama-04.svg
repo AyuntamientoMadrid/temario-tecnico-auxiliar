@@ -1,0 +1,26 @@
+<svg aria-label="Las Áreas de Gobierno: niveles esenciales, número máximo de 15 y determinación por el alcalde, según el artículo 40" role="img" viewbox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .d-c{fill:#0055a0;stroke:#003d75;stroke-width:2}
+    .d-b{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .d-t{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .d-h{font:700 12px system-ui,sans-serif;fill:#003d75;text-anchor:middle}
+    .d-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+  </style>
+<ellipse class="d-c" cx="350" cy="80" rx="160" ry="48"></ellipse>
+<text class="d-t" x="350" y="74">ÁREAS DE GOBIERNO</text>
+<text class="d-t" style="font-weight:400;font-size:11px" x="350" y="94">niveles esenciales · sectores homogéneos</text>
+<rect fill="#fdf4e4" height="80" rx="8" stroke="#e89822" stroke-width="1.5" width="190" x="40" y="170"></rect>
+<text class="d-h" style="fill:#a8650f" x="135" y="200">Número máximo</text>
+<text class="d-t" style="fill:#a8650f;font-size:24px" x="135" y="226">15</text>
+<rect class="d-b" height="80" rx="8" width="190" x="255" y="170"></rect>
+<text class="d-h" x="350" y="198">Las determina</text>
+<text class="d-h" style="font-size:14px" x="350" y="220">EL ALCALDE</text>
+<text class="d-s" x="350" y="238">nº, denominación y atribuciones</text>
+<rect class="d-b" height="80" rx="8" width="190" x="470" y="170"></rect>
+<text class="d-h" x="565" y="198">Pueden depender</text>
+<text class="d-s" x="565" y="220">Áreas de Coordinación</text>
+<text class="d-s" x="565" y="236">o Áreas Delegadas</text>
+<line stroke="#0055a0" stroke-width="1.2" x1="250" x2="135" y1="120" y2="170"></line>
+<line stroke="#0055a0" stroke-width="1.2" x1="350" x2="350" y1="128" y2="170"></line>
+<line stroke="#0055a0" stroke-width="1.2" x1="450" x2="565" y1="120" y2="170"></line>
+</svg>

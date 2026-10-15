@@ -1,0 +1,31 @@
+<svg aria-label="Cabecera IPv4 dispuesta en palabras de 32 bits: primera palabra con versión, longitud de cabecera, tipo de servicio y longitud total; segunda con identificación, indicadores y desplazamiento de fragmento; tercera con tiempo de vida, protocolo y suma de comprobación de la cabecera; cuarta con la dirección de origen; quinta con la dirección de destino; y opciones variables" role="img" viewbox="0 0 680 346" xmlns="http://www.w3.org/2000/svg">
+<style>.t10{font:700 9px system-ui,sans-serif;fill:#fff}.s10{font:8px system-ui,sans-serif;fill:#fff}.d10{font:8.5px system-ui,sans-serif;fill:#333}.h10{font:700 13px system-ui,sans-serif;fill:#0055a0}.k10{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n10{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h10" text-anchor="middle" x="340" y="20">Cabecera IPv4 · 20 octetos sin opciones, 60 con ellas</text>
+<text class="n10" x="26" y="40">0</text><text class="n10" x="180" y="40">8</text><text class="n10" x="336" y="40">16</text><text class="n10" x="492" y="40">24</text><text class="n10" x="638" y="40">31</text>
+<rect fill="#0055a0" height="30" rx="3" width="78" x="24" y="46"></rect><text class="t10" text-anchor="middle" x="63" y="65">Versión (4)</text>
+<rect fill="#0055a0" height="30" rx="3" width="78" x="104" y="46"></rect><text class="t10" text-anchor="middle" x="143" y="65">IHL (4)</text>
+<rect fill="#0055a0" height="30" rx="3" width="152" x="184" y="46"></rect><text class="t10" text-anchor="middle" x="260" y="65">DSCP + ECN (8)</text>
+<rect fill="#0055a0" height="30" rx="3" width="318" x="338" y="46"></rect><text class="t10" text-anchor="middle" x="497" y="65">Longitud total (16)</text>
+<rect fill="#3781c0" height="30" rx="3" width="312" x="24" y="80"></rect><text class="t10" text-anchor="middle" x="180" y="99">Identificación (16)</text>
+<rect fill="#e89822" height="30" rx="3" width="76" x="338" y="80"></rect><text class="t10" text-anchor="middle" x="376" y="99">Flags (3)</text>
+<rect fill="#3781c0" height="30" rx="3" width="240" x="416" y="80"></rect><text class="t10" text-anchor="middle" x="536" y="99">Desplazamiento del fragmento (13)</text>
+<rect fill="#d13c3c" height="30" rx="3" width="152" x="24" y="114"></rect><text class="t10" text-anchor="middle" x="100" y="133">TTL (8)</text>
+<rect fill="#d13c3c" height="30" rx="3" width="158" x="178" y="114"></rect><text class="t10" text-anchor="middle" x="257" y="133">Protocolo (8)</text>
+<rect fill="#2d8659" height="30" rx="3" width="318" x="338" y="114"></rect><text class="t10" text-anchor="middle" x="497" y="133">Suma de comprobación de la CABECERA (16)</text>
+<rect fill="#0055a0" height="30" rx="3" width="632" x="24" y="148"></rect><text class="t10" text-anchor="middle" x="340" y="167">Dirección de ORIGEN (32 bits)</text>
+<rect fill="#0055a0" height="30" rx="3" width="632" x="24" y="182"></rect><text class="t10" text-anchor="middle" x="340" y="201">Dirección de DESTINO (32 bits)</text>
+<rect fill="#9aa7b4" height="26" rx="3" width="632" x="24" y="216"></rect><text class="t10" text-anchor="middle" x="340" y="233">Opciones + relleno (0 a 40 octetos) — poco usadas</text>
+<rect fill="#fbeaea" height="52" rx="4" width="206" x="24" y="254"></rect>
+<text class="k10" text-anchor="middle" x="127" y="271">TTL</text>
+<text class="d10" text-anchor="middle" x="127" y="287">No es tiempo: es un</text>
+<text class="d10" text-anchor="middle" x="127" y="300">contador de saltos</text>
+<rect fill="#e7f2ec" height="52" rx="4" width="206" x="236" y="254"></rect>
+<text class="k10" text-anchor="middle" x="339" y="271">SUMA DE COMPROBACIÓN</text>
+<text class="d10" text-anchor="middle" x="339" y="287">Solo cubre la cabecera</text>
+<text class="d10" text-anchor="middle" x="339" y="300">y se recalcula en cada salto</text>
+<rect fill="#fdf3e3" height="52" rx="4" width="208" x="448" y="254"></rect>
+<text class="k10" text-anchor="middle" x="552" y="271">PROTOCOLO</text>
+<text class="d10" text-anchor="middle" x="552" y="287">1 ICMP · 6 TCP · 17 UDP</text>
+<text class="d10" text-anchor="middle" x="552" y="300">50 ESP · 51 AH · 89 OSPF</text>
+<text class="n10" text-anchor="end" x="670" y="336">[Fuente: RFC 791, RFC 2474]</text>
+</svg>

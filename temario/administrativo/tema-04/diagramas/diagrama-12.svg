@@ -1,0 +1,30 @@
+<svg aria-label="Mapa resumen del Tema 4: el distrito, sus órganos de gobierno y su estructura administrativa" role="img" viewbox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .l-c{fill:#0055a0;stroke:#003d75;stroke-width:2}
+    .l-n{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .l-ct{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .l-h{font:700 12px system-ui,sans-serif;fill:#003d75;text-anchor:middle}
+    .l-s{font:10.5px system-ui,sans-serif;fill:#555;text-anchor:middle}
+    .l-l{stroke:#0055a0;stroke-width:1;fill:none}
+  </style>
+<line class="l-l" x1="350" x2="160" y1="160" y2="70"></line>
+<line class="l-l" x1="350" x2="540" y1="160" y2="70"></line>
+<line class="l-l" x1="350" x2="160" y1="160" y2="255"></line>
+<line class="l-l" x1="350" x2="540" y1="160" y2="255"></line>
+<ellipse class="l-c" cx="350" cy="160" rx="90" ry="44"></ellipse>
+<text class="l-ct" x="350" y="156">EL DISTRITO</text>
+<text class="l-ct" style="font-weight:400;font-size:11px" x="350" y="174">ROGA arts. 61-72</text>
+<rect class="l-n" height="70" rx="8" width="240" x="40" y="34"></rect>
+<text class="l-h" x="160" y="58">Concepto</text>
+<text class="l-s" x="160" y="77">división territorial · gestión desconcentrada</text>
+<text class="l-s" x="160" y="92">la divide el Pleno</text>
+<rect class="l-n" height="70" rx="8" width="240" x="420" y="34"></rect>
+<text class="l-h" x="540" y="58">Órganos de gobierno</text>
+<text class="l-s" x="540" y="77">Junta Municipal + concejal-presidente</text>
+<rect class="l-n" height="56" rx="8" width="240" x="40" y="228"></rect>
+<text class="l-h" x="160" y="252">Concejal-presidente</text>
+<text class="l-s" x="160" y="270">alcalde lo nombra · decreto · superior</text>
+<rect class="l-n" height="56" rx="8" width="240" x="420" y="228"></rect>
+<text class="l-h" x="540" y="252">Coordinador del distrito</text>
+<text class="l-s" x="540" y="270">Junta de Gobierno · resolución · rango DG</text>
+</svg>

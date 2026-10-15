@@ -1,0 +1,66 @@
+<svg aria-label="Amenazas del puesto de usuario final agrupadas en cuatro familias (ataques a la persona, código malicioso, fallos y descuidos, y amenazas físicas) frente a los cuatro tipos de control de ISO 27002 (organizativos, de personas, físicos y tecnológicos), con las cinco dimensiones de seguridad del Esquema Nacional de Seguridad" role="img" viewbox="0 0 680 370" xmlns="http://www.w3.org/2000/svg">
+<style>.t8{font:700 10px system-ui,sans-serif;fill:#fff}.s8{font:9px system-ui,sans-serif;fill:#fff}.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}.k8{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d8{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h8" text-anchor="middle" x="340" y="20">El puesto de usuario: amenazas y controles</text>
+<text class="k8" x="20" y="40">AMENAZAS — cuatro familias</text>
+<rect fill="#d13c3c" height="66" rx="5" width="155" x="20" y="48"></rect>
+<text class="t8" text-anchor="middle" x="97" y="66">A LA PERSONA</text>
+<text class="s8" text-anchor="middle" x="97" y="83">Phishing, vishing,</text>
+<text class="s8" text-anchor="middle" x="97" y="97">smishing, fraude del CEO</text>
+<text class="s8" text-anchor="middle" x="97" y="110">→ no es un fallo técnico</text>
+<rect fill="#d13c3c" height="66" rx="5" width="155" x="185" y="48"></rect>
+<text class="t8" text-anchor="middle" x="262" y="66">CÓDIGO MALICIOSO</text>
+<text class="s8" text-anchor="middle" x="262" y="83">Ransomware, troyanos,</text>
+<text class="s8" text-anchor="middle" x="262" y="97">infostealers, gusanos</text>
+<text class="s8" text-anchor="middle" x="262" y="110">→ vía correo y web</text>
+<rect fill="#e89822" height="66" rx="5" width="155" x="350" y="48"></rect>
+<text class="t8" text-anchor="middle" x="427" y="66">FALLOS Y DESCUIDOS</text>
+<text class="s8" text-anchor="middle" x="427" y="83">Pérdida del equipo, envío</text>
+<text class="s8" text-anchor="middle" x="427" y="97">erróneo, nube personal</text>
+<text class="s8" text-anchor="middle" x="427" y="110">→ la causa más frecuente</text>
+<rect fill="#e89822" height="66" rx="5" width="145" x="515" y="48"></rect>
+<text class="t8" text-anchor="middle" x="587" y="66">FÍSICAS Y DEL ENTORNO</text>
+<text class="s8" text-anchor="middle" x="587" y="83">Espionaje visual,</text>
+<text class="s8" text-anchor="middle" x="587" y="97">impresora compartida,</text>
+<text class="s8" text-anchor="middle" x="587" y="110">retirada sin borrado</text>
+<text class="k8" x="20" y="136">CONTROLES — las cuatro naturalezas de ISO/IEC 27002:2022</text>
+<rect fill="#0055a0" height="72" rx="5" width="155" x="20" y="144"></rect>
+<text class="t8" text-anchor="middle" x="97" y="162">ORGANIZATIVOS</text>
+<text class="s8" text-anchor="middle" x="97" y="179">Política y normativa de uso</text>
+<text class="s8" text-anchor="middle" x="97" y="193">Clasificación de la información</text>
+<text class="s8" text-anchor="middle" x="97" y="207">Gestión de incidentes</text>
+<rect fill="#0055a0" height="72" rx="5" width="155" x="185" y="144"></rect>
+<text class="t8" text-anchor="middle" x="262" y="162">DE PERSONAS</text>
+<text class="s8" text-anchor="middle" x="262" y="179">Formación y concienciación</text>
+<text class="s8" text-anchor="middle" x="262" y="193">Deber de secreto</text>
+<text class="s8" text-anchor="middle" x="262" y="207">Notificación de incidentes</text>
+<rect fill="#2d8659" height="72" rx="5" width="155" x="350" y="144"></rect>
+<text class="t8" text-anchor="middle" x="427" y="162">FÍSICOS</text>
+<text class="s8" text-anchor="middle" x="427" y="179">Puesto despejado y bloqueo</text>
+<text class="s8" text-anchor="middle" x="427" y="193">Filtros de privacidad</text>
+<text class="s8" text-anchor="middle" x="427" y="207">Impresión segura y destrucción</text>
+<rect fill="#2d8659" height="72" rx="5" width="145" x="515" y="144"></rect>
+<text class="t8" text-anchor="middle" x="587" y="162">TECNOLÓGICOS</text>
+<text class="s8" text-anchor="middle" x="587" y="179">Mínimo privilegio y MFA</text>
+<text class="s8" text-anchor="middle" x="587" y="193">Cifrado · EDR · DLP</text>
+<text class="s8" text-anchor="middle" x="587" y="207">Copias y parcheo</text>
+<line stroke="#ccc" stroke-width="1" x1="20" x2="660" y1="230" y2="230"></line>
+<text class="k8" text-anchor="middle" x="340" y="250">Lo que hay que proteger: las cinco dimensiones del ENS (D-I-C-A-T)</text>
+<rect fill="#0055a0" height="44" rx="5" width="122" x="20" y="260"></rect>
+<text class="t8" text-anchor="middle" x="81" y="278">DISPONIBILIDAD</text>
+<text class="s8" text-anchor="middle" x="81" y="294">¿está cuando hace falta?</text>
+<rect fill="#0055a0" height="44" rx="5" width="122" x="150" y="260"></rect>
+<text class="t8" text-anchor="middle" x="211" y="278">INTEGRIDAD</text>
+<text class="s8" text-anchor="middle" x="211" y="294">¿es el dato que era?</text>
+<rect fill="#0055a0" height="44" rx="5" width="122" x="280" y="260"></rect>
+<text class="t8" text-anchor="middle" x="341" y="278">CONFIDENCIALIDAD</text>
+<text class="s8" text-anchor="middle" x="341" y="294">¿accede solo quien debe?</text>
+<rect fill="#e89822" height="44" rx="5" width="122" x="410" y="260"></rect>
+<text class="t8" text-anchor="middle" x="471" y="278">AUTENTICIDAD</text>
+<text class="s8" text-anchor="middle" x="471" y="294">¿es quien dice ser?</text>
+<rect fill="#e89822" height="44" rx="5" width="120" x="540" y="260"></rect>
+<text class="t8" text-anchor="middle" x="600" y="278">TRAZABILIDAD</text>
+<text class="s8" text-anchor="middle" x="600" y="294">¿quién hizo qué?</text>
+<rect fill="none" height="26" rx="5" stroke="#0055a0" stroke-width="2" width="480" x="100" y="314"></rect>
+<text style="font:700 10px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="331">Las tres primeras son la triada CID; autenticidad y trazabilidad las añade el ENS</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="362">[Fuente: ISO27002; ENS; ATTACK]</text>
+</svg>

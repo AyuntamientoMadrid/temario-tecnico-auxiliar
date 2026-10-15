@@ -1,0 +1,34 @@
+<svg aria-label="Comparación entre gestión dentro de banda, que administra los dispositivos por la misma red que transporta los datos de usuario y se pierde si la red cae, y gestión fuera de banda, que utiliza una vía independiente como el puerto de consola, una red de gestión separada o un acceso por red móvil y sobrevive a la caída del plano de datos" role="img" viewbox="0 0 680 310" xmlns="http://www.w3.org/2000/svg">
+<style>.tc{font:700 11px system-ui,sans-serif;fill:#fff}.sc{font:8.5px system-ui,sans-serif;fill:#fff}.dc{font:9px system-ui,sans-serif;fill:#333}.hc{font:700 13px system-ui,sans-serif;fill:#0055a0}.kc{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.nc{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<defs><marker id="a12" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="hc" text-anchor="middle" x="340" y="20">Dentro de banda y fuera de banda</text>
+<rect fill="#e89822" height="30" rx="5" width="316" x="20" y="34"></rect><text class="tc" text-anchor="middle" x="178" y="54">DENTRO DE BANDA (in-band)</text>
+<rect fill="#2d8659" height="30" rx="5" width="316" x="344" y="34"></rect><text class="tc" text-anchor="middle" x="502" y="54">FUERA DE BANDA (out-of-band)</text>
+<rect fill="#0055a0" height="34" rx="4" width="80" x="30" y="76"></rect><text class="tc" text-anchor="middle" x="70" y="97">Técnico</text>
+<line marker-end="url(#a12)" stroke="#0055a0" stroke-width="2" x1="114" x2="160" y1="93" y2="93"></line>
+<rect fill="#888" height="34" rx="4" width="76" x="164" y="76"></rect><text class="sc" text-anchor="middle" x="202" y="91">RED DE</text><text class="sc" text-anchor="middle" x="202" y="104">DATOS</text>
+<line marker-end="url(#a12)" stroke="#0055a0" stroke-width="2" x1="244" x2="284" y1="93" y2="93"></line>
+<rect fill="#0055a0" height="34" rx="4" width="42" x="288" y="76"></rect><text class="sc" text-anchor="middle" x="309" y="97">SW</text>
+<rect fill="#0055a0" height="34" rx="4" width="80" x="354" y="76"></rect><text class="tc" text-anchor="middle" x="394" y="97">Técnico</text>
+<line marker-end="url(#a12)" stroke="#2d8659" stroke-width="2" x1="438" x2="484" y1="86" y2="86"></line>
+<line stroke="#888" stroke-dasharray="3,3" stroke-width="1.5" x1="438" x2="484" y1="102" y2="102"></line>
+<rect fill="#2d8659" height="22" rx="4" width="86" x="488" y="70"></rect><text class="sc" text-anchor="middle" x="531" y="85">RED DE GESTIÓN</text>
+<rect fill="#ccc" height="22" rx="4" width="86" x="488" y="96"></rect><text style="font:8.5px system-ui;fill:#333" text-anchor="middle" x="531" y="111">red de datos</text>
+<line marker-end="url(#a12)" stroke="#2d8659" stroke-width="2" x1="578" x2="608" y1="86" y2="93"></line>
+<rect fill="#0055a0" height="34" rx="4" width="42" x="612" y="76"></rect><text class="sc" text-anchor="middle" x="633" y="97">SW</text>
+<text class="kc" x="24" y="136">SI LA RED DE DATOS CAE…</text>
+<rect fill="#fbeaea" height="34" rx="4" width="316" x="20" y="142"></rect>
+<text class="dc" text-anchor="middle" x="178" y="158">Se pierde TAMBIÉN la capacidad de gestionarla:</text><text class="dc" text-anchor="middle" x="178" y="171">hay que desplazar a alguien con un cable de consola</text>
+<rect fill="#e8f4ee" height="34" rx="4" width="316" x="344" y="142"></rect>
+<text class="dc" text-anchor="middle" x="502" y="158">La vía de gestión SOBREVIVE: el técnico entra</text><text class="dc" text-anchor="middle" x="502" y="171">por la otra puerta y recupera el equipo en minutos</text>
+<text class="kc" x="24" y="198">VÍAS FUERA DE BANDA HABITUALES</text>
+<rect fill="#2d8659" height="30" rx="4" width="156" x="20" y="204"></rect><text class="tc" text-anchor="middle" x="98" y="217">Puerto de consola</text><text class="sc" text-anchor="middle" x="98" y="229">exige presencia física</text>
+<rect fill="#2d8659" height="30" rx="4" width="156" x="182" y="204"></rect><text class="tc" text-anchor="middle" x="260" y="217">Servidor de consolas</text><text class="sc" text-anchor="middle" x="260" y="229">consolas accesibles en remoto</text>
+<rect fill="#2d8659" height="30" rx="4" width="156" x="344" y="204"></rect><text class="tc" text-anchor="middle" x="422" y="217">Puerto de gestión</text><text class="sc" text-anchor="middle" x="422" y="229">interfaz separada del dato</text>
+<rect fill="#2d8659" height="30" rx="4" width="154" x="506" y="204"></rect><text class="tc" text-anchor="middle" x="583" y="217">Acceso por red móvil</text><text class="sc" text-anchor="middle" x="583" y="229">independiente del operador fijo</text>
+<rect fill="#fbeaea" height="24" rx="4" stroke="#d13c3c" stroke-width="1.2" width="640" x="20" y="242"></rect>
+<text class="dc" text-anchor="middle" x="340" y="258">Escenario típico: aplicas una regla en remoto y pierdes la sesión que te permitía deshacerla</text>
+<rect fill="none" height="20" rx="4" stroke="#0055a0" stroke-width="1.5" width="500" x="90" y="272"></rect>
+<text class="kc" text-anchor="middle" x="340" y="286">ENS: red de gestión separada (mp.com.4) y accesible solo desde puestos autorizados (op.acc.2)</text>
+<text class="nc" text-anchor="end" x="670" y="306">[Fuente: ENS; SWITCH-VENDORS]</text>
+</svg>

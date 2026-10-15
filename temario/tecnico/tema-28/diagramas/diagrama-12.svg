@@ -1,0 +1,52 @@
+<svg aria-label="Comparación entre escritorio dedicado o persistente, que conserva los cambios del usuario y hay que parchear uno por uno, y escritorio no dedicado o no persistente, que se descarta al cerrar sesión y se recrea desde la imagen maestra, exigiendo gestionar el perfil del usuario mediante contenedor de perfil, redirección de carpetas, capas de aplicación y directivas" role="img" viewbox="0 0 680 354" xmlns="http://www.w3.org/2000/svg">
+<style>.t12{font:700 10.5px system-ui,sans-serif;fill:#fff}.s12{font:9px system-ui,sans-serif;fill:#fff}.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}.k12{font:700 10.5px system-ui,sans-serif;fill:#0055a0}.n12{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h12" text-anchor="middle" x="340" y="20">La decisión que condiciona todo el diseño VDI: ¿persiste el escritorio?</text>
+<rect fill="#e89822" height="28" rx="4" width="316" x="20" y="34"></rect><text class="t12" text-anchor="middle" x="178" y="53">DEDICADO / PERSISTENTE</text>
+<rect fill="#2d8659" height="28" rx="4" width="316" x="344" y="34"></rect><text class="t12" text-anchor="middle" x="502" y="53">NO DEDICADO / NO PERSISTENTE (flotante)</text>
+<rect fill="#f2f6fa" height="34" rx="3" stroke="#e89822" width="316" x="20" y="70"></rect>
+<text class="n12" text-anchor="middle" x="178" y="84">Asignado de forma permanente a un usuario concreto</text>
+<text class="n12" text-anchor="middle" x="178" y="98">Sus cambios SOBREVIVEN al reinicio</text>
+<rect fill="#f2f6fa" height="34" rx="3" stroke="#2d8659" width="316" x="344" y="70"></rect>
+<text class="n12" text-anchor="middle" x="502" y="84">Se toma del conjunto al iniciar sesión</text>
+<text class="n12" text-anchor="middle" x="502" y="98">SE DESCARTA al cerrarla y se recrea desde la imagen maestra</text>
+<rect fill="#d13c3c" height="60" rx="4" width="154" x="20" y="112"></rect>
+<text class="s12" text-anchor="middle" x="97" y="130">Parcheo: UNO A UNO</text>
+<text class="s12" text-anchor="middle" x="97" y="146">Se pierde la mayor ventaja</text>
+<text class="s12" text-anchor="middle" x="97" y="160">operativa de VDI</text>
+<rect fill="#d13c3c" height="60" rx="4" width="154" x="182" y="112"></rect>
+<text class="s12" text-anchor="middle" x="259" y="130">Almacenamiento: ALTO</text>
+<text class="s12" text-anchor="middle" x="259" y="146">Clones completos</text>
+<text class="s12" text-anchor="middle" x="259" y="160">+ desviación de configuración</text>
+<rect fill="#2d8659" height="60" rx="4" width="154" x="344" y="112"></rect>
+<text class="s12" text-anchor="middle" x="421" y="130">Parcheo: UNA IMAGEN</text>
+<text class="s12" text-anchor="middle" x="421" y="146">Clones enlazados o instantáneos</text>
+<text class="s12" text-anchor="middle" x="421" y="160">Almacenamiento: BAJO</text>
+<rect fill="#2d8659" height="60" rx="4" width="154" x="506" y="112"></rect>
+<text class="s12" text-anchor="middle" x="583" y="130">Escritorio SIEMPRE LIMPIO</text>
+<text class="s12" text-anchor="middle" x="583" y="146">El software malicioso no</text>
+<text class="s12" text-anchor="middle" x="583" y="160">sobrevive al cierre de sesión</text>
+<rect fill="#fdf3e3" height="30" rx="4" stroke="#e89822" width="316" x="20" y="180"></rect>
+<text class="k12" text-anchor="middle" x="178" y="199">Encaje: perfiles técnicos y usuarios con software propio</text>
+<rect fill="#eaf5ec" height="30" rx="4" stroke="#2d8659" width="316" x="344" y="180"></rect>
+<text class="k12" text-anchor="middle" x="502" y="199">Encaje: colectivos numerosos y homogéneos</text>
+<rect fill="#d13c3c" height="26" rx="4" width="640" x="20" y="222"></rect>
+<text class="t12" text-anchor="middle" x="340" y="240">CONDICIÓN INELUDIBLE DEL MODELO NO PERSISTENTE: gestionar el perfil del usuario POR FUERA del escritorio</text>
+<rect fill="#0055a0" height="58" rx="4" width="155" x="20" y="256"></rect>
+<text class="s12" text-anchor="middle" x="97" y="274">CONTENEDOR DE PERFIL</text>
+<text class="s12" text-anchor="middle" x="97" y="290">disco virtual que se monta</text>
+<text class="s12" text-anchor="middle" x="97" y="304">al iniciar sesión</text>
+<rect fill="#0055a0" height="58" rx="4" width="155" x="183" y="256"></rect>
+<text class="s12" text-anchor="middle" x="260" y="274">REDIRECCIÓN DE CARPETAS</text>
+<text class="s12" text-anchor="middle" x="260" y="290">documentos y escritorio</text>
+<text class="s12" text-anchor="middle" x="260" y="304">a un recurso de red central</text>
+<rect fill="#0055a0" height="58" rx="4" width="155" x="346" y="256"></rect>
+<text class="s12" text-anchor="middle" x="423" y="274">CAPAS DE APLICACIÓN</text>
+<text class="s12" text-anchor="middle" x="423" y="290">discos con las aplicaciones</text>
+<text class="s12" text-anchor="middle" x="423" y="304">de cada colectivo</text>
+<rect fill="#0055a0" height="58" rx="4" width="151" x="509" y="256"></rect>
+<text class="s12" text-anchor="middle" x="584" y="274">DIRECTIVAS</text>
+<text class="s12" text-anchor="middle" x="584" y="290">la configuración se APLICA</text>
+<text class="s12" text-anchor="middle" x="584" y="304">en cada inicio, no se guarda</text>
+<text class="n12" text-anchor="middle" x="340" y="330">Sin estas cuatro piezas, el escritorio no persistente se percibe como una pérdida de datos del usuario en cada cierre de sesión</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="346">[Fuente: FSLOGIX; HORIZON-DOC; CITRIX-DOC]</text>
+</svg>

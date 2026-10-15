@@ -1,0 +1,33 @@
+<svg aria-label="Los tres modos de direccionalidad: símplex en un solo sentido, semidúplex en los dos sentidos alternando y dúplex en los dos sentidos a la vez, con ejemplos y con la explicación de por que el Wi-Fi es semidúplex" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t7{font:700 10.5px system-ui,sans-serif;fill:#fff}.s7{font:8.5px system-ui,sans-serif;fill:#fff}.d7{font:9px system-ui,sans-serif;fill:#333}.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}.k7{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n7{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<defs><marker id="a7" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="h7" text-anchor="middle" x="340" y="20">Lo que separa los tres modos es la SIMULTANEIDAD</text>
+<rect fill="#0055a0" height="28" rx="5" width="206" x="20" y="36"></rect><text class="t7" text-anchor="middle" x="123" y="55">SÍMPLEX</text>
+<rect fill="#e89822" height="28" rx="5" width="206" x="237" y="36"></rect><text class="t7" text-anchor="middle" x="340" y="55">SEMIDÚPLEX (half)</text>
+<rect fill="#2d8659" height="28" rx="5" width="206" x="454" y="36"></rect><text class="t7" text-anchor="middle" x="557" y="55">DÚPLEX (full)</text>
+<rect fill="#eef3f8" height="76" rx="4" width="206" x="20" y="70"></rect>
+<text class="d7" text-anchor="middle" x="123" y="88">Un solo sentido, siempre el mismo</text>
+<path d="M50 104 L196 104" marker-end="url(#a7)" stroke="#0055a0" stroke-width="2"></path>
+<text class="d7" text-anchor="middle" x="123" y="124">Radio, TDT, panel informativo</text>
+<text class="n7" text-anchor="middle" x="123" y="138">no hay canal de vuelta</text>
+<rect fill="#fdf3e3" height="76" rx="4" width="206" x="237" y="70"></rect>
+<text class="d7" text-anchor="middle" x="340" y="88">Los dos sentidos, ALTERNANDO</text>
+<path d="M267 100 L413 100" marker-end="url(#a7)" stroke="#0055a0" stroke-width="2"></path>
+<path d="M413 112 L267 112" marker-end="url(#a7)" stroke="#888" stroke-dasharray="4 3" stroke-width="2"></path>
+<text class="d7" text-anchor="middle" x="340" y="128">Walkie-talkie, TETRA, Wi-Fi</text>
+<text class="n7" text-anchor="middle" x="340" y="140">hace falta arbitrar el turno</text>
+<rect fill="#e8f4ee" height="76" rx="4" width="206" x="454" y="70"></rect>
+<text class="d7" text-anchor="middle" x="557" y="88">Los dos sentidos, A LA VEZ</text>
+<path d="M484 100 L630 100" marker-end="url(#a7)" stroke="#0055a0" stroke-width="2"></path>
+<path d="M630 112 L484 112" marker-end="url(#a7)" stroke="#0055a0" stroke-width="2"></path>
+<text class="d7" text-anchor="middle" x="557" y="128">Telefonía, Ethernet conmutado</text>
+<text class="n7" text-anchor="middle" x="557" y="140">dos canales, o FDD, o TDD</text>
+<rect fill="#fbeaea" height="26" rx="4" width="640" x="20" y="156"></rect>
+<text class="d7" text-anchor="middle" x="340" y="173">EL WI-FI ES SEMIDÚPLEX: una antena que transmite no puede escuchar su propia frecuencia</text>
+<rect fill="#eef3f8" height="26" rx="4" width="640" x="20" y="192"></rect>
+<text class="d7" text-anchor="middle" x="340" y="209">Por esa misma razón la radio usa CSMA/CA (evitación) y no CSMA/CD (detección de colisión)</text>
+<rect fill="none" height="42" rx="5" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="230"></rect>
+<text class="k7" text-anchor="middle" x="340" y="247">TDD NO ES SEMIDÚPLEX</text>
+<text class="n7" text-anchor="middle" x="340" y="263">El TDD alterna turnos en microsegundos y el servicio percibido es dúplex; el semidúplex se nota</text>
+<text class="n7" text-anchor="end" x="670" y="294">[Fuente: FOROUZAN; IEEE 802.11]</text>
+</svg>

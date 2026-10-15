@@ -1,0 +1,28 @@
+<svg aria-label="Equipos de interconexión ordenados por capa: en capa uno repetidor concentrador y transceptor que trabajan con señales, en capa dos puente conmutador y punto de acceso que usan direcciones MAC, en capa tres encaminador y conmutador de capa tres que usan direcciones IP, y en capas superiores la pasarela que traduce entre arquitecturas distintas" role="img" viewbox="0 0 680 344" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 10.5px system-ui,sans-serif;fill:#fff}.s9{font:8.5px system-ui,sans-serif;fill:#fff}.d9{font:9px system-ui,sans-serif;fill:#333}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.k9{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n9{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">Cuanto más alta es la capa, más sabe el equipo</text>
+<rect fill="#7a2f8a" height="52" rx="5" width="130" x="20" y="34"></rect><text class="t9" text-anchor="middle" x="85" y="54">CAPAS 4 a 7</text><text class="s9" text-anchor="middle" x="85" y="70">aplicación</text><text class="s9" text-anchor="middle" x="85" y="82">y superiores</text>
+<rect fill="#f3ecf6" height="52" rx="5" width="502" x="158" y="34"></rect>
+<text class="d9" text-anchor="middle" x="409" y="54">PASARELA (gateway): traduce entre arquitecturas o protocolos DISTINTOS</text>
+<text class="d9" text-anchor="middle" x="409" y="70">Pasarela de voz, de correo, de IoT, de pago · también cortafuegos de aplicación y proxy</text>
+<text class="n9" text-anchor="middle" x="409" y="82">Ojo: la puerta de enlace predeterminada NO es esto, es un encaminador</text>
+<rect fill="#0055a0" height="52" rx="5" width="130" x="20" y="94"></rect><text class="t9" text-anchor="middle" x="85" y="114">CAPA 3 — RED</text><text class="s9" text-anchor="middle" x="85" y="130">direcciones IP</text><text class="s9" text-anchor="middle" x="85" y="142">paquetes</text>
+<rect fill="#eef3f8" height="52" rx="5" width="502" x="158" y="94"></rect>
+<text class="d9" text-anchor="middle" x="409" y="114">ENCAMINADOR (router) y CONMUTADOR DE CAPA 3</text>
+<text class="d9" text-anchor="middle" x="409" y="130">Unen redes distintas · tabla de encaminamiento · NAT · fragmentación</text>
+<text class="n9" text-anchor="middle" x="409" y="142">DETIENE LA DIFUSIÓN y descarta bucles gracias al TTL</text>
+<rect fill="#2d8659" height="52" rx="5" width="130" x="20" y="154"></rect><text class="t9" text-anchor="middle" x="85" y="174">CAPA 2 — ENLACE</text><text class="s9" text-anchor="middle" x="85" y="190">direcciones MAC</text><text class="s9" text-anchor="middle" x="85" y="202">tramas</text>
+<rect fill="#e8f4ee" height="52" rx="5" width="502" x="158" y="154"></rect>
+<text class="d9" text-anchor="middle" x="409" y="174">PUENTE · CONMUTADOR (switch) · PUNTO DE ACCESO INALÁMBRICO</text>
+<text class="d9" text-anchor="middle" x="409" y="190">Aprender, reenviar, inundar y envejecer · tabla MAC · STP contra bucles</text>
+<text class="n9" text-anchor="middle" x="409" y="202">Segmenta el dominio de COLISIÓN, no el de DIFUSIÓN</text>
+<rect fill="#e89822" height="52" rx="5" width="130" x="20" y="214"></rect><text class="t9" text-anchor="middle" x="85" y="234">CAPA 1 — FÍSICA</text><text class="s9" text-anchor="middle" x="85" y="250">señales</text><text class="s9" text-anchor="middle" x="85" y="262">sin direcciones</text>
+<rect fill="#fdf3e3" height="52" rx="5" width="502" x="158" y="214"></rect>
+<text class="d9" text-anchor="middle" x="409" y="234">REPETIDOR · CONCENTRADOR (hub) · TRANSCEPTOR · CONVERTIDOR DE MEDIO</text>
+<text class="d9" text-anchor="middle" x="409" y="250">Regeneran la señal, no la amplifican: el ruido acumulado vuelve a cero</text>
+<text class="n9" text-anchor="middle" x="409" y="262">El concentrador repite por TODOS los puertos: un solo dominio de colisión</text>
+<rect fill="none" height="34" rx="5" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="278"></rect>
+<text class="k9" text-anchor="middle" x="340" y="293">EL ROUTER DEL OPERADOR SON TRES EQUIPOS EN UNA CAJA</text>
+<text class="n9" text-anchor="middle" x="340" y="307">módem u ONT que termina la línea + encaminador + conmutador con punto de acceso</text>
+<text class="n9" text-anchor="end" x="670" y="338">[Fuente: TANENBAUM; IEEE 802.1]</text>
+</svg>

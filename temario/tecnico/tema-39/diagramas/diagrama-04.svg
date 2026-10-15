@@ -1,0 +1,52 @@
+<svg aria-label="Los siete principios básicos del Esquema Nacional de Seguridad enunciados en el artículo 5 y desarrollados en los artículos 6 a 11: seguridad como proceso integral, gestión basada en los riesgos, prevención detección respuesta y conservación, existencia de líneas de defensa, vigilancia continua, reevaluación periódica y diferenciación de responsabilidades; los principios e y f comparten el artículo 10, de ahí que siete principios se desarrollen en seis artículos" role="img" viewbox="0 0 680 398" xmlns="http://www.w3.org/2000/svg">
+<style>.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}.k4{font:700 10px system-ui,sans-serif;fill:#0055a0}.d4{font:9px system-ui,sans-serif;fill:#333}.n4{font:8.5px system-ui,sans-serif;fill:#666}.w4{font:700 11px system-ui,sans-serif;fill:#fff}.art4{font:700 9.5px system-ui,sans-serif;fill:#fff}.r4{font:700 8.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h4" text-anchor="middle" x="340" y="19">Los siete principios básicos del ENS — artículo 5, desarrollados en los artículos 6 a 11</text>
+<text class="n4" text-anchor="middle" x="340" y="35">Siete principios y solo seis artículos: el art. 10 lleva dos, porque su rúbrica es «Vigilancia continua y reevaluación periódica»</text>
+<rect fill="#eef4fa" height="44" rx="4" width="632" x="24" y="44"></rect>
+<rect fill="#0055a0" height="44" rx="4" width="52" x="24" y="44"></rect>
+<text class="w4" text-anchor="middle" x="50" y="62">a)</text>
+<text class="art4" text-anchor="middle" x="50" y="78">art. 6</text>
+<text class="k4" x="86" y="61">SEGURIDAD COMO PROCESO INTEGRAL</text>
+<text class="d4" x="86" y="74">Elementos humanos, materiales, técnicos, jurídicos y organizativos. Máxima atención a la concienciación del personal</text>
+<text class="r4" x="86" y="85">EXCLUYE: cualquier actuación puntual o tratamiento coyuntural (art. 6.1, literal)</text>
+<rect fill="#eef4fa" height="44" rx="4" width="632" x="24" y="92"></rect>
+<rect fill="#0055a0" height="44" rx="4" width="52" x="24" y="92"></rect>
+<text class="w4" text-anchor="middle" x="50" y="110">b)</text>
+<text class="art4" text-anchor="middle" x="50" y="126">art. 7</text>
+<text class="k4" x="86" y="109">GESTIÓN DE LA SEGURIDAD BASADA EN LOS RIESGOS</text>
+<text class="d4" x="86" y="122">Actividad continua y permanentemente actualizada. Entorno controlado, riesgos en niveles aceptables</text>
+<text class="r4" x="86" y="133">EXCLUYE: pretender eliminar todo riesgo. Las medidas han de ser equilibradas y proporcionadas</text>
+<rect fill="#eef4fa" height="44" rx="4" width="632" x="24" y="140"></rect>
+<rect fill="#0055a0" height="44" rx="4" width="52" x="24" y="140"></rect>
+<text class="w4" text-anchor="middle" x="50" y="158">c)</text>
+<text class="art4" text-anchor="middle" x="50" y="174">art. 8</text>
+<text class="k4" x="86" y="157">PREVENCIÓN, DETECCIÓN, RESPUESTA Y CONSERVACIÓN</text>
+<text class="d4" x="86" y="170">Prevención con disuasión y reducción de la exposición · detección del ciberincidente · respuesta en tiempo oportuno</text>
+<text class="r4" x="86" y="181">NOVEDAD 2022: en el RD 3/2010 era «prevención, reacción y recuperación». Entran DETECCIÓN y CONSERVACIÓN</text>
+<rect fill="#eef4fa" height="44" rx="4" width="632" x="24" y="188"></rect>
+<rect fill="#0055a0" height="44" rx="4" width="52" x="24" y="188"></rect>
+<text class="w4" text-anchor="middle" x="50" y="206">d)</text>
+<text class="art4" text-anchor="middle" x="50" y="222">art. 9</text>
+<text class="k4" x="86" y="205">EXISTENCIA DE LÍNEAS DE DEFENSA</text>
+<text class="d4" x="86" y="218">Múltiples capas de naturaleza ORGANIZATIVA, FÍSICA y LÓGICA. Minimizar el impacto final cuando una capa caiga</text>
+<text class="r4" x="86" y="229">El artículo dice «CUANDO una de las capas sea comprometida», no «si»: da por supuesto el fallo</text>
+<rect fill="#fdf3e3" height="60" rx="4" stroke="#e89822" stroke-width="1.2" width="632" x="24" y="236"></rect>
+<rect fill="#e89822" height="60" rx="4" width="52" x="24" y="236"></rect>
+<text class="w4" text-anchor="middle" x="50" y="258">e) f)</text>
+<text class="art4" text-anchor="middle" x="50" y="276">art. 10</text>
+<text class="art4" text-anchor="middle" x="50" y="290">DOS</text>
+<text class="k4" x="86" y="253">e) VIGILANCIA CONTINUA — detección de actividades o comportamientos anómalos y su oportuna respuesta</text>
+<text class="k4" x="86" y="266">f) REEVALUACIÓN PERIÓDICA — las medidas se reevalúan y actualizan, pudiendo llegar a un replanteamiento</text>
+<text class="d4" x="86" y="279">Apartado 2: evaluación permanente del estado de los activos, para medir su evolución y detectar vulnerabilidades</text>
+<text class="r4" x="86" y="291">DIFERENCIA: la vigilancia mira el TRÁFICO y es permanente · la reevaluación mira las MEDIDAS y es periódica</text>
+<rect fill="#eef4fa" height="44" rx="4" width="632" x="24" y="300"></rect>
+<rect fill="#0055a0" height="44" rx="4" width="52" x="24" y="300"></rect>
+<text class="w4" text-anchor="middle" x="50" y="318">g)</text>
+<text class="art4" text-anchor="middle" x="50" y="334">art. 11</text>
+<text class="k4" x="86" y="317">DIFERENCIACIÓN DE RESPONSABILIDADES</text>
+<text class="d4" x="86" y="330">Cuatro responsables: de la INFORMACIÓN, del SERVICIO, de la SEGURIDAD y del SISTEMA. La política detalla sus atribuciones</text>
+<text class="r4" x="86" y="341">EXCLUYE: que seguridad y explotación recaigan en la misma persona, o con dependencia jerárquica entre ellas (art. 13.3)</text>
+<rect fill="#e6f2ec" height="22" rx="3" width="632" x="24" y="348"></rect>
+<text class="n4" text-anchor="middle" x="340" y="363">Los principios NO admiten excepción ni compensación. Los requisitos mínimos sí: el art. 12.7 permite obviar alguno</text>
+<text class="n4" x="24" y="388">[Fuente: ENS, arts. 5 a 11, 12.7 y 13.3 — texto consolidado del BOE]</text>
+</svg>

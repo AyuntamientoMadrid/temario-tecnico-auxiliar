@@ -1,0 +1,26 @@
+<svg aria-label="Los nueve principios de la acción preventiva del artículo 15: evitar riesgos, evaluar los no evitables, combatir en origen, adaptar el trabajo a la persona, evolución técnica, sustituir lo peligroso, planificar, anteponer la protección colectiva a la individual y dar instrucciones" class="svd2" role="img" viewbox="0 0 700 380" xmlns="http://www.w3.org/2000/svg">
+<style>.svd2 .ti{font:700 15px system-ui,sans-serif;fill:#0055a0;text-anchor:middle}.svd2 .t{font:12px system-ui,sans-serif;fill:#1a1a1a}.svd2 .n{font:700 12px system-ui,sans-serif;fill:#fff;text-anchor:middle}</style>
+<text class="ti" x="350" y="28">Principios de la acción preventiva — art. 15.1 LPRL</text>
+<g>
+<circle cx="40" cy="58" fill="#2d8659" r="13"></circle><text class="n" x="40" y="62">a</text>
+<text class="t" style="font-weight:700" x="62" y="62">Evitar los riesgos</text>
+<circle cx="40" cy="92" fill="#0055a0" r="13"></circle><text class="n" x="40" y="96">b</text>
+<text class="t" x="62" y="96">Evaluar los riesgos que no se puedan evitar</text>
+<circle cx="40" cy="126" fill="#0055a0" r="13"></circle><text class="n" x="40" y="130">c</text>
+<text class="t" x="62" y="130">Combatir los riesgos en su origen</text>
+<circle cx="40" cy="160" fill="#0055a0" r="13"></circle><text class="n" x="40" y="164">d</text>
+<text class="t" x="62" y="164">Adaptar el trabajo a la persona</text>
+<circle cx="40" cy="194" fill="#0055a0" r="13"></circle><text class="n" x="40" y="198">e</text>
+<text class="t" x="62" y="198">Tener en cuenta la evolución de la técnica</text>
+<circle cx="40" cy="228" fill="#0055a0" r="13"></circle><text class="n" x="40" y="232">f</text>
+<text class="t" x="62" y="232">Sustituir lo peligroso por lo de poco o ningún peligro</text>
+<circle cx="40" cy="262" fill="#0055a0" r="13"></circle><text class="n" x="40" y="266">g</text>
+<text class="t" x="62" y="266">Planificar la prevención</text>
+<circle cx="40" cy="296" fill="#2d8659" r="13"></circle><text class="n" x="40" y="300">h</text>
+<text class="t" style="font-weight:700" x="62" y="300">Anteponer la protección colectiva a la individual</text>
+<circle cx="40" cy="330" fill="#0055a0" r="13"></circle><text class="n" x="40" y="334">i</text>
+<text class="t" x="62" y="334">Dar las debidas instrucciones a los trabajadores</text>
+</g>
+<rect fill="#fff5e6" height="22" rx="6" stroke="#e89822" width="640" x="30" y="352"></rect>
+<text class="t" style="fill:#b5740f;font-weight:700" x="40" y="368">Clave: «evitar» es el primero · solo se evalúa lo que no se ha podido evitar · colectiva &gt; individual</text>
+</svg>

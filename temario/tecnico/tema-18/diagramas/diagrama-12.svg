@@ -1,0 +1,12 @@
+<svg aria-label="Partes de un programa: importaciones, declaraciones globales de constantes y tipos, definición de subprogramas y programa principal main que orquesta las llamadas" role="img" viewbox="0 0 640 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t12{font:700 12px system-ui,sans-serif;fill:#fff}.l12{font:11px system-ui,sans-serif;fill:#444}.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}.s12{font:11px system-ui,sans-serif;fill:#fff}</style>
+<text class="h12" text-anchor="middle" x="320" y="24">Anatomía de un programa</text>
+<rect fill="#6ea3d2" height="42" rx="6" width="400" x="120" y="40"></rect><text class="t12" text-anchor="middle" x="320" y="60">1 · Importaciones / bibliotecas</text><text class="s12" text-anchor="middle" x="320" y="76">import, #include, using</text>
+<rect fill="#3778b5" height="42" rx="6" width="400" x="120" y="90"></rect><text class="t12" text-anchor="middle" x="320" y="110">2 · Declaraciones globales</text><text class="s12" text-anchor="middle" x="320" y="126">constantes (NUM_DISTRITOS = 21), tipos (Ciudadano)</text>
+<rect fill="#0055a0" height="58" rx="6" width="400" x="120" y="140"></rect><text class="t12" text-anchor="middle" x="320" y="158">3 · Subprogramas</text><text class="s12" text-anchor="middle" x="320" y="174">funciones y procedimientos</text><text class="s12" text-anchor="middle" x="320" y="189">alta cohesión · bajo acoplamiento</text>
+<rect fill="#2d8659" height="58" rx="6" width="400" x="120" y="206"></rect><text class="t12" text-anchor="middle" x="320" y="224">4 · Programa principal — main()</text><text class="s12" text-anchor="middle" x="320" y="240">PUNTO DE ENTRADA · orquesta las llamadas</text><text class="s12" text-anchor="middle" x="320" y="255">por aquí empieza la ejecución</text>
+<path d="M540 235 C600 235 600 169 522 169" fill="none" marker-end="url(#a12)" stroke="#e89822" stroke-width="1.5"></path><text class="l12" text-anchor="middle" x="600" y="205">llama</text>
+<rect fill="#f2f2f2" height="34" rx="6" width="460" x="90" y="276"></rect><text class="l12" text-anchor="middle" x="320" y="297">Separar datos (tipos), lógica (funciones) y flujo (main) · un cambio, un solo sitio</text>
+<defs><marker id="a12" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#e89822"></path></marker></defs>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="630" y="332">[Fuente: MCCONNELL, cap. 4]</text>
+</svg>

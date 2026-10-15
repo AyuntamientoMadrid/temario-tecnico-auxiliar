@@ -1,0 +1,37 @@
+<svg aria-label="Patrón offline-first: la interfaz lee y escribe siempre en el repositorio local SQLite, que actúa como única fuente de verdad; los registros pendientes quedan marcados como no sincronizados y un planificador de trabajo diferido los envía al servidor cuando hay red, usando un identificador único para evitar duplicados" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t8{font:700 10.5px system-ui,sans-serif;fill:#fff}.s8{font:9.5px system-ui,sans-serif;fill:#fff}.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}.l8{font:700 10px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h8" text-anchor="middle" x="340" y="20">Offline-first: la interfaz nunca espera a la red</text>
+<rect fill="#0055a0" height="70" rx="6" width="130" x="20" y="40"></rect>
+<text class="t8" text-anchor="middle" x="85" y="70">INTERFAZ</text>
+<text class="s8" text-anchor="middle" x="85" y="88">lee y escribe</text>
+<text class="s8" text-anchor="middle" x="85" y="102">solo en local</text>
+<rect fill="#2d8659" height="70" rx="6" width="180" x="185" y="40"></rect>
+<text class="t8" text-anchor="middle" x="275" y="66">REPOSITORIO LOCAL</text>
+<text class="s8" text-anchor="middle" x="275" y="84">SQLite / Room / Core Data</text>
+<text class="s8" text-anchor="middle" x="275" y="100">única fuente de verdad</text>
+<rect fill="#e89822" height="70" rx="6" width="150" x="400" y="40"></rect>
+<text class="t8" text-anchor="middle" x="475" y="66">COLA PENDIENTE</text>
+<text class="s8" text-anchor="middle" x="475" y="84">registros marcados</text>
+<text class="s8" text-anchor="middle" x="475" y="100">sincronizado = false</text>
+<path d="M152 75 L181 75" marker-end="url(#a8)" stroke="#0055a0" stroke-width="3"></path>
+<path d="M367 75 L396 75" marker-end="url(#a8)" stroke="#0055a0" stroke-width="3"></path>
+<defs><marker id="a8" markerheight="9" markerwidth="9" orient="auto" refx="4.5" refy="4.5"><path d="M0 0 L9 4.5 L0 9 z" fill="#0055a0"></path></marker></defs>
+<rect fill="#0055a0" height="62" rx="6" width="240" x="150" y="132"></rect>
+<text class="t8" text-anchor="middle" x="270" y="154">PLANIFICADOR DE TRABAJO</text>
+<text class="s8" text-anchor="middle" x="270" y="172">WorkManager (Android)</text>
+<text class="s8" text-anchor="middle" x="270" y="186">BGTaskScheduler (iOS)</text>
+<rect fill="#888" height="62" rx="6" width="220" x="430" y="132"></rect>
+<text class="t8" text-anchor="middle" x="540" y="154">SERVIDOR MUNICIPAL</text>
+<text class="s8" text-anchor="middle" x="540" y="172">recibe cuando hay red,</text>
+<text class="s8" text-anchor="middle" x="540" y="186">batería y permiso del sistema</text>
+<path d="M475 114 L300 128" marker-end="url(#a8b)" stroke="#e89822" stroke-width="3"></path>
+<path d="M392 163 L426 163" marker-end="url(#a8c)" stroke="#2d8659" stroke-width="3"></path>
+<defs>
+<marker id="a8b" markerheight="9" markerwidth="9" orient="auto" refx="4.5" refy="4.5"><path d="M0 0 L9 4.5 L0 9 z" fill="#e89822"></path></marker>
+<marker id="a8c" markerheight="9" markerwidth="9" orient="auto" refx="4.5" refy="4.5"><path d="M0 0 L9 4.5 L0 9 z" fill="#2d8659"></path></marker>
+</defs>
+<rect fill="#d13c3c" height="56" rx="6" width="600" x="40" y="214"></rect>
+<text class="t8" text-anchor="middle" x="340" y="236">Cada envío lleva un identificador único de operación (UUID)</text>
+<text class="s8" text-anchor="middle" x="340" y="256">El servidor lo trata como clave de idempotencia: reintentar tras un corte NO duplica el aviso</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="292">[Fuente: JETPACK; APPLE-DEV; SQLITE]</text>
+</svg>

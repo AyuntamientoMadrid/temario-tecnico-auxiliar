@@ -1,0 +1,41 @@
+<svg aria-label="Las cinco topologías físicas de red: bus, anillo, estrella, árbol y malla, dibujadas con sus nodos y enlaces, indicando en cada una el punto único de fallo, y la distinción entre topología física y topología lógica con el ejemplo de Ethernet conmutado y de Token Ring" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.t12{font:700 10px system-ui,sans-serif;fill:#fff}.d12{font:9px system-ui,sans-serif;fill:#333}.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}.k12{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n12{font:8.5px system-ui,sans-serif;fill:#666}.ln12{stroke:#0055a0;stroke-width:1.6;fill:none}</style>
+<text class="h12" text-anchor="middle" x="340" y="20">Cinco formas de unir los mismos nodos</text>
+<rect fill="#0055a0" height="20" rx="3" width="124" x="20" y="34"></rect><text class="t12" text-anchor="middle" x="82" y="48">BUS</text>
+<rect fill="#0055a0" height="20" rx="3" width="124" x="152" y="34"></rect><text class="t12" text-anchor="middle" x="214" y="48">ANILLO</text>
+<rect fill="#0055a0" height="20" rx="3" width="124" x="284" y="34"></rect><text class="t12" text-anchor="middle" x="346" y="48">ESTRELLA</text>
+<rect fill="#0055a0" height="20" rx="3" width="124" x="416" y="34"></rect><text class="t12" text-anchor="middle" x="478" y="48">ÁRBOL</text>
+<rect fill="#0055a0" height="20" rx="3" width="112" x="548" y="34"></rect><text class="t12" text-anchor="middle" x="604" y="48">MALLA</text>
+<path class="ln12" d="M30 96 L134 96"></path>
+<circle cx="48" cy="96" fill="#0055a0" r="5"></circle><circle cx="82" cy="96" fill="#0055a0" r="5"></circle><circle cx="116" cy="96" fill="#0055a0" r="5"></circle>
+<path class="ln12" d="M48 96 L48 78 M82 96 L82 78 M116 96 L116 78"></path>
+<circle cx="48" cy="74" fill="#888" r="4"></circle><circle cx="82" cy="74" fill="#888" r="4"></circle><circle cx="116" cy="74" fill="#888" r="4"></circle>
+<path class="ln12" d="M182 74 L246 74 L246 112 L182 112 Z"></path>
+<circle cx="182" cy="74" fill="#0055a0" r="5"></circle><circle cx="246" cy="74" fill="#0055a0" r="5"></circle><circle cx="246" cy="112" fill="#0055a0" r="5"></circle><circle cx="182" cy="112" fill="#0055a0" r="5"></circle>
+<circle cx="346" cy="93" fill="#e89822" r="8"></circle>
+<path class="ln12" d="M346 93 L306 72 M346 93 L386 72 M346 93 L306 114 M346 93 L386 114"></path>
+<circle cx="306" cy="72" fill="#0055a0" r="5"></circle><circle cx="386" cy="72" fill="#0055a0" r="5"></circle><circle cx="306" cy="114" fill="#0055a0" r="5"></circle><circle cx="386" cy="114" fill="#0055a0" r="5"></circle>
+<circle cx="478" cy="70" fill="#e89822" r="7"></circle>
+<path class="ln12" d="M478 70 L446 94 M478 70 L510 94 M446 94 L432 114 M446 94 L460 114 M510 94 L496 114 M510 94 L524 114"></path>
+<circle cx="446" cy="94" fill="#0055a0" r="5"></circle><circle cx="510" cy="94" fill="#0055a0" r="5"></circle>
+<circle cx="432" cy="114" fill="#888" r="4"></circle><circle cx="460" cy="114" fill="#888" r="4"></circle><circle cx="496" cy="114" fill="#888" r="4"></circle><circle cx="524" cy="114" fill="#888" r="4"></circle>
+<path class="ln12" d="M574 74 L634 74 L634 112 L574 112 Z M574 74 L634 112 M634 74 L574 112"></path>
+<circle cx="574" cy="74" fill="#2d8659" r="5"></circle><circle cx="634" cy="74" fill="#2d8659" r="5"></circle><circle cx="634" cy="112" fill="#2d8659" r="5"></circle><circle cx="574" cy="112" fill="#2d8659" r="5"></circle>
+<text class="k12" x="26" y="146">PUNTO ÚNICO DE FALLO</text>
+<rect fill="#fbeaea" height="40" rx="4" width="124" x="20" y="154"></rect><text class="d12" text-anchor="middle" x="82" y="170">El troncal</text><text class="n12" text-anchor="middle" x="82" y="185">un corte tumba todo</text>
+<rect fill="#fbeaea" height="40" rx="4" width="124" x="152" y="154"></rect><text class="d12" text-anchor="middle" x="214" y="170">Cualquier nodo</text><text class="n12" text-anchor="middle" x="214" y="185">salvo doble anillo</text>
+<rect fill="#fdf3e3" height="40" rx="4" width="124" x="284" y="154"></rect><text class="d12" text-anchor="middle" x="346" y="170">El nodo central</text><text class="n12" text-anchor="middle" x="346" y="185">el resto queda aislado</text>
+<rect fill="#fdf3e3" height="40" rx="4" width="124" x="416" y="154"></rect><text class="d12" text-anchor="middle" x="478" y="170">Los nodos altos</text><text class="n12" text-anchor="middle" x="478" y="185">aíslan su rama</text>
+<rect fill="#e8f4ee" height="40" rx="4" width="112" x="548" y="154"></rect><text class="d12" text-anchor="middle" x="604" y="170">NINGUNO</text><text class="n12" text-anchor="middle" x="604" y="185">caminos alternativos</text>
+<rect fill="#eef3f8" height="26" rx="4" width="640" x="20" y="206"></rect>
+<text class="d12" text-anchor="middle" x="340" y="223">Malla COMPLETA: n(n−1)/2 enlaces · crece al cuadrado y no escala · en la práctica, malla PARCIAL o doble anillo</text>
+<text class="k12" x="26" y="256">TOPOLOGÍA FÍSICA FRENTE A TOPOLOGÍA LÓGICA</text>
+<rect fill="#0055a0" height="46" rx="5" width="316" x="20" y="264"></rect>
+<text class="t12" text-anchor="middle" x="178" y="282">Ethernet conmutado</text>
+<text class="n12" style="fill:#dfe9f3" text-anchor="middle" x="178" y="299">estrella física · bus conmutado lógico</text>
+<rect fill="#7a2f8a" height="46" rx="5" width="316" x="344" y="264"></rect>
+<text class="t12" text-anchor="middle" x="502" y="282">Token Ring</text>
+<text class="n12" style="fill:#efe4f3" text-anchor="middle" x="502" y="299">estrella física (MAU) · anillo lógico</text>
+<text class="n12" text-anchor="middle" x="340" y="330">La topología física dice por dónde va el cable; la lógica, por dónde va la señal</text>
+<text class="n12" text-anchor="end" x="670" y="346">[Fuente: FOROUZAN; TANENBAUM]</text>
+</svg>

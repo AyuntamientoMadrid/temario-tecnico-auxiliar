@@ -1,0 +1,29 @@
+<svg aria-label="Comparación entre hipervisor de Tipo 1, que se instala directamente sobre el hardware, e hipervisor de Tipo 2, que se ejecuta como aplicación sobre un sistema operativo anfitrión, con sus consecuencias en número de capas, rendimiento, superficie de ataque y ámbito de uso" role="img" viewbox="0 0 680 332" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 11px system-ui,sans-serif;fill:#fff}.s3{font:9.5px system-ui,sans-serif;fill:#fff}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 11px system-ui,sans-serif;fill:#0055a0}.n3{font:9.5px system-ui,sans-serif;fill:#333}</style>
+<text class="h3" text-anchor="middle" x="340" y="20">Clasificación de Goldberg (1973): sobre qué se ejecuta el hipervisor</text>
+<text class="k3" text-anchor="middle" x="175" y="42">TIPO 1 · NATIVO (bare-metal)</text>
+<text class="k3" text-anchor="middle" x="505" y="42">TIPO 2 · ALOJADO (hosted)</text>
+<rect fill="#888" height="34" rx="4" width="96" x="24" y="52"></rect><text class="t3" text-anchor="middle" x="72" y="73">VM 1</text>
+<rect fill="#888" height="34" rx="4" width="96" x="127" y="52"></rect><text class="t3" text-anchor="middle" x="175" y="73">VM 2</text>
+<rect fill="#888" height="34" rx="4" width="96" x="230" y="52"></rect><text class="t3" text-anchor="middle" x="278" y="73">VM 3</text>
+<rect fill="#888" height="34" rx="4" width="150" x="354" y="52"></rect><text class="t3" text-anchor="middle" x="429" y="73">VM 1</text>
+<rect fill="#888" height="34" rx="4" width="146" x="510" y="52"></rect><text class="t3" text-anchor="middle" x="583" y="73">VM 2</text>
+<rect fill="#0055a0" height="36" rx="4" width="302" x="24" y="92"></rect><text class="t3" text-anchor="middle" x="175" y="115">HIPERVISOR</text>
+<rect fill="#0055a0" height="36" rx="4" width="302" x="354" y="92"></rect><text class="t3" text-anchor="middle" x="505" y="115">HIPERVISOR (una aplicación más)</text>
+<rect fill="#d13c3c" height="36" rx="4" width="302" x="354" y="134"></rect><text class="t3" text-anchor="middle" x="505" y="151">SISTEMA OPERATIVO ANFITRIÓN</text><text class="s3" text-anchor="middle" x="505" y="165">capa adicional: latencia y superficie de ataque</text>
+<rect fill="#f2f6fa" height="36" rx="4" stroke="#2d8659" stroke-dasharray="4 3" stroke-width="2" width="302" x="24" y="134"></rect><text style="font:700 10.5px system-ui;fill:#2d8659" text-anchor="middle" x="175" y="157">— sin capa intermedia —</text>
+<rect fill="#333" height="32" rx="4" width="302" x="24" y="176"></rect><text class="t3" text-anchor="middle" x="175" y="197">HARDWARE</text>
+<rect fill="#333" height="32" rx="4" width="302" x="354" y="176"></rect><text class="t3" text-anchor="middle" x="505" y="197">HARDWARE</text>
+<rect fill="#2d8659" height="70" rx="4" width="302" x="24" y="218"></rect>
+<text class="s3" text-anchor="middle" x="175" y="236">Rendimiento alto · superficie mínima</text>
+<text class="s3" text-anchor="middle" x="175" y="252">Gestión centralizada en clúster</text>
+<text class="t3" text-anchor="middle" x="175" y="268">CENTRO DE DATOS / PRODUCCIÓN</text>
+<text class="s3" text-anchor="middle" x="175" y="282">ESXi · Hyper-V · Xen · KVM · Proxmox VE</text>
+<rect fill="#e89822" height="70" rx="4" width="302" x="354" y="218"></rect>
+<text class="s3" text-anchor="middle" x="505" y="236">Menor rendimiento · hereda el riesgo del anfitrión</text>
+<text class="s3" text-anchor="middle" x="505" y="252">Si cae el anfitrión, caen todas las VM</text>
+<text class="t3" text-anchor="middle" x="505" y="268">PUESTO / LABORATORIO / PRUEBAS</text>
+<text class="s3" text-anchor="middle" x="505" y="282">VirtualBox · Workstation · Fusion · Parallels</text>
+<text class="n3" text-anchor="middle" x="340" y="306">Casos discutidos: KVM (módulo del núcleo Linux) e Hyper-V (rol de Windows Server) se clasifican como TIPO 1</text>
+<text style="font:10px system-ui;fill:#666" text-anchor="end" x="670" y="327">[Fuente: GOLDBERG73; NIST-SP800-125]</text>
+</svg>

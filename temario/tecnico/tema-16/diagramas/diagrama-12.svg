@@ -1,0 +1,34 @@
+<svg aria-label="Símbolos de flujograma ISO 5807 y las tres estructuras básicas: secuencia, selección e iteración" class="svd12" role="img" viewbox="0 0 660 340" xmlns="http://www.w3.org/2000/svg">
+<style>.svd12 .w{font:700 11px system-ui,sans-serif;fill:#fff}.svd12 .lab{font:10px system-ui,sans-serif;fill:#555}.svd12 .h{font:700 13px system-ui,sans-serif;fill:#0055a0}.svd12 .t{font:11px system-ui,sans-serif;fill:#1a1a1a}</style>
+<text class="h" text-anchor="middle" x="330" y="20">Símbolos (ISO 5807) y estructuras de control</text>
+<!-- simbolos -->
+<rect fill="#002a52" height="34" rx="17" width="90" x="30" y="40"></rect><text class="w" text-anchor="middle" x="75" y="61">inicio/fin</text><text class="lab" text-anchor="middle" x="75" y="88">terminal (óvalo)</text>
+<rect fill="#0055a0" height="34" width="90" x="140" y="40"></rect><text class="w" text-anchor="middle" x="185" y="61">proceso</text><text class="lab" text-anchor="middle" x="185" y="88">acción</text>
+<polygon fill="#e89822" points="295,40 335,57 295,74 255,57"></polygon><text class="w" style="font-size:10px" text-anchor="middle" x="295" y="61">¿cond?</text><text class="lab" text-anchor="middle" x="295" y="88">decisión (rombo)</text>
+<polygon fill="#2d8659" points="370,40 460,40 440,74 350,74"></polygon><text class="w" text-anchor="middle" x="405" y="61">E/S</text><text class="lab" text-anchor="middle" x="405" y="88">entrada/salida</text>
+<circle cx="540" cy="57" fill="#666" r="17"></circle><text class="w" style="font-size:10px" text-anchor="middle" x="540" y="61">A</text><text class="lab" text-anchor="middle" x="540" y="88">conector</text>
+<line stroke="#d1d7df" x1="30" x2="630" y1="105" y2="105"></line>
+<!-- secuencia -->
+<text class="h" style="font-size:12px" text-anchor="middle" x="110" y="128">SECUENCIA</text>
+<rect fill="#0055a0" height="24" width="60" x="80" y="138"></rect><text class="w" style="font-size:10px" text-anchor="middle" x="110" y="155">A</text>
+<rect fill="#0055a0" height="24" width="60" x="80" y="178"></rect><text class="w" style="font-size:10px" text-anchor="middle" x="110" y="195">B</text>
+<line marker-end="url(#mf)" stroke="#333" x1="110" x2="110" y1="162" y2="178"></line>
+<defs><marker id="mf" markerheight="9" markerwidth="9" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 Z" fill="#333"></path></marker></defs>
+<!-- seleccion -->
+<text class="h" style="font-size:12px" text-anchor="middle" x="330" y="128">SELECCIÓN</text>
+<polygon fill="#e89822" points="330,140 366,158 330,176 294,158"></polygon><text class="w" style="font-size:9px" text-anchor="middle" x="330" y="162">¿c?</text>
+<rect fill="#0055a0" height="22" width="50" x="250" y="195"></rect><text class="w" style="font-size:9px" text-anchor="middle" x="275" y="211">sí</text>
+<rect fill="#0055a0" height="22" width="50" x="360" y="195"></rect><text class="w" style="font-size:9px" text-anchor="middle" x="385" y="211">no</text>
+<line marker-end="url(#mf)" stroke="#333" x1="305" x2="275" y1="170" y2="195"></line>
+<line marker-end="url(#mf)" stroke="#333" x1="355" x2="385" y1="170" y2="195"></line>
+<!-- iteracion -->
+<text class="h" style="font-size:12px" text-anchor="middle" x="555" y="128">ITERACIÓN</text>
+<polygon fill="#e89822" points="555,140 591,158 555,176 519,158"></polygon><text class="w" style="font-size:9px" text-anchor="middle" x="555" y="162">¿c?</text>
+<rect fill="#0055a0" height="22" width="60" x="525" y="198"></rect><text class="w" style="font-size:9px" text-anchor="middle" x="555" y="214">cuerpo</text>
+<line marker-end="url(#mf)" stroke="#333" x1="555" x2="555" y1="176" y2="198"></line><text class="lab" x="562" y="190">sí</text>
+<path d="M 585 209 Q 625 185 591 158" fill="none" marker-end="url(#mf)" stroke="#333"></path>
+<rect fill="#f5f7fa" height="80" rx="8" stroke="#d1d7df" width="590" x="40" y="245"></rect>
+<text class="t" x="55" y="268"><tspan font-weight="700">Böhm-Jacopini (1966):</tspan> todo algoritmo se expresa con secuencia + selección + iteración, sin «goto».</text>
+<text class="t" x="55" y="291"><tspan font-weight="700">mientras</tspan> (while): comprueba antes (0..n veces). <tspan font-weight="700">repetir-hasta</tspan> (do-until): comprueba después (1..n veces).</text>
+<text class="t" x="55" y="314">Del rombo salen ≥2 ramas; del proceso, 1. Flujo por defecto: arriba→abajo. — [ISO5807 · BOHM-JACOPINI]</text>
+</svg>

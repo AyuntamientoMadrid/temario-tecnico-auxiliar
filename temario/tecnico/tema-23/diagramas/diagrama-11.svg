@@ -1,0 +1,26 @@
+<svg aria-label="fetch envía una petición de red que se procesa fuera del hilo principal de JavaScript; cuando la respuesta llega, se encola en la cola de tareas y el bucle de eventos la ejecuta cuando el hilo principal queda libre" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t11{font:700 11px system-ui,sans-serif;fill:#fff}.s11{font:9.5px system-ui,sans-serif;fill:#fff}.l11{font:11px system-ui,sans-serif;fill:#444}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h11" text-anchor="middle" x="340" y="20">fetch() y el bucle de eventos</text>
+<rect fill="#0055a0" height="60" rx="6" width="220" x="30" y="44"></rect>
+<text class="t11" text-anchor="middle" x="140" y="68">Hilo único de JS</text>
+<text class="s11" text-anchor="middle" x="140" y="86">Ejecuta await fetch(...)</text>
+<path d="M250 74 L340 74" marker-end="url(#f11)" stroke="#888" stroke-width="2"></path>
+<rect fill="#e89822" height="60" rx="6" width="220" x="350" y="44"></rect>
+<text class="t11" text-anchor="middle" x="460" y="68">Red (fuera del hilo)</text>
+<text class="s11" text-anchor="middle" x="460" y="86">Petición HTTP en curso</text>
+<path d="M140 104 L140 150" marker-end="url(#f11)" stroke="#888" stroke-width="2"></path>
+<defs><marker id="f11" markerheight="9" markerwidth="9" orient="auto" refx="4.5" refy="4.5"><path d="M0 0 L9 4.5 L0 9 z" fill="#888"></path></marker></defs>
+<rect fill="#2d8659" height="60" rx="6" width="220" x="30" y="152"></rect>
+<text class="t11" text-anchor="middle" x="140" y="176">Sigue ejecutando</text>
+<text class="s11" text-anchor="middle" x="140" y="194">otro código sin bloquear</text>
+<path d="M460 104 L460 150" marker-end="url(#f11)" stroke="#888" stroke-dasharray="4 3" stroke-width="2"></path>
+<rect fill="#d13c3c" height="60" rx="6" width="220" x="350" y="152"></rect>
+<text class="t11" text-anchor="middle" x="460" y="176">Cola de tareas</text>
+<text class="s11" text-anchor="middle" x="460" y="194">Respuesta lista, en espera</text>
+<path d="M140 212 L300 250" stroke="#888" stroke-width="2"></path>
+<path d="M460 212 L380 250" stroke="#888" stroke-width="2"></path>
+<rect fill="#0055a0" height="60" rx="6" width="280" x="200" y="252"></rect>
+<text class="t11" text-anchor="middle" x="340" y="278">Bucle de eventos</text>
+<text class="s11" text-anchor="middle" x="340" y="296">Ejecuta la continuación cuando el hilo está libre</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="332">[Fuente: V8-DOC; MDN-JS]</text>
+</svg>

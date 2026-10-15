@@ -1,0 +1,26 @@
+<svg aria-label="Modelo del riesgo según MAGERIT: un activo tiene valor y vulnerabilidades, una amenaza externa las explota produciendo un impacto, la combinación de impacto y probabilidad es el riesgo, las salvaguardas lo reducen y lo que queda es el riesgo residual que debe aceptarse formalmente" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 10.5px system-ui,sans-serif;fill:#fff}.s2{font:8.5px system-ui,sans-serif;fill:#fff}.d2{font:9px system-ui,sans-serif;fill:#333}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}.k2{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n2{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h2" text-anchor="middle" x="340" y="20">La cadena del riesgo y donde actúa cada salvaguarda</text>
+<rect fill="#0055a0" height="52" rx="5" width="130" x="20" y="40"></rect><text class="t2" text-anchor="middle" x="85" y="60">ACTIVO</text><text class="s2" text-anchor="middle" x="85" y="74">tiene VALOR</text><text class="s2" text-anchor="middle" x="85" y="86">y VULNERABILIDADES</text>
+<rect fill="#d13c3c" height="52" rx="5" width="130" x="196" y="40"></rect><text class="t2" text-anchor="middle" x="261" y="60">AMENAZA</text><text class="s2" text-anchor="middle" x="261" y="74">externa al activo</text><text class="s2" text-anchor="middle" x="261" y="86">NO se puede eliminar</text>
+<rect fill="#e89822" height="52" rx="5" width="130" x="372" y="40"></rect><text class="t2" text-anchor="middle" x="437" y="60">IMPACTO</text><text class="s2" text-anchor="middle" x="437" y="74">degradación de las</text><text class="s2" text-anchor="middle" x="437" y="86">dimensiones</text>
+<rect fill="#7a2f8a" height="52" rx="5" width="112" x="548" y="40"></rect><text class="t2" text-anchor="middle" x="604" y="60">RIESGO</text><text class="s2" text-anchor="middle" x="604" y="74">impacto x</text><text class="s2" text-anchor="middle" x="604" y="86">probabilidad</text>
+<path d="M150 66 L192 66" marker-end="url(#a2)" stroke="#666" stroke-width="1.5"></path>
+<path d="M326 66 L368 66" marker-end="url(#a2)" stroke="#666" stroke-width="1.5"></path>
+<path d="M502 66 L544 66" marker-end="url(#a2)" stroke="#666" stroke-width="1.5"></path>
+<defs><marker id="a2" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#666"></path></marker></defs>
+<text class="n2" text-anchor="middle" x="171" y="108">explota</text><text class="n2" text-anchor="middle" x="347" y="108">produce</text><text class="n2" text-anchor="middle" x="523" y="108">se estima</text>
+<rect fill="#fdf3e3" height="26" rx="4" width="640" x="20" y="122"></rect>
+<text class="d2" text-anchor="middle" x="340" y="139">Sin VULNERABILIDAD que explotar, la amenaza no se materializa: la salvaguarda actúa sobre la vulnerabilidad y sobre el impacto</text>
+<text class="k2" x="20" y="172">TRATAMIENTO DEL RIESGO · CUATRO OPCIONES</text>
+<rect fill="#2d8659" height="44" rx="4" width="155" x="20" y="180"></rect><text class="t2" text-anchor="middle" x="97" y="198">EVITAR</text><text class="s2" text-anchor="middle" x="97" y="213">suprimir la actividad</text>
+<rect fill="#0055a0" height="44" rx="4" width="155" x="182" y="180"></rect><text class="t2" text-anchor="middle" x="259" y="198">MITIGAR</text><text class="s2" text-anchor="middle" x="259" y="213">aplicar salvaguardas</text>
+<rect fill="#e89822" height="44" rx="4" width="155" x="344" y="180"></rect><text class="t2" text-anchor="middle" x="421" y="198">TRANSFERIR</text><text class="s2" text-anchor="middle" x="421" y="213">seguro o contrato</text>
+<rect fill="#888" height="44" rx="4" width="154" x="506" y="180"></rect><text class="t2" text-anchor="middle" x="583" y="198">ACEPTAR</text><text class="s2" text-anchor="middle" x="583" y="213">asumir el riesgo</text>
+<rect fill="#fbeaea" height="26" rx="4" width="640" x="20" y="238"></rect>
+<text class="d2" text-anchor="middle" x="340" y="255">Transferir el riesgo NO transfiere la responsabilidad: la responsabilidad última sigue siendo de la entidad pública</text>
+<rect fill="none" height="34" rx="5" stroke="#7a2f8a" stroke-width="2" width="400" x="140" y="276"></rect>
+<text class="k2" text-anchor="middle" x="340" y="291">RIESGO RESIDUAL = el que permanece tras las salvaguardas</text>
+<text class="n2" text-anchor="middle" x="340" y="304">Nunca es cero y debe ser ACEPTADO FORMALMENTE por la dirección</text>
+<text class="n2" text-anchor="end" x="670" y="332">[Fuente: MAGERIT; ENS, arts. 7 y 14]</text>
+</svg>

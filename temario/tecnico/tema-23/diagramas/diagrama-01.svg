@@ -1,0 +1,25 @@
+<svg aria-label="Modelo cliente-servidor: el cliente (navegador) envía una petición HTTP, el servidor la procesa consultando su lógica de negocio y datos, y devuelve una respuesta; HTTP es un protocolo sin estado" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t1{font:700 12px system-ui,sans-serif;fill:#fff}.s1{font:10.5px system-ui,sans-serif;fill:#fff}.l1{font:11px system-ui,sans-serif;fill:#444}.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h1" text-anchor="middle" x="340" y="22">Modelo cliente-servidor: ciclo petición-respuesta</text>
+<rect fill="#0055a0" height="90" rx="6" width="180" x="30" y="60"></rect>
+<text class="t1" text-anchor="middle" x="120" y="95">CLIENTE</text>
+<text class="s1" text-anchor="middle" x="120" y="115">Navegador</text>
+<text class="s1" text-anchor="middle" x="120" y="132">(§6)</text>
+<rect fill="#2d8659" height="90" rx="6" width="180" x="470" y="60"></rect>
+<text class="t1" text-anchor="middle" x="560" y="90">SERVIDOR</text>
+<text class="s1" text-anchor="middle" x="560" y="108">Lógica + datos</text>
+<text class="s1" text-anchor="middle" x="560" y="125">(§8)</text>
+<path d="M212 90 L466 90" marker-end="url(#a1)" stroke="#0055a0" stroke-width="3"></path>
+<text style="font:700 10.5px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="80">GET /tramites/1234</text>
+<path d="M466 130 L212 130" marker-end="url(#b1)" stroke="#2d8659" stroke-width="3"></path>
+<text style="font:700 10.5px system-ui;fill:#2d8659" text-anchor="middle" x="340" y="150">200 OK + JSON</text>
+<defs>
+<marker id="a1" markerheight="9" markerwidth="9" orient="auto" refx="8" refy="4.5"><path d="M0 0 L9 4.5 L0 9 z" fill="#0055a0"></path></marker>
+<marker id="b1" markerheight="9" markerwidth="9" orient="auto" refx="8" refy="4.5"><path d="M0 0 L9 4.5 L0 9 z" fill="#2d8659"></path></marker>
+</defs>
+<rect fill="#d13c3c" height="66" rx="6" width="400" x="140" y="196"></rect>
+<text class="t1" text-anchor="middle" x="340" y="220">HTTP es SIN ESTADO (stateless)</text>
+<text class="s1" text-anchor="middle" x="340" y="240">Cada petición se procesa de forma independiente:</text>
+<text class="s1" text-anchor="middle" x="340" y="256">el servidor no recuerda peticiones anteriores por sí solo</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="292">[Fuente: RFC9110; FIELDING2000]</text>
+</svg>

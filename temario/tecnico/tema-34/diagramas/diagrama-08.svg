@@ -1,0 +1,37 @@
+<svg aria-label="Correspondencia entre el modelo OSI y el modelo TCP-IP: las capas de aplicación, presentación y sesión de OSI se funden en la capa de aplicación de TCP-IP; transporte y red se corresponden una a una con transporte e internet; y las capas de enlace de datos y física se funden en la capa de acceso a la red. Se añade una tabla con las diferencias de diseño entre ambos modelos" role="img" viewbox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
+<style>.t8{font:700 10px system-ui,sans-serif;fill:#fff}.d8{font:8.5px system-ui,sans-serif;fill:#333}.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}.k8{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n8{font:8.5px system-ui,sans-serif;fill:#666}.b8{font:700 8.5px system-ui,sans-serif;fill:#0055a0}.w8{font:8.5px system-ui,sans-serif;fill:#dbe7f2}</style>
+<text class="h8" text-anchor="middle" x="340" y="20">Correspondencia capa a capa y diferencias de fondo</text>
+<text class="k8" text-anchor="middle" x="112" y="40">MODELO OSI (7)</text>
+<text class="k8" text-anchor="middle" x="440" y="40">MODELO TCP/IP (4)</text>
+<rect fill="#0055a0" height="26" rx="3" width="176" x="24" y="48"></rect><text class="t8" text-anchor="middle" x="112" y="65">7 · Aplicación</text>
+<rect fill="#1e6bb0" height="26" rx="3" width="176" x="24" y="78"></rect><text class="t8" text-anchor="middle" x="112" y="95">6 · Presentación</text>
+<rect fill="#3781c0" height="26" rx="3" width="176" x="24" y="108"></rect><text class="t8" text-anchor="middle" x="112" y="125">5 · Sesión</text>
+<rect fill="#e89822" height="26" rx="3" width="176" x="24" y="138"></rect><text class="t8" text-anchor="middle" x="112" y="155">4 · Transporte</text>
+<rect fill="#2d8659" height="26" rx="3" width="176" x="24" y="168"></rect><text class="t8" text-anchor="middle" x="112" y="185">3 · Red</text>
+<rect fill="#37996d" height="26" rx="3" width="176" x="24" y="198"></rect><text class="t8" text-anchor="middle" x="112" y="215">2 · Enlace de datos</text>
+<rect fill="#4aab80" height="26" rx="3" width="176" x="24" y="228"></rect><text class="t8" text-anchor="middle" x="112" y="245">1 · Física</text>
+<rect fill="#0055a0" height="86" rx="3" width="176" x="352" y="48"></rect><text class="t8" text-anchor="middle" x="440" y="85">APLICACIÓN</text><text class="w8" text-anchor="middle" x="440" y="101">absorbe OSI 5 + 6 + 7</text>
+<rect fill="#e89822" height="26" rx="3" width="176" x="352" y="138"></rect><text class="t8" text-anchor="middle" x="440" y="155">TRANSPORTE</text>
+<rect fill="#2d8659" height="26" rx="3" width="176" x="352" y="168"></rect><text class="t8" text-anchor="middle" x="440" y="185">INTERNET</text>
+<rect fill="#5a6b7d" height="56" rx="3" width="176" x="352" y="198"></rect><text class="t8" text-anchor="middle" x="440" y="220">ACCESO A LA RED</text><text class="w8" text-anchor="middle" x="440" y="236">absorbe OSI 1 + 2</text>
+<path d="M200,61 L348,84" stroke="#8aa8c4" stroke-width="1.2"></path><path d="M200,91 L348,91" stroke="#8aa8c4" stroke-width="1.2"></path><path d="M200,121 L348,98" stroke="#8aa8c4" stroke-width="1.2"></path>
+<path d="M200,151 L348,151" stroke="#e89822" stroke-width="1.6"></path>
+<path d="M200,181 L348,181" stroke="#2d8659" stroke-width="1.6"></path>
+<path d="M200,211 L348,220" stroke="#8aa8c4" stroke-width="1.2"></path><path d="M200,241 L348,232" stroke="#8aa8c4" stroke-width="1.2"></path>
+<text class="b8" text-anchor="middle" x="274" y="145">1 a 1</text>
+<text class="b8" text-anchor="middle" x="274" y="175">1 a 1</text>
+<rect fill="#eef3f8" height="86" rx="3" width="120" x="540" y="48"></rect><text class="d8" text-anchor="middle" x="600" y="80">HTTP · DNS</text><text class="d8" text-anchor="middle" x="600" y="96">SMTP · SSH</text>
+<rect fill="#fdf3e3" height="26" rx="3" width="120" x="540" y="138"></rect><text class="d8" text-anchor="middle" x="600" y="155">TCP · UDP</text>
+<rect fill="#e7f2ec" height="26" rx="3" width="120" x="540" y="168"></rect><text class="d8" text-anchor="middle" x="600" y="185">IP · ICMP · ARP</text>
+<rect fill="#eceff2" height="56" rx="3" width="120" x="540" y="198"></rect><text class="d8" text-anchor="middle" x="600" y="220">Ethernet</text><text class="d8" text-anchor="middle" x="600" y="236">Wi-Fi · PPP</text>
+<text class="k8" x="24" y="278">DIFERENCIAS DE DISEÑO</text>
+<rect fill="#0055a0" height="20" rx="3" width="636" x="24" y="284"></rect>
+<text class="t8" x="34" y="298">CRITERIO</text><text class="t8" x="250" y="298">OSI</text><text class="t8" x="466" y="298">TCP/IP</text>
+<rect fill="#eef3f8" height="18" width="636" x="24" y="306"></rect>
+<text class="d8" x="34" y="319">Orden de aparición</text><text class="d8" x="250" y="319">Primero el modelo, después los protocolos</text><text class="d8" x="466" y="319">Primero los protocolos, después el modelo</text>
+<rect fill="#fff" height="18" width="636" x="24" y="325"></rect>
+<text class="d8" x="34" y="338">Servicio / interfaz / protocolo</text><text class="d8" x="250" y="338">Distinción explícita y rigurosa</text><text class="d8" x="466" y="338">Distinción difusa</text>
+<rect fill="#eef3f8" height="18" width="636" x="24" y="344"></rect>
+<text class="d8" x="34" y="357">Modos admitidos</text><text class="d8" x="250" y="357">Red: los dos · Transporte: con conexión</text><text class="d8" x="466" y="357">Red: solo datagramas · Transporte: los dos</text>
+<text class="n8" text-anchor="end" x="670" y="374">[Fuente: ISO/IEC 7498-1, RFC 1122]</text>
+</svg>

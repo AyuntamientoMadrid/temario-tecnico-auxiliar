@@ -1,0 +1,38 @@
+<svg aria-label="Estructura del paquete IPsec en modo transporte y en modo túnel: en modo transporte se conserva la cabecera IP original y se cifra solo la carga útil; en modo túnel se cifra el paquete IP completo y se añade una cabecera IP nueva de las pasarelas. Se comparan AH, que da integridad y autenticación pero no cifra y usa el protocolo IP 51, y ESP, que cifra y autentica con el protocolo IP 50. Se describen las dos fases de IKEv2 y el problema de la traducción de direcciones, resuelto encapsulando ESP en UDP 4500" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.h17{font:700 13px system-ui,sans-serif;fill:#0055a0}.k17{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.t17{font:700 9px system-ui,sans-serif;fill:#fff}.s17{font:7.5px system-ui,sans-serif;fill:#fff}.d17{font:8.5px system-ui,sans-serif;fill:#333}.b17{font:700 9px system-ui,sans-serif;fill:#0055a0}.n17{font:8px system-ui,sans-serif;fill:#666}.a17{font:8px system-ui,sans-serif;fill:#666}.r17{font:700 8.5px system-ui,sans-serif;fill:#d13c3c}.g17{font:700 8.5px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h17" text-anchor="middle" x="340" y="20">AH no cifra (protocolo 51). ESP sí cifra (protocolo 50). Y el modo decide qué se tapa</text>
+<text class="k17" x="20" y="40">PAQUETE ORIGINAL, SIN PROTEGER</text>
+<rect fill="#999" height="24" rx="3" width="120" x="20" y="46"></rect><text class="t17" text-anchor="middle" x="80" y="62">Cabecera IP</text>
+<rect fill="#bbb" height="24" rx="3" width="200" x="142" y="46"></rect><text class="t17" text-anchor="middle" x="242" y="62">Cabecera TCP/UDP + Datos</text>
+<text class="d17" x="356" y="62">Todo visible y alterable por cualquiera que esté en el camino</text>
+<text class="k17" x="20" y="88">MODO TRANSPORTE · SE CONSERVA LA CABECERA IP ORIGINAL · EXTREMO A EXTREMO</text>
+<rect fill="#999" height="24" rx="3" width="120" x="20" y="94"></rect><text class="t17" text-anchor="middle" x="80" y="110">Cabecera IP original</text>
+<rect fill="#0055a0" height="24" rx="3" width="76" x="142" y="94"></rect><text class="t17" text-anchor="middle" x="180" y="110">ESP</text>
+<rect fill="#2d8659" height="24" rx="3" width="200" x="220" y="94"></rect><text class="t17" text-anchor="middle" x="320" y="110">TCP/UDP + Datos — CIFRADO</text>
+<rect fill="#0055a0" height="24" rx="3" width="60" x="422" y="94"></rect><text class="t17" text-anchor="middle" x="452" y="110">ESP auth</text>
+<text class="d17" x="496" y="106">Se protege el CONTENIDO,</text><text class="d17" x="496" y="117">no las partes: las IP son visibles</text>
+<text class="k17" x="20" y="136">MODO TÚNEL · SE CIFRA EL PAQUETE ENTERO Y SE AÑADE CABECERA IP NUEVA · ENTRE PASARELAS</text>
+<rect fill="#e89822" height="24" rx="3" width="112" x="20" y="142"></rect><text class="t17" text-anchor="middle" x="76" y="158">Cabecera IP NUEVA</text>
+<rect fill="#0055a0" height="24" rx="3" width="60" x="134" y="142"></rect><text class="t17" text-anchor="middle" x="164" y="158">ESP</text>
+<rect fill="#2d8659" height="24" rx="3" width="226" x="196" y="142"></rect><text class="t17" text-anchor="middle" x="309" y="158">IP original + TCP/UDP + Datos — CIFRADO</text>
+<rect fill="#0055a0" height="24" rx="3" width="58" x="424" y="142"></rect><text class="t17" text-anchor="middle" x="453" y="158">ESP auth</text>
+<text class="d17" x="496" y="154">En internet SOLO se ven las IP</text><text class="d17" x="496" y="165">de las dos PASARELAS</text>
+<text class="k17" x="20" y="186">AH FRENTE A ESP</text>
+<rect fill="#fdeeee" height="52" rx="5" stroke="#d13c3c" width="316" x="20" y="192"></rect>
+<text class="r17" text-anchor="middle" x="178" y="208">AH · RFC 4302 · protocolo IP 51</text>
+<text class="d17" x="30" y="222">Integridad y autenticación del origen, con parte de la cabecera IP</text>
+<text class="d17" x="30" y="236">NO CIFRA. Y por proteger la cabecera IP, es INCOMPATIBLE CON NAT</text>
+<rect fill="#eef7f1" height="52" rx="5" stroke="#2d8659" width="316" x="344" y="192"></rect>
+<text class="g17" text-anchor="middle" x="502" y="208">ESP · RFC 4303 · protocolo IP 50</text>
+<text class="d17" x="354" y="222">CIFRA la carga útil y además da integridad y autenticación</text>
+<text class="d17" x="354" y="236">Hace casi todo lo de AH: se usa ESP y AH está en desuso</text>
+<text class="k17" x="20" y="264">IKEv2 · RFC 7296 (STD 79) · CÓMO SE ESTABLECE EL TÚNEL</text>
+<rect fill="#0055a0" height="45" rx="4" width="200" x="20" y="270"></rect><text class="t17" text-anchor="middle" x="120" y="286">1 · IKE_SA_INIT</text><text class="s17" text-anchor="middle" x="120" y="298">Negocia algoritmos y ejecuta Diffie-Hellman.</text><text class="s17" text-anchor="middle" x="120" y="309.5">Crea la IKE SA (canal de control)</text>
+<text class="a17" x="226" y="292">→</text>
+<rect fill="#0055a0" height="45" rx="4" width="200" x="240" y="270"></rect><text class="t17" text-anchor="middle" x="340" y="286">2 · IKE_AUTH</text><text class="s17" text-anchor="middle" x="340" y="298">Autentica por certificado, clave precompartida</text><text class="s17" text-anchor="middle" x="340" y="309.5">o EAP. Crea la primera Child SA (los datos)</text>
+<rect fill="#eef4fa" height="45" rx="4" stroke="#0055a0" width="208" x="452" y="270"></rect><text class="b17" text-anchor="middle" x="556" y="286">Una SA es UNIDIRECCIONAL</text><text class="d17" text-anchor="middle" x="556" y="298">Hacen falta DOS por conexión. Se identifica</text><text class="d17" text-anchor="middle" x="556" y="309.5">por SPI + IP de destino + protocolo</text>
+<rect fill="#fff5e6" height="33" rx="5" stroke="#e89822" width="640" x="20" y="320"></rect>
+<text class="b17" text-anchor="middle" x="340" y="334">IPsec y NAT: la respuesta completa a «qué puertos abro»</text>
+<text class="d17" text-anchor="middle" x="340" y="347">UDP 500 (IKE) · UDP 4500 (ESP con NAT-T, RFC 3948) · protocolo IP 50 (ESP) y 51 (AH). Con solo el 500, el túnel se levanta pero NO pasa tráfico</text>
+<text class="n17" x="20" y="366">[Fuente: RFC 4301, 4302, 4303, 7296, 3948, 8221, 8247 y 9395 — verificados contra el índice del RFC Editor · CCN-STIC-807 y 836]</text>
+</svg>

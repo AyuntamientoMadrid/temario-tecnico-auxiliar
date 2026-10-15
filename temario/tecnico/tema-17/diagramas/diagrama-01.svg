@@ -1,0 +1,13 @@
+<svg aria-label="Los tres niveles del diseño de bases de datos: conceptual, lógico y físico, del más abstracto al más concreto" class="d17-1" role="img" viewbox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+<style>.d17-1 .t{font:700 13px system-ui,sans-serif;fill:#fff}.d17-1 .s{font:11px system-ui,sans-serif;fill:#fff}.d17-1 .l{font:11px system-ui,sans-serif;fill:#444}.d17-1 .h{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="330" y="28">Del análisis de requisitos a la base de datos</text>
+<rect fill="#6ea3d2" height="56" rx="6" width="420" x="120" y="48"></rect><text class="t" text-anchor="middle" x="330" y="72">1 · Diseño CONCEPTUAL</text><text class="s" text-anchor="middle" x="330" y="92">Modelo entidad-relación · independiente del SGBD</text>
+<rect fill="#0055a0" height="56" rx="6" width="420" x="120" y="120"></rect><text class="t" text-anchor="middle" x="330" y="144">2 · Diseño LÓGICO</text><text class="s" text-anchor="middle" x="330" y="164">Tablas, claves y normalización · depende del modelo relacional</text>
+<rect fill="#003d73" height="56" rx="6" width="420" x="120" y="192"></rect><text class="t" text-anchor="middle" x="330" y="216">3 · Diseño FÍSICO</text><text class="s" text-anchor="middle" x="330" y="236">Ficheros, índices, particiones · depende del producto concreto</text>
+<path d="M330 104 L330 118" marker-end="url(#a)" stroke="#888" stroke-width="2"></path>
+<path d="M330 176 L330 190" marker-end="url(#a)" stroke="#888" stroke-width="2"></path>
+<defs><marker id="a" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#888"></path></marker></defs>
+<text class="l" x="40" y="76">+ abstracto</text>
+<text class="l" x="40" y="220">+ concreto</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="650" y="290">[Fuente: ELMASRI, cap. 3]</text>
+</svg>

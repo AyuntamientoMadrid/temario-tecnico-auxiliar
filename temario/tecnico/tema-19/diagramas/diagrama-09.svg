@@ -1,0 +1,19 @@
+<svg aria-label="Ciclo de una CTE recursiva: el miembro ancla produce el conjunto inicial, el miembro recursivo se une con UNION ALL y se reevalúa sobre el resultado anterior hasta que no produce filas nuevas" role="img" viewbox="0 0 640 346" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 12px system-ui,sans-serif;fill:#fff}.s9{font:10.5px system-ui,sans-serif;fill:#fff}.l9{font:11px system-ui,sans-serif;fill:#444}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h9" text-anchor="middle" x="320" y="22">WITH RECURSIVE: ancla + miembro recursivo</text>
+<rect fill="#0055a0" height="46" rx="6" width="180" x="230" y="40"></rect><text class="t9" text-anchor="middle" x="320" y="60">MIEMBRO ANCLA</text><text class="s9" text-anchor="middle" x="320" y="78">consulta base (nivel 1)</text>
+<path d="M320 86 L320 116" marker-end="url(#a9)" stroke="#888" stroke-width="2"></path>
+<text class="l9" x="345" y="106">UNION ALL</text>
+<rect fill="#2d8659" height="46" rx="6" width="240" x="200" y="118"></rect><text class="t9" text-anchor="middle" x="320" y="138">MIEMBRO RECURSIVO</text><text class="s9" text-anchor="middle" x="320" y="156">referencia la propia CTE</text>
+<path d="M460 216 L500 216 L500 141 L444 141" fill="none" marker-end="url(#a9)" stroke="#0055a0" stroke-width="2"></path><text class="l9" x="470" y="210">SÍ</text>
+<text class="l9" x="506" y="170">se repite sobre</text>
+<text class="l9" x="506" y="184">el resultado previo</text>
+<path d="M320 164 L320 194" marker-end="url(#a9)" stroke="#888" stroke-width="2"></path>
+<rect fill="#e89822" height="40" rx="6" width="280" x="180" y="196"></rect><text class="t9" text-anchor="middle" x="320" y="221">¿produce filas nuevas?</text>
+<path d="M320 236 L320 260" marker-end="url(#a9)" stroke="#d13c3c" stroke-width="2"></path>
+<text class="l9" x="345" y="252">NO</text>
+<rect fill="#d13c3c" height="40" rx="6" width="180" x="230" y="262"></rect><text class="t9" text-anchor="middle" x="320" y="287">PARADA (implícita)</text>
+<defs><marker id="a9" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#888"></path></marker></defs>
+<text class="l9" x="60" y="322">Sin una condición de reunión que reduzca el conjunto, la recursión no termina</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="630" y="340">[Fuente: EISENBERG99]</text>
+</svg>

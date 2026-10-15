@@ -1,0 +1,45 @@
+<svg aria-label="Comparativa entre la serie ISO 9241 de ergonomía, que mide el proceso y la interacción, y la familia ISO/IEC 25000 SQuaRE con su modelo ISO/IEC 25010, que mide el producto software; se muestran las nueve características de la edición de 2023 y se destaca que la accesibilidad se cubre con la subcaracterística de inclusividad, dentro de la capacidad de interacción, que disponibilidad es subcaracterística de fiabilidad y que confidencialidad e integridad lo son de seguridad" role="img" viewbox="0 0 680 370" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 10.5px system-ui,sans-serif;fill:#fff}.s3{font:9px system-ui,sans-serif;fill:#fff}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d3{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h3" text-anchor="middle" x="340" y="20">Dos familias de normas, dos objetos distintos</text>
+<rect fill="#0055a0" height="30" rx="5" width="315" x="20" y="32"></rect>
+<text class="t3" text-anchor="middle" x="177" y="52">ISO 9241 — ergonomía: mide PROCESO e INTERACCIÓN</text>
+<rect fill="#2d8659" height="30" rx="5" width="315" x="345" y="32"></rect>
+<text class="t3" text-anchor="middle" x="502" y="52">ISO/IEC 25000 (SQuaRE) — mide el PRODUCTO</text>
+<rect fill="#eef3f8" height="26" rx="4" width="315" x="20" y="70"></rect><text class="d3" x="30" y="87">9241-11 · Usabilidad: eficacia + eficiencia + satisfacción</text>
+<rect fill="#eef3f8" height="26" rx="4" width="315" x="20" y="100"></rect><text class="d3" x="30" y="117">9241-110 · Los 7 principios de interacción</text>
+<rect fill="#eef3f8" height="26" rx="4" width="315" x="20" y="130"></rect><text class="d3" x="30" y="147">9241-171 · Guía de accesibilidad del software</text>
+<rect fill="#eef3f8" height="26" rx="4" width="315" x="20" y="160"></rect><text class="d3" x="30" y="177">9241-210 · Diseño centrado en las personas (iterativo)</text>
+<rect fill="#eef3f8" height="26" rx="4" width="315" x="345" y="70"></rect><text class="d3" x="355" y="87">2501n · Modelos de calidad → ISO/IEC 25010</text>
+<rect fill="#eef3f8" height="26" rx="4" width="315" x="345" y="100"></rect><text class="d3" x="355" y="117">2502n medición · 2503n requisitos · 2504n evaluación</text>
+<rect fill="#eef3f8" height="56" rx="4" width="315" x="345" y="130"></rect>
+<text class="d3" x="355" y="147">Tres modelos: calidad del PRODUCTO (25010),</text>
+<text class="d3" x="355" y="162">calidad EN USO (25019) y de los DATOS (25012)</text>
+<text class="d3" x="355" y="178">25040 · proceso de evaluación</text>
+<line stroke="#ccc" stroke-width="1" x1="20" x2="660" y1="198" y2="198"></line>
+<text class="k3" text-anchor="middle" x="340" y="218">Las 9 características de ISO/IEC 25010:2023 y dónde está cada pieza de este tema</text>
+<rect fill="#888" height="30" rx="4" width="103" x="20" y="228"></rect><text class="s3" text-anchor="middle" x="71" y="247">Adecuación func.</text>
+<rect fill="#888" height="30" rx="4" width="103" x="129" y="228"></rect><text class="s3" text-anchor="middle" x="180" y="247">Eficiencia desemp.</text>
+<rect fill="#888" height="30" rx="4" width="103" x="238" y="228"></rect><text class="s3" text-anchor="middle" x="289" y="247">Compatibilidad</text>
+<rect fill="#e89822" height="30" rx="4" width="103" x="347" y="228"></rect><text class="s3" text-anchor="middle" x="398" y="241">CAPACIDAD DE</text><text class="s3" text-anchor="middle" x="398" y="253">INTERACCIÓN</text>
+<rect fill="#0055a0" height="30" rx="4" width="103" x="456" y="228"></rect><text class="s3" text-anchor="middle" x="507" y="247">FIABILIDAD</text>
+<rect fill="#d13c3c" height="30" rx="4" width="95" x="565" y="228"></rect><text class="s3" text-anchor="middle" x="612" y="247">SEGURIDAD</text>
+<rect fill="#888" height="26" rx="4" width="103" x="20" y="264"></rect><text class="s3" text-anchor="middle" x="71" y="281">Mantenibilidad</text>
+<rect fill="#888" height="26" rx="4" width="103" x="129" y="264"></rect><text class="s3" text-anchor="middle" x="180" y="281">Flexibilidad</text>
+<rect fill="#888" height="26" rx="4" width="103" x="238" y="264"></rect><text class="s3" text-anchor="middle" x="289" y="281">Protección (safety)</text>
+<path d="M398 258 L398 296" stroke="#e89822" stroke-width="2"></path>
+<path d="M507 258 L507 296" stroke="#0055a0" stroke-width="2"></path>
+<path d="M612 258 L612 296" stroke="#d13c3c" stroke-width="2"></path>
+<rect fill="#fdf1de" height="34" rx="4" stroke="#e89822" width="103" x="347" y="296"></rect>
+<text class="d3" text-anchor="middle" x="398" y="311">INCLUSIVIDAD</text>
+<text class="d3" text-anchor="middle" x="398" y="324">(subcaracterística)</text>
+<rect fill="#e6eff7" height="34" rx="4" stroke="#0055a0" width="103" x="456" y="296"></rect>
+<text class="d3" text-anchor="middle" x="507" y="311">DISPONIBILIDAD</text>
+<text class="d3" text-anchor="middle" x="507" y="324">(subcaracterística)</text>
+<rect fill="#fbe9e9" height="34" rx="4" stroke="#d13c3c" width="95" x="565" y="296"></rect>
+<text class="d3" text-anchor="middle" x="612" y="311">Confidencialidad</text>
+<text class="d3" text-anchor="middle" x="612" y="324">e integridad</text>
+<text class="k3" x="30" y="316">Las tres piezas que dan título</text>
+<text class="k3" x="30" y="330">a este tema están en 3 lugares distintos</text>
+<text class="d3" x="30" y="346">Accesibilidad: en 2023 la cubren inclusividad y asistencia al usuario</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="360">[Fuente: ISO9241-11; ISO9241-210; ISO25000; ISO25010]</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg aria-label="Esquema del marcado de calidad de servicio: el punto de código de prioridad de 3 bits vive en la etiqueta 802.1Q del nivel 2 y se pierde al encaminar, mientras que el punto de código de servicios diferenciados de 6 bits vive en la cabecera IP del nivel 3 y sobrevive extremo a extremo; se incluyen los valores de las clases voz 46, vídeo 34, señalización 24, transaccional 18 y mejor esfuerzo 0, y las cinco operaciones de clasificación, marcado, vigilancia, modelado y encolamiento" role="img" viewbox="0 0 680 384" xmlns="http://www.w3.org/2000/svg">
+<style>.td{font:700 10px system-ui,sans-serif;fill:#fff}.sd{font:8.5px system-ui,sans-serif;fill:#fff}.dd{font:9px system-ui,sans-serif;fill:#333}.hd{font:700 13px system-ui,sans-serif;fill:#0055a0}.kd{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.nd{font:8.5px system-ui,sans-serif;fill:#666}.vd{font:700 13px system-ui,sans-serif;fill:#fff}</style>
+<defs><marker id="a13" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="hd" text-anchor="middle" x="340" y="20">Calidad de servicio: dónde se marca y con qué valor</text>
+<rect fill="#e89822" height="76" rx="5" width="316" x="20" y="34"></rect>
+<text class="td" text-anchor="middle" x="178" y="52">NIVEL 2 — PCP (también llamado CoS)</text>
+<text class="sd" text-anchor="middle" x="178" y="70">3 bits · valores 0-7 · dentro de la etiqueta 802.1Q</text>
+<text class="sd" text-anchor="middle" x="178" y="86">Solo existe en tramas ETIQUETADAS</text>
+<text class="sd" text-anchor="middle" x="178" y="102">SE PIERDE al cruzar un encaminador</text>
+<rect fill="#0055a0" height="76" rx="5" width="316" x="344" y="34"></rect>
+<text class="td" text-anchor="middle" x="502" y="52">NIVEL 3 — DSCP</text>
+<text class="sd" text-anchor="middle" x="502" y="70">6 bits · valores 0-63 · campo DS de la cabecera IP</text>
+<text class="sd" text-anchor="middle" x="502" y="86">Viaja en TODO paquete IP</text>
+<text class="sd" text-anchor="middle" x="502" y="102">SOBREVIVE de extremo a extremo</text>
+<text class="kd" x="24" y="132">VALORES DE DSCP QUE HAY QUE RECONOCER</text>
+<rect fill="#d13c3c" height="44" rx="4" width="124" x="20" y="138"></rect><text class="vd" text-anchor="middle" x="82" y="153">EF = 46</text><text class="sd" text-anchor="middle" x="82" y="166">VOZ</text><text class="sd" text-anchor="middle" x="82" y="177">cola de prioridad</text>
+<rect fill="#0055a0" height="44" rx="4" width="124" x="150" y="138"></rect><text class="vd" text-anchor="middle" x="212" y="153">AF41 = 34</text><text class="sd" text-anchor="middle" x="212" y="166">VÍDEO INTERACTIVO</text><text class="sd" text-anchor="middle" x="212" y="177">clase garantizada</text>
+<rect fill="#2d8659" height="44" rx="4" width="124" x="280" y="138"></rect><text class="vd" text-anchor="middle" x="342" y="153">CS3 = 24</text><text class="sd" text-anchor="middle" x="342" y="166">SEÑALIZACIÓN</text><text class="sd" text-anchor="middle" x="342" y="177">poco caudal, crítica</text>
+<rect fill="#e89822" height="44" rx="4" width="124" x="410" y="138"></rect><text class="vd" text-anchor="middle" x="472" y="153">AF21 = 18</text><text class="sd" text-anchor="middle" x="472" y="166">TRANSACCIONAL</text><text class="sd" text-anchor="middle" x="472" y="177">aplicaciones de gestión</text>
+<rect fill="#888" height="44" rx="4" width="120" x="540" y="138"></rect><text class="vd" text-anchor="middle" x="600" y="153">BE = 0</text><text class="sd" text-anchor="middle" x="600" y="166">MEJOR ESFUERZO</text><text class="sd" text-anchor="middle" x="600" y="177">copias, actualizaciones</text>
+<rect fill="#eef3f8" height="24" rx="4" width="640" x="20" y="190"></rect>
+<text class="dd" text-anchor="middle" x="340" y="206">Clases AFxy: x = clase (1 a 4) · y = precedencia de descarte (1 a 3; a mayor y, antes se descarta)</text>
+<text class="kd" x="24" y="236">LAS CINCO OPERACIONES, EN ORDEN</text>
+<rect fill="#0055a0" height="40" rx="4" width="118" x="20" y="242"></rect><text class="td" text-anchor="middle" x="79" y="258">1 CLASIFICAR</text><text class="sd" text-anchor="middle" x="79" y="273">¿a qué clase pertenece?</text>
+<line marker-end="url(#a13)" stroke="#0055a0" stroke-width="2" x1="142" x2="152" y1="262" y2="262"></line>
+<rect fill="#0055a0" height="40" rx="4" width="118" x="156" y="242"></rect><text class="td" text-anchor="middle" x="215" y="258">2 MARCAR</text><text class="sd" text-anchor="middle" x="215" y="273">escribir DSCP o PCP</text>
+<line marker-end="url(#a13)" stroke="#0055a0" stroke-width="2" x1="278" x2="288" y1="262" y2="262"></line>
+<rect fill="#d13c3c" height="40" rx="4" width="118" x="292" y="242"></rect><text class="td" text-anchor="middle" x="351" y="258">3 VIGILAR</text><text class="sd" text-anchor="middle" x="351" y="273">descarta o remarca</text>
+<line marker-end="url(#a13)" stroke="#0055a0" stroke-width="2" x1="414" x2="424" y1="262" y2="262"></line>
+<rect fill="#e89822" height="40" rx="4" width="112" x="428" y="242"></rect><text class="td" text-anchor="middle" x="484" y="258">4 MODELAR</text><text class="sd" text-anchor="middle" x="484" y="273">almacena y retrasa</text>
+<line marker-end="url(#a13)" stroke="#0055a0" stroke-width="2" x1="544" x2="554" y1="262" y2="262"></line>
+<rect fill="#2d8659" height="40" rx="4" width="102" x="558" y="242"></rect><text class="td" text-anchor="middle" x="609" y="258">5 ENCOLAR</text><text class="sd" text-anchor="middle" x="609" y="273">reparte la salida</text>
+<rect fill="#fbeaea" height="26" rx="4" stroke="#d13c3c" stroke-width="1.2" width="316" x="20" y="290"></rect>
+<text class="dd" text-anchor="middle" x="178" y="307">VIGILAR: descarta, NO retrasa · MODELAR: retrasa, NO descarta</text>
+<rect fill="#e8f4ee" height="26" rx="4" stroke="#2d8659" stroke-width="1.2" width="316" x="344" y="290"></rect>
+<text class="dd" text-anchor="middle" x="502" y="307">Se vigila en la ENTRADA · se modela en la SALIDA</text>
+<rect fill="#fdf3e3" height="24" rx="4" stroke="#e89822" stroke-width="1.2" width="640" x="20" y="324"></rect>
+<text class="dd" text-anchor="middle" x="340" y="340">FRONTERA DE CONFIANZA: el marcado del equipo de usuario NO es de fiar. Se clasifica y remarca en el BORDE; el núcleo solo encola</text>
+<rect fill="none" height="18" rx="3" stroke="#0055a0" stroke-width="1.2" width="500" x="90" y="352"></rect>
+<text style="font:700 8.5px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="364">La calidad de servicio NO crea capacidad: solo decide quién sufre la congestión</text>
+<text class="nd" text-anchor="end" x="670" y="380">[Fuente: RFC2474; RFC2597; RFC4594]</text>
+</svg>

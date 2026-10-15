@@ -1,0 +1,37 @@
+<svg aria-label="Árbol de decisión del enfoque de desarrollo móvil aplicado en orden, desde la necesidad de hardware específico que lleva a nativo hasta el caso sin hardware ni tienda que lleva a una aplicación web progresiva, y comparación de la publicación en Google Play y en la App Store" role="img" viewbox="0 0 680 400" xmlns="http://www.w3.org/2000/svg">
+<style>.t14{font:700 10.5px system-ui,sans-serif;fill:#fff}.s14{font:9.5px system-ui,sans-serif;fill:#fff}.q14{font:10.5px system-ui,sans-serif;fill:#222}.h14{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h14" text-anchor="middle" x="340" y="20">Criterios de selección, aplicados en este orden</text>
+<rect fill="#eef3f8" height="40" rx="5" stroke="#0055a0" width="400" x="20" y="34"></rect>
+<text class="q14" x="36" y="59">1. ¿Hardware o API muy específicas, o de última hora?</text>
+<rect fill="#0055a0" height="40" rx="5" width="210" x="450" y="34"></rect>
+<text class="t14" text-anchor="middle" x="555" y="59">NATIVO</text>
+<rect fill="#eef3f8" height="40" rx="5" stroke="#0055a0" width="400" x="20" y="82"></rect>
+<text class="q14" x="36" y="107">2. ¿Máximo rendimiento gráfico o de interacción?</text>
+<rect fill="#0055a0" height="40" rx="5" width="210" x="450" y="82"></rect>
+<text class="t14" text-anchor="middle" x="555" y="107">NATIVO o FLUTTER</text>
+<rect fill="#eef3f8" height="40" rx="5" stroke="#0055a0" width="400" x="20" y="130"></rect>
+<text class="q14" x="36" y="155">3. ¿Dos plataformas, un equipo y presupuesto ajustado?</text>
+<rect fill="#2d8659" height="40" rx="5" width="210" x="450" y="130"></rect>
+<text class="t14" text-anchor="middle" x="555" y="149">MULTIPLATAFORMA</text>
+<text class="s14" text-anchor="middle" x="555" y="163">React Native · Flutter</text>
+<rect fill="#eef3f8" height="40" rx="5" stroke="#0055a0" width="400" x="20" y="178"></rect>
+<text class="q14" x="36" y="203">4. ¿Equipo web y necesidades de dispositivo básicas?</text>
+<rect fill="#e89822" height="40" rx="5" width="210" x="450" y="178"></rect>
+<text class="t14" text-anchor="middle" x="555" y="197">HÍBRIDO</text>
+<text class="s14" text-anchor="middle" x="555" y="211">contenedor web</text>
+<rect fill="#eef3f8" height="40" rx="5" stroke="#0055a0" width="400" x="20" y="226"></rect>
+<text class="q14" x="36" y="251">5. ¿Sin hardware ni tienda, con actualización inmediata?</text>
+<rect fill="#888" height="40" rx="5" width="210" x="450" y="226"></rect>
+<text class="t14" text-anchor="middle" x="555" y="251">PWA</text>
+<line stroke="#ccc" stroke-width="1" x1="20" x2="660" y1="282" y2="282"></line>
+<text style="font:700 11px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="302">La publicación NO depende del enfoque elegido</text>
+<rect fill="#2d8659" height="64" rx="6" width="315" x="20" y="312"></rect>
+<text class="t14" text-anchor="middle" x="177" y="332">GOOGLE PLAY</text>
+<text class="s14" text-anchor="middle" x="177" y="350">AAB obligatorio · pago único de alta</text>
+<text class="s14" text-anchor="middle" x="177" y="366">revisión sobre todo automática · tracks y rollout</text>
+<rect fill="#0055a0" height="64" rx="6" width="315" x="345" y="312"></rect>
+<text class="t14" text-anchor="middle" x="502" y="332">APP STORE</text>
+<text class="s14" text-anchor="middle" x="502" y="350">IPA vía Xcode · cuota ANUAL del programa</text>
+<text class="s14" text-anchor="middle" x="502" y="366">revisión HUMANA siempre · TestFlight</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="392">[Fuente: ISO25010; PLAY-CONSOLE; APPSTORE-REVIEW]</text>
+</svg>

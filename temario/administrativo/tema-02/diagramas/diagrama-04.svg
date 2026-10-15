@@ -1,0 +1,34 @@
+<svg aria-label="La Administración Local: municipio artículo 140, provincia artículo 141, isla, y haciendas locales artículo 142" role="img" viewbox="0 0 700 360" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .d4-root{fill:#0055a0;stroke:#003d73;stroke-width:2}
+    .d4-box{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .d4-t{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .d4-h{font:700 13px system-ui,sans-serif;fill:#003d73;text-anchor:middle}
+    .d4-s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+    .d4-l{stroke:#0055a0;stroke-width:1.5;fill:none}
+  </style>
+<rect class="d4-root" height="46" rx="8" width="200" x="250" y="20"></rect>
+<text class="d4-t" x="350" y="40">ADMINISTRACIÓN LOCAL</text>
+<text class="d4-t" style="font-weight:400;font-size:11px" x="350" y="57">Capítulo II · arts. 140-142</text>
+<line class="d4-l" x1="350" x2="350" y1="66" y2="92"></line>
+<line class="d4-l" x1="130" x2="130" y1="110" y2="92"></line>
+<line class="d4-l" x1="350" x2="350" y1="110" y2="92"></line>
+<line class="d4-l" x1="570" x2="570" y1="110" y2="92"></line>
+<line class="d4-l" x1="130" x2="570" y1="92" y2="92"></line>
+<rect class="d4-box" height="76" rx="8" width="180" x="40" y="110"></rect>
+<text class="d4-h" x="130" y="135">MUNICIPIO</text>
+<text class="d4-s" x="130" y="153">art. 140 · personalidad</text>
+<text class="d4-s" x="130" y="169">jurídica plena</text>
+<rect class="d4-box" height="76" rx="8" width="180" x="260" y="110"></rect>
+<text class="d4-h" x="350" y="135">PROVINCIA</text>
+<text class="d4-s" x="350" y="153">art. 141 · Diputaciones</text>
+<text class="d4-s" x="350" y="169">límites: ley orgánica</text>
+<rect class="d4-box" height="76" rx="8" width="180" x="480" y="110"></rect>
+<text class="d4-h" x="570" y="135">ISLA</text>
+<text class="d4-s" x="570" y="153">art. 141.4 · Cabildos</text>
+<text class="d4-s" x="570" y="169">(Canarias) y Consejos</text>
+<rect fill="#fdf4e4" height="70" rx="8" stroke="#e89822" stroke-width="1.5" width="460" x="120" y="240"></rect>
+<text class="d4-h" style="fill:#a8650f" x="350" y="268">HACIENDAS LOCALES · art. 142</text>
+<text class="d4-s" x="350" y="288">Suficiencia financiera: tributos propios + participación en</text>
+<text class="d4-s" x="350" y="303">los del Estado y de las CCAA · (desarrollo: TRLRHL → Tema 8)</text>
+</svg>

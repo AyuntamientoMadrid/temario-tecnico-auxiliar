@@ -1,0 +1,61 @@
+<svg aria-label="Ciclo de vida de desarrollo seguro: actividades de seguridad en las fases de requisitos, diseño, implementación, verificación, despliegue y operación, con el criterio de desplazamiento a la izquierda porque el coste de corregir crece con la fase; y los modelos de referencia Microsoft SDL, NIST SSDF, OWASP SAMM, BSIMM y OWASP ASVS" role="img" viewbox="0 0 680 350" xmlns="http://www.w3.org/2000/svg">
+<style>.t12{font:700 10px system-ui,sans-serif;fill:#fff}.s12{font:8.5px system-ui,sans-serif;fill:#fff}.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}.k12{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d12{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h12" text-anchor="middle" x="340" y="20">SSDLC: la seguridad es actividad de TODAS las fases</text>
+<rect fill="#0055a0" height="72" rx="5" width="103" x="20" y="36"></rect>
+<text class="t12" text-anchor="middle" x="71" y="54">REQUISITOS</text>
+<text class="s12" text-anchor="middle" x="71" y="71">Requisitos de</text>
+<text class="s12" text-anchor="middle" x="71" y="84">seguridad (ASVS)</text>
+<text class="s12" text-anchor="middle" x="71" y="97">Clasificar datos</text>
+<rect fill="#0055a0" height="72" rx="5" width="103" x="129" y="36"></rect>
+<text class="t12" text-anchor="middle" x="180" y="54">DISEÑO</text>
+<text class="s12" text-anchor="middle" x="180" y="71">MODELADO DE</text>
+<text class="s12" text-anchor="middle" x="180" y="84">AMENAZAS</text>
+<text class="s12" style="font-size:7.5px" text-anchor="middle" x="180" y="97">Privacidad desde diseño</text>
+<rect fill="#2d8659" height="72" rx="5" width="103" x="238" y="36"></rect>
+<text class="t12" text-anchor="middle" x="289" y="54">IMPLEMENTACIÓN</text>
+<text class="s12" text-anchor="middle" x="289" y="71">Codificación segura</text>
+<text class="s12" text-anchor="middle" x="289" y="84">SAST + revisión</text>
+<text class="s12" text-anchor="middle" x="289" y="97">entre pares</text>
+<rect fill="#2d8659" height="72" rx="5" width="103" x="347" y="36"></rect>
+<text class="t12" text-anchor="middle" x="398" y="54">VERIFICACIÓN</text>
+<text class="s12" text-anchor="middle" x="398" y="71">DAST · SCA</text>
+<text class="s12" text-anchor="middle" x="398" y="84">Fuzzing</text>
+<text class="s12" text-anchor="middle" x="398" y="97">Pentest</text>
+<rect fill="#e89822" height="72" rx="5" width="103" x="456" y="36"></rect>
+<text class="t12" text-anchor="middle" x="507" y="54">DESPLIEGUE</text>
+<text class="s12" text-anchor="middle" x="507" y="71">Bastionado</text>
+<text class="s12" text-anchor="middle" x="507" y="84">Gestión de secretos</text>
+<text class="s12" text-anchor="middle" x="507" y="97">Firma de artefactos</text>
+<rect fill="#e89822" height="72" rx="5" width="95" x="565" y="36"></rect>
+<text class="t12" text-anchor="middle" x="612" y="54">OPERACIÓN</text>
+<text class="s12" text-anchor="middle" x="612" y="71">Parcheo</text>
+<text class="s12" text-anchor="middle" x="612" y="84">Monitorización</text>
+<text class="s12" text-anchor="middle" x="612" y="97">Respuesta</text>
+<defs><marker id="a12" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3.5"><path d="M0,0 L7,3.5 L0,7 z" fill="#d13c3c"></path></marker></defs>
+<path d="M640 124 L40 124" marker-end="url(#a12)" stroke="#d13c3c" stroke-width="2"></path>
+<text style="font:700 10px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="140">SHIFT LEFT — cuanto más tarde se detecta el defecto, más cuesta corregirlo</text>
+<line stroke="#ccc" stroke-width="1" x1="20" x2="660" y1="152" y2="152"></line>
+<text class="k12" x="20" y="172">MODELOS DE REFERENCIA — qué aporta cada uno</text>
+<rect fill="#0055a0" height="56" rx="5" width="155" x="20" y="180"></rect>
+<text class="t12" text-anchor="middle" x="97" y="198">Microsoft SDL</text>
+<text class="s12" text-anchor="middle" x="97" y="215">El pionero (2004)</text>
+<text class="s12" text-anchor="middle" x="97" y="229">Origen de STRIDE</text>
+<rect fill="#0055a0" height="56" rx="5" width="155" x="185" y="180"></rect>
+<text class="t12" text-anchor="middle" x="262" y="198">NIST SSDF (800-218)</text>
+<text class="s12" text-anchor="middle" x="262" y="215">Marco de prácticas:</text>
+<text class="s12" text-anchor="middle" x="262" y="229">PO · PS · PW · RV</text>
+<rect fill="#2d8659" height="56" rx="5" width="155" x="350" y="180"></rect>
+<text class="t12" text-anchor="middle" x="427" y="198">OWASP SAMM</text>
+<text class="s12" text-anchor="middle" x="427" y="215">PRESCRIPTIVO · madurez</text>
+<text class="s12" text-anchor="middle" x="427" y="229">5 funciones · 3 niveles</text>
+<rect fill="#888" height="56" rx="5" width="145" x="515" y="180"></rect>
+<text class="t12" text-anchor="middle" x="587" y="198">BSIMM</text>
+<text class="s12" text-anchor="middle" x="587" y="215">DESCRIPTIVO</text>
+<text class="s12" text-anchor="middle" x="587" y="229">qué hacen otros</text>
+<rect fill="#e89822" height="44" rx="5" width="420" x="130" y="246"></rect>
+<text class="t12" text-anchor="middle" x="340" y="264">OWASP ASVS — catálogo de REQUISITOS VERIFICABLES del producto</text>
+<text class="s12" text-anchor="middle" x="340" y="281">3 niveles de verificación · la herramienta para redactar un pliego y auditar la entrega</text>
+<rect fill="none" height="26" rx="5" stroke="#0055a0" stroke-width="2" width="640" x="20" y="300"></rect>
+<text style="font:700 10px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="317">SDL, SSDF, SAMM y BSIMM hablan del PROCESO · ASVS habla del PRODUCTO</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="344">[Fuente: MS-SDL; NIST-SSDF; OWASP-SAMM; BSIMM; OWASP-ASVS]</text>
+</svg>

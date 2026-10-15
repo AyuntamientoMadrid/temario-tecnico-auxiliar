@@ -1,0 +1,68 @@
+<svg aria-label="Cadena de seguridad de TETRA. Primero, la autenticación por desafío y respuesta con la clave secreta K, que nunca viaja por el aire y que puede ejecutarse en sentido inverso para que el terminal verifique a la red y evitar así una estación base falsa. De la autenticación se deriva la clave DCK. Después, la jerarquía de claves: K de autenticación, DCK derivada individual, CCK común de área, SCK estática precargada, y GCK de grupo que se combina para dar la MGCK. Finalmente, las clases de seguridad: SC1 sin cifrar, SC2 con clave estática y SC3 con clave derivada y común, más la variante SC3G con clave de grupo" role="img" viewbox="0 0 680 356" xmlns="http://www.w3.org/2000/svg">
+<style>.t16{font:700 10px system-ui,sans-serif;fill:#fff}.s16{font:8.5px system-ui,sans-serif;fill:#fff}.d16{font:8.5px system-ui,sans-serif;fill:#333}.h16{font:700 13px system-ui,sans-serif;fill:#0055a0}.k16{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n16{font:8.5px system-ui,sans-serif;fill:#666}.b16{font:700 9px system-ui,sans-serif;fill:#0055a0}.m16{font:700 11px system-ui,sans-serif;fill:#fff}</style>
+<text class="h16" text-anchor="middle" x="340" y="22">Autenticar y cifrar están ENCADENADOS: de la autenticación sale la clave</text>
+<text class="k16" x="20" y="46">PASO 1 · AUTENTICACIÓN POR DESAFÍO-RESPUESTA (algoritmos TAA1; TAA2 con el set B)</text>
+<rect fill="#0055a0" height="56" rx="4" width="150" x="20" y="54"></rect>
+<text class="t16" text-anchor="middle" x="95" y="74">Clave secreta K</text>
+<text class="s16" text-anchor="middle" x="95" y="90">Compartida terminal-red.</text>
+<text class="s16" text-anchor="middle" x="95" y="103">NUNCA viaja por el aire</text>
+<path d="M172,82 L190,82" stroke="#0055a0" stroke-width="2"></path>
+<path d="M184,78 L192,82 L184,86 Z" fill="#0055a0"></path>
+<rect fill="#0055a0" height="56" rx="4" width="150" x="194" y="54"></rect>
+<text class="t16" text-anchor="middle" x="269" y="74">Desafío</text>
+<text class="s16" text-anchor="middle" x="269" y="90">La red envía un número</text>
+<text class="s16" text-anchor="middle" x="269" y="103">aleatorio al terminal</text>
+<path d="M346,82 L364,82" stroke="#0055a0" stroke-width="2"></path>
+<path d="M358,78 L366,82 L358,86 Z" fill="#0055a0"></path>
+<rect fill="#0055a0" height="56" rx="4" width="150" x="368" y="54"></rect>
+<text class="t16" text-anchor="middle" x="443" y="74">Respuesta</text>
+<text class="s16" text-anchor="middle" x="443" y="90">El terminal calcula y</text>
+<text class="s16" text-anchor="middle" x="443" y="103">la red compara</text>
+<path d="M520,82 L538,82" stroke="#2d8659" stroke-width="2"></path>
+<path d="M532,78 L540,82 L532,86 Z" fill="#2d8659"></path>
+<rect fill="#2d8659" height="56" rx="4" width="126" x="542" y="54"></rect>
+<text class="t16" text-anchor="middle" x="605" y="74">Se deriva la DCK</text>
+<text class="s16" text-anchor="middle" x="605" y="90">Clave de cifrado</text>
+<text class="s16" text-anchor="middle" x="605" y="103">propia de esa sesión</text>
+<rect fill="#d13c3c" height="24" rx="4" width="648" x="20" y="120"></rect>
+<text class="s16" text-anchor="middle" x="344" y="136">Si la autenticación es MUTUA, el terminal verifica también a la red: es la defensa contra la ESTACIÓN BASE FALSA</text>
+<text class="k16" x="20" y="168">PASO 2 · JERARQUÍA DE CLAVES</text>
+<rect fill="#0055a0" height="58" rx="4" width="126" x="20" y="176"></rect>
+<text class="m16" text-anchor="middle" x="83" y="196">K</text>
+<text class="s16" text-anchor="middle" x="83" y="212">Autenticación.</text>
+<text class="s16" text-anchor="middle" x="83" y="225">No cifra tráfico</text>
+<rect fill="#2d8659" height="58" rx="4" width="126" x="158" y="176"></rect>
+<text class="m16" text-anchor="middle" x="221" y="196">DCK</text>
+<text class="s16" text-anchor="middle" x="221" y="212">Derivada, individual.</text>
+<text class="s16" text-anchor="middle" x="221" y="225">La más fuerte</text>
+<rect fill="#2d8659" height="58" rx="4" width="126" x="296" y="176"></rect>
+<text class="m16" text-anchor="middle" x="359" y="196">CCK</text>
+<text class="s16" text-anchor="middle" x="359" y="212">Común de área.</text>
+<text class="s16" text-anchor="middle" x="359" y="225">Se envía por OTAR</text>
+<rect fill="#e89822" height="58" rx="4" width="112" x="434" y="176"></rect>
+<text class="m16" text-anchor="middle" x="490" y="196">SCK</text>
+<text class="s16" text-anchor="middle" x="490" y="212">Estática, precargada.</text>
+<text class="s16" text-anchor="middle" x="490" y="225">La más débil</text>
+<rect fill="#6b7c8c" height="58" rx="4" width="110" x="558" y="176"></rect>
+<text class="m16" text-anchor="middle" x="613" y="196">GCK → MGCK</text>
+<text class="s16" text-anchor="middle" x="613" y="212">De grupo. No se usa</text>
+<text class="s16" text-anchor="middle" x="613" y="225">directa: se modifica</text>
+<text class="k16" x="20" y="258">PASO 3 · CLASES DE SEGURIDAD DEL INTERFAZ AIRE</text>
+<rect fill="#d13c3c" height="62" rx="4" width="158" x="20" y="266"></rect>
+<text class="m16" text-anchor="middle" x="99" y="286">SC1</text>
+<text class="s16" text-anchor="middle" x="99" y="303">SIN cifrado del aire.</text>
+<text class="s16" text-anchor="middle" x="99" y="316">Puede usar ESI</text>
+<rect fill="#e89822" height="62" rx="4" width="158" x="186" y="266"></rect>
+<text class="m16" text-anchor="middle" x="265" y="286">SC2</text>
+<text class="s16" text-anchor="middle" x="265" y="303">Clave estática SCK.</text>
+<text class="s16" text-anchor="middle" x="265" y="316">Es la clase del modo directo</text>
+<rect fill="#2d8659" height="62" rx="4" width="158" x="352" y="266"></rect>
+<text class="m16" text-anchor="middle" x="431" y="286">SC3</text>
+<text class="s16" text-anchor="middle" x="431" y="303">DCK + CCK, con</text>
+<text class="s16" text-anchor="middle" x="431" y="316">AUTENTICACIÓN. Recomendada</text>
+<rect fill="#2d8659" height="62" rx="4" width="150" x="518" y="266"></rect>
+<text class="m16" text-anchor="middle" x="593" y="286">SC3G</text>
+<text class="s16" text-anchor="middle" x="593" y="303">SC3 más GCK/MGCK:</text>
+<text class="s16" text-anchor="middle" x="593" y="316">cifrado propio por grupo</text>
+<text class="n16" text-anchor="end" x="670" y="348">[Fuente: elaboración propia sobre ETSI EN 300 392-7 y TCCA TTR 001-11 v4.1.0 (2023)]</text>
+</svg>

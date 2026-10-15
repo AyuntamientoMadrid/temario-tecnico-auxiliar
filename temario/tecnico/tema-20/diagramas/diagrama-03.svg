@@ -1,0 +1,31 @@
+<svg aria-label="Cheat sheet de los cinco principios SOLID: responsabilidad única, abierto cerrado, sustitución de Liskov, segregación de interfaces e inversión de dependencias" role="img" viewbox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 14px system-ui,sans-serif;fill:#fff}.n3{font:700 12px system-ui,sans-serif;fill:#fff}.l3{font:11px system-ui,sans-serif;fill:#444}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h3" text-anchor="middle" x="330" y="24">SOLID — 5 principios de diseño OO [MARTIN03]</text>
+<g>
+<rect fill="#0055a0" height="40" rx="6" width="40" x="30" y="40"></rect><text class="t3" text-anchor="middle" x="50" y="66">S</text>
+<text class="n3" style="fill:#0055a0" x="85" y="58">Single Responsibility</text>
+<text class="l3" x="85" y="74">Una clase, una única razón para cambiar</text>
+</g>
+<g>
+<rect fill="#0055a0" height="40" rx="6" width="40" x="30" y="94"></rect><text class="t3" text-anchor="middle" x="50" y="120">O</text>
+<text class="n3" style="fill:#0055a0" x="85" y="112">Open/Closed</text>
+<text class="l3" x="85" y="128">Abierta a extensión, cerrada a modificación</text>
+</g>
+<g>
+<rect fill="#0055a0" height="40" rx="6" width="40" x="30" y="148"></rect><text class="t3" text-anchor="middle" x="50" y="174">L</text>
+<text class="n3" style="fill:#0055a0" x="85" y="166">Liskov Substitution</text>
+<text class="l3" x="85" y="182">Una subclase debe poder sustituir a su superclase</text>
+</g>
+<g>
+<rect fill="#0055a0" height="40" rx="6" width="40" x="30" y="202"></rect><text class="t3" text-anchor="middle" x="50" y="228">I</text>
+<text class="n3" style="fill:#0055a0" x="85" y="220">Interface Segregation</text>
+<text class="l3" x="85" y="236">Varias interfaces específicas, no una sobrecargada</text>
+</g>
+<g>
+<rect fill="#0055a0" height="40" rx="6" width="40" x="30" y="256"></rect><text class="t3" text-anchor="middle" x="50" y="282">D</text>
+<text class="n3" style="fill:#0055a0" x="85" y="274">Dependency Inversion</text>
+<text class="l3" x="85" y="290">Depender de abstracciones, no de clases concretas</text>
+</g>
+<text style="font:700 12px system-ui;fill:#e89822" text-anchor="middle" x="330" y="322">SOLID sistematiza el objetivo alta cohesión + bajo acoplamiento (§1.3)</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="650" y="350">[Fuente: MARTIN00; MARTIN03; LISKOV94]</text>
+</svg>

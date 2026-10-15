@@ -1,0 +1,30 @@
+<svg aria-label="Secuencia de identificación, autenticación, autorización y trazabilidad en un acceso, con la pregunta que responde cada etapa, un ejemplo concreto y la medida del Esquema Nacional de Seguridad que la exige" role="img" viewbox="0 0 680 324" xmlns="http://www.w3.org/2000/svg">
+<style>.t7{font:700 11px system-ui,sans-serif;fill:#fff}.s7{font:8.5px system-ui,sans-serif;fill:#fff}.d7{font:9px system-ui,sans-serif;fill:#333}.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}.k7{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n7{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h7" text-anchor="middle" x="340" y="20">Cuatro etapas, cuatro preguntas distintas</text>
+<rect fill="#0055a0" height="42" rx="5" width="152" x="20" y="38"></rect><text class="t7" text-anchor="middle" x="96" y="56">1 · IDENTIFICACIÓN</text><text class="s7" text-anchor="middle" x="96" y="72">Quién dices que eres</text>
+<rect fill="#2d8659" height="42" rx="5" width="152" x="184" y="38"></rect><text class="t7" text-anchor="middle" x="260" y="56">2 · AUTENTICACIÓN</text><text class="s7" text-anchor="middle" x="260" y="72">Puedes demostrarlo</text>
+<rect fill="#e89822" height="42" rx="5" width="152" x="348" y="38"></rect><text class="t7" text-anchor="middle" x="424" y="56">3 · AUTORIZACIÓN</text><text class="s7" text-anchor="middle" x="424" y="72">Qué puedes hacer</text>
+<rect fill="#7a2f8a" height="42" rx="5" width="148" x="512" y="38"></rect><text class="t7" text-anchor="middle" x="586" y="56">4 · TRAZABILIDAD</text><text class="s7" text-anchor="middle" x="586" y="72">Qué has hecho</text>
+<path d="M172 59 L180 59" stroke="#666" stroke-width="1.5"></path><path d="M336 59 L344 59" stroke="#666" stroke-width="1.5"></path><path d="M500 59 L508 59" stroke="#666" stroke-width="1.5"></path>
+<text class="k7" x="20" y="102">EJEMPLO EN LA SEDE MUNICIPAL</text>
+<rect fill="#eef3f8" height="40" rx="4" width="152" x="20" y="110"></rect><text class="d7" text-anchor="middle" x="96" y="126">Se inserta la tarjeta</text><text class="d7" text-anchor="middle" x="96" y="140">del empleado</text>
+<rect fill="#eef3f8" height="40" rx="4" width="152" x="184" y="110"></rect><text class="d7" text-anchor="middle" x="260" y="126">Se teclea el PIN y la</text><text class="d7" text-anchor="middle" x="260" y="140">tarjeta firma un reto</text>
+<rect fill="#eef3f8" height="40" rx="4" width="152" x="348" y="110"></rect><text class="d7" text-anchor="middle" x="424" y="126">Rol tramitador: solo</text><text class="d7" text-anchor="middle" x="424" y="140">su distrito</text>
+<rect fill="#eef3f8" height="40" rx="4" width="148" x="512" y="110"></rect><text class="d7" text-anchor="middle" x="586" y="126">Queda registrado el</text><text class="d7" text-anchor="middle" x="586" y="140">expediente y la hora</text>
+<text class="k7" x="20" y="172">MEDIDA DEL ENS QUE LO EXIGE</text>
+<rect fill="#f5f5f5" height="30" rx="4" width="152" x="20" y="180"></rect><text class="d7" text-anchor="middle" x="96" y="199">op.acc.1</text>
+<rect fill="#f5f5f5" height="30" rx="4" width="152" x="184" y="180"></rect><text class="d7" text-anchor="middle" x="260" y="199">op.acc.5 y op.acc.6</text>
+<rect fill="#f5f5f5" height="30" rx="4" width="152" x="348" y="180"></rect><text class="d7" text-anchor="middle" x="424" y="199">op.acc.2 y op.acc.4</text>
+<rect fill="#f5f5f5" height="30" rx="4" width="148" x="512" y="180"></rect><text class="d7" text-anchor="middle" x="586" y="199">op.exp.8</text>
+<rect fill="#fdf3e3" height="52" rx="4" width="316" x="20" y="224"></rect>
+<text class="k7" text-anchor="middle" x="178" y="242">MODELO AAA</text>
+<text class="d7" text-anchor="middle" x="178" y="258">Authentication, Authorization, Accounting</text>
+<text class="n7" text-anchor="middle" x="178" y="271">La identificación es PREVIA y no es una de las tres A</text>
+<rect fill="#fbeaea" height="52" rx="4" width="312" x="348" y="224"></rect>
+<text class="k7" text-anchor="middle" x="504" y="242">ART. 24.3 DEL ENS</text>
+<text class="d7" text-anchor="middle" x="504" y="258">Cada usuario, identificado de FORMA ÚNICA</text>
+<text class="n7" text-anchor="middle" x="504" y="271">Las cuentas genéricas compartidas destruyen la trazabilidad</text>
+<rect fill="none" height="20" rx="4" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="284"></rect>
+<text class="k7" text-anchor="middle" x="340" y="298">Se identifica UNA vez, se autentica para probarlo, se autoriza CADA vez que se pide un recurso</text>
+<text class="n7" text-anchor="end" x="670" y="316">[Fuente: ENS, arts. 17 y 24, op.acc; RFC2865]</text>
+</svg>

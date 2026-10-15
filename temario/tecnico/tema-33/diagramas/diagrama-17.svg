@@ -1,0 +1,24 @@
+<svg aria-label="Evolución de los protocolos de seguridad inalámbrica desde WEP roto hasta WPA3 con autenticación SAE, medidas que no aportan seguridad real como ocultar el SSID o filtrar por dirección MAC, y las cuatro medidas de protección de las comunicaciones del Esquema Nacional de Seguridad con su nivel de exigencia" role="img" viewbox="0 0 680 356" xmlns="http://www.w3.org/2000/svg">
+<style>.t17{font:700 10px system-ui,sans-serif;fill:#fff}.s17{font:8.5px system-ui,sans-serif;fill:#fff}.d17{font:9px system-ui,sans-serif;fill:#333}.h17{font:700 13px system-ui,sans-serif;fill:#0055a0}.k17{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n17{font:8.5px system-ui,sans-serif;fill:#666}.m17{font:700 9.5px ui-monospace,monospace;fill:#0055a0}</style>
+<text class="h17" text-anchor="middle" x="340" y="20">En radio hay que suponer siempre que alguien escucha</text>
+<rect fill="#d13c3c" height="54" rx="5" width="155" x="20" y="36"></rect><text class="t17" text-anchor="middle" x="97" y="54">WEP · 1999</text><text class="s17" text-anchor="middle" x="97" y="70">RC4 · ROTO</text><text class="s17" text-anchor="middle" x="97" y="83">prohibido su uso</text>
+<rect fill="#e89822" height="54" rx="5" width="155" x="182" y="36"></rect><text class="t17" text-anchor="middle" x="259" y="54">WPA · 2003</text><text class="s17" text-anchor="middle" x="259" y="70">TKIP · transitorio</text><text class="s17" text-anchor="middle" x="259" y="83">obsoleto</text>
+<rect fill="#5384ac" height="54" rx="5" width="155" x="344" y="36"></rect><text class="t17" text-anchor="middle" x="421" y="54">WPA2 · 2004</text><text class="s17" text-anchor="middle" x="421" y="70">AES-CCMP · 802.11i</text><text class="s17" text-anchor="middle" x="421" y="83">vigente pero atacable</text>
+<rect fill="#2d8659" height="54" rx="5" width="154" x="506" y="36"></rect><text class="t17" text-anchor="middle" x="583" y="54">WPA3 · 2018</text><text class="s17" text-anchor="middle" x="583" y="70">SAE · 192 bits</text><text class="s17" text-anchor="middle" x="583" y="83">EL RECOMENDADO</text>
+<rect fill="#e8f4ee" height="26" rx="4" width="640" x="20" y="98"></rect>
+<text class="d17" text-anchor="middle" x="340" y="115">WPA3 aporta SAE (sin diccionario fuera de línea), modo Enterprise de 192 bits y OWE para redes abiertas</text>
+<rect fill="#fbeaea" height="26" rx="4" width="640" x="20" y="134"></rect>
+<text class="d17" text-anchor="middle" x="340" y="151">NO SON SEGURIDAD: ocultar el SSID ni filtrar por dirección MAC · ambas se saltan en minutos</text>
+<rect fill="#eef3f8" height="26" rx="4" width="640" x="20" y="170"></rect>
+<text class="d17" text-anchor="middle" x="340" y="187">MODELO EMPRESARIAL: 802.1X + EAP + RADIUS · credencial por PERSONA, no clave compartida</text>
+<text class="k17" x="26" y="218">LO QUE EXIGE EL ENS (anexo II, protección de las comunicaciones)</text>
+<rect fill="#0055a0" height="26" rx="3" width="150" x="20" y="226"></rect><text class="m17" style="fill:#fff" text-anchor="middle" x="95" y="243">mp.com.1</text>
+<rect fill="#eef3f8" height="26" rx="3" width="482" x="178" y="226"></rect><text class="d17" text-anchor="middle" x="419" y="243">Perímetro seguro · todo el tráfico lo atraviesa · aplica en las TRES categorías</text>
+<rect fill="#0055a0" height="26" rx="3" width="150" x="20" y="256"></rect><text class="m17" style="fill:#fff" text-anchor="middle" x="95" y="273">mp.com.2 — dim. C</text>
+<rect fill="#eef3f8" height="26" rx="3" width="482" x="178" y="256"></rect><text class="d17" text-anchor="middle" x="419" y="273">VPN cifrada fuera del dominio propio · MEDIO: +R1 algoritmos autorizados por el CCN</text>
+<rect fill="#0055a0" height="26" rx="3" width="150" x="20" y="286"></rect><text class="m17" style="fill:#fff" text-anchor="middle" x="95" y="303">mp.com.3 — dim. IA</text>
+<rect fill="#eef3f8" height="26" rx="3" width="482" x="178" y="286"></rect><text class="d17" text-anchor="middle" x="419" y="303">Integridad y autenticidad del canal · MEDIO: +R1+R2 · ALTO: +R1+R2+R3+R4</text>
+<rect fill="#e89822" height="26" rx="3" width="150" x="20" y="316"></rect><text class="m17" style="fill:#fff" text-anchor="middle" x="95" y="333">mp.com.4</text>
+<rect fill="#fdf3e3" height="26" rx="3" width="482" x="178" y="316"></rect><text class="d17" text-anchor="middle" x="419" y="333">Si hay comunicaciones INALÁMBRICAS, en SEGMENTO SEPARADO · R1 VLAN, R2 VPN, R3 física</text>
+<text class="n17" text-anchor="end" x="670" y="352">[Fuente: ENS, anexo II; IEEE 802.11i; Wi-Fi Alliance]</text>
+</svg>

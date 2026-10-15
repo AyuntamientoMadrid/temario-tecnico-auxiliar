@@ -1,0 +1,347 @@
+[
+ {
+  "k": 0,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, la aplicación de escritorio actual se conecta directamente a la base de datos de expedientes. ¿Cuál es el principal problema de ese modelo de 2 capas?",
+    "o": [
+     "Que el cliente es un navegador sin lógica propia, incapaz de mostrar los expedientes.",
+     "Que el cliente queda acoplado al esquema de datos y cada uno mantiene su propia conexión al SGBD.",
+     "Que la base de datos no puede albergar procedimientos almacenados ni disparadores."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 1 · §3.1",
+    "e": "En 2 capas cualquier cambio en el modelo de datos obliga a tocar el cliente, y la escalabilidad es limitada porque cada cliente mantiene una conexión directa al SGBD, un recurso finito."
+   },
+   {
+    "q": "¿Cuál es la ventaja arquitectónica central de pasar a un modelo de 3 capas en la nueva Sede Electrónica?",
+    "o": [
+     "Que se suprime la base de datos y los expedientes pasan a guardarse en el servidor web.",
+     "Que la lógica de negocio se traslada al navegador del ciudadano, que la ejecuta localmente.",
+     "El desacoplamiento: el cliente ya no conoce el esquema de datos, solo el contrato de la capa de negocio."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 1 · §3.2",
+    "e": "Con 3 capas, cambiar el modelo de datos o incluso el motor de base de datos no debería requerir tocar el cliente, que solo conoce la interfaz del servidor de aplicaciones."
+   },
+   {
+    "q": "Además del desacoplamiento, ¿qué mejora de escalabilidad aporta el servidor de aplicaciones frente a la conexión directa de cada cliente al SGBD?",
+    "o": [
+     "Agrupa y reutiliza las conexiones a la base de datos mediante un pool de conexiones.",
+     "Guarda en cada puesto una copia local de los datos para trabajar sin conexión.",
+     "Elimina el uso de la red, porque cliente y base de datos pasan a la misma máquina."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 1 · §3.2",
+    "e": "El servidor de aplicaciones puede agrupar y reutilizar conexiones al SGBD mediante un pool, en lugar de que cada cliente mantenga la suya propia."
+   },
+   {
+    "q": "Ante los picos de tráfico de las campañas de plazos fiscales, ¿qué estrategia de escalado conviene para el nuevo servidor de aplicaciones?",
+    "o": [
+     "Escalado vertical: dotar al servidor, de forma permanente, de más CPU y más memoria.",
+     "Sustituir el servidor de base de datos por otro de mayor capacidad antes de cada campaña.",
+     "Escalado horizontal: añadir instancias temporales tras un balanceador y retirarlas después."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 2 · §2.2.2",
+    "e": "El escalado horizontal añade instancias en paralelo coordinadas por un balanceador; permite crecer solo durante el pico y retirar la capacidad cuando ya no hace falta."
+   },
+   {
+    "q": "¿Por qué no basta con la estrategia que permitía el modelo antiguo, el escalado vertical?",
+    "o": [
+     "Porque el escalado vertical exige instalar un balanceador de carga delante del servidor.",
+     "Porque tiene un límite físico y obliga a sobredimensionar el hardware con coste ocioso el resto del año.",
+     "Porque el escalado vertical solo se aplica a los puestos cliente, no a los servidores."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 2 · §2.2.2",
+    "e": "Añadir CPU y memoria a una misma máquina tiene un techo físico y de coste; para cubrir los picos habría que mantener el hardware sobredimensionado todo el año."
+   },
+   {
+    "q": "¿Cómo se diseña, en una API REST, la consulta del expediente EXP-2026-004821?",
+    "o": [
+     "GET /api/expedientes/EXP-2026-004821",
+     "POST /api/consultarExpediente, con el número en el cuerpo",
+     "PUT /api/expedientes/EXP-2026-004821"
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §6.6",
+    "e": "En REST el expediente es un recurso identificado por su URI y se lee con GET; un único endpoint con POST para todo es el estilo RPC del nivel 0."
+   },
+   {
+    "q": "Desde el panel del gestor hay que marcar ese expediente como «revisado», cambiando solo su estado. ¿Qué petición corresponde?",
+    "o": [
+     "PUT /api/expedientes/EXP-2026-004821, enviando solo el campo estado.",
+     "PATCH /api/expedientes/EXP-2026-004821 con el cuerpo {\"estado\": \"revisado\"}.",
+     "POST /api/expedientes con el cuerpo {\"estado\": \"revisado\"}."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 3 · §6.6",
+    "e": "PATCH es la actualización parcial de un recurso; PUT es un reemplazo completo y POST crea un recurso nuevo."
+   },
+   {
+    "q": "Este diseño usa recursos identificados por URI, verbos HTTP y códigos de estado, pero sin hipermedia. ¿Qué nivel del modelo de madurez de Richardson alcanza?",
+    "o": [
+     "El nivel 2.",
+     "El nivel 3.",
+     "El nivel 0."
+    ],
+    "c": 0,
+    "r": "Caso 1, cuestión 3 · §6.6",
+    "e": "El nivel 2 usa correctamente los verbos HTTP y los códigos de estado; es el nivel de la inmensa mayoría de las APIs REST reales."
+   },
+   {
+    "q": "¿Qué le falta a ese diseño para alcanzar el nivel 3 del modelo de Richardson?",
+    "o": [
+     "Devolver los datos en XML en lugar de JSON, con un esquema formal.",
+     "Usar un único verbo HTTP para todas las operaciones sobre el recurso.",
+     "Incluir en las respuestas enlaces a las acciones disponibles (HATEOAS)."
+    ],
+    "c": 2,
+    "r": "Caso 1, cuestión 3 · §6.6",
+    "e": "El nivel 3 añade HATEOAS: las respuestas incluyen enlaces a las acciones y recursos relacionados, para que el cliente navegue la API dinámicamente."
+   },
+   {
+    "q": "¿Dónde debe comprobarse que el ciudadano autenticado es el titular del expediente que consulta?",
+    "o": [
+     "En el cliente web, con JavaScript, antes de enviar la petición a la API.",
+     "En la capa de lógica de negocio del servidor, porque el cliente es manipulable.",
+     "En la capa de presentación, validando el formato del número de expediente."
+    ],
+    "c": 1,
+    "r": "Caso 1, cuestión 4 · §4.3 y §4.6",
+    "e": "Es una regla de negocio y de seguridad, no de formato; el navegador es manipulable por el usuario, así que la comprobación autoritativa debe hacerse siempre en el servidor."
+   }
+  ]
+ },
+ {
+  "k": 1,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿conviene sustituir el servicio SOAP de Tributos por uno REST antes de integrarlo?",
+    "o": [
+     "No: SOAP sigue vigente en integraciones con garantías formales; se envuelve, no se sustituye.",
+     "Sí: SOAP es un protocolo obsoleto que ya no se usa en integraciones de la Administración.",
+     "Sí: SOAP y REST no pueden convivir dentro de una misma arquitectura de sistemas."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 1 · §5.4.1",
+    "e": "SOAP no está «muerto»: es habitual en sistemas heredados de la Administración que exigen garantías formales. Reescribirlo añadiría riesgo y coste sin beneficio funcional."
+   },
+   {
+    "q": "¿Qué ecosistema de extensiones da a SOAP garantías como la seguridad a nivel de mensaje o las transacciones distribuidas?",
+    "o": [
+     "OpenAPI (Swagger), que describe el contrato del servicio en JSON o YAML.",
+     "WS-*: WS-Security, WS-ReliableMessaging o WS-AtomicTransaction.",
+     "HATEOAS, que añade enlaces a las acciones disponibles en cada respuesta."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 1 · §5.4.1",
+    "e": "Las extensiones WS-* (seguridad, entrega garantizada, transacciones distribuidas) hacen a SOAP especialmente robusto en escenarios empresariales exigentes."
+   },
+   {
+    "q": "¿Qué documento describe formalmente las operaciones, los mensajes, los tipos y el endpoint del servicio SOAP de Tributos?",
+    "o": [
+     "El registro UDDI de servicios.",
+     "La especificación OpenAPI.",
+     "El documento WSDL del servicio."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 2 · §6.4",
+    "e": "El WSDL es el documento XML que describe el contrato de un servicio SOAP: operaciones, mensajes de entrada y salida, tipos de datos y dirección de red."
+   },
+   {
+    "q": "¿Qué papel tendría un registro UDDI en esta integración?",
+    "o": [
+     "Es imprescindible: ningún servicio SOAP puede invocarse sin consultar antes un registro UDDI.",
+     "Serviría para publicar y descubrir el WSDL, pero está en desuso y aquí el WSDL ya se conoce.",
+     "Traduciría automáticamente los mensajes SOAP del sistema de Tributos a JSON para la API."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 2 · §6.4",
+    "e": "UDDI es un registro para publicar y descubrir servicios («páginas amarillas»), hoy en desuso; el equipo conoce directamente el WSDL del sistema de Tributos."
+   },
+   {
+    "q": "En el WSDL de Tributos aparece ConsultarImportePendiente dentro de wsdl:portType, con wsdl:input y wsdl:output. ¿Qué representa?",
+    "o": [
+     "Una operación del servicio, con su mensaje de entrada y su mensaje de salida.",
+     "Un recurso REST identificado por URI que se consulta con el verbo GET.",
+     "Una reclamación (claim) firmada dentro del token del ciudadano."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 2 · §6.4",
+    "e": "SOAP sigue un modelo de operaciones nombradas; el WSDL declara cada operación con los mensajes que espera y devuelve."
+   },
+   {
+    "q": "¿Cómo actúa la capa de negocio de la Sede como intermediaria entre el ciudadano y el servicio SOAP de Tributos?",
+    "o": [
+     "Redirige el navegador del ciudadano al endpoint SOAP para que lo invoque directamente.",
+     "Invoca el servicio SOAP y devuelve al ciudadano el mensaje XML tal como lo recibe.",
+     "Recibe la petición REST, construye el mensaje SOAP, invoca el servicio y traduce el XML a JSON."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 3 · §5.4.2",
+    "e": "La capa de negocio traduce entre estilos: el ciudadano solo ve JSON sobre REST y nunca XML ni SOAP, lo que permite que ambos estilos convivan."
+   },
+   {
+    "q": "¿Qué estructura debe tener el mensaje que la capa de negocio construye para invocar el servicio de Tributos?",
+    "o": [
+     "Un sobre (Envelope) XML con una cabecera (Header) y un cuerpo (Body).",
+     "Un token de tres partes separadas por puntos: header.payload.signature.",
+     "Un objeto JSON de pares clave-valor enviado con el verbo PATCH."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 3 · §5.4.1",
+    "e": "Un mensaje SOAP tiene la estructura formal de un sobre XML: cabecera con metadatos (seguridad, transacción) y cuerpo con los datos de la operación."
+   },
+   {
+    "q": "El nuevo endpoint REST de consulta de tributos debe exigir que el ciudadano esté autenticado. ¿Qué estándar y qué formato de token se usan?",
+    "o": [
+     "WS-Security, con el token incluido en la cabecera del sobre SOAP.",
+     "UDDI, con un token publicado en el registro de servicios.",
+     "OAuth 2.0, con un token de acceso en formato JWT."
+    ],
+    "c": 2,
+    "r": "Caso 2, cuestión 4 · §6.2",
+    "e": "Para APIs REST, la seguridad se resuelve con OAuth 2.0 y JWT; WS-Security es la seguridad a nivel de mensaje propia de SOAP."
+   },
+   {
+    "q": "¿Qué relación hay entre OAuth 2.0 y JWT en esa solución?",
+    "o": [
+     "Son sinónimos: dos nombres del mismo protocolo de autenticación.",
+     "OAuth 2.0 define cómo obtener el token; JWT es el formato del token.",
+     "JWT es el protocolo de autorización y OAuth 2.0, el formato del token."
+    ],
+    "c": 1,
+    "r": "Caso 2, cuestión 4 · §6.2",
+    "e": "OAuth 2.0 es un framework de autorización delegada; JWT es un formato de token. No son alternativas ni sinónimos."
+   },
+   {
+    "q": "¿Qué permite a la API de tributos comprobar que el JWT es válido sin consultar al emisor en cada petición?",
+    "o": [
+     "La firma (signature), que permite verificar que el token no se ha alterado.",
+     "La contraseña del ciudadano, que viaja cifrada dentro del payload del token.",
+     "La publicación del token en un registro UDDI consultable por todos los servicios."
+    ],
+    "c": 0,
+    "r": "Caso 2, cuestión 4 · §6.2",
+    "e": "El JWT es autocontenido: su firma permite verificar que no ha sido alterado sin consultar una base de datos central. OAuth 2.0 evita, además, que la aplicación conozca la contraseña."
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "preguntas": [
+   {
+    "q": "En el supuesto planteado, ¿qué estilo arquitectónico permite que cualquier número de sistemas reaccione al cambio de estado sin modificar la capa de negocio?",
+    "o": [
+     "Una arquitectura de 2 capas, con la lógica en procedimientos almacenados.",
+     "Llamadas RPC síncronas desde la capa de negocio a cada sistema interesado.",
+     "Una arquitectura orientada a eventos (EDA), con publicación y suscripción."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 1 · §7.2",
+    "e": "En EDA el productor publica el evento en un canal sin saber quién lo consumirá, y los sistemas interesados se suscriben a ese canal."
+   },
+   {
+    "q": "¿Qué papel juega el middleware en esa solución?",
+    "o": [
+     "El middleware orientado a mensajes entrega el evento a los suscriptores, desacoplándolos en espacio y tiempo.",
+     "Un middleware orientado a objetos (ORB) invoca de forma síncrona los métodos de cada sistema.",
+     "Un middleware de acceso a datos traduce el evento al dialecto SQL de cada base de datos."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §2.2.3 y §7.2",
+    "e": "El middleware orientado a mensajes (MOM) es la base técnica de EDA: gestiona la entrega del evento a todos los suscriptores."
+   },
+   {
+    "q": "Si en el futuro se añade un sistema de auditoría interesado en el cambio de estado, ¿qué hay que hacer?",
+    "o": [
+     "Modificar la capa de negocio para que también llame al sistema de auditoría.",
+     "Solo dar de alta una nueva suscripción al evento; la capa de negocio no cambia.",
+     "Reconfigurar el productor del evento con la dirección de red del nuevo sistema."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 1 · §7.2",
+    "e": "Como el productor no conoce a los consumidores, un tercer sistema interesado se incorpora como nuevo suscriptor sin tocar la capa de negocio."
+   },
+   {
+    "q": "Se dice que la comunicación por eventos desacopla emisor y receptor «en el tiempo». ¿Qué significa?",
+    "o": [
+     "Que el consumidor no tiene que estar disponible al publicarse el evento: el broker lo retiene.",
+     "Que el productor conoce de antemano la dirección de red de cada uno de los consumidores.",
+     "Que los eventos se procesan de forma síncrona, en el mismo instante en que se publican."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 1 · §7.2",
+    "e": "El desacoplamiento en el tiempo implica que el broker puede retener el mensaje hasta que el consumidor esté listo; en el espacio, que el productor solo conoce el canal."
+   },
+   {
+    "q": "¿Qué ventaja aporta extraer el módulo de notificaciones como microservicio con su propia base de datos?",
+    "o": [
+     "Que desaparece la complejidad operativa de desplegar y monitorizar la aplicación.",
+     "Que se garantiza la consistencia ACID entre expedientes y notificaciones.",
+     "Que puede desplegarse y escalarse de forma independiente del resto de la aplicación."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 2 · §7.1",
+    "e": "Los microservicios son desplegables de forma independiente y permiten escalar selectivamente, servicio a servicio, según su propio patrón de carga."
+   },
+   {
+    "q": "¿Qué inconveniente tiene esa extracción frente a mantener el módulo dentro del monolito?",
+    "o": [
+     "Que el microservicio ya no podrá comunicarse mediante APIs REST con el resto.",
+     "Más complejidad operativa y la renuncia a la consistencia transaccional fuerte.",
+     "Que el microservicio deberá compartir obligatoriamente la base de datos del monolito."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 2 · §7.1",
+    "e": "Los microservicios no son gratis: hay que monitorizar, desplegar y versionar más componentes, y se pasa a menudo de consistencia fuerte a consistencia eventual."
+   },
+   {
+    "q": "¿Qué tecnología de empaquetado se recomienda para desplegar el microservicio de notificaciones de forma ligera y reproducible?",
+    "o": [
+     "Una máquina virtual completa por servicio, que virtualiza el hardware mediante un hipervisor.",
+     "Una aplicación de escritorio instalada en cada puesto que vaya a enviar notificaciones.",
+     "Contenedores (por ejemplo, Docker), que virtualizan a nivel del sistema operativo."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 3 · §7.3",
+    "e": "El contenedor comparte el núcleo del sistema operativo, arranca en segundos y es mucho más ligero que una máquina virtual, que virtualiza el hardware completo."
+   },
+   {
+    "q": "¿Qué mecanismo automatiza el arranque, el reinicio ante fallo y el escalado de ese microservicio sin intervención manual?",
+    "o": [
+     "Scripts que el técnico de sistemas ejecuta a mano cuando detecta un pico de carga.",
+     "Un orquestador como Kubernetes, que mantiene las réplicas y escala horizontalmente.",
+     "Un registro UDDI que publica y descubre las instancias disponibles del servicio."
+    ],
+    "c": 1,
+    "r": "Caso 3, cuestión 3 · §7.3",
+    "e": "La orquestación de contenedores define de forma declarativa cuántas réplicas deben ejecutarse, reinicia las que fallan, balancea la carga y escala añadiendo o quitando réplicas."
+   },
+   {
+    "q": "Con dos servicios y dos bases de datos comunicados por eventos asíncronos, ¿qué tipo de consistencia debe asumir el equipo?",
+    "o": [
+     "Consistencia eventual: los datos pueden estar desincronizados un tiempo y acaban convergiendo.",
+     "Consistencia fuerte (ACID), garantizada por el broker de mensajería en cada entrega.",
+     "Consistencia inmediata, porque el evento se publica dentro de la misma transacción."
+    ],
+    "c": 0,
+    "r": "Caso 3, cuestión 4 · §7.1",
+    "e": "El expediente puede haber cambiado ya de estado sin que la notificación se haya enviado todavía; se asume que ambos estados acabarán convergiendo."
+   },
+   {
+    "q": "¿Por qué ya no es realista exigir consistencia transaccional fuerte entre expedientes y notificaciones?",
+    "o": [
+     "Porque la arquitectura orientada a eventos prohíbe que los servicios usen bases de datos.",
+     "Porque el formato JSON de los eventos no admite operaciones transaccionales.",
+     "Porque son dos bases de datos en servicios distintos, sin una transacción única que las abarque."
+    ],
+    "c": 2,
+    "r": "Caso 3, cuestión 4 · §7.1",
+    "e": "Abarcar ambas bases de datos exigiría un coordinador de transacciones distribuidas, precisamente lo que el diseño de microservicios busca evitar."
+   }
+  ]
+ }
+]

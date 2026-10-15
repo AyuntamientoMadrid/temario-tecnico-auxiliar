@@ -1,0 +1,53 @@
+<svg aria-label="Tabla de códecs de vídeo y de audio usados en videoconferencia, con su organismo, año y característica principal, marcando en verde los cuatro obligatorios en WebRTC: Opus y G punto 711 en audio y VP8 y H punto 264 en vídeo, y mostrando la escala de eficiencia por generación" role="img" viewbox="0 0 680 346" xmlns="http://www.w3.org/2000/svg">
+<style>.h13{font:700 13px system-ui,sans-serif;fill:#0055a0}.k13{font:700 10px system-ui,sans-serif;fill:#0055a0}.d13{font:9px system-ui,sans-serif;fill:#333}.n13{font:8.5px system-ui,sans-serif;fill:#666}.w13{font:700 9.5px system-ui,sans-serif;fill:#fff}.g13{font:700 8.3px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h13" text-anchor="middle" x="340" y="19">Códecs: los cuatro obligatorios en WebRTC y la escala de eficiencia</text>
+<rect fill="#0055a0" height="20" rx="3" width="636" x="22" y="32"></rect>
+<text class="w13" text-anchor="middle" x="90" y="46">VÍDEO</text>
+<text class="w13" text-anchor="middle" x="230" y="46">Organismo y año</text>
+<text class="w13" text-anchor="middle" x="452" y="46">Lo que hay que saber de él</text>
+<text class="w13" text-anchor="middle" x="622" y="46">WebRTC</text>
+<rect fill="#f5f8fb" height="17" width="636" x="22" y="54"></rect>
+<text class="d13" text-anchor="middle" x="90" y="66">H.261 y H.263</text><text class="d13" text-anchor="middle" x="230" y="66">UIT-T, 1988 y 1996</text>
+<text class="d13" text-anchor="middle" x="452" y="66">Videoconferencia sobre RDSI (H.320). Históricos</text><text class="n13" text-anchor="middle" x="622" y="66">—</text>
+<rect fill="#e6f2ec" height="17" width="636" x="22" y="71"></rect>
+<text class="d13" text-anchor="middle" x="90" y="83">H.264 / AVC</text><text class="d13" text-anchor="middle" x="230" y="83">UIT-T e ISO/IEC, 2003</text>
+<text class="d13" text-anchor="middle" x="452" y="83">El más extendido. Carga útil RTP en la RFC 6184</text><text class="g13" text-anchor="middle" x="622" y="83">OBLIGATORIO</text>
+<rect fill="#e6f2ec" height="17" width="636" x="22" y="88"></rect>
+<text class="d13" text-anchor="middle" x="90" y="100">VP8</text><text class="d13" text-anchor="middle" x="230" y="100">Google, RFC 6386, 2011</text>
+<text class="d13" text-anchor="middle" x="452" y="100">Libre de regalías. El otro obligatorio, no alternativa</text><text class="g13" text-anchor="middle" x="622" y="100">OBLIGATORIO</text>
+<rect fill="#f5f8fb" height="17" width="636" x="22" y="105"></rect>
+<text class="d13" text-anchor="middle" x="90" y="117">H.265 / HEVC</text><text class="d13" text-anchor="middle" x="230" y="117">UIT-T e ISO/IEC, 2013</text>
+<text class="d13" text-anchor="middle" x="452" y="117">Mitad de tasa que H.264. Frenado por las patentes. RFC 7798</text><text class="n13" text-anchor="middle" x="622" y="117">Opcional</text>
+<rect fill="#fff" height="17" width="636" x="22" y="122"></rect>
+<text class="d13" text-anchor="middle" x="90" y="134">VP9 y AV1</text><text class="d13" text-anchor="middle" x="230" y="134">Google 2013 · AOMedia 2018</text>
+<text class="d13" text-anchor="middle" x="452" y="134">Libres de regalías, con escalabilidad. AV1 en ascenso</text><text class="n13" text-anchor="middle" x="622" y="134">Opcional</text>
+<rect fill="#fdf3e3" height="17" width="636" x="22" y="139"></rect>
+<text class="d13" text-anchor="middle" x="90" y="151">H.266 / VVC</text><text class="d13" text-anchor="middle" x="230" y="151">UIT-T e ISO/IEC, 6-jul-2020</text>
+<text class="d13" text-anchor="middle" x="452" y="151">Entre un 40 y un 50 % menos que HEVC. Para 4K, 8K y HDR</text><text class="n13" text-anchor="middle" x="622" y="151">Opcional</text>
+<rect fill="#0055a0" height="20" rx="3" width="636" x="22" y="166"></rect>
+<text class="w13" text-anchor="middle" x="90" y="180">AUDIO</text>
+<text class="w13" text-anchor="middle" x="230" y="180">Tasa binaria</text>
+<text class="w13" text-anchor="middle" x="452" y="180">Lo que hay que saber de él</text>
+<text class="w13" text-anchor="middle" x="622" y="180">WebRTC</text>
+<rect fill="#e6f2ec" height="17" width="636" x="22" y="188"></rect>
+<text class="d13" text-anchor="middle" x="90" y="200">G.711</text><text class="d13" text-anchor="middle" x="230" y="200">64 kbit/s</text>
+<text class="d13" text-anchor="middle" x="452" y="200">PCM, banda estrecha (3,4 kHz). El clásico de la telefonía</text><text class="g13" text-anchor="middle" x="622" y="200">OBLIGATORIO</text>
+<rect fill="#f5f8fb" height="17" width="636" x="22" y="205"></rect>
+<text class="d13" text-anchor="middle" x="90" y="217">G.722</text><text class="d13" text-anchor="middle" x="230" y="217">64, 56 y 48 kbit/s</text>
+<text class="d13" text-anchor="middle" x="452" y="217">Banda ancha de 7 kHz: salto de calidad a igual tasa</text><text class="n13" text-anchor="middle" x="622" y="217">Opcional</text>
+<rect fill="#fff" height="17" width="636" x="22" y="222"></rect>
+<text class="d13" text-anchor="middle" x="90" y="234">G.729</text><text class="d13" text-anchor="middle" x="230" y="234">8 kbit/s</text>
+<text class="d13" text-anchor="middle" x="452" y="234">Voz muy comprimida, para enlaces estrechos</text><text class="n13" text-anchor="middle" x="622" y="234">Opcional</text>
+<rect fill="#e6f2ec" height="17" width="636" x="22" y="239"></rect>
+<text class="d13" text-anchor="middle" x="90" y="251">Opus</text><text class="d13" text-anchor="middle" x="230" y="251">6 a 510 kbit/s</text>
+<text class="d13" text-anchor="middle" x="452" y="251">RFC 6716. Adaptativo, banda completa. Trama de 2,5 a 60 ms</text><text class="g13" text-anchor="middle" x="622" y="251">OBLIGATORIO</text>
+<rect fill="#eef4fa" height="50" rx="4" width="312" x="22" y="270"></rect>
+<text class="k13" x="32" y="286">LA ESCALA DE EFICIENCIA, POR GENERACIONES</text>
+<text class="d13" x="32" y="300">Cada generación da la MITAD de tasa a igual calidad</text>
+<text class="d13" x="32" y="313">H.264 → HEVC ≈ −50 %  ·  HEVC → VVC ≈ −40 a −50 %</text>
+<rect fill="#fdf3e3" height="50" rx="4" width="312" x="346" y="270"></rect>
+<text class="k13" x="356" y="286">EL DETALLE PROPIO DEL TIEMPO REAL</text>
+<text class="d13" x="356" y="300">NO se usan imágenes B: predecir desde imágenes futuras</text>
+<text class="d13" x="356" y="313">obliga a esperar, y esa espera es retardo. Solo I y P</text>
+<text class="n13" text-anchor="end" x="658" y="338">[Fuente: RFC 6716, 7742 y 7874 · UIT-T H.264, H.265, H.266, G.711, G.722, G.729]</text>
+</svg>

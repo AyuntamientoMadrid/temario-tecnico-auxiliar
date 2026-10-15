@@ -1,0 +1,32 @@
+<svg aria-label="Comparación de los tres modelos de despliegue de una herramienta de trabajo en grupo: local, híbrido y software como servicio, mostrando qué capas opera la organización y cuáles el proveedor, y las medidas del Esquema Nacional de Seguridad que aplican al proveedor" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}.k2{font:700 10px system-ui,sans-serif;fill:#0055a0}.d2{font:9px system-ui,sans-serif;fill:#333}.n2{font:8.5px system-ui,sans-serif;fill:#666}.w2{font:700 9.5px system-ui,sans-serif;fill:#fff}.s2{font:8.5px system-ui,sans-serif;fill:#fff}.g2{font:700 9.5px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h2" text-anchor="middle" x="340" y="19">Los tres modelos de despliegue: quién opera cada capa</text>
+<text class="n2" text-anchor="middle" x="340" y="35">Azul oscuro = lo opera la ORGANIZACIÓN · Gris = lo opera el PROVEEDOR</text>
+<text class="k2" text-anchor="middle" x="110" y="55">LOCAL (on-premise)</text>
+<text class="k2" text-anchor="middle" x="340" y="55">HÍBRIDO</text>
+<text class="k2" text-anchor="middle" x="570" y="55">SaaS (nube)</text>
+<rect fill="#0055a0" height="22" width="176" x="22" y="62"></rect><text class="w2" text-anchor="middle" x="110" y="77">Aplicación</text>
+<rect fill="#0055a0" height="22" width="176" x="22" y="86"></rect><text class="w2" text-anchor="middle" x="110" y="101">Datos y usuarios</text>
+<rect fill="#0055a0" height="22" width="176" x="22" y="110"></rect><text class="w2" text-anchor="middle" x="110" y="125">Sistema operativo</text>
+<rect fill="#0055a0" height="22" width="176" x="22" y="134"></rect><text class="w2" text-anchor="middle" x="110" y="149">Servidor y red</text>
+<rect fill="#0055a0" height="22" width="176" x="22" y="158"></rect><text class="w2" text-anchor="middle" x="110" y="173">Centro de datos</text>
+<rect fill="#0055a0" height="22" width="176" x="252" y="62"></rect><text class="w2" text-anchor="middle" x="340" y="77">Aplicación (mixta)</text>
+<rect fill="#0055a0" height="22" width="176" x="252" y="86"></rect><text class="w2" text-anchor="middle" x="340" y="101">Datos y usuarios</text>
+<rect fill="#0055a0" height="22" width="176" x="252" y="110"></rect><text class="w2" text-anchor="middle" x="340" y="125">Identidad (interna)</text>
+<rect fill="#8a949e" height="22" width="176" x="252" y="134"></rect><text class="w2" text-anchor="middle" x="340" y="149">Servidor y red</text>
+<rect fill="#8a949e" height="22" width="176" x="252" y="158"></rect><text class="w2" text-anchor="middle" x="340" y="173">Centro de datos</text>
+<rect fill="#8a949e" height="22" width="176" x="482" y="62"></rect><text class="w2" text-anchor="middle" x="570" y="77">Aplicación</text>
+<rect fill="#0055a0" height="22" width="176" x="482" y="86"></rect><text class="w2" text-anchor="middle" x="570" y="101">Datos y usuarios</text>
+<rect fill="#8a949e" height="22" width="176" x="482" y="110"></rect><text class="w2" text-anchor="middle" x="570" y="125">Sistema operativo</text>
+<rect fill="#8a949e" height="22" width="176" x="482" y="134"></rect><text class="w2" text-anchor="middle" x="570" y="149">Servidor y red</text>
+<rect fill="#8a949e" height="22" width="176" x="482" y="158"></rect><text class="w2" text-anchor="middle" x="570" y="173">Centro de datos</text>
+<rect fill="#e6f2ec" height="34" rx="4" width="636" x="22" y="192"></rect>
+<text class="g2" x="32" y="207">RESPONSABILIDAD COMPARTIDA — la frase que hay que saber decir</text>
+<text class="d2" x="32" y="220">El proveedor responde de la seguridad DEL servicio; la organización, de la seguridad EN el servicio: cuentas, permisos y compartición</text>
+<rect fill="#fdf3e3" height="48" rx="4" width="636" x="22" y="234"></rect>
+<text class="k2" x="32" y="249">EL ENS NO SE QUEDA EN LA PUERTA DEL AYUNTAMIENTO — art. 2.3 del RD 311/2022</text>
+<text class="d2" x="32" y="262">op.nub.1 Protección de servicios en la nube: aplica en las TRES categorías (+R1 en MEDIA, +R1+R2 en ALTA). Sus cuatro exigencias:</text>
+<text class="d2" x="32" y="275">pruebas de penetración · transparencia · cifrado y gestión de claves · JURISDICCIÓN DE LOS DATOS · op.ext.1-4: NO aplican en BÁSICA</text>
+<text class="k2" text-anchor="middle" x="340" y="300">El principio español no es «nube primero» sino «NUBE HÍBRIDA PRIMERO» (Estrategia de nube híbrida de las AAPP, 2022)</text>
+<text class="n2" text-anchor="end" x="658" y="328">[Fuente: RD 311/2022, anexo II · Estrategia de nube híbrida de las AAPP]</text>
+</svg>

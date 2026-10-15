@@ -1,0 +1,50 @@
+<svg aria-label="Cadena del riesgo aplicada al sistema de expedientes municipal: un activo con una vulnerabilidad es alcanzado por una amenaza, lo que produce un impacto; el riesgo combina probabilidad e impacto y las salvaguardas actúan sobre uno u otro factor, dejando un riesgo residual que alguien acepta formalmente" role="img" viewbox="0 0 680 352" xmlns="http://www.w3.org/2000/svg">
+<style>.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.k5{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d5{font:8.5px system-ui,sans-serif;fill:#333}.n5{font:8.5px system-ui,sans-serif;fill:#666}.wd5{font:8.5px system-ui,sans-serif;fill:#fff}.w5{font:700 10px system-ui,sans-serif;fill:#fff}.g5{font:700 9.5px system-ui,sans-serif;fill:#2d8659}.r5{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h5" text-anchor="middle" x="340" y="19">La cadena del riesgo, sobre el sistema de expedientes de la sede municipal</text>
+<text class="n5" text-anchor="middle" x="340" y="35">Vocabulario del art. 7 del ENS, del glosario del anexo IV y de MAGERIT. El objetivo no es eliminar el riesgo, sino dejarlo aceptable</text>
+<rect fill="#0055a0" height="50" rx="4" width="118" x="24" y="48"></rect>
+<text class="w5" text-anchor="middle" x="83" y="66">ACTIVO</text>
+<text class="wd5" text-anchor="middle" x="83" y="80">Base de datos de</text>
+<text class="wd5" text-anchor="middle" x="83" y="91">expedientes de licencias</text>
+<path d="M142 73 L164 73" fill="none" marker-end="url(#a5)" stroke="#5a6b7c" stroke-width="1.6"></path>
+<defs><marker id="a5" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3.5"><path d="M0 0 L7 3.5 L0 7 z" fill="#5a6b7c"></path></marker></defs>
+<rect fill="#fdf3e3" height="50" rx="4" stroke="#e89822" stroke-width="1.2" width="118" x="166" y="48"></rect>
+<text class="k5" text-anchor="middle" x="225" y="66">VULNERABILIDAD</text>
+<text class="d5" text-anchor="middle" x="225" y="80">Servidores sin parchear y</text>
+<text class="d5" text-anchor="middle" x="225" y="91">copias en la misma red</text>
+<path d="M284 73 L306 73" fill="none" marker-end="url(#a5)" stroke="#5a6b7c" stroke-width="1.6"></path>
+<rect fill="#d13c3c" height="50" rx="4" width="118" x="308" y="48"></rect>
+<text class="w5" text-anchor="middle" x="367" y="66">AMENAZA</text>
+<text class="wd5" text-anchor="middle" x="367" y="80">Cifrado por programa</text>
+<text class="wd5" text-anchor="middle" x="367" y="91">de secuestro</text>
+<path d="M426 73 L448 73" fill="none" marker-end="url(#a5)" stroke="#5a6b7c" stroke-width="1.6"></path>
+<rect fill="#d13c3c" height="50" rx="4" width="118" x="450" y="48"></rect>
+<text class="w5" text-anchor="middle" x="509" y="66">IMPACTO</text>
+<text class="wd5" text-anchor="middle" x="509" y="80">Tramitación paralizada</text>
+<text class="wd5" text-anchor="middle" x="509" y="91">durante semanas</text>
+<rect fill="#5a6b7c" height="50" rx="4" width="80" x="576" y="48"></rect>
+<text class="w5" text-anchor="middle" x="616" y="66">RIESGO</text>
+<text class="wd5" text-anchor="middle" x="616" y="80">Probabilidad</text>
+<text class="wd5" text-anchor="middle" x="616" y="91">× impacto</text>
+<text class="k5" x="24" y="120">LAS SALVAGUARDAS ACTÚAN SOBRE UNO DE LOS DOS FACTORES</text>
+<rect fill="#eef4fa" height="88" rx="4" stroke="#0055a0" stroke-width="1.2" width="312" x="24" y="128"></rect>
+<text class="k5" text-anchor="middle" x="180" y="145">REDUCEN LA PROBABILIDAD</text>
+<text class="d5" x="36" y="161">op.exp.4 · Mantenimiento y actualizaciones</text>
+<text class="d5" x="36" y="175">op.exp.6 · Protección frente a código dañino</text>
+<text class="d5" x="36" y="189">op.acc.6 · Autenticación de la organización</text>
+<text class="d5" x="36" y="203">mp.com.4 · Separación de flujos en la red</text>
+<rect fill="#e6f2ec" height="88" rx="4" stroke="#2d8659" stroke-width="1.2" width="312" x="344" y="128"></rect>
+<text class="g5" text-anchor="middle" x="500" y="145">REDUCEN EL IMPACTO</text>
+<text class="d5" x="356" y="161">mp.info.6 · Copias de seguridad</text>
+<text class="d5" x="356" y="175">op.cont.2 · Plan de continuidad (solo si D es ALTO)</text>
+<text class="d5" x="356" y="189">op.cont.4 · Medios alternativos (solo si D es ALTO)</text>
+<text class="d5" x="356" y="203">op.exp.7 · Gestión de incidentes</text>
+<rect fill="#fdf3e3" height="34" rx="4" stroke="#e89822" stroke-width="1.2" width="632" x="24" y="226"></rect>
+<text class="r5" x="36" y="242">TRAMPA CLÁSICA:</text>
+<text class="d5" x="138" y="242">la copia de seguridad solo reduce el impacto SI ESTÁ FUERA DEL ALCANCE DEL ATACANTE. Una copia accesible</text>
+<text class="d5" x="36" y="254">desde la misma red se cifra con el resto. De ahí que mp.info.6 tenga refuerzos: + R1 en MEDIA y + R1 + R2 en ALTA.</text>
+<rect fill="#eef4fa" height="34" rx="4" width="632" x="24" y="268"></rect>
+<text class="k5" text-anchor="middle" x="340" y="284">RIESGO RESIDUAL — EL QUE QUEDA DESPUÉS DE APLICAR LAS SALVAGUARDAS</text>
+<text class="n5" text-anchor="middle" x="340" y="296">Nadie lo elimina: alguien lo ACEPTA formalmente. Concluye el responsable de la seguridad; decide el del sistema</text>
+<text class="n5" x="24" y="326">[Fuente: ENS, arts. 7, 14 y 31.5, anexo II y glosario del anexo IV · MAGERIT v3]</text>
+</svg>

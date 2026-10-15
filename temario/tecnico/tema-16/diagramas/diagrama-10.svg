@@ -1,0 +1,24 @@
+<svg aria-label="Los cuatro componentes del diagrama de flujo de datos: proceso, flujo, almacén y entidad externa" class="svd10" role="img" viewbox="0 0 660 270" xmlns="http://www.w3.org/2000/svg">
+<style>.svd10 .w{font:700 12px system-ui,sans-serif;fill:#fff}.svd10 .b{font:700 12px system-ui,sans-serif;fill:#0055a0}.svd10 .lab{font:11px system-ui,sans-serif;fill:#555}.svd10 .h{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="330" y="22">Cuatro componentes del DFD (notación Yourdon/DeMarco)</text>
+<!-- proceso -->
+<circle cx="100" cy="90" fill="#0055a0" r="40"></circle><text class="w" text-anchor="middle" x="100" y="86">1</text><text class="w" style="font-size:9px" text-anchor="middle" x="100" y="102">Validar</text>
+<text class="b" text-anchor="middle" x="100" y="155">PROCESO</text><text class="lab" text-anchor="middle" x="100" y="172">transforma datos</text>
+<!-- flujo -->
+<line marker-end="url(#fl)" stroke="#333" stroke-width="2" x1="200" x2="300" y1="90" y2="90"></line>
+<defs><marker id="fl" markerheight="10" markerwidth="10" orient="auto" refx="8" refy="3"><path d="M0,0 L8,3 L0,6 Z" fill="#333"></path></marker></defs>
+<text class="lab" text-anchor="middle" x="250" y="82">solicitud</text>
+<text class="b" text-anchor="middle" x="250" y="155">FLUJO</text><text class="lab" text-anchor="middle" x="250" y="172">dato en movimiento</text>
+<!-- almacen -->
+<line stroke="#0055a0" stroke-width="2" x1="360" x2="460" y1="72" y2="72"></line>
+<line stroke="#0055a0" stroke-width="2" x1="360" x2="460" y1="108" y2="108"></line>
+<line stroke="#0055a0" stroke-width="2" x1="360" x2="360" y1="72" y2="108"></line>
+<text class="b" style="font-size:11px" x="375" y="94">D1</text><text class="lab" text-anchor="middle" x="415" y="94">Padrón</text>
+<text class="b" text-anchor="middle" x="410" y="155">ALMACÉN</text><text class="lab" text-anchor="middle" x="410" y="172">dato en reposo</text>
+<!-- entidad externa -->
+<rect fill="#2d8659" height="60" rx="2" width="120" x="510" y="60"></rect><text class="w" text-anchor="middle" x="570" y="95">CONTRIBUYENTE</text>
+<text class="b" text-anchor="middle" x="570" y="155">ENTIDAD EXTERNA</text><text class="lab" text-anchor="middle" x="570" y="172">frontera del sistema</text>
+<rect fill="#fbeeed" height="56" rx="8" stroke="#d13c3c" width="590" x="40" y="200"></rect>
+<text class="lab" style="font-size:10px" x="55" y="223"><tspan fill="#d13c3c" font-weight="700">Regla:</tspan> todo flujo pasa por un proceso. PROHIBIDO almacén↔almacén, entidad↔entidad, entidad↔almacén directos.</text>
+<text class="lab" x="55" y="245">Todo proceso tiene ≥1 entrada y ≥1 salida (ni «agujero negro» ni «milagro»). — [DEMARCO]</text>
+</svg>

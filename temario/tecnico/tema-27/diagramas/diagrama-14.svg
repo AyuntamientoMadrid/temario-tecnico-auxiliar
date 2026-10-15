@@ -1,0 +1,44 @@
+<svg aria-label="Línea temporal de un incidente que sitúa el RPO como pérdida de datos hacia atrás y el RTO como tiempo de recuperación hacia delante. Debajo, comparación de las copias total, diferencial e incremental con su coste de restauración, y la regla 3-2-1 con sus refuerzos de inmutabilidad y prueba de restauración" role="img" viewbox="0 0 680 390" xmlns="http://www.w3.org/2000/svg">
+<style>.t14{font:700 10.5px system-ui,sans-serif;fill:#fff}.s14{font:9px system-ui,sans-serif;fill:#fff}.h14{font:700 13px system-ui,sans-serif;fill:#0055a0}.k14{font:700 10px system-ui,sans-serif;fill:#0055a0}.d14{font:9px system-ui,sans-serif;fill:#444}</style>
+<text class="h14" text-anchor="middle" x="340" y="20">RPO mira hacia atrás, RTO mira hacia delante</text>
+<line stroke="#444" stroke-width="2" x1="40" x2="640" y1="86" y2="86"></line>
+<circle cx="170" cy="86" fill="#0055a0" r="6"></circle>
+<circle cx="340" cy="86" fill="#d13c3c" r="7"></circle>
+<circle cx="560" cy="86" fill="#2d8659" r="6"></circle>
+<text class="k14" text-anchor="middle" x="170" y="72">Última copia útil</text>
+<text class="k14" text-anchor="middle" x="340" y="66">INCIDENTE</text>
+<text class="k14" text-anchor="middle" x="560" y="72">Servicio restablecido</text>
+<path d="M170 108 L340 108" stroke="#e89822" stroke-width="3"></path>
+<path d="M340 130 L560 130" stroke="#2d8659" stroke-width="3"></path>
+<text class="k14" text-anchor="middle" x="255" y="126">RPO</text>
+<text class="d14" text-anchor="middle" x="255" y="140">datos que se pierden</text>
+<text class="d14" text-anchor="middle" x="255" y="154">→ fija la FRECUENCIA de copia</text>
+<text class="k14" text-anchor="middle" x="450" y="148">RTO</text>
+<text class="d14" text-anchor="middle" x="450" y="162">tiempo sin servicio</text>
+<text class="d14" text-anchor="middle" x="450" y="176">→ fija la TECNOLOGÍA de recuperación</text>
+<rect fill="#f0f4f8" height="24" rx="4" stroke="#0055a0" width="600" x="40" y="186"></rect>
+<text class="d14" text-anchor="middle" x="340" y="203">Los dos los fija el responsable del SERVICIO a partir del análisis de impacto; el técnico diseña la solución</text>
+<text class="k14" text-anchor="middle" x="340" y="232">Tres formas de copiar, tres costes de restaurar</text>
+<rect fill="#0055a0" height="76" rx="5" width="210" x="16" y="242"></rect>
+<text class="t14" text-anchor="middle" x="121" y="262">TOTAL (full)</text>
+<text class="s14" text-anchor="middle" x="121" y="281">Copia todo · ventana larga</text>
+<text class="s14" text-anchor="middle" x="121" y="298">Restaurar: 1 solo paso</text>
+<text class="s14" text-anchor="middle" x="121" y="313">la más simple y segura</text>
+<rect fill="#e89822" height="76" rx="5" width="210" x="234" y="242"></rect>
+<text class="t14" text-anchor="middle" x="339" y="262">DIFERENCIAL</text>
+<text class="s14" text-anchor="middle" x="339" y="281">Lo cambiado desde la TOTAL</text>
+<text class="s14" text-anchor="middle" x="339" y="298">Restaurar: total + la última</text>
+<text class="s14" text-anchor="middle" x="339" y="313">crece cada día que pasa</text>
+<rect fill="#2d8659" height="76" rx="5" width="212" x="452" y="242"></rect>
+<text class="t14" text-anchor="middle" x="558" y="262">INCREMENTAL</text>
+<text class="s14" text-anchor="middle" x="558" y="281">Lo cambiado desde la ÚLTIMA</text>
+<text class="s14" text-anchor="middle" x="558" y="298">Restaurar: total + TODA la cadena</text>
+<text class="s14" text-anchor="middle" x="558" y="313">si falta un eslabón, se rompe</text>
+<rect fill="#004077" height="42" rx="5" width="428" x="16" y="328"></rect>
+<text class="t14" text-anchor="middle" x="230" y="346">REGLA 3-2-1</text>
+<text class="s14" text-anchor="middle" x="230" y="363">3 copias · 2 soportes distintos · 1 fuera de las instalaciones (+ inmutable)</text>
+<rect fill="#d13c3c" height="42" rx="5" width="212" x="452" y="328"></rect>
+<text class="t14" text-anchor="middle" x="558" y="346">SIN PRUEBA DE RESTAURACIÓN</text>
+<text class="s14" text-anchor="middle" x="558" y="363">no es una copia: es una suposición</text>
+<text style="font:9.5px system-ui;fill:#666" text-anchor="end" x="670" y="384">[Fuente: NIST80034; ISO22301; ENS mp.info.6]</text>
+</svg>

@@ -1,0 +1,64 @@
+<svg aria-label="Esquema de la travesía de traducción de direcciones de red en WebRTC: STUN descubre la dirección pública y no transporta media, TURN retransmite todo el tráfico cuando no hay camino directo y es el recurso caro, e ICE es el algoritmo que recoge los tres tipos de candidato, los empareja y elige el mejor camino" role="img" viewbox="0 0 680 382" xmlns="http://www.w3.org/2000/svg">
+<style>.h12{font:700 13px system-ui,sans-serif;fill:#0055a0}.k12{font:700 10px system-ui,sans-serif;fill:#0055a0}.d12{font:9px system-ui,sans-serif;fill:#333}.n12{font:8.5px system-ui,sans-serif;fill:#666}.w12{font:700 9.5px system-ui,sans-serif;fill:#fff}.r12{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}.g12{font:700 9.5px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h12" text-anchor="middle" x="340" y="19">Travesía de NAT: tres piezas que se confunden y no deben confundirse</text>
+<rect fill="#0055a0" height="40" rx="4" width="90" x="30" y="34"></rect>
+<text class="w12" text-anchor="middle" x="75" y="51">EQUIPO A</text>
+<text style="fill:#dce8f4;font:8.5px system-ui,sans-serif" text-anchor="middle" x="75" y="66">192.168.1.20</text>
+<rect fill="#8a949e" height="40" rx="4" width="50" x="128" y="34"></rect>
+<text class="w12" text-anchor="middle" x="153" y="58">NAT</text>
+<rect fill="#0055a0" height="40" rx="4" width="90" x="560" y="34"></rect>
+<text class="w12" text-anchor="middle" x="605" y="51">EQUIPO B</text>
+<text style="fill:#dce8f4;font:8.5px system-ui,sans-serif" text-anchor="middle" x="605" y="66">10.0.0.7</text>
+<rect fill="#8a949e" height="40" rx="4" width="50" x="502" y="34"></rect>
+<text class="w12" text-anchor="middle" x="527" y="58">NAT</text>
+<line stroke="#0055a0" stroke-width="2.2" x1="178" x2="502" y1="60" y2="60"></line>
+<text class="k12" text-anchor="middle" x="340" y="52">CAMINO DIRECTO — el que ICE prefiere siempre</text>
+<rect fill="#2d8659" height="28" rx="4" width="130" x="196" y="88"></rect>
+<text class="w12" text-anchor="middle" x="261" y="106">STUN — barato</text>
+<rect fill="#d13c3c" height="28" rx="4" width="130" x="354" y="88"></rect>
+<text class="w12" text-anchor="middle" x="419" y="106">TURN — caro</text>
+<text class="d12" text-anchor="middle" x="340" y="132">Los dos son SERVIDORES AUXILIARES y NO están en el camino del media: STUN solo responde a una pregunta y TURN</text>
+<text class="d12" text-anchor="middle" x="340" y="144">solo entra en juego cuando el camino directo no existe. Quien decide cuál se usa es ICE, que no es un servidor</text>
+<rect fill="#e6f2ec" height="92" rx="4" width="206" x="22" y="158"></rect>
+<rect fill="#2d8659" height="20" rx="4" width="206" x="22" y="158"></rect>
+<text class="w12" text-anchor="middle" x="125" y="172">STUN — RFC 8489 (feb. 2020)</text>
+<text class="g12" x="32" y="193">PREGUNTA</text>
+<text class="d12" x="32" y="207">«¿Con qué dirección y puerto</text>
+<text class="d12" x="32" y="220">me ves?». Devuelve el candidato</text>
+<text class="d12" x="32" y="233">reflexivo por servidor</text>
+<text class="n12" x="32" y="243">NO transporta media. Obsoletó la 5389</text>
+<rect fill="#fbe9e9" height="92" rx="4" width="206" x="237" y="158"></rect>
+<rect fill="#d13c3c" height="20" rx="4" width="206" x="237" y="158"></rect>
+<text class="w12" text-anchor="middle" x="340" y="172">TURN — RFC 8656 (feb. 2020)</text>
+<text class="r12" x="247" y="193">CARGA</text>
+<text class="d12" x="247" y="207">Retransmite TODO el media cuando</text>
+<text class="d12" x="247" y="220">no hay camino directo posible</text>
+<text class="d12" x="247" y="233">Funciona siempre; hay que dimensionarlo</text>
+<text class="n12" x="247" y="243">Obsoletó las RFC 5766 y 6156</text>
+<rect fill="#eef4fa" height="92" rx="4" width="206" x="452" y="158"></rect>
+<rect fill="#0055a0" height="20" rx="4" width="206" x="452" y="158"></rect>
+<text class="w12" text-anchor="middle" x="555" y="172">ICE — RFC 8445 (jul. 2018)</text>
+<text class="k12" x="462" y="193">DECIDE</text>
+<text class="d12" x="462" y="207">NO es un servidor: es el ALGORITMO</text>
+<text class="d12" x="462" y="220">Recoge candidatos, los empareja,</text>
+<text class="d12" x="462" y="233">comprueba y elige el mejor camino</text>
+<text class="n12" x="462" y="243">Obsoletó la RFC 5245</text>
+<rect fill="#0055a0" height="20" rx="3" width="636" x="22" y="264"></rect>
+<text class="w12" text-anchor="middle" x="130" y="278">Tipo de candidato</text>
+<text class="w12" text-anchor="middle" x="360" y="278">De dónde sale</text>
+<text class="w12" text-anchor="middle" x="570" y="278">Preferencia de ICE</text>
+<rect fill="#f5f8fb" height="18" width="636" x="22" y="286"></rect>
+<text class="d12" text-anchor="middle" x="130" y="299">Anfitrión (host)</text>
+<text class="d12" text-anchor="middle" x="360" y="299">La dirección local de la propia interfaz</text>
+<text class="g12" text-anchor="middle" x="570" y="299">La más alta</text>
+<rect fill="#fff" height="18" width="636" x="22" y="304"></rect>
+<text class="d12" text-anchor="middle" x="130" y="317">Reflexivo por servidor</text>
+<text class="d12" text-anchor="middle" x="360" y="317">La que descubre STUN a través del NAT</text>
+<text class="d12" text-anchor="middle" x="570" y="317">Intermedia</text>
+<rect fill="#fbe9e9" height="18" width="636" x="22" y="322"></rect>
+<text class="d12" text-anchor="middle" x="130" y="335">Retransmitido (relay)</text>
+<text class="d12" text-anchor="middle" x="360" y="335">La que ofrece TURN retransmitiendo</text>
+<text class="r12" text-anchor="middle" x="570" y="335">La más baja: último recurso</text>
+<text class="k12" text-anchor="middle" x="340" y="356">REGLA MNEMOTÉCNICA: STUN PREGUNTA · TURN CARGA · ICE DECIDE</text>
+<text class="n12" text-anchor="end" x="658" y="372">[Fuente: RFC 8489 · RFC 8656 · RFC 8445]</text>
+</svg>

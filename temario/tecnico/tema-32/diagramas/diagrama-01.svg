@@ -1,0 +1,25 @@
+<svg aria-label="Las cinco dimensiones de la seguridad del Esquema Nacional de Seguridad: confidencialidad, integridad, trazabilidad, autenticidad y disponibilidad, con el algoritmo que determina la categoría básica, media o alta del sistema a partir del nivel bajo, medio o alto de cada dimensión" role="img" viewbox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t1{font:700 11px system-ui,sans-serif;fill:#fff}.s1{font:9px system-ui,sans-serif;fill:#fff}.d1{font:9px system-ui,sans-serif;fill:#333}.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}.k1{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n1{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h1" text-anchor="middle" x="340" y="20">Cinco dimensiones, tres niveles, tres categorías</text>
+<text class="k1" x="20" y="42">LAS CINCO DIMENSIONES (anexo I, ap. 2)</text>
+<rect fill="#0055a0" height="46" rx="5" width="124" x="20" y="50"></rect><text class="t1" text-anchor="middle" x="82" y="68">C</text><text class="s1" text-anchor="middle" x="82" y="84">Confidencialidad</text>
+<rect fill="#0055a0" height="46" rx="5" width="124" x="152" y="50"></rect><text class="t1" text-anchor="middle" x="214" y="68">I</text><text class="s1" text-anchor="middle" x="214" y="84">Integridad</text>
+<rect fill="#e89822" height="46" rx="5" width="124" x="284" y="50"></rect><text class="t1" text-anchor="middle" x="346" y="68">T</text><text class="s1" text-anchor="middle" x="346" y="84">Trazabilidad</text>
+<rect fill="#0055a0" height="46" rx="5" width="124" x="416" y="50"></rect><text class="t1" text-anchor="middle" x="478" y="68">A</text><text class="s1" text-anchor="middle" x="478" y="84">Autenticidad</text>
+<rect fill="#0055a0" height="46" rx="5" width="112" x="548" y="50"></rect><text class="t1" text-anchor="middle" x="604" y="68">D</text><text class="s1" text-anchor="middle" x="604" y="84">Disponibilidad</text>
+<rect fill="#fdf3e3" height="24" rx="4" width="640" x="20" y="104"></rect>
+<text class="d1" text-anchor="middle" x="340" y="120">El NO REPUDIO no es dimensión del ENS: es efecto jurídico de autenticidad + integridad + trazabilidad</text>
+<text class="k1" x="20" y="152">PASO 1 · NIVEL DE CADA DIMENSIÓN (por gravedad del perjuicio)</text>
+<rect fill="#eef3f8" height="34" rx="4" width="206" x="20" y="160"></rect><text class="d1" text-anchor="middle" x="123" y="181">BAJO — perjuicio limitado</text>
+<rect fill="#fdf3e3" height="34" rx="4" width="206" x="237" y="160"></rect><text class="d1" text-anchor="middle" x="340" y="181">MEDIO — perjuicio grave</text>
+<rect fill="#fbeaea" height="34" rx="4" width="206" x="454" y="160"></rect><text class="d1" text-anchor="middle" x="557" y="181">ALTO — perjuicio muy grave</text>
+<text class="n1" x="20" y="214">Si una dimensión no se ve afectada, NO se le adscribe ningún nivel</text>
+<text class="k1" x="20" y="238">PASO 2 · CATEGORÍA DEL SISTEMA (manda la dimensión más alta)</text>
+<rect fill="#2d8659" height="50" rx="4" width="206" x="20" y="246"></rect><text class="t1" text-anchor="middle" x="123" y="266">BÁSICA</text><text class="s1" text-anchor="middle" x="123" y="283">alguna en BAJO, ninguna superior</text>
+<rect fill="#e89822" height="50" rx="4" width="206" x="237" y="246"></rect><text class="t1" text-anchor="middle" x="340" y="266">MEDIA</text><text class="s1" text-anchor="middle" x="340" y="283">alguna en MEDIO, ninguna superior</text>
+<rect fill="#d13c3c" height="50" rx="4" width="206" x="454" y="246"></rect><text class="t1" text-anchor="middle" x="557" y="266">ALTA</text><text class="s1" text-anchor="middle" x="557" y="283">alguna en ALTO</text>
+<rect fill="none" height="34" rx="4" stroke="#0055a0" stroke-width="1.5" width="640" x="20" y="306"></rect>
+<text class="k1" text-anchor="middle" x="340" y="321">NIVEL se predica de la DIMENSIÓN · CATEGORÍA se predica del SISTEMA</text>
+<text class="n1" text-anchor="middle" x="340" y="334">Reevaluación anual o ante modificaciones significativas · las dimensiones que no fijaron la categoría conservan su nivel</text>
+<text class="n1" text-anchor="end" x="670" y="352">[Fuente: ENS, anexo I]</text>
+</svg>

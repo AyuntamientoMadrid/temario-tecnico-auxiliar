@@ -1,0 +1,19 @@
+<svg aria-label="Cinco servicios transversales que el contenedor presta a todas las capas: seguridad JAAS, servicios de directorio JNDI, gestión de dependencias con Maven o Gradle, empaquetado y ciclo de vida, y servidores de aplicaciones" role="img" viewbox="0 0 660 370" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 11px system-ui,sans-serif;fill:#fff}.s3{font:9.5px system-ui,sans-serif;fill:#fff}.l3{font:11px system-ui,sans-serif;fill:#444}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h3" text-anchor="middle" x="330" y="22">Servicios transversales — comunes a todas las capas</text>
+<circle cx="330" cy="190" fill="#0055a0" r="58"></circle>
+<text class="t3" text-anchor="middle" x="330" y="184">CONTENEDOR</text>
+<text class="s3" text-anchor="middle" x="330" y="200">servidor de</text>
+<text class="s3" text-anchor="middle" x="330" y="212">aplicaciones</text>
+<rect fill="#3778b5" height="54" rx="6" width="170" x="30" y="50"></rect><text class="t3" text-anchor="middle" x="115" y="72">§2.1.1 Seguridad</text><text class="s3" text-anchor="middle" x="115" y="90">JAAS / Jakarta Security</text>
+<rect fill="#2d8659" height="54" rx="6" width="170" x="460" y="50"></rect><text class="t3" text-anchor="middle" x="545" y="72">§2.1.2 Directorio</text><text class="s3" text-anchor="middle" x="545" y="90">JNDI (recursos por nombre)</text>
+<rect fill="#e89822" height="54" rx="6" width="170" x="30" y="256"></rect><text class="t3" text-anchor="middle" x="115" y="278">§2.1.3 Construcción</text><text class="s3" text-anchor="middle" x="115" y="296">Maven / Gradle</text>
+<rect fill="#c98a1f" height="54" rx="6" width="170" x="460" y="256"></rect><text class="t3" text-anchor="middle" x="545" y="278">§2.1.4 Empaquetado</text><text class="s3" text-anchor="middle" x="545" y="296">WAR / EJB-JAR / EAR</text>
+<rect fill="#d13c3c" height="46" rx="6" width="170" x="245" y="300"></rect><text class="t3" text-anchor="middle" x="330" y="320">§2.1.5-6</text><text class="s3" text-anchor="middle" x="330" y="336">Nativo (GraalVM) · Servidores</text>
+<line stroke="#888" stroke-width="2" x1="200" x2="278" y1="77" y2="160"></line>
+<line stroke="#888" stroke-width="2" x1="460" x2="382" y1="77" y2="160"></line>
+<line stroke="#888" stroke-width="2" x1="200" x2="278" y1="283" y2="216"></line>
+<line stroke="#888" stroke-width="2" x1="460" x2="382" y1="283" y2="216"></line>
+<line stroke="#888" stroke-width="2" x1="330" x2="330" y1="248" y2="300"></line>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="650" y="364">[Fuente: JAKARTA-PLAT; GONCALVES, cap. 3]</text>
+</svg>

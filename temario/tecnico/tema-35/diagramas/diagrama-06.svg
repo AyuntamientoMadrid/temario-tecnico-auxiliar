@@ -1,0 +1,21 @@
+<svg aria-label="Internet como red de redes: sistemas autónomos de tránsito de primer nivel que alcanzan toda la tabla global mediante acuerdos de peering, operadores de segundo nivel que compran tránsito, puntos neutros de intercambio como ESPANIX y DE-CIX Madrid donde las redes intercambian tráfico directamente, y el sistema autónomo del Ayuntamiento con su propio número y prefijo. Se compara el tránsito, que se paga y alcanza todo Internet, con el peering, que suele ser gratuito y solo alcanza las redes del otro y sus clientes" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.t6{font:700 10px system-ui,sans-serif;fill:#fff}.s6{font:8.5px system-ui,sans-serif;fill:#fff}.d6{font:9px system-ui,sans-serif;fill:#333}.h6{font:700 13px system-ui,sans-serif;fill:#0055a0}.k6{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n6{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h6" text-anchor="middle" x="340" y="20">Entre operadores, encaminar es una decisión económica, no una métrica</text>
+<text class="k6" x="20" y="42">JERARQUÍA DE INTERCONEXIÓN</text>
+<rect fill="#0055a0" height="42" rx="5" width="640" x="20" y="50"></rect><text class="t6" text-anchor="middle" x="340" y="68">AS DE TRÁNSITO GLOBAL (Tier 1)</text><text class="s6" text-anchor="middle" x="340" y="84">Alcanzan la tabla global completa SOLO mediante acuerdos de peering: no pagan tránsito a nadie</text>
+<path d="M200 92 L200 108" marker-end="url(#a6)" stroke="#666" stroke-width="1.5"></path>
+<path d="M480 92 L480 108" marker-end="url(#a6)" stroke="#666" stroke-width="1.5"></path>
+<defs><marker id="a6" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#666"></path></marker></defs>
+<rect fill="#2d8659" height="42" rx="5" width="312" x="20" y="112"></rect><text class="t6" text-anchor="middle" x="176" y="130">OPERADOR NACIONAL (Tier 2)</text><text class="s6" text-anchor="middle" x="176" y="146">Compra tránsito y además hace peering</text>
+<rect fill="#2d8659" height="42" rx="5" width="312" x="348" y="112"></rect><text class="t6" text-anchor="middle" x="504" y="130">PROVEEDOR DE CONTENIDO O CDN</text><text class="s6" text-anchor="middle" x="504" y="146">Le interesa acercar el contenido al usuario</text>
+<path d="M176 154 L176 170" marker-end="url(#a6)" stroke="#666" stroke-width="1.5"></path>
+<path d="M504 154 L504 170" marker-end="url(#a6)" stroke="#666" stroke-width="1.5"></path>
+<rect fill="#e89822" height="46" rx="5" width="640" x="20" y="174"></rect><text class="t6" text-anchor="middle" x="340" y="192">PUNTO NEUTRO · IXP</text><text class="s6" text-anchor="middle" x="340" y="207">ESPANIX (13-5-1997, picos superiores a 2 Tbps) y DE-CIX Madrid (2016, más de 1,5 Tbit/s)</text>
+<path d="M176 220 L176 236" marker-end="url(#a6)" stroke="#666" stroke-width="1.5"></path>
+<rect fill="#7a2f8a" height="44" rx="5" width="312" x="20" y="240"></rect><text class="t6" text-anchor="middle" x="176" y="259">AS DEL AYUNTAMIENTO</text><text class="s6" text-anchor="middle" x="176" y="275">ASN de 32 bits y prefijo propio anunciado por BGP</text>
+<rect fill="#eef3f8" height="44" rx="5" width="312" x="348" y="240"></rect><text class="d6" text-anchor="middle" x="504" y="254">≈ 80.000 AS activos en 2026</text><text class="n6" text-anchor="middle" x="504" y="266.5">Más de 1.000.000 de prefijos IPv4 y ≈ 250.000 de IPv6</text><text class="n6" text-anchor="middle" x="504" y="278">Dentro del AS se usan IGP: OSPF, IS-IS, RIP</text>
+<rect fill="#fbeaea" height="42" rx="5" width="312" x="20" y="290"></rect><text class="d6" text-anchor="middle" x="176" y="308">TRÁNSITO · se PAGA</text><text class="n6" text-anchor="middle" x="176" y="324">Da acceso a TODO Internet</text>
+<rect fill="#eaf5ef" height="42" rx="5" width="312" x="348" y="290"></rect><text class="d6" text-anchor="middle" x="504" y="308">PEERING · normalmente GRATUITO</text><text class="n6" text-anchor="middle" x="504" y="324">Solo alcanza al otro AS y a SUS clientes</text>
+<text class="k6" text-anchor="middle" x="340" y="348">BGP-4 (RFC 4271, TCP/179) es el ÚNICO protocolo de encaminamiento exterior de Internet</text>
+<text class="n6" text-anchor="end" x="670" y="364">[Fuente: RFC 4271; CIDR Report; ESPANIX y DE-CIX]</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg aria-label="Comparación entre la estructura lógica de un servicio de directorio, formada por bosque, árbol, dominio y unidad organizativa, y su estructura física, formada por controladores de dominio, sitios y enlaces de sitio; se indica qué delimita cada pieza: el bosque es el límite de seguridad y de esquema, el dominio el de replicación y política de cuentas, y la unidad organizativa no es un límite de seguridad" role="img" viewbox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+<style>.t8{font:700 10.5px system-ui,sans-serif;fill:#fff}.s8{font:8.5px system-ui,sans-serif;fill:#fff}.d8{font:9px system-ui,sans-serif;fill:#333}.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}.k8{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n8{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<text class="h8" text-anchor="middle" x="340" y="20">Dos estructuras superpuestas e independientes</text>
+<rect fill="#0055a0" height="28" rx="5" width="316" x="20" y="32"></rect><text class="t8" text-anchor="middle" x="178" y="51">ESTRUCTURA LÓGICA — organiza la información</text>
+<rect fill="#2d8659" height="28" rx="5" width="316" x="344" y="32"></rect><text class="t8" text-anchor="middle" x="502" y="51">ESTRUCTURA FÍSICA — organiza las copias</text>
+<rect fill="#eef3f8" height="146" rx="5" stroke="#0055a0" stroke-width="1.5" width="304" x="26" y="70"></rect>
+<text class="k8" text-anchor="middle" x="178" y="87">BOSQUE — límite de SEGURIDAD y de ESQUEMA</text>
+<rect fill="#dce8f2" height="112" rx="4" width="280" x="38" y="94"></rect>
+<text class="k8" text-anchor="middle" x="178" y="110">ÁRBOL — nombre DNS contiguo</text>
+<rect fill="#c7dcee" height="80" rx="4" width="256" x="50" y="118"></rect>
+<text class="k8" text-anchor="middle" x="178" y="134">DOMINIO — límite de REPLICACIÓN y de CUENTAS</text>
+<rect fill="#0055a0" height="48" rx="4" width="232" x="62" y="142"></rect>
+<text class="t8" text-anchor="middle" x="178" y="160">UNIDAD ORGANIZATIVA</text>
+<text class="s8" text-anchor="middle" x="178" y="175">delegación de administración + aplicación de GPO</text>
+<text class="s8" text-anchor="middle" x="178" y="187">NO es un límite de seguridad</text>
+<rect fill="#e8f4ee" height="146" rx="5" stroke="#2d8659" stroke-width="1.5" width="304" x="350" y="70"></rect>
+<text class="k8" text-anchor="middle" x="502" y="88">SITIO — subredes IP bien conectadas</text>
+<rect fill="#2d8659" height="50" rx="4" width="138" x="362" y="96"></rect><text class="t8" text-anchor="middle" x="431" y="114">Sitio «Sede A»</text><text class="s8" text-anchor="middle" x="431" y="128">2 controladores</text><text class="s8" text-anchor="middle" x="431" y="140">replicación inmediata</text>
+<rect fill="#2d8659" height="50" rx="4" width="138" x="506" y="96"></rect><text class="t8" text-anchor="middle" x="575" y="114">Sitio «Sede B»</text><text class="s8" text-anchor="middle" x="575" y="128">1 controlador</text><text class="s8" text-anchor="middle" x="575" y="140">solo lectura</text>
+<line stroke="#0055a0" stroke-width="2" x1="500" x2="506" y1="121" y2="121"></line>
+<rect fill="#c9e5d7" height="24" rx="4" width="282" x="362" y="152"></rect><text class="d8" text-anchor="middle" x="503" y="168">ENLACE DE SITIO: replicación programada y comprimida</text>
+<rect fill="#fdf3e3" height="26" rx="4" width="282" x="362" y="180"></rect><text class="d8" text-anchor="middle" x="503" y="197">Determina a QUÉ CONTROLADOR se autentica cada equipo</text>
+<rect fill="#fbeaea" height="26" rx="4" stroke="#d13c3c" stroke-width="1.2" width="640" x="20" y="226"></rect>
+<text class="d8" text-anchor="middle" x="340" y="243">Un dominio puede abarcar muchos sitios, y un sitio puede alojar controladores de varios dominios: son independientes</text>
+<text class="k8" x="24" y="270">LOS CUATRO PILARES DE UN DOMINIO DE DIRECTORIO</text>
+<rect fill="#0055a0" height="34" rx="4" width="156" x="20" y="276"></rect><text class="t8" text-anchor="middle" x="98" y="290">LDAP</text><text class="s8" text-anchor="middle" x="98" y="303">consulta · 389 / 636</text>
+<rect fill="#2d8659" height="34" rx="4" width="156" x="182" y="276"></rect><text class="t8" text-anchor="middle" x="260" y="290">KERBEROS</text><text class="s8" text-anchor="middle" x="260" y="303">autenticación · 88</text>
+<rect fill="#d13c3c" height="34" rx="4" width="156" x="344" y="276"></rect><text class="t8" text-anchor="middle" x="422" y="290">DNS</text><text class="s8" text-anchor="middle" x="422" y="303">localización · SRV</text>
+<rect fill="#e89822" height="34" rx="4" width="154" x="506" y="276"></rect><text class="t8" text-anchor="middle" x="583" y="290">GPO</text><text class="s8" text-anchor="middle" x="583" y="303">directivas</text>
+<rect fill="none" height="22" rx="4" stroke="#0055a0" stroke-width="1.5" width="500" x="90" y="318"></rect>
+<text class="k8" text-anchor="middle" x="340" y="333">Si falla el DNS, falla el inicio de sesión aunque el directorio esté sano</text>
+<text class="n8" text-anchor="end" x="670" y="356">[Fuente: MS-AD; RFC4511; RFC4120]</text>
+</svg>

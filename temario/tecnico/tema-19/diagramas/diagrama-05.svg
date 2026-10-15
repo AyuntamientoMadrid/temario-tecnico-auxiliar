@@ -1,0 +1,21 @@
+<svg aria-label="Línea de tiempo del estándar SQL desde SEQUEL de 1974 hasta SQL 2023, pasando por SQL-86, SQL-92, SQL 1999 con recursividad y disparadores, SQL 2003 con funciones de ventana" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 11px system-ui,sans-serif;fill:#fff}.s5{font:10px system-ui,sans-serif;fill:#fff}.l5{font:11px system-ui,sans-serif;fill:#444}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h5" text-anchor="middle" x="340" y="22">De SEQUEL (1974) al estándar SQL actual</text>
+<line stroke="#0055a0" stroke-width="3" x1="40" x2="640" y1="60" y2="60"></line>
+<circle cx="60" cy="60" fill="#888" r="6"></circle><text class="l5" text-anchor="middle" x="60" y="42">1974</text><text class="l5" text-anchor="middle" x="60" y="80">SEQUEL</text>
+<circle cx="160" cy="60" fill="#0055a0" r="7"></circle><text class="l5" text-anchor="middle" x="160" y="42">1986</text><text style="font:700 11px system-ui;fill:#0055a0" text-anchor="middle" x="160" y="80">SQL-86</text>
+<circle cx="260" cy="60" fill="#0055a0" r="7"></circle><text class="l5" text-anchor="middle" x="260" y="42">1992</text><text style="font:700 11px system-ui;fill:#0055a0" text-anchor="middle" x="260" y="80">SQL-92</text>
+<circle cx="360" cy="60" fill="#0055a0" r="7"></circle><text class="l5" text-anchor="middle" x="360" y="42">1999</text><text style="font:700 11px system-ui;fill:#0055a0" text-anchor="middle" x="360" y="80">SQL:1999</text>
+<circle cx="460" cy="60" fill="#888" r="6"></circle><text class="l5" text-anchor="middle" x="460" y="42">2003</text><text class="l5" text-anchor="middle" x="460" y="80">SQL:2003</text>
+<circle cx="550" cy="60" fill="#888" r="6"></circle><text class="l5" text-anchor="middle" x="550" y="42">2016</text><text class="l5" text-anchor="middle" x="550" y="80">SQL:2016</text>
+<circle cx="620" cy="60" fill="#888" r="6"></circle><text class="l5" text-anchor="middle" x="620" y="42">2023</text><text class="l5" text-anchor="middle" x="620" y="80">SQL:2023</text>
+<rect fill="#0055a0" height="46" rx="5" width="240" x="20" y="100"></rect><text class="t5" text-anchor="middle" x="140" y="120">SQL-86 (SQL1)</text><text class="s5" text-anchor="middle" x="140" y="136">Primer estándar ANSI/ISO</text>
+<rect fill="#3778b5" height="46" rx="5" width="200" x="270" y="100"></rect><text class="t5" text-anchor="middle" x="370" y="120">SQL-92 (SQL2)</text><text class="s5" text-anchor="middle" x="370" y="136">JOIN explícito · subconsultas</text>
+<rect fill="#d13c3c" height="46" rx="5" width="180" x="480" y="100"></rect><text class="t5" text-anchor="middle" x="570" y="120">SQL:1999</text><text class="s5" text-anchor="middle" x="570" y="136">Recursividad · DISPARADORES</text>
+<rect fill="#2d8659" height="40" rx="5" width="200" x="60" y="160"></rect><text style="font:700 11px system-ui;fill:#fff" text-anchor="middle" x="160" y="184">SQL:2003 — Ventanas OVER</text>
+<rect fill="#e89822" height="40" rx="5" width="180" x="280" y="160"></rect><text style="font:700 11px system-ui;fill:#fff" text-anchor="middle" x="370" y="184">SQL:2016 — JSON nativo</text>
+<rect fill="#888" height="40" rx="5" width="180" x="480" y="160"></rect><text style="font:700 11px system-ui;fill:#fff" text-anchor="middle" x="570" y="184">SQL:2023 — SQL/PGQ (grafos)</text>
+<text class="l5" text-anchor="middle" x="340" y="230">Los tres hitos resaltados en azul/rojo: SQL-86, SQL-92 y SQL:1999</text>
+<text class="l5" text-anchor="middle" x="340" y="250">Cada motor comercial implementa un subconjunto del estándar más extensiones propias</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="312">[Fuente: MELTON, cap. 1; CHAMBERLIN74]</text>
+</svg>

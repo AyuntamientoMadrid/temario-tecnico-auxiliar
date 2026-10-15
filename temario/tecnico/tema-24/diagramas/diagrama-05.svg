@@ -1,0 +1,31 @@
+<svg aria-label="Esquema de densidades de pantalla: un botón de 48 dp ocupa 48 píxeles a 160 ppp, 96 píxeles a 320 ppp y 192 píxeles a 640 ppp, manteniendo el mismo tamaño físico; equivalencia con los factores de escala de iOS 1x, 2x y 3x, y diferencia entre dp y sp" role="img" viewbox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 10.5px system-ui,sans-serif;fill:#fff}.s5{font:9.5px system-ui,sans-serif;fill:#fff}.d5{font:10px system-ui,sans-serif;fill:#333}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h5" text-anchor="middle" x="340" y="20">Un mismo tamaño físico en densidades distintas</text>
+<text class="d5" text-anchor="middle" x="340" y="40">Un botón declarado de 48 dp ocupa siempre lo mismo en el dedo del usuario</text>
+<rect fill="#0055a0" height="96" rx="6" width="190" x="30" y="56"></rect>
+<text class="t5" text-anchor="middle" x="125" y="78">mdpi — 160 ppp</text>
+<text class="s5" text-anchor="middle" x="125" y="98">1 dp = 1 píxel</text>
+<text class="s5" text-anchor="middle" x="125" y="120">48 dp = 48 px</text>
+<text class="s5" text-anchor="middle" x="125" y="140">iOS: @1x</text>
+<rect fill="#2d8659" height="96" rx="6" width="190" x="245" y="56"></rect>
+<text class="t5" text-anchor="middle" x="340" y="78">xhdpi — 320 ppp</text>
+<text class="s5" text-anchor="middle" x="340" y="98">1 dp = 2 píxeles</text>
+<text class="s5" text-anchor="middle" x="340" y="120">48 dp = 96 px</text>
+<text class="s5" text-anchor="middle" x="340" y="140">iOS: @2x</text>
+<rect fill="#e89822" height="96" rx="6" width="190" x="460" y="56"></rect>
+<text class="t5" text-anchor="middle" x="555" y="78">xxxhdpi — 640 ppp</text>
+<text class="s5" text-anchor="middle" x="555" y="98">1 dp = 4 píxeles</text>
+<text class="s5" text-anchor="middle" x="555" y="120">48 dp = 192 px</text>
+<text class="s5" text-anchor="middle" x="555" y="140">iOS: @3x</text>
+<rect fill="none" height="76" rx="6" stroke="#0055a0" stroke-width="2" width="300" x="30" y="168"></rect>
+<text style="font:700 11px system-ui;fill:#0055a0" text-anchor="middle" x="180" y="190">dp — longitudes</text>
+<text class="d5" text-anchor="middle" x="180" y="212">Independiente de la densidad.</text>
+<text class="d5" text-anchor="middle" x="180" y="230">Márgenes, botones, iconos.</text>
+<rect fill="none" height="76" rx="6" stroke="#d13c3c" stroke-width="2" width="300" x="350" y="168"></rect>
+<text style="font:700 11px system-ui;fill:#d13c3c" text-anchor="middle" x="500" y="190">sp — TEXTO</text>
+<text class="d5" text-anchor="middle" x="500" y="212">Como dp, pero escalado además por</text>
+<text class="d5" text-anchor="middle" x="500" y="230">el tamaño de fuente del usuario.</text>
+<rect fill="#0055a0" height="28" rx="5" width="420" x="130" y="254"></rect>
+<text class="t5" text-anchor="middle" x="340" y="273">Los textos se miden SIEMPRE en sp, por accesibilidad</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="294">[Fuente: ANDROID-UI; APPLE-DEV; WCAG22]</text>
+</svg>

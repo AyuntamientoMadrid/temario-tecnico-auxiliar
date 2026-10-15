@@ -1,0 +1,1109 @@
+{
+  "tema": 21,
+  "bloque": "tecnico",
+  "titulo": "La arquitectura Java EE",
+  "enunciado_oficial": "La arquitectura Java EE: Características de funcionamiento. Elementos constitutivos. Productos y herramientas.",
+  "calificacion": "+1 acierto, -1/3 error, 0 en blanco (BOAM 10.032, base 5.2)",
+  "preguntas": [
+    {
+      "numero": 1,
+      "pregunta": "¿Qué distingue fundamentalmente a Java EE de escribir una aplicación en Java SE «a pelo»?",
+      "opciones": {
+        "a": "El contenedor gestiona el ciclo de vida y presta servicios transversales de forma declarativa (inversión de control)",
+        "b": "Java EE usa una sintaxis de lenguaje distinta a Java SE",
+        "c": "Java EE no permite usar clases de Java SE"
+      },
+      "correcta": "a",
+      "referencia": "§1.1 [JAKARTA-PLAT]",
+      "explicacion": "El desarrollador describe qué necesita el componente; el contenedor lo crea, invoca sus métodos y le inyecta lo necesario."
+    },
+    {
+      "numero": 2,
+      "pregunta": "En Java EE/Jakarta EE, ¿qué relación existe entre una especificación (p. ej. JAX-RS) y un servidor de aplicaciones como GlassFish o WildFly?",
+      "opciones": {
+        "a": "El servidor de aplicaciones define la especificación y las bibliotecas la implementan",
+        "b": "La especificación define un contrato normativo; el servidor de aplicaciones es una implementación que debe superar un TCK para certificarse compatible",
+        "c": "No existe relación formal entre ambos conceptos"
+      },
+      "correcta": "b",
+      "referencia": "§1.1 [JAKARTA-PLAT]",
+      "explicacion": "Es la misma separación especificación/implementación que en el Tema 19 distingue el estándar SQL de sus motores."
+    },
+    {
+      "numero": 3,
+      "pregunta": "¿En qué año nace la plataforma, bajo el nombre J2EE 1.2?",
+      "opciones": {
+        "a": "2006",
+        "b": "2017",
+        "c": "1999"
+      },
+      "correcta": "c",
+      "referencia": "§1.2 [GONCALVES, cap. 1]",
+      "explicacion": "J2EE 1.2 es la primera versión de la plataforma, impulsada por Sun Microsystems."
+    },
+    {
+      "numero": 4,
+      "pregunta": "¿Qué cambio introduce Java EE 5 (2006) respecto a las versiones anteriores de J2EE?",
+      "opciones": {
+        "a": "Sustituye buena parte de la configuración XML por anotaciones, simplificando el modelo de programación",
+        "b": "Introduce por primera vez el modelo de componentes EJB",
+        "c": "Elimina el contenedor de servlets"
+      },
+      "correcta": "a",
+      "referencia": "§1.2 [GONCALVES, cap. 1]",
+      "explicacion": "Es uno de los tres hitos de la evolución de la plataforma."
+    },
+    {
+      "numero": 5,
+      "pregunta": "¿Cuál fue el motivo declarado por Oracle para transferir Java EE a la Eclipse Foundation en 2017?",
+      "opciones": {
+        "a": "Reducir el coste de mantenimiento de la plataforma",
+        "b": "Acelerar la evolución de la plataforma fuera del proceso más lento del Java Community Process (JCP)",
+        "c": "Eliminar la plataforma por falta de uso"
+      },
+      "correcta": "b",
+      "referencia": "§1.3 [JAKARTA-PLAT]",
+      "explicacion": "El proceso de especificación abierto de Eclipse (JESP) sustituye al JCP para esta plataforma."
+    },
+    {
+      "numero": 6,
+      "pregunta": "¿Por qué la plataforma se renombró de «Java EE» a «Jakarta EE» tras la transferencia a la Eclipse Foundation?",
+      "opciones": {
+        "a": "Por decisión técnica de modernización de marca",
+        "b": "Por votación de la comunidad sin motivo legal",
+        "c": "Porque Oracle conservó la marca registrada «Java» y no autorizó su uso a la nueva gobernanza"
+      },
+      "correcta": "c",
+      "referencia": "§1.3 [JAKARTA-PLAT]",
+      "explicacion": "Es la consecuencia legal directa de la retención de la marca, no una decisión técnica ni de marketing."
+    },
+    {
+      "numero": 7,
+      "pregunta": "¿Qué versión de la plataforma introduce el cambio de paquete javax.<em> a jakarta.</em> en todas las APIs?",
+      "opciones": {
+        "a": "Jakarta EE 9",
+        "b": "Java EE 8",
+        "c": "Jakarta EE 11"
+      },
+      "correcta": "a",
+      "referencia": "§1.3 [JAKARTA-PLAT]",
+      "explicacion": "Es la llamada «Gran Renombración» (Big Bang Renaming), de 2020."
+    },
+    {
+      "numero": 8,
+      "pregunta": "El cambio de namespace javax.<em> a jakarta.</em> en Jakarta EE 9 es...",
+      "opciones": {
+        "a": "Un cambio puramente cosmético, sin impacto en el código compilado",
+        "b": "Una ruptura binaria: el código compilado contra javax.<em> no es compatible en tiempo de ejecución con un contenedor que solo soporte jakarta.</em>",
+        "c": "Reversible automáticamente por el servidor de aplicaciones sin recompilar"
+      },
+      "correcta": "b",
+      "referencia": "§1.3 [JAKARTA-PLAT]",
+      "explicacion": "* Las aplicaciones existentes requirieron una migración explícita, aunque las APIs se mantuvieron semánticamente casi idénticas."
+    },
+    {
+      "numero": 9,
+      "pregunta": "En el modelo de seguridad JAAS/Jakarta Security, ¿qué pregunta responde la AUTORIZACIÓN?",
+      "opciones": {
+        "a": "¿Quién eres?",
+        "b": "¿Cuánto tiempo dura tu sesión?",
+        "c": "¿Qué puedes hacer, una vez identificado?"
+      },
+      "correcta": "c",
+      "referencia": "§2.1.1 [JAKARTA-SEC]",
+      "explicacion": "La autenticación responde «¿quién eres?»; la autorización, «¿qué puedes hacer?», normalmente basándose en roles."
+    },
+    {
+      "numero": 10,
+      "pregunta": "En el vocabulario JAAS, ¿qué representa un LoginModule?",
+      "opciones": {
+        "a": "Un componente conectable que implementa un mecanismo concreto de autenticación (usuario/contraseña, certificado, LDAP…)",
+        "b": "El resultado final de una autenticación exitosa",
+        "c": "El registro de auditoría de accesos al sistema"
+      },
+      "correcta": "a",
+      "referencia": "§2.1.1 [JAKARTA-SEC]",
+      "explicacion": "Sigue un patrón de complementos (<em>pluggable authentication</em>)."
+    },
+    {
+      "numero": 11,
+      "pregunta": "¿Cómo se expresa habitualmente la autorización por rol sobre un recurso Jakarta EE (p. ej. un endpoint REST)?",
+      "opciones": {
+        "a": "Comprobando el rol manualmente dentro del código de negocio en cada método",
+        "b": "De forma declarativa, con la anotación @RolesAllowed, interceptada por el contenedor antes de ejecutar el método",
+        "c": "No es posible declarar restricciones de rol a nivel de endpoint"
+      },
+      "correcta": "b",
+      "referencia": "§2.1.1 [JAKARTA-SEC]",
+      "explicacion": "Es el contenedor, no el código de negocio, quien verifica el rol."
+    },
+    {
+      "numero": 12,
+      "pregunta": "¿Cómo resuelve JNDI la localización de un recurso como un DataSource?",
+      "opciones": {
+        "a": "Por el tipo Java de la clase, igual que CDI",
+        "b": "Por la dirección IP del servidor de base de datos",
+        "c": "Por un nombre lógico jerárquico, independiente de la configuración física del recurso"
+      },
+      "correcta": "c",
+      "referencia": "§2.1.2 [ORACLE-JNDI]",
+      "explicacion": "JNDI resuelve por nombre; CDI (§2.4.2), en cambio, resuelve por tipo."
+    },
+    {
+      "numero": 13,
+      "pregunta": "¿Qué ventaja principal aporta usar un nombre JNDI lógico (p. ej. jdbc/ExpedientesDS) en lugar de credenciales embebidas en el código?",
+      "opciones": {
+        "a": "Permite cambiar de entorno (desarrollo→producción) reconfigurando el servidor, sin recompilar la aplicación",
+        "b": "Elimina por completo la necesidad de un pool de conexiones",
+        "c": "Sustituye a JPA como mecanismo de persistencia"
+      },
+      "correcta": "a",
+      "referencia": "§2.1.2 [ORACLE-JNDI]",
+      "explicacion": "El nombre lógico desacopla el código de la configuración física del recurso."
+    },
+    {
+      "numero": 14,
+      "pregunta": "En Apache Maven, ¿qué encadena el ciclo de vida estándar de construcción?",
+      "opciones": {
+        "a": "Un grafo de tareas con caché incremental, sin fases fijas",
+        "b": "Una secuencia de fases fijas: validate → compile → test → package → verify → install → deploy",
+        "c": "Un único paso que compila y despliega simultáneamente"
+      },
+      "correcta": "b",
+      "referencia": "§2.1.3 [MAVEN-DOC]",
+      "explicacion": "El grafo de tareas con caché incremental es, en cambio, el modelo de Gradle."
+    },
+    {
+      "numero": 15,
+      "pregunta": "¿Qué identifica de forma única una dependencia declarada en un pom.xml de Maven?",
+      "opciones": {
+        "a": "Solo el nombre del archivo JAR",
+        "b": "La ruta absoluta en el disco del desarrollador",
+        "c": "La coordenada groupId:artifactId:version"
+      },
+      "correcta": "c",
+      "referencia": "§2.1.3 [MAVEN-DOC]",
+      "explicacion": "Esa coordenada se resuelve automáticamente desde un repositorio (Maven Central o uno interno)."
+    },
+    {
+      "numero": 16,
+      "pregunta": "¿Por qué la dependencia de la propia API Jakarta EE se declara con scope provided en Maven?",
+      "opciones": {
+        "a": "Porque el servidor de aplicaciones ya proporciona esa API en tiempo de ejecución; empaquetarla también causaría conflictos de clases duplicadas",
+        "b": "Porque esa API no es necesaria para compilar el proyecto",
+        "c": "Porque Maven no permite declarar dependencias de la plataforma"
+      },
+      "correcta": "a",
+      "referencia": "§2.1.3 [MAVEN-DOC]",
+      "explicacion": "La API se necesita para compilar, pero no para empaquetar dentro del artefacto final."
+    },
+    {
+      "numero": 17,
+      "pregunta": "¿Qué distingue a Gradle de Maven en su modelo de construcción?",
+      "opciones": {
+        "a": "Gradle no admite gestión de dependencias transitivas",
+        "b": "Gradle usa un DSL programable (Groovy/Kotlin) y un motor de ejecución basado en un grafo de tareas con caché incremental",
+        "c": "Gradle solo puede usarse en proyectos Android, nunca en Java EE"
+      },
+      "correcta": "b",
+      "referencia": "§2.1.3 [GRADLE-DOC]",
+      "explicacion": "Solo re-ejecuta las tareas cuyas entradas han cambiado."
+    },
+    {
+      "numero": 18,
+      "pregunta": "¿Qué contiene típicamente un archivo WAR (Web Archive)?",
+      "opciones": {
+        "a": "Únicamente EJB de sesión",
+        "b": "Un conector JCA a un sistema externo",
+        "c": "Un módulo web: servlets, JSF, recursos estáticos y su descriptor de despliegue"
+      },
+      "correcta": "c",
+      "referencia": "§2.1.4 [JAKARTA-SERVLET]",
+      "explicacion": "El descriptor <code>web.xml</code> es opcional desde que las anotaciones cubren la mayor parte de la configuración."
+    },
+    {
+      "numero": 19,
+      "pregunta": "¿Qué relación de contención es correcta entre los formatos de empaquetado Java EE?",
+      "opciones": {
+        "a": "Un EAR puede contener varios WAR y EJB-JAR; un WAR no puede contener un EAR",
+        "b": "Un WAR puede contener varios EAR",
+        "c": "Un EJB-JAR y un EAR son formatos incompatibles entre sí"
+      },
+      "correcta": "a",
+      "referencia": "§2.1.4 [JAKARTA-PLAT]",
+      "explicacion": "Es la jerarquía de empaquetado de la plataforma."
+    },
+    {
+      "numero": 20,
+      "pregunta": "¿Qué aísla el classloader hijo asignado a cada módulo dentro de un EAR desplegado?",
+      "opciones": {
+        "a": "El acceso a la red del servidor",
+        "b": "Las dependencias de cada módulo, evitando colisiones aunque dos módulos usen versiones distintas de una misma biblioteca",
+        "c": "Las transacciones JTA de cada módulo"
+      },
+      "correcta": "b",
+      "referencia": "§2.1.4 [JAKARTA-PLAT]",
+      "explicacion": "Cada WAR/EJB-JAR obtiene su propio classloader hijo del classloader de la aplicación."
+    },
+    {
+      "numero": 21,
+      "pregunta": "¿Qué diferencia fundamental hay entre la compilación JIT de la JVM tradicional y GraalVM Native Image?",
+      "opciones": {
+        "a": "Ambas compilan en el mismo momento, solo cambia el formato del ejecutable",
+        "b": "JIT compila en tiempo de construcción; Native Image compila en tiempo de ejecución",
+        "c": "JIT compila de forma progresiva en tiempo de ejecución; Native Image compila por completo en tiempo de construcción (ahead-of-time)"
+      },
+      "correcta": "c",
+      "referencia": "§2.1.5 [GRAALVM-DOC]",
+      "explicacion": "Es la distinción JIT/AOT central de este epígrafe."
+    },
+    {
+      "numero": 22,
+      "pregunta": "¿Qué ventaja aporta principalmente un ejecutable generado con GraalVM Native Image frente al arranque de una JVM tradicional?",
+      "opciones": {
+        "a": "Arranque en milisegundos y huella de memoria de partida sensiblemente menor",
+        "b": "Mejor rendimiento sostenido tras horas de ejecución continua",
+        "c": "Elimina la necesidad de declarar reflexión o proxies dinámicos"
+      },
+      "correcta": "a",
+      "referencia": "§2.1.5 [GRAALVM-DOC]",
+      "explicacion": "A cambio, un análisis estático más restrictivo: la reflexión y los proxies dinámicos deben declararse explícitamente."
+    },
+    {
+      "numero": 23,
+      "pregunta": "¿Cuál es la relación correcta entre GraalVM Native Image y Quarkus?",
+      "opciones": {
+        "a": "Son sinónimos exactos del mismo producto",
+        "b": "GraalVM Native Image es una tecnología de compilación; Quarkus es un framework que la aprovecha (entre otras estrategias) para ofrecer aplicaciones nativas",
+        "c": "Quarkus sustituyó a GraalVM Native Image en 2020"
+      },
+      "correcta": "b",
+      "referencia": "§2.1.5 [QUARKUS-DOC]",
+      "explicacion": "Quarkus también puede ejecutarse en modo JVM tradicional sin compilación nativa."
+    },
+    {
+      "numero": 24,
+      "pregunta": "¿Por qué Apache Tomcat, por sí solo, no se considera un servidor de aplicaciones Jakarta EE completo?",
+      "opciones": {
+        "a": "Porque no puede ejecutar ningún componente Java",
+        "b": "Porque no permite desplegar aplicaciones web",
+        "c": "Porque implementa solo una parte de la especificación (servlets/JSF) pero le faltan EJB completo, JMS y JTA distribuido nativos"
+      },
+      "correcta": "c",
+      "referencia": "§2.1.6 [WILDFLY-DOC]",
+      "explicacion": "TomEE añade esas piezas sobre Tomcat."
+    },
+    {
+      "numero": 25,
+      "pregunta": "¿Qué principio rige las dependencias entre las capas de una aplicación Java EE en capas (presentación/negocio/persistencia)?",
+      "opciones": {
+        "a": "Cada capa solo depende de la inmediatamente inferior; la dependencia es unidireccional hacia abajo",
+        "b": "Cada capa puede invocar directamente a cualquier otra capa sin restricción",
+        "c": "La capa de persistencia conoce y depende de la capa de presentación"
+      },
+      "correcta": "a",
+      "referencia": "§2.2 [FOWLER-EAA]",
+      "explicacion": "Este aislamiento permite sustituir una capa sin tocar las demás."
+    },
+    {
+      "numero": 26,
+      "pregunta": "¿Qué contenedores del servidor de aplicaciones gestionan típicamente, respectivamente, la capa de presentación y la capa de negocio implementada con EJB?",
+      "opciones": {
+        "a": "Ambas capas comparten un único contenedor sin distinción",
+        "b": "El contenedor web gestiona la presentación (servlets/JSF/JAX-RS); el contenedor EJB gestiona la capa de negocio basada en Enterprise JavaBeans",
+        "c": "El contenedor de persistencia gestiona ambas capas"
+      },
+      "correcta": "b",
+      "referencia": "§2.2 [GONCALVES, cap. 2]",
+      "explicacion": "Ambos contenedores conviven en el mismo servidor de aplicaciones y comparten servicios transversales."
+    },
+    {
+      "numero": 27,
+      "pregunta": "¿Cuántas instancias de un mismo servlet crea, por diseño, el contenedor web?",
+      "opciones": {
+        "a": "Una instancia nueva por cada petición HTTP recibida",
+        "b": "Una instancia por cada usuario autenticado",
+        "c": "Una única instancia, que atiende todas las peticiones concurrentes en hilos distintos"
+      },
+      "correcta": "c",
+      "referencia": "§2.3.1 [JAKARTA-SERVLET]",
+      "explicacion": "El contenedor despacha cada petición a un hilo distinto que invoca <code>service()</code>."
+    },
+    {
+      "numero": 28,
+      "pregunta": "¿Qué consecuencia práctica tiene que un servlet sea, por diseño, singleton?",
+      "opciones": {
+        "a": "No debe guardar estado mutable de una petición en variables de instancia sin sincronización, por riesgo de errores de concurrencia",
+        "b": "No puede recibir peticiones POST",
+        "c": "Debe reiniciarse tras cada petición"
+      },
+      "correcta": "a",
+      "referencia": "§2.3.1 [JAKARTA-SERVLET]",
+      "explicacion": "El estado por petición se guarda en <code>HttpServletRequest</code>; el estado por usuario, en <code>HttpSession</code>."
+    },
+    {
+      "numero": 29,
+      "pregunta": "¿Sobre qué componente del contenedor web se construye JavaServer Faces (JSF)?",
+      "opciones": {
+        "a": "Sobre un contenedor EJB independiente",
+        "b": "Sobre el propio contenedor de servlets, mediante un único servlet especial (FacesServlet) que despacha todas las peticiones JSF",
+        "c": "JSF no depende de ningún componente del contenedor web"
+      },
+      "correcta": "b",
+      "referencia": "§2.3.1 [JAKARTA-FACES]",
+      "explicacion": "JSF añade un ciclo de vida de petición en seis fases sobre ese modelo base."
+    },
+    {
+      "numero": 30,
+      "pregunta": "Según la tesis de Roy Fielding (2000), ¿qué es REST?",
+      "opciones": {
+        "a": "Un protocolo de mensajería con sobre XML normalizado",
+        "b": "Una implementación concreta de JAX-WS",
+        "c": "Un estilo arquitectónico que aprovecha las primitivas nativas de HTTP para operar sobre recursos identificados por URI"
+      },
+      "correcta": "c",
+      "referencia": "§2.3.2 [FIELDING2000]",
+      "explicacion": "No es un protocolo cerrado, a diferencia de SOAP."
+    },
+    {
+      "numero": 31,
+      "pregunta": "¿Qué anotación de JAX-RS identifica la URI base de un recurso REST?",
+      "opciones": {
+        "a": "@Path",
+        "b": "@WebService",
+        "c": "@Entity"
+      },
+      "correcta": "a",
+      "referencia": "§2.3.2 [JAKARTA-REST]",
+      "explicacion": "<code>@WebService</code> pertenece a JAX-WS; <code>@Entity</code> pertenece a JPA."
+    },
+    {
+      "numero": 32,
+      "pregunta": "¿Qué caracteriza a SOAP frente a REST?",
+      "opciones": {
+        "a": "SOAP no exige ningún formato de mensaje concreto",
+        "b": "SOAP es un protocolo que exige un sobre XML normalizado, habitualmente descrito por un contrato WSDL formal",
+        "c": "SOAP solo puede transportarse sobre FTP, nunca sobre HTTP"
+      },
+      "correcta": "b",
+      "referencia": "§2.3.2 [SOAP12]",
+      "explicacion": "SOAP suele transportarse sobre HTTP, aunque no está ligado exclusivamente a él."
+    },
+    {
+      "numero": 33,
+      "pregunta": "¿Qué documento describe formalmente el contrato de un servicio SOAP (operaciones, mensajes, tipos, endpoint)?",
+      "opciones": {
+        "a": "OpenAPI",
+        "b": "UDDI",
+        "c": "WSDL"
+      },
+      "correcta": "c",
+      "referencia": "§2.3.3 [WSDL20]",
+      "explicacion": "OpenAPI cumple ese papel para REST; UDDI es el registro de descubrimiento, no el contrato."
+    },
+    {
+      "numero": 34,
+      "pregunta": "¿Qué papel cumple UDDI en el ecosistema de servicios web SOAP?",
+      "opciones": {
+        "a": "Un registro centralizado donde publicar y descubrir servicios, análogo a unas «páginas amarillas» de servicios web",
+        "b": "El lenguaje de descripción del contrato de un servicio SOAP",
+        "c": "El framework de implementación de servicios REST equivalente a JAX-RS"
+      },
+      "correcta": "a",
+      "referencia": "§2.3.3 [UDDI3]",
+      "explicacion": "Tuvo una adopción muy limitada fuera de grandes integraciones corporativas."
+    },
+    {
+      "numero": 35,
+      "pregunta": "¿Qué caracteriza a un Stateless Session Bean?",
+      "opciones": {
+        "a": "Mantiene una instancia dedicada por cada cliente durante toda la conversación",
+        "b": "No mantiene estado conversacional entre invocaciones; el contenedor gestiona un pool de instancias intercambiables",
+        "c": "Es la única instancia compartida por toda la aplicación"
+      },
+      "correcta": "b",
+      "referencia": "§2.4.1 [JAKARTA-EJB]",
+      "explicacion": "Es la variante más escalable y la más habitual en la capa de negocio."
+    },
+    {
+      "numero": 36,
+      "pregunta": "¿Qué tipo de EJB es el adecuado para un asistente web de varios pasos que debe recordar los datos introducidos en pasos anteriores?",
+      "opciones": {
+        "a": "Stateless",
+        "b": "Singleton",
+        "c": "Stateful"
+      },
+      "correcta": "c",
+      "referencia": "§2.4.1 [JAKARTA-EJB]",
+      "explicacion": "El contenedor asocia una instancia dedicada a cada cliente durante toda la conversación."
+    },
+    {
+      "numero": 37,
+      "pregunta": "¿Qué ocurrió con las Entity Beans, el modelo histórico de persistencia gestionado por el contenedor EJB?",
+      "opciones": {
+        "a": "Fueron sustituidas por completo por JPA desde Java EE 5 (2006), por su complejidad y rendimiento deficiente",
+        "b": "Siguen siendo el estándar vigente de persistencia en Jakarta EE",
+        "c": "Se fusionaron con los Message-Driven Beans"
+      },
+      "correcta": "a",
+      "referencia": "§2.4.1 [JAKARTA-EJB]",
+      "explicacion": "Mencionarlas como forma actual de persistencia es un error frecuente."
+    },
+    {
+      "numero": 38,
+      "pregunta": "¿Cómo resuelve CDI qué implementación inyectar con @Inject?",
+      "opciones": {
+        "a": "Por el nombre JNDI del recurso",
+        "b": "Por el tipo Java declarado (con qualifiers para desambiguar si hay varias implementaciones)",
+        "c": "Por el orden alfabético de las clases candidatas"
+      },
+      "correcta": "b",
+      "referencia": "§2.4.2 [JAKARTA-CDI]",
+      "explicacion": "JNDI, en cambio, resuelve por nombre."
+    },
+    {
+      "numero": 39,
+      "pregunta": "¿Cuánto dura la instancia de un bean CDI anotado con @RequestScoped?",
+      "opciones": {
+        "a": "Toda la sesión del usuario",
+        "b": "Toda la vida de la aplicación",
+        "c": "Una única petición HTTP; se crea una nueva instancia en cada petición"
+      },
+      "correcta": "c",
+      "referencia": "§2.4.2 [JAKARTA-CDI]",
+      "explicacion": "<code>@SessionScoped</code> dura la sesión; <code>@ApplicationScoped</code>, toda la aplicación."
+    },
+    {
+      "numero": 40,
+      "pregunta": "¿A qué patrón de diseño del Tema 20 equivale, en esencia, un bean CDI @ApplicationScoped?",
+      "opciones": {
+        "a": "Singleton, gestionado automáticamente por el contenedor en lugar de codificado a mano",
+        "b": "Factory Method",
+        "c": "Adapter"
+      },
+      "correcta": "a",
+      "referencia": "§2.4.2 [JAKARTA-CDI]",
+      "explicacion": "Una única instancia compartida por toda la aplicación."
+    },
+    {
+      "numero": 41,
+      "pregunta": "¿Qué tres componentes intercambiables sigue habitualmente un step de Jakarta Batch en el patrón ETL?",
+      "opciones": {
+        "a": "Controller, Service, Repository",
+        "b": "ItemReader, ItemProcessor, ItemWriter",
+        "c": "Producer, Consumer, Broker"
+      },
+      "correcta": "b",
+      "referencia": "§2.4.3 [JAKARTA-BATCH]",
+      "explicacion": "Leen, transforman/validan y escriben los elementos, agrupados en fragmentos (chunks)."
+    },
+    {
+      "numero": 42,
+      "pregunta": "¿En qué momento confirma la transacción el procesamiento por fragmentos (chunk-oriented) de Jakarta Batch?",
+      "opciones": {
+        "a": "Solo al finalizar todo el job completo, nunca antes",
+        "b": "Nunca; Jakarta Batch no usa transacciones",
+        "c": "Por cada fragmento (chunk) procesado, lo que permite reiniciar desde el último fragmento confirmado si el job falla"
+      },
+      "correcta": "c",
+      "referencia": "§2.4.3 [JAKARTA-BATCH]",
+      "explicacion": "Un fallo en el fragmento 500 de 1.000 no obliga a reprocesar los 499 anteriores."
+    },
+    {
+      "numero": 43,
+      "pregunta": "En JMS, ¿qué modelo de mensajería garantiza que cada mensaje lo consuma un único receptor, aunque haya varios consumidores escuchando?",
+      "opciones": {
+        "a": "Punto a punto, sobre una Queue",
+        "b": "Publicación/suscripción, sobre un Topic",
+        "c": "Difusión (broadcast) sin destino definido"
+      },
+      "correcta": "a",
+      "referencia": "§2.5.1 [JAKARTA-MSG]",
+      "explicacion": "Varios consumidores se reparten los mensajes, no los duplican."
+    },
+    {
+      "numero": 44,
+      "pregunta": "¿Qué modelo JMS es el adecuado para notificar un mismo suceso a varios sistemas interesados de forma independiente?",
+      "opciones": {
+        "a": "Punto a punto, sobre una Queue",
+        "b": "Publicación/suscripción, sobre un Topic",
+        "c": "Solicitud-respuesta síncrona"
+      },
+      "correcta": "b",
+      "referencia": "§2.5.1 [JAKARTA-MSG]",
+      "explicacion": "Todos los suscriptores activos en el momento del envío reciben el mensaje."
+    },
+    {
+      "numero": 45,
+      "pregunta": "¿Qué defensa estándar frente a la inyección SQL ofrece el uso de PreparedStatement con parámetros en JDBC?",
+      "opciones": {
+        "a": "Cifra automáticamente la conexión con la base de datos",
+        "b": "Elimina la necesidad de un pool de conexiones",
+        "c": "Separa el código SQL fijo, precompilado, de los datos (parámetros), de modo que un valor de entrada no puede alterar la estructura de la sentencia"
+      },
+      "correcta": "c",
+      "referencia": "§2.5.2 [ORACLE-JNDI]",
+      "explicacion": "Conecta con el SQL dinámico frente a estático del Tema 19."
+    },
+    {
+      "numero": 46,
+      "pregunta": "¿Qué gestiona un DataSource localizado por JNDI en una aplicación Java EE?",
+      "opciones": {
+        "a": "Un pool de conexiones físicas ya abiertas y reutilizables, evitando el coste de abrir una conexión TCP nueva en cada operación",
+        "b": "La sintaxis JPQL de las consultas",
+        "c": "El renderizado de la vista JSF"
+      },
+      "correcta": "a",
+      "referencia": "§2.5.2 [ORACLE-JNDI]",
+      "explicacion": "La conexión no se abre directamente con credenciales embebidas en el código."
+    },
+    {
+      "numero": 47,
+      "pregunta": "¿Qué protocolo implementa el coordinador de transacciones de JTA para garantizar ACID en transacciones que abarcan varios recursos?",
+      "opciones": {
+        "a": "Two-Way Handshake",
+        "b": "Commit en dos fases (Two-Phase Commit, 2PC): fase de preparación y fase de confirmación/deshecho",
+        "c": "Round-robin de confirmaciones"
+      },
+      "correcta": "b",
+      "referencia": "§2.5.3 [JAKARTA-JTA]",
+      "explicacion": "Si algún recurso no está listo, se ordena el rollback a todos."
+    },
+    {
+      "numero": 48,
+      "pregunta": "¿Qué diferencia CMT de BMT en la gestión transaccional de un EJB?",
+      "opciones": {
+        "a": "CMT solo funciona con bases de datos NoSQL",
+        "b": "BMT es el modelo por defecto y el más habitual",
+        "c": "En CMT el contenedor gestiona la transacción de forma declarativa (atributos); en BMT el propio componente la controla explícitamente mediante programación"
+      },
+      "correcta": "c",
+      "referencia": "§2.5.3 [JAKARTA-JTA]",
+      "explicacion": "CMT es el modelo por defecto, no BMT."
+    },
+    {
+      "numero": 49,
+      "pregunta": "¿Qué hace el atributo transaccional REQUIRED (por defecto en CMT) si el método se invoca sin ninguna transacción activa?",
+      "opciones": {
+        "a": "Crea una nueva transacción",
+        "b": "Lanza una excepción obligatoriamente",
+        "c": "Ejecuta el método sin ninguna transacción"
+      },
+      "correcta": "a",
+      "referencia": "§2.5.3 [JAKARTA-JTA]",
+      "explicacion": "Si ya existe una transacción activa, <code>REQUIRED</code> se une a ella en lugar de crear una nueva."
+    },
+    {
+      "numero": 50,
+      "pregunta": "¿Qué mecanismo de JPA detecta automáticamente los cambios realizados sobre una entidad gestionada, sin invocar explícitamente un UPDATE?",
+      "opciones": {
+        "a": "JNDI lookup",
+        "b": "El dirty checking del contexto de persistencia del EntityManager",
+        "c": "El pool de conexiones JDBC"
+      },
+      "correcta": "b",
+      "referencia": "§2.5.4 [JAKARTA-JPA]",
+      "explicacion": "Los cambios se sincronizan con la base de datos al confirmar la transacción."
+    },
+    {
+      "numero": 51,
+      "pregunta": "¿Sobre qué opera JPQL, a diferencia de SQL?",
+      "opciones": {
+        "a": "Sobre las tablas y columnas físicas de la base de datos",
+        "b": "Sobre los ficheros de configuración XML del servidor",
+        "c": "Sobre el modelo de entidades y sus atributos Java, no directamente sobre tablas y columnas físicas"
+      },
+      "correcta": "c",
+      "referencia": "§2.5.4 [JAKARTA-JPA]",
+      "explicacion": "El proveedor JPA lo traduce internamente a SQL."
+    },
+    {
+      "numero": 52,
+      "pregunta": "¿Qué es JCache (JSR 107)?",
+      "opciones": {
+        "a": "Una especificación transversal de caché en memoria, aplicable tanto dentro como fuera de Jakarta EE",
+        "b": "Un sinónimo del contexto de persistencia de primer nivel de JPA",
+        "c": "Un tipo de EJB especializado en almacenamiento temporal"
+      },
+      "correcta": "a",
+      "referencia": "§2.5.5 [JAKARTA-CACHE]",
+      "explicacion": "No debe confundirse con el contexto de persistencia de JPA, que es una caché de primer nivel implícita y limitada a la transacción."
+    },
+    {
+      "numero": 53,
+      "pregunta": "¿Qué diferencia principal hay entre una herramienta APM y una prueba de carga?",
+      "opciones": {
+        "a": "Ambas se ejecutan siempre en el mismo momento del ciclo de vida",
+        "b": "El APM monitoriza el sistema en producción de forma continua; la prueba de carga se ejecuta de forma puntual, antes del despliegue",
+        "c": "La prueba de carga sustituye por completo al APM en producción"
+      },
+      "correcta": "b",
+      "referencia": "§3.1 [ISO25010]",
+      "explicacion": "Son complementarios, no sustitutos."
+    },
+    {
+      "numero": 54,
+      "pregunta": "¿Qué papel cumple JUnit en las pruebas de una aplicación Java EE?",
+      "opciones": {
+        "a": "Simula miles de usuarios concurrentes contra el sistema",
+        "b": "Crea dobles de prueba (mocks) de las dependencias",
+        "c": "Ejecuta y organiza las pruebas: aserciones y ciclo de vida (@BeforeEach/@AfterEach)"
+      },
+      "correcta": "c",
+      "referencia": "§3.2 [JUNIT5-DOC]",
+      "explicacion": "Simular usuarios concurrentes es tarea de JMeter; crear mocks, de Mockito."
+    },
+    {
+      "numero": 55,
+      "pregunta": "¿Qué problema resuelve Mockito al probar la lógica de negocio de un EJB o CDI bean?",
+      "opciones": {
+        "a": "Permite simular el comportamiento de sus dependencias reales (otro servicio, un EntityManager) sin ejecutarlas de verdad",
+        "b": "Sustituye por completo a JUnit como framework de ejecución de pruebas",
+        "c": "Genera automáticamente pruebas de carga con JMeter"
+      },
+      "correcta": "a",
+      "referencia": "§3.2 [MOCKITO-DOC]",
+      "explicacion": "Así la prueba se mantiene aislada, rápida y no frágil frente a recursos externos."
+    },
+    {
+      "numero": 56,
+      "pregunta": "¿Qué tipo de prueba con JMeter busca encontrar el punto de ruptura del sistema, más allá de la capacidad prevista?",
+      "opciones": {
+        "a": "Prueba de resistencia (soak testing)",
+        "b": "Prueba de estrés (stress testing)",
+        "c": "Prueba unitaria"
+      },
+      "correcta": "b",
+      "referencia": "§3.3 [JMETER-DOC]",
+      "explicacion": "La prueba de resistencia usa carga moderada sostenida en el tiempo; la unitaria no es una prueba de carga."
+    },
+    {
+      "numero": 57,
+      "pregunta": "¿Cuál es la relación correcta entre Spring Framework y Jakarta EE?",
+      "opciones": {
+        "a": "Spring es la implementación de referencia oficial de Jakarta EE",
+        "b": "Spring solo puede ejecutarse dentro de un servidor de aplicaciones Jakarta EE completo",
+        "c": "Spring es un framework alternativo e independiente, aunque puede interoperar con especificaciones concretas como JPA"
+      },
+      "correcta": "c",
+      "referencia": "§3.4.1 [SPRING-DOC]",
+      "explicacion": "Nace en 2003 como respuesta a la complejidad de EJB 2.x."
+    },
+    {
+      "numero": 58,
+      "pregunta": "¿Sobre qué estándares se construye explícitamente Quarkus, a diferencia de Spring?",
+      "opciones": {
+        "a": "Estándares Jakarta EE/MicroProfile: CDI, JAX-RS, JPA",
+        "b": "Un modelo de inyección de dependencias propio, sin relación con CDI",
+        "c": "Únicamente sobre JDBC, sin soporte de inyección de dependencias"
+      },
+      "correcta": "a",
+      "referencia": "§3.4.2 [QUARKUS-DOC]",
+      "explicacion": "A diferencia de Spring, que es histórica e independiente de la plataforma estándar."
+    },
+    {
+      "numero": 59,
+      "pregunta": "¿Qué aporta MicroProfile sobre el subconjunto de especificaciones Jakarta EE que utiliza (CDI, JAX-RS, JSON-P)?",
+      "opciones": {
+        "a": "Sustituye por completo a Jakarta EE como plataforma independiente sin relación con ella",
+        "b": "Extensiones específicas de microservicios no cubiertas por la plataforma tradicional: tolerancia a fallos, configuración externa, métricas y health checks",
+        "c": "Un nuevo lenguaje de programación distinto de Java"
+      },
+      "correcta": "b",
+      "referencia": "§4 [QUARKUS-DOC]",
+      "explicacion": "Se apoya en CDI/JAX-RS/JSON-P, no los sustituye."
+    },
+    {
+      "numero": 60,
+      "pregunta": "¿Qué relación tienen las tendencias actuales (cloud-native, MicroProfile, programación reactiva) con los fundamentos arquitectónicos de este tema?",
+      "opciones": {
+        "a": "Sustituyen por completo el modelo de contenedor y la arquitectura de capas",
+        "b": "No tienen ninguna relación con la plataforma Jakarta EE tradicional",
+        "c": "Amplían el contexto de despliegue sin sustituir los fundamentos: el modelo de contenedor, la arquitectura de capas y los componentes constitutivos siguen siendo la base"
+      },
+      "correcta": "c",
+      "referencia": "§4 [JAKARTA-PLAT]",
+      "explicacion": "Tanto un servidor Jakarta EE tradicional como un microservicio Quarkus en Kubernetes comparten esa misma base conceptual."
+    }
+  ],
+  "casos": [
+    {
+      "caso": 1,
+      "titulo": "API REST segura de consulta y liquidación de tributos",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el supuesto planteado, ¿qué anotación expone la clase TributoResource como recurso REST en la ruta /tributos?",
+          "opciones": {
+            "a": "@Path(\"/tributos\") sobre la clase.",
+            "b": "@Produces(\"/tributos\") sobre la clase.",
+            "c": "@WebServlet(\"/tributos\") sobre la clase."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 1 · §2.3.2",
+          "explicacion": "En JAX-RS, @Path identifica la URI del recurso; @Produces fija el formato de respuesta y @WebServlet declara un servlet, no un recurso REST."
+        },
+        {
+          "numero": 2,
+          "pregunta": "El método consultar debe atender GET /tributos/{id}. ¿Cómo recibe el identificador que viene en la URI?",
+          "opciones": {
+            "a": "Con @Consumes(MediaType.APPLICATION_JSON) aplicada al parámetro Long id.",
+            "b": "Con @Path(\"/{id}\") en el método y el parámetro anotado con @PathParam(\"id\").",
+            "c": "Leyéndolo de la sesión HTTP del usuario, donde lo deja el navegador."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 1 · §2.3.2",
+          "explicacion": "La plantilla {id} se declara con @Path en el método y su valor se inyecta en el parámetro anotado con @PathParam(\"id\")."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Qué anotación indica que consultar devuelve la respuesta en formato JSON?",
+          "opciones": {
+            "a": "@Consumes(MediaType.APPLICATION_JSON).",
+            "b": "@WebMethod, propia de los servicios web.",
+            "c": "@Produces(MediaType.APPLICATION_JSON)."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 1 · §2.3.2",
+          "explicacion": "@Produces declara el formato de lo que el método devuelve; @Consumes, el del cuerpo que recibe; @WebMethod pertenece a JAX-WS (SOAP)."
+        },
+        {
+          "numero": 4,
+          "pregunta": "Si el tributo solicitado no existe, ¿qué respuesta debe devolver el recurso REST?",
+          "opciones": {
+            "a": "Un 200 OK con el cuerpo vacío, para no generar errores en el cliente.",
+            "b": "Un 404 NOT_FOUND, construido con Response.status(Response.Status.NOT_FOUND).",
+            "c": "Un 201 CREATED, porque la consulta deja el tributo registrado en el sistema."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 1 · §2.3.2",
+          "explicacion": "REST aprovecha los códigos de estado de HTTP: si el recurso buscado no existe, la respuesta es NOT_FOUND (404); 201 corresponde a la creación de un recurso."
+        },
+        {
+          "numero": 5,
+          "pregunta": "Solo el rol GESTOR_TRIBUTARIO puede invocar el método liquidar. ¿Cómo se expresa esa restricción?",
+          "opciones": {
+            "a": "Con la anotación @RolesAllowed(\"GESTOR_TRIBUTARIO\") sobre el método liquidar.",
+            "b": "Con un if al comienzo de liquidar que compruebe a mano el rol del usuario.",
+            "c": "Con @Path(\"/gestor\") en el método, para que solo los gestores lo encuentren."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 2 · §2.1.1",
+          "explicacion": "En Java EE la autorización se expresa de forma declarativa con @RolesAllowed, no comprobando roles a mano dentro del método."
+        },
+        {
+          "numero": 6,
+          "pregunta": "Con @RolesAllowed, ¿quién comprueba el rol del usuario y en qué momento?",
+          "opciones": {
+            "a": "La base de datos, mediante los permisos GRANT concedidos sobre la tabla TRIBUTO.",
+            "b": "El propio método liquidar, una vez ejecutado, antes de devolver la respuesta.",
+            "c": "El contenedor, que intercepta la llamada y verifica el rol antes de ejecutar el método."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 2 · §2.1.1",
+          "explicacion": "Es el contenedor quien intercepta la llamada y verifica el rol antes de ejecutar el código del método."
+        },
+        {
+          "numero": 7,
+          "pregunta": "Un ciudadano identificado en la sede electrónica, sin el rol de gestor, intenta liquidar un tributo y se le deniega. ¿Qué control de seguridad lo ha impedido?",
+          "opciones": {
+            "a": "La autorización: se sabe quién es, pero no tiene permiso para esa acción.",
+            "b": "La autenticación: el sistema no ha podido verificar quién es el usuario.",
+            "c": "La transacción: el atributo REQUIRED rechaza a los usuarios sin rol."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 2 · §2.1.1",
+          "explicacion": "Autenticación responde a «¿quién eres?» y autorización a «¿qué puedes hacer?»; el ciudadano está autenticado, pero carece del rol que exige la operación."
+        },
+        {
+          "numero": 8,
+          "pregunta": "¿Cómo debe obtener el recurso REST el EJB LiquidacionTributoService para delegar en él la liquidación?",
+          "opciones": {
+            "a": "Creándolo con new LiquidacionTributoService() dentro del método liquidar.",
+            "b": "Copiando en el recurso el código de cálculo que ya contiene el EJB.",
+            "c": "Inyectándolo con @Inject en un atributo y llamando a sus métodos."
+          },
+          "correcta": "c",
+          "referencia": "Caso 1, cuestión 3 · §2.4.2",
+          "explicacion": "El contenedor crea los componentes y les inyecta lo que necesitan; con @Inject el recurso recibe el EJB de negocio y solo delega en él."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿Por qué el cálculo de la liquidación no debe programarse dentro del propio recurso REST?",
+          "opciones": {
+            "a": "Porque JAX-RS no admite métodos que hagan cálculos con importes decimales.",
+            "b": "Porque el recurso pertenece a la capa de presentación, que solo llama a la capa de negocio.",
+            "c": "Porque un recurso REST no puede acceder a datos si no es a través de JMS."
+          },
+          "correcta": "b",
+          "referencia": "Caso 1, cuestión 3 · §2.2",
+          "explicacion": "En la arquitectura de capas la presentación llama a la lógica de negocio, que a su vez usa la persistencia; así se puede sustituir una capa sin tocar las demás."
+        },
+        {
+          "numero": 10,
+          "pregunta": "El método liquidar() del EJB debe ejecutarse siempre dentro de una transacción, uniéndose a la existente si la hay. ¿Qué atributo @TransactionAttribute corresponde?",
+          "opciones": {
+            "a": "REQUIRED.",
+            "b": "REQUIRES_NEW.",
+            "c": "SUPPORTS."
+          },
+          "correcta": "a",
+          "referencia": "Caso 1, cuestión 4 · §2.5.3",
+          "explicacion": "REQUIRED se une a la transacción del llamador y, si no hay ninguna, crea una nueva. REQUIRES_NEW nunca se une y SUPPORTS puede ejecutarse sin transacción."
+        }
+      ]
+    },
+    {
+      "caso": 2,
+      "titulo": "Asistente multipaso de alta de expediente",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el supuesto planteado, ¿qué tipo de Session Bean debe gestionar el estado del asistente entre los tres pasos?",
+          "opciones": {
+            "a": "Stateless.",
+            "b": "Singleton.",
+            "c": "Stateful."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 1 · §2.4.1",
+          "explicacion": "Stateful mantiene un estado conversacional propio de cada cliente durante varias invocaciones, como los pasos de un asistente."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Por qué un Session Bean Singleton no sirve para este asistente?",
+          "opciones": {
+            "a": "Porque es una única instancia para toda la aplicación y mezclaría los datos de usuarios distintos.",
+            "b": "Porque un Singleton no puede declarar atributos donde guardar los datos de cada paso.",
+            "c": "Porque un Singleton solo se activa cuando llega un mensaje a una cola JMS."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 1 · §2.4.1",
+          "explicacion": "El Singleton es una única instancia compartida por toda la aplicación: los datos del asistente de un ciudadano quedarían mezclados con los de otros."
+        },
+        {
+          "numero": 3,
+          "pregunta": "¿Y por qué tampoco sirve un Session Bean Stateless?",
+          "opciones": {
+            "a": "Porque un bean Stateless no puede acceder a la base de datos para persistir el expediente.",
+            "b": "Porque no guarda estado entre invocaciones y cualquier instancia del pool atiende cada llamada.",
+            "c": "Porque un bean Stateless es más lento que el Stateful al tramitar los formularios web."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 1 · §2.4.1",
+          "explicacion": "Stateless no mantiene estado conversacional; sus instancias son intercambiables, así que no recordaría los datos de los pasos anteriores."
+        },
+        {
+          "numero": 4,
+          "pregunta": "Si el asistente se implementa en JSF con un bean CDI, ¿qué ámbito es el más adecuado para el flujo de tres pasos?",
+          "opciones": {
+            "a": "@ConversationScoped.",
+            "b": "@RequestScoped.",
+            "c": "@SessionScoped."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 2 · §2.4.2",
+          "explicacion": "@ConversationScoped vive durante una conversación definida explícitamente por el desarrollador, pensada para flujos multipaso en JSF."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Qué ocurriría si el bean del asistente fuera @RequestScoped?",
+          "opciones": {
+            "a": "Que los datos del asistente se compartirían con todos los usuarios de la aplicación.",
+            "b": "Que los datos se conservarían hasta que el usuario cerrara su sesión en la sede.",
+            "c": "Que los datos se perderían entre pasos, porque cada paso es una petición distinta."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 2 · §2.4.2",
+          "explicacion": "Un bean @RequestScoped vive una única petición HTTP y se crea de nuevo en cada una; al pasar al paso siguiente, lo introducido se habría perdido."
+        },
+        {
+          "numero": 6,
+          "pregunta": "¿Qué inconveniente tendría usar @SessionScoped para el asistente?",
+          "opciones": {
+            "a": "Que perdería los datos al pasar de un paso al siguiente del asistente.",
+            "b": "Que viviría toda la sesión del usuario, aunque abandone el asistente sin terminar.",
+            "c": "Que una única instancia sería compartida por todos los usuarios conectados."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 2 · §2.4.2",
+          "explicacion": "@SessionScoped dura toda la sesión HTTP del usuario: el estado del asistente sobreviviría más allá del flujo, aunque este se abandone."
+        },
+        {
+          "numero": 7,
+          "pregunta": "El bean del asistente declara @Inject private ExpedienteService service. ¿Cómo decide CDI qué objeto inyectar?",
+          "opciones": {
+            "a": "Por un nombre JNDI escrito como cadena de texto en la propia anotación.",
+            "b": "Por el nombre del atributo, que debe coincidir con el nombre del servicio.",
+            "c": "Por el tipo declarado del atributo, ExpedienteService, sin usar nombres."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 3 · §2.4.2",
+          "explicacion": "CDI resuelve la inyección por el tipo Java declarado; JNDI, en cambio, localiza los recursos por nombre."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Si existieran dos implementaciones de ExpedienteService, ¿cómo se indicaría a CDI cuál inyectar?",
+          "opciones": {
+            "a": "No hace falta: CDI elige la primera implementación que encuentra por orden alfabético.",
+            "b": "Con un qualifier que desambigüe entre las implementaciones de ese mismo tipo.",
+            "c": "Solo es posible sustituyendo @Inject por una búsqueda JNDI con InitialContext."
+          },
+          "correcta": "b",
+          "referencia": "Caso 2, cuestión 3 · §2.4.2",
+          "explicacion": "CDI resuelve por tipo y, si hay varias implementaciones del mismo tipo, se desambigua mediante qualifiers."
+        },
+        {
+          "numero": 9,
+          "pregunta": "Al confirmar el alta hay que avisar a dos sistemas municipales independientes sin acoplar el asistente a ninguno. ¿Qué mecanismo de JMS se usa?",
+          "opciones": {
+            "a": "Un Topic (publicación/suscripción), que entrega cada mensaje a todos los suscriptores.",
+            "b": "Una Queue (punto a punto), que entrega cada mensaje a un único consumidor.",
+            "c": "Una llamada REST síncrona a cada sistema desde el método confirmar."
+          },
+          "correcta": "a",
+          "referencia": "Caso 2, cuestión 4 · §2.5.1",
+          "explicacion": "En un Topic cada mensaje lo reciben todos los suscriptores activos: es el modelo natural para notificar un suceso a varios interesados independientes."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Qué componente de negocio consume el mensaje en cada sistema suscrito?",
+          "opciones": {
+            "a": "Un Stateful Session Bean que consulta el tema JMS en un bucle de sondeo.",
+            "b": "Un servlet cuyo método doGet() recibe el mensaje publicado en el tema.",
+            "c": "Un Message-Driven Bean, cuyo onMessage() invoca el contenedor al llegar el mensaje."
+          },
+          "correcta": "c",
+          "referencia": "Caso 2, cuestión 4 · §2.4.1 y §2.5.1",
+          "explicacion": "El Message-Driven Bean se invoca de forma asíncrona cuando llega un mensaje a la cola o tema al que está suscrito, sin programar un bucle de sondeo."
+        }
+      ]
+    },
+    {
+      "caso": 3,
+      "titulo": "Persistencia, transacciones y caché de catálogo",
+      "preguntas": [
+        {
+          "numero": 1,
+          "pregunta": "En el supuesto planteado, ¿qué anotaciones convierten la clase Tributo en una entidad JPA asociada a la tabla TRIBUTO?",
+          "opciones": {
+            "a": "@Stateless y @Table(name = \"TRIBUTO\").",
+            "b": "@Entity y @Table(name = \"TRIBUTO\").",
+            "c": "@Path(\"/tributo\") y @Entity."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 1 · §2.5.4",
+          "explicacion": "@Entity marca la clase como entidad JPA y @Table fija la tabla a la que se mapea; @Stateless es un EJB y @Path, un recurso REST."
+        },
+        {
+          "numero": 2,
+          "pregunta": "¿Cómo se declara que idTributo es la clave primaria y que su valor lo genera la base de datos?",
+          "opciones": {
+            "a": "Con @Id y @JoinColumn(name = \"idTributo\") sobre el atributo.",
+            "b": "Con @ManyToOne sobre el atributo idTributo de la entidad.",
+            "c": "Con @Id y @GeneratedValue(strategy = GenerationType.IDENTITY)."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 1 · §2.5.4",
+          "explicacion": "@Id marca la clave primaria y @GeneratedValue con la estrategia IDENTITY la deja autogenerada (autonumérica)."
+        },
+        {
+          "numero": 3,
+          "pregunta": "Cada tributo pertenece a un contribuyente y un contribuyente puede tener muchos tributos. ¿Cómo se mapea en la entidad Tributo?",
+          "opciones": {
+            "a": "Con @ManyToOne y @JoinColumn(name = \"dni_contribuyente\") sobre el atributo contribuyente.",
+            "b": "Con @Inject sobre el atributo contribuyente, para que el contenedor lo resuelva por tipo.",
+            "c": "Con @Table(name = \"CONTRIBUYENTE\") sobre el atributo contribuyente de la entidad."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 1 · §2.5.4",
+          "explicacion": "@ManyToOne expresa que muchos tributos apuntan a un contribuyente, y @JoinColumn indica la columna de la clave foránea (dni_contribuyente)."
+        },
+        {
+          "numero": 4,
+          "pregunta": "¿Cuál es la consulta JPQL correcta para obtener los tributos de importe superior a un parámetro?",
+          "opciones": {
+            "a": "SELECT * FROM TRIBUTO WHERE importe > :minimo",
+            "b": "SELECT t FROM Tributo t WHERE t.importe > :minimo",
+            "c": "SELECT importe FROM TRIBUTO WHERE importe > ? con PreparedStatement"
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 2 · §2.5.4",
+          "explicacion": "JPQL se escribe sobre la entidad (Tributo) y sus atributos (t.importe), con parámetros con nombre (:minimo); las otras dos opciones son SQL sobre la tabla física."
+        },
+        {
+          "numero": 5,
+          "pregunta": "¿Qué diferencia a JPQL del SQL que se escribe directamente contra la base de datos?",
+          "opciones": {
+            "a": "Que JPQL se ejecuta en memoria, sin llegar a consultar la base de datos.",
+            "b": "Que JPQL solo funciona con un motor de base de datos concreto.",
+            "c": "Que JPQL opera sobre entidades y atributos, y el proveedor lo traduce a SQL."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 2 · §2.5.4",
+          "explicacion": "JPQL opera sobre el modelo de entidades, no sobre tablas y columnas físicas; el proveedor JPA lo traduce internamente a SQL."
+        },
+        {
+          "numero": 6,
+          "pregunta": "La entrada de auditoría debe confirmarse aunque la liquidación acabe haciendo rollback. ¿Qué atributo debe llevar el método registrar de AuditoriaService?",
+          "opciones": {
+            "a": "REQUIRES_NEW.",
+            "b": "REQUIRED.",
+            "c": "MANDATORY."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 3 · §2.5.3",
+          "explicacion": "REQUIRES_NEW suspende la transacción del llamador y crea siempre una nueva e independiente, que se confirma por su cuenta."
+        },
+        {
+          "numero": 7,
+          "pregunta": "Si registrar se dejara con el atributo por defecto REQUIRED y la liquidación hiciera rollback, ¿qué pasaría con la entrada de auditoría?",
+          "opciones": {
+            "a": "Se confirmaría igualmente, porque cada método de un EJB tiene su propio COMMIT.",
+            "b": "Se desharía también, porque se habría unido a la transacción de la liquidación.",
+            "c": "No llegaría a grabarse, porque REQUIRED exige que no exista transacción activa."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 3 · §2.5.3",
+          "explicacion": "REQUIRED se une a la transacción del llamador: si esa transacción se deshace, se deshace con ella todo lo hecho dentro, auditoría incluida."
+        },
+        {
+          "numero": 8,
+          "pregunta": "Durante la liquidación, el servicio recupera un Tributo con em.find() y le cambia el importe. ¿Hace falta lanzar un UPDATE?",
+          "opciones": {
+            "a": "No: el contexto de persistencia detecta el cambio y genera el UPDATE al confirmar la transacción.",
+            "b": "Sí: hay que invocar siempre em.merge() para que JPA guarde la entidad modificada.",
+            "c": "Sí: JPA solo lee entidades y las modificaciones requieren un PreparedStatement."
+          },
+          "correcta": "a",
+          "referencia": "Caso 3, cuestión 1 · §2.5.4",
+          "explicacion": "Las entidades gestionadas por el EntityManager se vigilan (dirty checking): sus cambios se sincronizan con la base de datos al confirmar la transacción."
+        },
+        {
+          "numero": 9,
+          "pregunta": "¿Por qué el catálogo DISTRITO es un buen candidato para JCache?",
+          "opciones": {
+            "a": "Porque cambia en cada petición y conviene tenerlo siempre recalculado en memoria.",
+            "b": "Porque JCache sustituye a la base de datos como almacén definitivo del catálogo.",
+            "c": "Porque es de solo lectura y cambia muy poco: se evita repetir la misma consulta."
+          },
+          "correcta": "c",
+          "referencia": "Caso 3, cuestión 4 · §2.5.5",
+          "explicacion": "Una caché evita accesos repetidos a un recurso costoso; un catálogo de solo lectura y poco cambiante es el caso ideal."
+        },
+        {
+          "numero": 10,
+          "pregunta": "¿Qué riesgo introduce cachear DISTRITO y cómo se mitiga?",
+          "opciones": {
+            "a": "Que se pierden las propiedades ACID; se mitiga con commit en dos fases.",
+            "b": "Servir datos obsoletos; se mitiga con expiración o invalidación explícita.",
+            "c": "Que se abre la puerta a la inyección SQL; se mitiga con PreparedStatement."
+          },
+          "correcta": "b",
+          "referencia": "Caso 3, cuestión 4 · §2.5.5",
+          "explicacion": "Toda caché arriesga servir datos obsoletos (stale) si la fuente cambia; por eso las políticas de expiración y de invalidación explícita son tan importantes como la propia caché."
+        }
+      ]
+    }
+  ]
+}

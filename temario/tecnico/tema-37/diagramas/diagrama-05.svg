@@ -1,0 +1,44 @@
+<svg aria-label="Los tres casos en que la topología física y la lógica no coinciden: Ethernet con concentrador es estrella física y bus lógico con colisiones; Token Ring con unidad de acceso al medio es estrella física y anillo lógico; y Ethernet con conmutador es estrella física y punto a punto lógico, sin bus y sin colisiones" role="img" viewbox="0 0 680 346" xmlns="http://www.w3.org/2000/svg">
+<style>.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.k5{font:700 10px system-ui,sans-serif;fill:#0055a0}.d5{font:8.5px system-ui,sans-serif;fill:#333}.n5{font:8.5px system-ui,sans-serif;fill:#666}.t5{font:700 10px system-ui,sans-serif;fill:#fff}.r5{font:700 9px system-ui,sans-serif;fill:#d13c3c}.g5{font:700 9px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h5" text-anchor="middle" x="340" y="20">Topología FÍSICA (cómo está el cable) frente a topología LÓGICA (cómo circula la información)</text>
+<text class="n5" text-anchor="middle" x="340" y="37">Las tres columnas tienen el MISMO dibujo de cableado y tres comportamientos distintos</text>
+<rect fill="#fbeaea" height="150" rx="5" width="204" x="22" y="48"></rect>
+<text class="k5" text-anchor="middle" x="124" y="65">CONCENTRADOR (HUB)</text>
+<rect fill="#d13c3c" height="20" rx="3" width="60" x="94" y="106"></rect>
+<text class="t5" text-anchor="middle" x="124" y="120">HUB</text>
+<circle cx="52" cy="86" fill="#0055a0" r="5"></circle><path d="M56,90 L94,108" stroke="#666" stroke-width="1"></path>
+<circle cx="196" cy="86" fill="#0055a0" r="5"></circle><path d="M192,90 L154,108" stroke="#666" stroke-width="1"></path>
+<circle cx="52" cy="146" fill="#0055a0" r="5"></circle><path d="M56,142 L94,126" stroke="#666" stroke-width="1"></path>
+<circle cx="196" cy="146" fill="#0055a0" r="5"></circle><path d="M192,142 L154,126" stroke="#666" stroke-width="1"></path>
+<text class="d5" text-anchor="middle" x="124" y="170">Física: ESTRELLA</text>
+<text class="r5" text-anchor="middle" x="124" y="184">Lógica: BUS — hay colisiones</text>
+<rect fill="#fdf3e3" height="150" rx="5" width="204" x="238" y="48"></rect>
+<text class="k5" text-anchor="middle" x="340" y="65">TOKEN RING CON MAU</text>
+<ellipse cx="340" cy="116" fill="none" rx="80" ry="38" stroke="#e89822" stroke-dasharray="5,4" stroke-width="1.6"></ellipse>
+<rect fill="#e89822" height="20" rx="3" width="60" x="310" y="106"></rect>
+<text class="t5" text-anchor="middle" x="340" y="120">MAU</text>
+<circle cx="268" cy="86" fill="#0055a0" r="5"></circle><path d="M272,90 L310,108" stroke="#666" stroke-width="1"></path>
+<circle cx="412" cy="86" fill="#0055a0" r="5"></circle><path d="M408,90 L370,108" stroke="#666" stroke-width="1"></path>
+<circle cx="268" cy="146" fill="#0055a0" r="5"></circle><path d="M272,142 L310,126" stroke="#666" stroke-width="1"></path>
+<circle cx="412" cy="146" fill="#0055a0" r="5"></circle><path d="M408,142 L370,126" stroke="#666" stroke-width="1"></path>
+<text class="d5" text-anchor="middle" x="340" y="170">Física: ESTRELLA</text>
+<text class="d5" text-anchor="middle" x="340" y="184">Lógica: ANILLO — pasa el testigo</text>
+<rect fill="#e6f2ec" height="150" rx="5" width="204" x="454" y="48"></rect>
+<text class="k5" text-anchor="middle" x="556" y="65">CONMUTADOR (SWITCH)</text>
+<rect fill="#2d8659" height="20" rx="3" width="60" x="526" y="106"></rect>
+<text class="t5" text-anchor="middle" x="556" y="120">SWITCH</text>
+<circle cx="484" cy="86" fill="#0055a0" r="5"></circle><path d="M488,90 L526,108" stroke="#2d8659" stroke-width="1.8"></path>
+<circle cx="628" cy="86" fill="#0055a0" r="5"></circle><path d="M624,90 L586,108" stroke="#2d8659" stroke-width="1.8"></path>
+<circle cx="484" cy="146" fill="#0055a0" r="5"></circle><path d="M488,142 L526,126" stroke="#2d8659" stroke-width="1.8"></path>
+<circle cx="628" cy="146" fill="#0055a0" r="5"></circle><path d="M624,142 L586,126" stroke="#2d8659" stroke-width="1.8"></path>
+<text class="d5" text-anchor="middle" x="556" y="170">Física: ESTRELLA</text>
+<text class="g5" text-anchor="middle" x="556" y="184">Lógica: PUNTO A PUNTO — sin bus</text>
+<rect fill="#f7f9fb" height="22" rx="3" width="636" x="22" y="210"></rect>
+<text class="d5" x="32" y="225"><tspan class="k5">Dominios de colisión</tspan>     Concentrador: UNO para todos   ·   MAU: no hay colisiones (testigo)   ·   Conmutador: UNO POR PUERTO</text>
+<rect fill="#eef4fa" height="22" rx="3" width="636" x="22" y="234"></rect>
+<text class="d5" x="32" y="249"><tspan class="k5">Ancho de banda</tspan>          Concentrador: COMPARTIDO entre los puertos   ·   Conmutador: DEDICADO por puerto, y en dúplex</text>
+<rect fill="none" height="46" rx="5" stroke="#0055a0" stroke-width="1.5" width="636" x="22" y="266"></rect>
+<text class="k5" text-anchor="middle" x="340" y="284">El concentrador NO cambió la topología lógica, solo el cableado</text>
+<text class="d5" text-anchor="middle" x="340" y="300">Fue el CONMUTADOR el que acabó con el bus lógico y, con él, con las colisiones y con CSMA/CD</text>
+<text class="n5" text-anchor="end" x="670" y="334">[Fuente: IEEE 802.3 · IEEE 802.5 · Kurose]</text>
+</svg>

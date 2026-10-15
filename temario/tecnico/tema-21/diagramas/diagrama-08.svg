@@ -1,0 +1,21 @@
+<svg aria-label="Comparación entre REST implementado con JAX-RS, un estilo arquitectónico sin estado sobre HTTP con JSON y contrato informal OpenAPI, y SOAP implementado con JAX-WS, un protocolo con sobre XML y contrato formal WSDL" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t8{font:700 12px system-ui,sans-serif;fill:#fff}.s8{font:10.5px system-ui,sans-serif;fill:#fff}.l8{font:10.5px system-ui,sans-serif;fill:#444}.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h8" text-anchor="middle" x="340" y="22">Dos modelos de servicio web en Jakarta EE</text>
+<rect fill="#0055a0" height="150" rx="8" width="300" x="30" y="42"></rect>
+<text class="t8" text-anchor="middle" x="180" y="66">REST — JAX-RS</text>
+<text class="s8" text-anchor="middle" x="180" y="88">Estilo arquitectónico sobre HTTP</text>
+<text class="s8" text-anchor="middle" x="180" y="106">Formato habitual: JSON</text>
+<text class="s8" text-anchor="middle" x="180" y="124">Contrato informal: OpenAPI/Swagger</text>
+<text class="s8" text-anchor="middle" x="180" y="142">SIN estado (stateless)</text>
+<text class="s8" text-anchor="middle" x="180" y="160">@Path @GET @POST @Produces</text>
+<rect fill="#d13c3c" height="150" rx="8" width="300" x="350" y="42"></rect>
+<text class="t8" text-anchor="middle" x="500" y="66">SOAP — JAX-WS</text>
+<text class="s8" text-anchor="middle" x="500" y="88">Protocolo de mensajería XML</text>
+<text class="s8" text-anchor="middle" x="500" y="106">Formato estricto: sobre XML + XSD</text>
+<text class="s8" text-anchor="middle" x="500" y="124">Contrato formal obligatorio: WSDL</text>
+<text class="s8" text-anchor="middle" x="500" y="142">Puede llevar estado en cabeceras</text>
+<text class="s8" text-anchor="middle" x="500" y="160">@WebService @WebMethod</text>
+<text style="font:700 11px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="222">REST es un ESTILO, no un estándar cerrado — SOAP EXIGE sobre XML normalizado</text>
+<text class="l8" text-anchor="middle" x="340" y="242">Elección según el contexto de integración, no «cuál es mejor» de forma absoluta</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="312">[Fuente: FIELDING2000; SOAP12]</text>
+</svg>

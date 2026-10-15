@@ -1,0 +1,22 @@
+<svg aria-label="Modelo jerárquico de tres capas de una red de campus: capa de acceso que conecta a los usuarios, capa de distribución que agrega y aplica la política y encamina entre redes locales virtuales, y capa de núcleo que transporta a alta velocidad sin aplicar política; se indica qué hace y qué no debe hacer cada capa y dónde está la frontera entre el nivel 2 y el nivel 3" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t1{font:700 12px system-ui,sans-serif;fill:#fff}.s1{font:9px system-ui,sans-serif;fill:#fff}.d1{font:9px system-ui,sans-serif;fill:#333}.h1{font:700 13px system-ui,sans-serif;fill:#0055a0}.k1{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n1{font:8.5px system-ui,sans-serif;fill:#666}.w1{font:9px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h1" text-anchor="middle" x="340" y="20">Modelo jerárquico de campus: tres capas, tres papeles</text>
+<text class="k1" x="24" y="44">CAPA</text><text class="k1" x="200" y="44">QUÉ HACE</text><text class="k1" x="452" y="44">QUÉ NO DEBE HACER</text>
+<rect fill="#0055a0" height="50" rx="5" width="160" x="20" y="52"></rect><text class="t1" text-anchor="middle" x="100" y="72">NÚCLEO</text><text class="s1" text-anchor="middle" x="100" y="88">transporte puro</text>
+<rect fill="#eef3f8" height="50" rx="4" width="248" x="192" y="52"></rect><text class="d1" text-anchor="middle" x="316" y="70">Conmutación de alta capacidad entre</text><text class="d1" text-anchor="middle" x="316" y="86">bloques y hacia el centro de datos</text>
+<rect fill="#fbeaea" height="50" rx="4" width="208" x="452" y="52"></rect><text class="w1" text-anchor="middle" x="556" y="78">Filtrados complejos que retarden</text>
+<rect fill="#2d8659" height="50" rx="5" width="160" x="20" y="112"></rect><text class="t1" text-anchor="middle" x="100" y="132">DISTRIBUCIÓN</text><text class="s1" text-anchor="middle" x="100" y="148">agrega y aplica política</text>
+<rect fill="#eef3f8" height="50" rx="4" width="248" x="192" y="112"></rect><text class="d1" text-anchor="middle" x="316" y="130">Encaminamiento entre VLAN, listas de</text><text class="d1" text-anchor="middle" x="316" y="146">control de acceso, agregación de enlaces</text>
+<rect fill="#fbeaea" height="50" rx="4" width="208" x="452" y="112"></rect><text class="w1" text-anchor="middle" x="556" y="138">Conectar equipos de usuario</text>
+<rect fill="#e89822" height="50" rx="5" width="160" x="20" y="172"></rect><text class="t1" text-anchor="middle" x="100" y="192">ACCESO</text><text class="s1" text-anchor="middle" x="100" y="208">conecta a los usuarios</text>
+<rect fill="#eef3f8" height="50" rx="4" width="248" x="192" y="172"></rect><text class="d1" text-anchor="middle" x="316" y="190">VLAN de acceso, PoE, 802.1X, marcado</text><text class="d1" text-anchor="middle" x="316" y="206">de calidad de servicio, guarda de BPDU</text>
+<rect fill="#fbeaea" height="50" rx="4" width="208" x="452" y="172"></rect><text class="w1" text-anchor="middle" x="556" y="198">Encaminar tráfico de tránsito</text>
+<line stroke="#0055a0" stroke-dasharray="6,3" stroke-width="2" x1="20" x2="660" y1="168" y2="168"></line>
+<rect fill="#f5f5f5" height="44" rx="4" stroke="#0055a0" stroke-width="1" width="315" x="20" y="236"></rect>
+<text class="k1" text-anchor="middle" x="177" y="254">FRONTERA NIVEL 2 / NIVEL 3</text><text class="d1" text-anchor="middle" x="177" y="270">Normalmente en la capa de DISTRIBUCIÓN</text>
+<rect fill="#f5f5f5" height="44" rx="4" stroke="#2d8659" stroke-width="1" width="315" x="345" y="236"></rect>
+<text class="k1" text-anchor="middle" x="502" y="254">VARIANTE DE DOS CAPAS</text><text class="d1" text-anchor="middle" x="502" y="270">Núcleo colapsado: distribución y núcleo fundidos</text>
+<rect fill="none" height="22" rx="4" stroke="#0055a0" stroke-width="1.5" width="500" x="90" y="292"></rect>
+<text class="k1" text-anchor="middle" x="340" y="307">Regla de oro: la política se aplica en la distribución; el núcleo solo transporta</text>
+<text class="n1" text-anchor="end" x="670" y="333">[Fuente: SWITCH-VENDORS]</text>
+</svg>

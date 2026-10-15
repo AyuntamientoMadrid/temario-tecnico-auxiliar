@@ -1,0 +1,39 @@
+<svg aria-label="Anatomía de una capa: el servicio es lo que la capa N ofrece a la capa N más uno, la interfaz es el conjunto de primitivas con las que se le pide a través de un punto de acceso al servicio, y el protocolo es el conjunto de reglas con las que la entidad de la capa N dialoga con su entidad par en el otro sistema" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t3{font:700 10.5px system-ui,sans-serif;fill:#fff}.s3{font:8.5px system-ui,sans-serif;fill:#fff}.d3{font:9px system-ui,sans-serif;fill:#333}.h3{font:700 13px system-ui,sans-serif;fill:#0055a0}.k3{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n3{font:8.5px system-ui,sans-serif;fill:#666}.r3{font:700 9px system-ui,sans-serif;fill:#d13c3c}</style>
+<defs><marker id="a3" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#d13c3c"></path></marker></defs>
+<text class="h3" text-anchor="middle" x="340" y="20">Servicio, interfaz y protocolo no son lo mismo</text>
+<rect fill="#8aa8c4" height="40" rx="4" width="240" x="30" y="38"></rect><text class="t3" text-anchor="middle" x="150" y="63">Capa N+1 (usuaria del servicio)</text>
+<rect fill="#8aa8c4" height="40" rx="4" width="240" x="410" y="38"></rect><text class="t3" text-anchor="middle" x="530" y="63">Capa N+1 (usuaria del servicio)</text>
+<rect fill="#0055a0" height="70" rx="5" width="240" x="30" y="120"></rect>
+<text class="t3" text-anchor="middle" x="150" y="144">Capa N — entidad</text>
+<text class="s3" text-anchor="middle" x="150" y="162">Realiza las funciones de la capa</text>
+<text class="s3" text-anchor="middle" x="150" y="178">y presta el servicio a la de arriba</text>
+<rect fill="#0055a0" height="70" rx="5" width="240" x="410" y="120"></rect>
+<text class="t3" text-anchor="middle" x="530" y="144">Capa N — entidad par</text>
+<text class="s3" text-anchor="middle" x="530" y="162">Realiza las funciones de la capa</text>
+<text class="s3" text-anchor="middle" x="530" y="178">y presta el servicio a la de arriba</text>
+<circle cx="80" cy="120" fill="#e89822" r="7"></circle><text class="k3" x="96" y="112">SAP</text>
+<circle cx="460" cy="120" fill="#e89822" r="7"></circle><text class="k3" x="476" y="112">SAP</text>
+<path d="M80,78 L80,113" stroke="#2d8659" stroke-width="2"></path><path d="M460,78 L460,113" stroke="#2d8659" stroke-width="2"></path>
+<text class="n3" x="87" y="96">interfaz: primitivas y parámetros</text>
+<text class="n3" x="467" y="96">interfaz: primitivas y parámetros</text>
+<path d="M270,155 L406,155" marker-end="url(#a3)" stroke="#d13c3c" stroke-dasharray="6,4" stroke-width="1.6"></path>
+<text class="r3" text-anchor="middle" x="338" y="148">PROTOCOLO DE CAPA N</text>
+<text class="n3" text-anchor="middle" x="338" y="172">reglas, formatos y</text>
+<text class="n3" text-anchor="middle" x="338" y="184">temporización</text>
+<rect fill="#eef3f8" height="66" rx="4" width="203" x="30" y="208"></rect>
+<text class="k3" text-anchor="middle" x="131" y="226">SERVICIO</text>
+<text class="d3" text-anchor="middle" x="131" y="243">QUÉ ofrece la capa N</text>
+<text class="d3" text-anchor="middle" x="131" y="258">a la capa N+1</text>
+<rect fill="#fdf3e3" height="66" rx="4" width="203" x="238" y="208"></rect>
+<text class="k3" text-anchor="middle" x="339" y="226">INTERFAZ</text>
+<text class="d3" text-anchor="middle" x="339" y="243">CÓMO se le pide: las cuatro</text>
+<text class="d3" text-anchor="middle" x="339" y="258">primitivas de servicio</text>
+<rect fill="#fbeaea" height="66" rx="4" width="204" x="446" y="208"></rect>
+<text class="k3" text-anchor="middle" x="548" y="226">PROTOCOLO</text>
+<text class="d3" text-anchor="middle" x="548" y="243">CÓMO lo consigue hablando</text>
+<text class="d3" text-anchor="middle" x="548" y="258">con su entidad par</text>
+<rect fill="none" height="24" rx="4" stroke="#0055a0" stroke-width="1.4" width="620" x="30" y="286"></rect>
+<text class="k3" text-anchor="middle" x="340" y="302">Se puede cambiar el protocolo sin cambiar el servicio: la capa superior no se entera</text>
+<text class="n3" text-anchor="end" x="670" y="330">[Fuente: ISO/IEC 7498-1]</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg aria-label="Arquitectura ANSI/SPARC con tres niveles: varios esquemas externos, un esquema conceptual y un esquema interno" class="svd2" role="img" viewbox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd2 .t{font:700 13px system-ui,sans-serif;fill:#fff}.svd2 .s{font:11px system-ui,sans-serif;fill:#1a1a1a}.svd2 .lab{font:11px system-ui,sans-serif;fill:#666}.svd2 .h{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h" text-anchor="middle" x="330" y="24">Tres esquemas e independencia de datos</text>
+<rect fill="#2d8659" height="46" rx="6" width="150" x="40" y="40"></rect><text class="t" text-anchor="middle" x="115" y="60">Vista A</text><text class="s" style="fill:#dff0e7" text-anchor="middle" x="115" y="77">contribuyentes</text>
+<rect fill="#2d8659" height="46" rx="6" width="150" x="255" y="40"></rect><text class="t" text-anchor="middle" x="330" y="60">Vista B</text><text class="s" style="fill:#dff0e7" text-anchor="middle" x="330" y="77">padrón</text>
+<rect fill="#2d8659" height="46" rx="6" width="150" x="470" y="40"></rect><text class="t" text-anchor="middle" x="545" y="60">Vista C</text><text class="s" style="fill:#dff0e7" text-anchor="middle" x="545" y="77">estadística</text>
+<text class="lab" text-anchor="end" x="635" y="122">NIVEL EXTERNO (varios)</text>
+<line stroke="#888" x1="115" x2="250" y1="86" y2="135"></line><line stroke="#888" x1="330" x2="330" y1="86" y2="135"></line><line stroke="#888" x1="545" x2="410" y1="86" y2="135"></line>
+<rect fill="#0055a0" height="55" rx="8" width="340" x="160" y="135"></rect>
+<text class="t" text-anchor="middle" x="330" y="158">ESQUEMA CONCEPTUAL (único)</text>
+<text class="s" style="fill:#dce8f5" text-anchor="middle" x="330" y="178">entidades · atributos · relaciones · restricciones</text>
+<text class="lab" text-anchor="end" x="635" y="210">NIVEL CONCEPTUAL (uno)</text>
+<line stroke="#888" x1="330" x2="330" y1="190" y2="235"></line>
+<rect fill="#002a52" height="55" rx="8" width="340" x="160" y="235"></rect>
+<text class="t" text-anchor="middle" x="330" y="258">ESQUEMA INTERNO (único)</text>
+<text class="s" style="fill:#cdd9e6" text-anchor="middle" x="330" y="278">ficheros · índices · rutas de acceso</text>
+<text class="lab" text-anchor="end" x="635" y="305">NIVEL INTERNO (uno) — [ANSI-SPARC]</text>
+</svg>

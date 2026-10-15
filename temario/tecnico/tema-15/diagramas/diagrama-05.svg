@@ -1,0 +1,14 @@
+<svg aria-label="Tabla de niveles de aislamiento SQL y las anomalías que evitan" class="svd5" role="img" viewbox="0 0 660 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd5 .h{font:700 11px system-ui,sans-serif;fill:#fff}.svd5 .c{font:11px system-ui,sans-serif;fill:#1a1a1a}.svd5 .ok{fill:#2d8659;font-weight:700}.svd5 .no{fill:#d13c3c;font-weight:700}</style>
+<rect fill="#0055a0" height="34" width="180" x="30" y="40"></rect><rect fill="#0055a0" height="34" width="140" x="210" y="40"></rect><rect fill="#0055a0" height="34" width="150" x="350" y="40"></rect><rect fill="#0055a0" height="34" width="130" x="500" y="40"></rect>
+<text class="h" x="40" y="62">Nivel</text><text class="h" x="220" y="62">Lectura sucia</text><text class="h" x="360" y="62">No repetible</text><text class="h" x="510" y="62">Fantasma</text>
+<g class="c" font-size="11">
+<text x="40" y="96">Read Uncommitted</text><text class="no" text-anchor="middle" x="270" y="96">Sí</text><text class="no" text-anchor="middle" x="415" y="96">Sí</text><text class="no" text-anchor="middle" x="555" y="96">Sí</text>
+<text x="40" y="128">Read Committed</text><text class="ok" text-anchor="middle" x="270" y="128">No</text><text class="no" text-anchor="middle" x="415" y="128">Sí</text><text class="no" text-anchor="middle" x="555" y="128">Sí</text>
+<text x="40" y="160">Repeatable Read</text><text class="ok" text-anchor="middle" x="270" y="160">No</text><text class="ok" text-anchor="middle" x="415" y="160">No</text><text class="no" text-anchor="middle" x="555" y="160">Sí</text>
+<text x="40" y="192">Serializable</text><text class="ok" text-anchor="middle" x="270" y="192">No</text><text class="ok" text-anchor="middle" x="415" y="192">No</text><text class="ok" text-anchor="middle" x="555" y="192">No</text>
+</g>
+<line stroke="#e8ecf0" x1="30" x2="630" y1="104" y2="104"></line><line stroke="#e8ecf0" x1="30" x2="630" y1="136" y2="136"></line><line stroke="#e8ecf0" x1="30" x2="630" y1="168" y2="168"></line>
+<text fill="#444" style="font:11px system-ui,sans-serif" x="30" y="225">A más aislamiento, más consistencia pero menos concurrencia. Por defecto: Read Committed.</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="650" y="288">[Fuente: ISO-9075]</text>
+</svg>

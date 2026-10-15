@@ -1,0 +1,34 @@
+<svg aria-label="Algoritmo de decisión de reenvío: el equipo aplica la operación Y lógica entre la dirección de destino y su máscara; si el resultado coincide con su dirección de red, el destino está en su misma subred y le envía la trama directamente; si no coincide, envía la trama a la dirección MAC de su puerta de enlace predeterminada dejando intacta la dirección IP de destino. Se acompaña de la regla del prefijo más largo y de la clasificación de los protocolos de encaminamiento" role="img" viewbox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
+<style>.t15{font:700 10px system-ui,sans-serif;fill:#fff}.s15{font:8.5px system-ui,sans-serif;fill:#fff}.d15{font:8.5px system-ui,sans-serif;fill:#333}.h15{font:700 13px system-ui,sans-serif;fill:#0055a0}.k15{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n15{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<defs><marker id="a15" markerheight="8" markerwidth="8" orient="auto" refx="7" refy="3"><path d="M0,0 L7,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<text class="h15" text-anchor="middle" x="340" y="20">La única pregunta que se hace un equipo antes de enviar</text>
+<rect fill="#0055a0" height="34" rx="5" width="300" x="190" y="34"></rect>
+<text class="t15" text-anchor="middle" x="340" y="56">IP destino Y máscara propia = ¿mi red?</text>
+<path d="M280,68 L190,86" marker-end="url(#a15)" stroke="#0055a0" stroke-width="1.6"></path>
+<path d="M400,68 L490,86" marker-end="url(#a15)" stroke="#0055a0" stroke-width="1.6"></path>
+<rect fill="#2d8659" height="76" rx="5" width="300" x="20" y="90"></rect>
+<text class="t15" text-anchor="middle" x="170" y="110">SÍ — está en mi subred</text>
+<text class="s15" text-anchor="middle" x="170" y="130">Resuelvo su MAC por ARP o por ND</text>
+<text class="s15" text-anchor="middle" x="170" y="146">y le envío la trama directamente</text>
+<text class="s15" text-anchor="middle" x="170" y="160">MAC destino = la del equipo final</text>
+<rect fill="#e89822" height="76" rx="5" width="300" x="360" y="90"></rect>
+<text class="t15" text-anchor="middle" x="510" y="110">NO — está fuera</text>
+<text class="s15" text-anchor="middle" x="510" y="130">Envío la trama a la puerta de enlace</text>
+<text class="s15" text-anchor="middle" x="510" y="146">MAC destino = la del encaminador</text>
+<text class="s15" text-anchor="middle" x="510" y="160">IP destino = la del equipo final, intacta</text>
+<rect fill="#fdf3e3" height="24" rx="4" width="640" x="20" y="176"></rect>
+<text class="k15" text-anchor="middle" x="340" y="192">La trama va dirigida al siguiente salto; el paquete, al destino final</text>
+<text class="k15" x="20" y="220">LA TABLA DE ENCAMINAMIENTO Y LA REGLA DEL PREFIJO MÁS LARGO</text>
+<rect fill="#0055a0" height="20" rx="3" width="640" x="20" y="228"></rect>
+<text class="t15" x="30" y="242">DESTINO</text><text class="t15" x="180" y="242">SIGUIENTE SALTO</text><text class="t15" x="356" y="242">INTERFAZ</text><text class="t15" x="470" y="242">ORIGEN DE LA RUTA</text>
+<rect fill="#eef3f8" height="18" width="640" x="20" y="250"></rect>
+<text class="d15" x="30" y="263">10.20.8.0/24</text><text class="d15" x="180" y="263">conectada directamente</text><text class="d15" x="356" y="263">eth0</text><text class="d15" x="470" y="263">Directa</text>
+<rect fill="#fff" height="18" width="640" x="20" y="269"></rect>
+<text class="d15" x="30" y="282">10.0.0.0/8</text><text class="d15" x="180" y="282">10.20.8.1</text><text class="d15" x="356" y="282">eth0</text><text class="d15" x="470" y="282">Dinámica (protocolo interior)</text>
+<rect fill="#eef3f8" height="18" width="640" x="20" y="288"></rect>
+<text class="d15" x="30" y="301">0.0.0.0/0</text><text class="d15" x="180" y="301">10.20.8.1</text><text class="d15" x="356" y="301">eth0</text><text class="d15" x="470" y="301">Estática (ruta por defecto)</text>
+<rect fill="#e7f2ec" height="44" rx="4" width="640" x="20" y="312"></rect>
+<text class="d15" text-anchor="middle" x="340" y="329">Gana siempre la entrada de prefijo MÁS LARGO: la ruta por defecto 0.0.0.0/0 es la última en aplicarse</text>
+<text class="d15" text-anchor="middle" x="340" y="345">RIP y EIGRP: vector distancia · OSPF e IS-IS: estado del enlace · BGP: vector de camino</text>
+<text class="n15" text-anchor="end" x="670" y="372">[Fuente: RFC 1812, RFC 2328, RFC 4271]</text>
+</svg>

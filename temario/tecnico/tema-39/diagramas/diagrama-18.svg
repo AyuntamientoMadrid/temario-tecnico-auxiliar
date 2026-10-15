@@ -1,0 +1,54 @@
+<svg aria-label="Anatomía del expediente electrónico: un índice electrónico firmado que garantiza la integridad y la inmutabilidad del conjunto y permite su recuperación, los documentos electrónicos que lo integran cada uno con su contenido, sus metadatos y sus firmas, los metadatos propios del expediente y la copia electrónica certificada de la resolución; un mismo documento puede formar parte de distintos expedientes" role="img" viewbox="0 0 680 366" xmlns="http://www.w3.org/2000/svg">
+<style>.h18{font:700 13px system-ui,sans-serif;fill:#0055a0}.k18{font:700 10px system-ui,sans-serif;fill:#0055a0}.d18{font:8.5px system-ui,sans-serif;fill:#333}.n18{font:8.5px system-ui,sans-serif;fill:#666}.w18{font:700 10.5px system-ui,sans-serif;fill:#fff}.wd18{font:8px system-ui,sans-serif;fill:#fff}.r18{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}.g18{font:700 9px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h18" text-anchor="middle" x="340" y="19">El expediente electrónico — art. 70 de la Ley 39/2015 y NTI de la letra d)</text>
+<text class="n18" text-anchor="middle" x="340" y="35">No es una carpeta de ficheros comprimida: es un objeto con estructura normalizada, y el índice firmado es su clave de bóveda</text>
+<rect fill="#eef4fa" height="252" rx="6" stroke="#0055a0" stroke-width="1.6" width="380" x="24" y="46"></rect>
+<text class="k18" text-anchor="middle" x="214" y="66">EXPEDIENTE ELECTRÓNICO</text>
+<rect fill="#d13c3c" height="60" rx="4" width="352" x="38" y="74"></rect>
+<text class="w18" text-anchor="middle" x="214" y="91">1 · ÍNDICE ELECTRÓNICO FIRMADO</text>
+<text class="wd18" text-anchor="middle" x="214" y="105">Firmado por el órgano o entidad actuante. Tres funciones</text>
+<text class="wd18" text-anchor="middle" x="214" y="117">en un solo inciso: garantiza la INTEGRIDAD, la</text>
+<text class="wd18" text-anchor="middle" x="214" y="129">INMUTABILIDAD desde su firma y la RECUPERACIÓN</text>
+<rect fill="#0055a0" height="86" rx="4" width="352" x="38" y="139"></rect>
+<text class="w18" text-anchor="middle" x="214" y="155">2 · DOCUMENTOS ELECTRÓNICOS</text>
+<rect fill="#dce7f2" height="52" rx="3" width="106" x="50" y="162"></rect>
+<text class="k18" text-anchor="middle" x="103" y="177">CONTENIDO</text>
+<text class="d18" text-anchor="middle" x="103" y="191">El documento</text>
+<text class="d18" text-anchor="middle" x="103" y="203">propiamente dicho</text>
+<rect fill="#dce7f2" height="52" rx="3" width="106" x="162" y="162"></rect>
+<text class="k18" text-anchor="middle" x="215" y="177">METADATOS</text>
+<text class="d18" text-anchor="middle" x="215" y="191">Identificador, órgano,</text>
+<text class="d18" text-anchor="middle" x="215" y="203">origen, estado de elab.</text>
+<rect fill="#dce7f2" height="52" rx="3" width="106" x="274" y="162"></rect>
+<text class="k18" text-anchor="middle" x="327" y="177">FIRMAS</text>
+<text class="d18" text-anchor="middle" x="327" y="191">Firma o sello y, si</text>
+<text class="d18" text-anchor="middle" x="327" y="203">procede, sello de tiempo</text>
+<rect fill="#2d8659" height="26" rx="4" width="172" x="38" y="230"></rect>
+<text class="w18" text-anchor="middle" x="124" y="247">3 · METADATOS DEL EXPTE.</text>
+<rect fill="#2d8659" height="26" rx="4" width="172" x="218" y="230"></rect>
+<text class="w18" text-anchor="middle" x="304" y="247">4 · FIRMA DEL ÍNDICE</text>
+<rect fill="#fdf3e3" height="22" rx="3" width="352" x="38" y="262"></rect>
+<text class="d18" text-anchor="middle" x="214" y="276">Debe constar COPIA ELECTRÓNICA CERTIFICADA DE LA RESOLUCIÓN (art. 70.2)</text>
+<rect fill="#fdf3e3" height="80" rx="4" stroke="#e89822" stroke-width="1.2" width="238" x="418" y="46"></rect>
+<text class="k18" text-anchor="middle" x="537" y="63">CÓMO SE REMITE (art. 70.3)</text>
+<text class="d18" x="430" y="79">COMPLETO · FOLIADO · AUTENTIFICADO</text>
+<text class="d18" x="430" y="92">y acompañado de un ÍNDICE, ASIMISMO</text>
+<text class="d18" x="430" y="105">AUTENTIFICADO, de los documentos que</text>
+<text class="d18" x="430" y="118">contenga, conforme al ENI y a sus NTI</text>
+<rect fill="#e6f2ec" height="76" rx="4" stroke="#2d8659" stroke-width="1.2" width="238" x="418" y="134"></rect>
+<text class="g18" text-anchor="middle" x="537" y="151">UN DOCUMENTO, VARIOS EXPEDIENTES</text>
+<text class="d18" x="430" y="167">«Siendo admisible que un mismo documento</text>
+<text class="d18" x="430" y="180">forme parte de DISTINTOS EXPEDIENTES</text>
+<text class="d18" x="430" y="193">electrónicos.» El documento no pertenece: es</text>
+<text class="d18" x="430" y="206">REFERENCIADO por el índice de cada uno</text>
+<rect fill="#fbeaea" height="80" rx="4" stroke="#d13c3c" stroke-width="1.2" width="238" x="418" y="218"></rect>
+<text class="r18" text-anchor="middle" x="537" y="235">LO QUE NO FORMA PARTE (art. 70.4)</text>
+<text class="d18" x="430" y="251">Información auxiliar o de apoyo: aplicaciones,</text>
+<text class="d18" x="430" y="264">ficheros, bases de datos, notas, borradores,</text>
+<text class="d18" x="430" y="277">opiniones, resúmenes, informes internos y</text>
+<text class="d18" x="430" y="290">juicios de valor. SALVO informes preceptivos</text>
+<rect fill="#eef4fa" height="30" rx="4" width="632" x="24" y="306"></rect>
+<text class="k18" x="36" y="318">EL DOCUMENTO ES VÁLIDO SI CUMPLE LOS CINCO REQUISITOS DEL ART. 26.2 DE LA LEY 39/2015</text>
+<text class="d18" x="36" y="330.5">Formato identificable · datos que permitan su individualización · REFERENCIA TEMPORAL · METADATOS MÍNIMOS · firmas electrónicas</text>
+<text class="n18" x="24" y="354">[Fuente: L39, arts. 26.2 y 70 · ENI, art. 21.1.b) y disp. adic. 1.ª, letras b) y d)]</text>
+</svg>

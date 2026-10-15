@@ -1,0 +1,42 @@
+<svg aria-label="Definiciones clave: municipios, provincias y régimen especial de Ceuta y Melilla como entidades locales, y los Estatutos de Autonomía como norma básica de las Comunidades Autónomas" role="img" viewbox="0 0 700 436" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .d13-bar{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+    .d13-loc{fill:#fff;stroke:#0055a0;stroke-width:1.5}
+    .d13-h{font:700 13px system-ui,sans-serif;fill:#003d73;text-anchor:middle}
+    .d13-t{font:11px system-ui,sans-serif;fill:#333;text-anchor:middle}
+    .d13-art{font:italic 10px system-ui,sans-serif;fill:#888;text-anchor:middle}
+  </style>
+<rect fill="#0055a0" height="34" rx="8" width="660" x="20" y="18"></rect>
+<text class="d13-bar" x="350" y="40">ORGANIZACIÓN TERRITORIAL DEL ESTADO · La Administración Local</text>
+<rect class="d13-loc" height="158" rx="8" width="210" x="20" y="66"></rect>
+<text class="d13-h" x="125" y="92">MUNICIPIOS</text>
+<text class="d13-t" x="125" y="116">Unidad básica de la</text>
+<text class="d13-t" x="125" y="133">organización territorial.</text>
+<text class="d13-t" x="125" y="158">Su gobierno: el</text>
+<text class="d13-t" style="font-weight:700;fill:#003d73" x="125" y="175">AYUNTAMIENTO</text>
+<text class="d13-t" x="125" y="192">(Alcalde + concejales)</text>
+<text class="d13-art" x="125" y="216">art. 140 CE</text>
+<rect class="d13-loc" height="158" rx="8" width="210" x="245" y="66"></rect>
+<text class="d13-h" x="350" y="92">PROVINCIAS</text>
+<text class="d13-t" x="350" y="116">Agrupación de</text>
+<text class="d13-t" x="350" y="133">municipios.</text>
+<text class="d13-t" x="350" y="158">Gestión: Diputaciones</text>
+<text class="d13-t" x="350" y="175">Provinciales (u órgano</text>
+<text class="d13-t" x="350" y="192">equiv. uniprovincial)</text>
+<text class="d13-art" x="350" y="216">art. 141 CE</text>
+<rect fill="#fdf4e4" height="158" rx="8" stroke="#e89822" stroke-width="1.5" width="210" x="470" y="66"></rect>
+<text class="d13-h" style="fill:#a8650f" x="575" y="92">RÉGIMEN ESPECIAL</text>
+<text class="d13-t" x="575" y="116">Ceuta y Melilla,</text>
+<text class="d13-t" x="575" y="133">ciudades autónomas.</text>
+<text class="d13-t" x="575" y="158">Combinan competencias</text>
+<text class="d13-t" x="575" y="175">de municipio y</text>
+<text class="d13-t" x="575" y="192">de provincia.</text>
+<rect fill="#2d8659" height="32" rx="8" width="660" x="20" y="248"></rect>
+<text class="d13-bar" x="350" y="269">LAS COMUNIDADES AUTÓNOMAS · LOS ESTATUTOS DE AUTONOMÍA</text>
+<rect fill="#fff" height="128" rx="8" stroke="#2d8659" stroke-width="1.5" width="660" x="20" y="294"></rect>
+<text class="d13-h" style="fill:#1f5e3f" x="350" y="324">ESTATUTOS DE AUTONOMÍA</text>
+<text class="d13-t" style="font-size:12px" x="350" y="350">Norma institucional básica de cada Comunidad Autónoma.</text>
+<text class="d13-t" style="font-size:12px" x="350" y="372">Regulan su organización política, sus competencias</text>
+<text class="d13-t" style="font-size:12px" x="350" y="390">y el marco de relaciones con el Estado.</text>
+<text class="d13-art" x="350" y="412">art. 147 CE</text>
+</svg>

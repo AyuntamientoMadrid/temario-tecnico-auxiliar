@@ -1,0 +1,28 @@
+<svg aria-label="El silencio administrativo depende del inicio. A solicitud del interesado (artículo 24) la regla general es el silencio positivo o estimatorio, salvo excepciones legales en que es negativo. De oficio (artículo 25): en procedimientos favorables el silencio es negativo y en procedimientos desfavorables o sancionadores se produce la caducidad" class="svd8" role="img" viewbox="0 0 720 336" xmlns="http://www.w3.org/2000/svg">
+<style>.svd8 .h{font:700 13px system-ui,sans-serif;fill:#fff;text-anchor:middle}.svd8 .t{font:12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}.svd8 .s{font:11px system-ui,sans-serif;fill:#555;text-anchor:middle}</style>
+<rect fill="#003d75" height="38" rx="8" width="220" x="250" y="14"></rect>
+<text class="h" x="360" y="38">SILENCIO ADMINISTRATIVO</text>
+<rect fill="#2d8659" height="32" rx="8" width="320" x="30" y="70"></rect>
+<text class="h" x="190" y="91">A SOLICITUD del interesado (art. 24)</text>
+<rect fill="#0055a0" height="32" rx="8" width="320" x="370" y="70"></rect>
+<text class="h" x="530" y="91">De OFICIO (art. 25)</text>
+<rect fill="#e8f5ee" height="70" rx="8" stroke="#2d8659" width="320" x="30" y="112"></rect>
+<text class="t" style="font-weight:700;fill:#1f6b45" x="190" y="138">Regla general: POSITIVO</text>
+<text class="s" x="190" y="160">(estimatorio) → acto verdadero;</text>
+<text class="s" x="190" y="176">la resolución posterior solo confirma</text>
+<rect fill="#e8f0f8" height="70" rx="8" stroke="#0055a0" width="320" x="370" y="112"></rect>
+<text class="t" style="font-weight:700;fill:#0055a0" x="530" y="138">Favorables → NEGATIVO</text>
+<text class="s" x="530" y="160">(desestimatorio): se entienden</text>
+<text class="s" x="530" y="176">desestimados</text>
+<rect fill="#fbe9e7" height="70" rx="8" stroke="#d13c3c" width="320" x="30" y="190"></rect>
+<text class="t" style="font-weight:700;fill:#a82a2a" x="190" y="214">Excepciones → NEGATIVO</text>
+<text class="s" x="190" y="234">Petición · dominio/servicio público</text>
+<text class="s" x="190" y="251">medio ambiente · resp. patrimonial · impugnación</text>
+<rect fill="#fbe9e7" height="70" rx="8" stroke="#d13c3c" width="320" x="370" y="190"></rect>
+<text class="t" style="font-weight:700;fill:#a82a2a" x="530" y="214">Desfavorables → CADUCIDAD</text>
+<text class="s" x="530" y="234">sancionadores y de gravamen:</text>
+<text class="s" x="530" y="251">se archivan las actuaciones</text>
+<rect fill="#fff5e6" height="50" rx="8" stroke="#e89822" width="480" x="120" y="278"></rect>
+<text class="s" style="font-weight:700;fill:#b5740f" x="360" y="300">DOBLE SILENCIO: alzada contra desestimación presunta</text>
+<text class="s" x="360" y="318">que tampoco se resuelve → silencio ESTIMATORIO (art. 24.1)</text>
+</svg>

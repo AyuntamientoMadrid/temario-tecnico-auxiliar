@@ -1,0 +1,915 @@
+# Test del tema 33. Comunicaciones
+
+60 preguntas con tres opciones y una sola correcta. Calificación como en el examen: +1 por acierto, −1/3 por error, 0 en blanco.
+
+Versión interactiva: <https://ayuntamientomadrid.github.io/temario-tecnico-auxiliar/temas/tema-33.html>
+
+## Batería de preguntas
+
+### 1. Según el anexo II de la Ley 11/2022, General de Telecomunicaciones, ¿qué se entiende por «telecomunicación»?
+
+- a) La transmisión de datos digitales entre equipos informáticos a través de una red pública
+- b) Toda transmisión, emisión o recepción de signos, señales, escritos, imágenes, sonidos o informaciones de cualquier naturaleza por hilo, radioelectricidad, medios ópticos u otros sistemas electromagnéticos
+- c) La emisión de información a distancia por medios electromagnéticos, siempre que exista un canal de retorno
+
+**Respuesta correcta:** b) · **Referencia:** §1.1.1 [LGT]
+
+Es la definición literal del apartado 79 del anexo II. Tres rasgos: es indiferente el <strong>contenido</strong>, es indiferente el <strong>medio</strong> y cubre las <strong>tres operaciones</strong> —transmitir, emitir y recibir—. No exige que la información sea digital ni que haya canal de retorno.
+
+### 2. En el modelo de comunicación de Shannon, ¿sobre qué elemento actúa la fuente de ruido?
+
+- a) Sobre el canal
+- b) Sobre el transmisor, en el momento de la codificación
+- c) Sobre el mensaje, antes de entrar en el sistema
+
+**Respuesta correcta:** a) · **Referencia:** §1.1.1 [SHANNON]
+
+El ruido se suma a la señal <strong>durante su tránsito</strong> por el medio de transmisión. De ahí que todas las técnicas de protección —codificación de canal, corrección de errores, regeneración— se apliquen antes de entrar al canal y después de salir de él.
+
+### 3. ¿Qué diferencia a un módem de un códec?
+
+- a) Ninguna: son dos nombres para el mismo equipo de conversión
+- b) El módem convierte entre señal analógica y digital, y el códec comprime la información
+- c) El módem adapta datos digitales a un medio analógico, y el códec convierte una señal analógica de la fuente en digital
+
+**Respuesta correcta:** c) · **Referencia:** §1.1.1 [STALLINGS]
+
+Hacen operaciones <strong>inversas</strong>. Regla mnemotécnica: el <strong>módem mira al medio</strong> (modula y demodula sobre el canal); el <strong>códec mira a la fuente</strong> (codifica y decodifica la señal original). La compresión es una función que un códec puede incorporar, pero no lo define.
+
+### 4. Señale el orden correcto de los pasos de digitalización de una señal analógica.
+
+- a) Muestreo, cuantificación y codificación
+- b) Cuantificación, muestreo y codificación
+- c) Codificación, muestreo y cuantificación
+
+**Respuesta correcta:** a) · **Referencia:** §1.1.1 [STALLINGS]
+
+Primero se toman muestras a intervalos regulares, después cada muestra se aproxima al nivel más cercano de una escala finita —donde aparece el <strong>ruido de cuantificación</strong>— y por último cada nivel se representa con una combinación de bits.
+
+### 5. ¿Cuál de los siguientes tipos de ruido es el más dañino en transmisión digital?
+
+- a) El ruido térmico, porque está presente en todos los medios y no se puede eliminar
+- b) El ruido impulsivo, porque un pico de corta duración destruye un bloque entero de bits
+- c) El ruido de intermodulación, porque genera componentes espurias en toda la banda
+
+**Respuesta correcta:** b) · **Referencia:** §1.1.1 [STALLINGS]
+
+El ruido térmico es inevitable pero previsible y acotado; el impulsivo es esporádico pero devastador en digital. En una comunicación analógica el mismo pico solo produciría un chasquido audible.
+
+### 6. Un enlace de par trenzado presenta acoplamiento no deseado entre pares próximos. ¿Cómo se denomina esa perturbación y cómo se combate en el diseño del cable?
+
+- a) Interferencia electromagnética; se combate aumentando la potencia de emisión
+- b) Distorsión de retardo; se combate con ecualizadores
+- c) Diafonía; se combate trenzando los pares, y a más vueltas por metro mayor rechazo
+
+**Respuesta correcta:** c) · **Referencia:** §1.1.1 [STALLINGS]
+
+La diafonía (<em>crosstalk</em>) es un tipo de <strong>ruido</strong>, y se mide con los parámetros <strong>NEXT</strong> y <strong>FEXT</strong>. El trenzado hace que las interferencias captadas por cada hilo tiendan a cancelarse en el par.
+
+### 7. ¿Cuál es la unidad del ancho de banda de un canal?
+
+- a) Bits por segundo
+- b) Baudios
+- c) Hercios
+
+**Respuesta correcta:** c) · **Referencia:** §1.2 [STALLINGS]
+
+El <strong>ancho de banda</strong> es un rango de <strong>frecuencias</strong> y se mide en hercios. La <strong>velocidad de transmisión</strong> se mide en bits por segundo y la <strong>velocidad de modulación</strong>, en baudios. Son tres magnitudes distintas que el lenguaje corriente confunde.
+
+### 8. Un canal tiene un ancho de banda de 3.000 Hz y una relación señal-ruido de 20 dB. Según Shannon, ¿cuál es su capacidad aproximada?
+
+- a) Unos 60.000 bps, aplicando C = 2·B·log₂(M)
+- b) Unos 20.000 bps, porque 20 dB equivalen a una relación de 100 veces
+- c) Unos 6.000 bps, porque hay que dividir el ancho de banda entre la relación señal-ruido
+
+**Respuesta correcta:** b) · **Referencia:** §1.2 [SHANNON]
+
+Primero se convierten los decibelios: <code>S/N = 10^(20/10) = 100</code>. Después, <code>C = 3.000 · log₂(1 + 100) = 3.000 · 6,66 ≈ 20.000 bps</code>. El error más frecuente es introducir los decibelios directamente en la fórmula. La opción A corresponde a Nyquist, que es la fórmula del canal <strong>sin</strong> ruido.
+
+### 9. El canal telefónico digital básico es de 64 kbit/s. ¿De dónde procede esa cifra?
+
+- a) De muestrear la voz a 8.000 muestras por segundo y codificar cada muestra con 8 bits
+- b) De dividir los 2,048 Mbit/s del enlace primario entre 32 canales
+- c) De aplicar el teorema de Shannon a un canal de 3.100 Hz con 30 dB de relación señal-ruido
+
+**Respuesta correcta:** a) · **Referencia:** §1.2 [UIT-T]
+
+<code>8.000 × 8 = 64.000 bit/s</code>. La frecuencia de muestreo procede del teorema del muestreo aplicado a una voz limitada a 3.400 Hz, con margen de guarda. La opción B invierte la relación: el <strong>E1</strong> de 2,048 Mbit/s se obtiene agrupando <strong>32 intervalos</strong> de 64 kbit/s, no al revés.
+
+### 10. ¿Cuál es el criterio que distingue los medios de transmisión guiados de los no guiados?
+
+- a) La naturaleza analógica o digital de la señal transmitida
+- b) La distancia que puede cubrir el enlace
+- c) La existencia o no de una guía artificial que confine la señal
+
+**Respuesta correcta:** c) · **Referencia:** §2 [LGT]
+
+Un radioenlace punto a punto de 40 km es <strong>no guiado</strong> pese a ser direccional; un cable submarino de 6.000 km es <strong>guiado</strong>. La propia Ley 11/2022 usa ese criterio al definir el espectro radioeléctrico como ondas «que se propagan por el espacio <strong>sin guía artificial</strong>».
+
+### 11. En Ethernet sobre par trenzado, ¿cuál es la longitud máxima normalizada del enlace y cómo se desglosa?
+
+- a) 100 metros: 90 de cable horizontal fijo más 10 de latiguillos en ambos extremos
+- b) 185 metros, heredados del segmento de coaxial fino
+- c) 100 metros de cable horizontal más 10 metros adicionales por cada latiguillo
+
+**Respuesta correcta:** a) · **Referencia:** §2.1.1 [ISO11801]
+
+Es el dato numérico clave del cableado. Superarlo no produce un fallo limpio, sino <strong>errores intermitentes</strong>. Los 185 metros de la opción B corresponden al segmento de <strong>10BASE2</strong>, ya en desuso.
+
+### 12. ¿Qué categoría de cable de par trenzado garantiza 10 Gbit/s a la distancia completa de 100 metros?
+
+- a) La categoría 6, con 250 MHz de ancho de banda
+- b) La categoría 6A, con 500 MHz de ancho de banda
+- c) La categoría 8, con 2.000 MHz de ancho de banda
+
+**Respuesta correcta:** b) · **Referencia:** §2.1.1 [ISO11801]
+
+La categoría 6 solo alcanza 10 Gbit/s hasta unos 55 metros. La categoría 8, pese a tener mucho más ancho de banda, está limitada a <strong>30 metros</strong> y se usa en centro de datos: al subir la frecuencia, baja el alcance.
+
+### 13. Señale la afirmación correcta sobre la fibra óptica monomodo y multimodo.
+
+- a) La monomodo tiene un núcleo mayor, lo que le permite alcanzar más distancia
+- b) La multimodo usa diodo láser y la monomodo usa LED, por eso esta última es más barata
+- c) La monomodo tiene un núcleo de unas 9 micras y alcanza decenas o centenares de kilómetros; la multimodo, de 50 o 62,5 micras, se limita a distancias cortas por la dispersión modal
+
+**Respuesta correcta:** c) · **Referencia:** §2.1.1 [OM-OS]
+
+La regla, contraintuitiva, es que <strong>a mayor núcleo, más modos, más dispersión modal y menos alcance</strong>. La monomodo emplea <strong>diodo láser</strong> y la multimodo <strong>LED o VCSEL</strong>, justo al revés de lo que dice la opción B.
+
+### 14. ¿Cuál de las siguientes NO es una ventaja de la fibra óptica frente al cobre?
+
+- a) Inmunidad total a las interferencias electromagnéticas
+- b) Capacidad de alimentar eléctricamente los equipos remotos por el propio cable
+- c) Ausencia de diafonía y dificultad para ser interceptada sin detección
+
+**Respuesta correcta:** b) · **Referencia:** §2.1.1 [OM-OS]
+
+La fibra <strong>no transporta energía</strong>: no existe «PoE óptico». Un equipo conectado por fibra necesita alimentación propia, lo que es precisamente uno de sus inconvenientes prácticos frente al par trenzado con <strong>PoE</strong>.
+
+### 15. Según el anexo II de la Ley 11/2022, el espectro radioeléctrico se define como ondas electromagnéticas cuya frecuencia se fija convencionalmente por debajo de:
+
+- a) 3.000 GHz
+- b) 300 GHz
+- c) 30 GHz
+
+**Respuesta correcta:** a) · **Referencia:** §2.2.1 [LGT]
+
+Es decir, 3 THz. La definición añade el otro requisito: que se propaguen «por el espacio <strong>sin guía artificial</strong>». Los 300 GHz de la opción B son el límite superior de la banda <strong>EHF</strong>, y los 30 GHz, el de la banda <strong>SHF</strong>.
+
+### 16. ¿Qué banda del espectro se caracteriza por la propagación ionosférica, que permite alcances intercontinentales?
+
+- a) HF, de 3 a 30 MHz
+- b) VHF, de 30 a 300 MHz
+- c) UHF, de 300 MHz a 3 GHz
+
+**Respuesta correcta:** a) · **Referencia:** §2.2.1 [UIT-R]
+
+Es la onda corta: la señal se refleja en las capas ionizadas de la atmósfera y vuelve a la Tierra. Depende de la hora, la estación y la actividad solar, lo que la hace poco fiable para servicios comerciales. A partir de <strong>VHF</strong> domina la propagación por <strong>visión directa</strong>.
+
+### 17. Al aumentar la frecuencia de trabajo de un sistema radio, ¿qué ocurre?
+
+- a) Aumentan a la vez la capacidad y el alcance, por eso el 5G usa 26 GHz para cobertura rural
+- b) Disminuyen tanto la capacidad como el alcance, por eso se prefieren las bandas bajas
+- c) Aumenta la capacidad disponible pero disminuyen el alcance y la penetración en obstáculos
+
+**Respuesta correcta:** c) · **Referencia:** §2.2.1 [UIT-R]
+
+Es la regla de oro de la radio y explica el reparto de bandas del 5G: <strong>700 MHz para cobertura</strong> —rural y en interiores— y <strong>26 GHz para capacidad</strong> en puntos calientes urbanos. Las antenas, además, son tanto más pequeñas cuanto mayor es la frecuencia.
+
+### 18. En un acuerdo de nivel de servicio para telefonía IP, ¿qué parámetro es más crítico y por qué?
+
+- a) El ancho de banda, porque la voz digitalizada exige un caudal elevado
+- b) La fluctuación o <em>jitter</em>, porque la variación del retardo produce cortes y voz metálica
+- c) La tasa de error de bit, porque un solo bit erróneo interrumpe la llamada
+
+**Respuesta correcta:** b) · **Referencia:** §2.3 [KUROSE]
+
+La voz consume muy poco caudal (del orden de decenas de kbit/s) y tolera errores aislados. Lo que no tolera es la irregularidad del retardo: los amortiguadores antifluctuación la convierten en latencia, que es el mal menor.
+
+### 19. Un enlace pierde 30 dB de potencia. ¿Cuántas veces se ha reducido la potencia de la señal?
+
+- a) 30 veces
+- b) 300 veces
+- c) 1.000 veces
+
+**Respuesta correcta:** c) · **Referencia:** §2.3 [STALLINGS]
+
+El decibelio es <strong>logarítmico</strong>: <code>dB = 10·log₁₀(P₁/P₂)</code>, de modo que 30 dB equivalen a <code>10³ = 1.000</code>. Valores de referencia: 3 dB ≈ 2 veces, 10 dB = 10 veces, 20 dB = 100 veces. Las atenuaciones en decibelios de tramos sucesivos <strong>se suman</strong>.
+
+### 20. ¿En qué modo de direccionalidad opera una red Wi-Fi?
+
+- a) Semidúplex, porque una radio que transmite no puede escuchar su propia frecuencia
+- b) Dúplex, porque el usuario puede navegar y subir ficheros simultáneamente
+- c) Símplex, porque el punto de acceso es siempre el emisor y el cliente el receptor
+
+**Respuesta correcta:** a) · **Referencia:** §3.1 [IEEE802.11]
+
+Es una limitación <strong>física</strong>, no de diseño. La misma razón explica por qué el Wi-Fi usa <strong>CSMA/CA</strong> —evitación de colisiones— y no CSMA/CD: no puede detectar la colisión mientras se produce.
+
+### 21. Señale la afirmación correcta sobre el dúplex por división de tiempo (TDD).
+
+- a) Es una modalidad de transmisión semidúplex, porque los extremos se turnan
+- b) Ofrece un servicio percibido como dúplex, porque los turnos se alternan en el orden de los microsegundos
+- c) Solo es posible en medios guiados, porque exige dos canales físicos independientes
+
+**Respuesta correcta:** b) · **Referencia:** §3.1 [FOROUZAN]
+
+El semidúplex es una limitación <strong>visible</strong> para el usuario, que debe esperar su turno. El TDD, en cambio, es una técnica de implementación del dúplex sobre un único canal, alternativa al <strong>FDD</strong>, que sí usa dos bandas de frecuencia.
+
+### 22. En transmisión asíncrona con 8 bits de datos, 1 bit de arranque, 1 de paridad y 1 de parada, ¿cuál es la eficiencia?
+
+- a) 100 %, porque los bits de servicio no consumen tiempo de canal
+- b) 88,9 %, porque solo el bit de arranque es sobrecarga
+- c) 72,7 %, porque de cada 11 bits transmitidos solo 8 son útiles
+
+**Respuesta correcta:** c) · **Referencia:** §3.2 [STALLINGS]
+
+<code>8/11 = 0,727</code>. La sobrecarga del <strong>27,3 %</strong> es constante e independiente del volumen, y es lo que hace inviable la transmisión asíncrona para grandes volúmenes de datos. La transmisión <strong>síncrona</strong> amortiza sus bits de servicio sobre bloques de miles de bits.
+
+### 23. ¿Qué mecanismo permite al receptor mantener el sincronismo en una transmisión síncrona sin línea de reloj dedicada?
+
+- a) Una codificación de línea autosincronizante, como Manchester, de la que se extrae el reloj
+- b) La inserción de un bit de arranque al principio de cada carácter
+- c) El envío periódico de tramas vacías que reinician el contador del receptor
+
+**Respuesta correcta:** a) · **Referencia:** §3.2 [STALLINGS]
+
+Manchester fuerza una transición en el centro de cada bit; otros esquemas —4B/5B, 8B/10B, 64B/66B— insertan bits redundantes con el mismo fin. El bit de arranque de la opción B es propio de la transmisión <strong>asíncrona</strong>.
+
+### 24. ¿Por qué la transmisión paralela ha sido desplazada por la serie a alta velocidad?
+
+- a) Porque el paralelo no permite corrección de errores
+- b) Porque el paralelo exige apantallamiento individual de cada hilo, lo que encarece el cable
+- c) Porque la desviación temporal entre hilos (<em>skew</em>) y la diafonía se hacen intolerables al subir la frecuencia
+
+**Respuesta correcta:** c) · **Referencia:** §3.3 [TANENBAUM]
+
+Los bits que salieron a la vez no llegan a la vez, y cuanto más alta es la frecuencia menor es el periodo de bit y antes resulta intolerable esa diferencia. Por eso PCI pasó a PCI Express, PATA a SATA y el puerto paralelo a USB.
+
+### 25. En la terminología clásica de la UIT-T, ¿qué caracteriza al ETCD (o DCE)?
+
+- a) Es el equipo que constituye el origen o el destino final de los datos
+- b) Es el equipo que adapta la señal al medio de transmisión y suele proporcionar la señal de reloj
+- c) Es el equipo que interconecta dos redes con arquitecturas distintas traduciendo entre ellas
+
+**Respuesta correcta:** b) · **Referencia:** §4.1 [UIT-T]
+
+El <strong>ETD (DTE)</strong> es el origen o destino de los datos —opción A—; el <strong>ETCD (DCE)</strong> los adapta al circuito. La opción C describe una <strong>pasarela</strong>. El punto donde termina la red del operador es el <strong>punto de terminación de red</strong>, frontera de responsabilidad.
+
+### 26. Un concentrador (<em>hub</em>) con ocho equipos conectados, ¿cuántos dominios de colisión y de difusión crea?
+
+- a) Un dominio de colisión y un dominio de difusión
+- b) Ocho dominios de colisión y un dominio de difusión
+- c) Ocho dominios de colisión y ocho dominios de difusión
+
+**Respuesta correcta:** a) · **Referencia:** §4.2.1 [TANENBAUM]
+
+El concentrador es un <strong>repetidor multipuerto</strong> de capa 1: repite por todos los puertos sin mirar direcciones, de modo que todos los equipos comparten el medio, reparten el ancho de banda y funcionan en semidúplex. La opción B describe un <strong>conmutador</strong>.
+
+### 27. ¿Cuál de estas afirmaciones sobre el conmutador (<em>switch</em>) es correcta?
+
+- a) Divide tanto el dominio de colisión como el de difusión, uno por cada puerto
+- b) Divide el dominio de colisión —uno por puerto— pero no el de difusión, salvo que se configuren VLAN
+- c) No divide ningún dominio, porque opera en la capa física igual que el concentrador
+
+**Respuesta correcta:** b) · **Referencia:** §4.2.1 [IEEE802.1]
+
+Es la pregunta de equipos de red más repetida del temario. Una trama de difusión (<code>FF:FF:FF:FF:FF:FF</code>) se propaga por todos los puertos del conmutador. Solo el <strong>encaminador</strong> y las <strong>VLAN</strong> dividen el dominio de difusión.
+
+### 28. Un conmutador recibe una trama cuya dirección MAC de destino no figura en su tabla. ¿Qué hace?
+
+- a) La descarta y envía un mensaje de error al emisor
+- b) La retiene en memoria hasta que aprenda la dirección por otra vía
+- c) La inunda por todos los puertos excepto por aquel por el que llegó
+
+**Respuesta correcta:** c) · **Referencia:** §4.2.1 [IEEE802.1]
+
+Es la operación de <strong>inundación</strong> (<em>flooding</em>), una de las cuatro del conmutador junto con aprender, reenviar y envejecer. Hace lo mismo con las tramas de difusión y de multidifusión.
+
+### 29. ¿Qué modo de conmutación de un switch ofrece la menor latencia y a costa de qué?
+
+- a) El modo directo (<em>cut-through</em>), a costa de no detectar las tramas erróneas, porque reenvía tras leer solo la MAC de destino
+- b) El modo de almacenamiento y reenvío, a costa de consumir más memoria
+- c) El modo libre de fragmentos, a costa de descartar las tramas de menos de 64 bytes
+
+**Respuesta correcta:** a) · **Referencia:** §4.2.1 [TANENBAUM]
+
+El modo de <strong>almacenamiento y reenvío</strong> espera a la trama completa y comprueba el <strong>CRC</strong>, con mayor latencia pero filtrando lo erróneo. El modo <strong>libre de fragmentos</strong> lee los primeros 64 bytes, en un punto intermedio.
+
+### 30. ¿Por qué un bucle de nivel 2 entre dos conmutadores es tan destructivo, mientras que un bucle de encaminamiento en capa 3 no lo es de forma indefinida?
+
+- a) Porque en capa 2 no existe tabla de reenvío y las tramas se replican al azar
+- b) Porque la trama Ethernet no tiene campo TTL, mientras que el paquete IP sí lo tiene y acaba descartándose
+- c) Porque los conmutadores no pueden ejecutar protocolos de prevención de bucles
+
+**Respuesta correcta:** b) · **Referencia:** §4.2.1, §6.2.1 [IEEE802.1]
+
+Sin TTL, una única trama de difusión da vueltas indefinidamente y se multiplica en cada nodo: es la <strong>tormenta de difusión</strong>. Los conmutadores sí ejecutan protocolos de prevención —<strong>STP</strong> y <strong>RSTP</strong>—, que es justamente el remedio.
+
+### 31. En su acepción estricta, ¿qué es una pasarela (<em>gateway</em>)?
+
+- a) La dirección IP del encaminador que se configura en cada equipo para salir de la red local
+- b) Un conmutador capaz de encaminar entre VLAN a velocidad de cable
+- c) El equipo de interconexión que opera en las capas superiores y traduce entre redes con arquitecturas o protocolos distintos
+
+**Respuesta correcta:** c) · **Referencia:** §4.2.2 [TANENBAUM]
+
+Ejemplos: pasarela de voz entre la red telefónica y la telefonía IP, pasarela de IoT entre Zigbee e IP. La opción A describe la <strong>puerta de enlace predeterminada</strong>, que es un encaminador, y la B, un <strong>conmutador de capa 3</strong>.
+
+### 32. Varios puntos de acceso que anuncian el mismo SSID y entre los que un cliente puede desplazarse forman:
+
+- a) Un ESS (<em>Extended Service Set</em>)
+- b) Un BSS (<em>Basic Service Set</em>)
+- c) Un IBSS o red en modo <em>ad hoc</em>
+
+**Respuesta correcta:** a) · **Referencia:** §4.2.2, §7.1 [IEEE802.11]
+
+El <strong>BSS</strong> es <strong>una sola celda</strong>: un punto de acceso y sus clientes, identificado por el <strong>BSSID</strong>. El <strong>IBSS</strong> o modo <em>ad hoc</em> es la comunicación entre clientes <strong>sin</strong> punto de acceso.
+
+### 33. ¿Qué equipo desempeña la función de repartir la configuración, los canales y la potencia de una flota de puntos de acceso inalámbricos?
+
+- a) El conmutador de capa 3 del núcleo de la red
+- b) El controlador de red inalámbrica (WLC)
+- c) El servidor RADIUS de autenticación
+
+**Respuesta correcta:** b) · **Referencia:** §4.2.2 [IEEE802.11]
+
+En instalaciones profesionales los puntos de acceso son <strong>ligeros</strong> y se gestionan centralizadamente desde el controlador, que además coordina la itinerancia rápida y la detección de puntos de acceso no autorizados. El <strong>RADIUS</strong> valida credenciales, pero no configura la radio.
+
+### 34. Según el anexo II de la Ley 11/2022, una red de comunicaciones electrónicas de «alta capacidad» es la capaz de prestar acceso de banda ancha a velocidades de al menos:
+
+- a) 30 Mbps
+- b) 100 Mbps
+- c) 10 Mbps
+
+**Respuesta correcta:** a) · **Referencia:** §5 [LGT]
+
+La red de <strong>muy alta capacidad</strong>, por su parte, es la compuesta totalmente de elementos de fibra óptica al menos hasta el punto de distribución, o la capaz de ofrecer un rendimiento similar. Los <strong>10 Mbps</strong> de la opción C son la velocidad mínima del <strong>servicio universal</strong> (art. 37).
+
+### 35. Más allá de la extensión geográfica, ¿cuál es el criterio estructural que distingue una LAN de una WAN?
+
+- a) La tecnología empleada: Ethernet en LAN y siempre fibra óptica en WAN
+- b) El número de equipos conectados, que en una WAN supera siempre los mil
+- c) La titularidad del medio: en la LAN el cableado es propiedad de quien la explota, mientras que en la WAN se contrata a un operador porque atraviesa dominio público
+
+**Respuesta correcta:** c) · **Referencia:** §5.1 [TANENBAUM]
+
+A ese criterio se suman la <strong>velocidad y latencia</strong> —gigabits y microsegundos frente a menos caudal por euro y milisegundos— y la <strong>tasa de error</strong>, mayor en la WAN por atravesar medios heterogéneos.
+
+### 36. En una topología en bus, ¿qué consecuencia tiene un corte en el cable troncal?
+
+- a) Solo quedan aislados los equipos situados más allá del corte
+- b) Toda la red deja de funcionar, porque el medio es único y compartido
+- c) La red sigue funcionando gracias a los terminadores, que reencaminan la señal
+
+**Respuesta correcta:** b) · **Referencia:** §5.2 [FOROUZAN]
+
+Es el gran defecto del bus, y la razón de que desapareciera de las redes locales. Los <strong>terminadores</strong> de sus extremos evitan las reflexiones de la señal, no aportan redundancia alguna.
+
+### 37. ¿Cuántos enlaces requiere una malla completa de 10 nodos?
+
+- a) 45
+- b) 90
+- c) 100
+
+**Respuesta correcta:** a) · **Referencia:** §5.2 [TANENBAUM]
+
+Se aplica <code>n(n−1)/2 = 10 · 9 / 2 = 45</code>. El crecimiento es <strong>cuadrático</strong>, motivo por el que la malla completa no escala y en la práctica se emplea la <strong>malla parcial</strong> o el <strong>doble anillo</strong>, que con n enlaces ya garantiza dos caminos entre cualquier par de nodos.
+
+### 38. Una red Ethernet moderna sobre conmutador presenta:
+
+- a) Topología física de anillo y topología lógica de estrella
+- b) Topología física y lógica coincidentes, ambas en bus
+- c) Topología física de estrella y topología lógica de bus conmutado
+
+**Respuesta correcta:** c) · **Referencia:** §5.2 [FOROUZAN]
+
+Todos los cables van radialmente al armario —estrella física— mientras que cada puerto es un enlace punto a punto dedicado. El caso histórico inverso es <strong>Token Ring</strong>: estrella física, con los cables a la MAU, y <strong>anillo lógico</strong>.
+
+### 39. Señale la afirmación correcta sobre la conmutación de circuitos.
+
+- a) No requiere fase de establecimiento, porque la ruta se decide paquete a paquete
+- b) Reserva un camino dedicado durante toda la comunicación, con retardo constante y sin fluctuación, aunque desaprovecha la capacidad en los silencios
+- c) Almacena el mensaje completo en cada nodo antes de reenviarlo al siguiente
+
+**Respuesta correcta:** b) · **Referencia:** §6.1.1 [TANENBAUM]
+
+Sus <strong>tres fases</strong> son establecimiento, transferencia y liberación. La opción C describe la conmutación de <strong>mensajes</strong>; la A, la de <strong>paquetes</strong> en modo datagrama.
+
+### 40. ¿Cuál es el principal inconveniente de la conmutación de mensajes que resolvió la conmutación de paquetes?
+
+- a) Que no permitía establecer prioridades entre distintos mensajes
+- b) Que producía bloqueo cuando no había recursos disponibles en la ruta
+- c) Que exigía almacenar el mensaje completo en cada nodo y que un mensaje grande monopolizaba el enlace, sin posibilidad de encauzamiento
+
+**Respuesta correcta:** c) · **Referencia:** §6.1.1 [TANENBAUM]
+
+Fragmentar en paquetes pequeños reduce la memoria necesaria y permite el <strong>encauzamiento</strong>: mientras un nodo reenvía un paquete, el anterior ya le está enviando el siguiente. El <strong>bloqueo</strong> de la opción B es propio de la conmutación de <strong>circuitos</strong>.
+
+### 41. En una red de conmutación de paquetes en modo datagrama:
+
+- a) Cada paquete lleva la dirección completa de destino y elige su ruta en cada nodo, por lo que pueden llegar desordenados
+- b) Se establece previamente un camino que todos los paquetes siguen, garantizando el orden de llegada
+- c) Se reservan recursos físicos en cada nodo del trayecto durante toda la comunicación
+
+**Respuesta correcta:** a) · **Referencia:** §6.1.1 [TANENBAUM]
+
+Es el modo de funcionamiento de <strong>IP</strong>. La opción B describe el <strong>circuito virtual</strong> (X.25, Frame Relay, ATM, MPLS), que sigue siendo conmutación de <strong>paquetes</strong>; la C, la conmutación de <strong>circuitos</strong>.
+
+### 42. Señale la afirmación correcta sobre MPLS.
+
+- a) Es una técnica de conmutación de circuitos que reserva capacidad extremo a extremo
+- b) Es conmutación de paquetes con lógica de circuito virtual, basada en el reenvío por etiquetas cortas
+- c) Es un protocolo de difusión que replica el tráfico en los puntos de bifurcación de la red
+
+**Respuesta correcta:** b) · **Referencia:** §6.1.1 [TANENBAUM]
+
+El <strong>circuito virtual no es un circuito</strong>: no hay reserva de recursos físicos ni camino dedicado, solo una ruta preacordada identificada por una etiqueta. Es con lo que los operadores construyen hoy las redes privadas virtuales corporativas.
+
+### 43. Un mensaje de 12.000 bits atraviesa 3 enlaces de 4.000 bps, fragmentado en paquetes de 4.000 bits. Despreciando propagación y proceso, ¿cuál es el retardo total?
+
+- a) 9 segundos, igual que en conmutación de mensajes
+- b) 3 segundos, porque el primer paquete llega en ese tiempo
+- c) 5 segundos, aplicando la fórmula del encauzamiento
+
+**Respuesta correcta:** c) · **Referencia:** §6.1.1 [TANENBAUM]
+
+Cada paquete tarda <code>4.000/4.000 = 1 s</code> por enlace, y hay 3 paquetes y 3 enlaces: <code>T = (3 + 3 − 1) × 1 = 5 s</code>. En conmutación de <strong>mensajes</strong> habrían sido <code>3 s × 3 enlaces = 9 s</code>, que es la opción A. El encauzamiento reduce el retardo casi a la mitad sin cambiar un solo cable.
+
+### 44. ¿Cuál es la dirección MAC de difusión en Ethernet?
+
+- a) 01:00:5E:00:00:01
+- b) FF:FF:FF:FF:FF:FF
+- c) 00:00:00:00:00:00
+
+**Respuesta correcta:** b) · **Referencia:** §6.2.1 [RFC1112]
+
+Los 48 bits a uno. La dirección de la opción A pertenece al rango <strong>01:00:5E</strong>, reservado para la correspondencia de la <strong>multidifusión IPv4</strong> sobre MAC; la de la opción C no es una dirección de difusión.
+
+### 45. Señale la afirmación correcta sobre la difusión en IPv6.
+
+- a) IPv6 suprime la difusión y la sustituye por multidifusión al grupo ff02::1, además de incorporar la anydifusión
+- b) IPv6 mantiene la difusión pero cambia su dirección a ::1
+- c) IPv6 solo admite unidifusión, por lo que ARP se sustituye por consultas al DNS
+
+**Respuesta correcta:** a) · **Referencia:** §6.2.1 [RFC4291]
+
+El prefijo de toda la multidifusión IPv6 es <code>ff00::/8</code>, y la suscripción a grupos se hace con <strong>MLD</strong>, equivalente a IGMP. Es una de las preguntas más frecuentes sobre IPv6.
+
+### 46. ¿Por qué un equipo que arranca sin dirección IP necesita usar difusión?
+
+- a) Porque el protocolo DHCP exige cifrar la petición y solo la difusión lo permite
+- b) Porque la difusión es más rápida que la unidifusión en redes conmutadas
+- c) Porque sin dirección propia ni conocimiento del servidor no puede dirigirse a ningún destinatario concreto
+
+**Respuesta correcta:** c) · **Referencia:** §6.2.1 [RFC826]
+
+Es el «problema del arranque» que la difusión resuelve, igual que en <strong>ARP</strong>, donde se pregunta a todos qué equipo tiene una IP determinada. Por eso la difusión no es un residuo, sino un mecanismo imprescindible.
+
+### 47. En televisión digital terrestre, ¿qué es un múltiplex o múltiple digital?
+
+- a) El conjunto de repetidores que cubren una misma demarcación territorial
+- b) La señal compuesta transmitida en una frecuencia radioeléctrica que, mediante tecnología digital, permite incorporar las señales de varios servicios de comunicación audiovisual y de comunicaciones electrónicas
+- c) El equipo receptor que separa la señal de vídeo de la de audio en el domicilio del usuario
+
+**Respuesta correcta:** b) · **Referencia:** §6.2.1 [L13-2022]
+
+Es decir, <strong>un canal radioeléctrico que transporta varios canales de televisión</strong>. Esa ganancia de la multiplexación digital es la que permitió liberar espectro: el <strong>dividendo digital</strong>.
+
+### 48. ¿Cuántos canales sin solapamiento hay disponibles en la banda de 2,4 GHz para Wi-Fi con canales de 20 MHz?
+
+- a) Tres: los canales 1, 6 y 11
+- b) Trece, uno por cada canal numerado
+- c) Ocho, coincidiendo con los de la banda de 5 GHz
+
+**Respuesta correcta:** a) · **Referencia:** §7.1 [IEEE802.11]
+
+Cada canal ocupa 20 MHz pero los canales numerados están separados solo 5 MHz, de modo que se solapan. Es el dato que explica la mayor parte de los problemas de rendimiento del Wi-Fi y el criterio básico de planificación: <strong>celdas adyacentes nunca en el mismo canal</strong>.
+
+### 49. ¿Cuál es el rasgo distintivo de IEEE 802.11be (Wi-Fi 7), publicado en julio de 2025?
+
+- a) La incorporación de OFDMA y de la modulación 1024-QAM
+- b) El uso de la banda de 6 GHz, que no estaba disponible en generaciones anteriores
+- c) La operación multienlace (MLO), que permite usar varias bandas simultáneamente, junto con canales de 320 MHz y modulación 4096-QAM
+
+**Respuesta correcta:** c) · **Referencia:** §7.1 [IEEE802.11]
+
+El MLO aporta sobre todo <strong>fiabilidad</strong>: si una banda se degrada, el tráfico sigue por las otras. OFDMA y 1024-QAM son de <strong>Wi-Fi 6</strong>, y la banda de 6 GHz ya la abrió <strong>Wi-Fi 6E</strong>.
+
+### 50. Indique la frecuencia de trabajo y el alcance operativo característicos de NFC.
+
+- a) 2,4 GHz y unos 10 metros
+- b) 13,56 MHz y unos 10 centímetros
+- c) 868 MHz y varios kilómetros
+
+**Respuesta correcta:** b) · **Referencia:** §7.1 [ISO-NFC]
+
+El alcance corto <strong>es la característica de seguridad</strong>, no una limitación: obliga a una aproximación deliberada y hace impracticable la interceptación a distancia. Los 868 MHz de la opción C corresponden a <strong>LoRaWAN</strong> en Europa.
+
+### 51. ¿Cuál es la altura de la órbita geoestacionaria y qué latencia de ida y vuelta implica aproximadamente?
+
+- a) 35.786 km y unos 250 ms
+- b) 2.000 km y unos 20 ms
+- c) 20.200 km y unos 100 ms
+
+**Respuesta correcta:** a) · **Referencia:** §7.2 [TANENBAUM]
+
+La señal recorre ida y vuelta unos 72.000 km. Por eso el satélite <strong>GEO</strong> es excelente para difusión de televisión, que tolera cualquier retardo, y malo para tiempo real. La opción B corresponde al límite de las órbitas <strong>LEO</strong> y la C, al entorno de las <strong>MEO</strong> de los sistemas de navegación.
+
+### 52. ¿Qué distingue a LoRaWAN de NB-IoT dentro de las tecnologías LPWAN?
+
+- a) Que LoRaWAN ofrece mucho mayor caudal, y NB-IoT está limitado a mensajes de unos pocos bytes
+- b) Que LoRaWAN admite movilidad y voz, mientras que NB-IoT es exclusivamente estático
+- c) Que LoRaWAN opera en bandas de uso común y permite desplegar red propia, mientras que NB-IoT es una tecnología 3GPP sobre espectro licenciado del operador
+
+**Respuesta correcta:** c) · **Referencia:** §7.2 [LORA]
+
+Es la disyuntiva de cualquier proyecto de sensórica urbana: red propia sin coste por dispositivo pero sin garantías de calidad, frente a servicio del operador con cobertura y calidad contratadas. <strong>LTE-M</strong> es el que admite movilidad y voz.
+
+### 53. ¿Cuál fue el salto arquitectónico que introdujo 4G/LTE respecto de 3G?
+
+- a) La aparición de la tarjeta SIM y del servicio de mensajes cortos
+- b) La desaparición de la conmutación de circuitos: la red pasa a ser todo IP y la voz se transporta como datos mediante VoLTE
+- c) La introducción de la conmutación de paquetes junto a la de circuitos, facturando por volumen
+
+**Respuesta correcta:** b) · **Referencia:** §8.2 [3GPP]
+
+Es el salto conceptual más profundo de la serie. La <strong>SIM</strong> y el <strong>SMS</strong> llegaron con <strong>2G/GSM</strong>, y la coexistencia de circuitos y paquetes con facturación por volumen es de <strong>GPRS (2.5G)</strong>.
+
+### 54. Un servicio municipal exige latencia acotada y fiabilidad garantizada sobre red móvil. ¿Qué se necesita?
+
+- a) Un despliegue 5G autónomo (SA), con núcleo 5G propio, que es el único que habilita el fraccionamiento de red y URLLC reales
+- b) Basta con cualquier despliegue 5G, porque la norma garantiza 1 ms de latencia en todos los casos
+- c) Un despliegue 5G no autónomo (NSA), que aprovecha el núcleo 4G y aporta menor latencia
+
+**Respuesta correcta:** a) · **Referencia:** §8.2 [3GPP]
+
+El despliegue <strong>NSA</strong> se apoya en el núcleo 4G y solo aporta más velocidad, es decir, <strong>eMBB</strong>. Es la distinción que separa el «5G comercial» del «5G que transforma servicios».
+
+### 55. ¿Cuál de las siguientes medidas NO aporta seguridad real a una red Wi-Fi?
+
+- a) Emplear WPA3 con autenticación SAE
+- b) Autenticar a los usuarios con 802.1X contra un servidor RADIUS
+- c) Ocultar el SSID y filtrar por dirección MAC
+
+**Respuesta correcta:** c) · **Referencia:** §9.1 [CCN-STIC-816]
+
+Son <strong>medidas cosméticas</strong>: el SSID viaja en claro en las tramas de asociación de cualquier cliente que se conecte, y las direcciones MAC circulan en claro y se clonan trivialmente. Además complican la operación y dan una falsa sensación de protección.
+
+### 56. ¿Qué aporta el mecanismo SAE de WPA3 frente a la clave precompartida de WPA2?
+
+- a) Sustituye el cifrado AES por un algoritmo de curva elíptica más rápido
+- b) Impide el ataque de diccionario fuera de línea aunque la contraseña sea débil, y proporciona confidencialidad directa
+- c) Permite prescindir de contraseña, cifrando el enlace de forma oportunista en redes abiertas
+
+**Respuesta correcta:** b) · **Referencia:** §9.1 [WIFI-ALLIANCE]
+
+Con <strong>SAE</strong>, capturar el tráfico hoy y descubrir la clave mañana ya no permite descifrarlo. La opción C describe <strong>OWE</strong> (<em>Wi-Fi Enhanced Open</em>), que es otra aportación distinta de WPA3.
+
+### 57. ¿Qué exige la medida <code>mp.com.4</code> del anexo II del Esquema Nacional de Seguridad respecto de las comunicaciones inalámbricas?
+
+- a) Que se empleen en un segmento de red separado
+- b) Que se prohíban en sistemas de categoría MEDIA o superior
+- c) Que se cifren siempre con productos certificados, en cualquier categoría
+
+**Respuesta correcta:** a) · **Referencia:** §9.1 [ENS]
+
+Es el requisito <code>mp.com.4.2</code>, literal. La medida <code>mp.com.4</code> (separación de flujos de información en la red) <strong>no aplica</strong> en categoría BÁSICA, exige <code>+[R1 o R2 o R3]</code> en MEDIA y <code>+[R2 o R3] + R4</code> en ALTA. El refuerzo <strong>R1</strong> implementa los segmentos mediante <strong>VLAN</strong>, con un mínimo de tres subredes: usuarios, servicios y administración.
+
+### 58. Conforme al artículo 2 de la Ley 11/2022, las telecomunicaciones son:
+
+- a) Servicios públicos de titularidad estatal, prestados en régimen de concesión
+- b) Servicios de interés general prestados en régimen de libre competencia, teniendo la consideración de servicio público únicamente los regulados en el artículo 4
+- c) Servicios privados sin obligaciones de interés general, salvo pacto contractual con la Administración
+
+**Respuesta correcta:** b) · **Referencia:** §9.2 [LGT]
+
+Esos servicios del art. 4 son los de <strong>seguridad nacional, defensa nacional, seguridad pública, seguridad vial y protección civil</strong>. Por tanto, la telefonía y el acceso a internet <strong>no son servicio público</strong> en España: son servicios en competencia sujetos a <strong>obligaciones</strong> de servicio público.
+
+### 59. ¿Qué velocidad mínima de acceso a internet de banda ancha garantiza el servicio universal según el artículo 37 de la Ley 11/2022?
+
+- a) 30 Mbit/s en sentido descendente, en ubicación fija o móvil
+- b) 100 Mbit/s simétricos en ubicación fija
+- c) 10 Mbit/s en sentido descendente, en ubicación fija, escalables a 30 Mbit/s mediante real decreto
+
+**Respuesta correcta:** c) · **Referencia:** §9.2 [LGT]
+
+La ley prevé expresamente ese escalado «tan pronto como sea posible en función de la extensión de las redes y del estado de la técnica». El servicio universal es de <strong>ubicación fija</strong>: <strong>no</strong> garantiza cobertura móvil. El <strong>anexo III</strong> enumera los once servicios que la conexión debe soportar, entre ellos la administración electrónica.
+
+### 60. Cuando un ayuntamiento instala y explota redes públicas de comunicaciones electrónicas o presta servicios disponibles al público, ¿a qué régimen queda sujeto según el artículo 13 de la Ley 11/2022?
+
+- a) Debe cumplir el principio de inversor privado, con separación de cuentas y conforme a los principios de neutralidad, transparencia, no distorsión de la competencia y no discriminación
+- b) Queda exento de cualquier condición, por tratarse de una Administración pública que actúa en interés general
+- c) Necesita una concesión demanial otorgada por la CNMC previa licitación pública
+
+**Respuesta correcta:** a) · **Referencia:** §9.2 [LGT]
+
+Debe respetar además la normativa de <strong>ayudas de Estado</strong> (arts. 107 y 108 del TFUE). La ley contempla una excepción expresa: la difusión de <strong>televisión digital en zonas sin cobertura de TDT</strong>, donde declara que se produce un <strong>fallo de mercado</strong>.
+
+## Preguntas sobre los casos prácticos
+
+### Caso 1. Medios de transmisión, modos y calidad del enlace de una oficina de distrito
+
+#### 1. En el supuesto planteado, ¿qué medio conviene para el cableado horizontal de la planta baja, con teléfonos IP, cámaras y pantallas de turnos?
+
+- a) Par trenzado de categoría 6A, porque los 78 m están dentro del límite y permite alimentar los terminales por PoE.
+- b) Fibra óptica multimodo hasta cada puesto, porque ofrece más capacidad y elimina cualquier problema de distancia.
+- c) Cable coaxial de 75 Ω, porque transporta a la vez la señal de datos, la de vídeo y la alimentación eléctrica.
+
+**Respuesta correcta:** a) · **Referencia:** Caso 1, cuestión 1 · §2.1.1
+
+El coste por punto es bajo y, sobre todo, el par trenzado permite PoE; la fibra al puesto sería técnicamente válida, pero dejaría sin alimentación a los terminales y multiplicaría el coste.
+
+#### 2. El tramo vertical entre armarios mide 60 m y atraviesa dos cuadros eléctricos distintos. ¿Qué medio es el adecuado y por qué?
+
+- a) Par trenzado Cat 6A, porque 60 m caben en el límite de 100 m y el cobre iguala el potencial entre plantas.
+- b) Fibra monomodo OS2, porque la multimodo no puede superar los 50 m de recorrido dentro de un edificio.
+- c) Fibra multimodo OM4, porque cubre la distancia y, al ser dieléctrica, da aislamiento galvánico entre cuadros.
+
+**Respuesta correcta:** c) · **Referencia:** Caso 1, cuestión 1 · §2.1.1
+
+60 m están dentro del alcance de la multimodo, y un medio dieléctrico evita transportar diferencias de potencial y sobretensiones entre plantas alimentadas por cuadros distintos.
+
+#### 3. ¿Qué solución corresponde a la acometida con el CPD del IAM, situado a 6 km?
+
+- a) Par trenzado blindado de categoría 8, tendido por la vía pública hasta el CPD del IAM.
+- b) Fibra monomodo OS2, normalmente como circuito contratado a un operador por la vía pública.
+- c) Fibra multimodo OM4, porque ofrece mayor ancho de banda que la monomodo en esa distancia.
+
+**Respuesta correcta:** b) · **Referencia:** Caso 1, cuestión 1 · §2.1.1
+
+El cobre queda descartado por atenuación y la multimodo por dispersión modal; además, el trazado atraviesa dominio público, por lo que lo realista es contratar el circuito.
+
+#### 4. La caseta del patio está a 300 m, sin canalización, con presupuesto y plazo ajustados y con visión directa desde la azotea. ¿Qué solución procede?
+
+- a) Un radioenlace punto a punto o Wi-Fi exterior direccional, con el enlace cifrado por ser medio compartido.
+- b) Abrir zanja y tender fibra monomodo, porque cualquier enlace radio es inaceptable en una red municipal.
+- c) Par trenzado Cat 6A con un repetidor a mitad de camino, porque así se superan los 100 m sin obra civil.
+
+**Respuesta correcta:** a) · **Referencia:** Caso 1, cuestión 1 · §2.2.1
+
+Sin canalización, la zanja tiene un coste y un plazo incomparablemente mayores; el radioenlace exige visión directa, que el enunciado confirma, y cifrado.
+
+#### 5. Si con 1 Gbit/s basta hoy, ¿por qué se exige categoría 6A en el cableado horizontal?
+
+- a) Porque la categoría 6 no admite PoE y la 6A es la primera categoría que puede alimentar teléfonos y cámaras.
+- b) Porque garantiza 10GBASE-T a los 100 m completos y el cableado horizontal dura 15-20 años y es caro de sustituir.
+- c) Porque la categoría 8 está prohibida en edificios de oficinas y la 6A es la de mayor capacidad que se permite.
+
+**Respuesta correcta:** b) · **Referencia:** Caso 1, cuestión 2 · §2.1.1
+
+La Cat 6 solo da 10 Gbit/s hasta unos 55 m y la Cat 8 se limita a 30 m y es de centro de datos; la 6A protege la inversión durante toda la vida del cableado.
+
+#### 6. El puesto más alejado está a 78 m de cable desde su armario. ¿Respeta el límite normalizado del enlace?
+
+- a) No: el límite del cable horizontal fijo es de 75 m, de modo que habría que añadir otro armario.
+- b) Sí, y sobra: el límite de 100 m se aplica solo al cable fijo, sin contar los latiguillos de los extremos.
+- c) Sí: el enlace admite 100 m, 90 de cable horizontal fijo más 10 repartidos entre los latiguillos.
+
+**Respuesta correcta:** c) · **Referencia:** Caso 1, cuestión 2 · §2.1.1
+
+Los 78 m dejan margen dentro de los 90 m de horizontal; superar el límite no produce un fallo limpio, sino errores intermitentes difíciles de diagnosticar.
+
+#### 7. Las cámaras de videovigilancia tienen motorización, calefactor e iluminación infrarroja. ¿Qué norma de alimentación por Ethernet necesitan?
+
+- a) 802.3af (PoE), con 15,4 W por puerto, igual que los teléfonos.
+- b) 802.3at (PoE+), con 30 W por puerto, por su mayor consumo.
+- c) Ninguna: deben llevar una fuente de alimentación propia.
+
+**Respuesta correcta:** b) · **Referencia:** Caso 1, cuestión 2 · §2.1.1
+
+Teléfonos y pantallas se cubren con 802.3af; las cámaras con más consumo requieren 802.3at. El conmutador se convierte en equipo eléctrico crítico y debe dimensionarse su presupuesto PoE.
+
+#### 8. ¿Cómo se clasifica, por su direccionalidad, la megafonía de avisos de la sala de espera?
+
+- a) Semidúplex, porque los avisos se emiten por turnos.
+- b) Dúplex, porque varios altavoces suenan a la vez.
+- c) Símplex: un solo sentido y sin canal de retorno.
+
+**Respuesta correcta:** c) · **Referencia:** Caso 1, cuestión 3 · §3.1
+
+La información va solo del emisor a los oyentes, que no pueden responder por el mismo canal.
+
+#### 9. ¿Qué parámetro del acuerdo de nivel de servicio, medido en milisegundos, hace que la videoconferencia con las juntas de distrito deje de ser natural por encima de unos 150 ms de extremo a extremo?
+
+- a) La latencia máxima.
+- b) La pérdida de paquetes.
+- c) El caudal garantizado.
+
+**Respuesta correcta:** a) · **Referencia:** Caso 1, cuestión 4 · §2.3
+
+La latencia es el retardo de extremo a extremo; la pérdida se mide en porcentaje y el caudal en Mbit/s.
+
+#### 10. Los usuarios reclaman que el Wi-Fi de la oficina da mucho menos caudal del anunciado. ¿Qué hay que responderles?
+
+- a) Que es una avería de los puntos de acceso, porque el caudal real debe igualar siempre la velocidad nominal.
+- b) Que se debe a que la red Wi-Fi funciona en modo dúplex y reparte la velocidad entre emisión y recepción.
+- c) Que es normal: el medio es compartido y semidúplex, cada trama se confirma y CSMA/CA consume tiempo.
+
+**Respuesta correcta:** c) · **Referencia:** Caso 1, cuestión 4 · §2.3
+
+Un caudal real en torno a la mitad o menos de la velocidad nominal es el funcionamiento normal del Wi-Fi, no una avería.
+
+### Caso 2. Equipos de interconexión, topología y una tormenta de difusión
+
+#### 1. En el supuesto planteado, ¿cuántos dominios de colisión hay en la red de la oficina?
+
+- a) 37: 24 en el conmutador de 24 puertos, 1 en el concentrador y 12 en el de 12 puertos.
+- b) 39: 25 en el conmutador de 24 puertos, 1 en el concentrador y 13 en el de 12 puertos.
+- c) 47: 25 en el conmutador de 24 puertos, 9 en el concentrador y 13 en el de 12 puertos.
+
+**Respuesta correcta:** b) · **Referencia:** Caso 2, cuestión 1 · §4.2.1
+
+Cada puerto activo de un conmutador es un dominio, incluido el de subida al encaminador; el concentrador no segmenta y es uno solo.
+
+#### 2. ¿Cuántos dominios de difusión hay en esa misma red?
+
+- a) 5: uno por cada interfaz del encaminador, salvo la tercera, cuyas 3 VLAN cuentan como 3.
+- b) 3: uno por cada interfaz del encaminador, porque las VLAN no separan la difusión.
+- c) 39: uno por cada dominio de colisión, porque cada puerto aísla también la difusión.
+
+**Respuesta correcta:** a) · **Referencia:** Caso 2, cuestión 1 · §4.2.1
+
+El conmutador divide la colisión pero no la difusión; solo el encaminador y las VLAN actúan sobre ella: 1 + 1 + 3 = 5.
+
+#### 3. ¿Qué ocurrió cuando el técnico conectó un latiguillo entre dos puertos libres del conmutador de 24 puertos?
+
+- a) Provocó un bucle de encaminamiento en el encaminador de frontera.
+- b) Duplicó una dirección IP, que bloqueó la tabla ARP del encaminador.
+- c) Creó un bucle de nivel 2 y, con él, una tormenta de difusión.
+
+**Respuesta correcta:** c) · **Referencia:** Caso 2, cuestión 2 · §4.2.1, §6.2.1
+
+Una sola trama de difusión entra en el bucle y se multiplica en cada vuelta, porque el conmutador la inunda por todos los puertos menos el de entrada.
+
+#### 4. ¿Por qué la tormenta no se detiene por sí sola, mientras que un bucle de encaminamiento en capa 3 no se perpetúa?
+
+- a) Porque el conmutador prioriza la difusión, mientras que el encaminador la descarta siempre.
+- b) Porque la trama Ethernet no tiene campo TTL, y el paquete IP sí lo tiene y se descarta al llegar a cero.
+- c) Porque las tramas Ethernet se reenvían más rápido que los paquetes IP en cualquier tipo de red.
+
+**Respuesta correcta:** b) · **Referencia:** Caso 2, cuestión 2 · §6.2.1
+
+El encaminador decrementa el TTL en cada salto y descarta el paquete al llegar a cero; la trama Ethernet carece de ese campo y da vueltas indefinidamente.
+
+#### 5. ¿Por qué dejaron de funcionar también los equipos que no estaban comunicándose con nadie?
+
+- a) Porque el conmutador apagó sus puertos para protegerlos de la tormenta.
+- b) Porque el encaminador les retiró la dirección IP al saturarse su interfaz.
+- c) Porque su procesador quedó ocupado procesando y descartando la difusión.
+
+**Respuesta correcta:** c) · **Referencia:** Caso 2, cuestión 2 · §4.2.1
+
+Toda la interfaz 1 es un único dominio de difusión: la avalancha llega a los 24 equipos, que procesan cada trama en su CPU.
+
+#### 6. ¿Cuál es el remedio directo para que un bucle accidental como este no vuelva a tumbar la red, y dónde se aplica?
+
+- a) Activar STP o, mejor, RSTP en todos los conmutadores, que bloquean lógicamente el camino redundante.
+- b) Sustituir el encaminador de frontera por otro con más capacidad en la interfaz que da a la oficina.
+- c) Reducir el tiempo de concesión DHCP de los equipos, para que las direcciones se renueven más a menudo.
+
+**Respuesta correcta:** a) · **Referencia:** Caso 2, cuestión 3 · §6.2.1
+
+El árbol de expansión detecta el camino redundante, bloquea uno de los enlaces y lo reactiva automáticamente si falla el principal.
+
+#### 7. ¿Qué efecto tendría segmentar en VLAN toda la red frente a un incidente como este?
+
+- a) Evitaría por completo el bucle, porque las VLAN impiden conectar dos puertos del mismo conmutador.
+- b) Ninguno, porque las VLAN solo separan el tráfico de voz y no afectan al tráfico de difusión.
+- c) No evitaría el bucle, pero confinaría la tormenta a una VLAN en lugar de tumbar toda la oficina.
+
+**Respuesta correcta:** c) · **Referencia:** Caso 2, cuestión 3 · §4.2.1
+
+Cada VLAN es un dominio de difusión distinto: acotar el dominio acota el alcance del desastre. Exige encaminamiento entre VLAN.
+
+#### 8. ¿Qué debe hacerse con el concentrador de 8 puertos que sobrevive en el archivo?
+
+- a) Mantenerlo, porque no afecta a la difusión y solo genera colisiones entre esos ocho equipos.
+- b) Retirarlo y sustituirlo por un conmutador gestionable, porque además deja ver el tráfico ajeno.
+- c) Conectarlo al conmutador de 24 puertos, para que comparta el mismo dominio de colisión.
+
+**Respuesta correcta:** b) · **Referencia:** Caso 2, cuestión 4 · §4.2.1
+
+Es un equipo de capa 1: un único dominio de colisión, semidúplex y, lo más grave, cualquier equipo en modo promiscuo ve el tráfico de los demás, incompatible con la confidencialidad.
+
+#### 9. ¿Qué equipo permite integrar el sistema de control de accesos, que habla un protocolo propietario no IP?
+
+- a) Una pasarela, que traduce entre protocolos o arquitecturas distintos.
+- b) Un conmutador gestionable, configurando una VLAN propia para ese sistema.
+- c) Un encaminador, que decide la ruta por la dirección IP de cada paquete.
+
+**Respuesta correcta:** a) · **Referencia:** Caso 2, cuestión 4 · §4.2.2
+
+Ni el conmutador ni el encaminador entienden un protocolo que no es IP; la pasarela opera en capas superiores y traduce entre arquitecturas.
+
+#### 10. ¿Qué topología objetivo conviene para el rediseño de la red de la oficina?
+
+- a) Un bus único que recorra las tres plantas, porque reduce el cableado y simplifica la gestión.
+- b) Un árbol o estrella jerárquica, con acceso por planta, conmutador de capa 3 de edificio y encaminador.
+- c) Una malla completa entre todos los equipos de la oficina, para que ningún fallo aísle a un puesto.
+
+**Respuesta correcta:** b) · **Referencia:** Caso 2, cuestión 4 · §5.2
+
+En árbol, el fallo de un enlace o de un puesto solo afecta a ese puesto, el diagnóstico es sencillo y la red escala añadiendo ramas; su punto débil, el nodo superior, se mitiga con redundancia.
+
+### Caso 3. Despliegue inalámbrico y móvil, seguridad y marco normativo
+
+#### 1. En el supuesto planteado, ¿qué autenticación y cifrado corresponden al SSID corporativo de puestos móviles, tabletas y teléfonos del personal?
+
+- a) WPA3-Personal con una clave compartida por toda la plantilla municipal.
+- b) Red abierta con portal cautivo, como la de la sala de espera de la oficina.
+- c) WPA3-Enterprise con 802.1X/EAP-TLS contra el directorio municipal.
+
+**Respuesta correcta:** c) · **Referencia:** Caso 3, cuestión 1 · §7.1, §9.1
+
+Cada actuación queda imputada a un empleado concreto mediante su credencial individual contra el directorio.
+
+#### 2. ¿Por qué no basta en la red corporativa con una clave precompartida, aunque sea larga?
+
+- a) Porque WPA3 prohíbe las claves precompartidas en cualquier red que dé acceso a servicios públicos.
+- b) Porque impide saber quién hizo qué, y revocar a una persona obliga a cambiar la clave a todos.
+- c) Porque una clave precompartida reduce el caudal de la red a la mitad de la velocidad nominal.
+
+**Respuesta correcta:** b) · **Referencia:** Caso 3, cuestión 1 · §9.1
+
+802.1X con credencial individual no es una preferencia técnica, sino un requisito de imputabilidad (trazabilidad).
+
+#### 3. ¿Cómo debe configurarse el SSID de cortesía de la sala de espera?
+
+- a) Red abierta con OWE, portal cautivo y aislamiento entre clientes, en una VLAN sin ruta hacia la red municipal.
+- b) Red WPA3-Enterprise en la misma VLAN que los puestos, para que el público acceda a los servicios municipales.
+- c) Red abierta sin cifrado ni portal, en la VLAN de dispositivos junto a impresoras y pantallas de turnos.
+
+**Respuesta correcta:** a) · **Referencia:** Caso 3, cuestión 1 · §9.1
+
+OWE cifra aunque la red sea abierta; la VLAN totalmente aislada solo tiene salida directa a internet.
+
+#### 4. ¿Qué medida del ENS respalda que todo lo inalámbrico vaya en un segmento propio, y qué añade su refuerzo R1 en un sistema de categoría MEDIA?
+
+- a) mp.com.4: las comunicaciones inalámbricas van en un segmento separado, y el R1 lo implanta con VLAN, con un mínimo de tres subredes.
+- b) mp.if.6: las redes inalámbricas se protegen frente a inundaciones, y el R1 exige ubicar los puntos de acceso en planta alta.
+- c) op.exp.1: los puntos de acceso deben estar inventariados, y el R1 exige que el SSID corporativo no se anuncie en la baliza.
+
+**Respuesta correcta:** a) · **Referencia:** Caso 3, cuestión 1 · §9.1 (mp.com.4.2 y R1)
+
+mp.com.4.2 dice que, si se emplean comunicaciones inalámbricas, será en un segmento separado; el R1 implementa los segmentos con VLAN: usuarios, servicios y administración.
+
+#### 5. El responsable del edificio propone ocultar el SSID y permitir solo las direcciones MAC municipales. ¿Cómo debe valorarse?
+
+- a) Debe aceptarse, porque juntas sustituyen con ventaja al cifrado WPA3 y a la autenticación 802.1X.
+- b) Debe aceptarse solo en la red de cortesía, porque en ella el público no puede averiguar el nombre.
+- c) Debe rechazarse como protección: el SSID viaja en claro al asociarse y las MAC se copian con facilidad.
+
+**Respuesta correcta:** c) · **Referencia:** Caso 3, cuestión 2 · §9.1
+
+Son medidas cosméticas que dan una falsa sensación de protección y desplazan la atención de lo que sí protege: WPA3 y 802.1X.
+
+#### 6. ¿Qué enmienda de 802.11 evita que las llamadas de voz sobre wifi del personal se corten al cambiar de punto de acceso?
+
+- a) 802.11w, que protege las tramas de gestión.
+- b) 802.11r, que agiliza la itinerancia entre celdas.
+- c) 802.11e, que define la calidad de servicio WMM.
+
+**Respuesta correcta:** b) · **Referencia:** Caso 3, cuestión 1 · §7.1
+
+La itinerancia rápida de 802.11r es esencial para la voz sobre wifi; 802.11w neutraliza los ataques de desautenticación.
+
+#### 7. ¿Qué tecnología conviene para los sensores situados en sótanos y arquetas?
+
+- a) Wi-Fi, desplegando puntos de acceso cerca de cada sensor.
+- b) Una red celular convencional, con una línea de datos por sensor.
+- c) NB-IoT, por su penetración en interiores profundos.
+
+**Respuesta correcta:** c) · **Referencia:** Caso 3, cuestión 3 · §7.2
+
+Son el caso canónico de LPWAN: pocos datos, mucho alcance y años de batería. Entre las LPWAN, NB-IoT aporta la penetración en interiores profundos y la cobertura del operador ya desplegada.
+
+#### 8. ¿Cuál es la disyuntiva de fondo entre LoRaWAN y NB-IoT para los sensores del distrito?
+
+- a) Espectro sin licencia y red propia sin garantías, frente a espectro licenciado con calidad contratada al operador.
+- b) Cobertura en interiores frente a cobertura en exteriores, porque LoRaWAN solo funciona dentro de los edificios.
+- c) Bajo consumo frente a alto consumo, porque NB-IoT exige alimentación de red eléctrica en cada sensor.
+
+**Respuesta correcta:** a) · **Referencia:** Caso 3, cuestión 3 · §7.2
+
+LoRaWAN permite red propia sin pagar por dispositivo, pero sin garantía y asumiendo la operación; NB-IoT garantiza calidad por contrato, con dependencia del operador. Es una decisión de modelo de servicio.
+
+#### 9. ¿Qué régimen jurídico tiene el radioenlace propio en banda licenciada entre la oficina y el polideportivo?
+
+- a) Uso común, como el Wi-Fi: basta con respetar los límites de potencia, sin título ni tasa.
+- b) Uso privativo: título habilitante del Ministerio y tasa por reserva del dominio radioeléctrico.
+- c) Ninguno, porque el Ayuntamiento es Administración y no necesita títulos para usar el espectro.
+
+**Respuesta correcta:** b) · **Referencia:** Caso 3, cuestión 4 · §9.2 (art. 85.1 y títulos V y VII Ley 11/2022)
+
+El espectro es bien de dominio público cuya titularidad y administración corresponden al Estado (art. 85.1); su uso privativo exige autorización individual o concesión y devenga tasa.
+
+#### 10. ¿Por qué el Wi-Fi de cortesía queda sujeto al artículo 13 de la Ley 11/2022 y el corporativo no?
+
+- a) Porque el de cortesía presta un servicio disponible al público, y el corporativo es una red privada de usuario final.
+- b) Porque el de cortesía usa banda licenciada, y el corporativo, una banda ISM de uso común sin título habilitante.
+- c) Porque el de cortesía carece de cifrado, y el artículo 13 regula la seguridad de las redes inalámbricas abiertas.
+
+**Respuesta correcta:** a) · **Referencia:** Caso 3, cuestión 4 · §9.2 (art. 13 Ley 11/2022)
+
+Al ofrecer el servicio al público hay que valorar el principio de inversor privado, la no distorsión de la competencia y las ayudas de Estado; en las plazas públicas el análisis es más exigente que en la sala de espera.

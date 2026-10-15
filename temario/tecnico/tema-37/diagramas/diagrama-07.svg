@@ -1,0 +1,35 @@
+<svg aria-label="Comparación entre transmisión en banda base, en la que la señal digital se transmite sin modular ocupando todo el ancho de banda del medio en un único canal bidireccional, propia de Ethernet, y transmisión en banda ancha, en la que la señal modula una portadora y el medio se reparte en varios canales unidireccionales por división de frecuencia, propia de la televisión por cable y de DSL" role="img" viewbox="0 0 680 346" xmlns="http://www.w3.org/2000/svg">
+<style>.h7{font:700 13px system-ui,sans-serif;fill:#0055a0}.k7{font:700 10.5px system-ui,sans-serif;fill:#0055a0}.d7{font:8.5px system-ui,sans-serif;fill:#333}.n7{font:8.5px system-ui,sans-serif;fill:#666}.t7{font:700 10.5px system-ui,sans-serif;fill:#fff}.r7{font:700 9px system-ui,sans-serif;fill:#d13c3c}</style>
+<text class="h7" text-anchor="middle" x="340" y="20">Banda base frente a banda ancha</text>
+<rect fill="#0055a0" height="24" rx="4" width="312" x="22" y="34"></rect>
+<text class="t7" text-anchor="middle" x="178" y="51">BANDA BASE — partícula BASE</text>
+<rect fill="#e89822" height="24" rx="4" width="312" x="346" y="34"></rect>
+<text class="t7" text-anchor="middle" x="502" y="51">BANDA ANCHA — partícula BROAD</text>
+<rect fill="#eef4fa" height="62" rx="4" width="312" x="22" y="62"></rect>
+<text class="d7" x="32" y="78">La señal digital se transmite TAL CUAL, sin portadora</text>
+<path d="M40,98 L60,98 L60,86 L88,86 L88,98 L112,98 L112,86 L140,86 L140,98 L170,98" fill="none" stroke="#0055a0" stroke-width="1.8"></path>
+<text class="n7" x="190" y="94">Solo una codificación de línea</text>
+<text class="n7" x="190" y="106">convierte bits en niveles (ver D8)</text>
+<text class="n7" x="32" y="118">Ocupa TODO el ancho de banda del medio</text>
+<rect fill="#fdf3e3" height="62" rx="4" width="312" x="346" y="62"></rect>
+<text class="d7" x="356" y="78">La señal digital MODULA una portadora de alta frecuencia</text>
+<path d="M362,98 q6,-12 12,0 q6,12 12,0 q6,-12 12,0 q6,12 12,0 q6,-12 12,0 q6,12 12,0" fill="none" stroke="#e89822" stroke-width="1.8"></path>
+<text class="n7" x="452" y="94">Ocupa solo UNA banda del espectro:</text>
+<text class="n7" x="452" y="106">las demás quedan libres para otros canales</text>
+<text class="n7" x="356" y="118">Multiplexación por división de frecuencia (FDM)</text>
+<rect fill="#f7f9fb" height="21" rx="3" width="636" x="22" y="130"></rect>
+<text class="d7" x="32" y="145"><tspan class="k7">Canales</tspan>            UNO solo por medio                                    ·   VARIOS simultáneos, cada uno con su portadora</text>
+<rect fill="#eef4fa" height="21" rx="3" width="636" x="22" y="153"></rect>
+<text class="d7" x="32" y="168"><tspan class="k7">Sentido</tspan>            BIDIRECCIONAL por naturaleza                     ·   UNIDIRECCIONAL por canal: la amplificación es direccional</text>
+<rect fill="#f7f9fb" height="21" rx="3" width="636" x="22" y="176"></rect>
+<text class="d7" x="32" y="191"><tspan class="k7">Distancia</tspan>          Limitada: exige regeneración periódica          ·   Mayor alcance con la misma calidad</text>
+<rect fill="#eef4fa" height="21" rx="3" width="636" x="22" y="199"></rect>
+<text class="d7" x="32" y="214"><tspan class="k7">Equipo terminal</tspan>    Sencillo y barato                                        ·   Más complejo y caro: hace falta módem y cabecera</text>
+<rect fill="#f7f9fb" height="21" rx="3" width="636" x="22" y="222"></rect>
+<text class="d7" x="32" y="237"><tspan class="k7">Dónde está</tspan>         TODA la familia ETHERNET (10BASE-T…)          ·   Televisión por cable, DOCSIS, ADSL/VDSL y, en radio, Wi-Fi</text>
+<rect fill="none" height="52" rx="5" stroke="#d13c3c" stroke-width="1.5" width="636" x="22" y="256"></rect>
+<text class="r7" text-anchor="middle" x="340" y="274">La trampa recurrente</text>
+<text class="d7" text-anchor="middle" x="340" y="290">La única Ethernet de banda ancha que llegó a normalizarse fue 10BROAD36, y NUNCA SE IMPLANTÓ.</text>
+<text class="d7" text-anchor="middle" x="340" y="303">Toda Ethernet real es de banda base. No confundir con el sentido comercial de «banda ancha» = conexión rápida a internet</text>
+<text class="n7" text-anchor="end" x="670" y="334">[Fuente: Stallings · IEEE 802.3]</text>
+</svg>

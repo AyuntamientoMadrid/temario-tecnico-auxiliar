@@ -1,0 +1,47 @@
+<svg aria-label="Mapa de gobernanza de los dos esquemas y los cuatro puentes que los unen: la Comisión Sectorial de Administración Electrónica propone tanto las normas técnicas de interoperabilidad como las instrucciones técnicas de seguridad, el Ministerio para la Transformación Digital y de la Función Pública las aprueba, el Centro Criptológico Nacional adscrito al CNI tiene la iniciativa en el ENS y es competente en criptografía también para el ENI, y los tres equipos de respuesta a incidentes son el CCN-CERT para el sector público, el INCIBE-CERT para el privado y el ESPDEF-CERT para defensa" role="img" viewbox="0 0 680 396" xmlns="http://www.w3.org/2000/svg">
+<style>.h19{font:700 13px system-ui,sans-serif;fill:#0055a0}.k19{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d19{font:8.5px system-ui,sans-serif;fill:#333}.n19{font:8.5px system-ui,sans-serif;fill:#666}.w19{font:700 10px system-ui,sans-serif;fill:#fff}.wd19{font:8px system-ui,sans-serif;fill:#fff}.r19{font:700 9.5px system-ui,sans-serif;fill:#d13c3c}.num19{font:700 11px system-ui,sans-serif;fill:#fff}</style>
+<text class="h19" text-anchor="middle" x="340" y="19">Gobernanza de los dos esquemas y los cuatro puentes que los unen</text>
+<text class="n19" text-anchor="middle" x="340" y="35">Los puentes no son doctrina: están escritos en el ENI, en el ENS y en la Ley 39/2015</text>
+<rect fill="#0055a0" height="52" rx="4" width="200" x="24" y="44"></rect>
+<text class="w19" text-anchor="middle" x="124" y="61">COMISIÓN SECTORIAL DE</text>
+<text class="w19" text-anchor="middle" x="124" y="74">ADMINISTRACIÓN ELECTRÓNICA</text>
+<text class="wd19" text-anchor="middle" x="124" y="89">L40 disp. adic. 9.ª · PROPONE NTI e ITS</text>
+<rect fill="#0055a0" height="52" rx="4" width="200" x="240" y="44"></rect>
+<text class="w19" text-anchor="middle" x="340" y="61">MINISTERIO PARA LA</text>
+<text class="w19" text-anchor="middle" x="340" y="74">TRANSFORMACIÓN DIGITAL Y FP</text>
+<text class="wd19" text-anchor="middle" x="340" y="89">APRUEBA · publica la SE de Función Pública</text>
+<rect fill="#2d8659" height="52" rx="4" width="200" x="456" y="44"></rect>
+<text class="w19" text-anchor="middle" x="556" y="61">CENTRO CRIPTOLÓGICO</text>
+<text class="w19" text-anchor="middle" x="556" y="74">NACIONAL — adscrito al CNI</text>
+<text class="wd19" text-anchor="middle" x="556" y="89">INICIATIVA de las ITS · guías CCN-STIC 800</text>
+<rect fill="#eef4fa" height="48" rx="4" stroke="#0055a0" stroke-width="1.1" width="632" x="24" y="104"></rect>
+<text class="k19" x="36" y="120">LOS TRES EQUIPOS DE RESPUESTA A INCIDENTES — ARTS. 33 Y 34</text>
+<text class="d19" x="36" y="135">CCN-CERT → SECTOR PÚBLICO, recibe los incidentes con impacto significativo y coordina a los CSIRT · INCIBE-CERT → CIUDADANOS Y</text>
+<text class="d19" x="36" y="146.5">ENTIDADES PRIVADAS, incluidos los proveedores del sector público, y traslada INMEDIATAMENTE al CCN-CERT · ESPDEF-CERT → DEFENSA</text>
+<text class="k19" x="24" y="168">LOS CUATRO PUENTES ENTRE LOS DOS ESQUEMAS</text>
+<rect fill="#e6f2ec" height="46" rx="4" stroke="#2d8659" stroke-width="1.2" width="632" x="24" y="176"></rect>
+<rect fill="#2d8659" height="46" rx="4" width="30" x="24" y="176"></rect>
+<text class="num19" text-anchor="middle" x="39" y="203">1</text>
+<text class="k19" x="66" y="192">ENI art. 22.1 — LA CONSERVACIÓN SE ASEGURA APLICANDO EL ENS</text>
+<text class="d19" x="66" y="206">«Para asegurar la conservación de los documentos SE APLICARÁ LO PREVISTO EN EL ESQUEMA NACIONAL DE SEGURIDAD en cuanto</text>
+<text class="d19" x="66" y="217">al cumplimiento de los principios básicos y los requisitos mínimos», «DE ACUERDO CON LA CATEGORIZACIÓN DE LOS SISTEMAS»</text>
+<rect fill="#e6f2ec" height="46" rx="4" stroke="#2d8659" stroke-width="1.2" width="632" x="24" y="226"></rect>
+<rect fill="#2d8659" height="46" rx="4" width="30" x="24" y="226"></rect>
+<text class="num19" text-anchor="middle" x="39" y="253">2</text>
+<text class="k19" x="66" y="242">ENI art. 8.1 — PUBLICAR UN SERVICIO INTEROPERABLE EXIGE CUMPLIR EL ENS</text>
+<text class="d19" x="66" y="256">Las condiciones de acceso a los servicios que una Administración pone a disposición de las demás «deberán resultar conformes</text>
+<text class="d19" x="66" y="267">a los principios y obligaciones» de protección de datos «ASÍ COMO A LO DISPUESTO EN EL ESQUEMA NACIONAL DE SEGURIDAD»</text>
+<rect fill="#e6f2ec" height="46" rx="4" stroke="#2d8659" stroke-width="1.2" width="632" x="24" y="276"></rect>
+<rect fill="#2d8659" height="46" rx="4" width="30" x="24" y="276"></rect>
+<text class="num19" text-anchor="middle" x="39" y="303">3</text>
+<text class="k19" x="66" y="292">ENS art. 35.2 y ENI disp. adic. 1.ª.3 — LA CRIPTOGRAFÍA DEL ENI LA RIGE EL CCN</text>
+<text class="d19" x="66" y="306">«El CCN es el ÓRGANO COMPETENTE PARA GARANTIZAR LA INTEROPERABILIDAD EN CIBERSEGURIDAD Y CRIPTOGRAFÍA,</text>
+<text class="d19" x="66" y="317">en relación con el Real Decreto 4/2010.» Es la única materia del ENI fuera del circuito ordinario de las normas técnicas</text>
+<rect fill="#fdf3e3" height="46" rx="4" stroke="#e89822" stroke-width="1.2" width="632" x="24" y="326"></rect>
+<rect fill="#e89822" height="46" rx="4" width="30" x="24" y="326"></rect>
+<text class="num19" text-anchor="middle" x="39" y="353">4</text>
+<text class="r19" x="66" y="342">L39 art. 27.3 — LA COPIA AUTÉNTICA EXIGE LOS DOS A LA VEZ</text>
+<text class="d19" x="66" y="356">Para garantizar la identidad y el contenido de las copias, «deberán ajustarse a lo previsto en el ESQUEMA NACIONAL DE</text>
+<text class="d19" x="66" y="367">INTEROPERABILIDAD, EL ESQUEMA NACIONAL DE SEGURIDAD Y SUS NORMAS TÉCNICAS». Sin los dos no hay copia auténtica</text>
+<text class="n19" x="24" y="390">[Fuente: ENI, arts. 8.1 y 22 y disp. adic. 1.ª · ENS, arts. 30 a 35 y disp. adic. 2.ª · L40, disp. adic. 9.ª · L39, art. 27.3]</text>
+</svg>

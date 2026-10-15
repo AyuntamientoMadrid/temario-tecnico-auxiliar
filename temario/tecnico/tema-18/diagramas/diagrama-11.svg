@@ -1,0 +1,20 @@
+<svg aria-label="Array como colección homogénea accedida por índice numérico frente a registro como colección heterogénea de campos accedidos por nombre" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t11{font:700 12px system-ui,sans-serif;fill:#fff}.l11{font:11px system-ui,sans-serif;fill:#444}.h11{font:700 13px system-ui,sans-serif;fill:#0055a0}.i11{font:700 11px system-ui,sans-serif;fill:#0055a0}.c11{font:600 11px system-ui,sans-serif;fill:#123}</style>
+<text class="h11" text-anchor="middle" x="340" y="24">Array (índice)  vs  Registro (campo)</text>
+<text class="h11" text-anchor="middle" x="170" y="52">ARRAY / VECTOR</text>
+<text class="l11" text-anchor="middle" x="170" y="70">mismo tipo · acceso por índice v[i] · O(1)</text>
+<rect fill="#0055a0" height="40" width="44" x="60" y="82"></rect><rect fill="#0055a0" height="40" width="44" x="104" y="82"></rect><rect fill="#0055a0" height="40" width="44" x="148" y="82"></rect><rect fill="#0055a0" height="40" width="44" x="192" y="82"></rect><rect fill="#0055a0" height="40" width="44" x="236" y="82"></rect>
+<text class="t11" text-anchor="middle" x="82" y="107">149</text><text class="t11" text-anchor="middle" x="126" y="107">37</text><text class="t11" text-anchor="middle" x="170" y="107">72</text><text class="t11" text-anchor="middle" x="214" y="107">65</text><text class="t11" text-anchor="middle" x="258" y="107">88</text>
+<text class="i11" text-anchor="middle" x="82" y="138">[1]</text><text class="i11" text-anchor="middle" x="126" y="138">[2]</text><text class="i11" text-anchor="middle" x="170" y="138">[3]</text><text class="i11" text-anchor="middle" x="214" y="138">[4]</text><text class="i11" text-anchor="middle" x="258" y="138">[5]</text>
+<text class="l11" text-anchor="middle" x="170" y="166">poblacion[3] → 72 (directo)</text>
+<line stroke="#ccc" stroke-dasharray="4 4" x1="345" x2="345" y1="44" y2="250"></line>
+<text class="h11" text-anchor="middle" x="520" y="52">REGISTRO / STRUCT</text>
+<text class="l11" text-anchor="middle" x="520" y="70">tipos distintos · acceso por nombre r.campo</text>
+<rect fill="#e89822" height="24" width="220" x="410" y="82"></rect><text class="c11" x="420" y="99">dni : cadena</text><text class="c11" x="542" y="99">"12345678Z"</text>
+<rect fill="#f0a94a" height="24" width="220" x="410" y="106"></rect><text class="c11" x="420" y="123">nombre : cadena</text><text class="c11" x="542" y="123">"Ana"</text>
+<rect fill="#e89822" height="24" width="220" x="410" y="130"></rect><text class="c11" x="420" y="147">edad : entero</text><text class="c11" x="542" y="147">34</text>
+<rect fill="#f0a94a" height="24" width="220" x="410" y="154"></rect><text class="c11" x="420" y="171">distrito : entero</text><text class="c11" x="542" y="171">1</text>
+<text class="l11" text-anchor="middle" x="520" y="196">ciudadano.edad → 34 (por campo)</text>
+<rect fill="#f2f2f2" height="40" rx="8" width="560" x="60" y="266"></rect><text class="l11" text-anchor="middle" x="340" y="290">Array de registros = tabla de datos (p. ej. el Padrón: una fila = un registro Habitante)</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="318">[Fuente: KNUTH1; K&amp;R cap. 6]</text>
+</svg>

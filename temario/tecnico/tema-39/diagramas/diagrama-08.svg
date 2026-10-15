@@ -1,0 +1,43 @@
+<svg aria-label="Los cuatro responsables del ENS: el responsable de la información y el responsable del servicio valoran los niveles de las dimensiones; el responsable de la seguridad determina la categoría, firma la declaración de aplicabilidad y analiza los informes de auditoría; el responsable del sistema explota el sistema, adopta las medidas correctoras y puede suspender la operación en categoría alta; entre el responsable de la seguridad y el del sistema no puede existir dependencia jerárquica" role="img" viewbox="0 0 680 372" xmlns="http://www.w3.org/2000/svg">
+<style>.h8{font:700 13px system-ui,sans-serif;fill:#0055a0}.k8{font:700 10px system-ui,sans-serif;fill:#0055a0}.d8{font:8.5px system-ui,sans-serif;fill:#333}.n8{font:8.5px system-ui,sans-serif;fill:#666}.w8{font:700 10.5px system-ui,sans-serif;fill:#fff}.wd8{font:8px system-ui,sans-serif;fill:#fff}.r8{font:700 10px system-ui,sans-serif;fill:#d13c3c}.g8{font:700 9px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h8" text-anchor="middle" x="340" y="19">Los cuatro responsables del artículo 11 y el reparto de facultades</text>
+<text class="n8" text-anchor="middle" x="340" y="35">Regla de oro: VALORAR las dimensiones lo hacen información y servicio (art. 41.1) · DETERMINAR LA CATEGORÍA, la seguridad (art. 41.2)</text>
+<rect fill="#0055a0" height="86" rx="4" width="312" x="24" y="46"></rect>
+<text class="w8" text-anchor="middle" x="180" y="64">RESPONSABLE DE LA INFORMACIÓN</text>
+<text class="wd8" x="36" y="80">Responde del CONTENIDO: qué es esa información y cuánto vale.</text>
+<text class="wd8" x="36" y="93">Art. 13.2.a): «determinará los requisitos de la información tratada».</text>
+<text class="wd8" x="36" y="108">FACULTAD PROPIA (art. 41.1): valorar los niveles de las cinco</text>
+<text class="wd8" x="36" y="120">dimensiones de la información, y modificarlos después.</text>
+<rect fill="#0055a0" height="86" rx="4" width="312" x="344" y="46"></rect>
+<text class="w8" text-anchor="middle" x="500" y="64">RESPONSABLE DEL SERVICIO</text>
+<text class="wd8" x="356" y="80">Responde de la PRESTACIÓN: para qué sirve y qué pasa si se cae.</text>
+<text class="wd8" x="356" y="93">Art. 13.2.b): «determinará los requisitos de los servicios prestados».</text>
+<text class="wd8" x="356" y="108">FACULTAD PROPIA (art. 41.1): valorar los niveles de las cinco</text>
+<text class="wd8" x="356" y="120">dimensiones del servicio, y modificarlos después.</text>
+<path d="M180 132 L180 156 L340 156 L340 160" fill="none" stroke="#0055a0" stroke-width="1.6"></path>
+<path d="M500 132 L500 156 L340 156" fill="none" stroke="#0055a0" stroke-width="1.6"></path>
+<text class="n8" style="text-anchor:middle" text-anchor="middle" x="340" y="148">las dos valoraciones alimentan la categorización</text>
+<rect fill="#2d8659" height="96" rx="4" width="312" x="24" y="160"></rect>
+<text class="w8" text-anchor="middle" x="180" y="178">RESPONSABLE DE LA SEGURIDAD</text>
+<text class="wd8" x="36" y="194">Responde de que las MEDIDAS sean las adecuadas y funcionen.</text>
+<text class="wd8" x="36" y="207">Art. 41.2: DETERMINA LA CATEGORÍA del sistema.</text>
+<text class="wd8" x="36" y="220">Art. 28.2: FIRMA LA DECLARACIÓN DE APLICABILIDAD.</text>
+<text class="wd8" x="36" y="233">Art. 28.3: aprueba formalmente las medidas compensatorias.</text>
+<text class="wd8" x="36" y="246">Art. 31.5: ANALIZA los informes de auditoría y concluye.</text>
+<rect fill="#e89822" height="96" rx="4" width="312" x="344" y="160"></rect>
+<text class="w8" text-anchor="middle" x="500" y="178">RESPONSABLE DEL SISTEMA</text>
+<text class="wd8" x="356" y="194">Responde de la EXPLOTACIÓN: que funcione el día a día.</text>
+<text class="wd8" x="356" y="207">Art. 13.2.d): desarrolla la forma concreta de implementar la</text>
+<text class="wd8" x="356" y="220">seguridad; puede delegar en administradores u operadores.</text>
+<text class="wd8" x="356" y="233">Art. 31.5: ADOPTA LAS MEDIDAS CORRECTORAS.</text>
+<text class="wd8" x="356" y="246">Art. 31.6: en categoría ALTA, puede SUSPENDER la operación.</text>
+<rect fill="#fdf3e3" height="46" rx="4" stroke="#d13c3c" stroke-width="1.4" width="632" x="24" y="266"></rect>
+<text class="r8" x="36" y="282">REGLA DE SEPARACIÓN — ART. 11.2 Y ART. 13.3</text>
+<text class="d8" x="36" y="296">«El responsable de la seguridad será DISTINTO del responsable del sistema, NO DEBIENDO EXISTIR DEPENDENCIA JERÁRQUICA.» No basta con</text>
+<text class="d8" x="36" y="307">que sean dos personas. Excepción tasada: ausencia justificada de recursos, y entonces MEDIDAS COMPENSATORIAS.</text>
+<rect fill="#e6f2ec" height="30" rx="3" width="632" x="24" y="318"></rect>
+<text class="g8" x="36" y="332">SERVICIOS EXTERNALIZADOS (art. 13.5):</text>
+<text class="d8" x="238" y="332">el proveedor designa un POC, «sin perjuicio de que LA RESPONSABILIDAD ÚLTIMA</text>
+<text class="d8" x="238" y="343">RESIDA EN LA ENTIDAD DEL SECTOR PÚBLICO»</text>
+<text class="n8" x="24" y="362">[Fuente: ENS, arts. 11, 13, 28, 31 y 41 — texto consolidado del BOE]</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg aria-label="Doble esquema: en la parte superior, el anidamiento AGDLP en el que las cuentas se meten en grupos globales, estos en grupos locales de dominio y a estos se les conceden los permisos sobre el recurso; en la parte inferior, el orden de aplicación de las directivas de grupo local, sitio, dominio y unidad organizativa, en el que gana la última aplicada salvo que una superior esté marcada como forzada" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 10px system-ui,sans-serif;fill:#fff}.s9{font:8.5px system-ui,sans-serif;fill:#fff}.d9{font:9px system-ui,sans-serif;fill:#333}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.k9{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.n9{font:8.5px system-ui,sans-serif;fill:#666}</style>
+<defs><marker id="a9" markerheight="9" markerwidth="9" orient="auto" refx="8" refy="3.5"><path d="M0,0 L8,3.5 L0,7 z" fill="#0055a0"></path></marker></defs>
+<text class="h9" text-anchor="middle" x="340" y="20">Las dos reglas clave de la gestión de usuarios</text>
+<text class="k9" x="24" y="42">1 · ANIDAMIENTO DE GRUPOS — AGDLP</text>
+<rect fill="#0055a0" height="42" rx="4" width="140" x="20" y="48"></rect><text class="t9" text-anchor="middle" x="90" y="64">A · CUENTA</text><text class="s9" text-anchor="middle" x="90" y="78">Ana Torres</text>
+<line marker-end="url(#a9)" stroke="#0055a0" stroke-width="2" x1="164" x2="192" y1="69" y2="69"></line>
+<rect fill="#2d8659" height="42" rx="4" width="150" x="196" y="48"></rect><text class="t9" text-anchor="middle" x="271" y="64">G · GRUPO GLOBAL</text><text class="s9" text-anchor="middle" x="271" y="78">«quién es»: Tramitación-Centro</text>
+<line marker-end="url(#a9)" stroke="#0055a0" stroke-width="2" x1="350" x2="378" y1="69" y2="69"></line>
+<rect fill="#e89822" height="42" rx="4" width="150" x="382" y="48"></rect><text class="t9" text-anchor="middle" x="457" y="64">DL · GRUPO LOCAL</text><text class="s9" text-anchor="middle" x="457" y="78">«a qué da derecho»</text>
+<line marker-end="url(#a9)" stroke="#0055a0" stroke-width="2" x1="536" x2="558" y1="69" y2="69"></line>
+<rect fill="#d13c3c" height="42" rx="4" width="98" x="562" y="48"></rect><text class="t9" text-anchor="middle" x="611" y="64">P · PERMISO</text><text class="s9" text-anchor="middle" x="611" y="78">sobre el recurso</text>
+<rect fill="#e8f4ee" height="24" rx="4" stroke="#2d8659" stroke-width="1.2" width="640" x="20" y="98"></rect>
+<text class="d9" text-anchor="middle" x="340" y="114">Un traslado de servicio = quitar de un grupo global y añadir a otro. Los permisos NUNCA se dan a la cuenta</text>
+<text class="k9" x="24" y="146">2 · ORDEN DE APLICACIÓN DE LAS DIRECTIVAS DE GRUPO</text>
+<rect fill="#888" height="40" rx="4" width="150" x="20" y="152"></rect><text class="t9" text-anchor="middle" x="95" y="168">L · LOCAL</text><text class="s9" text-anchor="middle" x="95" y="182">del propio equipo</text>
+<line marker-end="url(#a9)" stroke="#0055a0" stroke-width="2" x1="174" x2="196" y1="172" y2="172"></line>
+<rect fill="#0055a0" height="40" rx="4" width="150" x="200" y="152"></rect><text class="t9" text-anchor="middle" x="275" y="168">S · SITIO</text><text class="s9" text-anchor="middle" x="275" y="182">estructura física</text>
+<line marker-end="url(#a9)" stroke="#0055a0" stroke-width="2" x1="354" x2="376" y1="172" y2="172"></line>
+<rect fill="#2d8659" height="40" rx="4" width="130" x="380" y="152"></rect><text class="t9" text-anchor="middle" x="445" y="168">D · DOMINIO</text><text class="s9" text-anchor="middle" x="445" y="182">toda la organización</text>
+<line marker-end="url(#a9)" stroke="#0055a0" stroke-width="2" x1="514" x2="536" y1="172" y2="172"></line>
+<rect fill="#d13c3c" height="40" rx="4" width="120" x="540" y="152"></rect><text class="t9" text-anchor="middle" x="600" y="168">UO</text><text class="s9" text-anchor="middle" x="600" y="182">de fuera a dentro</text>
+<rect fill="#fbeaea" height="24" rx="4" stroke="#d13c3c" stroke-width="1.2" width="640" x="20" y="200"></rect>
+<text class="d9" text-anchor="middle" x="340" y="216">GANA LA ÚLTIMA EN APLICARSE = la más próxima al objeto. Es decir, normalmente la de la unidad organizativa</text>
+<text class="k9" x="24" y="246">EXCEPCIONES Y MODULADORES</text>
+<rect fill="#eef3f8" height="46" rx="4" width="156" x="20" y="252"></rect><text class="k9" text-anchor="middle" x="98" y="268">FORZADA (enforced)</text><text class="d9" text-anchor="middle" x="98" y="282">Prevalece sobre las</text><text class="d9" text-anchor="middle" x="98" y="294">posteriores Y sobre el bloqueo</text>
+<rect fill="#eef3f8" height="46" rx="4" width="156" x="182" y="252"></rect><text class="k9" text-anchor="middle" x="260" y="268">BLOQUEO DE HERENCIA</text><text class="d9" text-anchor="middle" x="260" y="282">Corta lo que viene de arriba</text><text class="d9" text-anchor="middle" x="260" y="294">salvo lo forzado</text>
+<rect fill="#eef3f8" height="46" rx="4" width="156" x="344" y="252"></rect><text class="k9" text-anchor="middle" x="422" y="268">FILTRADO</text><text class="d9" text-anchor="middle" x="422" y="282">Por seguridad (grupo)</text><text class="d9" text-anchor="middle" x="422" y="294">o por consulta WMI</text>
+<rect fill="#fdf3e3" height="46" rx="4" width="154" x="506" y="252"></rect><text class="k9" text-anchor="middle" x="583" y="268">DIRECTIVA / PREFERENCIA</text><text class="d9" text-anchor="middle" x="583" y="282">La directiva impone y bloquea</text><text class="d9" text-anchor="middle" x="583" y="294">La preferencia solo inicializa</text>
+<rect fill="none" height="22" rx="4" stroke="#0055a0" stroke-width="1.5" width="500" x="90" y="306"></rect>
+<text class="k9" text-anchor="middle" x="340" y="321">Varias GPO en el mismo contenedor: gana la de orden de vínculo 1</text>
+<text class="n9" text-anchor="end" x="670" y="337">[Fuente: MS-AD; MS-GPO; NIST-RBAC]</text>
+</svg>

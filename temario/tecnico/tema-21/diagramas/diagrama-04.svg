@@ -1,0 +1,17 @@
+<svg aria-label="Flujo de autenticación y autorización con JAAS: el subject se autentica mediante un LoginModule contra un realm, obtiene principals de usuario y rol, y después la autorización por rol decide si puede ejecutar la acción" role="img" viewbox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+<style>.t4{font:700 11px system-ui,sans-serif;fill:#fff}.s4{font:10px system-ui,sans-serif;fill:#fff}.l4{font:11px system-ui,sans-serif;fill:#444}.h4{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h4" text-anchor="middle" x="340" y="20">Autenticación (¿quién eres?) → Autorización (¿qué puedes hacer?)</text>
+<rect fill="#0055a0" height="54" rx="6" width="130" x="20" y="42"></rect><text class="t4" text-anchor="middle" x="85" y="64">SUBJECT</text><text class="s4" text-anchor="middle" x="85" y="82">usuario a autenticar</text>
+<path d="M150 69 L178 69" marker-end="url(#a4)" stroke="#888" stroke-width="2"></path>
+<rect fill="#3778b5" height="54" rx="6" width="150" x="180" y="42"></rect><text class="t4" text-anchor="middle" x="255" y="64">LOGINMODULE</text><text class="s4" text-anchor="middle" x="255" y="82">mecanismo conectable</text>
+<path d="M330 69 L358 69" marker-end="url(#a4)" stroke="#888" stroke-width="2"></path>
+<rect fill="#2d8659" height="54" rx="6" width="130" x="360" y="42"></rect><text class="t4" text-anchor="middle" x="425" y="64">REALM</text><text class="s4" text-anchor="middle" x="425" y="82">almacén de identidades</text>
+<path d="M425 96 L425 122" marker-end="url(#a4)" stroke="#888" stroke-width="2"></path>
+<rect fill="#e89822" height="46" rx="6" width="190" x="330" y="124"></rect><text class="t4" text-anchor="middle" x="425" y="144">PRINCIPALS</text><text class="s4" text-anchor="middle" x="425" y="160">usuario + roles del Subject</text>
+<rect fill="#fdf3e3" height="46" rx="6" stroke="#e89822" width="560" x="60" y="192"></rect>
+<text style="font:700 12px system-ui;fill:#8a5a00" text-anchor="middle" x="340" y="220">AUTENTICACIÓN — verifica la identidad (¿quién eres?)</text>
+<rect fill="#fdecec" height="46" rx="6" stroke="#d13c3c" width="560" x="60" y="248"></rect>
+<text style="font:700 12px system-ui;fill:#8a1f1f" text-anchor="middle" x="340" y="276">AUTORIZACIÓN — @RolesAllowed decide si el Principal puede ejecutar la acción</text>
+<defs><marker id="a4" markerheight="8" markerwidth="8" orient="auto" refx="4" refy="4"><path d="M0 0 L8 4 L0 8 z" fill="#888"></path></marker></defs>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="312">[Fuente: JAKARTA-SEC]</text>
+</svg>

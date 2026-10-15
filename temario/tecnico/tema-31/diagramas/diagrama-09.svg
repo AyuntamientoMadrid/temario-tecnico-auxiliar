@@ -1,0 +1,32 @@
+<svg aria-label="Comparación en capas entre máquina virtual, que virtualiza el hardware y lleva su propio sistema operativo, contenedor, que virtualiza el sistema operativo y comparte el núcleo del anfitrión, y función sin servidor, en la que el cliente solo aporta el código; se indican tiempos de arranque, aislamiento y densidad" role="img" viewbox="0 0 680 330" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 10px system-ui,sans-serif;fill:#fff}.s9{font:8.5px system-ui,sans-serif;fill:#fff}.d9{font:9px system-ui,sans-serif;fill:#333}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.k9{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.f9{font:8px system-ui,sans-serif;fill:#777}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">Máquina virtual, contenedor y función</text>
+<rect fill="#888" height="20" rx="4" width="205" x="20" y="32"></rect><text class="t9" text-anchor="middle" x="122" y="46">MÁQUINA VIRTUAL</text>
+<rect fill="#0055a0" height="20" rx="4" width="205" x="238" y="32"></rect><text class="t9" text-anchor="middle" x="340" y="46">CONTENEDOR</text>
+<rect fill="#2d8659" height="20" rx="4" width="204" x="456" y="32"></rect><text class="t9" text-anchor="middle" x="558" y="46">FUNCIÓN (sin servidor)</text>
+<rect fill="#eef3f8" height="18" rx="3" width="205" x="20" y="58"></rect><text class="d9" text-anchor="middle" x="122" y="71">Aplicación</text>
+<rect fill="#eef3f8" height="18" rx="3" width="205" x="20" y="78"></rect><text class="d9" text-anchor="middle" x="122" y="91">Bibliotecas</text>
+<rect fill="#e89822" height="20" rx="3" width="205" x="20" y="98"></rect><text class="s9" text-anchor="middle" x="122" y="112">Sistema operativo invitado</text>
+<rect fill="#c9d9e8" height="18" rx="3" width="205" x="20" y="120"></rect><text class="d9" text-anchor="middle" x="122" y="133">Hipervisor</text>
+<rect fill="#ddd" height="18" rx="3" width="205" x="20" y="140"></rect><text class="d9" text-anchor="middle" x="122" y="153">Hardware</text>
+<rect fill="#eef3f8" height="18" rx="3" width="205" x="238" y="58"></rect><text class="d9" text-anchor="middle" x="340" y="71">Aplicación</text>
+<rect fill="#eef3f8" height="18" rx="3" width="205" x="238" y="78"></rect><text class="d9" text-anchor="middle" x="340" y="91">Dependencias empaquetadas</text>
+<rect fill="#c9d9e8" height="18" rx="3" width="205" x="238" y="98"></rect><text class="d9" text-anchor="middle" x="340" y="111">Motor de contenedores</text>
+<rect fill="#d13c3c" height="20" rx="3" width="205" x="238" y="118"></rect><text class="s9" text-anchor="middle" x="340" y="132">Núcleo compartido del anfitrión</text>
+<rect fill="#ddd" height="18" rx="3" width="205" x="238" y="140"></rect><text class="d9" text-anchor="middle" x="340" y="153">Hardware</text>
+<rect fill="#eef3f8" height="18" rx="3" width="204" x="456" y="58"></rect><text class="d9" text-anchor="middle" x="558" y="71">Solo el código de la función</text>
+<rect fill="#e8f4ec" height="80" rx="3" width="204" x="456" y="78"></rect><text class="d9" text-anchor="middle" x="558" y="110">Todo lo demás lo pone</text><text class="d9" text-anchor="middle" x="558" y="124">y lo escala la plataforma</text>
+<text class="k9" x="20" y="180">ARRANQUE</text>
+<rect fill="#f5f5f5" height="22" rx="4" width="205" x="20" y="186"></rect><text class="d9" text-anchor="middle" x="122" y="201">Minutos</text>
+<rect fill="#f5f5f5" height="22" rx="4" width="205" x="238" y="186"></rect><text class="d9" text-anchor="middle" x="340" y="201">Segundos</text>
+<rect fill="#f5f5f5" height="22" rx="4" width="204" x="456" y="186"></rect><text class="d9" text-anchor="middle" x="558" y="201">Milisegundos (arranque en frío)</text>
+<text class="k9" x="20" y="226">AISLAMIENTO</text>
+<rect fill="#e8f4ec" height="22" rx="4" width="205" x="20" y="232"></rect><text class="d9" text-anchor="middle" x="122" y="247">Fuerte: núcleos separados</text>
+<rect fill="#fdf3e2" height="22" rx="4" width="205" x="238" y="232"></rect><text class="d9" text-anchor="middle" x="340" y="247">Medio: espacios de nombres</text>
+<rect fill="#eef3f8" height="22" rx="4" width="204" x="456" y="232"></rect><text class="d9" text-anchor="middle" x="558" y="247">Lo gestiona el proveedor</text>
+<text class="k9" x="20" y="272">DENSIDAD POR SERVIDOR</text>
+<rect fill="#eef3f8" height="22" rx="4" width="205" x="20" y="278"></rect><text class="d9" text-anchor="middle" x="122" y="293">Decenas</text>
+<rect fill="#eef3f8" height="22" rx="4" width="205" x="238" y="278"></rect><text class="d9" text-anchor="middle" x="340" y="293">Cientos</text>
+<rect fill="#eef3f8" height="22" rx="4" width="204" x="456" y="278"></rect><text class="d9" text-anchor="middle" x="558" y="293">Miles</text>
+<text class="f9" text-anchor="middle" x="340" y="316">[Fuente: OCI, HYPERVISORS]</text>
+</svg>

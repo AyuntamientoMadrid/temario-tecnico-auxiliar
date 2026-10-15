@@ -1,0 +1,33 @@
+<svg aria-label="A la izquierda, arquitectura entre pares en la que todos los nodos son iguales y actúan a la vez como cliente y como servidor; a la derecha, arquitectura dirigida por eventos en la que un productor publica un hecho en un intermediario y varios consumidores reaccionan sin que el productor los conozca" role="img" viewbox="0 0 680 331" xmlns="http://www.w3.org/2000/svg">
+<style>.t5{font:700 10px system-ui,sans-serif;fill:#fff}.s5{font:8.5px system-ui,sans-serif;fill:#fff}.d5{font:9px system-ui,sans-serif;fill:#333}.h5{font:700 13px system-ui,sans-serif;fill:#0055a0}.k5{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.f5{font:8px system-ui,sans-serif;fill:#777}</style>
+<text class="h5" text-anchor="middle" x="340" y="20">Entre pares y dirigida por eventos</text>
+<rect fill="#2d8659" height="22" rx="4" width="310" x="20" y="32"></rect><text class="t5" text-anchor="middle" x="175" y="47">P2P — todos los nodos son iguales</text>
+<rect fill="#0055a0" height="22" rx="4" width="310" x="350" y="32"></rect><text class="t5" text-anchor="middle" x="505" y="47">EDA — dirigida por eventos</text>
+<circle cx="175" cy="86" fill="#2d8659" r="20"></circle><text class="s5" text-anchor="middle" x="175" y="90">par 1</text>
+<circle cx="88" cy="146" fill="#2d8659" r="20"></circle><text class="s5" text-anchor="middle" x="88" y="150">par 2</text>
+<circle cx="262" cy="146" fill="#2d8659" r="20"></circle><text class="s5" text-anchor="middle" x="262" y="150">par 3</text>
+<circle cx="120" cy="212" fill="#2d8659" r="20"></circle><text class="s5" text-anchor="middle" x="120" y="216">par 4</text>
+<circle cx="230" cy="212" fill="#2d8659" r="20"></circle><text class="s5" text-anchor="middle" x="230" y="216">par 5</text>
+<path d="M160 100 L102 132" stroke="#7fae8f" stroke-width="1.6"></path><path d="M190 100 L248 132" stroke="#7fae8f" stroke-width="1.6"></path>
+<path d="M95 166 L114 192" stroke="#7fae8f" stroke-width="1.6"></path><path d="M255 166 L236 192" stroke="#7fae8f" stroke-width="1.6"></path>
+<path d="M140 212 h70" stroke="#7fae8f" stroke-width="1.6"></path><path d="M104 132 L246 132" stroke="#7fae8f" stroke-width="1.6"></path>
+<path d="M108 146 L242 146" stroke="#7fae8f" stroke-dasharray="3 3" stroke-width="1.6"></path>
+<text class="d5" text-anchor="middle" x="175" y="252">Cada par es cliente y servidor a la vez</text>
+<text class="d5" text-anchor="middle" x="175" y="266">Sin punto único de fallo; localización por DHT</text>
+<rect fill="#0055a0" height="28" rx="5" width="110" x="380" y="66"></rect><text class="s5" text-anchor="middle" x="435" y="84">PRODUCTOR</text>
+<path d="M435 96 v18" marker-end="url(#a5)" stroke="#0055a0" stroke-width="2"></path>
+<text class="d5" x="446" y="110">publica un hecho</text>
+<rect fill="#e89822" height="26" rx="5" width="286" x="362" y="118"></rect><text class="t5" text-anchor="middle" x="505" y="135">INTERMEDIARIO DE EVENTOS</text>
+<path d="M420 146 v22" marker-end="url(#b5)" stroke="#e89822" stroke-width="2"></path>
+<path d="M505 146 v22" marker-end="url(#b5)" stroke="#e89822" stroke-width="2"></path>
+<path d="M590 146 v22" marker-end="url(#b5)" stroke="#e89822" stroke-width="2"></path>
+<rect fill="#eef3f8" height="26" rx="4" width="96" x="372" y="172"></rect><text class="d5" text-anchor="middle" x="420" y="189">notificación</text>
+<rect fill="#eef3f8" height="26" rx="4" width="96" x="457" y="172"></rect><text class="d5" text-anchor="middle" x="505" y="189">estadística</text>
+<rect fill="#eef3f8" height="26" rx="4" width="96" x="542" y="172"></rect><text class="d5" text-anchor="middle" x="590" y="189">archivo</text>
+<defs><marker id="a5" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0 0 L6 3 L0 6 z" fill="#0055a0"></path></marker><marker id="b5" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0 0 L6 3 L0 6 z" fill="#e89822"></path></marker></defs>
+<text class="d5" text-anchor="middle" x="505" y="222">El productor no sabe quién le escucha</text>
+<text class="d5" text-anchor="middle" x="505" y="236">Se añade un consumidor sin tocar al productor</text>
+<rect fill="#fdecec" height="24" rx="4" width="286" x="362" y="248"></rect><text class="d5" text-anchor="middle" x="505" y="264">Precio: trazabilidad difícil, consistencia eventual</text>
+<rect fill="#0055a0" height="22" rx="4" width="640" x="20" y="286"></rect><text class="s5" text-anchor="middle" x="340" y="301">Un comando se dirige a alguien y espera; un evento es un hecho ya ocurrido y no espera nada</text>
+<text class="f5" text-anchor="middle" x="340" y="322">[Fuente: TANENBAUM, DHT]</text>
+</svg>

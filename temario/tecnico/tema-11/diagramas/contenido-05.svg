@@ -1,0 +1,40 @@
+<svg aria-label="Timeline generaciones de ordenadores" role="img" viewbox="0 0 720 320" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .gen-year{font:700 13px system-ui,sans-serif;fill:#0055a0;text-anchor:middle}
+    .gen-tech{font:600 12px system-ui,sans-serif;fill:#1a1a1a;text-anchor:middle}
+    .gen-ex{font:italic 11px system-ui,sans-serif;fill:#555;text-anchor:middle}
+    .gen-num{font:700 14px system-ui,sans-serif;fill:#fff;text-anchor:middle}
+  </style>
+<text fill="#0055a0" font="700 16px system-ui,sans-serif" text-anchor="middle" x="360" y="30">Generaciones de ordenadores</text>
+<line stroke="#0055a0" stroke-width="2" x1="60" x2="660" y1="170" y2="170"></line>
+<circle cx="110" cy="170" fill="#0055a0" r="18"></circle>
+<text class="gen-num" x="110" y="175">1ª</text>
+<text class="gen-year" x="110" y="130">1940-1952</text>
+<text class="gen-tech" x="110" y="200">Válvulas</text>
+<text class="gen-ex" x="110" y="240">ENIAC</text>
+<circle cx="220" cy="170" fill="#0055a0" r="18"></circle>
+<text class="gen-num" x="220" y="175">2ª</text>
+<text class="gen-year" x="220" y="130">1952-1964</text>
+<text class="gen-tech" x="220" y="200">Transistor</text>
+<text class="gen-ex" x="220" y="240">TRADIC</text>
+<circle cx="330" cy="170" fill="#0055a0" r="18"></circle>
+<text class="gen-num" x="330" y="175">3ª</text>
+<text class="gen-year" x="330" y="130">1964-1970</text>
+<text class="gen-tech" x="330" y="200">CI (SSI/MSI)</text>
+<text class="gen-ex" x="330" y="240">PDP-11</text>
+<circle cx="440" cy="170" fill="#0055a0" r="18"></circle>
+<text class="gen-num" x="440" y="175">4ª</text>
+<text class="gen-year" x="440" y="130">1970-1981</text>
+<text class="gen-tech" x="440" y="200">Microproc.</text>
+<text class="gen-ex" x="440" y="240">IBM PC</text>
+<circle cx="550" cy="170" fill="#0055a0" r="18"></circle>
+<text class="gen-num" x="550" y="175">5ª</text>
+<text class="gen-year" x="550" y="130">1981-1991</text>
+<text class="gen-tech" x="550" y="200">VLSI · IA</text>
+<text class="gen-ex" x="550" y="240">Internet</text>
+<circle cx="640" cy="170" fill="#2d8659" r="18" stroke="#2d8659" stroke-dasharray="2 2" stroke-width="2"></circle>
+<text class="gen-num" x="640" y="175">6ª</text>
+<text class="gen-year" fill="#2d8659" x="640" y="130">1991 → hoy</text>
+<text class="gen-tech" x="640" y="200">Cuántica</text>
+<text class="gen-ex" x="640" y="240">IBM Q</text>
+</svg>

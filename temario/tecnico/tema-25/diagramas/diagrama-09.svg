@@ -1,0 +1,52 @@
+<svg aria-label="Los cuatro pasos del control de acceso: identificación, autenticación, autorización y trazabilidad; los tres tipos de factor de autenticación (algo que se sabe, algo que se tiene y algo que se es) con su debilidad característica; y los cuatro modelos de autorización DAC, MAC, RBAC y ABAC, más el principio de mínimo privilegio" role="img" viewbox="0 0 680 350" xmlns="http://www.w3.org/2000/svg">
+<style>.t9{font:700 10.5px system-ui,sans-serif;fill:#fff}.s9{font:9px system-ui,sans-serif;fill:#fff}.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.k9{font:700 9.5px system-ui,sans-serif;fill:#0055a0}.d9{font:9px system-ui,sans-serif;fill:#333}</style>
+<text class="h9" text-anchor="middle" x="340" y="20">Control de acceso: cuatro pasos que no deben confundirse</text>
+<rect fill="#888" height="48" rx="5" width="145" x="20" y="34"></rect>
+<text class="t9" text-anchor="middle" x="92" y="53">1 · IDENTIFICACIÓN</text>
+<text class="s9" text-anchor="middle" x="92" y="70">«Digo quién soy»</text>
+<rect fill="#0055a0" height="48" rx="5" width="145" x="185" y="34"></rect>
+<text class="t9" text-anchor="middle" x="257" y="53">2 · AUTENTICACIÓN</text>
+<text class="s9" text-anchor="middle" x="257" y="70">«Lo demuestro»</text>
+<rect fill="#2d8659" height="48" rx="5" width="145" x="350" y="34"></rect>
+<text class="t9" text-anchor="middle" x="422" y="53">3 · AUTORIZACIÓN</text>
+<text class="s9" text-anchor="middle" x="422" y="70">«Qué puedo hacer»</text>
+<rect fill="#e89822" height="48" rx="5" width="145" x="515" y="34"></rect>
+<text class="t9" text-anchor="middle" x="587" y="53">4 · TRAZABILIDAD</text>
+<text class="s9" text-anchor="middle" x="587" y="70">«Queda registrado»</text>
+<defs><marker id="a9" markerheight="7" markerwidth="7" orient="auto" refx="6" refy="3"><path d="M0,0 L6,3 L0,6 z" fill="#0055a0"></path></marker></defs>
+<path d="M165 58 L185 58" marker-end="url(#a9)" stroke="#0055a0" stroke-width="2"></path>
+<path d="M330 58 L350 58" marker-end="url(#a9)" stroke="#0055a0" stroke-width="2"></path>
+<path d="M495 58 L515 58" marker-end="url(#a9)" stroke="#0055a0" stroke-width="2"></path>
+<text class="k9" x="20" y="102">LOS TRES TIPOS DE FACTOR — la MFA exige dos de NATURALEZA DISTINTA</text>
+<rect fill="#0055a0" height="62" rx="5" width="208" x="20" y="110"></rect>
+<text class="t9" text-anchor="middle" x="124" y="128">ALGO QUE SE SABE</text>
+<text class="s9" text-anchor="middle" x="124" y="145">Contraseña, PIN, frase de paso</text>
+<text class="s9" text-anchor="middle" x="124" y="163">Debilidad: phishing y reutilización</text>
+<rect fill="#2d8659" height="62" rx="5" width="208" x="238" y="110"></rect>
+<text class="t9" text-anchor="middle" x="342" y="128">ALGO QUE SE TIENE</text>
+<text class="s9" text-anchor="middle" x="342" y="145">Tarjeta, DNIe, FIDO2, código TOTP</text>
+<text class="s9" text-anchor="middle" x="342" y="163">Debilidad: pérdida o sustracción</text>
+<rect fill="#e89822" height="62" rx="5" width="204" x="456" y="110"></rect>
+<text class="t9" text-anchor="middle" x="558" y="128">ALGO QUE SE ES</text>
+<text class="s9" text-anchor="middle" x="558" y="145">Huella, rostro, iris, voz</text>
+<text class="s9" text-anchor="middle" x="558" y="163">Debilidad: NO es revocable</text>
+<rect fill="#fbe9e9" height="24" rx="5" stroke="#d13c3c" width="540" x="70" y="180"></rect>
+<text style="font:700 10px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="196">Contraseña + pregunta de seguridad NO es MFA: los dos son conocimiento</text>
+<text class="k9" x="20" y="224">MODELOS DE AUTORIZACIÓN</text>
+<rect fill="#888" height="46" rx="5" width="155" x="20" y="232"></rect>
+<text class="t9" text-anchor="middle" x="97" y="250">DAC · discrecional</text>
+<text class="s9" text-anchor="middle" x="97" y="266">decide el propietario</text>
+<rect fill="#888" height="46" rx="5" width="155" x="185" y="232"></rect>
+<text class="t9" text-anchor="middle" x="262" y="250">MAC · obligatorio</text>
+<text class="s9" text-anchor="middle" x="262" y="266">lo impone el sistema</text>
+<rect fill="#2d8659" height="46" rx="5" width="155" x="350" y="232"></rect>
+<text class="t9" text-anchor="middle" x="427" y="250">RBAC · por roles</text>
+<text class="s9" text-anchor="middle" x="427" y="266">estándar en la Administración</text>
+<rect fill="#0055a0" height="46" rx="5" width="145" x="515" y="232"></rect>
+<text class="t9" text-anchor="middle" x="587" y="250">ABAC · por atributos</text>
+<text class="s9" text-anchor="middle" x="587" y="266">base del zero trust</text>
+<rect fill="#eef3f8" height="44" rx="5" stroke="#0055a0" stroke-width="2" width="640" x="20" y="288"></rect>
+<text style="font:700 10.5px system-ui;fill:#0055a0" text-anchor="middle" x="340" y="306">MÍNIMO PRIVILEGIO + NECESIDAD DE CONOCER</text>
+<text class="d9" text-anchor="middle" x="340" y="324">El usuario NO es administrador local · cuenta administrativa separada · permisos por rol, revisados y retirados al cese</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="346">[Fuente: NIST-800-63B; WEBAUTHN; SALTZER75; ENS]</text>
+</svg>

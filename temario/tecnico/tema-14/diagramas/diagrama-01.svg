@@ -1,0 +1,9 @@
+<svg aria-label="El sistema operativo como capa entre el hardware y las aplicaciones" class="svd1" role="img" viewbox="0 0 640 300" xmlns="http://www.w3.org/2000/svg">
+<style>.svd1 .t{font:700 15px system-ui,sans-serif;fill:#fff}.svd1 .s{font:12px system-ui,sans-serif;fill:#1a1a1a}</style>
+<rect fill="#6ea3d2" height="48" rx="6" width="480" x="80" y="40"></rect><text class="t" text-anchor="middle" x="320" y="70">Aplicaciones / Usuarios</text>
+<rect fill="#0055a0" height="48" rx="6" width="480" x="80" y="108"></rect><text class="t" text-anchor="middle" x="320" y="132">Sistema Operativo</text>
+<text class="s" style="fill:#cfe2f3" text-anchor="middle" x="320" y="150">procesos · memoria · E/S · ficheros · seguridad · interfaz</text>
+<rect fill="#003d73" height="48" rx="6" width="480" x="80" y="176"></rect><text class="t" text-anchor="middle" x="320" y="206">Hardware (CPU, memoria, dispositivos)</text>
+<text class="s" fill="#666" text-anchor="middle" x="320" y="255">Máquina extendida (hacia arriba) · Gestor de recursos (hacia abajo)</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="600" y="290">[Fuente: SILBERSCHATZ-OS, cap. 1]</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg aria-label="Arquitectura de H.323 con sus cuatro elementos: terminal, pasarela, controlador de acceso y unidad de control multipunto, y los protocolos internos H.225.0 de señalización, H.245 de control, H.235 de seguridad, H.239 de segundo flujo de vídeo y la serie H.460 de travesía de cortafuegos" role="img" viewbox="0 0 680 362" xmlns="http://www.w3.org/2000/svg">
+<style>.h9{font:700 13px system-ui,sans-serif;fill:#0055a0}.k9{font:700 10px system-ui,sans-serif;fill:#0055a0}.d9{font:9px system-ui,sans-serif;fill:#333}.n9{font:8.5px system-ui,sans-serif;fill:#666}.w9{font:700 10px system-ui,sans-serif;fill:#fff}.s9{font:8.5px system-ui,sans-serif;fill:#dce8f4}.g9{font:700 9.5px system-ui,sans-serif;fill:#2d8659}</style>
+<text class="h9" text-anchor="middle" x="340" y="19">H.323: los cuatro elementos de la arquitectura</text>
+<text class="n9" text-anchor="middle" x="340" y="35">UIT-T · Versión vigente: la 8, aprobada en MARZO DE 2022 (no la 7 de 2009 que citan casi todos los temarios)</text>
+<rect fill="#0055a0" height="70" rx="5" width="150" x="22" y="48"></rect>
+<text class="w9" text-anchor="middle" x="97" y="66">TERMINAL</text>
+<text class="s9" text-anchor="middle" x="97" y="83">El punto final</text>
+<text class="s9" text-anchor="middle" x="97" y="96">AUDIO obligatorio</text>
+<text class="s9" text-anchor="middle" x="97" y="109">Vídeo y datos, opcionales</text>
+<rect fill="#0055a0" height="70" rx="5" width="150" x="184" y="48"></rect>
+<text class="w9" text-anchor="middle" x="259" y="66">PASARELA (gateway)</text>
+<text class="s9" text-anchor="middle" x="259" y="83">Traduce a otras redes:</text>
+<text class="s9" text-anchor="middle" x="259" y="96">RDSI (H.320), telefonía,</text>
+<text class="s9" text-anchor="middle" x="259" y="109">SIP</text>
+<rect fill="#e89822" height="70" rx="5" width="150" x="346" y="48"></rect>
+<text class="w9" text-anchor="middle" x="421" y="66">CONTROLADOR DE ACCESO</text>
+<text style="fill:#fff3e0;font:8.5px system-ui,sans-serif" text-anchor="middle" x="421" y="83">OPCIONAL pero decisivo</text>
+<text style="fill:#fff3e0;font:8.5px system-ui,sans-serif" text-anchor="middle" x="421" y="96">Traduce direcciones, admite</text>
+<text style="fill:#fff3e0;font:8.5px system-ui,sans-serif" text-anchor="middle" x="421" y="109">llamadas y gestiona la ZONA</text>
+<rect fill="#2d8659" height="70" rx="5" width="150" x="508" y="48"></rect>
+<text class="w9" text-anchor="middle" x="583" y="66">MCU</text>
+<text style="fill:#dff0e8;font:8.5px system-ui,sans-serif" text-anchor="middle" x="583" y="83">Unidad de control</text>
+<text style="fill:#dff0e8;font:8.5px system-ui,sans-serif" text-anchor="middle" x="583" y="96">multipunto, compuesta de</text>
+<text style="fill:#dff0e8;font:8.5px system-ui,sans-serif" text-anchor="middle" x="583" y="109">MC (control) + MP (proceso)</text>
+<text class="k9" x="24" y="140">LOS PROTOCOLOS DE LA FAMILIA — lo que hace cada uno</text>
+<rect fill="#eef4fa" height="22" rx="3" width="312" x="22" y="148"></rect>
+<text class="d9" x="30" y="163"><tspan class="k9">H.225.0</tspan>  ·  RAS y señalización de llamada</text>
+<rect fill="#eef4fa" height="22" rx="3" width="312" x="22" y="174"></rect>
+<text class="d9" x="30" y="189"><tspan class="k9">H.245</tspan>  ·  Control, capacidades y canales lógicos</text>
+<rect fill="#eef4fa" height="22" rx="3" width="312" x="22" y="200"></rect>
+<text class="d9" x="30" y="215"><tspan class="k9">H.235</tspan>  ·  Seguridad y cifrado</text>
+<rect fill="#fdf3e3" height="22" rx="3" width="312" x="346" y="148"></rect>
+<text class="d9" x="354" y="163"><tspan class="k9">H.239</tspan>  ·  SEGUNDO FLUJO de vídeo (dual stream)</text>
+<rect fill="#eef4fa" height="22" rx="3" width="312" x="346" y="174"></rect>
+<text class="d9" x="354" y="189"><tspan class="k9">H.450.x</tspan>  ·  Servicios suplementarios</text>
+<rect fill="#eef4fa" height="22" rx="3" width="312" x="346" y="200"></rect>
+<text class="d9" x="354" y="215"><tspan class="k9">H.460.18/.19</tspan>  ·  Travesía de NAT y cortafuegos</text>
+<rect fill="#fdf3e3" height="40" rx="4" width="636" x="22" y="234"></rect>
+<text class="k9" x="32" y="250">H.239, EL DATO DE H.323 MÁS RELEVANTE DESPUÉS DE LOS CUATRO ELEMENTOS</text>
+<text class="d9" x="32" y="265">Es el mecanismo del SEGUNDO FLUJO DE VÍDEO: permite ver a la vez a la persona que habla y la presentación que comparte</text>
+<rect fill="none" height="44" rx="5" stroke="#0055a0" stroke-width="1.5" width="636" x="22" y="284"></rect>
+<text class="k9" text-anchor="middle" x="340" y="301">CODIFICACIÓN BINARIA ASN.1 CON REGLAS EMPAQUETADAS (PER)</text>
+<text class="d9" text-anchor="middle" x="340" y="317">Compacto y eficiente, y difícil de depurar — es la diferencia con SIP, que es texto. Y H.323 NO transporta el media: eso lo hace RTP</text>
+<text class="n9" text-anchor="end" x="658" y="354">[Fuente: UIT-T H.323 (03/2022), H.225.0, H.245, H.239]</text>
+</svg>

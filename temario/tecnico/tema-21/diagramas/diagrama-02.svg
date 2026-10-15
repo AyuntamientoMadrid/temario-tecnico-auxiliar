@@ -1,0 +1,21 @@
+<svg aria-label="Arquitectura de capas Java EE: capa de presentación e integración con contenedor web, capa de negocio con contenedor EJB, y capa de persistencia y datos, con dependencias unidireccionales de arriba hacia abajo" role="img" viewbox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<style>.t2{font:700 12px system-ui,sans-serif;fill:#fff}.s2{font:10.5px system-ui,sans-serif;fill:#fff}.l2{font:11px system-ui,sans-serif;fill:#444}.h2{font:700 13px system-ui,sans-serif;fill:#0055a0}</style>
+<text class="h2" text-anchor="middle" x="340" y="20">Arquitectura de capas: dependencias unidireccionales ↓</text>
+<rect fill="#0055a0" height="70" rx="6" width="540" x="70" y="36"></rect>
+<text class="t2" text-anchor="middle" x="340" y="58">CAPA DE PRESENTACIÓN / INTEGRACIÓN (§2.3)</text>
+<text class="s2" text-anchor="middle" x="340" y="76">Servlets · JSF · JAX-RS (REST) · JAX-WS (SOAP)</text>
+<text class="s2" text-anchor="middle" x="340" y="94">Contenedor WEB</text>
+<path d="M340 106 L340 130" marker-end="url(#a2)" stroke="#888" stroke-width="3"></path>
+<rect fill="#2d8659" height="70" rx="6" width="540" x="70" y="132"></rect>
+<text class="t2" text-anchor="middle" x="340" y="154">CAPA DE NEGOCIO (§2.4)</text>
+<text class="s2" text-anchor="middle" x="340" y="172">EJB (Session/MDB) · CDI · Jakarta Batch</text>
+<text class="s2" text-anchor="middle" x="340" y="190">Contenedor EJB</text>
+<path d="M340 202 L340 226" marker-end="url(#a2)" stroke="#888" stroke-width="3"></path>
+<rect fill="#e89822" height="70" rx="6" width="540" x="70" y="228"></rect>
+<text class="t2" text-anchor="middle" x="340" y="250">CAPA DE PERSISTENCIA Y DATOS (§2.5)</text>
+<text class="s2" text-anchor="middle" x="340" y="268">JMS · JDBC · JTA · JPA · JCache</text>
+<text class="s2" text-anchor="middle" x="340" y="286">Base de datos / colas / recursos externos</text>
+<defs><marker id="a2" markerheight="9" markerwidth="9" orient="auto" refx="4.5" refy="4.5"><path d="M0 0 L9 4.5 L0 9 z" fill="#888"></path></marker></defs>
+<text style="font:700 11px system-ui;fill:#d13c3c" text-anchor="middle" x="340" y="316">La persistencia NUNCA conoce la presentación — el acoplamiento va solo hacia abajo</text>
+<text style="font:11px system-ui;fill:#666" text-anchor="end" x="670" y="332">[Fuente: FOWLER-EAA; GONCALVES, cap. 2]</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg aria-label="Arquitectura ANSI SPARC de tres esquemas: externo, conceptual e interno" class="svd4" role="img" viewbox="0 0 660 320" xmlns="http://www.w3.org/2000/svg">
+<style>.svd4 .b{font:600 12px system-ui,sans-serif;fill:#fff}.svd4 .l{font:11px system-ui,sans-serif;fill:#444}</style>
+<rect fill="#6ea3d2" height="40" rx="4" width="160" x="60" y="40"></rect><text class="b" text-anchor="middle" x="140" y="65">Vista 1</text>
+<rect fill="#6ea3d2" height="40" rx="4" width="160" x="250" y="40"></rect><text class="b" text-anchor="middle" x="330" y="65">Vista 2</text>
+<rect fill="#6ea3d2" height="40" rx="4" width="160" x="440" y="40"></rect><text class="b" text-anchor="middle" x="520" y="65">Vista 3</text>
+<text class="l" fill="#0055a0" text-anchor="end" x="610" y="35">Nivel externo (vistas)</text>
+<rect fill="#0055a0" height="44" rx="4" width="420" x="120" y="130"></rect><text class="b" text-anchor="middle" x="330" y="157">Esquema conceptual (estructura lógica global)</text>
+<text class="l" fill="#0055a0" text-anchor="end" x="610" y="125">Nivel conceptual</text>
+<rect fill="#003d73" height="44" rx="4" width="420" x="120" y="220"></rect><text class="b" text-anchor="middle" x="330" y="247">Esquema interno (almacenamiento físico)</text>
+<text class="l" fill="#0055a0" text-anchor="end" x="610" y="215">Nivel interno</text>
+<line stroke="#2d8659" stroke-width="2" x1="330" x2="330" y1="80" y2="130"></line><text class="l" fill="#2d8659" x="340" y="110">indep. lógica</text>
+<line stroke="#2d8659" stroke-width="2" x1="330" x2="330" y1="174" y2="220"></line><text class="l" fill="#2d8659" x="340" y="200">indep. física</text>
+<text fill="#666" font="11px system-ui,sans-serif" text-anchor="end" x="650" y="308">[Fuente: ANSI-SPARC · DATE]</text>
+</svg>
