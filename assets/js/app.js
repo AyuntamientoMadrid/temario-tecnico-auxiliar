@@ -33,6 +33,17 @@
   function $(sel, root) { return (root || document).querySelector(sel); }
   function $$(sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function fmtPregunta(s) {
+    if (s == null) return '';
+    var str = String(s)
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&amp;/g, '&')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'");
+    var out = esc(str);
+    return out.replace(/&lt;(\/?(?:code|strong|em|b|i))\s*&gt;/gi, '<$1>');
+  }
   function icon(name, cls) { return '<svg class="icon ' + (cls || '') + '" aria-hidden="true"><use href="#i-' + name + '"/></svg>'; }
   function fmtNota(n) { return (Math.round(n * 100) / 100).toFixed(2).replace('.', ','); }
   function fmtFecha(ts) {
@@ -110,10 +121,10 @@
     container.innerHTML = items.map(function (it, i) {
       return '<div class="question" data-i="' + i + '">'
         + '<div class="q-num">' + esc(opts.prefix || 'Pregunta') + ' ' + (i + 1) + (opts.tag ? ' · ' + esc(opts.tag(it)) : '') + '</div>'
-        + '<div class="q-text">' + esc(it.q) + '</div>'
+        + '<div class="q-text">' + fmtPregunta(it.q) + '</div>'
         + '<div class="q-options" role="group" aria-label="Respuestas de la pregunta ' + (i + 1) + '">'
         + it.o.map(function (o, j) {
-          return '<button type="button" class="q-opt" aria-pressed="false" data-j="' + j + '"><span class="q-letter">' + LETRAS[j] + '</span><span>' + esc(o) + '</span></button>';
+          return '<button type="button" class="q-opt" aria-pressed="false" data-j="' + j + '"><span class="q-letter">' + LETRAS[j] + '</span><span>' + fmtPregunta(o) + '</span></button>';
         }).join('')
         + '</div><div class="q-fb"></div></div>';
     }).join('');
@@ -142,7 +153,7 @@
           if (r === null) { blanco++; cls = 'blank'; txt = '<strong>En blanco.</strong> La correcta es la ' + LETRAS[it.c] + '.'; }
           else if (r === it.c) { ok++; cls = ''; txt = '<strong style="color:var(--verde)">Correcta.</strong>'; }
           else { ko++; cls = 'ko'; txt = '<strong style="color:var(--rojo)">Incorrecta.</strong> La correcta es la ' + LETRAS[it.c] + '.'; }
-          if (it.e) txt += ' ' + esc(it.e);
+          if (it.e) txt += ' ' + fmtPregunta(it.e);
           if (it.r) txt += '<div class="q-ref">Referencia: ' + esc(it.r) + '</div>';
           $('.q-fb', qd).innerHTML = '<div class="q-feedback ' + cls + '">' + txt + '</div>';
         });
