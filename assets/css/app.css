@@ -1,10 +1,10 @@
 /* ══════════════════════════════════════════════════════════════════
    Temario TIC C1 · Ayuntamiento de Madrid — hoja de estilos única
    Cabecera y pie: mismo look que ayuntamientomadrid.github.io/Procesos-selectivos-TIC
-   (banda azul #003399, pie oscuro con filete azul, DM Sans).
+   (banda azul institucional Pantone 286 C #0055A0, pie oscuro con filete azul, DM Sans).
    ══════════════════════════════════════════════════════════════════ */
 :root{
-  --azul:#003399; --azul-dark:#002673; --azul-light:#e8eef9; --azul-10:rgba(0,51,153,.10); --azul-05:rgba(0,51,153,.05);
+  --azul:#0055A0; --azul-dark:#003D73; --azul-light:#EBF3FA; --azul-brd:#B8D3EB; --azul-10:rgba(0,85,160,.10); --azul-05:rgba(0,85,160,.05);
   --negro:#000; --blanco:#fff; --pie:#212529;
   --g50:#fafbfc; --g100:#f5f7fa; --g200:#e8ecf0; --g300:#d1d7df; --g400:#8a96a6; --g500:#66727f; --g600:#4a5568; --g800:#2d3748;
   --verde:#1e7b47; --verde-bg:#eaf6ef; --verde-brd:#b9e2c8;
@@ -132,13 +132,13 @@ body.is-landing .app{display:none;}
 .section-title{font-size:15px;font-weight:700;color:var(--g800);margin:28px 0 12px;}
 
 /* ── Aviso de almacenamiento en el navegador ── */
-.aviso{display:flex;gap:14px;align-items:flex-start;background:var(--azul-light);border:1px solid #c8d5ee;border-radius:var(--r);padding:14px 18px;margin-bottom:22px;font-size:13.5px;color:var(--g800);}
+.aviso{display:flex;gap:14px;align-items:flex-start;background:var(--azul-light);border:1px solid var(--azul-brd);border-radius:var(--r);padding:14px 18px;margin-bottom:22px;font-size:13.5px;color:var(--g800);}
 .aviso .icon{color:var(--azul);margin-top:2px;}
 .aviso p{flex:1;}
 .aviso button{background:none;border:none;color:var(--azul);font-weight:700;cursor:pointer;font-size:13px;white-space:nowrap;}
 
 /* ── Landing ── */
-.l-hero{color:#fff;padding:64px 32px;position:relative;overflow:hidden;background:#003399;}
+.l-hero{color:#fff;padding:64px 32px;position:relative;overflow:hidden;background-color:var(--azul);}
 .l-hero::before{content:'';position:absolute;top:0;right:0;bottom:0;width:65%;background:url('../img/hero.webp') center right/cover no-repeat;}
 .l-inner{position:relative;z-index:1;}
 .l-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.16);padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:18px;}
@@ -399,7 +399,7 @@ body.is-landing .menu-toggle{display:none;}
   .panel.print{display:block!important;break-before:page;}
   .panel.print.first{break-before:auto;}
   .print-only{display:block;}
-  .print-membrete:not([hidden]){display:flex!important;align-items:center;gap:14px;border-bottom:2px solid #0055a0;padding-bottom:8px;margin-bottom:14px;color:#0055a0;font-weight:600;font-size:10pt;}
+  .print-membrete:not([hidden]){display:flex!important;align-items:center;gap:14px;border-bottom:2px solid var(--azul);padding-bottom:8px;margin-bottom:14px;color:var(--azul);font-weight:600;font-size:10pt;}
   .print-membrete img{height:38px;width:auto;}
   .print-title{font-size:13pt;font-weight:700;color:var(--azul);margin:0 0 10px;border-bottom:2px solid var(--azul);padding-bottom:4px;}
   .avance-print{border:2px solid var(--verde);border-radius:6px;padding:8px 12px;margin:10px 0 14px;font-weight:700;color:var(--verde);}
